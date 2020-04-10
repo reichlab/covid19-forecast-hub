@@ -1,41 +1,41 @@
 target_id,location_id,type,quantile,value
-1 wk ahead,New York,point,NA,1500
-1 wk ahead,New York,quantile,0.1,1245
-1 wk ahead,New York,quantile,0.5,1500
-1 wk ahead,New York,quantile,0.9,1850
-2 wk ahead,New York,point,NA,1500
-2 wk ahead,New York,quantile,0.025,1000
-2 wk ahead,New York,quantile,0.25,1200
-2 wk ahead,New York,quantile,0.5,1500
-2 wk ahead,New York,quantile,0.75,1800
-2 wk ahead,New York,quantile,0.975,2000
-1 wk ahead,Massachusetts,point,NA,800
-1 wk ahead,Massachusetts,quantile,0.1,450
-1 wk ahead,Massachusetts,quantile,0.5,800
-1 wk ahead,Massachusetts,quantile,0.9,1102
-2 wk ahead,Massachusetts,point,NA,350
-2 wk ahead,Massachusetts,quantile,0.025,240
-2 wk ahead,Massachusetts,quantile,0.25,284
-2 wk ahead,Massachusetts,quantile,0.5,350
-2 wk ahead,Massachusetts,quantile,0.75,428
-2 wk ahead,Massachusetts,quantile,0.975,501
-1 wk ahead,California,point,NA,800
-1 wk ahead,California,quantile,0.1,450
-1 wk ahead,California,quantile,0.5,815
-1 wk ahead,California,quantile,0.9,1102
-2 wk ahead,California,point,NA,350
-2 wk ahead,California,quantile,0.025,437
-2 wk ahead,California,quantile,0.25,562
-2 wk ahead,California,quantile,0.5,815
-2 wk ahead,California,quantile,0.75,927
-2 wk ahead,California,quantile,0.975,1036
-1 wk ahead,Colorado,point,NA,340
-1 wk ahead,Colorado,quantile,0.1,292
-1 wk ahead,Colorado,quantile,0.5,340
-1 wk ahead,Colorado,quantile,0.9,471
-2 wk ahead,Colorado,point,NA,350
-2 wk ahead,Colorado,quantile,0.025,200
-2 wk ahead,Colorado,quantile,0.25,328
-2 wk ahead,Colorado,quantile,0.5,349
-2 wk ahead,Colorado,quantile,0.75,463
-2 wk ahead,Colorado,quantile,0.975,560
+1 wk ahead,36,point,NA,1500
+1 wk ahead,36,quantile,0.1,1245
+1 wk ahead,36,quantile,0.5,1500
+1 wk ahead,36,quantile,0.9,1850
+2 wk ahead,36,point,NA,1500
+2 wk ahead,36,quantile,0.025,1000
+2 wk ahead,36,quantile,0.25,1200
+2 wk ahead,36,quantile,0.5,1500
+2 wk ahead,36,quantile,0.75,1800
+2 wk ahead,36,quantile,0.975,2000
+1 wk ahead,25,point,NA,800
+1 wk ahead,25,quantile,0.1,450
+1 wk ahead,25,quantile,0.5,800
+1 wk ahead,25,quantile,0.9,1102
+2 wk ahead,25,point,NA,350
+2 wk ahead,25,quantile,0.025,240
+2 wk ahead,25,quantile,0.25,284
+2 wk ahead,25,quantile,0.5,350
+2 wk ahead,25,quantile,0.75,428
+2 wk ahead,25,quantile,0.975,501
+1 wk ahead,06,point,NA,800
+1 wk ahead,06,quantile,0.1,450
+1 wk ahead,06,quantile,0.5,815
+1 wk ahead,06,quantile,0.9,1102
+2 wk ahead,06,point,NA,350
+2 wk ahead,06,quantile,0.025,437
+2 wk ahead,06,quantile,0.25,562
+2 wk ahead,06,quantile,0.5,815
+2 wk ahead,06,quantile,0.75,927
+2 wk ahead,06,quantile,0.975,1036
+1 wk ahead,08,point,NA,340
+1 wk ahead,08,quantile,0.1,292
+1 wk ahead,08,quantile,0.5,340
+1 wk ahead,08,quantile,0.9,471
+2 wk ahead,08,point,NA,350
+2 wk ahead,08,quantile,0.025,200
+2 wk ahead,08,quantile,0.25,328
+2 wk ahead,08,quantile,0.5,349
+2 wk ahead,08,quantile,0.75,463
+2 wk ahead,08,quantile,0.975,560

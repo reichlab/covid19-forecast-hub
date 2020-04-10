@@ -17,10 +17,10 @@ We will use the [daily reports containing death data from the JHU CSSE group](ht
 We will be accessing any new forecasts from each group on Mondays and Thursdays and on those days, we will regenerate the standardized forecast data.
 
 **What locations will have forecasts?**
-We will store forecasts for the US national level and state-level. This location set may expand or change in the future.
+Forecasts will be catalogued for the national level (FIPS code = "US") and state level (FIPS code 2-digit character string). A file with FIPS codes for states and counties is available through the `fips_code` dataset in the `tigris` R package, and saved as a [public CSV file](./template/state_fips_codes.csv). Please note that when reading in FIPS codes, they should be read in as characters to preserve any leading zeroes.
 
 **What forecast targets will be stored?**
-We will store forecasts on 1 through 7 day ahead _incident_ deaths and 1 through 6 week ahead _incident_ deaths. To be clear about how the time periods relate to the time at which a forecast was made, we provide the following specficiations (which are subject to change or re-evaluation as we get further into the project). 
+We will store forecasts on 1 through 7 day ahead _incident_ deaths and 1 through 6 week ahead _incident_ deaths. The targets should be labeled in files as "1 wk ahead", "2 wk ahead", etc... and "1 day ahead", "2 day ahead", etc... To be clear about how the time periods relate to the time at which a forecast was made, we provide the following specficiations (which are subject to change or re-evaluation as we get further into the project). 
 
 For day-ahead forecasts collected on Monday, a 1 day ahead forecast corresponds to Tuesday, 2 day ahead to Wednesday, etc.... 
 For day-ahead forecasts collected on Thursdays, a 1 day ahead forecast corresponds to Friday, 2 day ahead to Saturday, etc.... 
@@ -44,6 +44,7 @@ For example, if `quantile` is 0.5 and `value` is 10, then this row is saying tha
 
 ## Forecast file format
 Raw data from the `data-raw` subfolders will be processed and put into corresponding subfolders in `data-processed`. Each file must have a specific naming scheme that represents when the forecast was made and what model made the forecast. Files will follow the following name scheme: `YYYY-MM-DD-[team]-[model].csv`. Where `YYYY-MM-DD` is the date on which the forecast was made. For now, we will only accept a single file for each day for a given model. For example, a forecast generated from the `CU` team for the `80contact` model on April 5, 2020, the filename would be `2020-04-05-CU-80contact.csv`.
+
 
 
 
