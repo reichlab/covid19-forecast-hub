@@ -35,7 +35,8 @@ For week-ahead forecasts collected on Monday or Thursday  of EW12, a 1 week ahea
 Most groups are providing their forecasts in a quantile-based format. We have developed a general data model that can be used to represent all of the forecasts that have been made publicly available. The tabular version of the data model is a simple, long-form data format, with five columns.
 
  - `target_id`: a unique id for the target
- - `location_id`: a unique id for the location
+ - `location_id`: a unique id for the location (we have standardized to FIPS codes)
+ - `location_name`: (optional) if desired to have a human-readable name for the location, this column may be specified. Note that the `location_id` column will be considered to be authoritative and for programmatic reading and importing of data, this column will be ignored.
  - `type`: one of either `point` or `quantile`
  - `quantile`: a value between 0 and 1 (inclusive), representing the quantile displayed in this row. if `type=="point"` then `NULL`.
  - `value`: a numeric value representing the value of the cumulative distribution function evaluated at the specified `quantile`
