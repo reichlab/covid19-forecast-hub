@@ -7,6 +7,30 @@ We are grateful to the teams who have generated these forecasts. They have no do
 
 We have stored the raw datafiles here as they were made available on the various websites. We are working on creating standardized versions of these files and on building a queryable API for easy access to the data contained in the forecasts. 
 
+## What forecasts we are tracking, and for which locations
+Different groups are making forecasts at different times, and for different geographic scales. After looking over what groups are doing, we have settled (for the time being) on the following specifications, although not all models make forecast for each of the following locations and targets. 
+
+**What do we consider to be "gold standard" death data?**
+We will use the [daily reports containing death data from the JHU CSSE group](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports) as the gold standard reference data for deaths in the US.
+
+**When will forecast data be updated?** 
+We will be accessing any new forecasts from each group on Mondays and Thursdays and on those days, we will regenerate the standardized forecast data.
+
+**What locations will have forecasts?**
+We will store forecasts for the US national level and state-level. This location set may expand or change in the future.
+
+**What forecast targets will be stored?**
+We will store forecasts on 1 through 7 day ahead _incident_ deaths and 1 through 6 week ahead _incident_ deaths. To be clear about how the time periods relate to the time at which a forecast was made, we provide the following specficiations (which are subject to change or re-evaluation as we get further into the project). 
+
+For day-ahead forecasts collected on Monday, a 1 day ahead forecast corresponds to Tuesday, 2 day ahead to Wednesday, etc.... 
+For day-ahead forecasts collected on Thursdays, a 1 day ahead forecast corresponds to Friday, 2 day ahead to Saturday, etc.... 
+
+For week-ahead forecasts, we will use the specification of epidemiological weeks (EWs) [defined by the US CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf). 
+There are standard software packages to convert from dates to epidemic weeks and vice versa. E.g. [MMWRweek](https://cran.r-project.org/web/packages/MMWRweek/) for R and [pymmwr](https://pypi.org/project/pymmwr/) and [epiweeks](https://pypi.org/project/epiweeks/) for python.
+
+For week-ahead forecasts collected on Monday or Thursday  of EW12, a 1 week ahead forecast corresponds to EW12, 2 week ahead to EW13.
+
+
 ## Data model
 Most groups are providing their forecasts in a quantile-based format. We have developed a general data model that can be used to represent all of the forecasts that have been made publicly available. The tabular version of the data model is a simple, long-form data format, with five columns.
 
