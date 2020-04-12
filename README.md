@@ -49,6 +49,14 @@ For example, if `quantile` is 0.5 and `value` is 10, then this row is saying tha
 ## Forecast file format
 Raw data from the `data-raw` subfolders will be processed and put into corresponding subfolders in `data-processed`. Each file must have a specific naming scheme that represents when the forecast was made and what model made the forecast. Files will follow the following name scheme: `YYYY-MM-DD-[team]-[model].csv`. Where `YYYY-MM-DD` is the date on which the forecast was made. For now, we will only accept a single file for each day for a given model. For example, a forecast generated from the `CU` team for the `80contact` model on April 5, 2020, the filename would be `2020-04-05-CU-80contact.csv`.
 
+## Teams and models
+So far, we have identified a number of experienced teams that are creating forecasts of deaths in the US. Our working list of groups whose forecasts we will be standardizing and evaluating is below:
 
+ - [Columbia University](https://github.com/shaman-lab/COVID-19Projection)
+ - [GLEAM from Northeastern University](https://www.gleamproject.org/covid-19)
+ - [IHME](https://covid19.healthdata.org/united-states-of-america)
+ - [Imperial College](https://github.com/sangeetabhatia03/covid19-short-term-forecasts)
+ - [LANL](https://covid-19.bsvgateway.org/)
+ -
 
 
