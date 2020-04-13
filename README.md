@@ -1,6 +1,6 @@
 # Repository of COVID-19 forecasts of deaths in the US
 
-The goal of this repository is to create a standardized set of data on forecasts from experienced teams making projections of deaths due to COVID-19 in the United States.
+The goal of this repository is to create a standardized set of data on forecasts from experienced teams making projections of cumulative and incident deaths due to COVID-19 in the United States.
 
 ## Data license and reuse
 We are grateful to the teams who have generated these forecasts. They have no doubt spent a huge amount of time and effort in a short amount of time to operationalize these important real-time forecasts. The groups have graciously and courageously made their public data available under different terms and licenses. You will find the licenses within the model-specific folders in the [data-raw](./data-raw/) directory. Please consult these licenses before using these data to ensure that you follow the terms under which these data were released.
@@ -23,15 +23,15 @@ Forecasts will be catalogued for the national level (e.g., FIPS code = "US") and
 Forecasts will be represented in [a standard format](#data-model) using quantile-based representations of predictive distributions. We encourage all groups to make available the following 23 quantiles for each distribution: (0.01, 0.025, 0.05, 0.10, 0.15, ..., 0.90, 0.95, 0.975, 0.99). If this is infeasible, we ask teams to prioritize making  available at least the following quantiles: (0.1, 0.5, 0.9).
 
 **What forecast targets will be stored?**
-We will store forecasts on 1 through 7 day ahead _incident_ deaths and 1 through 6 week ahead _incident_ deaths. The targets should be labeled in files as "1 wk ahead", "2 wk ahead", etc... and "1 day ahead", "2 day ahead", etc... To be clear about how the time periods relate to the time at which a forecast was made, we provide the following specficiations (which are subject to change or re-evaluation as we get further into the project). 
+We will store forecasts on 1 through 7 day ahead _incident_ and _cumulative_ deaths and 1 through 6 week ahead _incident_ and _cumulative_ deaths. The targets should be labeled in files as "1 wk ahead inc" or "1 wk ahead cum", "2 wk ahead inc" or "2 wk ahead cum", etc... and "1 day ahead inc" or "1 day ahead cum", "2 day ahead inc" or "2 day ahead cum", etc... To be clear about how the time periods relate to the time at which a forecast was made, we provide the following specficiations (which are subject to change or re-evaluation as we get further into the project). 
 
-For day-ahead forecasts collected on Monday, a 1 day ahead forecast corresponds to Tuesday, 2 day ahead to Wednesday, etc.... 
+For day-ahead forecasts collected on Monday, a 1 day ahead forecast corresponds to incident deaths on Tuesday or cumulative deaths by the end of Tuesday, 2 day ahead to Wednesday, etc.... 
 For day-ahead forecasts collected on Thursdays, a 1 day ahead forecast corresponds to Friday, 2 day ahead to Saturday, etc.... 
 
 For week-ahead forecasts, we will use the specification of epidemiological weeks (EWs) [defined by the US CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf). 
 There are standard software packages to convert from dates to epidemic weeks and vice versa. E.g. [MMWRweek](https://cran.r-project.org/web/packages/MMWRweek/) for R and [pymmwr](https://pypi.org/project/pymmwr/) and [epiweeks](https://pypi.org/project/epiweeks/) for python.
 
-For week-ahead forecasts collected on Monday or Thursday  of EW12, a 1 week ahead forecast corresponds to EW12, 2 week ahead to EW13.
+For week-ahead forecasts collected on Monday or Thursday  of EW12, a 1 week ahead forecast corresponds to EW12, 2 week ahead to EW13. A week-ahead forecast should represent the total number of incident deaths within a given epiweek (from Sunday through Saturday, inclusive) or the cumulative number of deaths reported on the Saturday of a given epiweek.
 
 
 ## Data model
@@ -57,6 +57,5 @@ So far, we have identified a number of experienced teams that are creating forec
  - [IHME](https://covid19.healthdata.org/united-states-of-america)
  - [Imperial College](https://github.com/sangeetabhatia03/covid19-short-term-forecasts)
  - [LANL](https://covid-19.bsvgateway.org/)
- -
 
-
+Participating teams must provide methodological detail about their approach including a brief description of the methodology and a link to a file (or a file itself) describing the methods used. 
