@@ -1,0 +1,2143 @@
+location,target_id,quantile,value,location_id,type
+Alabama,1 day ahead inc,NA,3.776,1,point
+Alabama,2 day ahead inc,NA,4.774,1,point
+Alabama,3 day ahead inc,NA,6.055,1,point
+Alabama,4 day ahead inc,NA,7.59,1,point
+Alabama,5 day ahead inc,NA,9.393,1,point
+Alabama,6 day ahead inc,NA,11.472,1,point
+Alabama,7 day ahead inc,NA,13.817,1,point
+Alaska,1 day ahead inc,NA,0,2,point
+Alaska,2 day ahead inc,NA,0,2,point
+Alaska,3 day ahead inc,NA,0,2,point
+Alaska,4 day ahead inc,NA,0,2,point
+Alaska,5 day ahead inc,NA,0,2,point
+Alaska,6 day ahead inc,NA,0.002,2,point
+Alaska,7 day ahead inc,NA,0.015,2,point
+Arizona,1 day ahead inc,NA,4.227,4,point
+Arizona,2 day ahead inc,NA,5.147,4,point
+Arizona,3 day ahead inc,NA,6.223,4,point
+Arizona,4 day ahead inc,NA,7.428,4,point
+Arizona,5 day ahead inc,NA,8.789,4,point
+Arizona,6 day ahead inc,NA,10.26,4,point
+Arizona,7 day ahead inc,NA,11.923,4,point
+Arkansas,1 day ahead inc,NA,2,5,point
+Arkansas,2 day ahead inc,NA,2.765,5,point
+Arkansas,3 day ahead inc,NA,3.305,5,point
+Arkansas,4 day ahead inc,NA,4.103,5,point
+Arkansas,5 day ahead inc,NA,5.021,5,point
+Arkansas,6 day ahead inc,NA,6.049,5,point
+Arkansas,7 day ahead inc,NA,7.184,5,point
+California,1 day ahead inc,NA,23.572,6,point
+California,2 day ahead inc,NA,26.979,6,point
+California,3 day ahead inc,NA,30.602,6,point
+California,4 day ahead inc,NA,34.487,6,point
+California,5 day ahead inc,NA,38.573,6,point
+California,6 day ahead inc,NA,42.86,6,point
+California,7 day ahead inc,NA,47.237,6,point
+Colorado,1 day ahead inc,NA,12.747,8,point
+Colorado,2 day ahead inc,NA,15.498,8,point
+Colorado,3 day ahead inc,NA,18.564,8,point
+Colorado,4 day ahead inc,NA,22.044,8,point
+Colorado,5 day ahead inc,NA,25.815,8,point
+Colorado,6 day ahead inc,NA,29.867,8,point
+Colorado,7 day ahead inc,NA,34.123,8,point
+Connecticut,1 day ahead inc,NA,7,9,point
+Connecticut,2 day ahead inc,NA,7.995,9,point
+Connecticut,3 day ahead inc,NA,8.963,9,point
+Connecticut,4 day ahead inc,NA,9.944,9,point
+Connecticut,5 day ahead inc,NA,10.991,9,point
+Connecticut,6 day ahead inc,NA,12.01,9,point
+Connecticut,7 day ahead inc,NA,13.079,9,point
+Delaware,1 day ahead inc,NA,2.002,10,point
+Delaware,2 day ahead inc,NA,2.836,10,point
+Delaware,3 day ahead inc,NA,3.41,10,point
+Delaware,4 day ahead inc,NA,4.23,10,point
+Delaware,5 day ahead inc,NA,5.182,10,point
+Delaware,6 day ahead inc,NA,6.276,10,point
+Delaware,7 day ahead inc,NA,7.478,10,point
+District of Columbia,1 day ahead inc,NA,1,11,point
+District of Columbia,2 day ahead inc,NA,1,11,point
+District of Columbia,3 day ahead inc,NA,1,11,point
+District of Columbia,4 day ahead inc,NA,1.885,11,point
+District of Columbia,5 day ahead inc,NA,2,11,point
+District of Columbia,6 day ahead inc,NA,2,11,point
+District of Columbia,7 day ahead inc,NA,2,11,point
+Florida,1 day ahead inc,NA,11.828,12,point
+Florida,2 day ahead inc,NA,13.961,12,point
+Florida,3 day ahead inc,NA,16.391,12,point
+Florida,4 day ahead inc,NA,19.074,12,point
+Florida,5 day ahead inc,NA,22.043,12,point
+Florida,6 day ahead inc,NA,25.274,12,point
+Florida,7 day ahead inc,NA,28.773,12,point
+Georgia,1 day ahead inc,NA,14.726,13,point
+Georgia,2 day ahead inc,NA,16.894,13,point
+Georgia,3 day ahead inc,NA,19.311,13,point
+Georgia,4 day ahead inc,NA,21.969,13,point
+Georgia,5 day ahead inc,NA,24.958,13,point
+Georgia,6 day ahead inc,NA,28.007,13,point
+Georgia,7 day ahead inc,NA,31.255,13,point
+Hawaii,1 day ahead inc,NA,0,15,point
+Hawaii,2 day ahead inc,NA,0,15,point
+Hawaii,3 day ahead inc,NA,0.002,15,point
+Hawaii,4 day ahead inc,NA,0.026,15,point
+Hawaii,5 day ahead inc,NA,0.097,15,point
+Hawaii,6 day ahead inc,NA,0.191,15,point
+Hawaii,7 day ahead inc,NA,0.328,15,point
+Idaho,1 day ahead inc,NA,1,16,point
+Idaho,2 day ahead inc,NA,1.001,16,point
+Idaho,3 day ahead inc,NA,1.252,16,point
+Idaho,4 day ahead inc,NA,1.539,16,point
+Idaho,5 day ahead inc,NA,1.953,16,point
+Idaho,6 day ahead inc,NA,2.003,16,point
+Idaho,7 day ahead inc,NA,2.06,16,point
+Illinois,1 day ahead inc,NA,18.233,17,point
+Illinois,2 day ahead inc,NA,22.195,17,point
+Illinois,3 day ahead inc,NA,26.628,17,point
+Illinois,4 day ahead inc,NA,31.498,17,point
+Illinois,5 day ahead inc,NA,36.688,17,point
+Illinois,6 day ahead inc,NA,42.129,17,point
+Illinois,7 day ahead inc,NA,47.601,17,point
+Indiana,1 day ahead inc,NA,7.067,18,point
+Indiana,2 day ahead inc,NA,8.369,18,point
+Indiana,3 day ahead inc,NA,9.715,18,point
+Indiana,4 day ahead inc,NA,11.049,18,point
+Indiana,5 day ahead inc,NA,12.602,18,point
+Indiana,6 day ahead inc,NA,14.214,18,point
+Indiana,7 day ahead inc,NA,15.979,18,point
+Iowa,1 day ahead inc,NA,1,19,point
+Iowa,2 day ahead inc,NA,1.001,19,point
+Iowa,3 day ahead inc,NA,1.476,19,point
+Iowa,4 day ahead inc,NA,1.961,19,point
+Iowa,5 day ahead inc,NA,2.007,19,point
+Iowa,6 day ahead inc,NA,2.2,19,point
+Iowa,7 day ahead inc,NA,2.599,19,point
+Kansas,1 day ahead inc,NA,1.864,20,point
+Kansas,2 day ahead inc,NA,2.001,20,point
+Kansas,3 day ahead inc,NA,2.149,20,point
+Kansas,4 day ahead inc,NA,2.809,20,point
+Kansas,5 day ahead inc,NA,3.121,20,point
+Kansas,6 day ahead inc,NA,3.668,20,point
+Kansas,7 day ahead inc,NA,4.208,20,point
+Kentucky,1 day ahead inc,NA,1.57,21,point
+Kentucky,2 day ahead inc,NA,1.863,21,point
+Kentucky,3 day ahead inc,NA,1.982,21,point
+Kentucky,4 day ahead inc,NA,2.182,21,point
+Kentucky,5 day ahead inc,NA,2.537,21,point
+Kentucky,6 day ahead inc,NA,2.709,21,point
+Kentucky,7 day ahead inc,NA,3.086,21,point
+Louisiana,1 day ahead inc,NA,34.072,22,point
+Louisiana,2 day ahead inc,NA,39.166,22,point
+Louisiana,3 day ahead inc,NA,44.563,22,point
+Louisiana,4 day ahead inc,NA,50.301,22,point
+Louisiana,5 day ahead inc,NA,56.342,22,point
+Louisiana,6 day ahead inc,NA,61.599,22,point
+Louisiana,7 day ahead inc,NA,66.508,22,point
+Maine,1 day ahead inc,NA,1.357,23,point
+Maine,2 day ahead inc,NA,2.035,23,point
+Maine,3 day ahead inc,NA,2.869,23,point
+Maine,4 day ahead inc,NA,3.855,23,point
+Maine,5 day ahead inc,NA,5.137,23,point
+Maine,6 day ahead inc,NA,6.721,23,point
+Maine,7 day ahead inc,NA,8.663,23,point
+Maryland,1 day ahead inc,NA,1.958,24,point
+Maryland,2 day ahead inc,NA,2.261,24,point
+Maryland,3 day ahead inc,NA,2.617,24,point
+Maryland,4 day ahead inc,NA,3.065,24,point
+Maryland,5 day ahead inc,NA,3.503,24,point
+Maryland,6 day ahead inc,NA,4.007,24,point
+Maryland,7 day ahead inc,NA,4.568,24,point
+Massachusetts,1 day ahead inc,NA,13.755,25,point
+Massachusetts,2 day ahead inc,NA,16.773,25,point
+Massachusetts,3 day ahead inc,NA,20.001,25,point
+Massachusetts,4 day ahead inc,NA,23.563,25,point
+Massachusetts,5 day ahead inc,NA,27.502,25,point
+Massachusetts,6 day ahead inc,NA,31.837,25,point
+Massachusetts,7 day ahead inc,NA,36.568,25,point
+Michigan,1 day ahead inc,NA,41.56,26,point
+Michigan,2 day ahead inc,NA,50.079,26,point
+Michigan,3 day ahead inc,NA,59.431,26,point
+Michigan,4 day ahead inc,NA,69.604,26,point
+Michigan,5 day ahead inc,NA,80.58,26,point
+Michigan,6 day ahead inc,NA,92.379,26,point
+Michigan,7 day ahead inc,NA,104.88,26,point
+Minnesota,1 day ahead inc,NA,3.537,27,point
+Minnesota,2 day ahead inc,NA,4.639,27,point
+Minnesota,3 day ahead inc,NA,5.946,27,point
+Minnesota,4 day ahead inc,NA,7.583,27,point
+Minnesota,5 day ahead inc,NA,9.495,27,point
+Minnesota,6 day ahead inc,NA,11.742,27,point
+Minnesota,7 day ahead inc,NA,14.311,27,point
+Mississippi,1 day ahead inc,NA,4.851,28,point
+Mississippi,2 day ahead inc,NA,6.449,28,point
+Mississippi,3 day ahead inc,NA,8.06,28,point
+Mississippi,4 day ahead inc,NA,9.942,28,point
+Mississippi,5 day ahead inc,NA,12.245,28,point
+Mississippi,6 day ahead inc,NA,14.866,28,point
+Mississippi,7 day ahead inc,NA,17.851,28,point
+Missouri,1 day ahead inc,NA,2.002,29,point
+Missouri,2 day ahead inc,NA,2.109,29,point
+Missouri,3 day ahead inc,NA,2.644,29,point
+Missouri,4 day ahead inc,NA,2.981,29,point
+Missouri,5 day ahead inc,NA,3.08,29,point
+Missouri,6 day ahead inc,NA,3.518,29,point
+Missouri,7 day ahead inc,NA,3.964,29,point
+Montana,1 day ahead inc,NA,0,30,point
+Montana,2 day ahead inc,NA,0,30,point
+Montana,3 day ahead inc,NA,0,30,point
+Montana,4 day ahead inc,NA,0.003,30,point
+Montana,5 day ahead inc,NA,0.022,30,point
+Montana,6 day ahead inc,NA,0.075,30,point
+Montana,7 day ahead inc,NA,0.185,30,point
+Nebraska,1 day ahead inc,NA,0,31,point
+Nebraska,2 day ahead inc,NA,0.09,31,point
+Nebraska,3 day ahead inc,NA,0.108,31,point
+Nebraska,4 day ahead inc,NA,0.173,31,point
+Nebraska,5 day ahead inc,NA,0.246,31,point
+Nebraska,6 day ahead inc,NA,0.328,31,point
+Nebraska,7 day ahead inc,NA,0.431,31,point
+Nevada,1 day ahead inc,NA,3.002,32,point
+Nevada,2 day ahead inc,NA,3.904,32,point
+Nevada,3 day ahead inc,NA,4.216,32,point
+Nevada,4 day ahead inc,NA,4.916,32,point
+Nevada,5 day ahead inc,NA,5.631,32,point
+Nevada,6 day ahead inc,NA,6.327,32,point
+Nevada,7 day ahead inc,NA,7.1,32,point
+New Hampshire,1 day ahead inc,NA,0,33,point
+New Hampshire,2 day ahead inc,NA,0,33,point
+New Hampshire,3 day ahead inc,NA,0,33,point
+New Hampshire,4 day ahead inc,NA,0.008,33,point
+New Hampshire,5 day ahead inc,NA,0.042,33,point
+New Hampshire,6 day ahead inc,NA,0.118,33,point
+New Hampshire,7 day ahead inc,NA,0.229,33,point
+New Jersey,1 day ahead inc,NA,40.654,34,point
+New Jersey,2 day ahead inc,NA,47.3,34,point
+New Jersey,3 day ahead inc,NA,54.344,34,point
+New Jersey,4 day ahead inc,NA,61.649,34,point
+New Jersey,5 day ahead inc,NA,69.157,34,point
+New Jersey,6 day ahead inc,NA,76.74,34,point
+New Jersey,7 day ahead inc,NA,84.369,34,point
+New Mexico,1 day ahead inc,NA,0,35,point
+New Mexico,2 day ahead inc,NA,0.106,35,point
+New Mexico,3 day ahead inc,NA,0.136,35,point
+New Mexico,4 day ahead inc,NA,0.208,35,point
+New Mexico,5 day ahead inc,NA,0.319,35,point
+New Mexico,6 day ahead inc,NA,0.441,35,point
+New Mexico,7 day ahead inc,NA,0.565,35,point
+New York,1 day ahead inc,NA,277.237,36,point
+New York,2 day ahead inc,NA,332.278,36,point
+New York,3 day ahead inc,NA,391.115,36,point
+New York,4 day ahead inc,NA,452.206,36,point
+New York,5 day ahead inc,NA,513.734,36,point
+New York,6 day ahead inc,NA,573.636,36,point
+New York,7 day ahead inc,NA,631.822,36,point
+North Carolina,1 day ahead inc,NA,2.835,37,point
+North Carolina,2 day ahead inc,NA,3.526,37,point
+North Carolina,3 day ahead inc,NA,4.538,37,point
+North Carolina,4 day ahead inc,NA,5.739,37,point
+North Carolina,5 day ahead inc,NA,7.189,37,point
+North Carolina,6 day ahead inc,NA,8.853,37,point
+North Carolina,7 day ahead inc,NA,10.785,37,point
+North Dakota,1 day ahead inc,NA,0,38,point
+North Dakota,2 day ahead inc,NA,0,38,point
+North Dakota,3 day ahead inc,NA,0,38,point
+North Dakota,4 day ahead inc,NA,0,38,point
+North Dakota,5 day ahead inc,NA,0,38,point
+North Dakota,6 day ahead inc,NA,0.005,38,point
+North Dakota,7 day ahead inc,NA,0.043,38,point
+Ohio,1 day ahead inc,NA,7.051,39,point
+Ohio,2 day ahead inc,NA,8.397,39,point
+Ohio,3 day ahead inc,NA,9.921,39,point
+Ohio,4 day ahead inc,NA,11.444,39,point
+Ohio,5 day ahead inc,NA,13.102,39,point
+Ohio,6 day ahead inc,NA,14.87,39,point
+Ohio,7 day ahead inc,NA,16.756,39,point
+Oklahoma,1 day ahead inc,NA,5.215,40,point
+Oklahoma,2 day ahead inc,NA,6.477,40,point
+Oklahoma,3 day ahead inc,NA,7.951,40,point
+Oklahoma,4 day ahead inc,NA,9.618,40,point
+Oklahoma,5 day ahead inc,NA,11.516,40,point
+Oklahoma,6 day ahead inc,NA,13.646,40,point
+Oklahoma,7 day ahead inc,NA,16.033,40,point
+Oregon,1 day ahead inc,NA,2,41,point
+Oregon,2 day ahead inc,NA,2,41,point
+Oregon,3 day ahead inc,NA,2.127,41,point
+Oregon,4 day ahead inc,NA,2.991,41,point
+Oregon,5 day ahead inc,NA,3,41,point
+Oregon,6 day ahead inc,NA,3.079,41,point
+Oregon,7 day ahead inc,NA,3.555,41,point
+Pennsylvania,1 day ahead inc,NA,11.95,42,point
+Pennsylvania,2 day ahead inc,NA,14.457,42,point
+Pennsylvania,3 day ahead inc,NA,17.234,42,point
+Pennsylvania,4 day ahead inc,NA,20.301,42,point
+Pennsylvania,5 day ahead inc,NA,23.606,42,point
+Pennsylvania,6 day ahead inc,NA,27.132,42,point
+Pennsylvania,7 day ahead inc,NA,30.926,42,point
+Rhode Island,1 day ahead inc,NA,1,44,point
+Rhode Island,2 day ahead inc,NA,1.003,44,point
+Rhode Island,3 day ahead inc,NA,1.682,44,point
+Rhode Island,4 day ahead inc,NA,1.99,44,point
+Rhode Island,5 day ahead inc,NA,2.248,44,point
+Rhode Island,6 day ahead inc,NA,2.793,44,point
+Rhode Island,7 day ahead inc,NA,3.275,44,point
+South Carolina,1 day ahead inc,NA,3.446,45,point
+South Carolina,2 day ahead inc,NA,4,45,point
+South Carolina,3 day ahead inc,NA,4.967,45,point
+South Carolina,4 day ahead inc,NA,5.551,45,point
+South Carolina,5 day ahead inc,NA,6.228,45,point
+South Carolina,6 day ahead inc,NA,7.213,45,point
+South Carolina,7 day ahead inc,NA,8.303,45,point
+South Dakota,1 day ahead inc,NA,0,46,point
+South Dakota,2 day ahead inc,NA,0,46,point
+South Dakota,3 day ahead inc,NA,0,46,point
+South Dakota,4 day ahead inc,NA,0,46,point
+South Dakota,5 day ahead inc,NA,0.007,46,point
+South Dakota,6 day ahead inc,NA,0.034,46,point
+South Dakota,7 day ahead inc,NA,0.078,46,point
+Tennessee,1 day ahead inc,NA,2,47,point
+Tennessee,2 day ahead inc,NA,2.926,47,point
+Tennessee,3 day ahead inc,NA,3.011,47,point
+Tennessee,4 day ahead inc,NA,3.957,47,point
+Tennessee,5 day ahead inc,NA,4.553,47,point
+Tennessee,6 day ahead inc,NA,5.276,47,point
+Tennessee,7 day ahead inc,NA,6.213,47,point
+Texas,1 day ahead inc,NA,7.699,48,point
+Texas,2 day ahead inc,NA,9.024,48,point
+Texas,3 day ahead inc,NA,10.497,48,point
+Texas,4 day ahead inc,NA,12.157,48,point
+Texas,5 day ahead inc,NA,14.01,48,point
+Texas,6 day ahead inc,NA,16.056,48,point
+Texas,7 day ahead inc,NA,18.286,48,point
+Utah,1 day ahead inc,NA,0,49,point
+Utah,2 day ahead inc,NA,0.379,49,point
+Utah,3 day ahead inc,NA,0.471,49,point
+Utah,4 day ahead inc,NA,0.66,49,point
+Utah,5 day ahead inc,NA,0.813,49,point
+Utah,6 day ahead inc,NA,1.015,49,point
+Utah,7 day ahead inc,NA,1.224,49,point
+Vermont,1 day ahead inc,NA,1.997,50,point
+Vermont,2 day ahead inc,NA,2.008,50,point
+Vermont,3 day ahead inc,NA,2.331,50,point
+Vermont,4 day ahead inc,NA,2.527,50,point
+Vermont,5 day ahead inc,NA,2.623,50,point
+Vermont,6 day ahead inc,NA,2.929,50,point
+Vermont,7 day ahead inc,NA,3.123,50,point
+Virginia,1 day ahead inc,NA,3.212,51,point
+Virginia,2 day ahead inc,NA,3.618,51,point
+Virginia,3 day ahead inc,NA,4.09,51,point
+Virginia,4 day ahead inc,NA,4.621,51,point
+Virginia,5 day ahead inc,NA,5.165,51,point
+Virginia,6 day ahead inc,NA,5.801,51,point
+Virginia,7 day ahead inc,NA,6.515,51,point
+Washington,1 day ahead inc,NA,16.319,53,point
+Washington,2 day ahead inc,NA,17.189,53,point
+Washington,3 day ahead inc,NA,18.136,53,point
+Washington,4 day ahead inc,NA,18.905,53,point
+Washington,5 day ahead inc,NA,19.599,53,point
+Washington,6 day ahead inc,NA,20.331,53,point
+Washington,7 day ahead inc,NA,21.041,53,point
+West Virginia,1 day ahead inc,NA,0.065,54,point
+West Virginia,2 day ahead inc,NA,0.098,54,point
+West Virginia,3 day ahead inc,NA,0.125,54,point
+West Virginia,4 day ahead inc,NA,0.166,54,point
+West Virginia,5 day ahead inc,NA,0.25,54,point
+West Virginia,6 day ahead inc,NA,0.37,54,point
+West Virginia,7 day ahead inc,NA,0.496,54,point
+Wisconsin,1 day ahead inc,NA,4.135,55,point
+Wisconsin,2 day ahead inc,NA,4.945,55,point
+Wisconsin,3 day ahead inc,NA,5.885,55,point
+Wisconsin,4 day ahead inc,NA,6.919,55,point
+Wisconsin,5 day ahead inc,NA,8.083,55,point
+Wisconsin,6 day ahead inc,NA,9.355,55,point
+Wisconsin,7 day ahead inc,NA,10.742,55,point
+Wyoming,1 day ahead inc,NA,0,56,point
+Wyoming,2 day ahead inc,NA,0,56,point
+Wyoming,3 day ahead inc,NA,0,56,point
+Wyoming,4 day ahead inc,NA,0,56,point
+Wyoming,5 day ahead inc,NA,0,56,point
+Wyoming,6 day ahead inc,NA,0.002,56,point
+Wyoming,7 day ahead inc,NA,0.009,56,point
+Alabama,1 day ahead inc,0.025,3,1,quantile
+Alabama,2 day ahead inc,0.025,4,1,quantile
+Alabama,3 day ahead inc,0.025,5,1,quantile
+Alabama,4 day ahead inc,0.025,6,1,quantile
+Alabama,5 day ahead inc,0.025,7,1,quantile
+Alabama,6 day ahead inc,0.025,8,1,quantile
+Alabama,7 day ahead inc,0.025,10,1,quantile
+Alaska,1 day ahead inc,0.025,0,2,quantile
+Alaska,2 day ahead inc,0.025,0,2,quantile
+Alaska,3 day ahead inc,0.025,0,2,quantile
+Alaska,4 day ahead inc,0.025,0,2,quantile
+Alaska,5 day ahead inc,0.025,0,2,quantile
+Alaska,6 day ahead inc,0.025,0,2,quantile
+Alaska,7 day ahead inc,0.025,0,2,quantile
+Arizona,1 day ahead inc,0.025,4,4,quantile
+Arizona,2 day ahead inc,0.025,5,4,quantile
+Arizona,3 day ahead inc,0.025,6,4,quantile
+Arizona,4 day ahead inc,0.025,7,4,quantile
+Arizona,5 day ahead inc,0.025,8,4,quantile
+Arizona,6 day ahead inc,0.025,9,4,quantile
+Arizona,7 day ahead inc,0.025,11,4,quantile
+Arkansas,1 day ahead inc,0.025,2,5,quantile
+Arkansas,2 day ahead inc,0.025,2,5,quantile
+Arkansas,3 day ahead inc,0.025,3,5,quantile
+Arkansas,4 day ahead inc,0.025,3,5,quantile
+Arkansas,5 day ahead inc,0.025,4,5,quantile
+Arkansas,6 day ahead inc,0.025,4,5,quantile
+Arkansas,7 day ahead inc,0.025,5,5,quantile
+California,1 day ahead inc,0.025,21,6,quantile
+California,2 day ahead inc,0.025,24,6,quantile
+California,3 day ahead inc,0.025,27,6,quantile
+California,4 day ahead inc,0.025,31,6,quantile
+California,5 day ahead inc,0.025,34,6,quantile
+California,6 day ahead inc,0.025,38,6,quantile
+California,7 day ahead inc,0.025,43,6,quantile
+Colorado,1 day ahead inc,0.025,11,8,quantile
+Colorado,2 day ahead inc,0.025,13,8,quantile
+Colorado,3 day ahead inc,0.025,16,8,quantile
+Colorado,4 day ahead inc,0.025,18,8,quantile
+Colorado,5 day ahead inc,0.025,21,8,quantile
+Colorado,6 day ahead inc,0.025,24,8,quantile
+Colorado,7 day ahead inc,0.025,27,8,quantile
+Connecticut,1 day ahead inc,0.025,7,9,quantile
+Connecticut,2 day ahead inc,0.025,8,9,quantile
+Connecticut,3 day ahead inc,0.025,8,9,quantile
+Connecticut,4 day ahead inc,0.025,9,9,quantile
+Connecticut,5 day ahead inc,0.025,10,9,quantile
+Connecticut,6 day ahead inc,0.025,11,9,quantile
+Connecticut,7 day ahead inc,0.025,12,9,quantile
+Delaware,1 day ahead inc,0.025,2,10,quantile
+Delaware,2 day ahead inc,0.025,2,10,quantile
+Delaware,3 day ahead inc,0.025,3,10,quantile
+Delaware,4 day ahead inc,0.025,3,10,quantile
+Delaware,5 day ahead inc,0.025,4,10,quantile
+Delaware,6 day ahead inc,0.025,5,10,quantile
+Delaware,7 day ahead inc,0.025,6,10,quantile
+District of Columbia,1 day ahead inc,0.025,1,11,quantile
+District of Columbia,2 day ahead inc,0.025,1,11,quantile
+District of Columbia,3 day ahead inc,0.025,1,11,quantile
+District of Columbia,4 day ahead inc,0.025,1,11,quantile
+District of Columbia,5 day ahead inc,0.025,2,11,quantile
+District of Columbia,6 day ahead inc,0.025,2,11,quantile
+District of Columbia,7 day ahead inc,0.025,2,11,quantile
+Florida,1 day ahead inc,0.025,9,12,quantile
+Florida,2 day ahead inc,0.025,11,12,quantile
+Florida,3 day ahead inc,0.025,12,12,quantile
+Florida,4 day ahead inc,0.025,14,12,quantile
+Florida,5 day ahead inc,0.025,16,12,quantile
+Florida,6 day ahead inc,0.025,18,12,quantile
+Florida,7 day ahead inc,0.025,20,12,quantile
+Georgia,1 day ahead inc,0.025,14,13,quantile
+Georgia,2 day ahead inc,0.025,16,13,quantile
+Georgia,3 day ahead inc,0.025,18,13,quantile
+Georgia,4 day ahead inc,0.025,21,13,quantile
+Georgia,5 day ahead inc,0.025,24,13,quantile
+Georgia,6 day ahead inc,0.025,26,13,quantile
+Georgia,7 day ahead inc,0.025,29,13,quantile
+Hawaii,1 day ahead inc,0.025,0,15,quantile
+Hawaii,2 day ahead inc,0.025,0,15,quantile
+Hawaii,3 day ahead inc,0.025,0,15,quantile
+Hawaii,4 day ahead inc,0.025,0,15,quantile
+Hawaii,5 day ahead inc,0.025,0,15,quantile
+Hawaii,6 day ahead inc,0.025,0,15,quantile
+Hawaii,7 day ahead inc,0.025,0,15,quantile
+Idaho,1 day ahead inc,0.025,1,16,quantile
+Idaho,2 day ahead inc,0.025,1,16,quantile
+Idaho,3 day ahead inc,0.025,1,16,quantile
+Idaho,4 day ahead inc,0.025,1,16,quantile
+Idaho,5 day ahead inc,0.025,1,16,quantile
+Idaho,6 day ahead inc,0.025,2,16,quantile
+Idaho,7 day ahead inc,0.025,2,16,quantile
+Illinois,1 day ahead inc,0.025,18,17,quantile
+Illinois,2 day ahead inc,0.025,21,17,quantile
+Illinois,3 day ahead inc,0.025,26,17,quantile
+Illinois,4 day ahead inc,0.025,30,17,quantile
+Illinois,5 day ahead inc,0.025,35,17,quantile
+Illinois,6 day ahead inc,0.025,39,17,quantile
+Illinois,7 day ahead inc,0.025,44,17,quantile
+Indiana,1 day ahead inc,0.025,7,18,quantile
+Indiana,2 day ahead inc,0.025,8,18,quantile
+Indiana,3 day ahead inc,0.025,9,18,quantile
+Indiana,4 day ahead inc,0.025,10,18,quantile
+Indiana,5 day ahead inc,0.025,11,18,quantile
+Indiana,6 day ahead inc,0.025,12,18,quantile
+Indiana,7 day ahead inc,0.025,14,18,quantile
+Iowa,1 day ahead inc,0.025,1,19,quantile
+Iowa,2 day ahead inc,0.025,1,19,quantile
+Iowa,3 day ahead inc,0.025,1,19,quantile
+Iowa,4 day ahead inc,0.025,1,19,quantile
+Iowa,5 day ahead inc,0.025,2,19,quantile
+Iowa,6 day ahead inc,0.025,2,19,quantile
+Iowa,7 day ahead inc,0.025,2,19,quantile
+Kansas,1 day ahead inc,0.025,1,20,quantile
+Kansas,2 day ahead inc,0.025,2,20,quantile
+Kansas,3 day ahead inc,0.025,2,20,quantile
+Kansas,4 day ahead inc,0.025,2,20,quantile
+Kansas,5 day ahead inc,0.025,3,20,quantile
+Kansas,6 day ahead inc,0.025,3,20,quantile
+Kansas,7 day ahead inc,0.025,4,20,quantile
+Kentucky,1 day ahead inc,0.025,1,21,quantile
+Kentucky,2 day ahead inc,0.025,1,21,quantile
+Kentucky,3 day ahead inc,0.025,2,21,quantile
+Kentucky,4 day ahead inc,0.025,2,21,quantile
+Kentucky,5 day ahead inc,0.025,2,21,quantile
+Kentucky,6 day ahead inc,0.025,2,21,quantile
+Kentucky,7 day ahead inc,0.025,2,21,quantile
+Louisiana,1 day ahead inc,0.025,28,22,quantile
+Louisiana,2 day ahead inc,0.025,30,22,quantile
+Louisiana,3 day ahead inc,0.025,33,22,quantile
+Louisiana,4 day ahead inc,0.025,35,22,quantile
+Louisiana,5 day ahead inc,0.025,37,22,quantile
+Louisiana,6 day ahead inc,0.025,38,22,quantile
+Louisiana,7 day ahead inc,0.025,38,22,quantile
+Maine,1 day ahead inc,0.025,1,23,quantile
+Maine,2 day ahead inc,0.025,2,23,quantile
+Maine,3 day ahead inc,0.025,2,23,quantile
+Maine,4 day ahead inc,0.025,3,23,quantile
+Maine,5 day ahead inc,0.025,4,23,quantile
+Maine,6 day ahead inc,0.025,5,23,quantile
+Maine,7 day ahead inc,0.025,6,23,quantile
+Maryland,1 day ahead inc,0.025,1,24,quantile
+Maryland,2 day ahead inc,0.025,2,24,quantile
+Maryland,3 day ahead inc,0.025,2,24,quantile
+Maryland,4 day ahead inc,0.025,2,24,quantile
+Maryland,5 day ahead inc,0.025,2,24,quantile
+Maryland,6 day ahead inc,0.025,2,24,quantile
+Maryland,7 day ahead inc,0.025,3,24,quantile
+Massachusetts,1 day ahead inc,0.025,13,25,quantile
+Massachusetts,2 day ahead inc,0.025,16,25,quantile
+Massachusetts,3 day ahead inc,0.025,18,25,quantile
+Massachusetts,4 day ahead inc,0.025,21,25,quantile
+Massachusetts,5 day ahead inc,0.025,24,25,quantile
+Massachusetts,6 day ahead inc,0.025,28,25,quantile
+Massachusetts,7 day ahead inc,0.025,31,25,quantile
+Michigan,1 day ahead inc,0.025,37,26,quantile
+Michigan,2 day ahead inc,0.025,42,26,quantile
+Michigan,3 day ahead inc,0.025,48,26,quantile
+Michigan,4 day ahead inc,0.025,54,26,quantile
+Michigan,5 day ahead inc,0.025,60,26,quantile
+Michigan,6 day ahead inc,0.025,66,26,quantile
+Michigan,7 day ahead inc,0.025,73,26,quantile
+Minnesota,1 day ahead inc,0.025,3,27,quantile
+Minnesota,2 day ahead inc,0.025,4,27,quantile
+Minnesota,3 day ahead inc,0.025,5,27,quantile
+Minnesota,4 day ahead inc,0.025,6,27,quantile
+Minnesota,5 day ahead inc,0.025,7,27,quantile
+Minnesota,6 day ahead inc,0.025,8,27,quantile
+Minnesota,7 day ahead inc,0.025,10,27,quantile
+Mississippi,1 day ahead inc,0.025,2,28,quantile
+Mississippi,2 day ahead inc,0.025,3,28,quantile
+Mississippi,3 day ahead inc,0.025,3,28,quantile
+Mississippi,4 day ahead inc,0.025,4,28,quantile
+Mississippi,5 day ahead inc,0.025,4,28,quantile
+Mississippi,6 day ahead inc,0.025,5,28,quantile
+Mississippi,7 day ahead inc,0.025,6,28,quantile
+Missouri,1 day ahead inc,0.025,2,29,quantile
+Missouri,2 day ahead inc,0.025,2,29,quantile
+Missouri,3 day ahead inc,0.025,2,29,quantile
+Missouri,4 day ahead inc,0.025,3,29,quantile
+Missouri,5 day ahead inc,0.025,3,29,quantile
+Missouri,6 day ahead inc,0.025,3,29,quantile
+Missouri,7 day ahead inc,0.025,3,29,quantile
+Montana,1 day ahead inc,0.025,0,30,quantile
+Montana,2 day ahead inc,0.025,0,30,quantile
+Montana,3 day ahead inc,0.025,0,30,quantile
+Montana,4 day ahead inc,0.025,0,30,quantile
+Montana,5 day ahead inc,0.025,0,30,quantile
+Montana,6 day ahead inc,0.025,0,30,quantile
+Montana,7 day ahead inc,0.025,0,30,quantile
+Nebraska,1 day ahead inc,0.025,0,31,quantile
+Nebraska,2 day ahead inc,0.025,0,31,quantile
+Nebraska,3 day ahead inc,0.025,0,31,quantile
+Nebraska,4 day ahead inc,0.025,0,31,quantile
+Nebraska,5 day ahead inc,0.025,0,31,quantile
+Nebraska,6 day ahead inc,0.025,0,31,quantile
+Nebraska,7 day ahead inc,0.025,0,31,quantile
+Nevada,1 day ahead inc,0.025,3,32,quantile
+Nevada,2 day ahead inc,0.025,3,32,quantile
+Nevada,3 day ahead inc,0.025,4,32,quantile
+Nevada,4 day ahead inc,0.025,4,32,quantile
+Nevada,5 day ahead inc,0.025,5,32,quantile
+Nevada,6 day ahead inc,0.025,5,32,quantile
+Nevada,7 day ahead inc,0.025,6,32,quantile
+New Hampshire,1 day ahead inc,0.025,0,33,quantile
+New Hampshire,2 day ahead inc,0.025,0,33,quantile
+New Hampshire,3 day ahead inc,0.025,0,33,quantile
+New Hampshire,4 day ahead inc,0.025,0,33,quantile
+New Hampshire,5 day ahead inc,0.025,0,33,quantile
+New Hampshire,6 day ahead inc,0.025,0,33,quantile
+New Hampshire,7 day ahead inc,0.025,0,33,quantile
+New Jersey,1 day ahead inc,0.025,38,34,quantile
+New Jersey,2 day ahead inc,0.025,43,34,quantile
+New Jersey,3 day ahead inc,0.025,49,34,quantile
+New Jersey,4 day ahead inc,0.025,54,34,quantile
+New Jersey,5 day ahead inc,0.025,59.975,34,quantile
+New Jersey,6 day ahead inc,0.025,64.975,34,quantile
+New Jersey,7 day ahead inc,0.025,69,34,quantile
+New Mexico,1 day ahead inc,0.025,0,35,quantile
+New Mexico,2 day ahead inc,0.025,0,35,quantile
+New Mexico,3 day ahead inc,0.025,0,35,quantile
+New Mexico,4 day ahead inc,0.025,0,35,quantile
+New Mexico,5 day ahead inc,0.025,0,35,quantile
+New Mexico,6 day ahead inc,0.025,0,35,quantile
+New Mexico,7 day ahead inc,0.025,0,35,quantile
+New York,1 day ahead inc,0.025,254,36,quantile
+New York,2 day ahead inc,0.025,295,36,quantile
+New York,3 day ahead inc,0.025,335,36,quantile
+New York,4 day ahead inc,0.025,371,36,quantile
+New York,5 day ahead inc,0.025,400,36,quantile
+New York,6 day ahead inc,0.025,421.975,36,quantile
+New York,7 day ahead inc,0.025,441.95,36,quantile
+North Carolina,1 day ahead inc,0.025,2,37,quantile
+North Carolina,2 day ahead inc,0.025,3,37,quantile
+North Carolina,3 day ahead inc,0.025,4,37,quantile
+North Carolina,4 day ahead inc,0.025,4,37,quantile
+North Carolina,5 day ahead inc,0.025,5,37,quantile
+North Carolina,6 day ahead inc,0.025,6,37,quantile
+North Carolina,7 day ahead inc,0.025,7,37,quantile
+North Dakota,1 day ahead inc,0.025,0,38,quantile
+North Dakota,2 day ahead inc,0.025,0,38,quantile
+North Dakota,3 day ahead inc,0.025,0,38,quantile
+North Dakota,4 day ahead inc,0.025,0,38,quantile
+North Dakota,5 day ahead inc,0.025,0,38,quantile
+North Dakota,6 day ahead inc,0.025,0,38,quantile
+North Dakota,7 day ahead inc,0.025,0,38,quantile
+Ohio,1 day ahead inc,0.025,7,39,quantile
+Ohio,2 day ahead inc,0.025,8,39,quantile
+Ohio,3 day ahead inc,0.025,9,39,quantile
+Ohio,4 day ahead inc,0.025,11,39,quantile
+Ohio,5 day ahead inc,0.025,12,39,quantile
+Ohio,6 day ahead inc,0.025,14,39,quantile
+Ohio,7 day ahead inc,0.025,15,39,quantile
+Oklahoma,1 day ahead inc,0.025,5,40,quantile
+Oklahoma,2 day ahead inc,0.025,5,40,quantile
+Oklahoma,3 day ahead inc,0.025,6,40,quantile
+Oklahoma,4 day ahead inc,0.025,7,40,quantile
+Oklahoma,5 day ahead inc,0.025,8,40,quantile
+Oklahoma,6 day ahead inc,0.025,10,40,quantile
+Oklahoma,7 day ahead inc,0.025,11,40,quantile
+Oregon,1 day ahead inc,0.025,2,41,quantile
+Oregon,2 day ahead inc,0.025,2,41,quantile
+Oregon,3 day ahead inc,0.025,2,41,quantile
+Oregon,4 day ahead inc,0.025,3,41,quantile
+Oregon,5 day ahead inc,0.025,3,41,quantile
+Oregon,6 day ahead inc,0.025,3,41,quantile
+Oregon,7 day ahead inc,0.025,3,41,quantile
+Pennsylvania,1 day ahead inc,0.025,11,42,quantile
+Pennsylvania,2 day ahead inc,0.025,13,42,quantile
+Pennsylvania,3 day ahead inc,0.025,15,42,quantile
+Pennsylvania,4 day ahead inc,0.025,18,42,quantile
+Pennsylvania,5 day ahead inc,0.025,20,42,quantile
+Pennsylvania,6 day ahead inc,0.025,23,42,quantile
+Pennsylvania,7 day ahead inc,0.025,26,42,quantile
+Rhode Island,1 day ahead inc,0.025,1,44,quantile
+Rhode Island,2 day ahead inc,0.025,1,44,quantile
+Rhode Island,3 day ahead inc,0.025,1,44,quantile
+Rhode Island,4 day ahead inc,0.025,2,44,quantile
+Rhode Island,5 day ahead inc,0.025,2,44,quantile
+Rhode Island,6 day ahead inc,0.025,2,44,quantile
+Rhode Island,7 day ahead inc,0.025,2,44,quantile
+South Carolina,1 day ahead inc,0.025,3,45,quantile
+South Carolina,2 day ahead inc,0.025,4,45,quantile
+South Carolina,3 day ahead inc,0.025,4,45,quantile
+South Carolina,4 day ahead inc,0.025,5,45,quantile
+South Carolina,5 day ahead inc,0.025,6,45,quantile
+South Carolina,6 day ahead inc,0.025,7,45,quantile
+South Carolina,7 day ahead inc,0.025,8,45,quantile
+South Dakota,1 day ahead inc,0.025,0,46,quantile
+South Dakota,2 day ahead inc,0.025,0,46,quantile
+South Dakota,3 day ahead inc,0.025,0,46,quantile
+South Dakota,4 day ahead inc,0.025,0,46,quantile
+South Dakota,5 day ahead inc,0.025,0,46,quantile
+South Dakota,6 day ahead inc,0.025,0,46,quantile
+South Dakota,7 day ahead inc,0.025,0,46,quantile
+Tennessee,1 day ahead inc,0.025,2,47,quantile
+Tennessee,2 day ahead inc,0.025,2,47,quantile
+Tennessee,3 day ahead inc,0.025,3,47,quantile
+Tennessee,4 day ahead inc,0.025,3,47,quantile
+Tennessee,5 day ahead inc,0.025,4,47,quantile
+Tennessee,6 day ahead inc,0.025,5,47,quantile
+Tennessee,7 day ahead inc,0.025,6,47,quantile
+Texas,1 day ahead inc,0.025,5,48,quantile
+Texas,2 day ahead inc,0.025,6,48,quantile
+Texas,3 day ahead inc,0.025,7,48,quantile
+Texas,4 day ahead inc,0.025,8,48,quantile
+Texas,5 day ahead inc,0.025,8.975,48,quantile
+Texas,6 day ahead inc,0.025,10,48,quantile
+Texas,7 day ahead inc,0.025,11,48,quantile
+Utah,1 day ahead inc,0.025,0,49,quantile
+Utah,2 day ahead inc,0.025,0,49,quantile
+Utah,3 day ahead inc,0.025,0,49,quantile
+Utah,4 day ahead inc,0.025,0,49,quantile
+Utah,5 day ahead inc,0.025,0,49,quantile
+Utah,6 day ahead inc,0.025,0,49,quantile
+Utah,7 day ahead inc,0.025,1,49,quantile
+Vermont,1 day ahead inc,0.025,2,50,quantile
+Vermont,2 day ahead inc,0.025,2,50,quantile
+Vermont,3 day ahead inc,0.025,2,50,quantile
+Vermont,4 day ahead inc,0.025,2,50,quantile
+Vermont,5 day ahead inc,0.025,2,50,quantile
+Vermont,6 day ahead inc,0.025,2,50,quantile
+Vermont,7 day ahead inc,0.025,2,50,quantile
+Virginia,1 day ahead inc,0.025,2,51,quantile
+Virginia,2 day ahead inc,0.025,2,51,quantile
+Virginia,3 day ahead inc,0.025,2,51,quantile
+Virginia,4 day ahead inc,0.025,2,51,quantile
+Virginia,5 day ahead inc,0.025,2,51,quantile
+Virginia,6 day ahead inc,0.025,3,51,quantile
+Virginia,7 day ahead inc,0.025,3,51,quantile
+Washington,1 day ahead inc,0.025,14,53,quantile
+Washington,2 day ahead inc,0.025,14,53,quantile
+Washington,3 day ahead inc,0.025,14,53,quantile
+Washington,4 day ahead inc,0.025,14,53,quantile
+Washington,5 day ahead inc,0.025,14,53,quantile
+Washington,6 day ahead inc,0.025,13,53,quantile
+Washington,7 day ahead inc,0.025,13,53,quantile
+West Virginia,1 day ahead inc,0.025,0,54,quantile
+West Virginia,2 day ahead inc,0.025,0,54,quantile
+West Virginia,3 day ahead inc,0.025,0,54,quantile
+West Virginia,4 day ahead inc,0.025,0,54,quantile
+West Virginia,5 day ahead inc,0.025,0,54,quantile
+West Virginia,6 day ahead inc,0.025,0,54,quantile
+West Virginia,7 day ahead inc,0.025,0,54,quantile
+Wisconsin,1 day ahead inc,0.025,3,55,quantile
+Wisconsin,2 day ahead inc,0.025,3,55,quantile
+Wisconsin,3 day ahead inc,0.025,3,55,quantile
+Wisconsin,4 day ahead inc,0.025,3,55,quantile
+Wisconsin,5 day ahead inc,0.025,4,55,quantile
+Wisconsin,6 day ahead inc,0.025,4,55,quantile
+Wisconsin,7 day ahead inc,0.025,4,55,quantile
+Wyoming,1 day ahead inc,0.025,0,56,quantile
+Wyoming,2 day ahead inc,0.025,0,56,quantile
+Wyoming,3 day ahead inc,0.025,0,56,quantile
+Wyoming,4 day ahead inc,0.025,0,56,quantile
+Wyoming,5 day ahead inc,0.025,0,56,quantile
+Wyoming,6 day ahead inc,0.025,0,56,quantile
+Wyoming,7 day ahead inc,0.025,0,56,quantile
+Alabama,1 day ahead inc,0.975,4,1,quantile
+Alabama,2 day ahead inc,0.975,5.02499999999998,1,quantile
+Alabama,3 day ahead inc,0.975,7,1,quantile
+Alabama,4 day ahead inc,0.975,9,1,quantile
+Alabama,5 day ahead inc,0.975,12,1,quantile
+Alabama,6 day ahead inc,0.975,15,1,quantile
+Alabama,7 day ahead inc,0.975,18,1,quantile
+Alaska,1 day ahead inc,0.975,0,2,quantile
+Alaska,2 day ahead inc,0.975,0,2,quantile
+Alaska,3 day ahead inc,0.975,0,2,quantile
+Alaska,4 day ahead inc,0.975,0,2,quantile
+Alaska,5 day ahead inc,0.975,0,2,quantile
+Alaska,6 day ahead inc,0.975,0,2,quantile
+Alaska,7 day ahead inc,0.975,0,2,quantile
+Arizona,1 day ahead inc,0.975,5,4,quantile
+Arizona,2 day ahead inc,0.975,6,4,quantile
+Arizona,3 day ahead inc,0.975,7,4,quantile
+Arizona,4 day ahead inc,0.975,8,4,quantile
+Arizona,5 day ahead inc,0.975,10,4,quantile
+Arizona,6 day ahead inc,0.975,11,4,quantile
+Arizona,7 day ahead inc,0.975,13,4,quantile
+Arkansas,1 day ahead inc,0.975,2,5,quantile
+Arkansas,2 day ahead inc,0.975,3,5,quantile
+Arkansas,3 day ahead inc,0.975,4,5,quantile
+Arkansas,4 day ahead inc,0.975,5,5,quantile
+Arkansas,5 day ahead inc,0.975,6,5,quantile
+Arkansas,6 day ahead inc,0.975,8,5,quantile
+Arkansas,7 day ahead inc,0.975,9,5,quantile
+California,1 day ahead inc,0.975,26,6,quantile
+California,2 day ahead inc,0.975,30,6,quantile
+California,3 day ahead inc,0.975,34,6,quantile
+California,4 day ahead inc,0.975,38,6,quantile
+California,5 day ahead inc,0.975,42,6,quantile
+California,6 day ahead inc,0.975,46,6,quantile
+California,7 day ahead inc,0.975,51,6,quantile
+Colorado,1 day ahead inc,0.975,14,8,quantile
+Colorado,2 day ahead inc,0.975,18,8,quantile
+Colorado,3 day ahead inc,0.975,22,8,quantile
+Colorado,4 day ahead inc,0.975,26,8,quantile
+Colorado,5 day ahead inc,0.975,31,8,quantile
+Colorado,6 day ahead inc,0.975,36,8,quantile
+Colorado,7 day ahead inc,0.975,41,8,quantile
+Connecticut,1 day ahead inc,0.975,7,9,quantile
+Connecticut,2 day ahead inc,0.975,8,9,quantile
+Connecticut,3 day ahead inc,0.975,9,9,quantile
+Connecticut,4 day ahead inc,0.975,11,9,quantile
+Connecticut,5 day ahead inc,0.975,12,9,quantile
+Connecticut,6 day ahead inc,0.975,13,9,quantile
+Connecticut,7 day ahead inc,0.975,15,9,quantile
+Delaware,1 day ahead inc,0.975,2,10,quantile
+Delaware,2 day ahead inc,0.975,3,10,quantile
+Delaware,3 day ahead inc,0.975,4,10,quantile
+Delaware,4 day ahead inc,0.975,5,10,quantile
+Delaware,5 day ahead inc,0.975,6,10,quantile
+Delaware,6 day ahead inc,0.975,8,10,quantile
+Delaware,7 day ahead inc,0.975,9,10,quantile
+District of Columbia,1 day ahead inc,0.975,1,11,quantile
+District of Columbia,2 day ahead inc,0.975,1,11,quantile
+District of Columbia,3 day ahead inc,0.975,1,11,quantile
+District of Columbia,4 day ahead inc,0.975,2,11,quantile
+District of Columbia,5 day ahead inc,0.975,2,11,quantile
+District of Columbia,6 day ahead inc,0.975,2,11,quantile
+District of Columbia,7 day ahead inc,0.975,2,11,quantile
+Florida,1 day ahead inc,0.975,15.025,12,quantile
+Florida,2 day ahead inc,0.975,19,12,quantile
+Florida,3 day ahead inc,0.975,22.025,12,quantile
+Florida,4 day ahead inc,0.975,26,12,quantile
+Florida,5 day ahead inc,0.975,31,12,quantile
+Florida,6 day ahead inc,0.975,36,12,quantile
+Florida,7 day ahead inc,0.975,42,12,quantile
+Georgia,1 day ahead inc,0.975,16,13,quantile
+Georgia,2 day ahead inc,0.975,18,13,quantile
+Georgia,3 day ahead inc,0.975,21,13,quantile
+Georgia,4 day ahead inc,0.975,24,13,quantile
+Georgia,5 day ahead inc,0.975,27,13,quantile
+Georgia,6 day ahead inc,0.975,31,13,quantile
+Georgia,7 day ahead inc,0.975,34,13,quantile
+Hawaii,1 day ahead inc,0.975,0,15,quantile
+Hawaii,2 day ahead inc,0.975,0,15,quantile
+Hawaii,3 day ahead inc,0.975,0,15,quantile
+Hawaii,4 day ahead inc,0.975,1,15,quantile
+Hawaii,5 day ahead inc,0.975,1,15,quantile
+Hawaii,6 day ahead inc,0.975,1,15,quantile
+Hawaii,7 day ahead inc,0.975,1,15,quantile
+Idaho,1 day ahead inc,0.975,1,16,quantile
+Idaho,2 day ahead inc,0.975,1,16,quantile
+Idaho,3 day ahead inc,0.975,2,16,quantile
+Idaho,4 day ahead inc,0.975,2,16,quantile
+Idaho,5 day ahead inc,0.975,2,16,quantile
+Idaho,6 day ahead inc,0.975,2,16,quantile
+Idaho,7 day ahead inc,0.975,3,16,quantile
+Illinois,1 day ahead inc,0.975,19,17,quantile
+Illinois,2 day ahead inc,0.975,23,17,quantile
+Illinois,3 day ahead inc,0.975,28,17,quantile
+Illinois,4 day ahead inc,0.975,33,17,quantile
+Illinois,5 day ahead inc,0.975,39,17,quantile
+Illinois,6 day ahead inc,0.975,45,17,quantile
+Illinois,7 day ahead inc,0.975,51,17,quantile
+Indiana,1 day ahead inc,0.975,8,18,quantile
+Indiana,2 day ahead inc,0.975,9,18,quantile
+Indiana,3 day ahead inc,0.975,10,18,quantile
+Indiana,4 day ahead inc,0.975,12,18,quantile
+Indiana,5 day ahead inc,0.975,14,18,quantile
+Indiana,6 day ahead inc,0.975,16,18,quantile
+Indiana,7 day ahead inc,0.975,18,18,quantile
+Iowa,1 day ahead inc,0.975,1,19,quantile
+Iowa,2 day ahead inc,0.975,1,19,quantile
+Iowa,3 day ahead inc,0.975,2,19,quantile
+Iowa,4 day ahead inc,0.975,2,19,quantile
+Iowa,5 day ahead inc,0.975,2,19,quantile
+Iowa,6 day ahead inc,0.975,3,19,quantile
+Iowa,7 day ahead inc,0.975,3,19,quantile
+Kansas,1 day ahead inc,0.975,2,20,quantile
+Kansas,2 day ahead inc,0.975,2,20,quantile
+Kansas,3 day ahead inc,0.975,3,20,quantile
+Kansas,4 day ahead inc,0.975,3,20,quantile
+Kansas,5 day ahead inc,0.975,4,20,quantile
+Kansas,6 day ahead inc,0.975,4,20,quantile
+Kansas,7 day ahead inc,0.975,5,20,quantile
+Kentucky,1 day ahead inc,0.975,2,21,quantile
+Kentucky,2 day ahead inc,0.975,2,21,quantile
+Kentucky,3 day ahead inc,0.975,2,21,quantile
+Kentucky,4 day ahead inc,0.975,3,21,quantile
+Kentucky,5 day ahead inc,0.975,3,21,quantile
+Kentucky,6 day ahead inc,0.975,3,21,quantile
+Kentucky,7 day ahead inc,0.975,4,21,quantile
+Louisiana,1 day ahead inc,0.975,40,22,quantile
+Louisiana,2 day ahead inc,0.975,49,22,quantile
+Louisiana,3 day ahead inc,0.975,58,22,quantile
+Louisiana,4 day ahead inc,0.975,69,22,quantile
+Louisiana,5 day ahead inc,0.975,82,22,quantile
+Louisiana,6 day ahead inc,0.975,94,22,quantile
+Louisiana,7 day ahead inc,0.975,106,22,quantile
+Maine,1 day ahead inc,0.975,2,23,quantile
+Maine,2 day ahead inc,0.975,3,23,quantile
+Maine,3 day ahead inc,0.975,4,23,quantile
+Maine,4 day ahead inc,0.975,5,23,quantile
+Maine,5 day ahead inc,0.975,7,23,quantile
+Maine,6 day ahead inc,0.975,9.02499999999998,23,quantile
+Maine,7 day ahead inc,0.975,12.025,23,quantile
+Maryland,1 day ahead inc,0.975,3,24,quantile
+Maryland,2 day ahead inc,0.975,3,24,quantile
+Maryland,3 day ahead inc,0.975,4,24,quantile
+Maryland,4 day ahead inc,0.975,5,24,quantile
+Maryland,5 day ahead inc,0.975,6,24,quantile
+Maryland,6 day ahead inc,0.975,6.02499999999998,24,quantile
+Maryland,7 day ahead inc,0.975,7.02499999999998,24,quantile
+Massachusetts,1 day ahead inc,0.975,15,25,quantile
+Massachusetts,2 day ahead inc,0.975,18,25,quantile
+Massachusetts,3 day ahead inc,0.975,22,25,quantile
+Massachusetts,4 day ahead inc,0.975,26,25,quantile
+Massachusetts,5 day ahead inc,0.975,31,25,quantile
+Massachusetts,6 day ahead inc,0.975,37,25,quantile
+Massachusetts,7 day ahead inc,0.975,43,25,quantile
+Michigan,1 day ahead inc,0.975,47,26,quantile
+Michigan,2 day ahead inc,0.975,59,26,quantile
+Michigan,3 day ahead inc,0.975,73,26,quantile
+Michigan,4 day ahead inc,0.975,89,26,quantile
+Michigan,5 day ahead inc,0.975,106,26,quantile
+Michigan,6 day ahead inc,0.975,124,26,quantile
+Michigan,7 day ahead inc,0.975,144,26,quantile
+Minnesota,1 day ahead inc,0.975,4,27,quantile
+Minnesota,2 day ahead inc,0.975,5,27,quantile
+Minnesota,3 day ahead inc,0.975,7,27,quantile
+Minnesota,4 day ahead inc,0.975,9,27,quantile
+Minnesota,5 day ahead inc,0.975,12,27,quantile
+Minnesota,6 day ahead inc,0.975,15,27,quantile
+Minnesota,7 day ahead inc,0.975,19,27,quantile
+Mississippi,1 day ahead inc,0.975,7,28,quantile
+Mississippi,2 day ahead inc,0.975,9,28,quantile
+Mississippi,3 day ahead inc,0.975,12,28,quantile
+Mississippi,4 day ahead inc,0.975,16,28,quantile
+Mississippi,5 day ahead inc,0.975,20,28,quantile
+Mississippi,6 day ahead inc,0.975,25,28,quantile
+Mississippi,7 day ahead inc,0.975,30,28,quantile
+Missouri,1 day ahead inc,0.975,2,29,quantile
+Missouri,2 day ahead inc,0.975,3,29,quantile
+Missouri,3 day ahead inc,0.975,3,29,quantile
+Missouri,4 day ahead inc,0.975,3,29,quantile
+Missouri,5 day ahead inc,0.975,4,29,quantile
+Missouri,6 day ahead inc,0.975,4,29,quantile
+Missouri,7 day ahead inc,0.975,4.02499999999998,29,quantile
+Montana,1 day ahead inc,0.975,0,30,quantile
+Montana,2 day ahead inc,0.975,0,30,quantile
+Montana,3 day ahead inc,0.975,0,30,quantile
+Montana,4 day ahead inc,0.975,0,30,quantile
+Montana,5 day ahead inc,0.975,0,30,quantile
+Montana,6 day ahead inc,0.975,1,30,quantile
+Montana,7 day ahead inc,0.975,1,30,quantile
+Nebraska,1 day ahead inc,0.975,0,31,quantile
+Nebraska,2 day ahead inc,0.975,1,31,quantile
+Nebraska,3 day ahead inc,0.975,1,31,quantile
+Nebraska,4 day ahead inc,0.975,1,31,quantile
+Nebraska,5 day ahead inc,0.975,1,31,quantile
+Nebraska,6 day ahead inc,0.975,1,31,quantile
+Nebraska,7 day ahead inc,0.975,1,31,quantile
+Nevada,1 day ahead inc,0.975,3,32,quantile
+Nevada,2 day ahead inc,0.975,4,32,quantile
+Nevada,3 day ahead inc,0.975,5,32,quantile
+Nevada,4 day ahead inc,0.975,5,32,quantile
+Nevada,5 day ahead inc,0.975,6,32,quantile
+Nevada,6 day ahead inc,0.975,7,32,quantile
+Nevada,7 day ahead inc,0.975,8,32,quantile
+New Hampshire,1 day ahead inc,0.975,0,33,quantile
+New Hampshire,2 day ahead inc,0.975,0,33,quantile
+New Hampshire,3 day ahead inc,0.975,0,33,quantile
+New Hampshire,4 day ahead inc,0.975,0,33,quantile
+New Hampshire,5 day ahead inc,0.975,1,33,quantile
+New Hampshire,6 day ahead inc,0.975,1,33,quantile
+New Hampshire,7 day ahead inc,0.975,1,33,quantile
+New Jersey,1 day ahead inc,0.975,44,34,quantile
+New Jersey,2 day ahead inc,0.975,53,34,quantile
+New Jersey,3 day ahead inc,0.975,62,34,quantile
+New Jersey,4 day ahead inc,0.975,72,34,quantile
+New Jersey,5 day ahead inc,0.975,84,34,quantile
+New Jersey,6 day ahead inc,0.975,95,34,quantile
+New Jersey,7 day ahead inc,0.975,108,34,quantile
+New Mexico,1 day ahead inc,0.975,0,35,quantile
+New Mexico,2 day ahead inc,0.975,1,35,quantile
+New Mexico,3 day ahead inc,0.975,1,35,quantile
+New Mexico,4 day ahead inc,0.975,1,35,quantile
+New Mexico,5 day ahead inc,0.975,1,35,quantile
+New Mexico,6 day ahead inc,0.975,1,35,quantile
+New Mexico,7 day ahead inc,0.975,2,35,quantile
+New York,1 day ahead inc,0.975,302.025,36,quantile
+New York,2 day ahead inc,0.975,372,36,quantile
+New York,3 day ahead inc,0.975,450,36,quantile
+New York,4 day ahead inc,0.975,535,36,quantile
+New York,5 day ahead inc,0.975,628,36,quantile
+New York,6 day ahead inc,0.975,724,36,quantile
+New York,7 day ahead inc,0.975,817.025,36,quantile
+North Carolina,1 day ahead inc,0.975,3,37,quantile
+North Carolina,2 day ahead inc,0.975,4,37,quantile
+North Carolina,3 day ahead inc,0.975,5,37,quantile
+North Carolina,4 day ahead inc,0.975,7,37,quantile
+North Carolina,5 day ahead inc,0.975,9,37,quantile
+North Carolina,6 day ahead inc,0.975,12,37,quantile
+North Carolina,7 day ahead inc,0.975,14,37,quantile
+North Dakota,1 day ahead inc,0.975,0,38,quantile
+North Dakota,2 day ahead inc,0.975,0,38,quantile
+North Dakota,3 day ahead inc,0.975,0,38,quantile
+North Dakota,4 day ahead inc,0.975,0,38,quantile
+North Dakota,5 day ahead inc,0.975,0,38,quantile
+North Dakota,6 day ahead inc,0.975,0,38,quantile
+North Dakota,7 day ahead inc,0.975,1,38,quantile
+Ohio,1 day ahead inc,0.975,8,39,quantile
+Ohio,2 day ahead inc,0.975,9,39,quantile
+Ohio,3 day ahead inc,0.975,11,39,quantile
+Ohio,4 day ahead inc,0.975,12,39,quantile
+Ohio,5 day ahead inc,0.975,14,39,quantile
+Ohio,6 day ahead inc,0.975,16,39,quantile
+Ohio,7 day ahead inc,0.975,19,39,quantile
+Oklahoma,1 day ahead inc,0.975,6,40,quantile
+Oklahoma,2 day ahead inc,0.975,8,40,quantile
+Oklahoma,3 day ahead inc,0.975,10,40,quantile
+Oklahoma,4 day ahead inc,0.975,12,40,quantile
+Oklahoma,5 day ahead inc,0.975,15,40,quantile
+Oklahoma,6 day ahead inc,0.975,18,40,quantile
+Oklahoma,7 day ahead inc,0.975,22,40,quantile
+Oregon,1 day ahead inc,0.975,2,41,quantile
+Oregon,2 day ahead inc,0.975,2,41,quantile
+Oregon,3 day ahead inc,0.975,3,41,quantile
+Oregon,4 day ahead inc,0.975,3,41,quantile
+Oregon,5 day ahead inc,0.975,3,41,quantile
+Oregon,6 day ahead inc,0.975,4,41,quantile
+Oregon,7 day ahead inc,0.975,4,41,quantile
+Pennsylvania,1 day ahead inc,0.975,13,42,quantile
+Pennsylvania,2 day ahead inc,0.975,16,42,quantile
+Pennsylvania,3 day ahead inc,0.975,19,42,quantile
+Pennsylvania,4 day ahead inc,0.975,23,42,quantile
+Pennsylvania,5 day ahead inc,0.975,27,42,quantile
+Pennsylvania,6 day ahead inc,0.975,32,42,quantile
+Pennsylvania,7 day ahead inc,0.975,38,42,quantile
+Rhode Island,1 day ahead inc,0.975,1,44,quantile
+Rhode Island,2 day ahead inc,0.975,1,44,quantile
+Rhode Island,3 day ahead inc,0.975,2,44,quantile
+Rhode Island,4 day ahead inc,0.975,2,44,quantile
+Rhode Island,5 day ahead inc,0.975,3,44,quantile
+Rhode Island,6 day ahead inc,0.975,3,44,quantile
+Rhode Island,7 day ahead inc,0.975,4,44,quantile
+South Carolina,1 day ahead inc,0.975,4,45,quantile
+South Carolina,2 day ahead inc,0.975,4,45,quantile
+South Carolina,3 day ahead inc,0.975,5,45,quantile
+South Carolina,4 day ahead inc,0.975,6,45,quantile
+South Carolina,5 day ahead inc,0.975,7,45,quantile
+South Carolina,6 day ahead inc,0.975,8,45,quantile
+South Carolina,7 day ahead inc,0.975,9,45,quantile
+South Dakota,1 day ahead inc,0.975,0,46,quantile
+South Dakota,2 day ahead inc,0.975,0,46,quantile
+South Dakota,3 day ahead inc,0.975,0,46,quantile
+South Dakota,4 day ahead inc,0.975,0,46,quantile
+South Dakota,5 day ahead inc,0.975,0,46,quantile
+South Dakota,6 day ahead inc,0.975,1,46,quantile
+South Dakota,7 day ahead inc,0.975,1,46,quantile
+Tennessee,1 day ahead inc,0.975,2,47,quantile
+Tennessee,2 day ahead inc,0.975,3,47,quantile
+Tennessee,3 day ahead inc,0.975,3,47,quantile
+Tennessee,4 day ahead inc,0.975,4,47,quantile
+Tennessee,5 day ahead inc,0.975,5,47,quantile
+Tennessee,6 day ahead inc,0.975,6,47,quantile
+Tennessee,7 day ahead inc,0.975,7,47,quantile
+Texas,1 day ahead inc,0.975,9,48,quantile
+Texas,2 day ahead inc,0.975,11,48,quantile
+Texas,3 day ahead inc,0.975,12,48,quantile
+Texas,4 day ahead inc,0.975,15,48,quantile
+Texas,5 day ahead inc,0.975,17,48,quantile
+Texas,6 day ahead inc,0.975,20,48,quantile
+Texas,7 day ahead inc,0.975,23,48,quantile
+Utah,1 day ahead inc,0.975,0,49,quantile
+Utah,2 day ahead inc,0.975,1,49,quantile
+Utah,3 day ahead inc,0.975,1,49,quantile
+Utah,4 day ahead inc,0.975,1,49,quantile
+Utah,5 day ahead inc,0.975,1,49,quantile
+Utah,6 day ahead inc,0.975,2,49,quantile
+Utah,7 day ahead inc,0.975,2,49,quantile
+Vermont,1 day ahead inc,0.975,2,50,quantile
+Vermont,2 day ahead inc,0.975,2,50,quantile
+Vermont,3 day ahead inc,0.975,3,50,quantile
+Vermont,4 day ahead inc,0.975,3,50,quantile
+Vermont,5 day ahead inc,0.975,3,50,quantile
+Vermont,6 day ahead inc,0.975,4,50,quantile
+Vermont,7 day ahead inc,0.975,4,50,quantile
+Virginia,1 day ahead inc,0.975,5,51,quantile
+Virginia,2 day ahead inc,0.975,6,51,quantile
+Virginia,3 day ahead inc,0.975,8,51,quantile
+Virginia,4 day ahead inc,0.975,10,51,quantile
+Virginia,5 day ahead inc,0.975,12,51,quantile
+Virginia,6 day ahead inc,0.975,14,51,quantile
+Virginia,7 day ahead inc,0.975,17,51,quantile
+Washington,1 day ahead inc,0.975,20,53,quantile
+Washington,2 day ahead inc,0.975,21.025,53,quantile
+Washington,3 day ahead inc,0.975,23,53,quantile
+Washington,4 day ahead inc,0.975,25,53,quantile
+Washington,5 day ahead inc,0.975,27,53,quantile
+Washington,6 day ahead inc,0.975,29.025,53,quantile
+Washington,7 day ahead inc,0.975,32,53,quantile
+West Virginia,1 day ahead inc,0.975,1,54,quantile
+West Virginia,2 day ahead inc,0.975,1,54,quantile
+West Virginia,3 day ahead inc,0.975,1,54,quantile
+West Virginia,4 day ahead inc,0.975,1,54,quantile
+West Virginia,5 day ahead inc,0.975,1,54,quantile
+West Virginia,6 day ahead inc,0.975,1,54,quantile
+West Virginia,7 day ahead inc,0.975,2,54,quantile
+Wisconsin,1 day ahead inc,0.975,7,55,quantile
+Wisconsin,2 day ahead inc,0.975,9,55,quantile
+Wisconsin,3 day ahead inc,0.975,11,55,quantile
+Wisconsin,4 day ahead inc,0.975,14,55,quantile
+Wisconsin,5 day ahead inc,0.975,18.025,55,quantile
+Wisconsin,6 day ahead inc,0.975,23,55,quantile
+Wisconsin,7 day ahead inc,0.975,28,55,quantile
+Wyoming,1 day ahead inc,0.975,0,56,quantile
+Wyoming,2 day ahead inc,0.975,0,56,quantile
+Wyoming,3 day ahead inc,0.975,0,56,quantile
+Wyoming,4 day ahead inc,0.975,0,56,quantile
+Wyoming,5 day ahead inc,0.975,0,56,quantile
+Wyoming,6 day ahead inc,0.975,0,56,quantile
+Wyoming,7 day ahead inc,0.975,0,56,quantile
+Alabama,1 day ahead cum,NA,13.776,1,point
+Alabama,2 day ahead cum,NA,18.55,1,point
+Alabama,3 day ahead cum,NA,24.605,1,point
+Alabama,4 day ahead cum,NA,32.195,1,point
+Alabama,5 day ahead cum,NA,41.588,1,point
+Alabama,6 day ahead cum,NA,53.06,1,point
+Alabama,7 day ahead cum,NA,66.877,1,point
+Alaska,1 day ahead cum,NA,2,2,point
+Alaska,2 day ahead cum,NA,2,2,point
+Alaska,3 day ahead cum,NA,2,2,point
+Alaska,4 day ahead cum,NA,2,2,point
+Alaska,5 day ahead cum,NA,2,2,point
+Alaska,6 day ahead cum,NA,2.002,2,point
+Alaska,7 day ahead cum,NA,2.017,2,point
+Arizona,1 day ahead cum,NA,21.227,4,point
+Arizona,2 day ahead cum,NA,26.374,4,point
+Arizona,3 day ahead cum,NA,32.597,4,point
+Arizona,4 day ahead cum,NA,40.025,4,point
+Arizona,5 day ahead cum,NA,48.814,4,point
+Arizona,6 day ahead cum,NA,59.074,4,point
+Arizona,7 day ahead cum,NA,70.997,4,point
+Arkansas,1 day ahead cum,NA,8,5,point
+Arkansas,2 day ahead cum,NA,10.765,5,point
+Arkansas,3 day ahead cum,NA,14.07,5,point
+Arkansas,4 day ahead cum,NA,18.173,5,point
+Arkansas,5 day ahead cum,NA,23.194,5,point
+Arkansas,6 day ahead cum,NA,29.243,5,point
+Arkansas,7 day ahead cum,NA,36.427,5,point
+California,1 day ahead cum,NA,147.572,6,point
+California,2 day ahead cum,NA,174.551,6,point
+California,3 day ahead cum,NA,205.153,6,point
+California,4 day ahead cum,NA,239.64,6,point
+California,5 day ahead cum,NA,278.213,6,point
+California,6 day ahead cum,NA,321.073,6,point
+California,7 day ahead cum,NA,368.31,6,point
+Colorado,1 day ahead cum,NA,59.747,8,point
+Colorado,2 day ahead cum,NA,75.245,8,point
+Colorado,3 day ahead cum,NA,93.809,8,point
+Colorado,4 day ahead cum,NA,115.853,8,point
+Colorado,5 day ahead cum,NA,141.668,8,point
+Colorado,6 day ahead cum,NA,171.535,8,point
+Colorado,7 day ahead cum,NA,205.658,8,point
+Connecticut,1 day ahead cum,NA,41,9,point
+Connecticut,2 day ahead cum,NA,48.995,9,point
+Connecticut,3 day ahead cum,NA,57.958,9,point
+Connecticut,4 day ahead cum,NA,67.902,9,point
+Connecticut,5 day ahead cum,NA,78.893,9,point
+Connecticut,6 day ahead cum,NA,90.903,9,point
+Connecticut,7 day ahead cum,NA,103.982,9,point
+Delaware,1 day ahead cum,NA,8.002,10,point
+Delaware,2 day ahead cum,NA,10.838,10,point
+Delaware,3 day ahead cum,NA,14.248,10,point
+Delaware,4 day ahead cum,NA,18.478,10,point
+Delaware,5 day ahead cum,NA,23.66,10,point
+Delaware,6 day ahead cum,NA,29.936,10,point
+Delaware,7 day ahead cum,NA,37.414,10,point
+District of Columbia,1 day ahead cum,NA,6,11,point
+District of Columbia,2 day ahead cum,NA,7,11,point
+District of Columbia,3 day ahead cum,NA,8,11,point
+District of Columbia,4 day ahead cum,NA,9.885,11,point
+District of Columbia,5 day ahead cum,NA,11.885,11,point
+District of Columbia,6 day ahead cum,NA,13.885,11,point
+District of Columbia,7 day ahead cum,NA,15.885,11,point
+Florida,1 day ahead cum,NA,67.828,12,point
+Florida,2 day ahead cum,NA,81.789,12,point
+Florida,3 day ahead cum,NA,98.18,12,point
+Florida,4 day ahead cum,NA,117.254,12,point
+Florida,5 day ahead cum,NA,139.297,12,point
+Florida,6 day ahead cum,NA,164.571,12,point
+Florida,7 day ahead cum,NA,193.344,12,point
+Georgia,1 day ahead cum,NA,94.726,13,point
+Georgia,2 day ahead cum,NA,111.62,13,point
+Georgia,3 day ahead cum,NA,130.931,13,point
+Georgia,4 day ahead cum,NA,152.9,13,point
+Georgia,5 day ahead cum,NA,177.858,13,point
+Georgia,6 day ahead cum,NA,205.865,13,point
+Georgia,7 day ahead cum,NA,237.12,13,point
+Hawaii,1 day ahead cum,NA,1,15,point
+Hawaii,2 day ahead cum,NA,1,15,point
+Hawaii,3 day ahead cum,NA,1.002,15,point
+Hawaii,4 day ahead cum,NA,1.028,15,point
+Hawaii,5 day ahead cum,NA,1.125,15,point
+Hawaii,6 day ahead cum,NA,1.316,15,point
+Hawaii,7 day ahead cum,NA,1.644,15,point
+Idaho,1 day ahead cum,NA,6,16,point
+Idaho,2 day ahead cum,NA,7.001,16,point
+Idaho,3 day ahead cum,NA,8.253,16,point
+Idaho,4 day ahead cum,NA,9.792,16,point
+Idaho,5 day ahead cum,NA,11.745,16,point
+Idaho,6 day ahead cum,NA,13.748,16,point
+Idaho,7 day ahead cum,NA,15.808,16,point
+Illinois,1 day ahead cum,NA,84.233,17,point
+Illinois,2 day ahead cum,NA,106.428,17,point
+Illinois,3 day ahead cum,NA,133.056,17,point
+Illinois,4 day ahead cum,NA,164.554,17,point
+Illinois,5 day ahead cum,NA,201.242,17,point
+Illinois,6 day ahead cum,NA,243.371,17,point
+Illinois,7 day ahead cum,NA,290.972,17,point
+Indiana,1 day ahead cum,NA,39.067,18,point
+Indiana,2 day ahead cum,NA,47.436,18,point
+Indiana,3 day ahead cum,NA,57.151,18,point
+Indiana,4 day ahead cum,NA,68.2,18,point
+Indiana,5 day ahead cum,NA,80.802,18,point
+Indiana,6 day ahead cum,NA,95.016,18,point
+Indiana,7 day ahead cum,NA,110.995,18,point
+Iowa,1 day ahead cum,NA,5,19,point
+Iowa,2 day ahead cum,NA,6.001,19,point
+Iowa,3 day ahead cum,NA,7.477,19,point
+Iowa,4 day ahead cum,NA,9.438,19,point
+Iowa,5 day ahead cum,NA,11.445,19,point
+Iowa,6 day ahead cum,NA,13.645,19,point
+Iowa,7 day ahead cum,NA,16.244,19,point
+Kansas,1 day ahead cum,NA,8.864,20,point
+Kansas,2 day ahead cum,NA,10.865,20,point
+Kansas,3 day ahead cum,NA,13.014,20,point
+Kansas,4 day ahead cum,NA,15.823,20,point
+Kansas,5 day ahead cum,NA,18.944,20,point
+Kansas,6 day ahead cum,NA,22.612,20,point
+Kansas,7 day ahead cum,NA,26.82,20,point
+Kentucky,1 day ahead cum,NA,10.57,21,point
+Kentucky,2 day ahead cum,NA,12.433,21,point
+Kentucky,3 day ahead cum,NA,14.415,21,point
+Kentucky,4 day ahead cum,NA,16.597,21,point
+Kentucky,5 day ahead cum,NA,19.134,21,point
+Kentucky,6 day ahead cum,NA,21.843,21,point
+Kentucky,7 day ahead cum,NA,24.929,21,point
+Louisiana,1 day ahead cum,NA,185.072,22,point
+Louisiana,2 day ahead cum,NA,224.238,22,point
+Louisiana,3 day ahead cum,NA,268.801,22,point
+Louisiana,4 day ahead cum,NA,319.102,22,point
+Louisiana,5 day ahead cum,NA,375.444,22,point
+Louisiana,6 day ahead cum,NA,437.043,22,point
+Louisiana,7 day ahead cum,NA,503.551,22,point
+Maine,1 day ahead cum,NA,4.357,23,point
+Maine,2 day ahead cum,NA,6.392,23,point
+Maine,3 day ahead cum,NA,9.261,23,point
+Maine,4 day ahead cum,NA,13.116,23,point
+Maine,5 day ahead cum,NA,18.253,23,point
+Maine,6 day ahead cum,NA,24.974,23,point
+Maine,7 day ahead cum,NA,33.637,23,point
+Maryland,1 day ahead cum,NA,11.958,24,point
+Maryland,2 day ahead cum,NA,14.219,24,point
+Maryland,3 day ahead cum,NA,16.836,24,point
+Maryland,4 day ahead cum,NA,19.901,24,point
+Maryland,5 day ahead cum,NA,23.404,24,point
+Maryland,6 day ahead cum,NA,27.411,24,point
+Maryland,7 day ahead cum,NA,31.979,24,point
+Massachusetts,1 day ahead cum,NA,61.755,25,point
+Massachusetts,2 day ahead cum,NA,78.528,25,point
+Massachusetts,3 day ahead cum,NA,98.529,25,point
+Massachusetts,4 day ahead cum,NA,122.092,25,point
+Massachusetts,5 day ahead cum,NA,149.594,25,point
+Massachusetts,6 day ahead cum,NA,181.431,25,point
+Massachusetts,7 day ahead cum,NA,217.999,25,point
+Michigan,1 day ahead cum,NA,173.56,26,point
+Michigan,2 day ahead cum,NA,223.639,26,point
+Michigan,3 day ahead cum,NA,283.07,26,point
+Michigan,4 day ahead cum,NA,352.674,26,point
+Michigan,5 day ahead cum,NA,433.254,26,point
+Michigan,6 day ahead cum,NA,525.633,26,point
+Michigan,7 day ahead cum,NA,630.513,26,point
+Minnesota,1 day ahead cum,NA,12.537,27,point
+Minnesota,2 day ahead cum,NA,17.176,27,point
+Minnesota,3 day ahead cum,NA,23.122,27,point
+Minnesota,4 day ahead cum,NA,30.705,27,point
+Minnesota,5 day ahead cum,NA,40.2,27,point
+Minnesota,6 day ahead cum,NA,51.942,27,point
+Minnesota,7 day ahead cum,NA,66.253,27,point
+Mississippi,1 day ahead cum,NA,18.851,28,point
+Mississippi,2 day ahead cum,NA,25.3,28,point
+Mississippi,3 day ahead cum,NA,33.36,28,point
+Mississippi,4 day ahead cum,NA,43.302,28,point
+Mississippi,5 day ahead cum,NA,55.547,28,point
+Mississippi,6 day ahead cum,NA,70.413,28,point
+Mississippi,7 day ahead cum,NA,88.264,28,point
+Missouri,1 day ahead cum,NA,15.002,29,point
+Missouri,2 day ahead cum,NA,17.111,29,point
+Missouri,3 day ahead cum,NA,19.755,29,point
+Missouri,4 day ahead cum,NA,22.736,29,point
+Missouri,5 day ahead cum,NA,25.816,29,point
+Missouri,6 day ahead cum,NA,29.334,29,point
+Missouri,7 day ahead cum,NA,33.298,29,point
+Montana,1 day ahead cum,NA,1,30,point
+Montana,2 day ahead cum,NA,1,30,point
+Montana,3 day ahead cum,NA,1,30,point
+Montana,4 day ahead cum,NA,1.003,30,point
+Montana,5 day ahead cum,NA,1.025,30,point
+Montana,6 day ahead cum,NA,1.1,30,point
+Montana,7 day ahead cum,NA,1.285,30,point
+Nebraska,1 day ahead cum,NA,2,31,point
+Nebraska,2 day ahead cum,NA,2.09,31,point
+Nebraska,3 day ahead cum,NA,2.198,31,point
+Nebraska,4 day ahead cum,NA,2.371,31,point
+Nebraska,5 day ahead cum,NA,2.617,31,point
+Nebraska,6 day ahead cum,NA,2.945,31,point
+Nebraska,7 day ahead cum,NA,3.376,31,point
+Nevada,1 day ahead cum,NA,18.002,32,point
+Nevada,2 day ahead cum,NA,21.906,32,point
+Nevada,3 day ahead cum,NA,26.122,32,point
+Nevada,4 day ahead cum,NA,31.038,32,point
+Nevada,5 day ahead cum,NA,36.669,32,point
+Nevada,6 day ahead cum,NA,42.996,32,point
+Nevada,7 day ahead cum,NA,50.096,32,point
+New Hampshire,1 day ahead cum,NA,2,33,point
+New Hampshire,2 day ahead cum,NA,2,33,point
+New Hampshire,3 day ahead cum,NA,2,33,point
+New Hampshire,4 day ahead cum,NA,2.008,33,point
+New Hampshire,5 day ahead cum,NA,2.05,33,point
+New Hampshire,6 day ahead cum,NA,2.168,33,point
+New Hampshire,7 day ahead cum,NA,2.397,33,point
+New Jersey,1 day ahead cum,NA,201.654,34,point
+New Jersey,2 day ahead cum,NA,248.954,34,point
+New Jersey,3 day ahead cum,NA,303.298,34,point
+New Jersey,4 day ahead cum,NA,364.947,34,point
+New Jersey,5 day ahead cum,NA,434.104,34,point
+New Jersey,6 day ahead cum,NA,510.844,34,point
+New Jersey,7 day ahead cum,NA,595.213,34,point
+New Mexico,1 day ahead cum,NA,2,35,point
+New Mexico,2 day ahead cum,NA,2.106,35,point
+New Mexico,3 day ahead cum,NA,2.242,35,point
+New Mexico,4 day ahead cum,NA,2.45,35,point
+New Mexico,5 day ahead cum,NA,2.769,35,point
+New Mexico,6 day ahead cum,NA,3.21,35,point
+New Mexico,7 day ahead cum,NA,3.775,35,point
+New York,1 day ahead cum,NA,1242.237,36,point
+New York,2 day ahead cum,NA,1574.515,36,point
+New York,3 day ahead cum,NA,1965.63,36,point
+New York,4 day ahead cum,NA,2417.836,36,point
+New York,5 day ahead cum,NA,2931.57,36,point
+New York,6 day ahead cum,NA,3505.206,36,point
+New York,7 day ahead cum,NA,4137.028,36,point
+North Carolina,1 day ahead cum,NA,9.835,37,point
+North Carolina,2 day ahead cum,NA,13.361,37,point
+North Carolina,3 day ahead cum,NA,17.899,37,point
+North Carolina,4 day ahead cum,NA,23.638,37,point
+North Carolina,5 day ahead cum,NA,30.827,37,point
+North Carolina,6 day ahead cum,NA,39.68,37,point
+North Carolina,7 day ahead cum,NA,50.465,37,point
+North Dakota,1 day ahead cum,NA,1,38,point
+North Dakota,2 day ahead cum,NA,1,38,point
+North Dakota,3 day ahead cum,NA,1,38,point
+North Dakota,4 day ahead cum,NA,1,38,point
+North Dakota,5 day ahead cum,NA,1,38,point
+North Dakota,6 day ahead cum,NA,1.005,38,point
+North Dakota,7 day ahead cum,NA,1.048,38,point
+Ohio,1 day ahead cum,NA,36.051,39,point
+Ohio,2 day ahead cum,NA,44.448,39,point
+Ohio,3 day ahead cum,NA,54.369,39,point
+Ohio,4 day ahead cum,NA,65.813,39,point
+Ohio,5 day ahead cum,NA,78.915,39,point
+Ohio,6 day ahead cum,NA,93.785,39,point
+Ohio,7 day ahead cum,NA,110.541,39,point
+Oklahoma,1 day ahead cum,NA,21.215,40,point
+Oklahoma,2 day ahead cum,NA,27.692,40,point
+Oklahoma,3 day ahead cum,NA,35.643,40,point
+Oklahoma,4 day ahead cum,NA,45.261,40,point
+Oklahoma,5 day ahead cum,NA,56.777,40,point
+Oklahoma,6 day ahead cum,NA,70.423,40,point
+Oklahoma,7 day ahead cum,NA,86.456,40,point
+Oregon,1 day ahead cum,NA,15,41,point
+Oregon,2 day ahead cum,NA,17,41,point
+Oregon,3 day ahead cum,NA,19.127,41,point
+Oregon,4 day ahead cum,NA,22.118,41,point
+Oregon,5 day ahead cum,NA,25.118,41,point
+Oregon,6 day ahead cum,NA,28.197,41,point
+Oregon,7 day ahead cum,NA,31.752,41,point
+Pennsylvania,1 day ahead cum,NA,52.95,42,point
+Pennsylvania,2 day ahead cum,NA,67.407,42,point
+Pennsylvania,3 day ahead cum,NA,84.641,42,point
+Pennsylvania,4 day ahead cum,NA,104.942,42,point
+Pennsylvania,5 day ahead cum,NA,128.548,42,point
+Pennsylvania,6 day ahead cum,NA,155.68,42,point
+Pennsylvania,7 day ahead cum,NA,186.606,42,point
+Rhode Island,1 day ahead cum,NA,4,44,point
+Rhode Island,2 day ahead cum,NA,5.003,44,point
+Rhode Island,3 day ahead cum,NA,6.685,44,point
+Rhode Island,4 day ahead cum,NA,8.675,44,point
+Rhode Island,5 day ahead cum,NA,10.923,44,point
+Rhode Island,6 day ahead cum,NA,13.716,44,point
+Rhode Island,7 day ahead cum,NA,16.991,44,point
+South Carolina,1 day ahead cum,NA,19.446,45,point
+South Carolina,2 day ahead cum,NA,23.446,45,point
+South Carolina,3 day ahead cum,NA,28.413,45,point
+South Carolina,4 day ahead cum,NA,33.964,45,point
+South Carolina,5 day ahead cum,NA,40.192,45,point
+South Carolina,6 day ahead cum,NA,47.405,45,point
+South Carolina,7 day ahead cum,NA,55.708,45,point
+South Dakota,1 day ahead cum,NA,1,46,point
+South Dakota,2 day ahead cum,NA,1,46,point
+South Dakota,3 day ahead cum,NA,1,46,point
+South Dakota,4 day ahead cum,NA,1,46,point
+South Dakota,5 day ahead cum,NA,1.007,46,point
+South Dakota,6 day ahead cum,NA,1.041,46,point
+South Dakota,7 day ahead cum,NA,1.119,46,point
+Tennessee,1 day ahead cum,NA,10,47,point
+Tennessee,2 day ahead cum,NA,12.926,47,point
+Tennessee,3 day ahead cum,NA,15.937,47,point
+Tennessee,4 day ahead cum,NA,19.894,47,point
+Tennessee,5 day ahead cum,NA,24.447,47,point
+Tennessee,6 day ahead cum,NA,29.723,47,point
+Tennessee,7 day ahead cum,NA,35.936,47,point
+Texas,1 day ahead cum,NA,44.699,48,point
+Texas,2 day ahead cum,NA,53.723,48,point
+Texas,3 day ahead cum,NA,64.22,48,point
+Texas,4 day ahead cum,NA,76.377,48,point
+Texas,5 day ahead cum,NA,90.387,48,point
+Texas,6 day ahead cum,NA,106.443,48,point
+Texas,7 day ahead cum,NA,124.729,48,point
+Utah,1 day ahead cum,NA,2,49,point
+Utah,2 day ahead cum,NA,2.379,49,point
+Utah,3 day ahead cum,NA,2.85,49,point
+Utah,4 day ahead cum,NA,3.51,49,point
+Utah,5 day ahead cum,NA,4.323,49,point
+Utah,6 day ahead cum,NA,5.338,49,point
+Utah,7 day ahead cum,NA,6.562,49,point
+Vermont,1 day ahead cum,NA,13.997,50,point
+Vermont,2 day ahead cum,NA,16.005,50,point
+Vermont,3 day ahead cum,NA,18.336,50,point
+Vermont,4 day ahead cum,NA,20.863,50,point
+Vermont,5 day ahead cum,NA,23.486,50,point
+Vermont,6 day ahead cum,NA,26.415,50,point
+Vermont,7 day ahead cum,NA,29.538,50,point
+Virginia,1 day ahead cum,NA,23.212,51,point
+Virginia,2 day ahead cum,NA,26.83,51,point
+Virginia,3 day ahead cum,NA,30.92,51,point
+Virginia,4 day ahead cum,NA,35.541,51,point
+Virginia,5 day ahead cum,NA,40.706,51,point
+Virginia,6 day ahead cum,NA,46.507,51,point
+Virginia,7 day ahead cum,NA,53.022,51,point
+Washington,1 day ahead cum,NA,210.319,53,point
+Washington,2 day ahead cum,NA,227.508,53,point
+Washington,3 day ahead cum,NA,245.644,53,point
+Washington,4 day ahead cum,NA,264.549,53,point
+Washington,5 day ahead cum,NA,284.148,53,point
+Washington,6 day ahead cum,NA,304.479,53,point
+Washington,7 day ahead cum,NA,325.52,53,point
+West Virginia,1 day ahead cum,NA,0.085,54,point
+West Virginia,2 day ahead cum,NA,0.183,54,point
+West Virginia,3 day ahead cum,NA,0.308,54,point
+West Virginia,4 day ahead cum,NA,0.474,54,point
+West Virginia,5 day ahead cum,NA,0.724,54,point
+West Virginia,6 day ahead cum,NA,1.094,54,point
+West Virginia,7 day ahead cum,NA,1.59,54,point
+Wisconsin,1 day ahead cum,NA,22.135,55,point
+Wisconsin,2 day ahead cum,NA,27.08,55,point
+Wisconsin,3 day ahead cum,NA,32.965,55,point
+Wisconsin,4 day ahead cum,NA,39.884,55,point
+Wisconsin,5 day ahead cum,NA,47.967,55,point
+Wisconsin,6 day ahead cum,NA,57.322,55,point
+Wisconsin,7 day ahead cum,NA,68.064,55,point
+Wyoming,1 day ahead cum,NA,0,56,point
+Wyoming,2 day ahead cum,NA,0,56,point
+Wyoming,3 day ahead cum,NA,0,56,point
+Wyoming,4 day ahead cum,NA,0,56,point
+Wyoming,5 day ahead cum,NA,0,56,point
+Wyoming,6 day ahead cum,NA,0.002,56,point
+Wyoming,7 day ahead cum,NA,0.011,56,point
+Alabama,1 day ahead cum,0.025,13,1,quantile
+Alabama,2 day ahead cum,0.025,17,1,quantile
+Alabama,3 day ahead cum,0.025,22,1,quantile
+Alabama,4 day ahead cum,0.025,28,1,quantile
+Alabama,5 day ahead cum,0.025,35,1,quantile
+Alabama,6 day ahead cum,0.025,43,1,quantile
+Alabama,7 day ahead cum,0.025,53,1,quantile
+Alaska,1 day ahead cum,0.025,2,2,quantile
+Alaska,2 day ahead cum,0.025,2,2,quantile
+Alaska,3 day ahead cum,0.025,2,2,quantile
+Alaska,4 day ahead cum,0.025,2,2,quantile
+Alaska,5 day ahead cum,0.025,2,2,quantile
+Alaska,6 day ahead cum,0.025,2,2,quantile
+Alaska,7 day ahead cum,0.025,2,2,quantile
+Arizona,1 day ahead cum,0.025,21,4,quantile
+Arizona,2 day ahead cum,0.025,26,4,quantile
+Arizona,3 day ahead cum,0.025,32,4,quantile
+Arizona,4 day ahead cum,0.025,39,4,quantile
+Arizona,5 day ahead cum,0.025,47,4,quantile
+Arizona,6 day ahead cum,0.025,56,4,quantile
+Arizona,7 day ahead cum,0.025,67,4,quantile
+Arkansas,1 day ahead cum,0.025,8,5,quantile
+Arkansas,2 day ahead cum,0.025,10,5,quantile
+Arkansas,3 day ahead cum,0.025,13,5,quantile
+Arkansas,4 day ahead cum,0.025,16,5,quantile
+Arkansas,5 day ahead cum,0.025,20,5,quantile
+Arkansas,6 day ahead cum,0.025,24,5,quantile
+Arkansas,7 day ahead cum,0.025,29,5,quantile
+California,1 day ahead cum,0.025,145,6,quantile
+California,2 day ahead cum,0.025,169,6,quantile
+California,3 day ahead cum,0.025,196,6,quantile
+California,4 day ahead cum,0.025,227,6,quantile
+California,5 day ahead cum,0.025,261,6,quantile
+California,6 day ahead cum,0.025,299,6,quantile
+California,7 day ahead cum,0.025,342,6,quantile
+Colorado,1 day ahead cum,0.025,58,8,quantile
+Colorado,2 day ahead cum,0.025,71,8,quantile
+Colorado,3 day ahead cum,0.025,87,8,quantile
+Colorado,4 day ahead cum,0.025,105,8,quantile
+Colorado,5 day ahead cum,0.025,126,8,quantile
+Colorado,6 day ahead cum,0.025,150,8,quantile
+Colorado,7 day ahead cum,0.025,177,8,quantile
+Connecticut,1 day ahead cum,0.025,41,9,quantile
+Connecticut,2 day ahead cum,0.025,49,9,quantile
+Connecticut,3 day ahead cum,0.025,57,9,quantile
+Connecticut,4 day ahead cum,0.025,66,9,quantile
+Connecticut,5 day ahead cum,0.025,76,9,quantile
+Connecticut,6 day ahead cum,0.025,87,9,quantile
+Connecticut,7 day ahead cum,0.025,99,9,quantile
+Delaware,1 day ahead cum,0.025,8,10,quantile
+Delaware,2 day ahead cum,0.025,10,10,quantile
+Delaware,3 day ahead cum,0.025,13,10,quantile
+Delaware,4 day ahead cum,0.025,16,10,quantile
+Delaware,5 day ahead cum,0.025,20,10,quantile
+Delaware,6 day ahead cum,0.025,25,10,quantile
+Delaware,7 day ahead cum,0.025,31,10,quantile
+District of Columbia,1 day ahead cum,0.025,6,11,quantile
+District of Columbia,2 day ahead cum,0.025,7,11,quantile
+District of Columbia,3 day ahead cum,0.025,8,11,quantile
+District of Columbia,4 day ahead cum,0.025,9,11,quantile
+District of Columbia,5 day ahead cum,0.025,11,11,quantile
+District of Columbia,6 day ahead cum,0.025,13,11,quantile
+District of Columbia,7 day ahead cum,0.025,15,11,quantile
+Florida,1 day ahead cum,0.025,65,12,quantile
+Florida,2 day ahead cum,0.025,76,12,quantile
+Florida,3 day ahead cum,0.025,88,12,quantile
+Florida,4 day ahead cum,0.025,102,12,quantile
+Florida,5 day ahead cum,0.025,118,12,quantile
+Florida,6 day ahead cum,0.025,136,12,quantile
+Florida,7 day ahead cum,0.025,156,12,quantile
+Georgia,1 day ahead cum,0.025,94,13,quantile
+Georgia,2 day ahead cum,0.025,110,13,quantile
+Georgia,3 day ahead cum,0.025,128,13,quantile
+Georgia,4 day ahead cum,0.025,149,13,quantile
+Georgia,5 day ahead cum,0.025,173,13,quantile
+Georgia,6 day ahead cum,0.025,199,13,quantile
+Georgia,7 day ahead cum,0.025,228,13,quantile
+Hawaii,1 day ahead cum,0.025,1,15,quantile
+Hawaii,2 day ahead cum,0.025,1,15,quantile
+Hawaii,3 day ahead cum,0.025,1,15,quantile
+Hawaii,4 day ahead cum,0.025,1,15,quantile
+Hawaii,5 day ahead cum,0.025,1,15,quantile
+Hawaii,6 day ahead cum,0.025,1,15,quantile
+Hawaii,7 day ahead cum,0.025,1,15,quantile
+Idaho,1 day ahead cum,0.025,6,16,quantile
+Idaho,2 day ahead cum,0.025,7,16,quantile
+Idaho,3 day ahead cum,0.025,8,16,quantile
+Idaho,4 day ahead cum,0.025,9,16,quantile
+Idaho,5 day ahead cum,0.025,10,16,quantile
+Idaho,6 day ahead cum,0.025,12,16,quantile
+Idaho,7 day ahead cum,0.025,14,16,quantile
+Illinois,1 day ahead cum,0.025,84,17,quantile
+Illinois,2 day ahead cum,0.025,105,17,quantile
+Illinois,3 day ahead cum,0.025,131,17,quantile
+Illinois,4 day ahead cum,0.025,161,17,quantile
+Illinois,5 day ahead cum,0.025,196,17,quantile
+Illinois,6 day ahead cum,0.025,235,17,quantile
+Illinois,7 day ahead cum,0.025,279,17,quantile
+Indiana,1 day ahead cum,0.025,39,18,quantile
+Indiana,2 day ahead cum,0.025,47,18,quantile
+Indiana,3 day ahead cum,0.025,56,18,quantile
+Indiana,4 day ahead cum,0.025,66,18,quantile
+Indiana,5 day ahead cum,0.025,77,18,quantile
+Indiana,6 day ahead cum,0.025,89,18,quantile
+Indiana,7 day ahead cum,0.025,103,18,quantile
+Iowa,1 day ahead cum,0.025,5,19,quantile
+Iowa,2 day ahead cum,0.025,6,19,quantile
+Iowa,3 day ahead cum,0.025,7,19,quantile
+Iowa,4 day ahead cum,0.025,8,19,quantile
+Iowa,5 day ahead cum,0.025,10,19,quantile
+Iowa,6 day ahead cum,0.025,12,19,quantile
+Iowa,7 day ahead cum,0.025,14,19,quantile
+Kansas,1 day ahead cum,0.025,8,20,quantile
+Kansas,2 day ahead cum,0.025,10,20,quantile
+Kansas,3 day ahead cum,0.025,12,20,quantile
+Kansas,4 day ahead cum,0.025,14,20,quantile
+Kansas,5 day ahead cum,0.025,17,20,quantile
+Kansas,6 day ahead cum,0.025,20,20,quantile
+Kansas,7 day ahead cum,0.025,24,20,quantile
+Kentucky,1 day ahead cum,0.025,10,21,quantile
+Kentucky,2 day ahead cum,0.025,11,21,quantile
+Kentucky,3 day ahead cum,0.025,13,21,quantile
+Kentucky,4 day ahead cum,0.025,15,21,quantile
+Kentucky,5 day ahead cum,0.025,17,21,quantile
+Kentucky,6 day ahead cum,0.025,19,21,quantile
+Kentucky,7 day ahead cum,0.025,21,21,quantile
+Louisiana,1 day ahead cum,0.025,179,22,quantile
+Louisiana,2 day ahead cum,0.025,209,22,quantile
+Louisiana,3 day ahead cum,0.025,242,22,quantile
+Louisiana,4 day ahead cum,0.025,277,22,quantile
+Louisiana,5 day ahead cum,0.025,314,22,quantile
+Louisiana,6 day ahead cum,0.025,352,22,quantile
+Louisiana,7 day ahead cum,0.025,390,22,quantile
+Maine,1 day ahead cum,0.025,4,23,quantile
+Maine,2 day ahead cum,0.025,6,23,quantile
+Maine,3 day ahead cum,0.025,8,23,quantile
+Maine,4 day ahead cum,0.025,11,23,quantile
+Maine,5 day ahead cum,0.025,15,23,quantile
+Maine,6 day ahead cum,0.025,20,23,quantile
+Maine,7 day ahead cum,0.025,26,23,quantile
+Maryland,1 day ahead cum,0.025,11,24,quantile
+Maryland,2 day ahead cum,0.025,13,24,quantile
+Maryland,3 day ahead cum,0.025,15,24,quantile
+Maryland,4 day ahead cum,0.025,17,24,quantile
+Maryland,5 day ahead cum,0.025,19,24,quantile
+Maryland,6 day ahead cum,0.025,21,24,quantile
+Maryland,7 day ahead cum,0.025,24,24,quantile
+Massachusetts,1 day ahead cum,0.025,61,25,quantile
+Massachusetts,2 day ahead cum,0.025,77,25,quantile
+Massachusetts,3 day ahead cum,0.025,95,25,quantile
+Massachusetts,4 day ahead cum,0.025,116,25,quantile
+Massachusetts,5 day ahead cum,0.025,140,25,quantile
+Massachusetts,6 day ahead cum,0.025,168,25,quantile
+Massachusetts,7 day ahead cum,0.025,199,25,quantile
+Michigan,1 day ahead cum,0.025,169,26,quantile
+Michigan,2 day ahead cum,0.025,211,26,quantile
+Michigan,3 day ahead cum,0.025,259,26,quantile
+Michigan,4 day ahead cum,0.025,313,26,quantile
+Michigan,5 day ahead cum,0.025,373,26,quantile
+Michigan,6 day ahead cum,0.025,439,26,quantile
+Michigan,7 day ahead cum,0.025,512,26,quantile
+Minnesota,1 day ahead cum,0.025,12,27,quantile
+Minnesota,2 day ahead cum,0.025,16,27,quantile
+Minnesota,3 day ahead cum,0.025,21,27,quantile
+Minnesota,4 day ahead cum,0.025,27,27,quantile
+Minnesota,5 day ahead cum,0.025,34,27,quantile
+Minnesota,6 day ahead cum,0.025,42,27,quantile
+Minnesota,7 day ahead cum,0.025,52,27,quantile
+Mississippi,1 day ahead cum,0.025,16,28,quantile
+Mississippi,2 day ahead cum,0.025,19,28,quantile
+Mississippi,3 day ahead cum,0.025,22,28,quantile
+Mississippi,4 day ahead cum,0.025,26,28,quantile
+Mississippi,5 day ahead cum,0.025,30,28,quantile
+Mississippi,6 day ahead cum,0.025,35,28,quantile
+Mississippi,7 day ahead cum,0.025,41,28,quantile
+Missouri,1 day ahead cum,0.025,15,29,quantile
+Missouri,2 day ahead cum,0.025,17,29,quantile
+Missouri,3 day ahead cum,0.025,19,29,quantile
+Missouri,4 day ahead cum,0.025,22,29,quantile
+Missouri,5 day ahead cum,0.025,25,29,quantile
+Missouri,6 day ahead cum,0.025,28,29,quantile
+Missouri,7 day ahead cum,0.025,31,29,quantile
+Montana,1 day ahead cum,0.025,1,30,quantile
+Montana,2 day ahead cum,0.025,1,30,quantile
+Montana,3 day ahead cum,0.025,1,30,quantile
+Montana,4 day ahead cum,0.025,1,30,quantile
+Montana,5 day ahead cum,0.025,1,30,quantile
+Montana,6 day ahead cum,0.025,1,30,quantile
+Montana,7 day ahead cum,0.025,1,30,quantile
+Nebraska,1 day ahead cum,0.025,2,31,quantile
+Nebraska,2 day ahead cum,0.025,2,31,quantile
+Nebraska,3 day ahead cum,0.025,2,31,quantile
+Nebraska,4 day ahead cum,0.025,2,31,quantile
+Nebraska,5 day ahead cum,0.025,2,31,quantile
+Nebraska,6 day ahead cum,0.025,2,31,quantile
+Nebraska,7 day ahead cum,0.025,2,31,quantile
+Nevada,1 day ahead cum,0.025,18,32,quantile
+Nevada,2 day ahead cum,0.025,21,32,quantile
+Nevada,3 day ahead cum,0.025,25,32,quantile
+Nevada,4 day ahead cum,0.025,29,32,quantile
+Nevada,5 day ahead cum,0.025,34,32,quantile
+Nevada,6 day ahead cum,0.025,39,32,quantile
+Nevada,7 day ahead cum,0.025,45,32,quantile
+New Hampshire,1 day ahead cum,0.025,2,33,quantile
+New Hampshire,2 day ahead cum,0.025,2,33,quantile
+New Hampshire,3 day ahead cum,0.025,2,33,quantile
+New Hampshire,4 day ahead cum,0.025,2,33,quantile
+New Hampshire,5 day ahead cum,0.025,2,33,quantile
+New Hampshire,6 day ahead cum,0.025,2,33,quantile
+New Hampshire,7 day ahead cum,0.025,2,33,quantile
+New Jersey,1 day ahead cum,0.025,199,34,quantile
+New Jersey,2 day ahead cum,0.025,242,34,quantile
+New Jersey,3 day ahead cum,0.025,291,34,quantile
+New Jersey,4 day ahead cum,0.025,345,34,quantile
+New Jersey,5 day ahead cum,0.025,404.975,34,quantile
+New Jersey,6 day ahead cum,0.025,469.95,34,quantile
+New Jersey,7 day ahead cum,0.025,538.95,34,quantile
+New Mexico,1 day ahead cum,0.025,2,35,quantile
+New Mexico,2 day ahead cum,0.025,2,35,quantile
+New Mexico,3 day ahead cum,0.025,2,35,quantile
+New Mexico,4 day ahead cum,0.025,2,35,quantile
+New Mexico,5 day ahead cum,0.025,2,35,quantile
+New Mexico,6 day ahead cum,0.025,2,35,quantile
+New Mexico,7 day ahead cum,0.025,2,35,quantile
+New York,1 day ahead cum,0.025,1219,36,quantile
+New York,2 day ahead cum,0.025,1514,36,quantile
+New York,3 day ahead cum,0.025,1849,36,quantile
+New York,4 day ahead cum,0.025,2220,36,quantile
+New York,5 day ahead cum,0.025,2620,36,quantile
+New York,6 day ahead cum,0.025,3041.975,36,quantile
+New York,7 day ahead cum,0.025,3483.925,36,quantile
+North Carolina,1 day ahead cum,0.025,9,37,quantile
+North Carolina,2 day ahead cum,0.025,12,37,quantile
+North Carolina,3 day ahead cum,0.025,16,37,quantile
+North Carolina,4 day ahead cum,0.025,20,37,quantile
+North Carolina,5 day ahead cum,0.025,25,37,quantile
+North Carolina,6 day ahead cum,0.025,31,37,quantile
+North Carolina,7 day ahead cum,0.025,38,37,quantile
+North Dakota,1 day ahead cum,0.025,1,38,quantile
+North Dakota,2 day ahead cum,0.025,1,38,quantile
+North Dakota,3 day ahead cum,0.025,1,38,quantile
+North Dakota,4 day ahead cum,0.025,1,38,quantile
+North Dakota,5 day ahead cum,0.025,1,38,quantile
+North Dakota,6 day ahead cum,0.025,1,38,quantile
+North Dakota,7 day ahead cum,0.025,1,38,quantile
+Ohio,1 day ahead cum,0.025,36,39,quantile
+Ohio,2 day ahead cum,0.025,44,39,quantile
+Ohio,3 day ahead cum,0.025,53,39,quantile
+Ohio,4 day ahead cum,0.025,64,39,quantile
+Ohio,5 day ahead cum,0.025,76,39,quantile
+Ohio,6 day ahead cum,0.025,90,39,quantile
+Ohio,7 day ahead cum,0.025,105,39,quantile
+Oklahoma,1 day ahead cum,0.025,21,40,quantile
+Oklahoma,2 day ahead cum,0.025,26,40,quantile
+Oklahoma,3 day ahead cum,0.025,32,40,quantile
+Oklahoma,4 day ahead cum,0.025,39,40,quantile
+Oklahoma,5 day ahead cum,0.025,47,40,quantile
+Oklahoma,6 day ahead cum,0.025,57,40,quantile
+Oklahoma,7 day ahead cum,0.025,68,40,quantile
+Oregon,1 day ahead cum,0.025,15,41,quantile
+Oregon,2 day ahead cum,0.025,17,41,quantile
+Oregon,3 day ahead cum,0.025,19,41,quantile
+Oregon,4 day ahead cum,0.025,22,41,quantile
+Oregon,5 day ahead cum,0.025,25,41,quantile
+Oregon,6 day ahead cum,0.025,28,41,quantile
+Oregon,7 day ahead cum,0.025,31,41,quantile
+Pennsylvania,1 day ahead cum,0.025,52,42,quantile
+Pennsylvania,2 day ahead cum,0.025,65,42,quantile
+Pennsylvania,3 day ahead cum,0.025,80,42,quantile
+Pennsylvania,4 day ahead cum,0.025,98,42,quantile
+Pennsylvania,5 day ahead cum,0.025,118,42,quantile
+Pennsylvania,6 day ahead cum,0.025,141,42,quantile
+Pennsylvania,7 day ahead cum,0.025,167,42,quantile
+Rhode Island,1 day ahead cum,0.025,4,44,quantile
+Rhode Island,2 day ahead cum,0.025,5,44,quantile
+Rhode Island,3 day ahead cum,0.025,6,44,quantile
+Rhode Island,4 day ahead cum,0.025,8,44,quantile
+Rhode Island,5 day ahead cum,0.025,10,44,quantile
+Rhode Island,6 day ahead cum,0.025,12,44,quantile
+Rhode Island,7 day ahead cum,0.025,14,44,quantile
+South Carolina,1 day ahead cum,0.025,19,45,quantile
+South Carolina,2 day ahead cum,0.025,23,45,quantile
+South Carolina,3 day ahead cum,0.025,27,45,quantile
+South Carolina,4 day ahead cum,0.025,32,45,quantile
+South Carolina,5 day ahead cum,0.025,38,45,quantile
+South Carolina,6 day ahead cum,0.025,45,45,quantile
+South Carolina,7 day ahead cum,0.025,53,45,quantile
+South Dakota,1 day ahead cum,0.025,1,46,quantile
+South Dakota,2 day ahead cum,0.025,1,46,quantile
+South Dakota,3 day ahead cum,0.025,1,46,quantile
+South Dakota,4 day ahead cum,0.025,1,46,quantile
+South Dakota,5 day ahead cum,0.025,1,46,quantile
+South Dakota,6 day ahead cum,0.025,1,46,quantile
+South Dakota,7 day ahead cum,0.025,1,46,quantile
+Tennessee,1 day ahead cum,0.025,10,47,quantile
+Tennessee,2 day ahead cum,0.025,12,47,quantile
+Tennessee,3 day ahead cum,0.025,15,47,quantile
+Tennessee,4 day ahead cum,0.025,18,47,quantile
+Tennessee,5 day ahead cum,0.025,22,47,quantile
+Tennessee,6 day ahead cum,0.025,27,47,quantile
+Tennessee,7 day ahead cum,0.025,33,47,quantile
+Texas,1 day ahead cum,0.025,42,48,quantile
+Texas,2 day ahead cum,0.025,48,48,quantile
+Texas,3 day ahead cum,0.025,55,48,quantile
+Texas,4 day ahead cum,0.025,63,48,quantile
+Texas,5 day ahead cum,0.025,71.975,48,quantile
+Texas,6 day ahead cum,0.025,81.975,48,quantile
+Texas,7 day ahead cum,0.025,92.975,48,quantile
+Utah,1 day ahead cum,0.025,2,49,quantile
+Utah,2 day ahead cum,0.025,2,49,quantile
+Utah,3 day ahead cum,0.025,2,49,quantile
+Utah,4 day ahead cum,0.025,2,49,quantile
+Utah,5 day ahead cum,0.025,2,49,quantile
+Utah,6 day ahead cum,0.025,2,49,quantile
+Utah,7 day ahead cum,0.025,3,49,quantile
+Vermont,1 day ahead cum,0.025,14,50,quantile
+Vermont,2 day ahead cum,0.025,16,50,quantile
+Vermont,3 day ahead cum,0.025,18,50,quantile
+Vermont,4 day ahead cum,0.025,20,50,quantile
+Vermont,5 day ahead cum,0.025,22,50,quantile
+Vermont,6 day ahead cum,0.025,24,50,quantile
+Vermont,7 day ahead cum,0.025,26,50,quantile
+Virginia,1 day ahead cum,0.025,22,51,quantile
+Virginia,2 day ahead cum,0.025,24,51,quantile
+Virginia,3 day ahead cum,0.025,26,51,quantile
+Virginia,4 day ahead cum,0.025,28,51,quantile
+Virginia,5 day ahead cum,0.025,30,51,quantile
+Virginia,6 day ahead cum,0.025,33,51,quantile
+Virginia,7 day ahead cum,0.025,36,51,quantile
+Washington,1 day ahead cum,0.025,208,53,quantile
+Washington,2 day ahead cum,0.025,222,53,quantile
+Washington,3 day ahead cum,0.025,236,53,quantile
+Washington,4 day ahead cum,0.025,250,53,quantile
+Washington,5 day ahead cum,0.025,264,53,quantile
+Washington,6 day ahead cum,0.025,277,53,quantile
+Washington,7 day ahead cum,0.025,290,53,quantile
+West Virginia,1 day ahead cum,0.025,0,54,quantile
+West Virginia,2 day ahead cum,0.025,0,54,quantile
+West Virginia,3 day ahead cum,0.025,0,54,quantile
+West Virginia,4 day ahead cum,0.025,0,54,quantile
+West Virginia,5 day ahead cum,0.025,0,54,quantile
+West Virginia,6 day ahead cum,0.025,0,54,quantile
+West Virginia,7 day ahead cum,0.025,0,54,quantile
+Wisconsin,1 day ahead cum,0.025,21,55,quantile
+Wisconsin,2 day ahead cum,0.025,24,55,quantile
+Wisconsin,3 day ahead cum,0.025,27,55,quantile
+Wisconsin,4 day ahead cum,0.025,30,55,quantile
+Wisconsin,5 day ahead cum,0.025,34,55,quantile
+Wisconsin,6 day ahead cum,0.025,38,55,quantile
+Wisconsin,7 day ahead cum,0.025,42,55,quantile
+Wyoming,1 day ahead cum,0.025,0,56,quantile
+Wyoming,2 day ahead cum,0.025,0,56,quantile
+Wyoming,3 day ahead cum,0.025,0,56,quantile
+Wyoming,4 day ahead cum,0.025,0,56,quantile
+Wyoming,5 day ahead cum,0.025,0,56,quantile
+Wyoming,6 day ahead cum,0.025,0,56,quantile
+Wyoming,7 day ahead cum,0.025,0,56,quantile
+Alabama,1 day ahead cum,0.975,14,1,quantile
+Alabama,2 day ahead cum,0.975,19.025,1,quantile
+Alabama,3 day ahead cum,0.975,26.025,1,quantile
+Alabama,4 day ahead cum,0.975,35.025,1,quantile
+Alabama,5 day ahead cum,0.975,47.025,1,quantile
+Alabama,6 day ahead cum,0.975,62.025,1,quantile
+Alabama,7 day ahead cum,0.975,80.025,1,quantile
+Alaska,1 day ahead cum,0.975,2,2,quantile
+Alaska,2 day ahead cum,0.975,2,2,quantile
+Alaska,3 day ahead cum,0.975,2,2,quantile
+Alaska,4 day ahead cum,0.975,2,2,quantile
+Alaska,5 day ahead cum,0.975,2,2,quantile
+Alaska,6 day ahead cum,0.975,2,2,quantile
+Alaska,7 day ahead cum,0.975,2,2,quantile
+Arizona,1 day ahead cum,0.975,22,4,quantile
+Arizona,2 day ahead cum,0.975,28,4,quantile
+Arizona,3 day ahead cum,0.975,35,4,quantile
+Arizona,4 day ahead cum,0.975,43,4,quantile
+Arizona,5 day ahead cum,0.975,53,4,quantile
+Arizona,6 day ahead cum,0.975,64,4,quantile
+Arizona,7 day ahead cum,0.975,77,4,quantile
+Arkansas,1 day ahead cum,0.975,8,5,quantile
+Arkansas,2 day ahead cum,0.975,11,5,quantile
+Arkansas,3 day ahead cum,0.975,15,5,quantile
+Arkansas,4 day ahead cum,0.975,20,5,quantile
+Arkansas,5 day ahead cum,0.975,26,5,quantile
+Arkansas,6 day ahead cum,0.975,34,5,quantile
+Arkansas,7 day ahead cum,0.975,43,5,quantile
+California,1 day ahead cum,0.975,150,6,quantile
+California,2 day ahead cum,0.975,180,6,quantile
+California,3 day ahead cum,0.975,214,6,quantile
+California,4 day ahead cum,0.975,252,6,quantile
+California,5 day ahead cum,0.975,294,6,quantile
+California,6 day ahead cum,0.975,340,6,quantile
+California,7 day ahead cum,0.975,391,6,quantile
+Colorado,1 day ahead cum,0.975,61,8,quantile
+Colorado,2 day ahead cum,0.975,79,8,quantile
+Colorado,3 day ahead cum,0.975,101,8,quantile
+Colorado,4 day ahead cum,0.975,127,8,quantile
+Colorado,5 day ahead cum,0.975,158,8,quantile
+Colorado,6 day ahead cum,0.975,194,8,quantile
+Colorado,7 day ahead cum,0.975,235,8,quantile
+Connecticut,1 day ahead cum,0.975,41,9,quantile
+Connecticut,2 day ahead cum,0.975,49,9,quantile
+Connecticut,3 day ahead cum,0.975,58,9,quantile
+Connecticut,4 day ahead cum,0.975,69,9,quantile
+Connecticut,5 day ahead cum,0.975,81,9,quantile
+Connecticut,6 day ahead cum,0.975,94,9,quantile
+Connecticut,7 day ahead cum,0.975,109,9,quantile
+Delaware,1 day ahead cum,0.975,8,10,quantile
+Delaware,2 day ahead cum,0.975,11,10,quantile
+Delaware,3 day ahead cum,0.975,15,10,quantile
+Delaware,4 day ahead cum,0.975,20,10,quantile
+Delaware,5 day ahead cum,0.975,26,10,quantile
+Delaware,6 day ahead cum,0.975,34,10,quantile
+Delaware,7 day ahead cum,0.975,43,10,quantile
+District of Columbia,1 day ahead cum,0.975,6,11,quantile
+District of Columbia,2 day ahead cum,0.975,7,11,quantile
+District of Columbia,3 day ahead cum,0.975,8,11,quantile
+District of Columbia,4 day ahead cum,0.975,10,11,quantile
+District of Columbia,5 day ahead cum,0.975,12,11,quantile
+District of Columbia,6 day ahead cum,0.975,14,11,quantile
+District of Columbia,7 day ahead cum,0.975,16,11,quantile
+Florida,1 day ahead cum,0.975,71.025,12,quantile
+Florida,2 day ahead cum,0.975,90.025,12,quantile
+Florida,3 day ahead cum,0.975,112.05,12,quantile
+Florida,4 day ahead cum,0.975,138.05,12,quantile
+Florida,5 day ahead cum,0.975,169.05,12,quantile
+Florida,6 day ahead cum,0.975,205.05,12,quantile
+Florida,7 day ahead cum,0.975,247.05,12,quantile
+Georgia,1 day ahead cum,0.975,96,13,quantile
+Georgia,2 day ahead cum,0.975,114,13,quantile
+Georgia,3 day ahead cum,0.975,135,13,quantile
+Georgia,4 day ahead cum,0.975,159,13,quantile
+Georgia,5 day ahead cum,0.975,186,13,quantile
+Georgia,6 day ahead cum,0.975,217,13,quantile
+Georgia,7 day ahead cum,0.975,251,13,quantile
+Hawaii,1 day ahead cum,0.975,1,15,quantile
+Hawaii,2 day ahead cum,0.975,1,15,quantile
+Hawaii,3 day ahead cum,0.975,1,15,quantile
+Hawaii,4 day ahead cum,0.975,2,15,quantile
+Hawaii,5 day ahead cum,0.975,3,15,quantile
+Hawaii,6 day ahead cum,0.975,4,15,quantile
+Hawaii,7 day ahead cum,0.975,5,15,quantile
+Idaho,1 day ahead cum,0.975,6,16,quantile
+Idaho,2 day ahead cum,0.975,7,16,quantile
+Idaho,3 day ahead cum,0.975,9,16,quantile
+Idaho,4 day ahead cum,0.975,11,16,quantile
+Idaho,5 day ahead cum,0.975,13,16,quantile
+Idaho,6 day ahead cum,0.975,15,16,quantile
+Idaho,7 day ahead cum,0.975,18,16,quantile
+Illinois,1 day ahead cum,0.975,85,17,quantile
+Illinois,2 day ahead cum,0.975,108,17,quantile
+Illinois,3 day ahead cum,0.975,136,17,quantile
+Illinois,4 day ahead cum,0.975,169,17,quantile
+Illinois,5 day ahead cum,0.975,208,17,quantile
+Illinois,6 day ahead cum,0.975,253,17,quantile
+Illinois,7 day ahead cum,0.975,304,17,quantile
+Indiana,1 day ahead cum,0.975,40,18,quantile
+Indiana,2 day ahead cum,0.975,49,18,quantile
+Indiana,3 day ahead cum,0.975,59,18,quantile
+Indiana,4 day ahead cum,0.975,71,18,quantile
+Indiana,5 day ahead cum,0.975,85,18,quantile
+Indiana,6 day ahead cum,0.975,101,18,quantile
+Indiana,7 day ahead cum,0.975,119,18,quantile
+Iowa,1 day ahead cum,0.975,5,19,quantile
+Iowa,2 day ahead cum,0.975,6,19,quantile
+Iowa,3 day ahead cum,0.975,8,19,quantile
+Iowa,4 day ahead cum,0.975,10,19,quantile
+Iowa,5 day ahead cum,0.975,12,19,quantile
+Iowa,6 day ahead cum,0.975,15,19,quantile
+Iowa,7 day ahead cum,0.975,18,19,quantile
+Kansas,1 day ahead cum,0.975,9,20,quantile
+Kansas,2 day ahead cum,0.975,11,20,quantile
+Kansas,3 day ahead cum,0.975,14,20,quantile
+Kansas,4 day ahead cum,0.975,17,20,quantile
+Kansas,5 day ahead cum,0.975,21,20,quantile
+Kansas,6 day ahead cum,0.975,25,20,quantile
+Kansas,7 day ahead cum,0.975,30,20,quantile
+Kentucky,1 day ahead cum,0.975,11,21,quantile
+Kentucky,2 day ahead cum,0.975,13,21,quantile
+Kentucky,3 day ahead cum,0.975,15,21,quantile
+Kentucky,4 day ahead cum,0.975,18,21,quantile
+Kentucky,5 day ahead cum,0.975,21,21,quantile
+Kentucky,6 day ahead cum,0.975,24,21,quantile
+Kentucky,7 day ahead cum,0.975,28,21,quantile
+Louisiana,1 day ahead cum,0.975,191,22,quantile
+Louisiana,2 day ahead cum,0.975,240,22,quantile
+Louisiana,3 day ahead cum,0.975,298,22,quantile
+Louisiana,4 day ahead cum,0.975,367,22,quantile
+Louisiana,5 day ahead cum,0.975,449,22,quantile
+Louisiana,6 day ahead cum,0.975,543,22,quantile
+Louisiana,7 day ahead cum,0.975,649,22,quantile
+Maine,1 day ahead cum,0.975,5,23,quantile
+Maine,2 day ahead cum,0.975,8,23,quantile
+Maine,3 day ahead cum,0.975,12,23,quantile
+Maine,4 day ahead cum,0.975,17,23,quantile
+Maine,5 day ahead cum,0.975,24,23,quantile
+Maine,6 day ahead cum,0.975,33.025,23,quantile
+Maine,7 day ahead cum,0.975,45.05,23,quantile
+Maryland,1 day ahead cum,0.975,13,24,quantile
+Maryland,2 day ahead cum,0.975,16,24,quantile
+Maryland,3 day ahead cum,0.975,20,24,quantile
+Maryland,4 day ahead cum,0.975,25,24,quantile
+Maryland,5 day ahead cum,0.975,31,24,quantile
+Maryland,6 day ahead cum,0.975,37.025,24,quantile
+Maryland,7 day ahead cum,0.975,44.05,24,quantile
+Massachusetts,1 day ahead cum,0.975,63,25,quantile
+Massachusetts,2 day ahead cum,0.975,81,25,quantile
+Massachusetts,3 day ahead cum,0.975,103,25,quantile
+Massachusetts,4 day ahead cum,0.975,129,25,quantile
+Massachusetts,5 day ahead cum,0.975,160,25,quantile
+Massachusetts,6 day ahead cum,0.975,197,25,quantile
+Massachusetts,7 day ahead cum,0.975,240,25,quantile
+Michigan,1 day ahead cum,0.975,179,26,quantile
+Michigan,2 day ahead cum,0.975,238,26,quantile
+Michigan,3 day ahead cum,0.975,311,26,quantile
+Michigan,4 day ahead cum,0.975,400,26,quantile
+Michigan,5 day ahead cum,0.975,506,26,quantile
+Michigan,6 day ahead cum,0.975,630,26,quantile
+Michigan,7 day ahead cum,0.975,774,26,quantile
+Minnesota,1 day ahead cum,0.975,13,27,quantile
+Minnesota,2 day ahead cum,0.975,18,27,quantile
+Minnesota,3 day ahead cum,0.975,25,27,quantile
+Minnesota,4 day ahead cum,0.975,34,27,quantile
+Minnesota,5 day ahead cum,0.975,46,27,quantile
+Minnesota,6 day ahead cum,0.975,61,27,quantile
+Minnesota,7 day ahead cum,0.975,80,27,quantile
+Mississippi,1 day ahead cum,0.975,21,28,quantile
+Mississippi,2 day ahead cum,0.975,30,28,quantile
+Mississippi,3 day ahead cum,0.975,42,28,quantile
+Mississippi,4 day ahead cum,0.975,58,28,quantile
+Mississippi,5 day ahead cum,0.975,78,28,quantile
+Mississippi,6 day ahead cum,0.975,103,28,quantile
+Mississippi,7 day ahead cum,0.975,133,28,quantile
+Missouri,1 day ahead cum,0.975,15,29,quantile
+Missouri,2 day ahead cum,0.975,18,29,quantile
+Missouri,3 day ahead cum,0.975,21,29,quantile
+Missouri,4 day ahead cum,0.975,24,29,quantile
+Missouri,5 day ahead cum,0.975,28,29,quantile
+Missouri,6 day ahead cum,0.975,32,29,quantile
+Missouri,7 day ahead cum,0.975,36.025,29,quantile
+Montana,1 day ahead cum,0.975,1,30,quantile
+Montana,2 day ahead cum,0.975,1,30,quantile
+Montana,3 day ahead cum,0.975,1,30,quantile
+Montana,4 day ahead cum,0.975,1,30,quantile
+Montana,5 day ahead cum,0.975,1,30,quantile
+Montana,6 day ahead cum,0.975,2,30,quantile
+Montana,7 day ahead cum,0.975,3,30,quantile
+Nebraska,1 day ahead cum,0.975,2,31,quantile
+Nebraska,2 day ahead cum,0.975,3,31,quantile
+Nebraska,3 day ahead cum,0.975,4,31,quantile
+Nebraska,4 day ahead cum,0.975,5,31,quantile
+Nebraska,5 day ahead cum,0.975,6,31,quantile
+Nebraska,6 day ahead cum,0.975,7,31,quantile
+Nebraska,7 day ahead cum,0.975,8,31,quantile
+Nevada,1 day ahead cum,0.975,18,32,quantile
+Nevada,2 day ahead cum,0.975,22,32,quantile
+Nevada,3 day ahead cum,0.975,27,32,quantile
+Nevada,4 day ahead cum,0.975,32,32,quantile
+Nevada,5 day ahead cum,0.975,38,32,quantile
+Nevada,6 day ahead cum,0.975,45,32,quantile
+Nevada,7 day ahead cum,0.975,53,32,quantile
+New Hampshire,1 day ahead cum,0.975,2,33,quantile
+New Hampshire,2 day ahead cum,0.975,2,33,quantile
+New Hampshire,3 day ahead cum,0.975,2,33,quantile
+New Hampshire,4 day ahead cum,0.975,2,33,quantile
+New Hampshire,5 day ahead cum,0.975,3,33,quantile
+New Hampshire,6 day ahead cum,0.975,4,33,quantile
+New Hampshire,7 day ahead cum,0.975,5,33,quantile
+New Jersey,1 day ahead cum,0.975,205,34,quantile
+New Jersey,2 day ahead cum,0.975,258,34,quantile
+New Jersey,3 day ahead cum,0.975,320,34,quantile
+New Jersey,4 day ahead cum,0.975,392,34,quantile
+New Jersey,5 day ahead cum,0.975,476,34,quantile
+New Jersey,6 day ahead cum,0.975,571,34,quantile
+New Jersey,7 day ahead cum,0.975,679,34,quantile
+New Mexico,1 day ahead cum,0.975,2,35,quantile
+New Mexico,2 day ahead cum,0.975,3,35,quantile
+New Mexico,3 day ahead cum,0.975,4,35,quantile
+New Mexico,4 day ahead cum,0.975,5,35,quantile
+New Mexico,5 day ahead cum,0.975,6,35,quantile
+New Mexico,6 day ahead cum,0.975,7,35,quantile
+New Mexico,7 day ahead cum,0.975,9,35,quantile
+New York,1 day ahead cum,0.975,1267.025,36,quantile
+New York,2 day ahead cum,0.975,1639.025,36,quantile
+New York,3 day ahead cum,0.975,2089.025,36,quantile
+New York,4 day ahead cum,0.975,2624.025,36,quantile
+New York,5 day ahead cum,0.975,3252.025,36,quantile
+New York,6 day ahead cum,0.975,3976.025,36,quantile
+New York,7 day ahead cum,0.975,4793.05,36,quantile
+North Carolina,1 day ahead cum,0.975,10,37,quantile
+North Carolina,2 day ahead cum,0.975,14,37,quantile
+North Carolina,3 day ahead cum,0.975,19,37,quantile
+North Carolina,4 day ahead cum,0.975,26,37,quantile
+North Carolina,5 day ahead cum,0.975,35,37,quantile
+North Carolina,6 day ahead cum,0.975,47,37,quantile
+North Carolina,7 day ahead cum,0.975,61,37,quantile
+North Dakota,1 day ahead cum,0.975,1,38,quantile
+North Dakota,2 day ahead cum,0.975,1,38,quantile
+North Dakota,3 day ahead cum,0.975,1,38,quantile
+North Dakota,4 day ahead cum,0.975,1,38,quantile
+North Dakota,5 day ahead cum,0.975,1,38,quantile
+North Dakota,6 day ahead cum,0.975,1,38,quantile
+North Dakota,7 day ahead cum,0.975,2,38,quantile
+Ohio,1 day ahead cum,0.975,37,39,quantile
+Ohio,2 day ahead cum,0.975,46,39,quantile
+Ohio,3 day ahead cum,0.975,57,39,quantile
+Ohio,4 day ahead cum,0.975,69,39,quantile
+Ohio,5 day ahead cum,0.975,83,39,quantile
+Ohio,6 day ahead cum,0.975,99,39,quantile
+Ohio,7 day ahead cum,0.975,118,39,quantile
+Oklahoma,1 day ahead cum,0.975,22,40,quantile
+Oklahoma,2 day ahead cum,0.975,30,40,quantile
+Oklahoma,3 day ahead cum,0.975,40,40,quantile
+Oklahoma,4 day ahead cum,0.975,52,40,quantile
+Oklahoma,5 day ahead cum,0.975,67,40,quantile
+Oklahoma,6 day ahead cum,0.975,85,40,quantile
+Oklahoma,7 day ahead cum,0.975,107,40,quantile
+Oregon,1 day ahead cum,0.975,15,41,quantile
+Oregon,2 day ahead cum,0.975,17,41,quantile
+Oregon,3 day ahead cum,0.975,20,41,quantile
+Oregon,4 day ahead cum,0.975,23,41,quantile
+Oregon,5 day ahead cum,0.975,26,41,quantile
+Oregon,6 day ahead cum,0.975,30,41,quantile
+Oregon,7 day ahead cum,0.975,34,41,quantile
+Pennsylvania,1 day ahead cum,0.975,54,42,quantile
+Pennsylvania,2 day ahead cum,0.975,70,42,quantile
+Pennsylvania,3 day ahead cum,0.975,89,42,quantile
+Pennsylvania,4 day ahead cum,0.975,112,42,quantile
+Pennsylvania,5 day ahead cum,0.975,139,42,quantile
+Pennsylvania,6 day ahead cum,0.975,171,42,quantile
+Pennsylvania,7 day ahead cum,0.975,209,42,quantile
+Rhode Island,1 day ahead cum,0.975,4,44,quantile
+Rhode Island,2 day ahead cum,0.975,5,44,quantile
+Rhode Island,3 day ahead cum,0.975,7,44,quantile
+Rhode Island,4 day ahead cum,0.975,9,44,quantile
+Rhode Island,5 day ahead cum,0.975,12,44,quantile
+Rhode Island,6 day ahead cum,0.975,15,44,quantile
+Rhode Island,7 day ahead cum,0.975,19,44,quantile
+South Carolina,1 day ahead cum,0.975,20,45,quantile
+South Carolina,2 day ahead cum,0.975,24,45,quantile
+South Carolina,3 day ahead cum,0.975,29,45,quantile
+South Carolina,4 day ahead cum,0.975,35,45,quantile
+South Carolina,5 day ahead cum,0.975,42,45,quantile
+South Carolina,6 day ahead cum,0.975,50,45,quantile
+South Carolina,7 day ahead cum,0.975,59,45,quantile
+South Dakota,1 day ahead cum,0.975,1,46,quantile
+South Dakota,2 day ahead cum,0.975,1,46,quantile
+South Dakota,3 day ahead cum,0.975,1,46,quantile
+South Dakota,4 day ahead cum,0.975,1,46,quantile
+South Dakota,5 day ahead cum,0.975,1,46,quantile
+South Dakota,6 day ahead cum,0.975,2,46,quantile
+South Dakota,7 day ahead cum,0.975,3,46,quantile
+Tennessee,1 day ahead cum,0.975,10,47,quantile
+Tennessee,2 day ahead cum,0.975,13,47,quantile
+Tennessee,3 day ahead cum,0.975,16,47,quantile
+Tennessee,4 day ahead cum,0.975,20,47,quantile
+Tennessee,5 day ahead cum,0.975,25,47,quantile
+Tennessee,6 day ahead cum,0.975,31,47,quantile
+Tennessee,7 day ahead cum,0.975,38,47,quantile
+Texas,1 day ahead cum,0.975,46,48,quantile
+Texas,2 day ahead cum,0.975,57,48,quantile
+Texas,3 day ahead cum,0.975,69,48,quantile
+Texas,4 day ahead cum,0.975,84,48,quantile
+Texas,5 day ahead cum,0.975,101,48,quantile
+Texas,6 day ahead cum,0.975,121,48,quantile
+Texas,7 day ahead cum,0.975,144,48,quantile
+Utah,1 day ahead cum,0.975,2,49,quantile
+Utah,2 day ahead cum,0.975,3,49,quantile
+Utah,3 day ahead cum,0.975,4,49,quantile
+Utah,4 day ahead cum,0.975,5,49,quantile
+Utah,5 day ahead cum,0.975,6,49,quantile
+Utah,6 day ahead cum,0.975,8,49,quantile
+Utah,7 day ahead cum,0.975,10,49,quantile
+Vermont,1 day ahead cum,0.975,14,50,quantile
+Vermont,2 day ahead cum,0.975,16,50,quantile
+Vermont,3 day ahead cum,0.975,19,50,quantile
+Vermont,4 day ahead cum,0.975,22,50,quantile
+Vermont,5 day ahead cum,0.975,25,50,quantile
+Vermont,6 day ahead cum,0.975,29,50,quantile
+Vermont,7 day ahead cum,0.975,33,50,quantile
+Virginia,1 day ahead cum,0.975,25,51,quantile
+Virginia,2 day ahead cum,0.975,31,51,quantile
+Virginia,3 day ahead cum,0.975,39,51,quantile
+Virginia,4 day ahead cum,0.975,49,51,quantile
+Virginia,5 day ahead cum,0.975,61,51,quantile
+Virginia,6 day ahead cum,0.975,75,51,quantile
+Virginia,7 day ahead cum,0.975,92,51,quantile
+Washington,1 day ahead cum,0.975,214,53,quantile
+Washington,2 day ahead cum,0.975,235.025,53,quantile
+Washington,3 day ahead cum,0.975,258.025,53,quantile
+Washington,4 day ahead cum,0.975,283.025,53,quantile
+Washington,5 day ahead cum,0.975,310.025,53,quantile
+Washington,6 day ahead cum,0.975,339.05,53,quantile
+Washington,7 day ahead cum,0.975,371.05,53,quantile
+West Virginia,1 day ahead cum,0.975,1,54,quantile
+West Virginia,2 day ahead cum,0.975,2,54,quantile
+West Virginia,3 day ahead cum,0.975,3,54,quantile
+West Virginia,4 day ahead cum,0.975,4,54,quantile
+West Virginia,5 day ahead cum,0.975,5,54,quantile
+West Virginia,6 day ahead cum,0.975,6,54,quantile
+West Virginia,7 day ahead cum,0.975,8,54,quantile
+Wisconsin,1 day ahead cum,0.975,25,55,quantile
+Wisconsin,2 day ahead cum,0.975,34,55,quantile
+Wisconsin,3 day ahead cum,0.975,45,55,quantile
+Wisconsin,4 day ahead cum,0.975,59,55,quantile
+Wisconsin,5 day ahead cum,0.975,77.025,55,quantile
+Wisconsin,6 day ahead cum,0.975,100.025,55,quantile
+Wisconsin,7 day ahead cum,0.975,128.025,55,quantile
+Wyoming,1 day ahead cum,0.975,0,56,quantile
+Wyoming,2 day ahead cum,0.975,0,56,quantile
+Wyoming,3 day ahead cum,0.975,0,56,quantile
+Wyoming,4 day ahead cum,0.975,0,56,quantile
+Wyoming,5 day ahead cum,0.975,0,56,quantile
+Wyoming,6 day ahead cum,0.975,0,56,quantile
+Wyoming,7 day ahead cum,0.975,0,56,quantile
