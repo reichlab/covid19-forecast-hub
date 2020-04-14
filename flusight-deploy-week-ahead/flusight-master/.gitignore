@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+npm-debug.log
+*~
+deploy_private
+.Rproj.user
+
+*.Rproj
+.Rhistory
+
+src/assets/data.json

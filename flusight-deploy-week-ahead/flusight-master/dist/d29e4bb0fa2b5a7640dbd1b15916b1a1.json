@@ -1,0 +1,500 @@
+module.exports = {
+	"seasonId": "2019-2020",
+	"regions": [
+		{
+			"id": "nat",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.839888407668947,
+							"logScoreMultiBin": -1.4620658700300893,
+							"absError": 0.19713500000000028
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs1",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.8919263037290235,
+							"logScoreMultiBin": -1.5117895591980977,
+							"absError": 0.6055400000000004
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs2",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -5.045071471417383,
+							"logScoreMultiBin": -2.6454839360837568,
+							"absError": 3.3193900000000003
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs3",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.018328411799077,
+							"logScoreMultiBin": -1.6342071529603173,
+							"absError": 0.24097499999999972
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs4",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.9183932524359895,
+							"logScoreMultiBin": -1.5374382325961604,
+							"absError": 0.5412599999999994
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs5",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.931868633648852,
+							"logScoreMultiBin": -1.550456993698907,
+							"absError": 0.39946000000000037
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs6",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.050882854811565,
+							"logScoreMultiBin": -1.6658230958819695,
+							"absError": 0.03997000000000028
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs7",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.891519813206093,
+							"logScoreMultiBin": -2.475665481222066,
+							"absError": 2.4396200000000006
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs8",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.8805727891548987,
+							"logScoreMultiBin": -1.5010903624086562,
+							"absError": 0.3434299999999997
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs9",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.172219620945067,
+							"logScoreMultiBin": -1.7839996546166148,
+							"absError": 0.11423000000000005
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs10",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.947598370942066,
+							"logScoreMultiBin": -1.5653923192954253,
+							"absError": 0.6607599999999998
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		}
+	]
+};

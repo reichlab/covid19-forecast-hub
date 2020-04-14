@@ -1,0 +1,2345 @@
+module.exports = {
+	"seasonId": "2019-2020",
+	"regions": [
+		{
+			"id": "nat",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "AK",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "AL",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "AR",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "AZ",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "CA",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "CO",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "CT",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "DC",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "DE",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "FL",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "GA",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "HI",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "IA",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "ID",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "IL",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "IN",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "KS",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "KY",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "LA",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "MA",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "MD",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "ME",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "MI",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "MN",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "MO",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "MS",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "MT",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "NC",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "ND",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "NE",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "NH",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "NJ",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "NM",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "NV",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "NY",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "OH",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "OK",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "OR",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "PA",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "RI",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "SC",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "SD",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "TN",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "TX",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "UT",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "VA",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "VT",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "WA",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "WI",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "WV",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "WY",
+			"models": [
+				{
+					"id": "example-ex-model",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		}
+	]
+};

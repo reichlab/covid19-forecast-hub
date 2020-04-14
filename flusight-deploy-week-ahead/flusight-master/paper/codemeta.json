@@ -1,0 +1,30 @@
+{
+  "@context": "https://raw.githubusercontent.com/mbjones/codemeta/master/codemeta.jsonld",
+  "@type": "Code",
+  "author": [
+    {
+      "@id": "http://orcid.org/0000-0001-7137-0728",
+      "@type": "Person",
+      "email": "abhinav.tushar.vs@gmail.com",
+      "name": "Abhinav Tushar",
+      "affiliation": "University of Massachusetts-Amherst"
+    },
+    {
+      "@id": "https://orcid.org/0000-0003-3503-9899",
+      "@type": "Person",
+      "email": "nick@schoolph.umass.edu",
+      "name": "Nicholas G Reich",
+      "affiliation": "University of Massachusetts-Amherst"
+    }
+  ],
+  "identifier": "",
+  "codeRepository": "https://github.com/reichlab/flusight",
+  "datePublished": "2017-01-11",
+  "dateModified": "2017-01-11",
+  "dateCreated": "2017-01-11",
+  "description": "interactive visualizations for infectious disease forecasts",
+  "keywords": "visualization, influenza, forecasts",
+  "license": "MIT",
+  "title": "flusight",
+  "version": "v1.1.0"
+}

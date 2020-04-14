@@ -1,0 +1,30 @@
+{
+  "name": "cdc-flusight-ensemble",
+  "version": "1.0.0",
+  "description": "Scripts for cdc-flusight-ensemble data repo",
+  "scripts": {
+    "format-metadata": "node ./scripts/format-metadata.js",
+    "generate-scores": "node ./scripts/generate-scores.js",
+    "generate-id-mappings": "node ./scripts/generate-id-mappings.js"
+  },
+  "author": "Abhinav Tushar",
+  "dependencies": {
+    "array-equal": "^1.0.0",
+    "chai": "^4.1.1",
+    "d3": "^4.10.2",
+    "deep-rename-keys": "^0.2.1",
+    "js-yaml": "^3.13.1",
+    "mmwr-week": "^1.1.0",
+    "mocha": "^5.2.0",
+    "moment": "^2.18.1",
+    "nan": "^2.11.1",
+    "node-sass": "^4.9.4",
+    "papaparse": "^4.3.5",
+    "progress": "^2.0.0",
+    "request-promise-native": "^1.0.8",
+    "wildcard": "^2.0.0"
+  },
+  "optionalDependencies": {
+    "fsevents": "^1.2.4"
+  }
+}
