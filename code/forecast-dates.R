@@ -10,7 +10,7 @@ forecasts_collected_ew <- paste0(
 
 ## 1-week ahead
 forecast_1_wk_ahead_start <- forecasts_collected-1
-forecast_1_wk_ahead_end <- forecasts_collected+6
+forecast_1_wk_ahead_end <- forecasts_collected+5
 
 forecast_info <- tibble(
     forecasts_collected, forecasts_collected_ew, forecast_1_wk_ahead_start, forecast_1_wk_ahead_end
