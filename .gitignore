@@ -3,4 +3,7 @@
 .Rhistory
 .RData
 .Ruserdata
+
+node_modules
+.ipynb_checkpoints
 covid19-death-forecasts.Rproj
