@@ -14,11 +14,6 @@ df = pd.read_csv(
     "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv")
 fips_codes = pd.read_csv('../template/state_fips_codes.csv')
 
-'''
-####################################
-# Truth data output for visualization
-####################################
-'''
 
 # aggregate by state and nationally
 state_agg = df.groupby(['Province_State']).sum()
@@ -36,15 +31,6 @@ df_truth = df_truth.reset_index()
 # get epi data from date
 df_truth['year'], df_truth['week'], df_truth['day'] = \
     zip(*df_truth['level_0'].map(get_epi_data))
-
-# Observed data on the seventh day
-df_truth = df_truth[df_truth['day'] == 7]
-
-# add leading zeros to epi week
-df_truth['week'] = df_truth['week'].apply(lambda x: '{0:0>2}'.format(x))
-
-# define epiweek
-df_truth['epiweek'] = df_truth['year'].astype(str) + df_truth['week']
 
 # rename columns
 df_truth = df_truth.rename(columns={0: "value",
@@ -64,13 +50,42 @@ df_truth = df_truth.merge(fips_codes, left_on='location_long', right_on='state_n
 df_truth.loc[df_truth["location_long"] == "US", "state"] = "nat"
 df_truth.loc[df_truth["location_long"] == "US", "state_code"] = "US"
 
+'''
+####################################
+# Daily truth data output for reference
+####################################
+'''
+
+# only output "location", "epiweek", "value"
+df_byday = df_truth.rename(columns={"level_0": "date", "state_code": "location", "location_long": "location_name"})
+
+# select columns
+df_byday = df_byday[["date", "location", "location_name", "value"]]
+df_byday.to_csv('../data-processed/truth-cum-death.csv', index=False)
+
+'''
+####################################
+# Truth data output for visualization
+####################################
+'''
+# Observed data on the seventh day
+df_truth = df_truth[df_truth['day'] == 7]
+
+# add leading zeros to epi week
+df_truth['week'] = df_truth['week'].apply(lambda x: '{0:0>2}'.format(x))
+
+# define epiweek
+df_truth['epiweek'] = df_truth['year'].astype(str) + df_truth['week']
+
 # only output "location", "epiweek", "value"
 df_truth = df_truth.rename(columns={"state": "location"})
 df_truth_short = df_truth[["location", "epiweek", "value"]]
+df_truth_short
 
 # write to json
 with open('flusight-master/covid-csv-tools/dist/state_actual/2019.json', 'w') as f:
     f.write(df_truth_short.to_json(orient='records'))
+
 
 '''
 ####################################
@@ -78,9 +93,9 @@ with open('flusight-master/covid-csv-tools/dist/state_actual/2019.json', 'w') as
 ####################################
 '''
 # rename location
-df_truth_long = df_truth.rename(columns={"level_0": "date",
-                                         "week": "epiweek",
-                                         "state_code": "unit"})
+df_truth_long = df_truth.rename(columns={"week": "epiweek",
+                                         "state_code": "unit",
+                                         "level_0": "date"})
 # get timezero
 df_truth_long['date'] = pd.to_datetime(df_truth_long['date'])
 
@@ -105,4 +120,4 @@ for i in range(4):
         df_out = pd.concat([df_out, df_calc])
 
 # write truth to csv
-df_out.to_csv('../data-processed/truth-week-ahead-cum-death.csv', index=False)
+df_out.to_csv('../data-processed/zoltar-truth-cum-death.csv', index=False)

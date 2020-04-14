@@ -2,14 +2,10 @@ import * as types from './mutation-types'
 import * as d3 from 'd3'
 import * as util from '../util'
 import {
+  TimeChart,
   DistributionChart,
   events
-} from 'd3-foresight'
-import {
-  TimeChart
-  // DistributionChart,
-  // events
-} from 'd3-foresight-raw/src/time-chart'
+} from './d3-foresight'
 
 // Initializations
 // ---------------
