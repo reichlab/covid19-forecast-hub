@@ -29,35 +29,15 @@ write_csv(imperial_forecast_dates, "data-processed/Imperial-ensemble2/Imperial-f
 for(i in 1:nrow(imperial_forecast_dates)){
     ensemble1_output <- process_imperial_file(
         ens_preds[[as.character(imperial_forecast_dates$raw_forecast_date[i])]]$United_States_of_America[[1]], 
-        location_id="US", 
-        timezero=imperial_forecast_dates$raw_forecast_date[i])
+        location="US", 
+        timezero=imperial_forecast_dates$timezero[i])
     ensemble2_output <- process_imperial_file(
         ens_preds[[as.character(imperial_forecast_dates$raw_forecast_date[i])]]$United_States_of_America[[2]], 
-        location_id="US", 
-        timezero=imperial_forecast_dates$raw_forecast_date[i])
-    write_csv(ensemble1_output, path = "data-processed/Imperial-ensemble1/2020-03-16-Imperial-ensemble1.csv")
-    write_csv(ensemble2_output, path = "data-processed/Imperial-ensemble2/2020-03-16-Imperial-ensemble2.csv")
-    
+        location="US", 
+        timezero=imperial_forecast_dates$timezero[i])
+    write_csv(ensemble1_output, 
+        path = paste0("data-processed/Imperial-ensemble1/", imperial_forecast_dates$timezero[i],"-Imperial-ensemble1.csv"))
+    write_csv(ensemble2_output, 
+        path = paste0("data-processed/Imperial-ensemble2/", imperial_forecast_dates$timezero[i],"-Imperial-ensemble2.csv"))
+        
 }
-
-qntl_mdl_1_20200315 <- process_imperial_file(ens_preds$`2020-03-15`$United_States_of_America[[1]], location_id="US", timezero=)
-qntl_mdl_2_20200315 <- process_imperial_file(ens_preds$`2020-03-15`$United_States_of_America[[2]], location_id="US")
-write_csv(qntl_mdl_1_20200315, path = "data-processed/Imperial-ensemble1/2020-03-16-Imperial-ensemble1.csv")
-write_csv(qntl_mdl_2_20200315, path = "data-processed/Imperial-ensemble2/2020-03-16-Imperial-ensemble2.csv")
-
-qntl_mdl_1_20200322 <- process_imperial_file(ens_preds$`2020-03-22`$United_States_of_America[[1]], location_id="US")
-qntl_mdl_2_20200322 <- process_imperial_file(ens_preds$`2020-03-22`$United_States_of_America[[2]], location_id="US")
-write_csv(qntl_mdl_1_20200322, path = "data-processed/Imperial-ensemble1/2020-03-23-Imperial-ensemble1.csv")
-write_csv(qntl_mdl_2_20200322, path = "data-processed/Imperial-ensemble2/2020-03-23-Imperial-ensemble2.csv")
-
-qntl_mdl_1_20200329 <- process_imperial_file(ens_preds$`2020-03-29`$United_States_of_America[[1]], location_id="US")
-qntl_mdl_2_20200329 <- process_imperial_file(ens_preds$`2020-03-29`$United_States_of_America[[2]], location_id="US")
-write_csv(qntl_mdl_1_20200329, path = "data-processed/Imperial-ensemble1/2020-03-30-Imperial-ensemble1.csv")
-write_csv(qntl_mdl_2_20200329, path = "data-processed/Imperial-ensemble2/2020-03-30-Imperial-ensemble2.csv")
-
-qntl_mdl_1_20200405 <- process_imperial_file(ens_preds$`2020-04-05`$United_States_of_America[[1]], location_id="US")
-qntl_mdl_2_20200405 <- process_imperial_file(ens_preds$`2020-04-05`$United_States_of_America[[2]], location_id="US")
-write_csv(qntl_mdl_1_20200405, path = "data-processed/Imperial-ensemble1/2020-04-06-Imperial-ensemble1.csv")
-write_csv(qntl_mdl_2_20200405, path = "data-processed/Imperial-ensemble2/2020-04-06-Imperial-ensemble2.csv")
-
-
