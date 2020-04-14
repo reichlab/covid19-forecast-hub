@@ -1,4 +1,4 @@
-target_id,location_id,location_name,type,quantile,value
+target,location,location_name,type,quantile,value
 1 day ahead cum,1,Alabama,point,NA,15.184
 1 day ahead inc,1,Alabama,point,NA,5.184
 1 wk ahead cum,1,Alabama,point,NA,41.531

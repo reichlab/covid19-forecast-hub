@@ -65,7 +65,8 @@ make_qntl_dat <- function(data, forecast_date) {
     point_ests$type<-"quantile"
     final<- rbind(comb,point_ests) %>%
       dplyr::select(target_id,location_id,location_name,type,quantile,value) %>%
-      arrange(location_id,type,quantile,target_id)
+      dplyr::rename(target=target_id,location=location_id) %>%
+      arrange(location,type,quantile,target)
     return(final)
 }
 
