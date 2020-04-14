@@ -52,9 +52,10 @@ make_qntl_dat <- function(data, forecast_date) {
       dplyr::rename(location_id=state_code) %>%
       dplyr::mutate(type=ifelse(quantile=="NA","point","quantile")) %>%
       dplyr::select(-"date_v",-"day_v",-"ew")
-    comb <-rbind(death_qntl1,death_qntl2,death_qntl3) 
-    comb$location[which(comb$location=="United States of America")] <-"US"  
-    comb <- comb %>% dplyr::filter(!is.na(location_id))
+    comb <-rbind(death_qntl1,death_qntl2,death_qntl3) %>% 
+      dplyr::filter(!is.na(location_id)) %>%
+      dplyr::rename(location_name=location) %>%
+      dplyr::select(target_id,location_id,location_name,type,quantile,value)
     comb$quantile[which(comb$quantile=="NA")] <- NA
     comb$quantile <- as.numeric(comb$quantile)
     comb$value <- as.numeric(comb$value)
@@ -78,7 +79,6 @@ names(`2020_04_07.04.all`)[2] <- "location"
 `2020_03_29`$V1 <-1
 `2020_03_27`<-`2020_03_27`[,c(30,1:29)]
 `2020_03_29`<-`2020_03_29`[,c(30,1:29)]
-
 
 ## reformat the read files
 `2020-03-27_file` <- make_qntl_dat(`2020_03_27`, as.Date("2020-03-27"))
