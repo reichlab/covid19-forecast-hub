@@ -1,0 +1,11 @@
+.observed-group {
+  pointer-events: none;
+
+  .line-observed {
+    @include svg-line($observed);
+  }
+
+  .point-observed {
+    @include svg-point($observed);
+  }
+}

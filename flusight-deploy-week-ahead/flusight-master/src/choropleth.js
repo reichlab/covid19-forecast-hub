@@ -48,7 +48,7 @@ export class ColorBar {
 
     let bar = {
       height: 15,
-      width: svgBB.width - 225,
+      width: svgBB.width - 22,
       x: (svgBB.width * 3 / 4) - 100,
       y: svgBB.height - 20
     }
@@ -170,8 +170,7 @@ export default class Choropleth {
     let regionHook = this.regionHook
     let tooltip = this.tooltip
 
-    //let minData = data.range[0]
-    let minData = 0.01
+    let minData = data.range[0]
     let maxData = data.range[1]
     //let maxData = 2000
 
@@ -200,8 +199,8 @@ export default class Choropleth {
       limits = [extreme, -extreme]
       barLimits = [-extreme, extreme]
     }
-    console.log(limits)
-    this.colorScale = d3.scaleLog()
+
+    this.colorScale = d3.scaleLinear()
       .domain(limits)
       .range([0, this.cmap.length - 0.01])
 

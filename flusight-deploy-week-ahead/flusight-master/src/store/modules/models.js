@@ -91,6 +91,7 @@ const getters = {
 
   modelIds: (state, getters) => getters.models.map(m => m.id),
   modelMeta: (state, getters) => getters.models.map(m => m.meta),
+  modelDomain: (state, getters) => getters.models.map(m => console.log(m)),
   modelCIs: (state, getters) => state.confidenceIntervals
 }
 

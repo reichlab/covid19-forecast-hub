@@ -12,7 +12,7 @@ import './assets/spinner.css'
 import './assets/analytics.js'
 import 'nprogress/nprogress.css'
 import 'tablesort/tablesort.css'
-import 'd3-foresight/assets/fontello/fontello.css'
+import 'd3-foresight-raw/assets/fontello/fontello.css'
 
 import './assets/favicons/apple-touch-icon-114x114.png'
 import './assets/favicons/apple-touch-icon-120x120.png'
@@ -42,5 +42,7 @@ Vue.create = options => new Vue(options)
 Vue.create({
   el: 'body',
   store,
-  components: { App }
+  components: {
+    App
+  }
 })

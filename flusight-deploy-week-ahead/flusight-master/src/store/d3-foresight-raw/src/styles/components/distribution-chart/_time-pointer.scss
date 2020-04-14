@@ -1,0 +1,11 @@
+.time-pointer-group {
+  .pointer-triangle {
+    fill: $gray;
+  }
+
+  .pointer-overlay {
+    cursor: pointer;
+    fill: $gray;
+    fill-opacity: 0;
+  }
+}

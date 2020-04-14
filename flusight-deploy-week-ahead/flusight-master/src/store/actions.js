@@ -2,10 +2,14 @@ import * as types from './mutation-types'
 import * as d3 from 'd3'
 import * as util from '../util'
 import {
-  TimeChart,
   DistributionChart,
   events
 } from 'd3-foresight'
+import {
+  TimeChart
+  // DistributionChart,
+  // events
+} from 'd3-foresight-raw/src/time-chart'
 
 // Initializations
 // ---------------
@@ -190,7 +194,7 @@ export const initTimeChart = ({
         description: `Cumulative deaths due to COVID-19
                       <br><br><em>Click to know more</em>`,
         url: 'https://github.com/reichlab/covid19-death-forecasts',
-        domain: [0, 10000]
+        //domain: [0, getters.timeChartMax]
       }
     },
     pointType: 'mmwr-week',
@@ -201,6 +205,7 @@ export const initTimeChart = ({
   // Clear div
   d3.select(divSelector).selectAll('*').remove()
   let timeChart = new TimeChart(divSelector, timeChartOptions)
+  console.log(timeChart.yAxis)
 
   timeChart.addHook(events.JUMP_TO_INDEX, (index) => {
     dispatch('weeks/updateSelectedWeek', index)

@@ -224,6 +224,29 @@ export const timeChartData = (state, getters) => {
   }
 }
 
+function getValues(data) {
+  return data.map(d => d.values);
+}
+
+function getMaxY(data) {
+
+  return Math.max(...getValues(data));
+}
+
+export const timeChartMax = (state, getters) => {
+  //console.log(Math.max(...getters.observed))
+  let data = JSON.parse(JSON.stringify(getters.observed))
+  let maxValue = 0
+  for (var i = 0; i < data.length; i++) {
+    for (var j = 0; j < data[i].length; j++) { // 
+      if (data[i][j].value > maxValue) {
+        maxValue = data[i][j].value
+      }
+    }
+  }
+  return maxValue
+}
+
 /**
  * Return data for distribution plot
  */
