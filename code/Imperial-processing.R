@@ -16,7 +16,7 @@ library(tidyverse)
 #'
 lengthen_qntl_dat <- function(sample_mat, location_id, qntls=c(0.01, 0.025, seq(0.05, 0.95, by=0.05), 0.975, 0.99)) {
     require(tidyverse)
-    cols_to_include <- paste(1:7, "day ahead")
+    cols_to_include <- paste(1:7, "day ahead inc")
     
     ## choosing quantile type=1 b/c more compatible with discrete samples
     ## other choices gave decimal answers

@@ -42,7 +42,7 @@ process_lanl_file <- function(lanl_filepath) {
     dat_long <- pivot_longer(dat, cols=starts_with("q."), names_to = "q", values_to = "cum_deaths") %>%
         filter(dates > forecast_date) %>%
         left_join(select(fips, -state), by=c("state" = "state_name")) %>%
-        mutate(quantile = as.numeric(substr(q, 3, nchar(q)))/100, type="quantile") %>%
+        mutate(quantile = as.numeric(sub("q", "0", q)), type="quantile") %>%
         select(state_code, state, type, quantile, cum_deaths, dates) %>%
         rename(
             location_id = state_code, 
