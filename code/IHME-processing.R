@@ -9,7 +9,6 @@ library(tidyverse)
 #'
 #' @return long-format data_frame with quantiles
 #' 
-#'
 make_qntl_dat <- function(data, forecast_date) {
   require(tidyverse)
   require(MMWRweek)
@@ -43,23 +42,31 @@ make_qntl_dat <- function(data, forecast_date) {
     death_qntl3 <- data[,c(1:3,col_list2)] %>%
       dplyr::select(-"V1") %>%
       dplyr::rename(date_v=date) %>%
-      dplyr::mutate(day_v=lubridate::day(date_v),ew=unname(MMWRweek(date_v)[[2]])) %>%
-      dplyr::filter(day_v =="Saturday" & ew<unname(MMWRweek(forecast_date)[[2]])+7) %>%
-      dplyr::mutate(target_id=paste(ew-unname(MMWRweek(forecast_date)[[2]]),"wk ahead cum")) %>%
+      dplyr::mutate(day_v=lubridate::wday(date_v,label = TRUE, abbr = FALSE),ew=unname(MMWRweek(date_v)[[2]])) %>%
+      dplyr::filter(day_v =="Saturday" & ew<unname(MMWRweek(forecast_date)[[2]])+6 & ew>unname(MMWRweek(forecast_date)[[2]])-1) %>%
+      dplyr::mutate(target_id=paste((ew-unname(MMWRweek(forecast_date)[[2]]))+1,"wk ahead cum")) %>%
       dplyr::rename("0.025"=totdea_lower,"0.975"=totdea_upper,"NA"=totdea_mean) %>%
       gather(quantile, value, -c(location, date_v, day_v, ew, target_id)) %>%
       dplyr::left_join(state_fips_codes, by=c("location"="state_name")) %>%
       dplyr::rename(location_id=state_code) %>%
       dplyr::mutate(type=ifelse(quantile=="NA","point","quantile")) %>%
       dplyr::select(-"date_v",-"day_v",-"ew")
-    comb <-rbind(death_qntl1,death_qntl2,death_qntl3) %>% 
+    comb <-rbind(death_qntl1,death_qntl2,death_qntl3) 
+    comb$location_id[which(comb$location_id=="United States of America"|comb$location_id=="US")] <- "US"
+    comb <- comb %>%
       dplyr::filter(!is.na(location_id)) %>%
-      dplyr::rename(location_name=location) %>%
-      dplyr::select(target_id,location_id,location_name,type,quantile,value)
+      dplyr::rename(location_name=location) 
     comb$quantile[which(comb$quantile=="NA")] <- NA
     comb$quantile <- as.numeric(comb$quantile)
     comb$value <- as.numeric(comb$value)
-    return(comb)
+    point_ests <- comb %>% 
+      filter(is.na(quantile))
+    point_ests$quantile<-0.5
+    point_ests$type<-"quantile"
+    final<- rbind(comb,point_ests) %>%
+      dplyr::select(target_id,location_id,location_name,type,quantile,value) %>%
+      arrange(location_id,type,quantile,target_id)
+    return(final)
 }
 
 
@@ -75,32 +82,19 @@ names(`2020_03_27`)[1] <- "location"
 names(`2020_03_29`)[1] <- "location"
 names(`2020_04_05.08.all`)[2] <- "location"
 names(`2020_04_07.04.all`)[2] <- "location"
+names(`2020_04_09.04`)[2] <- "location"
+names(`2020_04_12.02`)[2] <- "location"
 `2020_03_27`$V1 <-1
 `2020_03_29`$V1 <-1
 `2020_03_27`<-`2020_03_27`[,c(30,1:29)]
 `2020_03_29`<-`2020_03_29`[,c(30,1:29)]
 
 ## reformat the read files
-`2020-03-27_file` <- make_qntl_dat(`2020_03_27`, as.Date("2020-03-27"))
-write_csv(`2020-03-27_file`, path = "data-processed/IHME-IHME/2020-03-27-IHME-IHME.csv")
-
-`2020-03-29_file` <- make_qntl_dat(`2020_03_29`, as.Date("2020-03-29"))
-write_csv(`2020-03-29_file`, path = "data-processed/IHME-IHME/2020-03-29-IHME-IHME.csv")
-
 `2020-03-30_file` <- make_qntl_dat(`2020_03_30`, as.Date("2020-03-30"))
-write_csv(`2020-03-30_file`, path = "data-processed/IHME-IHME/2020-03-30-IHME-IHME.csv")
+write_csv(`2020-03-30_file`, path = "data-processed/IHME-SocialDist/2020-03-30-IHME-SocialDist.csv")
 
-`2020-03-31_file` <- make_qntl_dat(`2020_03_31.1`, as.Date("2020-03-31"))
-write_csv(`2020-03-31_file`, path = "data-processed/IHME-IHME/2020-03-31-IHME-IHME.csv")
+`2020-04-06_file` <- make_qntl_dat(`2020_04_05.08.all`, as.Date("2020-04-06"))
+write_csv(`2020-04-06_file`, path = "data-processed/IHME-SocialDist/2020-04-06-IHME-SocialDist.csv")
 
-`2020-04-01_file` <- make_qntl_dat(`2020_04_01.2`, as.Date("2020-04-01"))
-write_csv(`2020-04-01_file`, path = "data-processed/IHME-IHME/2020-04-01-IHME-IHME.csv")
-
-`2020-04-05_file` <- make_qntl_dat(`2020_04_05.08.all`, as.Date("2020-04-05"))
-write_csv(`2020-04-05_file`, path = "data-processed/IHME-IHME/2020-04-05-IHME-IHME.csv")
-
-`2020-04-07_file` <- make_qntl_dat(`2020_04_07.04.all`, as.Date("2020-04-07"))
-write_csv(`2020-04-07_file`, path = "data-processed/IHME-IHME/2020-04-07-IHME-IHME.csv")
-
-
-
+`2020-04-13_file` <- make_qntl_dat(`2020_04_12.02`, as.Date("2020-04-13"))
+write_csv(`2020-04-13_file`, path = "data-processed/IHME-SocialDist/2020-04-13-IHME-SocialDist.csv")
