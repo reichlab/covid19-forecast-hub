@@ -1,5 +1,4 @@
 *.DS_Store
-
 .Rproj.user
 .Rhistory
 .RData
@@ -7,3 +6,4 @@
 
 node_modules
 .ipynb_checkpoints
+covid19-death-forecasts.Rproj
