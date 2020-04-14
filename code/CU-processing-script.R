@@ -31,7 +31,7 @@ for(i in 1:nrow(folders_to_process)) {
   tmp_ls_files <- list.files(paste0("data-raw/CU/",
                                     folders_to_process$folders[i]))
   if(!all(paste0("cdchosp_", scenarios, ".csv") %in% tmp_ls_files)){
-    stop("Not all expected iles found.")
+    stop("Not all expected files found.")
   }
 
   # run over different scenarios:

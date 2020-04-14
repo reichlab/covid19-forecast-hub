@@ -45,7 +45,7 @@ process_cu_file <- function(cu_filepath, file, timezero, exclude_counties = TRUE
   death_vars <- colnames(dat)[grepl(colnames(dat), pattern = "death")]
   dat <- dat[, c("location", "fips", "Date", death_vars)]
 
-  # restrict to state-level forecasts
+  # restrict to state and national-level forecasts
   if(exclude_counties){
     dat <- subset(dat, nchar(fips) < 3)
   }
