@@ -47,8 +47,19 @@ df_truth = df_truth[df_truth["location_long"].isin(states)]
 
 # Get state IDs
 df_truth = df_truth.merge(fips_codes, left_on='location_long', right_on='state_name', how='left')
-df_truth.loc[df_truth["location_long"] == "US", "state"] = "nat"
 df_truth.loc[df_truth["location_long"] == "US", "state_code"] = "US"
+df_truth["state_code"].replace({"US": 1000}, inplace=True)  # so that can be converted to int
+
+# convert FIPS code to int
+df_truth["state_code"] = df_truth["state_code"].astype(int)
+
+# add leading zeros to state code
+df_truth['state_code'] = df_truth['state_code'].apply(lambda x: '{0:0>2}'.format(x))
+
+# convert 1000 back to US
+df_truth["state_code"].replace({"1000": "US"}, inplace=True)
+df_truth.loc[df_truth["location_long"] == "US", "state"] = "nat"
+
 
 '''
 ####################################
