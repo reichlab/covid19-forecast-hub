@@ -19,7 +19,7 @@ colMeans(ens_preds$`2020-04-05`$United_States_of_America[[1]])
 
 ## align forecast dates with timezeros
 imperial_forecast_dates <- tibble(
-    raw_forecast_date = seq.Date(as.Date("2020-03-15"), by="1 week", length.out = 6),
+    raw_forecast_date = seq.Date(as.Date("2020-03-15"), by="1 week", length.out = 4),
     timezero = raw_forecast_date + 1
 )
 write_csv(imperial_forecast_dates, "data-processed/Imperial-ensemble1/Imperial-forecast-dates.csv")
