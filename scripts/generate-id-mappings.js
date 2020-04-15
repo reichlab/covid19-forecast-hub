@@ -19,7 +19,7 @@ const epiweekToSeason = (timeData) => {
   // HACK: Should fix main int-str thingy
   let year = parseInt(timeData.year)
   let epiweek = parseInt(timeData.epiweek)
-  return (epiweek < 40) ? `${year-1}/${year}` : `${year}/${year+1}`
+  return (epiweek < 52) ? `${year-1}/${year}` : `${year}/${year+1}`
 }
 
 /**
