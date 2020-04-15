@@ -3,7 +3,9 @@
 
 dat <- read_csv("data-raw/MOBS/2020-04-13-MOBS_NEU-GLEAM-COVID-19_v1.csv") %>%
     rename(target=target_id, location=location_id) %>%
-    mutate(location = str_pad(as.character(location), width = 2, side = "left", pad = "0"))
+    mutate(
+        location = str_pad(as.character(location), width = 2, side = "left", pad = "0"),
+        target = paste(target, "deaths"))
 
 point_ests <- dat %>% 
     filter(quantile==0.5) %>% 
