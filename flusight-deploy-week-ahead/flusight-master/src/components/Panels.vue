@@ -39,7 +39,7 @@ export default {
     ChartsPanel
   },
   computed: {
-...mapGetters(["branding"]),...mapGetters(["branding"]),...mapGetters(["branding"]),...mapGetters(["branding"]),...mapGetters(["branding"]),    ...mapGetters(["branding"]),
+...mapGetters(["branding"]),...mapGetters(["branding"]),...mapGetters(["branding"]),...mapGetters(["branding"]),...mapGetters(["branding"]),...mapGetters(["branding"]),    ...mapGetters(["branding"]),
     ...mapGetters(["branding"]),
     ...mapGetters(["branding"]),
     ...mapGetters(["branding"]),
