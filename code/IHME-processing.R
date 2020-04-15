@@ -52,14 +52,15 @@ make_qntl_dat <- function(data, forecast_date) {
       dplyr::mutate(type=ifelse(quantile=="NA","point","quantile")) %>%
       dplyr::select(-"date_v",-"day_v",-"ew")
     comb <-rbind(death_qntl1,death_qntl2,death_qntl3) 
-    comb$location_id[which(comb$location_id=="United States of America"|comb$location_id=="US")] <- "US"
+    comb$location[which(comb$location=="United States of America")] <- "US"
+    comb$location_id[which(comb$location=="US")] <- "US"
     comb <- comb %>%
       dplyr::filter(!is.na(location_id)) %>%
-      dplyr::rename(location_name=location) 
+      dplyr::rename(location_name=location)
     comb$quantile[which(comb$quantile=="NA")] <- NA
     comb$quantile <- as.numeric(comb$quantile)
     comb$value <- as.numeric(comb$value)
-    point_ests <- comb %>% 
+    point_ests <- comb %>%
       filter(is.na(quantile))
     point_ests$quantile<-0.5
     point_ests$type<-"quantile"
