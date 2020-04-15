@@ -42,13 +42,13 @@ process_lanl_file <- function(lanl_filepath, timezero) {
         mutate(quantile = as.numeric(sub("q", "0", q)), type="quantile") %>%
         select(state_code, state, type, quantile, cum_deaths, dates) %>%
         rename(
-            location_id = state_code, 
+            location = state_code, 
             location_name = state, 
             value = cum_deaths)
     
     ## create tables corresponding to the days for each of the targets
-    day_aheads <- tibble(target_id = paste(1:7, "day ahead cum"), dates = timezero+1:7)
-    week_aheads <- tibble(target_id = paste(1:7, "wk ahead cum"), dates = get_next_saturday(timezero+seq(0, by=7, length.out = 7)))
+    day_aheads <- tibble(target = paste(1:7, "day ahead cum"), dates = timezero+1:7)
+    week_aheads <- tibble(target = paste(1:7, "wk ahead cum"), dates = get_next_saturday(timezero+seq(0, by=7, length.out = 7)))
     
     ## merge so targets are aligned with dates
     fcast_days <- inner_join(day_aheads, dat_long) %>% select(-dates)
@@ -61,7 +61,7 @@ process_lanl_file <- function(lanl_filepath, timezero) {
         mutate(quantile=NA, type="point")
     
     all_dat <- bind_rows(fcast_all, point_ests) %>%
-        arrange(type, target_id, quantile) %>%
+        arrange(type, target, quantile) %>%
         mutate(quantile = round(quantile, 3))
     
     return(all_dat)

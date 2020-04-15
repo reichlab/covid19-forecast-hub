@@ -1,4 +1,4 @@
-target_id,location_id,location_name,type,quantile,value
+target,location,location_name,type,quantile,value
 1 day ahead cum,01,Alabama,point,NA,111.511973454433
 1 day ahead cum,02,Alaska,point,NA,8.35004167151066
 1 day ahead cum,04,Arizona,point,NA,127.044729215613
