@@ -16,12 +16,19 @@ source("./code/get_next_saturday.R")
 process_imperial_file <- function(sample_mat, location, timezero, qntls=c(0.01, 0.025, seq(0.05, 0.95, by=0.05), 0.975, 0.99)) {
     require(tidyverse)
     
-    fcast_dates <- read_csv("template/covid19-death-forecast-dates.csv")
+    obs_data <- read_csv("data-processed/truth-cum-death.csv")
     
     ## create tables corresponding to the days for each of the targets
-    day_aheads <- tibble(target = paste(1:7, "day ahead inc"), dates = timezero+1:7)
-    week_aheads <- tibble(target = "1 wk ahead inc", dates = get_next_saturday(timezero))
+    day_aheads <- tibble(
+        target = paste(1:7, "day ahead inc death"),
+        target_cum = paste(1:7, "day ahead cum death"),
+        dates = timezero+1:7)
+    week_aheads <- tibble(
+        target = "1 wk ahead inc death", 
+        target_cum = "1 wk ahead cum death", 
+        dates = get_next_saturday(timezero))
     
+    ## indices and samples for incident deaths 
     which_days <- which(colnames(sample_mat) %in% as.character(day_aheads$dates))
     which_weeks <- which(colnames(sample_mat) %in% as.character(week_aheads$dates))
     samples_daily <- sample_mat[,which_days]
@@ -38,7 +45,7 @@ process_imperial_file <- function(sample_mat, location, timezero, qntls=c(0.01, 
     if(is.null(dim(samples_weekly))){
         ## if only one week
         qntl_weekly <- enframe(quantile(samples_weekly, qntls, type=1)) %>% select(value)
-        colnames(qntl_weekly) <- "1 wk ahead inc"
+        colnames(qntl_weekly) <- "1 wk ahead inc death"
         qntl_weekly_long <- qntl_weekly %>%
             mutate(location=location, quantile = qntls, type="quantile") %>%
             pivot_longer(cols=contains("wk ahead"), names_to = "target") 
@@ -60,7 +67,8 @@ process_imperial_file <- function(sample_mat, location, timezero, qntls=c(0.01, 
     
     all_dat <- bind_rows(qntl_dat_long, point_ests) %>%
         arrange(type, target, quantile) %>%
-        mutate(quantile = round(quantile, 3))
+        mutate(quantile = round(quantile, 3)) %>%
+        select(target,location,type,quantile,value)
     
     return(all_dat)
 }
