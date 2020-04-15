@@ -52,8 +52,8 @@ process_lanl_file <- function(lanl_filepath, timezero) {
             value = cum_deaths)
     
     ## create tables corresponding to the days for each of the targets
-    day_aheads <- tibble(target = paste(1:7, "day ahead cum deaths"), dates = timezero+1:7)
-    week_aheads <- tibble(target = paste(1:7, "wk ahead cum deaths"), dates = get_next_saturday(timezero+seq(0, by=7, length.out = 7)))
+    day_aheads <- tibble(target = paste(1:7, "day ahead cum death"), dates = timezero+1:7)
+    week_aheads <- tibble(target = paste(1:7, "wk ahead cum death"), dates = get_next_saturday(timezero+seq(0, by=7, length.out = 7)))
     
     ## merge so targets are aligned with dates
     fcast_days <- inner_join(day_aheads, dat_long) %>% select(-dates)
