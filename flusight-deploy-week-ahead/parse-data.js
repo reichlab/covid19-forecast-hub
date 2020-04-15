@@ -49,7 +49,7 @@ const parseCSVInfo = (fileName) => {
 
 // Main entry point
 let modelDirs = models.getModelDirs(
-  '../vis-data',
+  '../data-processed',
   ['component-models']
 )
 

@@ -1,0 +1,78 @@
+module.exports = {
+	"seasonId": "2019-2020",
+	"stateId": "NY",
+	"models": [
+		{
+			"id": "example-ex-model",
+			"predictions": [
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				{
+					"series": [
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						},
+						null,
+						null
+					]
+				},
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			]
+		}
+	]
+};

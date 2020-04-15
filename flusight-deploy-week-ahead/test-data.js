@@ -11,7 +11,7 @@ chai.should()
 // Metadata tests
 describe('metadata.txt', function () {
     let modelDirs = models.getModelDirs(
-        '../vis-data',
+        '../data-processed',
         ['component-models']
     )
 
