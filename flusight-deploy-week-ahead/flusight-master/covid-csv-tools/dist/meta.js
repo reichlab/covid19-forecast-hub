@@ -57,10 +57,10 @@ exports.scoreIds = [
  * Mapping from target ids to full name as used in the csvs
  */
 exports.targetFullName = {
-  '1-ahead': '1 wk ahead cum',
-  '2-ahead': '2 wk ahead cum',
-  '3-ahead': '3 wk ahead cum',
-  '4-ahead': '4 wk ahead cum',
+  '1-ahead': '1 wk ahead cum death',
+  '2-ahead': '2 wk ahead cum death',
+  '3-ahead': '3 wk ahead cum death',
+  '4-ahead': '4 wk ahead cum death',
   'peak': 'Season peak percentage',
   'peak-wk': 'Season peak week',
   'onset-wk': 'Season onset'

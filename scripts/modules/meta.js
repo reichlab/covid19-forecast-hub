@@ -20,10 +20,10 @@ const targets = [
   'Season onset',
   'Season peak week',
   'Season peak percentage',
-  '1 wk ahead cum',
-  '2 wk ahead cum',
-  '3 wk ahead cum',
-  '4 wk ahead cum'
+  '1 wk ahead cum death',
+  '2 wk ahead cum death',
+  '3 wk ahead cum death',
+  '4 wk ahead cum death'
 ]
 
 module.exports.regions = regions

@@ -122,15 +122,19 @@ function parsePointData(csv, stateId) {
       let point = csv.getPoint(target, stateId)
 
       let ranges = cis.map(c => csv.getConfidenceRange(target, stateId, c))
+
       let low = ranges.map(r => r[0])
       let high = ranges.map(r => r[1])
 
-      if (['peak-wk', 'onset-wk'].indexOf(target) > -1) {
-        // Return indices for time based targets
-        point = seasonEpiweeks.indexOf(point)
-        high = high.map(d => seasonEpiweeks.indexOf(d))
-        low = low.map(d => seasonEpiweeks.indexOf(d))
-      }
+      low = low.map(v => v === undefined ? point : v); //replace undefined with point estimates
+      high = high.map(v => v === undefined ? point : v); //replace undefined with point estimates
+
+      // if (['peak-wk', 'onset-wk'].indexOf(target) > -1) {
+      //   // Return indices for time based targets
+      //   point = seasonEpiweeks.indexOf(point)
+      //   high = high.map(d => seasonEpiweeks.indexOf(d))
+      //   low = low.map(d => seasonEpiweeks.indexOf(d))
+      // }
 
       return {
         point,
