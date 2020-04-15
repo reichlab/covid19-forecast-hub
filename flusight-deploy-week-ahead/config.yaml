@@ -1,10 +1,10 @@
 # Items used for branding
 branding:
-  title: "CDC COVID-19 ILI Forecasting Project"
+  title: "COVID-19 Cumulative Death Forecasts"
   parent: ""
-  description: "CDC COVID-19 influenza-like illness (ILI) Forecasting Project"
+  description: "COVID-19 Death Forecasting Project"
   imageUrl: ""
-  aboutUrl: "http://reichlab.io/2017/11/28/flusight-ensemble.html"
+  aboutUrl: "https://github.com/reichlab/covid19-death-forecasts"
   appUrl: ""
-  sourceUrl: "https://github.com/cdcepi/COVID-19-ILI-forecasting-submissions"
-  parentUrl: "https://github.com/cdcepi/COVID-19-ILI-forecasting/blob/master/templates-and-data/covid-19-ili-forecast-guidance.pdf"
+  sourceUrl: "https://github.com/reichlab/covid19-death-forecasts"
+  parentUrl: "https://github.com/reichlab/covid19-death-forecasts"

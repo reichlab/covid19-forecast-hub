@@ -3775,7 +3775,7 @@ date,location,location_name,value
 4/3/20,33,New Hampshire,5
 4/3/20,34,New Jersey,646
 4/3/20,35,New Mexico,10
-4/3/20,36,New York,3594
+4/3/20,36,New York,3262
 4/3/20,37,North Carolina,27
 4/3/20,38,North Dakota,3
 4/3/20,39,Ohio,91
@@ -3794,7 +3794,7 @@ date,location,location_name,value
 4/3/20,54,West Virginia,2
 4/3/20,55,Wisconsin,51
 4/3/20,56,Wyoming,0
-4/3/20,US,US,7746
+4/3/20,US,US,7414
 4/4/20,01,Alabama,44
 4/4/20,02,Alaska,5
 4/4/20,04,Arizona,52
@@ -3827,7 +3827,7 @@ date,location,location_name,value
 4/4/20,33,New Hampshire,7
 4/4/20,34,New Jersey,846
 4/4/20,35,New Mexico,10
-4/4/20,36,New York,4290
+4/4/20,36,New York,3544
 4/4/20,37,North Carolina,34
 4/4/20,38,North Dakota,3
 4/4/20,39,Ohio,102
@@ -3846,7 +3846,7 @@ date,location,location_name,value
 4/4/20,54,West Virginia,2
 4/4/20,55,Wisconsin,54
 4/4/20,56,Wyoming,0
-4/4/20,US,US,9132
+4/4/20,US,US,8386
 4/5/20,01,Alabama,45
 4/5/20,02,Alaska,6
 4/5/20,04,Arizona,64
@@ -3879,7 +3879,7 @@ date,location,location_name,value
 4/5/20,33,New Hampshire,9
 4/5/20,34,New Jersey,917
 4/5/20,35,New Mexico,12
-4/5/20,36,New York,4951
+4/5/20,36,New York,4029
 4/5/20,37,North Carolina,38
 4/5/20,38,North Dakota,3
 4/5/20,39,Ohio,119
@@ -3898,7 +3898,7 @@ date,location,location_name,value
 4/5/20,54,West Virginia,3
 4/5/20,55,Wisconsin,74
 4/5/20,56,Wyoming,0
-4/5/20,US,US,10411
+4/5/20,US,US,9489
 4/6/20,01,Alabama,49
 4/6/20,02,Alaska,6
 4/6/20,04,Arizona,65
@@ -4315,3 +4315,55 @@ date,location,location_name,value
 4/13/20,55,Wisconsin,154
 4/13/20,56,Wyoming,1
 4/13/20,US,US,23520
+4/14/20,01,Alabama,114
+4/14/20,02,Alaska,9
+4/14/20,04,Arizona,131
+4/14/20,05,Arkansas,32
+4/14/20,06,California,768
+4/14/20,08,Colorado,327
+4/14/20,09,Connecticut,671
+4/14/20,10,Delaware,43
+4/14/20,11,District of Columbia,67
+4/14/20,12,Florida,571
+4/14/20,13,Georgia,525
+4/14/20,15,Hawaii,9
+4/14/20,16,Idaho,33
+4/14/20,17,Illinois,868
+4/14/20,18,Indiana,387
+4/14/20,19,Iowa,49
+4/14/20,20,Kansas,69
+4/14/20,21,Kentucky,106
+4/14/20,22,Louisiana,1013
+4/14/20,23,Maine,20
+4/14/20,24,Maryland,302
+4/14/20,25,Massachusetts,844
+4/14/20,26,Michigan,1759
+4/14/20,27,Minnesota,79
+4/14/20,28,Mississippi,111
+4/14/20,29,Missouri,149
+4/14/20,30,Montana,7
+4/14/20,31,Nebraska,20
+4/14/20,32,Nevada,126
+4/14/20,33,New Hampshire,25
+4/14/20,34,New Jersey,2805
+4/14/20,35,New Mexico,31
+4/14/20,36,New York,10842
+4/14/20,37,North Carolina,112
+4/14/20,38,North Dakota,8
+4/14/20,39,Ohio,324
+4/14/20,40,Oklahoma,108
+4/14/20,41,Oregon,55
+4/14/20,42,Pennsylvania,691
+4/14/20,44,Rhode Island,80
+4/14/20,45,South Carolina,97
+4/14/20,46,South Dakota,6
+4/14/20,47,Tennessee,124
+4/14/20,48,Texas,342
+4/14/20,49,Utah,18
+4/14/20,50,Vermont,29
+4/14/20,51,Virginia,154
+4/14/20,53,Washington,530
+4/14/20,54,West Virginia,9
+4/14/20,55,Wisconsin,170
+4/14/20,56,Wyoming,1
+4/14/20,US,US,25822

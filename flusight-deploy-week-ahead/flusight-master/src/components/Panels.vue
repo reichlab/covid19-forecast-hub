@@ -7,7 +7,8 @@ h1 a {
     position: relative;
   }
 }
-#choropleth-container, #chart-container {
+#choropleth-container,
+#chart-container {
   background: white;
 }
 </style>
@@ -17,7 +18,7 @@ h1 a {
   #map-intro.column.is-4
     // Title
     h1.title
-      a(v-bind:href="branding.parentUrl") COVID-19 ILI Forecasts
+      a(v-bind:href="branding.parentUrl") COVID-19 Cumulative Death Forecasts
     h2.subtitle
       | CDC Epidemic Prediction Initiative
     hr
@@ -29,65 +30,70 @@ h1 a {
 </template>
 
 <script>
-import Choropleth from './Panels/Choropleth'
-import ChartsPanel from './Panels/ChartsPanel'
-import { mapGetters, mapActions } from 'vuex'
+import Choropleth from "./Panels/Choropleth";
+import ChartsPanel from "./Panels/ChartsPanel";
+import { mapGetters, mapActions } from "vuex";
 export default {
   components: {
     Choropleth,
     ChartsPanel
   },
   computed: {
-...mapGetters(['branding']),
-...mapGetters(['branding']),
-...mapGetters(['branding']),
-...mapGetters(["branding"]),...mapGetters(['branding']),
-...mapGetters(['branding']),
-...mapGetters(['branding']),
-...mapGetters(["branding"]),...mapGetters(["branding"]),...mapGetters(["branding"]),...mapGetters(["branding"]),...mapGetters(["branding"]),...mapGetters(["branding"]),...mapGetters(["branding"]),...mapGetters(["branding"]),    ...mapGetters('switches', [
-      'selectedRegion',
-      'selectedSeason',
-      'choroplethRelative'
+...mapGetters(["branding"]),...mapGetters(["branding"]),...mapGetters(["branding"]),    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters("switches", [
+      "selectedRegion",
+      "selectedSeason",
+      "choroplethRelative"
     ]),
-    ...mapGetters('weeks', [
-      'selectedWeekIdx'
-    ])
+    ...mapGetters("weeks", ["selectedWeekIdx"])
   },
   methods: {
     ...mapActions([
-      'updateTimeChart',
-      'updateChoropleth',
-      'plotChoropleth',
-      'plotTimeChart',
-      'plotDistributionChart'
+      "updateTimeChart",
+      "updateChoropleth",
+      "plotChoropleth",
+      "plotTimeChart",
+      "plotDistributionChart"
     ]),
-    ...mapActions('weeks', [
-      'readjustSelectedWeek'
-    ])
+    ...mapActions("weeks", ["readjustSelectedWeek"])
   },
   watch: {
-    selectedRegion: function () {
+    selectedRegion: function() {
       // Jiggle weeks
-      this.readjustSelectedWeek()
-      this.plotTimeChart()
-      this.plotDistributionChart()
-      this.updateChoropleth()
+      this.readjustSelectedWeek();
+      this.plotTimeChart();
+      this.plotDistributionChart();
+      this.updateChoropleth();
     },
-    selectedSeason: function () {
+    selectedSeason: function() {
       // Jiggle weeks
-      this.readjustSelectedWeek()
-      this.plotTimeChart()
-      this.plotChoropleth()
-      this.plotDistributionChart()
+      this.readjustSelectedWeek();
+      this.plotTimeChart();
+      this.plotChoropleth();
+      this.plotDistributionChart();
     },
-    choroplethRelative: function () {
-      this.plotChoropleth()
+    choroplethRelative: function() {
+      this.plotChoropleth();
     },
-    selectedWeekIdx: function () {
-      this.updateChoropleth()
-      this.updateTimeChart()
-      this.plotDistributionChart()
+    selectedWeekIdx: function() {
+      this.updateChoropleth();
+      this.updateTimeChart();
+      this.plotDistributionChart();
     }
   }
-}
+};
 </script>

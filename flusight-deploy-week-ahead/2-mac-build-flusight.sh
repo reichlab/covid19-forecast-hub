@@ -28,8 +28,8 @@ sed -i "" 's/span.brand.title-text {{ branding.title }}/a.brand.title-text(v-bin
 
 # Change text above map
 # CDC FluSight Network Collaborative Ensemble
-sed -i "" 's/| Real-time <b>COVID-19 Forecasts<\/b>/a(v-bind:href="branding.parentUrl") CDC COVID-19 Forecast Project/' ./src/components/Panels.vue
-sed -i "" 's/CDC FluSight Challenge/COVID-19/' ./src/components/Panels.vue
+sed -i "" 's/| Real-time <b>COVID-19 Death Forecasts<\/b>/a(v-bind:href="branding.parentUrl") CDC COVID-19 Forecast Project/' ./src/components/Panels.vue
+sed -i "" 's/Reich Lab/COVID-19/' ./src/components/Panels.vue
 sed -i "" '/computed/a\
 			...mapGetters(["branding"]),' ./src/components/Panels.vue
 

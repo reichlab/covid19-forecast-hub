@@ -1,5 +1,4 @@
 <style lang="scss">
-
 .datamaps-subunit {
   cursor: pointer;
 }
@@ -36,7 +35,8 @@
 }
 
 .colorbar-group .axis {
-  line, path {
+  line,
+  path {
     fill: none;
     stroke: #bbb !important;
   }
@@ -48,7 +48,8 @@
   }
 }
 
-#switch-tooltip, #wili-tooltip {
+#switch-tooltip,
+#wili-tooltip {
   padding: 5px 10px;
   ul {
     list-style: disc inside none;
@@ -57,7 +58,7 @@
     li {
       display: table-row;
       &::before {
-        content: '•';
+        content: "•";
         display: table-cell;
         text-align: right;
         padding-right: 10px;
@@ -82,7 +83,7 @@ div
     v-show="tooltips.switch.show"
     v-bind:style="tooltips.switch.pos"
   )
-    | {{{ tooltips.switch.text }}}
+    | {{{ tooltips.switch.text }}} 
 
   // Tooltip over wili text
   #wili-tooltip.tooltip(
@@ -128,52 +129,50 @@ div
       v-on:mouseout="hideSwitchTooltip"
       v-on:mousemove="moveSwitchTooltip"
     )
-      span(v-bind:class="[choroplethRelative ? 'disabled' : '']") Absolute
-      span.icon
-        i(
-          v-bind:class=`[choroplethRelative ? '' : 'fa-rotate-180',
-                        'fa fa-toggle-on']`
-         )
-      span(v-bind:class="[choroplethRelative ? '' : 'disabled']") Relative
+      //- span(v-bind:class="[choroplethRelative ? 'disabled' : '']") Absolute
+      //- span.icon
+      //-   i(
+      //-     v-bind:class=`[choroplethRelative ? '' : 'fa-rotate-180',
+      //-                   'fa fa-toggle-on']`
+      //-    )
+      //- span(v-bind:class="[choroplethRelative ? '' : 'disabled']") Relative
 </template>
 
 <script>
-import Choropleth from '../../choropleth'
-import { mapGetters, mapActions } from 'vuex'
-import nprogress from 'nprogress'
+import Choropleth from "../../choropleth";
+import { mapGetters, mapActions } from "vuex";
+import nprogress from "nprogress";
 
 export default {
   computed: {
     ...mapGetters([
-      'seasons',
-      'regions',
-      'selectedRegionId',
-      'selectedSeasonId',
-      'metadata'
+      "seasons",
+      "regions",
+      "selectedRegionId",
+      "selectedSeasonId",
+      "metadata"
     ]),
-    ...mapGetters('switches', [
-      'selectedSeason',
-      'selectedRegion',
-      'choroplethRelative',
-      'showTimeChart',
-      'showScoresPanel',
-      'showDistributionChart'
+    ...mapGetters("switches", [
+      "selectedSeason",
+      "selectedRegion",
+      "choroplethRelative",
+      "showTimeChart",
+      "showScoresPanel",
+      "showDistributionChart"
     ]),
-    ...mapGetters('weeks', [
-      'selectedWeekName'
-    ]),
+    ...mapGetters("weeks", ["selectedWeekName"]),
     currentSeason: {
-      get () {
-        return this.seasons[this.selectedSeason]
+      get() {
+        return this.seasons[this.selectedSeason];
       },
-      set (val) {
+      set(val) {
         // Check if we need to download the season
-        nprogress.start()
+        nprogress.start();
 
         let setSeason = () => {
-          this.updateSelectedSeason(this.seasons.indexOf(val))
-          nprogress.done()
-        }
+          this.updateSelectedSeason(this.seasons.indexOf(val));
+          nprogress.done();
+        };
 
         this.downloadSeasonData({
           http: this.$http,
@@ -186,7 +185,7 @@ export default {
                 id: `${val}-${this.selectedRegionId}`,
                 success: setSeason,
                 fail: err => console.log(err)
-              })
+              });
             } else if (this.showScoresPanel) {
               // Check if we need to download scores data
               this.downloadScoresData({
@@ -194,142 +193,143 @@ export default {
                 id: val,
                 success: setSeason,
                 fail: err => console.log(err)
-              })
+              });
             } else {
-              setSeason()
+              setSeason();
             }
           },
           fail: err => console.log(err)
-        })
+        });
       }
     },
     currentRegion: {
-      get () {
-        return this.regions[this.selectedRegion]
+      get() {
+        return this.regions[this.selectedRegion];
       },
-      set (val) {
-        let regionIdx = this.regions.indexOf(val)
-        let regionId = this.metadata.regionData[regionIdx].id
-        let distId = `${this.selectedSeasonId}-${regionId}`
+      set(val) {
+        let regionIdx = this.regions.indexOf(val);
+        let regionId = this.metadata.regionData[regionIdx].id;
+        let distId = `${this.selectedSeasonId}-${regionId}`;
         if (this.showDistributionChart) {
           // If on distribution chart, check and request for dist data
-          nprogress.start()
+          nprogress.start();
           this.downloadDistData({
             http: this.$http,
             id: distId,
             success: () => {
-              this.updateSelectedRegion(regionIdx)
-              nprogress.done()
+              this.updateSelectedRegion(regionIdx);
+              nprogress.done();
             },
             fail: err => console.log(err)
-          })
+          });
         } else {
-          this.updateSelectedRegion(regionIdx)
+          this.updateSelectedRegion(regionIdx);
         }
       }
     }
   },
   methods: {
     ...mapActions([
-      'importLatestChunk',
-      'initChoropleth',
-      'plotChoropleth',
-      'updateChoropleth',
-      'downloadSeasonData',
-      'downloadScoresData',
-      'downloadDistData'
+      "importLatestChunk",
+      "initChoropleth",
+      "plotChoropleth",
+      "updateChoropleth",
+      "downloadSeasonData",
+      "downloadScoresData",
+      "downloadDistData"
     ]),
-    ...mapActions('switches', [
-      'updateSelectedRegion',
-      'updateSelectedSeason',
-      'toggleRelative'
+    ...mapActions("switches", [
+      "updateSelectedRegion",
+      "updateSelectedSeason",
+      "toggleRelative"
     ]),
-    showSwitchTooltip () {
-      this.tooltips.switch.show = true
+    showSwitchTooltip() {
+      this.tooltips.switch.show = true;
     },
-    hideSwitchTooltip () {
-      this.tooltips.switch.show = false
+    hideSwitchTooltip() {
+      this.tooltips.switch.show = false;
     },
-    moveSwitchTooltip (event) {
-      let obj = this.tooltips.switch
+    moveSwitchTooltip(event) {
+      let obj = this.tooltips.switch;
 
-      obj.pos.top = (event.clientY + 15) + 'px'
-      obj.pos.left = (event.clientX + 15) + 'px'
+      obj.pos.top = event.clientY + 15 + "px";
+      obj.pos.left = event.clientX + 15 + "px";
     },
-    showWiliTooltip () {
-      this.tooltips.wili.show = true
+    showWiliTooltip() {
+      this.tooltips.wili.show = true;
     },
-    hideWiliTooltip () {
-      this.tooltips.wili.show = false
+    hideWiliTooltip() {
+      this.tooltips.wili.show = false;
     },
-    moveWiliTooltip (event) {
-      let obj = this.tooltips.wili
+    moveWiliTooltip(event) {
+      let obj = this.tooltips.wili;
 
-      obj.pos.top = (event.clientY + 15) + 'px'
-      obj.pos.left = (event.clientX + 15) + 'px'
+      obj.pos.top = event.clientY + 15 + "px";
+      obj.pos.left = event.clientX + 15 + "px";
     }
   },
-  data () {
+  data() {
     return {
       tooltips: {
         switch: {
           show: false,
           text: `Choose between
                  <ul>
-                 <li><b>Absolute</b> weighted ILI % values or</li>
+                 <li><b>Absolute</b> Cumulative Death Values or</li>
                  <li><b>Relative</b> values as the percent above/below the regional CDC baseline</li>
                  </ul>`,
           pos: {
-            top: '0px',
-            left: '0px'
+            top: "0px",
+            left: "0px"
           }
         },
         wili: {
           show: false,
-          text: `Percentage of outpatient doctor visits for influenza-like illness,
-                 weighed by state population.<br><br>
+          text: `Cumulative deaths deaths due to COVID-19 in the United States<br><br>
                  <em>Click to know more</em>`,
           pos: {
-            top: '0px',
-            left: '0px'
+            top: "0px",
+            left: "0px"
           }
         }
       }
-    }
+    };
   },
-  ready () {
-    require.ensure(['../../store/data'], () => {
-      this.importLatestChunk(require('../../store/data'))
+  ready() {
+    require.ensure(["../../store/data"], () => {
+      this.importLatestChunk(require("../../store/data"));
 
-      this.updateSelectedSeason(this.seasons.length - 1)
+      this.updateSelectedSeason(this.seasons.length - 1);
 
       // Setup map
-      this.initChoropleth(new Choropleth('choropleth', regionIdx => {
-        if (this.showDistributionChart) {
-          // If on distribution chart, check and request for dist data
-          let regionId = this.metadata.regionData[regionIdx].id
-          let distId = `${this.selectedSeasonId}-${regionId}`
-          nprogress.start()
-          this.downloadDistData({
-            http: this.$http,
-            id: distId,
-            success: () => {
-              this.updateSelectedRegion(regionIdx)
-              nprogress.done()
-            },
-            fail: err => console.log(err)
-          })
-        } else {
-          this.updateSelectedRegion(regionIdx)
-        }
-      }))
+      this.initChoropleth(
+        new Choropleth("choropleth", regionIdx => {
+          if (this.showDistributionChart) {
+            // If on distribution chart, check and request for dist data
+            let regionId = this.metadata.regionData[regionIdx].id;
+            let distId = `${this.selectedSeasonId}-${regionId}`;
+            nprogress.start();
+            this.downloadDistData({
+              http: this.$http,
+              id: distId,
+              success: () => {
+                this.updateSelectedRegion(regionIdx);
+                nprogress.done();
+              },
+              fail: err => console.log(err)
+            });
+          } else {
+            this.updateSelectedRegion(regionIdx);
+          }
+        })
+      );
 
       // Setup data
-      this.plotChoropleth()
+      this.plotChoropleth();
 
       // Hot start
-      this.updateChoropleth()
-    })
+      this.updateChoropleth();
+    });
   }
-}
+};
 </script>

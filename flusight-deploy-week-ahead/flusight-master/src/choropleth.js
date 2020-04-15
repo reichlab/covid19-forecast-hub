@@ -48,8 +48,8 @@ export class ColorBar {
 
     let bar = {
       height: 15,
-      width: svgBB.width - 22,
-      x: (svgBB.width * 3 / 4) - 100,
+      width: svgBB.width - 225,
+      x: (svgBB.width * 3 / 4) - 150,
       y: svgBB.height - 20
     }
 
@@ -66,9 +66,11 @@ export class ColorBar {
     }
 
     // Add axis
-    let scale = d3.scaleLinear()
+    // let scale = d3.scaleLinear()
+    //   .range([0, bar.width])
+    let scale = d3.scaleLog()
+      .base(10)
       .range([0, bar.width])
-
     group.append('g')
       .attr('class', 'axis axis-color')
       .attr('transform', 'translate(' + bar.x + ',' + (bar.y - 2) + ')')
@@ -80,7 +82,6 @@ export class ColorBar {
   // Update scale of colorbar
   update(range) {
     this.scale.domain(range)
-
     let nticks = 5
     // Setup custom ticks
     if (range[0] < 0) {
@@ -88,7 +89,7 @@ export class ColorBar {
       nticks = 3
     }
 
-    let axis = d3.axisTop(this.scale).ticks(nticks)
+    let axis = d3.axisTop(this.scale).ticks(nticks).tickFormat(d3.format(".2"))
 
     this.svg.select('.axis-color')
       .transition()
@@ -122,7 +123,7 @@ export default class Choropleth {
       setProjection: (element, options) => {
         let projection = d3.geoAlbersUsa()
           .scale(divWidth)
-          .translate([divWidth / 2, divHeight / 2])
+          .translate([divWidth / 2, divHeight / 2 - 30])
         return {
           path: d3.geoPath().projection(projection),
           projection: projection
@@ -181,12 +182,12 @@ export default class Choropleth {
       // Set a 0 to max ranged colorscheme
       this.cmap = colormap({
         colormap: 'YIOrRd',
-        nshades: 20,
+        nshades: 50,
         format: 'rgbaString'
       })
 
-      limits = [maxData, 0]
-      barLimits = [0, maxData]
+      limits = [maxData, .1]
+      barLimits = [.1, maxData]
     } else if (data.type === 'diverging') {
       this.cmap = colormap({
         colormap: 'RdBu',
@@ -200,7 +201,8 @@ export default class Choropleth {
       barLimits = [-extreme, extreme]
     }
 
-    this.colorScale = d3.scaleLinear()
+    this.colorScale = d3.scaleLog()
+      .base(10)
       .domain(limits)
       .range([0, this.cmap.length - 0.01])
 
@@ -235,8 +237,7 @@ export default class Choropleth {
         let stateName = this.getAttribute('class').split(' ')[1]
         let region = data.data
           .filter(d => (d.states.indexOf(stateName) > -1))[0].region
-        let value = data.decorator(parseFloat(this.getAttribute('data-value'))
-          .toFixed(2))
+        let value = parseFloat(this.getAttribute('data-value')).toFixed(0)
         tooltip.select('.value').text(value)
         tooltip.select('.region').text(region + ' : ' + stateName)
       })

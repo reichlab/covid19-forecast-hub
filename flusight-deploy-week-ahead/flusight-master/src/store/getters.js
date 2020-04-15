@@ -216,36 +216,14 @@ export const historicalData = (state, getters) => {
 export const timeChartData = (state, getters) => {
   return {
     timePoints: getters.timePoints,
-    observed: getters.observed,
+    // observed: getters.observed,
     actual: getters.actual,
     //baseline: getters.baseline,
     models: getters['models/models'],
-    history: getters.historicalData
+    // history: getters.historicalData
   }
 }
 
-function getValues(data) {
-  return data.map(d => d.values);
-}
-
-function getMaxY(data) {
-
-  return Math.max(...getValues(data));
-}
-
-export const timeChartMax = (state, getters) => {
-  //console.log(Math.max(...getters.observed))
-  let data = JSON.parse(JSON.stringify(getters.observed))
-  let maxValue = 0
-  for (var i = 0; i < data.length; i++) {
-    for (var j = 0; j < data[i].length; j++) { // 
-      if (data[i][j].value > maxValue) {
-        maxValue = data[i][j].value
-      }
-    }
-  }
-  return maxValue
-}
 
 /**
  * Return data for distribution plot
