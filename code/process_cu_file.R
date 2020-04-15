@@ -54,14 +54,14 @@ process_cu_file <- function(cu_filepath, file, timezero) {
   c_dat <- reshape(c_dat, direction = "long", varying = list(c_death_vars),
                  times = c(1, 2.5, seq(from = 5, to = 95, by = 5), 97.5, 99)/100)
   c_dat$id <- NULL
-  c_dat$target <- paste(c_dat$Date - timezero, "day ahead cum")
+  c_dat$target <- paste(c_dat$Date - timezero, "day ahead cum death")
 
   # incident:
   i_dat <- dat[, c("location", "fips", "Date", i_death_vars)]
   i_dat <- reshape(i_dat, direction = "long", varying = list(i_death_vars),
                    times = c(1, 2.5, seq(from = 5, to = 95, by = 5), 97.5, 99)/100)
   i_dat$id <- NULL
-  i_dat$target <- paste(i_dat$Date - timezero, "day ahead inc")
+  i_dat$target <- paste(i_dat$Date - timezero, "day ahead inc death")
 
   # adapt columns and their names to template
   colnames(c_dat) <- colnames(i_dat) <- c("location_name", "location", "date",
@@ -83,7 +83,7 @@ process_cu_file <- function(cu_filepath, file, timezero) {
   # When do the week-ahead forecast end?
   forecast_1_wk_ahead_end <- min(templ$forecast_1_wk_ahead_end[templ$forecast_1_wk_ahead_end > timezero])
   ends_weekly_forecasts <- data.frame(end = seq(from = forecast_1_wk_ahead_end, by = 7, to = max(dat$Date)))
-  ends_weekly_forecasts$target <- paste(1:nrow(ends_weekly_forecasts), "wk ahead cum")
+  ends_weekly_forecasts$target <- paste(1:nrow(ends_weekly_forecasts), "wk ahead cum death")
   # restrict to respective cumulative forecasts:
   c_weekly_dat <- dat[dat$Date %in% ends_weekly_forecasts$end, c("location", "fips", "Date", c_death_vars)]
   # reshape:
