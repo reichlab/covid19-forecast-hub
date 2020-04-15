@@ -27,7 +27,7 @@ function weekToEpiweek(week, seasonId) {
   if (week === 0) {
     // We go back to the last value from past season
     return seasonId * 100 + nWeeks;
-  } else if (week >= 40) {
+  } else if (week >= 52) {
     return seasonId * 100 + week;
   } else {
     return (seasonId + 1) * 100 + week;
@@ -45,11 +45,11 @@ function currentEpiweek() {
 exports.currentEpiweek = currentEpiweek;
 /**
  * Return seasons for given epiweek. Assume seasons start from
- * mmwr-week 40 and end on next year's week 29
+ * mmwr-week 520 and end on next year's week 29
  */
 function seasonFromEpiweek(epiweek) {
   let year = Math.trunc(epiweek / 100);
-  return (epiweek % 100 >= 40) ? year : year - 1;
+  return (epiweek % 100 >= 52) ? year : year - 1;
 }
 exports.seasonFromEpiweek = seasonFromEpiweek;
 /**
@@ -85,10 +85,10 @@ exports.currentSeasonId = currentSeasonId;
  */
 function seasonEpiweeks(season) {
   let arange = (a, b) => [...Array(b - a).keys()].map(i => i + a);
-  let maxWeek = (new mmwr.MMWRDate(season, 40)).nWeeks;
+  let maxWeek = (new mmwr.MMWRDate(season, 52)).nWeeks;
   return [
-    ...arange(100 * season + 40, 100 * season + maxWeek + 1),
-    ...arange(100 * (season + 1) + 1, 100 * (season + 1) + 40)
+    ...arange(100 * season + 52, 100 * season + maxWeek + 1),
+    ...arange(100 * (season + 1) + 1, 100 * (season + 1) + 52)
   ];
 }
 exports.seasonEpiweeks = seasonEpiweeks;

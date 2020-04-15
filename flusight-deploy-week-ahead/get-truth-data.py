@@ -91,7 +91,8 @@ df_truth['epiweek'] = df_truth['year'].astype(str) + df_truth['week']
 # only output "location", "epiweek", "value"
 df_truth = df_truth.rename(columns={"state": "location"})
 df_truth_short = df_truth[["location", "epiweek", "value"]]
-df_truth_short
+
+df_truth_short["value"].replace({0: 0.1}, inplace=True)
 
 # write to json
 with open('flusight-master/covid-csv-tools/dist/state_actual/2019.json', 'w') as f:
