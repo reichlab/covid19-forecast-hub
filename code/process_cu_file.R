@@ -110,11 +110,15 @@ process_cu_file <- function(cu_filepath, file, timezero) {
 
   # add to data:
   dat_quantiles <- rbind(dat_quantiles, medians)
-  rownames(dat_quantiles) <- NULL
 
   # re-order:
   dat_quantiles <- dat_quantiles[order(dat_quantiles$target, dat_quantiles$type),
-             c("location", "location_name", "target", "type", "quantile", "value")]
+             c("target", "location", "location_name", "type", "quantile", "value")]
+  # format FIPS codes:
+  dat_quantiles$location <- as.character(dat_quantiles$location)
+  dat_quantiles$location[nchar(dat_quantiles$location) == 1] <-
+    paste0("0", dat_quantiles$location[nchar(dat_quantiles$location) == 1])
+  rownames(dat_quantiles) <- NULL
 
   return(dat_quantiles)
 }
