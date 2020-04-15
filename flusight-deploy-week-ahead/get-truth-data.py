@@ -81,6 +81,8 @@ df_byday.to_csv('../data-processed/truth-cum-death.csv', index=False)
 '''
 # Observed data on the seventh day
 df_truth = df_truth[df_truth['day'] == 7]
+df_truth['week'] = df_truth['week'] + 1  # shift epiweek on axis
+
 
 # add leading zeros to epi week
 df_truth['week'] = df_truth['week'].apply(lambda x: '{0:0>2}'.format(x))
