@@ -45,6 +45,9 @@ process_cu_file <- function(cu_filepath, file, timezero) {
   c_death_vars <- colnames(dat)[grepl(colnames(dat), pattern = "cdeath")]
   i_death_vars <- setdiff(all_death_vars, c_death_vars)
 
+  #####################################################
+  # re-shape daily forecasts:
+
   # split into incident and cumulative, reshape each:
   # cumulative:
   c_dat <- dat[, c("location", "fips", "Date", c_death_vars)]
@@ -65,24 +68,53 @@ process_cu_file <- function(cu_filepath, file, timezero) {
                                           "quantile", "value", "target")
 
   # put together and tidy up:
-  dat <- rbind(c_dat, i_dat)
-  dat$date <- NULL
+  daily_dat <- rbind(c_dat, i_dat)
+  daily_dat$date <- NULL
 
   # add type variable (all quantiles until here):
-  dat$type <- "quantile"
+  daily_dat$type <- "quantile"
 
-  # add medians as point estimates:
-  medians <- subset(dat, quantile == 0.5)
+  ###################################################
+  # add cumulative weekly forecasts:
+
+  # read in info from template file:
+  templ <- read.csv("template/covid19-death-forecast-dates.csv")
+  templ$forecast_1_wk_ahead_end <- as.Date(templ$forecast_1_wk_ahead_end)
+  # When do the week-ahead forecast end?
+  forecast_1_wk_ahead_end <- min(templ$forecast_1_wk_ahead_end[templ$forecast_1_wk_ahead_end > timezero])
+  ends_weekly_forecasts <- data.frame(end = seq(from = forecast_1_wk_ahead_end, by = 7, to = max(dat$Date)))
+  ends_weekly_forecasts$target <- paste(1:nrow(ends_weekly_forecasts), "wk ahead cum")
+  # restrict to respective cumulative forecasts:
+  c_weekly_dat <- dat[dat$Date %in% ends_weekly_forecasts$end, c("location", "fips", "Date", c_death_vars)]
+  # reshape:
+  c_weekly_dat <- reshape(c_weekly_dat, direction = "long", varying = list(c_death_vars),
+                   times = c(1, 2.5, seq(from = 5, to = 95, by = 5), 97.5, 99)/100)
+  c_weekly_dat$id <- NULL
+  # merge target variable
+  c_weekly_dat <- merge(c_weekly_dat, ends_weekly_forecasts, by.x = "Date", by.y = "end")
+  # tidy up:
+  c_weekly_dat$Date <- NULL
+  colnames(c_weekly_dat) <- c("location_name", "location",
+                              "quantile", "value", "target")
+  c_weekly_dat$type <- "quantile"
+  c_weekly_dat <- c_weekly_dat[, colnames(daily_dat)]
+
+
+  ###################################################
+  # pool daily and weekly forecasts, add medians as point estimates:
+  dat_quantiles <- rbind(daily_dat, c_weekly_dat)
+
+  medians <- subset(dat_quantiles, quantile == 0.5)
   medians$type <- "point"
   medians$quantile <- NA
 
   # add to data:
-  dat <- rbind(dat, medians)
-  rownames(dat) <- NULL
+  dat_quantiles <- rbind(dat_quantiles, medians)
+  rownames(dat_quantiles) <- NULL
 
   # re-order:
-  dat <- dat[order(dat$target, dat$type),
+  dat_quantiles <- dat_quantiles[order(dat_quantiles$target, dat_quantiles$type),
              c("location", "location_name", "target", "type", "quantile", "value")]
 
-  return(dat)
+  return(dat_quantiles)
 }
