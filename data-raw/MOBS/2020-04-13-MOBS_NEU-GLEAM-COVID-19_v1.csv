@@ -1,0 +1,2161 @@
+target_id,location_id,location_name,type,quantile,value
+1 day ahead inc,1,Alabama,quantile,0.1,1.0335368594946277
+1 day ahead inc,1,Alabama,quantile,0.5,2.4234939257993053
+1 day ahead inc,1,Alabama,quantile,0.9,7.5082137357546905
+1 day ahead cum,1,Alabama,quantile,0.1,18.045499696631747
+1 day ahead cum,1,Alabama,quantile,0.5,45.824147927692344
+1 day ahead cum,1,Alabama,quantile,0.9,149.97377042820082
+2 day ahead inc,1,Alabama,quantile,0.1,1.0387012400857325
+2 day ahead inc,1,Alabama,quantile,0.5,2.423695773100909
+2 day ahead inc,1,Alabama,quantile,0.9,7.122698419703691
+2 day ahead cum,1,Alabama,quantile,0.1,19.18261910361229
+2 day ahead cum,1,Alabama,quantile,0.5,48.22952942521442
+2 day ahead cum,1,Alabama,quantile,0.9,157.09646884790453
+3 day ahead inc,1,Alabama,quantile,0.1,1.0322763693073231
+3 day ahead inc,1,Alabama,quantile,0.5,2.3776275020632287
+3 day ahead inc,1,Alabama,quantile,0.9,7.575328963197293
+3 day ahead cum,1,Alabama,quantile,0.1,20.289666237853986
+3 day ahead cum,1,Alabama,quantile,0.5,50.7382166935217
+3 day ahead cum,1,Alabama,quantile,0.9,164.9082596692327
+4 day ahead inc,1,Alabama,quantile,0.1,0.9653760913464532
+4 day ahead inc,1,Alabama,quantile,0.5,2.406610451370128
+4 day ahead inc,1,Alabama,quantile,0.9,7.494533709623224
+4 day ahead cum,1,Alabama,quantile,0.1,21.450893926435725
+4 day ahead cum,1,Alabama,quantile,0.5,53.19903592613346
+4 day ahead cum,1,Alabama,quantile,0.9,172.28892851187825
+5 day ahead inc,1,Alabama,quantile,0.1,1.0298382940279716
+5 day ahead inc,1,Alabama,quantile,0.5,2.3898729011945687
+5 day ahead inc,1,Alabama,quantile,0.9,7.5267680789322835
+5 day ahead cum,1,Alabama,quantile,0.1,22.362015290905585
+5 day ahead cum,1,Alabama,quantile,0.5,55.800809050176994
+5 day ahead cum,1,Alabama,quantile,0.9,179.65200190273038
+6 day ahead inc,1,Alabama,quantile,0.1,1.1145751445979493
+6 day ahead inc,1,Alabama,quantile,0.5,2.4116185375932373
+6 day ahead inc,1,Alabama,quantile,0.9,7.549049213021061
+6 day ahead cum,1,Alabama,quantile,0.1,23.43247110166029
+6 day ahead cum,1,Alabama,quantile,0.5,58.04335968788
+6 day ahead cum,1,Alabama,quantile,0.9,186.8944000292093
+1 day ahead inc,5,Arkansas,quantile,0.1,0.5572404222656144
+1 day ahead inc,5,Arkansas,quantile,0.5,1.3898333529028282
+1 day ahead inc,5,Arkansas,quantile,0.9,4.3755333413198025
+1 day ahead cum,5,Arkansas,quantile,0.1,10.75717430012856
+1 day ahead cum,5,Arkansas,quantile,0.5,25.841528831175843
+1 day ahead cum,5,Arkansas,quantile,0.9,79.9960694510346
+2 day ahead inc,5,Arkansas,quantile,0.1,0.5867036002679487
+2 day ahead inc,5,Arkansas,quantile,0.5,1.3693384688312389
+2 day ahead inc,5,Arkansas,quantile,0.9,4.405910302946019
+2 day ahead cum,5,Arkansas,quantile,0.1,11.385334261853016
+2 day ahead cum,5,Arkansas,quantile,0.5,27.255957254474893
+2 day ahead cum,5,Arkansas,quantile,0.9,84.65199287387077
+3 day ahead inc,5,Arkansas,quantile,0.1,0.651640232039925
+3 day ahead inc,5,Arkansas,quantile,0.5,1.3929689277001294
+3 day ahead inc,5,Arkansas,quantile,0.9,4.349929495060115
+3 day ahead cum,5,Arkansas,quantile,0.1,11.9308072291977
+3 day ahead cum,5,Arkansas,quantile,0.5,28.477628758485032
+3 day ahead cum,5,Arkansas,quantile,0.9,89.00192236893088
+4 day ahead inc,5,Arkansas,quantile,0.1,0.6167020140657788
+4 day ahead inc,5,Arkansas,quantile,0.5,1.4221896002446919
+4 day ahead inc,5,Arkansas,quantile,0.9,4.176002520405149
+4 day ahead cum,5,Arkansas,quantile,0.1,12.577735668867758
+4 day ahead cum,5,Arkansas,quantile,0.5,29.748982987101364
+4 day ahead cum,5,Arkansas,quantile,0.9,93.24522154473259
+5 day ahead inc,5,Arkansas,quantile,0.1,0.5943905721780411
+5 day ahead inc,5,Arkansas,quantile,0.5,1.375927740532581
+5 day ahead inc,5,Arkansas,quantile,0.9,4.433901857183653
+5 day ahead cum,5,Arkansas,quantile,0.1,13.180183314623651
+5 day ahead cum,5,Arkansas,quantile,0.5,31.04027694509584
+5 day ahead cum,5,Arkansas,quantile,0.9,96.6556600920047
+6 day ahead inc,5,Arkansas,quantile,0.1,0.6138725402830603
+6 day ahead inc,5,Arkansas,quantile,0.5,1.4202279005408711
+6 day ahead inc,5,Arkansas,quantile,0.9,4.251467412085438
+6 day ahead cum,5,Arkansas,quantile,0.1,13.847192206945437
+6 day ahead cum,5,Arkansas,quantile,0.5,32.36912899057306
+6 day ahead cum,5,Arkansas,quantile,0.9,100.90712750409014
+1 day ahead inc,4,Arizona,quantile,0.1,8.846277507748779
+1 day ahead inc,4,Arizona,quantile,0.5,19.292473256514928
+1 day ahead inc,4,Arizona,quantile,0.9,51.71482413404939
+1 day ahead cum,4,Arizona,quantile,0.1,166.32421012093818
+1 day ahead cum,4,Arizona,quantile,0.5,379.4205226721434
+1 day ahead cum,4,Arizona,quantile,0.9,1143.0699759682445
+2 day ahead inc,4,Arizona,quantile,0.1,8.37871109488016
+2 day ahead inc,4,Arizona,quantile,0.5,19.506678541626094
+2 day ahead inc,4,Arizona,quantile,0.9,53.681799784831
+2 day ahead cum,4,Arizona,quantile,0.1,175.44864031360078
+2 day ahead cum,4,Arizona,quantile,0.5,399.77327311712287
+2 day ahead cum,4,Arizona,quantile,0.9,1192.4169016130056
+3 day ahead inc,4,Arizona,quantile,0.1,8.825292001624474
+3 day ahead inc,4,Arizona,quantile,0.5,19.5939534606606
+3 day ahead inc,4,Arizona,quantile,0.9,52.78017663010053
+3 day ahead cum,4,Arizona,quantile,0.1,185.23637548834662
+3 day ahead cum,4,Arizona,quantile,0.5,420.3454163373255
+3 day ahead cum,4,Arizona,quantile,0.9,1239.6069966731786
+4 day ahead inc,4,Arizona,quantile,0.1,8.628782986051593
+4 day ahead inc,4,Arizona,quantile,0.5,19.74681142116598
+4 day ahead inc,4,Arizona,quantile,0.9,52.82766296745099
+4 day ahead cum,4,Arizona,quantile,0.1,194.12901364795243
+4 day ahead cum,4,Arizona,quantile,0.5,438.1462880039309
+4 day ahead cum,4,Arizona,quantile,0.9,1286.2037229474965
+5 day ahead inc,4,Arizona,quantile,0.1,8.849119498712755
+5 day ahead inc,4,Arizona,quantile,0.5,19.515366948560864
+5 day ahead inc,4,Arizona,quantile,0.9,52.20824922096352
+5 day ahead cum,4,Arizona,quantile,0.1,203.7916948108252
+5 day ahead cum,4,Arizona,quantile,0.5,456.7467878597768
+5 day ahead cum,4,Arizona,quantile,0.9,1331.963304123914
+6 day ahead inc,4,Arizona,quantile,0.1,8.62229072220817
+6 day ahead inc,4,Arizona,quantile,0.5,19.430748505511133
+6 day ahead inc,4,Arizona,quantile,0.9,51.00757183787577
+6 day ahead cum,4,Arizona,quantile,0.1,213.21343228823517
+6 day ahead cum,4,Arizona,quantile,0.5,476.97431383633415
+6 day ahead cum,4,Arizona,quantile,0.9,1375.493956455338
+1 day ahead inc,6,California,quantile,0.1,38.83328154598526
+1 day ahead inc,6,California,quantile,0.5,57.6523927601083
+1 day ahead inc,6,California,quantile,0.9,88.28805843823162
+1 day ahead cum,6,California,quantile,0.1,786.0433003890669
+1 day ahead cum,6,California,quantile,0.5,1152.5753680412822
+1 day ahead cum,6,California,quantile,0.9,1823.7554646800338
+2 day ahead inc,6,California,quantile,0.1,38.66879405408597
+2 day ahead inc,6,California,quantile,0.5,57.4663775120008
+2 day ahead inc,6,California,quantile,0.9,88.09302255104521
+2 day ahead cum,6,California,quantile,0.1,824.3449196842844
+2 day ahead cum,6,California,quantile,0.5,1217.5417994755992
+2 day ahead cum,6,California,quantile,0.9,1914.788397353495
+3 day ahead inc,6,California,quantile,0.1,38.79453206218388
+3 day ahead inc,6,California,quantile,0.5,57.793746729606134
+3 day ahead inc,6,California,quantile,0.9,88.22812325392063
+3 day ahead cum,6,California,quantile,0.1,863.3459884025964
+3 day ahead cum,6,California,quantile,0.5,1281.8477667789866
+3 day ahead cum,6,California,quantile,0.9,2004.5680680449545
+4 day ahead inc,6,California,quantile,0.1,38.15428477492816
+4 day ahead inc,6,California,quantile,0.5,57.18176994086286
+4 day ahead inc,6,California,quantile,0.9,87.27717529370962
+4 day ahead cum,6,California,quantile,0.1,900.8796606760187
+4 day ahead cum,6,California,quantile,0.5,1340.1013138925991
+4 day ahead cum,6,California,quantile,0.9,2091.494129539549
+5 day ahead inc,6,California,quantile,0.1,38.10226156728466
+5 day ahead inc,6,California,quantile,0.5,56.53325698938917
+5 day ahead inc,6,California,quantile,0.9,87.03456091701472
+5 day ahead cum,6,California,quantile,0.1,938.7334868313843
+5 day ahead cum,6,California,quantile,0.5,1391.3357292568335
+5 day ahead cum,6,California,quantile,0.9,2176.3590937232448
+6 day ahead inc,6,California,quantile,0.1,37.84833206891714
+6 day ahead inc,6,California,quantile,0.5,55.77979375984268
+6 day ahead inc,6,California,quantile,0.9,86.5949895247037
+6 day ahead cum,6,California,quantile,0.1,975.0763891631027
+6 day ahead cum,6,California,quantile,0.5,1442.4096915579662
+6 day ahead cum,6,California,quantile,0.9,2263.391822739608
+1 day ahead inc,8,Colorado,quantile,0.1,9.345562082145447
+1 day ahead inc,8,Colorado,quantile,0.5,18.333529542664674
+1 day ahead inc,8,Colorado,quantile,0.9,42.315941636262394
+1 day ahead cum,8,Colorado,quantile,0.1,185.25749709609929
+1 day ahead cum,8,Colorado,quantile,0.5,394.2321575457964
+1 day ahead cum,8,Colorado,quantile,0.9,923.0676357005324
+2 day ahead inc,8,Colorado,quantile,0.1,9.224800693165024
+2 day ahead inc,8,Colorado,quantile,0.5,18.228749944282605
+2 day ahead inc,8,Colorado,quantile,0.9,41.867647440474684
+2 day ahead cum,8,Colorado,quantile,0.1,194.82042947647582
+2 day ahead cum,8,Colorado,quantile,0.5,410.94710034717565
+2 day ahead cum,8,Colorado,quantile,0.9,964.3634931552189
+3 day ahead inc,8,Colorado,quantile,0.1,9.025848353875057
+3 day ahead inc,8,Colorado,quantile,0.5,17.905858621479215
+3 day ahead inc,8,Colorado,quantile,0.9,42.09793629453291
+3 day ahead cum,8,Colorado,quantile,0.1,205.05714226810917
+3 day ahead cum,8,Colorado,quantile,0.5,428.9219086060917
+3 day ahead cum,8,Colorado,quantile,0.9,1004.8049023247528
+4 day ahead inc,8,Colorado,quantile,0.1,8.801720787186019
+4 day ahead inc,8,Colorado,quantile,0.5,17.80990594014407
+4 day ahead inc,8,Colorado,quantile,0.9,41.00113883720933
+4 day ahead cum,8,Colorado,quantile,0.1,214.8441205494666
+4 day ahead cum,8,Colorado,quantile,0.5,446.4168974599432
+4 day ahead cum,8,Colorado,quantile,0.9,1045.6366072724595
+5 day ahead inc,8,Colorado,quantile,0.1,8.795608878471933
+5 day ahead inc,8,Colorado,quantile,0.5,18.06530750270345
+5 day ahead inc,8,Colorado,quantile,0.9,41.060882584631855
+5 day ahead cum,8,Colorado,quantile,0.1,224.6640977658649
+5 day ahead cum,8,Colorado,quantile,0.5,463.7898642567103
+5 day ahead cum,8,Colorado,quantile,0.9,1086.7661261362086
+6 day ahead inc,8,Colorado,quantile,0.1,8.696806653239662
+6 day ahead inc,8,Colorado,quantile,0.5,17.039707134436227
+6 day ahead inc,8,Colorado,quantile,0.9,39.954900654449524
+6 day ahead cum,8,Colorado,quantile,0.1,233.28645227702918
+6 day ahead cum,8,Colorado,quantile,0.5,480.10532588233605
+6 day ahead cum,8,Colorado,quantile,0.9,1126.2225232302167
+1 day ahead inc,9,Connecticut,quantile,0.1,22.99138217096981
+1 day ahead inc,9,Connecticut,quantile,0.5,29.162830324826608
+1 day ahead inc,9,Connecticut,quantile,0.9,48.670087680216895
+1 day ahead cum,9,Connecticut,quantile,0.1,505.9484253675344
+1 day ahead cum,9,Connecticut,quantile,0.5,636.6505001146958
+1 day ahead cum,9,Connecticut,quantile,0.9,1160.378494512603
+2 day ahead inc,9,Connecticut,quantile,0.1,22.84196855055423
+2 day ahead inc,9,Connecticut,quantile,0.5,29.439129308922343
+2 day ahead inc,9,Connecticut,quantile,0.9,47.56338599357231
+2 day ahead cum,9,Connecticut,quantile,0.1,531.8968869424237
+2 day ahead cum,9,Connecticut,quantile,0.5,667.1080731759569
+2 day ahead cum,9,Connecticut,quantile,0.9,1207.5992955108534
+3 day ahead inc,9,Connecticut,quantile,0.1,22.704597258739877
+3 day ahead inc,9,Connecticut,quantile,0.5,28.897023647056972
+3 day ahead inc,9,Connecticut,quantile,0.9,46.764986393635645
+3 day ahead cum,9,Connecticut,quantile,0.1,558.3672701222314
+3 day ahead cum,9,Connecticut,quantile,0.5,693.6847475825192
+3 day ahead cum,9,Connecticut,quantile,0.9,1256.5407686496346
+4 day ahead inc,9,Connecticut,quantile,0.1,22.063331334639912
+4 day ahead inc,9,Connecticut,quantile,0.5,28.07303568317016
+4 day ahead inc,9,Connecticut,quantile,0.9,46.14291972868354
+4 day ahead cum,9,Connecticut,quantile,0.1,581.1048918260676
+4 day ahead cum,9,Connecticut,quantile,0.5,719.4223034552548
+4 day ahead cum,9,Connecticut,quantile,0.9,1306.2720076704813
+5 day ahead inc,9,Connecticut,quantile,0.1,22.110126692588448
+5 day ahead inc,9,Connecticut,quantile,0.5,28.138771004527396
+5 day ahead inc,9,Connecticut,quantile,0.9,44.14775720343789
+5 day ahead cum,9,Connecticut,quantile,0.1,601.6573969902988
+5 day ahead cum,9,Connecticut,quantile,0.5,743.9887055768927
+5 day ahead cum,9,Connecticut,quantile,0.9,1356.0859090044
+6 day ahead inc,9,Connecticut,quantile,0.1,20.913962484205577
+6 day ahead inc,9,Connecticut,quantile,0.5,27.64487985587892
+6 day ahead inc,9,Connecticut,quantile,0.9,43.52281316915018
+6 day ahead cum,9,Connecticut,quantile,0.1,620.4740022525997
+6 day ahead cum,9,Connecticut,quantile,0.5,769.1000707625017
+6 day ahead cum,9,Connecticut,quantile,0.9,1404.4292716236014
+1 day ahead inc,10,Delaware,quantile,0.1,1.5043531521755191
+1 day ahead inc,10,Delaware,quantile,0.5,2.270305080489674
+1 day ahead inc,10,Delaware,quantile,0.9,3.2601931580408934
+1 day ahead cum,10,Delaware,quantile,0.1,32.79249557834015
+1 day ahead cum,10,Delaware,quantile,0.5,43.83259917758932
+1 day ahead cum,10,Delaware,quantile,0.9,68.678462946087
+2 day ahead inc,10,Delaware,quantile,0.1,1.615749233302359
+2 day ahead inc,10,Delaware,quantile,0.5,2.252654239291471
+2 day ahead inc,10,Delaware,quantile,0.9,3.4319361651703417
+2 day ahead cum,10,Delaware,quantile,0.1,34.51828744185037
+2 day ahead cum,10,Delaware,quantile,0.5,46.1792523301345
+2 day ahead cum,10,Delaware,quantile,0.9,71.79150346510428
+3 day ahead inc,10,Delaware,quantile,0.1,1.6145661069901145
+3 day ahead inc,10,Delaware,quantile,0.5,2.2736041685919983
+3 day ahead inc,10,Delaware,quantile,0.9,3.2881426561148723
+3 day ahead cum,10,Delaware,quantile,0.1,36.1358211258325
+3 day ahead cum,10,Delaware,quantile,0.5,48.42319034786888
+3 day ahead cum,10,Delaware,quantile,0.9,74.86049144416505
+4 day ahead inc,10,Delaware,quantile,0.1,1.5836001962066009
+4 day ahead inc,10,Delaware,quantile,0.5,2.1896808404110684
+4 day ahead inc,10,Delaware,quantile,0.9,3.2057185288301273
+4 day ahead cum,10,Delaware,quantile,0.1,37.72175386530151
+4 day ahead cum,10,Delaware,quantile,0.5,50.381839029104
+4 day ahead cum,10,Delaware,quantile,0.9,77.82005097678001
+5 day ahead inc,10,Delaware,quantile,0.1,1.5422143549948353
+5 day ahead inc,10,Delaware,quantile,0.5,2.1604436339572564
+5 day ahead inc,10,Delaware,quantile,0.9,3.4880969873207093
+5 day ahead cum,10,Delaware,quantile,0.1,38.98872605916407
+5 day ahead cum,10,Delaware,quantile,0.5,52.44791292745573
+5 day ahead cum,10,Delaware,quantile,0.9,80.85461739915013
+6 day ahead inc,10,Delaware,quantile,0.1,1.551172425563176
+6 day ahead inc,10,Delaware,quantile,0.5,2.165048485571514
+6 day ahead inc,10,Delaware,quantile,0.9,3.278265370914453
+6 day ahead cum,10,Delaware,quantile,0.1,40.60725467262415
+6 day ahead cum,10,Delaware,quantile,0.5,54.61721509578679
+6 day ahead cum,10,Delaware,quantile,0.9,83.85578332576692
+1 day ahead inc,12,Florida,quantile,0.1,30.1262136431292
+1 day ahead inc,12,Florida,quantile,0.5,74.48074322286101
+1 day ahead inc,12,Florida,quantile,0.9,171.2708777823511
+1 day ahead cum,12,Florida,quantile,0.1,568.6014406447016
+1 day ahead cum,12,Florida,quantile,0.5,1453.1831541640406
+1 day ahead cum,12,Florida,quantile,0.9,3437.6284375427736
+2 day ahead inc,12,Florida,quantile,0.1,29.98504730108382
+2 day ahead inc,12,Florida,quantile,0.5,72.8543076625815
+2 day ahead inc,12,Florida,quantile,0.9,172.53053535512703
+2 day ahead cum,12,Florida,quantile,0.1,597.9142539736333
+2 day ahead cum,12,Florida,quantile,0.5,1527.0088719232544
+2 day ahead cum,12,Florida,quantile,0.9,3612.871021367043
+3 day ahead inc,12,Florida,quantile,0.1,31.57912765348018
+3 day ahead inc,12,Florida,quantile,0.5,74.15426716461494
+3 day ahead inc,12,Florida,quantile,0.9,167.8644236192145
+3 day ahead cum,12,Florida,quantile,0.1,627.8340189814325
+3 day ahead cum,12,Florida,quantile,0.5,1598.4690450236415
+3 day ahead cum,12,Florida,quantile,0.9,3787.7440122873572
+4 day ahead inc,12,Florida,quantile,0.1,31.205340226120786
+4 day ahead inc,12,Florida,quantile,0.5,73.70049659580441
+4 day ahead inc,12,Florida,quantile,0.9,168.5451195625731
+4 day ahead cum,12,Florida,quantile,0.1,658.313599703102
+4 day ahead cum,12,Florida,quantile,0.5,1669.849376415923
+4 day ahead cum,12,Florida,quantile,0.9,3962.2803124941524
+5 day ahead inc,12,Florida,quantile,0.1,30.625993994349145
+5 day ahead inc,12,Florida,quantile,0.5,74.92210585977728
+5 day ahead inc,12,Florida,quantile,0.9,166.3663998886342
+5 day ahead cum,12,Florida,quantile,0.1,688.1063752247702
+5 day ahead cum,12,Florida,quantile,0.5,1742.5010996874291
+5 day ahead cum,12,Florida,quantile,0.9,4141.452166943842
+6 day ahead inc,12,Florida,quantile,0.1,31.107562500360732
+6 day ahead inc,12,Florida,quantile,0.5,72.4932910111846
+6 day ahead inc,12,Florida,quantile,0.9,162.4849327620669
+6 day ahead cum,12,Florida,quantile,0.1,716.5479672699304
+6 day ahead cum,12,Florida,quantile,0.5,1812.683800257833
+6 day ahead cum,12,Florida,quantile,0.9,4317.660170433375
+1 day ahead inc,19,Iowa,quantile,0.1,1.234907475191476
+1 day ahead inc,19,Iowa,quantile,0.5,3.302192725905786
+1 day ahead inc,19,Iowa,quantile,0.9,8.70672374492905
+1 day ahead cum,19,Iowa,quantile,0.1,23.435362624178023
+1 day ahead cum,19,Iowa,quantile,0.5,62.86006636341071
+1 day ahead cum,19,Iowa,quantile,0.9,175.55277190923016
+2 day ahead inc,19,Iowa,quantile,0.1,1.3417666448578975
+2 day ahead inc,19,Iowa,quantile,0.5,3.3722350309737146
+2 day ahead inc,19,Iowa,quantile,0.9,8.738282503788692
+2 day ahead cum,19,Iowa,quantile,0.1,24.574765277752306
+2 day ahead cum,19,Iowa,quantile,0.5,65.80904768854072
+2 day ahead cum,19,Iowa,quantile,0.9,184.37326761401755
+3 day ahead inc,19,Iowa,quantile,0.1,1.2287980650256802
+3 day ahead inc,19,Iowa,quantile,0.5,3.383924968172214
+3 day ahead inc,19,Iowa,quantile,0.9,8.209567841188866
+3 day ahead cum,19,Iowa,quantile,0.1,25.794603915768448
+3 day ahead cum,19,Iowa,quantile,0.5,68.8677636100083
+3 day ahead cum,19,Iowa,quantile,0.9,193.014634930268
+4 day ahead inc,19,Iowa,quantile,0.1,1.397551980281618
+4 day ahead inc,19,Iowa,quantile,0.5,3.2011563139565578
+4 day ahead inc,19,Iowa,quantile,0.9,8.524496755150206
+4 day ahead cum,19,Iowa,quantile,0.1,27.13576531303425
+4 day ahead cum,19,Iowa,quantile,0.5,71.74523987589359
+4 day ahead cum,19,Iowa,quantile,0.9,202.0509144332456
+5 day ahead inc,19,Iowa,quantile,0.1,1.229491349950227
+5 day ahead inc,19,Iowa,quantile,0.5,3.1854305173178
+5 day ahead inc,19,Iowa,quantile,0.9,8.030927659212741
+5 day ahead cum,19,Iowa,quantile,0.1,28.20572526773721
+5 day ahead cum,19,Iowa,quantile,0.5,74.83413013263674
+5 day ahead cum,19,Iowa,quantile,0.9,210.75234248877842
+6 day ahead inc,19,Iowa,quantile,0.1,1.2881762984220948
+6 day ahead inc,19,Iowa,quantile,0.5,3.1488851290857887
+6 day ahead inc,19,Iowa,quantile,0.9,8.395481249025217
+6 day ahead cum,19,Iowa,quantile,0.1,29.51930243485434
+6 day ahead cum,19,Iowa,quantile,0.5,77.73187177522695
+6 day ahead cum,19,Iowa,quantile,0.9,219.43053861809884
+1 day ahead inc,16,Idaho,quantile,0.1,0.8158141537919601
+1 day ahead inc,16,Idaho,quantile,0.5,2.538957043859184
+1 day ahead inc,16,Idaho,quantile,0.9,8.591818850571638
+1 day ahead cum,16,Idaho,quantile,0.1,13.8862391562666
+1 day ahead cum,16,Idaho,quantile,0.5,49.61868274794689
+1 day ahead cum,16,Idaho,quantile,0.9,184.9561818450245
+2 day ahead inc,16,Idaho,quantile,0.1,0.8133375085220294
+2 day ahead inc,16,Idaho,quantile,0.5,2.3707379442992087
+2 day ahead inc,16,Idaho,quantile,0.9,8.616614800447593
+2 day ahead cum,16,Idaho,quantile,0.1,14.575571012598417
+2 day ahead cum,16,Idaho,quantile,0.5,52.2101205985463
+2 day ahead cum,16,Idaho,quantile,0.9,193.17169986407933
+3 day ahead inc,16,Idaho,quantile,0.1,0.776745046856129
+3 day ahead inc,16,Idaho,quantile,0.5,2.3843746502506336
+3 day ahead inc,16,Idaho,quantile,0.9,8.830853457442759
+3 day ahead cum,16,Idaho,quantile,0.1,15.337775098262815
+3 day ahead cum,16,Idaho,quantile,0.5,55.062195310827185
+3 day ahead cum,16,Idaho,quantile,0.9,202.429707567096
+4 day ahead inc,16,Idaho,quantile,0.1,0.8367537037467858
+4 day ahead inc,16,Idaho,quantile,0.5,2.422186090538572
+4 day ahead inc,16,Idaho,quantile,0.9,8.92173278903768
+4 day ahead cum,16,Idaho,quantile,0.1,16.09732286994497
+4 day ahead cum,16,Idaho,quantile,0.5,58.09898137923459
+4 day ahead cum,16,Idaho,quantile,0.9,210.68954849209408
+5 day ahead inc,16,Idaho,quantile,0.1,0.8908331838558012
+5 day ahead inc,16,Idaho,quantile,0.5,2.4859060140191103
+5 day ahead inc,16,Idaho,quantile,0.9,8.66019646413998
+5 day ahead cum,16,Idaho,quantile,0.1,16.640297765084288
+5 day ahead cum,16,Idaho,quantile,0.5,60.88207402746361
+5 day ahead cum,16,Idaho,quantile,0.9,219.63622671218525
+6 day ahead inc,16,Idaho,quantile,0.1,0.7808401927114623
+6 day ahead inc,16,Idaho,quantile,0.5,2.4561773206864945
+6 day ahead inc,16,Idaho,quantile,0.9,8.497971707952653
+6 day ahead cum,16,Idaho,quantile,0.1,17.35412986662725
+6 day ahead cum,16,Idaho,quantile,0.5,63.29912442169508
+6 day ahead cum,16,Idaho,quantile,0.9,228.38418818777333
+1 day ahead inc,17,Illinois,quantile,0.1,18.585802792436365
+1 day ahead inc,17,Illinois,quantile,0.5,39.86985293271324
+1 day ahead inc,17,Illinois,quantile,0.9,116.36054598071756
+1 day ahead cum,17,Illinois,quantile,0.1,335.2967387613271
+1 day ahead cum,17,Illinois,quantile,0.5,761.780916574924
+1 day ahead cum,17,Illinois,quantile,0.9,2274.4419848470197
+2 day ahead inc,17,Illinois,quantile,0.1,17.973510882092537
+2 day ahead inc,17,Illinois,quantile,0.5,38.61815143974089
+2 day ahead inc,17,Illinois,quantile,0.9,116.31161349181323
+2 day ahead cum,17,Illinois,quantile,0.1,353.56109401494035
+2 day ahead cum,17,Illinois,quantile,0.5,801.8726893059004
+2 day ahead cum,17,Illinois,quantile,0.9,2390.753598338833
+3 day ahead inc,17,Illinois,quantile,0.1,18.309361195363095
+3 day ahead inc,17,Illinois,quantile,0.5,38.94590404248709
+3 day ahead inc,17,Illinois,quantile,0.9,116.34829492074977
+3 day ahead cum,17,Illinois,quantile,0.1,373.327250868218
+3 day ahead cum,17,Illinois,quantile,0.5,842.3464412600148
+3 day ahead cum,17,Illinois,quantile,0.9,2507.1018932595834
+4 day ahead inc,17,Illinois,quantile,0.1,18.118459901171253
+4 day ahead inc,17,Illinois,quantile,0.5,38.004829029843336
+4 day ahead inc,17,Illinois,quantile,0.9,115.56913757549972
+4 day ahead cum,17,Illinois,quantile,0.1,392.20082571664136
+4 day ahead cum,17,Illinois,quantile,0.5,882.6634842107761
+4 day ahead cum,17,Illinois,quantile,0.9,2622.671030835083
+5 day ahead inc,17,Illinois,quantile,0.1,18.13860793793189
+5 day ahead inc,17,Illinois,quantile,0.5,39.57750961223651
+5 day ahead inc,17,Illinois,quantile,0.9,112.56209802654726
+5 day ahead cum,17,Illinois,quantile,0.1,410.89565709496804
+5 day ahead cum,17,Illinois,quantile,0.5,923.5859415387033
+5 day ahead cum,17,Illinois,quantile,0.9,2735.2331288616306
+6 day ahead inc,17,Illinois,quantile,0.1,18.078665082379306
+6 day ahead inc,17,Illinois,quantile,0.5,37.98484873656379
+6 day ahead inc,17,Illinois,quantile,0.9,113.69554277588513
+6 day ahead cum,17,Illinois,quantile,0.1,431.0126159259444
+6 day ahead cum,17,Illinois,quantile,0.5,965.1012202214937
+6 day ahead cum,17,Illinois,quantile,0.9,2848.9286716375154
+1 day ahead inc,18,Indiana,quantile,0.1,4.4107476412110485
+1 day ahead inc,18,Indiana,quantile,0.5,9.346737017514695
+1 day ahead inc,18,Indiana,quantile,0.9,29.959136680147058
+1 day ahead cum,18,Indiana,quantile,0.1,81.78632423201181
+1 day ahead cum,18,Indiana,quantile,0.5,186.39614497948529
+1 day ahead cum,18,Indiana,quantile,0.9,652.3109845342501
+2 day ahead inc,18,Indiana,quantile,0.1,4.432522407752939
+2 day ahead inc,18,Indiana,quantile,0.5,9.256699873745779
+2 day ahead inc,18,Indiana,quantile,0.9,30.340038486255544
+2 day ahead cum,18,Indiana,quantile,0.1,86.11913265569945
+2 day ahead cum,18,Indiana,quantile,0.5,195.58785155758582
+2 day ahead cum,18,Indiana,quantile,0.9,681.8437745676632
+3 day ahead inc,18,Indiana,quantile,0.1,4.438458144092921
+3 day ahead inc,18,Indiana,quantile,0.5,9.511049841487974
+3 day ahead inc,18,Indiana,quantile,0.9,29.36616148899849
+3 day ahead cum,18,Indiana,quantile,0.1,90.55011724469615
+3 day ahead cum,18,Indiana,quantile,0.5,204.92822549020562
+3 day ahead cum,18,Indiana,quantile,0.9,709.7925437740053
+4 day ahead inc,18,Indiana,quantile,0.1,4.3414503187023765
+4 day ahead inc,18,Indiana,quantile,0.5,9.354969349037566
+4 day ahead inc,18,Indiana,quantile,0.9,30.219194069722363
+4 day ahead cum,18,Indiana,quantile,0.1,94.85825086526043
+4 day ahead cum,18,Indiana,quantile,0.5,213.17612273793
+4 day ahead cum,18,Indiana,quantile,0.9,738.5712821828537
+5 day ahead inc,18,Indiana,quantile,0.1,4.415292058325568
+5 day ahead inc,18,Indiana,quantile,0.5,9.364705271610736
+5 day ahead inc,18,Indiana,quantile,0.9,29.559556826665315
+5 day ahead cum,18,Indiana,quantile,0.1,99.33031676496395
+5 day ahead cum,18,Indiana,quantile,0.5,221.55990677005158
+5 day ahead cum,18,Indiana,quantile,0.9,766.4908423029308
+6 day ahead inc,18,Indiana,quantile,0.1,4.331921086683787
+6 day ahead inc,18,Indiana,quantile,0.5,9.290453839463744
+6 day ahead inc,18,Indiana,quantile,0.9,29.8974743956962
+6 day ahead cum,18,Indiana,quantile,0.1,103.52467405454313
+6 day ahead cum,18,Indiana,quantile,0.5,229.98712734704327
+6 day ahead cum,18,Indiana,quantile,0.9,794.2166774306854
+1 day ahead inc,20,Kansas,quantile,0.1,2.0410649155898737
+1 day ahead inc,20,Kansas,quantile,0.5,4.5895326444122375
+1 day ahead inc,20,Kansas,quantile,0.9,14.757655674731948
+1 day ahead cum,20,Kansas,quantile,0.1,39.07083339481019
+1 day ahead cum,20,Kansas,quantile,0.5,87.65004328297209
+1 day ahead cum,20,Kansas,quantile,0.9,291.6107923808572
+2 day ahead inc,20,Kansas,quantile,0.1,2.237148229897304
+2 day ahead inc,20,Kansas,quantile,0.5,4.496711654758128
+2 day ahead inc,20,Kansas,quantile,0.9,14.851668251473825
+2 day ahead cum,20,Kansas,quantile,0.1,41.28322870576904
+2 day ahead cum,20,Kansas,quantile,0.5,92.42837177511221
+2 day ahead cum,20,Kansas,quantile,0.9,305.93591938392444
+3 day ahead inc,20,Kansas,quantile,0.1,2.1385113821303525
+3 day ahead inc,20,Kansas,quantile,0.5,4.8152542581320565
+3 day ahead inc,20,Kansas,quantile,0.9,14.116321160448553
+3 day ahead cum,20,Kansas,quantile,0.1,43.219838527464745
+3 day ahead cum,20,Kansas,quantile,0.5,97.08851792826096
+3 day ahead cum,20,Kansas,quantile,0.9,319.47620145867813
+4 day ahead inc,20,Kansas,quantile,0.1,2.095513933098391
+4 day ahead inc,20,Kansas,quantile,0.5,4.6260031133973465
+4 day ahead inc,20,Kansas,quantile,0.9,14.736075684254027
+4 day ahead cum,20,Kansas,quantile,0.1,45.28217276949342
+4 day ahead cum,20,Kansas,quantile,0.5,102.19874206868977
+4 day ahead cum,20,Kansas,quantile,0.9,334.2122771429322
+5 day ahead inc,20,Kansas,quantile,0.1,2.1381140015203983
+5 day ahead inc,20,Kansas,quantile,0.5,4.677522237483126
+5 day ahead inc,20,Kansas,quantile,0.9,14.07373174303138
+5 day ahead cum,20,Kansas,quantile,0.1,47.48009948914554
+5 day ahead cum,20,Kansas,quantile,0.5,107.58222664423731
+5 day ahead cum,20,Kansas,quantile,0.9,348.2860088859636
+6 day ahead inc,20,Kansas,quantile,0.1,2.1045960255829987
+6 day ahead inc,20,Kansas,quantile,0.5,4.391473150636715
+6 day ahead inc,20,Kansas,quantile,0.9,14.27599573421838
+6 day ahead cum,20,Kansas,quantile,0.1,49.66478755305531
+6 day ahead cum,20,Kansas,quantile,0.5,112.6669980288232
+6 day ahead cum,20,Kansas,quantile,0.9,362.56200462018194
+1 day ahead inc,25,Massachusetts,quantile,0.1,33.41898713653597
+1 day ahead inc,25,Massachusetts,quantile,0.5,45.0106802619227
+1 day ahead inc,25,Massachusetts,quantile,0.9,70.4467699563025
+1 day ahead cum,25,Massachusetts,quantile,0.1,699.7435460938538
+1 day ahead cum,25,Massachusetts,quantile,0.5,953.5242201786343
+1 day ahead cum,25,Massachusetts,quantile,0.9,1536.7828298141387
+2 day ahead inc,25,Massachusetts,quantile,0.1,32.639181374333766
+2 day ahead inc,25,Massachusetts,quantile,0.5,44.687852444911
+2 day ahead inc,25,Massachusetts,quantile,0.9,69.01891525405607
+2 day ahead cum,25,Massachusetts,quantile,0.1,731.9981856071173
+2 day ahead cum,25,Massachusetts,quantile,0.5,1001.4362553594257
+2 day ahead cum,25,Massachusetts,quantile,0.9,1606.9192463427426
+3 day ahead inc,25,Massachusetts,quantile,0.1,32.84992990742478
+3 day ahead inc,25,Massachusetts,quantile,0.5,44.444708204184295
+3 day ahead inc,25,Massachusetts,quantile,0.9,68.3079506577554
+3 day ahead cum,25,Massachusetts,quantile,0.1,763.8583564927284
+3 day ahead cum,25,Massachusetts,quantile,0.5,1050.8290525709644
+3 day ahead cum,25,Massachusetts,quantile,0.9,1677.290115225986
+4 day ahead inc,25,Massachusetts,quantile,0.1,32.372387341798564
+4 day ahead inc,25,Massachusetts,quantile,0.5,43.38213627790783
+4 day ahead inc,25,Massachusetts,quantile,0.9,68.21673526542682
+4 day ahead cum,25,Massachusetts,quantile,0.1,794.4705701982155
+4 day ahead cum,25,Massachusetts,quantile,0.5,1098.6253397749333
+4 day ahead cum,25,Massachusetts,quantile,0.9,1748.0304735056852
+5 day ahead inc,25,Massachusetts,quantile,0.1,32.98302055153564
+5 day ahead inc,25,Massachusetts,quantile,0.5,43.33268899386181
+5 day ahead inc,25,Massachusetts,quantile,0.9,65.49729723163996
+5 day ahead cum,25,Massachusetts,quantile,0.1,826.9999581659647
+5 day ahead cum,25,Massachusetts,quantile,0.5,1144.1172961757688
+5 day ahead cum,25,Massachusetts,quantile,0.9,1818.2818908659008
+6 day ahead inc,25,Massachusetts,quantile,0.1,31.92803736919548
+6 day ahead inc,25,Massachusetts,quantile,0.5,42.06541593441648
+6 day ahead inc,25,Massachusetts,quantile,0.9,65.27248848112886
+6 day ahead cum,25,Massachusetts,quantile,0.1,857.3629876709675
+6 day ahead cum,25,Massachusetts,quantile,0.5,1189.0269004778258
+6 day ahead cum,25,Massachusetts,quantile,0.9,1886.7945788093482
+1 day ahead inc,24,Maryland,quantile,0.1,9.3514114644273
+1 day ahead inc,24,Maryland,quantile,0.5,26.20162288396086
+1 day ahead inc,24,Maryland,quantile,0.9,93.63231909352172
+1 day ahead cum,24,Maryland,quantile,0.1,160.23346311726306
+1 day ahead cum,24,Maryland,quantile,0.5,513.085585507695
+1 day ahead cum,24,Maryland,quantile,0.9,1886.3838754093188
+2 day ahead inc,24,Maryland,quantile,0.1,9.516393131016324
+2 day ahead inc,24,Maryland,quantile,0.5,25.98341616698817
+2 day ahead inc,24,Maryland,quantile,0.9,93.95425675393535
+2 day ahead cum,24,Maryland,quantile,0.1,169.8905238148439
+2 day ahead cum,24,Maryland,quantile,0.5,538.3323954400616
+2 day ahead cum,24,Maryland,quantile,0.9,1979.4074171887924
+3 day ahead inc,24,Maryland,quantile,0.1,8.974626935437419
+3 day ahead inc,24,Maryland,quantile,0.5,26.60965355233996
+3 day ahead inc,24,Maryland,quantile,0.9,92.33299473545617
+3 day ahead cum,24,Maryland,quantile,0.1,179.2472143206367
+3 day ahead cum,24,Maryland,quantile,0.5,563.5358375768477
+3 day ahead cum,24,Maryland,quantile,0.9,2071.0496700648464
+4 day ahead inc,24,Maryland,quantile,0.1,9.394335793116902
+4 day ahead inc,24,Maryland,quantile,0.5,26.548783983041396
+4 day ahead inc,24,Maryland,quantile,0.9,92.25969748317637
+4 day ahead cum,24,Maryland,quantile,0.1,188.7314206624852
+4 day ahead cum,24,Maryland,quantile,0.5,587.457673967328
+4 day ahead cum,24,Maryland,quantile,0.9,2163.309367548023
+5 day ahead inc,24,Maryland,quantile,0.1,9.50906409085137
+5 day ahead inc,24,Maryland,quantile,0.5,26.145187482285014
+5 day ahead inc,24,Maryland,quantile,0.9,91.61971253990208
+5 day ahead cum,24,Maryland,quantile,0.1,198.09866959119012
+5 day ahead cum,24,Maryland,quantile,0.5,611.1509409867301
+5 day ahead cum,24,Maryland,quantile,0.9,2254.594398589021
+6 day ahead inc,24,Maryland,quantile,0.1,9.267005603628958
+6 day ahead inc,24,Maryland,quantile,0.5,25.589838640764235
+6 day ahead inc,24,Maryland,quantile,0.9,89.80912928326433
+6 day ahead cum,24,Maryland,quantile,0.1,207.6762936939496
+6 day ahead cum,24,Maryland,quantile,0.5,636.336595581864
+6 day ahead cum,24,Maryland,quantile,0.9,2344.403527872286
+1 day ahead inc,23,Maine,quantile,0.1,0.7086670348406147
+1 day ahead inc,23,Maine,quantile,0.5,1.723836993184568
+1 day ahead inc,23,Maine,quantile,0.9,6.0066604285917435
+1 day ahead cum,23,Maine,quantile,0.1,12.26554319305336
+1 day ahead cum,23,Maine,quantile,0.5,33.15842163681099
+1 day ahead cum,23,Maine,quantile,0.9,131.75037901335006
+2 day ahead inc,23,Maine,quantile,0.1,0.6815079224977258
+2 day ahead inc,23,Maine,quantile,0.5,1.7323076366680283
+2 day ahead inc,23,Maine,quantile,0.9,6.265591362581979
+2 day ahead cum,23,Maine,quantile,0.1,13.057036623218654
+2 day ahead cum,23,Maine,quantile,0.5,34.69914372213296
+2 day ahead cum,23,Maine,quantile,0.9,138.01597037593206
+3 day ahead inc,23,Maine,quantile,0.1,0.7119580254848222
+3 day ahead inc,23,Maine,quantile,0.5,1.7224944287112571
+3 day ahead inc,23,Maine,quantile,0.9,5.875341369776796
+3 day ahead cum,23,Maine,quantile,0.1,13.833006505973778
+3 day ahead cum,23,Maine,quantile,0.5,36.23598272044988
+3 day ahead cum,23,Maine,quantile,0.9,143.70733618254846
+4 day ahead inc,23,Maine,quantile,0.1,0.7057708058348615
+4 day ahead inc,23,Maine,quantile,0.5,1.7226952878377382
+4 day ahead inc,23,Maine,quantile,0.9,6.101358243251437
+4 day ahead cum,23,Maine,quantile,0.1,14.64527891055683
+4 day ahead cum,23,Maine,quantile,0.5,38.07603090876864
+4 day ahead cum,23,Maine,quantile,0.9,149.80869442579987
+5 day ahead inc,23,Maine,quantile,0.1,0.6674557287968403
+5 day ahead inc,23,Maine,quantile,0.5,1.7850782287480618
+5 day ahead inc,23,Maine,quantile,0.9,6.185505475629403
+5 day ahead cum,23,Maine,quantile,0.1,15.468313504774027
+5 day ahead cum,23,Maine,quantile,0.5,39.69373504552618
+5 day ahead cum,23,Maine,quantile,0.9,155.99419990142928
+6 day ahead inc,23,Maine,quantile,0.1,0.7128914637129906
+6 day ahead inc,23,Maine,quantile,0.5,1.7326420156094988
+6 day ahead inc,23,Maine,quantile,0.9,5.4669126616165995
+6 day ahead cum,23,Maine,quantile,0.1,16.301337937616196
+6 day ahead cum,23,Maine,quantile,0.5,41.30259999879633
+6 day ahead cum,23,Maine,quantile,0.9,161.40903189458828
+1 day ahead inc,26,Michigan,quantile,0.1,62.958169572082994
+1 day ahead inc,26,Michigan,quantile,0.5,91.66474010405271
+1 day ahead inc,26,Michigan,quantile,0.9,131.48895155936034
+1 day ahead cum,26,Michigan,quantile,0.1,1445.3187474093916
+1 day ahead cum,26,Michigan,quantile,0.5,2134.629682655081
+1 day ahead cum,26,Michigan,quantile,0.9,3243.4493560589317
+2 day ahead inc,26,Michigan,quantile,0.1,62.66954312208282
+2 day ahead inc,26,Michigan,quantile,0.5,87.02092454726551
+2 day ahead inc,26,Michigan,quantile,0.9,128.31965429551667
+2 day ahead cum,26,Michigan,quantile,0.1,1502.0260530760474
+2 day ahead cum,26,Michigan,quantile,0.5,2222.8822514040226
+2 day ahead cum,26,Michigan,quantile,0.9,3370.467672744684
+3 day ahead inc,26,Michigan,quantile,0.1,61.310032481736066
+3 day ahead inc,26,Michigan,quantile,0.5,85.98977904558477
+3 day ahead inc,26,Michigan,quantile,0.9,125.5395497848328
+3 day ahead cum,26,Michigan,quantile,0.1,1559.4887633891947
+3 day ahead cum,26,Michigan,quantile,0.5,2313.1082192336357
+3 day ahead cum,26,Michigan,quantile,0.9,3496.007222529517
+4 day ahead inc,26,Michigan,quantile,0.1,61.857787178352105
+4 day ahead inc,26,Michigan,quantile,0.5,84.55404130628375
+4 day ahead inc,26,Michigan,quantile,0.9,123.85136449694704
+4 day ahead cum,26,Michigan,quantile,0.1,1621.7106869943173
+4 day ahead cum,26,Michigan,quantile,0.5,2401.272576093225
+4 day ahead cum,26,Michigan,quantile,0.9,3617.946161962644
+5 day ahead inc,26,Michigan,quantile,0.1,59.77800675126922
+5 day ahead inc,26,Michigan,quantile,0.5,83.9404451711837
+5 day ahead inc,26,Michigan,quantile,0.9,121.278875685394
+5 day ahead cum,26,Michigan,quantile,0.1,1680.2178346092596
+5 day ahead cum,26,Michigan,quantile,0.5,2489.3650228457072
+5 day ahead cum,26,Michigan,quantile,0.9,3733.8426587916097
+6 day ahead inc,26,Michigan,quantile,0.1,56.87602124029507
+6 day ahead inc,26,Michigan,quantile,0.5,81.39771992200241
+6 day ahead inc,26,Michigan,quantile,0.9,118.90289826789524
+6 day ahead cum,26,Michigan,quantile,0.1,1735.1152193153948
+6 day ahead cum,26,Michigan,quantile,0.5,2574.056322997827
+6 day ahead cum,26,Michigan,quantile,0.9,3851.656054459441
+1 day ahead inc,27,Minnesota,quantile,0.1,4.959993183439698
+1 day ahead inc,27,Minnesota,quantile,0.5,11.514988052563035
+1 day ahead inc,27,Minnesota,quantile,0.9,27.703140821785716
+1 day ahead cum,27,Minnesota,quantile,0.1,90.55715258228376
+1 day ahead cum,27,Minnesota,quantile,0.5,212.15241956238967
+1 day ahead cum,27,Minnesota,quantile,0.9,545.5782093378041
+2 day ahead inc,27,Minnesota,quantile,0.1,5.03726210917984
+2 day ahead inc,27,Minnesota,quantile,0.5,11.454318204952493
+2 day ahead inc,27,Minnesota,quantile,0.9,25.85378639412536
+2 day ahead cum,27,Minnesota,quantile,0.1,95.07561628640852
+2 day ahead cum,27,Minnesota,quantile,0.5,224.0921437114073
+2 day ahead cum,27,Minnesota,quantile,0.9,569.9844458111643
+3 day ahead inc,27,Minnesota,quantile,0.1,5.115607214058848
+3 day ahead inc,27,Minnesota,quantile,0.5,11.483270967098598
+3 day ahead inc,27,Minnesota,quantile,0.9,26.755094765238532
+3 day ahead cum,27,Minnesota,quantile,0.1,99.97482534296779
+3 day ahead cum,27,Minnesota,quantile,0.5,235.8867710666706
+3 day ahead cum,27,Minnesota,quantile,0.9,595.0817209875291
+4 day ahead inc,27,Minnesota,quantile,0.1,5.06723277609687
+4 day ahead inc,27,Minnesota,quantile,0.5,10.953683706896909
+4 day ahead inc,27,Minnesota,quantile,0.9,27.056922220600608
+4 day ahead cum,27,Minnesota,quantile,0.1,104.59551955083485
+4 day ahead cum,27,Minnesota,quantile,0.5,247.91794341454846
+4 day ahead cum,27,Minnesota,quantile,0.9,620.7755239376222
+5 day ahead inc,27,Minnesota,quantile,0.1,4.991455586160752
+5 day ahead inc,27,Minnesota,quantile,0.5,11.216284139636723
+5 day ahead inc,27,Minnesota,quantile,0.9,26.644115870885106
+5 day ahead cum,27,Minnesota,quantile,0.1,109.35537042495471
+5 day ahead cum,27,Minnesota,quantile,0.5,259.75134972143167
+5 day ahead cum,27,Minnesota,quantile,0.9,645.5809503290309
+6 day ahead inc,27,Minnesota,quantile,0.1,4.949062808402927
+6 day ahead inc,27,Minnesota,quantile,0.5,10.777693026898783
+6 day ahead inc,27,Minnesota,quantile,0.9,26.11727529797329
+6 day ahead cum,27,Minnesota,quantile,0.1,114.12175600519579
+6 day ahead cum,27,Minnesota,quantile,0.5,271.59840177426673
+6 day ahead cum,27,Minnesota,quantile,0.9,670.1867174179872
+1 day ahead inc,29,Missouri,quantile,0.1,3.313924831562413
+1 day ahead inc,29,Missouri,quantile,0.5,7.447978535169933
+1 day ahead inc,29,Missouri,quantile,0.9,22.08738914469912
+1 day ahead cum,29,Missouri,quantile,0.1,59.8498256208166
+1 day ahead cum,29,Missouri,quantile,0.5,144.90138627855754
+1 day ahead cum,29,Missouri,quantile,0.9,489.1656207445526
+2 day ahead inc,29,Missouri,quantile,0.1,3.198038379537335
+2 day ahead inc,29,Missouri,quantile,0.5,7.333845485103739
+2 day ahead inc,29,Missouri,quantile,0.9,21.311007862605734
+2 day ahead cum,29,Missouri,quantile,0.1,62.89224559828746
+2 day ahead cum,29,Missouri,quantile,0.5,152.58098981610542
+2 day ahead cum,29,Missouri,quantile,0.9,510.78369063728485
+3 day ahead inc,29,Missouri,quantile,0.1,3.121897723836996
+3 day ahead inc,29,Missouri,quantile,0.5,7.424818981512733
+3 day ahead inc,29,Missouri,quantile,0.9,22.25241847632355
+3 day ahead cum,29,Missouri,quantile,0.1,65.85017603747622
+3 day ahead cum,29,Missouri,quantile,0.5,160.3307270512079
+3 day ahead cum,29,Missouri,quantile,0.9,533.8390045815223
+4 day ahead inc,29,Missouri,quantile,0.1,3.293821556024551
+4 day ahead inc,29,Missouri,quantile,0.5,7.32629295803995
+4 day ahead inc,29,Missouri,quantile,0.9,21.994916288181766
+4 day ahead cum,29,Missouri,quantile,0.1,69.2430739461998
+4 day ahead cum,29,Missouri,quantile,0.5,167.8407191177911
+4 day ahead cum,29,Missouri,quantile,0.9,554.7510503849809
+5 day ahead inc,29,Missouri,quantile,0.1,3.2740060916533733
+5 day ahead inc,29,Missouri,quantile,0.5,7.2612157258909455
+5 day ahead inc,29,Missouri,quantile,0.9,21.620650701068147
+5 day ahead cum,29,Missouri,quantile,0.1,72.41232937730244
+5 day ahead cum,29,Missouri,quantile,0.5,175.03718223914672
+5 day ahead cum,29,Missouri,quantile,0.9,576.5226007751621
+6 day ahead inc,29,Missouri,quantile,0.1,3.115437240033537
+6 day ahead inc,29,Missouri,quantile,0.5,7.2938495159850065
+6 day ahead inc,29,Missouri,quantile,0.9,21.265812418586773
+6 day ahead cum,29,Missouri,quantile,0.1,75.70731970168485
+6 day ahead cum,29,Missouri,quantile,0.5,181.7113673062144
+6 day ahead cum,29,Missouri,quantile,0.9,596.5367794707472
+1 day ahead inc,30,Montana,quantile,0.1,0.6189653919018878
+1 day ahead inc,30,Montana,quantile,0.5,1.572648040189487
+1 day ahead inc,30,Montana,quantile,0.9,4.990285594637882
+1 day ahead cum,30,Montana,quantile,0.1,11.033081164190033
+1 day ahead cum,30,Montana,quantile,0.5,29.440057451618692
+1 day ahead cum,30,Montana,quantile,0.9,104.80425581495169
+2 day ahead inc,30,Montana,quantile,0.1,0.5784073381988861
+2 day ahead inc,30,Montana,quantile,0.5,1.6545585872438813
+2 day ahead inc,30,Montana,quantile,0.9,4.997276503525796
+2 day ahead cum,30,Montana,quantile,0.1,11.616567149050141
+2 day ahead cum,30,Montana,quantile,0.5,31.172187740369353
+2 day ahead cum,30,Montana,quantile,0.9,109.52664537965073
+3 day ahead inc,30,Montana,quantile,0.1,0.6214323959793349
+3 day ahead inc,30,Montana,quantile,0.5,1.5734901733921514
+3 day ahead inc,30,Montana,quantile,0.9,4.984398395745472
+3 day ahead cum,30,Montana,quantile,0.1,12.298374390354404
+3 day ahead cum,30,Montana,quantile,0.5,32.82383514133105
+3 day ahead cum,30,Montana,quantile,0.9,114.47799665542013
+4 day ahead inc,30,Montana,quantile,0.1,0.6283510071486937
+4 day ahead inc,30,Montana,quantile,0.5,1.5784436036638234
+4 day ahead inc,30,Montana,quantile,0.9,4.551216987185796
+4 day ahead cum,30,Montana,quantile,0.1,12.970748764161424
+4 day ahead cum,30,Montana,quantile,0.5,34.26559220203659
+4 day ahead cum,30,Montana,quantile,0.9,118.52718229040786
+5 day ahead inc,30,Montana,quantile,0.1,0.6399562347463198
+5 day ahead inc,30,Montana,quantile,0.5,1.5429302796784476
+5 day ahead inc,30,Montana,quantile,0.9,4.61184687362713
+5 day ahead cum,30,Montana,quantile,0.1,13.63684164200712
+5 day ahead cum,30,Montana,quantile,0.5,35.75834948255256
+5 day ahead cum,30,Montana,quantile,0.9,123.12447744470795
+6 day ahead inc,30,Montana,quantile,0.1,0.60356732561496
+6 day ahead inc,30,Montana,quantile,0.5,1.5886748455989226
+6 day ahead inc,30,Montana,quantile,0.9,4.874325206235738
+6 day ahead cum,30,Montana,quantile,0.1,14.39243740497432
+6 day ahead cum,30,Montana,quantile,0.5,37.45497615248959
+6 day ahead cum,30,Montana,quantile,0.9,127.62285849341991
+1 day ahead inc,37,North Carolina,quantile,0.1,5.6313579212712455
+1 day ahead inc,37,North Carolina,quantile,0.5,12.401781738831987
+1 day ahead inc,37,North Carolina,quantile,0.9,30.982846264129424
+1 day ahead cum,37,North Carolina,quantile,0.1,107.15004021071172
+1 day ahead cum,37,North Carolina,quantile,0.5,228.64746549761173
+1 day ahead cum,37,North Carolina,quantile,0.9,659.5213998151755
+2 day ahead inc,37,North Carolina,quantile,0.1,5.7657565822880805
+2 day ahead inc,37,North Carolina,quantile,0.5,12.342942069874539
+2 day ahead inc,37,North Carolina,quantile,0.9,31.50380054584472
+2 day ahead cum,37,North Carolina,quantile,0.1,112.74676666715344
+2 day ahead cum,37,North Carolina,quantile,0.5,239.9977461554044
+2 day ahead cum,37,North Carolina,quantile,0.9,689.654387515406
+3 day ahead inc,37,North Carolina,quantile,0.1,5.940664065298577
+3 day ahead inc,37,North Carolina,quantile,0.5,12.742726914315881
+3 day ahead inc,37,North Carolina,quantile,0.9,31.715725992324305
+3 day ahead cum,37,North Carolina,quantile,0.1,118.86316131829544
+3 day ahead cum,37,North Carolina,quantile,0.5,251.89383323453148
+3 day ahead cum,37,North Carolina,quantile,0.9,719.3550967689919
+4 day ahead inc,37,North Carolina,quantile,0.1,5.7028864796834275
+4 day ahead inc,37,North Carolina,quantile,0.5,12.287326497446413
+4 day ahead inc,37,North Carolina,quantile,0.9,30.770988595168948
+4 day ahead cum,37,North Carolina,quantile,0.1,124.88184214900684
+4 day ahead cum,37,North Carolina,quantile,0.5,263.93322778058507
+4 day ahead cum,37,North Carolina,quantile,0.9,750.2238432774942
+5 day ahead inc,37,North Carolina,quantile,0.1,5.648602789717913
+5 day ahead inc,37,North Carolina,quantile,0.5,12.772671116397586
+5 day ahead inc,37,North Carolina,quantile,0.9,30.379787273902373
+5 day ahead cum,37,North Carolina,quantile,0.1,131.15555912198067
+5 day ahead cum,37,North Carolina,quantile,0.5,275.56572645086914
+5 day ahead cum,37,North Carolina,quantile,0.9,779.5193729242021
+6 day ahead inc,37,North Carolina,quantile,0.1,5.816187414861324
+6 day ahead inc,37,North Carolina,quantile,0.5,11.960788439826903
+6 day ahead inc,37,North Carolina,quantile,0.9,30.288308589754514
+6 day ahead cum,37,North Carolina,quantile,0.1,137.39041803547593
+6 day ahead cum,37,North Carolina,quantile,0.5,288.171368577317
+6 day ahead cum,37,North Carolina,quantile,0.9,808.521510652567
+1 day ahead inc,38,North Dakota,quantile,0.1,0.19747094297826606
+1 day ahead inc,38,North Dakota,quantile,0.5,0.6196631712357612
+1 day ahead inc,38,North Dakota,quantile,0.9,2.0146362594987357
+1 day ahead cum,38,North Dakota,quantile,0.1,3.6181582785777335
+1 day ahead cum,38,North Dakota,quantile,0.5,11.21623678724234
+1 day ahead cum,38,North Dakota,quantile,0.9,38.27262136877129
+2 day ahead inc,38,North Dakota,quantile,0.1,0.19791895209921773
+2 day ahead inc,38,North Dakota,quantile,0.5,0.6140732766517473
+2 day ahead inc,38,North Dakota,quantile,0.9,2.2178912406975284
+2 day ahead cum,38,North Dakota,quantile,0.1,3.8059850572991074
+2 day ahead cum,38,North Dakota,quantile,0.5,11.978008709743184
+2 day ahead cum,38,North Dakota,quantile,0.9,40.500316470248215
+3 day ahead inc,38,North Dakota,quantile,0.1,0.21703144660707802
+3 day ahead inc,38,North Dakota,quantile,0.5,0.6228517285444931
+3 day ahead inc,38,North Dakota,quantile,0.9,2.10529675180486
+3 day ahead cum,38,North Dakota,quantile,0.1,4.018497033618248
+3 day ahead cum,38,North Dakota,quantile,0.5,12.674353203649744
+3 day ahead cum,38,North Dakota,quantile,0.9,42.40852247193249
+4 day ahead inc,38,North Dakota,quantile,0.1,0.23139352436191835
+4 day ahead inc,38,North Dakota,quantile,0.5,0.6436974160307241
+4 day ahead inc,38,North Dakota,quantile,0.9,2.0705975743951104
+4 day ahead cum,38,North Dakota,quantile,0.1,4.344140004548901
+4 day ahead cum,38,North Dakota,quantile,0.5,13.40968956901122
+4 day ahead cum,38,North Dakota,quantile,0.9,44.417530225897366
+5 day ahead inc,38,North Dakota,quantile,0.1,0.2306995345096793
+5 day ahead inc,38,North Dakota,quantile,0.5,0.6398611360121009
+5 day ahead inc,38,North Dakota,quantile,0.9,2.0181065676343897
+5 day ahead cum,38,North Dakota,quantile,0.1,4.6495417699129975
+5 day ahead cum,38,North Dakota,quantile,0.5,13.882764842783107
+5 day ahead cum,38,North Dakota,quantile,0.9,46.248471228928786
+6 day ahead inc,38,North Dakota,quantile,0.1,0.20282799947593694
+6 day ahead inc,38,North Dakota,quantile,0.5,0.5815757031866584
+6 day ahead inc,38,North Dakota,quantile,0.9,1.9585636822657255
+6 day ahead cum,38,North Dakota,quantile,0.1,4.822506271712829
+6 day ahead cum,38,North Dakota,quantile,0.5,14.567150929255163
+6 day ahead cum,38,North Dakota,quantile,0.9,48.19766400375166
+1 day ahead inc,31,Nebraska,quantile,0.1,0.6664374973649967
+1 day ahead inc,31,Nebraska,quantile,0.5,1.7575216216815552
+1 day ahead inc,31,Nebraska,quantile,0.9,5.08002273220888
+1 day ahead cum,31,Nebraska,quantile,0.1,12.400167443535738
+1 day ahead cum,31,Nebraska,quantile,0.5,32.71560090503635
+1 day ahead cum,31,Nebraska,quantile,0.9,110.89125724398347
+2 day ahead inc,31,Nebraska,quantile,0.1,0.7177457084885261
+2 day ahead inc,31,Nebraska,quantile,0.5,1.6214897721380854
+2 day ahead inc,31,Nebraska,quantile,0.9,5.410340763270552
+2 day ahead cum,31,Nebraska,quantile,0.1,13.131223270708961
+2 day ahead cum,31,Nebraska,quantile,0.5,34.30974136293092
+2 day ahead cum,31,Nebraska,quantile,0.9,116.42647017656084
+3 day ahead inc,31,Nebraska,quantile,0.1,0.6307245568870299
+3 day ahead inc,31,Nebraska,quantile,0.5,1.6565945982839645
+3 day ahead inc,31,Nebraska,quantile,0.9,5.333737671153716
+3 day ahead cum,31,Nebraska,quantile,0.1,13.783495532829793
+3 day ahead cum,31,Nebraska,quantile,0.5,35.82356496147593
+3 day ahead cum,31,Nebraska,quantile,0.9,121.4978847528873
+4 day ahead inc,31,Nebraska,quantile,0.1,0.7446257352116451
+4 day ahead inc,31,Nebraska,quantile,0.5,1.6523613733863547
+4 day ahead inc,31,Nebraska,quantile,0.9,5.038942796538662
+4 day ahead cum,31,Nebraska,quantile,0.1,14.575647687762382
+4 day ahead cum,31,Nebraska,quantile,0.5,37.592082901894095
+4 day ahead cum,31,Nebraska,quantile,0.9,126.73316491053663
+5 day ahead inc,31,Nebraska,quantile,0.1,0.6972814631116041
+5 day ahead inc,31,Nebraska,quantile,0.5,1.680070554215811
+5 day ahead inc,31,Nebraska,quantile,0.9,5.311564329250461
+5 day ahead cum,31,Nebraska,quantile,0.1,15.220903281937218
+5 day ahead cum,31,Nebraska,quantile,0.5,39.34016811181185
+5 day ahead cum,31,Nebraska,quantile,0.9,132.0447292397871
+6 day ahead inc,31,Nebraska,quantile,0.1,0.6695401034414205
+6 day ahead inc,31,Nebraska,quantile,0.5,1.6248847901161665
+6 day ahead inc,31,Nebraska,quantile,0.9,4.6957992349474225
+6 day ahead cum,31,Nebraska,quantile,0.1,15.896693291062805
+6 day ahead cum,31,Nebraska,quantile,0.5,40.9066767178807
+6 day ahead cum,31,Nebraska,quantile,0.9,136.77613303799498
+1 day ahead inc,33,New Hampshire,quantile,0.1,2.4603214060201792
+1 day ahead inc,33,New Hampshire,quantile,0.5,5.457055051989162
+1 day ahead inc,33,New Hampshire,quantile,0.9,22.75330023445445
+1 day ahead cum,33,New Hampshire,quantile,0.1,47.78567997383692
+1 day ahead cum,33,New Hampshire,quantile,0.5,109.66980104424923
+1 day ahead cum,33,New Hampshire,quantile,0.9,505.2713934322013
+2 day ahead inc,33,New Hampshire,quantile,0.1,2.5605299844324367
+2 day ahead inc,33,New Hampshire,quantile,0.5,5.5623513105529065
+2 day ahead inc,33,New Hampshire,quantile,0.9,22.365374559579834
+2 day ahead cum,33,New Hampshire,quantile,0.1,50.37444080530937
+2 day ahead cum,33,New Hampshire,quantile,0.5,115.28503253068894
+2 day ahead cum,33,New Hampshire,quantile,0.9,527.6133780964869
+3 day ahead inc,33,New Hampshire,quantile,0.1,2.4674413488423
+3 day ahead inc,33,New Hampshire,quantile,0.5,5.455988842795899
+3 day ahead inc,33,New Hampshire,quantile,0.9,21.985985726531162
+3 day ahead cum,33,New Hampshire,quantile,0.1,52.74677316875096
+3 day ahead cum,33,New Hampshire,quantile,0.5,120.61071444229023
+3 day ahead cum,33,New Hampshire,quantile,0.9,549.2251403347057
+4 day ahead inc,33,New Hampshire,quantile,0.1,2.4644382353988683
+4 day ahead inc,33,New Hampshire,quantile,0.5,5.4861458318343255
+4 day ahead inc,33,New Hampshire,quantile,0.9,21.767690352910765
+4 day ahead cum,33,New Hampshire,quantile,0.1,55.11910386634678
+4 day ahead cum,33,New Hampshire,quantile,0.5,125.50349982854924
+4 day ahead cum,33,New Hampshire,quantile,0.9,570.9928306876162
+5 day ahead inc,33,New Hampshire,quantile,0.1,2.4788821615628907
+5 day ahead inc,33,New Hampshire,quantile,0.5,5.547412550990878
+5 day ahead inc,33,New Hampshire,quantile,0.9,21.076337899190648
+5 day ahead cum,33,New Hampshire,quantile,0.1,57.44256607651997
+5 day ahead cum,33,New Hampshire,quantile,0.5,130.43877168482703
+5 day ahead cum,33,New Hampshire,quantile,0.9,591.8748869751745
+6 day ahead inc,33,New Hampshire,quantile,0.1,2.4597076852569884
+6 day ahead inc,33,New Hampshire,quantile,0.5,5.550507287332108
+6 day ahead inc,33,New Hampshire,quantile,0.9,20.799238244341268
+6 day ahead cum,33,New Hampshire,quantile,0.1,59.75625719917018
+6 day ahead cum,33,New Hampshire,quantile,0.5,135.455138126414
+6 day ahead cum,33,New Hampshire,quantile,0.9,612.5993244464562
+1 day ahead inc,34,New Jersey,quantile,0.1,13.879746815762243
+1 day ahead inc,34,New Jersey,quantile,0.5,39.375112290374155
+1 day ahead inc,34,New Jersey,quantile,0.9,164.12913574072348
+1 day ahead cum,34,New Jersey,quantile,0.1,257.1498914141767
+1 day ahead cum,34,New Jersey,quantile,0.5,740.8874022824731
+1 day ahead cum,34,New Jersey,quantile,0.9,4304.82626523101
+2 day ahead inc,34,New Jersey,quantile,0.1,13.570183206337015
+2 day ahead inc,34,New Jersey,quantile,0.5,39.54451765072928
+2 day ahead inc,34,New Jersey,quantile,0.9,161.57341524438047
+2 day ahead cum,34,New Jersey,quantile,0.1,269.8647598711618
+2 day ahead cum,34,New Jersey,quantile,0.5,780.4124435504464
+2 day ahead cum,34,New Jersey,quantile,0.9,4466.3996804753915
+3 day ahead inc,34,New Jersey,quantile,0.1,13.766581222188739
+3 day ahead inc,34,New Jersey,quantile,0.5,38.295073945184
+3 day ahead inc,34,New Jersey,quantile,0.9,157.82010437209243
+3 day ahead cum,34,New Jersey,quantile,0.1,282.3378244688565
+3 day ahead cum,34,New Jersey,quantile,0.5,819.1940289490009
+3 day ahead cum,34,New Jersey,quantile,0.9,4622.604447926446
+4 day ahead inc,34,New Jersey,quantile,0.1,13.33854753111665
+4 day ahead inc,34,New Jersey,quantile,0.5,38.680722629710175
+4 day ahead inc,34,New Jersey,quantile,0.9,154.02264504039084
+4 day ahead cum,34,New Jersey,quantile,0.1,294.8472862138767
+4 day ahead cum,34,New Jersey,quantile,0.5,858.4793613236554
+4 day ahead cum,34,New Jersey,quantile,0.9,4775.010834709099
+5 day ahead inc,34,New Jersey,quantile,0.1,13.406832121878233
+5 day ahead inc,34,New Jersey,quantile,0.5,38.10878998542237
+5 day ahead inc,34,New Jersey,quantile,0.9,149.90399611193672
+5 day ahead cum,34,New Jersey,quantile,0.1,307.2263533165161
+5 day ahead cum,34,New Jersey,quantile,0.5,896.1276813323027
+5 day ahead cum,34,New Jersey,quantile,0.9,4922.590673950213
+6 day ahead inc,34,New Jersey,quantile,0.1,13.477828755061054
+6 day ahead inc,34,New Jersey,quantile,0.5,38.03432452349664
+6 day ahead inc,34,New Jersey,quantile,0.9,144.3230396011434
+6 day ahead cum,34,New Jersey,quantile,0.1,319.90204968073056
+6 day ahead cum,34,New Jersey,quantile,0.5,934.4773830261361
+6 day ahead cum,34,New Jersey,quantile,0.9,5068.217689744127
+1 day ahead inc,35,New Mexico,quantile,0.1,1.3005442447358355
+1 day ahead inc,35,New Mexico,quantile,0.5,3.0401369060377204
+1 day ahead inc,35,New Mexico,quantile,0.9,7.531100646838459
+1 day ahead cum,35,New Mexico,quantile,0.1,23.071535006106853
+1 day ahead cum,35,New Mexico,quantile,0.5,56.80199906997139
+1 day ahead cum,35,New Mexico,quantile,0.9,151.32659718554154
+2 day ahead inc,35,New Mexico,quantile,0.1,1.314584459740324
+2 day ahead inc,35,New Mexico,quantile,0.5,2.8589558519055647
+2 day ahead inc,35,New Mexico,quantile,0.9,7.173519615824037
+2 day ahead cum,35,New Mexico,quantile,0.1,24.460028284092587
+2 day ahead cum,35,New Mexico,quantile,0.5,59.64699584164561
+2 day ahead cum,35,New Mexico,quantile,0.9,158.77096103777927
+3 day ahead inc,35,New Mexico,quantile,0.1,1.271028655742448
+3 day ahead inc,35,New Mexico,quantile,0.5,3.038251153706094
+3 day ahead inc,35,New Mexico,quantile,0.9,8.005039034822692
+3 day ahead cum,35,New Mexico,quantile,0.1,26.0203470400502
+3 day ahead cum,35,New Mexico,quantile,0.5,62.651131597426655
+3 day ahead cum,35,New Mexico,quantile,0.9,166.36576434839608
+4 day ahead inc,35,New Mexico,quantile,0.1,1.3211124976943136
+4 day ahead inc,35,New Mexico,quantile,0.5,2.9018267424210804
+4 day ahead inc,35,New Mexico,quantile,0.9,7.6141290103842625
+4 day ahead cum,35,New Mexico,quantile,0.1,27.298872448454183
+4 day ahead cum,35,New Mexico,quantile,0.5,65.65354488464801
+4 day ahead cum,35,New Mexico,quantile,0.9,174.23213014540016
+5 day ahead inc,35,New Mexico,quantile,0.1,1.2708749875692864
+5 day ahead inc,35,New Mexico,quantile,0.5,2.9855212689951562
+5 day ahead inc,35,New Mexico,quantile,0.9,7.5185084746021
+5 day ahead cum,35,New Mexico,quantile,0.1,28.67549892781043
+5 day ahead cum,35,New Mexico,quantile,0.5,68.57273407712734
+5 day ahead cum,35,New Mexico,quantile,0.9,181.60469813169186
+6 day ahead inc,35,New Mexico,quantile,0.1,1.3373713778234737
+6 day ahead inc,35,New Mexico,quantile,0.5,2.9327470042768704
+6 day ahead inc,35,New Mexico,quantile,0.9,7.251187539606709
+6 day ahead cum,35,New Mexico,quantile,0.1,30.098170540783272
+6 day ahead cum,35,New Mexico,quantile,0.5,71.31572775889241
+6 day ahead cum,35,New Mexico,quantile,0.9,188.70787311461413
+1 day ahead inc,32,Nevada,quantile,0.1,6.304938433206138
+1 day ahead inc,32,Nevada,quantile,0.5,12.768239183759375
+1 day ahead inc,32,Nevada,quantile,0.9,31.703379206346263
+1 day ahead cum,32,Nevada,quantile,0.1,130.32164769768576
+1 day ahead cum,32,Nevada,quantile,0.5,270.0120153673706
+1 day ahead cum,32,Nevada,quantile,0.9,709.839792302915
+2 day ahead inc,32,Nevada,quantile,0.1,6.191760525217526
+2 day ahead inc,32,Nevada,quantile,0.5,13.245192340594889
+2 day ahead inc,32,Nevada,quantile,0.9,30.1971206048978
+2 day ahead cum,32,Nevada,quantile,0.1,136.5409897956696
+2 day ahead cum,32,Nevada,quantile,0.5,280.83062604396
+2 day ahead cum,32,Nevada,quantile,0.9,740.3546263060321
+3 day ahead inc,32,Nevada,quantile,0.1,6.4756030036830365
+3 day ahead inc,32,Nevada,quantile,0.5,12.513568597447438
+3 day ahead inc,32,Nevada,quantile,0.9,30.05250011126401
+3 day ahead cum,32,Nevada,quantile,0.1,142.7397278251833
+3 day ahead cum,32,Nevada,quantile,0.5,292.1753452226489
+3 day ahead cum,32,Nevada,quantile,0.9,771.0138484758947
+4 day ahead inc,32,Nevada,quantile,0.1,6.328684374986594
+4 day ahead inc,32,Nevada,quantile,0.5,12.470763795547207
+4 day ahead inc,32,Nevada,quantile,0.9,28.567460214529266
+4 day ahead cum,32,Nevada,quantile,0.1,149.05969013587583
+4 day ahead cum,32,Nevada,quantile,0.5,303.4718915039179
+4 day ahead cum,32,Nevada,quantile,0.9,799.6975722945755
+5 day ahead inc,32,Nevada,quantile,0.1,6.5538727838847315
+5 day ahead inc,32,Nevada,quantile,0.5,12.565177098582597
+5 day ahead inc,32,Nevada,quantile,0.9,28.878535914597435
+5 day ahead cum,32,Nevada,quantile,0.1,155.61356291976054
+5 day ahead cum,32,Nevada,quantile,0.5,315.08937494179975
+5 day ahead cum,32,Nevada,quantile,0.9,831.1430345216309
+6 day ahead inc,32,Nevada,quantile,0.1,6.271964101741048
+6 day ahead inc,32,Nevada,quantile,0.5,12.469273491791911
+6 day ahead inc,32,Nevada,quantile,0.9,27.756112938460106
+6 day ahead cum,32,Nevada,quantile,0.1,161.77168698744362
+6 day ahead cum,32,Nevada,quantile,0.5,326.25307041609244
+6 day ahead cum,32,Nevada,quantile,0.9,861.2382809749615
+1 day ahead inc,36,New York,quantile,0.1,371.23061764531195
+1 day ahead inc,36,New York,quantile,0.5,469.3425809606968
+1 day ahead inc,36,New York,quantile,0.9,675.8280255256925
+1 day ahead cum,36,New York,quantile,0.1,9460.557873935628
+1 day ahead cum,36,New York,quantile,0.5,11914.833077065747
+1 day ahead cum,36,New York,quantile,0.9,20450.293732884995
+2 day ahead inc,36,New York,quantile,0.1,364.0867793253889
+2 day ahead inc,36,New York,quantile,0.5,447.8043300547386
+2 day ahead inc,36,New York,quantile,0.9,643.732811115881
+2 day ahead cum,36,New York,quantile,0.1,9857.105665028284
+2 day ahead cum,36,New York,quantile,0.5,12403.480725978628
+2 day ahead cum,36,New York,quantile,0.9,21094.02654400088
+3 day ahead inc,36,New York,quantile,0.1,356.4068696656823
+3 day ahead inc,36,New York,quantile,0.5,440.9165807324901
+3 day ahead inc,36,New York,quantile,0.9,627.6801013964515
+3 day ahead cum,36,New York,quantile,0.1,10192.476226966548
+3 day ahead cum,36,New York,quantile,0.5,12889.089028944165
+3 day ahead cum,36,New York,quantile,0.9,21721.70664539733
+4 day ahead inc,36,New York,quantile,0.1,346.03193496621356
+4 day ahead inc,36,New York,quantile,0.5,425.741535472015
+4 day ahead inc,36,New York,quantile,0.9,603.1711422843914
+4 day ahead cum,36,New York,quantile,0.1,10514.807433642838
+4 day ahead cum,36,New York,quantile,0.5,13357.063437660005
+4 day ahead cum,36,New York,quantile,0.9,22324.87778768172
+5 day ahead inc,36,New York,quantile,0.1,341.2484013393216
+5 day ahead inc,36,New York,quantile,0.5,415.6021980789904
+5 day ahead inc,36,New York,quantile,0.9,568.7253889586011
+5 day ahead cum,36,New York,quantile,0.1,10821.75207884602
+5 day ahead cum,36,New York,quantile,0.5,13773.020143185231
+5 day ahead cum,36,New York,quantile,0.9,22893.467289476284
+6 day ahead inc,36,New York,quantile,0.1,327.48495955161826
+6 day ahead inc,36,New York,quantile,0.5,402.0090597120646
+6 day ahead inc,36,New York,quantile,0.9,555.8306761769372
+6 day ahead cum,36,New York,quantile,0.1,11120.416785203994
+6 day ahead cum,36,New York,quantile,0.5,14172.418794106723
+6 day ahead cum,36,New York,quantile,0.9,23448.4414810862
+1 day ahead inc,39,Ohio,quantile,0.1,6.917639817787122
+1 day ahead inc,39,Ohio,quantile,0.5,17.128296766461045
+1 day ahead inc,39,Ohio,quantile,0.9,46.535339507762785
+1 day ahead cum,39,Ohio,quantile,0.1,135.10127044606853
+1 day ahead cum,39,Ohio,quantile,0.5,328.73646421737675
+1 day ahead cum,39,Ohio,quantile,0.9,996.9974007804442
+2 day ahead inc,39,Ohio,quantile,0.1,6.905547660329455
+2 day ahead inc,39,Ohio,quantile,0.5,16.941227273442802
+2 day ahead inc,39,Ohio,quantile,0.9,46.116496260628594
+2 day ahead cum,39,Ohio,quantile,0.1,141.640012237572
+2 day ahead cum,39,Ohio,quantile,0.5,345.45838645433014
+2 day ahead cum,39,Ohio,quantile,0.9,1043.1138970410727
+3 day ahead inc,39,Ohio,quantile,0.1,6.777661362230992
+3 day ahead inc,39,Ohio,quantile,0.5,17.44146800596759
+3 day ahead inc,39,Ohio,quantile,0.9,45.253232694705105
+3 day ahead cum,39,Ohio,quantile,0.1,148.0254522989784
+3 day ahead cum,39,Ohio,quantile,0.5,362.14110525868455
+3 day ahead cum,39,Ohio,quantile,0.9,1088.3671297357778
+4 day ahead inc,39,Ohio,quantile,0.1,6.826559089005473
+4 day ahead inc,39,Ohio,quantile,0.5,16.644427200802298
+4 day ahead inc,39,Ohio,quantile,0.9,45.27998014140962
+4 day ahead cum,39,Ohio,quantile,0.1,154.66229865118802
+4 day ahead cum,39,Ohio,quantile,0.5,377.9654740441913
+4 day ahead cum,39,Ohio,quantile,0.9,1133.448183982487
+5 day ahead inc,39,Ohio,quantile,0.1,7.121587850060668
+5 day ahead inc,39,Ohio,quantile,0.5,16.93812140682937
+5 day ahead inc,39,Ohio,quantile,0.9,44.458216388431424
+5 day ahead cum,39,Ohio,quantile,0.1,161.20063857935918
+5 day ahead cum,39,Ohio,quantile,0.5,393.46766078056123
+5 day ahead cum,39,Ohio,quantile,0.9,1177.9064003709184
+6 day ahead inc,39,Ohio,quantile,0.1,6.873643075747607
+6 day ahead inc,39,Ohio,quantile,0.5,17.046788171439776
+6 day ahead inc,39,Ohio,quantile,0.9,43.919859040610724
+6 day ahead cum,39,Ohio,quantile,0.1,167.54408600870806
+6 day ahead cum,39,Ohio,quantile,0.5,409.12651804919517
+6 day ahead cum,39,Ohio,quantile,0.9,1221.4097492688948
+1 day ahead inc,40,Oklahoma,quantile,0.1,1.4913371423084762
+1 day ahead inc,40,Oklahoma,quantile,0.5,3.1698410873694933
+1 day ahead inc,40,Oklahoma,quantile,0.9,9.899761059421763
+1 day ahead cum,40,Oklahoma,quantile,0.1,27.655492077677394
+1 day ahead cum,40,Oklahoma,quantile,0.5,65.92320771412074
+1 day ahead cum,40,Oklahoma,quantile,0.9,191.20405472505507
+2 day ahead inc,40,Oklahoma,quantile,0.1,1.5283234848022025
+2 day ahead inc,40,Oklahoma,quantile,0.5,3.3258098854217737
+2 day ahead inc,40,Oklahoma,quantile,0.9,9.6264915400011
+2 day ahead cum,40,Oklahoma,quantile,0.1,29.593372092148037
+2 day ahead cum,40,Oklahoma,quantile,0.5,69.3098636160518
+2 day ahead cum,40,Oklahoma,quantile,0.9,199.8298285389257
+3 day ahead inc,40,Oklahoma,quantile,0.1,1.4717582718516404
+3 day ahead inc,40,Oklahoma,quantile,0.5,3.3420051052198323
+3 day ahead inc,40,Oklahoma,quantile,0.9,10.315308846104296
+3 day ahead cum,40,Oklahoma,quantile,0.1,30.94382341722104
+3 day ahead cum,40,Oklahoma,quantile,0.5,73.03486274383236
+3 day ahead cum,40,Oklahoma,quantile,0.9,209.21841337190048
+4 day ahead inc,40,Oklahoma,quantile,0.1,1.602007551999885
+4 day ahead inc,40,Oklahoma,quantile,0.5,3.420521806873685
+4 day ahead inc,40,Oklahoma,quantile,0.9,9.622005147991944
+4 day ahead cum,40,Oklahoma,quantile,0.1,32.408272706242684
+4 day ahead cum,40,Oklahoma,quantile,0.5,76.40415035600284
+4 day ahead cum,40,Oklahoma,quantile,0.9,218.4136139900153
+5 day ahead inc,40,Oklahoma,quantile,0.1,1.5436062869731448
+5 day ahead inc,40,Oklahoma,quantile,0.5,3.4128701183164405
+5 day ahead inc,40,Oklahoma,quantile,0.9,10.320417319988888
+5 day ahead cum,40,Oklahoma,quantile,0.1,33.6747575302952
+5 day ahead cum,40,Oklahoma,quantile,0.5,79.4739594779317
+5 day ahead cum,40,Oklahoma,quantile,0.9,228.0899085404044
+6 day ahead inc,40,Oklahoma,quantile,0.1,1.58419705020208
+6 day ahead inc,40,Oklahoma,quantile,0.5,3.3181058325115105
+6 day ahead inc,40,Oklahoma,quantile,0.9,10.063544878724736
+6 day ahead cum,40,Oklahoma,quantile,0.1,35.267515083182985
+6 day ahead cum,40,Oklahoma,quantile,0.5,82.34775564207001
+6 day ahead cum,40,Oklahoma,quantile,0.9,237.72593102245872
+1 day ahead inc,41,Oregon,quantile,0.1,2.7377473111172987
+1 day ahead inc,41,Oregon,quantile,0.5,8.664967048610151
+1 day ahead inc,41,Oregon,quantile,0.9,30.145269481104368
+1 day ahead cum,41,Oregon,quantile,0.1,52.598745453126966
+1 day ahead cum,41,Oregon,quantile,0.5,163.8996900099996
+1 day ahead cum,41,Oregon,quantile,0.9,674.3544861913657
+2 day ahead inc,41,Oregon,quantile,0.1,2.8249263836889607
+2 day ahead inc,41,Oregon,quantile,0.5,8.258178043995958
+2 day ahead inc,41,Oregon,quantile,0.9,29.927979081618844
+2 day ahead cum,41,Oregon,quantile,0.1,55.04378858367818
+2 day ahead cum,41,Oregon,quantile,0.5,171.45812133208196
+2 day ahead cum,41,Oregon,quantile,0.9,706.2313053886943
+3 day ahead inc,41,Oregon,quantile,0.1,2.7619882126407584
+3 day ahead inc,41,Oregon,quantile,0.5,8.386341066108498
+3 day ahead inc,41,Oregon,quantile,0.9,30.463800903789377
+3 day ahead cum,41,Oregon,quantile,0.1,57.788586572408114
+3 day ahead cum,41,Oregon,quantile,0.5,179.83400257806056
+3 day ahead cum,41,Oregon,quantile,0.9,737.549358649128
+4 day ahead inc,41,Oregon,quantile,0.1,2.871427178222464
+4 day ahead inc,41,Oregon,quantile,0.5,8.367736729914919
+4 day ahead inc,41,Oregon,quantile,0.9,29.952211475394183
+4 day ahead cum,41,Oregon,quantile,0.1,60.321494929888964
+4 day ahead cum,41,Oregon,quantile,0.5,187.6793317704396
+4 day ahead cum,41,Oregon,quantile,0.9,768.7124618156938
+5 day ahead inc,41,Oregon,quantile,0.1,2.8369865283936084
+5 day ahead inc,41,Oregon,quantile,0.5,8.240532102799477
+5 day ahead inc,41,Oregon,quantile,0.9,29.369700374147754
+5 day ahead cum,41,Oregon,quantile,0.1,63.41511069135683
+5 day ahead cum,41,Oregon,quantile,0.5,196.15944131065467
+5 day ahead cum,41,Oregon,quantile,0.9,797.0807253931819
+6 day ahead inc,41,Oregon,quantile,0.1,2.6643275523416627
+6 day ahead inc,41,Oregon,quantile,0.5,8.158452106614911
+6 day ahead inc,41,Oregon,quantile,0.9,29.434729747528767
+6 day ahead cum,41,Oregon,quantile,0.1,65.9027508446454
+6 day ahead cum,41,Oregon,quantile,0.5,204.50478201088612
+6 day ahead cum,41,Oregon,quantile,0.9,827.0117680831227
+1 day ahead inc,42,Pennsylvania,quantile,0.1,8.379989257540341
+1 day ahead inc,42,Pennsylvania,quantile,0.5,19.185200008268307
+1 day ahead inc,42,Pennsylvania,quantile,0.9,47.53862073944721
+1 day ahead cum,42,Pennsylvania,quantile,0.1,148.08201374156138
+1 day ahead cum,42,Pennsylvania,quantile,0.5,361.0391209735469
+1 day ahead cum,42,Pennsylvania,quantile,0.9,1064.4179189918325
+2 day ahead inc,42,Pennsylvania,quantile,0.1,8.740000864548215
+2 day ahead inc,42,Pennsylvania,quantile,0.5,19.068960411870197
+2 day ahead inc,42,Pennsylvania,quantile,0.9,48.61747589770011
+2 day ahead cum,42,Pennsylvania,quantile,0.1,157.00786632488087
+2 day ahead cum,42,Pennsylvania,quantile,0.5,380.3366746409574
+2 day ahead cum,42,Pennsylvania,quantile,0.9,1116.3795102402744
+3 day ahead inc,42,Pennsylvania,quantile,0.1,8.297681451390055
+3 day ahead inc,42,Pennsylvania,quantile,0.5,18.919515139350256
+3 day ahead inc,42,Pennsylvania,quantile,0.9,49.0431885217301
+3 day ahead cum,42,Pennsylvania,quantile,0.1,165.7203312302854
+3 day ahead cum,42,Pennsylvania,quantile,0.5,397.53667448497634
+3 day ahead cum,42,Pennsylvania,quantile,0.9,1166.5789124896373
+4 day ahead inc,42,Pennsylvania,quantile,0.1,8.822570675214253
+4 day ahead inc,42,Pennsylvania,quantile,0.5,19.07208628562388
+4 day ahead inc,42,Pennsylvania,quantile,0.9,48.60156887950461
+4 day ahead cum,42,Pennsylvania,quantile,0.1,174.96762249816032
+4 day ahead cum,42,Pennsylvania,quantile,0.5,414.9081109323246
+4 day ahead cum,42,Pennsylvania,quantile,0.9,1217.2804231423866
+5 day ahead inc,42,Pennsylvania,quantile,0.1,8.194979939776022
+5 day ahead inc,42,Pennsylvania,quantile,0.5,18.71478251645408
+5 day ahead inc,42,Pennsylvania,quantile,0.9,48.8019201464157
+5 day ahead cum,42,Pennsylvania,quantile,0.1,184.06561623923446
+5 day ahead cum,42,Pennsylvania,quantile,0.5,432.6950225046948
+5 day ahead cum,42,Pennsylvania,quantile,0.9,1268.2534435611044
+6 day ahead inc,42,Pennsylvania,quantile,0.1,8.302267163475108
+6 day ahead inc,42,Pennsylvania,quantile,0.5,19.17729412046488
+6 day ahead inc,42,Pennsylvania,quantile,0.9,47.7595281096513
+6 day ahead cum,42,Pennsylvania,quantile,0.1,192.76198086825616
+6 day ahead cum,42,Pennsylvania,quantile,0.5,451.3208707071405
+6 day ahead cum,42,Pennsylvania,quantile,0.9,1314.0147936748394
+1 day ahead inc,44,Rhode Island,quantile,0.1,0.4397853675842797
+1 day ahead inc,44,Rhode Island,quantile,0.5,1.3755148482910249
+1 day ahead inc,44,Rhode Island,quantile,0.9,6.632052124060255
+1 day ahead cum,44,Rhode Island,quantile,0.1,7.818456454130138
+1 day ahead cum,44,Rhode Island,quantile,0.5,25.78278306546745
+1 day ahead cum,44,Rhode Island,quantile,0.9,118.33401284493787
+2 day ahead inc,44,Rhode Island,quantile,0.1,0.4685222323583741
+2 day ahead inc,44,Rhode Island,quantile,0.5,1.427476772202704
+2 day ahead inc,44,Rhode Island,quantile,0.9,6.676828275632987
+2 day ahead cum,44,Rhode Island,quantile,0.1,8.306935406387161
+2 day ahead cum,44,Rhode Island,quantile,0.5,27.100858787903643
+2 day ahead cum,44,Rhode Island,quantile,0.9,124.79902598965708
+3 day ahead inc,44,Rhode Island,quantile,0.1,0.4633491423358198
+3 day ahead inc,44,Rhode Island,quantile,0.5,1.438927102260087
+3 day ahead inc,44,Rhode Island,quantile,0.9,6.570538833294767
+3 day ahead cum,44,Rhode Island,quantile,0.1,8.752607857471682
+3 day ahead cum,44,Rhode Island,quantile,0.5,28.4031235704318
+3 day ahead cum,44,Rhode Island,quantile,0.9,131.36956482295182
+4 day ahead inc,44,Rhode Island,quantile,0.1,0.4651691692578514
+4 day ahead inc,44,Rhode Island,quantile,0.5,1.3819546827466167
+4 day ahead inc,44,Rhode Island,quantile,0.9,6.283283653759023
+4 day ahead cum,44,Rhode Island,quantile,0.1,9.284406948579225
+4 day ahead cum,44,Rhode Island,quantile,0.5,29.79481420573677
+4 day ahead cum,44,Rhode Island,quantile,0.9,137.2687770600617
+5 day ahead inc,44,Rhode Island,quantile,0.1,0.5432609368373533
+5 day ahead inc,44,Rhode Island,quantile,0.5,1.425940332548936
+5 day ahead inc,44,Rhode Island,quantile,0.9,6.605558657437397
+5 day ahead cum,44,Rhode Island,quantile,0.1,9.903425409650438
+5 day ahead cum,44,Rhode Island,quantile,0.5,31.20575648445186
+5 day ahead cum,44,Rhode Island,quantile,0.9,143.33462331643113
+6 day ahead inc,44,Rhode Island,quantile,0.1,0.451650341534985
+6 day ahead inc,44,Rhode Island,quantile,0.5,1.438737386114704
+6 day ahead inc,44,Rhode Island,quantile,0.9,6.282710352190987
+6 day ahead cum,44,Rhode Island,quantile,0.1,10.477631832626097
+6 day ahead cum,44,Rhode Island,quantile,0.5,32.754354126249
+6 day ahead cum,44,Rhode Island,quantile,0.9,149.2888455871992
+1 day ahead inc,45,South Carolina,quantile,0.1,2.150840312009568
+1 day ahead inc,45,South Carolina,quantile,0.5,5.161732420201278
+1 day ahead inc,45,South Carolina,quantile,0.9,14.879932265699534
+1 day ahead cum,45,South Carolina,quantile,0.1,38.39732958366357
+1 day ahead cum,45,South Carolina,quantile,0.5,98.1571250752925
+1 day ahead cum,45,South Carolina,quantile,0.9,329.0692871860698
+2 day ahead inc,45,South Carolina,quantile,0.1,2.1002576861644338
+2 day ahead inc,45,South Carolina,quantile,0.5,5.216889800258741
+2 day ahead inc,45,South Carolina,quantile,0.9,14.892802029946466
+2 day ahead cum,45,South Carolina,quantile,0.1,40.4790532898764
+2 day ahead cum,45,South Carolina,quantile,0.5,103.60757304664736
+2 day ahead cum,45,South Carolina,quantile,0.9,344.16536611461623
+3 day ahead inc,45,South Carolina,quantile,0.1,2.262086412581761
+3 day ahead inc,45,South Carolina,quantile,0.5,5.112557972289025
+3 day ahead inc,45,South Carolina,quantile,0.9,14.845891432577096
+3 day ahead cum,45,South Carolina,quantile,0.1,42.657123459898905
+3 day ahead cum,45,South Carolina,quantile,0.5,108.94048324461914
+3 day ahead cum,45,South Carolina,quantile,0.9,358.9386654342578
+4 day ahead inc,45,South Carolina,quantile,0.1,2.1805210725917603
+4 day ahead inc,45,South Carolina,quantile,0.5,4.928635645507228
+4 day ahead inc,45,South Carolina,quantile,0.9,15.715025992865295
+4 day ahead cum,45,South Carolina,quantile,0.1,44.86318592041107
+4 day ahead cum,45,South Carolina,quantile,0.5,113.71321999378306
+4 day ahead cum,45,South Carolina,quantile,0.9,374.29628299117377
+5 day ahead inc,45,South Carolina,quantile,0.1,2.254811813628934
+5 day ahead inc,45,South Carolina,quantile,0.5,5.314223569323639
+5 day ahead inc,45,South Carolina,quantile,0.9,14.847278904362106
+5 day ahead cum,45,South Carolina,quantile,0.1,47.24574791755089
+5 day ahead cum,45,South Carolina,quantile,0.5,118.68365101444248
+5 day ahead cum,45,South Carolina,quantile,0.9,388.3655184311119
+6 day ahead inc,45,South Carolina,quantile,0.1,2.143653843557644
+6 day ahead inc,45,South Carolina,quantile,0.5,5.111785570671431
+6 day ahead inc,45,South Carolina,quantile,0.9,15.141353591984249
+6 day ahead cum,45,South Carolina,quantile,0.1,49.156702540111034
+6 day ahead cum,45,South Carolina,quantile,0.5,123.39726340234185
+6 day ahead cum,45,South Carolina,quantile,0.9,403.4622807639325
+1 day ahead inc,46,South Dakota,quantile,0.1,0.13427604207999685
+1 day ahead inc,46,South Dakota,quantile,0.5,0.5104560374817169
+1 day ahead inc,46,South Dakota,quantile,0.9,2.0310382807981364
+1 day ahead cum,46,South Dakota,quantile,0.1,2.233081071570158
+1 day ahead cum,46,South Dakota,quantile,0.5,8.860679433638962
+1 day ahead cum,46,South Dakota,quantile,0.9,37.62851709568285
+2 day ahead inc,46,South Dakota,quantile,0.1,0.13059011280882568
+2 day ahead inc,46,South Dakota,quantile,0.5,0.5071550600369304
+2 day ahead inc,46,South Dakota,quantile,0.9,1.9145841184228145
+2 day ahead cum,46,South Dakota,quantile,0.1,2.3610024772378773
+2 day ahead cum,46,South Dakota,quantile,0.5,9.367982555334107
+2 day ahead cum,46,South Dakota,quantile,0.9,39.60299336908289
+3 day ahead inc,46,South Dakota,quantile,0.1,0.14692143336854274
+3 day ahead inc,46,South Dakota,quantile,0.5,0.4370220842219096
+3 day ahead inc,46,South Dakota,quantile,0.9,1.9038017474410167
+3 day ahead cum,46,South Dakota,quantile,0.1,2.5149311956408096
+3 day ahead cum,46,South Dakota,quantile,0.5,9.778275923131806
+3 day ahead cum,46,South Dakota,quantile,0.9,41.5704859566644
+4 day ahead inc,46,South Dakota,quantile,0.1,0.13843971877693118
+4 day ahead inc,46,South Dakota,quantile,0.5,0.5522618981733729
+4 day ahead inc,46,South Dakota,quantile,0.9,1.973092169371765
+4 day ahead cum,46,South Dakota,quantile,0.1,2.6212949508404657
+4 day ahead cum,46,South Dakota,quantile,0.5,10.393945736189997
+4 day ahead cum,46,South Dakota,quantile,0.9,43.51118717417621
+5 day ahead inc,46,South Dakota,quantile,0.1,0.16085883838788795
+5 day ahead inc,46,South Dakota,quantile,0.5,0.5202413027033951
+5 day ahead inc,46,South Dakota,quantile,0.9,1.8757785420681736
+5 day ahead cum,46,South Dakota,quantile,0.1,2.8125849695838454
+5 day ahead cum,46,South Dakota,quantile,0.5,11.082346272411597
+5 day ahead cum,46,South Dakota,quantile,0.9,45.498816126318474
+6 day ahead inc,46,South Dakota,quantile,0.1,0.1354326674491444
+6 day ahead inc,46,South Dakota,quantile,0.5,0.5170705503043551
+6 day ahead inc,46,South Dakota,quantile,0.9,1.6627896705434957
+6 day ahead cum,46,South Dakota,quantile,0.1,2.9572941948718414
+6 day ahead cum,46,South Dakota,quantile,0.5,11.574181441626385
+6 day ahead cum,46,South Dakota,quantile,0.9,47.13848243435125
+1 day ahead inc,47,Tennessee,quantile,0.1,4.091737261182644
+1 day ahead inc,47,Tennessee,quantile,0.5,7.632313814698371
+1 day ahead inc,47,Tennessee,quantile,0.9,18.927638720805792
+1 day ahead cum,47,Tennessee,quantile,0.1,76.1169334090267
+1 day ahead cum,47,Tennessee,quantile,0.5,139.46484900112677
+1 day ahead cum,47,Tennessee,quantile,0.9,394.78096262925163
+2 day ahead inc,47,Tennessee,quantile,0.1,3.8012113904924822
+2 day ahead inc,47,Tennessee,quantile,0.5,7.417104354661947
+2 day ahead inc,47,Tennessee,quantile,0.9,18.487046439796032
+2 day ahead cum,47,Tennessee,quantile,0.1,80.27612141801859
+2 day ahead cum,47,Tennessee,quantile,0.5,146.80812778581247
+2 day ahead cum,47,Tennessee,quantile,0.9,414.198236332344
+3 day ahead inc,47,Tennessee,quantile,0.1,3.9376484660565936
+3 day ahead inc,47,Tennessee,quantile,0.5,7.3664346109831165
+3 day ahead inc,47,Tennessee,quantile,0.9,18.476022595805762
+3 day ahead cum,47,Tennessee,quantile,0.1,84.4710838626943
+3 day ahead cum,47,Tennessee,quantile,0.5,153.83826067385763
+3 day ahead cum,47,Tennessee,quantile,0.9,433.18390424454316
+4 day ahead inc,47,Tennessee,quantile,0.1,4.152176667996075
+4 day ahead inc,47,Tennessee,quantile,0.5,7.925343014085578
+4 day ahead inc,47,Tennessee,quantile,0.9,19.454029062072273
+4 day ahead cum,47,Tennessee,quantile,0.1,88.53255690064384
+4 day ahead cum,47,Tennessee,quantile,0.5,161.11346701019744
+4 day ahead cum,47,Tennessee,quantile,0.9,453.38452277470685
+5 day ahead inc,47,Tennessee,quantile,0.1,4.110681793935865
+5 day ahead inc,47,Tennessee,quantile,0.5,7.823375912301634
+5 day ahead inc,47,Tennessee,quantile,0.9,18.81520672316022
+5 day ahead cum,47,Tennessee,quantile,0.1,92.36880910341554
+5 day ahead cum,47,Tennessee,quantile,0.5,168.5041147310689
+5 day ahead cum,47,Tennessee,quantile,0.9,472.32378706344963
+6 day ahead inc,47,Tennessee,quantile,0.1,4.0306698641291465
+6 day ahead inc,47,Tennessee,quantile,0.5,7.721452384763527
+6 day ahead inc,47,Tennessee,quantile,0.9,18.570068801903275
+6 day ahead cum,47,Tennessee,quantile,0.1,95.87758396666872
+6 day ahead cum,47,Tennessee,quantile,0.5,176.92456440464505
+6 day ahead cum,47,Tennessee,quantile,0.9,491.11959792997453
+1 day ahead inc,48,Texas,quantile,0.1,25.584060280713572
+1 day ahead inc,48,Texas,quantile,0.5,58.22449046198749
+1 day ahead inc,48,Texas,quantile,0.9,125.72735592274657
+1 day ahead cum,48,Texas,quantile,0.1,486.1074570830192
+1 day ahead cum,48,Texas,quantile,0.5,1139.3533459413445
+1 day ahead cum,48,Texas,quantile,0.9,2644.1082733081407
+2 day ahead inc,48,Texas,quantile,0.1,24.888431808661608
+2 day ahead inc,48,Texas,quantile,0.5,58.75683825606128
+2 day ahead inc,48,Texas,quantile,0.9,123.6770485529453
+2 day ahead cum,48,Texas,quantile,0.1,512.6200750549622
+2 day ahead cum,48,Texas,quantile,0.5,1201.3886079823676
+2 day ahead cum,48,Texas,quantile,0.9,2752.170265735246
+3 day ahead inc,48,Texas,quantile,0.1,25.587452930221573
+3 day ahead inc,48,Texas,quantile,0.5,59.44584768049547
+3 day ahead inc,48,Texas,quantile,0.9,121.78424523812649
+3 day ahead cum,48,Texas,quantile,0.1,538.9547441205411
+3 day ahead cum,48,Texas,quantile,0.5,1264.49743479651
+3 day ahead cum,48,Texas,quantile,0.9,2860.251891752737
+4 day ahead inc,48,Texas,quantile,0.1,25.79337842693489
+4 day ahead inc,48,Texas,quantile,0.5,57.537073134716046
+4 day ahead inc,48,Texas,quantile,0.9,122.58380038796452
+4 day ahead cum,48,Texas,quantile,0.1,561.1735981173849
+4 day ahead cum,48,Texas,quantile,0.5,1322.253599657609
+4 day ahead cum,48,Texas,quantile,0.9,2963.6221617046526
+5 day ahead inc,48,Texas,quantile,0.1,25.964790974683503
+5 day ahead inc,48,Texas,quantile,0.5,58.62341035355258
+5 day ahead inc,48,Texas,quantile,0.9,118.57136930261869
+5 day ahead cum,48,Texas,quantile,0.1,582.9501691208786
+5 day ahead cum,48,Texas,quantile,0.5,1379.1279785947222
+5 day ahead cum,48,Texas,quantile,0.9,3066.864517716865
+6 day ahead inc,48,Texas,quantile,0.1,25.009469382395192
+6 day ahead inc,48,Texas,quantile,0.5,57.87977729607012
+6 day ahead inc,48,Texas,quantile,0.9,116.28343895278739
+6 day ahead cum,48,Texas,quantile,0.1,607.775530005307
+6 day ahead cum,48,Texas,quantile,0.5,1436.380967567046
+6 day ahead cum,48,Texas,quantile,0.9,3165.391242292135
+1 day ahead inc,49,Utah,quantile,0.1,3.6474992425999915
+1 day ahead inc,49,Utah,quantile,0.5,7.353099498130027
+1 day ahead inc,49,Utah,quantile,0.9,23.494407058980087
+1 day ahead cum,49,Utah,quantile,0.1,69.60313329043763
+1 day ahead cum,49,Utah,quantile,0.5,146.92075260800772
+1 day ahead cum,49,Utah,quantile,0.9,526.1141568965469
+2 day ahead inc,49,Utah,quantile,0.1,3.6484078251718883
+2 day ahead inc,49,Utah,quantile,0.5,7.601172661310872
+2 day ahead inc,49,Utah,quantile,0.9,22.89897069097601
+2 day ahead cum,49,Utah,quantile,0.1,73.37313396126285
+2 day ahead cum,49,Utah,quantile,0.5,153.53008309083216
+2 day ahead cum,49,Utah,quantile,0.9,550.8900787636837
+3 day ahead inc,49,Utah,quantile,0.1,3.6277038720422254
+3 day ahead inc,49,Utah,quantile,0.5,7.684790950417317
+3 day ahead inc,49,Utah,quantile,0.9,23.152935185078586
+3 day ahead cum,49,Utah,quantile,0.1,77.29525244330014
+3 day ahead cum,49,Utah,quantile,0.5,160.64413037274412
+3 day ahead cum,49,Utah,quantile,0.9,574.4527428724592
+4 day ahead inc,49,Utah,quantile,0.1,3.7020577642020114
+4 day ahead inc,49,Utah,quantile,0.5,7.414952368815969
+4 day ahead inc,49,Utah,quantile,0.9,22.81245487710723
+4 day ahead cum,49,Utah,quantile,0.1,81.12139938115217
+4 day ahead cum,49,Utah,quantile,0.5,167.97098371076729
+4 day ahead cum,49,Utah,quantile,0.9,597.5727379105464
+5 day ahead inc,49,Utah,quantile,0.1,3.55072313104516
+5 day ahead inc,49,Utah,quantile,0.5,7.312149461373973
+5 day ahead inc,49,Utah,quantile,0.9,22.61334554841185
+5 day ahead cum,49,Utah,quantile,0.1,85.3512988041456
+5 day ahead cum,49,Utah,quantile,0.5,175.17714337178262
+5 day ahead cum,49,Utah,quantile,0.9,620.0553673677288
+6 day ahead inc,49,Utah,quantile,0.1,3.623634459494965
+6 day ahead inc,49,Utah,quantile,0.5,7.449272761055845
+6 day ahead inc,49,Utah,quantile,0.9,22.0002671626997
+6 day ahead cum,49,Utah,quantile,0.1,89.06491112399056
+6 day ahead cum,49,Utah,quantile,0.5,182.793627298676
+6 day ahead cum,49,Utah,quantile,0.9,641.5358826636152
+1 day ahead inc,51,Virginia,quantile,0.1,7.942700203221589
+1 day ahead inc,51,Virginia,quantile,0.5,21.259623607448574
+1 day ahead inc,51,Virginia,quantile,0.9,63.63009478434386
+1 day ahead cum,51,Virginia,quantile,0.1,142.96219427461568
+1 day ahead cum,51,Virginia,quantile,0.5,417.97346807751154
+1 day ahead cum,51,Virginia,quantile,0.9,1279.0471971673296
+2 day ahead inc,51,Virginia,quantile,0.1,7.968460581814762
+2 day ahead inc,51,Virginia,quantile,0.5,21.183827888514983
+2 day ahead inc,51,Virginia,quantile,0.9,63.86486718035646
+2 day ahead cum,51,Virginia,quantile,0.1,150.4858270949855
+2 day ahead cum,51,Virginia,quantile,0.5,438.4998454043803
+2 day ahead cum,51,Virginia,quantile,0.9,1330.5724108705995
+3 day ahead inc,51,Virginia,quantile,0.1,7.7536165408230255
+3 day ahead inc,51,Virginia,quantile,0.5,21.296048546187205
+3 day ahead inc,51,Virginia,quantile,0.9,63.03743173619864
+3 day ahead cum,51,Virginia,quantile,0.1,158.23693320799174
+3 day ahead cum,51,Virginia,quantile,0.5,458.097444109653
+3 day ahead cum,51,Virginia,quantile,0.9,1387.7358913264277
+4 day ahead inc,51,Virginia,quantile,0.1,7.844102833066689
+4 day ahead inc,51,Virginia,quantile,0.5,20.932855853658925
+4 day ahead inc,51,Virginia,quantile,0.9,63.94933461391066
+4 day ahead cum,51,Virginia,quantile,0.1,166.29006697039944
+4 day ahead cum,51,Virginia,quantile,0.5,478.0444220855168
+4 day ahead cum,51,Virginia,quantile,0.9,1451.6852259403381
+5 day ahead inc,51,Virginia,quantile,0.1,7.857977179173607
+5 day ahead inc,51,Virginia,quantile,0.5,20.553436813395862
+5 day ahead inc,51,Virginia,quantile,0.9,62.917483317841814
+5 day ahead cum,51,Virginia,quantile,0.1,174.01008680893398
+5 day ahead cum,51,Virginia,quantile,0.5,498.44913608267984
+5 day ahead cum,51,Virginia,quantile,0.9,1514.6027092581799
+6 day ahead inc,51,Virginia,quantile,0.1,8.054775986335466
+6 day ahead inc,51,Virginia,quantile,0.5,20.790228200438737
+6 day ahead inc,51,Virginia,quantile,0.9,61.042452465487564
+6 day ahead cum,51,Virginia,quantile,0.1,181.72067337794343
+6 day ahead cum,51,Virginia,quantile,0.5,518.5553110510548
+6 day ahead cum,51,Virginia,quantile,0.9,1576.8588932974149
+1 day ahead inc,50,Vermont,quantile,0.1,0.2506656034689249
+1 day ahead inc,50,Vermont,quantile,0.5,0.7780033328895358
+1 day ahead inc,50,Vermont,quantile,0.9,3.3187064263266097
+1 day ahead cum,50,Vermont,quantile,0.1,5.0906344824456085
+1 day ahead cum,50,Vermont,quantile,0.5,13.298124014940829
+1 day ahead cum,50,Vermont,quantile,0.9,64.44043469614263
+2 day ahead inc,50,Vermont,quantile,0.1,0.2805591603347912
+2 day ahead inc,50,Vermont,quantile,0.5,0.7972508627945991
+2 day ahead inc,50,Vermont,quantile,0.9,3.0843436432388347
+2 day ahead cum,50,Vermont,quantile,0.1,5.400679765284119
+2 day ahead cum,50,Vermont,quantile,0.5,14.110557532976902
+2 day ahead cum,50,Vermont,quantile,0.9,67.90647521178542
+3 day ahead inc,50,Vermont,quantile,0.1,0.3066545869716515
+3 day ahead inc,50,Vermont,quantile,0.5,0.8065043689490288
+3 day ahead inc,50,Vermont,quantile,0.9,3.1340155562354184
+3 day ahead cum,50,Vermont,quantile,0.1,5.710095011972142
+3 day ahead cum,50,Vermont,quantile,0.5,14.994279508044796
+3 day ahead cum,50,Vermont,quantile,0.9,71.23142355844935
+4 day ahead inc,50,Vermont,quantile,0.1,0.3045065300990599
+4 day ahead inc,50,Vermont,quantile,0.5,0.8647767472407664
+4 day ahead inc,50,Vermont,quantile,0.9,3.0842624175229147
+4 day ahead cum,50,Vermont,quantile,0.1,6.039761562549793
+4 day ahead cum,50,Vermont,quantile,0.5,15.795272121701258
+4 day ahead cum,50,Vermont,quantile,0.9,74.47854621804491
+5 day ahead inc,50,Vermont,quantile,0.1,0.3042068726560308
+5 day ahead inc,50,Vermont,quantile,0.5,0.8454907779959349
+5 day ahead inc,50,Vermont,quantile,0.9,3.1293628493459487
+5 day ahead cum,50,Vermont,quantile,0.1,6.40193113761873
+5 day ahead cum,50,Vermont,quantile,0.5,16.49864732705435
+5 day ahead cum,50,Vermont,quantile,0.9,77.60610356600898
+6 day ahead inc,50,Vermont,quantile,0.1,0.28580679008465404
+6 day ahead inc,50,Vermont,quantile,0.5,0.802361508427303
+6 day ahead inc,50,Vermont,quantile,0.9,2.98701597125781
+6 day ahead cum,50,Vermont,quantile,0.1,6.636192670689665
+6 day ahead cum,50,Vermont,quantile,0.5,17.112393051290052
+6 day ahead cum,50,Vermont,quantile,0.9,80.60039764155377
+1 day ahead inc,53,Washington,quantile,0.1,10.227012000992811
+1 day ahead inc,53,Washington,quantile,0.5,29.929371210011002
+1 day ahead inc,53,Washington,quantile,0.9,96.39108858226751
+1 day ahead cum,53,Washington,quantile,0.1,198.79780391031147
+1 day ahead cum,53,Washington,quantile,0.5,603.6821225259353
+1 day ahead cum,53,Washington,quantile,0.9,2039.2769577722945
+2 day ahead inc,53,Washington,quantile,0.1,10.498621650242113
+2 day ahead inc,53,Washington,quantile,0.5,30.133571466241754
+2 day ahead inc,53,Washington,quantile,0.9,96.0570331857758
+2 day ahead cum,53,Washington,quantile,0.1,208.6789341202281
+2 day ahead cum,53,Washington,quantile,0.5,633.6310392807237
+2 day ahead cum,53,Washington,quantile,0.9,2137.147966101543
+3 day ahead inc,53,Washington,quantile,0.1,10.372504170165367
+3 day ahead inc,53,Washington,quantile,0.5,30.32165782948201
+3 day ahead inc,53,Washington,quantile,0.9,92.70480151014144
+3 day ahead cum,53,Washington,quantile,0.1,218.14061153306858
+3 day ahead cum,53,Washington,quantile,0.5,665.1484759943643
+3 day ahead cum,53,Washington,quantile,0.9,2231.4307293309475
+4 day ahead inc,53,Washington,quantile,0.1,10.333322688103829
+4 day ahead inc,53,Washington,quantile,0.5,29.500542658954412
+4 day ahead inc,53,Washington,quantile,0.9,92.3036589875907
+4 day ahead cum,53,Washington,quantile,0.1,227.2963581212549
+4 day ahead cum,53,Washington,quantile,0.5,696.226214646869
+4 day ahead cum,53,Washington,quantile,0.9,2325.602100082767
+5 day ahead inc,53,Washington,quantile,0.1,10.36152101067667
+5 day ahead inc,53,Washington,quantile,0.5,29.067753602085105
+5 day ahead inc,53,Washington,quantile,0.9,90.68318612010052
+5 day ahead cum,53,Washington,quantile,0.1,237.62417686603703
+5 day ahead cum,53,Washington,quantile,0.5,726.7236209815269
+5 day ahead cum,53,Washington,quantile,0.9,2418.7635512252327
+6 day ahead inc,53,Washington,quantile,0.1,10.274388345439199
+6 day ahead inc,53,Washington,quantile,0.5,29.80014176209464
+6 day ahead inc,53,Washington,quantile,0.9,89.49813357404932
+6 day ahead cum,53,Washington,quantile,0.1,248.19769308272998
+6 day ahead cum,53,Washington,quantile,0.5,757.4860228924738
+6 day ahead cum,53,Washington,quantile,0.9,2512.7238690301638
+1 day ahead inc,55,Wisconsin,quantile,0.1,2.874832658895583
+1 day ahead inc,55,Wisconsin,quantile,0.5,6.367348675597867
+1 day ahead inc,55,Wisconsin,quantile,0.9,20.12773350297748
+1 day ahead cum,55,Wisconsin,quantile,0.1,57.94005983916982
+1 day ahead cum,55,Wisconsin,quantile,0.5,124.83214410431023
+1 day ahead cum,55,Wisconsin,quantile,0.9,416.66525115810805
+2 day ahead inc,55,Wisconsin,quantile,0.1,2.859157256716181
+2 day ahead inc,55,Wisconsin,quantile,0.5,6.719369228428263
+2 day ahead inc,55,Wisconsin,quantile,0.9,19.61742215551041
+2 day ahead cum,55,Wisconsin,quantile,0.1,60.638510648703225
+2 day ahead cum,55,Wisconsin,quantile,0.5,131.39085245323014
+2 day ahead cum,55,Wisconsin,quantile,0.9,436.2826733136185
+3 day ahead inc,55,Wisconsin,quantile,0.1,2.8886219101159165
+3 day ahead inc,55,Wisconsin,quantile,0.5,6.7162830953641794
+3 day ahead inc,55,Wisconsin,quantile,0.9,19.976560149472565
+3 day ahead cum,55,Wisconsin,quantile,0.1,63.434009377767104
+3 day ahead cum,55,Wisconsin,quantile,0.5,138.29884639233705
+3 day ahead cum,55,Wisconsin,quantile,0.9,455.5278399801091
+4 day ahead inc,55,Wisconsin,quantile,0.1,2.9745369508367365
+4 day ahead inc,55,Wisconsin,quantile,0.5,6.4777922355741335
+4 day ahead inc,55,Wisconsin,quantile,0.9,19.644475111362468
+4 day ahead cum,55,Wisconsin,quantile,0.1,66.80059450900228
+4 day ahead cum,55,Wisconsin,quantile,0.5,145.0105340112294
+4 day ahead cum,55,Wisconsin,quantile,0.9,474.64528756649565
+5 day ahead inc,55,Wisconsin,quantile,0.1,3.092110419025076
+5 day ahead inc,55,Wisconsin,quantile,0.5,6.6155801378375925
+5 day ahead inc,55,Wisconsin,quantile,0.9,19.18345499714705
+5 day ahead cum,55,Wisconsin,quantile,0.1,69.9314607845651
+5 day ahead cum,55,Wisconsin,quantile,0.5,151.840218499915
+5 day ahead cum,55,Wisconsin,quantile,0.9,493.4528327199705
+6 day ahead inc,55,Wisconsin,quantile,0.1,2.7925503670812653
+6 day ahead inc,55,Wisconsin,quantile,0.5,6.440813938299604
+6 day ahead inc,55,Wisconsin,quantile,0.9,19.3455965891349
+6 day ahead cum,55,Wisconsin,quantile,0.1,72.68000685484304
+6 day ahead cum,55,Wisconsin,quantile,0.5,158.86072112559646
+6 day ahead cum,55,Wisconsin,quantile,0.9,512.2736934013068
+1 day ahead inc,54,West Virginia,quantile,0.1,0.1770454989621602
+1 day ahead inc,54,West Virginia,quantile,0.5,0.4579448613117607
+1 day ahead inc,54,West Virginia,quantile,0.9,1.6712457552571465
+1 day ahead cum,54,West Virginia,quantile,0.1,3.0553203571487773
+1 day ahead cum,54,West Virginia,quantile,0.5,8.292355049745776
+1 day ahead cum,54,West Virginia,quantile,0.9,31.38012576094933
+2 day ahead inc,54,West Virginia,quantile,0.1,0.16062926239993586
+2 day ahead inc,54,West Virginia,quantile,0.5,0.4906093405455626
+2 day ahead inc,54,West Virginia,quantile,0.9,1.6372678089170678
+2 day ahead cum,54,West Virginia,quantile,0.1,3.266222762571502
+2 day ahead cum,54,West Virginia,quantile,0.5,8.739954213877088
+2 day ahead cum,54,West Virginia,quantile,0.9,33.06287794025485
+3 day ahead inc,54,West Virginia,quantile,0.1,0.17301240889289807
+3 day ahead inc,54,West Virginia,quantile,0.5,0.4942757858776549
+3 day ahead inc,54,West Virginia,quantile,0.9,1.6787927747828322
+3 day ahead cum,54,West Virginia,quantile,0.1,3.450933798530972
+3 day ahead cum,54,West Virginia,quantile,0.5,9.283227873763614
+3 day ahead cum,54,West Virginia,quantile,0.9,34.820011566503766
+4 day ahead inc,54,West Virginia,quantile,0.1,0.16379805259186345
+4 day ahead inc,54,West Virginia,quantile,0.5,0.4571570449949818
+4 day ahead inc,54,West Virginia,quantile,0.9,1.6728858375584283
+4 day ahead cum,54,West Virginia,quantile,0.1,3.64636871819094
+4 day ahead cum,54,West Virginia,quantile,0.5,9.801841100026717
+4 day ahead cum,54,West Virginia,quantile,0.9,36.624717137843106
+5 day ahead inc,54,West Virginia,quantile,0.1,0.1885402210630457
+5 day ahead inc,54,West Virginia,quantile,0.5,0.4771475011424182
+5 day ahead inc,54,West Virginia,quantile,0.9,1.687276845679104
+5 day ahead cum,54,West Virginia,quantile,0.1,3.8640391012546056
+5 day ahead cum,54,West Virginia,quantile,0.5,10.391257468312526
+5 day ahead cum,54,West Virginia,quantile,0.9,38.3744731470728
+6 day ahead inc,54,West Virginia,quantile,0.1,0.19012029968502447
+6 day ahead inc,54,West Virginia,quantile,0.5,0.4791655714822508
+6 day ahead inc,54,West Virginia,quantile,0.9,1.6877323694945412
+6 day ahead cum,54,West Virginia,quantile,0.1,4.021224095526079
+6 day ahead cum,54,West Virginia,quantile,0.5,10.84185169439134
+6 day ahead cum,54,West Virginia,quantile,0.9,40.129058770699956
+1 day ahead inc,56,Wyoming,quantile,0.1,0.1711051208236939
+1 day ahead inc,56,Wyoming,quantile,0.5,0.4766808700971911
+1 day ahead inc,56,Wyoming,quantile,0.9,1.081921486224163
+1 day ahead cum,56,Wyoming,quantile,0.1,3.1972791844878072
+1 day ahead cum,56,Wyoming,quantile,0.5,9.699986586042943
+1 day ahead cum,56,Wyoming,quantile,0.9,23.36523033973641
+2 day ahead inc,56,Wyoming,quantile,0.1,0.1691864880308916
+2 day ahead inc,56,Wyoming,quantile,0.5,0.4636745727991066
+2 day ahead inc,56,Wyoming,quantile,0.9,1.139683926195214
+2 day ahead cum,56,Wyoming,quantile,0.1,3.3993490944334024
+2 day ahead cum,56,Wyoming,quantile,0.5,10.224786352721292
+2 day ahead cum,56,Wyoming,quantile,0.9,24.43372610085852
+3 day ahead inc,56,Wyoming,quantile,0.1,0.17315260946817335
+3 day ahead inc,56,Wyoming,quantile,0.5,0.4902270053163815
+3 day ahead inc,56,Wyoming,quantile,0.9,1.2163798455110593
+3 day ahead cum,56,Wyoming,quantile,0.1,3.5495162504844164
+3 day ahead cum,56,Wyoming,quantile,0.5,10.719213176406283
+3 day ahead cum,56,Wyoming,quantile,0.9,25.515493320718626
+4 day ahead inc,56,Wyoming,quantile,0.1,0.1482244832576497
+4 day ahead inc,56,Wyoming,quantile,0.5,0.4535767337661975
+4 day ahead inc,56,Wyoming,quantile,0.9,1.1676389499226192
+4 day ahead cum,56,Wyoming,quantile,0.1,3.7152038321140792
+4 day ahead cum,56,Wyoming,quantile,0.5,11.179216099219179
+4 day ahead cum,56,Wyoming,quantile,0.9,26.53199789524929
+5 day ahead inc,56,Wyoming,quantile,0.1,0.15441606460534285
+5 day ahead inc,56,Wyoming,quantile,0.5,0.4980315212051865
+5 day ahead inc,56,Wyoming,quantile,0.9,1.1066682152364553
+5 day ahead cum,56,Wyoming,quantile,0.1,3.900500056763684
+5 day ahead cum,56,Wyoming,quantile,0.5,11.654660286650298
+5 day ahead cum,56,Wyoming,quantile,0.9,27.62832546429437
+6 day ahead inc,56,Wyoming,quantile,0.1,0.1702487005169112
+6 day ahead inc,56,Wyoming,quantile,0.5,0.4698570272867199
+6 day ahead inc,56,Wyoming,quantile,0.9,1.109262223625444
+6 day ahead cum,56,Wyoming,quantile,0.1,4.059090504341096
+6 day ahead cum,56,Wyoming,quantile,0.5,12.173861768460494
+6 day ahead cum,56,Wyoming,quantile,0.9,28.59925243918425
+1 day ahead inc,0,US,quantile,0.1,979.7579239
+1 day ahead inc,0,US,quantile,0.5,1407.284609
+1 day ahead inc,0,US,quantile,0.9,2133.5852501
+1 day ahead cum,0,US,quantile,0.1,22344.20412455
+1 day ahead cum,0,US,quantile,0.5,31564.33110355
+1 day ahead cum,0,US,quantile,0.9,53000.48057994999
+2 day ahead inc,0,US,quantile,0.1,970.9490834
+2 day ahead inc,0,US,quantile,0.5,1387.76917085
+2 day ahead inc,0,US,quantile,0.9,2104.2567278
+2 day ahead cum,0,US,quantile,0.1,23388.55561005
+2 day ahead cum,0,US,quantile,0.5,32858.840953099985
+2 day ahead cum,0,US,quantile,0.9,55120.54259409999
+3 day ahead inc,0,US,quantile,0.1,953.76919235
+3 day ahead inc,0,US,quantile,0.5,1357.6438053
+3 day ahead inc,0,US,quantile,0.9,2061.7046401000002
+3 day ahead cum,0,US,quantile,0.1,24449.9344375
+3 day ahead cum,0,US,quantile,0.5,34228.107941949995
+3 day ahead cum,0,US,quantile,0.9,57198.17121989999
+4 day ahead inc,0,US,quantile,0.1,943.3664775000001
+4 day ahead inc,0,US,quantile,0.5,1332.72901145
+4 day ahead inc,0,US,quantile,0.9,2016.53545065
+4 day ahead cum,0,US,quantile,0.1,25504.41849155
+4 day ahead cum,0,US,quantile,0.5,35661.1547989
+4 day ahead cum,0,US,quantile,0.9,59390.00096149999
+5 day ahead inc,0,US,quantile,0.1,925.90610785
+5 day ahead inc,0,US,quantile,0.5,1305.0842699999996
+5 day ahead inc,0,US,quantile,0.9,1996.564459
+5 day ahead cum,0,US,quantile,0.1,26551.749011099997
+5 day ahead cum,0,US,quantile,0.5,37129.24069815
+5 day ahead cum,0,US,quantile,0.9,61557.97042354999
+6 day ahead inc,0,US,quantile,0.1,907.1785923
+6 day ahead inc,0,US,quantile,0.5,1274.86020525
+6 day ahead inc,0,US,quantile,0.9,1948.63232695
+6 day ahead cum,0,US,quantile,0.1,27581.924219200002
+6 day ahead cum,0,US,quantile,0.5,38580.856679
+6 day ahead cum,0,US,quantile,0.9,63692.34215184997
+1 week ahead inc,1,Alabama,quantile,0.1,7.407496519695429
+1 week ahead inc,1,Alabama,quantile,0.5,16.955729623424066
+1 week ahead inc,1,Alabama,quantile,0.9,52.01138484493906
+1 week ahead cum,1,Alabama,quantile,0.1,22.362015290905585
+1 week ahead cum,1,Alabama,quantile,0.5,55.800809050176994
+1 week ahead cum,1,Alabama,quantile,0.9,179.65200190273038
+2 week ahead inc,1,Alabama,quantile,0.1,7.365392690392187
+2 week ahead inc,1,Alabama,quantile,0.5,17.077838608990888
+2 week ahead inc,1,Alabama,quantile,0.9,50.914943498645805
+2 week ahead cum,1,Alabama,quantile,0.1,29.601910550994624
+2 week ahead cum,1,Alabama,quantile,0.5,71.82206014865048
+2 week ahead cum,1,Alabama,quantile,0.9,230.77427117935676
+1 week ahead inc,5,Arkansas,quantile,0.1,4.275523861126267
+1 week ahead inc,5,Arkansas,quantile,0.5,9.68137772873012
+1 week ahead inc,5,Arkansas,quantile,0.9,29.584926085544897
+1 week ahead cum,5,Arkansas,quantile,0.1,13.180183314623655
+1 week ahead cum,5,Arkansas,quantile,0.5,31.04027694509584
+1 week ahead cum,5,Arkansas,quantile,0.9,96.65566009200472
+2 week ahead inc,5,Arkansas,quantile,0.1,4.450050795215431
+2 week ahead inc,5,Arkansas,quantile,0.5,9.544597215724526
+2 week ahead inc,5,Arkansas,quantile,0.9,29.446517988809067
+2 week ahead cum,5,Arkansas,quantile,0.1,17.269249976895374
+2 week ahead cum,5,Arkansas,quantile,0.5,39.65793620818893
+2 week ahead cum,5,Arkansas,quantile,0.9,124.48792369291643
+1 week ahead inc,4,Arizona,quantile,0.1,60.502189487639406
+1 week ahead inc,4,Arizona,quantile,0.5,135.20029118367665
+1 week ahead inc,4,Arizona,quantile,0.9,363.1230846916584
+1 week ahead cum,4,Arizona,quantile,0.1,203.7916948108252
+1 week ahead cum,4,Arizona,quantile,0.5,456.7467878597768
+1 week ahead cum,4,Arizona,quantile,0.9,1331.963304123914
+2 week ahead inc,4,Arizona,quantile,0.1,58.268430759309425
+2 week ahead inc,4,Arizona,quantile,0.5,133.96280681965274
+2 week ahead inc,4,Arizona,quantile,0.9,346.83162001535385
+2 week ahead cum,4,Arizona,quantile,0.1,262.71796163795705
+2 week ahead cum,4,Arizona,quantile,0.5,589.8589800446036
+2 week ahead cum,4,Arizona,quantile,0.9,1649.5353295618127
+1 week ahead inc,6,California,quantile,0.1,269.33367030241834
+1 week ahead inc,6,California,quantile,0.5,398.6727981698154
+1 week ahead inc,6,California,quantile,0.9,614.1467048717186
+1 week ahead cum,6,California,quantile,0.1,938.7334868313843
+1 week ahead cum,6,California,quantile,0.5,1391.3357292568342
+1 week ahead cum,6,California,quantile,0.9,2176.3590937232448
+2 week ahead inc,6,California,quantile,0.1,253.717457510476
+2 week ahead inc,6,California,quantile,0.5,374.98423639232186
+2 week ahead inc,6,California,quantile,0.9,582.65977016445
+2 week ahead cum,6,California,quantile,0.1,1195.5713938645695
+2 week ahead cum,6,California,quantile,0.5,1776.0734767382148
+2 week ahead cum,6,California,quantile,0.9,2754.3093794414003
+1 week ahead inc,8,Colorado,quantile,0.1,63.86270230693288
+1 week ahead inc,8,Colorado,quantile,0.5,124.93579456173107
+1 week ahead inc,8,Colorado,quantile,0.9,294.6178602699188
+1 week ahead cum,8,Colorado,quantile,0.1,224.66409776586488
+1 week ahead cum,8,Colorado,quantile,0.5,463.7898642567103
+1 week ahead cum,8,Colorado,quantile,0.9,1086.7661261362084
+2 week ahead inc,8,Colorado,quantile,0.1,58.301394238808136
+2 week ahead inc,8,Colorado,quantile,0.5,115.60418512712627
+2 week ahead inc,8,Colorado,quantile,0.9,263.5314497516
+2 week ahead cum,8,Colorado,quantile,0.1,281.0233731184154
+2 week ahead cum,8,Colorado,quantile,0.5,575.8545143017708
+2 week ahead cum,8,Colorado,quantile,0.9,1347.3825737903262
+1 week ahead inc,9,Connecticut,quantile,0.1,160.48844642420303
+1 week ahead inc,9,Connecticut,quantile,0.5,204.53307366992985
+1 week ahead inc,9,Connecticut,quantile,0.9,333.0886938520375
+1 week ahead cum,9,Connecticut,quantile,0.1,601.6573969902988
+1 week ahead cum,9,Connecticut,quantile,0.5,743.9887055768927
+1 week ahead cum,9,Connecticut,quantile,0.9,1356.0859090043998
+2 week ahead inc,9,Connecticut,quantile,0.1,137.77096839189306
+2 week ahead inc,9,Connecticut,quantile,0.5,181.0750935029507
+2 week ahead inc,9,Connecticut,quantile,0.9,278.5322577282626
+2 week ahead cum,9,Connecticut,quantile,0.1,750.3135405446092
+2 week ahead cum,9,Connecticut,quantile,0.5,914.9617489327313
+2 week ahead cum,9,Connecticut,quantile,0.9,1621.3118936597077
+1 week ahead inc,10,Delaware,quantile,0.1,11.324346502558456
+1 week ahead inc,10,Delaware,quantile,0.5,15.568635165744455
+1 week ahead inc,10,Delaware,quantile,0.9,22.686344678278004
+1 week ahead cum,10,Delaware,quantile,0.1,38.98872605916407
+1 week ahead cum,10,Delaware,quantile,0.5,52.44791292745573
+1 week ahead cum,10,Delaware,quantile,0.9,80.85461739915014
+2 week ahead inc,10,Delaware,quantile,0.1,10.217715429800084
+2 week ahead inc,10,Delaware,quantile,0.5,14.767295060182915
+2 week ahead inc,10,Delaware,quantile,0.9,21.854944728504886
+2 week ahead cum,10,Delaware,quantile,0.1,49.23080794732881
+2 week ahead cum,10,Delaware,quantile,0.5,67.61858262407817
+2 week ahead cum,10,Delaware,quantile,0.9,100.48503228770524
+1 week ahead inc,12,Florida,quantile,0.1,213.251786945984
+1 week ahead inc,12,Florida,quantile,0.5,516.9014456778586
+1 week ahead inc,12,Florida,quantile,0.9,1187.4848265181704
+1 week ahead cum,12,Florida,quantile,0.1,688.1063752247702
+1 week ahead cum,12,Florida,quantile,0.5,1742.501099687429
+1 week ahead cum,12,Florida,quantile,0.9,4141.452166943843
+2 week ahead inc,12,Florida,quantile,0.1,213.55750491748842
+2 week ahead inc,12,Florida,quantile,0.5,491.59974981314537
+2 week ahead inc,12,Florida,quantile,0.9,1094.7231384821116
+2 week ahead cum,12,Florida,quantile,0.1,892.9026666285263
+2 week ahead cum,12,Florida,quantile,0.5,2215.5835043184243
+2 week ahead cum,12,Florida,quantile,0.9,5331.662056790914
+1 week ahead inc,19,Iowa,quantile,0.1,9.339742787047623
+1 week ahead inc,19,Iowa,quantile,0.5,22.801911619132554
+1 week ahead inc,19,Iowa,quantile,0.9,59.578608240892784
+1 week ahead cum,19,Iowa,quantile,0.1,28.20572526773721
+1 week ahead cum,19,Iowa,quantile,0.5,74.83413013263674
+1 week ahead cum,19,Iowa,quantile,0.9,210.75234248877842
+2 week ahead inc,19,Iowa,quantile,0.1,9.068505026593963
+2 week ahead inc,19,Iowa,quantile,0.5,21.734597449174032
+2 week ahead inc,19,Iowa,quantile,0.9,53.91385344595643
+2 week ahead cum,19,Iowa,quantile,0.1,37.30782279717421
+2 week ahead cum,19,Iowa,quantile,0.5,96.85119488594731
+2 week ahead cum,19,Iowa,quantile,0.9,267.85734026634447
+1 week ahead inc,16,Idaho,quantile,0.1,5.744103793084525
+1 week ahead inc,16,Idaho,quantile,0.5,17.161930801817388
+1 week ahead inc,16,Idaho,quantile,0.9,62.94451417770317
+1 week ahead cum,16,Idaho,quantile,0.1,16.640297765084295
+1 week ahead cum,16,Idaho,quantile,0.5,60.88207402746362
+1 week ahead cum,16,Idaho,quantile,0.9,219.63622671218525
+2 week ahead inc,16,Idaho,quantile,0.1,5.695004603065933
+2 week ahead inc,16,Idaho,quantile,0.5,16.341196792417847
+2 week ahead inc,16,Idaho,quantile,0.9,55.26663654410122
+2 week ahead cum,16,Idaho,quantile,0.1,22.38597437352093
+2 week ahead cum,16,Idaho,quantile,0.5,76.2400760456751
+2 week ahead cum,16,Idaho,quantile,0.9,277.0923772557352
+1 week ahead inc,17,Illinois,quantile,0.1,127.23235402704651
+1 week ahead inc,17,Illinois,quantile,0.5,272.5817754393304
+1 week ahead inc,17,Illinois,quantile,0.9,807.6154058000658
+1 week ahead cum,17,Illinois,quantile,0.1,410.89565709496804
+1 week ahead cum,17,Illinois,quantile,0.5,923.5859415387033
+1 week ahead cum,17,Illinois,quantile,0.9,2735.2331288616297
+2 week ahead inc,17,Illinois,quantile,0.1,123.21759331644665
+2 week ahead inc,17,Illinois,quantile,0.5,263.61572656032797
+2 week ahead inc,17,Illinois,quantile,0.9,754.0551611929018
+2 week ahead cum,17,Illinois,quantile,0.1,544.1608223759365
+2 week ahead cum,17,Illinois,quantile,0.5,1205.2705714047775
+2 week ahead cum,17,Illinois,quantile,0.9,3489.2882900545314
+1 week ahead inc,18,Indiana,quantile,0.1,30.81487957814976
+1 week ahead inc,18,Indiana,quantile,0.5,65.61696465239329
+1 week ahead inc,18,Indiana,quantile,0.9,211.35540170994625
+1 week ahead cum,18,Indiana,quantile,0.1,99.330316764964
+1 week ahead cum,18,Indiana,quantile,0.5,221.55990677005158
+1 week ahead cum,18,Indiana,quantile,0.9,766.4908423029309
+2 week ahead inc,18,Indiana,quantile,0.1,31.06820119756137
+2 week ahead inc,18,Indiana,quantile,0.5,63.33170506415139
+2 week ahead inc,18,Indiana,quantile,0.9,192.70200764414392
+2 week ahead cum,18,Indiana,quantile,0.1,129.4392249639725
+2 week ahead cum,18,Indiana,quantile,0.5,282.82442298283695
+2 week ahead cum,18,Indiana,quantile,0.9,946.6994284122197
+1 week ahead inc,20,Kansas,quantile,0.1,15.238100051099048
+1 week ahead inc,20,Kansas,quantile,0.5,32.10844419954977
+1 week ahead inc,20,Kansas,quantile,0.9,101.53381141072248
+1 week ahead cum,20,Kansas,quantile,0.1,47.48009948914554
+1 week ahead cum,20,Kansas,quantile,0.5,107.58222664423731
+1 week ahead cum,20,Kansas,quantile,0.9,348.2860088859636
+2 week ahead inc,20,Kansas,quantile,0.1,14.57917773059493
+2 week ahead inc,20,Kansas,quantile,0.5,30.246336990270148
+2 week ahead inc,20,Kansas,quantile,0.9,94.51279574100212
+2 week ahead cum,20,Kansas,quantile,0.1,62.16378629907288
+2 week ahead cum,20,Kansas,quantile,0.5,140.3571363635441
+2 week ahead cum,20,Kansas,quantile,0.9,442.7988046269657
+1 week ahead inc,25,Massachusetts,quantile,0.1,231.23409955258495
+1 week ahead inc,25,Massachusetts,quantile,0.5,309.8842775985069
+1 week ahead inc,25,Massachusetts,quantile,0.9,481.57288870351
+1 week ahead cum,25,Massachusetts,quantile,0.1,826.9999581659648
+1 week ahead cum,25,Massachusetts,quantile,0.5,1144.1172961757688
+1 week ahead cum,25,Massachusetts,quantile,0.9,1818.2818908659008
+2 week ahead inc,25,Massachusetts,quantile,0.1,210.72061310713002
+2 week ahead inc,25,Massachusetts,quantile,0.5,277.9192632639972
+2 week ahead inc,25,Massachusetts,quantile,0.9,422.6706048268738
+2 week ahead cum,25,Massachusetts,quantile,0.1,1020.6744043525932
+2 week ahead cum,25,Massachusetts,quantile,0.5,1426.4910984443084
+2 week ahead cum,25,Massachusetts,quantile,0.9,2246.537228335566
+1 week ahead inc,24,Maryland,quantile,0.1,64.72725012756752
+1 week ahead inc,24,Maryland,quantile,0.5,182.6574859558147
+1 week ahead inc,24,Maryland,quantile,0.9,649.3041791803282
+1 week ahead cum,24,Maryland,quantile,0.1,198.09866959119012
+1 week ahead cum,24,Maryland,quantile,0.5,611.1509409867302
+1 week ahead cum,24,Maryland,quantile,0.9,2254.594398589021
+2 week ahead inc,24,Maryland,quantile,0.1,64.68795048201753
+2 week ahead inc,24,Maryland,quantile,0.5,171.20465463777768
+2 week ahead inc,24,Maryland,quantile,0.9,590.4086761577747
+2 week ahead cum,24,Maryland,quantile,0.1,260.78649979683973
+2 week ahead cum,24,Maryland,quantile,0.5,781.0425085874664
+2 week ahead cum,24,Maryland,quantile,0.9,2845.0030747467963
+1 week ahead inc,23,Maine,quantile,0.1,4.8774489272616055
+1 week ahead inc,23,Maine,quantile,0.5,12.000117210584653
+1 week ahead inc,23,Maine,quantile,0.9,42.02777998789021
+1 week ahead cum,23,Maine,quantile,0.1,15.468313504774034
+1 week ahead cum,23,Maine,quantile,0.5,39.69373504552618
+1 week ahead cum,23,Maine,quantile,0.9,155.99419990142928
+2 week ahead inc,23,Maine,quantile,0.1,4.748430702951767
+2 week ahead inc,23,Maine,quantile,0.5,11.456939618629267
+2 week ahead inc,23,Maine,quantile,0.9,37.05698860023682
+2 week ahead cum,23,Maine,quantile,0.1,20.63544903873936
+2 week ahead cum,23,Maine,quantile,0.5,51.34980087249794
+2 week ahead cum,23,Maine,quantile,0.9,192.70829027128414
+1 week ahead inc,26,Michigan,quantile,0.1,435.44396001636454
+1 week ahead inc,26,Michigan,quantile,0.5,616.5702814729698
+1 week ahead inc,26,Michigan,quantile,0.9,886.1455413860523
+1 week ahead cum,26,Michigan,quantile,0.1,1680.2178346092599
+1 week ahead cum,26,Michigan,quantile,0.5,2489.365022845708
+1 week ahead cum,26,Michigan,quantile,0.9,3733.8426587916097
+2 week ahead inc,26,Michigan,quantile,0.1,382.96698726349683
+2 week ahead inc,26,Michigan,quantile,0.5,541.2122154604956
+2 week ahead inc,26,Michigan,quantile,0.9,791.9378839585327
+2 week ahead cum,26,Michigan,quantile,0.1,2053.783251232357
+2 week ahead cum,26,Michigan,quantile,0.5,3041.2887033847637
+2 week ahead cum,26,Michigan,quantile,0.9,4473.321493319249
+1 week ahead inc,27,Minnesota,quantile,0.1,35.189442858513864
+1 week ahead inc,27,Minnesota,quantile,0.5,78.13305802153481
+1 week ahead inc,27,Minnesota,quantile,0.9,189.18849364449693
+1 week ahead cum,27,Minnesota,quantile,0.1,109.35537042495471
+1 week ahead cum,27,Minnesota,quantile,0.5,259.75134972143167
+1 week ahead cum,27,Minnesota,quantile,0.9,645.5809503290309
+2 week ahead inc,27,Minnesota,quantile,0.1,33.61706561390029
+2 week ahead inc,27,Minnesota,quantile,0.5,73.02344749648479
+2 week ahead inc,27,Minnesota,quantile,0.9,174.03465103703329
+2 week ahead cum,27,Minnesota,quantile,0.1,144.88716603669104
+2 week ahead cum,27,Minnesota,quantile,0.5,333.022761959165
+2 week ahead cum,27,Minnesota,quantile,0.9,813.1783211098358
+1 week ahead inc,29,Missouri,quantile,0.1,22.412571216083244
+1 week ahead inc,29,Missouri,quantile,0.5,51.393314465276184
+1 week ahead inc,29,Missouri,quantile,0.9,152.2131701984566
+1 week ahead cum,29,Missouri,quantile,0.1,72.41232937730241
+1 week ahead cum,29,Missouri,quantile,0.5,175.03718223914672
+1 week ahead cum,29,Missouri,quantile,0.9,576.522600775162
+2 week ahead inc,29,Missouri,quantile,0.1,21.820143661363907
+2 week ahead inc,29,Missouri,quantile,0.5,49.29547254537686
+2 week ahead inc,29,Missouri,quantile,0.9,141.84320379011763
+2 week ahead cum,29,Missouri,quantile,0.1,93.56338089726762
+2 week ahead cum,29,Missouri,quantile,0.5,221.31395771355082
+2 week ahead cum,29,Missouri,quantile,0.9,698.0176892081404
+1 week ahead inc,30,Montana,quantile,0.1,4.3399703148406505
+1 week ahead inc,30,Montana,quantile,0.5,11.25528486300881
+1 week ahead inc,30,Montana,quantile,0.9,33.85670786086396
+1 week ahead cum,30,Montana,quantile,0.1,13.63684164200712
+1 week ahead cum,30,Montana,quantile,0.5,35.758349482552546
+1 week ahead cum,30,Montana,quantile,0.9,123.12447744470795
+2 week ahead inc,30,Montana,quantile,0.1,4.526509417395151
+2 week ahead inc,30,Montana,quantile,0.5,10.645796446854963
+2 week ahead inc,30,Montana,quantile,0.9,31.052311550631327
+2 week ahead cum,30,Montana,quantile,0.1,18.134961784888603
+2 week ahead cum,30,Montana,quantile,0.5,46.45204946369842
+2 week ahead cum,30,Montana,quantile,0.9,153.1068504916265
+1 week ahead inc,37,North Carolina,quantile,0.1,39.04970368179089
+1 week ahead inc,37,North Carolina,quantile,0.5,86.1168588012549
+1 week ahead inc,37,North Carolina,quantile,0.9,217.7083474552383
+1 week ahead cum,37,North Carolina,quantile,0.1,131.15555912198067
+1 week ahead cum,37,North Carolina,quantile,0.5,275.5657264508691
+1 week ahead cum,37,North Carolina,quantile,0.9,779.5193729242021
+2 week ahead inc,37,North Carolina,quantile,0.1,38.434770427814215
+2 week ahead inc,37,North Carolina,quantile,0.5,83.24940174283164
+2 week ahead inc,37,North Carolina,quantile,0.9,201.21974546624875
+2 week ahead cum,37,North Carolina,quantile,0.1,169.43288963270066
+2 week ahead cum,37,North Carolina,quantile,0.5,360.456079921978
+2 week ahead cum,37,North Carolina,quantile,0.9,978.0157883867198
+1 week ahead inc,38,North Dakota,quantile,0.1,1.5411375931416138
+1 week ahead inc,38,North Dakota,quantile,0.5,4.361977213623925
+1 week ahead inc,38,North Dakota,quantile,0.9,14.72564616557177
+1 week ahead cum,38,North Dakota,quantile,0.1,4.649541769912998
+1 week ahead cum,38,North Dakota,quantile,0.5,13.882764842783107
+1 week ahead cum,38,North Dakota,quantile,0.9,46.248471228928786
+2 week ahead inc,38,North Dakota,quantile,0.1,1.4590924176652769
+2 week ahead inc,38,North Dakota,quantile,0.5,4.183386384747612
+2 week ahead inc,38,North Dakota,quantile,0.9,13.258061725660152
+2 week ahead cum,38,North Dakota,quantile,0.1,6.1393011021044925
+2 week ahead cum,38,North Dakota,quantile,0.5,18.23729718241832
+2 week ahead cum,38,North Dakota,quantile,0.9,59.06447708725489
+1 week ahead inc,31,Nebraska,quantile,0.1,4.7589932636031165
+1 week ahead inc,31,Nebraska,quantile,0.5,12.013517115296349
+1 week ahead inc,31,Nebraska,quantile,0.9,36.66539336044381
+1 week ahead cum,31,Nebraska,quantile,0.1,15.220903281937218
+1 week ahead cum,31,Nebraska,quantile,0.5,39.340168111811856
+1 week ahead cum,31,Nebraska,quantile,0.9,132.0447292397871
+2 week ahead inc,31,Nebraska,quantile,0.1,4.620073803500383
+2 week ahead inc,31,Nebraska,quantile,0.5,11.07920056268886
+2 week ahead inc,31,Nebraska,quantile,0.9,32.11914459366156
+2 week ahead cum,31,Nebraska,quantile,0.1,19.900991071285794
+2 week ahead cum,31,Nebraska,quantile,0.5,50.634723709896726
+2 week ahead cum,31,Nebraska,quantile,0.9,163.77924582367325
+1 week ahead inc,33,New Hampshire,quantile,0.1,17.52391491906734
+1 week ahead inc,33,New Hampshire,quantile,0.5,38.25768611980949
+1 week ahead inc,33,New Hampshire,quantile,0.9,155.3831682472784
+1 week ahead cum,33,New Hampshire,quantile,0.1,57.442566076519974
+1 week ahead cum,33,New Hampshire,quantile,0.5,130.43877168482703
+1 week ahead cum,33,New Hampshire,quantile,0.9,591.8748869751744
+2 week ahead inc,33,New Hampshire,quantile,0.1,16.627789275079856
+2 week ahead inc,33,New Hampshire,quantile,0.5,36.620815235365775
+2 week ahead inc,33,New Hampshire,quantile,0.9,136.37129959359393
+2 week ahead cum,33,New Hampshire,quantile,0.1,74.893525033027
+2 week ahead cum,33,New Hampshire,quantile,0.5,165.8926354890599
+2 week ahead cum,33,New Hampshire,quantile,0.9,726.9475625306841
+1 week ahead inc,34,New Jersey,quantile,0.1,94.85434890578762
+1 week ahead inc,34,New Jersey,quantile,0.5,272.18482537637715
+1 week ahead inc,34,New Jersey,quantile,0.9,1123.3511560625977
+1 week ahead cum,34,New Jersey,quantile,0.1,307.2263533165161
+1 week ahead cum,34,New Jersey,quantile,0.5,896.1276813323027
+1 week ahead cum,34,New Jersey,quantile,0.9,4922.590673950213
+2 week ahead inc,34,New Jersey,quantile,0.1,91.73817256214978
+2 week ahead inc,34,New Jersey,quantile,0.5,254.30610124873456
+2 week ahead inc,34,New Jersey,quantile,0.9,915.1474852943944
+2 week ahead cum,34,New Jersey,quantile,0.1,399.7462684406843
+2 week ahead cum,34,New Jersey,quantile,0.5,1166.9586477673936
+2 week ahead cum,34,New Jersey,quantile,0.9,5833.055250649588
+1 week ahead inc,35,New Mexico,quantile,0.1,9.292621934314564
+1 week ahead inc,35,New Mexico,quantile,0.5,20.519697441636776
+1 week ahead inc,35,New Mexico,quantile,0.9,53.95059648188274
+1 week ahead cum,35,New Mexico,quantile,0.1,28.67549892781042
+1 week ahead cum,35,New Mexico,quantile,0.5,68.57273407712734
+1 week ahead cum,35,New Mexico,quantile,0.9,181.60469813169186
+2 week ahead inc,35,New Mexico,quantile,0.1,9.058829408430622
+2 week ahead inc,35,New Mexico,quantile,0.5,19.813565935041645
+2 week ahead inc,35,New Mexico,quantile,0.9,52.595583040027634
+2 week ahead cum,35,New Mexico,quantile,0.1,37.6827075136069
+2 week ahead cum,35,New Mexico,quantile,0.5,88.49697551532537
+2 week ahead cum,35,New Mexico,quantile,0.9,225.46151621812257
+1 week ahead inc,32,Nevada,quantile,0.1,44.620650866143635
+1 week ahead inc,32,Nevada,quantile,0.5,88.38576626481944
+1 week ahead inc,32,Nevada,quantile,0.9,210.87213394196118
+1 week ahead cum,32,Nevada,quantile,0.1,155.61356291976054
+1 week ahead cum,32,Nevada,quantile,0.5,315.08937494179975
+1 week ahead cum,32,Nevada,quantile,0.9,831.143034521631
+2 week ahead inc,32,Nevada,quantile,0.1,43.21747368682646
+2 week ahead inc,32,Nevada,quantile,0.5,84.55744695303919
+2 week ahead inc,32,Nevada,quantile,0.9,185.31178270288675
+2 week ahead cum,32,Nevada,quantile,0.1,199.25547781823826
+2 week ahead cum,32,Nevada,quantile,0.5,399.11430516734947
+2 week ahead cum,32,Nevada,quantile,0.9,1023.0154850040176
+1 week ahead inc,36,New York,quantile,0.1,2553.983306217634
+1 week ahead inc,36,New York,quantile,0.5,3151.3841203424377
+1 week ahead inc,36,New York,quantile,0.9,4529.380867279286
+1 week ahead cum,36,New York,quantile,0.1,10821.752078846011
+1 week ahead cum,36,New York,quantile,0.5,13773.02014318523
+1 week ahead cum,36,New York,quantile,0.9,22893.46728947628
+2 week ahead inc,36,New York,quantile,0.1,2061.6694559489138
+2 week ahead inc,36,New York,quantile,0.5,2514.9590537794893
+2 week ahead inc,36,New York,quantile,0.9,3358.3694655221248
+2 week ahead cum,36,New York,quantile,0.1,13000.737076666706
+2 week ahead cum,36,New York,quantile,0.5,16287.97919696472
+2 week ahead cum,36,New York,quantile,0.9,26247.01262822375
+1 week ahead inc,39,Ohio,quantile,0.1,48.94595305241122
+1 week ahead inc,39,Ohio,quantile,0.5,119.34008374168259
+1 week ahead inc,39,Ohio,quantile,0.9,320.08004688389684
+1 week ahead cum,39,Ohio,quantile,0.1,161.20063857935918
+1 week ahead cum,39,Ohio,quantile,0.5,393.46766078056123
+1 week ahead cum,39,Ohio,quantile,0.9,1177.9064003709184
+2 week ahead inc,39,Ohio,quantile,0.1,46.49059021419714
+2 week ahead inc,39,Ohio,quantile,0.5,115.80102776169056
+2 week ahead inc,39,Ohio,quantile,0.9,291.4884759829142
+2 week ahead cum,39,Ohio,quantile,0.1,205.93597712974696
+2 week ahead cum,39,Ohio,quantile,0.5,508.47650917990114
+2 week ahead cum,39,Ohio,quantile,0.9,1469.3948763538326
+1 week ahead inc,40,Oklahoma,quantile,0.1,10.873411906280156
+1 week ahead inc,40,Oklahoma,quantile,0.5,23.35829806977986
+1 week ahead inc,40,Oklahoma,quantile,0.9,69.29674539422359
+1 week ahead cum,40,Oklahoma,quantile,0.1,33.6747575302952
+1 week ahead cum,40,Oklahoma,quantile,0.5,79.4739594779317
+1 week ahead cum,40,Oklahoma,quantile,0.9,228.08990854040428
+2 week ahead inc,40,Oklahoma,quantile,0.1,10.686568960955224
+2 week ahead inc,40,Oklahoma,quantile,0.5,22.954797633051857
+2 week ahead inc,40,Oklahoma,quantile,0.9,68.16233325527517
+2 week ahead cum,40,Oklahoma,quantile,0.1,45.214496806716994
+2 week ahead cum,40,Oklahoma,quantile,0.5,104.22875095930056
+2 week ahead cum,40,Oklahoma,quantile,0.9,294.3292350338752
+1 week ahead inc,41,Oregon,quantile,0.1,19.735784983520606
+1 week ahead inc,41,Oregon,quantile,0.5,58.467566795399456
+1 week ahead inc,41,Oregon,quantile,0.9,209.67539574161583
+1 week ahead cum,41,Oregon,quantile,0.1,63.41511069135685
+1 week ahead cum,41,Oregon,quantile,0.5,196.15944131065484
+1 week ahead cum,41,Oregon,quantile,0.9,797.0807253931821
+2 week ahead inc,41,Oregon,quantile,0.1,19.54747919827656
+2 week ahead inc,41,Oregon,quantile,0.5,56.60423948840341
+2 week ahead inc,41,Oregon,quantile,0.9,194.40055875743457
+2 week ahead cum,41,Oregon,quantile,0.1,83.48525757920731
+2 week ahead cum,41,Oregon,quantile,0.5,254.21695804835872
+2 week ahead cum,41,Oregon,quantile,0.9,996.7533682038176
+1 week ahead inc,42,Pennsylvania,quantile,0.1,60.104111205992815
+1 week ahead inc,42,Pennsylvania,quantile,0.5,131.8078744301773
+1 week ahead inc,42,Pennsylvania,quantile,0.9,336.1247555074536
+1 week ahead cum,42,Pennsylvania,quantile,0.1,184.06561623923452
+1 week ahead cum,42,Pennsylvania,quantile,0.5,432.6950225046948
+1 week ahead cum,42,Pennsylvania,quantile,0.9,1268.2534435611044
+2 week ahead inc,42,Pennsylvania,quantile,0.1,58.11593488414086
+2 week ahead inc,42,Pennsylvania,quantile,0.5,128.80823902569128
+2 week ahead inc,42,Pennsylvania,quantile,0.9,319.3890520670388
+2 week ahead cum,42,Pennsylvania,quantile,0.1,245.9129462037137
+2 week ahead cum,42,Pennsylvania,quantile,0.5,567.3967638544901
+2 week ahead cum,42,Pennsylvania,quantile,0.9,1563.489144011838
+1 week ahead inc,44,Rhode Island,quantile,0.1,3.3913285693952058
+1 week ahead inc,44,Rhode Island,quantile,0.5,9.621940864469014
+1 week ahead inc,44,Rhode Island,quantile,0.9,45.83959964900566
+1 week ahead cum,44,Rhode Island,quantile,0.1,9.903425409650435
+1 week ahead cum,44,Rhode Island,quantile,0.5,31.205756484451857
+1 week ahead cum,44,Rhode Island,quantile,0.9,143.3346233164312
+2 week ahead inc,44,Rhode Island,quantile,0.1,3.3735957170122033
+2 week ahead inc,44,Rhode Island,quantile,0.5,9.530571044658046
+2 week ahead inc,44,Rhode Island,quantile,0.9,42.25233915918981
+2 week ahead cum,44,Rhode Island,quantile,0.1,13.260647254777124
+2 week ahead cum,44,Rhode Island,quantile,0.5,40.63384474495797
+2 week ahead cum,44,Rhode Island,quantile,0.9,185.88515093005557
+1 week ahead inc,45,South Carolina,quantile,0.1,15.25881025364727
+1 week ahead inc,45,South Carolina,quantile,0.5,35.39765133493208
+1 week ahead inc,45,South Carolina,quantile,0.9,104.9677504895496
+1 week ahead cum,45,South Carolina,quantile,0.1,47.24574791755089
+1 week ahead cum,45,South Carolina,quantile,0.5,118.68365101444248
+1 week ahead cum,45,South Carolina,quantile,0.9,388.365518431112
+2 week ahead inc,45,South Carolina,quantile,0.1,15.531319050413975
+2 week ahead inc,45,South Carolina,quantile,0.5,35.32777751335888
+2 week ahead inc,45,South Carolina,quantile,0.9,101.08398786864471
+2 week ahead cum,45,South Carolina,quantile,0.1,63.14194759194028
+2 week ahead cum,45,South Carolina,quantile,0.5,153.09444415578182
+2 week ahead cum,45,South Carolina,quantile,0.9,498.7563876263586
+1 week ahead inc,46,South Dakota,quantile,0.1,1.049553858889708
+1 week ahead inc,46,South Dakota,quantile,0.5,3.5419508210329065
+1 week ahead inc,46,South Dakota,quantile,0.9,14.10423758025204
+1 week ahead cum,46,South Dakota,quantile,0.1,2.8125849695838463
+1 week ahead cum,46,South Dakota,quantile,0.5,11.082346272411597
+1 week ahead cum,46,South Dakota,quantile,0.9,45.498816126318474
+2 week ahead inc,46,South Dakota,quantile,0.1,1.134493848722037
+2 week ahead inc,46,South Dakota,quantile,0.5,3.502606775449581
+2 week ahead inc,46,South Dakota,quantile,0.9,12.933320590853427
+2 week ahead cum,46,South Dakota,quantile,0.1,3.896127162912935
+2 week ahead cum,46,South Dakota,quantile,0.5,14.699122350916955
+2 week ahead cum,46,South Dakota,quantile,0.9,58.4321367171719
+1 week ahead inc,47,Tennessee,quantile,0.1,28.091473629975727
+1 week ahead inc,47,Tennessee,quantile,0.5,52.46965411150461
+1 week ahead inc,47,Tennessee,quantile,0.9,132.8802238749332
+1 week ahead cum,47,Tennessee,quantile,0.1,92.36880910341551
+1 week ahead cum,47,Tennessee,quantile,0.5,168.5041147310689
+1 week ahead cum,47,Tennessee,quantile,0.9,472.32378706344963
+2 week ahead inc,47,Tennessee,quantile,0.1,27.900442018016406
+2 week ahead inc,47,Tennessee,quantile,0.5,52.41105935265664
+2 week ahead inc,47,Tennessee,quantile,0.9,127.31102467470566
+2 week ahead cum,47,Tennessee,quantile,0.1,118.46687753541471
+2 week ahead cum,47,Tennessee,quantile,0.5,223.64933777999718
+2 week ahead cum,47,Tennessee,quantile,0.9,600.8935423289356
+1 week ahead inc,48,Texas,quantile,0.1,176.77050871304752
+1 week ahead inc,48,Texas,quantile,0.5,408.97018734594184
+1 week ahead inc,48,Texas,quantile,0.9,865.9126714273941
+1 week ahead cum,48,Texas,quantile,0.1,582.9501691208786
+1 week ahead cum,48,Texas,quantile,0.5,1379.1279785947218
+1 week ahead cum,48,Texas,quantile,0.9,3066.864517716865
+2 week ahead inc,48,Texas,quantile,0.1,172.23152889885372
+2 week ahead inc,48,Texas,quantile,0.5,385.8421439057623
+2 week ahead inc,48,Texas,quantile,0.9,787.1258572026454
+2 week ahead cum,48,Texas,quantile,0.1,746.9843794530581
+2 week ahead cum,48,Texas,quantile,0.5,1761.2474290425912
+2 week ahead cum,48,Texas,quantile,0.9,3756.899379375033
+1 week ahead inc,49,Utah,quantile,0.1,25.944412863581253
+1 week ahead inc,49,Utah,quantile,0.5,52.84208350634367
+1 week ahead inc,49,Utah,quantile,0.9,164.93078303379903
+1 week ahead cum,49,Utah,quantile,0.1,85.3512988041456
+1 week ahead cum,49,Utah,quantile,0.5,175.17714337178262
+1 week ahead cum,49,Utah,quantile,0.9,620.0553673677288
+2 week ahead inc,49,Utah,quantile,0.1,25.978538957291374
+2 week ahead inc,49,Utah,quantile,0.5,51.110012590022315
+2 week ahead inc,49,Utah,quantile,0.9,147.5395924361864
+2 week ahead cum,49,Utah,quantile,0.1,109.85446673741556
+2 week ahead cum,49,Utah,quantile,0.5,229.30083114653988
+2 week ahead cum,49,Utah,quantile,0.9,764.7831810823458
+1 week ahead inc,51,Virginia,quantile,0.1,54.62600102040461
+1 week ahead inc,51,Virginia,quantile,0.5,147.1565401126931
+1 week ahead inc,51,Virginia,quantile,0.9,444.4490152880177
+1 week ahead cum,51,Virginia,quantile,0.1,174.01008680893398
+1 week ahead cum,51,Virginia,quantile,0.5,498.44913608267984
+1 week ahead cum,51,Virginia,quantile,0.9,1514.6027092581799
+2 week ahead inc,51,Virginia,quantile,0.1,54.97691652209919
+2 week ahead inc,51,Virginia,quantile,0.5,140.15290238618562
+2 week ahead inc,51,Virginia,quantile,0.9,401.7376801313497
+2 week ahead cum,51,Virginia,quantile,0.1,227.5249807856689
+2 week ahead cum,51,Virginia,quantile,0.5,642.3719985515462
+2 week ahead cum,51,Virginia,quantile,0.9,1925.6196442599944
+1 week ahead inc,50,Vermont,quantile,0.1,2.0739398444696406
+1 week ahead inc,50,Vermont,quantile,0.5,5.523621878927934
+1 week ahead inc,50,Vermont,quantile,0.9,22.050845815210934
+1 week ahead cum,50,Vermont,quantile,0.1,6.401931137618731
+1 week ahead cum,50,Vermont,quantile,0.5,16.498647327054353
+1 week ahead cum,50,Vermont,quantile,0.9,77.606103566009
+2 week ahead inc,50,Vermont,quantile,0.1,2.1564983312644768
+2 week ahead inc,50,Vermont,quantile,0.5,5.46030794160653
+2 week ahead inc,50,Vermont,quantile,0.9,20.526005307596773
+2 week ahead cum,50,Vermont,quantile,0.1,8.567232424903898
+2 week ahead cum,50,Vermont,quantile,0.5,21.664908769478522
+2 week ahead cum,50,Vermont,quantile,0.9,98.62407532558548
+1 week ahead inc,53,Washington,quantile,0.1,71.42874405232554
+1 week ahead inc,53,Washington,quantile,0.5,208.504390443232
+1 week ahead inc,53,Washington,quantile,0.9,657.0752657653272
+1 week ahead cum,53,Washington,quantile,0.1,237.62417686603703
+1 week ahead cum,53,Washington,quantile,0.5,726.7236209815269
+1 week ahead cum,53,Washington,quantile,0.9,2418.7635512252327
+2 week ahead inc,53,Washington,quantile,0.1,72.16884525703031
+2 week ahead inc,53,Washington,quantile,0.5,197.598723577509
+2 week ahead inc,53,Washington,quantile,0.9,575.4218869503912
+2 week ahead cum,53,Washington,quantile,0.1,308.42038857873763
+2 week ahead cum,53,Washington,quantile,0.5,938.928036942835
+2 week ahead cum,53,Washington,quantile,0.9,3030.478977194689
+1 week ahead inc,55,Wisconsin,quantile,0.1,20.43654133945102
+1 week ahead inc,55,Wisconsin,quantile,0.5,46.5519023387874
+1 week ahead inc,55,Wisconsin,quantile,0.9,136.19637101917232
+1 week ahead cum,55,Wisconsin,quantile,0.1,69.9314607845651
+1 week ahead cum,55,Wisconsin,quantile,0.5,151.84021849991498
+1 week ahead cum,55,Wisconsin,quantile,0.9,493.4528327199706
+2 week ahead inc,55,Wisconsin,quantile,0.1,20.49766976855156
+2 week ahead inc,55,Wisconsin,quantile,0.5,44.049239247038
+2 week ahead inc,55,Wisconsin,quantile,0.9,128.6632825049611
+2 week ahead cum,55,Wisconsin,quantile,0.1,90.21556873107492
+2 week ahead cum,55,Wisconsin,quantile,0.5,198.713943242368
+2 week ahead cum,55,Wisconsin,quantile,0.9,620.9862198423754
+1 week ahead inc,54,West Virginia,quantile,0.1,1.235496264014992
+1 week ahead inc,54,West Virginia,quantile,0.5,3.224411655517748
+1 week ahead inc,54,West Virginia,quantile,0.9,11.57732788716393
+1 week ahead cum,54,West Virginia,quantile,0.1,3.8640391012546056
+1 week ahead cum,54,West Virginia,quantile,0.5,10.391257468312526
+1 week ahead cum,54,West Virginia,quantile,0.9,38.3744731470728
+2 week ahead inc,54,West Virginia,quantile,0.1,1.3408172030284642
+2 week ahead inc,54,West Virginia,quantile,0.5,3.2621165985319704
+2 week ahead inc,54,West Virginia,quantile,0.9,11.196406879819913
+2 week ahead cum,54,West Virginia,quantile,0.1,5.0953553336852
+2 week ahead cum,54,West Virginia,quantile,0.5,13.497573271187795
+2 week ahead cum,54,West Virginia,quantile,0.9,49.948367473200655
+1 week ahead inc,56,Wyoming,quantile,0.1,1.1290269670841773
+1 week ahead inc,56,Wyoming,quantile,0.5,3.331668445872958
+1 week ahead inc,56,Wyoming,quantile,0.9,7.772303919237612
+1 week ahead cum,56,Wyoming,quantile,0.1,3.900500056763685
+1 week ahead cum,56,Wyoming,quantile,0.5,11.654660286650298
+1 week ahead cum,56,Wyoming,quantile,0.9,27.62832546429437
+2 week ahead inc,56,Wyoming,quantile,0.1,1.2592527636710538
+2 week ahead inc,56,Wyoming,quantile,0.5,3.0678635830799084
+2 week ahead inc,56,Wyoming,quantile,0.9,7.126715413244852
+2 week ahead cum,56,Wyoming,quantile,0.1,5.189346239267438
+2 week ahead cum,56,Wyoming,quantile,0.5,15.210393524548843
+2 week ahead cum,56,Wyoming,quantile,0.9,33.986738911259096
+1 week ahead inc,0,US,quantile,0.1,6771.664555300001
+1 week ahead inc,0,US,quantile,0.5,9671.07402595
+1 week ahead inc,0,US,quantile,0.9,14672.01195555
+1 week ahead cum,0,US,quantile,0.1,26551.749011099997
+1 week ahead cum,0,US,quantile,0.5,37129.24069815
+1 week ahead cum,0,US,quantile,0.9,61557.97042355
+2 week ahead inc,0,US,quantile,0.1,5873.555326099999
+2 week ahead inc,0,US,quantile,0.5,8286.57110695
+2 week ahead inc,0,US,quantile,0.9,12796.9211091
+2 week ahead cum,0,US,quantile,0.1,32892.1433072
+2 week ahead cum,0,US,quantile,0.5,46548.12431585
+2 week ahead cum,0,US,quantile,0.9,74826.23254900001
