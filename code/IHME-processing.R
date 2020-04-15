@@ -20,7 +20,7 @@ make_qntl_dat <- function(data, forecast_date) {
       dplyr::select(-"V1") %>%
       dplyr::rename(date_v=date) %>%
       dplyr::filter(as.Date(as.character(date_v)) %in% c(forecast_date+1:7)) %>%
-      dplyr::mutate(target_id=paste(difftime(as.Date(as.character(date_v)),forecast_date,units="days"),"day ahead inc")) %>%
+      dplyr::mutate(target_id=paste(difftime(as.Date(as.character(date_v)),forecast_date,units="days"),"day ahead inc death")) %>%
       dplyr::rename("0.025"=deaths_lower,"0.975"=deaths_upper,"NA"=deaths_mean) %>%
       gather(quantile, value, -c(location, date_v, target_id)) %>%
       dplyr::left_join(state_fips_codes, by=c("location"="state_name")) %>%
@@ -32,7 +32,7 @@ make_qntl_dat <- function(data, forecast_date) {
       dplyr::select(-"V1") %>%
       dplyr::rename(date_v=date) %>%
       dplyr::filter(as.Date(as.character(date_v)) %in% c(forecast_date+1:7)) %>%
-      dplyr::mutate(target_id=paste(difftime(as.Date(as.character(date_v)),forecast_date,units="days"),"day ahead cum")) %>%
+      dplyr::mutate(target_id=paste(difftime(as.Date(as.character(date_v)),forecast_date,units="days"),"day ahead cum death")) %>%
       dplyr::rename("0.025"=totdea_lower,"0.975"=totdea_upper,"NA"=totdea_mean) %>%
       gather(quantile, value, -c(location, date_v, target_id)) %>%
       dplyr::left_join(state_fips_codes, by=c("location"="state_name")) %>%
@@ -44,7 +44,7 @@ make_qntl_dat <- function(data, forecast_date) {
       dplyr::rename(date_v=date) %>%
       dplyr::mutate(day_v=lubridate::wday(date_v,label = TRUE, abbr = FALSE),ew=unname(MMWRweek(date_v)[[2]])) %>%
       dplyr::filter(day_v =="Saturday" & ew<unname(MMWRweek(forecast_date)[[2]])+6 & ew>unname(MMWRweek(forecast_date)[[2]])-1) %>%
-      dplyr::mutate(target_id=paste((ew-unname(MMWRweek(forecast_date)[[2]]))+1,"wk ahead cum")) %>%
+      dplyr::mutate(target_id=paste((ew-unname(MMWRweek(forecast_date)[[2]]))+1,"wk ahead cum death")) %>%
       dplyr::rename("0.025"=totdea_lower,"0.975"=totdea_upper,"NA"=totdea_mean) %>%
       gather(quantile, value, -c(location, date_v, day_v, ew, target_id)) %>%
       dplyr::left_join(state_fips_codes, by=c("location"="state_name")) %>%
@@ -92,10 +92,10 @@ names(`2020_04_12.02`)[2] <- "location"
 
 ## reformat the read files
 `2020-03-30_file` <- make_qntl_dat(`2020_03_30`, as.Date("2020-03-30"))
-write_csv(`2020-03-30_file`, path = "data-processed/IHME-SocialDist/2020-03-30-IHME-SocialDist.csv")
+write_csv(`2020-03-30_file`, path = "data-processed/IHME-CurveFit/2020-03-30-IHME-CurveFit.csv")
 
 `2020-04-06_file` <- make_qntl_dat(`2020_04_05.08.all`, as.Date("2020-04-06"))
-write_csv(`2020-04-06_file`, path = "data-processed/IHME-SocialDist/2020-04-06-IHME-SocialDist.csv")
+write_csv(`2020-04-06_file`, path = "data-processed/IHME-CurveFit/2020-04-06-IHME-CurveFit.csv")
 
 `2020-04-13_file` <- make_qntl_dat(`2020_04_12.02`, as.Date("2020-04-13"))
-write_csv(`2020-04-13_file`, path = "data-processed/IHME-SocialDist/2020-04-13-IHME-SocialDist.csv")
+write_csv(`2020-04-13_file`, path = "data-processed/IHME-CurveFit/2020-04-13-IHME-CurveFit.csv")
