@@ -7,9 +7,9 @@ set -e
 #rm ./flusight-master/config.yaml
 cp ./config.yaml ./flusight-master/config.yaml
 
-# Change statcounter snippet
-#rm ./flusight-master/src/assets/analytics.js
-#mv ./analytics.js ./flusight-master/src/assets/analytics.js
+# # Change statcounter snippet
+# rm ./flusight-master/src/assets/analytics.js
+# mv ./analytics.js ./flusight-master/src/assets/analytics.js
 
 # Updating comment to trigger new travis build
 cd ./flusight-master
