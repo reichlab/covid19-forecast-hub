@@ -7,6 +7,9 @@ dat <- read_csv("data-raw/MOBS/2020-04-13-MOBS_NEU-GLEAM-COVID-19_v1.csv") %>%
         location = str_pad(as.character(location), width = 2, side = "left", pad = "0"),
         target = paste(target, "death"))
 
+US_loc_idx <- which(dat$location=="00")
+dat$location[US_loc_idx] <- "US"
+
 dat$target <- sub("week", "wk", dat$target)
 
 point_ests <- dat %>% 
