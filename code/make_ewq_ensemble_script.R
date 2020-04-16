@@ -1,11 +1,11 @@
-require(dplyr)
+require(tidyverse)
 require(cdcForecastUtils) #devtools::install_github("reichlab/cdcForecastUtils")
 require(stringr)
 source("./code/ew_quantile.R")
 
 # define week
 # get info. fix to read old one in and add on after the first run
-this_date<-""
+this_date<-"2020-04-13"
 death_files <- c(list.files(path="./data-processed", pattern="^(2020-04-13-)(.*?)(.csv)$", full.names=TRUE, recursive=TRUE))
 
 death_info_file<-data.frame()
@@ -18,7 +18,17 @@ write.csv(death_info_file, file="./template/death_forecast-model-infomation.csv"
 # check<-unique(death_info_file[ ,3:4])
 
 # make ensemble
-combined_table <- pull_all_forecasts(this_date) 
+models <- c("LANL","IHME")
+combined_table <- pull_all_forecasts(this_date,models,"wk ahead cum",quantiles=c(0.025,0.5,0.975)) %>%
+  dplyr::filter(target!="7 wk ahead cum death")
+# adding manual check
+check_table <-combined_table %>% 
+  group_by(location,target,quantile) %>%
+  dplyr::mutate(n=n())
+mismatched_location <- unique(check_table$location[which(check_table$n!=length(models))])
+# excluding mismatched location
+combined_table <- combined_table %>%
+  dplyr::filter(location!=78&location!=72)
 quant_ensemble<-ew_quantile(combined_table, quantiles=c(0.025,0.5,0.975))
 # if(cdcForecastUtils::verify_entry(quant_ensemble)){
 #   write.csv(quant_ensemble,
