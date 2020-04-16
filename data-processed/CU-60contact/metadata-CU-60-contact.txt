@@ -11,9 +11,8 @@ model_output: https://columbia.maps.arcgis.com/apps/webappviewer/index.html?id=a
 model_repo: https://github.com/shaman-lab/COVID-19Projection
 
 model_contributors: Charles C. Branas, Andrew Rundle, Sen Pei, Wan Yang, Brendan G. Carr, Sarah Sims, Alexis Zebrowski, Ronan Doorley, Neil Schluger, James Quinn, Jeffrey Shaman
-
 model_targets: daily new confirmed case, daily new infection (both reported and unreported), cumulative demand of hospital beds, ICU and ventilators as well as daily mortality. (Note that hospitalizations and ICU bed numbers indicate the current demand on a given day, NOT just the new persons needing beds.)
-target_loc: county (aggregated into regions and urban/non-urban classifications)
+Target_loc: county (aggregated into regions and urban/non-urban classifications)
 Data_format: 2.5, 25, 50, 75 and 97.5 percentiles
 forecast_startdate: 2020-03-13 
 forecast_frequency: 1-2x weekly
@@ -24,5 +23,15 @@ data_source_known: USAFACTS. https://usafacts.org/visualizations/coronavirus-cov
 this_model_is_an_ensemble: FALSE
 this_model_is_unconditional: FALSE
 
-methods: "Estimates of spatio-temporal COVID-19 demand and medical system critical care supply were calculated for all continental US counties. These estimates were statistically summarized and mapped for US counties, regions and urban versus non-urban areas. Estimates of COVID-19 infections and patients needing critical care were calculated for 21-day and 42-day time periods starting from April 2, 2020 to May 13, 2020 for a reactive pattern of 40% contact reduction ("60contact") through actions such as social distancing. Multiple national public and private datasets were linked and harmonized in order to calculate county-level hospital critical care bed counts that include currently available beds and those that could be made available under four surge response scenarios – very low, low, medium, and high – as well as deaths in counties that had exceeded their hospital critical care capacity limits."
-Citation: Sen Pei, Jeffrey Shaman, Initial Simulation of SARS-CoV2 Spread and Intervention Effects in the Continental US. medRxiv.doi: https://doi.org/10.1101/2020.03.21.20040303;  Flattening the curve before it flattens us: hospital critical care capacity limits and mortality from novel coronavirus (SARS-CoV2) cases in US counties. https://behcolumbia.files.wordpress.com/2020/04/flattening-the-curve-before-it-flattens-us-20200405b.pdf
+methods: >-
+    "Estimates of spatio-temporal COVID-19 demand and medical system critical care supply were 
+     calculated for all continental US counties. These estimates were statistically summarized 
+     and mapped for US counties, regions and urban versus non-urban areas. Estimates of COVID-19 
+     infections and patients needing critical care were calculated for 21-day and 42-day time periods 
+     starting from April 2, 2020 to May 13, 2020 for a reactive pattern of 40% contact reduction 
+     ("60contact") through actions such as social distancing. Multiple national public and private 
+     datasets were linked and harmonized in order to calculate county-level hospital critical care 
+     bed counts that include currently available beds and those that could be made available under 
+     four surge response scenarios – very low, low, medium, and high – as well as deaths in counties 
+     that had exceeded their hospital critical care capacity limits."
+citation: Sen Pei, Jeffrey Shaman, Initial Simulation of SARS-CoV2 Spread and Intervention Effects in the Continental US. medRxiv.doi: https://doi.org/10.1101/2020.03.21.20040303;  Flattening the curve before it flattens us: hospital critical care capacity limits and mortality from novel coronavirus (SARS-CoV2) cases in US counties. https://behcolumbia.files.wordpress.com/2020/04/flattening-the-curve-before-it-flattens-us-20200405b.pdf
