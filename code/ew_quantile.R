@@ -80,13 +80,15 @@ ew_quantile <- function(forecast_data,quantiles=c(0.025,0.5,0.975)) {
     dplyr::group_by(location, target, quantile) %>%
     dplyr::mutate(avg = mean(as.numeric(value))) %>%
     dplyr::ungroup() %>%
-    dplyr::select(-"value") 
-  concised_dat<-combined_file[!duplicated(combined_file[,c("location","target","quantile")]),] %>%
-    dplyr::group_by(location, target) %>%
-    dplyr::mutate(norm_value=as.numeric(avg)/sum(as.numeric(avg))) %>%
-    dplyr::ungroup()  %>%
-    dplyr::select(-"avg") %>%
-    dplyr::rename(value=norm_value) 
+    dplyr::select(-"value") %>%
+    dplyr::rename(value=avg) 
+  concised_dat<-combined_file[!duplicated(combined_file[,c("location","target","quantile")]),] 
+  # %>%
+    # dplyr::group_by(location, target) %>%
+    # # dplyr::mutate(norm_value=as.numeric(avg)/sum(as.numeric(avg))) %>%
+    # dplyr::ungroup()  %>%
+    # dplyr::select(-"avg") %>%
+    # dplyr::rename(value=norm_value) 
   # generate point forecast for ensemble
   points <- concised_dat %>%
     dplyr::filter(quantile == 0.5) %>%
