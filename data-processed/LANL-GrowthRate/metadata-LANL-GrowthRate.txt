@@ -22,5 +22,15 @@ data_source_known: JHU
 this_model_is_an_ensemble: FALSE
 this_model_is_unconditional: TRUE
 
-methods: "The model consists of two processes. The first process is a statistical model of how the number of COVID-19 infections changes over time. The second process maps the number of infections to the reported data. We model the growth of new cases as the product of a dynamic growth parameter and the underlying numbers of susceptible and infected cases in the population at the previous time step, scaled by the size of the state's starting susceptible population. The growth parameter can be thought of as the transmissibility of the virus in that state on that date. To model new deaths in the population, we assume that a fraction of the newly generated cases will die and learn that fraction from observations. We can also anticipate when the outbreak is likely to peak, i.e. when the daily number of new confirmed cases reaches its maximum."
-Citation: https://covid-19.bsvgateway.org/
+methods: >-
+    The model consists of two processes. The first process is a statistical model of how the 
+    number of COVID-19 infections changes over time. The second process maps the number of 
+    infections to the reported data. We model the growth of new cases as the product of a 
+    dynamic growth parameter and the underlying numbers of susceptible and infected cases 
+    in the population at the previous time step, scaled by the size of the state's starting 
+    susceptible population. The growth parameter can be thought of as the transmissibility of 
+    the virus in that state on that date. To model new deaths in the population, we assume that a 
+    fraction of the newly generated cases will die and learn that fraction from observations. 
+    We can also anticipate when the outbreak is likely to peak, i.e. when the daily number of new 
+    confirmed cases reaches its maximum."
+citation: https://covid-19.bsvgateway.org/

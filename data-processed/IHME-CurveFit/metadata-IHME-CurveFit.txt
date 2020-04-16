@@ -25,4 +25,7 @@ this_model_is_an_ensemble: FALSE
 this_model_is_unconditional: FALSE
 
 methods: ""
-Citation: Forecasting COVID-19 impact on hospital bed-days, ICU-days, ventilator-days and deaths by US state in the next 4 months https://www.medrxiv.org/content/10.1101/2020.03.27.20043752v1; http://www.healthdata.org/covid/publications
+citation:  >-
+    Forecasting COVID-19 impact on hospital bed-days, ICU-days, ventilator-days and deaths by US state 
+    in the next 4 months https://www.medrxiv.org/content/10.1101/2020.03.27.20043752v1; 
+    http://www.healthdata.org/covid/publications
