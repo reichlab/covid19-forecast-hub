@@ -4,6 +4,7 @@
 
 library(tidyverse)
 library(ggforce)
+library(scales)
 source("code/get_next_saturday.R")
 theme_set(theme_bw())
 
@@ -41,7 +42,10 @@ dat <- all_dat %>%
     pivot_wider(names_from = c(type, quantile), values_from=value) %>%
     rename(point = point_NA) 
 
+wrapper <- function(x, ...) paste(strwrap(x, ...), collapse = "\n")
+label_text <- "Forecasts are either 'unconditional' on any particular interventions being in place (LANL), or conditional on existing social distancing measures continuing through the projected time-period (IHME, MOBS_NEU)."
 
+pdf(paste0("static-plots/", timezero, "-us-plot.pdf"), width = 7.5, height=4)
 ggplot(filter(obs_data, location=="US"), aes(x=wk_end_date)) +
     ## plot true data
     geom_line(aes(y=value)) + geom_point(aes(y=value)) +
@@ -49,34 +53,42 @@ ggplot(filter(obs_data, location=="US"), aes(x=wk_end_date)) +
     geom_point(data=filter(dat,location=="US"), aes(y=point, color=model)) + 
     geom_line(data=filter(dat, location=="US"), aes(y=point, color=model)) + 
     geom_ribbon(data=filter(dat, location=="US"), aes(ymin=quantile_0.025, ymax=quantile_0.975, fill=model), alpha=.5)+
+    annotate("text", x=as.Date("2020-01-01"), y=Inf, label=wrapper(label_text, width=125), hjust=0, vjust=1.2, size=2) +
     scale_x_date(limits=c(as.Date("2020-01-01"), as.Date("2020-09-01"))) +
+    scale_y_continuous(labels = comma) +
+    scale_color_brewer(palette="Dark2") +
+    scale_fill_brewer(palette="Dark2") +
+    theme(legend.position = "bottom") +
+    ggtitle("Observed and forecasted cumulative COVID-19 deaths in the US", 
+        subtitle = "point estimates and 95% uncertainty intervals") +
     ylab("cumulative deaths") + xlab(NULL)
+dev.off()
 
 pdf(paste0("static-plots/", timezero, "-state-plots.pdf"), width = 7.5, height=10)
 for(i in 1:6) {
-    p <- ggplot(obs_data, aes(x=wk_end_date)) +
+    p <- ggplot(filter(obs_data, location!="US"), aes(x=wk_end_date)) +
         geom_line(aes(y=value)) + geom_point(aes(y=value)) +
-        geom_point(data=dat, aes(y=point, color=model)) + 
-        geom_line(data=dat, aes(y=point, color=model)) + 
-        geom_ribbon(data=dat, aes(ymin=quantile_0.025, ymax=quantile_0.975, fill=color), alpha=.5)+
+        geom_ribbon(data=filter(dat, location!="US"), aes(ymin=quantile_0.025, ymax=quantile_0.975, fill=model), alpha=.2)+
+        geom_point(data=filter(dat, location!="US"), aes(y=point, color=model)) + 
+        geom_line(data=filter(dat, location!="US"), aes(y=point, color=model)) + 
+        annotate("text", x=as.Date("2020-01-01"), y=Inf, label=wrapper(label_text, width=100), hjust=0, vjust=1.2, size=2) +
         scale_x_date(limits=c(as.Date("2020-01-01"), as.Date("2020-09-01"))) +
         ylab("cumulative deaths") + xlab(NULL) +
+        theme(legend.position = "bottom") +
+        scale_y_continuous(labels = comma) +
+        scale_color_brewer(palette="Dark2") +
+        scale_fill_brewer(palette="Dark2") +
+        ggtitle("Observed and forecasted cumulative COVID-19 deaths in US states", 
+            subtitle = "point estimates and 95% uncertainty intervals") +
         facet_wrap_paginate(~location_name, nrow = 5, ncol=2, page=i, scales = "free_y")
     print(p)
     }
 dev.off()
 
-## NEED TO FIX THIS!
-##  - take real points not q.5, only use 1-4 week, ensure we have US forecasts, ...
 dat_to_save <- dat %>%
-    filter(type=="quantile") %>%
-    rename(target_week_end_date = date, point=q0.5, lowerci.q05=q0.05, upperci.q95=q0.95) %>%
-    mutate(
-        forecast_date=timezero, 
-        point=round(point), 
-        lowerci.q05=round(lowerci.q05),
-        upperci.q95=round(upperci.q95)) %>%
-    select(forecast_date, target, target_week_end_date, location_name, point, lowerci.q05, upperci.q95) 
+    rename(target_week_end_date = wk_end_date) %>%
+    mutate(forecast_date=timezero) %>%
+    select(forecast_date, target, target_week_end_date, location_name, point, quantile_0.025, quantile_0.975) 
 
 write_csv(dat_to_save, paste0("static-plots/", timezero, "-plotted-data.csv"))
 
