@@ -1,7 +1,7 @@
 <style lang="scss">
 .disclaimer-subtitle {
   margin-top: -10px;
-  padding-bottom: 5px;
+  padding-top: 0;
   font-size: 12px;
   color: #696969;
 }
@@ -59,7 +59,7 @@ div
       li(v-bind:class="[showTimeChart ? 'is-active' : '']" v-on:click="displayTimeChart")
         a Time Chart
   .disclaimer-subtitle
-    | Forecasts are either 'unconditional' on any particular interventions being in place (LANL), or conditional on existing social distancing measures continuing through the projected time-period (IHME, MOBS_NEU).
+    | The LANL model is 'unconditional' on any particular interventions being in place. The IHME and MOBS_NEU models are conditional on existing social distancing measures continuing. The CU models make different assumptions about the effectiveness of current interventions.
   .container
     #chart-right(v-show="!showScoresPanel")
 
