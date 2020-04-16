@@ -13,6 +13,7 @@ model_repo: https://github.com/shaman-lab/COVID-19Projection
 model_contributors: Charles C. Branas, Andrew Rundle, Sen Pei, Wan Yang, Brendan G. Carr, Sarah Sims, Alexis Zebrowski, Ronan Doorley, Neil Schluger, James Quinn, Jeffrey Shaman
 model_targets: daily new confirmed case, daily new infection (both reported and unreported), cumulative demand of hospital beds, ICU and ventilators as well as daily mortality. (Note that hospitalizations and ICU bed numbers indicate the current demand on a given day, NOT just the new persons needing beds.)
 Target_loc: county (aggregated into regions and urban/non-urban classifications)
+Time_horizon: 21-day (3 weeks) and 42-day (6 weeks) from April 2, 2020 to May 13, 2020
 Data_format: 2.5, 25, 50, 75 and 97.5 percentiles
 forecast_startdate: 2020-03-13 
 forecast_frequency: 1-2x weekly
