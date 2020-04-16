@@ -48,11 +48,16 @@ export class ColorBar {
 
     let bar = {
       height: 15,
-      width: svgBB.width - 225,
+      width: svgBB.width - 230,
       x: (svgBB.width * 3 / 4) - 150,
-      y: svgBB.height - 20
+      y: svgBB.height - 43
     }
-
+    // let bar = {
+    //   height: 10,
+    //   width: svgBB.width - 225,
+    //   x: 0,
+    //   y: 10
+    // }
     let eachWidth = bar.width / cmap.length
 
     // Add rectangles
@@ -73,7 +78,7 @@ export class ColorBar {
       .range([0, bar.width])
     group.append('g')
       .attr('class', 'axis axis-color')
-      .attr('transform', 'translate(' + bar.x + ',' + (bar.y - 2) + ')')
+      .attr('transform', 'translate(' + bar.x + ',' + (bar.y + bar.height) + ')')
 
     this.svg = svg
     this.scale = scale
@@ -89,7 +94,7 @@ export class ColorBar {
       nticks = 3
     }
 
-    let axis = d3.axisTop(this.scale).ticks(nticks).tickFormat(d3.format(".2"))
+    let axis = d3.axisBottom(this.scale).ticks(nticks).tickFormat(d3.format(".2"))
 
     this.svg.select('.axis-color')
       .transition()
@@ -112,8 +117,11 @@ export default class Choropleth {
     divHeight -= 60
 
     // Limits
-    divHeight = Math.min(Math.max(200, divHeight), 260)
+    divHeight = Math.min(Math.max(215, divHeight), 275)
     divWidth = Math.min(divWidth, 400)
+
+    // divHeight = Math.min(Math.max(390, divHeight), 400)
+    // divWidth = Math.min(divWidth, 400)
 
     // Initialized datamap
     this.datamap = new Datamap({
