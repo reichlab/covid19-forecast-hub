@@ -10,9 +10,9 @@ set -e
 rm ./flusight-master/config.yaml -f
 cp ./config.yaml ./flusight-master
 
-# Change statcounter snippet
-rm ./flusight-master/src/assets/analytics.js -f
-cp ./analytics.js ./flusight-master/src/assets/analytics.js
+# # Change statcounter snippet
+# rm ./flusight-master/src/assets/analytics.js -f
+# cp ./analytics.js ./flusight-master/src/assets/analytics.js
 
 cd ./flusight-master
 
