@@ -7,6 +7,8 @@ set -e
 yarn
 yarn run test
 yarn run parse-data
+rm -r ./data/NaN-NaN
+rm -r ./data/2019-2020/CU-nointerv
 python3 convert-forecasts.py
 python3 get-truth-data.py
 

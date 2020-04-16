@@ -3950,7 +3950,7 @@ date,location,location_name,value
 4/6/20,54,West Virginia,4.0
 4/6/20,55,Wisconsin,78.0
 4/6/20,56,Wyoming,0.0
-4/6/20,US,US,10784.0
+4/6/20,US,US,10783.0
 4/7/20,01,Alabama,64.0
 4/7/20,02,Alaska,6.0
 4/7/20,04,Arizona,73.0
@@ -4233,7 +4233,7 @@ date,location,location_name,value
 4/12/20,23,Maine,19.0
 4/12/20,24,Maryland,236.0
 4/12/20,25,Massachusetts,756.0
-4/12/20,26,Michigan,1487.0
+4/12/20,26,Michigan,1479.0
 4/12/20,27,Minnesota,70.0
 4/12/20,28,Mississippi,96.0
 4/12/20,29,Missouri,118.0
@@ -4262,7 +4262,7 @@ date,location,location_name,value
 4/12/20,54,West Virginia,6.0
 4/12/20,55,Wisconsin,144.0
 4/12/20,56,Wyoming,0.0
-4/12/20,US,US,22028.0
+4/12/20,US,US,22020.0
 4/13/20,01,Alabama,99.0
 4/13/20,02,Alaska,8.0
 4/13/20,04,Arizona,122.0
@@ -4285,7 +4285,7 @@ date,location,location_name,value
 4/13/20,23,Maine,19.0
 4/13/20,24,Maryland,262.0
 4/13/20,25,Massachusetts,844.0
-4/13/20,26,Michigan,1603.0
+4/13/20,26,Michigan,1602.0
 4/13/20,27,Minnesota,70.0
 4/13/20,28,Mississippi,98.0
 4/13/20,29,Missouri,123.0
@@ -4314,7 +4314,7 @@ date,location,location_name,value
 4/13/20,54,West Virginia,8.0
 4/13/20,55,Wisconsin,154.0
 4/13/20,56,Wyoming,1.0
-4/13/20,US,US,23530.0
+4/13/20,US,US,23529.0
 4/14/20,01,Alabama,114.0
 4/14/20,02,Alaska,9.0
 4/14/20,04,Arizona,131.0
@@ -4337,7 +4337,7 @@ date,location,location_name,value
 4/14/20,23,Maine,20.0
 4/14/20,24,Maryland,302.0
 4/14/20,25,Massachusetts,844.0
-4/14/20,26,Michigan,1759.0
+4/14/20,26,Michigan,1768.0
 4/14/20,27,Minnesota,79.0
 4/14/20,28,Mississippi,111.0
 4/14/20,29,Missouri,149.0
@@ -4366,4 +4366,56 @@ date,location,location_name,value
 4/14/20,54,West Virginia,9.0
 4/14/20,55,Wisconsin,170.0
 4/14/20,56,Wyoming,1.0
-4/14/20,US,US,25822.0
+4/14/20,US,US,25832.0
+4/15/20,01,Alabama,118.0
+4/15/20,02,Alaska,9.0
+4/15/20,04,Arizona,142.0
+4/15/20,05,Arkansas,33.0
+4/15/20,06,California,861.0
+4/15/20,08,Colorado,328.0
+4/15/20,09,Connecticut,868.0
+4/15/20,10,Delaware,46.0
+4/15/20,11,District of Columbia,72.0
+4/15/20,12,Florida,596.0
+4/15/20,13,Georgia,552.0
+4/15/20,15,Hawaii,9.0
+4/15/20,16,Idaho,39.0
+4/15/20,17,Illinois,949.0
+4/15/20,18,Indiana,436.0
+4/15/20,19,Iowa,53.0
+4/15/20,20,Kansas,71.0
+4/15/20,21,Kentucky,115.0
+4/15/20,22,Louisiana,1103.0
+4/15/20,23,Maine,24.0
+4/15/20,24,Maryland,311.0
+4/15/20,25,Massachusetts,1108.0
+4/15/20,26,Michigan,1921.0
+4/15/20,27,Minnesota,87.0
+4/15/20,28,Mississippi,122.0
+4/15/20,29,Missouri,153.0
+4/15/20,30,Montana,7.0
+4/15/20,31,Nebraska,20.0
+4/15/20,32,Nevada,131.0
+4/15/20,33,New Hampshire,32.0
+4/15/20,34,New Jersey,3156.0
+4/15/20,35,New Mexico,36.0
+4/15/20,36,New York,11617.0
+4/15/20,37,North Carolina,130.0
+4/15/20,38,North Dakota,9.0
+4/15/20,39,Ohio,362.0
+4/15/20,40,Oklahoma,123.0
+4/15/20,41,Oregon,58.0
+4/15/20,42,Pennsylvania,779.0
+4/15/20,44,Rhode Island,80.0
+4/15/20,45,South Carolina,106.0
+4/15/20,46,South Dakota,6.0
+4/15/20,47,Tennessee,124.0
+4/15/20,48,Texas,375.0
+4/15/20,49,Utah,20.0
+4/15/20,50,Vermont,29.0
+4/15/20,51,Virginia,195.0
+4/15/20,53,Washington,552.0
+4/15/20,54,West Virginia,10.0
+4/15/20,55,Wisconsin,183.0
+4/15/20,56,Wyoming,1.0
+4/15/20,US,US,28326.0
