@@ -68,6 +68,7 @@ make_qntl_dat <- function(data, forecast_date) {
       dplyr::select(target_id,location_id,location_name,type,quantile,value) %>%
       dplyr::rename(target=target_id,location=location_id) %>%
       arrange(location,type,quantile,target)
+    final$location[which(nchar(final$location)==1)] <- paste0(0,final$location[which(nchar(final$location)==1)])
     return(final)
 }
 
