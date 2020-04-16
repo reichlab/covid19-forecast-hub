@@ -44,10 +44,10 @@ mismatched <- unique(check_table2$location[which(check_table2$n!=1)])
 # } else {warning("Manual check required")}
 
 write.csv(quant_ensemble,
-          file=paste0("./data-processed/",this_date,"-UMassCoE-ensemble.csv"),
+          file=paste0("./data-processed/UMassCoE-ensemble/",this_date,"-UMassCoE-ensemble.csv"),
             row.names = FALSE)
 
 
 # more formal check
-verify_filename(basename(paste0("./data-processed/",this_date,"-UMassCoE-ensemble.csv")))
+verify_filename(basename(paste0("./data-processed/UMassCoE-ensemble/",this_date,"-UMassCoE-ensemble.csv")))
 verify_quantile_forecasts(quant_ensemble)
