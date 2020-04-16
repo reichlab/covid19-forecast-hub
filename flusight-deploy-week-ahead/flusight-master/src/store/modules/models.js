@@ -1,5 +1,5 @@
 const state = {
-  confidenceIntervals: ['90%', '50%'],
+  confidenceIntervals: ['95%', '50%'],
 
   curveNames: [
     '1 week ahead (% wili)',

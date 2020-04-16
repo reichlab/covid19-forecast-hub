@@ -117,7 +117,8 @@ function parsePointData(csv, stateId) {
   let seasonEpiweeks = fct.utils.epiweek.seasonEpiweeks(SEASON_ID)
 
   function getTargetData(target) {
-    let cis = [90, 50]
+    //let cis = [90, 50] // Confidence Intervals
+    let cis = [95, 50]
     try {
       let point = csv.getPoint(target, stateId)
 

@@ -24,8 +24,8 @@
 
 
 
+
 <style lang="scss" scoped>
-  
 .footer {
   padding: 10px 20px !important;
   font-size: 13px;
@@ -34,7 +34,6 @@
     color: #696969;
   }
 }
-
 </style>
 
 <template lang="pug">
@@ -47,19 +46,18 @@ footer.footer
       | Visualizations use <a href="https://github.com/d3/d3">D3</a>,
       | see the supported browsers
       | <a href="https://github.com/d3/d3/wiki#supported-environments">here</a>.
-      | The <a v-bind:href="branding.sourceUrl">source</a> is licensed
+      | The <a href="https://github.com/reichlab/d3-foresight">source</a> is licensed
       | <a href="https://opensource.org/licenses/MIT">MIT</a>.
 
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters } from "vuex";
 
 export default {
   computed: {
-    ...mapGetters(['branding', 'updateTime'])
+    ...mapGetters(["branding", "updateTime"])
   },
-  ready () {
-  }
-}
+  ready() {}
+};
 </script>

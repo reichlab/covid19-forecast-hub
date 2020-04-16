@@ -18,11 +18,10 @@ h1 a {
   #map-intro.column.is-4
     // Title
     h1.title
-      a(v-bind:href="branding.parentUrl") COVID-19 Cumulative Death Forecasts
+      a(v-bind:href="branding.parentUrl") COVID-19 Forecast Hub
     h2.subtitle
-      | CDC Epidemic Prediction Initiative
+      | COVID-19 Forecasts | Cumulative Deaths
     hr
-
     #choropleth-container
       choropleth
   #chart-container.column.is-8
@@ -39,7 +38,14 @@ export default {
     ChartsPanel
   },
   computed: {
-...mapGetters(["branding"]),...mapGetters(["branding"]),...mapGetters(["branding"]),...mapGetters(["branding"]),...mapGetters(["branding"]),...mapGetters(["branding"]),...mapGetters(["branding"]),    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
+    ...mapGetters(["branding"]),
     ...mapGetters(["branding"]),
     ...mapGetters(["branding"]),
     ...mapGetters(["branding"]),

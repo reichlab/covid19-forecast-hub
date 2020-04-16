@@ -1,5 +1,4 @@
 <style lang="scss">
-
 $accent: #268bd2;
 
 ::selection {
@@ -49,13 +48,12 @@ body {
 .pg-loading-html {
   margin-top: 0 !important;
 }
-
 </style>
 
 <template lang="pug">
 div
   // Fixed position components
-  //intro
+  intro
 
   // Main layout components
   navbar
@@ -66,89 +64,86 @@ div
 </template>
 
 <script>
-import Navbar from './components/Navbar'
-import Intro from './components/Intro'
-import Panels from './components/Panels'
-import Foot from './components/Foot'
+import Navbar from "./components/Navbar";
+import Intro from "./components/Intro";
+import Panels from "./components/Panels";
+import Foot from "./components/Foot";
 
-import brandLogo from '../brand-logo.png'
+import brandLogo from "../brand-logo.png";
 
-import { mapGetters, mapActions } from 'vuex'
+import { mapGetters, mapActions } from "vuex";
 
-window.pw = require('./assets/please-wait.min.js')
+window.pw = require("./assets/please-wait.min.js");
 
 export default {
   components: {
     Navbar,
-    //Intro,
+    Intro,
     Panels,
     Foot
   },
   computed: {
-    ...mapGetters(['branding'])
+    ...mapGetters(["branding"])
   },
   methods: {
-    ...mapActions('weeks', [
-      'backwardSelectedWeek',
-      'forwardSelectedWeek'
-    ]),
-    ...mapActions(['setBrandLogo'])
+    ...mapActions("weeks", ["backwardSelectedWeek", "forwardSelectedWeek"]),
+    ...mapActions(["setBrandLogo"])
   },
   head: {
-    title: function () {
+    title: function() {
       return {
         inner: this.branding.title,
         complement: this.branding.parent
-      }
+      };
     },
-    meta: function () {
+    meta: function() {
       let metaItems = [
-        { name: 'application-name', content: this.branding.title },
-        { name: 'description', content: this.branding.description },
+        { name: "application-name", content: this.branding.title },
+        { name: "description", content: this.branding.description },
         // Twitter
-        { name: 'twitter:title', content: this.branding.title },
-        { name: 'twitter:description', content: this.branding.description },
-        { name: 'twitter:url', content: this.branding.appUrl },
+        { name: "twitter:title", content: this.branding.title },
+        { name: "twitter:description", content: this.branding.description },
+        { name: "twitter:url", content: this.branding.appUrl },
         // Google+ / Schema.org
-        { itemprop: 'name', content: this.branding.title },
-        { itemprop: 'description', content: this.branding.description },
+        { itemprop: "name", content: this.branding.title },
+        { itemprop: "description", content: this.branding.description },
         // Open Graph
-        { property: 'og:title', content: this.branding.title },
-        { property: 'og:description', content: this.branding.description },
-        { property: 'og:url', content: this.branding.appUrl }
-      ]
+        { property: "og:title", content: this.branding.title },
+        { property: "og:description", content: this.branding.description },
+        { property: "og:url", content: this.branding.appUrl }
+      ];
 
       // Check if imageUrl is specified in configuration
       if (this.branding.imageUrl) {
         return metaItems.concat([
-          { itemprop: 'image', content: this.branding.imageUrl },
-          { property: 'og:image', content: this.branding.imageUrl },
-          { name: 'twitter:image', content: this.branding.imageUrl }
-        ])
+          { itemprop: "image", content: this.branding.imageUrl },
+          { property: "og:image", content: this.branding.imageUrl },
+          { name: "twitter:image", content: this.branding.imageUrl }
+        ]);
       } else {
-        return metaItems
+        return metaItems;
       }
     }
   },
-  ready () {
-    this.setBrandLogo(brandLogo)
+  ready() {
+    this.setBrandLogo(brandLogo);
     window.loading_screen = window.pw.pleaseWait({
-      logo: '',
-      backgroundColor: '#268bd2',
+      logo: "",
+      backgroundColor: "#268bd2",
       loadingHtml: `<div class="spinner">
                       <div class="bounce1"></div>
                       <div class="bounce2"></div>
                       <div class="bounce3"></div>
                     </div>`
-    })
+    });
 
-    window.addEventListener('keyup', evt => {
-      if (evt.code === 'ArrowRight') {
-        this.forwardSelectedWeek()
-      } else if (evt.code === 'ArrowLeft') {
-        this.backwardSelectedWeek()
+    window.addEventListener("keyup", evt => {
+      if (evt.code === "ArrowRight") {
+        this.forwardSelectedWeek();
+      } else if (evt.code === "ArrowLeft") {
+        this.backwardSelectedWeek();
       }
-    })
+    });
   }
-}
+};
 </script>

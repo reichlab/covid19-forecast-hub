@@ -106,13 +106,13 @@ div
               select(v-model="currentRegion")
                 option(v-for="region in regions") {{ region }}
 
-      .level-right
-        .level-item
-          p.heading Season
-          p.control.title
-            span#season-selector.select.is-small
-              select(v-model="currentSeason")
-                option(v-for="season in seasons") {{ season }}
+      //- .level-right
+      //-   .level-item
+      //-     p.heading Season
+      //-     p.control.title
+      //-       span#season-selector.select.is-small
+      //-         select(v-model="currentSeason")
+      //-           option(v-for="season in seasons") {{ season }}
 
   // Main plotting div
   #choropleth
