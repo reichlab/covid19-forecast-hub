@@ -1,7 +1,8 @@
 require(tidyverse)
-require(cdcForecastUtils) #devtools::install_github("reichlab/cdcForecastUtils")
+# require(cdcForecastUtils) #devtools::install_github("reichlab/cdcForecastUtils")
 require(stringr)
 source("./code/ew_quantile.R")
+source("./code/functions_plausibility.R")
 
 # define week
 # get info. fix to read old one in and add on after the first run
@@ -30,6 +31,11 @@ mismatched_location <- unique(check_table$location[which(check_table$n!=length(m
 combined_table <- combined_table %>%
   dplyr::filter(location!=78&location!=72)
 quant_ensemble<-ew_quantile(combined_table, quantiles=c(0.025,0.5,0.975))
+# check again
+check_table2 <-quant_ensemble %>% 
+  group_by(location,target,quantile) %>%
+  dplyr::mutate(n=n())
+mismatched <- unique(check_table2$location[which(check_table2$n!=1)])
 # if(cdcForecastUtils::verify_entry(quant_ensemble)){
 #   write.csv(quant_ensemble,
 #             file=paste0("./data/ILIForecastProject-ensemble/2020-ew",this_ew,
@@ -38,6 +44,10 @@ quant_ensemble<-ew_quantile(combined_table, quantiles=c(0.025,0.5,0.975))
 # } else {warning("Manual check required")}
 
 write.csv(quant_ensemble,
-          file=paste0("./data/ILIForecastProject-ensemble/2020-ew",this_date,
-                        "-DeathForecastProject-quantile_ensemble.csv"),
+          file=paste0("./UMassCoE-ensemble/",this_date,"-UMassCoE-ensemble.csv"),
             row.names = FALSE)
+
+
+# more formal check
+verify_filename(basename(paste0("./UMassCoE-ensemble/",this_date,"-UMassCoE-ensemble.csv")))
+verify_quantile_forecasts(quant_ensemble)
