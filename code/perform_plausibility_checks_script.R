@@ -19,7 +19,6 @@ for(dir in directories){
     check_filename_temp <- verify_filename(fi)
     # read in:
     entry_temp <- read.csv(paste0(dir, "/", fi), stringsAsFactors = FALSE)
-    undebug(verify_quantile_forecasts)
     plausibility_checks[[dir]][[fi]] <- verify_quantile_forecasts(entry_temp)
   }
 }
