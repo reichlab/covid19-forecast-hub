@@ -4,7 +4,7 @@ import * as types from '../mutation-types'
 const state = {
   show: true,
   data: [{
-    title: 'Welcome to Reich Lab\'s COVID-19 Forecast Hub',
+    title: 'Welcome to the Reich Lab COVID-19 Forecast Hub',
     content: `Click <strong>Next</strong> to proceed. Click
                 <strong>Finish</strong> to exit this demo.`,
     element: '',

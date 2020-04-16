@@ -216,7 +216,7 @@ export const historicalData = (state, getters) => {
 export const timeChartData = (state, getters) => {
   return {
     timePoints: getters.timePoints,
-    // observed: getters.observed,
+    // observed:  getters.actual,
     actual: getters.actual,
     //baseline: getters.baseline,
     models: getters['models/models'],

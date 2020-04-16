@@ -1,4 +1,10 @@
 <style lang="scss">
+.disclaimer-subtitle {
+  margin-top: -10px;
+  padding-bottom: 5px;
+  font-size: 12px;
+  color: #696969;
+}
 #scores {
   padding: 5px 10px;
 
@@ -8,7 +14,6 @@
       text-decoration: underline;
     }
   }
-
   .score-body {
     margin: 10px 0;
     max-height: 450px;
@@ -53,7 +58,8 @@ div
     ul
       li(v-bind:class="[showTimeChart ? 'is-active' : '']" v-on:click="displayTimeChart")
         a Time Chart
-
+  .disclaimer-subtitle
+    | Forecasts are either 'unconditional' on any particular interventions being in place (LANL), or conditional on existing social distancing measures continuing through the projected time-period (IHME, MOBS_NEU).
   .container
     #chart-right(v-show="!showScoresPanel")
 
@@ -87,138 +93,136 @@ div
 </template>
 
 <script>
-import { mapActions, mapGetters } from 'vuex'
-import nprogress from 'nprogress'
-import tablesort from 'tablesort'
+import { mapActions, mapGetters } from "vuex";
+import nprogress from "nprogress";
+import tablesort from "tablesort";
 
-const cleanNumber = i => i.replace(/[^\-?0-9.]/g, '')
+const cleanNumber = i => i.replace(/[^\-?0-9.]/g, "");
 
 const compareNumber = (a, b) => {
-  a = parseFloat(a)
-  b = parseFloat(b)
-  a = isNaN(a) ? 0 : a
-  b = isNaN(b) ? 0 : b
-  return a - b
-}
+  a = parseFloat(a);
+  b = parseFloat(b);
+  a = isNaN(a) ? 0 : a;
+  b = isNaN(b) ? 0 : b;
+  return a - b;
+};
 
 export default {
   computed: {
     ...mapGetters([
-      'selectedRegionId',
-      'selectedSeasonId',
-      'selectedScoresData',
-      'selectedScoresMeta'
+      "selectedRegionId",
+      "selectedSeasonId",
+      "selectedScoresData",
+      "selectedScoresMeta"
     ]),
-    ...mapGetters('switches', [
-      'showTimeChart',
-      'showDistributionChart',
-      'showScoresPanel',
-      'nextScoreActive',
-      'prevScoreActive'
+    ...mapGetters("switches", [
+      "showTimeChart",
+      "showDistributionChart",
+      "showScoresPanel",
+      "nextScoreActive",
+      "prevScoreActive"
     ]),
-    ...mapGetters('models', [
-      'modelIds',
-      'modelMeta'
-    ]),
-    ...mapGetters('scores', [
-      'scoresHeaders'
-    ])
+    ...mapGetters("models", ["modelIds", "modelMeta"]),
+    ...mapGetters("scores", ["scoresHeaders"])
   },
   methods: {
     ...mapActions([
-      'importLatestChunk',
-      'initTimeChart',
-      'initDistributionChart',
-      'plotTimeChart',
-      'plotDistributionChart',
-      'clearTimeChart',
-      'clearDistributionChart',
-      'downloadSeasonData',
-      'downloadScoresData',
-      'downloadDistData'
+      "importLatestChunk",
+      "initTimeChart",
+      "initDistributionChart",
+      "plotTimeChart",
+      "plotDistributionChart",
+      "clearTimeChart",
+      "clearDistributionChart",
+      "downloadSeasonData",
+      "downloadScoresData",
+      "downloadDistData"
     ]),
-    ...mapActions('switches', [
-      'displayTimeChart',
-      'displayDistributionChart',
-      'displayScoresPanel',
-      'selectNextScore',
-      'selectPrevScore'
+    ...mapActions("switches", [
+      "displayTimeChart",
+      "displayDistributionChart",
+      "displayScoresPanel",
+      "selectNextScore",
+      "selectPrevScore"
     ]),
-    ...mapActions('weeks', [
-      'readjustSelectedWeek',
-      'resetToFirstIdx'
-    ])
+    ...mapActions("weeks", ["readjustSelectedWeek", "resetToFirstIdx"])
   },
-  ready () {
-    require.ensure(['../../store/data'], () => {
-      this.importLatestChunk(require('../../store/data'))
+  ready() {
+    require.ensure(["../../store/data"], () => {
+      this.importLatestChunk(require("../../store/data"));
 
-      this.resetToFirstIdx()
-      this.displayTimeChart()
+      this.resetToFirstIdx();
+      this.displayTimeChart();
 
-      tablesort.extend('number', function (item) {
-        return true // Don't care
-      }, function (a, b) {
-        a = cleanNumber(a)
-        b = cleanNumber(b)
-        return compareNumber(b, a)
-      })
+      tablesort.extend(
+        "number",
+        function(item) {
+          return true; // Don't care
+        },
+        function(a, b) {
+          a = cleanNumber(a);
+          b = cleanNumber(b);
+          return compareNumber(b, a);
+        }
+      );
 
-      tablesort(document.getElementById('score-table'))
+      tablesort(document.getElementById("score-table"));
 
-      window.loading_screen.finish()
-    })
+      window.loading_screen.finish();
+    });
   },
   watch: {
-    showTimeChart: function () {
-      this.readjustSelectedWeek()
+    showTimeChart: function() {
+      this.readjustSelectedWeek();
       if (this.showTimeChart) {
         // Check if we need to download chunks
-        nprogress.start()
+        nprogress.start();
         this.downloadSeasonData({
           http: this.$http,
           id: this.selectedSeasonId,
           success: () => {
-            this.initTimeChart('#chart-right')
-            this.plotTimeChart()
-            nprogress.done()
+            this.initTimeChart("#chart-right");
+            this.plotTimeChart();
+            nprogress.done();
           },
           fail: err => console.log(err)
-        })
+        });
       } else {
-        this.clearTimeChart()
+        this.clearTimeChart();
       }
     },
-    showDistributionChart: function () {
+    showDistributionChart: function() {
       if (this.showDistributionChart) {
         // Check if we need to download chunks
-        nprogress.start()
+        nprogress.start();
         this.downloadDistData({
           http: this.$http,
           id: `${this.selectedSeasonId}-${this.selectedRegionId}`,
           success: () => {
-            this.initDistributionChart('#chart-right')
-            this.plotDistributionChart()
-            nprogress.done()
+            this.initDistributionChart("#chart-right");
+            this.plotDistributionChart();
+            nprogress.done();
           },
           fail: err => console.log(err)
-        })
+        });
       } else {
-        this.clearDistributionChart()
+        this.clearDistributionChart();
       }
     },
-    showScoresPanel: function () {
+    showScoresPanel: function() {
       if (this.showScoresPanel) {
         // Check if we need to download chunks
-        nprogress.start()
+        nprogress.start();
         this.downloadScoresData({
           http: this.$http,
           id: this.selectedSeasonId,
-          success: () => { nprogress.done() },
+          success: () => {
+            nprogress.done();
+          },
           fail: err => console.log(err)
-        })
+        });
       }
     }
   }
-}
+};
 </script>

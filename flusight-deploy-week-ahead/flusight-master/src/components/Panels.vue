@@ -11,6 +11,11 @@ h1 a {
 #chart-container {
   background: white;
 }
+#chart-container.column.is-8 {
+  margin-top: -4px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 </style>
 
 <template lang="pug">
@@ -25,7 +30,7 @@ h1 a {
     #choropleth-container
       choropleth
   #chart-container.column.is-8
-    charts-panel
+    charts-panel    
 </template>
 
 <script>

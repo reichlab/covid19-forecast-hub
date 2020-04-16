@@ -11,7 +11,7 @@ We have stored the raw datafiles here as they were made available on the various
 Different groups are making forecasts at different times, and for different geographic scales. After looking over what groups are doing, we have settled (for the time being) on the following specifications, although not all models make forecast for each of the following locations and targets. 
 
 **What do we consider to be "gold standard" death data?**
-We will use the [daily reports containing death data from the JHU CSSE group](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_daily_reports) as the gold standard reference data for deaths in the US.
+We will use the [daily reports containing death data from the JHU CSSE group](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv) as the gold standard reference data for deaths in the US.
 
 **When will forecast data be updated?** 
 We will be accessing any new forecasts from each group on Mondays. On those days, we will regenerate the standardized forecast data.

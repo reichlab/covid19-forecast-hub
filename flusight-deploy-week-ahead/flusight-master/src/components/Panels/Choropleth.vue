@@ -118,11 +118,11 @@ div
   #choropleth
     #relative-button-title
       a(
-      href="https://www.cdc.gov/flu/weekly/overview.htm" target="_blank"
+      href="https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv" target="_blank"
       v-on:mouseover="showWiliTooltip"
       v-on:mouseout="hideWiliTooltip"
       v-on:mousemove="moveWiliTooltip"
-    ) Cumulative Deaths
+    ) Cumulative Deaths (Observed)
     #relative-button(
       v-on:click="toggleRelative"
       v-on:mouseover="showSwitchTooltip"
