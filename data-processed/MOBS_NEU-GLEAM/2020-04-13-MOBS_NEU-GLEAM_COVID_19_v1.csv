@@ -43,7 +43,7 @@ target,location,location_name,type,quantile,value
 1 day ahead cum death,55,Wisconsin,point,NA,124.83214410431023
 1 day ahead cum death,54,West Virginia,point,NA,8.292355049745776
 1 day ahead cum death,56,Wyoming,point,NA,9.699986586042943
-1 day ahead cum death,00,US,point,NA,31564.33110355
+1 day ahead cum death,US,US,point,NA,31564.33110355
 1 day ahead inc death,01,Alabama,point,NA,2.4234939257993053
 1 day ahead inc death,05,Arkansas,point,NA,1.3898333529028282
 1 day ahead inc death,04,Arizona,point,NA,19.292473256514928
@@ -88,7 +88,7 @@ target,location,location_name,type,quantile,value
 1 day ahead inc death,55,Wisconsin,point,NA,6.367348675597867
 1 day ahead inc death,54,West Virginia,point,NA,0.4579448613117607
 1 day ahead inc death,56,Wyoming,point,NA,0.4766808700971911
-1 day ahead inc death,00,US,point,NA,1407.284609
+1 day ahead inc death,US,US,point,NA,1407.284609
 1 wk ahead cum death,01,Alabama,point,NA,55.800809050176994
 1 wk ahead cum death,05,Arkansas,point,NA,31.04027694509584
 1 wk ahead cum death,04,Arizona,point,NA,456.7467878597768
@@ -133,7 +133,7 @@ target,location,location_name,type,quantile,value
 1 wk ahead cum death,55,Wisconsin,point,NA,151.84021849991498
 1 wk ahead cum death,54,West Virginia,point,NA,10.391257468312526
 1 wk ahead cum death,56,Wyoming,point,NA,11.654660286650298
-1 wk ahead cum death,00,US,point,NA,37129.24069815
+1 wk ahead cum death,US,US,point,NA,37129.24069815
 1 wk ahead inc death,01,Alabama,point,NA,16.955729623424066
 1 wk ahead inc death,05,Arkansas,point,NA,9.68137772873012
 1 wk ahead inc death,04,Arizona,point,NA,135.20029118367665
@@ -178,7 +178,7 @@ target,location,location_name,type,quantile,value
 1 wk ahead inc death,55,Wisconsin,point,NA,46.5519023387874
 1 wk ahead inc death,54,West Virginia,point,NA,3.224411655517748
 1 wk ahead inc death,56,Wyoming,point,NA,3.331668445872958
-1 wk ahead inc death,00,US,point,NA,9671.07402595
+1 wk ahead inc death,US,US,point,NA,9671.07402595
 2 day ahead cum death,01,Alabama,point,NA,48.22952942521442
 2 day ahead cum death,05,Arkansas,point,NA,27.255957254474893
 2 day ahead cum death,04,Arizona,point,NA,399.77327311712287
@@ -223,7 +223,7 @@ target,location,location_name,type,quantile,value
 2 day ahead cum death,55,Wisconsin,point,NA,131.39085245323014
 2 day ahead cum death,54,West Virginia,point,NA,8.739954213877088
 2 day ahead cum death,56,Wyoming,point,NA,10.224786352721292
-2 day ahead cum death,00,US,point,NA,32858.840953099985
+2 day ahead cum death,US,US,point,NA,32858.840953099985
 2 day ahead inc death,01,Alabama,point,NA,2.423695773100909
 2 day ahead inc death,05,Arkansas,point,NA,1.3693384688312389
 2 day ahead inc death,04,Arizona,point,NA,19.506678541626094
@@ -268,7 +268,7 @@ target,location,location_name,type,quantile,value
 2 day ahead inc death,55,Wisconsin,point,NA,6.719369228428263
 2 day ahead inc death,54,West Virginia,point,NA,0.4906093405455626
 2 day ahead inc death,56,Wyoming,point,NA,0.4636745727991066
-2 day ahead inc death,00,US,point,NA,1387.76917085
+2 day ahead inc death,US,US,point,NA,1387.76917085
 2 wk ahead cum death,01,Alabama,point,NA,71.82206014865048
 2 wk ahead cum death,05,Arkansas,point,NA,39.65793620818893
 2 wk ahead cum death,04,Arizona,point,NA,589.8589800446036
@@ -313,7 +313,7 @@ target,location,location_name,type,quantile,value
 2 wk ahead cum death,55,Wisconsin,point,NA,198.713943242368
 2 wk ahead cum death,54,West Virginia,point,NA,13.497573271187795
 2 wk ahead cum death,56,Wyoming,point,NA,15.210393524548843
-2 wk ahead cum death,00,US,point,NA,46548.12431585
+2 wk ahead cum death,US,US,point,NA,46548.12431585
 2 wk ahead inc death,01,Alabama,point,NA,17.077838608990888
 2 wk ahead inc death,05,Arkansas,point,NA,9.544597215724526
 2 wk ahead inc death,04,Arizona,point,NA,133.96280681965274
@@ -358,7 +358,7 @@ target,location,location_name,type,quantile,value
 2 wk ahead inc death,55,Wisconsin,point,NA,44.049239247038
 2 wk ahead inc death,54,West Virginia,point,NA,3.2621165985319704
 2 wk ahead inc death,56,Wyoming,point,NA,3.0678635830799084
-2 wk ahead inc death,00,US,point,NA,8286.57110695
+2 wk ahead inc death,US,US,point,NA,8286.57110695
 3 day ahead cum death,01,Alabama,point,NA,50.7382166935217
 3 day ahead cum death,05,Arkansas,point,NA,28.477628758485032
 3 day ahead cum death,04,Arizona,point,NA,420.3454163373255
@@ -403,7 +403,7 @@ target,location,location_name,type,quantile,value
 3 day ahead cum death,55,Wisconsin,point,NA,138.29884639233705
 3 day ahead cum death,54,West Virginia,point,NA,9.283227873763614
 3 day ahead cum death,56,Wyoming,point,NA,10.719213176406283
-3 day ahead cum death,00,US,point,NA,34228.107941949995
+3 day ahead cum death,US,US,point,NA,34228.107941949995
 3 day ahead inc death,01,Alabama,point,NA,2.3776275020632287
 3 day ahead inc death,05,Arkansas,point,NA,1.3929689277001294
 3 day ahead inc death,04,Arizona,point,NA,19.5939534606606
@@ -448,7 +448,7 @@ target,location,location_name,type,quantile,value
 3 day ahead inc death,55,Wisconsin,point,NA,6.7162830953641794
 3 day ahead inc death,54,West Virginia,point,NA,0.4942757858776549
 3 day ahead inc death,56,Wyoming,point,NA,0.4902270053163815
-3 day ahead inc death,00,US,point,NA,1357.6438053
+3 day ahead inc death,US,US,point,NA,1357.6438053
 4 day ahead cum death,01,Alabama,point,NA,53.19903592613346
 4 day ahead cum death,05,Arkansas,point,NA,29.748982987101364
 4 day ahead cum death,04,Arizona,point,NA,438.1462880039309
@@ -493,7 +493,7 @@ target,location,location_name,type,quantile,value
 4 day ahead cum death,55,Wisconsin,point,NA,145.0105340112294
 4 day ahead cum death,54,West Virginia,point,NA,9.801841100026717
 4 day ahead cum death,56,Wyoming,point,NA,11.179216099219179
-4 day ahead cum death,00,US,point,NA,35661.1547989
+4 day ahead cum death,US,US,point,NA,35661.1547989
 4 day ahead inc death,01,Alabama,point,NA,2.406610451370128
 4 day ahead inc death,05,Arkansas,point,NA,1.4221896002446919
 4 day ahead inc death,04,Arizona,point,NA,19.74681142116598
@@ -538,7 +538,7 @@ target,location,location_name,type,quantile,value
 4 day ahead inc death,55,Wisconsin,point,NA,6.4777922355741335
 4 day ahead inc death,54,West Virginia,point,NA,0.4571570449949818
 4 day ahead inc death,56,Wyoming,point,NA,0.4535767337661975
-4 day ahead inc death,00,US,point,NA,1332.72901145
+4 day ahead inc death,US,US,point,NA,1332.72901145
 5 day ahead cum death,01,Alabama,point,NA,55.800809050176994
 5 day ahead cum death,05,Arkansas,point,NA,31.04027694509584
 5 day ahead cum death,04,Arizona,point,NA,456.7467878597768
@@ -583,7 +583,7 @@ target,location,location_name,type,quantile,value
 5 day ahead cum death,55,Wisconsin,point,NA,151.840218499915
 5 day ahead cum death,54,West Virginia,point,NA,10.391257468312526
 5 day ahead cum death,56,Wyoming,point,NA,11.654660286650298
-5 day ahead cum death,00,US,point,NA,37129.24069815
+5 day ahead cum death,US,US,point,NA,37129.24069815
 5 day ahead inc death,01,Alabama,point,NA,2.3898729011945687
 5 day ahead inc death,05,Arkansas,point,NA,1.375927740532581
 5 day ahead inc death,04,Arizona,point,NA,19.515366948560864
@@ -628,7 +628,7 @@ target,location,location_name,type,quantile,value
 5 day ahead inc death,55,Wisconsin,point,NA,6.6155801378375925
 5 day ahead inc death,54,West Virginia,point,NA,0.4771475011424182
 5 day ahead inc death,56,Wyoming,point,NA,0.4980315212051865
-5 day ahead inc death,00,US,point,NA,1305.0842699999996
+5 day ahead inc death,US,US,point,NA,1305.0842699999996
 6 day ahead cum death,01,Alabama,point,NA,58.04335968788
 6 day ahead cum death,05,Arkansas,point,NA,32.36912899057306
 6 day ahead cum death,04,Arizona,point,NA,476.97431383633415
@@ -673,7 +673,7 @@ target,location,location_name,type,quantile,value
 6 day ahead cum death,55,Wisconsin,point,NA,158.86072112559646
 6 day ahead cum death,54,West Virginia,point,NA,10.84185169439134
 6 day ahead cum death,56,Wyoming,point,NA,12.173861768460494
-6 day ahead cum death,00,US,point,NA,38580.856679
+6 day ahead cum death,US,US,point,NA,38580.856679
 6 day ahead inc death,01,Alabama,point,NA,2.4116185375932373
 6 day ahead inc death,05,Arkansas,point,NA,1.4202279005408711
 6 day ahead inc death,04,Arizona,point,NA,19.430748505511133
@@ -718,7 +718,7 @@ target,location,location_name,type,quantile,value
 6 day ahead inc death,55,Wisconsin,point,NA,6.440813938299604
 6 day ahead inc death,54,West Virginia,point,NA,0.4791655714822508
 6 day ahead inc death,56,Wyoming,point,NA,0.4698570272867199
-6 day ahead inc death,00,US,point,NA,1274.86020525
+6 day ahead inc death,US,US,point,NA,1274.86020525
 1 day ahead cum death,01,Alabama,quantile,0.1,18.045499696631747
 1 day ahead cum death,05,Arkansas,quantile,0.1,10.75717430012856
 1 day ahead cum death,04,Arizona,quantile,0.1,166.32421012093818
@@ -763,7 +763,7 @@ target,location,location_name,type,quantile,value
 1 day ahead cum death,55,Wisconsin,quantile,0.1,57.94005983916982
 1 day ahead cum death,54,West Virginia,quantile,0.1,3.0553203571487773
 1 day ahead cum death,56,Wyoming,quantile,0.1,3.1972791844878072
-1 day ahead cum death,00,US,quantile,0.1,22344.20412455
+1 day ahead cum death,US,US,quantile,0.1,22344.20412455
 1 day ahead cum death,01,Alabama,quantile,0.5,45.824147927692344
 1 day ahead cum death,05,Arkansas,quantile,0.5,25.841528831175843
 1 day ahead cum death,04,Arizona,quantile,0.5,379.4205226721434
@@ -808,7 +808,7 @@ target,location,location_name,type,quantile,value
 1 day ahead cum death,55,Wisconsin,quantile,0.5,124.83214410431023
 1 day ahead cum death,54,West Virginia,quantile,0.5,8.292355049745776
 1 day ahead cum death,56,Wyoming,quantile,0.5,9.699986586042943
-1 day ahead cum death,00,US,quantile,0.5,31564.33110355
+1 day ahead cum death,US,US,quantile,0.5,31564.33110355
 1 day ahead cum death,01,Alabama,quantile,0.9,149.97377042820082
 1 day ahead cum death,05,Arkansas,quantile,0.9,79.9960694510346
 1 day ahead cum death,04,Arizona,quantile,0.9,1143.0699759682445
@@ -853,7 +853,7 @@ target,location,location_name,type,quantile,value
 1 day ahead cum death,55,Wisconsin,quantile,0.9,416.66525115810805
 1 day ahead cum death,54,West Virginia,quantile,0.9,31.38012576094933
 1 day ahead cum death,56,Wyoming,quantile,0.9,23.36523033973641
-1 day ahead cum death,00,US,quantile,0.9,53000.48057994999
+1 day ahead cum death,US,US,quantile,0.9,53000.48057994999
 1 day ahead inc death,01,Alabama,quantile,0.1,1.0335368594946277
 1 day ahead inc death,05,Arkansas,quantile,0.1,0.5572404222656144
 1 day ahead inc death,04,Arizona,quantile,0.1,8.846277507748779
@@ -898,7 +898,7 @@ target,location,location_name,type,quantile,value
 1 day ahead inc death,55,Wisconsin,quantile,0.1,2.874832658895583
 1 day ahead inc death,54,West Virginia,quantile,0.1,0.1770454989621602
 1 day ahead inc death,56,Wyoming,quantile,0.1,0.1711051208236939
-1 day ahead inc death,00,US,quantile,0.1,979.7579239
+1 day ahead inc death,US,US,quantile,0.1,979.7579239
 1 day ahead inc death,01,Alabama,quantile,0.5,2.4234939257993053
 1 day ahead inc death,05,Arkansas,quantile,0.5,1.3898333529028282
 1 day ahead inc death,04,Arizona,quantile,0.5,19.292473256514928
@@ -943,7 +943,7 @@ target,location,location_name,type,quantile,value
 1 day ahead inc death,55,Wisconsin,quantile,0.5,6.367348675597867
 1 day ahead inc death,54,West Virginia,quantile,0.5,0.4579448613117607
 1 day ahead inc death,56,Wyoming,quantile,0.5,0.4766808700971911
-1 day ahead inc death,00,US,quantile,0.5,1407.284609
+1 day ahead inc death,US,US,quantile,0.5,1407.284609
 1 day ahead inc death,01,Alabama,quantile,0.9,7.5082137357546905
 1 day ahead inc death,05,Arkansas,quantile,0.9,4.3755333413198025
 1 day ahead inc death,04,Arizona,quantile,0.9,51.71482413404939
@@ -988,7 +988,7 @@ target,location,location_name,type,quantile,value
 1 day ahead inc death,55,Wisconsin,quantile,0.9,20.12773350297748
 1 day ahead inc death,54,West Virginia,quantile,0.9,1.6712457552571465
 1 day ahead inc death,56,Wyoming,quantile,0.9,1.081921486224163
-1 day ahead inc death,00,US,quantile,0.9,2133.5852501
+1 day ahead inc death,US,US,quantile,0.9,2133.5852501
 1 wk ahead cum death,01,Alabama,quantile,0.1,22.362015290905585
 1 wk ahead cum death,05,Arkansas,quantile,0.1,13.180183314623655
 1 wk ahead cum death,04,Arizona,quantile,0.1,203.7916948108252
@@ -1033,7 +1033,7 @@ target,location,location_name,type,quantile,value
 1 wk ahead cum death,55,Wisconsin,quantile,0.1,69.9314607845651
 1 wk ahead cum death,54,West Virginia,quantile,0.1,3.8640391012546056
 1 wk ahead cum death,56,Wyoming,quantile,0.1,3.900500056763685
-1 wk ahead cum death,00,US,quantile,0.1,26551.749011099997
+1 wk ahead cum death,US,US,quantile,0.1,26551.749011099997
 1 wk ahead cum death,01,Alabama,quantile,0.5,55.800809050176994
 1 wk ahead cum death,05,Arkansas,quantile,0.5,31.04027694509584
 1 wk ahead cum death,04,Arizona,quantile,0.5,456.7467878597768
@@ -1078,7 +1078,7 @@ target,location,location_name,type,quantile,value
 1 wk ahead cum death,55,Wisconsin,quantile,0.5,151.84021849991498
 1 wk ahead cum death,54,West Virginia,quantile,0.5,10.391257468312526
 1 wk ahead cum death,56,Wyoming,quantile,0.5,11.654660286650298
-1 wk ahead cum death,00,US,quantile,0.5,37129.24069815
+1 wk ahead cum death,US,US,quantile,0.5,37129.24069815
 1 wk ahead cum death,01,Alabama,quantile,0.9,179.65200190273038
 1 wk ahead cum death,05,Arkansas,quantile,0.9,96.65566009200472
 1 wk ahead cum death,04,Arizona,quantile,0.9,1331.963304123914
@@ -1123,7 +1123,7 @@ target,location,location_name,type,quantile,value
 1 wk ahead cum death,55,Wisconsin,quantile,0.9,493.4528327199706
 1 wk ahead cum death,54,West Virginia,quantile,0.9,38.3744731470728
 1 wk ahead cum death,56,Wyoming,quantile,0.9,27.62832546429437
-1 wk ahead cum death,00,US,quantile,0.9,61557.97042355
+1 wk ahead cum death,US,US,quantile,0.9,61557.97042355
 1 wk ahead inc death,01,Alabama,quantile,0.1,7.407496519695429
 1 wk ahead inc death,05,Arkansas,quantile,0.1,4.275523861126267
 1 wk ahead inc death,04,Arizona,quantile,0.1,60.502189487639406
@@ -1168,7 +1168,7 @@ target,location,location_name,type,quantile,value
 1 wk ahead inc death,55,Wisconsin,quantile,0.1,20.43654133945102
 1 wk ahead inc death,54,West Virginia,quantile,0.1,1.235496264014992
 1 wk ahead inc death,56,Wyoming,quantile,0.1,1.1290269670841773
-1 wk ahead inc death,00,US,quantile,0.1,6771.664555300001
+1 wk ahead inc death,US,US,quantile,0.1,6771.664555300001
 1 wk ahead inc death,01,Alabama,quantile,0.5,16.955729623424066
 1 wk ahead inc death,05,Arkansas,quantile,0.5,9.68137772873012
 1 wk ahead inc death,04,Arizona,quantile,0.5,135.20029118367665
@@ -1213,7 +1213,7 @@ target,location,location_name,type,quantile,value
 1 wk ahead inc death,55,Wisconsin,quantile,0.5,46.5519023387874
 1 wk ahead inc death,54,West Virginia,quantile,0.5,3.224411655517748
 1 wk ahead inc death,56,Wyoming,quantile,0.5,3.331668445872958
-1 wk ahead inc death,00,US,quantile,0.5,9671.07402595
+1 wk ahead inc death,US,US,quantile,0.5,9671.07402595
 1 wk ahead inc death,01,Alabama,quantile,0.9,52.01138484493906
 1 wk ahead inc death,05,Arkansas,quantile,0.9,29.584926085544897
 1 wk ahead inc death,04,Arizona,quantile,0.9,363.1230846916584
@@ -1258,7 +1258,7 @@ target,location,location_name,type,quantile,value
 1 wk ahead inc death,55,Wisconsin,quantile,0.9,136.19637101917232
 1 wk ahead inc death,54,West Virginia,quantile,0.9,11.57732788716393
 1 wk ahead inc death,56,Wyoming,quantile,0.9,7.772303919237612
-1 wk ahead inc death,00,US,quantile,0.9,14672.01195555
+1 wk ahead inc death,US,US,quantile,0.9,14672.01195555
 2 day ahead cum death,01,Alabama,quantile,0.1,19.18261910361229
 2 day ahead cum death,05,Arkansas,quantile,0.1,11.385334261853016
 2 day ahead cum death,04,Arizona,quantile,0.1,175.44864031360078
@@ -1303,7 +1303,7 @@ target,location,location_name,type,quantile,value
 2 day ahead cum death,55,Wisconsin,quantile,0.1,60.638510648703225
 2 day ahead cum death,54,West Virginia,quantile,0.1,3.266222762571502
 2 day ahead cum death,56,Wyoming,quantile,0.1,3.3993490944334024
-2 day ahead cum death,00,US,quantile,0.1,23388.55561005
+2 day ahead cum death,US,US,quantile,0.1,23388.55561005
 2 day ahead cum death,01,Alabama,quantile,0.5,48.22952942521442
 2 day ahead cum death,05,Arkansas,quantile,0.5,27.255957254474893
 2 day ahead cum death,04,Arizona,quantile,0.5,399.77327311712287
@@ -1348,7 +1348,7 @@ target,location,location_name,type,quantile,value
 2 day ahead cum death,55,Wisconsin,quantile,0.5,131.39085245323014
 2 day ahead cum death,54,West Virginia,quantile,0.5,8.739954213877088
 2 day ahead cum death,56,Wyoming,quantile,0.5,10.224786352721292
-2 day ahead cum death,00,US,quantile,0.5,32858.840953099985
+2 day ahead cum death,US,US,quantile,0.5,32858.840953099985
 2 day ahead cum death,01,Alabama,quantile,0.9,157.09646884790453
 2 day ahead cum death,05,Arkansas,quantile,0.9,84.65199287387077
 2 day ahead cum death,04,Arizona,quantile,0.9,1192.4169016130056
@@ -1393,7 +1393,7 @@ target,location,location_name,type,quantile,value
 2 day ahead cum death,55,Wisconsin,quantile,0.9,436.2826733136185
 2 day ahead cum death,54,West Virginia,quantile,0.9,33.06287794025485
 2 day ahead cum death,56,Wyoming,quantile,0.9,24.43372610085852
-2 day ahead cum death,00,US,quantile,0.9,55120.54259409999
+2 day ahead cum death,US,US,quantile,0.9,55120.54259409999
 2 day ahead inc death,01,Alabama,quantile,0.1,1.0387012400857325
 2 day ahead inc death,05,Arkansas,quantile,0.1,0.5867036002679487
 2 day ahead inc death,04,Arizona,quantile,0.1,8.37871109488016
@@ -1438,7 +1438,7 @@ target,location,location_name,type,quantile,value
 2 day ahead inc death,55,Wisconsin,quantile,0.1,2.859157256716181
 2 day ahead inc death,54,West Virginia,quantile,0.1,0.16062926239993586
 2 day ahead inc death,56,Wyoming,quantile,0.1,0.1691864880308916
-2 day ahead inc death,00,US,quantile,0.1,970.9490834
+2 day ahead inc death,US,US,quantile,0.1,970.9490834
 2 day ahead inc death,01,Alabama,quantile,0.5,2.423695773100909
 2 day ahead inc death,05,Arkansas,quantile,0.5,1.3693384688312389
 2 day ahead inc death,04,Arizona,quantile,0.5,19.506678541626094
@@ -1483,7 +1483,7 @@ target,location,location_name,type,quantile,value
 2 day ahead inc death,55,Wisconsin,quantile,0.5,6.719369228428263
 2 day ahead inc death,54,West Virginia,quantile,0.5,0.4906093405455626
 2 day ahead inc death,56,Wyoming,quantile,0.5,0.4636745727991066
-2 day ahead inc death,00,US,quantile,0.5,1387.76917085
+2 day ahead inc death,US,US,quantile,0.5,1387.76917085
 2 day ahead inc death,01,Alabama,quantile,0.9,7.122698419703691
 2 day ahead inc death,05,Arkansas,quantile,0.9,4.405910302946019
 2 day ahead inc death,04,Arizona,quantile,0.9,53.681799784831
@@ -1528,7 +1528,7 @@ target,location,location_name,type,quantile,value
 2 day ahead inc death,55,Wisconsin,quantile,0.9,19.61742215551041
 2 day ahead inc death,54,West Virginia,quantile,0.9,1.6372678089170678
 2 day ahead inc death,56,Wyoming,quantile,0.9,1.139683926195214
-2 day ahead inc death,00,US,quantile,0.9,2104.2567278
+2 day ahead inc death,US,US,quantile,0.9,2104.2567278
 2 wk ahead cum death,01,Alabama,quantile,0.1,29.601910550994624
 2 wk ahead cum death,05,Arkansas,quantile,0.1,17.269249976895374
 2 wk ahead cum death,04,Arizona,quantile,0.1,262.71796163795705
@@ -1573,7 +1573,7 @@ target,location,location_name,type,quantile,value
 2 wk ahead cum death,55,Wisconsin,quantile,0.1,90.21556873107492
 2 wk ahead cum death,54,West Virginia,quantile,0.1,5.0953553336852
 2 wk ahead cum death,56,Wyoming,quantile,0.1,5.189346239267438
-2 wk ahead cum death,00,US,quantile,0.1,32892.1433072
+2 wk ahead cum death,US,US,quantile,0.1,32892.1433072
 2 wk ahead cum death,01,Alabama,quantile,0.5,71.82206014865048
 2 wk ahead cum death,05,Arkansas,quantile,0.5,39.65793620818893
 2 wk ahead cum death,04,Arizona,quantile,0.5,589.8589800446036
@@ -1618,7 +1618,7 @@ target,location,location_name,type,quantile,value
 2 wk ahead cum death,55,Wisconsin,quantile,0.5,198.713943242368
 2 wk ahead cum death,54,West Virginia,quantile,0.5,13.497573271187795
 2 wk ahead cum death,56,Wyoming,quantile,0.5,15.210393524548843
-2 wk ahead cum death,00,US,quantile,0.5,46548.12431585
+2 wk ahead cum death,US,US,quantile,0.5,46548.12431585
 2 wk ahead cum death,01,Alabama,quantile,0.9,230.77427117935676
 2 wk ahead cum death,05,Arkansas,quantile,0.9,124.48792369291643
 2 wk ahead cum death,04,Arizona,quantile,0.9,1649.5353295618127
@@ -1663,7 +1663,7 @@ target,location,location_name,type,quantile,value
 2 wk ahead cum death,55,Wisconsin,quantile,0.9,620.9862198423754
 2 wk ahead cum death,54,West Virginia,quantile,0.9,49.948367473200655
 2 wk ahead cum death,56,Wyoming,quantile,0.9,33.986738911259096
-2 wk ahead cum death,00,US,quantile,0.9,74826.23254900001
+2 wk ahead cum death,US,US,quantile,0.9,74826.23254900001
 2 wk ahead inc death,01,Alabama,quantile,0.1,7.365392690392187
 2 wk ahead inc death,05,Arkansas,quantile,0.1,4.450050795215431
 2 wk ahead inc death,04,Arizona,quantile,0.1,58.268430759309425
@@ -1708,7 +1708,7 @@ target,location,location_name,type,quantile,value
 2 wk ahead inc death,55,Wisconsin,quantile,0.1,20.49766976855156
 2 wk ahead inc death,54,West Virginia,quantile,0.1,1.3408172030284642
 2 wk ahead inc death,56,Wyoming,quantile,0.1,1.2592527636710538
-2 wk ahead inc death,00,US,quantile,0.1,5873.555326099999
+2 wk ahead inc death,US,US,quantile,0.1,5873.555326099999
 2 wk ahead inc death,01,Alabama,quantile,0.5,17.077838608990888
 2 wk ahead inc death,05,Arkansas,quantile,0.5,9.544597215724526
 2 wk ahead inc death,04,Arizona,quantile,0.5,133.96280681965274
@@ -1753,7 +1753,7 @@ target,location,location_name,type,quantile,value
 2 wk ahead inc death,55,Wisconsin,quantile,0.5,44.049239247038
 2 wk ahead inc death,54,West Virginia,quantile,0.5,3.2621165985319704
 2 wk ahead inc death,56,Wyoming,quantile,0.5,3.0678635830799084
-2 wk ahead inc death,00,US,quantile,0.5,8286.57110695
+2 wk ahead inc death,US,US,quantile,0.5,8286.57110695
 2 wk ahead inc death,01,Alabama,quantile,0.9,50.914943498645805
 2 wk ahead inc death,05,Arkansas,quantile,0.9,29.446517988809067
 2 wk ahead inc death,04,Arizona,quantile,0.9,346.83162001535385
@@ -1798,7 +1798,7 @@ target,location,location_name,type,quantile,value
 2 wk ahead inc death,55,Wisconsin,quantile,0.9,128.6632825049611
 2 wk ahead inc death,54,West Virginia,quantile,0.9,11.196406879819913
 2 wk ahead inc death,56,Wyoming,quantile,0.9,7.126715413244852
-2 wk ahead inc death,00,US,quantile,0.9,12796.9211091
+2 wk ahead inc death,US,US,quantile,0.9,12796.9211091
 3 day ahead cum death,01,Alabama,quantile,0.1,20.289666237853986
 3 day ahead cum death,05,Arkansas,quantile,0.1,11.9308072291977
 3 day ahead cum death,04,Arizona,quantile,0.1,185.23637548834662
@@ -1843,7 +1843,7 @@ target,location,location_name,type,quantile,value
 3 day ahead cum death,55,Wisconsin,quantile,0.1,63.434009377767104
 3 day ahead cum death,54,West Virginia,quantile,0.1,3.450933798530972
 3 day ahead cum death,56,Wyoming,quantile,0.1,3.5495162504844164
-3 day ahead cum death,00,US,quantile,0.1,24449.9344375
+3 day ahead cum death,US,US,quantile,0.1,24449.9344375
 3 day ahead cum death,01,Alabama,quantile,0.5,50.7382166935217
 3 day ahead cum death,05,Arkansas,quantile,0.5,28.477628758485032
 3 day ahead cum death,04,Arizona,quantile,0.5,420.3454163373255
@@ -1888,7 +1888,7 @@ target,location,location_name,type,quantile,value
 3 day ahead cum death,55,Wisconsin,quantile,0.5,138.29884639233705
 3 day ahead cum death,54,West Virginia,quantile,0.5,9.283227873763614
 3 day ahead cum death,56,Wyoming,quantile,0.5,10.719213176406283
-3 day ahead cum death,00,US,quantile,0.5,34228.107941949995
+3 day ahead cum death,US,US,quantile,0.5,34228.107941949995
 3 day ahead cum death,01,Alabama,quantile,0.9,164.9082596692327
 3 day ahead cum death,05,Arkansas,quantile,0.9,89.00192236893088
 3 day ahead cum death,04,Arizona,quantile,0.9,1239.6069966731786
@@ -1933,7 +1933,7 @@ target,location,location_name,type,quantile,value
 3 day ahead cum death,55,Wisconsin,quantile,0.9,455.5278399801091
 3 day ahead cum death,54,West Virginia,quantile,0.9,34.820011566503766
 3 day ahead cum death,56,Wyoming,quantile,0.9,25.515493320718626
-3 day ahead cum death,00,US,quantile,0.9,57198.17121989999
+3 day ahead cum death,US,US,quantile,0.9,57198.17121989999
 3 day ahead inc death,01,Alabama,quantile,0.1,1.0322763693073231
 3 day ahead inc death,05,Arkansas,quantile,0.1,0.651640232039925
 3 day ahead inc death,04,Arizona,quantile,0.1,8.825292001624474
@@ -1978,7 +1978,7 @@ target,location,location_name,type,quantile,value
 3 day ahead inc death,55,Wisconsin,quantile,0.1,2.8886219101159165
 3 day ahead inc death,54,West Virginia,quantile,0.1,0.17301240889289807
 3 day ahead inc death,56,Wyoming,quantile,0.1,0.17315260946817335
-3 day ahead inc death,00,US,quantile,0.1,953.76919235
+3 day ahead inc death,US,US,quantile,0.1,953.76919235
 3 day ahead inc death,01,Alabama,quantile,0.5,2.3776275020632287
 3 day ahead inc death,05,Arkansas,quantile,0.5,1.3929689277001294
 3 day ahead inc death,04,Arizona,quantile,0.5,19.5939534606606
@@ -2023,7 +2023,7 @@ target,location,location_name,type,quantile,value
 3 day ahead inc death,55,Wisconsin,quantile,0.5,6.7162830953641794
 3 day ahead inc death,54,West Virginia,quantile,0.5,0.4942757858776549
 3 day ahead inc death,56,Wyoming,quantile,0.5,0.4902270053163815
-3 day ahead inc death,00,US,quantile,0.5,1357.6438053
+3 day ahead inc death,US,US,quantile,0.5,1357.6438053
 3 day ahead inc death,01,Alabama,quantile,0.9,7.575328963197293
 3 day ahead inc death,05,Arkansas,quantile,0.9,4.349929495060115
 3 day ahead inc death,04,Arizona,quantile,0.9,52.78017663010053
@@ -2068,7 +2068,7 @@ target,location,location_name,type,quantile,value
 3 day ahead inc death,55,Wisconsin,quantile,0.9,19.976560149472565
 3 day ahead inc death,54,West Virginia,quantile,0.9,1.6787927747828322
 3 day ahead inc death,56,Wyoming,quantile,0.9,1.2163798455110593
-3 day ahead inc death,00,US,quantile,0.9,2061.7046401000002
+3 day ahead inc death,US,US,quantile,0.9,2061.7046401000002
 4 day ahead cum death,01,Alabama,quantile,0.1,21.450893926435725
 4 day ahead cum death,05,Arkansas,quantile,0.1,12.577735668867758
 4 day ahead cum death,04,Arizona,quantile,0.1,194.12901364795243
@@ -2113,7 +2113,7 @@ target,location,location_name,type,quantile,value
 4 day ahead cum death,55,Wisconsin,quantile,0.1,66.80059450900228
 4 day ahead cum death,54,West Virginia,quantile,0.1,3.64636871819094
 4 day ahead cum death,56,Wyoming,quantile,0.1,3.7152038321140792
-4 day ahead cum death,00,US,quantile,0.1,25504.41849155
+4 day ahead cum death,US,US,quantile,0.1,25504.41849155
 4 day ahead cum death,01,Alabama,quantile,0.5,53.19903592613346
 4 day ahead cum death,05,Arkansas,quantile,0.5,29.748982987101364
 4 day ahead cum death,04,Arizona,quantile,0.5,438.1462880039309
@@ -2158,7 +2158,7 @@ target,location,location_name,type,quantile,value
 4 day ahead cum death,55,Wisconsin,quantile,0.5,145.0105340112294
 4 day ahead cum death,54,West Virginia,quantile,0.5,9.801841100026717
 4 day ahead cum death,56,Wyoming,quantile,0.5,11.179216099219179
-4 day ahead cum death,00,US,quantile,0.5,35661.1547989
+4 day ahead cum death,US,US,quantile,0.5,35661.1547989
 4 day ahead cum death,01,Alabama,quantile,0.9,172.28892851187825
 4 day ahead cum death,05,Arkansas,quantile,0.9,93.24522154473259
 4 day ahead cum death,04,Arizona,quantile,0.9,1286.2037229474965
@@ -2203,7 +2203,7 @@ target,location,location_name,type,quantile,value
 4 day ahead cum death,55,Wisconsin,quantile,0.9,474.64528756649565
 4 day ahead cum death,54,West Virginia,quantile,0.9,36.624717137843106
 4 day ahead cum death,56,Wyoming,quantile,0.9,26.53199789524929
-4 day ahead cum death,00,US,quantile,0.9,59390.00096149999
+4 day ahead cum death,US,US,quantile,0.9,59390.00096149999
 4 day ahead inc death,01,Alabama,quantile,0.1,0.9653760913464532
 4 day ahead inc death,05,Arkansas,quantile,0.1,0.6167020140657788
 4 day ahead inc death,04,Arizona,quantile,0.1,8.628782986051593
@@ -2248,7 +2248,7 @@ target,location,location_name,type,quantile,value
 4 day ahead inc death,55,Wisconsin,quantile,0.1,2.9745369508367365
 4 day ahead inc death,54,West Virginia,quantile,0.1,0.16379805259186345
 4 day ahead inc death,56,Wyoming,quantile,0.1,0.1482244832576497
-4 day ahead inc death,00,US,quantile,0.1,943.3664775000001
+4 day ahead inc death,US,US,quantile,0.1,943.3664775000001
 4 day ahead inc death,01,Alabama,quantile,0.5,2.406610451370128
 4 day ahead inc death,05,Arkansas,quantile,0.5,1.4221896002446919
 4 day ahead inc death,04,Arizona,quantile,0.5,19.74681142116598
@@ -2293,7 +2293,7 @@ target,location,location_name,type,quantile,value
 4 day ahead inc death,55,Wisconsin,quantile,0.5,6.4777922355741335
 4 day ahead inc death,54,West Virginia,quantile,0.5,0.4571570449949818
 4 day ahead inc death,56,Wyoming,quantile,0.5,0.4535767337661975
-4 day ahead inc death,00,US,quantile,0.5,1332.72901145
+4 day ahead inc death,US,US,quantile,0.5,1332.72901145
 4 day ahead inc death,01,Alabama,quantile,0.9,7.494533709623224
 4 day ahead inc death,05,Arkansas,quantile,0.9,4.176002520405149
 4 day ahead inc death,04,Arizona,quantile,0.9,52.82766296745099
@@ -2338,7 +2338,7 @@ target,location,location_name,type,quantile,value
 4 day ahead inc death,55,Wisconsin,quantile,0.9,19.644475111362468
 4 day ahead inc death,54,West Virginia,quantile,0.9,1.6728858375584283
 4 day ahead inc death,56,Wyoming,quantile,0.9,1.1676389499226192
-4 day ahead inc death,00,US,quantile,0.9,2016.53545065
+4 day ahead inc death,US,US,quantile,0.9,2016.53545065
 5 day ahead cum death,01,Alabama,quantile,0.1,22.362015290905585
 5 day ahead cum death,05,Arkansas,quantile,0.1,13.180183314623651
 5 day ahead cum death,04,Arizona,quantile,0.1,203.7916948108252
@@ -2383,7 +2383,7 @@ target,location,location_name,type,quantile,value
 5 day ahead cum death,55,Wisconsin,quantile,0.1,69.9314607845651
 5 day ahead cum death,54,West Virginia,quantile,0.1,3.8640391012546056
 5 day ahead cum death,56,Wyoming,quantile,0.1,3.900500056763684
-5 day ahead cum death,00,US,quantile,0.1,26551.749011099997
+5 day ahead cum death,US,US,quantile,0.1,26551.749011099997
 5 day ahead cum death,01,Alabama,quantile,0.5,55.800809050176994
 5 day ahead cum death,05,Arkansas,quantile,0.5,31.04027694509584
 5 day ahead cum death,04,Arizona,quantile,0.5,456.7467878597768
@@ -2428,7 +2428,7 @@ target,location,location_name,type,quantile,value
 5 day ahead cum death,55,Wisconsin,quantile,0.5,151.840218499915
 5 day ahead cum death,54,West Virginia,quantile,0.5,10.391257468312526
 5 day ahead cum death,56,Wyoming,quantile,0.5,11.654660286650298
-5 day ahead cum death,00,US,quantile,0.5,37129.24069815
+5 day ahead cum death,US,US,quantile,0.5,37129.24069815
 5 day ahead cum death,01,Alabama,quantile,0.9,179.65200190273038
 5 day ahead cum death,05,Arkansas,quantile,0.9,96.6556600920047
 5 day ahead cum death,04,Arizona,quantile,0.9,1331.963304123914
@@ -2473,7 +2473,7 @@ target,location,location_name,type,quantile,value
 5 day ahead cum death,55,Wisconsin,quantile,0.9,493.4528327199705
 5 day ahead cum death,54,West Virginia,quantile,0.9,38.3744731470728
 5 day ahead cum death,56,Wyoming,quantile,0.9,27.62832546429437
-5 day ahead cum death,00,US,quantile,0.9,61557.97042354999
+5 day ahead cum death,US,US,quantile,0.9,61557.97042354999
 5 day ahead inc death,01,Alabama,quantile,0.1,1.0298382940279716
 5 day ahead inc death,05,Arkansas,quantile,0.1,0.5943905721780411
 5 day ahead inc death,04,Arizona,quantile,0.1,8.849119498712755
@@ -2518,7 +2518,7 @@ target,location,location_name,type,quantile,value
 5 day ahead inc death,55,Wisconsin,quantile,0.1,3.092110419025076
 5 day ahead inc death,54,West Virginia,quantile,0.1,0.1885402210630457
 5 day ahead inc death,56,Wyoming,quantile,0.1,0.15441606460534285
-5 day ahead inc death,00,US,quantile,0.1,925.90610785
+5 day ahead inc death,US,US,quantile,0.1,925.90610785
 5 day ahead inc death,01,Alabama,quantile,0.5,2.3898729011945687
 5 day ahead inc death,05,Arkansas,quantile,0.5,1.375927740532581
 5 day ahead inc death,04,Arizona,quantile,0.5,19.515366948560864
@@ -2563,7 +2563,7 @@ target,location,location_name,type,quantile,value
 5 day ahead inc death,55,Wisconsin,quantile,0.5,6.6155801378375925
 5 day ahead inc death,54,West Virginia,quantile,0.5,0.4771475011424182
 5 day ahead inc death,56,Wyoming,quantile,0.5,0.4980315212051865
-5 day ahead inc death,00,US,quantile,0.5,1305.0842699999996
+5 day ahead inc death,US,US,quantile,0.5,1305.0842699999996
 5 day ahead inc death,01,Alabama,quantile,0.9,7.5267680789322835
 5 day ahead inc death,05,Arkansas,quantile,0.9,4.433901857183653
 5 day ahead inc death,04,Arizona,quantile,0.9,52.20824922096352
@@ -2608,7 +2608,7 @@ target,location,location_name,type,quantile,value
 5 day ahead inc death,55,Wisconsin,quantile,0.9,19.18345499714705
 5 day ahead inc death,54,West Virginia,quantile,0.9,1.687276845679104
 5 day ahead inc death,56,Wyoming,quantile,0.9,1.1066682152364553
-5 day ahead inc death,00,US,quantile,0.9,1996.564459
+5 day ahead inc death,US,US,quantile,0.9,1996.564459
 6 day ahead cum death,01,Alabama,quantile,0.1,23.43247110166029
 6 day ahead cum death,05,Arkansas,quantile,0.1,13.847192206945437
 6 day ahead cum death,04,Arizona,quantile,0.1,213.21343228823517
@@ -2653,7 +2653,7 @@ target,location,location_name,type,quantile,value
 6 day ahead cum death,55,Wisconsin,quantile,0.1,72.68000685484304
 6 day ahead cum death,54,West Virginia,quantile,0.1,4.021224095526079
 6 day ahead cum death,56,Wyoming,quantile,0.1,4.059090504341096
-6 day ahead cum death,00,US,quantile,0.1,27581.924219200002
+6 day ahead cum death,US,US,quantile,0.1,27581.924219200002
 6 day ahead cum death,01,Alabama,quantile,0.5,58.04335968788
 6 day ahead cum death,05,Arkansas,quantile,0.5,32.36912899057306
 6 day ahead cum death,04,Arizona,quantile,0.5,476.97431383633415
@@ -2698,7 +2698,7 @@ target,location,location_name,type,quantile,value
 6 day ahead cum death,55,Wisconsin,quantile,0.5,158.86072112559646
 6 day ahead cum death,54,West Virginia,quantile,0.5,10.84185169439134
 6 day ahead cum death,56,Wyoming,quantile,0.5,12.173861768460494
-6 day ahead cum death,00,US,quantile,0.5,38580.856679
+6 day ahead cum death,US,US,quantile,0.5,38580.856679
 6 day ahead cum death,01,Alabama,quantile,0.9,186.8944000292093
 6 day ahead cum death,05,Arkansas,quantile,0.9,100.90712750409014
 6 day ahead cum death,04,Arizona,quantile,0.9,1375.493956455338
@@ -2743,7 +2743,7 @@ target,location,location_name,type,quantile,value
 6 day ahead cum death,55,Wisconsin,quantile,0.9,512.2736934013068
 6 day ahead cum death,54,West Virginia,quantile,0.9,40.129058770699956
 6 day ahead cum death,56,Wyoming,quantile,0.9,28.59925243918425
-6 day ahead cum death,00,US,quantile,0.9,63692.34215184997
+6 day ahead cum death,US,US,quantile,0.9,63692.34215184997
 6 day ahead inc death,01,Alabama,quantile,0.1,1.1145751445979493
 6 day ahead inc death,05,Arkansas,quantile,0.1,0.6138725402830603
 6 day ahead inc death,04,Arizona,quantile,0.1,8.62229072220817
@@ -2788,7 +2788,7 @@ target,location,location_name,type,quantile,value
 6 day ahead inc death,55,Wisconsin,quantile,0.1,2.7925503670812653
 6 day ahead inc death,54,West Virginia,quantile,0.1,0.19012029968502447
 6 day ahead inc death,56,Wyoming,quantile,0.1,0.1702487005169112
-6 day ahead inc death,00,US,quantile,0.1,907.1785923
+6 day ahead inc death,US,US,quantile,0.1,907.1785923
 6 day ahead inc death,01,Alabama,quantile,0.5,2.4116185375932373
 6 day ahead inc death,05,Arkansas,quantile,0.5,1.4202279005408711
 6 day ahead inc death,04,Arizona,quantile,0.5,19.430748505511133
@@ -2833,7 +2833,7 @@ target,location,location_name,type,quantile,value
 6 day ahead inc death,55,Wisconsin,quantile,0.5,6.440813938299604
 6 day ahead inc death,54,West Virginia,quantile,0.5,0.4791655714822508
 6 day ahead inc death,56,Wyoming,quantile,0.5,0.4698570272867199
-6 day ahead inc death,00,US,quantile,0.5,1274.86020525
+6 day ahead inc death,US,US,quantile,0.5,1274.86020525
 6 day ahead inc death,01,Alabama,quantile,0.9,7.549049213021061
 6 day ahead inc death,05,Arkansas,quantile,0.9,4.251467412085438
 6 day ahead inc death,04,Arizona,quantile,0.9,51.00757183787577
@@ -2878,4 +2878,4 @@ target,location,location_name,type,quantile,value
 6 day ahead inc death,55,Wisconsin,quantile,0.9,19.3455965891349
 6 day ahead inc death,54,West Virginia,quantile,0.9,1.6877323694945412
 6 day ahead inc death,56,Wyoming,quantile,0.9,1.109262223625444
-6 day ahead inc death,00,US,quantile,0.9,1948.63232695
+6 day ahead inc death,US,US,quantile,0.9,1948.63232695

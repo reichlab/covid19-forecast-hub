@@ -118,6 +118,8 @@ process_cu_file <- function(cu_filepath, file, timezero) {
   dat_quantiles$location <- as.character(dat_quantiles$location)
   dat_quantiles$location[nchar(dat_quantiles$location) == 1] <-
     paste0("0", dat_quantiles$location[nchar(dat_quantiles$location) == 1])
+  # format location_names:
+  dat_quantiles$location_name[dat_quantiles$location_name == "US National"] <- "US"
   rownames(dat_quantiles) <- NULL
 
   return(dat_quantiles)
