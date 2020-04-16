@@ -112,7 +112,7 @@ export default class Choropleth {
     divHeight -= 60
 
     // Limits
-    divHeight = Math.min(Math.max(200, divHeight), 300)
+    divHeight = Math.min(Math.max(200, divHeight), 260)
     divWidth = Math.min(divWidth, 400)
 
     // Initialized datamap

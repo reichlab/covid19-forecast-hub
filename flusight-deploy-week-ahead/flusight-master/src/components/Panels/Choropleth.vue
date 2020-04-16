@@ -7,7 +7,7 @@
   text-align: center;
 
   #relative-button-title {
-    padding-top: 10px;
+    padding-top: 30px;
     text-align: left;
     font-size: 12px;
 
