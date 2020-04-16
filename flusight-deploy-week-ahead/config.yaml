@@ -1,7 +1,7 @@
 # Items used for branding
 branding:
-  title: "Reich Lab"
-  parent: ""
+  title: "Reich Lab COVID-19 Forecast Hub"
+  parent: "COVID-19"
   description: "COVID-19 Forecasts - Cumulative Deaths"
   imageUrl: ""
   aboutUrl: "https://github.com/reichlab/covid19-forecast-hub"

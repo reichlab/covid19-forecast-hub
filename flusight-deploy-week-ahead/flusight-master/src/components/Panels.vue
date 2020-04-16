@@ -18,9 +18,9 @@ h1 a {
   #map-intro.column.is-4
     // Title
     h1.title
-      a(v-bind:href="branding.parentUrl") COVID-19 Forecast Hub
+      a(v-bind:href="branding.parentUrl") COVID-19 Forecasts
     h2.subtitle
-      | COVID-19 Forecasts | Cumulative Deaths
+      | Cumulative Deaths
     hr
     #choropleth-container
       choropleth
