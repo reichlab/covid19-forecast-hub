@@ -31,11 +31,14 @@ mismatched_location <- unique(check_table$location[which(check_table$n!=length(m
 combined_table <- combined_table %>%
   dplyr::filter(location!=78&location!=72)
 quant_ensemble<-ew_quantile(combined_table, quantiles=c(0.025,0.5,0.975))
+quant_ensemble$location[which(nchar(quant_ensemble$location)==1)] <- paste0(0,quant_ensemble$location[which(nchar(quant_ensemble$location)==1)])
+
 # check again
 check_table2 <-quant_ensemble %>% 
   group_by(location,target,quantile) %>%
   dplyr::mutate(n=n())
 mismatched <- unique(check_table2$location[which(check_table2$n!=1)])
+
 # if(cdcForecastUtils::verify_entry(quant_ensemble)){
 #   write.csv(quant_ensemble,
 #             file=paste0("./data/ILIForecastProject-ensemble/2020-ew",this_ew,
