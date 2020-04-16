@@ -1,0 +1,26 @@
+team_name: UMass-Amherst Influenza Forecasting Center of Excellence
+team_abbr: UMassCoE
+institution_affil: UMass-Amherst Influenza Forecasting Center of Excellence
+team_funding: 
+team_experience: 
+
+model_name: ensemble
+model_abbr: ensemble
+model_output: https://reichlab.io/covid19-forecast-hub/
+model_repo: https://github.com/reichlab/covid19-forecast-hub
+
+model_contributors: 
+Model_targets: 1 through 6-wk ahead cumulative deaths
+Target_loc: state
+Data_format: median and 95% UI
+forecast_startdate: 
+forecast_frequency: 
+
+data_inputs_known: 
+data_source_known: 
+
+this_model_is_an_ensemble: FALSE
+this_model_is_unconditional: TRUE
+
+methods: ""
+citation: 
