@@ -16,5 +16,5 @@ point_ests <- dat %>%
 all_dat <- bind_rows(dat, point_ests) %>%
     arrange(type, target, quantile) 
 
-write_csv(all_dat, "data-processed/MOBS/2020-04-13-MOBS_NEU-GLEAM_COVID_19_v1.csv")
+write_csv(all_dat, "data-processed/MOBS_NEU-GLEAM/2020-04-13-MOBS_NEU-GLEAM_COVID_19_v1.csv")
 
