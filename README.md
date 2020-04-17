@@ -55,7 +55,7 @@ Each file must have a specific naming scheme that represents when the forecast w
 So far, we have identified a number of experienced teams that are creating forecasts of COVID-19-related deaths in the US and globally. Our list of groups whose forecasts are currently standardized and in the repository are (with data reuse license):
 
  - [Columbia University](https://github.com/shaman-lab/COVID-19Projection) (Apache2.0)
- - [GLEAM from Northeastern University](https://www.gleamproject.org/covid-19) (CC-BY-AT4.0)
+ - [GLEAM from Northeastern University](https://www.gleamproject.org/covid-19) (CC-BY-4.0)
  - [IHME](https://covid19.healthdata.org/united-states-of-america) (CC-AT-NC4.0)
  - [LANL](https://covid-19.bsvgateway.org/) ([custom](data-raw/LANL/LICENSE-LANL.txt))
  - [Imperial](https://github.com/sangeetabhatia03/covid19-short-term-forecasts) (none given)
