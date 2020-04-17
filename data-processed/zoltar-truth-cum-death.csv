@@ -575,7 +575,7 @@ timezero,unit,target,value
 2020-03-30,02,1_week_ahead_cum,8.0
 2020-03-30,04,1_week_ahead_cum,108.0
 2020-03-30,05,1_week_ahead_cum,25.0
-2020-03-30,06,1_week_ahead_cum,605.0
+2020-03-30,06,1_week_ahead_cum,604.0
 2020-03-30,08,1_week_ahead_cum,250.0
 2020-03-30,09,1_week_ahead_cum,494.0
 2020-03-30,10,1_week_ahead_cum,33.0
@@ -622,7 +622,7 @@ timezero,unit,target,value
 2020-03-30,54,1_week_ahead_cum,5.0
 2020-03-30,55,1_week_ahead_cum,137.0
 2020-03-30,56,1_week_ahead_cum,0.0
-2020-03-30,US,1_week_ahead_cum,20463.0
+2020-03-30,US,1_week_ahead_cum,20462.0
 2020-01-06,01,2_week_ahead_cum,0.0
 2020-01-06,02,2_week_ahead_cum,0.0
 2020-01-06,04,2_week_ahead_cum,0.0
@@ -1199,7 +1199,7 @@ timezero,unit,target,value
 2020-03-23,02,2_week_ahead_cum,8.0
 2020-03-23,04,2_week_ahead_cum,108.0
 2020-03-23,05,2_week_ahead_cum,25.0
-2020-03-23,06,2_week_ahead_cum,605.0
+2020-03-23,06,2_week_ahead_cum,604.0
 2020-03-23,08,2_week_ahead_cum,250.0
 2020-03-23,09,2_week_ahead_cum,494.0
 2020-03-23,10,2_week_ahead_cum,33.0
@@ -1246,7 +1246,7 @@ timezero,unit,target,value
 2020-03-23,54,2_week_ahead_cum,5.0
 2020-03-23,55,2_week_ahead_cum,137.0
 2020-03-23,56,2_week_ahead_cum,0.0
-2020-03-23,US,2_week_ahead_cum,20463.0
+2020-03-23,US,2_week_ahead_cum,20462.0
 2019-12-30,01,3_week_ahead_cum,0.0
 2019-12-30,02,3_week_ahead_cum,0.0
 2019-12-30,04,3_week_ahead_cum,0.0
@@ -1823,7 +1823,7 @@ timezero,unit,target,value
 2020-03-16,02,3_week_ahead_cum,8.0
 2020-03-16,04,3_week_ahead_cum,108.0
 2020-03-16,05,3_week_ahead_cum,25.0
-2020-03-16,06,3_week_ahead_cum,605.0
+2020-03-16,06,3_week_ahead_cum,604.0
 2020-03-16,08,3_week_ahead_cum,250.0
 2020-03-16,09,3_week_ahead_cum,494.0
 2020-03-16,10,3_week_ahead_cum,33.0
@@ -1870,7 +1870,7 @@ timezero,unit,target,value
 2020-03-16,54,3_week_ahead_cum,5.0
 2020-03-16,55,3_week_ahead_cum,137.0
 2020-03-16,56,3_week_ahead_cum,0.0
-2020-03-16,US,3_week_ahead_cum,20463.0
+2020-03-16,US,3_week_ahead_cum,20462.0
 2019-12-23,01,4_week_ahead_cum,0.0
 2019-12-23,02,4_week_ahead_cum,0.0
 2019-12-23,04,4_week_ahead_cum,0.0
@@ -2447,7 +2447,7 @@ timezero,unit,target,value
 2020-03-09,02,4_week_ahead_cum,8.0
 2020-03-09,04,4_week_ahead_cum,108.0
 2020-03-09,05,4_week_ahead_cum,25.0
-2020-03-09,06,4_week_ahead_cum,605.0
+2020-03-09,06,4_week_ahead_cum,604.0
 2020-03-09,08,4_week_ahead_cum,250.0
 2020-03-09,09,4_week_ahead_cum,494.0
 2020-03-09,10,4_week_ahead_cum,33.0
@@ -2494,4 +2494,4 @@ timezero,unit,target,value
 2020-03-09,54,4_week_ahead_cum,5.0
 2020-03-09,55,4_week_ahead_cum,137.0
 2020-03-09,56,4_week_ahead_cum,0.0
-2020-03-09,US,4_week_ahead_cum,20463.0
+2020-03-09,US,4_week_ahead_cum,20462.0

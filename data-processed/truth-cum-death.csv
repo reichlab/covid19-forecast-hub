@@ -4163,7 +4163,7 @@ date,location,location_name,value
 4/11/20,02,Alaska,8.0
 4/11/20,04,Arizona,108.0
 4/11/20,05,Arkansas,25.0
-4/11/20,06,California,605.0
+4/11/20,06,California,604.0
 4/11/20,08,Colorado,250.0
 4/11/20,09,Connecticut,494.0
 4/11/20,10,Delaware,33.0
@@ -4210,12 +4210,12 @@ date,location,location_name,value
 4/11/20,54,West Virginia,5.0
 4/11/20,55,Wisconsin,137.0
 4/11/20,56,Wyoming,0.0
-4/11/20,US,US,20463.0
+4/11/20,US,US,20462.0
 4/12/20,01,Alabama,93.0
 4/12/20,02,Alaska,8.0
 4/12/20,04,Arizona,115.0
 4/12/20,05,Arkansas,27.0
-4/12/20,06,California,641.0
+4/12/20,06,California,640.0
 4/12/20,08,Colorado,289.0
 4/12/20,09,Connecticut,554.0
 4/12/20,10,Delaware,35.0
@@ -4262,12 +4262,12 @@ date,location,location_name,value
 4/12/20,54,West Virginia,6.0
 4/12/20,55,Wisconsin,144.0
 4/12/20,56,Wyoming,0.0
-4/12/20,US,US,22020.0
+4/12/20,US,US,22019.0
 4/13/20,01,Alabama,99.0
 4/13/20,02,Alaska,8.0
 4/13/20,04,Arizona,122.0
 4/13/20,05,Arkansas,29.0
-4/13/20,06,California,715.0
+4/13/20,06,California,714.0
 4/13/20,08,Colorado,306.0
 4/13/20,09,Connecticut,602.0
 4/13/20,10,Delaware,41.0
@@ -4314,12 +4314,12 @@ date,location,location_name,value
 4/13/20,54,West Virginia,8.0
 4/13/20,55,Wisconsin,154.0
 4/13/20,56,Wyoming,1.0
-4/13/20,US,US,23529.0
+4/13/20,US,US,23528.0
 4/14/20,01,Alabama,114.0
 4/14/20,02,Alaska,9.0
 4/14/20,04,Arizona,131.0
 4/14/20,05,Arkansas,32.0
-4/14/20,06,California,768.0
+4/14/20,06,California,767.0
 4/14/20,08,Colorado,327.0
 4/14/20,09,Connecticut,671.0
 4/14/20,10,Delaware,43.0
@@ -4366,12 +4366,12 @@ date,location,location_name,value
 4/14/20,54,West Virginia,9.0
 4/14/20,55,Wisconsin,170.0
 4/14/20,56,Wyoming,1.0
-4/14/20,US,US,25832.0
+4/14/20,US,US,25831.0
 4/15/20,01,Alabama,118.0
 4/15/20,02,Alaska,9.0
 4/15/20,04,Arizona,142.0
 4/15/20,05,Arkansas,33.0
-4/15/20,06,California,861.0
+4/15/20,06,California,860.0
 4/15/20,08,Colorado,328.0
 4/15/20,09,Connecticut,868.0
 4/15/20,10,Delaware,46.0
@@ -4418,4 +4418,56 @@ date,location,location_name,value
 4/15/20,54,West Virginia,10.0
 4/15/20,55,Wisconsin,183.0
 4/15/20,56,Wyoming,1.0
-4/15/20,US,US,28326.0
+4/15/20,US,US,28325.0
+4/16/20,01,Alabama,133.0
+4/16/20,02,Alaska,9.0
+4/16/20,04,Arizona,150.0
+4/16/20,05,Arkansas,37.0
+4/16/20,06,California,956.0
+4/16/20,08,Colorado,355.0
+4/16/20,09,Connecticut,971.0
+4/16/20,10,Delaware,55.0
+4/16/20,11,District of Columbia,81.0
+4/16/20,12,Florida,668.0
+4/16/20,13,Georgia,587.0
+4/16/20,15,Hawaii,9.0
+4/16/20,16,Idaho,41.0
+4/16/20,17,Illinois,1072.0
+4/16/20,18,Indiana,477.0
+4/16/20,19,Iowa,60.0
+4/16/20,20,Kansas,80.0
+4/16/20,21,Kentucky,129.0
+4/16/20,22,Louisiana,1156.0
+4/16/20,23,Maine,27.0
+4/16/20,24,Maryland,319.0
+4/16/20,25,Massachusetts,1108.0
+4/16/20,26,Michigan,1996.0
+4/16/20,27,Minnesota,87.0
+4/16/20,28,Mississippi,129.0
+4/16/20,29,Missouri,169.0
+4/16/20,30,Montana,7.0
+4/16/20,31,Nebraska,21.0
+4/16/20,32,Nevada,137.0
+4/16/20,33,New Hampshire,32.0
+4/16/20,34,New Jersey,3518.0
+4/16/20,35,New Mexico,36.0
+4/16/20,36,New York,14832.0
+4/16/20,37,North Carolina,150.0
+4/16/20,38,North Dakota,9.0
+4/16/20,39,Ohio,407.0
+4/16/20,40,Oklahoma,131.0
+4/16/20,41,Oregon,64.0
+4/16/20,42,Pennsylvania,841.0
+4/16/20,44,Rhode Island,87.0
+4/16/20,45,South Carolina,111.0
+4/16/20,46,South Dakota,7.0
+4/16/20,47,Tennessee,136.0
+4/16/20,48,Texas,414.0
+4/16/20,49,Utah,20.0
+4/16/20,50,Vermont,33.0
+4/16/20,51,Virginia,208.0
+4/16/20,53,Washington,579.0
+4/16/20,54,West Virginia,12.0
+4/16/20,55,Wisconsin,197.0
+4/16/20,56,Wyoming,2.0
+4/16/20,US,US,32916.0
