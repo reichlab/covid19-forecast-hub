@@ -27,14 +27,14 @@ this_model_is_unconditional: FALSE
 methods: >-
     This model makes predictions about the future that are dependent on a particular set 
     of assumptions about how interventions are implemented and how effective they are. 
+    Metapopulation county-level SEIR model assuming contacts are reduced weekly to 60% of 
+    the previous week (40% reduction).
+
+methods_long: >-
+    This model makes predictions about the future that are dependent on a particular set 
+    of assumptions about how interventions are implemented and how effective they are. 
     Estimates of spatio-temporal COVID-19 demand and medical system critical care supply were 
-    calculated for all continental US counties. These estimates were statistically summarized 
-    and mapped for US counties, regions and urban versus non-urban areas. Estimates of COVID-19 
-    infections and patients needing critical care were calculated for 21-day and 42-day time periods 
-    starting from April 2, 2020 to May 13, 2020 for a reactive pattern of 40% contact reduction 
-    ("60contact") through actions such as social distancing. Multiple national public and private 
-    datasets were linked and harmonized in order to calculate county-level hospital critical care 
-    bed counts that include currently available beds and those that could be made available under 
-    four surge response scenarios – very low, low, medium, and high – as well as deaths in counties 
-    that had exceeded their hospital critical care capacity limits.
+    calculated for all continental US counties. 
+    Four different adaptive scenarios of contact reduction were projected, 0% (no contact reduction via social distancing controls and behavior change), 20%, 30%, and 40% contact reduction. These scenarios are meant to mimic adaptive adjustments in contact imposed both by government regulations (e.g. school closures, restrictions on mass gatherings) and population self-regulation (e.g. isolation, mask wearing, social distancing).  Upon initiation of projections, all counties with 10 or more confirmed cases impose a 0%, 20%, 30% or 40% contact rate reduction, depending on the projection scenario; all other counties implement no contact reduction.  Each week following, if a county newly exceeds 10 confirmed cases, a 0%, 20%, 30% or 40% contact rate reduction is imposed, depending on the projection scenario. Counties that had previously exceeded 10 confirmed cases and also experience an increase in the number of weekly reported confirmed cases impose a further, multiplicative 0%, 20%, 30% or 40% contact rate reduction, depending on the projection scenario.  Counties with fewer than 10 confirmed cases continue not to implement control.  This multiplicative ratcheting of contact reduction levels is continued until the end of simulations and is meant to represent increasing reactive social distancing imposed within counties as long as confirmed weekly cases of COVID-19 continue to rise. Note that in these scenarios, contact reductions are never relaxed.  Once weekly new confirmed cases decrease, the county simply stays at its current level of control.
+    
 citation: "Sen Pei, Jeffrey Shaman, Initial Simulation of SARS-CoV2 Spread and Intervention Effects in the Continental US. medRxiv.doi: https://doi.org/10.1101/2020.03.21.20040303;  Flattening the curve before it flattens us: hospital critical care capacity limits and mortality from novel coronavirus (SARS-CoV2) cases in US counties. https://behcolumbia.files.wordpress.com/2020/04/flattening-the-curve-before-it-flattens-us-20200405b.pdf"
