@@ -10,15 +10,16 @@ const parseMetadata = (modelDir) => {
   // Return a flusight compatible metadata object
   let rootMetadata = models.getModelMetadata(modelDir)
   let desc = rootMetadata.methods
-  let descMaxLen = 150
+  let descMaxLen = 400
   if (desc.length > descMaxLen) {
     desc = desc.slice(0, descMaxLen) + '...'
   }
   let repoUrl = 'https://github.com/reichlab/covid19-death-forecasts'
   let metaPath = repoUrl + '/blob/master/' + path.join(modelDir.slice(3), models.getMetadataFile(modelDir))
+  let linkToMore = " Click <i class='icon-link-ext'></i> for more."
   return {
     name: rootMetadata.team_name + ' - ' + rootMetadata.model_name,
-    description: desc,
+    description: desc + linkToMore,
     url: metaPath
   }
 }

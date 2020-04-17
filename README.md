@@ -59,5 +59,6 @@ So far, we have identified a number of experienced teams that are creating forec
  - [IHME](https://covid19.healthdata.org/united-states-of-america) (CC-AT-NC4.0)
  - [LANL](https://covid-19.bsvgateway.org/) ([custom](data-raw/LANL/LICENSE-LANL.txt))
  - [Imperial](https://github.com/sangeetabhatia03/covid19-short-term-forecasts) (none given)
+ - [University of Geneva / Swiss Data Science Center](https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/) (none given)
 
 Participating teams must provide methodological detail about their approach including a brief description of the methodology and a link to a file (or a file itself) describing the methods used. 
