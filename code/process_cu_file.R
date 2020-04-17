@@ -1,10 +1,10 @@
-## CU incident death data functions
+## CU death data functions
 ## Johannes Bracher
 ## April 2020
 
 #' turn CU forecast file into quantile-based format
 #'
-#' @param cu_filepath path to a cu submission file
+#' @param cu_filepath path to a CU submission file
 #' @param file the name of the file (CU forecast files are state_cdchosp_60contact.csv,
 #' state_cdchosp_70contact.csv, state_cdchosp_80contact.csv, state_cdchosp_nointerv.csv)
 #' @param timezero the origin date for the forecast
