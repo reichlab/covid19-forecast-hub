@@ -57,7 +57,7 @@ So far, we have identified a number of experienced teams that are creating forec
  - [Columbia University](https://github.com/shaman-lab/COVID-19Projection)
  - [GLEAM from Northeastern University](https://www.gleamproject.org/covid-19)
  - [IHME](https://covid19.healthdata.org/united-states-of-america)
- - [Imperial College](https://github.com/sangeetabhatia03/covid19-short-term-forecasts)
  - [LANL](https://covid-19.bsvgateway.org/)
+ - [UTAustin](https://covid-19.tacc.utexas.edu/projections/)
 
 Participating teams must provide methodological detail about their approach including a brief description of the methodology and a link to a file (or a file itself) describing the methods used. 
