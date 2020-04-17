@@ -1,11 +1,11 @@
-team_name: Northeastern University
-team_abbr: NE
+team_name: MOBS Lab at Northeastern
+team_abbr: MOBS
 institution_affil: Northeastern University
 team_funding: 
 team_experience: 
 
-model_name: MOBS
-model_abbr: MOBS
+model_name: GLEAM COVID-19
+model_abbr: GLEAM_COVID
 model_output: https://covid19.gleamproject.org/
 model_repo: 
 
@@ -24,6 +24,8 @@ this_model_is_an_ensemble: FALSE
 this_model_is_unconditional: FALSE
 
 methods: >-
+    This model makes predictions about the future that are dependent on the assumption 
+    that current interventions continue. 
     The GLEAM framework is based on a metapopulation approach in which the world is divided
     into geographical subpopulations. Human mobility between subpopulations is represented on a network. 
     This mobility data layer identifies the numbers of individuals traveling from one sub-population to 

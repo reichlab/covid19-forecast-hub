@@ -25,6 +25,8 @@ this_model_is_an_ensemble: FALSE
 this_model_is_unconditional: FALSE
 
 methods: >-
+    This model makes predictions about the future that are dependent on a particular set 
+    of assumptions about how interventions are implemented and how effective they are. 
     Estimates of spatio-temporal COVID-19 demand and medical system critical care supply 
     were calculated for all continental US counties. These estimates were statistically 
     summarized and mapped for US counties, regions and urban versus non-urban areas. Estimates 
