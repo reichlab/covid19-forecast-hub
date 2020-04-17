@@ -25,6 +25,10 @@ this_model_is_unconditional: FALSE
 
 methods: >-
     This model makes predictions about the future that are dependent on the assumption 
+    that current interventions continue. Metapopulation, age structured SLIR model.    
+
+methods_long: >-
+    This model makes predictions about the future that are dependent on the assumption 
     that current interventions continue. 
     The GLEAM framework is based on a metapopulation approach in which the world is divided
     into geographical subpopulations. Human mobility between subpopulations is represented on a network. 

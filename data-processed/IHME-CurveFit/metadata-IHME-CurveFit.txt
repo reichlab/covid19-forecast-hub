@@ -26,6 +26,10 @@ this_model_is_unconditional: FALSE
 
 methods: >-
     This model makes predictions about the future that are dependent on the assumption 
+    that current interventions continue. Non-linear mixed efects curve-fitting.
+
+methods_long: >-
+    This model makes predictions about the future that are dependent on the assumption 
     that current interventions continue. The modeling approach in this study is divided into four components: 
     (i) identification and processing of COVID-19 data; 
     (ii) statistical model estimation for population death rates as a function of time 

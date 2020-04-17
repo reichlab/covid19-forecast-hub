@@ -24,6 +24,10 @@ this_model_is_unconditional: TRUE
 
 methods: >-
     This model makes predictions about the future, unconditional on particular intervention strategies.
+    Statistical dynamical growth model accounting for population susceptibility.
+
+methods_long: >-
+    This model makes predictions about the future, unconditional on particular intervention strategies.
     The model consists of two processes. The first process is a statistical model of how the 
     number of COVID-19 infections changes over time. The second process maps the number of 
     infections to the reported data. We model the growth of new cases as the product of a 
