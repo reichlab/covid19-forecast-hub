@@ -58,6 +58,7 @@ So far, we have identified a number of experienced teams that are creating forec
  - [GLEAM from Northeastern University](https://www.gleamproject.org/covid-19)
  - [IHME](https://covid19.healthdata.org/united-states-of-america)
  - [LANL](https://covid-19.bsvgateway.org/)
+ - [University of Geneva / Swiss Data Science Center](https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/)
  - [UTAustin](https://covid-19.tacc.utexas.edu/projections/)
 
 Participating teams must provide methodological detail about their approach including a brief description of the methodology and a link to a file (or a file itself) describing the methods used. 

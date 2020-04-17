@@ -4,7 +4,7 @@
 
 source("code/process_geneva_file.R")
 
-dir.create("data-processed/Geneva-GrowthRate", showWarnings = FALSE)
+dir.create("data-processed/Geneva-DeterministicGrowth", showWarnings = FALSE)
 
 # no forecast available for 13 April, can only be used from 20 April on (below code is for testing)
 # files_to_process <- data.frame(
@@ -23,7 +23,8 @@ if(!all(as.Date(files_to_process$timezeroes) %in% templ$timezero)){
 for(i in 1:nrow(files_to_process)) {
   tmp_dat <- process_geneva_file(files_to_process$filenames[i], timezero=files_to_process$timezeroes[i])
   write.csv(tmp_dat,
-            paste0("data-processed/Geneva-GrowthRate/", files_to_process$timezeroes[i], "-Geneva-GrowthRate.csv"),
+            paste0("data-processed/Geneva-DeterministicGrowth/", files_to_process$timezeroes[i],
+                   "-Geneva-DeterministicGrowth.csv"),
             row.names = FALSE)
 }
 
