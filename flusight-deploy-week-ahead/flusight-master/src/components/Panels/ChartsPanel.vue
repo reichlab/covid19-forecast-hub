@@ -59,7 +59,7 @@ div
       li(v-bind:class="[showTimeChart ? 'is-active' : '']" v-on:click="displayTimeChart")
         a Time Chart
   .disclaimer-subtitle
-    | The <a href="https://github.com/reichlab/covid19-forecast-hub" target="_blank">ensemble forecast</a> combines models unconditional on particular interventions being in place (LANL) with those conditional on existing social distancing measures continuing (IHME and MOBS_NEU). CU models assume varying effectiveness of current interventions.
+    | The <a href="https://github.com/reichlab/covid19-forecast-hub" target="_blank">ensemble forecast</a>  combines models unconditional on particular interventions being in place (LANL) with those conditional on existing social distancing measures continuing (IHME). CU models assume varying effectiveness of current interventions.
   .container
     #chart-right(v-show="!showScoresPanel")
 
