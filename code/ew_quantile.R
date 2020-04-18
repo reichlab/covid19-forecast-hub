@@ -53,25 +53,27 @@ pull_all_forecasts <- function(date, model,targets,quantiles=c(0.025,0.5,0.975))
       forecast_data <- single_forecast
     } else {
       forecast_data <- dplyr::full_join(forecast_data, single_forecast) %>%
-        # hard coded excluding US for now
-        dplyr::filter(grepl(targets,target),type=="quantile",location!="US")
+        dplyr::filter(grepl(targets,target),type=="quantile")
     }
   }
   forecast_data$quantile <- as.numeric(forecast_data$quantile)
   forecast_data$value <- as.numeric(forecast_data$value)
-  forecast_data$location <- as.numeric(forecast_data$location)
+  # forecast_data$location <- as.numeric(forecast_data$location)
   forecast_data$type <- as.character(forecast_data$type)
   forecast_data <- forecast_data %>%
     dplyr::filter(quantile %in% quantiles)
   return(forecast_data)
 }
 
-ew_quantile <- function(forecast_data,quantiles=c(0.025,0.5,0.975)) {
+ew_quantile <- function(forecast_data,quantiles=c(0.025,0.5,0.975),national=FALSE) {
   fips <- read.csv("./template/state_fips_codes.csv",stringsAsFactors = FALSE) 
-  # US <- data.frame(cbind("US","US","US"));names(US) <-colnames(fips)
-  # loc <- rbind(fips,US)
-  loc <- fips
-  loc$state_code <- as.numeric(loc$state_code)
+  US <- data.frame(cbind("US","US","US"));names(US) <-colnames(fips)
+  if (national ==TRUE) {
+    loc <- rbind(fips,US)
+  } else {
+    loc <- fips
+    loc$state_code <- as.numeric(loc$state_code)
+  }
   # equal weight quantile
   combined_file <- forecast_data %>%
     na.omit() %>%
