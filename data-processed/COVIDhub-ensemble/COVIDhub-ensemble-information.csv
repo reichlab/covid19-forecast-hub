@@ -1,0 +1,7 @@
+"location","model_name","quantile","forecast_colleceted_date","weight","target"
+"US national-level","CU-60contact","0.025,0.5,0.975","2020-04-13","0.25","1-6 wk ahead cum death"
+"US national-level","CU-70contact","0.025,0.5,0.975","2020-04-13","0.25","1-6 wk ahead cum death"
+"US national-level","CU-80contact","0.025,0.5,0.975","2020-04-13","0.25","1-6 wk ahead cum death"
+"US national-level","IHME-CurveFit","0.025,0.5,0.975","2020-04-13","0.25","1-6 wk ahead cum death"
+"state-level","LANL-GrowthRate","0.025,0.5,0.975","2020-04-13","0.5","1-6 wk ahead cum death"
+"state-level","IHME-CurveFit","0.025,0.5,0.975","2020-04-13","0.5","1-6 wk ahead cum death"
