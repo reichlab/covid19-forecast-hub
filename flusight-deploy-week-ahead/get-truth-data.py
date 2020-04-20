@@ -72,6 +72,10 @@ df_byday = df_truth.rename(columns={"level_0": "date", "state_code": "location",
 
 # select columns
 df_byday = df_byday[["date", "location", "location_name", "value"]]
+
+# change to yyyy/mm/dd format
+df_byday['date'] = pd.to_datetime(df_byday['date'])
+
 df_byday.to_csv('../data-processed/truth-cum-death.csv', index=False)
 
 '''
