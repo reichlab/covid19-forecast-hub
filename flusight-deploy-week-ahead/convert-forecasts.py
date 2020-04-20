@@ -22,7 +22,14 @@ def reformat_forecasts(file_path):
         df = df.merge(fips_codes, left_on='location', right_on='state_code', how='left')
 
     # Only visualize wk ahead forecasts
-    targets = ['1 wk ahead cum death', '2 wk ahead cum death', '3 wk ahead cum death', '4 wk ahead cum death']
+    targets = ['1 wk ahead cum death',
+               '2 wk ahead cum death',
+               '3 wk ahead cum death',
+               '4 wk ahead cum death',
+               '1 wk ahead inc death',
+               '2 wk ahead inc death',
+               '3 wk ahead inc death',
+               '4 wk ahead inc death']
     df = df[df["target"].isin(targets)]
 
     # Only visualize certain states

@@ -12,7 +12,7 @@ rm -r ./data/2019-2020/CU-nointerv
 #rm -r ./data/2019-2020/Imperial-Ensemble1
 #rm -r ./data/2019-2020/Imperial-Ensemble2
 python3 convert-forecasts.py
-python3 get-truth-data.py
+#python3 get-truth-data.py
 
 # Replace already present data
 rm -rf ./flusight-master/data
