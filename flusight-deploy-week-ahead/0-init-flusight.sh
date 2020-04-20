@@ -9,8 +9,8 @@ yarn run test
 yarn run parse-data
 rm -r ./data/NaN-NaN
 rm -r ./data/2019-2020/CU-nointerv
-rm -r ./data/2019-2020/Imperial-Ensemble1
-rm -r ./data/2019-2020/Imperial-Ensemble2
+#rm -r ./data/2019-2020/Imperial-Ensemble1
+#rm -r ./data/2019-2020/Imperial-Ensemble2
 python3 convert-forecasts.py
 python3 get-truth-data.py
 
