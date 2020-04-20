@@ -15,8 +15,8 @@ The University of Texas at Austin
 
 For each US state, we use local data from mobile-phone GPS traces made
 available by [SafeGraph] to quantify the changing impact of
-social-distancingmeasures on ``flattening the curve.''  SafeGraph is a
-data company that aggregates anonymized location data from numerous
+social-distancing measures on ``flattening the curve.''  SafeGraph is
+a data company that aggregates anonymized location data from numerous
 applications in order to provide insights about physical places. To
 enhance privacy, SafeGraph excludes census block group information if
 fewer than five devices visitedan establishment in a month from a
