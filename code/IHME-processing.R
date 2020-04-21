@@ -51,17 +51,7 @@ make_qntl_dat <- function(path) {
       dplyr::mutate(type=ifelse(quantile=="NA","point","quantile"),forecast_date=forecast_date) %>%
       dplyr::rename(target_end_date=date_v)
     # add if for forecast date
-    if (lubridate::wday(forecast_date)=="Thursday"|lubridate::wday(forecast_date)=="Friday"|lubridate::wday(forecast_date)=="Saturday"){
-      death_qntl3_1 <- data[,c(1:3,col_list2)] %>%
-        dplyr::select(-"V1") %>%
-        dplyr::rename(date_v=date) %>%
-        dplyr::mutate(day_v=lubridate::wday(date_v,label = TRUE, abbr = FALSE),
-                      ew=unname(MMWRweek(date_v)[[2]])) %>%
-        dplyr::filter(day_v =="Saturday" & 
-                        ew<(unname(MMWRweek(forecast_date)[[2]])+1)+6 & 
-                        ew>(unname(MMWRweek(forecast_date)[[2]])+1)-1) %>%
-        dplyr::mutate(target_id=paste((ew-(unname(MMWRweek(forecast_date)[[2]])+1))+1,"wk ahead cum death")) 
-    } else {
+    if (lubridate::wday(forecast_date)=="Sunday"|lubridate::wday(forecast_date)=="Monday"){
       death_qntl3_1 <- data[,c(1:3,col_list2)] %>%
         dplyr::select(-"V1") %>%
         dplyr::rename(date_v=date) %>%
@@ -71,6 +61,16 @@ make_qntl_dat <- function(path) {
                         ew<unname(MMWRweek(forecast_date)[[2]])+6 & 
                         ew>unname(MMWRweek(forecast_date)[[2]])-1) %>%
         dplyr::mutate(target_id=paste((ew-unname(MMWRweek(forecast_date)[[2]]))+1,"wk ahead cum death")) 
+    } else {
+      death_qntl3_1 <- data[,c(1:3,col_list2)] %>%
+        dplyr::select(-"V1") %>%
+        dplyr::rename(date_v=date) %>%
+        dplyr::mutate(day_v=lubridate::wday(date_v,label = TRUE, abbr = FALSE),
+                      ew=unname(MMWRweek(date_v)[[2]])) %>%
+        dplyr::filter(day_v =="Saturday" & 
+                        ew<(unname(MMWRweek(forecast_date)[[2]])+1)+6 & 
+                        ew>(unname(MMWRweek(forecast_date)[[2]])+1)-1) %>%
+        dplyr::mutate(target_id=paste((ew-(unname(MMWRweek(forecast_date)[[2]])+1))+1,"wk ahead cum death")) 
     }
     death_qntl3 <- death_qntl3_1 %>%
       dplyr::rename("0.025"=totdea_lower,"0.975"=totdea_upper,"NA"=totdea_mean) %>%
