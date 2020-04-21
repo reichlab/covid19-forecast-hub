@@ -3,9 +3,10 @@ library(cdcForecastUtils)
 library(dplyr)
 library(devtools)
 library(tidyverse)
+library(MMWRweek)
+library(lubridate)
 
 # write get data functions (get quantiles info/location/target from each model)
-
 get_model_information <- function(file) {
   entry <- read.csv(file,colClasses = "character",stringsAsFactors = FALSE) %>%
     dplyr::filter(type!="point")
@@ -32,10 +33,19 @@ get_model_information <- function(file) {
 }
 
 # write quantile functions
-pull_all_forecasts <- function(date, model,targets,quantiles=c(0.025,0.5,0.975)) {
-  # only take files for a given date
-  forecast_files <- list.files("./data-processed", pattern = date, recursive=T)
-  if (length(forecast_files) == 0) stop("No forecasts-check for submissions.")
+# have to update this for ew
+pull_all_forecasts <- function(monday_run_date, model,targets,quantiles=c(0.025,0.5,0.975)) {
+  # have to continue to fix
+  # convert the run date to epiweek
+  ew <- unname(MMWRweek(monday_run_date)[[2]])
+  # only take certain files 
+  forecast_files <- list.files("./data-processed", pattern = "*.csv", recursive=T)
+  forecast_files <- forecast_files[grepl("[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]",forecast_files)]
+  forecast_date<- as.Date(substr(unname(sapply(forecast_files, basename)),1,10))
+  forecast_day <-lubridate::wday(forecast_date,label = TRUE, abbr = FALSE)
+  forecast_ew <-unname(MMWRweek(forecast_date)[[2]])
+  indices<- match(c(4,8),forecast_date)
+  if (length(forecast_files) == 0) stop("No forecasts-check for errors.")
   # remove models
   list_op <- paste(model,collapse="|")
   forecast_files <- forecast_files[(grep(list_op, forecast_files))]
