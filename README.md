@@ -2,6 +2,14 @@
 
 The goal of this repository is to create a standardized set of data on forecasts from experienced teams making projections of cumulative and incident deaths and incident hospitalizations due to COVID-19 in the United States. As time goes on, we hope to add other targets and other locations as well.
 
+* [Raw data](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-raw)
+* [Processed data](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed)
+* [Truth data](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/truth-cum-death.csv)
+* [Ensemble model](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/COVIDhub-ensemble)
+
+* [Interactive Visualization](https://reichlab.io/covid19-forecast-hub/)
+* [Zoltar project](https://zoltardata.com/project/44)
+
 ## Data license and reuse
 We are grateful to the teams who have generated these forecasts. They have spent a huge amount of time and effort in a short amount of time to operationalize these important real-time forecasts. The groups have graciously and courageously made their public data available under different terms and licenses. You will find the licenses (when provided) within the model-specific folders in the [data-raw](./data-raw/) directory. Please consult these licenses before using these data to ensure that you follow the terms under which these data were released.
 
