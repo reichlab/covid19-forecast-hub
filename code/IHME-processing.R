@@ -60,7 +60,7 @@ make_qntl_dat <- function(path) {
         dplyr::filter(day_v =="Saturday" & 
                         ew<unname(MMWRweek(forecast_date)[[2]])+6 & 
                         ew>unname(MMWRweek(forecast_date)[[2]])-1) %>%
-        dplyr::mutate(target_id=paste((ew-unname(MMWRweek(forecast_date)[[2]]))+1,"wk ahead cum death")) 
+        dplyr::mutate(target_id=paste((ew-(unname(MMWRweek(forecast_date)[[2]])+1)),"wk ahead cum death")) 
     } else {
       death_qntl3_1 <- data[,c(1:3,col_list2)] %>%
         dplyr::select(-"V1") %>%
@@ -69,7 +69,7 @@ make_qntl_dat <- function(path) {
                       ew=unname(MMWRweek(date_v)[[2]])) %>%
         dplyr::filter(day_v =="Saturday" & 
                         ew<(unname(MMWRweek(forecast_date)[[2]])+1)+6 & 
-                        ew>(unname(MMWRweek(forecast_date)[[2]])+1)-1) %>%
+                        ew>unname(MMWRweek(forecast_date)[[2]])) %>%
         dplyr::mutate(target_id=paste((ew-(unname(MMWRweek(forecast_date)[[2]])+1))+1,"wk ahead cum death")) 
     }
     death_qntl3 <- death_qntl3_1 %>%
