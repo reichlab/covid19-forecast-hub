@@ -4,14 +4,18 @@
 library(tidyverse)
 library(lubridate)
 
-mobs_filename <- list.files("data-raw/MOBS", pattern=".csv", full.names=TRUE)
+mobs_filenames <- list.files("data-raw/MOBS", pattern=".csv", full.names=TRUE)
+
+dates <- unlist(lapply(mobs_filenames, FUN = function(x) substr(basename(x), 0, 10)))
+
+most_recent_file_idx <- which(as.Date(dates)==max(as.Date(dates)))
+
+mobs_filename <- mobs_filenames[most_recent_file_idx]
 
 forecast_date <- as.Date(substr(basename(mobs_filename), 0, 10))
     
 dat <- read_csv(mobs_filename) %>%
-    rename(target=target_id, location=location_id) %>%
-    mutate(
-        forecast_date = forecast_date,
+    mutate(forecast_date = forecast_date,
         location = str_pad(as.character(location), width = 2, side = "left", pad = "0"),
         target = paste(target, "death"))
 
