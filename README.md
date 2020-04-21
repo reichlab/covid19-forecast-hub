@@ -25,7 +25,7 @@ Forecasts will be represented in [a standard format](#data-model) using quantile
 **What forecast targets will be stored?**
 We will store forecasts on 1 through 7 day ahead _incident_ and _cumulative_ deaths, 1 through 6 week ahead _incident_ and _cumulative_ deaths, and 1 through 6 week ahead _incident_ hospital demand. The targets should be labeled in files as, e.g., "1 day ahead inc death", "1 day ahead cum death", "1 wk ahead inc death", "1 wk ahead cum death", or "1 wk ahead inc hosp". To be clear about how the time periods relate to the time at which a forecast was made, we provide the following specficiations (which are subject to change or re-evaluation as we get further into the project). 
 
-Every submitted forecast will have an associated `forecast date` that corresponds to the day the forecast was made. For day-ahead forecasts with a forecast date of a Monday, a 1 day ahead forecast corresponds to incident deaths on Tuesday or cumulative deaths by the end of Tuesday, 2 day ahead to Wednesday, etc.... 
+Every submitted forecast will have an associated `forecast_date` that corresponds to the day the forecast was made. For day-ahead forecasts with a forecast date of a Monday, a 1 day ahead forecast corresponds to incident deaths on Tuesday or cumulative deaths by the end of Tuesday, 2 day ahead to Wednesday, etc.... 
 <!-- For day-ahead forecasts collected on Thursdays, a 1 day ahead forecast corresponds to Friday, 2 day ahead to Saturday, etc.... -->
 
 For week-ahead forecasts, we will use the specification of epidemiological weeks (EWs) [defined by the US CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf). 
@@ -42,11 +42,11 @@ Most groups are providing their forecasts in a quantile-based format. We have de
  - `target_end_date`: (optional) the date corresponding to the end time of the target, in `YYYY-MM-DD` format. E.g. if the target is "1 wk ahead inc hosp" and this forecast is submitted on Monday `2020-04-20`, then this field should correspond to the Saturday that ends the current week `2020-04-25`. 
  - `location`: a unique id for the location (we have standardized to FIPS codes)
  - `location_name`: (optional) if desired to have a human-readable name for the location, this column may be specified. Note that the `location` column will be considered to be authoritative and for programmatic reading and importing of data, this column will be ignored.
- - `type`: one of either `point` or `quantile`
- - `quantile`: a value between 0 and 1 (inclusive), representing the quantile displayed in this row. if `type=="point"` then `NULL`.
- - `value`: a numeric value representing the value of the cumulative distribution function evaluated at the specified `quantile`
+ - `type`: one of either `"point"` or `"quantile"`
+ - `quantile`: a value between 0 and 1 (inclusive), stating which quantile is displayed in this row. if `type=="point"` then `NA`.
+ - `value`: a numeric value representing the value of the quantile function evaluated at the probability specified in `quantile`
  
-For example, if `quantile` is 0.3 and `value` is 10, then this row is saying that the 30th percentile of the distribution is 10. If `type` is `point` and `value` is 15, then this row is saying that the point estimate from this model is 15. 
+For example, if `quantile` is 0.3 and `value` is 10, then this row is saying that the 30th percentile of the distribution is 10. If `type` is `"point"` and `value` is 15, then this row is saying that the point estimate from this model is 15. 
 
 ## Forecast file format
 Raw data from the `data-raw` subfolders will be processed and put into corresponding subfolders in `data-processed`. All files must follow the format outlined above. A [template file](template/2020-04-13-TeamName-ModelName.csv) in the correct format for two targets in a single location has been included for clarity. 
