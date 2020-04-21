@@ -46,5 +46,5 @@ all_dat <- bind_rows(joined_dat, point_ests) %>%
     select(forecast_date, target, target_end_date, location, location_name, type, quantile, value)
 
 
-write_csv(all_dat, "data-processed/MOBS_NEU-GLEAM_COVID/2020-04-13-MOBS_NEU-GLEAM_COVID.csv")
+write_csv(all_dat, paste0("data-processed/MOBS_NEU-GLEAM_COVID/", dates[most_recent_file_idx],"-MOBS_NEU-GLEAM_COVID.csv"))
 
