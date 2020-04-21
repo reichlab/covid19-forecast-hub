@@ -8,11 +8,9 @@ The goal of this repository is to create a standardized set of data on forecasts
 * [Zoltar project](https://zoltardata.com/project/44)
 * [Interactive Visualization](https://reichlab.io/covid19-forecast-hub/)
 
-<div align="center">
- <a href = "https://reichlab.io/covid19-forecast-hub/">
-  <img src="https://github.com/reichlab/covid19-forecast-hub/blob/readme-changes/chart.png" width="500" alt="chart">
- </a>
-</div>
+<a href = "https://reichlab.io/covid19-forecast-hub/">
+ <img src="https://github.com/reichlab/covid19-forecast-hub/blob/readme-changes/chart.png" width="500" alt="chart">
+</a>
 
 ## Data license and reuse
 We are grateful to the teams who have generated these forecasts. They have spent a huge amount of time and effort in a short amount of time to operationalize these important real-time forecasts. The groups have graciously and courageously made their public data available under different terms and licenses. You will find the licenses (when provided) within the model-specific folders in the [data-raw](./data-raw/) directory. Please consult these licenses before using these data to ensure that you follow the terms under which these data were released.
