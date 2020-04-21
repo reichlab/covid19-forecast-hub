@@ -6,7 +6,6 @@ The goal of this repository is to create a standardized set of data on forecasts
 * [Processed data](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed)
 * [Truth data](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/truth-cum-death.csv)
 * [Ensemble model](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/COVIDhub-ensemble)
-
 * [Interactive Visualization](https://reichlab.io/covid19-forecast-hub/)
 * [Zoltar project](https://zoltardata.com/project/44)
 
