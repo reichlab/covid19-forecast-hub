@@ -57,12 +57,15 @@ for (j in 1:7) {
     select(-contains("quantilecm")) %>%
     mutate(target = sprintf("%i day ahead inc deaths", j),
            type = "quantile") %>%
-    select(target, location, location_name, everything())
+    mutate(forecast_date = today()) %>% 
+    select(forecast_date, target, target_end_date = date,
+           location, location_name, everything())
 
   sub_inc_long <- sub_inc %>%
     pivot_longer(cols = starts_with("quant")) %>%
     left_join(quantnamemap_inc) %>%
-    select(target, location, location_name, type, quantile, value)
+    select(forecast_date, target, target_end_date, location,
+           location_name, type, quantile, value)
 
   incDfList[[j]] <- sub_inc_long
 
@@ -72,12 +75,15 @@ for (j in 1:7) {
     select(-contains("quantile_")) %>%
     mutate(target = sprintf("%i day ahead cum deaths", j),
            type = "quantile") %>%
-    select(target, location, location_name, everything())
+    mutate(forecast_date = today()) %>% 
+    select(forecast_date, target, target_end_date = date,
+           location, location_name, everything())
 
   sub_cum_long <- sub_cum %>%
     pivot_longer(cols = starts_with("quant")) %>%
-    left_join(quantnamemap_cum) %>%
-    select(target, location, location_name, type, quantile, value)
+    left_join(quantnamemap_cum) %>%    
+    select(forecast_date, target, target_end_date, location,
+           location_name, type, quantile, value)
 
   cumDfList[[j]] <- sub_cum_long
   
@@ -96,31 +102,39 @@ for (j in 1:6) {
 
   ## INC
   sub_incWeek <- raw %>%
-    filter(date == today() + j * 7) %>%
+    filter(date == today() + 5 + (j - 1) * 7) %>%
     select(-contains("quantilecm")) %>%
-    mutate(target = sprintf("%i week ahead inc deaths", j),
+    mutate(target = sprintf("%i wk ahead inc deaths", j),
            type = "quantile") %>%
-    select(target, location, location_name, everything())
+    mutate(forecast_date = today()) %>% 
+    select(forecast_date, target, target_end_date = date,
+           location, location_name, everything())
 
   sub_incWeek_long <- sub_incWeek %>%
     pivot_longer(cols = starts_with("quant")) %>%
     left_join(quantnamemap_inc) %>%
-    select(target, location, location_name, type, quantile, value)
+    select(forecast_date, target, target_end_date, location,
+           location_name, type, quantile, value)
+
 
   incWeekDfList[[j]] <- sub_incWeek_long
 
   ## CUM
   sub_cumWeek <- raw %>%
-    filter(date == today() + j * 7) %>%
+    filter(date == today() + 5 + (j - 1) * 7) %>%
     select(-contains("quantile_")) %>%
-    mutate(target = sprintf("%i week ahead cum deaths", j),
+    mutate(target = sprintf("%i wk ahead cum deaths", j),
            type = "quantile") %>%
-    select(target, location, location_name, everything())
+
+    mutate(forecast_date = today()) %>% 
+    select(forecast_date, target, target_end_date = date,
+           location, location_name, everything())
 
   sub_cumWeek_long <- sub_cumWeek %>%
     pivot_longer(cols = starts_with("quant")) %>%
     left_join(quantnamemap_cum) %>%
-    select(target, location, location_name, type, quantile, value)
+    select(forecast_date, target, target_end_date, location,
+           location_name, type, quantile, value)
 
   cumWeekDfList[[j]] <- sub_cumWeek_long
 
@@ -141,7 +155,7 @@ deathSummaryPoint <- deathSummary %>%
 
 deathSummaryFinal <- rbind(deathSummary, deathSummaryPoint) %>%
   arrange(location,
-          target %>% str_detect("week"),
+          target %>% str_detect("wk"),
           target %>% str_detect("cum"),
           target, type, quantile)
 
