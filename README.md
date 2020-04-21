@@ -2,7 +2,10 @@
 
 The goal of this repository is to create a standardized set of data on forecasts from experienced teams making projections of cumulative and incident deaths and incident hospitalizations due to COVID-19 in the United States. As time goes on, we hope to add other targets and other locations as well.
 
-![Covid-19 forecast hub chart](https://github.com/reichlab/covid19-forecast-hub/blob/readme-changes/chart.png)
+<a href = "https://reichlab.io/covid19-forecast-hub/">
+ <img src="https://github.com/reichlab/covid19-forecast-hub/blob/readme-changes/chart.png#thumbnail" width="500" alt="chart">
+ </a>
+
 * [Raw data](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-raw)
 * [Processed data](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed)
 * [Truth data](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/truth-cum-death.csv)
