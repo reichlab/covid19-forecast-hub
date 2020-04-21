@@ -9,7 +9,10 @@ for(dir in directories){
   cat("----------------------------------\n")
   cat("\n \n Starting directory ", dir, "...\n\n")
   files_temp <- list.files(dir)
-  files_temp <- files_temp[grepl("csv", files_temp)]
+  # select files which look roughly like forecast files:
+  files_temp <- files_temp[grepl("csv", files_temp) &
+                             (grepl("2020-", files_temp) |
+                                grepl("2021-", files_temp))]
 
   plausibility_checks[[dir]] <- list()
 

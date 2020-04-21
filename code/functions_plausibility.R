@@ -50,7 +50,8 @@ verify_filename <- function(filename){
 #'
 verify_colnames <- function(entry){
   coln <- colnames(entry)
-  colnames_template <- c("target", "location", "location_name", "type", "quantile", "value")
+  colnames_template <- c("forecast_date", "target", "target_end_date",
+                         "location", "location_name", "type", "quantile", "value")
   compulsory_colnames_template <- c("target", "location", "type", "quantile", "value") # location_name is optional
 
   result <- TRUE
@@ -70,10 +71,8 @@ verify_colnames <- function(entry){
   }
 
   # check order
-  if((length(coln) == length(colnames_template) &&
-        ! all(coln == colnames_template)) ||
-     (length(coln) == length(compulsory_colnames_template) &&
-        ! all(coln == compulsory_colnames_template))){
+  colnames_template_available <- colnames_template[colnames_template %in% coln]
+  if(any(coln != colnames_template_available)){
     warning("Order of coumns does not correspond to template.")
     result <- FALSE
   }
@@ -118,9 +117,13 @@ verify_no_quantile_crossings <- function(entry){
 #'  a matrix with the locations and quantiles (or "point" for point forecasts) concerned
 
 verify_monotonicity_cumulative <- function(entry){
+  # restrict to compulsory columns (otherwise warnings when reshaping):
+  entry <- entry[, c("target", "location", "type", "quantile", "value")]
+
   # daily forecasts (cumulative only):
   entry_daily <- subset(entry, grepl("day", target) & grepl("cum", target))
   entry_daily$quantile[entry_daily$type == "point"] <- "point"
+
   # sort by target so columns in wide format will be in right order:
   entry_daily <- entry_daily[order(nchar(entry_daily$target), entry_daily$target), ]
   # transform to wide:
