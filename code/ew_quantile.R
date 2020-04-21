@@ -37,7 +37,7 @@ get_model_information <- function(file) {
 pull_all_forecasts <- function(monday_run_date, model,targets,quantiles=c(0.025,0.5,0.975)) {
   # have to continue to fix
   # convert the run date to epiweek
-  ew <- unname(MMWRweek(monday_run_date)[[2]])
+  ew <- unname(MMWRweek(as.Date("2020-04-20"))[[2]])
   # only take certain files 
   forecast_files <- list.files("./data-processed", pattern = "*.csv", recursive=T)
   forecast_files <- forecast_files[grepl("[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]",forecast_files)]
