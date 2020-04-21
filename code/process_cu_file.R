@@ -38,7 +38,7 @@ process_cu_file <- function(cu_filepath, file, forecast_date) {
   day <- weekdays(forecast_date, abbreviate = TRUE)
 
   # read in data:
-  dat <- read.csv(paste0(cu_filepath, "/cdchosp/", file),
+  dat <- read.csv(paste0(cu_filepath, "/cdc_hosp/", file),
                   stringsAsFactors = FALSE)
   # format date variable:
   dat$Date <- as.Date(dat$Date, format = "%m/%d/%y")

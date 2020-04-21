@@ -18,7 +18,7 @@ scenarios <- c("60contact", "70contact", "80contact", "nointerv")
 
 for(i in seq_along(folders_to_process)) {
   # check if file naming still the same:
-  tmp_ls_files <- list.files(paste0(folders_to_process[i], "/cdchosp"))
+  tmp_ls_files <- list.files(paste0(folders_to_process[i], "/cdc_hosp"))
   if(!all(paste0("state_cdchosp_", scenarios, ".csv") %in% tmp_ls_files)){
     stop("Not all expected files found.")
   }
