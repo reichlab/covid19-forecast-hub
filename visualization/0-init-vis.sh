@@ -13,10 +13,10 @@ python3 ./scripts/convert-forecasts.py
 python3 ./scripts/get-truth-data.py
 
 # Replace already present data
-rm -rf ./flusight-master/data
-mv ./data ./flusight-master
+rm -rf ./vis-master/data
+mv ./data ./vis-master
 
-cd ./flusight-master
+cd ./vis-master
 yarn
 yarn run parse
 #yarn run test

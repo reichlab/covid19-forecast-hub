@@ -4,15 +4,15 @@
 set -e
 
 # Change branding and metadata of website
-#rm ./flusight-master/config.yaml
-cp ./config.yaml ./flusight-master/config.yaml
+#rm ./vis-master/config.yaml
+cp ./config.yaml ./vis-master/config.yaml
 
 # # Change statcounter snippet
-# rm ./flusight-master/src/assets/analytics.js
-# mv ./analytics.js ./flusight-master/src/assets/analytics.js
+# rm ./vis-master/src/assets/analytics.js
+# mv ./analytics.js ./vis-master/src/assets/analytics.js
 
 # Updating comment to trigger new travis build
-cd ./flusight-master
+cd ./vis-master
 
 # Clean footer
 sed -i "" '/.modal#dis/,/footer.modal-card/d' ./src/components/Foot.vue
@@ -45,4 +45,4 @@ sed -i "" 's/node build\/build.js/node --max_old_space_size=6000 build\/build.js
 yarn run build
 #cp -r ./dist/* ../../ # Copy to repo root
 cd .. # in ./flusight-deploy
-#rm -rf ./flusight-master/data
+#rm -rf ./vis-master/data

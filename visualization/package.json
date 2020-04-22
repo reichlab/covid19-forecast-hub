@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Deploy script for flusight",
   "scripts": {
-    "test": "mocha ./test-data.js -R min",
+    "test": "mocha ./scripts/test-data.js -R min",
     "parse-data": "node ./scripts/parse-data.js"
   },
   "author": "Abhinav Tushar",

@@ -6,7 +6,7 @@
 
 node_modules
 visualization/data
-visualization/flusight-master/data
+visualization/vis-master/data
 .ipynb_checkpoints
 covid19-forecast-hub.Rproj
 

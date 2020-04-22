@@ -7,14 +7,14 @@
 set -e
 
 # Change branding and metadata of website
-rm ./flusight-master/config.yaml -f
-cp ./config.yaml ./flusight-master
+rm ./vis-master/config.yaml -f
+cp ./config.yaml ./vis-master
 
 # # Change statcounter snippet
-# rm ./flusight-master/src/assets/analytics.js -f
-# cp ./analytics.js ./flusight-master/src/assets/analytics.js
+# rm ./vis-master/src/assets/analytics.js -f
+# cp ./analytics.js ./vis-master/src/assets/analytics.js
 
-cd ./flusight-master
+cd ./vis-master
 
 # Clean footer
 sed -i '/.modal#dis/,/footer.modal-card/d' ./src/components/Foot.vue

@@ -3,9 +3,9 @@
 set -e
 
 # Build the site
-cd ./flusight-master
+cd ./vis-master
 
 yarn run build
 # cp -r ./dist/* ../../ # Copy to repo root
-cd .. # in ./flusight-deploy
-rm -rf ./flusight-master/data
+cd .. # in ./visualization
+rm -rf ./vis-master/data

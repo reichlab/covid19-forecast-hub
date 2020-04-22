@@ -2,26 +2,25 @@
 
 ### Building the visualization locally
 ```
-npm install
-bash ./0-init-flusight.sh
+bash ./0-init-vis.sh
 
 # if on mac
-bash ./2-mac-build-flusight.sh
+bash ./2-mac-build-vis.sh
 
 # if on linux
-bash ./1-patch-flusight.sh
-bash ./2-build-flusight.sh
+bash ./1-patch-vis.sh
+bash ./2-build-vis.sh
 ```
 
 ### Serving the visualization locally 
 If you have Python 2.x:
 ```
-cd flusight-master/dist
+cd vis-master/dist
 python -m SimpleHTTPServer
 ```
 
 If you have Python 3.x:
 ```
-cd flusight-master/dist
+cd vis-master/dist
 python3 -m http.server
 ```
