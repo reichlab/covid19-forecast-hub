@@ -27,7 +27,7 @@ echo "Running test script..."
 npm install
 sudo apt-get install python3-pandas
 sudo apt install python3-pip
-pip3 install git+https://github.com/reichlab/zoltpy/
+pip install git+https://github.com/reichlab/zoltpy/
 source ./travis/test.sh
 echo "build complete"
 
