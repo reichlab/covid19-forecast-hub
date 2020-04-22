@@ -3589,7 +3589,7 @@ date,location,location_name,value
 2020-03-30,US,US,3102
 2020-03-31,01,Alabama,23
 2020-03-31,02,Alaska,3
-2020-03-31,04,Arizona,24
+2020-03-31,04,Arizona,25
 2020-03-31,05,Arkansas,8
 2020-03-31,06,California,173
 2020-03-31,08,Colorado,69
@@ -3638,10 +3638,10 @@ date,location,location_name,value
 2020-03-31,54,West Virginia,1
 2020-03-31,55,Wisconsin,25
 2020-03-31,56,Wyoming,0
-2020-03-31,US,US,4037
+2020-03-31,US,US,4038
 2020-04-01,01,Alabama,27
 2020-04-01,02,Alaska,3
-2020-04-01,04,Arizona,29
+2020-04-01,04,Arizona,32
 2020-04-01,05,Arkansas,10
 2020-04-01,06,California,199
 2020-04-01,08,Colorado,69
@@ -3690,10 +3690,10 @@ date,location,location_name,value
 2020-04-01,54,West Virginia,1
 2020-04-01,55,Wisconsin,27
 2020-04-01,56,Wyoming,0
-2020-04-01,US,US,4992
+2020-04-01,US,US,4995
 2020-04-02,01,Alabama,32
 2020-04-02,02,Alaska,3
-2020-04-02,04,Arizona,32
+2020-04-02,04,Arizona,35
 2020-04-02,05,Arkansas,12
 2020-04-02,06,California,238
 2020-04-02,08,Colorado,80
@@ -3742,10 +3742,10 @@ date,location,location_name,value
 2020-04-02,54,West Virginia,2
 2020-04-02,55,Wisconsin,38
 2020-04-02,56,Wyoming,0
-2020-04-02,US,US,6291
+2020-04-02,US,US,6294
 2020-04-03,01,Alabama,38
 2020-04-03,02,Alaska,3
-2020-04-03,04,Arizona,41
+2020-04-03,04,Arizona,44
 2020-04-03,05,Arkansas,12
 2020-04-03,06,California,265
 2020-04-03,08,Colorado,97
@@ -3794,7 +3794,7 @@ date,location,location_name,value
 2020-04-03,54,West Virginia,2
 2020-04-03,55,Wisconsin,51
 2020-04-03,56,Wyoming,0
-2020-04-03,US,US,7414
+2020-04-03,US,US,7417
 2020-04-04,01,Alabama,44
 2020-04-04,02,Alaska,5
 2020-04-04,04,Arizona,52
@@ -3826,7 +3826,7 @@ date,location,location_name,value
 2020-04-04,32,Nevada,46
 2020-04-04,33,New Hampshire,7
 2020-04-04,34,New Jersey,846
-2020-04-04,35,New Mexico,10
+2020-04-04,35,New Mexico,11
 2020-04-04,36,New York,3544
 2020-04-04,37,North Carolina,34
 2020-04-04,38,North Dakota,3
@@ -3846,7 +3846,7 @@ date,location,location_name,value
 2020-04-04,54,West Virginia,2
 2020-04-04,55,Wisconsin,54
 2020-04-04,56,Wyoming,0
-2020-04-04,US,US,8386
+2020-04-04,US,US,8387
 2020-04-05,01,Alabama,45
 2020-04-05,02,Alaska,6
 2020-04-05,04,Arizona,64
@@ -4005,7 +4005,7 @@ date,location,location_name,value
 2020-04-07,US,US,12794
 2020-04-08,01,Alabama,66
 2020-04-08,02,Alaska,7
-2020-04-08,04,Arizona,80
+2020-04-08,04,Arizona,89
 2020-04-08,05,Arkansas,18
 2020-04-08,06,California,495
 2020-04-08,08,Colorado,193
@@ -4054,10 +4054,10 @@ date,location,location_name,value
 2020-04-08,54,West Virginia,4
 2020-04-08,55,Wisconsin,100
 2020-04-08,56,Wyoming,0
-2020-04-08,US,US,14695
+2020-04-08,US,US,14704
 2020-04-09,01,Alabama,70
 2020-04-09,02,Alaska,7
-2020-04-09,04,Arizona,89
+2020-04-09,04,Arizona,98
 2020-04-09,05,Arkansas,21
 2020-04-09,06,California,544
 2020-04-09,08,Colorado,193
@@ -4106,10 +4106,10 @@ date,location,location_name,value
 2020-04-09,54,West Virginia,5
 2020-04-09,55,Wisconsin,111
 2020-04-09,56,Wyoming,0
-2020-04-09,US,US,16544
+2020-04-09,US,US,16553
 2020-04-10,01,Alabama,80
 2020-04-10,02,Alaska,7
-2020-04-10,04,Arizona,97
+2020-04-10,04,Arizona,106
 2020-04-10,05,Arkansas,21
 2020-04-10,06,California,583
 2020-04-10,08,Colorado,226
@@ -4158,10 +4158,10 @@ date,location,location_name,value
 2020-04-10,54,West Virginia,5
 2020-04-10,55,Wisconsin,128
 2020-04-10,56,Wyoming,0
-2020-04-10,US,US,18586
+2020-04-10,US,US,18595
 2020-04-11,01,Alabama,92
 2020-04-11,02,Alaska,8
-2020-04-11,04,Arizona,108
+2020-04-11,04,Arizona,117
 2020-04-11,05,Arkansas,25
 2020-04-11,06,California,604
 2020-04-11,08,Colorado,250
@@ -4210,10 +4210,10 @@ date,location,location_name,value
 2020-04-11,54,West Virginia,5
 2020-04-11,55,Wisconsin,137
 2020-04-11,56,Wyoming,0
-2020-04-11,US,US,20462
+2020-04-11,US,US,20471
 2020-04-12,01,Alabama,93
 2020-04-12,02,Alaska,8
-2020-04-12,04,Arizona,115
+2020-04-12,04,Arizona,125
 2020-04-12,05,Arkansas,27
 2020-04-12,06,California,640
 2020-04-12,08,Colorado,289
@@ -4262,10 +4262,10 @@ date,location,location_name,value
 2020-04-12,54,West Virginia,6
 2020-04-12,55,Wisconsin,144
 2020-04-12,56,Wyoming,0
-2020-04-12,US,US,22019
+2020-04-12,US,US,22029
 2020-04-13,01,Alabama,99
 2020-04-13,02,Alaska,8
-2020-04-13,04,Arizona,122
+2020-04-13,04,Arizona,132
 2020-04-13,05,Arkansas,29
 2020-04-13,06,California,714
 2020-04-13,08,Colorado,306
@@ -4314,10 +4314,10 @@ date,location,location_name,value
 2020-04-13,54,West Virginia,8
 2020-04-13,55,Wisconsin,154
 2020-04-13,56,Wyoming,1
-2020-04-13,US,US,23528
+2020-04-13,US,US,23538
 2020-04-14,01,Alabama,114
 2020-04-14,02,Alaska,9
-2020-04-14,04,Arizona,131
+2020-04-14,04,Arizona,143
 2020-04-14,05,Arkansas,32
 2020-04-14,06,California,767
 2020-04-14,08,Colorado,327
@@ -4366,10 +4366,10 @@ date,location,location_name,value
 2020-04-14,54,West Virginia,9
 2020-04-14,55,Wisconsin,170
 2020-04-14,56,Wyoming,1
-2020-04-14,US,US,25831
+2020-04-14,US,US,25843
 2020-04-15,01,Alabama,118
 2020-04-15,02,Alaska,9
-2020-04-15,04,Arizona,142
+2020-04-15,04,Arizona,155
 2020-04-15,05,Arkansas,33
 2020-04-15,06,California,860
 2020-04-15,08,Colorado,328
@@ -4418,10 +4418,10 @@ date,location,location_name,value
 2020-04-15,54,West Virginia,10
 2020-04-15,55,Wisconsin,183
 2020-04-15,56,Wyoming,1
-2020-04-15,US,US,28325
+2020-04-15,US,US,28338
 2020-04-16,01,Alabama,133
 2020-04-16,02,Alaska,9
-2020-04-16,04,Arizona,150
+2020-04-16,04,Arizona,164
 2020-04-16,05,Arkansas,37
 2020-04-16,06,California,956
 2020-04-16,08,Colorado,355
@@ -4470,10 +4470,10 @@ date,location,location_name,value
 2020-04-16,54,West Virginia,12
 2020-04-16,55,Wisconsin,197
 2020-04-16,56,Wyoming,2
-2020-04-16,US,US,32916
+2020-04-16,US,US,32930
 2020-04-17,01,Alabama,148
 2020-04-17,02,Alaska,9
-2020-04-17,04,Arizona,169
+2020-04-17,04,Arizona,183
 2020-04-17,05,Arkansas,37
 2020-04-17,06,California,1037
 2020-04-17,08,Colorado,372
@@ -4522,7 +4522,7 @@ date,location,location_name,value
 2020-04-17,54,West Virginia,16
 2020-04-17,55,Wisconsin,206
 2020-04-17,56,Wyoming,2
-2020-04-17,US,US,36773
+2020-04-17,US,US,36787
 2020-04-18,01,Alabama,153
 2020-04-18,02,Alaska,9
 2020-04-18,04,Arizona,180
@@ -4679,3 +4679,55 @@ date,location,location_name,value
 2020-04-20,55,Wisconsin,230
 2020-04-20,56,Wyoming,2
 2020-04-20,US,US,42094
+2020-04-21,01,Alabama,183
+2020-04-21,02,Alaska,9
+2020-04-21,04,Arizona,208
+2020-04-21,05,Arkansas,42
+2020-04-21,06,California,1282
+2020-04-21,08,Colorado,483
+2020-04-21,09,Connecticut,1423
+2020-04-21,10,Delaware,82
+2020-04-21,11,District of Columbia,112
+2020-04-21,12,Florida,867
+2020-04-21,13,Georgia,798
+2020-04-21,15,Hawaii,10
+2020-04-21,16,Idaho,48
+2020-04-21,17,Illinois,1468
+2020-04-21,18,Indiana,635
+2020-04-21,19,Iowa,83
+2020-04-21,20,Kansas,109
+2020-04-21,21,Kentucky,171
+2020-04-21,22,Louisiana,1405
+2020-04-21,23,Maine,36
+2020-04-21,24,Maryland,652
+2020-04-21,25,Massachusetts,1961
+2020-04-21,26,Michigan,2575
+2020-04-21,27,Minnesota,160
+2020-04-21,28,Mississippi,183
+2020-04-21,29,Missouri,224
+2020-04-21,30,Montana,12
+2020-04-21,31,Nebraska,33
+2020-04-21,32,Nevada,163
+2020-04-21,33,New Hampshire,42
+2020-04-21,34,New Jersey,4753
+2020-04-21,35,New Mexico,58
+2020-04-21,36,New York,19104
+2020-04-21,37,North Carolina,245
+2020-04-21,38,North Dakota,13
+2020-04-21,39,Ohio,557
+2020-04-21,40,Oklahoma,164
+2020-04-21,41,Oregon,78
+2020-04-21,42,Pennsylvania,1614
+2020-04-21,44,Rhode Island,171
+2020-04-21,45,South Carolina,124
+2020-04-21,46,South Dakota,8
+2020-04-21,47,Tennessee,157
+2020-04-21,48,Texas,533
+2020-04-21,49,Utah,32
+2020-04-21,50,Vermont,40
+2020-04-21,51,Virginia,324
+2020-04-21,53,Washington,664
+2020-04-21,54,West Virginia,26
+2020-04-21,55,Wisconsin,244
+2020-04-21,56,Wyoming,2
+2020-04-21,US,US,44845
