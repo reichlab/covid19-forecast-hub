@@ -1,8 +1,8 @@
 const yaml = require('js-yaml')
 const fs = require('fs-extra')
 const path = require('path')
-const models = require('./scripts/modules/models')
-const util = require('./scripts/modules/util')
+const models = require('./modules/models')
+const util = require('./modules/util')
 const mmwr = require('mmwr-week')
 const moment = require('moment')
 

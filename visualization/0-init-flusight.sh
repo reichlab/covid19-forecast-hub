@@ -9,8 +9,8 @@ yarn run test
 yarn run parse-data
 rm -r ./data/NaN-NaN
 rm -r ./data/2019-2020/CU-nointerv
-python3 convert-forecasts.py
-python3 get-truth-data.py
+python3 ./scripts/convert-forecasts.py
+python3 ./scripts/get-truth-data.py
 
 # Replace already present data
 rm -rf ./flusight-master/data

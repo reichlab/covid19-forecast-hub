@@ -4,7 +4,7 @@
   "description": "Deploy script for flusight",
   "scripts": {
     "test": "mocha ./test-data.js -R min",
-    "parse-data": "node ./parse-data.js"
+    "parse-data": "node ./scripts/parse-data.js"
   },
   "author": "Abhinav Tushar",
   "dependencies": {
