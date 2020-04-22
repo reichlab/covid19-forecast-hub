@@ -46,7 +46,7 @@ process_geneva_file <- function(geneva_filepath, forecast_date){
 
   # transform to wide format, tidy up:
   daily_dat <- reshape(dat, direction = "long", varying = list(c("per.day", "cumulative")),
-                 times = c("day ahead inc death", "days ahead cum death"))
+                 times = c("day ahead inc death", "day ahead cum death"))
   daily_dat$id <- NULL
   rownames(daily_dat) <- NULL
 
