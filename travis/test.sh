@@ -2,4 +2,4 @@
 
 # test covid forecast submission formatting
 echo "TESTING SUBMISSIONS..."
-python code/validation/test-formatting.py
+python3 code/validation/test-formatting.py
