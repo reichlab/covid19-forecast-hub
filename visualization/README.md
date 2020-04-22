@@ -1,5 +1,9 @@
 # Interactive Visualization
 
+<a href = "https://reichlab.io/covid19-forecast-hub/">
+ <img src="https://github.com/reichlab/covid19-forecast-hub/blob/master/visualization/flusight-master/chart.png" width="500" alt="chart">
+</a>
+
 ### Building the visualization locally
 ```
 npm install
