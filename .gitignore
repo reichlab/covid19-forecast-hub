@@ -5,6 +5,7 @@
 .Ruserdata
 
 node_modules
+visualization/flusight-master/data
 .ipynb_checkpoints
 covid19-forecast-hub.Rproj
 
