@@ -30,7 +30,8 @@ make_qntl_dat <- function(path) {
     death_qntl1 <- data[,c(1:3,col_list1)] %>%
       dplyr::select(-"V1") %>%
       dplyr::rename(date_v=date) %>%
-      dplyr::filter(as.Date(as.character(date_v)) %in% c(forecast_date+1:7)) %>%
+      # dplyr::filter(as.Date(as.character(date_v)) %in% c(forecast_date+1:7)) %>%
+      dplyr::filter(as.Date(as.character(date_v)) > forecast_date) %>%
       dplyr::mutate(target_id=paste(difftime(as.Date(as.character(date_v)),forecast_date,units="days"),"day ahead inc death")) %>%
       dplyr::rename("0.025"=deaths_lower,"0.975"=deaths_upper,"NA"=deaths_mean) %>%
       gather(quantile, value, -c(location, date_v, target_id)) %>%
@@ -42,7 +43,8 @@ make_qntl_dat <- function(path) {
     death_qntl2 <- data[,c(1:3,col_list2)] %>%
       dplyr::select(-"V1") %>%
       dplyr::rename(date_v=date) %>%
-      dplyr::filter(as.Date(as.character(date_v)) %in% c(forecast_date+1:7)) %>%
+      # dplyr::filter(as.Date(as.character(date_v)) %in% c(forecast_date+1:7)) %>%
+      dplyr::filter(as.Date(as.character(date_v)) > forecast_date) %>%
       dplyr::mutate(target_id=paste(difftime(as.Date(as.character(date_v)),forecast_date,units="days"),"day ahead cum death")) %>%
       dplyr::rename("0.025"=totdea_lower,"0.975"=totdea_upper,"NA"=totdea_mean) %>%
       gather(quantile, value, -c(location, date_v, target_id)) %>%
@@ -57,9 +59,10 @@ make_qntl_dat <- function(path) {
         dplyr::rename(date_v=date) %>%
         dplyr::mutate(day_v=lubridate::wday(date_v,label = TRUE, abbr = FALSE),
                       ew=unname(MMWRweek(date_v)[[2]])) %>%
-        dplyr::filter(day_v =="Saturday" & 
-                        ew<unname(MMWRweek(forecast_date)[[2]])+6 & 
-                        ew>unname(MMWRweek(forecast_date)[[2]])-1) %>%
+        # dplyr::filter(day_v =="Saturday" & 
+        #                 ew<unname(MMWRweek(forecast_date)[[2]])+6 & 
+        #                 ew>unname(MMWRweek(forecast_date)[[2]])-1) %>%
+        dplyr::filter(day_v =="Saturday" & ew>unname(MMWRweek(forecast_date)[[2]])-1) %>%
         dplyr::mutate(target_id=paste((ew-(unname(MMWRweek(forecast_date)[[2]]))+1),"wk ahead cum death")) 
     } else {
       death_qntl3_1 <- data[,c(1:3,col_list2)] %>%
@@ -67,9 +70,10 @@ make_qntl_dat <- function(path) {
         dplyr::rename(date_v=date) %>%
         dplyr::mutate(day_v=lubridate::wday(date_v,label = TRUE, abbr = FALSE),
                       ew=unname(MMWRweek(date_v)[[2]])) %>%
-        dplyr::filter(day_v =="Saturday" & 
-                        ew<(unname(MMWRweek(forecast_date)[[2]])+1)+6 & 
-                        ew>unname(MMWRweek(forecast_date)[[2]])) %>%
+        # dplyr::filter(day_v =="Saturday" & 
+        #                 ew<(unname(MMWRweek(forecast_date)[[2]])+1)+6 & 
+        #                 ew>unname(MMWRweek(forecast_date)[[2]])) %>%
+        dplyr::filter(day_v =="Saturday" & ew>unname(MMWRweek(forecast_date)[[2]])) %>%
         dplyr::mutate(target_id=paste((ew-(unname(MMWRweek(forecast_date)[[2]])+1))+1,"wk ahead cum death")) 
     }
     death_qntl3 <- death_qntl3_1 %>%
@@ -89,11 +93,12 @@ make_qntl_dat <- function(path) {
     comb$quantile[which(comb$quantile=="NA")] <- NA
     comb$quantile <- as.numeric(comb$quantile)
     comb$value <- as.numeric(comb$value)
-    point_ests <- comb %>%
-      filter(is.na(quantile))
-    point_ests$quantile<-0.5
-    point_ests$type<-"quantile"
-    final<- rbind(comb,point_ests) %>%
+    # point_ests <- comb %>%
+    #   filter(is.na(quantile))
+    # point_ests$quantile<-0.5
+    # point_ests$type<-"quantile"
+    # final<- rbind(comb,point_ests) %>%
+    final<- comb %>%
       dplyr::select(forecast_date,target_id,target_end_date,location_id,location_name,type,quantile,value) %>%
       dplyr::rename(target=target_id,location=location_id) %>%
       arrange(location,type,quantile,target)
