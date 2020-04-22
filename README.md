@@ -8,7 +8,7 @@ The goal of this repository is to create a standardized set of data on forecasts
 * [Interactive Visualization](https://reichlab.io/covid19-forecast-hub/)
 
 <a href = "https://reichlab.io/covid19-forecast-hub/">
- <img src="https://github.com/reichlab/covid19-forecast-hub/blob/readme-changes/chart.png" width="500" alt="chart">
+ <img src="https://github.com/reichlab/covid19-forecast-hub/blob/master/visualization/flusight-master/chart.png" width="500" alt="chart">
 </a>
 
 ## Data license and reuse
