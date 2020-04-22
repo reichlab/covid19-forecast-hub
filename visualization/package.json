@@ -1,0 +1,24 @@
+{
+  "name": "flusight-deploy",
+  "version": "1.0.0",
+  "description": "Deploy script for flusight",
+  "scripts": {
+    "test": "mocha ./scripts/test-data.js -R min",
+    "parse-data": "node ./scripts/parse-data.js"
+  },
+  "author": "Abhinav Tushar",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "d3-collection": "^1.0.7",
+    "fs-extra": "^4.0.3",
+    "js-yaml": "^3.13.1",
+    "mocha": "^5.2.0",
+    "nan": "^2.11.1",
+    "node-sass": "^4.9.4",
+    "papaparse": "^4.6.1",
+    "wildcard": "^2.0.0"
+  },
+  "optionalDependencies": {
+    "fsevents": "^1.2.4"
+  }
+}
