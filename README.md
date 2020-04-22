@@ -1,4 +1,5 @@
 # Repository of COVID-19 forecasts in the US
+<img src="https://travis-ci.com/reichlab/covid19-forecast-hub.svg?branch=master">
 The goal of this repository is to create a standardized set of data on forecasts from experienced teams making projections of cumulative and incident deaths and incident hospitalizations due to COVID-19 in the United States. As time goes on, we hope to add other targets and other locations as well.
 
 * [Raw data](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-raw)
