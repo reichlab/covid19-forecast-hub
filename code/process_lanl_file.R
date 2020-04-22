@@ -8,8 +8,7 @@ source("code/get_next_saturday.R")
 #'
 #' @param lanl_filepath path to a lanl submission file
 #'
-#' @details typically timezero will be a monday and the 1-week ahead 
-#' forecast will be for the EW of the Monday. 1-day-ahead would be Tuesday.
+#' @details designed to process either an incidence or cumulative death forecast
 #'
 #' @return a data.frame in quantile format
 process_lanl_file <- function(lanl_filepath) {
@@ -19,7 +18,11 @@ process_lanl_file <- function(lanl_filepath) {
     ## check this is a deaths file
     if(substr(basename(lanl_filepath), 12, 17) != "deaths")
         stop("check to make sure this is a deaths file")
-    
+
+    ## check this is an incident deaths file or not
+    inc_or_cum <- ifelse(grepl("incidence", basename(lanl_filepath)),
+        "inc", "cum")
+        
     ## read in FIPS codes
     fips <- read_csv("template/state_fips_codes.csv")
     
@@ -47,24 +50,44 @@ process_lanl_file <- function(lanl_filepath) {
         rename(
             location = state_code, 
             location_name = state, 
-            value = cum_deaths)
+            value = cum_deaths,
+            target_end_date = dates)
     
     ## create tables corresponding to the days for each of the targets
-    day_aheads <- tibble(target = paste(1:7, "day ahead cum death"), dates = timezero+1:7)
-    if(wday(timezero) <= 2 ) { ## sunday = 1, ..., saturday = 7
-        ## if timezero is Sun or Mon, then the current epiweek ending on Saturday is the "1 week-ahead"
-        week_aheads <- tibble(target = paste(1:7, "wk ahead cum death"), dates = get_next_saturday(timezero+seq(0, by=7, length.out = 7)))
-    } else {
-        ## if timezero is after Monday, then the next epiweek is "1 week-ahead"
-        week_aheads <- tibble(target = paste(0:7, "wk ahead cum death"), dates = get_next_saturday(timezero+seq(0, by=7, length.out = 8)))
-    }
-    
+    n_day_aheads <- length(unique(dat_long$target_end_date))
+    n_week_aheads <- sum(wday(unique(dat_long$target_end_date))==7)
+        
+    day_aheads <- tibble(
+        target = paste(1:n_day_aheads, "day ahead", inc_or_cum, "death"), 
+        target_end_date = forecast_date+1:n_day_aheads)
+
     ## merge so targets are aligned with dates
     fcast_days <- inner_join(day_aheads, dat_long) 
-    fcast_weeks <- inner_join(week_aheads, dat_long)
-    fcast_all <- bind_rows(fcast_days, fcast_weeks) %>%
-        rename(target_end_date = dates) %>%
+    fcast_all <- fcast_days %>% ## this will be overwritten if cumulative file.
         mutate(forecast_date = forecast_date)
+    
+    ## only do week-ahead for cumulative counts
+    if(inc_or_cum == "cum") {
+        if(wday(forecast_date) <= 2 ) { ## sunday = 1, ..., saturday = 7
+            ## if timezero is Sun or Mon, then the current epiweek ending on Saturday is the "1 week-ahead"
+            week_aheads <- tibble(
+                target = paste(1:n_week_aheads, "wk ahead cum death"),
+                target_end_date = get_next_saturday(forecast_date+seq(0, by=7, length.out = n_week_aheads))
+            )
+        } else {
+            ## if timezero is after Monday, then the next epiweek is "1 week-ahead"
+            week_aheads <- tibble(
+                target = paste(1:n_week_aheads, "wk ahead cum death"), 
+                target_end_date = get_next_saturday(forecast_date+seq(7, by=7, length.out = n_week_aheads))
+            )
+        }
+        
+        ## merge so targets are aligned with dates
+        fcast_weeks <- inner_join(week_aheads, dat_long)
+        fcast_all <- bind_rows(fcast_days, fcast_weeks) %>%
+            mutate(forecast_date = forecast_date)
+    }
+    
     
     ## make and merge point estimates as medians
     point_ests <- fcast_all %>% 
