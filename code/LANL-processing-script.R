@@ -6,15 +6,17 @@ library(tidyverse)
 
 source("code/process_lanl_file.R")
 
-files_to_munge <- tibble(
-    filenames_cum=list.files("data-raw/LANL/", pattern="*deaths_quantiles_us.csv"),
-    ##filenames_inc=list.files("data-raw/LANL/", pattern="*deaths_incidence_quantiles_us.csv"),
-    timezeroes = substr(filenames_cum, 0, 10)
-)
+lanl_filenames <- list.files("data-raw/LANL", pattern=".csv", full.names=TRUE)
+dates <- unlist(lapply(lanl_filenames, FUN = function(x) substr(basename(x), 0, 10)))
+most_recent_date <- max(as.Date(dates))
 
+cum_filename <- paste0("data-raw/LANL/", most_recent_date, "_deaths_quantiles_us.csv")
+inc_filename <- paste0("data-raw/LANL/", most_recent_date, "_deaths_incidence_quantiles_us.csv")
 
-for(i in 1:nrow(files_to_munge)) {
-    tmp_dat <- process_lanl_file(file.path("data-raw/LANL/",files_to_munge$filenames_cum[i]))    
-    write_csv(tmp_dat, paste0("data-processed/LANL-GrowthRate/", files_to_munge$timezeroes[i], "-LANL-GrowthRate.csv"))
-}
+cum_dat <- process_lanl_file(cum_filename)    
+if(file.exists(inc_filename)){
+    cum_dat <- bind_rows(cum_dat, process_lanl_file(inc_filename))
+}    
+
+write_csv(cum_dat, paste0("data-processed/LANL-GrowthRate/", most_recent_date, "-LANL-GrowthRate.csv"))
 

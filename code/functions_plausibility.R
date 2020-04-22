@@ -82,6 +82,29 @@ verify_colnames <- function(entry){
   return(invisible(result))
 }
 
+#' Checking that all entries in `target` correspond to standards
+#'
+#' @param entry the data.frame
+#'
+#' @return invisibly returns TRUE if problems detected, FALSE otherwise
+verify_targets <- function(entry){
+  allowed_targets <- c(
+    paste(1:50, "day ahead inc death"),
+    paste(1:50, "day ahead cum death"),
+    paste(1:7, "wk ahead inc death"),
+    paste(1:7, "wk ahead cum death")
+  )
+  targets_in_entry <- unique(entry$target)
+  if(!all(targets_in_entry %in% allowed_targets)){
+    warning("Some entries in `targets` do not correspond to standards:",
+            paste0(targets_in_entry[!(targets_in_entry %in% allowed_targets)], collapse = ", "))
+    return(FALSE)
+  }else{
+    cat("All entries in `target` correspond to standards.\n")
+    return(TRUE)
+  }
+}
+
 #' Checking a data.frame in quantile format for quantile crossing
 #'
 #' @param entry the data.frame
@@ -224,6 +247,7 @@ verify_quantile_forecasts <- function(entry){
   options(warn = 1) # show warnigns as tehy happen
   results <- list()
   results$colnames <- verify_colnames(entry)
+  results$tarfets <- verify_targets(entry)
   results$no_quantile_crossings <- verify_no_quantile_crossings(entry)
   results$monotonicity_cumulative <- verify_monotonicity_cumulative(entry)
   results$cumulative_geq_incident <- verify_cumulative_geq_incident(entry)
