@@ -6,8 +6,6 @@ library("tidyr")
 library("readr")
 
 read_my_csv = function(f, into) {
-  cat("Reading", f, "\n")
-  
   readr::read_csv(f) %>%
     dplyr::mutate(file = f) %>%
     tidyr::separate(file, into, sep="-|/") 
@@ -37,11 +35,9 @@ d = read_my_dir(".", "*.csv",
 d2 = d %>%  
   
   mutate(date = as.Date(paste(year,month,day, sep="-"))) %>%
-  group_by(group, model) %>%
-  filter(date == max(date)) %>%
+  group_by(group, model, date) %>%
   
   summarize(
-    date = unique(date),
     has_US     = ifelse(any(location == "US"), "Yes", "-"),
     all_states = ifelse(all(state.name %in% location_name),"Yes","-"),
     cd1d = ifelse(any(target == "1 day ahead cum death"),"Yes","-"),
@@ -55,4 +51,6 @@ d2 = d %>%
   arrange(group, model)
 
 
+# d2 %>% filter(group == "UTexas")
 
+d2 %>% filter(date == max(date))
