@@ -27,6 +27,7 @@ US_loc_idx <- which(dat$location=="00")
 dat$location[US_loc_idx] <- "US"
 
 dat$target <- sub("week", "wk", dat$target)
+dat$target <- sub("death death", "death", dat$target)
 
 ## add target_end_dates
 day_aheads <- tibble(
