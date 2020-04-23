@@ -3,6 +3,8 @@
 ## April 2020
 
 source("code/process_geneva_file.R")
+# make sure that English names of days and months are used
+Sys.setlocale(category = "LC_TIME", locale = "en_US.UTF8")
 
 dir.create("data-processed/Geneva-DeterministicGrowth", showWarnings = FALSE)
 

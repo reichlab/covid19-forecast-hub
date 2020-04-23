@@ -4,24 +4,11 @@ require(stringr)
 source("./code/ew_quantile.R")
 source("./code/functions_plausibility.R")
 
-# define week
-# get info. fix to read old one in and add on after the first run
-this_date<-"2020-04-13"
-death_files <- c(list.files(path="./data-processed", pattern="^(2020-04-13-)(.*?)(.csv)$", full.names=TRUE, recursive=TRUE))
-
-death_info_file<-data.frame()
-for(i in death_files){
-  text <- paste("Retrieve information", i, "...")
-  print(text)
-  death_info_file <- rbind(death_info_file,get_model_information(i))
-}
-write.csv(death_info_file, file="./template/death_forecast-model-infomation.csv",row.names = FALSE)
-# check<-unique(death_info_file[ ,3:4])
-
 # ----------------------------  make ensemble ---------------------------- #
 ## state
 models <- c("LANL-GrowthRate","IHME-CurveFit")
-combined_table <- pull_all_forecasts(this_date,models,"wk ahead cum",quantiles=c(0.025,0.5,0.975)) %>%
+state_output <- pull_all_forecasts(this_date,models,"wk ahead cum",quantiles=c(0.025,0.5,0.975))
+combined_table <- unlist(state_output[[1]]) %>%
   dplyr::filter(target!="7 wk ahead cum death",location!="US")
 # adding manual check
 check_table <-combined_table %>% 
@@ -35,7 +22,8 @@ quant_ensemble<-ew_quantile(combined_table, quantiles=c(0.025,0.5,0.975),nationa
 
 ## national
 models_n <- c("CU-60contact","CU-70contact","CU-80contact","IHME-CurveFit")
-combined_table_n <- pull_all_forecasts(this_date,models_n,"wk ahead cum",quantiles=c(0.025,0.5,0.975)) %>%
+nat_output <- pull_all_forecasts(this_date,models_n,"wk ahead cum",quantiles=c(0.025,0.5,0.975))
+combined_table_n <- unlist(nat_output[[1]]) %>%
   dplyr::filter(target!="7 wk ahead cum death",location=="US") 
 # adding manual check
 check_table_n <-combined_table_n %>% 
@@ -61,23 +49,16 @@ write.csv(final_ens,file=paste0("./data-processed/COVIDhub-ensemble/",this_date,
 
 
 ## -------------------- write ensemble info ----------------------------##
-# need to change weekly
-ensemble_info <- data.frame(
-  cbind(c(rep("US national-level",length(models_n)),rep("state-level",length(models))),
-                                  c(models_n,models),
-                                  rep("0.025,0.5,0.975",length(c(models_n,models))),
-                                  rep(this_date,length(c(models_n,models))),
-                                  # weight
-                                  c(rep(1/length(models_n),length(models_n)),rep(1/length(models),length(models))),
-                                  # target
-                                  rep("1-6 wk ahead cum death",length(c(models_n,models)))
-        )
-  )
-  
-names(ensemble_info) <- c("location","model_name","quantile","forecast_colleceted_date","weight","target")
-
+nat_info <- unlist(nat_output[[2]]) %>%
+  dplyr::mutate(location="US national-level") %>%
+  dplyr::select(location,model_name,quantile,forecast_date,weight,target)
+state_info <-  unlist(state_output[[2]]) %>%
+  dplyr::mutate(location="state-level") %>%
+  dplyr::select(location,model_name,quantile,forecast_date,weight,target)
+ensemble_info <- rbind(nat_info,state_info)
 # read in previous data
 preinfo <- read.csv("./data-processed/COVIDhub-ensemble/COVIDhub-ensemble-information.csv",stringsAsFactors = FALSE)
+names(preinfo) <- c("location","model_name","quantile","forecast_date","weight","target")
 all_info <- rbind(preinfo,ensemble_info)
 write.csv(all_info,file=paste0("./data-processed/COVIDhub-ensemble/COVIDhub-ensemble-information.csv"),
           row.names = FALSE)

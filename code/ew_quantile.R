@@ -1,55 +1,44 @@
-## devtools::install_github("reichlab/cdcForecastUtils")
-library(cdcForecastUtils) 
-library(dplyr)
-library(devtools)
 library(tidyverse)
 library(MMWRweek)
 library(lubridate)
 
-# write get data functions (get quantiles info/location/target from each model)
-get_model_information <- function(file) {
-  entry <- read.csv(file,colClasses = "character",stringsAsFactors = FALSE) %>%
-    dplyr::filter(type!="point")
-  fips <- read.csv("./template/state_fips_codes.csv",colClasses = "character",stringsAsFactors = FALSE) 
-  US <- data.frame(cbind("US","US","US"));names(US) <-colnames(fips)
-  loc <- rbind(fips,US)
-  ## get unique set of locations and targets as df
-  set <- entry %>%
-    dplyr::group_by(location,target,quantile) %>%
-    dplyr::select(location,target,quantile) %>%
-    dplyr::ungroup() %>%
-    unique()
-  ## get model name and forecast week from filename
-  model_name <- substr(basename(file),12,nchar(basename(file))-4)
-  forecast_date <- substr(basename(file),1,10)
-  date_file <- read.csv("./template/covid19-death-forecast-dates.csv",stringsAsFactors = FALSE)
-  set$model_name <- model_name
-  set$forecasts_collected_ew <- date_file$forecasts_collected_ew[which(date_file$timezero==forecast_date)]
-  set <- set %>%
-    dplyr::left_join(loc,by=c("location"="state_code")) %>%
-    dplyr::rename(location_name=state_name) %>%
-    dplyr::select(-"state")
-  return(set)
-}
-
 # write quantile functions
 # have to update this for ew
 pull_all_forecasts <- function(monday_run_date, model,targets,quantiles=c(0.025,0.5,0.975)) {
-  # have to continue to fix
-  # convert the run date to epiweek
-  ew <- unname(MMWRweek(as.Date("2020-04-20"))[[2]])
-  # only take certain files 
-  forecast_files <- list.files("./data-processed", pattern = "*.csv", recursive=T)
-  forecast_files <- forecast_files[grepl("[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]",forecast_files)]
-  forecast_date<- as.Date(substr(unname(sapply(forecast_files, basename)),1,10))
-  forecast_day <-lubridate::wday(forecast_date,label = TRUE, abbr = FALSE)
-  forecast_ew <-unname(MMWRweek(forecast_date)[[2]])
-  indices<- match(c(4,8),forecast_date)
-  if (length(forecast_files) == 0) stop("No forecasts-check for errors.")
+  # get files with this week's forecasts
+  date_set <- paste(c(as.Date(monday_run_date),as.Date(monday_run_date)-1:6),collapse="|")
+  all_files <- list.files("./data-processed", pattern = "*.csv", recursive=T)
+  fcast_files <- all_files[grepl("[0-9]{4}-[0-9]{2}-[0-9]{2}",all_files)]
+  current_fcast <- fcast_files[(grep(date_set, fcast_files))]
   # remove models
   list_op <- paste(model,collapse="|")
-  forecast_files <- forecast_files[(grep(list_op, forecast_files))]
+  component_fcast <- current_fcast[(grep(list_op, current_fcast))]
+  # ensure single most recent forecast file for current week for each model
+  forecast_files <- c()
+  for (j in 1:length(model)){
+    current_comp_fcast <- component_fcast[(grep(model[i], current_fcast))]
+    if (length(current_comp_fcast)==1){
+      forecast_files <- c(forecast_files,current_comp_fcast)
+    }else{
+      comp_fdate <- substr(basename(current_comp_fcast),start=1,stop=10)
+      most_recent_fdate <-comp_fdate[which.max(as.Date(comp_fdate))]
+      current_comp_fcast_single <- current_comp_fcast[(grep(most_recent_fdate, current_comp_fcast))]
+      forecast_files <- c(forecast_files,current_comp_fcast_single)
+    }
+  }
+  # check and document
+  if (length(forecast_files) == 0){stop("No forecasts-check for errors.")} else{
+    ensemble_component_info <- data.frame(cbind(c(dirname(forecast_files)),
+                                                rep(paste(quantiles,collapse = ","),length(forecast_files)),
+                                                c(substr(basename(forecast_files),start=1,stop=10)),
+                                                rep(1/length(forecast_files),length(forecast_files)),
+                                                rep("1-4 wk ahead cum death",length(forecast_files))
 
+    ))
+    names(ensemble_component_info) <- c("model_name","quantile","forecast_date","weight","target")
+  }
+  
+  # start reading
   forecast_data <- data.frame()
   for (i in 1:length(forecast_files)) {
     single_forecast <- read.csv(paste0("./data-processed/",forecast_files[i]),
@@ -63,16 +52,16 @@ pull_all_forecasts <- function(monday_run_date, model,targets,quantiles=c(0.025,
       forecast_data <- single_forecast
     } else {
       forecast_data <- dplyr::full_join(forecast_data, single_forecast) %>%
-        dplyr::filter(grepl(targets,target),type=="quantile")
+        dplyr::filter(target %in% targets,type=="quantile")
     }
   }
   forecast_data$quantile <- as.numeric(forecast_data$quantile)
   forecast_data$value <- as.numeric(forecast_data$value)
-  # forecast_data$location <- as.numeric(forecast_data$location)
   forecast_data$type <- as.character(forecast_data$type)
   forecast_data <- forecast_data %>%
     dplyr::filter(quantile %in% quantiles)
-  return(forecast_data)
+  output <- list(forecast_data,ensemble_component_info)
+  return(output)
 }
 
 ew_quantile <- function(forecast_data,quantiles=c(0.025,0.5,0.975),national=FALSE) {
@@ -95,12 +84,6 @@ ew_quantile <- function(forecast_data,quantiles=c(0.025,0.5,0.975),national=FALS
     dplyr::select(-"value") %>%
     dplyr::rename(value=avg) 
   concised_dat<-combined_file[!duplicated(combined_file[,c("location","target","quantile")]),] 
-  # %>%
-    # dplyr::group_by(location, target) %>%
-    # # dplyr::mutate(norm_value=as.numeric(avg)/sum(as.numeric(avg))) %>%
-    # dplyr::ungroup()  %>%
-    # dplyr::select(-"avg") %>%
-    # dplyr::rename(value=norm_value) 
   # generate point forecast for ensemble
   points <- concised_dat %>%
     dplyr::filter(quantile == 0.5) %>%
