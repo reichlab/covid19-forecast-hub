@@ -3,7 +3,7 @@
 ## April 2020
 
 
-source("code/process_cu_file.R")
+source("code/processing-fxns/process_cu_file.R")
 # make sure that English names of days and months are used
 Sys.setlocale(category = "LC_TIME", locale = "en_US.UTF8")
 

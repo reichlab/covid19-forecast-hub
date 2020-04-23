@@ -2,7 +2,7 @@
 ## Nicholas Reich
 ## April 2020
 
-source("code/get_next_saturday.R")
+source("code/processing-fxns/get_next_saturday.R")
 
 #' turn LANL forecast file into quantile-based format
 #'

@@ -4,7 +4,7 @@
 
 library(tidyverse)
 
-source("code/process_lanl_file.R")
+source("code/processing-fxns/process_lanl_file.R")
 
 lanl_filenames <- list.files("data-raw/LANL", pattern=".csv", full.names=TRUE)
 dates <- unlist(lapply(lanl_filenames, FUN = function(x) substr(basename(x), 0, 10)))

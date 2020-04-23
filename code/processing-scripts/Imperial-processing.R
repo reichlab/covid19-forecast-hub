@@ -4,7 +4,7 @@
 
 library(tidyverse)
 
-source("code/process_imperial_file.R")
+source("code/processing-fxns/process_imperial_file.R")
 
 ## this reads in an RDS file provided by the Imperial team  on April 11
 ens_preds <- readRDS("./data-raw/Imperial/20200412-ensemble_model_predictions.rds")
