@@ -5,7 +5,9 @@
 .Ruserdata
 
 node_modules
+visualization/data
+visualization/vis-master/data
 .ipynb_checkpoints
-covid19-death-forecasts.Rproj
+covid19-forecast-hub.Rproj
 
 .vscode

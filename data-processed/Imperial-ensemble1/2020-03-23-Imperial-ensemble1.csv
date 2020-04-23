@@ -1,169 +1,337 @@
-location,quantile,type,target,value
-US,NA,point,1 day ahead inc,189
-US,NA,point,1 wk ahead inc,793
-US,NA,point,2 day ahead inc,268
-US,NA,point,3 day ahead inc,385
-US,NA,point,4 day ahead inc,552
-US,NA,point,5 day ahead inc,793
-US,NA,point,6 day ahead inc,1142
-US,0.01,quantile,1 day ahead inc,115
-US,0.025,quantile,1 day ahead inc,128
-US,0.05,quantile,1 day ahead inc,140
-US,0.1,quantile,1 day ahead inc,151
-US,0.15,quantile,1 day ahead inc,159
-US,0.2,quantile,1 day ahead inc,164
-US,0.25,quantile,1 day ahead inc,169
-US,0.3,quantile,1 day ahead inc,173
-US,0.35,quantile,1 day ahead inc,177
-US,0.4,quantile,1 day ahead inc,181
-US,0.45,quantile,1 day ahead inc,185
-US,0.5,quantile,1 day ahead inc,189
-US,0.55,quantile,1 day ahead inc,193
-US,0.6,quantile,1 day ahead inc,197
-US,0.65,quantile,1 day ahead inc,203
-US,0.7,quantile,1 day ahead inc,209
-US,0.75,quantile,1 day ahead inc,217
-US,0.8,quantile,1 day ahead inc,227
-US,0.85,quantile,1 day ahead inc,241
-US,0.9,quantile,1 day ahead inc,261
-US,0.95,quantile,1 day ahead inc,292
-US,0.975,quantile,1 day ahead inc,317
-US,0.99,quantile,1 day ahead inc,351
-US,0.01,quantile,1 wk ahead inc,442
-US,0.025,quantile,1 wk ahead inc,485
-US,0.05,quantile,1 wk ahead inc,524
-US,0.1,quantile,1 wk ahead inc,572
-US,0.15,quantile,1 wk ahead inc,605
-US,0.2,quantile,1 wk ahead inc,635
-US,0.25,quantile,1 wk ahead inc,662
-US,0.3,quantile,1 wk ahead inc,688
-US,0.35,quantile,1 wk ahead inc,714
-US,0.4,quantile,1 wk ahead inc,739
-US,0.45,quantile,1 wk ahead inc,765
-US,0.5,quantile,1 wk ahead inc,793
-US,0.55,quantile,1 wk ahead inc,824
-US,0.6,quantile,1 wk ahead inc,858
-US,0.65,quantile,1 wk ahead inc,897
-US,0.7,quantile,1 wk ahead inc,941
-US,0.75,quantile,1 wk ahead inc,990
-US,0.8,quantile,1 wk ahead inc,1053
-US,0.85,quantile,1 wk ahead inc,1131
-US,0.9,quantile,1 wk ahead inc,1242
-US,0.95,quantile,1 wk ahead inc,1404
-US,0.975,quantile,1 wk ahead inc,1562
-US,0.99,quantile,1 wk ahead inc,1766
-US,0.01,quantile,2 day ahead inc,162
-US,0.025,quantile,2 day ahead inc,183
-US,0.05,quantile,2 day ahead inc,197
-US,0.1,quantile,2 day ahead inc,212
-US,0.15,quantile,2 day ahead inc,222
-US,0.2,quantile,2 day ahead inc,230
-US,0.25,quantile,2 day ahead inc,237
-US,0.3,quantile,2 day ahead inc,243
-US,0.35,quantile,2 day ahead inc,249
-US,0.4,quantile,2 day ahead inc,256
-US,0.45,quantile,2 day ahead inc,262
-US,0.5,quantile,2 day ahead inc,268
-US,0.55,quantile,2 day ahead inc,275
-US,0.6,quantile,2 day ahead inc,284
-US,0.65,quantile,2 day ahead inc,292
-US,0.7,quantile,2 day ahead inc,303
-US,0.75,quantile,2 day ahead inc,315
-US,0.8,quantile,2 day ahead inc,332
-US,0.85,quantile,2 day ahead inc,354
-US,0.9,quantile,2 day ahead inc,385
-US,0.95,quantile,2 day ahead inc,430
-US,0.975,quantile,2 day ahead inc,471
-US,0.99,quantile,2 day ahead inc,521
-US,0.01,quantile,3 day ahead inc,234
-US,0.025,quantile,3 day ahead inc,256
-US,0.05,quantile,3 day ahead inc,274
-US,0.1,quantile,3 day ahead inc,296
-US,0.15,quantile,3 day ahead inc,311
-US,0.2,quantile,3 day ahead inc,323
-US,0.25,quantile,3 day ahead inc,334
-US,0.3,quantile,3 day ahead inc,344
-US,0.35,quantile,3 day ahead inc,354
-US,0.4,quantile,3 day ahead inc,364
-US,0.45,quantile,3 day ahead inc,374
-US,0.5,quantile,3 day ahead inc,385
-US,0.55,quantile,3 day ahead inc,396
-US,0.6,quantile,3 day ahead inc,409
-US,0.65,quantile,3 day ahead inc,424
-US,0.7,quantile,3 day ahead inc,442
-US,0.75,quantile,3 day ahead inc,461
-US,0.8,quantile,3 day ahead inc,488
-US,0.85,quantile,3 day ahead inc,523
-US,0.9,quantile,3 day ahead inc,568
-US,0.95,quantile,3 day ahead inc,639
-US,0.975,quantile,3 day ahead inc,703
-US,0.99,quantile,3 day ahead inc,783
-US,0.01,quantile,4 day ahead inc,323
-US,0.025,quantile,4 day ahead inc,352
-US,0.05,quantile,4 day ahead inc,378
-US,0.1,quantile,4 day ahead inc,410
-US,0.15,quantile,4 day ahead inc,433
-US,0.2,quantile,4 day ahead inc,453
-US,0.25,quantile,4 day ahead inc,470
-US,0.3,quantile,4 day ahead inc,486
-US,0.35,quantile,4 day ahead inc,503
-US,0.4,quantile,4 day ahead inc,518
-US,0.45,quantile,4 day ahead inc,534
-US,0.5,quantile,4 day ahead inc,552
-US,0.55,quantile,4 day ahead inc,571
-US,0.6,quantile,4 day ahead inc,591
-US,0.65,quantile,4 day ahead inc,615
-US,0.7,quantile,4 day ahead inc,644
-US,0.75,quantile,4 day ahead inc,676
-US,0.8,quantile,4 day ahead inc,718
-US,0.85,quantile,4 day ahead inc,768
-US,0.9,quantile,4 day ahead inc,839
-US,0.95,quantile,4 day ahead inc,946
-US,0.975,quantile,4 day ahead inc,1042
-US,0.99,quantile,4 day ahead inc,1174
-US,0.01,quantile,5 day ahead inc,442
-US,0.025,quantile,5 day ahead inc,485
-US,0.05,quantile,5 day ahead inc,524
-US,0.1,quantile,5 day ahead inc,572
-US,0.15,quantile,5 day ahead inc,605
-US,0.2,quantile,5 day ahead inc,635
-US,0.25,quantile,5 day ahead inc,662
-US,0.3,quantile,5 day ahead inc,688
-US,0.35,quantile,5 day ahead inc,714
-US,0.4,quantile,5 day ahead inc,739
-US,0.45,quantile,5 day ahead inc,765
-US,0.5,quantile,5 day ahead inc,793
-US,0.55,quantile,5 day ahead inc,824
-US,0.6,quantile,5 day ahead inc,858
-US,0.65,quantile,5 day ahead inc,897
-US,0.7,quantile,5 day ahead inc,941
-US,0.75,quantile,5 day ahead inc,990
-US,0.8,quantile,5 day ahead inc,1053
-US,0.85,quantile,5 day ahead inc,1131
-US,0.9,quantile,5 day ahead inc,1242
-US,0.95,quantile,5 day ahead inc,1404
-US,0.975,quantile,5 day ahead inc,1562
-US,0.99,quantile,5 day ahead inc,1766
-US,0.01,quantile,6 day ahead inc,602
-US,0.025,quantile,6 day ahead inc,662
-US,0.05,quantile,6 day ahead inc,717
-US,0.1,quantile,6 day ahead inc,789
-US,0.15,quantile,6 day ahead inc,844
-US,0.2,quantile,6 day ahead inc,888
-US,0.25,quantile,6 day ahead inc,930
-US,0.3,quantile,6 day ahead inc,972
-US,0.35,quantile,6 day ahead inc,1013
-US,0.4,quantile,6 day ahead inc,1056
-US,0.45,quantile,6 day ahead inc,1097
-US,0.5,quantile,6 day ahead inc,1142
-US,0.55,quantile,6 day ahead inc,1191
-US,0.6,quantile,6 day ahead inc,1246
-US,0.65,quantile,6 day ahead inc,1304
-US,0.7,quantile,6 day ahead inc,1372
-US,0.75,quantile,6 day ahead inc,1454
-US,0.8,quantile,6 day ahead inc,1549
-US,0.85,quantile,6 day ahead inc,1671
-US,0.9,quantile,6 day ahead inc,1833
-US,0.95,quantile,6 day ahead inc,2087
-US,0.975,quantile,6 day ahead inc,2343
-US,0.99,quantile,6 day ahead inc,2653
+target,location,type,quantile,value
+1 day ahead cum death,US,point,NA,745
+1 day ahead inc death,US,point,NA,189
+1 wk ahead cum death,US,point,NA,2736
+1 wk ahead inc death,US,point,NA,793
+2 day ahead cum death,US,point,NA,1013
+2 day ahead inc death,US,point,NA,268
+3 day ahead cum death,US,point,NA,1397
+3 day ahead inc death,US,point,NA,385
+4 day ahead cum death,US,point,NA,1947
+4 day ahead inc death,US,point,NA,552
+5 day ahead cum death,US,point,NA,2736
+5 day ahead inc death,US,point,NA,793
+6 day ahead cum death,US,point,NA,3876
+6 day ahead inc death,US,point,NA,1142
+1 day ahead cum death,US,quantile,0.01,623
+1 day ahead cum death,US,quantile,0.025,647
+1 day ahead cum death,US,quantile,0.05,668
+1 day ahead cum death,US,quantile,0.1,686
+1 day ahead cum death,US,quantile,0.15,698
+1 day ahead cum death,US,quantile,0.2,707
+1 day ahead cum death,US,quantile,0.25,714
+1 day ahead cum death,US,quantile,0.3,721
+1 day ahead cum death,US,quantile,0.35,727
+1 day ahead cum death,US,quantile,0.4,733
+1 day ahead cum death,US,quantile,0.45,739
+1 day ahead cum death,US,quantile,0.5,745
+1 day ahead cum death,US,quantile,0.55,752
+1 day ahead cum death,US,quantile,0.6,760
+1 day ahead cum death,US,quantile,0.65,768
+1 day ahead cum death,US,quantile,0.7,778
+1 day ahead cum death,US,quantile,0.75,790
+1 day ahead cum death,US,quantile,0.8,808
+1 day ahead cum death,US,quantile,0.85,831
+1 day ahead cum death,US,quantile,0.9,863
+1 day ahead cum death,US,quantile,0.95,914
+1 day ahead cum death,US,quantile,0.975,955
+1 day ahead cum death,US,quantile,0.99,1014
+1 day ahead inc death,US,quantile,0.01,115
+1 day ahead inc death,US,quantile,0.025,128
+1 day ahead inc death,US,quantile,0.05,140
+1 day ahead inc death,US,quantile,0.1,151
+1 day ahead inc death,US,quantile,0.15,159
+1 day ahead inc death,US,quantile,0.2,164
+1 day ahead inc death,US,quantile,0.25,169
+1 day ahead inc death,US,quantile,0.3,173
+1 day ahead inc death,US,quantile,0.35,177
+1 day ahead inc death,US,quantile,0.4,181
+1 day ahead inc death,US,quantile,0.45,185
+1 day ahead inc death,US,quantile,0.5,189
+1 day ahead inc death,US,quantile,0.55,193
+1 day ahead inc death,US,quantile,0.6,197
+1 day ahead inc death,US,quantile,0.65,203
+1 day ahead inc death,US,quantile,0.7,209
+1 day ahead inc death,US,quantile,0.75,217
+1 day ahead inc death,US,quantile,0.8,227
+1 day ahead inc death,US,quantile,0.85,241
+1 day ahead inc death,US,quantile,0.9,261
+1 day ahead inc death,US,quantile,0.95,292
+1 day ahead inc death,US,quantile,0.975,317
+1 day ahead inc death,US,quantile,0.99,351
+1 wk ahead cum death,US,quantile,0.01,1828
+1 wk ahead cum death,US,quantile,0.025,1956
+1 wk ahead cum death,US,quantile,0.05,2061
+1 wk ahead cum death,US,quantile,0.1,2194
+1 wk ahead cum death,US,quantile,0.15,2283
+1 wk ahead cum death,US,quantile,0.2,2355
+1 wk ahead cum death,US,quantile,0.25,2418
+1 wk ahead cum death,US,quantile,0.3,2484
+1 wk ahead cum death,US,quantile,0.35,2547
+1 wk ahead cum death,US,quantile,0.4,2610
+1 wk ahead cum death,US,quantile,0.45,2673
+1 wk ahead cum death,US,quantile,0.5,2736
+1 wk ahead cum death,US,quantile,0.55,2813
+1 wk ahead cum death,US,quantile,0.6,2895
+1 wk ahead cum death,US,quantile,0.65,2989
+1 wk ahead cum death,US,quantile,0.7,3101
+1 wk ahead cum death,US,quantile,0.75,3226
+1 wk ahead cum death,US,quantile,0.8,3395
+1 wk ahead cum death,US,quantile,0.85,3604
+1 wk ahead cum death,US,quantile,0.9,3893
+1 wk ahead cum death,US,quantile,0.95,4323
+1 wk ahead cum death,US,quantile,0.975,4713
+1 wk ahead cum death,US,quantile,0.99,5241
+1 wk ahead inc death,US,quantile,0.01,442
+1 wk ahead inc death,US,quantile,0.025,485
+1 wk ahead inc death,US,quantile,0.05,524
+1 wk ahead inc death,US,quantile,0.1,572
+1 wk ahead inc death,US,quantile,0.15,605
+1 wk ahead inc death,US,quantile,0.2,635
+1 wk ahead inc death,US,quantile,0.25,662
+1 wk ahead inc death,US,quantile,0.3,688
+1 wk ahead inc death,US,quantile,0.35,714
+1 wk ahead inc death,US,quantile,0.4,739
+1 wk ahead inc death,US,quantile,0.45,765
+1 wk ahead inc death,US,quantile,0.5,793
+1 wk ahead inc death,US,quantile,0.55,824
+1 wk ahead inc death,US,quantile,0.6,858
+1 wk ahead inc death,US,quantile,0.65,897
+1 wk ahead inc death,US,quantile,0.7,941
+1 wk ahead inc death,US,quantile,0.75,990
+1 wk ahead inc death,US,quantile,0.8,1053
+1 wk ahead inc death,US,quantile,0.85,1131
+1 wk ahead inc death,US,quantile,0.9,1242
+1 wk ahead inc death,US,quantile,0.95,1404
+1 wk ahead inc death,US,quantile,0.975,1562
+1 wk ahead inc death,US,quantile,0.99,1766
+2 day ahead cum death,US,quantile,0.01,792
+2 day ahead cum death,US,quantile,0.025,835
+2 day ahead cum death,US,quantile,0.05,869
+2 day ahead cum death,US,quantile,0.1,903
+2 day ahead cum death,US,quantile,0.15,923
+2 day ahead cum death,US,quantile,0.2,939
+2 day ahead cum death,US,quantile,0.25,953
+2 day ahead cum death,US,quantile,0.3,965
+2 day ahead cum death,US,quantile,0.35,977
+2 day ahead cum death,US,quantile,0.4,989
+2 day ahead cum death,US,quantile,0.45,1001
+2 day ahead cum death,US,quantile,0.5,1013
+2 day ahead cum death,US,quantile,0.55,1026
+2 day ahead cum death,US,quantile,0.6,1041
+2 day ahead cum death,US,quantile,0.65,1058
+2 day ahead cum death,US,quantile,0.7,1078
+2 day ahead cum death,US,quantile,0.75,1104
+2 day ahead cum death,US,quantile,0.8,1138
+2 day ahead cum death,US,quantile,0.85,1184
+2 day ahead cum death,US,quantile,0.9,1246
+2 day ahead cum death,US,quantile,0.95,1340
+2 day ahead cum death,US,quantile,0.975,1423
+2 day ahead cum death,US,quantile,0.99,1529
+2 day ahead inc death,US,quantile,0.01,162
+2 day ahead inc death,US,quantile,0.025,183
+2 day ahead inc death,US,quantile,0.05,197
+2 day ahead inc death,US,quantile,0.1,212
+2 day ahead inc death,US,quantile,0.15,222
+2 day ahead inc death,US,quantile,0.2,230
+2 day ahead inc death,US,quantile,0.25,237
+2 day ahead inc death,US,quantile,0.3,243
+2 day ahead inc death,US,quantile,0.35,249
+2 day ahead inc death,US,quantile,0.4,256
+2 day ahead inc death,US,quantile,0.45,262
+2 day ahead inc death,US,quantile,0.5,268
+2 day ahead inc death,US,quantile,0.55,275
+2 day ahead inc death,US,quantile,0.6,284
+2 day ahead inc death,US,quantile,0.65,292
+2 day ahead inc death,US,quantile,0.7,303
+2 day ahead inc death,US,quantile,0.75,315
+2 day ahead inc death,US,quantile,0.8,332
+2 day ahead inc death,US,quantile,0.85,354
+2 day ahead inc death,US,quantile,0.9,385
+2 day ahead inc death,US,quantile,0.95,430
+2 day ahead inc death,US,quantile,0.975,471
+2 day ahead inc death,US,quantile,0.99,521
+3 day ahead cum death,US,quantile,0.01,1034
+3 day ahead cum death,US,quantile,0.025,1096
+3 day ahead cum death,US,quantile,0.05,1150
+3 day ahead cum death,US,quantile,0.1,1204
+3 day ahead cum death,US,quantile,0.15,1237
+3 day ahead cum death,US,quantile,0.2,1264
+3 day ahead cum death,US,quantile,0.25,1288
+3 day ahead cum death,US,quantile,0.3,1310
+3 day ahead cum death,US,quantile,0.35,1331
+3 day ahead cum death,US,quantile,0.4,1352
+3 day ahead cum death,US,quantile,0.45,1375
+3 day ahead cum death,US,quantile,0.5,1397
+3 day ahead cum death,US,quantile,0.55,1421
+3 day ahead cum death,US,quantile,0.6,1448
+3 day ahead cum death,US,quantile,0.65,1481
+3 day ahead cum death,US,quantile,0.7,1518
+3 day ahead cum death,US,quantile,0.75,1564
+3 day ahead cum death,US,quantile,0.8,1623
+3 day ahead cum death,US,quantile,0.85,1709
+3 day ahead cum death,US,quantile,0.9,1814
+3 day ahead cum death,US,quantile,0.95,1977
+3 day ahead cum death,US,quantile,0.975,2124
+3 day ahead cum death,US,quantile,0.99,2305
+3 day ahead inc death,US,quantile,0.01,234
+3 day ahead inc death,US,quantile,0.025,256
+3 day ahead inc death,US,quantile,0.05,274
+3 day ahead inc death,US,quantile,0.1,296
+3 day ahead inc death,US,quantile,0.15,311
+3 day ahead inc death,US,quantile,0.2,323
+3 day ahead inc death,US,quantile,0.25,334
+3 day ahead inc death,US,quantile,0.3,344
+3 day ahead inc death,US,quantile,0.35,354
+3 day ahead inc death,US,quantile,0.4,364
+3 day ahead inc death,US,quantile,0.45,374
+3 day ahead inc death,US,quantile,0.5,385
+3 day ahead inc death,US,quantile,0.55,396
+3 day ahead inc death,US,quantile,0.6,409
+3 day ahead inc death,US,quantile,0.65,424
+3 day ahead inc death,US,quantile,0.7,442
+3 day ahead inc death,US,quantile,0.75,461
+3 day ahead inc death,US,quantile,0.8,488
+3 day ahead inc death,US,quantile,0.85,523
+3 day ahead inc death,US,quantile,0.9,568
+3 day ahead inc death,US,quantile,0.95,639
+3 day ahead inc death,US,quantile,0.975,703
+3 day ahead inc death,US,quantile,0.99,783
+4 day ahead cum death,US,quantile,0.01,1371
+4 day ahead cum death,US,quantile,0.025,1458
+4 day ahead cum death,US,quantile,0.05,1533
+4 day ahead cum death,US,quantile,0.1,1618
+4 day ahead cum death,US,quantile,0.15,1673
+4 day ahead cum death,US,quantile,0.2,1717
+4 day ahead cum death,US,quantile,0.25,1757
+4 day ahead cum death,US,quantile,0.3,1796
+4 day ahead cum death,US,quantile,0.35,1833
+4 day ahead cum death,US,quantile,0.4,1870
+4 day ahead cum death,US,quantile,0.45,1908
+4 day ahead cum death,US,quantile,0.5,1947
+4 day ahead cum death,US,quantile,0.55,1991
+4 day ahead cum death,US,quantile,0.6,2039
+4 day ahead cum death,US,quantile,0.65,2095
+4 day ahead cum death,US,quantile,0.7,2159
+4 day ahead cum death,US,quantile,0.75,2237
+4 day ahead cum death,US,quantile,0.8,2343
+4 day ahead cum death,US,quantile,0.85,2478
+4 day ahead cum death,US,quantile,0.9,2653
+4 day ahead cum death,US,quantile,0.95,2921
+4 day ahead cum death,US,quantile,0.975,3161
+4 day ahead cum death,US,quantile,0.99,3478
+4 day ahead inc death,US,quantile,0.01,323
+4 day ahead inc death,US,quantile,0.025,352
+4 day ahead inc death,US,quantile,0.05,378
+4 day ahead inc death,US,quantile,0.1,410
+4 day ahead inc death,US,quantile,0.15,433
+4 day ahead inc death,US,quantile,0.2,453
+4 day ahead inc death,US,quantile,0.25,470
+4 day ahead inc death,US,quantile,0.3,486
+4 day ahead inc death,US,quantile,0.35,503
+4 day ahead inc death,US,quantile,0.4,518
+4 day ahead inc death,US,quantile,0.45,534
+4 day ahead inc death,US,quantile,0.5,552
+4 day ahead inc death,US,quantile,0.55,571
+4 day ahead inc death,US,quantile,0.6,591
+4 day ahead inc death,US,quantile,0.65,615
+4 day ahead inc death,US,quantile,0.7,644
+4 day ahead inc death,US,quantile,0.75,676
+4 day ahead inc death,US,quantile,0.8,718
+4 day ahead inc death,US,quantile,0.85,768
+4 day ahead inc death,US,quantile,0.9,839
+4 day ahead inc death,US,quantile,0.95,946
+4 day ahead inc death,US,quantile,0.975,1042
+4 day ahead inc death,US,quantile,0.99,1174
+5 day ahead cum death,US,quantile,0.01,1828
+5 day ahead cum death,US,quantile,0.025,1956
+5 day ahead cum death,US,quantile,0.05,2061
+5 day ahead cum death,US,quantile,0.1,2194
+5 day ahead cum death,US,quantile,0.15,2283
+5 day ahead cum death,US,quantile,0.2,2355
+5 day ahead cum death,US,quantile,0.25,2418
+5 day ahead cum death,US,quantile,0.3,2484
+5 day ahead cum death,US,quantile,0.35,2547
+5 day ahead cum death,US,quantile,0.4,2610
+5 day ahead cum death,US,quantile,0.45,2673
+5 day ahead cum death,US,quantile,0.5,2736
+5 day ahead cum death,US,quantile,0.55,2813
+5 day ahead cum death,US,quantile,0.6,2895
+5 day ahead cum death,US,quantile,0.65,2989
+5 day ahead cum death,US,quantile,0.7,3101
+5 day ahead cum death,US,quantile,0.75,3226
+5 day ahead cum death,US,quantile,0.8,3395
+5 day ahead cum death,US,quantile,0.85,3604
+5 day ahead cum death,US,quantile,0.9,3893
+5 day ahead cum death,US,quantile,0.95,4323
+5 day ahead cum death,US,quantile,0.975,4713
+5 day ahead cum death,US,quantile,0.99,5241
+5 day ahead inc death,US,quantile,0.01,442
+5 day ahead inc death,US,quantile,0.025,485
+5 day ahead inc death,US,quantile,0.05,524
+5 day ahead inc death,US,quantile,0.1,572
+5 day ahead inc death,US,quantile,0.15,605
+5 day ahead inc death,US,quantile,0.2,635
+5 day ahead inc death,US,quantile,0.25,662
+5 day ahead inc death,US,quantile,0.3,688
+5 day ahead inc death,US,quantile,0.35,714
+5 day ahead inc death,US,quantile,0.4,739
+5 day ahead inc death,US,quantile,0.45,765
+5 day ahead inc death,US,quantile,0.5,793
+5 day ahead inc death,US,quantile,0.55,824
+5 day ahead inc death,US,quantile,0.6,858
+5 day ahead inc death,US,quantile,0.65,897
+5 day ahead inc death,US,quantile,0.7,941
+5 day ahead inc death,US,quantile,0.75,990
+5 day ahead inc death,US,quantile,0.8,1053
+5 day ahead inc death,US,quantile,0.85,1131
+5 day ahead inc death,US,quantile,0.9,1242
+5 day ahead inc death,US,quantile,0.95,1404
+5 day ahead inc death,US,quantile,0.975,1562
+5 day ahead inc death,US,quantile,0.99,1766
+6 day ahead cum death,US,quantile,0.01,2452
+6 day ahead cum death,US,quantile,0.025,2625
+6 day ahead cum death,US,quantile,0.05,2792
+6 day ahead cum death,US,quantile,0.1,2983
+6 day ahead cum death,US,quantile,0.15,3128
+6 day ahead cum death,US,quantile,0.2,3245
+6 day ahead cum death,US,quantile,0.25,3355
+6 day ahead cum death,US,quantile,0.3,3455
+6 day ahead cum death,US,quantile,0.35,3561
+6 day ahead cum death,US,quantile,0.4,3662
+6 day ahead cum death,US,quantile,0.45,3768
+6 day ahead cum death,US,quantile,0.5,3876
+6 day ahead cum death,US,quantile,0.55,4002
+6 day ahead cum death,US,quantile,0.6,4140
+6 day ahead cum death,US,quantile,0.65,4295
+6 day ahead cum death,US,quantile,0.7,4470
+6 day ahead cum death,US,quantile,0.75,4678
+6 day ahead cum death,US,quantile,0.8,4943
+6 day ahead cum death,US,quantile,0.85,5279
+6 day ahead cum death,US,quantile,0.9,5725
+6 day ahead cum death,US,quantile,0.95,6396
+6 day ahead cum death,US,quantile,0.975,7037
+6 day ahead cum death,US,quantile,0.99,7873
+6 day ahead inc death,US,quantile,0.01,602
+6 day ahead inc death,US,quantile,0.025,662
+6 day ahead inc death,US,quantile,0.05,717
+6 day ahead inc death,US,quantile,0.1,789
+6 day ahead inc death,US,quantile,0.15,844
+6 day ahead inc death,US,quantile,0.2,888
+6 day ahead inc death,US,quantile,0.25,930
+6 day ahead inc death,US,quantile,0.3,972
+6 day ahead inc death,US,quantile,0.35,1013
+6 day ahead inc death,US,quantile,0.4,1056
+6 day ahead inc death,US,quantile,0.45,1097
+6 day ahead inc death,US,quantile,0.5,1142
+6 day ahead inc death,US,quantile,0.55,1191
+6 day ahead inc death,US,quantile,0.6,1246
+6 day ahead inc death,US,quantile,0.65,1304
+6 day ahead inc death,US,quantile,0.7,1372
+6 day ahead inc death,US,quantile,0.75,1454
+6 day ahead inc death,US,quantile,0.8,1549
+6 day ahead inc death,US,quantile,0.85,1671
+6 day ahead inc death,US,quantile,0.9,1833
+6 day ahead inc death,US,quantile,0.95,2087
+6 day ahead inc death,US,quantile,0.975,2343
+6 day ahead inc death,US,quantile,0.99,2653

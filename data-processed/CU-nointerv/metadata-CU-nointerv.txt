@@ -1,0 +1,40 @@
+team_name: Columbia University
+team_abbr: CU
+institution_affil: Columbia University; Mount Sinai
+team_contact: Andrew Rundle agr3@cumc.columbia.edu
+team_funding:
+team_experience:
+
+model_name: nointerv
+model_abbr: nointerv
+model_output: https://columbia.maps.arcgis.com/apps/webappviewer/index.html?id=ade6ba85450c4325a12a5b9c09ba796c
+model_repo: https://github.com/shaman-lab/COVID-19Projection
+
+model_contributors: Charles C. Branas, Andrew Rundle, Sen Pei, Wan Yang, Brendan G. Carr, Sarah Sims, Alexis Zebrowski, Ronan Doorley, Neil Schluger, James Quinn, Jeffrey Shaman
+model_targets: daily new confirmed case, daily new infection (both reported and unreported), cumulative demand of hospital beds, ICU and ventilators as well as daily mortality. (Note that hospitalizations and ICU bed numbers indicate the current demand on a given day, NOT just the new persons needing beds.)
+target_loc: county (aggregated into regions and urban/non-urban classifications)
+Time_horizon: 21-day (3 weeks) and 42-day (6 weeks) from April 2, 2020 to May 13, 2020
+Data_format: 2.5, 25, 50, 75 and 97.5 percentiles
+forecast_startdate: 2020-03-13 
+forecast_frequency: 1-2x weekly
+
+data_inputs_known: County-level case data; counts and availability of hospital beds that could be used for critical care
+data_source_known: USAFACTS. https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/; 2020 Centers for Medicare & Medicaid Services (CMS), Health Care Information System (HCRIS) Data File, Sub-System Hospital Cost Report (CMS-2552-96 and CMS-2552-10), Section S-3, Part 1, Column 2; the 2018 American Hospital Association (AHA) Annual Survey; the 2020 US DHHS Health Resources and Services Administration, Area Health Resources Files (AHRF); the 2017-2019 CMS Medicare Provider of Services file, Medicare Cost Report, Hospital Compare Files.
+
+this_model_is_an_ensemble: FALSE
+this_model_is_unconditional: FALSE
+
+methods: >-
+    This model makes predictions about the future that are dependent on a particular set 
+    of assumptions about how interventions are implemented and how effective they are. 
+    Metapopulation county-level SEIR model assuming contacts are not reduced (0% or no 
+    contact reduction via social distancing controls and behavior change).
+
+methods_long: >-
+    This model makes predictions about the future that are dependent on a particular set 
+    of assumptions about how interventions are implemented and how effective they are. 
+    Estimates of spatio-temporal COVID-19 demand and medical system critical care supply were 
+    calculated for all continental US counties. 
+    Four different adaptive scenarios of contact reduction were projected, 0% (no contact reduction via social distancing controls and behavior change), 20%, 30%, and 40% contact reduction. These scenarios are meant to mimic adaptive adjustments in contact imposed both by government regulations (e.g. school closures, restrictions on mass gatherings) and population self-regulation (e.g. isolation, mask wearing, social distancing).  Upon initiation of projections, all counties with 10 or more confirmed cases impose a 0%, 20%, 30% or 40% contact rate reduction, depending on the projection scenario; all other counties implement no contact reduction.  Each week following, if a county newly exceeds 10 confirmed cases, a 0%, 20%, 30% or 40% contact rate reduction is imposed, depending on the projection scenario. Counties that had previously exceeded 10 confirmed cases and also experience an increase in the number of weekly reported confirmed cases impose a further, multiplicative 0%, 20%, 30% or 40% contact rate reduction, depending on the projection scenario.  Counties with fewer than 10 confirmed cases continue not to implement control.  This multiplicative ratcheting of contact reduction levels is continued until the end of simulations and is meant to represent increasing reactive social distancing imposed within counties as long as confirmed weekly cases of COVID-19 continue to rise. Note that in these scenarios, contact reductions are never relaxed.  Once weekly new confirmed cases decrease, the county simply stays at its current level of control.
+
+Citation: "Sen Pei, Jeffrey Shaman, Initial Simulation of SARS-CoV2 Spread and Intervention Effects in the Continental US. medRxiv.doi: https://doi.org/10.1101/2020.03.21.20040303;  Flattening the curve before it flattens us: hospital critical care capacity limits and mortality from novel coronavirus (SARS-CoV2) cases in US counties. https://behcolumbia.files.wordpress.com/2020/04/flattening-the-curve-before-it-flattens-us-20200405b.pdf"

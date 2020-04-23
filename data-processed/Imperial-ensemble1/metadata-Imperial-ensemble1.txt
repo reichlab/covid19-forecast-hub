@@ -1,0 +1,14 @@
+team_name: Imperial
+team_abbr: Imperial
+model_name: Ensemble1
+model_abbr: Ensemble1
+model_contributors: Sangeeta Bhatia <s.bhatia@imperial.ac.uk>
+
+
+this_model_is_an_ensemble: TRUE
+this_model_is_unconditional: TRUE
+
+methods: >-
+    This model makes predictions about the future, unconditional on particular intervention strategies.
+    Ensemble1 and Ensemble2 are disease transmission models fit with different assumptions about serial
+    intervals.

@@ -1,0 +1,41 @@
+team_name: MOBS Lab at Northeastern
+team_abbr: MOBS
+institution_affil: Northeastern University
+team_funding: 
+team_experience: 
+
+model_name: GLEAM COVID-19
+model_abbr: GLEAM_COVID
+model_output: https://covid19.gleamproject.org/
+model_repo: 
+
+model_contributors: Alessandro Vespignani, Matteo Chinazzi, Jessica T. Davis, Kunpeng Mu, Ana Pastore y Piontti, Nicole Samay, Xinyue Xiong, M. Elizabeth Halloran, Ira M. Longini, Jr., Natalie E. Dean, Cécile Viboud, Kaiyuan Sun, Maria Litvinova, Corrado Gioannini, Luca Rossi, Marco Ajelli
+Model_targets: deaths; Infection rate; hospital beds needed; ICU beds needed.
+Target_loc: state, national
+Time_horizon: 28 days (4 weeks) 
+Data_format: mean or median + 90% CI
+forecast_startdate: 
+forecast_frequency: 
+
+data_inputs_known: 
+data_source_known: 
+
+this_model_is_an_ensemble: FALSE
+this_model_is_unconditional: FALSE
+
+methods: >-
+    This model makes predictions about the future that are dependent on the assumption 
+    that current interventions continue. Metapopulation, age structured SLIR model.    
+
+methods_long: >-
+    This model makes predictions about the future that are dependent on the assumption 
+    that current interventions continue. 
+    The GLEAM framework is based on a metapopulation approach in which the world is divided
+    into geographical subpopulations. Human mobility between subpopulations is represented on a network. 
+    This mobility data layer identifies the numbers of individuals traveling from one sub-population to 
+    another. The mobility network is made up of different kinds of mobility processes, from short-range
+    commuting between nearby subpopulations to intercontinental flights. To model short-range mobility 
+    such as commuting or car travel, we rely on databases collected from the Offices of Statistics of 30 
+    countries on five continents. Superimposed on the worldwide population and mobility layers is an 
+    agent-based epidemic model that defines the infection and population dynamics. 
+citation: https://uploads-ssl.webflow.com/58e6558acc00ee8e4536c1f5/5e8bab44f5baae4c1c2a75d2_GLEAM_web.pdf

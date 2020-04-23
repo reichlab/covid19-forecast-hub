@@ -1,0 +1,40 @@
+team_name: Institute for Health Metrics and Evaluation
+team_abbr: IHME
+institution_affil: University of Washington
+team_contact: covid19@healthdata.org; cjlm@u.washington.edu
+team_funding: Bill & Melinda Gates Foundation
+team_experience:
+
+model_name: CurveFit
+model_abbr: CurveFit
+model_output: https://covid19.healthdata.org/united-states-of-america
+model_repo: http://www.healthdata.org/covid/data-downloads
+
+model_contributors: Christopher Murry, et al
+model_targets: deaths (daily, for 4 months); bed and ICU occupancy, and ventilator use; hospital bed, ICU bed and ventilators needed, “peak resource use” (daily, for 4 months), “the date when our forecast predicts the need for hospital beds, ICU beds, ventilators, and other related hospital resources will be greatest”
+target_loc: national, state, country 
+Time_horizon: 4 months, through Aug 4, 2020
+Data_format: mean + 95% UI
+forecast_startdate: 2020-03-25 
+forecast_frequency: multiple times per week
+
+data_inputs_known: observed death rates, data on hospital capacity and utilization for US states
+data_source_known: JHU
+
+this_model_is_an_ensemble: FALSE
+this_model_is_unconditional: FALSE
+
+methods: >-
+    This model makes predictions about the future that are dependent on the assumption 
+    that current interventions continue. Non-linear mixed efects curve-fitting.
+
+methods_long: >-
+    This model makes predictions about the future that are dependent on the assumption 
+    that current interventions continue. The modeling approach in this study is divided into four components: 
+    (i) identification and processing of COVID-19 data; 
+    (ii) statistical model estimation for population death rates as a function of time 
+    since the death rate exceeds a threshold in a location; 
+    (iii) predicting time to exceed a given population death threshold in states early in the pandemic; and 
+    (iv) modeling health service utilization as a function of deaths."
+    CurveFit package available at: https://github.com/ihmeuw-msca/CurveFit
+Citation: Forecasting COVID-19 impact on hospital bed-days, ICU-days, ventilator-days and deaths by US state in the next 4 months https://www.medrxiv.org/content/10.1101/2020.03.27.20043752v1; http://www.healthdata.org/covid/publications

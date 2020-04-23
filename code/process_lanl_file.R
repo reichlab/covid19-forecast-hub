@@ -2,38 +2,44 @@
 ## Nicholas Reich
 ## April 2020
 
+source("code/get_next_saturday.R")
 
 #' turn LANL forecast file into quantile-based format
 #'
 #' @param lanl_filepath path to a lanl submission file
-#' @param timezero the origin date for the forecast
 #'
-#' @details typically timezero will be a monday and the 1-week ahead 
-#' forecast will be for the EW of the Monday. 1-day-ahead would be Tuesday.
+#' @details designed to process either an incidence or cumulative death forecast
 #'
 #' @return a data.frame in quantile format
-process_lanl_file <- function(lanl_filepath, timezero) {
+process_lanl_file <- function(lanl_filepath) {
     require(tidyverse)
     require(MMWRweek)
     require(lubridate)
     ## check this is a deaths file
     if(substr(basename(lanl_filepath), 12, 17) != "deaths")
         stop("check to make sure this is a deaths file")
-    
+
+    ## check this is an incident deaths file or not
+    inc_or_cum <- ifelse(grepl("incidence", basename(lanl_filepath)),
+        "inc", "cum")
+        
     ## read in FIPS codes
     fips <- read_csv("template/state_fips_codes.csv")
     
     ## read in forecast dates
     fcast_dates <- read_csv("template/covid19-death-forecast-dates.csv")
-    timezero <- as.Date(timezero)
+    timezero <- as.Date(substr(basename(lanl_filepath), 0, 10))
     
     ## read in data
     dat <- read_csv(lanl_filepath)
     forecast_date <- unique(dat$fcst_date)
     
-    diff_in_fcast_dates <- timezero - forecast_date 
-    if(diff_in_fcast_dates<0)
-        stop("timezero is before the forecast date")
+    if(forecast_date != timezero)
+        stop("timezero in the filename is not equal to the forecast date in the data")
+    
+    ## make USVI adjustment
+    usvi_idx <- which(dat$state=="Virgin Islands")
+    dat[usvi_idx, "state"] <- rep("U.S. Virgin Islands")
     
     ## put into long format
     dat_long <- pivot_longer(dat, cols=starts_with("q."), names_to = "q", values_to = "cum_deaths") %>%
@@ -44,16 +50,44 @@ process_lanl_file <- function(lanl_filepath, timezero) {
         rename(
             location = state_code, 
             location_name = state, 
-            value = cum_deaths)
+            value = cum_deaths,
+            target_end_date = dates)
     
     ## create tables corresponding to the days for each of the targets
-    day_aheads <- tibble(target = paste(1:7, "day ahead cum"), dates = timezero+1:7)
-    week_aheads <- tibble(target = paste(1:7, "wk ahead cum"), dates = get_next_saturday(timezero+seq(0, by=7, length.out = 7)))
-    
+    n_day_aheads <- length(unique(dat_long$target_end_date))
+    n_week_aheads <- sum(wday(unique(dat_long$target_end_date))==7)
+        
+    day_aheads <- tibble(
+        target = paste(1:n_day_aheads, "day ahead", inc_or_cum, "death"), 
+        target_end_date = forecast_date+1:n_day_aheads)
+
     ## merge so targets are aligned with dates
-    fcast_days <- inner_join(day_aheads, dat_long) %>% select(-dates)
-    fcast_weeks <- inner_join(week_aheads, dat_long) %>% select(-dates)
-    fcast_all <- bind_rows(fcast_days, fcast_weeks)
+    fcast_days <- inner_join(day_aheads, dat_long) 
+    fcast_all <- fcast_days %>% ## this will be overwritten if cumulative file.
+        mutate(forecast_date = forecast_date)
+    
+    ## only do week-ahead for cumulative counts
+    if(inc_or_cum == "cum") {
+        if(wday(forecast_date) <= 2 ) { ## sunday = 1, ..., saturday = 7
+            ## if timezero is Sun or Mon, then the current epiweek ending on Saturday is the "1 week-ahead"
+            week_aheads <- tibble(
+                target = paste(1:n_week_aheads, "wk ahead cum death"),
+                target_end_date = get_next_saturday(forecast_date+seq(0, by=7, length.out = n_week_aheads))
+            )
+        } else {
+            ## if timezero is after Monday, then the next epiweek is "1 week-ahead"
+            week_aheads <- tibble(
+                target = paste(1:n_week_aheads, "wk ahead cum death"), 
+                target_end_date = get_next_saturday(forecast_date+seq(7, by=7, length.out = n_week_aheads))
+            )
+        }
+        
+        ## merge so targets are aligned with dates
+        fcast_weeks <- inner_join(week_aheads, dat_long)
+        fcast_all <- bind_rows(fcast_days, fcast_weeks) %>%
+            mutate(forecast_date = forecast_date)
+    }
+    
     
     ## make and merge point estimates as medians
     point_ests <- fcast_all %>% 
@@ -62,7 +96,9 @@ process_lanl_file <- function(lanl_filepath, timezero) {
     
     all_dat <- bind_rows(fcast_all, point_ests) %>%
         arrange(type, target, quantile) %>%
-        mutate(quantile = round(quantile, 3))
+        mutate(quantile = round(quantile, 3)) %>%
+        ## making sure ordering is right :-)
+        select(forecast_date, target, target_end_date, location, location_name, type, quantile, value)
     
     return(all_dat)
 }

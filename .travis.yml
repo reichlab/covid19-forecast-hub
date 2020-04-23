@@ -1,0 +1,35 @@
+
+language: node_js
+dist: bionic
+sudo: required
+git:
+  depth: 1
+
+before_install:
+  # Key for cran trusty ppa
+  - sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 51716619E084DAB9
+
+  # Dependencies
+  - sudo apt-get install libv8-3.14-dev r-base r-base-dev libudunits2-dev libgdal-dev libgeos-dev libproj-dev fish -y
+  - chmod +x travis-main.sh
+  - sudo apt-get update
+  
+node_js:
+  - 7
+
+cache:
+  directories: $TRAVIS_BUILD_DIR/packrat/
+  packages: true
+install:
+  - R -e "0" --args --bootstrap-packrat
+warnings_are_errors: false
+
+script: ./travis-main.sh
+
+notifications:
+  email: false
+
+
+env:
+  global:
+  - ENCRYPTION_LABEL: dce9ae5740a9
