@@ -33,8 +33,13 @@ pip3 install git+https://github.com/reichlab/zoltpy/
 source ./travis/validate-data.sh
 echo "build complete"
 
-if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Pull new data"* ]]; then
-   echo "Merge detected.. push to github"
+if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* ]]; then
+   echo "updating model data..."
+   bash ./travis/pull-data.sh
+fi
+
+if [[ "$TRAVIS_COMMIT_MESSAGE" == *"update data"*]]; then
+   echo "updating model data..."
    bash ./travis/pull-data.sh
 fi
 

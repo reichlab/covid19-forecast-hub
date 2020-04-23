@@ -1,6 +1,7 @@
 from zoltpy.quantile import validate_quantile_csv_file
 import glob
 from pprint import pprint
+import sys
 
 # loop through model directories
 my_path = "./data-processed"
@@ -15,7 +16,6 @@ for filepath in glob.iglob(my_path + "**/**/*.csv", recursive=False):
         file_error = validate_quantile_csv_file(filepath)
         if file_error != 'no errors':
             output_errors[filepath] = file_error
-print(len(output_errors))
 
 # Output list of Errors
 if len(output_errors) > 0:
@@ -23,5 +23,7 @@ if len(output_errors) > 0:
         print("\n* ERROR IN '", filename, "'")
         for error in errors:
             print(error)
+    sys.exit("\n ERRORS FOUND EXITING BUILD...")
+
 else:
     print("✓ no errors")
