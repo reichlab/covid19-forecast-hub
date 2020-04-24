@@ -9,8 +9,6 @@ yarn run test
 yarn run parse-data
 rm -r ./data/NaN-NaN
 rm -r ./data/2019-2020/CU-nointerv
-rm -r ./data/2019-2020/null-null
-rm -r ./data/2019-2020/UMass-ExpertCrowd
 python3 ./scripts/convert-forecasts.py
 python3 ./scripts/get-truth-data.py
 

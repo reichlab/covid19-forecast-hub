@@ -38,17 +38,17 @@ if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* ]]; then
    bash ./travis/pull-data.sh
 fi
 
-if [[ "$TRAVIS_COMMIT_MESSAGE" == *"update data"*]]; then
+if [[ "$TRAVIS_COMMIT_MESSAGE" == *"update data"* ]]; then
    echo "updating model data..."
    bash ./travis/pull-data.sh
 fi
 
-# if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
-#    echo "Merge detected.. push to github"
-#    bash ./travis/push.sh
-# fi
+if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
+   echo "Merge detected.. push to github"
+   bash ./travis/push.sh
+fi
 
-# if [[ "$TRAVIS_COMMIT_MESSAGE" == *"trigger build"* ]]; then
-#     source ./travis/vis.sh
-#     source ./travis/push.sh
-# fi
+if [[ "$TRAVIS_COMMIT_MESSAGE" == *"trigger build"* ]]; then
+    source ./travis/vis.sh
+    source ./travis/push.sh
+fi
