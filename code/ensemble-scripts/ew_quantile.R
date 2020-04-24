@@ -16,7 +16,7 @@ pull_all_forecasts <- function(monday_run_date, model,targets,quantiles=c(0.025,
   # ensure single most recent forecast file for current week for each model
   forecast_files <- c()
   for (j in 1:length(model)){
-    current_comp_fcast <- component_fcast[(grep(model[i], current_fcast))]
+    current_comp_fcast <- component_fcast[(grep(model[i], component_fcast))]
     if (length(current_comp_fcast)==1){
       forecast_files <- c(forecast_files,current_comp_fcast)
     }else{
@@ -33,7 +33,7 @@ pull_all_forecasts <- function(monday_run_date, model,targets,quantiles=c(0.025,
                                                 c(substr(basename(forecast_files),start=1,stop=10)),
                                                 rep(1/length(forecast_files),length(forecast_files)),
                                                 rep("1-4 wk ahead cum death",length(forecast_files))
-
+                                                
     ))
     names(ensemble_component_info) <- c("model_name","quantile","forecast_date","weight","target")
   }
