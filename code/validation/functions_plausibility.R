@@ -89,10 +89,11 @@ verify_colnames <- function(entry){
 #' @return invisibly returns TRUE if problems detected, FALSE otherwise
 verify_targets <- function(entry){
   allowed_targets <- c(
-    paste(1:50, "day ahead inc death"),
-    paste(1:50, "day ahead cum death"),
-    paste(1:7, "wk ahead inc death"),
-    paste(1:7, "wk ahead cum death")
+    paste(1:130, "day ahead inc death"),
+    paste(1:130, "day ahead cum death"),
+    paste(1:20, "wk ahead inc death"),
+    paste(1:20, "wk ahead cum death"),
+    paste(1:30, "day ahead inc hosp")
   )
   targets_in_entry <- unique(entry$target)
   if(!all(targets_in_entry %in% allowed_targets)){
