@@ -48,7 +48,7 @@ if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
    bash ./travis/push.sh
 fi
 
-# if [[ "$TRAVIS_COMMIT_MESSAGE" == *"trigger build"* ]]; then
-#     source ./travis/vis.sh
-#     source ./travis/push.sh
-# fi
+if [[ "$TRAVIS_COMMIT_MESSAGE" == *"trigger build"* ]]; then
+    source ./travis/vis.sh
+    source ./travis/push.sh
+fi
