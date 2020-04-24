@@ -1,0 +1,128 @@
+## reformat IHME forecasts
+
+#' Transform matrix of samples for one location into a quantile-format data_frame
+#'
+#' @param path the forecast file path
+#' @return long-format data_frame with quantiles
+#' 
+make_qntl_dat <- function(path) {
+  require(tidyverse)
+  require(MMWRweek)
+  require(lubridate)
+  forecast_date <- gsub("_", "-",substr(dirname(path),start=17,stop=26)) 
+  forecast_date <- as.Date(forecast_date)
+  data <- read.csv(path, stringsAsFactors = FALSE)
+  # format read-in file
+  if(names(data)[1]=="location_name" & names(data)[2]=="date_reported"){
+    # dummy
+    data$V1 <- 1
+    data <- data[,c(30,1:29)]
+    data<-data %>%
+      rename(location=location_name,date=date_reported)
+  }
+  if(names(data)[1]=="location_name" & names(data)[2]=="date"){
+    # dummy
+    data$V1 <- 1
+    data <- data[,c(30,1:29)]
+    data<-data %>%
+      rename(location=location_name)
+  }
+  if (names(data)[2]=="location_name"){
+    names(data)[2]="location"
+  }
+  ## read state code
+  state_fips_codes<-read.csv("./template/state_fips_codes.csv",stringsAsFactors = FALSE) %>%
+    dplyr::select(-"state")
+  col_list1 <- grep("death", colnames(data))
+  death_qntl1 <- data[,c(1:3,col_list1)] %>%
+    dplyr::select(-"V1") %>%
+    dplyr::rename(date_v=date) %>%
+    # dplyr::filter(as.Date(as.character(date_v)) %in% c(forecast_date+1:7)) %>%
+    dplyr::filter(as.Date(as.character(date_v)) > forecast_date) %>%
+    dplyr::mutate(target_id=paste(difftime(as.Date(as.character(date_v)),forecast_date,units="days"),"day ahead inc death")) %>%
+    dplyr::rename("0.025"=deaths_lower,"0.975"=deaths_upper,"NA"=deaths_mean) %>%
+    gather(quantile, value, -c(location, date_v, target_id)) %>%
+    dplyr::left_join(state_fips_codes, by=c("location"="state_name")) %>%
+    dplyr::rename(location_id=state_code) %>%
+    dplyr::mutate(type=ifelse(quantile=="NA","point","quantile"),forecast_date=forecast_date) %>%
+    dplyr::rename(target_end_date=date_v)
+  col_list2 <- grep("totdea",colnames(data))
+  death_qntl2 <- data[,c(1:3,col_list2)] %>%
+    dplyr::select(-"V1") %>%
+    dplyr::rename(date_v=date) %>%
+    # dplyr::filter(as.Date(as.character(date_v)) %in% c(forecast_date+1:7)) %>%
+    dplyr::filter(as.Date(as.character(date_v)) > forecast_date) %>%
+    dplyr::mutate(target_id=paste(difftime(as.Date(as.character(date_v)),forecast_date,units="days"),"day ahead cum death")) %>%
+    dplyr::rename("0.025"=totdea_lower,"0.975"=totdea_upper,"NA"=totdea_mean) %>%
+    gather(quantile, value, -c(location, date_v, target_id)) %>%
+    dplyr::left_join(state_fips_codes, by=c("location"="state_name")) %>%
+    dplyr::rename(location_id=state_code) %>%
+    dplyr::mutate(type=ifelse(quantile=="NA","point","quantile"),forecast_date=forecast_date) %>%
+    dplyr::rename(target_end_date=date_v)
+  # add if for forecast date
+  if (lubridate::wday(forecast_date,label = TRUE, abbr = FALSE)=="Sunday"|lubridate::wday(forecast_date,label = TRUE, abbr = FALSE)=="Monday"){
+    death_qntl3_1 <- data[,c(1:3,col_list2)] %>%
+      dplyr::select(-"V1") %>%
+      dplyr::rename(date_v=date) %>%
+      dplyr::mutate(day_v=lubridate::wday(date_v,label = TRUE, abbr = FALSE),
+                    ew=unname(MMWRweek(date_v)[[2]])) %>%
+      # dplyr::filter(day_v =="Saturday" & 
+      #                 ew<unname(MMWRweek(forecast_date)[[2]])+6 & 
+      #                 ew>unname(MMWRweek(forecast_date)[[2]])-1) %>%
+      dplyr::filter(day_v =="Saturday" & ew>unname(MMWRweek(forecast_date)[[2]])-1) %>%
+      dplyr::mutate(target_id=paste((ew-(unname(MMWRweek(forecast_date)[[2]]))+1),"wk ahead cum death")) 
+  } else {
+    death_qntl3_1 <- data[,c(1:3,col_list2)] %>%
+      dplyr::select(-"V1") %>%
+      dplyr::rename(date_v=date) %>%
+      dplyr::mutate(day_v=lubridate::wday(date_v,label = TRUE, abbr = FALSE),
+                    ew=unname(MMWRweek(date_v)[[2]])) %>%
+      # dplyr::filter(day_v =="Saturday" & 
+      #                 ew<(unname(MMWRweek(forecast_date)[[2]])+1)+6 & 
+      #                 ew>unname(MMWRweek(forecast_date)[[2]])) %>%
+      dplyr::filter(day_v =="Saturday" & ew>unname(MMWRweek(forecast_date)[[2]])) %>%
+      dplyr::mutate(target_id=paste((ew-(unname(MMWRweek(forecast_date)[[2]])+1))+1,"wk ahead cum death")) 
+  }
+  death_qntl3 <- death_qntl3_1 %>%
+    dplyr::rename("0.025"=totdea_lower,"0.975"=totdea_upper,"NA"=totdea_mean) %>%
+    gather(quantile, value, -c(location, date_v, day_v, ew, target_id)) %>%
+    dplyr::left_join(state_fips_codes, by=c("location"="state_name")) %>%
+    dplyr::rename(location_id=state_code,target_end_date=date_v) %>%
+    dplyr::mutate(type=ifelse(quantile=="NA","point","quantile"),forecast_date=forecast_date) %>%
+    dplyr::select(-"day_v",-"ew")
+  # combining data
+  comb <-rbind(death_qntl1,death_qntl2,death_qntl3) 
+  comb$location[which(comb$location=="United States of America")] <- "US"
+  comb$location_id[which(comb$location=="US")] <- "US"
+  comb <- comb %>%
+    dplyr::filter(!is.na(location_id)) %>%
+    dplyr::rename(location_name=location)
+  comb$quantile[which(comb$quantile=="NA")] <- NA
+  comb$quantile <- as.numeric(comb$quantile)
+  comb$value <- as.numeric(comb$value)
+  # point_ests <- comb %>%
+  #   filter(is.na(quantile))
+  # point_ests$quantile<-0.5
+  # point_ests$type<-"quantile"
+  # final<- rbind(comb,point_ests) %>%
+  final<- comb %>%
+    dplyr::select(forecast_date,target_id,target_end_date,location_id,location_name,type,quantile,value) %>%
+    dplyr::rename(target=target_id,location=location_id) %>%
+    arrange(location,type,quantile,target)
+  final$location[which(nchar(final$location)==1)] <- paste0(0,final$location[which(nchar(final$location)==1)])
+  return(final)
+}
+
+
+## list all files and read
+filepaths <- list.files("./data-raw/IHME",pattern = ".csv", recursive =TRUE,full.names = TRUE)
+file_processed_dates <- substr(basename(list.files("./data-processed/IHME-CurveFit",pattern = ".csv", recursive =TRUE,full.names = TRUE)),start=1,stop=10)
+raw_file_dates <- substr(dirname(filepaths),start=17,stop=26)
+newfile_date <- setdiff(gsub("_", "-",raw_file_dates),file_processed_dates)
+new_filepath <- filepaths[grepl(gsub("-", "_",newfile_date),filepaths)]
+for(i in 1:length(new_filepath)){
+  formatted_file <- make_qntl_dat(new_filepath[i])
+  date <- gsub("_", "-",substr(dirname(new_filepath[i]),start=17,stop=26))
+  write_csv(formatted_file,path = paste0("data-processed/IHME-CurveFit/",date,"-IHME-CurveFit.csv"))
+}
+
