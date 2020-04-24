@@ -1,6 +1,7 @@
 team_name: COVID forecast hub
 team_abbr: COVIDhub
 institution_affil: UMass-Amherst Influenza Forecasting Center of Excellence
+team_contact: Nicholas Reich <nick@schoolph.umass.edu>
 team_funding: 
 team_experience: 
 
@@ -12,6 +13,7 @@ model_repo: https://github.com/reichlab/covid19-forecast-hub
 model_contributors: Nutcha Wattanachit, Nicholas Reich <nick@schoolph.umass.edu>
 Model_targets: 1 through 6-wk ahead cumulative deaths
 Target_loc: US and state-level
+Time_horizon:
 Data_format: median and 95% UI
 forecast_startdate: 
 forecast_frequency: 
