@@ -122,7 +122,7 @@ verify_no_quantile_crossings <- function(entry){
   # choose columns representing quantiles
   quantiles <- as.matrix(entry_wide[, grepl("value.", colnames(entry_wide))])
   # check whether rows are non-decreasing (i.e. there are no crossings)
-  is_crossing <- apply(quantiles, 1, function(v) any(diff(v) < 0))
+  is_crossing <- apply(quantiles, 1, function(v) any(diff(v) < -0.01)) # leave some tolerance
   # warn if there are crossing and return info on where they ocurred
   if(any(is_crossing)){
     warning("Quantile crossing found for ", sum(is_crossing), " combinations of location and target.")
@@ -156,7 +156,7 @@ verify_monotonicity_cumulative <- function(entry){
   # choose columns representing dates
   quantiles_daily <- as.matrix(entry_daily_wide[, grepl("value.", colnames(entry_daily_wide))])
   # check whether rows are non-decreasing (i.e. there are no crossings)
-  is_decreasing_daily <- apply(quantiles_daily, 1, function(v) any(diff(v) < 0))
+  is_decreasing_daily <- apply(quantiles_daily, 1, function(v) any(diff(v) < -0.01)) # some tolerance
 
   # weekly forecasts (cumulative only):
   entry_weekly <- subset(entry, grepl("wk", target) & grepl("cum", target))
@@ -169,7 +169,7 @@ verify_monotonicity_cumulative <- function(entry){
   # choose columns representing dates
   quantiles_weekly <- as.matrix(entry_weekly_wide[, grepl("value.", colnames(entry_weekly_wide))])
   # check whether rows are non-decreasing (i.e. there are no crossings)
-  is_decreasing_weekly <- apply(quantiles_weekly, 1, function(v) any(diff(v) < 0))
+  is_decreasing_weekly <- apply(quantiles_weekly, 1, function(v) any(diff(v) < -0.01)) # some tolerance
 
   # warn if there are crossing and return info on where they ocurred
   if(any(c(is_decreasing_daily, is_decreasing_weekly))){
