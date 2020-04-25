@@ -44,6 +44,8 @@ fips <- read_csv("../template/state_fips_codes.csv",
                               fips_numeric = "US", 
                               full_name = "United States"))
 
+warning("The following warnings are due to missing required columns:")
+
 all_data = read_my_dir(".", "*.csv",
                 into = c("period","team","model",
                          "year","month","day","team2","model_etc"),
