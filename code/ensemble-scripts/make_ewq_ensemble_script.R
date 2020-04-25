@@ -1,8 +1,7 @@
 require(tidyverse)
-# require(cdcForecastUtils) #devtools::install_github("reichlab/cdcForecastUtils")
 require(stringr)
-source("./code/ew_quantile.R")
-source("./code/functions_plausibility.R")
+source("./code/ensemble-scripts/ew_quantile.R")
+source("./code/validation/functions_plausibility.R")
 
 # ----------------------------  make ensemble ---------------------------- #
 ## state
