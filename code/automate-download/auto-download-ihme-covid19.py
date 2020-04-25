@@ -5,7 +5,6 @@ import shutil
 import zipfile
 import os
 import sys
-from git import Repo
 
 def download_covid_zip_files(path):
     # metadata
@@ -26,14 +25,6 @@ def download_covid_zip_files(path):
     if os.path.exists(os.path.join(path, name)):
         os.remove(os.path.join(path, name))
     new_list = os.listdir(path)
-    
-    # Add to github if there's new data
-    if len(new_list)!=len(old_list):
-        repo = Repo(path)
-        repo.git.add(path+'\\*')
-        repo.git.commit( m='Add new IHME raw data' )
-        repo.git.pull()
-        repo.git.push()
 
 
 if __name__ == '__main__':
