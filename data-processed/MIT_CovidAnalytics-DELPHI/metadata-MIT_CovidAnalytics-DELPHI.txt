@@ -1,0 +1,37 @@
+team_name: CovidAnalytics at MIT
+team_abbr: CovidAnalytics
+institution_affil: Massachusetts Institute of Technology
+team_funding: 
+team_experience: 
+
+model_name: DELPHI
+model_abbr: DELPHI
+model_output: https://www.covidanalytics.io/
+model_repo: https://github.com/COVIDAnalytics/DELPHI
+
+model_contributors: Michael Lingzhi Li (Model Creator and Maintainer), Hamza Tazi Bouardi (Maintainer), Dimitris Bertsimas (Advisor). For a full list of general contributors to the team, see https://www.covidanalytics.io/team.
+Model_targets: deaths; hospitalizations; cases
+Target_loc: state, national
+Time_horizon: Till 06/15
+Data_format: mean 
+forecast_startdate: 
+forecast_frequency: 
+
+data_inputs_known: New York Times 
+data_source_known: 
+
+this_model_is_an_ensemble: FALSE
+this_model_is_unconditional: FALSE
+
+methods: >-
+    This model makes predictions for future cases based on a heavily modified SEIR model taking
+    into account underdetection and government intervention. Current interventions are assumed to continue.
+
+methods_long: >-
+    This model makes predictions for future cases based on a heavily modified SEIR model.
+    New states are added to the SEIR model to account for cases that went undetected, and an explicit death state is included. The infection rate is
+    corrected with a nonlinear curve that represents the governmental and societal response (which is assumed)
+    to continue until the end of the pandemic). Key parameters for the disease are fixed using a metanalysis 
+    conducted by the CovidAnalytics group of over 150 parameters while epidemiological parameters are fitted
+    to hisotical death counts and detected cases. 
+citation: https://www.covidanalytics.io/DELPHI_documentation_pdf

@@ -28,7 +28,7 @@ npm install
 sudo apt-get install python3-pandas
 sudo apt install python3-pip
 pip3 install --upgrade setuptools
-pip3 install pymmwr click requests
+pip3 install pymmwr click requests urllib3 selenium
 pip3 install git+https://github.com/reichlab/zoltpy/
 source ./travis/validate-data.sh
 echo "build complete"
@@ -38,17 +38,17 @@ if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* ]]; then
    bash ./travis/pull-data.sh
 fi
 
-if [[ "$TRAVIS_COMMIT_MESSAGE" == *"update data"*]]; then
+if [[ "$TRAVIS_COMMIT_MESSAGE" == *"update data"* ]]; then
    echo "updating model data..."
    bash ./travis/pull-data.sh
 fi
 
-# if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
-#    echo "Merge detected.. push to github"
-#    bash ./travis/push.sh
-# fi
+if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
+   echo "Merge detected.. push to github"
+   bash ./travis/push.sh
+fi
 
-# if [[ "$TRAVIS_COMMIT_MESSAGE" == *"trigger build"* ]]; then
-#     source ./travis/vis.sh
-#     source ./travis/push.sh
-# fi
+if [[ "$TRAVIS_COMMIT_MESSAGE" == *"trigger build"* ]]; then
+    source ./travis/vis.sh
+    source ./travis/push.sh
+fi

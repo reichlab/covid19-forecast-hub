@@ -1,7 +1,8 @@
 import pandas as pd
 import pymmwr as pm
 import datetime
-
+import warnings
+warnings.simplefilter(action='ignore')
 
 def get_epi_data(date):
     format_str = '%m/%d/%y'  # The format
@@ -35,22 +36,14 @@ df_truth['year'], df_truth['week'], df_truth['day'] = \
 # rename columns
 df_truth = df_truth.rename(columns={0: "value",
                                     "level_1": "location_long"})
-# Only visualize certain states
-states = ['US', 'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut',
-          'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky',
-          'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri',
-          'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York',
-          'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
-          'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington',
-          'West Virginia', 'Wisconsin', 'Wyoming', 'District of Columbia']
-df_truth = df_truth[df_truth["location_long"].isin(states)]
-
 # Get state IDs
 df_truth = df_truth.merge(fips_codes, left_on='location_long', right_on='state_name', how='left')
+
 df_truth.loc[df_truth["location_long"] == "US", "state_code"] = "US"
 df_truth["state_code"].replace({"US": 1000}, inplace=True)  # so that can be converted to int
 
 # convert FIPS code to int
+df_truth = df_truth.dropna(subset=['state_code'])
 df_truth["state_code"] = df_truth["state_code"].astype(int)
 
 # add leading zeros to state code
@@ -83,20 +76,30 @@ df_byday.to_csv('../data-processed/truth-cum-death.csv', index=False)
 # Truth data output for visualization
 ####################################
 '''
+# Only visualize certain states
+states = ['US', 'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut',
+          'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky',
+          'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri',
+          'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York',
+          'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
+          'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington',
+          'West Virginia', 'Wisconsin', 'Wyoming', 'District of Columbia']
+df_truth = df_truth[df_truth["location_long"].isin(states)]
+
 # Observed data on the seventh day
-df_truth = df_truth[df_truth['day'] == 7]
-df_truth['week'] = df_truth['week'] + 1  # shift epiweek on axis
+df_vis = df_truth[df_truth['day'] == 7]
+df_vis['week'] = df_vis['week'] + 1  # shift epiweek on axis
 
 
 # add leading zeros to epi week
-df_truth['week'] = df_truth['week'].apply(lambda x: '{0:0>2}'.format(x))
+df_vis['week'] = df_vis['week'].apply(lambda x: '{0:0>2}'.format(x))
 
 # define epiweek
-df_truth['epiweek'] = df_truth['year'].astype(str) + df_truth['week']
+df_vis['epiweek'] = df_vis['year'].astype(str) + df_vis['week']
 
 # only output "location", "epiweek", "value"
-df_truth = df_truth.rename(columns={"state": "location"})
-df_truth_short = df_truth[["location", "epiweek", "value"]]
+df_vis = df_vis.rename(columns={"state": "location"})
+df_truth_short = df_vis[["location", "epiweek", "value"]]
 
 df_truth_short["value"].replace({0: 0.1}, inplace=True)
 
@@ -111,7 +114,7 @@ with open('vis-master/covid-csv-tools/dist/state_actual/2019.json', 'w') as f:
 ####################################
 '''
 # rename location
-df_truth_long = df_truth.rename(columns={"week": "epiweek",
+df_truth_long = df_vis.rename(columns={"week": "epiweek",
                                          "state_code": "unit",
                                          "level_0": "date"})
 # get timezero
