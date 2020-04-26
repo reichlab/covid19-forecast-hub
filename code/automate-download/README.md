@@ -1,7 +1,6 @@
 # Requirements
 * selenium: pip install selenium
 * urllib3: pip install urllib3
-* GitPython: pip install gitpython
 * ChromeDriver.exe: included
 
 When running, each script needs the path to where you want to store the raw data as an argument
