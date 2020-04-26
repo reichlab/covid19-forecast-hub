@@ -15,7 +15,7 @@ def download_covid_zip_files(path):
     options = webdriver.ChromeOptions() 
     prefs = {'download.default_directory' : path}
     options.add_experimental_option('prefs', prefs)
-    driver = webdriver.Chrome(executable_path=r"/code/automate-download/chromedriver.exe",chrome_options=options)
+    driver = webdriver.Chrome(executable_path=r"code/automate-download/chromedriver.exe",chrome_options=options)
     driver.get(url)
     try:
         element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "us-model-outputs-links")))
