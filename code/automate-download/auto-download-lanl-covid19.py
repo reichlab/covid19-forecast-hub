@@ -15,6 +15,10 @@ def download_covid_zip_files(path):
     url = "https://covid-19.bsvgateway.org/"
     options = webdriver.ChromeOptions() 
     prefs = {'download.default_directory' : path}
+    options.add_argument('--no-sandbox')
+    options.add_argument('--headless')
+    options.add_argument('--disable-dev-shm-usage')
+    options.add_argument('--disable-gpu')
     options.add_experimental_option('prefs', prefs)
     driver = webdriver.Chrome(ChromeDriverManager().install(),chrome_options=options)
     driver.get(url)
