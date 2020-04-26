@@ -10,8 +10,7 @@ def download_covid_zip_files(path):
     # metadata
     prefix = "https://raw.githubusercontent.com/shaman-lab/COVID-19Projection/master/Projection_"
     today = datetime.datetime.today()
-    # today_dates = calendar.month_name[today.month] + today.strftime('%d')
-    today_dates = "April23"
+    today_dates = calendar.month_name[today.month] + today.strftime('%d')
     suffix = "/cdc_hosp/state_cdchosp_"
     raw_list = ["60contact.csv", "70contact.csv", "80contact.csv", "nointerv.csv"]
 
