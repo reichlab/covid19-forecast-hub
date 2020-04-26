@@ -9,13 +9,14 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+from webdriver_manager.chrome import ChromeDriverManager
 
 def download_covid_zip_files(path):
     url = "https://covid-19.bsvgateway.org/"
     options = webdriver.ChromeOptions() 
     prefs = {'download.default_directory' : path}
     options.add_experimental_option('prefs', prefs)
-    driver = webdriver.Chrome(executable_path="/code/automate-download/chromedriver",chrome_options=options)
+    driver = webdriver.Chrome(ChromeDriverManager().install(),chrome_options=options)
     driver.get(url)
     try:
         element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "us-model-outputs-links")))
