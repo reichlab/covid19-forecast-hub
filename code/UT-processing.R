@@ -14,7 +14,7 @@ last6weekdays <- wday(last6days, label = TRUE)
 
 lastMonday <- last6days[last6weekdays == "Mon"]
 
-raw <- read_csv(here(sprintf("data-raw/UTexas/%s-UTexas-sdmetrics-raw.csv", lastMonday)))
+raw <- read_csv(here(sprintf("data-raw/UT/%s-UT-Mobility-raw.csv", lastMonday)))
 
 glimpse(raw)
 
@@ -51,11 +51,14 @@ cumDfList <- vector("list", 7)
 
 for (j in 1:7) {
 
+  dateJ <- today() + j
+
   ## INC
   sub_inc <- raw %>%
-    filter(date == today() + j) %>%
+    filter(date == dateJ) %>%
     select(-contains("quantilecm")) %>%
     mutate(target = sprintf("%i day ahead inc deaths", j),
+           ## target_end_date = dateJ,
            type = "quantile") %>%
     mutate(forecast_date = today()) %>% 
     select(forecast_date, target, target_end_date = date,
@@ -71,9 +74,10 @@ for (j in 1:7) {
 
   ## CUM
   sub_cum <- raw %>%
-    filter(date == today() + j) %>%
+    filter(date == dateJ) %>%
     select(-contains("quantile_")) %>%
     mutate(target = sprintf("%i day ahead cum deaths", j),
+           ## target_end_date = dateJ,
            type = "quantile") %>%
     mutate(forecast_date = today()) %>% 
     select(forecast_date, target, target_end_date = date,
@@ -169,4 +173,4 @@ glimpse(deathSummaryFinal)
 
 
 write_csv(deathSummaryFinal,
-          here(sprintf("data-processed/UTexas-sdmetrics/%s-UTexas-sdmetrics.csv", lastMonday)))
+          here(sprintf("data-processed/UT-Mobility/%s-UT-Mobility.csv", lastMonday)))
