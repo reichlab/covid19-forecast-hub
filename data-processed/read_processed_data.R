@@ -5,6 +5,7 @@ library("tidyr")
 library("readr")
 
 read_my_csv = function(f, into) {
+  print(paste("Reading",f,"\n"))
   readr::read_csv(f,
                   col_types = readr::cols(
                     forecast_date   = readr::col_date(format = ""),
