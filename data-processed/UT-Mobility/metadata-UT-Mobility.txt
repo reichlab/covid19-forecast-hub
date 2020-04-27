@@ -1,13 +1,13 @@
 
 team_name: UT-Austin COVID-19 Consortium
-team_abbr: UTexas
+team_abbr: UT
 institution_affil: The University of Texas at Austin
 team_contact: Spencer Woody <spencer.woody@utexas.edu> ; James Scott <james.g.scott@mccombs.utexas.edu>
 team_funding: NSF
 team_experience:
 
-model_name: sdmetrics
-model_abbr: sdmetrics
+model_name: Mobility
+model_abbr: Mobility
 model_output: https://covid-19.tacc.utexas.edu/projections/
 model_repo:
 
