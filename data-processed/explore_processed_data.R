@@ -5,14 +5,14 @@
 library("shiny")
 library("rmarkdown")
 
-# source("read_processed_data.R")
+source("read_processed_data.R")
 
 # Further process the processed data for ease of exploration
 latest <- all_data %>% 
+  filter(!is.na(forecast_date)) %>%
   group_by(team, model) %>%
   dplyr::filter(forecast_date == max(forecast_date)) %>%
   ungroup() %>%
-  filter(!is.na(forecast_date)) %>%
   tidyr::separate(target, into=c("n","unit","ahead","inc_cum","death_cases"),
                   remove = FALSE)
 
