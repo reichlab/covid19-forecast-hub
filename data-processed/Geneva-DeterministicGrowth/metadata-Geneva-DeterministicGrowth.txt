@@ -10,8 +10,8 @@ model_output: https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/
 model_repo: https://renkulab.io/gitlab/covid-19/covid-19-forecast
 
 model_contributors: Antoine Flahault, Elisa Manetti, Thomas Simonson, Christine Choirat
-Model_targets: reported confirmed cases (1 to 8-day-ahead); reported deaths (1 to 8-day-ahead);
-Target_loc: national (covers most countries)
+model_targets: reported confirmed cases (1 to 8-day-ahead); reported deaths (1 to 8-day-ahead);
+target_loc: national (covers most countries)
 Data_format: deterministic point forecasts
 forecast_startdate: 2020-04-13
 forecast_frequency: daily
@@ -23,5 +23,10 @@ this_model_is_an_ensemble: FALSE
 this_model_is_unconditional: TRUE
 
 methods: >-
-    "We calculate the growth rate of cumulative cases (resp. deaths) between two days ago and today. If it's greater than 5%, we use an exponential model to forecast the cumulative number of cases (resp. deaths), and then derive the daily number of cases (resp. deaths). If it's less than 5%, we use an linear model instead."
+    "We calculate the growth rate of cumulative cases (resp. deaths) between two days ago and today. 
+    If it's greater than 5%, we use an exponential model to forecast the cumulative number of cases (resp. deaths), 
+    and then derive the daily number of cases (resp. deaths). If it's less than 5%, we use an linear model instead."
+    
+methods_long: >-
+
 citation: https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/
