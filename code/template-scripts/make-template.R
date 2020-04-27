@@ -3,7 +3,7 @@
 library(tidyverse)
 
 ## shared parameters/data across state/national templates
-death_targets <- c("1 day ahead inc deaths", "2 week ahead cum deaths")
+death_targets <- c("1 day ahead inc death", "2 wk ahead cum death")
 qntls <- c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99)
 
 template <- tibble(
