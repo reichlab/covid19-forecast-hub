@@ -57,7 +57,7 @@ for (j in 1:7) {
   sub_inc <- raw %>%
     filter(date == dateJ) %>%
     select(-contains("quantilecm")) %>%
-    mutate(target = sprintf("%i day ahead inc deaths", j),
+    mutate(target = sprintf("%i day ahead inc death", j),
            ## target_end_date = dateJ,
            type = "quantile") %>%
     mutate(forecast_date = today()) %>% 
@@ -76,7 +76,7 @@ for (j in 1:7) {
   sub_cum <- raw %>%
     filter(date == dateJ) %>%
     select(-contains("quantile_")) %>%
-    mutate(target = sprintf("%i day ahead cum deaths", j),
+    mutate(target = sprintf("%i day ahead cum death", j),
            ## target_end_date = dateJ,
            type = "quantile") %>%
     mutate(forecast_date = today()) %>% 
@@ -108,7 +108,7 @@ for (j in 1:6) {
   sub_incWeek <- raw %>%
     filter(date == today() + 5 + (j - 1) * 7) %>%
     select(-contains("quantilecm")) %>%
-    mutate(target = sprintf("%i wk ahead inc deaths", j),
+    mutate(target = sprintf("%i wk ahead inc death", j),
            type = "quantile") %>%
     mutate(forecast_date = today()) %>% 
     select(forecast_date, target, target_end_date = date,
@@ -127,7 +127,7 @@ for (j in 1:6) {
   sub_cumWeek <- raw %>%
     filter(date == today() + 5 + (j - 1) * 7) %>%
     select(-contains("quantile_")) %>%
-    mutate(target = sprintf("%i wk ahead cum deaths", j),
+    mutate(target = sprintf("%i wk ahead cum death", j),
            type = "quantile") %>%
 
     mutate(forecast_date = today()) %>% 
