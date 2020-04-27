@@ -1,4 +1,4 @@
-forecast_date,target,location,location_name,target_end_date,type,quantile,values
+forecast_date,target,location,location_name,target_end_date,type,quantile,value
 2020-04-27,1 day ahead cum death,17,Illinois,2020-04-28,quantile,0.01,255.84
 2020-04-27,1 day ahead cum death,17,Illinois,2020-04-28,quantile,0.025,383.275
 2020-04-27,1 day ahead cum death,17,Illinois,2020-04-28,quantile,0.05,471.15000000000003
