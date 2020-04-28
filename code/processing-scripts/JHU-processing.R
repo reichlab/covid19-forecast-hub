@@ -74,6 +74,7 @@ JHU <- read_my_dir("data-raw/JHU_IDD",
     key = "target2", value = "value"
   ) %>%
   
+  dplyr::filter(target2 %in% c("inc death","cum death","inc hosp")) %>% 
   dplyr::mutate(target = paste(target, target2)) %>%
   dplyr::select(-target2) %>%
   
