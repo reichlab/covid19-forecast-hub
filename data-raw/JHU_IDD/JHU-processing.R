@@ -6,6 +6,9 @@ library("dplyr")
 library("tidyr")
 library("readr")
 
+team  = "JHU_IDD"
+model = "CovidSP"
+
 read_JHU_csv = function(f, into = NULL) {
   my_sep = "-|/|\\."
   if (is.null(into)) {
@@ -32,17 +35,17 @@ read_JHU_csv = function(f, into = NULL) {
 read_JHU_dir = function(path, pattern, into = NULL) {
   files = list.files(path       = path,
                      pattern    = pattern,
-                     recursive  = TRUE,
-                     full.names = TRUE)
+                     recursive  = FALSE,
+                     full.names = FALSE)
   plyr::ldply(files, read_JHU_csv, into = into)
 }
 
 # above from https://gist.github.com/jarad/8f3b79b33489828ab8244e82a4a0c5b3
 ###############################################################################
 
-JHU <- read_JHU_dir("data-raw/JHU_IDD",
+JHU <- read_JHU_dir(".",
             pattern = "*.csv",
-            into = c("data","raw","team","model",
+            into = c("location",
                      "year","month","day","csv")
             ) %>%
   
@@ -64,7 +67,7 @@ JHU <- read_JHU_dir("data-raw/JHU_IDD",
   ) %>%
   
   dplyr::filter(target_end_date > forecast_date) %>%
-  dplyr::select(-data, -raw, -year, -month, -day, -csv) %>%
+  dplyr::select(-year, -month, -day, -csv) %>%
   
   dplyr::mutate(target = as.numeric(target_end_date - forecast_date),
                 target = paste(target, "day ahead")) %>%
@@ -106,6 +109,6 @@ bind_rows(JHU, JHU_weekly_cum_death, JHU_point) %>%
   
   group_by(forecast_date) %>%
   
-  readr::write_csv(path = paste0("data-processed/JHU_IDD-CovidSP/",
-                                 as.character(unique(forecast_date)),"-",
-                                 "JHU_IDD-CovidSP.csv"))
+  do(readr::write_csv(.,path = paste0("../../data-processed/JHU_IDD-CovidSP/",
+                                 unique(.$forecast_date),"-",
+                                 "JHU_IDD-CovidSP.csv")))
