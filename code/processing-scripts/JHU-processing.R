@@ -93,8 +93,16 @@ JHU_weekly_cum_death<- JHU %>%
   filter(n_days > 1) %>% # due to Friday forecast_date
   select(-n_days)
   
+
+JHU_point <- bind_rows(JHU, JHU_weekly_cum_death) %>%
   
-bind_rows(JHU, JHU_weekly_cum_death) %>%
+  filter(quantile == 0.5) %>% 
+  mutate(type = "point",
+         quantile = NA) 
+  
+
+  
+bind_rows(JHU, JHU_weekly_cum_death, JHU_point) %>%
   
   group_by(forecast_date) %>%
   
