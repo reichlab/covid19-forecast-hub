@@ -49,7 +49,7 @@ state_models_inc<-latest %>%
 ## only take last friday
 ## state cum death
 models <- state_models %>%
-  dplyr::filter(model!="60contact",model!="80contact",model!="nointerv", model!="ensemble2",model!="GLEAM_COVID") %>%
+  dplyr::filter(model!="60contact",model!="80contact",model!="nointerv", model!="ensemble2",model!="GLEAM_COVID",model!="ensemble") %>%
   dplyr::select(model) 
 models <- c(models$model)
 state_output <- pull_all_forecasts(this_date,models,targets[1:4],quantiles=c(state_models$quan[1]))
@@ -68,7 +68,7 @@ quant_ensemble<-ew_quantile(combined_table,national=FALSE,this_date)
 
 ## state inc death
 models_sinc <- state_models_inc %>%
-  dplyr::filter(model!="GLEAM_COVID") %>%
+  dplyr::filter(model!="GLEAM_COVID",model!="ensemble") %>%
   dplyr::select(model) 
 models_sinc  <- c(models_sinc$model)
 state_output_2 <- pull_all_forecasts(this_date,models_sinc,targets[5:8],quantiles=c(state_models$quan[1]))
@@ -87,7 +87,7 @@ quant_ensemble_2<-ew_quantile(combined_table_2,national=FALSE,this_date)
 
 ## national
 models_n <- US_models %>%
-  dplyr::filter(model!="60contact",model!="80contact",model!="nointerv", model!="ensemble2",model!="GLEAM_COVID") %>%
+  dplyr::filter(model!="60contact",model!="80contact",model!="nointerv", model!="ensemble2",model!="GLEAM_COVID",model!="ensemble") %>%
   dplyr::select(model) 
 models_n <- c(models_n$model)
 nat_output <- pull_all_forecasts(this_date,models_n,targets[1:4],quantiles=c(US_models$quan[1]))
@@ -96,7 +96,7 @@ combined_table_n <- nat_output[[1]] %>%
 quant_ensemble_n<-ew_quantile(combined_table_n,national=TRUE,this_date)
 
 models_n2 <- US_models_inc %>%
-  dplyr::filter(model!="60contact",model!="80contact",model!="nointerv", model!="ensemble2",model!="GLEAM_COVID") %>%
+  dplyr::filter(model!="60contact",model!="80contact",model!="nointerv", model!="ensemble2",model!="GLEAM_COVID",model!="ensemble") %>%
   dplyr::select(model) 
 models_n2 <- c(models_n2$model)
 nat_output_2 <- pull_all_forecasts(this_date,models_n2,targets[5:8],quantiles=c(US_models_inc$quan[1]))
