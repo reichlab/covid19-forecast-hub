@@ -5,27 +5,27 @@
 library("shiny")
 library("rmarkdown")
 
-# source("read_processed_data.R")
+source("read_processed_data.R")
 
 # Further process the processed data for ease of exploration
 latest <- all_data %>% 
+  filter(!is.na(forecast_date)) %>%
   group_by(team, model) %>%
   dplyr::filter(forecast_date == max(forecast_date)) %>%
   ungroup() %>%
-  filter(!is.na(forecast_date)) %>%
-  tidyr::separate(target, into=c("n","unit","ahead","inc_cum","death_cases"),
+  tidyr::separate(target, into=c("n_unit","unit","ahead","inc_cum","death_cases"),
                   remove = FALSE)
 
 latest_locations <- latest %>%
   dplyr::group_by(team, model, forecast_date) %>%
   dplyr::summarize(US = ifelse(any(fips_alpha == "US"), "Yes", "-"),
-                   n_states = length(state.abb %in% fips_alpha),
+                   n_states = sum(state.abb %in% fips_alpha),
                    other = paste(unique(setdiff(fips_alpha, c(state.abb,"US"))),
                                  collapse = " "))
 
 latest_targets <- latest %>%
   dplyr::group_by(team, model, forecast_date, type, unit, ahead, inc_cum, death_cases) %>%
-  dplyr::summarize(max_n = max(n)) %>%
+  dplyr::summarize(max_n = max(as.numeric(n_unit))) %>%
   dplyr::ungroup() %>%
   dplyr::mutate(target = paste(unit, ahead, inc_cum, death_cases)) %>%
   dplyr::select(team, model, forecast_date, type, max_n, target) %>%

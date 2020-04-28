@@ -7,8 +7,8 @@ library(tidyverse)
 source("code/processing-fxns/process_imperial_file.R")
 
 ## this reads in an RDS file provided by the Imperial team  on April 11
-ens_preds <- readRDS("./data-raw/Imperial/20200405-ensemble_model_predictions.rds")
-forecast_date = as.Date("2020-03-29")
+ens_preds <- readRDS("./data-raw/Imperial/20200426-ensemble_model_predictions.rds")
+forecast_date = as.Date("2020-04-26")
 
 ## the object is a big list, with one element for each of the 5 times forecasts were made
 ## each of those elements is itself a list, with one element for each country
@@ -21,15 +21,15 @@ forecast_date = as.Date("2020-03-29")
 
 ## transform and write the files for each date
 ensemble1_output <- process_imperial_file(
-    ens_preds[[as.character(forecast_date)]]$United_States_of_America[[1]], 
-    location="US", 
+    ens_preds[[as.character(forecast_date)]]$United_States_of_America[[1]],
+    location="US",
     timezero=forecast_date)
 ensemble2_output <- process_imperial_file(
-    ens_preds[[as.character(forecast_date)]]$United_States_of_America[[2]], 
-    location="US", 
+    ens_preds[[as.character(forecast_date)]]$United_States_of_America[[2]],
+    location="US",
     timezero=forecast_date)
-write_csv(ensemble1_output, 
+write_csv(ensemble1_output,
     path = paste0("data-processed/Imperial-ensemble1/", forecast_date,"-Imperial-ensemble1.csv"))
-write_csv(ensemble2_output, 
+write_csv(ensemble2_output,
     path = paste0("data-processed/Imperial-ensemble2/", forecast_date,"-Imperial-ensemble2.csv"))
 

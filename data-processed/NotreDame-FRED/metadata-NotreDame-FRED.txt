@@ -1,0 +1,32 @@
+team_name: NotreDame-FRED
+team_abbr: NotreDame
+institution_affil: University of Notre Dame, Department of Biological Sciences
+team_funding: GE and TAP were supported by a RAPID grant from the National Science Foundation (DEB 2027718).
+team_experience: The Perkins lab is an infectious disease modeling lab with varying levels of experience. TAP and SM have many years experience with a variety of modeling approaches across a range of pathogens. GE and SMC have experience using complex agent-based models. RJO has experience producing disease forecasts.
+
+model_name: NotreDame-FRED
+model_abbr: FRED
+model_output: cumulative deaths and incident deaths. The model also produces infections and symptomatic cases among other outputs, though we are just using deaths as a forecasting target.
+model_repo: https://github.com/confunguido/covid19_ND_forecasting
+
+model_contributors: guido espana <guido.espana@nd.edu>, rachel oidtman, sean cavany, alan costello, anneliese wieler, anita lerch, carly barbera, marya poterek, quan tran, sean moore, alex perkins <taperkins@nd.edu>   
+Model_targets: daily inc deaths, daily cum deaths
+Target_loc: some states IL, IN, MI, MN, OH, WI
+time_horizon: 5 weeks
+Data_format: all requested quantiles
+forecast_startdate: 2020-04-27
+forecast_frequency: daily
+
+data_inputs_known: Daily reported deaths count
+data_source_known: New York Times https://github.com/midas-network/COVID-19/tree/master/data/cases/united%20states%20of%20america/nytimes_covid19_data
+
+this_model_is_an_ensemble: FALSE
+this_model_is_unconditional: FALSE
+
+methods: >-
+    FRED is an agent-based model developed for influenza with parameters modified to represent the natural history of COVID-19
+
+methods_long: >-
+    We used an existing agent-based model, FRED (Framework for Reconstructing Epidemic Dynamics) which was developed by the university of Pittsburgh in response to the 2009 influenza pandemic (Grefenstette et al. 2013). We modified the model parameters to represent the natural history of COVID-19 and calibrated a set of parameters to reproduce current trends of deaths due to COVID-19 in the US. FRED simulates the spread of the virus in a population by recreating interactions among people on a daily basis. To accurately represent the population of each of the states simulated, we used a synthetic population of the US that represents demographic and geographic characteristics of the population in 2010 (Wheaton 2012). Each human is modeled as an agent that visits a set of places defined by their activity space. This activity space contains places such as households, schools, workplaces, or neighborhood locations. Transmission of SARS-CoV-2 can occur when an infected person visits the same location as a susceptible person on the same day. Numbers of contacts per person are specific to each place type. For instance, school contacts do not depend on the size of the school but the age of the agent. Infected agents have a probability to stay at home if they develop symptoms. Those who do not stay at home continue their daily activities. Public health interventions are included in the model to represent the changes in agents’ behavior in response to an epidemic. 
+    In this study, we limited the interventions to school closure and shelter in place. Schools are closed on a specific date to represent state-level guidelines (IHME COVID-19 health service utilization forecasting Team and Murray 2020). In the case that schools are closed, students limit their activity space to household or neighborhood locations. Shelter-in-place interventions reduce each agent’s activity space to their household at a compliance level from 0-100%, which was estimated as part of the model calibration. Agents who do not comply with the shelter-in-place orders continue with their daily routines. We used state-level orders to determine the date at which people are advised to shelter in place (IHME COVID-19 health service utilization forecasting Team and Murray 2020). 
+    See the methods file in our repo for more detailed methods and model limitations.
