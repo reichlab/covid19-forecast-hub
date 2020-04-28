@@ -18,24 +18,32 @@ latest <- all_data %>%
   tidyr::separate(target, into=c("n","unit","ahead","inc_cum","death_cases"),
                   remove = FALSE)
 US_models<-latest %>% 
-  filter(target==targets[1],fips_alpha=="US",type=="quantile") %>%
+  filter(target%in%targets[1:4],fips_alpha=="US",type=="quantile") %>%
   group_by(model) %>%
-  summarise(quan=paste(sort(quantile), collapse=','),count=length(quantile))
-
+  summarise(quan=paste(sort(quantile), collapse=','),count=length(quantile)) %>%
+  ungroup(.) %>%
+  filter(count==92)
+# 4 target *23 quantiles=92
 US_models_inc<-latest %>% 
   filter(target%in%targets[5:8],fips_alpha=="US",type=="quantile") %>%
   group_by(model) %>%
-  summarise(quan=paste(sort(quantile), collapse=','),count=length(quantile))
+  summarise(quan=paste(sort(quantile), collapse=','),count=length(quantile))%>%
+  ungroup(.) %>%
+  filter(count==92)
 
 state_models<-latest %>% 
-  filter(target==targets[1],fips_alpha=="NY",type=="quantile") %>%
+  filter(target%in%targets[1:4],fips_alpha=="NY",type=="quantile") %>%
   group_by(model) %>%
-  summarise(quan=paste(sort(quantile), collapse=','),count=length(quantile))
+  summarise(quan=paste(sort(quantile), collapse=','),count=length(quantile))%>%
+  ungroup(.) %>%
+  filter(count==92)
 
 state_models_inc<-latest %>% 
   filter(target%in%targets[5:8],fips_alpha=="NY",type=="quantile") %>%
   group_by(model) %>%
-  summarise(quan=paste(sort(quantile), collapse=','),count=length(quantile))
+  summarise(quan=paste(sort(quantile), collapse=','),count=length(quantile))%>%
+  ungroup(.) %>%
+  filter(count==92)
 
 # -------------  make ensemble (1-4 week ahead incident AND cumulative death) ------------------ #
 ## only take last friday
@@ -71,6 +79,7 @@ check_table <-combined_table_2 %>%
   group_by(location,target,quantile) %>%
   dplyr::mutate(n=n())
 mismatched_location <- unique(check_table$location[which(check_table$n==1)])
+mismatched_location
 # excluding mismatched location
 combined_table_2 <- combined_table_2 %>%
   dplyr::filter(location!=66&location!=69&location!=72&location!=78)
@@ -127,7 +136,6 @@ names(ensemble_info)[5]<-"approx_weight"
 # preinfo <- read.csv("./data-processed/COVIDhub-ensemble/COVIDhub-ensemble-information.csv",stringsAsFactors = FALSE)
 # names(preinfo) <- c("location","model_name","quantile","forecast_date","weight","target")
 # all_info <- rbind(preinfo,ensemble_info)
-ensemble_info$forecast_date[2]<- "2020-04-24"
 write.csv(ensemble_info,file=paste0("./data-raw/COVIDhub-ensemble/COVIDhub-ensemble-information.csv"),
           row.names = FALSE)
 
