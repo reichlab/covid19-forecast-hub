@@ -45,7 +45,7 @@ pull_all_forecasts <- function(monday_run_date, model,targets,quantiles=c(0.025,
   for (i in 1:length(forecast_files)) {
     single_forecast <- read.csv(paste0("./data-processed/",forecast_files[i]),
                                 colClasses="character",stringsAsFactors = FALSE) %>%
-      dplyr::filter(type == "quantile",target %in% targets) 
+      dplyr::filter(type == "quantile",target %in% targets)
     if ("location_name" %in% colnames(single_forecast)){
       single_forecast <- single_forecast %>% dplyr::select(-"location_name")
     }
@@ -66,7 +66,7 @@ pull_all_forecasts <- function(monday_run_date, model,targets,quantiles=c(0.025,
   return(output)
 }
 
-ew_quantile <- function(forecast_data,quantiles=c(0.025,0.5,0.975),national=FALSE) {
+ew_quantile <- function(forecast_data,national=FALSE, forecast_date_monday) {
   fips <- read.csv("./template/state_fips_codes.csv",stringsAsFactors = FALSE) 
   US <- data.frame(cbind("US","US","US"));names(US) <-colnames(fips)
   if (national ==TRUE) {
@@ -79,8 +79,6 @@ ew_quantile <- function(forecast_data,quantiles=c(0.025,0.5,0.975),national=FALS
   # equal weight quantile
   combined_file <- forecast_data %>%
     na.omit() %>%
-    # dplyr::filter(as.numeric(quantile) %in% as.numeric(quantiles)) %>%
-    #dplyr::filter(as.numeric(quantile) %in% as.numeric(c(0.025,0.5,0.975))) %>%
     dplyr::group_by(location, target, quantile) %>%
     dplyr::mutate(avg = mean(as.numeric(value))) %>%
     dplyr::ungroup() %>%
@@ -96,7 +94,8 @@ ew_quantile <- function(forecast_data,quantiles=c(0.025,0.5,0.975),national=FALS
     dplyr::full_join(points, by=c(names(concised_dat))) %>%
     dplyr::left_join(loc,by=c("location"="state_code")) %>%
     dplyr::rename(location_name=state_name) %>%
+    dplyr::mutate(forecast_date=forecast_date_monday) %>%
     dplyr::select(-"state") %>%
-    dplyr::select(target,location,location_name,type,quantile,value)
+    dplyr::select(forecast_date,target,target_end_date,location,location_name,type,quantile,value)
   return(ensemble)
 }

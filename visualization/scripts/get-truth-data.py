@@ -4,6 +4,7 @@ import datetime
 import warnings
 warnings.simplefilter(action='ignore')
 
+
 def get_epi_data(date):
     format_str = '%m/%d/%y'  # The format
     dt = datetime.datetime.strptime(date, format_str).date()
@@ -69,7 +70,7 @@ df_byday = df_byday[["date", "location", "location_name", "value"]]
 # change to yyyy/mm/dd format
 df_byday['date'] = pd.to_datetime(df_byday['date'])
 
-df_byday.to_csv('../data-processed/truth-cum-death.csv', index=False)
+df_byday.to_csv('../data-truth/truth-cum-death.csv', index=False)
 
 '''
 ####################################
@@ -115,8 +116,8 @@ with open('vis-master/covid-csv-tools/dist/state_actual/2019.json', 'w') as f:
 '''
 # rename location
 df_truth_long = df_vis.rename(columns={"week": "epiweek",
-                                         "state_code": "unit",
-                                         "level_0": "date"})
+                                       "state_code": "unit",
+                                       "level_0": "date"})
 # get timezero
 df_truth_long['date'] = pd.to_datetime(df_truth_long['date'])
 
@@ -141,4 +142,4 @@ for i in range(4):
         df_out = pd.concat([df_out, df_calc])
 
 # write truth to csv
-df_out.to_csv('../data-processed/zoltar-truth-cum-death.csv', index=False)
+df_out.to_csv('../data-truth/zoltar-truth-cum-death.csv', index=False)
