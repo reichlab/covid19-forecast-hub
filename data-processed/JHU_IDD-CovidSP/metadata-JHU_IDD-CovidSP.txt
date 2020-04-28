@@ -1,0 +1,53 @@
+team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
+team_abbr: JHU_IDD
+institution_affil: Johns Hopkins Bloomberg School of Public Health
+team_funding: California DPH and US Government
+team_experience: Dr. Lessler and other team members have been working on dynamics models of infectious diseases including scenario forecasts for emerging infections for over a decade.
+
+model_name: CovidScenarioPipeline-0.1
+model_abbr: CovidSP
+model_output:
+model_repo: "https://github.com/HopkinsIDD/COVIDScenarioPipeline"
+
+model_targets: deaths
+Target_loc: national
+Data_format: quantile data in 5% increments
+forecast_startdate: 2020-04-24
+forecast_frequency: weekly
+
+model_contributors: >-
+  EPFL - Joseph C. Lemaitre, Johns Hopkins Infectious Disease Dynamics - Qifang Bi, Juan Dent Hulse, M. 
+  Kate Grabowski, Kyra H. Grantz, Joshua Kaminsky, Stephen A. Lauer, Elizabeth C. Lee, 
+  Justin Lessler, Hannah R. Meredith, Javier Perez-Saez, Shaun A. Truelove, 
+  University of Utah - Lindsay T. Keegan, Developers Without Affiliation - Kathryn Kaminsky, 
+  Sam Shah, Josh Wills, Amazon Web Services - Pierre-Yves Aquilanti, Karthik Raman, Arun Subramaniyan, Greg Thursam, Anh Tran
+
+data_inputs_known: confirmed cases; reported fatalities; population; mobility
+data_source_known: JHU CSSE, US Census
+
+this_model_is_an_ensemble: FALSE
+this_model_is_unconditional: FALSE
+
+methods: >-
+  County-level metapopulation model with commuting and stochastic SEIR disease dynamics. 
+  This model makes predictions about the future based on the best available policy information 
+  about current state-level restrictions and their publicly-stated (past or future) start and end 
+  dates. Prediction intervals include uncertainty from two different R0 reduction levels 
+  that reflect our uncertainty about the effectiveness of these state-level restrictions.
+
+methods_long: >-
+  This is a county-level metapopulation model with stochastic SEIR disease dynamics.  
+  This model incorporates uncertainty in epidemiological parameters and the effectiveness of 
+  state-wide intervention policies on social distancing and stay-at-home orders. Infections are 
+  seeded stochastically with roughly 10 times the number of confirmed cases in the first five days 
+  of a county epidemic and R0 and the duration of the infectious period were drawn stochastically 
+  for each county and simulation. Disease follows SEIR dynamics and county commuting data modulates 
+  the spread of disease within counties. Social distancing and stay-at-home orders were applied and 
+  lifted at the state level according to the most recent policy documents. To model deaths in the 
+  population, we incorporated realistic time delays from infection to symptom onset to hospitalization 
+  to ICU to ventilator use to death and used age-specific demographics to standardize the probability 
+  of transition through these states by county. The quantiles reported by this model incorporate 
+  uncertainty in both epidemiological parameters (e.g., R0, infectious period, time delays to health 
+  outcomes, infection fatality ratio) and the effectiveness of state-wide intervention policies on 
+  social distancing and stay-at-home orders. 
+  citation https://github.com/HopkinsIDD/COVIDScenarioPipeline

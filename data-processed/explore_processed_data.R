@@ -19,7 +19,7 @@ latest <- all_data %>%
 latest_locations <- latest %>%
   dplyr::group_by(team, model, forecast_date) %>%
   dplyr::summarize(US = ifelse(any(fips_alpha == "US"), "Yes", "-"),
-                   n_states = length(state.abb %in% fips_alpha),
+                   n_states = sum(state.abb %in% fips_alpha),
                    other = paste(unique(setdiff(fips_alpha, c(state.abb,"US"))),
                                  collapse = " "))
 
