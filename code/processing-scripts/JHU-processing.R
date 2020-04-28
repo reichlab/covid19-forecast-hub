@@ -6,7 +6,7 @@ library("dplyr")
 library("tidyr")
 library("readr")
 
-read_my_csv = function(f, into = NULL) {
+read_JHU_csv = function(f, into = NULL) {
   my_sep = "-|/|\\."
   if (is.null(into)) {
     tmp <- strsplit(f, split = my_sep)[[1]]
@@ -29,18 +29,18 @@ read_my_csv = function(f, into = NULL) {
     tidyr::separate(file, into, sep=my_sep) 
 }
 
-read_my_dir = function(path, pattern, into = NULL) {
+read_JHU_dir = function(path, pattern, into = NULL) {
   files = list.files(path       = path,
                      pattern    = pattern,
                      recursive  = TRUE,
                      full.names = TRUE)
-  plyr::ldply(files, read_my_csv, into = into)
+  plyr::ldply(files, read_JHU_csv, into = into)
 }
 
 # above from https://gist.github.com/jarad/8f3b79b33489828ab8244e82a4a0c5b3
 ###############################################################################
 
-JHU <- read_my_dir("data-raw/JHU_IDD",
+JHU <- read_JHU_dir("data-raw/JHU_IDD",
             pattern = "*.csv",
             into = c("data","raw","team","model",
                      "year","month","day","csv")
@@ -78,9 +78,23 @@ JHU <- read_my_dir("data-raw/JHU_IDD",
   dplyr::mutate(target = paste(target, target2)) %>%
   dplyr::select(-target2) %>%
   
-  dplyr::select(forecast_date, target, target_end_date, location, type, quantile, value) %>%
+  dplyr::select(forecast_date, target, target_end_date, location, type, quantile, value) 
+
+
+
+# Create weekly targets
+JHU_weekly_cum_death<- JHU %>%
+  
+  filter(weekdays(target_end_date) == "Saturday",
+         grepl("cum death", target)) %>%
+  
+  mutate(n_days = as.numeric(gsub( " .*$", "", target )),
+         target = paste((n_days-1)/7, "wk ahead cum death")) %>%
+  filter(n_days > 1) %>% # due to Friday forecast_date
+  select(-n_days)
   
   
+bind_rows(JHU, JHU_weekly_cum_death) %>%
   
   group_by(forecast_date) %>%
   
