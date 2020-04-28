@@ -11,10 +11,10 @@ model_output: https://reichlab.io/covid19-forecast-hub/
 model_repo: https://github.com/reichlab/covid19-forecast-hub
 
 model_contributors: Nutcha Wattanachit, Nicholas Reich <nick@schoolph.umass.edu>
-Model_targets: 1 through 6-wk ahead cumulative deaths
+Model_targets: 1 through 4-wk ahead cumulative and incident deaths 
 Target_loc: US and state-level
 Time_horizon:
-Data_format: median and 95% UI
+Data_format: quantiles
 forecast_startdate: 
 forecast_frequency: 
 
@@ -34,6 +34,7 @@ methods_long: >-
     April 13: At state level, only two models included in first week, LANL and IHME,
     due to overlaps in location and reported quantiles. At national level, IHME
     was combined with the three CU models. 
-
+    April 27: Different component models at state level and national level.
+    Please see the model information file for more details. 
 
 citation: 
