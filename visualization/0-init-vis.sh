@@ -11,6 +11,7 @@ rm -r ./data/NaN-NaN
 rm -r ./data/2019-2020/CU-nointerv
 rm -r ./data/2019-2020/CovidAnalytics-DELPHI
 rm -r ./data/2019-2020/NotreDame-FRED
+rm -r ./data/2019-2020/JHU_IDD-CovidSP
 python3 ./scripts/convert-forecasts.py
 python3 ./scripts/get-truth-data.py
 
