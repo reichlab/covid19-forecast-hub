@@ -2,7 +2,7 @@
 ## Nicholas Reich
 ## April 2020
 
-source("code/processing-fxns/get_next_saturday.R")
+source("../../code/processing-fxns/get_next_saturday.R")
 
 #' turn LANL forecast file into quantile-based format
 #'
@@ -11,7 +11,9 @@ source("code/processing-fxns/get_next_saturday.R")
 #' @details designed to process either an incidence or cumulative death forecast
 #'
 #' @return a data.frame in quantile format
-process_lanl_file <- function(lanl_filepath) {
+process_lanl_file <- function(lanl_filepath, 
+                              fips_file = "../../template/state_fips_codes.csv",
+                              forecast_dates_file = "../../template/covid19-death-forecast-dates.csv") {
     require(tidyverse)
     require(MMWRweek)
     require(lubridate)
@@ -24,10 +26,10 @@ process_lanl_file <- function(lanl_filepath) {
         "inc", "cum")
         
     ## read in FIPS codes
-    fips <- read_csv("template/state_fips_codes.csv")
+    fips <- read_csv(fips_file)
     
     ## read in forecast dates
-    fcast_dates <- read_csv("template/covid19-death-forecast-dates.csv")
+    fcast_dates <- read_csv(forecast_dates_file)
     timezero <- as.Date(substr(basename(lanl_filepath), 0, 10))
     
     ## read in data
