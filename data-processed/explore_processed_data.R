@@ -13,7 +13,7 @@ latest <- all_data %>%
   group_by(team, model) %>%
   dplyr::filter(forecast_date == max(forecast_date)) %>%
   ungroup() %>%
-  tidyr::separate(target, into=c("n","unit","ahead","inc_cum","death_cases"),
+  tidyr::separate(target, into=c("n_unit","unit","ahead","inc_cum","death_cases"),
                   remove = FALSE)
 
 latest_locations <- latest %>%
@@ -25,7 +25,7 @@ latest_locations <- latest %>%
 
 latest_targets <- latest %>%
   dplyr::group_by(team, model, forecast_date, type, unit, ahead, inc_cum, death_cases) %>%
-  dplyr::summarize(max_n = max(n)) %>%
+  dplyr::summarize(max_n = max(as.numeric(n_unit))) %>%
   dplyr::ungroup() %>%
   dplyr::mutate(target = paste(unit, ahead, inc_cum, death_cases)) %>%
   dplyr::select(team, model, forecast_date, type, max_n, target) %>%

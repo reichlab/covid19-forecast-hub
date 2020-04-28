@@ -72,10 +72,12 @@ So far, we have identified a number of experienced teams that are creating forec
  - [LANL](https://covid-19.bsvgateway.org/) ([custom](data-raw/LANL/LICENSE-LANL.txt))
  - [Imperial](https://github.com/sangeetabhatia03/covid19-short-term-forecasts) (none given)
  - [MIT](https://www.covidanalytics.io/) (Apache 2.0)
+ - [Notre Dame](https://github.com/confunguido/covid19_ND_forecasting) (none given)
  - [University of Geneva / Swiss Data Science Center](https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/) (none given)
- - [University of Massachusetts](https://github.com/tomcm39/COVID19_expert_survey) (MIT)
+ - [University of Massachusetts - Expert Model](https://github.com/tomcm39/COVID19_expert_survey) (MIT)
+ - [University of Massachusetts - Mechanistic Bayesian model](https://github.com/dsheldon/covid) (MIT)
  - [University of Texas-Austin](https://covid-19.tacc.utexas.edu/projections/) (BSD-3)
- - [YYG](http://covid19-projections.com) (MIT)
+ - [YYG](http://covid19-projections.com) (MIT) 
  - COVIDhub ensemble forecast: this is a combination of the above models. 
 
 Participating teams must provide a metadata file (see [example](data-processed/UMass-ExpertCrowd/metadata-UMass-ExpertCrowd.txt)), including methodological detail about their approach and a link to a file (or a file itself) describing the methods used. 
