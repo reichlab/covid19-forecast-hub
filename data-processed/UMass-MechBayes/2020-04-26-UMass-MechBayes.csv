@@ -11,7 +11,7 @@ quantile,value,type,location,target,forecast_date,target_end_date
 0.400,12,quantile,02,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,12,quantile,02,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,13,quantile,02,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,13,point,02,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,13,point,02,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,13,quantile,02,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,13,quantile,02,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,14,quantile,02,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -35,7 +35,7 @@ NA,13,point,02,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,13,quantile,02,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,13,quantile,02,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,14,quantile,02,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,14,point,02,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,14,point,02,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,14,quantile,02,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,15,quantile,02,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,15,quantile,02,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -59,7 +59,7 @@ NA,14,point,02,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,14,quantile,02,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,15,quantile,02,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,15,quantile,02,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,15,point,02,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,15,point,02,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,16,quantile,02,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,16,quantile,02,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,17,quantile,02,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -83,7 +83,7 @@ NA,15,point,02,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,15,quantile,02,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,15,quantile,02,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,16,quantile,02,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,16,point,02,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,16,point,02,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,16,quantile,02,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,17,quantile,02,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,17,quantile,02,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -107,7 +107,7 @@ NA,16,point,02,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,311,quantile,01,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,319,quantile,01,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,324,quantile,01,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,324,point,01,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,324,point,01,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,332,quantile,01,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,340,quantile,01,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,347,quantile,01,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -131,7 +131,7 @@ NA,324,point,01,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,393,quantile,01,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,408,quantile,01,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,419,quantile,01,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,419,point,01,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,419,point,01,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,432,quantile,01,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,445,quantile,01,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,462,quantile,01,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -155,7 +155,7 @@ NA,419,point,01,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,475,quantile,01,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,492,quantile,01,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,516,quantile,01,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,516,point,01,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,516,point,01,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,540,quantile,01,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,573,quantile,01,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,603,quantile,01,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -179,7 +179,7 @@ NA,516,point,01,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,542,quantile,01,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,579,quantile,01,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,619,quantile,01,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,619,point,01,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,619,point,01,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,654,quantile,01,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,710,quantile,01,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,768,quantile,01,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -203,7 +203,7 @@ NA,619,point,01,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,83,quantile,05,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,85,quantile,05,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,88,quantile,05,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,88,point,05,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,88,point,05,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,90,quantile,05,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,93,quantile,05,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,95,quantile,05,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -227,7 +227,7 @@ NA,88,point,05,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,125,quantile,05,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,129,quantile,05,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,134,quantile,05,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,134,point,05,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,134,point,05,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,140,quantile,05,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,146,quantile,05,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,156,quantile,05,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -251,7 +251,7 @@ NA,134,point,05,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,184,quantile,05,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,195,quantile,05,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,209,quantile,05,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,209,point,05,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,209,point,05,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,223,quantile,05,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,249,quantile,05,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,273,quantile,05,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -275,7 +275,7 @@ NA,209,point,05,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,262,quantile,05,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,289,quantile,05,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,326,quantile,05,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,326,point,05,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,326,point,05,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,377,quantile,05,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,440,quantile,05,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,521,quantile,05,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -299,7 +299,7 @@ NA,326,point,05,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,368,quantile,04,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,377,quantile,04,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,390,quantile,04,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,390,point,04,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,390,point,04,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,401,quantile,04,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,411,quantile,04,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,420,quantile,04,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -323,7 +323,7 @@ NA,390,point,04,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,474,quantile,04,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,487,quantile,04,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,501,quantile,04,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,501,point,04,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,501,point,04,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,522,quantile,04,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,548,quantile,04,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,583,quantile,04,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -347,7 +347,7 @@ NA,501,point,04,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,578,quantile,04,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,627,quantile,04,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,665,quantile,04,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,665,point,04,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,665,point,04,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,700,quantile,04,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,754,quantile,04,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,818,quantile,04,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -371,7 +371,7 @@ NA,665,point,04,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,668,quantile,04,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,719,quantile,04,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,803,quantile,04,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,803,point,04,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,803,point,04,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,883,quantile,04,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,989,quantile,04,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,1122,quantile,04,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -395,7 +395,7 @@ NA,803,point,04,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,2376,quantile,06,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,2431,quantile,06,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,2491,quantile,06,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,2491,point,06,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,2491,point,06,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,2560,quantile,06,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,2623,quantile,06,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,2691,quantile,06,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -419,7 +419,7 @@ NA,2491,point,06,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,3188,quantile,06,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,3297,quantile,06,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,3389,quantile,06,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,3389,point,06,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,3389,point,06,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,3480,quantile,06,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,3594,quantile,06,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,3698,quantile,06,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -443,7 +443,7 @@ NA,3389,point,06,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,4018,quantile,06,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,4197,quantile,06,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,4379,quantile,06,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,4379,point,06,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,4379,point,06,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,4576,quantile,06,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,4769,quantile,06,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,5166,quantile,06,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -467,7 +467,7 @@ NA,4379,point,06,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,4779,quantile,06,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,5109,quantile,06,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,5454,quantile,06,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,5454,point,06,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,5454,point,06,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,5765,quantile,06,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,6235,quantile,06,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,6827,quantile,06,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -491,7 +491,7 @@ NA,5454,point,06,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,916,quantile,08,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,941,quantile,08,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,965,quantile,08,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,965,point,08,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,965,point,08,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,989,quantile,08,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,1013,quantile,08,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,1042,quantile,08,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -515,7 +515,7 @@ NA,965,point,08,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,1243,quantile,08,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,1286,quantile,08,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,1334,quantile,08,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,1334,point,08,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,1334,point,08,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,1382,quantile,08,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,1454,quantile,08,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,1514,quantile,08,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -539,7 +539,7 @@ NA,1334,point,08,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,1606,quantile,08,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,1706,quantile,08,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,1834,quantile,08,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,1834,point,08,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,1834,point,08,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,1935,quantile,08,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,2107,quantile,08,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,2310,quantile,08,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -563,7 +563,7 @@ NA,1834,point,08,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,2005,quantile,08,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,2201,quantile,08,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,2377,quantile,08,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,2377,point,08,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,2377,point,08,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,2644,quantile,08,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,2924,quantile,08,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,3308,quantile,08,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -587,7 +587,7 @@ NA,2377,point,08,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,2818,quantile,09,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,2871,quantile,09,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,2927,quantile,09,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,2927,point,09,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,2927,point,09,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,2999,quantile,09,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,3068,quantile,09,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,3154,quantile,09,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -611,7 +611,7 @@ NA,2927,point,09,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,3773,quantile,09,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,3883,quantile,09,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,4003,quantile,09,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,4003,point,09,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,4003,point,09,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,4128,quantile,09,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,4249,quantile,09,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,4383,quantile,09,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -635,7 +635,7 @@ NA,4003,point,09,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,4875,quantile,09,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,5029,quantile,09,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,5209,quantile,09,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,5209,point,09,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,5209,point,09,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,5384,quantile,09,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,5682,quantile,09,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,5989,quantile,09,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -659,7 +659,7 @@ NA,5209,point,09,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,5682,quantile,09,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,5964,quantile,09,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,6234,quantile,09,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,6234,point,09,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,6234,point,09,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,6567,quantile,09,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,6974,quantile,09,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,7491,quantile,09,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -683,7 +683,7 @@ NA,6234,point,09,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,242,quantile,11,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,248,quantile,11,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,253,quantile,11,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,253,point,11,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,253,point,11,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,259,quantile,11,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,266,quantile,11,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,273,quantile,11,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -707,7 +707,7 @@ NA,253,point,11,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,336,quantile,11,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,344,quantile,11,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,356,quantile,11,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,356,point,11,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,356,point,11,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,365,quantile,11,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,373,quantile,11,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,384,quantile,11,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -731,7 +731,7 @@ NA,356,point,11,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,433,quantile,11,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,451,quantile,11,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,467,quantile,11,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,467,point,11,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,467,point,11,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,485,quantile,11,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,506,quantile,11,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,525,quantile,11,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -755,7 +755,7 @@ NA,467,point,11,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,529,quantile,11,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,550,quantile,11,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,581,quantile,11,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,581,point,11,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,581,point,11,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,607,quantile,11,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,644,quantile,11,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,689,quantile,11,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -779,7 +779,7 @@ NA,581,point,11,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,181,quantile,10,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,185,quantile,10,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,189,quantile,10,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,189,point,10,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,189,point,10,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,194,quantile,10,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,199,quantile,10,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,203,quantile,10,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -803,7 +803,7 @@ NA,189,point,10,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,261,quantile,10,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,269,quantile,10,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,277,quantile,10,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,277,point,10,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,277,point,10,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,284,quantile,10,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,294,quantile,10,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,304,quantile,10,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -827,7 +827,7 @@ NA,277,point,10,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,350,quantile,10,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,368,quantile,10,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,387,quantile,10,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,387,point,10,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,387,point,10,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,406,quantile,10,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,424,quantile,10,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,450,quantile,10,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -851,7 +851,7 @@ NA,387,point,10,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,439,quantile,10,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,463,quantile,10,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,503,quantile,10,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,503,point,10,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,503,point,10,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,552,quantile,10,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,598,quantile,10,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,645,quantile,10,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -875,7 +875,7 @@ NA,503,point,10,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,1373,quantile,12,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,1408,quantile,12,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,1438,quantile,12,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,1438,point,12,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,1438,point,12,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,1463,quantile,12,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,1495,quantile,12,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,1526,quantile,12,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -899,7 +899,7 @@ NA,1438,point,12,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,1645,quantile,12,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,1696,quantile,12,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,1742,quantile,12,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,1742,point,12,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,1742,point,12,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,1794,quantile,12,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,1839,quantile,12,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,1905,quantile,12,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -923,7 +923,7 @@ NA,1742,point,12,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,1926,quantile,12,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,1989,quantile,12,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,2062,quantile,12,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,2062,point,12,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,2062,point,12,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,2144,quantile,12,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,2232,quantile,12,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,2330,quantile,12,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -947,7 +947,7 @@ NA,2062,point,12,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,2100,quantile,12,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,2183,quantile,12,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,2279,quantile,12,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,2279,point,12,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,2279,point,12,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,2389,quantile,12,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,2522,quantile,12,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,2673,quantile,12,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -971,7 +971,7 @@ NA,2279,point,12,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,1315,quantile,13,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,1349,quantile,13,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,1382,quantile,13,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,1382,point,13,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,1382,point,13,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,1418,quantile,13,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,1453,quantile,13,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,1495,quantile,13,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -995,7 +995,7 @@ NA,1382,point,13,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,1631,quantile,13,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,1700,quantile,13,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,1760,quantile,13,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,1760,point,13,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,1760,point,13,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,1826,quantile,13,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,1906,quantile,13,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,2000,quantile,13,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -1019,7 +1019,7 @@ NA,1760,point,13,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,1986,quantile,13,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,2083,quantile,13,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,2200,quantile,13,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,2200,point,13,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,2200,point,13,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,2358,quantile,13,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,2533,quantile,13,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,2729,quantile,13,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -1043,7 +1043,7 @@ NA,2200,point,13,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,2248,quantile,13,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,2396,quantile,13,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,2638,quantile,13,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,2638,point,13,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,2638,point,13,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,2885,quantile,13,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,3127,quantile,13,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,3661,quantile,13,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -1067,7 +1067,7 @@ NA,2638,point,13,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,16,quantile,15,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,17,quantile,15,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,17,quantile,15,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,17,point,15,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,17,point,15,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,17,quantile,15,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,18,quantile,15,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,18,quantile,15,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -1091,7 +1091,7 @@ NA,17,point,15,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,18,quantile,15,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,19,quantile,15,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,20,quantile,15,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,20,point,15,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,20,point,15,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,20,quantile,15,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,21,quantile,15,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,21,quantile,15,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -1115,7 +1115,7 @@ NA,20,point,15,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,21,quantile,15,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,22,quantile,15,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,22,quantile,15,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,22,point,15,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,22,point,15,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,23,quantile,15,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,24,quantile,15,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,24,quantile,15,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -1139,7 +1139,7 @@ NA,22,point,15,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,23,quantile,15,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,23,quantile,15,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,24,quantile,15,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,24,point,15,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,24,point,15,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,25,quantile,15,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,26,quantile,15,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,27,quantile,15,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -1163,7 +1163,7 @@ NA,24,point,15,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,230,quantile,19,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,237,quantile,19,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,244,quantile,19,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,244,point,19,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,244,point,19,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,250,quantile,19,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,256,quantile,19,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,264,quantile,19,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -1187,7 +1187,7 @@ NA,244,point,19,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,424,quantile,19,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,447,quantile,19,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,474,quantile,19,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,474,point,19,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,474,point,19,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,505,quantile,19,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,534,quantile,19,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,575,quantile,19,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -1211,7 +1211,7 @@ NA,474,point,19,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,780,quantile,19,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,878,quantile,19,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,970,quantile,19,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,970,point,19,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,970,point,19,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,1065,quantile,19,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,1200,quantile,19,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,1354,quantile,19,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -1235,7 +1235,7 @@ NA,970,point,19,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,1429,quantile,19,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,1683,quantile,19,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,1932,quantile,19,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,1932,point,19,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,1932,point,19,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,2278,quantile,19,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,2770,quantile,19,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,3295,quantile,19,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -1259,7 +1259,7 @@ NA,1932,point,19,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,72,quantile,16,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,74,quantile,16,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,75,quantile,16,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,75,point,16,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,75,point,16,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,78,quantile,16,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,79,quantile,16,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,82,quantile,16,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -1283,7 +1283,7 @@ NA,75,point,16,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,85,quantile,16,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,87,quantile,16,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,89,quantile,16,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,89,point,16,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,89,point,16,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,91,quantile,16,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,93,quantile,16,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,95,quantile,16,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -1307,7 +1307,7 @@ NA,89,point,16,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,95,quantile,16,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,98,quantile,16,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,100,quantile,16,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,100,point,16,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,100,point,16,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,103,quantile,16,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,106,quantile,16,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,109,quantile,16,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -1331,7 +1331,7 @@ NA,100,point,16,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,102,quantile,16,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,105,quantile,16,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,109,quantile,16,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,109,point,16,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,109,point,16,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,112,quantile,16,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,116,quantile,16,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,119,quantile,16,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -1355,7 +1355,7 @@ NA,109,point,16,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,2914,quantile,17,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,2970,quantile,17,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,3030,quantile,17,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,3030,point,17,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,3030,point,17,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,3097,quantile,17,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,3160,quantile,17,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,3233,quantile,17,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -1379,7 +1379,7 @@ NA,3030,point,17,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,3959,quantile,17,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,4091,quantile,17,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,4202,quantile,17,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,4202,point,17,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,4202,point,17,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,4336,quantile,17,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,4476,quantile,17,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,4625,quantile,17,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -1403,7 +1403,7 @@ NA,4202,point,17,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,5165,quantile,17,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,5373,quantile,17,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,5698,quantile,17,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,5698,point,17,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,5698,point,17,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,6043,quantile,17,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,6315,quantile,17,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,6755,quantile,17,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -1427,7 +1427,7 @@ NA,5698,point,17,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,6308,quantile,17,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,6751,quantile,17,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,7165,quantile,17,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,7165,point,17,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,7165,point,17,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,7836,quantile,17,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,8573,quantile,17,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,9520,quantile,17,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -1451,7 +1451,7 @@ NA,7165,point,17,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,1072,quantile,18,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,1098,quantile,18,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,1125,quantile,18,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,1125,point,18,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,1125,point,18,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,1166,quantile,18,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,1183,quantile,18,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,1211,quantile,18,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -1475,7 +1475,7 @@ NA,1125,point,18,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,1332,quantile,18,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,1373,quantile,18,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,1407,quantile,18,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,1407,point,18,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,1407,point,18,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,1461,quantile,18,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,1515,quantile,18,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,1581,quantile,18,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -1499,7 +1499,7 @@ NA,1407,point,18,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,1543,quantile,18,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,1620,quantile,18,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,1706,quantile,18,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,1706,point,18,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,1706,point,18,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,1802,quantile,18,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,1899,quantile,18,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,2025,quantile,18,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -1523,7 +1523,7 @@ NA,1706,point,18,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,1721,quantile,18,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,1822,quantile,18,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,1940,quantile,18,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,1940,point,18,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,1940,point,18,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,2066,quantile,18,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,2298,quantile,18,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,2520,quantile,18,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -1547,7 +1547,7 @@ NA,1940,point,18,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,215,quantile,20,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,221,quantile,20,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,227,quantile,20,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,227,point,20,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,227,point,20,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,232,quantile,20,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,239,quantile,20,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,247,quantile,20,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -1571,7 +1571,7 @@ NA,227,point,20,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,329,quantile,20,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,346,quantile,20,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,366,quantile,20,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,366,point,20,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,366,point,20,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,386,quantile,20,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,407,quantile,20,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,442,quantile,20,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -1595,7 +1595,7 @@ NA,366,point,20,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,508,quantile,20,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,553,quantile,20,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,611,quantile,20,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,611,point,20,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,611,point,20,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,685,quantile,20,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,759,quantile,20,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,870,quantile,20,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -1619,7 +1619,7 @@ NA,611,point,20,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,750,quantile,20,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,877,quantile,20,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,1043,quantile,20,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,1043,point,20,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,1043,point,20,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,1233,quantile,20,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,1519,quantile,20,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,1926,quantile,20,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -1643,7 +1643,7 @@ NA,1043,point,20,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,330,quantile,21,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,340,quantile,21,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,347,quantile,21,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,347,point,21,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,347,point,21,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,357,quantile,21,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,368,quantile,21,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,377,quantile,21,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -1667,7 +1667,7 @@ NA,347,point,21,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,461,quantile,21,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,486,quantile,21,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,504,quantile,21,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,504,point,21,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,504,point,21,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,533,quantile,21,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,568,quantile,21,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,593,quantile,21,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -1691,7 +1691,7 @@ NA,504,point,21,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,631,quantile,21,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,688,quantile,21,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,733,quantile,21,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,733,point,21,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,733,point,21,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,796,quantile,21,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,896,quantile,21,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,1017,quantile,21,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -1715,7 +1715,7 @@ NA,733,point,21,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,825,quantile,21,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,940,quantile,21,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,1055,quantile,21,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,1055,point,21,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,1055,point,21,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,1219,quantile,21,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,1473,quantile,21,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,1816,quantile,21,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -1739,7 +1739,7 @@ NA,1055,point,21,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,1896,quantile,22,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,1936,quantile,22,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,1979,quantile,22,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,1979,point,22,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,1979,point,22,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,2030,quantile,22,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,2083,quantile,22,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,2141,quantile,22,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -1763,7 +1763,7 @@ NA,1979,point,22,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,2086,quantile,22,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,2142,quantile,22,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,2193,quantile,22,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,2193,point,22,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,2193,point,22,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,2246,quantile,22,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,2297,quantile,22,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,2365,quantile,22,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -1787,7 +1787,7 @@ NA,2193,point,22,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,2228,quantile,22,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,2295,quantile,22,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,2371,quantile,22,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,2371,point,22,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,2371,point,22,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,2457,quantile,22,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,2544,quantile,22,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,2636,quantile,22,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -1811,7 +1811,7 @@ NA,2371,point,22,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,2311,quantile,22,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,2396,quantile,22,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,2474,quantile,22,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,2474,point,22,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,2474,point,22,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,2562,quantile,22,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,2673,quantile,22,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,2845,quantile,22,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -1835,7 +1835,7 @@ NA,2474,point,22,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,4287,quantile,25,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,4392,quantile,25,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,4490,quantile,25,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,4490,point,25,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,4490,point,25,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,4576,quantile,25,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,4665,quantile,25,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,4760,quantile,25,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -1859,7 +1859,7 @@ NA,4490,point,25,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,6254,quantile,25,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,6415,quantile,25,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,6603,quantile,25,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,6603,point,25,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,6603,point,25,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,6788,quantile,25,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,6945,quantile,25,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,7161,quantile,25,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -1883,7 +1883,7 @@ NA,6603,point,25,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,8506,quantile,25,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,8835,quantile,25,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,9219,quantile,25,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,9219,point,25,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,9219,point,25,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,9555,quantile,25,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,9945,quantile,25,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,10312,quantile,25,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -1907,7 +1907,7 @@ NA,9219,point,25,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,10693,quantile,25,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,11215,quantile,25,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,11912,quantile,25,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,11912,point,25,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,11912,point,25,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,12648,quantile,25,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,13423,quantile,25,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,14349,quantile,25,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -1931,7 +1931,7 @@ NA,11912,point,25,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,1397,quantile,24,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,1431,quantile,24,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,1459,quantile,24,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,1459,point,24,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,1459,point,24,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,1490,quantile,24,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,1526,quantile,24,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,1561,quantile,24,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -1955,7 +1955,7 @@ NA,1459,point,24,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,2038,quantile,24,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,2091,quantile,24,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,2164,quantile,24,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,2164,point,24,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,2164,point,24,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,2229,quantile,24,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,2286,quantile,24,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,2350,quantile,24,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -1979,7 +1979,7 @@ NA,2164,point,24,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,2818,quantile,24,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,2907,quantile,24,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,3006,quantile,24,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,3006,point,24,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,3006,point,24,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,3107,quantile,24,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,3231,quantile,24,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,3377,quantile,24,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -2003,7 +2003,7 @@ NA,3006,point,24,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,3485,quantile,24,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,3672,quantile,24,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,3963,quantile,24,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,3963,point,24,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,3963,point,24,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,4202,quantile,24,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,4424,quantile,24,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,4712,quantile,24,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -2027,7 +2027,7 @@ NA,3963,point,24,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,61,quantile,23,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,62,quantile,23,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,64,quantile,23,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,64,point,23,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,64,point,23,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,66,quantile,23,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,67,quantile,23,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,69,quantile,23,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -2051,7 +2051,7 @@ NA,64,point,23,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,76,quantile,23,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,78,quantile,23,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,80,quantile,23,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,80,point,23,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,80,point,23,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,82,quantile,23,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,85,quantile,23,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,87,quantile,23,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -2075,7 +2075,7 @@ NA,80,point,23,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,92,quantile,23,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,95,quantile,23,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,98,quantile,23,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,98,point,23,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,98,point,23,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,102,quantile,23,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,105,quantile,23,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,108,quantile,23,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -2099,7 +2099,7 @@ NA,98,point,23,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,104,quantile,23,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,108,quantile,23,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,113,quantile,23,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,113,point,23,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,113,point,23,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,117,quantile,23,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,121,quantile,23,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,127,quantile,23,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -2123,7 +2123,7 @@ NA,113,point,23,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,3984,quantile,26,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,4061,quantile,26,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,4130,quantile,26,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,4130,point,26,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,4130,point,26,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,4249,quantile,26,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,4333,quantile,26,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,4429,quantile,26,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -2147,7 +2147,7 @@ NA,4130,point,26,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,4628,quantile,26,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,4756,quantile,26,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,4890,quantile,26,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,4890,point,26,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,4890,point,26,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,4992,quantile,26,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,5109,quantile,26,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,5272,quantile,26,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -2171,7 +2171,7 @@ NA,4890,point,26,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,5147,quantile,26,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,5305,quantile,26,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,5514,quantile,26,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,5514,point,26,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,5514,point,26,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,5717,quantile,26,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,5902,quantile,26,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,6202,quantile,26,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -2195,7 +2195,7 @@ NA,5514,point,26,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,5468,quantile,26,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,5737,quantile,26,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,5973,quantile,26,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,5973,point,26,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,5973,point,26,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,6216,quantile,26,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,6472,quantile,26,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,6870,quantile,26,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -2219,7 +2219,7 @@ NA,5973,point,26,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,360,quantile,27,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,370,quantile,27,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,377,quantile,27,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,377,point,27,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,377,point,27,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,383,quantile,27,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,392,quantile,27,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,403,quantile,27,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -2243,7 +2243,7 @@ NA,377,point,27,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,544,quantile,27,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,560,quantile,27,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,576,quantile,27,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,576,point,27,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,576,point,27,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,590,quantile,27,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,605,quantile,27,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,621,quantile,27,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -2267,7 +2267,7 @@ NA,576,point,27,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,788,quantile,27,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,820,quantile,27,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,854,quantile,27,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,854,point,27,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,854,point,27,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,886,quantile,27,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,928,quantile,27,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,967,quantile,27,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -2291,7 +2291,7 @@ NA,854,point,27,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,1080,quantile,27,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,1122,quantile,27,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,1171,quantile,27,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,1171,point,27,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,1171,point,27,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,1241,quantile,27,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,1325,quantile,27,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,1420,quantile,27,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -2315,7 +2315,7 @@ NA,1171,point,27,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,379,quantile,29,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,388,quantile,29,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,397,quantile,29,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,397,point,29,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,397,point,29,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,404,quantile,29,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,412,quantile,29,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,422,quantile,29,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -2339,7 +2339,7 @@ NA,397,point,29,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,468,quantile,29,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,478,quantile,29,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,489,quantile,29,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,489,point,29,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,489,point,29,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,500,quantile,29,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,513,quantile,29,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,527,quantile,29,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -2363,7 +2363,7 @@ NA,489,point,29,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,542,quantile,29,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,559,quantile,29,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,577,quantile,29,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,577,point,29,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,577,point,29,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,592,quantile,29,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,615,quantile,29,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,637,quantile,29,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -2387,7 +2387,7 @@ NA,577,point,29,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,602,quantile,29,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,629,quantile,29,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,651,quantile,29,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,651,point,29,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,651,point,29,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,669,quantile,29,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,700,quantile,29,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,730,quantile,29,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -2411,7 +2411,7 @@ NA,651,point,29,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,340,quantile,28,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,350,quantile,28,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,358,quantile,28,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,358,point,28,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,358,point,28,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,365,quantile,28,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,373,quantile,28,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,384,quantile,28,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -2435,7 +2435,7 @@ NA,358,point,28,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,465,quantile,28,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,479,quantile,28,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,494,quantile,28,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,494,point,28,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,494,point,28,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,513,quantile,28,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,535,quantile,28,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,558,quantile,28,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -2459,7 +2459,7 @@ NA,494,point,28,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,601,quantile,28,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,643,quantile,28,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,676,quantile,28,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,676,point,28,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,676,point,28,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,716,quantile,28,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,773,quantile,28,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,830,quantile,28,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -2483,7 +2483,7 @@ NA,676,point,28,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,750,quantile,28,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,813,quantile,28,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,877,quantile,28,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,877,point,28,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,877,point,28,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,947,quantile,28,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,1070,quantile,28,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,1203,quantile,28,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -2507,7 +2507,7 @@ NA,877,point,28,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,15,quantile,30,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,16,quantile,30,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,16,quantile,30,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,16,point,30,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,16,point,30,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,17,quantile,30,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,17,quantile,30,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,18,quantile,30,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -2531,7 +2531,7 @@ NA,16,point,30,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,18,quantile,30,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,18,quantile,30,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,19,quantile,30,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,19,point,30,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,19,point,30,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,19,quantile,30,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,20,quantile,30,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,20,quantile,30,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -2555,7 +2555,7 @@ NA,19,point,30,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,20,quantile,30,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,21,quantile,30,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,21,quantile,30,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,21,point,30,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,21,point,30,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,22,quantile,30,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,23,quantile,30,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,23,quantile,30,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -2579,7 +2579,7 @@ NA,21,point,30,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,21,quantile,30,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,22,quantile,30,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,23,quantile,30,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,23,point,30,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,23,point,30,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,24,quantile,30,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,25,quantile,30,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,26,quantile,30,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -2603,7 +2603,7 @@ NA,23,point,30,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,483,quantile,37,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,494,quantile,37,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,506,quantile,37,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,506,point,37,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,506,point,37,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,518,quantile,37,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,530,quantile,37,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,540,quantile,37,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -2627,7 +2627,7 @@ NA,506,point,37,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,683,quantile,37,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,698,quantile,37,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,716,quantile,37,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,716,point,37,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,716,point,37,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,739,quantile,37,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,757,quantile,37,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,775,quantile,37,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -2651,7 +2651,7 @@ NA,716,point,37,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,915,quantile,37,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,939,quantile,37,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,975,quantile,37,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,975,point,37,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,975,point,37,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,1006,quantile,37,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,1041,quantile,37,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,1078,quantile,37,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -2675,7 +2675,7 @@ NA,975,point,37,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,1155,quantile,37,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,1204,quantile,37,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,1248,quantile,37,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,1248,point,37,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,1248,point,37,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,1312,quantile,37,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,1371,quantile,37,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,1438,quantile,37,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -2699,7 +2699,7 @@ NA,1248,point,37,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,26,quantile,38,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,27,quantile,38,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,27,quantile,38,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,27,point,38,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,27,point,38,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,28,quantile,38,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,29,quantile,38,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,30,quantile,38,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -2723,7 +2723,7 @@ NA,27,point,38,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,40,quantile,38,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,41,quantile,38,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,43,quantile,38,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,43,point,38,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,43,point,38,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,45,quantile,38,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,47,quantile,38,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,49,quantile,38,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -2747,7 +2747,7 @@ NA,43,point,38,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,59,quantile,38,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,63,quantile,38,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,67,quantile,38,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,67,point,38,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,67,point,38,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,72,quantile,38,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,78,quantile,38,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,85,quantile,38,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -2771,7 +2771,7 @@ NA,67,point,38,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,83,quantile,38,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,90,quantile,38,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,99,quantile,38,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,99,point,38,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,99,point,38,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,112,quantile,38,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,130,quantile,38,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,151,quantile,38,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -2795,7 +2795,7 @@ NA,99,point,38,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,110,quantile,31,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,112,quantile,31,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,115,quantile,31,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,115,point,31,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,115,point,31,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,118,quantile,31,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,122,quantile,31,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,125,quantile,31,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -2819,7 +2819,7 @@ NA,115,point,31,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,217,quantile,31,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,228,quantile,31,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,242,quantile,31,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,242,point,31,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,242,point,31,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,255,quantile,31,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,274,quantile,31,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,294,quantile,31,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -2843,7 +2843,7 @@ NA,242,point,31,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,432,quantile,31,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,469,quantile,31,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,511,quantile,31,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,511,point,31,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,511,point,31,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,584,quantile,31,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,669,quantile,31,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,751,quantile,31,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -2867,7 +2867,7 @@ NA,511,point,31,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,831,quantile,31,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,959,quantile,31,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,1109,quantile,31,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,1109,point,31,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,1109,point,31,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,1340,quantile,31,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,1601,quantile,31,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,1928,quantile,31,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -2891,7 +2891,7 @@ NA,1109,point,31,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,81,quantile,33,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,83,quantile,33,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,86,quantile,33,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,86,point,33,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,86,point,33,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,88,quantile,33,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,90,quantile,33,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,92,quantile,33,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -2915,7 +2915,7 @@ NA,86,point,33,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,108,quantile,33,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,112,quantile,33,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,114,quantile,33,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,114,point,33,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,114,point,33,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,118,quantile,33,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,122,quantile,33,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,126,quantile,33,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -2939,7 +2939,7 @@ NA,114,point,33,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,137,quantile,33,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,143,quantile,33,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,148,quantile,33,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,148,point,33,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,148,point,33,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,153,quantile,33,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,161,quantile,33,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,167,quantile,33,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -2963,7 +2963,7 @@ NA,148,point,33,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,162,quantile,33,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,171,quantile,33,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,181,quantile,33,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,181,point,33,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,181,point,33,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,191,quantile,33,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,200,quantile,33,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,214,quantile,33,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -2987,7 +2987,7 @@ NA,181,point,33,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,8012,quantile,34,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,8239,quantile,34,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,8422,quantile,34,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,8422,point,34,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,8422,point,34,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,8630,quantile,34,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,8809,quantile,34,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,9031,quantile,34,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -3011,7 +3011,7 @@ NA,8422,point,34,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,9956,quantile,34,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,10241,quantile,34,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,10533,quantile,34,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,10533,point,34,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,10533,point,34,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,10777,quantile,34,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,10990,quantile,34,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,11329,quantile,34,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -3035,7 +3035,7 @@ NA,10533,point,34,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,11815,quantile,34,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,12198,quantile,34,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,12632,quantile,34,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,12632,point,34,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,12632,point,34,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,13069,quantile,34,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,13723,quantile,34,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,14214,quantile,34,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -3059,7 +3059,7 @@ NA,12632,point,34,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,13153,quantile,34,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,13618,quantile,34,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,14265,quantile,34,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,14265,point,34,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,14265,point,34,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,14952,quantile,34,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,15850,quantile,34,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,16767,quantile,34,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -3083,7 +3083,7 @@ NA,14265,point,34,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,143,quantile,35,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,146,quantile,35,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,149,quantile,35,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,149,point,35,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,149,point,35,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,153,quantile,35,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,157,quantile,35,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,161,quantile,35,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -3107,7 +3107,7 @@ NA,149,point,35,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,210,quantile,35,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,215,quantile,35,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,222,quantile,35,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,222,point,35,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,222,point,35,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,228,quantile,35,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,235,quantile,35,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,242,quantile,35,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -3131,7 +3131,7 @@ NA,222,point,35,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,286,quantile,35,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,297,quantile,35,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,310,quantile,35,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,310,point,35,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,310,point,35,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,325,quantile,35,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,341,quantile,35,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,356,quantile,35,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -3155,7 +3155,7 @@ NA,310,point,35,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,365,quantile,35,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,393,quantile,35,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,409,quantile,35,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,409,point,35,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,409,point,35,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,431,quantile,35,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,461,quantile,35,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,499,quantile,35,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -3179,7 +3179,7 @@ NA,409,point,35,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,260,quantile,32,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,266,quantile,32,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,271,quantile,32,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,271,point,32,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,271,point,32,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,277,quantile,32,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,283,quantile,32,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,290,quantile,32,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -3203,7 +3203,7 @@ NA,271,point,32,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,304,quantile,32,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,313,quantile,32,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,322,quantile,32,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,322,point,32,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,322,point,32,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,333,quantile,32,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,343,quantile,32,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,355,quantile,32,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -3227,7 +3227,7 @@ NA,322,point,32,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,348,quantile,32,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,363,quantile,32,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,374,quantile,32,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,374,point,32,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,374,point,32,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,390,quantile,32,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,408,quantile,32,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,430,quantile,32,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -3251,7 +3251,7 @@ NA,374,point,32,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,374,quantile,32,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,392,quantile,32,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,409,quantile,32,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,409,point,32,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,409,point,32,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,433,quantile,32,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,457,quantile,32,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,496,quantile,32,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -3275,7 +3275,7 @@ NA,409,point,32,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,26933,quantile,36,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,27673,quantile,36,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,28258,quantile,36,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,28258,point,36,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,28258,point,36,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,28992,quantile,36,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,29608,quantile,36,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,30532,quantile,36,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -3299,7 +3299,7 @@ NA,28258,point,36,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,30325,quantile,36,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,31165,quantile,36,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,31995,quantile,36,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,31995,point,36,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,31995,point,36,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,32980,quantile,36,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,34077,quantile,36,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,34900,quantile,36,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -3323,7 +3323,7 @@ NA,31995,point,36,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,32774,quantile,36,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,33859,quantile,36,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,34858,quantile,36,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,34858,point,36,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,34858,point,36,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,36549,quantile,36,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,37813,quantile,36,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,39481,quantile,36,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -3347,7 +3347,7 @@ NA,34858,point,36,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,34289,quantile,36,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,35571,quantile,36,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,37154,quantile,36,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,37154,point,36,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,37154,point,36,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,38744,quantile,36,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,40725,quantile,36,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,42420,quantile,36,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -3371,7 +3371,7 @@ NA,37154,point,36,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,1191,quantile,39,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,1220,quantile,39,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,1250,quantile,39,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,1250,point,39,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,1250,point,39,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,1278,quantile,39,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,1316,quantile,39,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,1347,quantile,39,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -3395,7 +3395,7 @@ NA,1250,point,39,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,1748,quantile,39,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,1823,quantile,39,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,1899,quantile,39,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,1899,point,39,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,1899,point,39,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,1987,quantile,39,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,2108,quantile,39,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,2213,quantile,39,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -3419,7 +3419,7 @@ NA,1899,point,39,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,2472,quantile,39,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,2646,quantile,39,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,2838,quantile,39,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,2838,point,39,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,2838,point,39,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,3057,quantile,39,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,3382,quantile,39,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,3712,quantile,39,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -3443,7 +3443,7 @@ NA,2838,point,39,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,3258,quantile,39,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,3544,quantile,39,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,3988,quantile,39,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,3988,point,39,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,3988,point,39,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,4644,quantile,39,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,5398,quantile,39,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,6326,quantile,39,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -3467,7 +3467,7 @@ NA,3988,point,39,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,242,quantile,40,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,247,quantile,40,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,253,quantile,40,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,253,point,40,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,253,point,40,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,262,quantile,40,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,268,quantile,40,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,276,quantile,40,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -3491,7 +3491,7 @@ NA,253,point,40,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,283,quantile,40,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,293,quantile,40,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,304,quantile,40,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,304,point,40,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,304,point,40,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,315,quantile,40,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,331,quantile,40,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,346,quantile,40,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -3515,7 +3515,7 @@ NA,304,point,40,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,325,quantile,40,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,343,quantile,40,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,358,quantile,40,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,358,point,40,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,358,point,40,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,379,quantile,40,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,403,quantile,40,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,437,quantile,40,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -3539,7 +3539,7 @@ NA,358,point,40,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,348,quantile,40,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,372,quantile,40,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,400,quantile,40,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,400,point,40,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,400,point,40,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,438,quantile,40,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,477,quantile,40,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,523,quantile,40,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -3563,7 +3563,7 @@ NA,400,point,40,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,116,quantile,41,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,118,quantile,41,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,120,quantile,41,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,120,point,41,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,120,point,41,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,123,quantile,41,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,126,quantile,41,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,129,quantile,41,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -3587,7 +3587,7 @@ NA,120,point,41,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,136,quantile,41,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,140,quantile,41,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,144,quantile,41,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,144,point,41,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,144,point,41,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,147,quantile,41,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,150,quantile,41,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,154,quantile,41,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -3611,7 +3611,7 @@ NA,144,point,41,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,154,quantile,41,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,160,quantile,41,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,165,quantile,41,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,165,point,41,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,165,point,41,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,171,quantile,41,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,176,quantile,41,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,181,quantile,41,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -3635,7 +3635,7 @@ NA,165,point,41,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,170,quantile,41,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,176,quantile,41,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,183,quantile,41,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,183,point,41,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,183,point,41,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,191,quantile,41,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,198,quantile,41,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,205,quantile,41,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -3659,7 +3659,7 @@ NA,183,point,41,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,2764,quantile,42,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,2838,quantile,42,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,2892,quantile,42,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,2892,point,42,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,2892,point,42,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,2961,quantile,42,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,3007,quantile,42,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,3073,quantile,42,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -3683,7 +3683,7 @@ NA,2892,point,42,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,3635,quantile,42,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,3724,quantile,42,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,3823,quantile,42,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,3823,point,42,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,3823,point,42,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,3936,quantile,42,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,4034,quantile,42,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,4165,quantile,42,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -3707,7 +3707,7 @@ NA,3823,point,42,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,4491,quantile,42,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,4640,quantile,42,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,4790,quantile,42,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,4790,point,42,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,4790,point,42,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,4963,quantile,42,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,5127,quantile,42,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,5300,quantile,42,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -3731,7 +3731,7 @@ NA,4790,point,42,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,5272,quantile,42,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,5462,quantile,42,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,5676,quantile,42,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,5676,point,42,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,5676,point,42,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,5860,quantile,42,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,6125,quantile,42,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,6434,quantile,42,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -3755,7 +3755,7 @@ NA,5676,point,42,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,410,quantile,44,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,419,quantile,44,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,427,quantile,44,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,427,point,44,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,427,point,44,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,439,quantile,44,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,453,quantile,44,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,465,quantile,44,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -3779,7 +3779,7 @@ NA,427,point,44,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,622,quantile,44,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,646,quantile,44,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,673,quantile,44,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,673,point,44,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,673,point,44,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,699,quantile,44,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,726,quantile,44,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,764,quantile,44,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -3803,7 +3803,7 @@ NA,673,point,44,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,887,quantile,44,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,935,quantile,44,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,984,quantile,44,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,984,point,44,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,984,point,44,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,1049,quantile,44,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,1114,quantile,44,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,1190,quantile,44,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -3827,7 +3827,7 @@ NA,984,point,44,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,1180,quantile,44,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,1263,quantile,44,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,1363,quantile,44,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,1363,point,44,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,1363,point,44,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,1463,quantile,44,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,1598,quantile,44,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,1793,quantile,44,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -3851,7 +3851,7 @@ NA,1363,point,44,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,213,quantile,45,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,218,quantile,45,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,224,quantile,45,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,224,point,45,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,224,point,45,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,229,quantile,45,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,234,quantile,45,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,241,quantile,45,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -3875,7 +3875,7 @@ NA,224,point,45,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,257,quantile,45,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,268,quantile,45,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,276,quantile,45,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,276,point,45,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,276,point,45,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,286,quantile,45,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,294,quantile,45,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,305,quantile,45,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -3899,7 +3899,7 @@ NA,276,point,45,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,299,quantile,45,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,311,quantile,45,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,323,quantile,45,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,323,point,45,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,323,point,45,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,334,quantile,45,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,351,quantile,45,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,370,quantile,45,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -3923,7 +3923,7 @@ NA,323,point,45,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,327,quantile,45,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,343,quantile,45,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,362,quantile,45,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,362,point,45,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,362,point,45,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,386,quantile,45,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,411,quantile,45,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,444,quantile,45,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -3947,7 +3947,7 @@ NA,362,point,45,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,16,quantile,46,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,17,quantile,46,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,18,quantile,46,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,18,point,46,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,18,point,46,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,18,quantile,46,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,19,quantile,46,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,19,quantile,46,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -3971,7 +3971,7 @@ NA,18,point,46,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,24,quantile,46,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,25,quantile,46,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,26,quantile,46,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,26,point,46,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,26,point,46,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,27,quantile,46,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,28,quantile,46,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,28,quantile,46,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -3995,7 +3995,7 @@ NA,26,point,46,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,34,quantile,46,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,35,quantile,46,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,37,quantile,46,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,37,point,46,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,37,point,46,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,38,quantile,46,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,40,quantile,46,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,42,quantile,46,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -4019,7 +4019,7 @@ NA,37,point,46,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,44,quantile,46,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,47,quantile,46,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,51,quantile,46,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,51,point,46,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,51,point,46,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,53,quantile,46,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,57,quantile,46,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,60,quantile,46,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -4043,7 +4043,7 @@ NA,51,point,46,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,243,quantile,47,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,249,quantile,47,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,257,quantile,47,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,257,point,47,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,257,point,47,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,266,quantile,47,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,274,quantile,47,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,282,quantile,47,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -4067,7 +4067,7 @@ NA,257,point,47,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,301,quantile,47,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,314,quantile,47,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,329,quantile,47,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,329,point,47,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,329,point,47,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,347,quantile,47,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,369,quantile,47,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,390,quantile,47,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -4091,7 +4091,7 @@ NA,329,point,47,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,375,quantile,47,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,402,quantile,47,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,433,quantile,47,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,433,point,47,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,433,point,47,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,464,quantile,47,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,523,quantile,47,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,598,quantile,47,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -4115,7 +4115,7 @@ NA,433,point,47,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,429,quantile,47,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,478,quantile,47,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,535,quantile,47,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,535,point,47,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,535,point,47,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,640,quantile,47,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,778,quantile,47,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,1003,quantile,47,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -4139,7 +4139,7 @@ NA,535,point,47,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,918,quantile,48,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,939,quantile,48,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,956,quantile,48,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,956,point,48,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,956,point,48,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,980,quantile,48,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,1004,quantile,48,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,1029,quantile,48,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -4163,7 +4163,7 @@ NA,956,point,48,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,1131,quantile,48,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,1165,quantile,48,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,1204,quantile,48,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,1204,point,48,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,1204,point,48,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,1241,quantile,48,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,1281,quantile,48,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,1319,quantile,48,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -4187,7 +4187,7 @@ NA,1204,point,48,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,1353,quantile,48,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,1399,quantile,48,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,1462,quantile,48,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,1462,point,48,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,1462,point,48,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,1534,quantile,48,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,1614,quantile,48,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,1708,quantile,48,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -4211,7 +4211,7 @@ NA,1462,point,48,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,1501,quantile,48,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,1573,quantile,48,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,1684,quantile,48,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,1684,point,48,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,1684,point,48,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,1783,quantile,48,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,1891,quantile,48,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,2063,quantile,48,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -4235,7 +4235,7 @@ NA,1684,point,48,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,54,quantile,49,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,56,quantile,49,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,57,quantile,49,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,57,point,49,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,57,point,49,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,58,quantile,49,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,60,quantile,49,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,61,quantile,49,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -4259,7 +4259,7 @@ NA,57,point,49,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,73,quantile,49,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,75,quantile,49,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,77,quantile,49,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,77,point,49,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,77,point,49,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,79,quantile,49,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,81,quantile,49,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,84,quantile,49,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -4283,7 +4283,7 @@ NA,77,point,49,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,93,quantile,49,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,97,quantile,49,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,100,quantile,49,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,100,point,49,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,100,point,49,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,103,quantile,49,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,108,quantile,49,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,112,quantile,49,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -4307,7 +4307,7 @@ NA,100,point,49,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,113,quantile,49,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,118,quantile,49,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,123,quantile,49,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,123,point,49,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,123,point,49,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,130,quantile,49,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,136,quantile,49,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,145,quantile,49,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -4331,7 +4331,7 @@ NA,123,point,49,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,714,quantile,51,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,730,quantile,51,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,748,quantile,51,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,748,point,51,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,748,point,51,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,769,quantile,51,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,786,quantile,51,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,805,quantile,51,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -4355,7 +4355,7 @@ NA,748,point,51,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,1039,quantile,51,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,1072,quantile,51,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,1109,quantile,51,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,1109,point,51,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,1109,point,51,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,1156,quantile,51,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,1198,quantile,51,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,1254,quantile,51,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -4379,7 +4379,7 @@ NA,1109,point,51,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,1425,quantile,51,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,1507,quantile,51,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,1582,quantile,51,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,1582,point,51,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,1582,point,51,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,1692,quantile,51,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,1857,quantile,51,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,2036,quantile,51,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -4403,7 +4403,7 @@ NA,1582,point,51,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,1871,quantile,51,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,2020,quantile,51,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,2215,quantile,51,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,2215,point,51,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,2215,point,51,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,2430,quantile,51,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,2682,quantile,51,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,3181,quantile,51,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -4427,7 +4427,7 @@ NA,2215,point,51,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,51,quantile,50,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,52,quantile,50,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,54,quantile,50,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,54,point,50,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,54,point,50,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,55,quantile,50,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,56,quantile,50,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,58,quantile,50,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -4451,7 +4451,7 @@ NA,54,point,50,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,57,quantile,50,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,58,quantile,50,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,60,quantile,50,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,60,point,50,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,60,point,50,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,61,quantile,50,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,62,quantile,50,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,64,quantile,50,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -4475,7 +4475,7 @@ NA,60,point,50,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,62,quantile,50,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,64,quantile,50,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,65,quantile,50,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,65,point,50,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,65,point,50,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,67,quantile,50,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,69,quantile,50,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,71,quantile,50,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -4499,7 +4499,7 @@ NA,65,point,50,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,65,quantile,50,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,67,quantile,50,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,68,quantile,50,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,68,point,50,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,68,point,50,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,71,quantile,50,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,73,quantile,50,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,75,quantile,50,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -4523,7 +4523,7 @@ NA,68,point,50,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,839,quantile,53,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,857,quantile,53,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,876,quantile,53,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,876,point,53,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,876,point,53,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,896,quantile,53,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,916,quantile,53,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,934,quantile,53,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -4547,7 +4547,7 @@ NA,876,point,53,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,926,quantile,53,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,947,quantile,53,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,971,quantile,53,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,971,point,53,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,971,point,53,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,994,quantile,53,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,1015,quantile,53,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,1039,quantile,53,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -4571,7 +4571,7 @@ NA,971,point,53,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,980,quantile,53,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,1010,quantile,53,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,1043,quantile,53,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,1043,point,53,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,1043,point,53,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,1069,quantile,53,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,1095,quantile,53,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,1129,quantile,53,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -4595,7 +4595,7 @@ NA,1043,point,53,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,1024,quantile,53,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,1053,quantile,53,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,1088,quantile,53,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,1088,point,53,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,1088,point,53,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,1117,quantile,53,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,1150,quantile,53,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,1191,quantile,53,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -4619,7 +4619,7 @@ NA,1088,point,53,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,379,quantile,55,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,388,quantile,55,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,396,quantile,55,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,396,point,55,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,396,point,55,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,404,quantile,55,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,413,quantile,55,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,422,quantile,55,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -4643,7 +4643,7 @@ NA,396,point,55,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,466,quantile,55,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,478,quantile,55,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,491,quantile,55,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,491,point,55,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,491,point,55,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,504,quantile,55,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,516,quantile,55,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,532,quantile,55,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -4667,7 +4667,7 @@ NA,491,point,55,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,549,quantile,55,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,572,quantile,55,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,599,quantile,55,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,599,point,55,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,599,point,55,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,620,quantile,55,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,640,quantile,55,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,667,quantile,55,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -4691,7 +4691,7 @@ NA,599,point,55,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,612,quantile,55,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,640,quantile,55,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,676,quantile,55,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,676,point,55,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,676,point,55,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,712,quantile,55,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,760,quantile,55,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,824,quantile,55,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -4715,7 +4715,7 @@ NA,676,point,55,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,50,quantile,54,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,51,quantile,54,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,52,quantile,54,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,52,point,54,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,52,point,54,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,53,quantile,54,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,55,quantile,54,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,56,quantile,54,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -4739,7 +4739,7 @@ NA,52,point,54,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,70,quantile,54,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,72,quantile,54,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,73,quantile,54,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,73,point,54,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,73,point,54,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,76,quantile,54,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,78,quantile,54,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,79,quantile,54,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -4763,7 +4763,7 @@ NA,73,point,54,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,92,quantile,54,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,95,quantile,54,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,98,quantile,54,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,98,point,54,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,98,point,54,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,101,quantile,54,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,105,quantile,54,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,108,quantile,54,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -4787,7 +4787,7 @@ NA,98,point,54,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,114,quantile,54,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,119,quantile,54,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,123,quantile,54,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,123,point,54,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,123,point,54,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,127,quantile,54,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,133,quantile,54,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,139,quantile,54,4 wk ahead cum death,2020-04-26,2020-05-23
@@ -4811,7 +4811,7 @@ NA,123,point,54,4 wk ahead cum death,2020-04-26,2020-05-17
 0.400,10,quantile,56,1 wk ahead cum death,2020-04-26,2020-05-02
 0.450,11,quantile,56,1 wk ahead cum death,2020-04-26,2020-05-02
 0.500,11,quantile,56,1 wk ahead cum death,2020-04-26,2020-05-02
-NA,11,point,56,1 wk ahead cum death,2020-04-26,2020-04-26
+NA,11,point,56,1 wk ahead cum death,2020-04-26,2020-05-02
 0.550,12,quantile,56,1 wk ahead cum death,2020-04-26,2020-05-02
 0.600,12,quantile,56,1 wk ahead cum death,2020-04-26,2020-05-02
 0.650,12,quantile,56,1 wk ahead cum death,2020-04-26,2020-05-02
@@ -4835,7 +4835,7 @@ NA,11,point,56,1 wk ahead cum death,2020-04-26,2020-04-26
 0.400,14,quantile,56,2 wk ahead cum death,2020-04-26,2020-05-09
 0.450,14,quantile,56,2 wk ahead cum death,2020-04-26,2020-05-09
 0.500,15,quantile,56,2 wk ahead cum death,2020-04-26,2020-05-09
-NA,15,point,56,2 wk ahead cum death,2020-04-26,2020-05-03
+NA,15,point,56,2 wk ahead cum death,2020-04-26,2020-05-09
 0.550,15,quantile,56,2 wk ahead cum death,2020-04-26,2020-05-09
 0.600,16,quantile,56,2 wk ahead cum death,2020-04-26,2020-05-09
 0.650,17,quantile,56,2 wk ahead cum death,2020-04-26,2020-05-09
@@ -4859,7 +4859,7 @@ NA,15,point,56,2 wk ahead cum death,2020-04-26,2020-05-03
 0.400,18,quantile,56,3 wk ahead cum death,2020-04-26,2020-05-16
 0.450,18,quantile,56,3 wk ahead cum death,2020-04-26,2020-05-16
 0.500,19,quantile,56,3 wk ahead cum death,2020-04-26,2020-05-16
-NA,19,point,56,3 wk ahead cum death,2020-04-26,2020-05-10
+NA,19,point,56,3 wk ahead cum death,2020-04-26,2020-05-16
 0.550,20,quantile,56,3 wk ahead cum death,2020-04-26,2020-05-16
 0.600,21,quantile,56,3 wk ahead cum death,2020-04-26,2020-05-16
 0.650,23,quantile,56,3 wk ahead cum death,2020-04-26,2020-05-16
@@ -4883,7 +4883,7 @@ NA,19,point,56,3 wk ahead cum death,2020-04-26,2020-05-10
 0.400,21,quantile,56,4 wk ahead cum death,2020-04-26,2020-05-23
 0.450,22,quantile,56,4 wk ahead cum death,2020-04-26,2020-05-23
 0.500,24,quantile,56,4 wk ahead cum death,2020-04-26,2020-05-23
-NA,24,point,56,4 wk ahead cum death,2020-04-26,2020-05-17
+NA,24,point,56,4 wk ahead cum death,2020-04-26,2020-05-23
 0.550,26,quantile,56,4 wk ahead cum death,2020-04-26,2020-05-23
 0.600,27,quantile,56,4 wk ahead cum death,2020-04-26,2020-05-23
 0.650,30,quantile,56,4 wk ahead cum death,2020-04-26,2020-05-23
