@@ -75,7 +75,7 @@ So far, we have identified a number of experienced teams that are creating forec
  - [University of Geneva / Swiss Data Science Center](https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/) (none given)
  - [University of Massachusetts](https://github.com/tomcm39/COVID19_expert_survey) (MIT)
  - [University of Texas-Austin](https://covid-19.tacc.utexas.edu/projections/) (BSD-3)
- - [YYG](http://covid19-projections.com) (MIT)
+ - [YYG](http://covid19-projections.com) (MIT) 
  - COVIDhub ensemble forecast: this is a combination of the above models. 
 
 Participating teams must provide a metadata file (see [example](data-processed/UMass-ExpertCrowd/metadata-UMass-ExpertCrowd.txt)), including methodological detail about their approach and a link to a file (or a file itself) describing the methods used. 
