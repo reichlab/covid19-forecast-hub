@@ -23,6 +23,7 @@
 
 
 
+
 <style lang="scss" scoped>
 .footer {
   padding: 10px 20px !important;
