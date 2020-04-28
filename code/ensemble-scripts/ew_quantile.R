@@ -45,7 +45,7 @@ pull_all_forecasts <- function(monday_run_date, model,targets,quantiles=c(0.025,
   for (i in 1:length(forecast_files)) {
     single_forecast <- read.csv(paste0("./data-processed/",forecast_files[i]),
                                 colClasses="character",stringsAsFactors = FALSE) %>%
-      dplyr::filter(type == "quantile",target %in% targets) 
+      dplyr::filter(type == "quantile",target %in% targets)
     if ("location_name" %in% colnames(single_forecast)){
       single_forecast <- single_forecast %>% dplyr::select(-"location_name")
     }
