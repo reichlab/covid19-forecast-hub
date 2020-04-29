@@ -52,7 +52,8 @@ verify_colnames <- function(entry){
   coln <- colnames(entry)
   colnames_template <- c("forecast_date", "target", "target_end_date",
                          "location", "location_name", "type", "quantile", "value")
-  compulsory_colnames_template <- c("target", "location", "type", "quantile", "value") # location_name is optional
+  compulsory_colnames_template <- c("forecast_date", "target", "target_end_date",
+                                    "location", "type", "quantile", "value") # location_name is optional
 
   result <- TRUE
 
@@ -66,18 +67,20 @@ verify_colnames <- function(entry){
   # check if essential columns are there
   if(!all(compulsory_colnames_template %in% coln)){
     warning("At least one required column is missing: ",
-            compulsory_colnames_template[!(compulsory_colnames_template %in% coln)])
+            paste(compulsory_colnames_template[!(compulsory_colnames_template %in% coln)],
+                  collapse = ", "))
     result <- FALSE
   }
 
   # check order
   colnames_template_available <- colnames_template[colnames_template %in% coln]
-  if(any(coln != colnames_template_available)){
-    warning("Order of coumns does not correspond to template.")
-    result <- FALSE
-  }
 
   if(result) cat("Column names correspond to standards.\n")
+
+  if(any(coln != colnames_template_available)){
+    cat("Preferred order of columns is (forecast_date, target, target_end_date, location,
+        location_name (optional), type, quantile, value), but this is not compulsory.\n")
+  }
 
   return(invisible(result))
 }
@@ -91,9 +94,9 @@ verify_targets <- function(entry){
   allowed_targets <- c(
     paste(1:130, "day ahead inc death"),
     paste(1:130, "day ahead cum death"),
-    paste(1:20, "wk ahead inc death"),
-    paste(1:20, "wk ahead cum death"),
-    paste(1:30, "day ahead inc hosp")
+    paste(0:20, "wk ahead inc death"),
+    paste(0:20, "wk ahead cum death"),
+    paste(0:130, "day ahead inc hosp")
   )
   targets_in_entry <- unique(entry$target)
   if(!all(targets_in_entry %in% allowed_targets)){
@@ -104,6 +107,69 @@ verify_targets <- function(entry){
     cat("All entries in `target` correspond to standards.\n")
     return(TRUE)
   }
+}
+
+#' Check that the dates are formatted as "%Y-%m-%d"
+#'
+#' @param entry the data.frame
+#' @return invisibly returns TRUE if problems detected, FALSE otherwise
+verify_date_format <- function(entry){
+  forecast_date <- as.Date(entry$forecast_date, format = "%Y-%m-%d")
+  target_end_date <- as.Date(entry$target_end_date, format = "%Y-%m-%d")
+  if(any(is.na(c(forecast_date, target_end_date)))){
+    warning("Required date format is %Y-%m-%d.")
+    return(FALSE)
+  }else{
+    cat("Date format corresponds to standards.\n")
+    return(TRUE)
+  }
+}
+
+#' Check that target_end_date for week ahead forecasts are Saturdays,
+#' forecast_date, target and target_end_date are coherent
+verify_forecast_date_end_date <- function(entry){
+  entry$forecast_date <- as.Date(entry$forecast_date)
+  entry$target_end_date <- as.Date(entry$target_end_date)
+
+  result <- TRUE
+
+  # warning if NA values occur:
+  if(any(is.na(c(entry$forecast_date, entry$target_end_date)))){
+    warning("forecast_date and target_end_date contain NA values or are not in standard format.")
+    result <- FALSE
+  }else{
+    # check that forecast_date, target and target_end_date are coherent for day ahead forecasts
+    entry_day <- subset(entry, grepl("day", target))
+    horizon_day <- as.numeric(gsub(" .*", "", entry_day$target))
+    if(any(as.numeric(entry_day$target_end_date - entry_day$forecast_date) != horizon_day)){
+      warning("Incoherences between forecast_date, target_end_date and target detected for day ahead forecasts.")
+      result <- FALSE
+    }
+
+    # check that target_end_date is always a Saturday for week ahead targets
+    entry_week <- subset(entry, grepl("week", target))
+    if(any(weekdays(entry_week$target_end_date) != "Sat")){
+      warning("target_end_date needs to be a Saturday for all week-ahead forecasts.")
+      result <- FALSE
+    }
+
+    # check that target_end_date is between 5 and 11 days from forecast_date for one week ahead etc
+    horizon_week <- as.numeric(gsub(" .*", "", entry_week$target))
+    if(any(
+      as.numeric(entry_week$target_end_date - entry_week$forecast_date) < 5 + (horizon_week - 1)*7 |
+      as.numeric(entry_week$target_end_date - entry_week$forecast_date) > 11 + (horizon_week) - 1*7
+    )){
+      warning("Difference between target_date and forecast_date needs to be between 5 and 11 days for 1 week ahead forecasts,
+            between 12 and 18 days for two week ahead and so on.")
+      result <- FALSE
+    }
+  }
+
+  if(result){
+    cat("No problems detected for forecast_date and target_end_date.\n")
+  }
+
+  return(result)
 }
 
 #' Checking a data.frame in quantile format for quantile crossing
@@ -119,6 +185,8 @@ verify_no_quantile_crossings <- function(entry){
   # transform to wide
   entry_wide <- reshape(entry, direction = "wide", v.names = "value", timevar = "quantile",
                         idvar = c("location", "target"))
+  if(nrow(entry_wide) == 1) return(TRUE) # no reason to check if just one forecast horizon
+
   # choose columns representing quantiles
   quantiles <- as.matrix(entry_wide[, grepl("value.", colnames(entry_wide))])
   # re-order columns if necessary:
@@ -174,7 +242,7 @@ verify_monotonicity_cumulative <- function(entry){
   is_decreasing_weekly <- apply(quantiles_weekly, 1, function(v) any(diff(v) < -0.01)) # some tolerance
 
   # warn if there are crossing and return info on where they ocurred
-  if(any(c(is_decreasing_daily, is_decreasing_weekly))){
+  if(any(c(is_decreasing_daily, is_decreasing_weekly), na.rm = TRUE)){
     warning("Temporal non-monotonicity found in forecasts of cumulative deaths for ",
             sum(c(is_decreasing_daily, is_decreasing_weekly)),
             " combinations of location and quantile/point forecast")
@@ -251,15 +319,71 @@ verify_cumulative_geq_incident <- function(entry){
   }
 }
 
-
+#' running various checks on a data.frame of quantile forecasts
+#'
+#' Qauntiles / point forecasts of cumulative deaths should always be greater than or equal to the
+#' respective incidence forecasts.
+#'
+#' @param entry the data.frame
+#'
+#' @return invisibly returns a named list with entries corresponding to the results of the different
+#' plausibility checks
 verify_quantile_forecasts <- function(entry){
-  options(warn = 1) # show warnigns as tehy happen
+  options(warn = 1) # show warnings as they happen
   results <- list()
+  # run different checks:
   results$colnames <- verify_colnames(entry)
-  results$tarfets <- verify_targets(entry)
+  results$targets <- verify_targets(entry)
+  results$date_format <- verify_date_format(entry)
+  results$forecast_date_end_date <- verify_forecast_date_end_date(entry)
   results$no_quantile_crossings <- verify_no_quantile_crossings(entry)
   results$monotonicity_cumulative <- verify_monotonicity_cumulative(entry)
   results$cumulative_geq_incident <- verify_cumulative_geq_incident(entry)
   options(warn = 0)
   return(invisible(results))
+}
+
+#' running various checks on a csv file containing quantile forecasts
+#'
+#' @param file the name of the file which the data are to be read from
+#' @return invisibly returns a named list with entries corresponding to the results of the different
+#' plausibility checks
+validate_file <- function(file){
+  cat("\n Validating", file, "...\n \n")
+  # check file name:
+  check_filename_temp <- verify_filename(basename(file))
+  # read in:
+  entry_temp <- read.csv(file, stringsAsFactors = FALSE)
+
+  # actual check wrapped into try() so actuall errors don't stop the process
+  plausibility_checks <- verify_quantile_forecasts(entry_temp)
+
+  return(invisible(plausibility_checks))
+}
+
+#' running various checks on all csv files contained in a directory
+#'
+#' @param dir the directory
+#' @return invisibly returns a named list with entries corresponding to the results of the
+#' plausibility checks for the different files.
+validate_directory <- function(dir){
+  cat("--------------------------\n \n")
+  cat("\n Validating directory", dir, "...\n \n")
+
+  files_temp <- list.files(dir)
+  # select files which look roughly like forecast files:
+  files_temp <- files_temp[grepl("csv", files_temp) &
+                             (grepl("2020-", files_temp) |
+                                grepl("2021-", files_temp))]
+
+  plausibility_checks <- list()
+
+  for(fi in files_temp){
+    try({
+      plausibility_checks[[fi]] <- validate_file(paste0(dir, "/", fi))
+    })
+    if(!is.list(plausibility_checks[[fi]])) warning("Plausibility check ended with errors!")
+  }
+
+  return(invisible(plausibility_checks))
 }
