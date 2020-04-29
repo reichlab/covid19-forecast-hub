@@ -252,12 +252,36 @@ prior to submitting a pull request to ensure the data will validate.
 For those familiar with R (but not python),
 there is a separate set of tests that may be useful to diagnose data 
 formatting issues in
-[perform_plausibility_checks.script.R](../code/validation/perform_plausibility_checks.script.R).
+[functions_plausibility.R](../code/validation/functions_plausibility.R).
 We intend to keep these tests in sync with the python checks 
 automatically run during a pull request.
 If you discover any discrepancies,
 please [let us know](https://github.com/reichlab/covid19-forecast-hub/issues).
 
+As an example of using these test from the base of the repository run
+
+
+```r
+source("code/validation/functions_plausibility.R")
+```
+
+To check a single file, run
+
+
+```r
+validate_file("data-processed/UMass-MechBayes/2020-04-26-UMass-MechBayes.csv")
+```
+
+To check a directory, run
+
+
+```r
+validate_directory("data-processed/UMass-MechBayes/")
+```
+
+Any "ERROR"s will result in a failed pull request. 
+"Warning"s and "Message"s are informational, but may help prevent unwanted 
+or incomplete forecasts from getting pushed to the repository. 
 
 
 ## Meta-data
