@@ -121,6 +121,8 @@ verify_no_quantile_crossings <- function(entry){
                         idvar = c("location", "target"))
   # choose columns representing quantiles
   quantiles <- as.matrix(entry_wide[, grepl("value.", colnames(entry_wide))])
+  # re-order columns if necessary:
+  quantiles <- quantiles[, sort(colnames(quantiles))]
   # check whether rows are non-decreasing (i.e. there are no crossings)
   is_crossing <- apply(quantiles, 1, function(v) any(diff(v) < -0.01)) # leave some tolerance
   # warn if there are crossing and return info on where they ocurred
@@ -233,12 +235,18 @@ verify_cumulative_geq_incident <- function(entry){
   # mark point forecasts in quantile column (for return object):
   entry_wide$quantile[entry_wide$type == "point"] <- "point"
 
-  if(any(inc_exceeds_cum)){
+  if(any(inc_exceeds_cum, na.rm = TRUE)){
     warning("Incidence forecast exceecd cumulative forecast ", sum(inc_exceeds_cum),
             " combinations of location, forecast horizon and quantile.")
+    if(any(is.na(inc_exceeds_cum))){
+      warning("There seem to be NA values either in the incidence or cumulative death forecats.")
+    }
     return(invisible(entry_wide[inc_exceeds_cum, c("location", "horizon", "quantile")]))
   }else{
     cat("No case found in which incidence forecast exceecds cumulative forecast.\n")
+    if(any(is.na(inc_exceeds_cum))){
+      warning("There seem to be NA values either in the incidence or cumulative death forecats.")
+    }
     return(invisible(TRUE))
   }
 }
