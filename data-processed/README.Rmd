@@ -242,7 +242,7 @@ prior to submitting a pull request to ensure the data will validate.
 For those familiar with R (but not python),
 there is a separate set of tests that may be useful to diagnose data 
 formatting issues in
-[perform_plausibility_checks.script.R](../code/perform_plausibility_checks.script.R).
+[perform_plausibility_checks.script.R](../code/validation/perform_plausibility_checks.script.R).
 We intend to keep these tests in sync with the python checks 
 automatically run during a pull request.
 If you discover any discrepancies,
