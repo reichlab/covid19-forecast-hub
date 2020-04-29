@@ -5,7 +5,7 @@ import {
   TimeChart,
   DistributionChart,
   events
-} from './d3-foresight'
+} from '../../covid-d3-foresight/dist/d3-foresight'
 
 // Initializations
 // ---------------
