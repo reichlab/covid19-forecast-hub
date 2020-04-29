@@ -85,11 +85,11 @@ filename.
 Values in the `target` column must be a character (string) and be one of the 
 following specific targets:
 
-- "# day ahead cum death" where # is 1-130
-- "# day ahead inc death" where # is 1-130
-- "# wk ahead cum death"  where # is 1-20
-- "# wk ahead inc death"  where # is 1-20
-- "# day ahead inc hosp"  where # is 1-130
+- "N day ahead cum death" where N is a number between 1 and 130
+- "N day ahead inc death" where N is a number between 1 and 130
+- "N wk ahead cum death"  where N is a number between 1 and  20
+- "N wk ahead inc death"  where N is a number between 1 and  20
+- "N day ahead inc hosp"  where N is a number between 1 and 130
 
 All forecasts will be compared to the 
 [daily reports containing death data from the JHU CSSE group](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv) 
@@ -103,27 +103,27 @@ The team at UTexas-Austin is tracking this issue on [a separate GitHub repositor
 For week-ahead forecasts with `forecast_date` of Sunday or Monday of EW12, a 1 week ahead forecast corresponds to EW12 and should have `target_end_date` of the Saturday of EW12. For week-ahead forecasts with `forecast_date` of Tuesday through Saturday of EW12, a 1 week ahead forecast corresponds to EW13 and should have `target_end_date` of the Saturday of EW13. A week-ahead forecast should represent the total number of incident deaths or hospitalizations within a given epiweek (from Sunday through Saturday, inclusive) or the cumulative number of deaths reported on the Saturday of a given epiweek. We have created [a csv file](../template/covid19-death-forecast-dates.csv) describing forecast collection dates and dates for which forecasts refer to can be found.
 
 
-##### # day ahead cum death
+##### N day ahead cum death
 
 This target is the cumulative number of deaths predicted by the model for 
-# days after `forecast_date`. 
+N days after `forecast_date`. 
 
-##### # day ahead inc death
+##### N day ahead inc death
 
 This target is the incident (daily) number of deaths predicted by the model
-on day # after `forecast_date`. 
+on day N after `forecast_date`. 
 
-##### # wk ahead cum death
+##### N wk ahead cum death
 
 This target is the cumulative number of deaths predicted by the model up to 
-and including # weeks after `forecast_date`. 
+and including N weeks after `forecast_date`. 
 
-##### # wk ahead inc death
+##### N wk ahead inc death
 
 This target is the incident (weekly) number of deaths predicted by the model 
-during the week that is # weeks after `forecast_date`. 
+during the week that is N weeks after `forecast_date`. 
 
-##### # day ahead inc hosp
+##### N day ahead inc hosp
 
 This target is the incident (weekly) number of deaths predicted by the model
 on day # after `forecast_date`.
@@ -147,7 +147,7 @@ week time period.
 Values in the `location` column must be
 
 - "US" or
-- # where # represents the US state, territory, or district 
+- a two-digit number representing the US state, territory, or district 
 [fips numeric code](../template/state_fips_codes.csv). 
 
 This location identifies the geographical location for the forecast.
