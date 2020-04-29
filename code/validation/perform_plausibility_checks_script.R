@@ -22,6 +22,13 @@ for(dir in directories){
     check_filename_temp <- verify_filename(fi)
     # read in:
     entry_temp <- read.csv(paste0(dir, "/", fi), stringsAsFactors = FALSE)
-    plausibility_checks[[dir]][[fi]] <- verify_quantile_forecasts(entry_temp)
+
+    # actual check wrapped into try() so actuall errors don't stop the process
+    plausibility_checks[[dir]][[fi]] <- NA
+    try({
+      plausibility_checks[[dir]][[fi]] <- verify_quantile_forecasts(entry_temp)
+    })
+    if(!is.list(plausibility_checks[[dir]][[fi]])) warning("Plausibility check ended with errors!")
+
   }
 }

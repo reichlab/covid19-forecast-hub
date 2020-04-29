@@ -4,7 +4,7 @@ The goal of this repository is to create a standardized set of data on forecasts
 
 * [Raw data](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-raw)
 * [Processed data](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed)
-* [Truth data](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/truth-cum-death.csv)
+* [Truth data](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-truth/truth-cum-death.csv)
 * [Ensemble model](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/COVIDhub-ensemble)
 * [Interactive Visualization](https://reichlab.io/covid19-forecast-hub/)
 
@@ -81,3 +81,15 @@ So far, we have identified a number of experienced teams that are creating forec
  - COVIDhub ensemble forecast: this is a combination of the above models. 
 
 Participating teams must provide a metadata file (see [example](data-processed/UMass-ExpertCrowd/metadata-UMass-ExpertCrowd.txt)), including methodological detail about their approach and a link to a file (or a file itself) describing the methods used. 
+
+## The COVID Forecast Hub Team
+Carefully curating these datasets into a standard format has taken a Herculean team effort. The following lists those who have helped out, in reverse alphabetical order:
+
+ - Nutcha Wattanachit (ensemble model, data processing)
+ - Nicholas Reich (project lead, ensemble model, data processing)
+ - Jarad Niemi (data processing and organization)
+ - Khoa Le (validation, automation)
+ - Katie House (visualization, validation, project management)
+ - Matt Cornell (validation, Zoltar integration)
+ - Andrea Brennen (metadata curation)
+ - Johannes Bracher (evaluation, data processing)

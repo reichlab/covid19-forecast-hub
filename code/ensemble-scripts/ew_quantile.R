@@ -2,12 +2,9 @@ library(tidyverse)
 library(MMWRweek)
 library(lubridate)
 
-# write quantile functions
-# have to update this for ew
 pull_all_forecasts <- function(monday_run_date, model,targets,quantiles=c(0.025,0.5,0.975)) {
   # get files with this week's forecasts
   # change to only take Friday and later days from run date (previously take upto Tuesday)
-  # date_set <- paste(c(as.Date(monday_run_date),as.Date(monday_run_date)-1:6),collapse="|")
   date_set <- paste(c(as.Date(monday_run_date),as.Date(monday_run_date)-1:3),collapse="|")
   all_files <- list.files("./data-processed", pattern = "*.csv", recursive=T)
   fcast_files <- all_files[grepl("[0-9]{4}-[0-9]{2}-[0-9]{2}",all_files)]
@@ -45,7 +42,7 @@ pull_all_forecasts <- function(monday_run_date, model,targets,quantiles=c(0.025,
   for (i in 1:length(forecast_files)) {
     single_forecast <- read.csv(paste0("./data-processed/",forecast_files[i]),
                                 colClasses="character",stringsAsFactors = FALSE) %>%
-      dplyr::filter(type == "quantile",target %in% targets) 
+      dplyr::filter(type == "quantile",target %in% targets)
     if ("location_name" %in% colnames(single_forecast)){
       single_forecast <- single_forecast %>% dplyr::select(-"location_name")
     }
@@ -59,14 +56,13 @@ pull_all_forecasts <- function(monday_run_date, model,targets,quantiles=c(0.025,
   forecast_data$quantile <- round(as.numeric(forecast_data$quantile),3)
   forecast_data$value <- as.numeric(forecast_data$value)
   forecast_data$type <- as.character(forecast_data$type)
-  # forecast_data <- forecast_data
-  # %>%
-  #   dplyr::filter(quantile %in% quantiles)
+  forecast_data <- forecast_data %>%
+    dplyr::filter(quantile %in% quantiles)
   output <- list(forecast_data,ensemble_component_info)
   return(output)
 }
 
-ew_quantile <- function(forecast_data,quantiles=c(0.025,0.5,0.975),national=FALSE) {
+ew_quantile <- function(forecast_data,national=FALSE, forecast_date_monday) {
   fips <- read.csv("./template/state_fips_codes.csv",stringsAsFactors = FALSE) 
   US <- data.frame(cbind("US","US","US"));names(US) <-colnames(fips)
   if (national ==TRUE) {
@@ -74,13 +70,10 @@ ew_quantile <- function(forecast_data,quantiles=c(0.025,0.5,0.975),national=FALS
   } else {
     loc <- fips
     loc$state_code[which(nchar(loc$state_code)==1)] <- paste0(0,loc$state_code[which(nchar(loc$state_code)==1)])
-
   }
   # equal weight quantile
   combined_file <- forecast_data %>%
     na.omit() %>%
-    # dplyr::filter(as.numeric(quantile) %in% as.numeric(quantiles)) %>%
-    #dplyr::filter(as.numeric(quantile) %in% as.numeric(c(0.025,0.5,0.975))) %>%
     dplyr::group_by(location, target, quantile) %>%
     dplyr::mutate(avg = mean(as.numeric(value))) %>%
     dplyr::ungroup() %>%
@@ -96,7 +89,8 @@ ew_quantile <- function(forecast_data,quantiles=c(0.025,0.5,0.975),national=FALS
     dplyr::full_join(points, by=c(names(concised_dat))) %>%
     dplyr::left_join(loc,by=c("location"="state_code")) %>%
     dplyr::rename(location_name=state_name) %>%
+    dplyr::mutate(forecast_date=forecast_date_monday) %>%
     dplyr::select(-"state") %>%
-    dplyr::select(target,location,location_name,type,quantile,value)
+    dplyr::select(forecast_date,target,target_end_date,location,location_name,type,quantile,value)
   return(ensemble)
 }
