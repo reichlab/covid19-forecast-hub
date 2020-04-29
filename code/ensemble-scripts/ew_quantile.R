@@ -2,12 +2,9 @@ library(tidyverse)
 library(MMWRweek)
 library(lubridate)
 
-# write quantile functions
-# have to update this for ew
 pull_all_forecasts <- function(monday_run_date, model,targets,quantiles=c(0.025,0.5,0.975)) {
   # get files with this week's forecasts
   # change to only take Friday and later days from run date (previously take upto Tuesday)
-  # date_set <- paste(c(as.Date(monday_run_date),as.Date(monday_run_date)-1:6),collapse="|")
   date_set <- paste(c(as.Date(monday_run_date),as.Date(monday_run_date)-1:3),collapse="|")
   all_files <- list.files("./data-processed", pattern = "*.csv", recursive=T)
   fcast_files <- all_files[grepl("[0-9]{4}-[0-9]{2}-[0-9]{2}",all_files)]
@@ -59,9 +56,8 @@ pull_all_forecasts <- function(monday_run_date, model,targets,quantiles=c(0.025,
   forecast_data$quantile <- round(as.numeric(forecast_data$quantile),3)
   forecast_data$value <- as.numeric(forecast_data$value)
   forecast_data$type <- as.character(forecast_data$type)
-  # forecast_data <- forecast_data
-  # %>%
-  #   dplyr::filter(quantile %in% quantiles)
+  forecast_data <- forecast_data %>%
+    dplyr::filter(quantile %in% quantiles)
   output <- list(forecast_data,ensemble_component_info)
   return(output)
 }
@@ -74,7 +70,6 @@ ew_quantile <- function(forecast_data,national=FALSE, forecast_date_monday) {
   } else {
     loc <- fips
     loc$state_code[which(nchar(loc$state_code)==1)] <- paste0(0,loc$state_code[which(nchar(loc$state_code)==1)])
-
   }
   # equal weight quantile
   combined_file <- forecast_data %>%
