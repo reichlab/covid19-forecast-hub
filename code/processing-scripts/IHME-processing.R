@@ -30,6 +30,10 @@ make_qntl_dat <- function(path) {
   if (names(data)[2]=="location_name"){
     names(data)[2]="location"
   }
+  if (sum(grepl("location_id",names(data)))>0){
+    data<-data %>%
+      dplyr::select(-"location_id")
+  }
   ## read state code
   state_fips_codes<-read.csv("./template/state_fips_codes.csv",stringsAsFactors = FALSE) %>%
     dplyr::select(-"state")
@@ -125,4 +129,3 @@ for(i in 1:length(new_filepath)){
   date <- gsub("_", "-",substr(dirname(new_filepath[i]),start=17,stop=26))
   write_csv(formatted_file,path = paste0("data-processed/IHME-CurveFit/",date,"-IHME-CurveFit.csv"))
 }
-
