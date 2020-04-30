@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Script to download and setup flusight directory structure
+# Script to download and setup directory structure
 set -e
 
 # Parse data model data files to flusight format

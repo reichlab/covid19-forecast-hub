@@ -3,6 +3,7 @@ const fs = require('fs-extra')
 const path = require('path')
 const models = require('./modules/models')
 const util = require('./modules/util')
+const meta = require('./modules/meta')
 const mmwr = require('mmwr-week')
 const moment = require('moment')
 
@@ -61,13 +62,15 @@ modelDirs.forEach(modelDir => {
   // Read metadata and parse to usable form
   let flusightMetadata = parseMetadata(modelDir)
   let modelId = models.getModelId(modelDir)
+  let target_categories = meta.targets_cats
 
-  models.getModelCsvs(modelDir)
+  target_categories.forEach(target_cats => // Cumulative Deaths, Incident Deaths
+    models.getModelCsvs(modelDir)
     .forEach(csvFile => {
       let info = parseCSVInfo(path.basename(csvFile))
 
       // CSV target path
-      let csvTargetDir = path.join('./data', info.season, modelId)
+      let csvTargetDir = path.join('./data', target_cats, modelId)
       fs.ensureDirSync(csvTargetDir)
 
       // Copy csv
@@ -76,4 +79,5 @@ modelDirs.forEach(modelDir => {
       // Write metadata
       ensureMetadata(path.join(csvTargetDir, 'meta.yml'), flusightMetadata)
     })
+  )
 })

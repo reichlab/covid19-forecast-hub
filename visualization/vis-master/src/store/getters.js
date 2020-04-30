@@ -59,7 +59,6 @@ export const selectedDistData = (state, getters) => {
 export const selectedData = (state, getters) => {
   let selectedRegionIdx = getters['switches/selectedRegion']
   let seasonSubset = state.seasonData[getters.downloadedSeasons.indexOf(getters.selectedSeasonId)]
-
   return seasonSubset.regions[selectedRegionIdx]
 }
 
@@ -67,7 +66,8 @@ export const selectedData = (state, getters) => {
  * Return scores data for current selection
  */
 export const selectedScoresData = (state, getters) => {
-  let idx = getters.downloadedScores.indexOf(getters.selectedSeasonId)
+  //let idx = getters.downloadedScores.indexOf(getters.selectedSeasonId)
+  let idx = 0
   let subset = state.scoresData[idx].regions
     .find(({
       id
@@ -248,12 +248,10 @@ export const choroplethData = (state, getters) => {
     type: relative ? 'diverging' : 'sequential',
     decorator: relative ? x => x + ' % (baseline)' : x => x + ' %'
   }
-
   let downloadedSeasonIdx = getters.downloadedSeasons.indexOf(getters.seasons[selectedSeasonIdx])
 
   state.seasonData[downloadedSeasonIdx].regions.map((reg, regIdx) => {
     let values = reg.actual.map(d => d.actual)
-
     //if (relative) values = utils.baselineScale(values, reg.baseline)
 
     output.data.push({

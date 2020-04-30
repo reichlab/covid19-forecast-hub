@@ -105,7 +105,11 @@ df_truth_short = df_vis[["location", "epiweek", "value"]]
 df_truth_short["value"].replace({0: 0.1}, inplace=True)
 
 # write to json
-with open('vis-master/covid-csv-tools/dist/state_actual/2019.json', 'w') as f:
+with open('vis-master/covid-csv-tools/dist/truth/Cumulative Deaths.json', 'w') as f:
+    f.write(df_truth_short.to_json(orient='records'))
+    
+# write to json
+with open('vis-master/covid-csv-tools/dist/truth/Incident Deaths.json', 'w') as f:
     f.write(df_truth_short.to_json(orient='records'))
 
 

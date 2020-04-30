@@ -117,8 +117,10 @@ function getSeasonData(season, lag) {
     //   return yield u.cache.readFromCache(cacheFile);
     // } else {
     //let data = yield delphi.requestSeasonData(season, lag);
-    let data = yield readJSON('covid-csv-tools/dist/state_actual/'.concat(season.toString(), '.json'))
-    // if (data.message === 'success') {
+    console.log(season)
+    let data = yield readJSON(('covid-csv-tools/dist/truth/'.concat(season, '.json')).toString())
+
+    // if (data.message === 'success') { 
     let formattedData = data
       .sort((a, b) => a.epiweek - b.epiweek)
       .reduce((acc, {
@@ -166,6 +168,7 @@ function getSeasonDataAllLags(season) {
     let lags = [...Array(52).keys()];
     let latestData = (yield getSeasonData(season));
     let lagData = yield Promise.all(lags.map(l => getSeasonData(season, l)));
+
     meta_1.stateIds.forEach(rid => {
       latestData[rid].forEach(({
         epiweek,
