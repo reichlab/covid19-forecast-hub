@@ -147,8 +147,8 @@ verify_forecast_date_end_date <- function(entry){
     }
 
     # check that target_end_date is always a Saturday for week ahead targets
-    entry_week <- subset(entry, grepl("week", target))
-    if(any(weekdays(entry_week$target_end_date) != "Sat")){
+    entry_week <- subset(entry, grepl("wk", target))
+    if(any(weekdays(entry_week$target_end_date) != "Saturday")){
       warning("ERROR: target_end_date needs to be a Saturday for all week-ahead forecasts.")
       result <- FALSE
     }
@@ -157,10 +157,10 @@ verify_forecast_date_end_date <- function(entry){
     horizon_week <- as.numeric(gsub(" .*", "", entry_week$target))
     if(any(
       as.numeric(entry_week$target_end_date - entry_week$forecast_date) < 5 + (horizon_week - 1)*7 |
-      as.numeric(entry_week$target_end_date - entry_week$forecast_date) > 11 + (horizon_week) - 1*7
+      as.numeric(entry_week$target_end_date - entry_week$forecast_date) > 11 + (horizon_week - 1)*7
     )){
-      warning("ERROR: Difference between target_date and forecast_date needs to be between 5 and 11 days for 1 week ahead forecasts,
-            between 12 and 18 days for two week ahead and so on.")
+      warning("ERROR: Difference between target_date and forecast_date needs to be between 5 and 11 days for 1 week ahead forecasts,",
+            "between 12 and 18 days for two week ahead and so on.")
       result <- FALSE
     }
   }
