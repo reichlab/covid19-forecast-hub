@@ -9,6 +9,8 @@ yarn run test
 yarn run parse-data
 rm -r ./data/2019-2020/CU-nointerv
 rm -r ./data/2019-2020/NotreDame-FRED
+rm -r ./data/2019-2020/IowaStateLW-STEM10
+rm -r ./data/2019-2020/IowaStateLW-STEM15
 python3 ./scripts/convert-forecasts.py
 python3 ./scripts/get-truth-data.py
 
