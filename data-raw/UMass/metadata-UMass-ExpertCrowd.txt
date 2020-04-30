@@ -28,4 +28,9 @@ A consensus forecast from experts in the modeling of infectious disease, public 
 methods_long: >-
 April 22: Experts in the modeling of infectious disease, public health, and epidemiology provide forecasts of the smallest, most likely, and largest possible cumulative number of deaths at the US level. We transform each expert's three estimates into a triangular probability distribution and take an equally-weighted average of expert predictive densities.
 
+There is a requirement to make forecasts for Saturdays.
+On 2020-04-13 we asked experts to forecast 2020-05-01 and 2020-06-01. 
+To satisfy 'the saturday' rule we adjust their estimates to the two closest
+saturdays on 2020-05-02 and 2020-05-30. 
+
 citation: 
