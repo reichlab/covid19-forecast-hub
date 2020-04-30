@@ -60,7 +60,7 @@ verify_colnames <- function(entry){
   # check whether there are colnames present which should not
   if(!all(coln %in% colnames_template)){
     warning("ERROR: there is at least one column name which does not conform with the template: ",
-            coln[!(coln %in% colnames_template)])
+            paste(coln[!(coln %in% colnames_template)], collapse = ", "))
     result <- FALSE
   }
 
@@ -195,11 +195,13 @@ verify_no_quantile_crossings <- function(entry){
   is_crossing <- apply(quantiles, 1, function(v) any(diff(v) < -0.01)) # leave some tolerance
   # warn if there are crossing and return info on where they ocurred
   if(any(is_crossing)){
-    warning("  Warning: Quantile crossing found for", sum(is_crossing), "combinations of location and target.")
+    warning("  Warning: Quantile crossing found for", sum(is_crossing),
+            "combinations of location and target. Details in returned table.")
     return(invisible(entry_wide[is_crossing, c("location", "target")]))
+  }else{
+    cat("VALIDATED: no quantile crossing\n")
+    return(invisible(TRUE))
   }
-  
-  return(invisible(TRUE))
 }
 
 #' Checking a data.frame in quantile format for temporal non-monotonicity in forecasts of cumulative deaths
@@ -244,13 +246,15 @@ verify_monotonicity_cumulative <- function(entry){
   if(any(c(is_decreasing_daily, is_decreasing_weekly), na.rm = TRUE)){
     cat("  Warning: Temporal non-monotonicity found in forecasts of cumulative deaths for ",
             sum(c(is_decreasing_daily, is_decreasing_weekly)),
-            " combinations of location and quantile/point forecast \n")
+            " combinations of location and quantile/point forecast. Details in returned table. \n")
     ret_obj <- rbind(entry_daily_wide[is_decreasing_daily, c("location", "quantile")],
                      entry_weekly_wide[is_decreasing_weekly, c("location", "quantile")])
     rownames(ret_obj) <- NULL
     return(invisible(ret_obj))
+  }else{
+    cat("VALIDATED: temporal monotonicity\n")
   }
-  
+
   return(invisible(TRUE))
 }
 
@@ -300,18 +304,21 @@ verify_cumulative_geq_incident <- function(entry){
 
   # mark point forecasts in quantile column (for return object):
   entry_wide$quantile[entry_wide$type == "point"] <- "point"
-  
+
   if(any(is.na(inc_exceeds_cum))){
     warning("ERROR: NA values either in the incidence or cumulative death forecats.")
   }
-  
+
   if(any(inc_exceeds_cum, na.rm = TRUE)){
-    warning("Incidence forecast exceed cumulative forecast ", sum(inc_exceeds_cum),
-            " combinations of location, forecast horizon and quantile.")
+    warning("Incidence forecast exceed cumulative forecast for ", sum(inc_exceeds_cum),
+            " combinations of location, forecast horizon and quantile. Details in returned table.")
     return(invisible(entry_wide[inc_exceeds_cum, c("location", "horizon", "quantile")]))
+  }else{
+    cat("VALIDATED: cum geq inc")
+    return(invisible(TRUE))
   }
-  
-  return(invisible(TRUE))
+
+
 }
 
 #' running various checks on a data.frame of quantile forecasts
@@ -344,7 +351,7 @@ verify_quantile_forecasts <- function(entry){
 #' @return invisibly returns a named list with entries corresponding to the results of the different
 #' plausibility checks
 validate_file <- function(file){
-  cat("\n Validating", file, "...\n \n")
+  cat("\n\n Validating", file, "...\n")
   # check file name:
   check_filename_temp <- verify_filename(basename(file))
   # read in:
@@ -363,7 +370,7 @@ validate_file <- function(file){
 #' plausibility checks for the different files.
 validate_directory <- function(dir){
   cat("--------------------------\n \n")
-  cat("\n Validating directory", dir, "...\n \n")
+  cat("\n Validating directory", dir, "...\n ")
 
   files_temp <- list.files(dir)
   # select files which look roughly like forecast files:
