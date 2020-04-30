@@ -195,7 +195,7 @@ for the `target`, `location`, and `quantile` associated with that row.
 
 An example inverse CDF is below.
 
-```{r}
+```{r example_inverse_cdf, echo=FALSE, fig.path="./"}
 mu = log(50000)
 q = 0.800
 value = qlnorm(q, mu)

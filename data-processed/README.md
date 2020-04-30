@@ -202,21 +202,7 @@ for the `target`, `location`, and `quantile` associated with that row.
 
 An example inverse CDF is below.
 
-
-```r
-mu = log(50000)
-q = 0.800
-value = qlnorm(q, mu)
-curve(qlnorm(x, mu), 0.1, 0.9,
-      xlab = "quantile", 
-      ylab = "inverse CDF",
-      main = paste("Example `value` at quantile", q))
-segments(q, 0, q, value)
-segments(0, value, q, value)
-axis(2, at = value, "value", las = 2)
-```
-
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
+![plot of chunk example_inverse_cdf](./example_inverse_cdf-1.png)
 
 
 
@@ -281,7 +267,7 @@ validate_directory("data-processed/UMass-MechBayes/")
 
 Any "ERROR"s will result in a failed pull request. 
 "Warning"s and "Message"s are informational, but may help prevent unwanted 
-or incomplete forecasts from getting pushed to the repository. 
+or incomplete forecasts from getting pushed to the repository.
 
 In addition to purely technical sanity checks, three plausibility checks 
 are performed:
