@@ -108,8 +108,8 @@ following specific targets:
 
 - "N day ahead cum death" where N is a number between 0 and 130
 - "N day ahead inc death" where N is a number between 0 and 130
-- "N wk ahead cum death"  where N is a number between 0 and  20
-- "N wk ahead inc death"  where N is a number between 0 and  20
+- "N wk ahead cum death"  where N is a number between 1 and  20
+- "N wk ahead inc death"  where N is a number between 1 and  20
 - "N day ahead inc hosp"  where N is a number between 0 and 130
 
 For week-ahead forecasts, we will use the specification of epidemiological weeks (EWs) [defined by the US CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf). 
