@@ -154,3 +154,7 @@ file_path,validation_date
 ./data-processed/COVIDhub-ensemble/2020-04-27-COVIDhub-ensemble.csv,2020-04-28 13:18:34.779914
 ./data-processed/JHU_IDD-CovidSP/2020-04-24-JHU_IDD-CovidSP.csv,2020-04-28 14:51:16.844396
 ./data-processed/IHME-CurveFit/2020-04-27-IHME-CurveFit.csv,2020-04-29 15:32:14.430760
+./data-processed/IowaStateLW-STEM10/2020-04-26-IowaStateLW-STEM10.csv,2020-04-30 13:53:18.374344
+./data-processed/Geneva-DeterministicGrowth/2020-04-28-Geneva-DeterministicGrowth.csv,2020-04-30 13:53:18.380771
+./data-processed/Geneva-DeterministicGrowth/2020-04-29-Geneva-DeterministicGrowth.csv,2020-04-30 13:53:18.385784
+./data-processed/IowaStateLW-STEM15/2020-04-26-IowaStateLW-STEM15.csv,2020-04-30 13:53:18.596954
