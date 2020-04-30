@@ -35,7 +35,7 @@ verify_filename <- function(filename){
 
   if(result) cat("VALIDATED: filename \n")
 
-  return(result)
+  return(invisible(result))
 }
 
 
@@ -75,14 +75,44 @@ verify_colnames <- function(entry){
   # check order
   colnames_template_available <- colnames_template[colnames_template %in% coln]
 
-  if(result) cat("VALIDATED: column names\n")
+  if(result){
+    cat("VALIDATED: column names\n")
 
-  if(any(coln != colnames_template_available)){
-    cat("  Warning: Preferred order of columns is (forecast_date, target, target_end_date, location,
+    # check order and give warning if not as recommended
+    if(any(coln != colnames_template_available)){
+      cat("  WARNING: Preferred order of columns is (forecast_date, target, target_end_date, location,
         location_name (optional), type, quantile, value), but this is not compulsory.\n")
+    }
   }
 
   return(invisible(result))
+}
+
+#' Checking whether there are any NA values
+#'
+#' @param entry the data.frame
+#'
+#' @return invisibly TRUE if no NA values found, FALSE otherwise
+verify_no_na <- function(entry){
+  result <- TRUE
+
+  # check for NAs in columns other than quantile:
+  if(any(is.na(entry[, -which(colnames(entry) %in% c("quantile"))]))){
+    warning("  ERROR: NA values are only allowed in the `quantile` column (for type == `point`).")
+    result <- FALSE
+  }
+
+  # check for NAs in quantile despite type == "quantile"
+  if(any(is.na(entry$quantile) & entry$type == "quantile")){
+    warning("  ERROR: `quantile` column can only contain NA values where type == `point`.")
+    result <- FALSE
+  }
+
+  if(result){
+    cat("VALIDATED: no NA values\n")
+  }
+
+  return(invisible(FALSE))
 }
 
 #' Checking that all entries in `target` correspond to standards
@@ -92,8 +122,8 @@ verify_colnames <- function(entry){
 #' @return invisibly returns TRUE if problems detected, FALSE otherwise
 verify_targets <- function(entry){
   allowed_targets <- c(
-    paste(1:130, "day ahead inc death"),
-    paste(1:130, "day ahead cum death"),
+    paste(0:130, "day ahead inc death"),
+    paste(0:130, "day ahead cum death"),
     paste(0:20, "wk ahead inc death"),
     paste(0:20, "wk ahead cum death"),
     paste(0:130, "day ahead inc hosp")
@@ -102,10 +132,10 @@ verify_targets <- function(entry){
   if(!all(targets_in_entry %in% allowed_targets)){
     warning("ERROR: Some entries in `targets` do not correspond to standards:",
             paste0(targets_in_entry[!(targets_in_entry %in% allowed_targets)], collapse = ", "))
-    return(FALSE)
+    return(invisible(FALSE))
   }else{
     cat("VALIDATED: targets\n")
-    return(TRUE)
+    return(invisible(TRUE))
   }
 }
 
@@ -117,11 +147,12 @@ verify_date_format <- function(entry){
   forecast_date <- as.Date(entry$forecast_date, format = "%Y-%m-%d")
   target_end_date <- as.Date(entry$target_end_date, format = "%Y-%m-%d")
   if(any(is.na(c(forecast_date, target_end_date)))){
-    warning("ERROR: Required date format is %Y-%m-%d.")
-    return(FALSE)
+    warning("ERROR: forecast_date or target_end_date are in wrong format or contain NA values. ",
+            "Required date format is %Y-%m-%d.")
+    return(invisible(FALSE))
   }else{
     cat("VALIDATED: date format \n")
-    return(TRUE)
+    return(invisible(TRUE))
   }
 }
 
@@ -147,8 +178,8 @@ verify_forecast_date_end_date <- function(entry){
     }
 
     # check that target_end_date is always a Saturday for week ahead targets
-    entry_week <- subset(entry, grepl("week", target))
-    if(any(weekdays(entry_week$target_end_date) != "Sat")){
+    entry_week <- subset(entry, grepl("wk", target))
+    if(any(weekdays(entry_week$target_end_date) != "Saturday")){
       warning("ERROR: target_end_date needs to be a Saturday for all week-ahead forecasts.")
       result <- FALSE
     }
@@ -157,10 +188,10 @@ verify_forecast_date_end_date <- function(entry){
     horizon_week <- as.numeric(gsub(" .*", "", entry_week$target))
     if(any(
       as.numeric(entry_week$target_end_date - entry_week$forecast_date) < 5 + (horizon_week - 1)*7 |
-      as.numeric(entry_week$target_end_date - entry_week$forecast_date) > 11 + (horizon_week) - 1*7
+      as.numeric(entry_week$target_end_date - entry_week$forecast_date) > 11 + (horizon_week - 1)*7
     )){
-      warning("ERROR: Difference between target_date and forecast_date needs to be between 5 and 11 days for 1 week ahead forecasts,
-            between 12 and 18 days for two week ahead and so on.")
+      warning("ERROR: Difference between target_date and forecast_date needs to be between 5 and 11 days for 1 week ahead forecasts,",
+            " between 12 and 18 days for two week ahead and so on.")
       result <- FALSE
     }
   }
@@ -169,7 +200,7 @@ verify_forecast_date_end_date <- function(entry){
     cat("VALIDATED: forecast_date, target_end_date\n")
   }
 
-  return(result)
+  return(invisible(result))
 }
 
 #' Checking a data.frame in quantile format for quantile crossing
@@ -195,8 +226,8 @@ verify_no_quantile_crossings <- function(entry){
   is_crossing <- apply(quantiles, 1, function(v) any(diff(v) < -0.01)) # leave some tolerance
   # warn if there are crossing and return info on where they ocurred
   if(any(is_crossing)){
-    warning("  Warning: Quantile crossing found for", sum(is_crossing),
-            "combinations of location and target. Details in returned table.")
+    cat("  WARNING: Quantile crossing found for ", sum(is_crossing),
+            " combination(s) of location and target. Details in returned table.")
     return(invisible(entry_wide[is_crossing, c("location", "target")]))
   }else{
     cat("VALIDATED: no quantile crossing\n")
@@ -244,9 +275,9 @@ verify_monotonicity_cumulative <- function(entry){
 
   # warn if there are crossing and return info on where they ocurred
   if(any(c(is_decreasing_daily, is_decreasing_weekly), na.rm = TRUE)){
-    cat("  Warning: Temporal non-monotonicity found in forecasts of cumulative deaths for ",
+    cat("  WARNING: Temporal non-monotonicity found in forecasts of cumulative deaths for ",
             sum(c(is_decreasing_daily, is_decreasing_weekly)),
-            " combinations of location and quantile/point forecast. Details in returned table. \n")
+            " combination(s) of location and quantile/point forecast. Details in returned table. \n")
     ret_obj <- rbind(entry_daily_wide[is_decreasing_daily, c("location", "quantile")],
                      entry_weekly_wide[is_decreasing_weekly, c("location", "quantile")])
     rownames(ret_obj) <- NULL
@@ -276,12 +307,12 @@ verify_cumulative_geq_incident <- function(entry){
 
   # Catch cases where only incident or only cumulative deaths are covered
   if(length(targets_cum) == 0){
-    cat("  Message: File does not contain forecasts of cumulative deaths.\n")
+    cat("  MESSAGE: File does not contain forecasts of cumulative deaths.\n")
     return(invisible(TRUE))
   }
 
   if(length(targets_inc) == 0){
-    cat("  Message: File does not contain forecasts of incident deaths.\n")
+    cat("  MESSAGE: File does not contain forecasts of incident deaths.\n")
     return(invisible(TRUE))
   }
 
@@ -310,11 +341,11 @@ verify_cumulative_geq_incident <- function(entry){
   }
 
   if(any(inc_exceeds_cum, na.rm = TRUE)){
-    warning("Incidence forecast exceed cumulative forecast for ", sum(inc_exceeds_cum),
+    cat("WARNING: Incidence forecast exceed cumulative forecast for ", sum(inc_exceeds_cum),
             " combinations of location, forecast horizon and quantile. Details in returned table.")
     return(invisible(entry_wide[inc_exceeds_cum, c("location", "horizon", "quantile")]))
   }else{
-    cat("VALIDATED: cum geq inc")
+    cat("VALIDATED: cum geq inc\n")
     return(invisible(TRUE))
   }
 
@@ -335,6 +366,7 @@ verify_quantile_forecasts <- function(entry){
   results <- list()
   # run different checks:
   results$colnames <- verify_colnames(entry)
+  results$no_na <- verify_no_na(entry)
   results$targets <- verify_targets(entry)
   results$date_format <- verify_date_format(entry)
   results$forecast_date_end_date <- verify_forecast_date_end_date(entry)
