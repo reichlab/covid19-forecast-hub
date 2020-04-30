@@ -116,7 +116,6 @@ final_ens <- rbind(quant_ensemble,quant_ensemble_2,quant_ensemble_n,quant_ensemb
 verify_quantile_forecasts(final_ens)
 write.csv(final_ens,file=paste0("./data-processed/COVIDhub-ensemble/",this_date,"-COVIDhub-ensemble.csv"),
             row.names = FALSE)
-
 ## -------------------- write ensemble info ----------------------------##
 nat_info <-nat_output[[2]] %>%
   dplyr::mutate(location="US national-level") %>%

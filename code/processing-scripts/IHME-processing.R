@@ -13,33 +13,28 @@ make_qntl_dat <- function(path) {
   forecast_date <- as.Date(forecast_date)
   data <- read.csv(path, stringsAsFactors = FALSE)
   # format read-in file
-  if(names(data)[1]=="location_name" & names(data)[2]=="date_reported"){
-    # dummy
-    data$V1 <- 1
-    data <- data[,c(30,1:29)]
+  data <- data %>%
+    dplyr::select(grep("location",names(data)),grep("date",names(data)),everything()) 
+  if (names(data)[grep("date",names(data))]!="date"){
     data<-data %>%
-      rename(location=location_name,date=date_reported)
-  }
-  if(names(data)[1]=="location_name" & names(data)[2]=="date"){
-    # dummy
-    data$V1 <- 1
-    data <- data[,c(30,1:29)]
+      dplyr::rename(date=names(data)[grep("date",names(data))])
+  }  
+  if (sum(grepl("location_name",names(data)))>0 & !("location" %in% names(data))){
     data<-data %>%
-      rename(location=location_name)
+      dplyr::rename(location=location_name)
   }
-  if (names(data)[2]=="location_name"){
-    names(data)[2]="location"
-  }
-  if (sum(grepl("location_id",names(data)))>0){
+  if (sum(grepl("V1",names(data)))>0){
     data<-data %>%
-      dplyr::select(-"location_id")
+      dplyr::select(-"V1")
   }
+  data <- data %>%
+    dplyr::select(-names(data)[which(grepl("location",names(data))==TRUE)][-which(names(data)[which(grepl("location",names(data))==TRUE)]=="location")])
+
   ## read state code
   state_fips_codes<-read.csv("./template/state_fips_codes.csv",stringsAsFactors = FALSE) %>%
     dplyr::select(-"state")
-  col_list1 <- grep("death", colnames(data))
-  death_qntl1 <- data[,c(1:3,col_list1)] %>%
-    dplyr::select(-"V1") %>%
+  col_list1 <- c(grep("location", colnames(data)),grep("date", colnames(data)),grep("death", colnames(data)))
+  death_qntl1 <- data[,c(col_list1)] %>%
     dplyr::rename(date_v=date) %>%
     # dplyr::filter(as.Date(as.character(date_v)) %in% c(forecast_date+1:7)) %>%
     dplyr::filter(as.Date(as.character(date_v)) > forecast_date) %>%
@@ -50,9 +45,8 @@ make_qntl_dat <- function(path) {
     dplyr::rename(location_id=state_code) %>%
     dplyr::mutate(type=ifelse(quantile=="NA","point","quantile"),forecast_date=forecast_date) %>%
     dplyr::rename(target_end_date=date_v)
-  col_list2 <- grep("totdea",colnames(data))
-  death_qntl2 <- data[,c(1:3,col_list2)] %>%
-    dplyr::select(-"V1") %>%
+  col_list2 <- c(grep("location", colnames(data)),grep("date", colnames(data)),grep("totdea",colnames(data)))
+  death_qntl2 <- data[,c(col_list2)] %>%
     dplyr::rename(date_v=date) %>%
     # dplyr::filter(as.Date(as.character(date_v)) %in% c(forecast_date+1:7)) %>%
     dplyr::filter(as.Date(as.character(date_v)) > forecast_date) %>%
@@ -63,10 +57,22 @@ make_qntl_dat <- function(path) {
     dplyr::rename(location_id=state_code) %>%
     dplyr::mutate(type=ifelse(quantile=="NA","point","quantile"),forecast_date=forecast_date) %>%
     dplyr::rename(target_end_date=date_v)
-  # add if for forecast date
+  # add hospitalization daily incident (admis)
+  col_list3 <- c(grep("location", colnames(data)),grep("date", colnames(data)),grep("admis",colnames(data)))
+  death_qntl3 <- data[,c(col_list3)] %>%
+    dplyr::rename(date_v=date) %>%
+    # dplyr::filter(as.Date(as.character(date_v)) %in% c(forecast_date+1:7)) %>%
+    dplyr::filter(as.Date(as.character(date_v)) > forecast_date) %>%
+    dplyr::mutate(target_id=paste(difftime(as.Date(as.character(date_v)),forecast_date,units="days"),"day ahead inc hosp")) %>%
+    dplyr::rename("0.025"=admis_lower,"0.975"=admis_upper,"NA"=admis_mean) %>%
+    gather(quantile, value, -c(location, date_v, target_id)) %>%
+    dplyr::left_join(state_fips_codes, by=c("location"="state_name")) %>%
+    dplyr::rename(location_id=state_code) %>%
+    dplyr::mutate(type=ifelse(quantile=="NA","point","quantile"),forecast_date=forecast_date) %>%
+    dplyr::rename(target_end_date=date_v)
+  # add if for forecast date weekly
   if (lubridate::wday(forecast_date,label = TRUE, abbr = FALSE)=="Sunday"|lubridate::wday(forecast_date,label = TRUE, abbr = FALSE)=="Monday"){
-    death_qntl3_1 <- data[,c(1:3,col_list2)] %>%
-      dplyr::select(-"V1") %>%
+    death_qntl2_1 <- data[,c(col_list2)] %>%
       dplyr::rename(date_v=date) %>%
       dplyr::mutate(day_v=lubridate::wday(date_v,label = TRUE, abbr = FALSE),
                     ew=unname(MMWRweek(date_v)[[2]])) %>%
@@ -76,8 +82,7 @@ make_qntl_dat <- function(path) {
       dplyr::filter(day_v =="Saturday" & ew>unname(MMWRweek(forecast_date)[[2]])-1) %>%
       dplyr::mutate(target_id=paste((ew-(unname(MMWRweek(forecast_date)[[2]]))+1),"wk ahead cum death")) 
   } else {
-    death_qntl3_1 <- data[,c(1:3,col_list2)] %>%
-      dplyr::select(-"V1") %>%
+    death_qntl2_1 <- data[,c(col_list2)] %>%
       dplyr::rename(date_v=date) %>%
       dplyr::mutate(day_v=lubridate::wday(date_v,label = TRUE, abbr = FALSE),
                     ew=unname(MMWRweek(date_v)[[2]])) %>%
@@ -87,7 +92,7 @@ make_qntl_dat <- function(path) {
       dplyr::filter(day_v =="Saturday" & ew>unname(MMWRweek(forecast_date)[[2]])) %>%
       dplyr::mutate(target_id=paste((ew-(unname(MMWRweek(forecast_date)[[2]])+1))+1,"wk ahead cum death")) 
   }
-  death_qntl3 <- death_qntl3_1 %>%
+  death_qntl2_2 <- death_qntl2_1 %>%
     dplyr::rename("0.025"=totdea_lower,"0.975"=totdea_upper,"NA"=totdea_mean) %>%
     gather(quantile, value, -c(location, date_v, day_v, ew, target_id)) %>%
     dplyr::left_join(state_fips_codes, by=c("location"="state_name")) %>%
@@ -95,7 +100,7 @@ make_qntl_dat <- function(path) {
     dplyr::mutate(type=ifelse(quantile=="NA","point","quantile"),forecast_date=forecast_date) %>%
     dplyr::select(-"day_v",-"ew")
   # combining data
-  comb <-rbind(death_qntl1,death_qntl2,death_qntl3) 
+  comb <-rbind(death_qntl1,death_qntl2,death_qntl2_2,death_qntl3) 
   comb$location[which(comb$location=="United States of America")] <- "US"
   comb$location_id[which(comb$location=="US")] <- "US"
   comb <- comb %>%
@@ -104,11 +109,6 @@ make_qntl_dat <- function(path) {
   comb$quantile[which(comb$quantile=="NA")] <- NA
   comb$quantile <- as.numeric(comb$quantile)
   comb$value <- as.numeric(comb$value)
-  # point_ests <- comb %>%
-  #   filter(is.na(quantile))
-  # point_ests$quantile<-0.5
-  # point_ests$type<-"quantile"
-  # final<- rbind(comb,point_ests) %>%
   final<- comb %>%
     dplyr::select(forecast_date,target_id,target_end_date,location_id,location_name,type,quantile,value) %>%
     dplyr::rename(target=target_id,location=location_id) %>%
