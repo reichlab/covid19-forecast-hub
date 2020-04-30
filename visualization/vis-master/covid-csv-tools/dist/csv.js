@@ -17,11 +17,12 @@ class CSV {
   /**
    * Initialize the csv with filename and some metadata
    */
-  constructor(filePath, epiweek, model) {
+  constructor(filePath, epiweek, model, target) {
     this.filePath = filePath;
     this.epiweek = epiweek;
     this.model = model;
-    this.season = u.epiweek.seasonFromEpiweek(epiweek);
+    this.target = target;
+    this.season = u.epiweek.seasonFromEpiweek(epiweek)
     this.parseCsv();
   }
   /**

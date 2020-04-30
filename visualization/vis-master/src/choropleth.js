@@ -70,12 +70,12 @@ export class ColorBar {
         .style('fill', cmap[cmap.length - 1 - i])
     }
 
-    // Add axis
-    // let scale = d3.scaleLinear()
-    //   .range([0, bar.width])
-    let scale = d3.scaleLog()
-      .base(10)
+    //Add axis
+    let scale = d3.scaleLinear()
       .range([0, bar.width])
+    // let scale = d3.scaleLog()
+    //   .base(10)
+    //   .range([0, bar.width])
     group.append('g')
       .attr('class', 'axis axis-color')
       .attr('transform', 'translate(' + bar.x + ',' + (bar.y + bar.height) + ')')

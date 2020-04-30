@@ -99,7 +99,7 @@ function parseStateActual(seasonData, stateId) {
  */
 const getCsv = moize(function (modelPath, epiweek) {
   let modelId = path.basename(modelPath)
-  return new fct.Csv(path.join(modelPath, epiweek + '.csv'), epiweek, modelId)
+  return new fct.Csv(path.join(modelPath, epiweek + '.csv'), epiweek, modelId, TARGET)
 })
 
 /**
@@ -231,6 +231,7 @@ async function parseModelDir(modelPath, stateId) {
   let scores = []
 
   for (let epiweek of fct.utils.epiweek.seasonEpiweeks(SEASON_ID)) {
+
     if (availableEpiweeks.indexOf(epiweek) === -1) {
       // Prediction not available for this week, return null
       pointPredictions.push(null)
@@ -241,6 +242,7 @@ async function parseModelDir(modelPath, stateId) {
         binData,
         scoreData
       } = await parseCsv(getCsv(modelPath, epiweek), stateId)
+
       pointPredictions.push(pointData)
       binPredictions.push(binData)
       scores.push(scoreData)
@@ -329,7 +331,6 @@ async function generateFiles(seasonData) {
 }
 
 // Entry point
-
 fct.truth.getSeasonDataAllLags(TARGET)
   .then(sd => generateFiles(sd))
   .then(() => {
