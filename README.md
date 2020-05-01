@@ -21,6 +21,8 @@ We are grateful to the teams who have generated these forecasts. They have spent
 
 We have stored the raw datafiles here as they were made available on the various websites or provided directly to us. We are working on creating standardized versions of these files and on building a queryable API for easy access to the data contained in the forecasts. 
 
+All source code that is specific to this project, along with our [d3-foresight](http://reichlab.io/d3-foresight/) visualization tool is available under an open-source [MIT license](./LICENSE). We note that this license does NOT cover model code from the various teams (maybe available from them under other licenses) or model forecast data (available under specified licenses as described above). 
+
 ## What forecasts we are tracking, and for which locations
 Different groups are making forecasts at different times, and for different geographic scales. The specifications below were created by consulting with collaborators at CDC and looking at what models forecasting teams were already building. 
 
