@@ -49,6 +49,20 @@ colnames(dat_modified) <- colnames(dat)[c(2:1, 3:ncol(dat_modified))]
 verify_colnames(dat_modified)
 
 #------------------------------------------
+# check_agreement_forecast_date
+
+# correct:
+check_agreement_forecast_date(file = "2020-04-23-CU-nointerv.csv", entry = dat)
+
+# change file name:
+check_agreement_forecast_date(file = "2020-04-24-CU-nointerv.csv", entry = dat)
+
+# change one entry of forecast_date:
+dat_modified <- dat
+dat_modified$forecast_date[1] <- "2019-04-19"
+check_agreement_forecast_date(file = "2020-04-24-CU-nointerv.csv", entry = dat_modified)
+
+#------------------------------------------
 # verify_no_na
 
 # correct:

@@ -39,6 +39,26 @@ verify_filename <- function(filename){
 }
 
 
+#' Checking if date in file name and variable forecast_date agree
+#'
+#' @param file the fle name
+#' @param entry the contents of the file as data.frame
+#'
+#' @return silently TRUE if dates agree, FALSE otherwise
+
+check_agreement_forecast_date <- function(file, entry){
+  date0 <- substr(file, start = 1, stop = 10)
+  date_file <- tryCatch({as.Date(date0, format = "%Y-%m-%d")}, error = function(e){NA})
+  forecast_date_entry <- as.Date(entry$forecast_date)
+  if(!all(forecast_date_entry == date_file)){
+    warning("ERROR: Date in file name and forecast_date do not agree.")
+    return(FALSE)
+  }else{
+    return(TRUE)
+  }
+}
+
+
 #' Checking if a data.frame in quantile format has the right column names
 #'
 #' Column names should be: "target", "location", "location_name" (optional), "type", "quantile", "value",
@@ -80,7 +100,7 @@ verify_colnames <- function(entry){
 
     # check order and give warning if not as recommended
     if(any(coln != colnames_template_available)){
-      cat("  WARNING: Preferred order of columns is (forecast_date, target, target_end_date, location,
+      cat("  MESSAGE: Preferred order of columns is (forecast_date, target, target_end_date, location,
         location_name (optional), type, quantile, value), but this is not compulsory.\n")
     }
   }
@@ -389,8 +409,13 @@ validate_file <- function(file){
   # read in:
   entry_temp <- read.csv(file, stringsAsFactors = FALSE)
 
+  # check agreement of file name and forecast_date
+  agreement_forecast_date <-
+    check_agreement_forecast_date(file = basename(file), entry = entry_temp)
+
   # actual check wrapped into try() so actuall errors don't stop the process
   plausibility_checks <- verify_quantile_forecasts(entry_temp)
+  plausibility_checks$agreement_forecast_date <- agreement_forecast_date
 
   return(invisible(plausibility_checks))
 }
