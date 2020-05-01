@@ -26,6 +26,12 @@ rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
 rm -r ./data/Incident\ Deaths/Imperial-Ensemble1
 rm -r ./data/Incident\ Deaths/Imperial-Ensemble2
 
+# Remove Ensemble Incident
+rm -r ./data/Incident\ Deaths/COVIDhub-ensemble
+
+# Remove MOBS_NEU-GLEAM_COVID Incident
+rm -r ./data/Incident\ Deaths/MOBS-GLEAM_COVID
+
 # Parse through forecasts and update format
 python3 ./scripts/convert-forecasts.py
 
