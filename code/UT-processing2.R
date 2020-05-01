@@ -176,7 +176,7 @@ week_ahead <- read_csv("data-raw/UT/2020-04-27-UT-Mobility-raw2.csv")
 deathSummaryFinal2 <- deathSummaryFinal %>%
   filter(str_detect(target, "wk ahead inc", negate = TRUE)) %>%
   rbind(week_ahead) %>%
-  arrange(location_name, target, type, quantile)
+  arrange(location_name, str_detect(target, "wk"), target, type, quantile)
 
 
 ###############################################################################
