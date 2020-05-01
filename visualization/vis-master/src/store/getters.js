@@ -260,6 +260,7 @@ export const choroplethData = (state, getters) => {
   })
 
   // Get choropleth map range
+  output.data = output.data.slice(1) // Remove national data
   let rangeData = output.data
   let dataRange = []
   let maxVals = []
@@ -271,7 +272,7 @@ export const choroplethData = (state, getters) => {
   })
   dataRange = [Math.min(...minVals), Math.max(...maxVals)]
 
-  output.data = output.data.slice(1) // Remove national data
+
   output.range = dataRange
 
   //output.range = utils.choroplethDataRange(state.seasonData, relative)

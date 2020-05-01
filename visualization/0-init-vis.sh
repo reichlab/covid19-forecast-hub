@@ -22,6 +22,10 @@ rm -r ./data/Incident\ Deaths/IowaStateLW-STEM10
 rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
 rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
 
+# Remove Imperial Incident
+rm -r ./data/Incident\ Deaths/Imperial-Ensemble1
+rm -r ./data/Incident\ Deaths/Imperial-Ensemble2
+
 # Parse through forecasts and update format
 python3 ./scripts/convert-forecasts.py
 

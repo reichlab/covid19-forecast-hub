@@ -28,11 +28,17 @@ const MODELS_DIR = utils.getSubDirectories(path.join(DATA_DIR, TARGET))
  * Return season name for writing files
  */
 function getSeasonName() {
-  if (TARGETS.indexOf(TARGET) === TARGETS.length - 1) {
+  // if (TARGETS.indexOf(TARGET) === TARGETS.length - 1) {
+  //   return 'latest'
+  // } else {
+  //   return TARGET
+  // }
+  if (TARGET === "Cumulative Deaths") {
     return 'latest'
   } else {
     return TARGET
   }
+
 }
 
 async function writeSeasonFile(data) {

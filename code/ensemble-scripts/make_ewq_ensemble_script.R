@@ -3,20 +3,13 @@ require(stringr)
 require(lubridate)
 source("./code/ensemble-scripts/ew_quantile.R")
 source("./code/validation/functions_plausibility.R")
-#source("./data-processed/read_processed_data.R")
+source("./code/ensemble-scripts/component_check.R")
 # change weekly
 last_friday <- Sys.Date() - wday(Sys.Date() + 1)
 this_date<-"2020-04-27"
 # target
 targets <- c(paste(1:4,"wk ahead cum death"),paste(1:4,"wk ahead inc death"))
 # manual check for overlapping quantiles and targets
-latest <- all_data %>% 
-  filter(!is.na(forecast_date)) %>%
-  group_by(team, model) %>%
-  dplyr::filter(forecast_date %in% c(last_friday+0:3),target %in% targets) %>%
-  ungroup() %>%
-  tidyr::separate(target, into=c("n","unit","ahead","inc_cum","death_cases"),
-                  remove = FALSE)
 US_models<-latest %>% 
   filter(target%in%targets[1:4],fips_alpha=="US",type=="quantile") %>%
   group_by(model) %>%
@@ -49,7 +42,7 @@ state_models_inc<-latest %>%
 ## only take last friday
 ## state cum death
 models <- state_models %>%
-  dplyr::filter(model!="60contact",model!="80contact",model!="nointerv", model!="ensemble2",model!="GLEAM_COVID",model!="ensemble") %>%
+  dplyr::filter(model!="60contact",model!="80contact",model!="nointerv", model!="ensemble2",model!="GLEAM_COVID") %>%
   dplyr::select(model) 
 models <- c(models$model)
 state_output <- pull_all_forecasts(this_date,models,targets[1:4],quantiles=c(state_models$quan[1]))
@@ -60,15 +53,14 @@ check_table <-combined_table %>%
   group_by(location,target,quantile) %>%
   dplyr::mutate(n=n())
 mismatched_location <- unique(check_table$location[which(check_table$n==1)])
-mismatched_location
 # excluding mismatched location
 combined_table <- combined_table %>%
-  dplyr::filter(location!=66&location!=69)
+  dplyr::filter(location %in% mismatched_location)
 quant_ensemble<-ew_quantile(combined_table,national=FALSE,this_date)
 
 ## state inc death
 models_sinc <- state_models_inc %>%
-  dplyr::filter(model!="GLEAM_COVID",model!="ensemble") %>%
+  dplyr::filter(model!="GLEAM_COVID") %>%
   dplyr::select(model) 
 models_sinc  <- c(models_sinc$model)
 state_output_2 <- pull_all_forecasts(this_date,models_sinc,targets[5:8],quantiles=c(state_models$quan[1]))
@@ -96,26 +88,21 @@ combined_table_n <- nat_output[[1]] %>%
 quant_ensemble_n<-ew_quantile(combined_table_n,national=TRUE,this_date)
 
 models_n2 <- US_models_inc %>%
-  dplyr::filter(model!="60contact",model!="80contact",model!="nointerv", model!="ensemble2",model!="GLEAM_COVID",model!="ensemble") %>%
+  dplyr::filter(model!="60contact",model!="80contact",model!="nointerv", model!="ensemble2",model!="GLEAM_COVID") %>%
   dplyr::select(model) 
 models_n2 <- c(models_n2$model)
 nat_output_2 <- pull_all_forecasts(this_date,models_n2,targets[5:8],quantiles=c(US_models_inc$quan[1]))
 combined_table_n2 <- nat_output_2[[1]] %>%
   dplyr::filter(location=="US") 
 quant_ensemble_n2<-ew_quantile(combined_table_n2,national=TRUE,this_date)
-## -------- combine state and national -------- ##
-final_ens <- rbind(quant_ensemble,quant_ensemble_2,quant_ensemble_n,quant_ensemble_n2)
-# format code
-# final_ens$location[which(nchar(final_ens$location)==1)] <- paste0(0,final_ens$location[which(nchar(final_ens$location)==1)])
-# check again
-# check_table2 <-final_ens %>% 
-#   group_by(location,target,quantile) %>%
-#   dplyr::mutate(n=n())
-# mismatched <- unique(check_table2$location[which(check_table2$n!=1)])
 
+## -------- combine state and national -------- ##
+
+final_ens <- rbind(quant_ensemble,quant_ensemble_2,quant_ensemble_n,quant_ensemble_n2)
 verify_quantile_forecasts(final_ens)
 write.csv(final_ens,file=paste0("./data-processed/COVIDhub-ensemble/",this_date,"-COVIDhub-ensemble.csv"),
             row.names = FALSE)
+
 ## -------------------- write ensemble info ----------------------------##
 nat_info <-nat_output[[2]] %>%
   dplyr::mutate(location="US national-level") %>%
@@ -132,9 +119,8 @@ state_info2 <-  state_output_2[[2]] %>%
 ensemble_info <- rbind(nat_info,state_info,nat_info2,state_info2)
 names(ensemble_info)[5]<-"approx_weight"
 #read in previous data
-# preinfo <- read.csv("./data-processed/COVIDhub-ensemble/COVIDhub-ensemble-information.csv",stringsAsFactors = FALSE)
-# names(preinfo) <- c("location","model_name","quantile","forecast_date","weight","target")
-# all_info <- rbind(preinfo,ensemble_info)
+preinfo <- read.csv("./data-processed/COVIDhub-ensemble/COVIDhub-ensemble-information.csv",stringsAsFactors = FALSE)
+names(preinfo) <- c("location","model_name","quantile","forecast_date","weight","target")
+all_info <- rbind(preinfo,ensemble_info)
 write.csv(ensemble_info,file=paste0("./data-raw/COVIDhub-ensemble/COVIDhub-ensemble-information.csv"),
           row.names = FALSE)
-
