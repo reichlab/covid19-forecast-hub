@@ -2,6 +2,7 @@ import pandas as pd
 import glob
 import os
 
+
 def reformat_forecasts(file_path, target):
     # read forecast
     fips_codes = pd.read_csv('../template/state_fips_codes.csv')
@@ -47,6 +48,7 @@ def reformat_forecasts(file_path, target):
     # Only visualize certain quantiles
     quantiles = [0.025, 0.25, 0.75, 0.975, None]  # 95 and 50 % CI
     # quantiles = [0.05, 0.25, 0.75, 0.95, None] # 90 and 50 % CI
+    df["quantile"] = df["quantile"].round(3)
     df = df[df["quantile"].isin(quantiles)]
 
     df["Unit"] = "integer"
