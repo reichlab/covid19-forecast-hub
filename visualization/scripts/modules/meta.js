@@ -26,5 +26,11 @@ const targets = [
   '4 wk ahead cum death'
 ]
 
+const targets_cats = [
+  'Cumulative Deaths',
+  'Incident Deaths'
+]
+
 module.exports.regions = regions
 module.exports.targets = targets
+module.exports.targets_cats = targets_cats

@@ -1,8 +1,8 @@
 import pandas as pd
 import glob
+import os
 
-
-def reformat_forecasts(file_path):
+def reformat_forecasts(file_path, target):
     # read forecast
     fips_codes = pd.read_csv('../template/state_fips_codes.csv')
     df = pd.read_csv(file_path)
@@ -22,14 +22,16 @@ def reformat_forecasts(file_path):
         df = df.merge(fips_codes, left_on='location', right_on='state_code', how='left')
 
     # Only visualize wk ahead forecasts
-    targets = ['1 wk ahead cum death',
-               '2 wk ahead cum death',
-               '3 wk ahead cum death',
-               '4 wk ahead cum death',
-               '1 wk ahead inc death',
-               '2 wk ahead inc death',
-               '3 wk ahead inc death',
-               '4 wk ahead inc death']
+    if target == 'Cumulative Deaths':
+        targets = ['1 wk ahead cum death',
+                   '2 wk ahead cum death',
+                   '3 wk ahead cum death',
+                   '4 wk ahead cum death']
+    elif target == 'Incident Deaths':
+        targets = ['1 wk ahead inc death',
+                   '2 wk ahead inc death',
+                   '3 wk ahead inc death',
+                   '4 wk ahead inc death']
     df = df[df["target"].isin(targets)]
 
     # Only visualize certain states
@@ -68,7 +70,7 @@ def reformat_forecasts(file_path):
 # loop through model directories
 my_path = "./data/"
 for file_path in glob.iglob(my_path + "**/**/*.csv", recursive=False):
+    target = os.path.basename(os.path.dirname(os.path.dirname(file_path)))
     print(file_path)
-    df2 = reformat_forecasts(file_path)
-    # print(df2)
+    df2 = reformat_forecasts(file_path, target)
     df2.to_csv(file_path, index=False, float_format='%.14f')

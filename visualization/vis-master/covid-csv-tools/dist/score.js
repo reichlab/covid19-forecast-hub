@@ -71,7 +71,7 @@ exports.meanScores = meanScores;
  */
 function score(csv, lag) {
   return __awaiter(this, void 0, void 0, function* () {
-    let seasonTruth = yield getSeasonTruthMem(csv.season, lag);
+    let seasonTruth = yield getSeasonTruthMem(csv.target, lag);
     let scores = {};
     for (let state of meta_1.stateIds) {
       scores[state] = {};

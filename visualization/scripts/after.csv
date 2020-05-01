@@ -1,0 +1,729 @@
+,week,location_long,level_0,value,year,day,state_code,state,state_name
+0,4,Alabama,1/25/20,0.0,2020,7,01,AL,Alabama
+1,4,Alaska,1/25/20,0.0,2020,7,02,AK,Alaska
+2,4,Arizona,1/25/20,0.0,2020,7,04,AZ,Arizona
+3,4,Arkansas,1/25/20,0.0,2020,7,05,AR,Arkansas
+4,4,California,1/25/20,0.0,2020,7,06,CA,California
+5,4,Colorado,1/25/20,0.0,2020,7,08,CO,Colorado
+6,4,Connecticut,1/25/20,0.0,2020,7,09,CT,Connecticut
+7,4,Delaware,1/25/20,0.0,2020,7,10,DE,Delaware
+8,4,District of Columbia,1/25/20,0.0,2020,7,11,DC,District of Columbia
+9,4,Florida,1/25/20,0.0,2020,7,12,FL,Florida
+10,4,Georgia,1/25/20,0.0,2020,7,13,GA,Georgia
+11,4,Hawaii,1/25/20,0.0,2020,7,15,HI,Hawaii
+12,4,Idaho,1/25/20,0.0,2020,7,16,ID,Idaho
+13,4,Illinois,1/25/20,0.0,2020,7,17,IL,Illinois
+14,4,Indiana,1/25/20,0.0,2020,7,18,IN,Indiana
+15,4,Iowa,1/25/20,0.0,2020,7,19,IA,Iowa
+16,4,Kansas,1/25/20,0.0,2020,7,20,KS,Kansas
+17,4,Kentucky,1/25/20,0.0,2020,7,21,KY,Kentucky
+18,4,Louisiana,1/25/20,0.0,2020,7,22,LA,Louisiana
+19,4,Maine,1/25/20,0.0,2020,7,23,ME,Maine
+20,4,Maryland,1/25/20,0.0,2020,7,24,MD,Maryland
+21,4,Massachusetts,1/25/20,0.0,2020,7,25,MA,Massachusetts
+22,4,Michigan,1/25/20,0.0,2020,7,26,MI,Michigan
+23,4,Minnesota,1/25/20,0.0,2020,7,27,MN,Minnesota
+24,4,Mississippi,1/25/20,0.0,2020,7,28,MS,Mississippi
+25,4,Missouri,1/25/20,0.0,2020,7,29,MO,Missouri
+26,4,Montana,1/25/20,0.0,2020,7,30,MT,Montana
+27,4,Nebraska,1/25/20,0.0,2020,7,31,NE,Nebraska
+28,4,Nevada,1/25/20,0.0,2020,7,32,NV,Nevada
+29,4,New Hampshire,1/25/20,0.0,2020,7,33,NH,New Hampshire
+30,4,New Jersey,1/25/20,0.0,2020,7,34,NJ,New Jersey
+31,4,New Mexico,1/25/20,0.0,2020,7,35,NM,New Mexico
+32,4,New York,1/25/20,0.0,2020,7,36,NY,New York
+33,4,North Carolina,1/25/20,0.0,2020,7,37,NC,North Carolina
+34,4,North Dakota,1/25/20,0.0,2020,7,38,ND,North Dakota
+35,4,Ohio,1/25/20,0.0,2020,7,39,OH,Ohio
+36,4,Oklahoma,1/25/20,0.0,2020,7,40,OK,Oklahoma
+37,4,Oregon,1/25/20,0.0,2020,7,41,OR,Oregon
+38,4,Pennsylvania,1/25/20,0.0,2020,7,42,PA,Pennsylvania
+39,4,Rhode Island,1/25/20,0.0,2020,7,44,RI,Rhode Island
+40,4,South Carolina,1/25/20,0.0,2020,7,45,SC,South Carolina
+41,4,South Dakota,1/25/20,0.0,2020,7,46,SD,South Dakota
+42,4,Tennessee,1/25/20,0.0,2020,7,47,TN,Tennessee
+43,4,Texas,1/25/20,0.0,2020,7,48,TX,Texas
+44,4,US,1/25/20,0.0,2020,7,US,nat,
+45,4,Utah,1/25/20,0.0,2020,7,49,UT,Utah
+46,4,Vermont,1/25/20,0.0,2020,7,50,VT,Vermont
+47,4,Virginia,1/25/20,0.0,2020,7,51,VA,Virginia
+48,4,Washington,1/25/20,0.0,2020,7,53,WA,Washington
+49,4,West Virginia,1/25/20,0.0,2020,7,54,WV,West Virginia
+50,4,Wisconsin,1/25/20,0.0,2020,7,55,WI,Wisconsin
+51,4,Wyoming,1/25/20,0.0,2020,7,56,WY,Wyoming
+52,5,Alabama,2/1/20,0.0,2020,7,01,AL,Alabama
+53,5,Alaska,2/1/20,0.0,2020,7,02,AK,Alaska
+54,5,Arizona,2/1/20,0.0,2020,7,04,AZ,Arizona
+55,5,Arkansas,2/1/20,0.0,2020,7,05,AR,Arkansas
+56,5,California,2/1/20,0.0,2020,7,06,CA,California
+57,5,Colorado,2/1/20,0.0,2020,7,08,CO,Colorado
+58,5,Connecticut,2/1/20,0.0,2020,7,09,CT,Connecticut
+59,5,Delaware,2/1/20,0.0,2020,7,10,DE,Delaware
+60,5,District of Columbia,2/1/20,0.0,2020,7,11,DC,District of Columbia
+61,5,Florida,2/1/20,0.0,2020,7,12,FL,Florida
+62,5,Georgia,2/1/20,0.0,2020,7,13,GA,Georgia
+63,5,Hawaii,2/1/20,0.0,2020,7,15,HI,Hawaii
+64,5,Idaho,2/1/20,0.0,2020,7,16,ID,Idaho
+65,5,Illinois,2/1/20,0.0,2020,7,17,IL,Illinois
+66,5,Indiana,2/1/20,0.0,2020,7,18,IN,Indiana
+67,5,Iowa,2/1/20,0.0,2020,7,19,IA,Iowa
+68,5,Kansas,2/1/20,0.0,2020,7,20,KS,Kansas
+69,5,Kentucky,2/1/20,0.0,2020,7,21,KY,Kentucky
+70,5,Louisiana,2/1/20,0.0,2020,7,22,LA,Louisiana
+71,5,Maine,2/1/20,0.0,2020,7,23,ME,Maine
+72,5,Maryland,2/1/20,0.0,2020,7,24,MD,Maryland
+73,5,Massachusetts,2/1/20,0.0,2020,7,25,MA,Massachusetts
+74,5,Michigan,2/1/20,0.0,2020,7,26,MI,Michigan
+75,5,Minnesota,2/1/20,0.0,2020,7,27,MN,Minnesota
+76,5,Mississippi,2/1/20,0.0,2020,7,28,MS,Mississippi
+77,5,Missouri,2/1/20,0.0,2020,7,29,MO,Missouri
+78,5,Montana,2/1/20,0.0,2020,7,30,MT,Montana
+79,5,Nebraska,2/1/20,0.0,2020,7,31,NE,Nebraska
+80,5,Nevada,2/1/20,0.0,2020,7,32,NV,Nevada
+81,5,New Hampshire,2/1/20,0.0,2020,7,33,NH,New Hampshire
+82,5,New Jersey,2/1/20,0.0,2020,7,34,NJ,New Jersey
+83,5,New Mexico,2/1/20,0.0,2020,7,35,NM,New Mexico
+84,5,New York,2/1/20,0.0,2020,7,36,NY,New York
+85,5,North Carolina,2/1/20,0.0,2020,7,37,NC,North Carolina
+86,5,North Dakota,2/1/20,0.0,2020,7,38,ND,North Dakota
+87,5,Ohio,2/1/20,0.0,2020,7,39,OH,Ohio
+88,5,Oklahoma,2/1/20,0.0,2020,7,40,OK,Oklahoma
+89,5,Oregon,2/1/20,0.0,2020,7,41,OR,Oregon
+90,5,Pennsylvania,2/1/20,0.0,2020,7,42,PA,Pennsylvania
+91,5,Rhode Island,2/1/20,0.0,2020,7,44,RI,Rhode Island
+92,5,South Carolina,2/1/20,0.0,2020,7,45,SC,South Carolina
+93,5,South Dakota,2/1/20,0.0,2020,7,46,SD,South Dakota
+94,5,Tennessee,2/1/20,0.0,2020,7,47,TN,Tennessee
+95,5,Texas,2/1/20,0.0,2020,7,48,TX,Texas
+96,5,US,2/1/20,0.0,2020,7,US,nat,
+97,5,Utah,2/1/20,0.0,2020,7,49,UT,Utah
+98,5,Vermont,2/1/20,0.0,2020,7,50,VT,Vermont
+99,5,Virginia,2/1/20,0.0,2020,7,51,VA,Virginia
+100,5,Washington,2/1/20,0.0,2020,7,53,WA,Washington
+101,5,West Virginia,2/1/20,0.0,2020,7,54,WV,West Virginia
+102,5,Wisconsin,2/1/20,0.0,2020,7,55,WI,Wisconsin
+103,5,Wyoming,2/1/20,0.0,2020,7,56,WY,Wyoming
+104,6,Alabama,2/8/20,0.0,2020,7,01,AL,Alabama
+105,6,Alaska,2/8/20,0.0,2020,7,02,AK,Alaska
+106,6,Arizona,2/8/20,0.0,2020,7,04,AZ,Arizona
+107,6,Arkansas,2/8/20,0.0,2020,7,05,AR,Arkansas
+108,6,California,2/8/20,0.0,2020,7,06,CA,California
+109,6,Colorado,2/8/20,0.0,2020,7,08,CO,Colorado
+110,6,Connecticut,2/8/20,0.0,2020,7,09,CT,Connecticut
+111,6,Delaware,2/8/20,0.0,2020,7,10,DE,Delaware
+112,6,District of Columbia,2/8/20,0.0,2020,7,11,DC,District of Columbia
+113,6,Florida,2/8/20,0.0,2020,7,12,FL,Florida
+114,6,Georgia,2/8/20,0.0,2020,7,13,GA,Georgia
+115,6,Hawaii,2/8/20,0.0,2020,7,15,HI,Hawaii
+116,6,Idaho,2/8/20,0.0,2020,7,16,ID,Idaho
+117,6,Illinois,2/8/20,0.0,2020,7,17,IL,Illinois
+118,6,Indiana,2/8/20,0.0,2020,7,18,IN,Indiana
+119,6,Iowa,2/8/20,0.0,2020,7,19,IA,Iowa
+120,6,Kansas,2/8/20,0.0,2020,7,20,KS,Kansas
+121,6,Kentucky,2/8/20,0.0,2020,7,21,KY,Kentucky
+122,6,Louisiana,2/8/20,0.0,2020,7,22,LA,Louisiana
+123,6,Maine,2/8/20,0.0,2020,7,23,ME,Maine
+124,6,Maryland,2/8/20,0.0,2020,7,24,MD,Maryland
+125,6,Massachusetts,2/8/20,0.0,2020,7,25,MA,Massachusetts
+126,6,Michigan,2/8/20,0.0,2020,7,26,MI,Michigan
+127,6,Minnesota,2/8/20,0.0,2020,7,27,MN,Minnesota
+128,6,Mississippi,2/8/20,0.0,2020,7,28,MS,Mississippi
+129,6,Missouri,2/8/20,0.0,2020,7,29,MO,Missouri
+130,6,Montana,2/8/20,0.0,2020,7,30,MT,Montana
+131,6,Nebraska,2/8/20,0.0,2020,7,31,NE,Nebraska
+132,6,Nevada,2/8/20,0.0,2020,7,32,NV,Nevada
+133,6,New Hampshire,2/8/20,0.0,2020,7,33,NH,New Hampshire
+134,6,New Jersey,2/8/20,0.0,2020,7,34,NJ,New Jersey
+135,6,New Mexico,2/8/20,0.0,2020,7,35,NM,New Mexico
+136,6,New York,2/8/20,0.0,2020,7,36,NY,New York
+137,6,North Carolina,2/8/20,0.0,2020,7,37,NC,North Carolina
+138,6,North Dakota,2/8/20,0.0,2020,7,38,ND,North Dakota
+139,6,Ohio,2/8/20,0.0,2020,7,39,OH,Ohio
+140,6,Oklahoma,2/8/20,0.0,2020,7,40,OK,Oklahoma
+141,6,Oregon,2/8/20,0.0,2020,7,41,OR,Oregon
+142,6,Pennsylvania,2/8/20,0.0,2020,7,42,PA,Pennsylvania
+143,6,Rhode Island,2/8/20,0.0,2020,7,44,RI,Rhode Island
+144,6,South Carolina,2/8/20,0.0,2020,7,45,SC,South Carolina
+145,6,South Dakota,2/8/20,0.0,2020,7,46,SD,South Dakota
+146,6,Tennessee,2/8/20,0.0,2020,7,47,TN,Tennessee
+147,6,Texas,2/8/20,0.0,2020,7,48,TX,Texas
+148,6,US,2/8/20,0.0,2020,7,US,nat,
+149,6,Utah,2/8/20,0.0,2020,7,49,UT,Utah
+150,6,Vermont,2/8/20,0.0,2020,7,50,VT,Vermont
+151,6,Virginia,2/8/20,0.0,2020,7,51,VA,Virginia
+152,6,Washington,2/8/20,0.0,2020,7,53,WA,Washington
+153,6,West Virginia,2/8/20,0.0,2020,7,54,WV,West Virginia
+154,6,Wisconsin,2/8/20,0.0,2020,7,55,WI,Wisconsin
+155,6,Wyoming,2/8/20,0.0,2020,7,56,WY,Wyoming
+156,7,Alabama,2/15/20,0.0,2020,7,01,AL,Alabama
+157,7,Alaska,2/15/20,0.0,2020,7,02,AK,Alaska
+158,7,Arizona,2/15/20,0.0,2020,7,04,AZ,Arizona
+159,7,Arkansas,2/15/20,0.0,2020,7,05,AR,Arkansas
+160,7,California,2/15/20,0.0,2020,7,06,CA,California
+161,7,Colorado,2/15/20,0.0,2020,7,08,CO,Colorado
+162,7,Connecticut,2/15/20,0.0,2020,7,09,CT,Connecticut
+163,7,Delaware,2/15/20,0.0,2020,7,10,DE,Delaware
+164,7,District of Columbia,2/15/20,0.0,2020,7,11,DC,District of Columbia
+165,7,Florida,2/15/20,0.0,2020,7,12,FL,Florida
+166,7,Georgia,2/15/20,0.0,2020,7,13,GA,Georgia
+167,7,Hawaii,2/15/20,0.0,2020,7,15,HI,Hawaii
+168,7,Idaho,2/15/20,0.0,2020,7,16,ID,Idaho
+169,7,Illinois,2/15/20,0.0,2020,7,17,IL,Illinois
+170,7,Indiana,2/15/20,0.0,2020,7,18,IN,Indiana
+171,7,Iowa,2/15/20,0.0,2020,7,19,IA,Iowa
+172,7,Kansas,2/15/20,0.0,2020,7,20,KS,Kansas
+173,7,Kentucky,2/15/20,0.0,2020,7,21,KY,Kentucky
+174,7,Louisiana,2/15/20,0.0,2020,7,22,LA,Louisiana
+175,7,Maine,2/15/20,0.0,2020,7,23,ME,Maine
+176,7,Maryland,2/15/20,0.0,2020,7,24,MD,Maryland
+177,7,Massachusetts,2/15/20,0.0,2020,7,25,MA,Massachusetts
+178,7,Michigan,2/15/20,0.0,2020,7,26,MI,Michigan
+179,7,Minnesota,2/15/20,0.0,2020,7,27,MN,Minnesota
+180,7,Mississippi,2/15/20,0.0,2020,7,28,MS,Mississippi
+181,7,Missouri,2/15/20,0.0,2020,7,29,MO,Missouri
+182,7,Montana,2/15/20,0.0,2020,7,30,MT,Montana
+183,7,Nebraska,2/15/20,0.0,2020,7,31,NE,Nebraska
+184,7,Nevada,2/15/20,0.0,2020,7,32,NV,Nevada
+185,7,New Hampshire,2/15/20,0.0,2020,7,33,NH,New Hampshire
+186,7,New Jersey,2/15/20,0.0,2020,7,34,NJ,New Jersey
+187,7,New Mexico,2/15/20,0.0,2020,7,35,NM,New Mexico
+188,7,New York,2/15/20,0.0,2020,7,36,NY,New York
+189,7,North Carolina,2/15/20,0.0,2020,7,37,NC,North Carolina
+190,7,North Dakota,2/15/20,0.0,2020,7,38,ND,North Dakota
+191,7,Ohio,2/15/20,0.0,2020,7,39,OH,Ohio
+192,7,Oklahoma,2/15/20,0.0,2020,7,40,OK,Oklahoma
+193,7,Oregon,2/15/20,0.0,2020,7,41,OR,Oregon
+194,7,Pennsylvania,2/15/20,0.0,2020,7,42,PA,Pennsylvania
+195,7,Rhode Island,2/15/20,0.0,2020,7,44,RI,Rhode Island
+196,7,South Carolina,2/15/20,0.0,2020,7,45,SC,South Carolina
+197,7,South Dakota,2/15/20,0.0,2020,7,46,SD,South Dakota
+198,7,Tennessee,2/15/20,0.0,2020,7,47,TN,Tennessee
+199,7,Texas,2/15/20,0.0,2020,7,48,TX,Texas
+200,7,US,2/15/20,0.0,2020,7,US,nat,
+201,7,Utah,2/15/20,0.0,2020,7,49,UT,Utah
+202,7,Vermont,2/15/20,0.0,2020,7,50,VT,Vermont
+203,7,Virginia,2/15/20,0.0,2020,7,51,VA,Virginia
+204,7,Washington,2/15/20,0.0,2020,7,53,WA,Washington
+205,7,West Virginia,2/15/20,0.0,2020,7,54,WV,West Virginia
+206,7,Wisconsin,2/15/20,0.0,2020,7,55,WI,Wisconsin
+207,7,Wyoming,2/15/20,0.0,2020,7,56,WY,Wyoming
+208,8,Alabama,2/22/20,0.0,2020,7,01,AL,Alabama
+209,8,Alaska,2/22/20,0.0,2020,7,02,AK,Alaska
+210,8,Arizona,2/22/20,0.0,2020,7,04,AZ,Arizona
+211,8,Arkansas,2/22/20,0.0,2020,7,05,AR,Arkansas
+212,8,California,2/22/20,0.0,2020,7,06,CA,California
+213,8,Colorado,2/22/20,0.0,2020,7,08,CO,Colorado
+214,8,Connecticut,2/22/20,0.0,2020,7,09,CT,Connecticut
+215,8,Delaware,2/22/20,0.0,2020,7,10,DE,Delaware
+216,8,District of Columbia,2/22/20,0.0,2020,7,11,DC,District of Columbia
+217,8,Florida,2/22/20,0.0,2020,7,12,FL,Florida
+218,8,Georgia,2/22/20,0.0,2020,7,13,GA,Georgia
+219,8,Hawaii,2/22/20,0.0,2020,7,15,HI,Hawaii
+220,8,Idaho,2/22/20,0.0,2020,7,16,ID,Idaho
+221,8,Illinois,2/22/20,0.0,2020,7,17,IL,Illinois
+222,8,Indiana,2/22/20,0.0,2020,7,18,IN,Indiana
+223,8,Iowa,2/22/20,0.0,2020,7,19,IA,Iowa
+224,8,Kansas,2/22/20,0.0,2020,7,20,KS,Kansas
+225,8,Kentucky,2/22/20,0.0,2020,7,21,KY,Kentucky
+226,8,Louisiana,2/22/20,0.0,2020,7,22,LA,Louisiana
+227,8,Maine,2/22/20,0.0,2020,7,23,ME,Maine
+228,8,Maryland,2/22/20,0.0,2020,7,24,MD,Maryland
+229,8,Massachusetts,2/22/20,0.0,2020,7,25,MA,Massachusetts
+230,8,Michigan,2/22/20,0.0,2020,7,26,MI,Michigan
+231,8,Minnesota,2/22/20,0.0,2020,7,27,MN,Minnesota
+232,8,Mississippi,2/22/20,0.0,2020,7,28,MS,Mississippi
+233,8,Missouri,2/22/20,0.0,2020,7,29,MO,Missouri
+234,8,Montana,2/22/20,0.0,2020,7,30,MT,Montana
+235,8,Nebraska,2/22/20,0.0,2020,7,31,NE,Nebraska
+236,8,Nevada,2/22/20,0.0,2020,7,32,NV,Nevada
+237,8,New Hampshire,2/22/20,0.0,2020,7,33,NH,New Hampshire
+238,8,New Jersey,2/22/20,0.0,2020,7,34,NJ,New Jersey
+239,8,New Mexico,2/22/20,0.0,2020,7,35,NM,New Mexico
+240,8,New York,2/22/20,0.0,2020,7,36,NY,New York
+241,8,North Carolina,2/22/20,0.0,2020,7,37,NC,North Carolina
+242,8,North Dakota,2/22/20,0.0,2020,7,38,ND,North Dakota
+243,8,Ohio,2/22/20,0.0,2020,7,39,OH,Ohio
+244,8,Oklahoma,2/22/20,0.0,2020,7,40,OK,Oklahoma
+245,8,Oregon,2/22/20,0.0,2020,7,41,OR,Oregon
+246,8,Pennsylvania,2/22/20,0.0,2020,7,42,PA,Pennsylvania
+247,8,Rhode Island,2/22/20,0.0,2020,7,44,RI,Rhode Island
+248,8,South Carolina,2/22/20,0.0,2020,7,45,SC,South Carolina
+249,8,South Dakota,2/22/20,0.0,2020,7,46,SD,South Dakota
+250,8,Tennessee,2/22/20,0.0,2020,7,47,TN,Tennessee
+251,8,Texas,2/22/20,0.0,2020,7,48,TX,Texas
+252,8,US,2/22/20,0.0,2020,7,US,nat,
+253,8,Utah,2/22/20,0.0,2020,7,49,UT,Utah
+254,8,Vermont,2/22/20,0.0,2020,7,50,VT,Vermont
+255,8,Virginia,2/22/20,0.0,2020,7,51,VA,Virginia
+256,8,Washington,2/22/20,0.0,2020,7,53,WA,Washington
+257,8,West Virginia,2/22/20,0.0,2020,7,54,WV,West Virginia
+258,8,Wisconsin,2/22/20,0.0,2020,7,55,WI,Wisconsin
+259,8,Wyoming,2/22/20,0.0,2020,7,56,WY,Wyoming
+260,9,Alabama,2/29/20,0.0,2020,7,01,AL,Alabama
+261,9,Alaska,2/29/20,0.0,2020,7,02,AK,Alaska
+262,9,Arizona,2/29/20,0.0,2020,7,04,AZ,Arizona
+263,9,Arkansas,2/29/20,0.0,2020,7,05,AR,Arkansas
+264,9,California,2/29/20,0.0,2020,7,06,CA,California
+265,9,Colorado,2/29/20,0.0,2020,7,08,CO,Colorado
+266,9,Connecticut,2/29/20,0.0,2020,7,09,CT,Connecticut
+267,9,Delaware,2/29/20,0.0,2020,7,10,DE,Delaware
+268,9,District of Columbia,2/29/20,0.0,2020,7,11,DC,District of Columbia
+269,9,Florida,2/29/20,0.0,2020,7,12,FL,Florida
+270,9,Georgia,2/29/20,0.0,2020,7,13,GA,Georgia
+271,9,Hawaii,2/29/20,0.0,2020,7,15,HI,Hawaii
+272,9,Idaho,2/29/20,0.0,2020,7,16,ID,Idaho
+273,9,Illinois,2/29/20,0.0,2020,7,17,IL,Illinois
+274,9,Indiana,2/29/20,0.0,2020,7,18,IN,Indiana
+275,9,Iowa,2/29/20,0.0,2020,7,19,IA,Iowa
+276,9,Kansas,2/29/20,0.0,2020,7,20,KS,Kansas
+277,9,Kentucky,2/29/20,0.0,2020,7,21,KY,Kentucky
+278,9,Louisiana,2/29/20,0.0,2020,7,22,LA,Louisiana
+279,9,Maine,2/29/20,0.0,2020,7,23,ME,Maine
+280,9,Maryland,2/29/20,0.0,2020,7,24,MD,Maryland
+281,9,Massachusetts,2/29/20,0.0,2020,7,25,MA,Massachusetts
+282,9,Michigan,2/29/20,0.0,2020,7,26,MI,Michigan
+283,9,Minnesota,2/29/20,0.0,2020,7,27,MN,Minnesota
+284,9,Mississippi,2/29/20,0.0,2020,7,28,MS,Mississippi
+285,9,Missouri,2/29/20,0.0,2020,7,29,MO,Missouri
+286,9,Montana,2/29/20,0.0,2020,7,30,MT,Montana
+287,9,Nebraska,2/29/20,0.0,2020,7,31,NE,Nebraska
+288,9,Nevada,2/29/20,0.0,2020,7,32,NV,Nevada
+289,9,New Hampshire,2/29/20,0.0,2020,7,33,NH,New Hampshire
+290,9,New Jersey,2/29/20,0.0,2020,7,34,NJ,New Jersey
+291,9,New Mexico,2/29/20,0.0,2020,7,35,NM,New Mexico
+292,9,New York,2/29/20,0.0,2020,7,36,NY,New York
+293,9,North Carolina,2/29/20,0.0,2020,7,37,NC,North Carolina
+294,9,North Dakota,2/29/20,0.0,2020,7,38,ND,North Dakota
+295,9,Ohio,2/29/20,0.0,2020,7,39,OH,Ohio
+296,9,Oklahoma,2/29/20,0.0,2020,7,40,OK,Oklahoma
+297,9,Oregon,2/29/20,0.0,2020,7,41,OR,Oregon
+298,9,Pennsylvania,2/29/20,0.0,2020,7,42,PA,Pennsylvania
+299,9,Rhode Island,2/29/20,0.0,2020,7,44,RI,Rhode Island
+300,9,South Carolina,2/29/20,0.0,2020,7,45,SC,South Carolina
+301,9,South Dakota,2/29/20,0.0,2020,7,46,SD,South Dakota
+302,9,Tennessee,2/29/20,0.0,2020,7,47,TN,Tennessee
+303,9,Texas,2/29/20,0.0,2020,7,48,TX,Texas
+304,9,US,2/29/20,1.0,2020,7,US,nat,
+305,9,Utah,2/29/20,0.0,2020,7,49,UT,Utah
+306,9,Vermont,2/29/20,0.0,2020,7,50,VT,Vermont
+307,9,Virginia,2/29/20,0.0,2020,7,51,VA,Virginia
+308,9,Washington,2/29/20,1.0,2020,7,53,WA,Washington
+309,9,West Virginia,2/29/20,0.0,2020,7,54,WV,West Virginia
+310,9,Wisconsin,2/29/20,0.0,2020,7,55,WI,Wisconsin
+311,9,Wyoming,2/29/20,0.0,2020,7,56,WY,Wyoming
+312,10,Alabama,3/7/20,0.0,2020,7,01,AL,Alabama
+313,10,Alaska,3/7/20,0.0,2020,7,02,AK,Alaska
+314,10,Arizona,3/7/20,0.0,2020,7,04,AZ,Arizona
+315,10,Arkansas,3/7/20,0.0,2020,7,05,AR,Arkansas
+316,10,California,3/7/20,1.0,2020,7,06,CA,California
+317,10,Colorado,3/7/20,0.0,2020,7,08,CO,Colorado
+318,10,Connecticut,3/7/20,0.0,2020,7,09,CT,Connecticut
+319,10,Delaware,3/7/20,0.0,2020,7,10,DE,Delaware
+320,10,District of Columbia,3/7/20,0.0,2020,7,11,DC,District of Columbia
+321,10,Florida,3/7/20,0.0,2020,7,12,FL,Florida
+322,10,Georgia,3/7/20,0.0,2020,7,13,GA,Georgia
+323,10,Hawaii,3/7/20,0.0,2020,7,15,HI,Hawaii
+324,10,Idaho,3/7/20,0.0,2020,7,16,ID,Idaho
+325,10,Illinois,3/7/20,0.0,2020,7,17,IL,Illinois
+326,10,Indiana,3/7/20,0.0,2020,7,18,IN,Indiana
+327,10,Iowa,3/7/20,0.0,2020,7,19,IA,Iowa
+328,10,Kansas,3/7/20,0.0,2020,7,20,KS,Kansas
+329,10,Kentucky,3/7/20,0.0,2020,7,21,KY,Kentucky
+330,10,Louisiana,3/7/20,0.0,2020,7,22,LA,Louisiana
+331,10,Maine,3/7/20,0.0,2020,7,23,ME,Maine
+332,10,Maryland,3/7/20,0.0,2020,7,24,MD,Maryland
+333,10,Massachusetts,3/7/20,0.0,2020,7,25,MA,Massachusetts
+334,10,Michigan,3/7/20,0.0,2020,7,26,MI,Michigan
+335,10,Minnesota,3/7/20,0.0,2020,7,27,MN,Minnesota
+336,10,Mississippi,3/7/20,0.0,2020,7,28,MS,Mississippi
+337,10,Missouri,3/7/20,0.0,2020,7,29,MO,Missouri
+338,10,Montana,3/7/20,0.0,2020,7,30,MT,Montana
+339,10,Nebraska,3/7/20,0.0,2020,7,31,NE,Nebraska
+340,10,Nevada,3/7/20,0.0,2020,7,32,NV,Nevada
+341,10,New Hampshire,3/7/20,0.0,2020,7,33,NH,New Hampshire
+342,10,New Jersey,3/7/20,0.0,2020,7,34,NJ,New Jersey
+343,10,New Mexico,3/7/20,0.0,2020,7,35,NM,New Mexico
+344,10,New York,3/7/20,0.0,2020,7,36,NY,New York
+345,10,North Carolina,3/7/20,0.0,2020,7,37,NC,North Carolina
+346,10,North Dakota,3/7/20,0.0,2020,7,38,ND,North Dakota
+347,10,Ohio,3/7/20,0.0,2020,7,39,OH,Ohio
+348,10,Oklahoma,3/7/20,0.0,2020,7,40,OK,Oklahoma
+349,10,Oregon,3/7/20,0.0,2020,7,41,OR,Oregon
+350,10,Pennsylvania,3/7/20,0.0,2020,7,42,PA,Pennsylvania
+351,10,Rhode Island,3/7/20,0.0,2020,7,44,RI,Rhode Island
+352,10,South Carolina,3/7/20,0.0,2020,7,45,SC,South Carolina
+353,10,South Dakota,3/7/20,0.0,2020,7,46,SD,South Dakota
+354,10,Tennessee,3/7/20,0.0,2020,7,47,TN,Tennessee
+355,10,Texas,3/7/20,0.0,2020,7,48,TX,Texas
+356,10,US,3/7/20,16.0,2020,7,US,nat,
+357,10,Utah,3/7/20,0.0,2020,7,49,UT,Utah
+358,10,Vermont,3/7/20,0.0,2020,7,50,VT,Vermont
+359,10,Virginia,3/7/20,0.0,2020,7,51,VA,Virginia
+360,10,Washington,3/7/20,15.0,2020,7,53,WA,Washington
+361,10,West Virginia,3/7/20,0.0,2020,7,54,WV,West Virginia
+362,10,Wisconsin,3/7/20,0.0,2020,7,55,WI,Wisconsin
+363,10,Wyoming,3/7/20,0.0,2020,7,56,WY,Wyoming
+364,11,Alabama,3/14/20,0.0,2020,7,01,AL,Alabama
+365,11,Alaska,3/14/20,0.0,2020,7,02,AK,Alaska
+366,11,Arizona,3/14/20,0.0,2020,7,04,AZ,Arizona
+367,11,Arkansas,3/14/20,0.0,2020,7,05,AR,Arkansas
+368,11,California,3/14/20,2.0,2020,7,06,CA,California
+369,11,Colorado,3/14/20,0.0,2020,7,08,CO,Colorado
+370,11,Connecticut,3/14/20,0.0,2020,7,09,CT,Connecticut
+371,11,Delaware,3/14/20,0.0,2020,7,10,DE,Delaware
+372,11,District of Columbia,3/14/20,0.0,2020,7,11,DC,District of Columbia
+373,11,Florida,3/14/20,2.0,2020,7,12,FL,Florida
+374,11,Georgia,3/14/20,1.0,2020,7,13,GA,Georgia
+375,11,Hawaii,3/14/20,0.0,2020,7,15,HI,Hawaii
+376,11,Idaho,3/14/20,0.0,2020,7,16,ID,Idaho
+377,11,Illinois,3/14/20,0.0,2020,7,17,IL,Illinois
+378,11,Indiana,3/14/20,0.0,2020,7,18,IN,Indiana
+379,11,Iowa,3/14/20,0.0,2020,7,19,IA,Iowa
+380,11,Kansas,3/14/20,1.0,2020,7,20,KS,Kansas
+381,11,Kentucky,3/14/20,0.0,2020,7,21,KY,Kentucky
+382,11,Louisiana,3/14/20,1.0,2020,7,22,LA,Louisiana
+383,11,Maine,3/14/20,0.0,2020,7,23,ME,Maine
+384,11,Maryland,3/14/20,0.0,2020,7,24,MD,Maryland
+385,11,Massachusetts,3/14/20,0.0,2020,7,25,MA,Massachusetts
+386,11,Michigan,3/14/20,0.0,2020,7,26,MI,Michigan
+387,11,Minnesota,3/14/20,0.0,2020,7,27,MN,Minnesota
+388,11,Mississippi,3/14/20,0.0,2020,7,28,MS,Mississippi
+389,11,Missouri,3/14/20,0.0,2020,7,29,MO,Missouri
+390,11,Montana,3/14/20,0.0,2020,7,30,MT,Montana
+391,11,Nebraska,3/14/20,0.0,2020,7,31,NE,Nebraska
+392,11,Nevada,3/14/20,0.0,2020,7,32,NV,Nevada
+393,11,New Hampshire,3/14/20,0.0,2020,7,33,NH,New Hampshire
+394,11,New Jersey,3/14/20,1.0,2020,7,34,NJ,New Jersey
+395,11,New Mexico,3/14/20,0.0,2020,7,35,NM,New Mexico
+396,11,New York,3/14/20,6.0,2020,7,36,NY,New York
+397,11,North Carolina,3/14/20,0.0,2020,7,37,NC,North Carolina
+398,11,North Dakota,3/14/20,0.0,2020,7,38,ND,North Dakota
+399,11,Ohio,3/14/20,0.0,2020,7,39,OH,Ohio
+400,11,Oklahoma,3/14/20,0.0,2020,7,40,OK,Oklahoma
+401,11,Oregon,3/14/20,0.0,2020,7,41,OR,Oregon
+402,11,Pennsylvania,3/14/20,0.0,2020,7,42,PA,Pennsylvania
+403,11,Rhode Island,3/14/20,0.0,2020,7,44,RI,Rhode Island
+404,11,South Carolina,3/14/20,0.0,2020,7,45,SC,South Carolina
+405,11,South Dakota,3/14/20,1.0,2020,7,46,SD,South Dakota
+406,11,Tennessee,3/14/20,0.0,2020,7,47,TN,Tennessee
+407,11,Texas,3/14/20,0.0,2020,7,48,TX,Texas
+408,11,US,3/14/20,39.0,2020,7,US,nat,
+409,11,Utah,3/14/20,0.0,2020,7,49,UT,Utah
+410,11,Vermont,3/14/20,0.0,2020,7,50,VT,Vermont
+411,11,Virginia,3/14/20,1.0,2020,7,51,VA,Virginia
+412,11,Washington,3/14/20,23.0,2020,7,53,WA,Washington
+413,11,West Virginia,3/14/20,0.0,2020,7,54,WV,West Virginia
+414,11,Wisconsin,3/14/20,0.0,2020,7,55,WI,Wisconsin
+415,11,Wyoming,3/14/20,0.0,2020,7,56,WY,Wyoming
+416,12,Alabama,3/21/20,0.0,2020,7,01,AL,Alabama
+417,12,Alaska,3/21/20,0.0,2020,7,02,AK,Alaska
+418,12,Arizona,3/21/20,1.0,2020,7,04,AZ,Arizona
+419,12,Arkansas,3/21/20,0.0,2020,7,05,AR,Arkansas
+420,12,California,3/21/20,22.0,2020,7,06,CA,California
+421,12,Colorado,3/21/20,6.0,2020,7,08,CO,Colorado
+422,12,Connecticut,3/21/20,4.0,2020,7,09,CT,Connecticut
+423,12,Delaware,3/21/20,0.0,2020,7,10,DE,Delaware
+424,12,District of Columbia,3/21/20,0.0,2020,7,11,DC,District of Columbia
+425,12,Florida,3/21/20,11.0,2020,7,12,FL,Florida
+426,12,Georgia,3/21/20,19.0,2020,7,13,GA,Georgia
+427,12,Hawaii,3/21/20,0.0,2020,7,15,HI,Hawaii
+428,12,Idaho,3/21/20,0.0,2020,7,16,ID,Idaho
+429,12,Illinois,3/21/20,6.0,2020,7,17,IL,Illinois
+430,12,Indiana,3/21/20,4.0,2020,7,18,IN,Indiana
+431,12,Iowa,3/21/20,0.0,2020,7,19,IA,Iowa
+432,12,Kansas,3/21/20,1.0,2020,7,20,KS,Kansas
+433,12,Kentucky,3/21/20,3.0,2020,7,21,KY,Kentucky
+434,12,Louisiana,3/21/20,19.0,2020,7,22,LA,Louisiana
+435,12,Maine,3/21/20,0.0,2020,7,23,ME,Maine
+436,12,Maryland,3/21/20,2.0,2020,7,24,MD,Maryland
+437,12,Massachusetts,3/21/20,1.0,2020,7,25,MA,Massachusetts
+438,12,Michigan,3/21/20,3.0,2020,7,26,MI,Michigan
+439,12,Minnesota,3/21/20,1.0,2020,7,27,MN,Minnesota
+440,12,Mississippi,3/21/20,1.0,2020,7,28,MS,Mississippi
+441,12,Missouri,3/21/20,3.0,2020,7,29,MO,Missouri
+442,12,Montana,3/21/20,0.0,2020,7,30,MT,Montana
+443,12,Nebraska,3/21/20,0.0,2020,7,31,NE,Nebraska
+444,12,Nevada,3/21/20,2.0,2020,7,32,NV,Nevada
+445,12,New Hampshire,3/21/20,0.0,2020,7,33,NH,New Hampshire
+446,12,New Jersey,3/21/20,15.0,2020,7,34,NJ,New Jersey
+447,12,New Mexico,3/21/20,0.0,2020,7,35,NM,New Mexico
+448,12,New York,3/21/20,189.0,2020,7,36,NY,New York
+449,12,North Carolina,3/21/20,0.0,2020,7,37,NC,North Carolina
+450,12,North Dakota,3/21/20,0.0,2020,7,38,ND,North Dakota
+451,12,Ohio,3/21/20,3.0,2020,7,39,OH,Ohio
+452,12,Oklahoma,3/21/20,1.0,2020,7,40,OK,Oklahoma
+453,12,Oregon,3/21/20,4.0,2020,7,41,OR,Oregon
+454,12,Pennsylvania,3/21/20,2.0,2020,7,42,PA,Pennsylvania
+455,12,Rhode Island,3/21/20,0.0,2020,7,44,RI,Rhode Island
+456,12,South Carolina,3/21/20,3.0,2020,7,45,SC,South Carolina
+457,12,South Dakota,3/21/20,0.0,2020,7,46,SD,South Dakota
+458,12,Tennessee,3/21/20,1.0,2020,7,47,TN,Tennessee
+459,12,Texas,3/21/20,5.0,2020,7,48,TX,Texas
+460,12,US,3/21/20,397.0,2020,7,US,nat,
+461,12,Utah,3/21/20,0.0,2020,7,49,UT,Utah
+462,12,Vermont,3/21/20,2.0,2020,7,50,VT,Vermont
+463,12,Virginia,3/21/20,2.0,2020,7,51,VA,Virginia
+464,12,Washington,3/21/20,55.0,2020,7,53,WA,Washington
+465,12,West Virginia,3/21/20,0.0,2020,7,54,WV,West Virginia
+466,12,Wisconsin,3/21/20,4.0,2020,7,55,WI,Wisconsin
+467,12,Wyoming,3/21/20,0.0,2020,7,56,WY,Wyoming
+468,13,Alabama,3/28/20,4.0,2020,7,01,AL,Alabama
+469,13,Alaska,3/28/20,2.0,2020,7,02,AK,Alaska
+470,13,Arizona,3/28/20,14.0,2020,7,04,AZ,Arizona
+471,13,Arkansas,3/28/20,5.0,2020,7,05,AR,Arkansas
+472,13,California,3/28/20,85.0,2020,7,06,CA,California
+473,13,Colorado,3/28/20,25.0,2020,7,08,CO,Colorado
+474,13,Connecticut,3/28/20,29.0,2020,7,09,CT,Connecticut
+475,13,Delaware,3/28/20,5.0,2020,7,10,DE,Delaware
+476,13,District of Columbia,3/28/20,4.0,2020,7,11,DC,District of Columbia
+477,13,Florida,3/28/20,41.0,2020,7,12,FL,Florida
+478,13,Georgia,3/28/20,49.0,2020,7,13,GA,Georgia
+479,13,Hawaii,3/28/20,0.0,2020,7,15,HI,Hawaii
+480,13,Idaho,3/28/20,4.0,2020,7,16,ID,Idaho
+481,13,Illinois,3/28/20,41.0,2020,7,17,IL,Illinois
+482,13,Indiana,3/28/20,27.0,2020,7,18,IN,Indiana
+483,13,Iowa,3/28/20,3.0,2020,7,19,IA,Iowa
+484,13,Kansas,3/28/20,2.0,2020,7,20,KS,Kansas
+485,13,Kentucky,3/28/20,6.0,2020,7,21,KY,Kentucky
+486,13,Louisiana,3/28/20,117.0,2020,7,22,LA,Louisiana
+487,13,Maine,3/28/20,1.0,2020,7,23,ME,Maine
+488,13,Maryland,3/28/20,3.0,2020,7,24,MD,Maryland
+489,13,Massachusetts,3/28/20,43.0,2020,7,25,MA,Massachusetts
+490,13,Michigan,3/28/20,108.0,2020,7,26,MI,Michigan
+491,13,Minnesota,3/28/20,4.0,2020,7,27,MN,Minnesota
+492,13,Mississippi,3/28/20,12.0,2020,7,28,MS,Mississippi
+493,13,Missouri,3/28/20,7.0,2020,7,29,MO,Missouri
+494,13,Montana,3/28/20,1.0,2020,7,30,MT,Montana
+495,13,Nebraska,3/28/20,2.0,2020,7,31,NE,Nebraska
+496,13,Nevada,3/28/20,8.0,2020,7,32,NV,Nevada
+497,13,New Hampshire,3/28/20,2.0,2020,7,33,NH,New Hampshire
+498,13,New Jersey,3/28/20,124.0,2020,7,34,NJ,New Jersey
+499,13,New Mexico,3/28/20,1.0,2020,7,35,NM,New Mexico
+500,13,New York,3/28/20,1393.0,2020,7,36,NY,New York
+501,13,North Carolina,3/28/20,5.0,2020,7,37,NC,North Carolina
+502,13,North Dakota,3/28/20,1.0,2020,7,38,ND,North Dakota
+503,13,Ohio,3/28/20,22.0,2020,7,39,OH,Ohio
+504,13,Oklahoma,3/28/20,14.0,2020,7,40,OK,Oklahoma
+505,13,Oregon,3/28/20,9.0,2020,7,41,OR,Oregon
+506,13,Pennsylvania,3/28/20,32.0,2020,7,42,PA,Pennsylvania
+507,13,Rhode Island,3/28/20,2.0,2020,7,44,RI,Rhode Island
+508,13,South Carolina,3/28/20,12.0,2020,7,45,SC,South Carolina
+509,13,South Dakota,3/28/20,0.0,2020,7,46,SD,South Dakota
+510,13,Tennessee,3/28/20,6.0,2020,7,47,TN,Tennessee
+511,13,Texas,3/28/20,25.0,2020,7,48,TX,Texas
+512,13,US,3/28/20,2433.0,2020,7,US,nat,
+513,13,Utah,3/28/20,1.0,2020,7,49,UT,Utah
+514,13,Vermont,3/28/20,10.0,2020,7,50,VT,Vermont
+515,13,Virginia,3/28/20,10.0,2020,7,51,VA,Virginia
+516,13,Washington,3/28/20,94.0,2020,7,53,WA,Washington
+517,13,West Virginia,3/28/20,0.0,2020,7,54,WV,West Virginia
+518,13,Wisconsin,3/28/20,13.0,2020,7,55,WI,Wisconsin
+519,13,Wyoming,3/28/20,0.0,2020,7,56,WY,Wyoming
+520,14,Alabama,4/4/20,40.0,2020,7,01,AL,Alabama
+521,14,Alaska,4/4/20,3.0,2020,7,02,AK,Alaska
+522,14,Arizona,4/4/20,37.0,2020,7,04,AZ,Arizona
+523,14,Arkansas,4/4/20,9.0,2020,7,05,AR,Arkansas
+524,14,California,4/4/20,179.0,2020,7,06,CA,California
+525,14,Colorado,4/4/20,80.0,2020,7,08,CO,Colorado
+526,14,Connecticut,4/4/20,132.0,2020,7,09,CT,Connecticut
+527,14,Delaware,4/4/20,9.0,2020,7,10,DE,Delaware
+528,14,District of Columbia,4/4/20,17.0,2020,7,11,DC,District of Columbia
+529,14,Florida,4/4/20,141.0,2020,7,12,FL,Florida
+530,14,Georgia,4/4/20,132.0,2020,7,13,GA,Georgia
+531,14,Hawaii,4/4/20,3.0,2020,7,15,HI,Hawaii
+532,14,Idaho,4/4/20,6.0,2020,7,16,ID,Idaho
+533,14,Illinois,4/4/20,197.0,2020,7,17,IL,Illinois
+534,14,Indiana,4/4/20,85.0,2020,7,18,IN,Indiana
+535,14,Iowa,4/4/20,11.0,2020,7,19,IA,Iowa
+536,14,Kansas,4/4/20,17.0,2020,7,20,KS,Kansas
+537,14,Kentucky,4/4/20,31.0,2020,7,21,KY,Kentucky
+538,14,Louisiana,4/4/20,272.0,2020,7,22,LA,Louisiana
+539,14,Maine,4/4/20,9.0,2020,7,23,ME,Maine
+540,14,Maryland,4/4/20,49.0,2020,7,24,MD,Maryland
+541,14,Massachusetts,4/4/20,172.0,2020,7,25,MA,Massachusetts
+542,14,Michigan,4/4/20,429.0,2020,7,26,MI,Michigan
+543,14,Minnesota,4/4/20,19.0,2020,7,27,MN,Minnesota
+544,14,Mississippi,4/4/20,22.0,2020,7,28,MS,Mississippi
+545,14,Missouri,4/4/20,23.0,2020,7,29,MO,Missouri
+546,14,Montana,4/4/20,5.0,2020,7,30,MT,Montana
+547,14,Nebraska,4/4/20,4.0,2020,7,31,NE,Nebraska
+548,14,Nevada,4/4/20,36.0,2020,7,32,NV,Nevada
+549,14,New Hampshire,4/4/20,5.0,2020,7,33,NH,New Hampshire
+550,14,New Jersey,4/4/20,706.0,2020,7,34,NJ,New Jersey
+551,14,New Mexico,4/4/20,10.0,2020,7,35,NM,New Mexico
+552,14,New York,4/4/20,4403.0,2020,7,36,NY,New York
+553,14,North Carolina,4/4/20,29.0,2020,7,37,NC,North Carolina
+554,14,North Dakota,4/4/20,2.0,2020,7,38,ND,North Dakota
+555,14,Ohio,4/4/20,77.0,2020,7,39,OH,Ohio
+556,14,Oklahoma,4/4/20,27.0,2020,7,40,OK,Oklahoma
+557,14,Oregon,4/4/20,9.0,2020,7,41,OR,Oregon
+558,14,Pennsylvania,4/4/20,102.0,2020,7,42,PA,Pennsylvania
+559,14,Rhode Island,4/4/20,15.0,2020,7,44,RI,Rhode Island
+560,14,South Carolina,4/4/20,25.0,2020,7,45,SC,South Carolina
+561,14,South Dakota,4/4/20,1.0,2020,7,46,SD,South Dakota
+562,14,Tennessee,4/4/20,43.0,2020,7,47,TN,Tennessee
+563,14,Texas,4/4/20,86.0,2020,7,48,TX,Texas
+564,14,US,4/4/20,7948.0,2020,7,US,nat,
+565,14,Utah,4/4/20,7.0,2020,7,49,UT,Utah
+566,14,Vermont,4/4/20,8.0,2020,7,50,VT,Vermont
+567,14,Virginia,4/4/20,39.0,2020,7,51,VA,Virginia
+568,14,Washington,4/4/20,127.0,2020,7,53,WA,Washington
+569,14,West Virginia,4/4/20,2.0,2020,7,54,WV,West Virginia
+570,14,Wisconsin,4/4/20,37.0,2020,7,55,WI,Wisconsin
+571,14,Wyoming,4/4/20,0.0,2020,7,56,WY,Wyoming
+572,15,Alabama,4/11/20,48.0,2020,7,01,AL,Alabama
+573,15,Alaska,4/11/20,3.0,2020,7,02,AK,Alaska
+574,15,Arizona,4/11/20,65.0,2020,7,04,AZ,Arizona
+575,15,Arkansas,4/11/20,11.0,2020,7,05,AR,Arkansas
+576,15,California,4/11/20,315.0,2020,7,06,CA,California
+577,15,Colorado,4/11/20,139.0,2020,7,08,CO,Colorado
+578,15,Connecticut,4/11/20,329.0,2020,7,09,CT,Connecticut
+579,15,Delaware,4/11/20,19.0,2020,7,10,DE,Delaware
+580,15,District of Columbia,4/11/20,26.0,2020,7,11,DC,District of Columbia
+581,15,Florida,4/11/20,243.0,2020,7,12,FL,Florida
+582,15,Georgia,4/11/20,228.0,2020,7,13,GA,Georgia
+583,15,Hawaii,4/11/20,5.0,2020,7,15,HI,Hawaii
+584,15,Idaho,4/11/20,15.0,2020,7,16,ID,Idaho
+585,15,Illinois,4/11/20,433.0,2020,7,17,IL,Illinois
+586,15,Indiana,4/11/20,214.0,2020,7,18,IN,Indiana
+587,15,Iowa,4/11/20,20.0,2020,7,19,IA,Iowa
+588,15,Kansas,4/11/20,34.0,2020,7,20,KS,Kansas
+589,15,Kentucky,4/11/20,50.0,2020,7,21,KY,Kentucky
+590,15,Louisiana,4/11/20,397.0,2020,7,22,LA,Louisiana
+591,15,Maine,4/11/20,9.0,2020,7,23,ME,Maine
+592,15,Maryland,4/11/20,152.0,2020,7,24,MD,Maryland
+593,15,Massachusetts,4/11/20,470.0,2020,7,25,MA,Massachusetts
+594,15,Michigan,4/11/20,844.0,2020,7,26,MI,Michigan
+595,15,Minnesota,4/11/20,40.0,2020,7,27,MN,Minnesota
+596,15,Mississippi,4/11/20,58.0,2020,7,28,MS,Mississippi
+597,15,Missouri,4/11/20,83.0,2020,7,29,MO,Missouri
+598,15,Montana,4/11/20,0.0,2020,7,30,MT,Montana
+599,15,Nebraska,4/11/20,11.0,2020,7,31,NE,Nebraska
+600,15,Nevada,4/11/20,56.0,2020,7,32,NV,Nevada
+601,15,New Hampshire,4/11/20,15.0,2020,7,33,NH,New Hampshire
+602,15,New Jersey,4/11/20,1337.0,2020,7,34,NJ,New Jersey
+603,15,New Mexico,4/11/20,8.0,2020,7,35,NM,New Mexico
+604,15,New York,4/11/20,6507.0,2020,7,36,NY,New York
+605,15,North Carolina,4/11/20,55.0,2020,7,37,NC,North Carolina
+606,15,North Dakota,4/11/20,4.0,2020,7,38,ND,North Dakota
+607,15,Ohio,4/11/20,145.0,2020,7,39,OH,Ohio
+608,15,Oklahoma,4/11/20,52.0,2020,7,40,OK,Oklahoma
+609,15,Oregon,4/11/20,26.0,2020,7,41,OR,Oregon
+610,15,Pennsylvania,4/11/20,367.0,2020,7,42,PA,Pennsylvania
+611,15,Rhode Island,4/11/20,39.0,2020,7,44,RI,Rhode Island
+612,15,South Carolina,4/11/20,40.0,2020,7,45,SC,South Carolina
+613,15,South Dakota,4/11/20,4.0,2020,7,46,SD,South Dakota
+614,15,Tennessee,4/11/20,56.0,2020,7,47,TN,Tennessee
+615,15,Texas,4/11/20,150.0,2020,7,48,TX,Texas
+616,15,US,4/11/20,13508.0,2020,7,US,nat,
+617,15,Utah,4/11/20,10.0,2020,7,49,UT,Utah
+618,15,Vermont,4/11/20,5.0,2020,7,50,VT,Vermont
+619,15,Virginia,4/11/20,78.0,2020,7,51,VA,Virginia
+620,15,Washington,4/11/20,180.0,2020,7,53,WA,Washington
+621,15,West Virginia,4/11/20,3.0,2020,7,54,WV,West Virginia
+622,15,Wisconsin,4/11/20,83.0,2020,7,55,WI,Wisconsin
+623,15,Wyoming,4/11/20,0.0,2020,7,56,WY,Wyoming
+624,16,Alabama,4/18/20,61.0,2020,7,01,AL,Alabama
+625,16,Alaska,4/18/20,1.0,2020,7,02,AK,Alaska
+626,16,Arizona,4/18/20,63.0,2020,7,04,AZ,Arizona
+627,16,Arkansas,4/18/20,13.0,2020,7,05,AR,Arkansas
+628,16,California,4/18/20,536.0,2020,7,06,CA,California
+629,16,Colorado,4/18/20,139.0,2020,7,08,CO,Colorado
+630,16,Connecticut,4/18/20,592.0,2020,7,09,CT,Connecticut
+631,16,Delaware,4/18/20,34.0,2020,7,10,DE,Delaware
+632,16,District of Columbia,4/18/20,44.0,2020,7,11,DC,District of Columbia
+633,16,Florida,4/18/20,310.0,2020,7,12,FL,Florida
+634,16,Georgia,4/18/20,244.0,2020,7,13,GA,Georgia
+635,16,Hawaii,4/18/20,1.0,2020,7,15,HI,Hawaii
+636,16,Idaho,4/18/20,18.0,2020,7,16,ID,Idaho
+637,16,Illinois,4/18/20,582.0,2020,7,17,IL,Illinois
+638,16,Indiana,4/18/20,215.0,2020,7,18,IN,Indiana
+639,16,Iowa,4/18/20,40.0,2020,7,19,IA,Iowa
+640,16,Kansas,4/18/20,30.0,2020,7,20,KS,Kansas
+641,16,Kentucky,4/18/20,54.0,2020,7,21,KY,Kentucky
+642,16,Louisiana,4/18/20,461.0,2020,7,22,LA,Louisiana
+643,16,Maine,4/18/20,13.0,2020,7,23,ME,Maine
+644,16,Maryland,4/18/20,215.0,2020,7,24,MD,Maryland
+645,16,Massachusetts,4/18/20,718.0,2020,7,25,MA,Massachusetts
+646,16,Michigan,4/18/20,924.0,2020,7,26,MI,Michigan
+647,16,Minnesota,4/18/20,57.0,2020,7,27,MN,Minnesota
+648,16,Mississippi,4/18/20,59.0,2020,7,28,MS,Mississippi
+649,16,Missouri,4/18/20,81.0,2020,7,29,MO,Missouri
+650,16,Montana,4/18/20,4.0,2020,7,30,MT,Montana
+651,16,Nebraska,4/18/20,7.0,2020,7,31,NE,Nebraska
+652,16,Nevada,4/18/20,49.0,2020,7,32,NV,Nevada
+653,16,New Hampshire,4/18/20,16.0,2020,7,33,NH,New Hampshire
+654,16,New Jersey,4/18/20,1887.0,2020,7,34,NJ,New Jersey
+655,16,New Mexico,4/18/20,34.0,2020,7,35,NM,New Mexico
+656,16,New York,4/18/20,6262.0,2020,7,36,NY,New York
+657,16,North Carolina,4/18/20,98.0,2020,7,37,NC,North Carolina
+658,16,North Dakota,4/18/20,2.0,2020,7,38,ND,North Dakota
+659,16,Ohio,4/18/20,204.0,2020,7,39,OH,Ohio
+660,16,Oklahoma,4/18/20,42.0,2020,7,40,OK,Oklahoma
+661,16,Oregon,4/18/20,24.0,2020,7,41,OR,Oregon
+662,16,Pennsylvania,4/18/20,539.0,2020,7,42,PA,Pennsylvania
+663,16,Rhode Island,4/18/20,81.0,2020,7,44,RI,Rhode Island
+664,16,South Carolina,4/18/20,39.0,2020,7,45,SC,South Carolina
+665,16,South Dakota,4/18/20,1.0,2020,7,46,SD,South Dakota
+666,16,Tennessee,4/18/20,36.0,2020,7,47,TN,Tennessee
+667,16,Texas,4/18/20,210.0,2020,7,48,TX,Texas
+668,16,US,4/18/20,15411.0,2020,7,US,nat,
+669,16,Utah,4/18/20,7.0,2020,7,49,UT,Utah
+670,16,Vermont,4/18/20,13.0,2020,7,50,VT,Vermont
+671,16,Virginia,4/18/20,128.0,2020,7,51,VA,Virginia
+672,16,Washington,4/18/20,118.0,2020,7,53,WA,Washington
+673,16,West Virginia,4/18/20,11.0,2020,7,54,WV,West Virginia
+674,16,Wisconsin,4/18/20,75.0,2020,7,55,WI,Wisconsin
+675,16,Wyoming,4/18/20,2.0,2020,7,56,WY,Wyoming
+676,17,Alabama,4/25/20,56.0,2020,7,01,AL,Alabama
+677,17,Alaska,4/25/20,0.0,2020,7,02,AK,Alaska
+678,17,Arizona,4/25/20,93.0,2020,7,04,AZ,Arizona
+679,17,Arkansas,4/25/20,10.0,2020,7,05,AR,Arkansas
+680,17,California,4/25/20,549.0,2020,7,06,CA,California
+681,17,Colorado,4/25/20,295.0,2020,7,08,CO,Colorado
+682,17,Connecticut,4/25/20,779.0,2020,7,09,CT,Connecticut
+683,17,Delaware,4/25/20,45.0,2020,7,10,DE,Delaware
+684,17,District of Columbia,4/25/20,74.0,2020,7,11,DC,District of Columbia
+685,17,Florida,4/25/20,307.0,2020,7,12,FL,Florida
+686,17,Georgia,4/25/20,234.0,2020,7,13,GA,Georgia
+687,17,Hawaii,4/25/20,4.0,2020,7,15,HI,Hawaii
+688,17,Idaho,4/25/20,13.0,2020,7,16,ID,Idaho
+689,17,Illinois,4/25/20,616.0,2020,7,17,IL,Illinois
+690,17,Indiana,4/25/20,241.0,2020,7,18,IN,Indiana
+691,17,Iowa,4/25/20,38.0,2020,7,19,IA,Iowa
+692,17,Kansas,4/25/20,35.0,2020,7,20,KS,Kansas
+693,17,Kentucky,4/25/20,61.0,2020,7,21,KY,Kentucky
+694,17,Louisiana,4/25/20,440.0,2020,7,22,LA,Louisiana
+695,17,Maine,4/25/20,15.0,2020,7,23,ME,Maine
+696,17,Maryland,4/25/20,454.0,2020,7,24,MD,Maryland
+697,17,Massachusetts,4/25/20,1326.0,2020,7,25,MA,Massachusetts
+698,17,Michigan,4/25/20,847.0,2020,7,26,MI,Michigan
+699,17,Minnesota,4/25/20,123.0,2020,7,27,MN,Minnesota
+700,17,Mississippi,4/25/20,69.0,2020,7,28,MS,Mississippi
+701,17,Missouri,4/25/20,84.0,2020,7,29,MO,Missouri
+702,17,Montana,4/25/20,4.0,2020,7,30,MT,Montana
+703,17,Nebraska,4/25/20,26.0,2020,7,31,NE,Nebraska
+704,17,Nevada,4/25/20,54.0,2020,7,32,NV,Nevada
+705,17,New Hampshire,4/25/20,15.0,2020,7,33,NH,New Hampshire
+706,17,New Jersey,4/25/20,1844.0,2020,7,34,NJ,New Jersey
+707,17,New Mexico,4/25/20,40.0,2020,7,35,NM,New Mexico
+708,17,New York,4/25/20,3249.0,2020,7,36,NY,New York
+709,17,North Carolina,4/25/20,118.0,2020,7,37,NC,North Carolina
+710,17,North Dakota,4/25/20,7.0,2020,7,38,ND,North Dakota
+711,17,Ohio,4/25/20,260.0,2020,7,39,OH,Ohio
+712,17,Oklahoma,4/25/20,58.0,2020,7,40,OK,Oklahoma
+713,17,Oregon,4/25/20,15.0,2020,7,41,OR,Oregon
+714,17,Pennsylvania,4/25/20,751.0,2020,7,42,PA,Pennsylvania
+715,17,Rhode Island,4/25/20,78.0,2020,7,44,RI,Rhode Island
+716,17,South Carolina,4/25/20,47.0,2020,7,45,SC,South Carolina
+717,17,South Dakota,4/25/20,3.0,2020,7,46,SD,South Dakota
+718,17,Tennessee,4/25/20,35.0,2020,7,47,TN,Tennessee
+719,17,Texas,4/25/20,162.0,2020,7,48,TX,Texas
+720,17,US,4/25/20,14002.0,2020,7,US,nat,
+721,17,Utah,4/25/20,16.0,2020,7,49,UT,Utah
+722,17,Vermont,4/25/20,8.0,2020,7,50,VT,Vermont
+723,17,Virginia,4/25/20,179.0,2020,7,51,VA,Virginia
+724,17,Washington,4/25/20,124.0,2020,7,53,WA,Washington
+725,17,West Virginia,4/25/20,16.0,2020,7,54,WV,West Virginia
+726,17,Wisconsin,4/25/20,54.0,2020,7,55,WI,Wisconsin
+727,17,Wyoming,4/25/20,5.0,2020,7,56,WY,Wyoming
