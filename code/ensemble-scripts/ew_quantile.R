@@ -56,8 +56,8 @@ pull_all_forecasts <- function(monday_run_date, model,targets,quantiles=c(0.025,
   forecast_data$quantile <- round(as.numeric(forecast_data$quantile),3)
   forecast_data$value <- as.numeric(forecast_data$value)
   forecast_data$type <- as.character(forecast_data$type)
-  forecast_data <- forecast_data %>%
-    dplyr::filter(quantile %in% quantiles)
+  # forecast_data <- forecast_data %>%
+  #   dplyr::filter(quantile %in% quantiles)
   output <- list(forecast_data,ensemble_component_info)
   return(output)
 }
