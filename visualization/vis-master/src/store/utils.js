@@ -37,10 +37,10 @@ export const choroplethDataRange = (seasonsData, relativeToggle) => {
   let maxVals = []
   let minVals = []
   let range = []
+
   seasonsData.map(seasonData => {
     seasonData.regions.map(regionData => {
       let actual = regionData.actual.map(d => d.actual).filter(d => d)
-      console.log(actual)
       if (relativeToggle) {
         // Use baseline scaled data
         maxVals.push(Math.max(...actual.map(d => ((d / regionData.baseline) - 1) * 100)))

@@ -74,26 +74,34 @@ def configure_JHU_data(df, target):
     df_truth = df_truth[df_truth["location_long"].isin(states)]
 
     # Observed data on the seventh day
-    df_truth.to_csv("testing.csv")
+    # or group by week for incident deaths
     if target == 'Incident Deaths':
-        df_vis = 
+        df_vis = df_truth.groupby(['week', 'location_long'], as_index=False).agg({'level_0': 'last',
+                                                                         'value': 'sum', 
+                                                                         'year': 'last', 
+                                                                         'day': 'last', 
+                                                                         'state_code': 'last',
+                                                                         'state': 'last',
+                                                                         'state_name': 'last' })
+        df_vis = df_vis[df_vis['day'] == 7]
     else:   
         df_vis = df_truth[df_truth['day'] == 7]
-    df_vis['week'] = df_vis['week'] + 1  # shift epiweek on axis
 
+    df_vis['week'] = df_vis['week'] + 1  # shift epiweek on axis
+    
     # add leading zeros to epi week
     df_vis['week'] = df_vis['week'].apply(lambda x: '{0:0>2}'.format(x))
 
     # define epiweek
     df_vis['epiweek'] = df_vis['year'].astype(str) + df_vis['week']
-    df_vis.to_csv("testing_2.csv")
+
     # only output "location", "epiweek", "value"
     df_vis = df_vis.rename(columns={"state": "location"})
     df_truth_short = df_vis[["location", "epiweek", "value"]]
 
     df_truth_short["value"].replace({0: 0.1}, inplace=True)
 
-    file_path = 'vis-master/covid-csv-tools/dist/truth/' + target + '.json'
+    file_path = './vis-master/covid-csv-tools/dist/truth/' + target + '.json'
     # write to json
     with open(file_path, 'w') as f:
         f.write(df_truth_short.to_json(orient='records'))

@@ -7,16 +7,25 @@ set -e
 yarn
 yarn run test
 yarn run parse-data
-<<<<<<< HEAD
-#rm -r ./data/2019-2020/CU-nointerv
-#rm -r ./data/2019-2020/NotreDame-FRED
-=======
-rm -r ./data/2019-2020/CU-nointerv
-rm -r ./data/2019-2020/NotreDame-FRED
-rm -r ./data/2019-2020/IowaStateLW-STEM10
-rm -r ./data/2019-2020/IowaStateLW-STEM15
->>>>>>> 83cb2235b87bd30275d6a3862567e7709a346a8e
+
+# Remove CU-nointerv
+rm -r ./data/Cumulative\ Deaths/CU-nointerv
+rm -r ./data/Incident\ Deaths/CU-nointerv
+
+# Remove NotreDame-FRED
+rm -r ./data/Cumulative\ Deaths/NotreDame-FRED
+rm -r ./data/Incident\ Deaths/NotreDame-FRED
+
+# Remove Iowa State
+rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM10
+rm -r ./data/Incident\ Deaths/IowaStateLW-STEM10
+rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
+rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
+
+# Parse through forecasts and update format
 python3 ./scripts/convert-forecasts.py
+
+# Get truth data
 python3 ./scripts/get-truth-data.py
 
 # Replace already present data
@@ -25,6 +34,6 @@ mv ./data ./vis-master
 
 cd ./vis-master
 yarn
-yarn run parse
+yarn run parse # Parse visualization data to json
 #yarn run test
 cd .. # in flusight-deploy now
