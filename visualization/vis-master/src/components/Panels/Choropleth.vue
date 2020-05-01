@@ -110,7 +110,7 @@ div
         .level-item
           p.heading Target
           p.control.title
-            span#season-selector.select.is-small
+            span#season-selector.select
               select(v-model="currentSeason")
                 option(v-for="season in seasons") {{ season }}
 
@@ -122,7 +122,7 @@ div
       v-on:mouseover="showWiliTooltip"
       v-on:mouseout="hideWiliTooltip"
       v-on:mousemove="moveWiliTooltip"
-    ) Cumulative Deaths (Observed)
+    ) {{ selectedSeasonId }} (Observed)
     #relative-button(
       v-on:click="toggleRelative"
       v-on:mouseover="showSwitchTooltip"

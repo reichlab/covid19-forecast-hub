@@ -185,7 +185,8 @@ export default class Choropleth {
 
     let limits = []
     let barLimits = []
-
+    console.log(data)
+    console.log(data.range)
     if (data.type === 'sequential') {
       // Set a 0 to max ranged colorscheme
       this.cmap = colormap({

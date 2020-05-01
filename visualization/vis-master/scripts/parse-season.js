@@ -122,7 +122,6 @@ function parsePointData(csv, stateId) {
     let cis = [95, 50]
     try {
       let point = csv.getPoint(target, stateId)
-
       let ranges = cis.map(c => csv.getConfidenceRange(target, stateId, c))
 
       let low = ranges.map(r => r[0])

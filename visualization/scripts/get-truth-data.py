@@ -74,7 +74,11 @@ def configure_JHU_data(df, target):
     df_truth = df_truth[df_truth["location_long"].isin(states)]
 
     # Observed data on the seventh day
-    df_vis = df_truth[df_truth['day'] == 7]
+    df_truth.to_csv("testing.csv")
+    if target == 'Incident Deaths':
+        df_vis = 
+    else:   
+        df_vis = df_truth[df_truth['day'] == 7]
     df_vis['week'] = df_vis['week'] + 1  # shift epiweek on axis
 
     # add leading zeros to epi week
@@ -82,7 +86,7 @@ def configure_JHU_data(df, target):
 
     # define epiweek
     df_vis['epiweek'] = df_vis['year'].astype(str) + df_vis['week']
-
+    df_vis.to_csv("testing_2.csv")
     # only output "location", "epiweek", "value"
     df_vis = df_vis.rename(columns={"state": "location"})
     df_truth_short = df_vis[["location", "epiweek", "value"]]
