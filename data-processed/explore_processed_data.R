@@ -2,8 +2,12 @@
 
 # Provides a shiny dashboard to explore the processed data
 
+library("tidyverse")
 library("shiny")
+library("DT")
 library("rmarkdown")
+
+options(DT.options = list(pageLength = 25))
 
 source("read_processed_data.R")
 
@@ -21,7 +25,13 @@ latest_locations <- latest %>%
   dplyr::summarize(US = ifelse(any(fips_alpha == "US"), "Yes", "-"),
                    n_states = sum(state.abb %in% fips_alpha),
                    other = paste(unique(setdiff(fips_alpha, c(state.abb,"US"))),
-                                 collapse = " "))
+                                 collapse = " "),
+                   missing_states = paste(unique(setdiff(state.abb, fips_alpha)),
+                                          collapse = " "),
+                   missing_states = ifelse(missing_states == paste(state.abb, collapse = " "), 
+                                           "all", missing_states)
+                   )
+
 
 latest_targets <- latest %>%
   dplyr::group_by(team, model, forecast_date, type, unit, ahead, inc_cum, death_cases) %>%
@@ -53,6 +63,14 @@ latest_quantiles_summary <- latest_quantiles %>%
     any_min  = ifelse(any(min),  "Yes", "-")
   )
 
+ensemble <- latest %>%
+  group_by(team, model, forecast_date) %>%
+  dplyr::summarize(
+    median    = ifelse(any(quantile == 0.5, na.rm = TRUE), "Yes", "-"),
+    cum_death = ifelse(all(paste(1:4, "wk ahead cum death") %in% target), "Yes", "-"),
+    inc_death = ifelse(all(paste(1:4, "wk ahead inc death") %in% target), "Yes", "-")
+  )
+
 
 
 
@@ -77,6 +95,9 @@ ui <- navbarPage(
            h3("Quantiles by target"),
            DT::DTOutput("latest_quantiles")),
   
+  tabPanel("Ensemble",           
+           DT::DTOutput("ensemble")),
+  
   tabPanel("Latest",           
            DT::DTOutput("latest")),
   
@@ -95,6 +116,7 @@ ui <- navbarPage(
            )
 )
 
+
 # Define server logic required to draw a histogram
 server <- function(input, output) {
   
@@ -102,6 +124,7 @@ server <- function(input, output) {
   output$latest_locations <- DT::renderDT(latest_locations, filter = "top")
   output$latest_quantiles <- DT::renderDT(latest_quantiles, filter = "top")
   output$latest_quantiles_summary <- DT::renderDT(latest_quantiles_summary, filter = "top")
+  output$ensemble         <- DT::renderDT(ensemble,           filter = "top")
   output$latest           <- DT::renderDT(latest,           filter = "top")
   
   output$all_data         <- DT::renderDT(all_data,         filter = "top")
