@@ -132,7 +132,7 @@ verify_no_na <- function(entry){
     cat("VALIDATED: no NA values\n")
   }
 
-  return(invisible(FALSE))
+  return(invisible(result))
 }
 
 #' Checking that all entries in `target` correspond to standards
