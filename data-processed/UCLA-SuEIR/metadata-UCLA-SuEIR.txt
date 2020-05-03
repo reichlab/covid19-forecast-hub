@@ -7,12 +7,12 @@ team_experience: Statistical Machine Learning
 
 model_name: SuEIR
 model_abbr: SuEIR
-model_output: 
-model_repo: https://covid19.uclaml.org/
+model_output: https://covid19.uclaml.org/
+model_repo: 
 
 model_contributors: Quanquan Gu <qgu@cs.ucla.edu>, Pan Xu, Jinghui Chen, Lingxiao Wang, Difan Zou, Weitong Zhang
 Model_targets: days ahead cumulative deaths
-Target_loc: All states in US
+Target_loc: national (US), state
 time_horizon:
 Data_format: prediction and all requested quantiles
 forecast_startdate: 2020-05-01
