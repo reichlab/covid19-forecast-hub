@@ -29,7 +29,9 @@ latest_locations <- latest %>%
                    missing_states = paste(unique(setdiff(state.abb, fips_alpha)),
                                           collapse = " "),
                    missing_states = ifelse(missing_states == paste(state.abb, collapse = " "), 
-                                           "all", missing_states)
+                                           "all", missing_states),
+                   missing_states = ifelse(nchar(missing_states) > 7, 
+                                           "...lots...", missing_states)
                    )
 
 
@@ -124,7 +126,7 @@ server <- function(input, output) {
   output$latest_locations <- DT::renderDT(latest_locations, filter = "top")
   output$latest_quantiles <- DT::renderDT(latest_quantiles, filter = "top")
   output$latest_quantiles_summary <- DT::renderDT(latest_quantiles_summary, filter = "top")
-  output$ensemble         <- DT::renderDT(ensemble,           filter = "top")
+  output$ensemble         <- DT::renderDT(ensemble,         filter = "top")
   output$latest           <- DT::renderDT(latest,           filter = "top")
   
   output$all_data         <- DT::renderDT(all_data,         filter = "top")
@@ -132,5 +134,3 @@ server <- function(input, output) {
 
 # Run the application 
 shinyApp(ui = ui, server = server)
-
-
