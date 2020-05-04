@@ -91,3 +91,7 @@ file_path,validation_date
 ./data-processed/UCLAML-SuEIR/2020-05-01-UCLAML-SuEIR.csv,2020-05-03 17:09:46.355543
 ./data-processed/IHME-CurveFit/2020-04-28-IHME-CurveFit.csv,2020-05-04 13:34:56.829925
 ./data-processed/UCLA-SuEIR/2020-05-01-UCLA-SuEIR.csv,2020-05-04 13:35:00.406310
+./data-processed/Geneva-DeterministicGrowth/2020-05-02-Geneva-DeterministicGrowth.csv,2020-05-04 15:33:51.731495
+./data-processed/Geneva-DeterministicGrowth/2020-04-30-Geneva-DeterministicGrowth.csv,2020-05-04 15:33:51.739812
+./data-processed/Geneva-DeterministicGrowth/2020-05-01-Geneva-DeterministicGrowth.csv,2020-05-04 15:33:51.745630
+./data-processed/Geneva-DeterministicGrowth/2020-05-03-Geneva-DeterministicGrowth.csv,2020-05-04 15:33:51.752216
