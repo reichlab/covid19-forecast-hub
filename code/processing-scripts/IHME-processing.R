@@ -119,7 +119,7 @@ make_qntl_dat <- function(path) {
 
 
 ## list all files and read
-filepaths <- list.files("./data-raw/IHME",pattern = ".csv", recursive =TRUE,full.names = TRUE)
+filepaths <- list.files("./data-raw/IHME",pattern = "Hospitalization_all_locs.csv", recursive =TRUE,full.names = TRUE)
 file_processed_dates <- substr(basename(list.files("./data-processed/IHME-CurveFit",pattern = ".csv", recursive =TRUE,full.names = TRUE)),start=1,stop=10)
 raw_file_dates <- substr(dirname(filepaths),start=17,stop=26)
 newfile_date <- setdiff(gsub("_", "-",raw_file_dates),file_processed_dates)
