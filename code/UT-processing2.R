@@ -50,7 +50,7 @@ incDfList <- vector("list", 7)
 cumDfList <- vector("list", 7)
 
 
-for (j in 1:7) {
+for (j in 1:43) {
 
   dateJ <- today() + j
 
