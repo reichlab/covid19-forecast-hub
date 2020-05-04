@@ -1,0 +1,14 @@
+.d3f-chart {
+  .axis {
+    path,
+    line {
+      fill: none;
+      stroke: $axis-ticks;
+    }
+
+    text {
+      fill: $gray;
+      font-size: 10px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@mixin no-select() {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version */
+}
+
+@mixin cell-padding() {
+  padding: 5px 10px;
+}
+
+@mixin btn() {
+  cursor: pointer;
+  @include no-select();
+  letter-spacing: normal;
+  font-weight: normal;
+  display: block;
+  line-height: normal;
+}
+
+@mixin shadow() {
+  box-shadow: 0 0 2px $shadow;
+}
+
+@mixin border($color) {
+  border-style: solid;
+  border-width: 1px;
+  border-color: $color;
+  border-radius: 0;
+}
+
+@mixin svg-point($color) {
+  fill: $color;
+  opacity: 0.4;
+  stroke: $color;
+}
+
+@mixin svg-line($color) {
+  fill: none;
+  opacity: 0.4;
+  stroke: $color;
+  stroke-width: 2.5px;
+}
+
+@mixin icon() {
+  display: inline-block;
+  font-size: 9px;
+  font-style: normal;
+  vertical-align: middle;
+  text-decoration: none;
+}

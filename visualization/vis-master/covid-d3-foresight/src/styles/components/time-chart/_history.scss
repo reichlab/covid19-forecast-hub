@@ -1,0 +1,13 @@
+.history-group {
+  .line-history {
+    fill: none;
+    stroke: $history;
+    stroke-width: 2px;
+
+    &.highlight {
+      pointer-events: none;
+      stroke: $history-highlight;
+      stroke-width: 3px;
+    }
+  }
+}

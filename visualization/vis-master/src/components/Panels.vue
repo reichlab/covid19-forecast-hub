@@ -26,7 +26,7 @@ h1 a {
     h1.title
       a(v-bind:href="branding.parentUrl") COVID-19 Forecasts
     h2.subtitle
-      | Cumulative Deaths
+      | Week Ahead
     hr
     #choropleth-container
       choropleth

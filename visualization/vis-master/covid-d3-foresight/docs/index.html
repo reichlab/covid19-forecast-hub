@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2018-09-06 Thu 14:01 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>D3-foresight documentation</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Abhinav Tushar">
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<script src="./assets/d3-foresight.min.js"></script>
+<script src="./assets/script.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono" />
+<link rel="stylesheet" href="./assets/css/main.css" />
+<link rel="stylesheet" href="./assets/css/overrides.css" />
+<link rel="stylesheet" href="./assets/fontello/fontello.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<div class="page-header">
+<p>
+   <div class="page-meta small">Document last updated 2018-09-06 Thu 14:01</div>
+</p>
+<h1>D3 <em>Foresight</em></h1>
+</div>
+
+<p>
+<a href="https://travis-ci.org/reichlab/d3-foresight" class="image-link"><img src="https://img.shields.io/travis/reichlab/d3-foresight/master.svg?style=for-the-badge" /></a>
+<a href="https://www.npmjs.com/package/d3-foresight" class="image-link"><img src="https://img.shields.io/npm/v/d3-foresight.svg?style=for-the-badge" /></a>
+<a href="https://www.npmjs.com/package/d3-foresight" class="image-link"><img src="https://img.shields.io/npm/l/d3-foresight.svg?style=for-the-badge" /></a>
+<a href="https://github.com/reichlab/d3-foresight/issues" class="image-link"><img src="https://img.shields.io/github/issues/reichlab/d3-foresight.svg?style=for-the-badge" /></a>
+</p>
+
+<p>
+<a href="https://github.com/feross/standard" class="image-link"><img src="https://cdn.rawgit.com/feross/standard/master/badge.svg" /></a>
+</p>
+
+<p>
+D3 Foresight is a <a href="https://github.com/d3/d3">d3</a> based library for visualizing time series forecasts
+interactively. At a <i>time point</i>, a general time series model trying to predict a
+single variable series (like temperature) makes forecasts for some time points
+in the future with some uncertainty described by probability distributions.
+Other than these predictions, it might also provide an estimate of <i>peak</i> and some
+<i>onset/outbreak</i> point (as defined by a baseline). The visualizations in this
+library try to cover these cases. See <a href="http://reichlab.io/flusight">reichlab/flusight</a> for a demo.
+</p>
+
+<nav id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#setting-up">Setting up</a></li>
+<li><a href="#timechart-section">TimeChart</a>
+<ul>
+<li><a href="#timechart-basic-plot">Basic plot</a></li>
+<li><a href="#timechart-adding-components">Adding components</a></li>
+<li><a href="#timechart-dvt">Data Version Time and Timezero</a></li>
+<li><a href="#timechart-config"><span class="todo TODO">TODO</span> All config and data options</a></li>
+</ul>
+</li>
+<li><a href="#distributionchart"><span class="todo TODO">TODO</span> DistributionChart</a></li>
+<li><a href="#hooks">Hooks</a></li>
+</ul>
+</div>
+</nav>
+
+<div id="outline-container-org1d92503" class="outline-2">
+<h2 id="setting-up"><a id="org1d92503"></a>Setting up</h2>
+<div class="outline-text-2" id="text-setting-up">
+<p>
+The library requires <a href="https://d3js.org/">d3</a> and <a href="https://momentjs.com">momentjs</a> as external dependencies. To build
+foresight itself, use <code>npm compile</code> (for <code>./dist/d3-foresight.js</code>) or <code>npm build</code> (for
+<code>./dist/d3-foresight.min.js</code>). The library is also available on npm as
+<a href="https://www.npmjs.com/package/d3-foresight">d3-foresight</a>. For browser, include these in your html:
+</p>
+
+<pre class="example">
+&lt;script src="https://d3js.org/d3.v4.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"&gt;&lt;/script&gt;
+&lt;script src="./dist/d3-foresight.min.js"&gt;&lt;/script&gt;
+;; Or use the unpkg url
+&lt;script src="https://unpkg.com/d3-foresight"&gt;&lt;/script&gt;
+</pre>
+
+<p>
+Additionally, a few icons (in the legend) have an icon font dependency. The css
+for that can be added using:
+</p>
+
+<pre class="example">
+&lt;link rel="stylesheet" href="./assets/fontello/fontello.css" /&gt;
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org5cb4658" class="outline-2">
+<h2 id="timechart-section"><a id="org5cb4658"></a>TimeChart</h2>
+<div class="outline-text-2" id="text-timechart-section">
+<p>
+A <code>TimeChart</code> displays the time series to be predicted and the models'
+predictions. Beyond the very minimal plots involving only model forecasts, it
+can show the following items:
+</p>
+
+<ul class="org-ul">
+<li>The actual time series to be predicted.</li>
+<li>The <i>observed</i> time series. This might be different from the actual series if
+the truth is revised (e.g. due to reporting delays in the incident count for
+certain disease).</li>
+<li>Baseline value for the year/season.</li>
+<li>History of the series over some past years/seasons.</li>
+<li>Additional prediction information from models like
+<ul class="org-ul">
+<li>Confidence intervals</li>
+<li>Peak and onset prediction</li>
+</ul></li>
+</ul>
+
+
+<figure>
+<img src="./timechart.png" alt="timechart.png">
+
+<figcaption><span class="figure-number">Figure 1: </span><code>TimeChart</code> shows model predictions and the actual time series</figcaption>
+</figure>
+</div>
+
+<div id="outline-container-orga72d056" class="outline-3">
+<h3 id="timechart-basic-plot"><a id="orga72d056"></a>Basic plot</h3>
+<div class="outline-text-3" id="text-timechart-basic-plot">
+<p>
+In this section, we will create a very basic visualization involving one model
+providing random numbers as forecasts for a year.
+</p>
+</div>
+
+<div id="outline-container-org284652c" class="outline-4">
+<h4 id="timechart-basic-plot-configuration"><a id="org284652c"></a>Configuration</h4>
+<div class="outline-text-4" id="text-timechart-basic-plot-configuration">
+<p>
+Time in foresight is represented using <code>timePoints</code> which is an array mapping to
+discrete date/time values. As of now, foresight supports the following three
+types of time points:
+</p>
+
+<ol class="org-ol">
+<li><code>week</code></li>
+<li><code>mmwr-week</code> based on <a href="https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf">MMWR definitions</a></li>
+<li><code>biweek</code> denoting a unit of two weeks</li>
+<li><code>month</code> denoting a month</li>
+</ol>
+
+<p>
+All points can be represented using either standard JS Date objects, a string
+readable by momentjs (like <code>YYYYMMDD</code>) or using simple objects like shown:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-rainbow-delimiters-depth-1">{</span>
+  week: <span class="org-highlight-numbers-number">20</span>, <span class="org-comment-delimiter">// </span><span class="org-comment">biweek/month</span>
+  year: <span class="org-highlight-numbers-number">2016</span>
+<span class="org-rainbow-delimiters-depth-1">}</span>
+</pre>
+</div>
+
+<p>
+Lets work on mmwr weeks for the year 2016. Our week choice can be passed to
+foresight charts using a config object which is the following in our case:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-keyword">let</span> <span class="org-variable-name">config</span> = <span class="org-rainbow-delimiters-depth-1">{</span>
+  pointType: <span class="org-string">'mmwr-week'</span>, <span class="org-comment-delimiter">// </span><span class="org-comment">Default is week</span>
+  axes: <span class="org-rainbow-delimiters-depth-2">{</span>
+    y: <span class="org-rainbow-delimiters-depth-3">{</span>
+      title: <span class="org-string">'Random numbers'</span> <span class="org-comment-delimiter">// </span><span class="org-comment">Title for the y axis</span>
+    <span class="org-rainbow-delimiters-depth-3">}</span>
+  <span class="org-rainbow-delimiters-depth-2">}</span>
+<span class="org-rainbow-delimiters-depth-1">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb9195f5" class="outline-4">
+<h4 id="timechart-basic-plot-data"><a id="orgb9195f5"></a>Data</h4>
+<div class="outline-text-4" id="text-timechart-basic-plot-data">
+<p>
+At minimum, <code>TimeChart</code> expects an array of time points and an array of model
+data. The time points in our case go from week 1 to week 52 of 2016 and can be
+represented as:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-keyword">let</span> <span class="org-variable-name">timePoints</span> = <span class="org-rainbow-delimiters-depth-1">[</span>...Array<span class="org-rainbow-delimiters-depth-2">(</span><span class="org-highlight-numbers-number">51</span><span class="org-rainbow-delimiters-depth-2">)</span>.keys<span class="org-rainbow-delimiters-depth-2">()</span><span class="org-rainbow-delimiters-depth-1">]</span>.map<span class="org-rainbow-delimiters-depth-1">(</span>w =&gt; <span class="org-rainbow-delimiters-depth-2">{</span>
+  <span class="org-keyword">return</span> <span class="org-rainbow-delimiters-depth-3">{</span> week: w + <span class="org-highlight-numbers-number">1</span>, year: <span class="org-highlight-numbers-number">2016</span> <span class="org-rainbow-delimiters-depth-3">}</span>
+<span class="org-rainbow-delimiters-depth-2">}</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<p>
+At each time point, our model provides predictions for the next 10 time points.
+These predictions are represented in an array of same size as the time points.
+For when the model has no predictions, we put in <code>null</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-comment-delimiter">// </span><span class="org-comment">Random sequence generator</span>
+<span class="org-keyword">function</span> <span class="org-function-name">rseq</span> <span class="org-rainbow-delimiters-depth-1">(</span><span class="org-variable-name">n</span><span class="org-rainbow-delimiters-depth-1">)</span> <span class="org-rainbow-delimiters-depth-1">{</span>
+  <span class="org-keyword">let</span> <span class="org-variable-name">seq</span> = <span class="org-rainbow-delimiters-depth-2">[</span>Math.random<span class="org-rainbow-delimiters-depth-3">()</span><span class="org-rainbow-delimiters-depth-2">]</span>
+  <span class="org-keyword">for</span> <span class="org-rainbow-delimiters-depth-2">(</span><span class="org-keyword">let</span> <span class="org-variable-name">i</span> = <span class="org-highlight-numbers-number">1</span>; i &lt; n; i++<span class="org-rainbow-delimiters-depth-2">)</span> <span class="org-rainbow-delimiters-depth-2">{</span>
+    seq.push<span class="org-rainbow-delimiters-depth-3">(</span>Math.random<span class="org-rainbow-delimiters-depth-4">()</span> * <span class="org-rainbow-delimiters-depth-4">(</span><span class="org-highlight-numbers-number">1</span> + seq<span class="org-rainbow-delimiters-depth-5">[</span>i - <span class="org-highlight-numbers-number">1</span><span class="org-rainbow-delimiters-depth-5">]</span><span class="org-rainbow-delimiters-depth-4">)</span><span class="org-rainbow-delimiters-depth-3">)</span>
+  <span class="org-rainbow-delimiters-depth-2">}</span>
+  <span class="org-keyword">return</span> seq
+<span class="org-rainbow-delimiters-depth-1">}</span>
+
+<span class="org-comment-delimiter">// </span><span class="org-comment">Predictions look like [{ series: [{ point: 0.5 }, { point: 1.2 } ...] }, ..., null, null]</span>
+<span class="org-keyword">let</span> <span class="org-variable-name">predictions</span> = timePoints.map<span class="org-rainbow-delimiters-depth-1">(</span>tp =&gt; <span class="org-rainbow-delimiters-depth-2">{</span>
+  <span class="org-keyword">if</span> <span class="org-rainbow-delimiters-depth-3">(</span>tp.week &gt; <span class="org-highlight-numbers-number">30</span><span class="org-rainbow-delimiters-depth-3">)</span> <span class="org-rainbow-delimiters-depth-3">{</span>
+    <span class="org-comment-delimiter">// </span><span class="org-comment">We only predict upto week 30</span>
+    <span class="org-keyword">return</span> <span class="org-constant">null</span>
+  <span class="org-rainbow-delimiters-depth-3">}</span> <span class="org-keyword">else</span> <span class="org-rainbow-delimiters-depth-3">{</span>
+    <span class="org-comment-delimiter">// </span><span class="org-comment">Provide 10 week ahead predictions</span>
+    <span class="org-keyword">return</span> <span class="org-rainbow-delimiters-depth-4">{</span>
+      series: rseq<span class="org-rainbow-delimiters-depth-5">(</span><span class="org-highlight-numbers-number">10</span><span class="org-rainbow-delimiters-depth-5">)</span>.map<span class="org-rainbow-delimiters-depth-5">(</span>r =&gt; <span class="org-rainbow-delimiters-depth-6">{</span> <span class="org-keyword">return</span> <span class="org-rainbow-delimiters-depth-7">{</span> point: r <span class="org-rainbow-delimiters-depth-7">}</span> <span class="org-rainbow-delimiters-depth-6">}</span><span class="org-rainbow-delimiters-depth-5">)</span>
+    <span class="org-rainbow-delimiters-depth-4">}</span>
+  <span class="org-rainbow-delimiters-depth-3">}</span>
+<span class="org-rainbow-delimiters-depth-2">}</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<p>
+Finally we put everything together in a single object. Notice the extra metadata
+involved in putting together the values for the model:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-keyword">let</span> <span class="org-variable-name">data</span> = <span class="org-rainbow-delimiters-depth-1">{</span>
+  timePoints,
+  models: <span class="org-rainbow-delimiters-depth-2">[</span>
+    <span class="org-rainbow-delimiters-depth-3">{</span>
+      id: <span class="org-string">'mod'</span>,
+      meta: <span class="org-rainbow-delimiters-depth-4">{</span>
+        name: <span class="org-string">'Name'</span>,
+        description: <span class="org-string">'Model description here'</span>,
+        url: <span class="org-string">'http://github.com'</span>
+      <span class="org-rainbow-delimiters-depth-4">}</span>,
+      pinned: <span class="org-constant">false</span>, <span class="org-comment-delimiter">// </span><span class="org-comment">Setting true shows the model in top section of the legend</span>
+                     <span class="org-comment-delimiter">// </span><span class="org-comment">In case of absence of `pinned` key (or false), the model</span>
+                     <span class="org-comment-delimiter">// </span><span class="org-comment">goes in the bottom section</span>
+      predictions,
+      style: <span class="org-rainbow-delimiters-depth-4">{</span> <span class="org-comment-delimiter">// </span><span class="org-comment">Optional parameter for applying custom css on svg elements</span>
+        color: <span class="org-string">'#4682b4'</span>, <span class="org-comment-delimiter">// </span><span class="org-comment">Defaults to values from the internal palette</span>
+        point: <span class="org-rainbow-delimiters-depth-5">{</span>
+          <span class="org-comment-delimiter">// </span><span class="org-comment">Style for the dots in prediction</span>
+        <span class="org-rainbow-delimiters-depth-5">}</span>,
+        area: <span class="org-rainbow-delimiters-depth-5">{</span>
+          <span class="org-comment-delimiter">// </span><span class="org-comment">Style for the confidence area (shaded region around the line)</span>
+        <span class="org-rainbow-delimiters-depth-5">}</span>,
+        line: <span class="org-rainbow-delimiters-depth-5">{</span>
+          <span class="org-comment-delimiter">// </span><span class="org-comment">Style for the main line</span>
+        <span class="org-rainbow-delimiters-depth-5">}</span>
+      <span class="org-rainbow-delimiters-depth-4">}</span>
+    <span class="org-rainbow-delimiters-depth-3">}</span>
+  <span class="org-rainbow-delimiters-depth-2">]</span>
+<span class="org-rainbow-delimiters-depth-1">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org38b1b21" class="outline-4">
+<h4 id="timechart-basic-plot-plotting"><a id="org38b1b21"></a>Plotting</h4>
+<div class="outline-text-4" id="text-timechart-basic-plot-plotting">
+<p>
+The life cycle of <code>TimeChart</code> involves the following stages:
+</p>
+
+<ol class="org-ol">
+<li>Initialization</li>
+<li>Plotting</li>
+<li>Updating</li>
+</ol>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-comment-delimiter">// </span><span class="org-comment">1. Initialize</span>
+<span class="org-comment-delimiter">// </span><span class="org-comment">Setup the id of div where we are going to plot</span>
+<span class="org-comment-delimiter">// </span><span class="org-comment">Also pass in config options</span>
+<span class="org-keyword">let</span> <span class="org-variable-name">timeChart</span> = <span class="org-keyword">new</span> <span class="org-type">d3Foresight.TimeChart</span><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">'#timechart'</span>, config<span class="org-rainbow-delimiters-depth-1">)</span>
+
+<span class="org-comment-delimiter">// </span><span class="org-comment">2. Plot</span>
+<span class="org-comment-delimiter">// </span><span class="org-comment">Provide the data for the complete year</span>
+timeChart.plot<span class="org-rainbow-delimiters-depth-1">(</span>data<span class="org-rainbow-delimiters-depth-1">)</span>
+
+<span class="org-comment-delimiter">// </span><span class="org-comment">3. Update</span>
+<span class="org-comment-delimiter">// </span><span class="org-comment">Move to the given index in the set of timePoints</span>
+timeChart.update<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">10</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-comment-delimiter">// </span><span class="org-comment">Or simply use</span>
+<span class="org-comment-delimiter">// </span><span class="org-comment">timeChart.moveForward()</span>
+<span class="org-comment-delimiter">// </span><span class="org-comment">timeChart.moveBackward()</span>
+
+<span class="org-comment-delimiter">// </span><span class="org-comment">Lets also save the timechart object in global namespace</span>
+window.timeChart = timeChart
+</pre>
+</div>
+
+<br><br>
+<div id="timechart"></div>
+
+<p>
+If you are able to see the plot above (which you should be, else file an <a href="https://github.com/reichlab/d3-foresight/issues">issue</a>),
+you should be able to move around by clicking the arrow buttons in legend or
+clicking on the chart itself. These mouse click events can trigger user defined
+functions too. See the section on <a href="#hooks">Hooks</a> for more description.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org183168e" class="outline-3">
+<h3 id="timechart-adding-components"><a id="org183168e"></a>Adding components</h3>
+<div class="outline-text-3" id="text-timechart-adding-components">
+<p>
+This section builds up on the chart above to add more information
+</p>
+</div>
+
+<div id="outline-container-org1c7597b" class="outline-4">
+<h4 id="timechart-adding-components-baseline"><a id="org1c7597b"></a>Baseline</h4>
+<div class="outline-text-4" id="text-timechart-adding-components-baseline">
+<p>
+A baseline is a horizontal line specifying some sort of baseline. To plot it,
+pass a <code>baseline</code> item in data. Optionally, set a label for the baseline by
+providing it in the <code>config</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-keyword">let</span> <span class="org-variable-name">tcBaseline</span> = <span class="org-keyword">new</span> <span class="org-type">d3Foresight.TimeChart</span><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">'#tc-baseline'</span>, Object.assign<span class="org-rainbow-delimiters-depth-2">(</span>copy<span class="org-rainbow-delimiters-depth-3">(</span>config<span class="org-rainbow-delimiters-depth-3">)</span>, <span class="org-rainbow-delimiters-depth-3">{</span>
+  baseline: <span class="org-rainbow-delimiters-depth-4">{</span>
+    text: <span class="org-string">'Baseline'</span>, <span class="org-comment-delimiter">// </span><span class="org-comment">To show multiline text, pass an array of strings,</span>
+    description: <span class="org-string">'This is a sample baseline'</span>,
+    url: <span class="org-string">'https://github.com'</span>
+  <span class="org-rainbow-delimiters-depth-4">}</span>
+<span class="org-rainbow-delimiters-depth-3">}</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+tcBaseline.plot<span class="org-rainbow-delimiters-depth-1">(</span>Object.assign<span class="org-rainbow-delimiters-depth-2">(</span>copy<span class="org-rainbow-delimiters-depth-3">(</span>data<span class="org-rainbow-delimiters-depth-3">)</span>, <span class="org-rainbow-delimiters-depth-3">{</span>
+  baseline: <span class="org-highlight-numbers-number">0</span>.<span class="org-highlight-numbers-number">3</span>
+<span class="org-rainbow-delimiters-depth-3">}</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+tcBaseline.update<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">10</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<br><br>
+<div id="tc-baseline"></div>
+</div>
+</div>
+
+<div id="outline-container-orgb762ca5" class="outline-4">
+<h4 id="timechart-adding-components-actual"><a id="orgb762ca5"></a>Actual</h4>
+<div class="outline-text-4" id="text-timechart-adding-components-actual">
+<p>
+Another important component to show is the actual line that we are trying to
+predict. The <code>actual</code> series is an array of the same length as the <code>timePoints</code> and
+can be something like this
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-comment-delimiter">// </span><span class="org-comment">Suppose we have actual data for 20 time steps only. We give null for other points</span>
+<span class="org-keyword">let</span> <span class="org-variable-name">actual</span> = rseq<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">20</span><span class="org-rainbow-delimiters-depth-1">)</span>.concat<span class="org-rainbow-delimiters-depth-1">(</span>timePoints.slice<span class="org-rainbow-delimiters-depth-2">(</span><span class="org-highlight-numbers-number">20</span><span class="org-rainbow-delimiters-depth-2">)</span>.map<span class="org-rainbow-delimiters-depth-2">(</span>tp =&gt; <span class="org-constant">null</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-keyword">let</span> <span class="org-variable-name">tcActual</span> = <span class="org-keyword">new</span> <span class="org-type">d3Foresight.TimeChart</span><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">'#tc-actual'</span>, config<span class="org-rainbow-delimiters-depth-1">)</span>
+tcActual.plot<span class="org-rainbow-delimiters-depth-1">(</span>Object.assign<span class="org-rainbow-delimiters-depth-2">(</span>copy<span class="org-rainbow-delimiters-depth-3">(</span>data<span class="org-rainbow-delimiters-depth-3">)</span>, <span class="org-rainbow-delimiters-depth-3">{</span> actual: actual <span class="org-rainbow-delimiters-depth-3">}</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+tcActual.update<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">10</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<br><br>
+<div id="tc-actual"></div>
+</div>
+</div>
+
+<div id="outline-container-orgaeabcb8" class="outline-4">
+<h4 id="timechart-adding-components-observed"><a id="orgaeabcb8"></a>Observed</h4>
+<div class="outline-text-4" id="text-timechart-adding-components-observed">
+<p>
+Observed data series refers to the time series <i>as observed</i> at a certain time
+point. Observed lines are useful (only) when there are updates in actual data,
+resulting in different <i>versions</i> based on when the data was released.
+</p>
+
+<p>
+We formalize these versions using <i>lags</i>. When we are at a time point \(t\) what
+we get as truth (the value that creates the actual series) is a lag \(0\) truth,
+\(l_0(t)\). At the same time, we also get \(l_1(t - 1)\) truth for time point \(t -
+1\), \(l_2(t - 2)\) truth for \(t - 2\) and so on. In this case, even if we have
+higher lag truths for time \(t\), the observed series at time \(t\) will be made up
+of the series \([l_i(t - i), \forall i \in [t - 1, t - 2, \ldots 0]]\)
+</p>
+
+<p>
+To display the observe data thus we need to provide the required lag truths for
+a time point. We do this by providing a list of lists. The outer list is over
+all the time points. The inner lists represent decreasing lag values (like <code>{
+lag: 2, value: 0.2}</code>) for that time point.
+</p>
+
+<aside>
+<p>
+Current observed line API is not really nice. Follow <a href="https://github.com/reichlab/d3-foresight/issues/54">this issue</a> for a better
+way.
+</p>
+</aside>
+
+<p>
+A simple example follows. Notice that the third time point is the latest one
+and so we only have lag 0 value for that.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-comment-delimiter">// </span><span class="org-comment">Assume there are 3 timepoints</span>
+<span class="org-keyword">let</span> <span class="org-variable-name">observedExample</span> = <span class="org-rainbow-delimiters-depth-1">[</span>
+  <span class="org-rainbow-delimiters-depth-2">[</span> <span class="org-rainbow-delimiters-depth-3">{</span> lag: <span class="org-highlight-numbers-number">2</span>, value: <span class="org-highlight-numbers-number">0</span>.<span class="org-highlight-numbers-number">88</span> <span class="org-rainbow-delimiters-depth-3">}</span>, <span class="org-rainbow-delimiters-depth-3">{</span> lag: <span class="org-highlight-numbers-number">1</span>, value: <span class="org-highlight-numbers-number">0</span>.<span class="org-highlight-numbers-number">88</span> <span class="org-rainbow-delimiters-depth-3">}</span>, <span class="org-rainbow-delimiters-depth-3">{</span> lag: <span class="org-highlight-numbers-number">0</span>, value: <span class="org-highlight-numbers-number">0</span>.<span class="org-highlight-numbers-number">93</span> <span class="org-rainbow-delimiters-depth-3">}</span><span class="org-rainbow-delimiters-depth-2">]</span>,
+  <span class="org-rainbow-delimiters-depth-2">[</span> <span class="org-rainbow-delimiters-depth-3">{</span> lag: <span class="org-highlight-numbers-number">1</span>, value: <span class="org-highlight-numbers-number">1</span>.<span class="org-highlight-numbers-number">11</span> <span class="org-rainbow-delimiters-depth-3">}</span>, <span class="org-rainbow-delimiters-depth-3">{</span> lag: <span class="org-highlight-numbers-number">0</span>, value: <span class="org-highlight-numbers-number">1</span>.<span class="org-highlight-numbers-number">32</span> <span class="org-rainbow-delimiters-depth-3">}</span> <span class="org-rainbow-delimiters-depth-2">]</span>,
+  <span class="org-rainbow-delimiters-depth-2">[</span> <span class="org-rainbow-delimiters-depth-3">{</span> lag: <span class="org-highlight-numbers-number">0</span>, value: <span class="org-highlight-numbers-number">1</span>.<span class="org-highlight-numbers-number">13</span> <span class="org-rainbow-delimiters-depth-3">}</span> <span class="org-rainbow-delimiters-depth-2">]</span>
+<span class="org-rainbow-delimiters-depth-1">]</span>
+</pre>
+</div>
+
+<p>
+The next snippet generates some random data programmatically for demoing
+purpose.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-comment-delimiter">// </span><span class="org-comment">Lets only show 20 time steps.</span>
+<span class="org-keyword">let</span> <span class="org-variable-name">observed</span> = rseq<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">20</span><span class="org-rainbow-delimiters-depth-1">)</span>.map<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-rainbow-delimiters-depth-2">(</span>r, idx<span class="org-rainbow-delimiters-depth-2">)</span> =&gt; <span class="org-rainbow-delimiters-depth-2">{</span>
+  <span class="org-keyword">let</span> <span class="org-variable-name">delta</span> = <span class="org-highlight-numbers-number">0</span>.<span class="org-highlight-numbers-number">05</span>
+  <span class="org-keyword">let</span> <span class="org-variable-name">lags</span> = <span class="org-rainbow-delimiters-depth-3">[]</span>
+  <span class="org-keyword">for</span> <span class="org-rainbow-delimiters-depth-3">(</span><span class="org-keyword">let</span> <span class="org-variable-name">l</span> = <span class="org-highlight-numbers-number">20</span>; l &gt;= <span class="org-highlight-numbers-number">0</span>; l--<span class="org-rainbow-delimiters-depth-3">)</span> <span class="org-rainbow-delimiters-depth-3">{</span>
+    lags.push<span class="org-rainbow-delimiters-depth-4">(</span><span class="org-rainbow-delimiters-depth-5">{</span> lag: l, value: r + <span class="org-rainbow-delimiters-depth-6">(</span>delta * <span class="org-rainbow-delimiters-depth-7">(</span><span class="org-highlight-numbers-number">20</span> - l<span class="org-rainbow-delimiters-depth-7">)</span><span class="org-rainbow-delimiters-depth-6">)</span> <span class="org-rainbow-delimiters-depth-5">}</span><span class="org-rainbow-delimiters-depth-4">)</span>
+  <span class="org-rainbow-delimiters-depth-3">}</span>
+  <span class="org-keyword">return</span> lags
+<span class="org-rainbow-delimiters-depth-2">}</span><span class="org-rainbow-delimiters-depth-1">)</span>
+
+<span class="org-comment-delimiter">// </span><span class="org-comment">Add [] for other points</span>
+observed = observed.concat<span class="org-rainbow-delimiters-depth-1">(</span>timePoints.slice<span class="org-rainbow-delimiters-depth-2">(</span><span class="org-highlight-numbers-number">20</span><span class="org-rainbow-delimiters-depth-2">)</span>.map<span class="org-rainbow-delimiters-depth-2">(</span>tp =&gt; <span class="org-rainbow-delimiters-depth-3">[]</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-keyword">let</span> <span class="org-variable-name">tcObserved</span> = <span class="org-keyword">new</span> <span class="org-type">d3Foresight.TimeChart</span><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">'#tc-observed'</span>, config<span class="org-rainbow-delimiters-depth-1">)</span>
+tcObserved.plot<span class="org-rainbow-delimiters-depth-1">(</span>Object.assign<span class="org-rainbow-delimiters-depth-2">(</span>copy<span class="org-rainbow-delimiters-depth-3">(</span>data<span class="org-rainbow-delimiters-depth-3">)</span>, <span class="org-rainbow-delimiters-depth-3">{</span> observed: observed <span class="org-rainbow-delimiters-depth-3">}</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+tcObserved.update<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">10</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<br><br>
+<div id="tc-observed"></div>
+</div>
+</div>
+
+<div id="outline-container-orgfd922b0" class="outline-4">
+<h4 id="timechart-adding-components-history"><a id="orgfd922b0"></a>History</h4>
+<div class="outline-text-4" id="text-timechart-adding-components-history">
+<p>
+Historical data lines (similar to <code>actual</code> series) can be shown by passing an
+array of historical actual series like the following:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-keyword">let</span> <span class="org-variable-name">historicalData</span> = <span class="org-rainbow-delimiters-depth-1">[</span>
+  <span class="org-rainbow-delimiters-depth-2">{</span>
+    id: <span class="org-string">'some-past-series'</span>,
+    actual: rseq<span class="org-rainbow-delimiters-depth-3">(</span><span class="org-highlight-numbers-number">51</span><span class="org-rainbow-delimiters-depth-3">)</span>
+  <span class="org-rainbow-delimiters-depth-2">}</span>,
+  <span class="org-rainbow-delimiters-depth-2">{</span>
+    id: <span class="org-string">'another-past-series'</span>,
+    actual: rseq<span class="org-rainbow-delimiters-depth-3">(</span><span class="org-highlight-numbers-number">51</span><span class="org-rainbow-delimiters-depth-3">)</span>
+  <span class="org-rainbow-delimiters-depth-2">}</span>
+<span class="org-rainbow-delimiters-depth-1">]</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-keyword">let</span> <span class="org-variable-name">tcHistory</span> = <span class="org-keyword">new</span> <span class="org-type">d3Foresight.TimeChart</span><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">'#tc-history'</span>, config<span class="org-rainbow-delimiters-depth-1">)</span>
+tcHistory.plot<span class="org-rainbow-delimiters-depth-1">(</span>Object.assign<span class="org-rainbow-delimiters-depth-2">(</span>copy<span class="org-rainbow-delimiters-depth-3">(</span>data<span class="org-rainbow-delimiters-depth-3">)</span>, <span class="org-rainbow-delimiters-depth-3">{</span> history: historicalData <span class="org-rainbow-delimiters-depth-3">}</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+tcHistory.update<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">10</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<br><br>
+<div id="tc-history"></div>
+
+<p>
+One possible issue with showing history is that the number of time units might
+not line up perfectly. For example, the current year might have 52 weeks but
+some older year might have had 53 weeks. Since we expect all the actual series
+passed as history to have the same length, the user is supposed to pad/clip all
+the series to match the current season's length.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org07befa2" class="outline-4">
+<h4 id="timechart-adding-components-ci"><a id="org07befa2"></a>Confidence Intervals</h4>
+<div class="outline-text-4" id="text-timechart-adding-components-ci">
+<p>
+Confidence intervals show a region of uncertainty around the model predictions
+(peak, onset and the regular time step predictions). These involve users to
+specify:
+</p>
+
+<ol class="org-ol">
+<li>Label for the confidence intervals to be shown in legend. For example `90%`
+etc.</li>
+<li>Additional <code>low</code> and <code>high</code> values along with <code>point</code> values in predictions.</li>
+</ol>
+
+<p>
+The legend label can be specified in the main chart option by passing the
+following key/value pair (say we want to show <code>90%</code> and <code>50%</code> CIs):
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js">...
+  confidenceIntervals: <span class="org-rainbow-delimiters-depth-1">[</span><span class="org-string">'90%'</span>, <span class="org-string">'50%'</span><span class="org-rainbow-delimiters-depth-1">]</span>
+...
+</pre>
+</div>
+
+<p>
+Corresponding to the values specified above (and in the same order), we now
+attach a list of <code>low</code> and <code>high</code> values as shown below:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-comment-delimiter">// </span><span class="org-comment">Predictions now look like [{ series: [</span>
+<span class="org-comment-delimiter">// </span><span class="org-comment">{ point: 0.5, low: [0.3, 0.4], high: [0.7, 0.6] },</span>
+<span class="org-comment-delimiter">// </span><span class="org-comment">{ point: 1.2, low: [1.0, 1.1], high: [1.4, 1.3] }</span>
+<span class="org-comment-delimiter">// </span><span class="org-comment">...] }, ..., null, null]</span>
+<span class="org-keyword">let</span> <span class="org-variable-name">predictionsWithCI</span> = timePoints.map<span class="org-rainbow-delimiters-depth-1">(</span>tp =&gt; <span class="org-rainbow-delimiters-depth-2">{</span>
+  <span class="org-keyword">if</span> <span class="org-rainbow-delimiters-depth-3">(</span>tp.week &gt; <span class="org-highlight-numbers-number">30</span><span class="org-rainbow-delimiters-depth-3">)</span> <span class="org-rainbow-delimiters-depth-3">{</span>
+    <span class="org-comment-delimiter">// </span><span class="org-comment">We only predict upto week 30</span>
+    <span class="org-keyword">return</span> <span class="org-constant">null</span>
+  <span class="org-rainbow-delimiters-depth-3">}</span> <span class="org-keyword">else</span> <span class="org-rainbow-delimiters-depth-3">{</span>
+    <span class="org-comment-delimiter">// </span><span class="org-comment">Provide 10 week ahead predictions adding a dummy 0.2 and 0.1 spacing</span>
+    <span class="org-comment-delimiter">// </span><span class="org-comment">to show the confidence interval</span>
+    <span class="org-keyword">return</span> <span class="org-rainbow-delimiters-depth-4">{</span>
+      series: rseq<span class="org-rainbow-delimiters-depth-5">(</span><span class="org-highlight-numbers-number">10</span><span class="org-rainbow-delimiters-depth-5">)</span>.map<span class="org-rainbow-delimiters-depth-5">(</span>r =&gt; <span class="org-rainbow-delimiters-depth-6">{</span>
+        <span class="org-keyword">return</span> <span class="org-rainbow-delimiters-depth-7">{</span>
+          point: r,
+          low: <span class="org-rainbow-delimiters-depth-8">[</span>Math.max<span class="org-rainbow-delimiters-depth-9">(</span><span class="org-highlight-numbers-number">0</span>, r - <span class="org-highlight-numbers-number">0</span>.<span class="org-highlight-numbers-number">2</span><span class="org-rainbow-delimiters-depth-9">)</span>, Math.max<span class="org-rainbow-delimiters-depth-9">(</span><span class="org-highlight-numbers-number">0</span>, r - <span class="org-highlight-numbers-number">0</span>.<span class="org-highlight-numbers-number">1</span><span class="org-rainbow-delimiters-depth-9">)</span><span class="org-rainbow-delimiters-depth-8">]</span>,
+          high: <span class="org-rainbow-delimiters-depth-8">[</span>r + <span class="org-highlight-numbers-number">0</span>.<span class="org-highlight-numbers-number">2</span>, r + <span class="org-highlight-numbers-number">0</span>.<span class="org-highlight-numbers-number">1</span><span class="org-rainbow-delimiters-depth-8">]</span>
+        <span class="org-rainbow-delimiters-depth-7">}</span>
+      <span class="org-rainbow-delimiters-depth-6">}</span><span class="org-rainbow-delimiters-depth-5">)</span>
+    <span class="org-rainbow-delimiters-depth-4">}</span>
+  <span class="org-rainbow-delimiters-depth-3">}</span>
+<span class="org-rainbow-delimiters-depth-2">}</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<p>
+Putting everything together now:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-keyword">let</span> <span class="org-variable-name">dataWithCI</span> = <span class="org-rainbow-delimiters-depth-1">{</span>
+  timePoints,
+  models: <span class="org-rainbow-delimiters-depth-2">[</span>
+    <span class="org-rainbow-delimiters-depth-3">{</span>
+      id: <span class="org-string">'mod'</span>,
+      meta: <span class="org-rainbow-delimiters-depth-4">{</span>
+        name: <span class="org-string">'Name'</span>,
+        description: <span class="org-string">'Model description here'</span>,
+        url: <span class="org-string">'https://github.com'</span>
+      <span class="org-rainbow-delimiters-depth-4">}</span>,
+      predictions: predictionsWithCI
+    <span class="org-rainbow-delimiters-depth-3">}</span>
+  <span class="org-rainbow-delimiters-depth-2">]</span>
+<span class="org-rainbow-delimiters-depth-1">}</span>
+
+<span class="org-keyword">let</span> <span class="org-variable-name">configCI</span> = Object.assign<span class="org-rainbow-delimiters-depth-1">(</span>copy<span class="org-rainbow-delimiters-depth-2">(</span>config<span class="org-rainbow-delimiters-depth-2">)</span>, <span class="org-rainbow-delimiters-depth-2">{</span> confidenceIntervals: <span class="org-rainbow-delimiters-depth-3">[</span><span class="org-string">'90%'</span>, <span class="org-string">'50%'</span><span class="org-rainbow-delimiters-depth-3">]</span> <span class="org-rainbow-delimiters-depth-2">}</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-keyword">let</span> <span class="org-variable-name">tcCI</span> = <span class="org-keyword">new</span> <span class="org-type">d3Foresight.TimeChart</span><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">'#tc-ci'</span>, configCI<span class="org-rainbow-delimiters-depth-1">)</span>
+tcCI.plot<span class="org-rainbow-delimiters-depth-1">(</span>dataWithCI<span class="org-rainbow-delimiters-depth-1">)</span>
+tcCI.update<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">10</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<br><br>
+<div id="tc-ci"></div>
+</div>
+</div>
+
+<div id="outline-container-org6494f74" class="outline-4">
+<h4 id="timechart-adding-components-peak-and-onset"><a id="org6494f74"></a>Peak and Onset</h4>
+<div class="outline-text-4" id="text-timechart-adding-components-peak-and-onset">
+<p>
+Just like a <code>series</code> key in predictions, we can also add <code>onsetTime</code>, <code>peakTime</code> and
+<code>peakValue</code> keys to show the respective predictions. Each of these have a
+<i>mandatory</i> <code>point</code> key and can have <code>low</code> and <code>high</code> ranges to show confidence
+intervals. Here is an example for a model's prediction at a certain timepoint
+with the onset and peak values specified (along with a confidence interval):
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-comment-delimiter">// </span><span class="org-comment">Consider the confidence intervals ['90%', '50%']</span>
+<span class="org-rainbow-delimiters-depth-1">{</span>
+  onsetTime: <span class="org-rainbow-delimiters-depth-2">{</span>
+    high: <span class="org-rainbow-delimiters-depth-3">[</span><span class="org-highlight-numbers-number">15</span>, <span class="org-highlight-numbers-number">17</span><span class="org-rainbow-delimiters-depth-3">]</span>,
+    low: <span class="org-rainbow-delimiters-depth-3">[</span><span class="org-highlight-numbers-number">9</span>, <span class="org-highlight-numbers-number">11</span><span class="org-rainbow-delimiters-depth-3">]</span>,
+    point: <span class="org-highlight-numbers-number">13</span>
+  <span class="org-rainbow-delimiters-depth-2">}</span>,
+  peakTime: <span class="org-rainbow-delimiters-depth-2">{</span>
+    high: <span class="org-rainbow-delimiters-depth-3">[</span><span class="org-highlight-numbers-number">25</span>, <span class="org-highlight-numbers-number">27</span><span class="org-rainbow-delimiters-depth-3">]</span>,
+    low: <span class="org-rainbow-delimiters-depth-3">[</span><span class="org-highlight-numbers-number">19</span>, <span class="org-highlight-numbers-number">21</span><span class="org-rainbow-delimiters-depth-3">]</span>,
+    point: <span class="org-highlight-numbers-number">23</span>
+  <span class="org-rainbow-delimiters-depth-2">}</span>,
+  peakValue: <span class="org-rainbow-delimiters-depth-2">{</span>
+    high: <span class="org-rainbow-delimiters-depth-3">[</span><span class="org-highlight-numbers-number">3</span>.<span class="org-highlight-numbers-number">6</span>, <span class="org-highlight-numbers-number">3</span>.<span class="org-highlight-numbers-number">8</span><span class="org-rainbow-delimiters-depth-3">]</span>,
+    low: <span class="org-rainbow-delimiters-depth-3">[</span><span class="org-highlight-numbers-number">3</span>.<span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">3</span>.<span class="org-highlight-numbers-number">2</span><span class="org-rainbow-delimiters-depth-3">]</span>,
+    point: <span class="org-highlight-numbers-number">3</span>.<span class="org-highlight-numbers-number">4</span>
+  <span class="org-rainbow-delimiters-depth-2">}</span>,
+  series: <span class="org-rainbow-delimiters-depth-2">[</span>
+    <span class="org-rainbow-delimiters-depth-3">{</span>
+      high: <span class="org-rainbow-delimiters-depth-4">[</span><span class="org-highlight-numbers-number">1</span>.<span class="org-highlight-numbers-number">4</span>, <span class="org-highlight-numbers-number">1</span>.<span class="org-highlight-numbers-number">6</span><span class="org-rainbow-delimiters-depth-4">]</span>,
+      low: <span class="org-rainbow-delimiters-depth-4">[</span><span class="org-highlight-numbers-number">0</span>.<span class="org-highlight-numbers-number">8</span>, <span class="org-highlight-numbers-number">1</span>.<span class="org-highlight-numbers-number">0</span><span class="org-rainbow-delimiters-depth-4">]</span>,
+      point: <span class="org-highlight-numbers-number">1</span>.<span class="org-highlight-numbers-number">2</span>
+    <span class="org-rainbow-delimiters-depth-3">}</span>,
+    ...
+  <span class="org-rainbow-delimiters-depth-2">]</span>
+<span class="org-rainbow-delimiters-depth-1">}</span>
+</pre>
+</div>
+
+<p>
+Note that the values for <code>peakTime</code> and <code>onsetTime</code> are indices for the time points
+instead of actual week values. For example, suppose the time points actually
+refer to weeks from 5 to 15 (inclusive) for a year. An <code>onsetTime</code> value of 3 will
+now refer to week 9 (0 based index starting at 5).
+</p>
+
+<p>
+By not using the actual week value here, we localize the <i>meaning</i> of time point
+in a single place, the series <code>timePoints</code> itself.
+</p>
+
+<p>
+Lets recreate the season data now with added peak and onset predictions. We will
+not be adding confidence intervals here to keep things simple.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-keyword">let</span> <span class="org-variable-name">predictionsWithPeakOnset</span> = timePoints.map<span class="org-rainbow-delimiters-depth-1">(</span>tp =&gt; <span class="org-rainbow-delimiters-depth-2">{</span>
+  <span class="org-keyword">if</span> <span class="org-rainbow-delimiters-depth-3">(</span>tp.week &gt; <span class="org-highlight-numbers-number">30</span><span class="org-rainbow-delimiters-depth-3">)</span> <span class="org-rainbow-delimiters-depth-3">{</span>
+    <span class="org-comment-delimiter">// </span><span class="org-comment">We only predict upto week 30</span>
+    <span class="org-keyword">return</span> <span class="org-constant">null</span>
+  <span class="org-rainbow-delimiters-depth-3">}</span> <span class="org-keyword">else</span> <span class="org-rainbow-delimiters-depth-3">{</span>
+    <span class="org-keyword">return</span> <span class="org-rainbow-delimiters-depth-4">{</span>
+      series: rseq<span class="org-rainbow-delimiters-depth-5">(</span><span class="org-highlight-numbers-number">10</span><span class="org-rainbow-delimiters-depth-5">)</span>.map<span class="org-rainbow-delimiters-depth-5">(</span>r =&gt; <span class="org-rainbow-delimiters-depth-6">{</span> <span class="org-keyword">return</span> <span class="org-rainbow-delimiters-depth-7">{</span> point: r <span class="org-rainbow-delimiters-depth-7">}</span> <span class="org-rainbow-delimiters-depth-6">}</span><span class="org-rainbow-delimiters-depth-5">)</span>,
+      peakTime: <span class="org-rainbow-delimiters-depth-5">{</span> point: <span class="org-highlight-numbers-number">12</span> + getRandomInt<span class="org-rainbow-delimiters-depth-6">(</span><span class="org-highlight-numbers-number">5</span><span class="org-rainbow-delimiters-depth-6">)</span> <span class="org-rainbow-delimiters-depth-5">}</span>,
+      onsetTime: <span class="org-rainbow-delimiters-depth-5">{</span> point: <span class="org-highlight-numbers-number">8</span> + getRandomInt<span class="org-rainbow-delimiters-depth-6">(</span><span class="org-highlight-numbers-number">5</span><span class="org-rainbow-delimiters-depth-6">)</span> <span class="org-rainbow-delimiters-depth-5">}</span>,
+      peakValue: <span class="org-rainbow-delimiters-depth-5">{</span> point: Math.random<span class="org-rainbow-delimiters-depth-6">()</span> <span class="org-rainbow-delimiters-depth-5">}</span>
+    <span class="org-rainbow-delimiters-depth-4">}</span>
+  <span class="org-rainbow-delimiters-depth-3">}</span>
+<span class="org-rainbow-delimiters-depth-2">}</span><span class="org-rainbow-delimiters-depth-1">)</span>
+
+</pre>
+</div>
+
+<p>
+For showing the onset value, we also need to pass a config option <code>{ onset: true
+}</code> to the timeChart so that the onset panel is displayed just above the x axis.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-keyword">let</span> <span class="org-variable-name">dataWithPeakOnset</span> = <span class="org-rainbow-delimiters-depth-1">{</span>
+  timePoints,
+  models: <span class="org-rainbow-delimiters-depth-2">[</span>
+    <span class="org-rainbow-delimiters-depth-3">{</span>
+      id: <span class="org-string">'mod'</span>,
+      meta: <span class="org-rainbow-delimiters-depth-4">{</span>
+        name: <span class="org-string">'Name'</span>,
+        description: <span class="org-string">'Model description here'</span>,
+        url: <span class="org-string">'https://github.com'</span>
+      <span class="org-rainbow-delimiters-depth-4">}</span>,
+      predictions: predictionsWithPeakOnset
+    <span class="org-rainbow-delimiters-depth-3">}</span>
+  <span class="org-rainbow-delimiters-depth-2">]</span>
+<span class="org-rainbow-delimiters-depth-1">}</span>
+
+<span class="org-keyword">let</span> <span class="org-variable-name">configOnset</span> = Object.assign<span class="org-rainbow-delimiters-depth-1">(</span>copy<span class="org-rainbow-delimiters-depth-2">(</span>config<span class="org-rainbow-delimiters-depth-2">)</span>, <span class="org-rainbow-delimiters-depth-2">{</span> onset: <span class="org-constant">true</span> <span class="org-rainbow-delimiters-depth-2">}</span><span class="org-rainbow-delimiters-depth-1">)</span>
+<span class="org-keyword">let</span> <span class="org-variable-name">tcPeakOnset</span> = <span class="org-keyword">new</span> <span class="org-type">d3Foresight.TimeChart</span><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">'#tc-peak-onset'</span>, configOnset<span class="org-rainbow-delimiters-depth-1">)</span>
+tcPeakOnset.plot<span class="org-rainbow-delimiters-depth-1">(</span>dataWithPeakOnset<span class="org-rainbow-delimiters-depth-1">)</span>
+tcPeakOnset.update<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">10</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<br><br>
+<div id="tc-peak-onset"></div>
+</div>
+</div>
+
+<div id="outline-container-org2bc8e6c" class="outline-4">
+<h4 id="timechart-adding-components-additional-lines"><a id="org2bc8e6c"></a>Additional lines</h4>
+<div class="outline-text-4" id="text-timechart-adding-components-additional-lines">
+<p>
+Starting from <code>v0.10.0</code>, you can add extra lines to be shown in the plot. To keep
+the library backward compatible, you need to provide the extra data as another
+key in the data object that you send to the <code>plot</code> function. Here is an example
+and specification of the structure that we expect:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-keyword">let</span> <span class="org-variable-name">tcAdditional</span> = <span class="org-keyword">new</span> <span class="org-type">d3Foresight.TimeChart</span><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">'#timechart-additional'</span>, config<span class="org-rainbow-delimiters-depth-1">)</span>
+
+<span class="org-keyword">let</span> <span class="org-variable-name">additionalLines</span> = <span class="org-rainbow-delimiters-depth-1">[</span>
+  <span class="org-rainbow-delimiters-depth-2">{</span>
+    id: <span class="org-string">'Extra 1'</span>,
+    data: <span class="org-highlight-numbers-number">1</span>.<span class="org-highlight-numbers-number">53</span>, <span class="org-comment-delimiter">// </span><span class="org-comment">Scalar makes it show up as horizontal line</span>
+    style: <span class="org-rainbow-delimiters-depth-3">{</span> <span class="org-comment-delimiter">// </span><span class="org-comment">Optional style parameter</span>
+      color: <span class="org-string">'red'</span>,
+      point: <span class="org-rainbow-delimiters-depth-4">{</span>
+        <span class="org-comment-delimiter">// </span><span class="org-comment">Optional parameter for styling the dots</span>
+      <span class="org-rainbow-delimiters-depth-4">}</span>,
+      line: <span class="org-rainbow-delimiters-depth-4">{</span>
+        <span class="org-comment-delimiter">// </span><span class="org-comment">Style for the main line</span>
+        <span class="org-string">'stroke-dasharray'</span>: <span class="org-string">'5,5'</span>
+      <span class="org-rainbow-delimiters-depth-4">}</span>
+    <span class="org-rainbow-delimiters-depth-3">}</span>,
+    meta: <span class="org-rainbow-delimiters-depth-3">{</span>
+      <span class="org-comment-delimiter">// </span><span class="org-comment">Similar to what is used in models, all optional</span>
+      name: <span class="org-string">'Extra baseline'</span>,
+      description: <span class="org-string">'This is an additional baseline'</span>,
+      url: <span class="org-string">'https://github.com'</span>
+    <span class="org-rainbow-delimiters-depth-3">}</span>,
+    tooltip: <span class="org-constant">false</span>, <span class="org-comment-delimiter">// </span><span class="org-comment">Should the value show up in tooltip (false by default or when absent)</span>
+    legend: <span class="org-constant">true</span> <span class="org-comment-delimiter">// </span><span class="org-comment">Should the value show up in legend (true by default or when absent)</span>
+  <span class="org-rainbow-delimiters-depth-2">}</span>,
+  <span class="org-rainbow-delimiters-depth-2">{</span>
+    id: <span class="org-string">'Extra 2'</span>,
+    data: rseq<span class="org-rainbow-delimiters-depth-3">(</span><span class="org-highlight-numbers-number">51</span><span class="org-rainbow-delimiters-depth-3">)</span>, <span class="org-comment-delimiter">// </span><span class="org-comment">Structure similar to like the actual array</span>
+    style: <span class="org-rainbow-delimiters-depth-3">{</span>
+      color: <span class="org-string">'#9b59b6'</span>,
+      point: <span class="org-rainbow-delimiters-depth-4">{</span>
+        r: <span class="org-highlight-numbers-number">0</span>
+      <span class="org-rainbow-delimiters-depth-4">}</span>
+    <span class="org-rainbow-delimiters-depth-3">}</span>,
+    tooltip: <span class="org-constant">true</span>
+  <span class="org-rainbow-delimiters-depth-2">}</span>
+<span class="org-rainbow-delimiters-depth-1">]</span>
+
+tcAdditional.plot<span class="org-rainbow-delimiters-depth-1">(</span>Object.assign<span class="org-rainbow-delimiters-depth-2">(</span>copy<span class="org-rainbow-delimiters-depth-3">(</span>data<span class="org-rainbow-delimiters-depth-3">)</span>, <span class="org-rainbow-delimiters-depth-3">{</span> additionalLines <span class="org-rainbow-delimiters-depth-3">}</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+tcAdditional.update<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">10</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<br><br>
+<div id="timechart-additional"></div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4c6d498" class="outline-3">
+<h3 id="timechart-dvt"><a id="org4c6d498"></a>Data Version Time and Timezero</h3>
+<div class="outline-text-3" id="text-timechart-dvt">
+<p>
+There are two possible reference times for a prediction by a particular model:
+</p>
+
+<ol class="org-ol">
+<li><i>Timezero</i>: The time with respect to which the forecasts are made. For example,
+if a model predicts 3 steps ahead values of <code>[1.0, 1.2, 0.5]</code> with a timezero
+of <code>t</code>, then we say that the predicted values are for time steps <code>t + 1</code>, <code>t + 2</code>,
+and <code>t + 3</code>.</li>
+<li><i>Data Version Time</i>: Specifies the data at a particular version (given by the
+<i>time</i> value) the model looked at while making its prediction.</li>
+</ol>
+
+<p>
+In a usual prediction task, when we are a time <code>t</code>, our predictions are made by
+considering <code>t</code> as the <i>timezero</i> <b>and</b> the <i>data version time</i>. The <i>data version time</i>
+is displayed using a gray shaded region (covering all the data that the model
+looked at) and a boundary text 'Data as of'. The timezero line is shown as a
+separate dashed vertical line with text 'Timezero'.
+</p>
+
+<p>
+When both times are the same, only data version time is displayed. In case the
+user provides data version times separately for each prediction, both times are
+shown since they <i>might</i> be different. You can also override the display of the
+<i>timezero</i> line by passing a Boolean key in either the <i>options</i> parameter (passed
+when initializing the plot) or the data parameter (passed when calling the <i>plot</i>
+function):
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js">...
+  timezeroLine: <span class="org-constant">true</span>
+...
+</pre>
+</div>
+
+<p>
+Here is an example plot where user passes in additional data version. Note that
+the <code>dataVersionTime</code> values are <i>not</i> indices for the <code>timePoints</code> array but date
+time values themselves. We first define the function that adds dummy data
+version time to all the predictions.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-comment-delimiter">// </span><span class="org-comment">Lets just add 2 to the timezeros for dvds</span>
+<span class="org-keyword">function</span> <span class="org-function-name">addDvts</span> <span class="org-rainbow-delimiters-depth-1">(</span><span class="org-variable-name">data</span><span class="org-rainbow-delimiters-depth-1">)</span> <span class="org-rainbow-delimiters-depth-1">{</span>
+  <span class="org-keyword">let</span> <span class="org-variable-name">dvts</span> = data.timePoints.map<span class="org-rainbow-delimiters-depth-2">(</span>tp =&gt; <span class="org-rainbow-delimiters-depth-3">{</span>
+    <span class="org-keyword">return</span> <span class="org-rainbow-delimiters-depth-4">{</span> week: tp.week + <span class="org-highlight-numbers-number">2</span>, year: tp.year <span class="org-rainbow-delimiters-depth-4">}</span>
+  <span class="org-rainbow-delimiters-depth-3">}</span><span class="org-rainbow-delimiters-depth-2">)</span>
+
+  data.models.forEach<span class="org-rainbow-delimiters-depth-2">(</span>m =&gt; <span class="org-rainbow-delimiters-depth-3">{</span>
+    m.predictions.forEach<span class="org-rainbow-delimiters-depth-4">(</span><span class="org-rainbow-delimiters-depth-5">(</span>p, idx<span class="org-rainbow-delimiters-depth-5">)</span> =&gt; <span class="org-rainbow-delimiters-depth-5">{</span>
+      <span class="org-keyword">if</span> <span class="org-rainbow-delimiters-depth-6">(</span>p<span class="org-rainbow-delimiters-depth-6">)</span> <span class="org-rainbow-delimiters-depth-6">{</span>
+        p.dataVersionTime = dvts<span class="org-rainbow-delimiters-depth-7">[</span>idx<span class="org-rainbow-delimiters-depth-7">]</span>
+      <span class="org-rainbow-delimiters-depth-6">}</span>
+    <span class="org-rainbow-delimiters-depth-5">}</span><span class="org-rainbow-delimiters-depth-4">)</span>
+  <span class="org-rainbow-delimiters-depth-3">}</span><span class="org-rainbow-delimiters-depth-2">)</span>
+
+  <span class="org-keyword">return</span> data
+<span class="org-rainbow-delimiters-depth-1">}</span>
+
+<span class="org-keyword">let</span> <span class="org-variable-name">tcDvd</span> = <span class="org-keyword">new</span> <span class="org-type">d3Foresight.TimeChart</span><span class="org-rainbow-delimiters-depth-1">(</span><span class="org-string">'#timechart-dvt-plot'</span>, config<span class="org-rainbow-delimiters-depth-1">)</span>
+
+tcDvd.plot<span class="org-rainbow-delimiters-depth-1">(</span>addDvts<span class="org-rainbow-delimiters-depth-2">(</span>copy<span class="org-rainbow-delimiters-depth-3">(</span>data<span class="org-rainbow-delimiters-depth-3">)</span><span class="org-rainbow-delimiters-depth-2">)</span><span class="org-rainbow-delimiters-depth-1">)</span>
+tcDvd.update<span class="org-rainbow-delimiters-depth-1">(</span><span class="org-highlight-numbers-number">10</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<br><br>
+<div id="timechart-dvt-plot"></div>
+</div>
+</div>
+
+<div id="outline-container-org98c6021" class="outline-3">
+<h3 id="timechart-config"><a id="org98c6021"></a><span class="todo TODO">TODO</span> All config and data options</h3>
+<div class="outline-text-3" id="text-timechart-config">
+<p>
+Possible options to the constructor are described below:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-keyword">let</span> <span class="org-variable-name">options</span> = <span class="org-rainbow-delimiters-depth-1">{</span>
+  baseline: <span class="org-rainbow-delimiters-depth-2">{</span>
+    text: <span class="org-rainbow-delimiters-depth-3">[</span><span class="org-string">'CDC'</span>, <span class="org-string">'Baseline'</span><span class="org-rainbow-delimiters-depth-3">]</span>, <span class="org-comment-delimiter">// </span><span class="org-comment">A list of strings creates multiline text</span>
+    description: <span class="org-string">`Baseline ILI value as defined by CDC.</span>
+<span class="org-string">                    &lt;br&gt;&lt;br&gt;&lt;em&gt;Click to know more&lt;/em&gt;`</span>,
+    url: <span class="org-string">'http://www.cdc.gov/flu/weekly/overview.htm'</span> <span class="org-comment-delimiter">// </span><span class="org-comment">url is optional</span>
+  <span class="org-rainbow-delimiters-depth-2">}</span>,
+  axes: <span class="org-rainbow-delimiters-depth-2">{</span>
+    x: <span class="org-rainbow-delimiters-depth-3">{</span>
+      title: <span class="org-rainbow-delimiters-depth-4">[</span><span class="org-string">'Epidemic'</span>, <span class="org-string">'Week'</span><span class="org-rainbow-delimiters-depth-4">]</span>,
+      description: <span class="org-string">`Week of the calendar year, as measured by the CDC.</span>
+<span class="org-string">                      &lt;br&gt;&lt;br&gt;&lt;em&gt;Click to know more&lt;/em&gt;`</span>,
+      url: <span class="org-string">'https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf'</span>
+    <span class="org-rainbow-delimiters-depth-3">}</span>,
+    y: <span class="org-rainbow-delimiters-depth-3">{</span>
+      title: <span class="org-string">'Weighted ILI (%)'</span>,
+      description: <span class="org-string">`Percentage of outpatient doctor visits for</span>
+<span class="org-string">                      influenza-like illness, weighted by state population.</span>
+<span class="org-string">                      &lt;br&gt;&lt;br&gt;&lt;em&gt;Click to know more&lt;/em&gt;`</span>,
+      url: <span class="org-string">'http://www.cdc.gov/flu/weekly/overview.htm'</span>,
+      domain: <span class="org-rainbow-delimiters-depth-4">[</span><span class="org-highlight-numbers-number">0</span>, <span class="org-highlight-numbers-number">13</span><span class="org-rainbow-delimiters-depth-4">]</span> <span class="org-comment-delimiter">// </span><span class="org-comment">For explicitly clipping the y values</span>
+    <span class="org-rainbow-delimiters-depth-3">}</span>
+  <span class="org-rainbow-delimiters-depth-2">}</span>,
+  pointType: <span class="org-string">'mmwr-week'</span>,
+  confidenceIntervals: <span class="org-rainbow-delimiters-depth-2">[</span><span class="org-string">'90%'</span>, <span class="org-string">'50%'</span><span class="org-rainbow-delimiters-depth-2">]</span>, <span class="org-comment-delimiter">// </span><span class="org-comment">List of ci labels</span>
+  onset: <span class="org-constant">true</span>, <span class="org-comment-delimiter">// </span><span class="org-comment">Whether to show onset panel or not</span>
+  timezeroLine: <span class="org-constant">false</span> <span class="org-comment-delimiter">// </span><span class="org-comment">Whether to show the timezeroLine, skipping this makes us fall back to the</span>
+                      <span class="org-comment-delimiter">// </span><span class="org-comment">behavior based presence of data version time</span>
+<span class="org-rainbow-delimiters-depth-1">}</span>
+</pre>
+</div>
+
+<p>
+<i>Options for plotting go here</i>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7cadc90" class="outline-2">
+<h2 id="distributionchart"><a id="org7cadc90"></a><span class="todo TODO">TODO</span> DistributionChart</h2>
+<div class="outline-text-2" id="text-distributionchart">
+
+<figure>
+<img src="./distchart.png" alt="distchart.png">
+
+<figcaption><span class="figure-number">Figure 2: </span><code>DistributionChart</code> displays probability distributions for the prediction targets</figcaption>
+</figure>
+</div>
+</div>
+
+<div id="outline-container-org3656923" class="outline-2">
+<h2 id="hooks"><a id="org3656923"></a>Hooks</h2>
+<div class="outline-text-2" id="text-hooks">
+<p>
+Charts can call user defined functions when movement events are triggered inside
+(e.g. by clicking on movement buttons or clicking on the overlay). To register
+your functions to be called on these events, you can use <code>addHook</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js">timeChart.addHook<span class="org-rainbow-delimiters-depth-1">(</span>d3Foresight.events.JUMP_TO_INDEX, index =&gt; <span class="org-rainbow-delimiters-depth-2">{</span>
+  <span class="org-comment-delimiter">// </span><span class="org-comment">This is triggered when an event moves the</span>
+  <span class="org-comment-delimiter">// </span><span class="org-comment">visualization to certain `index` in `timePoints`</span>
+
+  <span class="org-comment-delimiter">// </span><span class="org-comment">Current index is `timeChart.currentIdx`</span>
+  console.log<span class="org-rainbow-delimiters-depth-3">(</span><span class="org-string">'chart moved to '</span> + index<span class="org-rainbow-delimiters-depth-3">)</span>
+<span class="org-rainbow-delimiters-depth-2">}</span><span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+<p>
+<code>addHook</code> returns a subscription token which can then be used to revoke that
+hook using <code>removeHook</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-js"><span class="org-keyword">let</span> <span class="org-variable-name">token</span> = timeChart.addHook<span class="org-rainbow-delimiters-depth-1">(</span>
+  d3Foresight.events.JUMP_TO_INDEX,
+  index =&gt; console.log<span class="org-rainbow-delimiters-depth-2">(</span><span class="org-string">`Now at ${index}`</span><span class="org-rainbow-delimiters-depth-2">)</span>
+<span class="org-rainbow-delimiters-depth-1">)</span>
+timeChart.removeHook<span class="org-rainbow-delimiters-depth-1">(</span>token<span class="org-rainbow-delimiters-depth-1">)</span>
+</pre>
+</div>
+
+
+<br><br>
+</div>
+</div>
+</div>
+</body>
+</html>

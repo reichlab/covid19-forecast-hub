@@ -1,11 +1,12 @@
 import * as types from './mutation-types'
 import * as d3 from 'd3'
 import * as util from '../util'
+import * as getters from './getters'
 import {
   TimeChart,
   DistributionChart,
   events
-} from './d3-foresight'
+} from '../../covid-d3-foresight/dist/d3-foresight'
 
 // Initializations
 // ---------------
@@ -186,7 +187,8 @@ export const initTimeChart = ({
         url: 'https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf'
       },
       y: {
-        title: 'Cumulative Deaths',
+        //title: 'Cumulative Deaths',
+        title: getters.selectedSeasonId,
         description: `Cumulative deaths due to COVID-19
                       <br><br><em>Click to know more</em>`,
         url: 'https://github.com/reichlab/covid19-death-forecasts',
@@ -201,7 +203,6 @@ export const initTimeChart = ({
   // Clear div
   d3.select(divSelector).selectAll('*').remove()
   let timeChart = new TimeChart(divSelector, timeChartOptions)
-  console.log(timeChart.yAxis)
 
   timeChart.addHook(events.JUMP_TO_INDEX, (index) => {
     dispatch('weeks/updateSelectedWeek', index)
@@ -256,6 +257,7 @@ export const plotTimeChart = ({
   getters
 }) => {
   if (getters.timeChart) {
+    getters.timeChart.updateYAxisTitle(getters.selectedSeasonId)
     getters.timeChart.plot(getters.timeChartData)
     dispatch('weeks/readjustSelectedWeek')
     dispatch('updateTimeChart')

@@ -1,0 +1,30 @@
+.overlay {
+  cursor: pointer;
+}
+
+.timerect {
+  fill: $white-shade;
+}
+
+.timezero-line {
+  stroke: $hover-line;
+  stroke-dasharray: 10 5;
+  stroke-width: 1px;
+}
+
+.data-version-text, .timezero-text {
+  fill: $gray-light;
+  font-size: 10px;
+}
+
+.now-line {
+  stroke: $black;
+  stroke-dasharray: 10 5;
+  stroke-width: 1px;
+}
+
+.now-text {
+  fill: $gray-light;
+  font-size: 10px;
+  text-transform: uppercase;
+}

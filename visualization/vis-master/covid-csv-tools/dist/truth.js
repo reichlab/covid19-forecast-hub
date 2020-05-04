@@ -117,8 +117,9 @@ function getSeasonData(season, lag) {
     //   return yield u.cache.readFromCache(cacheFile);
     // } else {
     //let data = yield delphi.requestSeasonData(season, lag);
-    let data = yield readJSON('covid-csv-tools/dist/state_actual/'.concat(season.toString(), '.json'))
-    // if (data.message === 'success') {
+    let data = yield readJSON(('covid-csv-tools/dist/truth/'.concat(season, '.json')).toString())
+
+    // if (data.message === 'success') { 
     let formattedData = data
       .sort((a, b) => a.epiweek - b.epiweek)
       .reduce((acc, {
@@ -166,6 +167,7 @@ function getSeasonDataAllLags(season) {
     let lags = [...Array(52).keys()];
     let latestData = (yield getSeasonData(season));
     let lagData = yield Promise.all(lags.map(l => getSeasonData(season, l)));
+
     meta_1.stateIds.forEach(rid => {
       latestData[rid].forEach(({
         epiweek,
@@ -267,10 +269,11 @@ function getSeasonTruth(season, lag) {
     // This is mosty probably not going to be costly, so we collect the whole next
     // season data and jam it to the current season
     let nextSeasonData;
-    if (seasonData && (season < u.epiweek.currentSeasonId())) {
-      nextSeasonData = yield getSeasonData(season + 1, lag);
+    let seasonCSV = 2019;
+    if (seasonData && (seasonCSV < u.epiweek.currentSeasonId())) {
+      nextSeasonData = yield getSeasonData(seasonCSV + 1, lag);
     }
-    let allEpiweeks = u.epiweek.seasonEpiweeks(season);
+    let allEpiweeks = u.epiweek.seasonEpiweeks(seasonCSV);
     let truth = {};
     for (let state of meta_1.stateIds) {
       let stateSub = seasonData ? seasonData[state] : [];

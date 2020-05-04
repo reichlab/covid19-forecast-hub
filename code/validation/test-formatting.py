@@ -1,4 +1,4 @@
-from zoltpy.quantile import validate_quantile_csv_file
+from zoltpy.covid19 import validate_quantile_csv_file
 import glob
 from pprint import pprint
 import sys
@@ -20,7 +20,7 @@ def check_for_metadata(my_path):
 
 
 # Check forecast formatting
-def check_formatting(my_path, ignore_files):
+def check_formatting(my_path):
     output_errors = {}
     df = pd.read_csv('code/validation/validated_files.csv')
     previous_checked = list(df['file_path'])
@@ -28,15 +28,14 @@ def check_formatting(my_path, ignore_files):
     for path in glob.iglob(my_path + "**/**/", recursive=False):
         for filepath in glob.iglob(path + "*.csv", recursive=False):
             if filepath not in previous_checked:
-                if filepath not in ignore_files:
-                    file_error = validate_quantile_csv_file(filepath)
-                    if file_error != 'no errors':
-                        output_errors[filepath] = file_error
-                    else:
-                        # add to previously checked files
-                        current_time = datetime.datetime.now()
-                        df = df.append({'file_path': filepath,
-                                        'validation_date': current_time}, ignore_index=True)
+                file_error = validate_quantile_csv_file(filepath)
+                if file_error != 'no errors':
+                    output_errors[filepath] = file_error
+                else:
+                    # add to previously checked files
+                    current_time = datetime.datetime.now()
+                    df = df.append({'file_path': filepath,
+                                    'validation_date': current_time}, ignore_index=True)
     # update previously checked files
     df.to_csv('code/validation/validated_files.csv', index=False)
 
@@ -53,11 +52,8 @@ def check_formatting(my_path, ignore_files):
 
 def main():
     my_path = "./data-processed"
-    ignore_files = ['./data-processed/Imperial-ensemble2/Imperial-forecast-dates.csv',
-                    './data-processed/COVIDhub-ensemble/COVIDhub-ensemble-information.csv',
-                    './data-processed/Imperial-ensemble1/Imperial-forecast-dates.csv']
     check_for_metadata(my_path)
-    check_formatting(my_path, ignore_files)
+    check_formatting(my_path)
 
 
 if __name__ == "__main__":
