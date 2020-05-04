@@ -9,7 +9,7 @@ inclusion_dates <- as.Date("2020-04-27") - 0:3
 models_to_exclude <- c("CU-nointerv", "JHU_IDD-CovidSP")
 
 ## get truth data
-obs_data <- read_csv("../covid19-forecast-hub/data-truth/truth-cum-death.csv") %>%
+obs_data <- read_csv("../covid19-forecast-hub/data-truth/truth-Cumulative Deaths.csv") %>%
     mutate(wk_end_date = as.Date(date, "%m/%d/%y"),
       location_name = ifelse(location == 'US', 'National', location_name)) %>%
     select(-date) %>%

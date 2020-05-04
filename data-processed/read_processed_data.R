@@ -66,8 +66,8 @@ all_data = read_my_dir(".", "*.csv",
                 into = c("period","team","model",
                          "year","month","day","team2","model_etc"),
                 exclude = c("./COVIDhub-ensemble/COVIDhub-ensemble-information.csv",
-                            "./truth-cum-death.csv",
-                            "./zoltar-truth-cum-death.csv",
+                            "./truth-Cumulative Deaths.csv",
+                            "./zoltar-truth-Cumulative Deaths.csv",
                             "./Imperial-ensemble1/Imperial-forecast-dates.csv",
                             "./Imperial-ensemble2/Imperial-forecast-dates.csv")) %>%
   

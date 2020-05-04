@@ -9,7 +9,7 @@ This README provides an overview of the project. Additional specific links can b
 * [Ensemble model](#ensemble-model)
 * [Raw forecast data](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-raw)
 * [Processed forecast data](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed)
-* [Truth data](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-truth/truth-cum-death.csv)
+* [Truth data](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-truth/)
 * [Technical README with detailed submission instructions](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md)
 
 <a href = "https://reichlab.io/covid19-forecast-hub/">
