@@ -180,7 +180,7 @@ deathSummaryFinal2 <- deathSummaryFinal %>%
   filter(str_detect(target, "wk ahead inc", negate = TRUE)) %>%
   rbind(week_ahead) %>%
   arrange(location_name, str_detect(target, "wk"), target, type, quantile) %>%
-  mutate(quantile = ifelse(is.na(quantile), NA, round(quantile(3))))
+  mutate(quantile = ifelse(is.na(quantile), NA, round(quantile, 3)))
 
 
 ###############################################################################
