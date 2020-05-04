@@ -7,8 +7,8 @@ library(tidyverse)
 source("code/processing-fxns/process_imperial_file.R")
 
 ## this reads in an RDS file provided by the Imperial team  on April 11
-ens_preds <- readRDS("./data-raw/Imperial/20200426-ensemble_model_predictions.rds")
-forecast_date = as.Date("2020-04-26")
+ens_preds <- readRDS("./data-raw/Imperial/20200503-ensemble_model_predictions.rds")
+forecast_date = as.Date("2020-05-03")
 
 ## the object is a big list, with one element for each of the 5 times forecasts were made
 ## each of those elements is itself a list, with one element for each country
