@@ -68,10 +68,11 @@ latest_quantiles_summary <- latest_quantiles %>%
 
 offset <- 0 # currently 7 for testing, but should be 0
 ensemble_data <- latest %>%
-  filter( (target_end_date == get_next_saturday(Sys.Date()-offset) & grepl("1 wk", target)) |
-            (target_end_date == get_next_saturday(Sys.Date()+ 7-offset) & grepl("2 wk", target))|
-            (target_end_date == get_next_saturday(Sys.Date()+14-offset) & grepl("3 wk", target))|
-            (target_end_date == get_next_saturday(Sys.Date()+21-offset) & grepl("4 wk", target)))
+  filter(forecast_date > get_next_saturday(Sys.Date())-9)
+  # filter( (target_end_date == get_next_saturday(Sys.Date()-offset) & grepl("1 wk", target)) |
+  #           (target_end_date == get_next_saturday(Sys.Date()+ 7-offset) & grepl("2 wk", target))|
+  #           (target_end_date == get_next_saturday(Sys.Date()+14-offset) & grepl("3 wk", target))|
+  #           (target_end_date == get_next_saturday(Sys.Date()+21-offset) & grepl("4 wk", target)))
 
 
 ensemble <- ensemble_data %>%
@@ -80,7 +81,9 @@ ensemble <- ensemble_data %>%
   dplyr::summarize(
     median    = ifelse(any(quantile == 0.5, na.rm = TRUE), "Yes", "-"),
     cum_death = ifelse(all(paste(1:4, "wk ahead cum death") %in% target), "Yes", "-"),
-    inc_death = ifelse(all(paste(1:4, "wk ahead inc death") %in% target), "Yes", "-")
+    inc_death = ifelse(all(paste(1:4, "wk ahead inc death") %in% target), "Yes", "-"),
+    has_US    = ifelse("US" %in% fips_alpha, "Yes", "-"),
+    has_states = ifelse(all(state.abb %in% fips_alpha), "Yes", "-")
   )
 
 ensemble_quantiles <- ensemble_data %>%
@@ -90,8 +93,9 @@ ensemble_quantiles <- ensemble_data %>%
   mutate(yes = "Yes",
          quantile = as.character(quantile)) 
 
-g_ensemble_quantiles <- ggplot(ensemble_quantiles, 
-                               aes(x = quantile, y = model, fill = yes)) +
+g_ensemble_quantiles <- ggplot(ensemble_quantiles %>%
+                                 mutate(team_model = paste0(team,model,sep="-")), 
+                               aes(x = quantile, y = team_model, fill = yes)) +
   geom_tile() +
   theme_bw() + 
   theme(legend.position = "none",
