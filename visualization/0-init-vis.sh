@@ -4,7 +4,8 @@
 set -e
 
 # Parse data model data files to flusight format
-../npm install
+cd ../
+npm install
 cd ./visualization
 npm install
 yarn
@@ -16,14 +17,14 @@ rm -r ./data/Cumulative\ Deaths/CU-nointerv
 rm -r ./data/Incident\ Deaths/CU-nointerv
 
 # Remove NotreDame-FRED
-rm -r ./data/Cumulative\ Deaths/NotreDame-FRED
-rm -r ./data/Incident\ Deaths/NotreDame-FRED
+# rm -r ./data/Cumulative\ Deaths/NotreDame-FRED
+# rm -r ./data/Incident\ Deaths/NotreDame-FRED
 
 # Remove Iowa State
-rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM10
-rm -r ./data/Incident\ Deaths/IowaStateLW-STEM10
-rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
-rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
+# rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM10
+# rm -r ./data/Incident\ Deaths/IowaStateLW-STEM10
+# rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
+# rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
 
 # Remove Imperial Incident
 rm -r ./data/Incident\ Deaths/Imperial-Ensemble1
