@@ -36,11 +36,11 @@ export const trimHistory = (historyActual, numWeeks) => {
 export const choroplethDataRange = (seasonsData, relativeToggle) => {
   let maxVals = []
   let minVals = []
+  let range = []
 
   seasonsData.map(seasonData => {
     seasonData.regions.map(regionData => {
       let actual = regionData.actual.map(d => d.actual).filter(d => d)
-
       if (relativeToggle) {
         // Use baseline scaled data
         maxVals.push(Math.max(...actual.map(d => ((d / regionData.baseline) - 1) * 100)))
@@ -52,7 +52,7 @@ export const choroplethDataRange = (seasonsData, relativeToggle) => {
     })
   })
 
-  let range = [Math.min(...minVals), Math.max(...maxVals)]
+  range = [Math.min(...minVals), Math.max(...maxVals)]
 
   // Patch range to work for new season data
   if (relativeToggle) {

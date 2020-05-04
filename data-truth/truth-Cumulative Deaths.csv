@@ -1,0 +1,5769 @@
+date,location,location_name,value
+2020-01-22,01,Alabama,0
+2020-01-22,02,Alaska,0
+2020-01-22,60,American Samoa,0
+2020-01-22,04,Arizona,0
+2020-01-22,05,Arkansas,0
+2020-01-22,06,California,0
+2020-01-22,08,Colorado,0
+2020-01-22,09,Connecticut,0
+2020-01-22,10,Delaware,0
+2020-01-22,11,District of Columbia,0
+2020-01-22,12,Florida,0
+2020-01-22,13,Georgia,0
+2020-01-22,66,Guam,0
+2020-01-22,15,Hawaii,0
+2020-01-22,16,Idaho,0
+2020-01-22,17,Illinois,0
+2020-01-22,18,Indiana,0
+2020-01-22,19,Iowa,0
+2020-01-22,20,Kansas,0
+2020-01-22,21,Kentucky,0
+2020-01-22,22,Louisiana,0
+2020-01-22,23,Maine,0
+2020-01-22,24,Maryland,0
+2020-01-22,25,Massachusetts,0
+2020-01-22,26,Michigan,0
+2020-01-22,27,Minnesota,0
+2020-01-22,28,Mississippi,0
+2020-01-22,29,Missouri,0
+2020-01-22,30,Montana,0
+2020-01-22,31,Nebraska,0
+2020-01-22,32,Nevada,0
+2020-01-22,33,New Hampshire,0
+2020-01-22,34,New Jersey,0
+2020-01-22,35,New Mexico,0
+2020-01-22,36,New York,0
+2020-01-22,37,North Carolina,0
+2020-01-22,38,North Dakota,0
+2020-01-22,69,Northern Mariana Islands,0
+2020-01-22,39,Ohio,0
+2020-01-22,40,Oklahoma,0
+2020-01-22,41,Oregon,0
+2020-01-22,42,Pennsylvania,0
+2020-01-22,72,Puerto Rico,0
+2020-01-22,44,Rhode Island,0
+2020-01-22,45,South Carolina,0
+2020-01-22,46,South Dakota,0
+2020-01-22,47,Tennessee,0
+2020-01-22,48,Texas,0
+2020-01-22,49,Utah,0
+2020-01-22,50,Vermont,0
+2020-01-22,51,Virginia,0
+2020-01-22,53,Washington,0
+2020-01-22,54,West Virginia,0
+2020-01-22,55,Wisconsin,0
+2020-01-22,56,Wyoming,0
+2020-01-22,US,US,0
+2020-01-23,01,Alabama,0
+2020-01-23,02,Alaska,0
+2020-01-23,60,American Samoa,0
+2020-01-23,04,Arizona,0
+2020-01-23,05,Arkansas,0
+2020-01-23,06,California,0
+2020-01-23,08,Colorado,0
+2020-01-23,09,Connecticut,0
+2020-01-23,10,Delaware,0
+2020-01-23,11,District of Columbia,0
+2020-01-23,12,Florida,0
+2020-01-23,13,Georgia,0
+2020-01-23,66,Guam,0
+2020-01-23,15,Hawaii,0
+2020-01-23,16,Idaho,0
+2020-01-23,17,Illinois,0
+2020-01-23,18,Indiana,0
+2020-01-23,19,Iowa,0
+2020-01-23,20,Kansas,0
+2020-01-23,21,Kentucky,0
+2020-01-23,22,Louisiana,0
+2020-01-23,23,Maine,0
+2020-01-23,24,Maryland,0
+2020-01-23,25,Massachusetts,0
+2020-01-23,26,Michigan,0
+2020-01-23,27,Minnesota,0
+2020-01-23,28,Mississippi,0
+2020-01-23,29,Missouri,0
+2020-01-23,30,Montana,0
+2020-01-23,31,Nebraska,0
+2020-01-23,32,Nevada,0
+2020-01-23,33,New Hampshire,0
+2020-01-23,34,New Jersey,0
+2020-01-23,35,New Mexico,0
+2020-01-23,36,New York,0
+2020-01-23,37,North Carolina,0
+2020-01-23,38,North Dakota,0
+2020-01-23,69,Northern Mariana Islands,0
+2020-01-23,39,Ohio,0
+2020-01-23,40,Oklahoma,0
+2020-01-23,41,Oregon,0
+2020-01-23,42,Pennsylvania,0
+2020-01-23,72,Puerto Rico,0
+2020-01-23,44,Rhode Island,0
+2020-01-23,45,South Carolina,0
+2020-01-23,46,South Dakota,0
+2020-01-23,47,Tennessee,0
+2020-01-23,48,Texas,0
+2020-01-23,49,Utah,0
+2020-01-23,50,Vermont,0
+2020-01-23,51,Virginia,0
+2020-01-23,53,Washington,0
+2020-01-23,54,West Virginia,0
+2020-01-23,55,Wisconsin,0
+2020-01-23,56,Wyoming,0
+2020-01-23,US,US,0
+2020-01-24,01,Alabama,0
+2020-01-24,02,Alaska,0
+2020-01-24,60,American Samoa,0
+2020-01-24,04,Arizona,0
+2020-01-24,05,Arkansas,0
+2020-01-24,06,California,0
+2020-01-24,08,Colorado,0
+2020-01-24,09,Connecticut,0
+2020-01-24,10,Delaware,0
+2020-01-24,11,District of Columbia,0
+2020-01-24,12,Florida,0
+2020-01-24,13,Georgia,0
+2020-01-24,66,Guam,0
+2020-01-24,15,Hawaii,0
+2020-01-24,16,Idaho,0
+2020-01-24,17,Illinois,0
+2020-01-24,18,Indiana,0
+2020-01-24,19,Iowa,0
+2020-01-24,20,Kansas,0
+2020-01-24,21,Kentucky,0
+2020-01-24,22,Louisiana,0
+2020-01-24,23,Maine,0
+2020-01-24,24,Maryland,0
+2020-01-24,25,Massachusetts,0
+2020-01-24,26,Michigan,0
+2020-01-24,27,Minnesota,0
+2020-01-24,28,Mississippi,0
+2020-01-24,29,Missouri,0
+2020-01-24,30,Montana,0
+2020-01-24,31,Nebraska,0
+2020-01-24,32,Nevada,0
+2020-01-24,33,New Hampshire,0
+2020-01-24,34,New Jersey,0
+2020-01-24,35,New Mexico,0
+2020-01-24,36,New York,0
+2020-01-24,37,North Carolina,0
+2020-01-24,38,North Dakota,0
+2020-01-24,69,Northern Mariana Islands,0
+2020-01-24,39,Ohio,0
+2020-01-24,40,Oklahoma,0
+2020-01-24,41,Oregon,0
+2020-01-24,42,Pennsylvania,0
+2020-01-24,72,Puerto Rico,0
+2020-01-24,44,Rhode Island,0
+2020-01-24,45,South Carolina,0
+2020-01-24,46,South Dakota,0
+2020-01-24,47,Tennessee,0
+2020-01-24,48,Texas,0
+2020-01-24,49,Utah,0
+2020-01-24,50,Vermont,0
+2020-01-24,51,Virginia,0
+2020-01-24,53,Washington,0
+2020-01-24,54,West Virginia,0
+2020-01-24,55,Wisconsin,0
+2020-01-24,56,Wyoming,0
+2020-01-24,US,US,0
+2020-01-25,01,Alabama,0
+2020-01-25,02,Alaska,0
+2020-01-25,60,American Samoa,0
+2020-01-25,04,Arizona,0
+2020-01-25,05,Arkansas,0
+2020-01-25,06,California,0
+2020-01-25,08,Colorado,0
+2020-01-25,09,Connecticut,0
+2020-01-25,10,Delaware,0
+2020-01-25,11,District of Columbia,0
+2020-01-25,12,Florida,0
+2020-01-25,13,Georgia,0
+2020-01-25,66,Guam,0
+2020-01-25,15,Hawaii,0
+2020-01-25,16,Idaho,0
+2020-01-25,17,Illinois,0
+2020-01-25,18,Indiana,0
+2020-01-25,19,Iowa,0
+2020-01-25,20,Kansas,0
+2020-01-25,21,Kentucky,0
+2020-01-25,22,Louisiana,0
+2020-01-25,23,Maine,0
+2020-01-25,24,Maryland,0
+2020-01-25,25,Massachusetts,0
+2020-01-25,26,Michigan,0
+2020-01-25,27,Minnesota,0
+2020-01-25,28,Mississippi,0
+2020-01-25,29,Missouri,0
+2020-01-25,30,Montana,0
+2020-01-25,31,Nebraska,0
+2020-01-25,32,Nevada,0
+2020-01-25,33,New Hampshire,0
+2020-01-25,34,New Jersey,0
+2020-01-25,35,New Mexico,0
+2020-01-25,36,New York,0
+2020-01-25,37,North Carolina,0
+2020-01-25,38,North Dakota,0
+2020-01-25,69,Northern Mariana Islands,0
+2020-01-25,39,Ohio,0
+2020-01-25,40,Oklahoma,0
+2020-01-25,41,Oregon,0
+2020-01-25,42,Pennsylvania,0
+2020-01-25,72,Puerto Rico,0
+2020-01-25,44,Rhode Island,0
+2020-01-25,45,South Carolina,0
+2020-01-25,46,South Dakota,0
+2020-01-25,47,Tennessee,0
+2020-01-25,48,Texas,0
+2020-01-25,49,Utah,0
+2020-01-25,50,Vermont,0
+2020-01-25,51,Virginia,0
+2020-01-25,53,Washington,0
+2020-01-25,54,West Virginia,0
+2020-01-25,55,Wisconsin,0
+2020-01-25,56,Wyoming,0
+2020-01-25,US,US,0
+2020-01-26,01,Alabama,0
+2020-01-26,02,Alaska,0
+2020-01-26,60,American Samoa,0
+2020-01-26,04,Arizona,0
+2020-01-26,05,Arkansas,0
+2020-01-26,06,California,0
+2020-01-26,08,Colorado,0
+2020-01-26,09,Connecticut,0
+2020-01-26,10,Delaware,0
+2020-01-26,11,District of Columbia,0
+2020-01-26,12,Florida,0
+2020-01-26,13,Georgia,0
+2020-01-26,66,Guam,0
+2020-01-26,15,Hawaii,0
+2020-01-26,16,Idaho,0
+2020-01-26,17,Illinois,0
+2020-01-26,18,Indiana,0
+2020-01-26,19,Iowa,0
+2020-01-26,20,Kansas,0
+2020-01-26,21,Kentucky,0
+2020-01-26,22,Louisiana,0
+2020-01-26,23,Maine,0
+2020-01-26,24,Maryland,0
+2020-01-26,25,Massachusetts,0
+2020-01-26,26,Michigan,0
+2020-01-26,27,Minnesota,0
+2020-01-26,28,Mississippi,0
+2020-01-26,29,Missouri,0
+2020-01-26,30,Montana,0
+2020-01-26,31,Nebraska,0
+2020-01-26,32,Nevada,0
+2020-01-26,33,New Hampshire,0
+2020-01-26,34,New Jersey,0
+2020-01-26,35,New Mexico,0
+2020-01-26,36,New York,0
+2020-01-26,37,North Carolina,0
+2020-01-26,38,North Dakota,0
+2020-01-26,69,Northern Mariana Islands,0
+2020-01-26,39,Ohio,0
+2020-01-26,40,Oklahoma,0
+2020-01-26,41,Oregon,0
+2020-01-26,42,Pennsylvania,0
+2020-01-26,72,Puerto Rico,0
+2020-01-26,44,Rhode Island,0
+2020-01-26,45,South Carolina,0
+2020-01-26,46,South Dakota,0
+2020-01-26,47,Tennessee,0
+2020-01-26,48,Texas,0
+2020-01-26,49,Utah,0
+2020-01-26,50,Vermont,0
+2020-01-26,51,Virginia,0
+2020-01-26,53,Washington,0
+2020-01-26,54,West Virginia,0
+2020-01-26,55,Wisconsin,0
+2020-01-26,56,Wyoming,0
+2020-01-26,US,US,0
+2020-01-27,01,Alabama,0
+2020-01-27,02,Alaska,0
+2020-01-27,60,American Samoa,0
+2020-01-27,04,Arizona,0
+2020-01-27,05,Arkansas,0
+2020-01-27,06,California,0
+2020-01-27,08,Colorado,0
+2020-01-27,09,Connecticut,0
+2020-01-27,10,Delaware,0
+2020-01-27,11,District of Columbia,0
+2020-01-27,12,Florida,0
+2020-01-27,13,Georgia,0
+2020-01-27,66,Guam,0
+2020-01-27,15,Hawaii,0
+2020-01-27,16,Idaho,0
+2020-01-27,17,Illinois,0
+2020-01-27,18,Indiana,0
+2020-01-27,19,Iowa,0
+2020-01-27,20,Kansas,0
+2020-01-27,21,Kentucky,0
+2020-01-27,22,Louisiana,0
+2020-01-27,23,Maine,0
+2020-01-27,24,Maryland,0
+2020-01-27,25,Massachusetts,0
+2020-01-27,26,Michigan,0
+2020-01-27,27,Minnesota,0
+2020-01-27,28,Mississippi,0
+2020-01-27,29,Missouri,0
+2020-01-27,30,Montana,0
+2020-01-27,31,Nebraska,0
+2020-01-27,32,Nevada,0
+2020-01-27,33,New Hampshire,0
+2020-01-27,34,New Jersey,0
+2020-01-27,35,New Mexico,0
+2020-01-27,36,New York,0
+2020-01-27,37,North Carolina,0
+2020-01-27,38,North Dakota,0
+2020-01-27,69,Northern Mariana Islands,0
+2020-01-27,39,Ohio,0
+2020-01-27,40,Oklahoma,0
+2020-01-27,41,Oregon,0
+2020-01-27,42,Pennsylvania,0
+2020-01-27,72,Puerto Rico,0
+2020-01-27,44,Rhode Island,0
+2020-01-27,45,South Carolina,0
+2020-01-27,46,South Dakota,0
+2020-01-27,47,Tennessee,0
+2020-01-27,48,Texas,0
+2020-01-27,49,Utah,0
+2020-01-27,50,Vermont,0
+2020-01-27,51,Virginia,0
+2020-01-27,53,Washington,0
+2020-01-27,54,West Virginia,0
+2020-01-27,55,Wisconsin,0
+2020-01-27,56,Wyoming,0
+2020-01-27,US,US,0
+2020-01-28,01,Alabama,0
+2020-01-28,02,Alaska,0
+2020-01-28,60,American Samoa,0
+2020-01-28,04,Arizona,0
+2020-01-28,05,Arkansas,0
+2020-01-28,06,California,0
+2020-01-28,08,Colorado,0
+2020-01-28,09,Connecticut,0
+2020-01-28,10,Delaware,0
+2020-01-28,11,District of Columbia,0
+2020-01-28,12,Florida,0
+2020-01-28,13,Georgia,0
+2020-01-28,66,Guam,0
+2020-01-28,15,Hawaii,0
+2020-01-28,16,Idaho,0
+2020-01-28,17,Illinois,0
+2020-01-28,18,Indiana,0
+2020-01-28,19,Iowa,0
+2020-01-28,20,Kansas,0
+2020-01-28,21,Kentucky,0
+2020-01-28,22,Louisiana,0
+2020-01-28,23,Maine,0
+2020-01-28,24,Maryland,0
+2020-01-28,25,Massachusetts,0
+2020-01-28,26,Michigan,0
+2020-01-28,27,Minnesota,0
+2020-01-28,28,Mississippi,0
+2020-01-28,29,Missouri,0
+2020-01-28,30,Montana,0
+2020-01-28,31,Nebraska,0
+2020-01-28,32,Nevada,0
+2020-01-28,33,New Hampshire,0
+2020-01-28,34,New Jersey,0
+2020-01-28,35,New Mexico,0
+2020-01-28,36,New York,0
+2020-01-28,37,North Carolina,0
+2020-01-28,38,North Dakota,0
+2020-01-28,69,Northern Mariana Islands,0
+2020-01-28,39,Ohio,0
+2020-01-28,40,Oklahoma,0
+2020-01-28,41,Oregon,0
+2020-01-28,42,Pennsylvania,0
+2020-01-28,72,Puerto Rico,0
+2020-01-28,44,Rhode Island,0
+2020-01-28,45,South Carolina,0
+2020-01-28,46,South Dakota,0
+2020-01-28,47,Tennessee,0
+2020-01-28,48,Texas,0
+2020-01-28,49,Utah,0
+2020-01-28,50,Vermont,0
+2020-01-28,51,Virginia,0
+2020-01-28,53,Washington,0
+2020-01-28,54,West Virginia,0
+2020-01-28,55,Wisconsin,0
+2020-01-28,56,Wyoming,0
+2020-01-28,US,US,0
+2020-01-29,01,Alabama,0
+2020-01-29,02,Alaska,0
+2020-01-29,60,American Samoa,0
+2020-01-29,04,Arizona,0
+2020-01-29,05,Arkansas,0
+2020-01-29,06,California,0
+2020-01-29,08,Colorado,0
+2020-01-29,09,Connecticut,0
+2020-01-29,10,Delaware,0
+2020-01-29,11,District of Columbia,0
+2020-01-29,12,Florida,0
+2020-01-29,13,Georgia,0
+2020-01-29,66,Guam,0
+2020-01-29,15,Hawaii,0
+2020-01-29,16,Idaho,0
+2020-01-29,17,Illinois,0
+2020-01-29,18,Indiana,0
+2020-01-29,19,Iowa,0
+2020-01-29,20,Kansas,0
+2020-01-29,21,Kentucky,0
+2020-01-29,22,Louisiana,0
+2020-01-29,23,Maine,0
+2020-01-29,24,Maryland,0
+2020-01-29,25,Massachusetts,0
+2020-01-29,26,Michigan,0
+2020-01-29,27,Minnesota,0
+2020-01-29,28,Mississippi,0
+2020-01-29,29,Missouri,0
+2020-01-29,30,Montana,0
+2020-01-29,31,Nebraska,0
+2020-01-29,32,Nevada,0
+2020-01-29,33,New Hampshire,0
+2020-01-29,34,New Jersey,0
+2020-01-29,35,New Mexico,0
+2020-01-29,36,New York,0
+2020-01-29,37,North Carolina,0
+2020-01-29,38,North Dakota,0
+2020-01-29,69,Northern Mariana Islands,0
+2020-01-29,39,Ohio,0
+2020-01-29,40,Oklahoma,0
+2020-01-29,41,Oregon,0
+2020-01-29,42,Pennsylvania,0
+2020-01-29,72,Puerto Rico,0
+2020-01-29,44,Rhode Island,0
+2020-01-29,45,South Carolina,0
+2020-01-29,46,South Dakota,0
+2020-01-29,47,Tennessee,0
+2020-01-29,48,Texas,0
+2020-01-29,49,Utah,0
+2020-01-29,50,Vermont,0
+2020-01-29,51,Virginia,0
+2020-01-29,53,Washington,0
+2020-01-29,54,West Virginia,0
+2020-01-29,55,Wisconsin,0
+2020-01-29,56,Wyoming,0
+2020-01-29,US,US,0
+2020-01-30,01,Alabama,0
+2020-01-30,02,Alaska,0
+2020-01-30,60,American Samoa,0
+2020-01-30,04,Arizona,0
+2020-01-30,05,Arkansas,0
+2020-01-30,06,California,0
+2020-01-30,08,Colorado,0
+2020-01-30,09,Connecticut,0
+2020-01-30,10,Delaware,0
+2020-01-30,11,District of Columbia,0
+2020-01-30,12,Florida,0
+2020-01-30,13,Georgia,0
+2020-01-30,66,Guam,0
+2020-01-30,15,Hawaii,0
+2020-01-30,16,Idaho,0
+2020-01-30,17,Illinois,0
+2020-01-30,18,Indiana,0
+2020-01-30,19,Iowa,0
+2020-01-30,20,Kansas,0
+2020-01-30,21,Kentucky,0
+2020-01-30,22,Louisiana,0
+2020-01-30,23,Maine,0
+2020-01-30,24,Maryland,0
+2020-01-30,25,Massachusetts,0
+2020-01-30,26,Michigan,0
+2020-01-30,27,Minnesota,0
+2020-01-30,28,Mississippi,0
+2020-01-30,29,Missouri,0
+2020-01-30,30,Montana,0
+2020-01-30,31,Nebraska,0
+2020-01-30,32,Nevada,0
+2020-01-30,33,New Hampshire,0
+2020-01-30,34,New Jersey,0
+2020-01-30,35,New Mexico,0
+2020-01-30,36,New York,0
+2020-01-30,37,North Carolina,0
+2020-01-30,38,North Dakota,0
+2020-01-30,69,Northern Mariana Islands,0
+2020-01-30,39,Ohio,0
+2020-01-30,40,Oklahoma,0
+2020-01-30,41,Oregon,0
+2020-01-30,42,Pennsylvania,0
+2020-01-30,72,Puerto Rico,0
+2020-01-30,44,Rhode Island,0
+2020-01-30,45,South Carolina,0
+2020-01-30,46,South Dakota,0
+2020-01-30,47,Tennessee,0
+2020-01-30,48,Texas,0
+2020-01-30,49,Utah,0
+2020-01-30,50,Vermont,0
+2020-01-30,51,Virginia,0
+2020-01-30,53,Washington,0
+2020-01-30,54,West Virginia,0
+2020-01-30,55,Wisconsin,0
+2020-01-30,56,Wyoming,0
+2020-01-30,US,US,0
+2020-01-31,01,Alabama,0
+2020-01-31,02,Alaska,0
+2020-01-31,60,American Samoa,0
+2020-01-31,04,Arizona,0
+2020-01-31,05,Arkansas,0
+2020-01-31,06,California,0
+2020-01-31,08,Colorado,0
+2020-01-31,09,Connecticut,0
+2020-01-31,10,Delaware,0
+2020-01-31,11,District of Columbia,0
+2020-01-31,12,Florida,0
+2020-01-31,13,Georgia,0
+2020-01-31,66,Guam,0
+2020-01-31,15,Hawaii,0
+2020-01-31,16,Idaho,0
+2020-01-31,17,Illinois,0
+2020-01-31,18,Indiana,0
+2020-01-31,19,Iowa,0
+2020-01-31,20,Kansas,0
+2020-01-31,21,Kentucky,0
+2020-01-31,22,Louisiana,0
+2020-01-31,23,Maine,0
+2020-01-31,24,Maryland,0
+2020-01-31,25,Massachusetts,0
+2020-01-31,26,Michigan,0
+2020-01-31,27,Minnesota,0
+2020-01-31,28,Mississippi,0
+2020-01-31,29,Missouri,0
+2020-01-31,30,Montana,0
+2020-01-31,31,Nebraska,0
+2020-01-31,32,Nevada,0
+2020-01-31,33,New Hampshire,0
+2020-01-31,34,New Jersey,0
+2020-01-31,35,New Mexico,0
+2020-01-31,36,New York,0
+2020-01-31,37,North Carolina,0
+2020-01-31,38,North Dakota,0
+2020-01-31,69,Northern Mariana Islands,0
+2020-01-31,39,Ohio,0
+2020-01-31,40,Oklahoma,0
+2020-01-31,41,Oregon,0
+2020-01-31,42,Pennsylvania,0
+2020-01-31,72,Puerto Rico,0
+2020-01-31,44,Rhode Island,0
+2020-01-31,45,South Carolina,0
+2020-01-31,46,South Dakota,0
+2020-01-31,47,Tennessee,0
+2020-01-31,48,Texas,0
+2020-01-31,49,Utah,0
+2020-01-31,50,Vermont,0
+2020-01-31,51,Virginia,0
+2020-01-31,53,Washington,0
+2020-01-31,54,West Virginia,0
+2020-01-31,55,Wisconsin,0
+2020-01-31,56,Wyoming,0
+2020-01-31,US,US,0
+2020-02-01,01,Alabama,0
+2020-02-01,02,Alaska,0
+2020-02-01,60,American Samoa,0
+2020-02-01,04,Arizona,0
+2020-02-01,05,Arkansas,0
+2020-02-01,06,California,0
+2020-02-01,08,Colorado,0
+2020-02-01,09,Connecticut,0
+2020-02-01,10,Delaware,0
+2020-02-01,11,District of Columbia,0
+2020-02-01,12,Florida,0
+2020-02-01,13,Georgia,0
+2020-02-01,66,Guam,0
+2020-02-01,15,Hawaii,0
+2020-02-01,16,Idaho,0
+2020-02-01,17,Illinois,0
+2020-02-01,18,Indiana,0
+2020-02-01,19,Iowa,0
+2020-02-01,20,Kansas,0
+2020-02-01,21,Kentucky,0
+2020-02-01,22,Louisiana,0
+2020-02-01,23,Maine,0
+2020-02-01,24,Maryland,0
+2020-02-01,25,Massachusetts,0
+2020-02-01,26,Michigan,0
+2020-02-01,27,Minnesota,0
+2020-02-01,28,Mississippi,0
+2020-02-01,29,Missouri,0
+2020-02-01,30,Montana,0
+2020-02-01,31,Nebraska,0
+2020-02-01,32,Nevada,0
+2020-02-01,33,New Hampshire,0
+2020-02-01,34,New Jersey,0
+2020-02-01,35,New Mexico,0
+2020-02-01,36,New York,0
+2020-02-01,37,North Carolina,0
+2020-02-01,38,North Dakota,0
+2020-02-01,69,Northern Mariana Islands,0
+2020-02-01,39,Ohio,0
+2020-02-01,40,Oklahoma,0
+2020-02-01,41,Oregon,0
+2020-02-01,42,Pennsylvania,0
+2020-02-01,72,Puerto Rico,0
+2020-02-01,44,Rhode Island,0
+2020-02-01,45,South Carolina,0
+2020-02-01,46,South Dakota,0
+2020-02-01,47,Tennessee,0
+2020-02-01,48,Texas,0
+2020-02-01,49,Utah,0
+2020-02-01,50,Vermont,0
+2020-02-01,51,Virginia,0
+2020-02-01,53,Washington,0
+2020-02-01,54,West Virginia,0
+2020-02-01,55,Wisconsin,0
+2020-02-01,56,Wyoming,0
+2020-02-01,US,US,0
+2020-02-02,01,Alabama,0
+2020-02-02,02,Alaska,0
+2020-02-02,60,American Samoa,0
+2020-02-02,04,Arizona,0
+2020-02-02,05,Arkansas,0
+2020-02-02,06,California,0
+2020-02-02,08,Colorado,0
+2020-02-02,09,Connecticut,0
+2020-02-02,10,Delaware,0
+2020-02-02,11,District of Columbia,0
+2020-02-02,12,Florida,0
+2020-02-02,13,Georgia,0
+2020-02-02,66,Guam,0
+2020-02-02,15,Hawaii,0
+2020-02-02,16,Idaho,0
+2020-02-02,17,Illinois,0
+2020-02-02,18,Indiana,0
+2020-02-02,19,Iowa,0
+2020-02-02,20,Kansas,0
+2020-02-02,21,Kentucky,0
+2020-02-02,22,Louisiana,0
+2020-02-02,23,Maine,0
+2020-02-02,24,Maryland,0
+2020-02-02,25,Massachusetts,0
+2020-02-02,26,Michigan,0
+2020-02-02,27,Minnesota,0
+2020-02-02,28,Mississippi,0
+2020-02-02,29,Missouri,0
+2020-02-02,30,Montana,0
+2020-02-02,31,Nebraska,0
+2020-02-02,32,Nevada,0
+2020-02-02,33,New Hampshire,0
+2020-02-02,34,New Jersey,0
+2020-02-02,35,New Mexico,0
+2020-02-02,36,New York,0
+2020-02-02,37,North Carolina,0
+2020-02-02,38,North Dakota,0
+2020-02-02,69,Northern Mariana Islands,0
+2020-02-02,39,Ohio,0
+2020-02-02,40,Oklahoma,0
+2020-02-02,41,Oregon,0
+2020-02-02,42,Pennsylvania,0
+2020-02-02,72,Puerto Rico,0
+2020-02-02,44,Rhode Island,0
+2020-02-02,45,South Carolina,0
+2020-02-02,46,South Dakota,0
+2020-02-02,47,Tennessee,0
+2020-02-02,48,Texas,0
+2020-02-02,49,Utah,0
+2020-02-02,50,Vermont,0
+2020-02-02,51,Virginia,0
+2020-02-02,53,Washington,0
+2020-02-02,54,West Virginia,0
+2020-02-02,55,Wisconsin,0
+2020-02-02,56,Wyoming,0
+2020-02-02,US,US,0
+2020-02-03,01,Alabama,0
+2020-02-03,02,Alaska,0
+2020-02-03,60,American Samoa,0
+2020-02-03,04,Arizona,0
+2020-02-03,05,Arkansas,0
+2020-02-03,06,California,0
+2020-02-03,08,Colorado,0
+2020-02-03,09,Connecticut,0
+2020-02-03,10,Delaware,0
+2020-02-03,11,District of Columbia,0
+2020-02-03,12,Florida,0
+2020-02-03,13,Georgia,0
+2020-02-03,66,Guam,0
+2020-02-03,15,Hawaii,0
+2020-02-03,16,Idaho,0
+2020-02-03,17,Illinois,0
+2020-02-03,18,Indiana,0
+2020-02-03,19,Iowa,0
+2020-02-03,20,Kansas,0
+2020-02-03,21,Kentucky,0
+2020-02-03,22,Louisiana,0
+2020-02-03,23,Maine,0
+2020-02-03,24,Maryland,0
+2020-02-03,25,Massachusetts,0
+2020-02-03,26,Michigan,0
+2020-02-03,27,Minnesota,0
+2020-02-03,28,Mississippi,0
+2020-02-03,29,Missouri,0
+2020-02-03,30,Montana,0
+2020-02-03,31,Nebraska,0
+2020-02-03,32,Nevada,0
+2020-02-03,33,New Hampshire,0
+2020-02-03,34,New Jersey,0
+2020-02-03,35,New Mexico,0
+2020-02-03,36,New York,0
+2020-02-03,37,North Carolina,0
+2020-02-03,38,North Dakota,0
+2020-02-03,69,Northern Mariana Islands,0
+2020-02-03,39,Ohio,0
+2020-02-03,40,Oklahoma,0
+2020-02-03,41,Oregon,0
+2020-02-03,42,Pennsylvania,0
+2020-02-03,72,Puerto Rico,0
+2020-02-03,44,Rhode Island,0
+2020-02-03,45,South Carolina,0
+2020-02-03,46,South Dakota,0
+2020-02-03,47,Tennessee,0
+2020-02-03,48,Texas,0
+2020-02-03,49,Utah,0
+2020-02-03,50,Vermont,0
+2020-02-03,51,Virginia,0
+2020-02-03,53,Washington,0
+2020-02-03,54,West Virginia,0
+2020-02-03,55,Wisconsin,0
+2020-02-03,56,Wyoming,0
+2020-02-03,US,US,0
+2020-02-04,01,Alabama,0
+2020-02-04,02,Alaska,0
+2020-02-04,60,American Samoa,0
+2020-02-04,04,Arizona,0
+2020-02-04,05,Arkansas,0
+2020-02-04,06,California,0
+2020-02-04,08,Colorado,0
+2020-02-04,09,Connecticut,0
+2020-02-04,10,Delaware,0
+2020-02-04,11,District of Columbia,0
+2020-02-04,12,Florida,0
+2020-02-04,13,Georgia,0
+2020-02-04,66,Guam,0
+2020-02-04,15,Hawaii,0
+2020-02-04,16,Idaho,0
+2020-02-04,17,Illinois,0
+2020-02-04,18,Indiana,0
+2020-02-04,19,Iowa,0
+2020-02-04,20,Kansas,0
+2020-02-04,21,Kentucky,0
+2020-02-04,22,Louisiana,0
+2020-02-04,23,Maine,0
+2020-02-04,24,Maryland,0
+2020-02-04,25,Massachusetts,0
+2020-02-04,26,Michigan,0
+2020-02-04,27,Minnesota,0
+2020-02-04,28,Mississippi,0
+2020-02-04,29,Missouri,0
+2020-02-04,30,Montana,0
+2020-02-04,31,Nebraska,0
+2020-02-04,32,Nevada,0
+2020-02-04,33,New Hampshire,0
+2020-02-04,34,New Jersey,0
+2020-02-04,35,New Mexico,0
+2020-02-04,36,New York,0
+2020-02-04,37,North Carolina,0
+2020-02-04,38,North Dakota,0
+2020-02-04,69,Northern Mariana Islands,0
+2020-02-04,39,Ohio,0
+2020-02-04,40,Oklahoma,0
+2020-02-04,41,Oregon,0
+2020-02-04,42,Pennsylvania,0
+2020-02-04,72,Puerto Rico,0
+2020-02-04,44,Rhode Island,0
+2020-02-04,45,South Carolina,0
+2020-02-04,46,South Dakota,0
+2020-02-04,47,Tennessee,0
+2020-02-04,48,Texas,0
+2020-02-04,49,Utah,0
+2020-02-04,50,Vermont,0
+2020-02-04,51,Virginia,0
+2020-02-04,53,Washington,0
+2020-02-04,54,West Virginia,0
+2020-02-04,55,Wisconsin,0
+2020-02-04,56,Wyoming,0
+2020-02-04,US,US,0
+2020-02-05,01,Alabama,0
+2020-02-05,02,Alaska,0
+2020-02-05,60,American Samoa,0
+2020-02-05,04,Arizona,0
+2020-02-05,05,Arkansas,0
+2020-02-05,06,California,0
+2020-02-05,08,Colorado,0
+2020-02-05,09,Connecticut,0
+2020-02-05,10,Delaware,0
+2020-02-05,11,District of Columbia,0
+2020-02-05,12,Florida,0
+2020-02-05,13,Georgia,0
+2020-02-05,66,Guam,0
+2020-02-05,15,Hawaii,0
+2020-02-05,16,Idaho,0
+2020-02-05,17,Illinois,0
+2020-02-05,18,Indiana,0
+2020-02-05,19,Iowa,0
+2020-02-05,20,Kansas,0
+2020-02-05,21,Kentucky,0
+2020-02-05,22,Louisiana,0
+2020-02-05,23,Maine,0
+2020-02-05,24,Maryland,0
+2020-02-05,25,Massachusetts,0
+2020-02-05,26,Michigan,0
+2020-02-05,27,Minnesota,0
+2020-02-05,28,Mississippi,0
+2020-02-05,29,Missouri,0
+2020-02-05,30,Montana,0
+2020-02-05,31,Nebraska,0
+2020-02-05,32,Nevada,0
+2020-02-05,33,New Hampshire,0
+2020-02-05,34,New Jersey,0
+2020-02-05,35,New Mexico,0
+2020-02-05,36,New York,0
+2020-02-05,37,North Carolina,0
+2020-02-05,38,North Dakota,0
+2020-02-05,69,Northern Mariana Islands,0
+2020-02-05,39,Ohio,0
+2020-02-05,40,Oklahoma,0
+2020-02-05,41,Oregon,0
+2020-02-05,42,Pennsylvania,0
+2020-02-05,72,Puerto Rico,0
+2020-02-05,44,Rhode Island,0
+2020-02-05,45,South Carolina,0
+2020-02-05,46,South Dakota,0
+2020-02-05,47,Tennessee,0
+2020-02-05,48,Texas,0
+2020-02-05,49,Utah,0
+2020-02-05,50,Vermont,0
+2020-02-05,51,Virginia,0
+2020-02-05,53,Washington,0
+2020-02-05,54,West Virginia,0
+2020-02-05,55,Wisconsin,0
+2020-02-05,56,Wyoming,0
+2020-02-05,US,US,0
+2020-02-06,01,Alabama,0
+2020-02-06,02,Alaska,0
+2020-02-06,60,American Samoa,0
+2020-02-06,04,Arizona,0
+2020-02-06,05,Arkansas,0
+2020-02-06,06,California,0
+2020-02-06,08,Colorado,0
+2020-02-06,09,Connecticut,0
+2020-02-06,10,Delaware,0
+2020-02-06,11,District of Columbia,0
+2020-02-06,12,Florida,0
+2020-02-06,13,Georgia,0
+2020-02-06,66,Guam,0
+2020-02-06,15,Hawaii,0
+2020-02-06,16,Idaho,0
+2020-02-06,17,Illinois,0
+2020-02-06,18,Indiana,0
+2020-02-06,19,Iowa,0
+2020-02-06,20,Kansas,0
+2020-02-06,21,Kentucky,0
+2020-02-06,22,Louisiana,0
+2020-02-06,23,Maine,0
+2020-02-06,24,Maryland,0
+2020-02-06,25,Massachusetts,0
+2020-02-06,26,Michigan,0
+2020-02-06,27,Minnesota,0
+2020-02-06,28,Mississippi,0
+2020-02-06,29,Missouri,0
+2020-02-06,30,Montana,0
+2020-02-06,31,Nebraska,0
+2020-02-06,32,Nevada,0
+2020-02-06,33,New Hampshire,0
+2020-02-06,34,New Jersey,0
+2020-02-06,35,New Mexico,0
+2020-02-06,36,New York,0
+2020-02-06,37,North Carolina,0
+2020-02-06,38,North Dakota,0
+2020-02-06,69,Northern Mariana Islands,0
+2020-02-06,39,Ohio,0
+2020-02-06,40,Oklahoma,0
+2020-02-06,41,Oregon,0
+2020-02-06,42,Pennsylvania,0
+2020-02-06,72,Puerto Rico,0
+2020-02-06,44,Rhode Island,0
+2020-02-06,45,South Carolina,0
+2020-02-06,46,South Dakota,0
+2020-02-06,47,Tennessee,0
+2020-02-06,48,Texas,0
+2020-02-06,49,Utah,0
+2020-02-06,50,Vermont,0
+2020-02-06,51,Virginia,0
+2020-02-06,53,Washington,0
+2020-02-06,54,West Virginia,0
+2020-02-06,55,Wisconsin,0
+2020-02-06,56,Wyoming,0
+2020-02-06,US,US,0
+2020-02-07,01,Alabama,0
+2020-02-07,02,Alaska,0
+2020-02-07,60,American Samoa,0
+2020-02-07,04,Arizona,0
+2020-02-07,05,Arkansas,0
+2020-02-07,06,California,0
+2020-02-07,08,Colorado,0
+2020-02-07,09,Connecticut,0
+2020-02-07,10,Delaware,0
+2020-02-07,11,District of Columbia,0
+2020-02-07,12,Florida,0
+2020-02-07,13,Georgia,0
+2020-02-07,66,Guam,0
+2020-02-07,15,Hawaii,0
+2020-02-07,16,Idaho,0
+2020-02-07,17,Illinois,0
+2020-02-07,18,Indiana,0
+2020-02-07,19,Iowa,0
+2020-02-07,20,Kansas,0
+2020-02-07,21,Kentucky,0
+2020-02-07,22,Louisiana,0
+2020-02-07,23,Maine,0
+2020-02-07,24,Maryland,0
+2020-02-07,25,Massachusetts,0
+2020-02-07,26,Michigan,0
+2020-02-07,27,Minnesota,0
+2020-02-07,28,Mississippi,0
+2020-02-07,29,Missouri,0
+2020-02-07,30,Montana,0
+2020-02-07,31,Nebraska,0
+2020-02-07,32,Nevada,0
+2020-02-07,33,New Hampshire,0
+2020-02-07,34,New Jersey,0
+2020-02-07,35,New Mexico,0
+2020-02-07,36,New York,0
+2020-02-07,37,North Carolina,0
+2020-02-07,38,North Dakota,0
+2020-02-07,69,Northern Mariana Islands,0
+2020-02-07,39,Ohio,0
+2020-02-07,40,Oklahoma,0
+2020-02-07,41,Oregon,0
+2020-02-07,42,Pennsylvania,0
+2020-02-07,72,Puerto Rico,0
+2020-02-07,44,Rhode Island,0
+2020-02-07,45,South Carolina,0
+2020-02-07,46,South Dakota,0
+2020-02-07,47,Tennessee,0
+2020-02-07,48,Texas,0
+2020-02-07,49,Utah,0
+2020-02-07,50,Vermont,0
+2020-02-07,51,Virginia,0
+2020-02-07,53,Washington,0
+2020-02-07,54,West Virginia,0
+2020-02-07,55,Wisconsin,0
+2020-02-07,56,Wyoming,0
+2020-02-07,US,US,0
+2020-02-08,01,Alabama,0
+2020-02-08,02,Alaska,0
+2020-02-08,60,American Samoa,0
+2020-02-08,04,Arizona,0
+2020-02-08,05,Arkansas,0
+2020-02-08,06,California,0
+2020-02-08,08,Colorado,0
+2020-02-08,09,Connecticut,0
+2020-02-08,10,Delaware,0
+2020-02-08,11,District of Columbia,0
+2020-02-08,12,Florida,0
+2020-02-08,13,Georgia,0
+2020-02-08,66,Guam,0
+2020-02-08,15,Hawaii,0
+2020-02-08,16,Idaho,0
+2020-02-08,17,Illinois,0
+2020-02-08,18,Indiana,0
+2020-02-08,19,Iowa,0
+2020-02-08,20,Kansas,0
+2020-02-08,21,Kentucky,0
+2020-02-08,22,Louisiana,0
+2020-02-08,23,Maine,0
+2020-02-08,24,Maryland,0
+2020-02-08,25,Massachusetts,0
+2020-02-08,26,Michigan,0
+2020-02-08,27,Minnesota,0
+2020-02-08,28,Mississippi,0
+2020-02-08,29,Missouri,0
+2020-02-08,30,Montana,0
+2020-02-08,31,Nebraska,0
+2020-02-08,32,Nevada,0
+2020-02-08,33,New Hampshire,0
+2020-02-08,34,New Jersey,0
+2020-02-08,35,New Mexico,0
+2020-02-08,36,New York,0
+2020-02-08,37,North Carolina,0
+2020-02-08,38,North Dakota,0
+2020-02-08,69,Northern Mariana Islands,0
+2020-02-08,39,Ohio,0
+2020-02-08,40,Oklahoma,0
+2020-02-08,41,Oregon,0
+2020-02-08,42,Pennsylvania,0
+2020-02-08,72,Puerto Rico,0
+2020-02-08,44,Rhode Island,0
+2020-02-08,45,South Carolina,0
+2020-02-08,46,South Dakota,0
+2020-02-08,47,Tennessee,0
+2020-02-08,48,Texas,0
+2020-02-08,49,Utah,0
+2020-02-08,50,Vermont,0
+2020-02-08,51,Virginia,0
+2020-02-08,53,Washington,0
+2020-02-08,54,West Virginia,0
+2020-02-08,55,Wisconsin,0
+2020-02-08,56,Wyoming,0
+2020-02-08,US,US,0
+2020-02-09,01,Alabama,0
+2020-02-09,02,Alaska,0
+2020-02-09,60,American Samoa,0
+2020-02-09,04,Arizona,0
+2020-02-09,05,Arkansas,0
+2020-02-09,06,California,0
+2020-02-09,08,Colorado,0
+2020-02-09,09,Connecticut,0
+2020-02-09,10,Delaware,0
+2020-02-09,11,District of Columbia,0
+2020-02-09,12,Florida,0
+2020-02-09,13,Georgia,0
+2020-02-09,66,Guam,0
+2020-02-09,15,Hawaii,0
+2020-02-09,16,Idaho,0
+2020-02-09,17,Illinois,0
+2020-02-09,18,Indiana,0
+2020-02-09,19,Iowa,0
+2020-02-09,20,Kansas,0
+2020-02-09,21,Kentucky,0
+2020-02-09,22,Louisiana,0
+2020-02-09,23,Maine,0
+2020-02-09,24,Maryland,0
+2020-02-09,25,Massachusetts,0
+2020-02-09,26,Michigan,0
+2020-02-09,27,Minnesota,0
+2020-02-09,28,Mississippi,0
+2020-02-09,29,Missouri,0
+2020-02-09,30,Montana,0
+2020-02-09,31,Nebraska,0
+2020-02-09,32,Nevada,0
+2020-02-09,33,New Hampshire,0
+2020-02-09,34,New Jersey,0
+2020-02-09,35,New Mexico,0
+2020-02-09,36,New York,0
+2020-02-09,37,North Carolina,0
+2020-02-09,38,North Dakota,0
+2020-02-09,69,Northern Mariana Islands,0
+2020-02-09,39,Ohio,0
+2020-02-09,40,Oklahoma,0
+2020-02-09,41,Oregon,0
+2020-02-09,42,Pennsylvania,0
+2020-02-09,72,Puerto Rico,0
+2020-02-09,44,Rhode Island,0
+2020-02-09,45,South Carolina,0
+2020-02-09,46,South Dakota,0
+2020-02-09,47,Tennessee,0
+2020-02-09,48,Texas,0
+2020-02-09,49,Utah,0
+2020-02-09,50,Vermont,0
+2020-02-09,51,Virginia,0
+2020-02-09,53,Washington,0
+2020-02-09,54,West Virginia,0
+2020-02-09,55,Wisconsin,0
+2020-02-09,56,Wyoming,0
+2020-02-09,US,US,0
+2020-02-10,01,Alabama,0
+2020-02-10,02,Alaska,0
+2020-02-10,60,American Samoa,0
+2020-02-10,04,Arizona,0
+2020-02-10,05,Arkansas,0
+2020-02-10,06,California,0
+2020-02-10,08,Colorado,0
+2020-02-10,09,Connecticut,0
+2020-02-10,10,Delaware,0
+2020-02-10,11,District of Columbia,0
+2020-02-10,12,Florida,0
+2020-02-10,13,Georgia,0
+2020-02-10,66,Guam,0
+2020-02-10,15,Hawaii,0
+2020-02-10,16,Idaho,0
+2020-02-10,17,Illinois,0
+2020-02-10,18,Indiana,0
+2020-02-10,19,Iowa,0
+2020-02-10,20,Kansas,0
+2020-02-10,21,Kentucky,0
+2020-02-10,22,Louisiana,0
+2020-02-10,23,Maine,0
+2020-02-10,24,Maryland,0
+2020-02-10,25,Massachusetts,0
+2020-02-10,26,Michigan,0
+2020-02-10,27,Minnesota,0
+2020-02-10,28,Mississippi,0
+2020-02-10,29,Missouri,0
+2020-02-10,30,Montana,0
+2020-02-10,31,Nebraska,0
+2020-02-10,32,Nevada,0
+2020-02-10,33,New Hampshire,0
+2020-02-10,34,New Jersey,0
+2020-02-10,35,New Mexico,0
+2020-02-10,36,New York,0
+2020-02-10,37,North Carolina,0
+2020-02-10,38,North Dakota,0
+2020-02-10,69,Northern Mariana Islands,0
+2020-02-10,39,Ohio,0
+2020-02-10,40,Oklahoma,0
+2020-02-10,41,Oregon,0
+2020-02-10,42,Pennsylvania,0
+2020-02-10,72,Puerto Rico,0
+2020-02-10,44,Rhode Island,0
+2020-02-10,45,South Carolina,0
+2020-02-10,46,South Dakota,0
+2020-02-10,47,Tennessee,0
+2020-02-10,48,Texas,0
+2020-02-10,49,Utah,0
+2020-02-10,50,Vermont,0
+2020-02-10,51,Virginia,0
+2020-02-10,53,Washington,0
+2020-02-10,54,West Virginia,0
+2020-02-10,55,Wisconsin,0
+2020-02-10,56,Wyoming,0
+2020-02-10,US,US,0
+2020-02-11,01,Alabama,0
+2020-02-11,02,Alaska,0
+2020-02-11,60,American Samoa,0
+2020-02-11,04,Arizona,0
+2020-02-11,05,Arkansas,0
+2020-02-11,06,California,0
+2020-02-11,08,Colorado,0
+2020-02-11,09,Connecticut,0
+2020-02-11,10,Delaware,0
+2020-02-11,11,District of Columbia,0
+2020-02-11,12,Florida,0
+2020-02-11,13,Georgia,0
+2020-02-11,66,Guam,0
+2020-02-11,15,Hawaii,0
+2020-02-11,16,Idaho,0
+2020-02-11,17,Illinois,0
+2020-02-11,18,Indiana,0
+2020-02-11,19,Iowa,0
+2020-02-11,20,Kansas,0
+2020-02-11,21,Kentucky,0
+2020-02-11,22,Louisiana,0
+2020-02-11,23,Maine,0
+2020-02-11,24,Maryland,0
+2020-02-11,25,Massachusetts,0
+2020-02-11,26,Michigan,0
+2020-02-11,27,Minnesota,0
+2020-02-11,28,Mississippi,0
+2020-02-11,29,Missouri,0
+2020-02-11,30,Montana,0
+2020-02-11,31,Nebraska,0
+2020-02-11,32,Nevada,0
+2020-02-11,33,New Hampshire,0
+2020-02-11,34,New Jersey,0
+2020-02-11,35,New Mexico,0
+2020-02-11,36,New York,0
+2020-02-11,37,North Carolina,0
+2020-02-11,38,North Dakota,0
+2020-02-11,69,Northern Mariana Islands,0
+2020-02-11,39,Ohio,0
+2020-02-11,40,Oklahoma,0
+2020-02-11,41,Oregon,0
+2020-02-11,42,Pennsylvania,0
+2020-02-11,72,Puerto Rico,0
+2020-02-11,44,Rhode Island,0
+2020-02-11,45,South Carolina,0
+2020-02-11,46,South Dakota,0
+2020-02-11,47,Tennessee,0
+2020-02-11,48,Texas,0
+2020-02-11,49,Utah,0
+2020-02-11,50,Vermont,0
+2020-02-11,51,Virginia,0
+2020-02-11,53,Washington,0
+2020-02-11,54,West Virginia,0
+2020-02-11,55,Wisconsin,0
+2020-02-11,56,Wyoming,0
+2020-02-11,US,US,0
+2020-02-12,01,Alabama,0
+2020-02-12,02,Alaska,0
+2020-02-12,60,American Samoa,0
+2020-02-12,04,Arizona,0
+2020-02-12,05,Arkansas,0
+2020-02-12,06,California,0
+2020-02-12,08,Colorado,0
+2020-02-12,09,Connecticut,0
+2020-02-12,10,Delaware,0
+2020-02-12,11,District of Columbia,0
+2020-02-12,12,Florida,0
+2020-02-12,13,Georgia,0
+2020-02-12,66,Guam,0
+2020-02-12,15,Hawaii,0
+2020-02-12,16,Idaho,0
+2020-02-12,17,Illinois,0
+2020-02-12,18,Indiana,0
+2020-02-12,19,Iowa,0
+2020-02-12,20,Kansas,0
+2020-02-12,21,Kentucky,0
+2020-02-12,22,Louisiana,0
+2020-02-12,23,Maine,0
+2020-02-12,24,Maryland,0
+2020-02-12,25,Massachusetts,0
+2020-02-12,26,Michigan,0
+2020-02-12,27,Minnesota,0
+2020-02-12,28,Mississippi,0
+2020-02-12,29,Missouri,0
+2020-02-12,30,Montana,0
+2020-02-12,31,Nebraska,0
+2020-02-12,32,Nevada,0
+2020-02-12,33,New Hampshire,0
+2020-02-12,34,New Jersey,0
+2020-02-12,35,New Mexico,0
+2020-02-12,36,New York,0
+2020-02-12,37,North Carolina,0
+2020-02-12,38,North Dakota,0
+2020-02-12,69,Northern Mariana Islands,0
+2020-02-12,39,Ohio,0
+2020-02-12,40,Oklahoma,0
+2020-02-12,41,Oregon,0
+2020-02-12,42,Pennsylvania,0
+2020-02-12,72,Puerto Rico,0
+2020-02-12,44,Rhode Island,0
+2020-02-12,45,South Carolina,0
+2020-02-12,46,South Dakota,0
+2020-02-12,47,Tennessee,0
+2020-02-12,48,Texas,0
+2020-02-12,49,Utah,0
+2020-02-12,50,Vermont,0
+2020-02-12,51,Virginia,0
+2020-02-12,53,Washington,0
+2020-02-12,54,West Virginia,0
+2020-02-12,55,Wisconsin,0
+2020-02-12,56,Wyoming,0
+2020-02-12,US,US,0
+2020-02-13,01,Alabama,0
+2020-02-13,02,Alaska,0
+2020-02-13,60,American Samoa,0
+2020-02-13,04,Arizona,0
+2020-02-13,05,Arkansas,0
+2020-02-13,06,California,0
+2020-02-13,08,Colorado,0
+2020-02-13,09,Connecticut,0
+2020-02-13,10,Delaware,0
+2020-02-13,11,District of Columbia,0
+2020-02-13,12,Florida,0
+2020-02-13,13,Georgia,0
+2020-02-13,66,Guam,0
+2020-02-13,15,Hawaii,0
+2020-02-13,16,Idaho,0
+2020-02-13,17,Illinois,0
+2020-02-13,18,Indiana,0
+2020-02-13,19,Iowa,0
+2020-02-13,20,Kansas,0
+2020-02-13,21,Kentucky,0
+2020-02-13,22,Louisiana,0
+2020-02-13,23,Maine,0
+2020-02-13,24,Maryland,0
+2020-02-13,25,Massachusetts,0
+2020-02-13,26,Michigan,0
+2020-02-13,27,Minnesota,0
+2020-02-13,28,Mississippi,0
+2020-02-13,29,Missouri,0
+2020-02-13,30,Montana,0
+2020-02-13,31,Nebraska,0
+2020-02-13,32,Nevada,0
+2020-02-13,33,New Hampshire,0
+2020-02-13,34,New Jersey,0
+2020-02-13,35,New Mexico,0
+2020-02-13,36,New York,0
+2020-02-13,37,North Carolina,0
+2020-02-13,38,North Dakota,0
+2020-02-13,69,Northern Mariana Islands,0
+2020-02-13,39,Ohio,0
+2020-02-13,40,Oklahoma,0
+2020-02-13,41,Oregon,0
+2020-02-13,42,Pennsylvania,0
+2020-02-13,72,Puerto Rico,0
+2020-02-13,44,Rhode Island,0
+2020-02-13,45,South Carolina,0
+2020-02-13,46,South Dakota,0
+2020-02-13,47,Tennessee,0
+2020-02-13,48,Texas,0
+2020-02-13,49,Utah,0
+2020-02-13,50,Vermont,0
+2020-02-13,51,Virginia,0
+2020-02-13,53,Washington,0
+2020-02-13,54,West Virginia,0
+2020-02-13,55,Wisconsin,0
+2020-02-13,56,Wyoming,0
+2020-02-13,US,US,0
+2020-02-14,01,Alabama,0
+2020-02-14,02,Alaska,0
+2020-02-14,60,American Samoa,0
+2020-02-14,04,Arizona,0
+2020-02-14,05,Arkansas,0
+2020-02-14,06,California,0
+2020-02-14,08,Colorado,0
+2020-02-14,09,Connecticut,0
+2020-02-14,10,Delaware,0
+2020-02-14,11,District of Columbia,0
+2020-02-14,12,Florida,0
+2020-02-14,13,Georgia,0
+2020-02-14,66,Guam,0
+2020-02-14,15,Hawaii,0
+2020-02-14,16,Idaho,0
+2020-02-14,17,Illinois,0
+2020-02-14,18,Indiana,0
+2020-02-14,19,Iowa,0
+2020-02-14,20,Kansas,0
+2020-02-14,21,Kentucky,0
+2020-02-14,22,Louisiana,0
+2020-02-14,23,Maine,0
+2020-02-14,24,Maryland,0
+2020-02-14,25,Massachusetts,0
+2020-02-14,26,Michigan,0
+2020-02-14,27,Minnesota,0
+2020-02-14,28,Mississippi,0
+2020-02-14,29,Missouri,0
+2020-02-14,30,Montana,0
+2020-02-14,31,Nebraska,0
+2020-02-14,32,Nevada,0
+2020-02-14,33,New Hampshire,0
+2020-02-14,34,New Jersey,0
+2020-02-14,35,New Mexico,0
+2020-02-14,36,New York,0
+2020-02-14,37,North Carolina,0
+2020-02-14,38,North Dakota,0
+2020-02-14,69,Northern Mariana Islands,0
+2020-02-14,39,Ohio,0
+2020-02-14,40,Oklahoma,0
+2020-02-14,41,Oregon,0
+2020-02-14,42,Pennsylvania,0
+2020-02-14,72,Puerto Rico,0
+2020-02-14,44,Rhode Island,0
+2020-02-14,45,South Carolina,0
+2020-02-14,46,South Dakota,0
+2020-02-14,47,Tennessee,0
+2020-02-14,48,Texas,0
+2020-02-14,49,Utah,0
+2020-02-14,50,Vermont,0
+2020-02-14,51,Virginia,0
+2020-02-14,53,Washington,0
+2020-02-14,54,West Virginia,0
+2020-02-14,55,Wisconsin,0
+2020-02-14,56,Wyoming,0
+2020-02-14,US,US,0
+2020-02-15,01,Alabama,0
+2020-02-15,02,Alaska,0
+2020-02-15,60,American Samoa,0
+2020-02-15,04,Arizona,0
+2020-02-15,05,Arkansas,0
+2020-02-15,06,California,0
+2020-02-15,08,Colorado,0
+2020-02-15,09,Connecticut,0
+2020-02-15,10,Delaware,0
+2020-02-15,11,District of Columbia,0
+2020-02-15,12,Florida,0
+2020-02-15,13,Georgia,0
+2020-02-15,66,Guam,0
+2020-02-15,15,Hawaii,0
+2020-02-15,16,Idaho,0
+2020-02-15,17,Illinois,0
+2020-02-15,18,Indiana,0
+2020-02-15,19,Iowa,0
+2020-02-15,20,Kansas,0
+2020-02-15,21,Kentucky,0
+2020-02-15,22,Louisiana,0
+2020-02-15,23,Maine,0
+2020-02-15,24,Maryland,0
+2020-02-15,25,Massachusetts,0
+2020-02-15,26,Michigan,0
+2020-02-15,27,Minnesota,0
+2020-02-15,28,Mississippi,0
+2020-02-15,29,Missouri,0
+2020-02-15,30,Montana,0
+2020-02-15,31,Nebraska,0
+2020-02-15,32,Nevada,0
+2020-02-15,33,New Hampshire,0
+2020-02-15,34,New Jersey,0
+2020-02-15,35,New Mexico,0
+2020-02-15,36,New York,0
+2020-02-15,37,North Carolina,0
+2020-02-15,38,North Dakota,0
+2020-02-15,69,Northern Mariana Islands,0
+2020-02-15,39,Ohio,0
+2020-02-15,40,Oklahoma,0
+2020-02-15,41,Oregon,0
+2020-02-15,42,Pennsylvania,0
+2020-02-15,72,Puerto Rico,0
+2020-02-15,44,Rhode Island,0
+2020-02-15,45,South Carolina,0
+2020-02-15,46,South Dakota,0
+2020-02-15,47,Tennessee,0
+2020-02-15,48,Texas,0
+2020-02-15,49,Utah,0
+2020-02-15,50,Vermont,0
+2020-02-15,51,Virginia,0
+2020-02-15,53,Washington,0
+2020-02-15,54,West Virginia,0
+2020-02-15,55,Wisconsin,0
+2020-02-15,56,Wyoming,0
+2020-02-15,US,US,0
+2020-02-16,01,Alabama,0
+2020-02-16,02,Alaska,0
+2020-02-16,60,American Samoa,0
+2020-02-16,04,Arizona,0
+2020-02-16,05,Arkansas,0
+2020-02-16,06,California,0
+2020-02-16,08,Colorado,0
+2020-02-16,09,Connecticut,0
+2020-02-16,10,Delaware,0
+2020-02-16,11,District of Columbia,0
+2020-02-16,12,Florida,0
+2020-02-16,13,Georgia,0
+2020-02-16,66,Guam,0
+2020-02-16,15,Hawaii,0
+2020-02-16,16,Idaho,0
+2020-02-16,17,Illinois,0
+2020-02-16,18,Indiana,0
+2020-02-16,19,Iowa,0
+2020-02-16,20,Kansas,0
+2020-02-16,21,Kentucky,0
+2020-02-16,22,Louisiana,0
+2020-02-16,23,Maine,0
+2020-02-16,24,Maryland,0
+2020-02-16,25,Massachusetts,0
+2020-02-16,26,Michigan,0
+2020-02-16,27,Minnesota,0
+2020-02-16,28,Mississippi,0
+2020-02-16,29,Missouri,0
+2020-02-16,30,Montana,0
+2020-02-16,31,Nebraska,0
+2020-02-16,32,Nevada,0
+2020-02-16,33,New Hampshire,0
+2020-02-16,34,New Jersey,0
+2020-02-16,35,New Mexico,0
+2020-02-16,36,New York,0
+2020-02-16,37,North Carolina,0
+2020-02-16,38,North Dakota,0
+2020-02-16,69,Northern Mariana Islands,0
+2020-02-16,39,Ohio,0
+2020-02-16,40,Oklahoma,0
+2020-02-16,41,Oregon,0
+2020-02-16,42,Pennsylvania,0
+2020-02-16,72,Puerto Rico,0
+2020-02-16,44,Rhode Island,0
+2020-02-16,45,South Carolina,0
+2020-02-16,46,South Dakota,0
+2020-02-16,47,Tennessee,0
+2020-02-16,48,Texas,0
+2020-02-16,49,Utah,0
+2020-02-16,50,Vermont,0
+2020-02-16,51,Virginia,0
+2020-02-16,53,Washington,0
+2020-02-16,54,West Virginia,0
+2020-02-16,55,Wisconsin,0
+2020-02-16,56,Wyoming,0
+2020-02-16,US,US,0
+2020-02-17,01,Alabama,0
+2020-02-17,02,Alaska,0
+2020-02-17,60,American Samoa,0
+2020-02-17,04,Arizona,0
+2020-02-17,05,Arkansas,0
+2020-02-17,06,California,0
+2020-02-17,08,Colorado,0
+2020-02-17,09,Connecticut,0
+2020-02-17,10,Delaware,0
+2020-02-17,11,District of Columbia,0
+2020-02-17,12,Florida,0
+2020-02-17,13,Georgia,0
+2020-02-17,66,Guam,0
+2020-02-17,15,Hawaii,0
+2020-02-17,16,Idaho,0
+2020-02-17,17,Illinois,0
+2020-02-17,18,Indiana,0
+2020-02-17,19,Iowa,0
+2020-02-17,20,Kansas,0
+2020-02-17,21,Kentucky,0
+2020-02-17,22,Louisiana,0
+2020-02-17,23,Maine,0
+2020-02-17,24,Maryland,0
+2020-02-17,25,Massachusetts,0
+2020-02-17,26,Michigan,0
+2020-02-17,27,Minnesota,0
+2020-02-17,28,Mississippi,0
+2020-02-17,29,Missouri,0
+2020-02-17,30,Montana,0
+2020-02-17,31,Nebraska,0
+2020-02-17,32,Nevada,0
+2020-02-17,33,New Hampshire,0
+2020-02-17,34,New Jersey,0
+2020-02-17,35,New Mexico,0
+2020-02-17,36,New York,0
+2020-02-17,37,North Carolina,0
+2020-02-17,38,North Dakota,0
+2020-02-17,69,Northern Mariana Islands,0
+2020-02-17,39,Ohio,0
+2020-02-17,40,Oklahoma,0
+2020-02-17,41,Oregon,0
+2020-02-17,42,Pennsylvania,0
+2020-02-17,72,Puerto Rico,0
+2020-02-17,44,Rhode Island,0
+2020-02-17,45,South Carolina,0
+2020-02-17,46,South Dakota,0
+2020-02-17,47,Tennessee,0
+2020-02-17,48,Texas,0
+2020-02-17,49,Utah,0
+2020-02-17,50,Vermont,0
+2020-02-17,51,Virginia,0
+2020-02-17,53,Washington,0
+2020-02-17,54,West Virginia,0
+2020-02-17,55,Wisconsin,0
+2020-02-17,56,Wyoming,0
+2020-02-17,US,US,0
+2020-02-18,01,Alabama,0
+2020-02-18,02,Alaska,0
+2020-02-18,60,American Samoa,0
+2020-02-18,04,Arizona,0
+2020-02-18,05,Arkansas,0
+2020-02-18,06,California,0
+2020-02-18,08,Colorado,0
+2020-02-18,09,Connecticut,0
+2020-02-18,10,Delaware,0
+2020-02-18,11,District of Columbia,0
+2020-02-18,12,Florida,0
+2020-02-18,13,Georgia,0
+2020-02-18,66,Guam,0
+2020-02-18,15,Hawaii,0
+2020-02-18,16,Idaho,0
+2020-02-18,17,Illinois,0
+2020-02-18,18,Indiana,0
+2020-02-18,19,Iowa,0
+2020-02-18,20,Kansas,0
+2020-02-18,21,Kentucky,0
+2020-02-18,22,Louisiana,0
+2020-02-18,23,Maine,0
+2020-02-18,24,Maryland,0
+2020-02-18,25,Massachusetts,0
+2020-02-18,26,Michigan,0
+2020-02-18,27,Minnesota,0
+2020-02-18,28,Mississippi,0
+2020-02-18,29,Missouri,0
+2020-02-18,30,Montana,0
+2020-02-18,31,Nebraska,0
+2020-02-18,32,Nevada,0
+2020-02-18,33,New Hampshire,0
+2020-02-18,34,New Jersey,0
+2020-02-18,35,New Mexico,0
+2020-02-18,36,New York,0
+2020-02-18,37,North Carolina,0
+2020-02-18,38,North Dakota,0
+2020-02-18,69,Northern Mariana Islands,0
+2020-02-18,39,Ohio,0
+2020-02-18,40,Oklahoma,0
+2020-02-18,41,Oregon,0
+2020-02-18,42,Pennsylvania,0
+2020-02-18,72,Puerto Rico,0
+2020-02-18,44,Rhode Island,0
+2020-02-18,45,South Carolina,0
+2020-02-18,46,South Dakota,0
+2020-02-18,47,Tennessee,0
+2020-02-18,48,Texas,0
+2020-02-18,49,Utah,0
+2020-02-18,50,Vermont,0
+2020-02-18,51,Virginia,0
+2020-02-18,53,Washington,0
+2020-02-18,54,West Virginia,0
+2020-02-18,55,Wisconsin,0
+2020-02-18,56,Wyoming,0
+2020-02-18,US,US,0
+2020-02-19,01,Alabama,0
+2020-02-19,02,Alaska,0
+2020-02-19,60,American Samoa,0
+2020-02-19,04,Arizona,0
+2020-02-19,05,Arkansas,0
+2020-02-19,06,California,0
+2020-02-19,08,Colorado,0
+2020-02-19,09,Connecticut,0
+2020-02-19,10,Delaware,0
+2020-02-19,11,District of Columbia,0
+2020-02-19,12,Florida,0
+2020-02-19,13,Georgia,0
+2020-02-19,66,Guam,0
+2020-02-19,15,Hawaii,0
+2020-02-19,16,Idaho,0
+2020-02-19,17,Illinois,0
+2020-02-19,18,Indiana,0
+2020-02-19,19,Iowa,0
+2020-02-19,20,Kansas,0
+2020-02-19,21,Kentucky,0
+2020-02-19,22,Louisiana,0
+2020-02-19,23,Maine,0
+2020-02-19,24,Maryland,0
+2020-02-19,25,Massachusetts,0
+2020-02-19,26,Michigan,0
+2020-02-19,27,Minnesota,0
+2020-02-19,28,Mississippi,0
+2020-02-19,29,Missouri,0
+2020-02-19,30,Montana,0
+2020-02-19,31,Nebraska,0
+2020-02-19,32,Nevada,0
+2020-02-19,33,New Hampshire,0
+2020-02-19,34,New Jersey,0
+2020-02-19,35,New Mexico,0
+2020-02-19,36,New York,0
+2020-02-19,37,North Carolina,0
+2020-02-19,38,North Dakota,0
+2020-02-19,69,Northern Mariana Islands,0
+2020-02-19,39,Ohio,0
+2020-02-19,40,Oklahoma,0
+2020-02-19,41,Oregon,0
+2020-02-19,42,Pennsylvania,0
+2020-02-19,72,Puerto Rico,0
+2020-02-19,44,Rhode Island,0
+2020-02-19,45,South Carolina,0
+2020-02-19,46,South Dakota,0
+2020-02-19,47,Tennessee,0
+2020-02-19,48,Texas,0
+2020-02-19,49,Utah,0
+2020-02-19,50,Vermont,0
+2020-02-19,51,Virginia,0
+2020-02-19,53,Washington,0
+2020-02-19,54,West Virginia,0
+2020-02-19,55,Wisconsin,0
+2020-02-19,56,Wyoming,0
+2020-02-19,US,US,0
+2020-02-20,01,Alabama,0
+2020-02-20,02,Alaska,0
+2020-02-20,60,American Samoa,0
+2020-02-20,04,Arizona,0
+2020-02-20,05,Arkansas,0
+2020-02-20,06,California,0
+2020-02-20,08,Colorado,0
+2020-02-20,09,Connecticut,0
+2020-02-20,10,Delaware,0
+2020-02-20,11,District of Columbia,0
+2020-02-20,12,Florida,0
+2020-02-20,13,Georgia,0
+2020-02-20,66,Guam,0
+2020-02-20,15,Hawaii,0
+2020-02-20,16,Idaho,0
+2020-02-20,17,Illinois,0
+2020-02-20,18,Indiana,0
+2020-02-20,19,Iowa,0
+2020-02-20,20,Kansas,0
+2020-02-20,21,Kentucky,0
+2020-02-20,22,Louisiana,0
+2020-02-20,23,Maine,0
+2020-02-20,24,Maryland,0
+2020-02-20,25,Massachusetts,0
+2020-02-20,26,Michigan,0
+2020-02-20,27,Minnesota,0
+2020-02-20,28,Mississippi,0
+2020-02-20,29,Missouri,0
+2020-02-20,30,Montana,0
+2020-02-20,31,Nebraska,0
+2020-02-20,32,Nevada,0
+2020-02-20,33,New Hampshire,0
+2020-02-20,34,New Jersey,0
+2020-02-20,35,New Mexico,0
+2020-02-20,36,New York,0
+2020-02-20,37,North Carolina,0
+2020-02-20,38,North Dakota,0
+2020-02-20,69,Northern Mariana Islands,0
+2020-02-20,39,Ohio,0
+2020-02-20,40,Oklahoma,0
+2020-02-20,41,Oregon,0
+2020-02-20,42,Pennsylvania,0
+2020-02-20,72,Puerto Rico,0
+2020-02-20,44,Rhode Island,0
+2020-02-20,45,South Carolina,0
+2020-02-20,46,South Dakota,0
+2020-02-20,47,Tennessee,0
+2020-02-20,48,Texas,0
+2020-02-20,49,Utah,0
+2020-02-20,50,Vermont,0
+2020-02-20,51,Virginia,0
+2020-02-20,53,Washington,0
+2020-02-20,54,West Virginia,0
+2020-02-20,55,Wisconsin,0
+2020-02-20,56,Wyoming,0
+2020-02-20,US,US,0
+2020-02-21,01,Alabama,0
+2020-02-21,02,Alaska,0
+2020-02-21,60,American Samoa,0
+2020-02-21,04,Arizona,0
+2020-02-21,05,Arkansas,0
+2020-02-21,06,California,0
+2020-02-21,08,Colorado,0
+2020-02-21,09,Connecticut,0
+2020-02-21,10,Delaware,0
+2020-02-21,11,District of Columbia,0
+2020-02-21,12,Florida,0
+2020-02-21,13,Georgia,0
+2020-02-21,66,Guam,0
+2020-02-21,15,Hawaii,0
+2020-02-21,16,Idaho,0
+2020-02-21,17,Illinois,0
+2020-02-21,18,Indiana,0
+2020-02-21,19,Iowa,0
+2020-02-21,20,Kansas,0
+2020-02-21,21,Kentucky,0
+2020-02-21,22,Louisiana,0
+2020-02-21,23,Maine,0
+2020-02-21,24,Maryland,0
+2020-02-21,25,Massachusetts,0
+2020-02-21,26,Michigan,0
+2020-02-21,27,Minnesota,0
+2020-02-21,28,Mississippi,0
+2020-02-21,29,Missouri,0
+2020-02-21,30,Montana,0
+2020-02-21,31,Nebraska,0
+2020-02-21,32,Nevada,0
+2020-02-21,33,New Hampshire,0
+2020-02-21,34,New Jersey,0
+2020-02-21,35,New Mexico,0
+2020-02-21,36,New York,0
+2020-02-21,37,North Carolina,0
+2020-02-21,38,North Dakota,0
+2020-02-21,69,Northern Mariana Islands,0
+2020-02-21,39,Ohio,0
+2020-02-21,40,Oklahoma,0
+2020-02-21,41,Oregon,0
+2020-02-21,42,Pennsylvania,0
+2020-02-21,72,Puerto Rico,0
+2020-02-21,44,Rhode Island,0
+2020-02-21,45,South Carolina,0
+2020-02-21,46,South Dakota,0
+2020-02-21,47,Tennessee,0
+2020-02-21,48,Texas,0
+2020-02-21,49,Utah,0
+2020-02-21,50,Vermont,0
+2020-02-21,51,Virginia,0
+2020-02-21,53,Washington,0
+2020-02-21,54,West Virginia,0
+2020-02-21,55,Wisconsin,0
+2020-02-21,56,Wyoming,0
+2020-02-21,US,US,0
+2020-02-22,01,Alabama,0
+2020-02-22,02,Alaska,0
+2020-02-22,60,American Samoa,0
+2020-02-22,04,Arizona,0
+2020-02-22,05,Arkansas,0
+2020-02-22,06,California,0
+2020-02-22,08,Colorado,0
+2020-02-22,09,Connecticut,0
+2020-02-22,10,Delaware,0
+2020-02-22,11,District of Columbia,0
+2020-02-22,12,Florida,0
+2020-02-22,13,Georgia,0
+2020-02-22,66,Guam,0
+2020-02-22,15,Hawaii,0
+2020-02-22,16,Idaho,0
+2020-02-22,17,Illinois,0
+2020-02-22,18,Indiana,0
+2020-02-22,19,Iowa,0
+2020-02-22,20,Kansas,0
+2020-02-22,21,Kentucky,0
+2020-02-22,22,Louisiana,0
+2020-02-22,23,Maine,0
+2020-02-22,24,Maryland,0
+2020-02-22,25,Massachusetts,0
+2020-02-22,26,Michigan,0
+2020-02-22,27,Minnesota,0
+2020-02-22,28,Mississippi,0
+2020-02-22,29,Missouri,0
+2020-02-22,30,Montana,0
+2020-02-22,31,Nebraska,0
+2020-02-22,32,Nevada,0
+2020-02-22,33,New Hampshire,0
+2020-02-22,34,New Jersey,0
+2020-02-22,35,New Mexico,0
+2020-02-22,36,New York,0
+2020-02-22,37,North Carolina,0
+2020-02-22,38,North Dakota,0
+2020-02-22,69,Northern Mariana Islands,0
+2020-02-22,39,Ohio,0
+2020-02-22,40,Oklahoma,0
+2020-02-22,41,Oregon,0
+2020-02-22,42,Pennsylvania,0
+2020-02-22,72,Puerto Rico,0
+2020-02-22,44,Rhode Island,0
+2020-02-22,45,South Carolina,0
+2020-02-22,46,South Dakota,0
+2020-02-22,47,Tennessee,0
+2020-02-22,48,Texas,0
+2020-02-22,49,Utah,0
+2020-02-22,50,Vermont,0
+2020-02-22,51,Virginia,0
+2020-02-22,53,Washington,0
+2020-02-22,54,West Virginia,0
+2020-02-22,55,Wisconsin,0
+2020-02-22,56,Wyoming,0
+2020-02-22,US,US,0
+2020-02-23,01,Alabama,0
+2020-02-23,02,Alaska,0
+2020-02-23,60,American Samoa,0
+2020-02-23,04,Arizona,0
+2020-02-23,05,Arkansas,0
+2020-02-23,06,California,0
+2020-02-23,08,Colorado,0
+2020-02-23,09,Connecticut,0
+2020-02-23,10,Delaware,0
+2020-02-23,11,District of Columbia,0
+2020-02-23,12,Florida,0
+2020-02-23,13,Georgia,0
+2020-02-23,66,Guam,0
+2020-02-23,15,Hawaii,0
+2020-02-23,16,Idaho,0
+2020-02-23,17,Illinois,0
+2020-02-23,18,Indiana,0
+2020-02-23,19,Iowa,0
+2020-02-23,20,Kansas,0
+2020-02-23,21,Kentucky,0
+2020-02-23,22,Louisiana,0
+2020-02-23,23,Maine,0
+2020-02-23,24,Maryland,0
+2020-02-23,25,Massachusetts,0
+2020-02-23,26,Michigan,0
+2020-02-23,27,Minnesota,0
+2020-02-23,28,Mississippi,0
+2020-02-23,29,Missouri,0
+2020-02-23,30,Montana,0
+2020-02-23,31,Nebraska,0
+2020-02-23,32,Nevada,0
+2020-02-23,33,New Hampshire,0
+2020-02-23,34,New Jersey,0
+2020-02-23,35,New Mexico,0
+2020-02-23,36,New York,0
+2020-02-23,37,North Carolina,0
+2020-02-23,38,North Dakota,0
+2020-02-23,69,Northern Mariana Islands,0
+2020-02-23,39,Ohio,0
+2020-02-23,40,Oklahoma,0
+2020-02-23,41,Oregon,0
+2020-02-23,42,Pennsylvania,0
+2020-02-23,72,Puerto Rico,0
+2020-02-23,44,Rhode Island,0
+2020-02-23,45,South Carolina,0
+2020-02-23,46,South Dakota,0
+2020-02-23,47,Tennessee,0
+2020-02-23,48,Texas,0
+2020-02-23,49,Utah,0
+2020-02-23,50,Vermont,0
+2020-02-23,51,Virginia,0
+2020-02-23,53,Washington,0
+2020-02-23,54,West Virginia,0
+2020-02-23,55,Wisconsin,0
+2020-02-23,56,Wyoming,0
+2020-02-23,US,US,0
+2020-02-24,01,Alabama,0
+2020-02-24,02,Alaska,0
+2020-02-24,60,American Samoa,0
+2020-02-24,04,Arizona,0
+2020-02-24,05,Arkansas,0
+2020-02-24,06,California,0
+2020-02-24,08,Colorado,0
+2020-02-24,09,Connecticut,0
+2020-02-24,10,Delaware,0
+2020-02-24,11,District of Columbia,0
+2020-02-24,12,Florida,0
+2020-02-24,13,Georgia,0
+2020-02-24,66,Guam,0
+2020-02-24,15,Hawaii,0
+2020-02-24,16,Idaho,0
+2020-02-24,17,Illinois,0
+2020-02-24,18,Indiana,0
+2020-02-24,19,Iowa,0
+2020-02-24,20,Kansas,0
+2020-02-24,21,Kentucky,0
+2020-02-24,22,Louisiana,0
+2020-02-24,23,Maine,0
+2020-02-24,24,Maryland,0
+2020-02-24,25,Massachusetts,0
+2020-02-24,26,Michigan,0
+2020-02-24,27,Minnesota,0
+2020-02-24,28,Mississippi,0
+2020-02-24,29,Missouri,0
+2020-02-24,30,Montana,0
+2020-02-24,31,Nebraska,0
+2020-02-24,32,Nevada,0
+2020-02-24,33,New Hampshire,0
+2020-02-24,34,New Jersey,0
+2020-02-24,35,New Mexico,0
+2020-02-24,36,New York,0
+2020-02-24,37,North Carolina,0
+2020-02-24,38,North Dakota,0
+2020-02-24,69,Northern Mariana Islands,0
+2020-02-24,39,Ohio,0
+2020-02-24,40,Oklahoma,0
+2020-02-24,41,Oregon,0
+2020-02-24,42,Pennsylvania,0
+2020-02-24,72,Puerto Rico,0
+2020-02-24,44,Rhode Island,0
+2020-02-24,45,South Carolina,0
+2020-02-24,46,South Dakota,0
+2020-02-24,47,Tennessee,0
+2020-02-24,48,Texas,0
+2020-02-24,49,Utah,0
+2020-02-24,50,Vermont,0
+2020-02-24,51,Virginia,0
+2020-02-24,53,Washington,0
+2020-02-24,54,West Virginia,0
+2020-02-24,55,Wisconsin,0
+2020-02-24,56,Wyoming,0
+2020-02-24,US,US,0
+2020-02-25,01,Alabama,0
+2020-02-25,02,Alaska,0
+2020-02-25,60,American Samoa,0
+2020-02-25,04,Arizona,0
+2020-02-25,05,Arkansas,0
+2020-02-25,06,California,0
+2020-02-25,08,Colorado,0
+2020-02-25,09,Connecticut,0
+2020-02-25,10,Delaware,0
+2020-02-25,11,District of Columbia,0
+2020-02-25,12,Florida,0
+2020-02-25,13,Georgia,0
+2020-02-25,66,Guam,0
+2020-02-25,15,Hawaii,0
+2020-02-25,16,Idaho,0
+2020-02-25,17,Illinois,0
+2020-02-25,18,Indiana,0
+2020-02-25,19,Iowa,0
+2020-02-25,20,Kansas,0
+2020-02-25,21,Kentucky,0
+2020-02-25,22,Louisiana,0
+2020-02-25,23,Maine,0
+2020-02-25,24,Maryland,0
+2020-02-25,25,Massachusetts,0
+2020-02-25,26,Michigan,0
+2020-02-25,27,Minnesota,0
+2020-02-25,28,Mississippi,0
+2020-02-25,29,Missouri,0
+2020-02-25,30,Montana,0
+2020-02-25,31,Nebraska,0
+2020-02-25,32,Nevada,0
+2020-02-25,33,New Hampshire,0
+2020-02-25,34,New Jersey,0
+2020-02-25,35,New Mexico,0
+2020-02-25,36,New York,0
+2020-02-25,37,North Carolina,0
+2020-02-25,38,North Dakota,0
+2020-02-25,69,Northern Mariana Islands,0
+2020-02-25,39,Ohio,0
+2020-02-25,40,Oklahoma,0
+2020-02-25,41,Oregon,0
+2020-02-25,42,Pennsylvania,0
+2020-02-25,72,Puerto Rico,0
+2020-02-25,44,Rhode Island,0
+2020-02-25,45,South Carolina,0
+2020-02-25,46,South Dakota,0
+2020-02-25,47,Tennessee,0
+2020-02-25,48,Texas,0
+2020-02-25,49,Utah,0
+2020-02-25,50,Vermont,0
+2020-02-25,51,Virginia,0
+2020-02-25,53,Washington,0
+2020-02-25,54,West Virginia,0
+2020-02-25,55,Wisconsin,0
+2020-02-25,56,Wyoming,0
+2020-02-25,US,US,0
+2020-02-26,01,Alabama,0
+2020-02-26,02,Alaska,0
+2020-02-26,60,American Samoa,0
+2020-02-26,04,Arizona,0
+2020-02-26,05,Arkansas,0
+2020-02-26,06,California,0
+2020-02-26,08,Colorado,0
+2020-02-26,09,Connecticut,0
+2020-02-26,10,Delaware,0
+2020-02-26,11,District of Columbia,0
+2020-02-26,12,Florida,0
+2020-02-26,13,Georgia,0
+2020-02-26,66,Guam,0
+2020-02-26,15,Hawaii,0
+2020-02-26,16,Idaho,0
+2020-02-26,17,Illinois,0
+2020-02-26,18,Indiana,0
+2020-02-26,19,Iowa,0
+2020-02-26,20,Kansas,0
+2020-02-26,21,Kentucky,0
+2020-02-26,22,Louisiana,0
+2020-02-26,23,Maine,0
+2020-02-26,24,Maryland,0
+2020-02-26,25,Massachusetts,0
+2020-02-26,26,Michigan,0
+2020-02-26,27,Minnesota,0
+2020-02-26,28,Mississippi,0
+2020-02-26,29,Missouri,0
+2020-02-26,30,Montana,0
+2020-02-26,31,Nebraska,0
+2020-02-26,32,Nevada,0
+2020-02-26,33,New Hampshire,0
+2020-02-26,34,New Jersey,0
+2020-02-26,35,New Mexico,0
+2020-02-26,36,New York,0
+2020-02-26,37,North Carolina,0
+2020-02-26,38,North Dakota,0
+2020-02-26,69,Northern Mariana Islands,0
+2020-02-26,39,Ohio,0
+2020-02-26,40,Oklahoma,0
+2020-02-26,41,Oregon,0
+2020-02-26,42,Pennsylvania,0
+2020-02-26,72,Puerto Rico,0
+2020-02-26,44,Rhode Island,0
+2020-02-26,45,South Carolina,0
+2020-02-26,46,South Dakota,0
+2020-02-26,47,Tennessee,0
+2020-02-26,48,Texas,0
+2020-02-26,49,Utah,0
+2020-02-26,50,Vermont,0
+2020-02-26,51,Virginia,0
+2020-02-26,53,Washington,0
+2020-02-26,54,West Virginia,0
+2020-02-26,55,Wisconsin,0
+2020-02-26,56,Wyoming,0
+2020-02-26,US,US,0
+2020-02-27,01,Alabama,0
+2020-02-27,02,Alaska,0
+2020-02-27,60,American Samoa,0
+2020-02-27,04,Arizona,0
+2020-02-27,05,Arkansas,0
+2020-02-27,06,California,0
+2020-02-27,08,Colorado,0
+2020-02-27,09,Connecticut,0
+2020-02-27,10,Delaware,0
+2020-02-27,11,District of Columbia,0
+2020-02-27,12,Florida,0
+2020-02-27,13,Georgia,0
+2020-02-27,66,Guam,0
+2020-02-27,15,Hawaii,0
+2020-02-27,16,Idaho,0
+2020-02-27,17,Illinois,0
+2020-02-27,18,Indiana,0
+2020-02-27,19,Iowa,0
+2020-02-27,20,Kansas,0
+2020-02-27,21,Kentucky,0
+2020-02-27,22,Louisiana,0
+2020-02-27,23,Maine,0
+2020-02-27,24,Maryland,0
+2020-02-27,25,Massachusetts,0
+2020-02-27,26,Michigan,0
+2020-02-27,27,Minnesota,0
+2020-02-27,28,Mississippi,0
+2020-02-27,29,Missouri,0
+2020-02-27,30,Montana,0
+2020-02-27,31,Nebraska,0
+2020-02-27,32,Nevada,0
+2020-02-27,33,New Hampshire,0
+2020-02-27,34,New Jersey,0
+2020-02-27,35,New Mexico,0
+2020-02-27,36,New York,0
+2020-02-27,37,North Carolina,0
+2020-02-27,38,North Dakota,0
+2020-02-27,69,Northern Mariana Islands,0
+2020-02-27,39,Ohio,0
+2020-02-27,40,Oklahoma,0
+2020-02-27,41,Oregon,0
+2020-02-27,42,Pennsylvania,0
+2020-02-27,72,Puerto Rico,0
+2020-02-27,44,Rhode Island,0
+2020-02-27,45,South Carolina,0
+2020-02-27,46,South Dakota,0
+2020-02-27,47,Tennessee,0
+2020-02-27,48,Texas,0
+2020-02-27,49,Utah,0
+2020-02-27,50,Vermont,0
+2020-02-27,51,Virginia,0
+2020-02-27,53,Washington,0
+2020-02-27,54,West Virginia,0
+2020-02-27,55,Wisconsin,0
+2020-02-27,56,Wyoming,0
+2020-02-27,US,US,0
+2020-02-28,01,Alabama,0
+2020-02-28,02,Alaska,0
+2020-02-28,60,American Samoa,0
+2020-02-28,04,Arizona,0
+2020-02-28,05,Arkansas,0
+2020-02-28,06,California,0
+2020-02-28,08,Colorado,0
+2020-02-28,09,Connecticut,0
+2020-02-28,10,Delaware,0
+2020-02-28,11,District of Columbia,0
+2020-02-28,12,Florida,0
+2020-02-28,13,Georgia,0
+2020-02-28,66,Guam,0
+2020-02-28,15,Hawaii,0
+2020-02-28,16,Idaho,0
+2020-02-28,17,Illinois,0
+2020-02-28,18,Indiana,0
+2020-02-28,19,Iowa,0
+2020-02-28,20,Kansas,0
+2020-02-28,21,Kentucky,0
+2020-02-28,22,Louisiana,0
+2020-02-28,23,Maine,0
+2020-02-28,24,Maryland,0
+2020-02-28,25,Massachusetts,0
+2020-02-28,26,Michigan,0
+2020-02-28,27,Minnesota,0
+2020-02-28,28,Mississippi,0
+2020-02-28,29,Missouri,0
+2020-02-28,30,Montana,0
+2020-02-28,31,Nebraska,0
+2020-02-28,32,Nevada,0
+2020-02-28,33,New Hampshire,0
+2020-02-28,34,New Jersey,0
+2020-02-28,35,New Mexico,0
+2020-02-28,36,New York,0
+2020-02-28,37,North Carolina,0
+2020-02-28,38,North Dakota,0
+2020-02-28,69,Northern Mariana Islands,0
+2020-02-28,39,Ohio,0
+2020-02-28,40,Oklahoma,0
+2020-02-28,41,Oregon,0
+2020-02-28,42,Pennsylvania,0
+2020-02-28,72,Puerto Rico,0
+2020-02-28,44,Rhode Island,0
+2020-02-28,45,South Carolina,0
+2020-02-28,46,South Dakota,0
+2020-02-28,47,Tennessee,0
+2020-02-28,48,Texas,0
+2020-02-28,49,Utah,0
+2020-02-28,50,Vermont,0
+2020-02-28,51,Virginia,0
+2020-02-28,53,Washington,0
+2020-02-28,54,West Virginia,0
+2020-02-28,55,Wisconsin,0
+2020-02-28,56,Wyoming,0
+2020-02-28,US,US,0
+2020-02-29,01,Alabama,0
+2020-02-29,02,Alaska,0
+2020-02-29,60,American Samoa,0
+2020-02-29,04,Arizona,0
+2020-02-29,05,Arkansas,0
+2020-02-29,06,California,0
+2020-02-29,08,Colorado,0
+2020-02-29,09,Connecticut,0
+2020-02-29,10,Delaware,0
+2020-02-29,11,District of Columbia,0
+2020-02-29,12,Florida,0
+2020-02-29,13,Georgia,0
+2020-02-29,66,Guam,0
+2020-02-29,15,Hawaii,0
+2020-02-29,16,Idaho,0
+2020-02-29,17,Illinois,0
+2020-02-29,18,Indiana,0
+2020-02-29,19,Iowa,0
+2020-02-29,20,Kansas,0
+2020-02-29,21,Kentucky,0
+2020-02-29,22,Louisiana,0
+2020-02-29,23,Maine,0
+2020-02-29,24,Maryland,0
+2020-02-29,25,Massachusetts,0
+2020-02-29,26,Michigan,0
+2020-02-29,27,Minnesota,0
+2020-02-29,28,Mississippi,0
+2020-02-29,29,Missouri,0
+2020-02-29,30,Montana,0
+2020-02-29,31,Nebraska,0
+2020-02-29,32,Nevada,0
+2020-02-29,33,New Hampshire,0
+2020-02-29,34,New Jersey,0
+2020-02-29,35,New Mexico,0
+2020-02-29,36,New York,0
+2020-02-29,37,North Carolina,0
+2020-02-29,38,North Dakota,0
+2020-02-29,69,Northern Mariana Islands,0
+2020-02-29,39,Ohio,0
+2020-02-29,40,Oklahoma,0
+2020-02-29,41,Oregon,0
+2020-02-29,42,Pennsylvania,0
+2020-02-29,72,Puerto Rico,0
+2020-02-29,44,Rhode Island,0
+2020-02-29,45,South Carolina,0
+2020-02-29,46,South Dakota,0
+2020-02-29,47,Tennessee,0
+2020-02-29,48,Texas,0
+2020-02-29,49,Utah,0
+2020-02-29,50,Vermont,0
+2020-02-29,51,Virginia,0
+2020-02-29,53,Washington,1
+2020-02-29,54,West Virginia,0
+2020-02-29,55,Wisconsin,0
+2020-02-29,56,Wyoming,0
+2020-02-29,US,US,1
+2020-03-01,01,Alabama,0
+2020-03-01,02,Alaska,0
+2020-03-01,60,American Samoa,0
+2020-03-01,04,Arizona,0
+2020-03-01,05,Arkansas,0
+2020-03-01,06,California,0
+2020-03-01,08,Colorado,0
+2020-03-01,09,Connecticut,0
+2020-03-01,10,Delaware,0
+2020-03-01,11,District of Columbia,0
+2020-03-01,12,Florida,0
+2020-03-01,13,Georgia,0
+2020-03-01,66,Guam,0
+2020-03-01,15,Hawaii,0
+2020-03-01,16,Idaho,0
+2020-03-01,17,Illinois,0
+2020-03-01,18,Indiana,0
+2020-03-01,19,Iowa,0
+2020-03-01,20,Kansas,0
+2020-03-01,21,Kentucky,0
+2020-03-01,22,Louisiana,0
+2020-03-01,23,Maine,0
+2020-03-01,24,Maryland,0
+2020-03-01,25,Massachusetts,0
+2020-03-01,26,Michigan,0
+2020-03-01,27,Minnesota,0
+2020-03-01,28,Mississippi,0
+2020-03-01,29,Missouri,0
+2020-03-01,30,Montana,0
+2020-03-01,31,Nebraska,0
+2020-03-01,32,Nevada,0
+2020-03-01,33,New Hampshire,0
+2020-03-01,34,New Jersey,0
+2020-03-01,35,New Mexico,0
+2020-03-01,36,New York,0
+2020-03-01,37,North Carolina,0
+2020-03-01,38,North Dakota,0
+2020-03-01,69,Northern Mariana Islands,0
+2020-03-01,39,Ohio,0
+2020-03-01,40,Oklahoma,0
+2020-03-01,41,Oregon,0
+2020-03-01,42,Pennsylvania,0
+2020-03-01,72,Puerto Rico,0
+2020-03-01,44,Rhode Island,0
+2020-03-01,45,South Carolina,0
+2020-03-01,46,South Dakota,0
+2020-03-01,47,Tennessee,0
+2020-03-01,48,Texas,0
+2020-03-01,49,Utah,0
+2020-03-01,50,Vermont,0
+2020-03-01,51,Virginia,0
+2020-03-01,53,Washington,1
+2020-03-01,54,West Virginia,0
+2020-03-01,55,Wisconsin,0
+2020-03-01,56,Wyoming,0
+2020-03-01,US,US,1
+2020-03-02,01,Alabama,0
+2020-03-02,02,Alaska,0
+2020-03-02,60,American Samoa,0
+2020-03-02,04,Arizona,0
+2020-03-02,05,Arkansas,0
+2020-03-02,06,California,0
+2020-03-02,08,Colorado,0
+2020-03-02,09,Connecticut,0
+2020-03-02,10,Delaware,0
+2020-03-02,11,District of Columbia,0
+2020-03-02,12,Florida,0
+2020-03-02,13,Georgia,0
+2020-03-02,66,Guam,0
+2020-03-02,15,Hawaii,0
+2020-03-02,16,Idaho,0
+2020-03-02,17,Illinois,0
+2020-03-02,18,Indiana,0
+2020-03-02,19,Iowa,0
+2020-03-02,20,Kansas,0
+2020-03-02,21,Kentucky,0
+2020-03-02,22,Louisiana,0
+2020-03-02,23,Maine,0
+2020-03-02,24,Maryland,0
+2020-03-02,25,Massachusetts,0
+2020-03-02,26,Michigan,0
+2020-03-02,27,Minnesota,0
+2020-03-02,28,Mississippi,0
+2020-03-02,29,Missouri,0
+2020-03-02,30,Montana,0
+2020-03-02,31,Nebraska,0
+2020-03-02,32,Nevada,0
+2020-03-02,33,New Hampshire,0
+2020-03-02,34,New Jersey,0
+2020-03-02,35,New Mexico,0
+2020-03-02,36,New York,0
+2020-03-02,37,North Carolina,0
+2020-03-02,38,North Dakota,0
+2020-03-02,69,Northern Mariana Islands,0
+2020-03-02,39,Ohio,0
+2020-03-02,40,Oklahoma,0
+2020-03-02,41,Oregon,0
+2020-03-02,42,Pennsylvania,0
+2020-03-02,72,Puerto Rico,0
+2020-03-02,44,Rhode Island,0
+2020-03-02,45,South Carolina,0
+2020-03-02,46,South Dakota,0
+2020-03-02,47,Tennessee,0
+2020-03-02,48,Texas,0
+2020-03-02,49,Utah,0
+2020-03-02,50,Vermont,0
+2020-03-02,51,Virginia,0
+2020-03-02,53,Washington,6
+2020-03-02,54,West Virginia,0
+2020-03-02,55,Wisconsin,0
+2020-03-02,56,Wyoming,0
+2020-03-02,US,US,6
+2020-03-03,01,Alabama,0
+2020-03-03,02,Alaska,0
+2020-03-03,60,American Samoa,0
+2020-03-03,04,Arizona,0
+2020-03-03,05,Arkansas,0
+2020-03-03,06,California,0
+2020-03-03,08,Colorado,0
+2020-03-03,09,Connecticut,0
+2020-03-03,10,Delaware,0
+2020-03-03,11,District of Columbia,0
+2020-03-03,12,Florida,0
+2020-03-03,13,Georgia,0
+2020-03-03,66,Guam,0
+2020-03-03,15,Hawaii,0
+2020-03-03,16,Idaho,0
+2020-03-03,17,Illinois,0
+2020-03-03,18,Indiana,0
+2020-03-03,19,Iowa,0
+2020-03-03,20,Kansas,0
+2020-03-03,21,Kentucky,0
+2020-03-03,22,Louisiana,0
+2020-03-03,23,Maine,0
+2020-03-03,24,Maryland,0
+2020-03-03,25,Massachusetts,0
+2020-03-03,26,Michigan,0
+2020-03-03,27,Minnesota,0
+2020-03-03,28,Mississippi,0
+2020-03-03,29,Missouri,0
+2020-03-03,30,Montana,0
+2020-03-03,31,Nebraska,0
+2020-03-03,32,Nevada,0
+2020-03-03,33,New Hampshire,0
+2020-03-03,34,New Jersey,0
+2020-03-03,35,New Mexico,0
+2020-03-03,36,New York,0
+2020-03-03,37,North Carolina,0
+2020-03-03,38,North Dakota,0
+2020-03-03,69,Northern Mariana Islands,0
+2020-03-03,39,Ohio,0
+2020-03-03,40,Oklahoma,0
+2020-03-03,41,Oregon,0
+2020-03-03,42,Pennsylvania,0
+2020-03-03,72,Puerto Rico,0
+2020-03-03,44,Rhode Island,0
+2020-03-03,45,South Carolina,0
+2020-03-03,46,South Dakota,0
+2020-03-03,47,Tennessee,0
+2020-03-03,48,Texas,0
+2020-03-03,49,Utah,0
+2020-03-03,50,Vermont,0
+2020-03-03,51,Virginia,0
+2020-03-03,53,Washington,7
+2020-03-03,54,West Virginia,0
+2020-03-03,55,Wisconsin,0
+2020-03-03,56,Wyoming,0
+2020-03-03,US,US,7
+2020-03-04,01,Alabama,0
+2020-03-04,02,Alaska,0
+2020-03-04,60,American Samoa,0
+2020-03-04,04,Arizona,0
+2020-03-04,05,Arkansas,0
+2020-03-04,06,California,1
+2020-03-04,08,Colorado,0
+2020-03-04,09,Connecticut,0
+2020-03-04,10,Delaware,0
+2020-03-04,11,District of Columbia,0
+2020-03-04,12,Florida,0
+2020-03-04,13,Georgia,0
+2020-03-04,66,Guam,0
+2020-03-04,15,Hawaii,0
+2020-03-04,16,Idaho,0
+2020-03-04,17,Illinois,0
+2020-03-04,18,Indiana,0
+2020-03-04,19,Iowa,0
+2020-03-04,20,Kansas,0
+2020-03-04,21,Kentucky,0
+2020-03-04,22,Louisiana,0
+2020-03-04,23,Maine,0
+2020-03-04,24,Maryland,0
+2020-03-04,25,Massachusetts,0
+2020-03-04,26,Michigan,0
+2020-03-04,27,Minnesota,0
+2020-03-04,28,Mississippi,0
+2020-03-04,29,Missouri,0
+2020-03-04,30,Montana,0
+2020-03-04,31,Nebraska,0
+2020-03-04,32,Nevada,0
+2020-03-04,33,New Hampshire,0
+2020-03-04,34,New Jersey,0
+2020-03-04,35,New Mexico,0
+2020-03-04,36,New York,0
+2020-03-04,37,North Carolina,0
+2020-03-04,38,North Dakota,0
+2020-03-04,69,Northern Mariana Islands,0
+2020-03-04,39,Ohio,0
+2020-03-04,40,Oklahoma,0
+2020-03-04,41,Oregon,0
+2020-03-04,42,Pennsylvania,0
+2020-03-04,72,Puerto Rico,0
+2020-03-04,44,Rhode Island,0
+2020-03-04,45,South Carolina,0
+2020-03-04,46,South Dakota,0
+2020-03-04,47,Tennessee,0
+2020-03-04,48,Texas,0
+2020-03-04,49,Utah,0
+2020-03-04,50,Vermont,0
+2020-03-04,51,Virginia,0
+2020-03-04,53,Washington,10
+2020-03-04,54,West Virginia,0
+2020-03-04,55,Wisconsin,0
+2020-03-04,56,Wyoming,0
+2020-03-04,US,US,11
+2020-03-05,01,Alabama,0
+2020-03-05,02,Alaska,0
+2020-03-05,60,American Samoa,0
+2020-03-05,04,Arizona,0
+2020-03-05,05,Arkansas,0
+2020-03-05,06,California,1
+2020-03-05,08,Colorado,0
+2020-03-05,09,Connecticut,0
+2020-03-05,10,Delaware,0
+2020-03-05,11,District of Columbia,0
+2020-03-05,12,Florida,0
+2020-03-05,13,Georgia,0
+2020-03-05,66,Guam,0
+2020-03-05,15,Hawaii,0
+2020-03-05,16,Idaho,0
+2020-03-05,17,Illinois,0
+2020-03-05,18,Indiana,0
+2020-03-05,19,Iowa,0
+2020-03-05,20,Kansas,0
+2020-03-05,21,Kentucky,0
+2020-03-05,22,Louisiana,0
+2020-03-05,23,Maine,0
+2020-03-05,24,Maryland,0
+2020-03-05,25,Massachusetts,0
+2020-03-05,26,Michigan,0
+2020-03-05,27,Minnesota,0
+2020-03-05,28,Mississippi,0
+2020-03-05,29,Missouri,0
+2020-03-05,30,Montana,0
+2020-03-05,31,Nebraska,0
+2020-03-05,32,Nevada,0
+2020-03-05,33,New Hampshire,0
+2020-03-05,34,New Jersey,0
+2020-03-05,35,New Mexico,0
+2020-03-05,36,New York,0
+2020-03-05,37,North Carolina,0
+2020-03-05,38,North Dakota,0
+2020-03-05,69,Northern Mariana Islands,0
+2020-03-05,39,Ohio,0
+2020-03-05,40,Oklahoma,0
+2020-03-05,41,Oregon,0
+2020-03-05,42,Pennsylvania,0
+2020-03-05,72,Puerto Rico,0
+2020-03-05,44,Rhode Island,0
+2020-03-05,45,South Carolina,0
+2020-03-05,46,South Dakota,0
+2020-03-05,47,Tennessee,0
+2020-03-05,48,Texas,0
+2020-03-05,49,Utah,0
+2020-03-05,50,Vermont,0
+2020-03-05,51,Virginia,0
+2020-03-05,53,Washington,11
+2020-03-05,54,West Virginia,0
+2020-03-05,55,Wisconsin,0
+2020-03-05,56,Wyoming,0
+2020-03-05,US,US,12
+2020-03-06,01,Alabama,0
+2020-03-06,02,Alaska,0
+2020-03-06,60,American Samoa,0
+2020-03-06,04,Arizona,0
+2020-03-06,05,Arkansas,0
+2020-03-06,06,California,1
+2020-03-06,08,Colorado,0
+2020-03-06,09,Connecticut,0
+2020-03-06,10,Delaware,0
+2020-03-06,11,District of Columbia,0
+2020-03-06,12,Florida,0
+2020-03-06,13,Georgia,0
+2020-03-06,66,Guam,0
+2020-03-06,15,Hawaii,0
+2020-03-06,16,Idaho,0
+2020-03-06,17,Illinois,0
+2020-03-06,18,Indiana,0
+2020-03-06,19,Iowa,0
+2020-03-06,20,Kansas,0
+2020-03-06,21,Kentucky,0
+2020-03-06,22,Louisiana,0
+2020-03-06,23,Maine,0
+2020-03-06,24,Maryland,0
+2020-03-06,25,Massachusetts,0
+2020-03-06,26,Michigan,0
+2020-03-06,27,Minnesota,0
+2020-03-06,28,Mississippi,0
+2020-03-06,29,Missouri,0
+2020-03-06,30,Montana,0
+2020-03-06,31,Nebraska,0
+2020-03-06,32,Nevada,0
+2020-03-06,33,New Hampshire,0
+2020-03-06,34,New Jersey,0
+2020-03-06,35,New Mexico,0
+2020-03-06,36,New York,0
+2020-03-06,37,North Carolina,0
+2020-03-06,38,North Dakota,0
+2020-03-06,69,Northern Mariana Islands,0
+2020-03-06,39,Ohio,0
+2020-03-06,40,Oklahoma,0
+2020-03-06,41,Oregon,0
+2020-03-06,42,Pennsylvania,0
+2020-03-06,72,Puerto Rico,0
+2020-03-06,44,Rhode Island,0
+2020-03-06,45,South Carolina,0
+2020-03-06,46,South Dakota,0
+2020-03-06,47,Tennessee,0
+2020-03-06,48,Texas,0
+2020-03-06,49,Utah,0
+2020-03-06,50,Vermont,0
+2020-03-06,51,Virginia,0
+2020-03-06,53,Washington,13
+2020-03-06,54,West Virginia,0
+2020-03-06,55,Wisconsin,0
+2020-03-06,56,Wyoming,0
+2020-03-06,US,US,14
+2020-03-07,01,Alabama,0
+2020-03-07,02,Alaska,0
+2020-03-07,60,American Samoa,0
+2020-03-07,04,Arizona,0
+2020-03-07,05,Arkansas,0
+2020-03-07,06,California,1
+2020-03-07,08,Colorado,0
+2020-03-07,09,Connecticut,0
+2020-03-07,10,Delaware,0
+2020-03-07,11,District of Columbia,0
+2020-03-07,12,Florida,0
+2020-03-07,13,Georgia,0
+2020-03-07,66,Guam,0
+2020-03-07,15,Hawaii,0
+2020-03-07,16,Idaho,0
+2020-03-07,17,Illinois,0
+2020-03-07,18,Indiana,0
+2020-03-07,19,Iowa,0
+2020-03-07,20,Kansas,0
+2020-03-07,21,Kentucky,0
+2020-03-07,22,Louisiana,0
+2020-03-07,23,Maine,0
+2020-03-07,24,Maryland,0
+2020-03-07,25,Massachusetts,0
+2020-03-07,26,Michigan,0
+2020-03-07,27,Minnesota,0
+2020-03-07,28,Mississippi,0
+2020-03-07,29,Missouri,0
+2020-03-07,30,Montana,0
+2020-03-07,31,Nebraska,0
+2020-03-07,32,Nevada,0
+2020-03-07,33,New Hampshire,0
+2020-03-07,34,New Jersey,0
+2020-03-07,35,New Mexico,0
+2020-03-07,36,New York,0
+2020-03-07,37,North Carolina,0
+2020-03-07,38,North Dakota,0
+2020-03-07,69,Northern Mariana Islands,0
+2020-03-07,39,Ohio,0
+2020-03-07,40,Oklahoma,0
+2020-03-07,41,Oregon,0
+2020-03-07,42,Pennsylvania,0
+2020-03-07,72,Puerto Rico,0
+2020-03-07,44,Rhode Island,0
+2020-03-07,45,South Carolina,0
+2020-03-07,46,South Dakota,0
+2020-03-07,47,Tennessee,0
+2020-03-07,48,Texas,0
+2020-03-07,49,Utah,0
+2020-03-07,50,Vermont,0
+2020-03-07,51,Virginia,0
+2020-03-07,53,Washington,16
+2020-03-07,54,West Virginia,0
+2020-03-07,55,Wisconsin,0
+2020-03-07,56,Wyoming,0
+2020-03-07,US,US,17
+2020-03-08,01,Alabama,0
+2020-03-08,02,Alaska,0
+2020-03-08,60,American Samoa,0
+2020-03-08,04,Arizona,0
+2020-03-08,05,Arkansas,0
+2020-03-08,06,California,1
+2020-03-08,08,Colorado,0
+2020-03-08,09,Connecticut,0
+2020-03-08,10,Delaware,0
+2020-03-08,11,District of Columbia,0
+2020-03-08,12,Florida,2
+2020-03-08,13,Georgia,0
+2020-03-08,66,Guam,0
+2020-03-08,15,Hawaii,0
+2020-03-08,16,Idaho,0
+2020-03-08,17,Illinois,0
+2020-03-08,18,Indiana,0
+2020-03-08,19,Iowa,0
+2020-03-08,20,Kansas,0
+2020-03-08,21,Kentucky,0
+2020-03-08,22,Louisiana,0
+2020-03-08,23,Maine,0
+2020-03-08,24,Maryland,0
+2020-03-08,25,Massachusetts,0
+2020-03-08,26,Michigan,0
+2020-03-08,27,Minnesota,0
+2020-03-08,28,Mississippi,0
+2020-03-08,29,Missouri,0
+2020-03-08,30,Montana,0
+2020-03-08,31,Nebraska,0
+2020-03-08,32,Nevada,0
+2020-03-08,33,New Hampshire,0
+2020-03-08,34,New Jersey,0
+2020-03-08,35,New Mexico,0
+2020-03-08,36,New York,0
+2020-03-08,37,North Carolina,0
+2020-03-08,38,North Dakota,0
+2020-03-08,69,Northern Mariana Islands,0
+2020-03-08,39,Ohio,0
+2020-03-08,40,Oklahoma,0
+2020-03-08,41,Oregon,0
+2020-03-08,42,Pennsylvania,0
+2020-03-08,72,Puerto Rico,0
+2020-03-08,44,Rhode Island,0
+2020-03-08,45,South Carolina,0
+2020-03-08,46,South Dakota,0
+2020-03-08,47,Tennessee,0
+2020-03-08,48,Texas,0
+2020-03-08,49,Utah,0
+2020-03-08,50,Vermont,0
+2020-03-08,51,Virginia,0
+2020-03-08,53,Washington,18
+2020-03-08,54,West Virginia,0
+2020-03-08,55,Wisconsin,0
+2020-03-08,56,Wyoming,0
+2020-03-08,US,US,21
+2020-03-09,01,Alabama,0
+2020-03-09,02,Alaska,0
+2020-03-09,60,American Samoa,0
+2020-03-09,04,Arizona,0
+2020-03-09,05,Arkansas,0
+2020-03-09,06,California,1
+2020-03-09,08,Colorado,0
+2020-03-09,09,Connecticut,0
+2020-03-09,10,Delaware,0
+2020-03-09,11,District of Columbia,0
+2020-03-09,12,Florida,2
+2020-03-09,13,Georgia,0
+2020-03-09,66,Guam,0
+2020-03-09,15,Hawaii,0
+2020-03-09,16,Idaho,0
+2020-03-09,17,Illinois,0
+2020-03-09,18,Indiana,0
+2020-03-09,19,Iowa,0
+2020-03-09,20,Kansas,0
+2020-03-09,21,Kentucky,0
+2020-03-09,22,Louisiana,0
+2020-03-09,23,Maine,0
+2020-03-09,24,Maryland,0
+2020-03-09,25,Massachusetts,0
+2020-03-09,26,Michigan,0
+2020-03-09,27,Minnesota,0
+2020-03-09,28,Mississippi,0
+2020-03-09,29,Missouri,0
+2020-03-09,30,Montana,0
+2020-03-09,31,Nebraska,0
+2020-03-09,32,Nevada,0
+2020-03-09,33,New Hampshire,0
+2020-03-09,34,New Jersey,0
+2020-03-09,35,New Mexico,0
+2020-03-09,36,New York,0
+2020-03-09,37,North Carolina,0
+2020-03-09,38,North Dakota,0
+2020-03-09,69,Northern Mariana Islands,0
+2020-03-09,39,Ohio,0
+2020-03-09,40,Oklahoma,0
+2020-03-09,41,Oregon,0
+2020-03-09,42,Pennsylvania,0
+2020-03-09,72,Puerto Rico,0
+2020-03-09,44,Rhode Island,0
+2020-03-09,45,South Carolina,0
+2020-03-09,46,South Dakota,0
+2020-03-09,47,Tennessee,0
+2020-03-09,48,Texas,0
+2020-03-09,49,Utah,0
+2020-03-09,50,Vermont,0
+2020-03-09,51,Virginia,0
+2020-03-09,53,Washington,19
+2020-03-09,54,West Virginia,0
+2020-03-09,55,Wisconsin,0
+2020-03-09,56,Wyoming,0
+2020-03-09,US,US,22
+2020-03-10,01,Alabama,0
+2020-03-10,02,Alaska,0
+2020-03-10,60,American Samoa,0
+2020-03-10,04,Arizona,0
+2020-03-10,05,Arkansas,0
+2020-03-10,06,California,2
+2020-03-10,08,Colorado,0
+2020-03-10,09,Connecticut,0
+2020-03-10,10,Delaware,0
+2020-03-10,11,District of Columbia,0
+2020-03-10,12,Florida,2
+2020-03-10,13,Georgia,0
+2020-03-10,66,Guam,0
+2020-03-10,15,Hawaii,0
+2020-03-10,16,Idaho,0
+2020-03-10,17,Illinois,0
+2020-03-10,18,Indiana,0
+2020-03-10,19,Iowa,0
+2020-03-10,20,Kansas,0
+2020-03-10,21,Kentucky,0
+2020-03-10,22,Louisiana,0
+2020-03-10,23,Maine,0
+2020-03-10,24,Maryland,0
+2020-03-10,25,Massachusetts,0
+2020-03-10,26,Michigan,0
+2020-03-10,27,Minnesota,0
+2020-03-10,28,Mississippi,0
+2020-03-10,29,Missouri,0
+2020-03-10,30,Montana,0
+2020-03-10,31,Nebraska,0
+2020-03-10,32,Nevada,0
+2020-03-10,33,New Hampshire,0
+2020-03-10,34,New Jersey,1
+2020-03-10,35,New Mexico,0
+2020-03-10,36,New York,0
+2020-03-10,37,North Carolina,0
+2020-03-10,38,North Dakota,0
+2020-03-10,69,Northern Mariana Islands,0
+2020-03-10,39,Ohio,0
+2020-03-10,40,Oklahoma,0
+2020-03-10,41,Oregon,0
+2020-03-10,42,Pennsylvania,0
+2020-03-10,72,Puerto Rico,0
+2020-03-10,44,Rhode Island,0
+2020-03-10,45,South Carolina,0
+2020-03-10,46,South Dakota,0
+2020-03-10,47,Tennessee,0
+2020-03-10,48,Texas,0
+2020-03-10,49,Utah,0
+2020-03-10,50,Vermont,0
+2020-03-10,51,Virginia,0
+2020-03-10,53,Washington,23
+2020-03-10,54,West Virginia,0
+2020-03-10,55,Wisconsin,0
+2020-03-10,56,Wyoming,0
+2020-03-10,US,US,28
+2020-03-11,01,Alabama,0
+2020-03-11,02,Alaska,0
+2020-03-11,60,American Samoa,0
+2020-03-11,04,Arizona,0
+2020-03-11,05,Arkansas,0
+2020-03-11,06,California,4
+2020-03-11,08,Colorado,0
+2020-03-11,09,Connecticut,0
+2020-03-11,10,Delaware,0
+2020-03-11,11,District of Columbia,0
+2020-03-11,12,Florida,2
+2020-03-11,13,Georgia,0
+2020-03-11,66,Guam,0
+2020-03-11,15,Hawaii,0
+2020-03-11,16,Idaho,0
+2020-03-11,17,Illinois,0
+2020-03-11,18,Indiana,0
+2020-03-11,19,Iowa,0
+2020-03-11,20,Kansas,0
+2020-03-11,21,Kentucky,0
+2020-03-11,22,Louisiana,0
+2020-03-11,23,Maine,0
+2020-03-11,24,Maryland,0
+2020-03-11,25,Massachusetts,0
+2020-03-11,26,Michigan,0
+2020-03-11,27,Minnesota,0
+2020-03-11,28,Mississippi,0
+2020-03-11,29,Missouri,0
+2020-03-11,30,Montana,0
+2020-03-11,31,Nebraska,0
+2020-03-11,32,Nevada,0
+2020-03-11,33,New Hampshire,0
+2020-03-11,34,New Jersey,1
+2020-03-11,35,New Mexico,0
+2020-03-11,36,New York,0
+2020-03-11,37,North Carolina,0
+2020-03-11,38,North Dakota,0
+2020-03-11,69,Northern Mariana Islands,0
+2020-03-11,39,Ohio,0
+2020-03-11,40,Oklahoma,0
+2020-03-11,41,Oregon,0
+2020-03-11,42,Pennsylvania,0
+2020-03-11,72,Puerto Rico,0
+2020-03-11,44,Rhode Island,0
+2020-03-11,45,South Carolina,0
+2020-03-11,46,South Dakota,1
+2020-03-11,47,Tennessee,0
+2020-03-11,48,Texas,0
+2020-03-11,49,Utah,0
+2020-03-11,50,Vermont,0
+2020-03-11,51,Virginia,0
+2020-03-11,53,Washington,24
+2020-03-11,54,West Virginia,0
+2020-03-11,55,Wisconsin,0
+2020-03-11,56,Wyoming,0
+2020-03-11,US,US,32
+2020-03-12,01,Alabama,0
+2020-03-12,02,Alaska,0
+2020-03-12,60,American Samoa,0
+2020-03-12,04,Arizona,0
+2020-03-12,05,Arkansas,0
+2020-03-12,06,California,4
+2020-03-12,08,Colorado,0
+2020-03-12,09,Connecticut,0
+2020-03-12,10,Delaware,0
+2020-03-12,11,District of Columbia,0
+2020-03-12,12,Florida,2
+2020-03-12,13,Georgia,1
+2020-03-12,66,Guam,0
+2020-03-12,15,Hawaii,0
+2020-03-12,16,Idaho,0
+2020-03-12,17,Illinois,0
+2020-03-12,18,Indiana,0
+2020-03-12,19,Iowa,0
+2020-03-12,20,Kansas,0
+2020-03-12,21,Kentucky,0
+2020-03-12,22,Louisiana,0
+2020-03-12,23,Maine,0
+2020-03-12,24,Maryland,0
+2020-03-12,25,Massachusetts,0
+2020-03-12,26,Michigan,0
+2020-03-12,27,Minnesota,0
+2020-03-12,28,Mississippi,0
+2020-03-12,29,Missouri,0
+2020-03-12,30,Montana,0
+2020-03-12,31,Nebraska,0
+2020-03-12,32,Nevada,0
+2020-03-12,33,New Hampshire,0
+2020-03-12,34,New Jersey,1
+2020-03-12,35,New Mexico,0
+2020-03-12,36,New York,1
+2020-03-12,37,North Carolina,0
+2020-03-12,38,North Dakota,0
+2020-03-12,69,Northern Mariana Islands,0
+2020-03-12,39,Ohio,0
+2020-03-12,40,Oklahoma,0
+2020-03-12,41,Oregon,0
+2020-03-12,42,Pennsylvania,0
+2020-03-12,72,Puerto Rico,0
+2020-03-12,44,Rhode Island,0
+2020-03-12,45,South Carolina,0
+2020-03-12,46,South Dakota,1
+2020-03-12,47,Tennessee,0
+2020-03-12,48,Texas,0
+2020-03-12,49,Utah,0
+2020-03-12,50,Vermont,0
+2020-03-12,51,Virginia,0
+2020-03-12,53,Washington,31
+2020-03-12,54,West Virginia,0
+2020-03-12,55,Wisconsin,0
+2020-03-12,56,Wyoming,0
+2020-03-12,US,US,41
+2020-03-13,01,Alabama,0
+2020-03-13,02,Alaska,0
+2020-03-13,60,American Samoa,0
+2020-03-13,04,Arizona,0
+2020-03-13,05,Arkansas,0
+2020-03-13,06,California,4
+2020-03-13,08,Colorado,1
+2020-03-13,09,Connecticut,0
+2020-03-13,10,Delaware,0
+2020-03-13,11,District of Columbia,0
+2020-03-13,12,Florida,2
+2020-03-13,13,Georgia,1
+2020-03-13,66,Guam,0
+2020-03-13,15,Hawaii,0
+2020-03-13,16,Idaho,0
+2020-03-13,17,Illinois,0
+2020-03-13,18,Indiana,0
+2020-03-13,19,Iowa,0
+2020-03-13,20,Kansas,1
+2020-03-13,21,Kentucky,0
+2020-03-13,22,Louisiana,0
+2020-03-13,23,Maine,0
+2020-03-13,24,Maryland,0
+2020-03-13,25,Massachusetts,0
+2020-03-13,26,Michigan,0
+2020-03-13,27,Minnesota,0
+2020-03-13,28,Mississippi,0
+2020-03-13,29,Missouri,0
+2020-03-13,30,Montana,0
+2020-03-13,31,Nebraska,0
+2020-03-13,32,Nevada,0
+2020-03-13,33,New Hampshire,0
+2020-03-13,34,New Jersey,1
+2020-03-13,35,New Mexico,0
+2020-03-13,36,New York,2
+2020-03-13,37,North Carolina,0
+2020-03-13,38,North Dakota,0
+2020-03-13,69,Northern Mariana Islands,0
+2020-03-13,39,Ohio,0
+2020-03-13,40,Oklahoma,0
+2020-03-13,41,Oregon,0
+2020-03-13,42,Pennsylvania,0
+2020-03-13,72,Puerto Rico,0
+2020-03-13,44,Rhode Island,0
+2020-03-13,45,South Carolina,0
+2020-03-13,46,South Dakota,1
+2020-03-13,47,Tennessee,0
+2020-03-13,48,Texas,0
+2020-03-13,49,Utah,0
+2020-03-13,50,Vermont,0
+2020-03-13,51,Virginia,0
+2020-03-13,53,Washington,37
+2020-03-13,54,West Virginia,0
+2020-03-13,55,Wisconsin,0
+2020-03-13,56,Wyoming,0
+2020-03-13,US,US,50
+2020-03-14,01,Alabama,0
+2020-03-14,02,Alaska,0
+2020-03-14,60,American Samoa,0
+2020-03-14,04,Arizona,0
+2020-03-14,05,Arkansas,0
+2020-03-14,06,California,3
+2020-03-14,08,Colorado,0
+2020-03-14,09,Connecticut,0
+2020-03-14,10,Delaware,0
+2020-03-14,11,District of Columbia,0
+2020-03-14,12,Florida,2
+2020-03-14,13,Georgia,1
+2020-03-14,66,Guam,0
+2020-03-14,15,Hawaii,0
+2020-03-14,16,Idaho,0
+2020-03-14,17,Illinois,0
+2020-03-14,18,Indiana,0
+2020-03-14,19,Iowa,0
+2020-03-14,20,Kansas,1
+2020-03-14,21,Kentucky,0
+2020-03-14,22,Louisiana,1
+2020-03-14,23,Maine,0
+2020-03-14,24,Maryland,0
+2020-03-14,25,Massachusetts,0
+2020-03-14,26,Michigan,0
+2020-03-14,27,Minnesota,0
+2020-03-14,28,Mississippi,0
+2020-03-14,29,Missouri,0
+2020-03-14,30,Montana,0
+2020-03-14,31,Nebraska,0
+2020-03-14,32,Nevada,0
+2020-03-14,33,New Hampshire,0
+2020-03-14,34,New Jersey,1
+2020-03-14,35,New Mexico,0
+2020-03-14,36,New York,6
+2020-03-14,37,North Carolina,0
+2020-03-14,38,North Dakota,0
+2020-03-14,69,Northern Mariana Islands,0
+2020-03-14,39,Ohio,0
+2020-03-14,40,Oklahoma,0
+2020-03-14,41,Oregon,0
+2020-03-14,42,Pennsylvania,0
+2020-03-14,72,Puerto Rico,0
+2020-03-14,44,Rhode Island,0
+2020-03-14,45,South Carolina,0
+2020-03-14,46,South Dakota,1
+2020-03-14,47,Tennessee,0
+2020-03-14,48,Texas,0
+2020-03-14,49,Utah,0
+2020-03-14,50,Vermont,0
+2020-03-14,51,Virginia,1
+2020-03-14,53,Washington,39
+2020-03-14,54,West Virginia,0
+2020-03-14,55,Wisconsin,0
+2020-03-14,56,Wyoming,0
+2020-03-14,US,US,56
+2020-03-15,01,Alabama,0
+2020-03-15,02,Alaska,0
+2020-03-15,60,American Samoa,0
+2020-03-15,04,Arizona,0
+2020-03-15,05,Arkansas,0
+2020-03-15,06,California,5
+2020-03-15,08,Colorado,1
+2020-03-15,09,Connecticut,0
+2020-03-15,10,Delaware,0
+2020-03-15,11,District of Columbia,0
+2020-03-15,12,Florida,3
+2020-03-15,13,Georgia,1
+2020-03-15,66,Guam,0
+2020-03-15,15,Hawaii,0
+2020-03-15,16,Idaho,0
+2020-03-15,17,Illinois,0
+2020-03-15,18,Indiana,0
+2020-03-15,19,Iowa,0
+2020-03-15,20,Kansas,1
+2020-03-15,21,Kentucky,0
+2020-03-15,22,Louisiana,2
+2020-03-15,23,Maine,0
+2020-03-15,24,Maryland,0
+2020-03-15,25,Massachusetts,0
+2020-03-15,26,Michigan,0
+2020-03-15,27,Minnesota,0
+2020-03-15,28,Mississippi,0
+2020-03-15,29,Missouri,0
+2020-03-15,30,Montana,0
+2020-03-15,31,Nebraska,0
+2020-03-15,32,Nevada,0
+2020-03-15,33,New Hampshire,0
+2020-03-15,34,New Jersey,2
+2020-03-15,35,New Mexico,0
+2020-03-15,36,New York,12
+2020-03-15,37,North Carolina,0
+2020-03-15,38,North Dakota,0
+2020-03-15,69,Northern Mariana Islands,0
+2020-03-15,39,Ohio,0
+2020-03-15,40,Oklahoma,0
+2020-03-15,41,Oregon,1
+2020-03-15,42,Pennsylvania,0
+2020-03-15,72,Puerto Rico,0
+2020-03-15,44,Rhode Island,0
+2020-03-15,45,South Carolina,0
+2020-03-15,46,South Dakota,1
+2020-03-15,47,Tennessee,0
+2020-03-15,48,Texas,0
+2020-03-15,49,Utah,0
+2020-03-15,50,Vermont,0
+2020-03-15,51,Virginia,1
+2020-03-15,53,Washington,40
+2020-03-15,54,West Virginia,0
+2020-03-15,55,Wisconsin,0
+2020-03-15,56,Wyoming,0
+2020-03-15,US,US,70
+2020-03-16,01,Alabama,0
+2020-03-16,02,Alaska,0
+2020-03-16,60,American Samoa,0
+2020-03-16,04,Arizona,0
+2020-03-16,05,Arkansas,0
+2020-03-16,06,California,7
+2020-03-16,08,Colorado,1
+2020-03-16,09,Connecticut,0
+2020-03-16,10,Delaware,0
+2020-03-16,11,District of Columbia,0
+2020-03-16,12,Florida,3
+2020-03-16,13,Georgia,1
+2020-03-16,66,Guam,0
+2020-03-16,15,Hawaii,0
+2020-03-16,16,Idaho,0
+2020-03-16,17,Illinois,0
+2020-03-16,18,Indiana,1
+2020-03-16,19,Iowa,0
+2020-03-16,20,Kansas,1
+2020-03-16,21,Kentucky,1
+2020-03-16,22,Louisiana,3
+2020-03-16,23,Maine,0
+2020-03-16,24,Maryland,0
+2020-03-16,25,Massachusetts,0
+2020-03-16,26,Michigan,0
+2020-03-16,27,Minnesota,0
+2020-03-16,28,Mississippi,0
+2020-03-16,29,Missouri,0
+2020-03-16,30,Montana,0
+2020-03-16,31,Nebraska,0
+2020-03-16,32,Nevada,1
+2020-03-16,33,New Hampshire,0
+2020-03-16,34,New Jersey,2
+2020-03-16,35,New Mexico,0
+2020-03-16,36,New York,24
+2020-03-16,37,North Carolina,0
+2020-03-16,38,North Dakota,0
+2020-03-16,69,Northern Mariana Islands,0
+2020-03-16,39,Ohio,0
+2020-03-16,40,Oklahoma,0
+2020-03-16,41,Oregon,1
+2020-03-16,42,Pennsylvania,0
+2020-03-16,72,Puerto Rico,0
+2020-03-16,44,Rhode Island,0
+2020-03-16,45,South Carolina,1
+2020-03-16,46,South Dakota,1
+2020-03-16,47,Tennessee,0
+2020-03-16,48,Texas,0
+2020-03-16,49,Utah,0
+2020-03-16,50,Vermont,0
+2020-03-16,51,Virginia,2
+2020-03-16,53,Washington,48
+2020-03-16,54,West Virginia,0
+2020-03-16,55,Wisconsin,0
+2020-03-16,56,Wyoming,0
+2020-03-16,US,US,98
+2020-03-17,01,Alabama,0
+2020-03-17,02,Alaska,0
+2020-03-17,60,American Samoa,0
+2020-03-17,04,Arizona,0
+2020-03-17,05,Arkansas,0
+2020-03-17,06,California,12
+2020-03-17,08,Colorado,2
+2020-03-17,09,Connecticut,0
+2020-03-17,10,Delaware,0
+2020-03-17,11,District of Columbia,0
+2020-03-17,12,Florida,5
+2020-03-17,13,Georgia,1
+2020-03-17,66,Guam,0
+2020-03-17,15,Hawaii,0
+2020-03-17,16,Idaho,0
+2020-03-17,17,Illinois,1
+2020-03-17,18,Indiana,2
+2020-03-17,19,Iowa,0
+2020-03-17,20,Kansas,1
+2020-03-17,21,Kentucky,1
+2020-03-17,22,Louisiana,4
+2020-03-17,23,Maine,0
+2020-03-17,24,Maryland,0
+2020-03-17,25,Massachusetts,0
+2020-03-17,26,Michigan,0
+2020-03-17,27,Minnesota,0
+2020-03-17,28,Mississippi,0
+2020-03-17,29,Missouri,0
+2020-03-17,30,Montana,0
+2020-03-17,31,Nebraska,0
+2020-03-17,32,Nevada,1
+2020-03-17,33,New Hampshire,0
+2020-03-17,34,New Jersey,3
+2020-03-17,35,New Mexico,0
+2020-03-17,36,New York,38
+2020-03-17,37,North Carolina,0
+2020-03-17,38,North Dakota,0
+2020-03-17,69,Northern Mariana Islands,0
+2020-03-17,39,Ohio,0
+2020-03-17,40,Oklahoma,0
+2020-03-17,41,Oregon,1
+2020-03-17,42,Pennsylvania,0
+2020-03-17,72,Puerto Rico,0
+2020-03-17,44,Rhode Island,0
+2020-03-17,45,South Carolina,1
+2020-03-17,46,South Dakota,1
+2020-03-17,47,Tennessee,0
+2020-03-17,48,Texas,1
+2020-03-17,49,Utah,0
+2020-03-17,50,Vermont,0
+2020-03-17,51,Virginia,2
+2020-03-17,53,Washington,55
+2020-03-17,54,West Virginia,0
+2020-03-17,55,Wisconsin,0
+2020-03-17,56,Wyoming,0
+2020-03-17,US,US,132
+2020-03-18,01,Alabama,0
+2020-03-18,02,Alaska,0
+2020-03-18,60,American Samoa,0
+2020-03-18,04,Arizona,0
+2020-03-18,05,Arkansas,0
+2020-03-18,06,California,16
+2020-03-18,08,Colorado,2
+2020-03-18,09,Connecticut,1
+2020-03-18,10,Delaware,0
+2020-03-18,11,District of Columbia,0
+2020-03-18,12,Florida,7
+2020-03-18,13,Georgia,3
+2020-03-18,66,Guam,0
+2020-03-18,15,Hawaii,0
+2020-03-18,16,Idaho,0
+2020-03-18,17,Illinois,1
+2020-03-18,18,Indiana,2
+2020-03-18,19,Iowa,0
+2020-03-18,20,Kansas,1
+2020-03-18,21,Kentucky,1
+2020-03-18,22,Louisiana,6
+2020-03-18,23,Maine,0
+2020-03-18,24,Maryland,0
+2020-03-18,25,Massachusetts,0
+2020-03-18,26,Michigan,1
+2020-03-18,27,Minnesota,0
+2020-03-18,28,Mississippi,0
+2020-03-18,29,Missouri,1
+2020-03-18,30,Montana,0
+2020-03-18,31,Nebraska,0
+2020-03-18,32,Nevada,1
+2020-03-18,33,New Hampshire,0
+2020-03-18,34,New Jersey,5
+2020-03-18,35,New Mexico,0
+2020-03-18,36,New York,63
+2020-03-18,37,North Carolina,0
+2020-03-18,38,North Dakota,0
+2020-03-18,69,Northern Mariana Islands,0
+2020-03-18,39,Ohio,0
+2020-03-18,40,Oklahoma,0
+2020-03-18,41,Oregon,3
+2020-03-18,42,Pennsylvania,1
+2020-03-18,72,Puerto Rico,0
+2020-03-18,44,Rhode Island,0
+2020-03-18,45,South Carolina,1
+2020-03-18,46,South Dakota,1
+2020-03-18,47,Tennessee,0
+2020-03-18,48,Texas,3
+2020-03-18,49,Utah,0
+2020-03-18,50,Vermont,0
+2020-03-18,51,Virginia,2
+2020-03-18,53,Washington,67
+2020-03-18,54,West Virginia,0
+2020-03-18,55,Wisconsin,0
+2020-03-18,56,Wyoming,0
+2020-03-18,US,US,189
+2020-03-19,01,Alabama,0
+2020-03-19,02,Alaska,0
+2020-03-19,60,American Samoa,0
+2020-03-19,04,Arizona,0
+2020-03-19,05,Arkansas,0
+2020-03-19,06,California,18
+2020-03-19,08,Colorado,4
+2020-03-19,09,Connecticut,3
+2020-03-19,10,Delaware,0
+2020-03-19,11,District of Columbia,0
+2020-03-19,12,Florida,9
+2020-03-19,13,Georgia,10
+2020-03-19,66,Guam,0
+2020-03-19,15,Hawaii,0
+2020-03-19,16,Idaho,0
+2020-03-19,17,Illinois,4
+2020-03-19,18,Indiana,2
+2020-03-19,19,Iowa,0
+2020-03-19,20,Kansas,1
+2020-03-19,21,Kentucky,2
+2020-03-19,22,Louisiana,10
+2020-03-19,23,Maine,0
+2020-03-19,24,Maryland,1
+2020-03-19,25,Massachusetts,0
+2020-03-19,26,Michigan,1
+2020-03-19,27,Minnesota,0
+2020-03-19,28,Mississippi,1
+2020-03-19,29,Missouri,1
+2020-03-19,30,Montana,0
+2020-03-19,31,Nebraska,0
+2020-03-19,32,Nevada,1
+2020-03-19,33,New Hampshire,0
+2020-03-19,34,New Jersey,9
+2020-03-19,35,New Mexico,0
+2020-03-19,36,New York,96
+2020-03-19,37,North Carolina,0
+2020-03-19,38,North Dakota,0
+2020-03-19,69,Northern Mariana Islands,0
+2020-03-19,39,Ohio,0
+2020-03-19,40,Oklahoma,1
+2020-03-19,41,Oregon,3
+2020-03-19,42,Pennsylvania,1
+2020-03-19,72,Puerto Rico,0
+2020-03-19,44,Rhode Island,0
+2020-03-19,45,South Carolina,1
+2020-03-19,46,South Dakota,1
+2020-03-19,47,Tennessee,0
+2020-03-19,48,Texas,5
+2020-03-19,49,Utah,0
+2020-03-19,50,Vermont,2
+2020-03-19,51,Virginia,2
+2020-03-19,53,Washington,73
+2020-03-19,54,West Virginia,0
+2020-03-19,55,Wisconsin,4
+2020-03-19,56,Wyoming,0
+2020-03-19,US,US,267
+2020-03-20,01,Alabama,0
+2020-03-20,02,Alaska,0
+2020-03-20,60,American Samoa,0
+2020-03-20,04,Arizona,0
+2020-03-20,05,Arkansas,0
+2020-03-20,06,California,24
+2020-03-20,08,Colorado,4
+2020-03-20,09,Connecticut,4
+2020-03-20,10,Delaware,0
+2020-03-20,11,District of Columbia,1
+2020-03-20,12,Florida,11
+2020-03-20,13,Georgia,14
+2020-03-20,66,Guam,0
+2020-03-20,15,Hawaii,0
+2020-03-20,16,Idaho,0
+2020-03-20,17,Illinois,5
+2020-03-20,18,Indiana,3
+2020-03-20,19,Iowa,0
+2020-03-20,20,Kansas,1
+2020-03-20,21,Kentucky,2
+2020-03-20,22,Louisiana,14
+2020-03-20,23,Maine,0
+2020-03-20,24,Maryland,2
+2020-03-20,25,Massachusetts,1
+2020-03-20,26,Michigan,1
+2020-03-20,27,Minnesota,0
+2020-03-20,28,Mississippi,1
+2020-03-20,29,Missouri,3
+2020-03-20,30,Montana,0
+2020-03-20,31,Nebraska,0
+2020-03-20,32,Nevada,2
+2020-03-20,33,New Hampshire,0
+2020-03-20,34,New Jersey,11
+2020-03-20,35,New Mexico,0
+2020-03-20,36,New York,151
+2020-03-20,37,North Carolina,0
+2020-03-20,38,North Dakota,0
+2020-03-20,69,Northern Mariana Islands,0
+2020-03-20,39,Ohio,3
+2020-03-20,40,Oklahoma,1
+2020-03-20,41,Oregon,3
+2020-03-20,42,Pennsylvania,1
+2020-03-20,72,Puerto Rico,0
+2020-03-20,44,Rhode Island,0
+2020-03-20,45,South Carolina,3
+2020-03-20,46,South Dakota,1
+2020-03-20,47,Tennessee,1
+2020-03-20,48,Texas,4
+2020-03-20,49,Utah,0
+2020-03-20,50,Vermont,2
+2020-03-20,51,Virginia,2
+2020-03-20,53,Washington,83
+2020-03-20,54,West Virginia,0
+2020-03-20,55,Wisconsin,3
+2020-03-20,56,Wyoming,0
+2020-03-20,US,US,363
+2020-03-21,01,Alabama,0
+2020-03-21,02,Alaska,0
+2020-03-21,60,American Samoa,0
+2020-03-21,04,Arizona,1
+2020-03-21,05,Arkansas,0
+2020-03-21,06,California,25
+2020-03-21,08,Colorado,6
+2020-03-21,09,Connecticut,4
+2020-03-21,10,Delaware,0
+2020-03-21,11,District of Columbia,0
+2020-03-21,12,Florida,13
+2020-03-21,13,Georgia,20
+2020-03-21,66,Guam,0
+2020-03-21,15,Hawaii,0
+2020-03-21,16,Idaho,0
+2020-03-21,17,Illinois,6
+2020-03-21,18,Indiana,4
+2020-03-21,19,Iowa,0
+2020-03-21,20,Kansas,2
+2020-03-21,21,Kentucky,3
+2020-03-21,22,Louisiana,20
+2020-03-21,23,Maine,0
+2020-03-21,24,Maryland,2
+2020-03-21,25,Massachusetts,1
+2020-03-21,26,Michigan,3
+2020-03-21,27,Minnesota,1
+2020-03-21,28,Mississippi,1
+2020-03-21,29,Missouri,3
+2020-03-21,30,Montana,0
+2020-03-21,31,Nebraska,0
+2020-03-21,32,Nevada,2
+2020-03-21,33,New Hampshire,0
+2020-03-21,34,New Jersey,16
+2020-03-21,35,New Mexico,0
+2020-03-21,36,New York,195
+2020-03-21,37,North Carolina,0
+2020-03-21,38,North Dakota,0
+2020-03-21,69,Northern Mariana Islands,0
+2020-03-21,39,Ohio,3
+2020-03-21,40,Oklahoma,1
+2020-03-21,41,Oregon,4
+2020-03-21,42,Pennsylvania,2
+2020-03-21,72,Puerto Rico,1
+2020-03-21,44,Rhode Island,0
+2020-03-21,45,South Carolina,3
+2020-03-21,46,South Dakota,1
+2020-03-21,47,Tennessee,1
+2020-03-21,48,Texas,5
+2020-03-21,49,Utah,0
+2020-03-21,50,Vermont,2
+2020-03-21,51,Virginia,3
+2020-03-21,53,Washington,94
+2020-03-21,54,West Virginia,0
+2020-03-21,55,Wisconsin,4
+2020-03-21,56,Wyoming,0
+2020-03-21,US,US,453
+2020-03-22,01,Alabama,0
+2020-03-22,02,Alaska,0
+2020-03-22,60,American Samoa,0
+2020-03-22,04,Arizona,2
+2020-03-22,05,Arkansas,0
+2020-03-22,06,California,30
+2020-03-22,08,Colorado,6
+2020-03-22,09,Connecticut,8
+2020-03-22,10,Delaware,0
+2020-03-22,11,District of Columbia,2
+2020-03-22,12,Florida,13
+2020-03-22,13,Georgia,25
+2020-03-22,66,Guam,1
+2020-03-22,15,Hawaii,0
+2020-03-22,16,Idaho,0
+2020-03-22,17,Illinois,9
+2020-03-22,18,Indiana,6
+2020-03-22,19,Iowa,0
+2020-03-22,20,Kansas,2
+2020-03-22,21,Kentucky,3
+2020-03-22,22,Louisiana,20
+2020-03-22,23,Maine,0
+2020-03-22,24,Maryland,3
+2020-03-22,25,Massachusetts,5
+2020-03-22,26,Michigan,9
+2020-03-22,27,Minnesota,1
+2020-03-22,28,Mississippi,1
+2020-03-22,29,Missouri,3
+2020-03-22,30,Montana,0
+2020-03-22,31,Nebraska,0
+2020-03-22,32,Nevada,2
+2020-03-22,33,New Hampshire,0
+2020-03-22,34,New Jersey,20
+2020-03-22,35,New Mexico,0
+2020-03-22,36,New York,286
+2020-03-22,37,North Carolina,0
+2020-03-22,38,North Dakota,0
+2020-03-22,69,Northern Mariana Islands,0
+2020-03-22,39,Ohio,3
+2020-03-22,40,Oklahoma,2
+2020-03-22,41,Oregon,5
+2020-03-22,42,Pennsylvania,4
+2020-03-22,72,Puerto Rico,1
+2020-03-22,44,Rhode Island,0
+2020-03-22,45,South Carolina,3
+2020-03-22,46,South Dakota,1
+2020-03-22,47,Tennessee,2
+2020-03-22,48,Texas,7
+2020-03-22,49,Utah,1
+2020-03-22,50,Vermont,2
+2020-03-22,51,Virginia,6
+2020-03-22,53,Washington,97
+2020-03-22,54,West Virginia,0
+2020-03-22,55,Wisconsin,4
+2020-03-22,56,Wyoming,0
+2020-03-22,US,US,596
+2020-03-23,01,Alabama,0
+2020-03-23,02,Alaska,0
+2020-03-23,60,American Samoa,0
+2020-03-23,04,Arizona,2
+2020-03-23,05,Arkansas,0
+2020-03-23,06,California,39
+2020-03-23,08,Colorado,7
+2020-03-23,09,Connecticut,10
+2020-03-23,10,Delaware,0
+2020-03-23,11,District of Columbia,2
+2020-03-23,12,Florida,18
+2020-03-23,13,Georgia,25
+2020-03-23,66,Guam,1
+2020-03-23,15,Hawaii,0
+2020-03-23,16,Idaho,0
+2020-03-23,17,Illinois,12
+2020-03-23,18,Indiana,7
+2020-03-23,19,Iowa,0
+2020-03-23,20,Kansas,2
+2020-03-23,21,Kentucky,4
+2020-03-23,22,Louisiana,35
+2020-03-23,23,Maine,0
+2020-03-23,24,Maryland,3
+2020-03-23,25,Massachusetts,9
+2020-03-23,26,Michigan,15
+2020-03-23,27,Minnesota,1
+2020-03-23,28,Mississippi,1
+2020-03-23,29,Missouri,4
+2020-03-23,30,Montana,0
+2020-03-23,31,Nebraska,0
+2020-03-23,32,Nevada,4
+2020-03-23,33,New Hampshire,1
+2020-03-23,34,New Jersey,27
+2020-03-23,35,New Mexico,0
+2020-03-23,36,New York,387
+2020-03-23,37,North Carolina,0
+2020-03-23,38,North Dakota,0
+2020-03-23,69,Northern Mariana Islands,0
+2020-03-23,39,Ohio,6
+2020-03-23,40,Oklahoma,2
+2020-03-23,41,Oregon,5
+2020-03-23,42,Pennsylvania,6
+2020-03-23,72,Puerto Rico,2
+2020-03-23,44,Rhode Island,0
+2020-03-23,45,South Carolina,5
+2020-03-23,46,South Dakota,1
+2020-03-23,47,Tennessee,2
+2020-03-23,48,Texas,9
+2020-03-23,49,Utah,1
+2020-03-23,50,Vermont,5
+2020-03-23,51,Virginia,6
+2020-03-23,53,Washington,109
+2020-03-23,54,West Virginia,0
+2020-03-23,55,Wisconsin,5
+2020-03-23,56,Wyoming,0
+2020-03-23,US,US,781
+2020-03-24,01,Alabama,0
+2020-03-24,02,Alaska,0
+2020-03-24,60,American Samoa,0
+2020-03-24,04,Arizona,5
+2020-03-24,05,Arkansas,2
+2020-03-24,06,California,50
+2020-03-24,08,Colorado,8
+2020-03-24,09,Connecticut,12
+2020-03-24,10,Delaware,0
+2020-03-24,11,District of Columbia,2
+2020-03-24,12,Florida,18
+2020-03-24,13,Georgia,32
+2020-03-24,66,Guam,1
+2020-03-24,15,Hawaii,1
+2020-03-24,16,Idaho,0
+2020-03-24,17,Illinois,16
+2020-03-24,18,Indiana,12
+2020-03-24,19,Iowa,0
+2020-03-24,20,Kansas,2
+2020-03-24,21,Kentucky,4
+2020-03-24,22,Louisiana,46
+2020-03-24,23,Maine,0
+2020-03-24,24,Maryland,4
+2020-03-24,25,Massachusetts,11
+2020-03-24,26,Michigan,24
+2020-03-24,27,Minnesota,1
+2020-03-24,28,Mississippi,1
+2020-03-24,29,Missouri,7
+2020-03-24,30,Montana,0
+2020-03-24,31,Nebraska,0
+2020-03-24,32,Nevada,4
+2020-03-24,33,New Hampshire,1
+2020-03-24,34,New Jersey,44
+2020-03-24,35,New Mexico,0
+2020-03-24,36,New York,512
+2020-03-24,37,North Carolina,0
+2020-03-24,38,North Dakota,0
+2020-03-24,69,Northern Mariana Islands,0
+2020-03-24,39,Ohio,8
+2020-03-24,40,Oklahoma,3
+2020-03-24,41,Oregon,8
+2020-03-24,42,Pennsylvania,8
+2020-03-24,72,Puerto Rico,2
+2020-03-24,44,Rhode Island,0
+2020-03-24,45,South Carolina,5
+2020-03-24,46,South Dakota,1
+2020-03-24,47,Tennessee,2
+2020-03-24,48,Texas,12
+2020-03-24,49,Utah,1
+2020-03-24,50,Vermont,7
+2020-03-24,51,Virginia,9
+2020-03-24,53,Washington,116
+2020-03-24,54,West Virginia,0
+2020-03-24,55,Wisconsin,5
+2020-03-24,56,Wyoming,0
+2020-03-24,US,US,1008
+2020-03-25,01,Alabama,1
+2020-03-25,02,Alaska,1
+2020-03-25,60,American Samoa,0
+2020-03-25,04,Arizona,6
+2020-03-25,05,Arkansas,2
+2020-03-25,06,California,65
+2020-03-25,08,Colorado,16
+2020-03-25,09,Connecticut,19
+2020-03-25,10,Delaware,0
+2020-03-25,11,District of Columbia,2
+2020-03-25,12,Florida,23
+2020-03-25,13,Georgia,40
+2020-03-25,66,Guam,1
+2020-03-25,15,Hawaii,0
+2020-03-25,16,Idaho,0
+2020-03-25,17,Illinois,19
+2020-03-25,18,Indiana,14
+2020-03-25,19,Iowa,1
+2020-03-25,20,Kansas,3
+2020-03-25,21,Kentucky,5
+2020-03-25,22,Louisiana,65
+2020-03-25,23,Maine,0
+2020-03-25,24,Maryland,4
+2020-03-25,25,Massachusetts,15
+2020-03-25,26,Michigan,43
+2020-03-25,27,Minnesota,1
+2020-03-25,28,Mississippi,3
+2020-03-25,29,Missouri,8
+2020-03-25,30,Montana,0
+2020-03-25,31,Nebraska,0
+2020-03-25,32,Nevada,6
+2020-03-25,33,New Hampshire,1
+2020-03-25,34,New Jersey,62
+2020-03-25,35,New Mexico,1
+2020-03-25,36,New York,659
+2020-03-25,37,North Carolina,2
+2020-03-25,38,North Dakota,0
+2020-03-25,69,Northern Mariana Islands,0
+2020-03-25,39,Ohio,11
+2020-03-25,40,Oklahoma,5
+2020-03-25,41,Oregon,10
+2020-03-25,42,Pennsylvania,15
+2020-03-25,72,Puerto Rico,2
+2020-03-25,44,Rhode Island,0
+2020-03-25,45,South Carolina,7
+2020-03-25,46,South Dakota,1
+2020-03-25,47,Tennessee,3
+2020-03-25,48,Texas,15
+2020-03-25,49,Utah,1
+2020-03-25,50,Vermont,8
+2020-03-25,51,Virginia,9
+2020-03-25,53,Washington,133
+2020-03-25,54,West Virginia,0
+2020-03-25,55,Wisconsin,7
+2020-03-25,56,Wyoming,0
+2020-03-25,US,US,1316
+2020-03-26,01,Alabama,1
+2020-03-26,02,Alaska,1
+2020-03-26,60,American Samoa,0
+2020-03-26,04,Arizona,8
+2020-03-26,05,Arkansas,2
+2020-03-26,06,California,81
+2020-03-26,08,Colorado,19
+2020-03-26,09,Connecticut,21
+2020-03-26,10,Delaware,1
+2020-03-26,11,District of Columbia,3
+2020-03-26,12,Florida,29
+2020-03-26,13,Georgia,48
+2020-03-26,66,Guam,1
+2020-03-26,15,Hawaii,0
+2020-03-26,16,Idaho,3
+2020-03-26,17,Illinois,26
+2020-03-26,18,Indiana,17
+2020-03-26,19,Iowa,1
+2020-03-26,20,Kansas,3
+2020-03-26,21,Kentucky,5
+2020-03-26,22,Louisiana,83
+2020-03-26,23,Maine,0
+2020-03-26,24,Maryland,4
+2020-03-26,25,Massachusetts,25
+2020-03-26,26,Michigan,61
+2020-03-26,27,Minnesota,2
+2020-03-26,28,Mississippi,6
+2020-03-26,29,Missouri,9
+2020-03-26,30,Montana,0
+2020-03-26,31,Nebraska,0
+2020-03-26,32,Nevada,10
+2020-03-26,33,New Hampshire,1
+2020-03-26,34,New Jersey,81
+2020-03-26,35,New Mexico,1
+2020-03-26,36,New York,902
+2020-03-26,37,North Carolina,3
+2020-03-26,38,North Dakota,0
+2020-03-26,69,Northern Mariana Islands,0
+2020-03-26,39,Ohio,15
+2020-03-26,40,Oklahoma,7
+2020-03-26,41,Oregon,11
+2020-03-26,42,Pennsylvania,18
+2020-03-26,72,Puerto Rico,2
+2020-03-26,44,Rhode Island,0
+2020-03-26,45,South Carolina,9
+2020-03-26,46,South Dakota,1
+2020-03-26,47,Tennessee,3
+2020-03-26,48,Texas,21
+2020-03-26,49,Utah,1
+2020-03-26,50,Vermont,9
+2020-03-26,51,Virginia,10
+2020-03-26,53,Washington,150
+2020-03-26,54,West Virginia,0
+2020-03-26,55,Wisconsin,10
+2020-03-26,56,Wyoming,0
+2020-03-26,US,US,1726
+2020-03-27,01,Alabama,4
+2020-03-27,02,Alaska,1
+2020-03-27,60,American Samoa,0
+2020-03-27,04,Arizona,13
+2020-03-27,05,Arkansas,3
+2020-03-27,06,California,94
+2020-03-27,08,Colorado,27
+2020-03-27,09,Connecticut,27
+2020-03-27,10,Delaware,2
+2020-03-27,11,District of Columbia,3
+2020-03-27,12,Florida,35
+2020-03-27,13,Georgia,64
+2020-03-27,66,Guam,1
+2020-03-27,15,Hawaii,0
+2020-03-27,16,Idaho,3
+2020-03-27,17,Illinois,34
+2020-03-27,18,Indiana,25
+2020-03-27,19,Iowa,3
+2020-03-27,20,Kansas,4
+2020-03-27,21,Kentucky,7
+2020-03-27,22,Louisiana,119
+2020-03-27,23,Maine,1
+2020-03-27,24,Maryland,5
+2020-03-27,25,Massachusetts,35
+2020-03-27,26,Michigan,92
+2020-03-27,27,Minnesota,4
+2020-03-27,28,Mississippi,8
+2020-03-27,29,Missouri,9
+2020-03-27,30,Montana,1
+2020-03-27,31,Nebraska,0
+2020-03-27,32,Nevada,10
+2020-03-27,33,New Hampshire,1
+2020-03-27,34,New Jersey,108
+2020-03-27,35,New Mexico,1
+2020-03-27,36,New York,1211
+2020-03-27,37,North Carolina,4
+2020-03-27,38,North Dakota,1
+2020-03-27,69,Northern Mariana Islands,0
+2020-03-27,39,Ohio,19
+2020-03-27,40,Oklahoma,8
+2020-03-27,41,Oregon,12
+2020-03-27,42,Pennsylvania,22
+2020-03-27,72,Puerto Rico,3
+2020-03-27,44,Rhode Island,0
+2020-03-27,45,South Carolina,13
+2020-03-27,46,South Dakota,1
+2020-03-27,47,Tennessee,6
+2020-03-27,48,Texas,26
+2020-03-27,49,Utah,1
+2020-03-27,50,Vermont,10
+2020-03-27,51,Virginia,10
+2020-03-27,53,Washington,157
+2020-03-27,54,West Virginia,0
+2020-03-27,55,Wisconsin,14
+2020-03-27,56,Wyoming,0
+2020-03-27,US,US,2265
+2020-03-28,01,Alabama,4
+2020-03-28,02,Alaska,2
+2020-03-28,60,American Samoa,0
+2020-03-28,04,Arizona,15
+2020-03-28,05,Arkansas,5
+2020-03-28,06,California,110
+2020-03-28,08,Colorado,31
+2020-03-28,09,Connecticut,33
+2020-03-28,10,Delaware,5
+2020-03-28,11,District of Columbia,4
+2020-03-28,12,Florida,54
+2020-03-28,13,Georgia,69
+2020-03-28,66,Guam,1
+2020-03-28,15,Hawaii,0
+2020-03-28,16,Idaho,4
+2020-03-28,17,Illinois,47
+2020-03-28,18,Indiana,31
+2020-03-28,19,Iowa,3
+2020-03-28,20,Kansas,4
+2020-03-28,21,Kentucky,9
+2020-03-28,22,Louisiana,137
+2020-03-28,23,Maine,1
+2020-03-28,24,Maryland,5
+2020-03-28,25,Massachusetts,44
+2020-03-28,26,Michigan,111
+2020-03-28,27,Minnesota,5
+2020-03-28,28,Mississippi,13
+2020-03-28,29,Missouri,10
+2020-03-28,30,Montana,1
+2020-03-28,31,Nebraska,2
+2020-03-28,32,Nevada,10
+2020-03-28,33,New Hampshire,2
+2020-03-28,34,New Jersey,140
+2020-03-28,35,New Mexico,1
+2020-03-28,36,New York,1588
+2020-03-28,37,North Carolina,5
+2020-03-28,38,North Dakota,1
+2020-03-28,69,Northern Mariana Islands,0
+2020-03-28,39,Ohio,25
+2020-03-28,40,Oklahoma,15
+2020-03-28,41,Oregon,13
+2020-03-28,42,Pennsylvania,34
+2020-03-28,72,Puerto Rico,3
+2020-03-28,44,Rhode Island,2
+2020-03-28,45,South Carolina,15
+2020-03-28,46,South Dakota,1
+2020-03-28,47,Tennessee,7
+2020-03-28,48,Texas,30
+2020-03-28,49,Utah,1
+2020-03-28,50,Vermont,12
+2020-03-28,51,Virginia,13
+2020-03-28,53,Washington,188
+2020-03-28,54,West Virginia,0
+2020-03-28,55,Wisconsin,17
+2020-03-28,56,Wyoming,0
+2020-03-28,US,US,2886
+2020-03-29,01,Alabama,10
+2020-03-29,02,Alaska,2
+2020-03-29,60,American Samoa,0
+2020-03-29,04,Arizona,17
+2020-03-29,05,Arkansas,6
+2020-03-29,06,California,124
+2020-03-29,08,Colorado,47
+2020-03-29,09,Connecticut,34
+2020-03-29,10,Delaware,6
+2020-03-29,11,District of Columbia,5
+2020-03-29,12,Florida,56
+2020-03-29,13,Georgia,80
+2020-03-29,66,Guam,1
+2020-03-29,15,Hawaii,0
+2020-03-29,16,Idaho,5
+2020-03-29,17,Illinois,66
+2020-03-29,18,Indiana,32
+2020-03-29,19,Iowa,4
+2020-03-29,20,Kansas,7
+2020-03-29,21,Kentucky,9
+2020-03-29,22,Louisiana,151
+2020-03-29,23,Maine,3
+2020-03-29,24,Maryland,10
+2020-03-29,25,Massachusetts,48
+2020-03-29,26,Michigan,132
+2020-03-29,27,Minnesota,9
+2020-03-29,28,Mississippi,14
+2020-03-29,29,Missouri,13
+2020-03-29,30,Montana,1
+2020-03-29,31,Nebraska,2
+2020-03-29,32,Nevada,15
+2020-03-29,33,New Hampshire,2
+2020-03-29,34,New Jersey,161
+2020-03-29,35,New Mexico,2
+2020-03-29,36,New York,2016
+2020-03-29,37,North Carolina,7
+2020-03-29,38,North Dakota,1
+2020-03-29,69,Northern Mariana Islands,0
+2020-03-29,39,Ohio,29
+2020-03-29,40,Oklahoma,16
+2020-03-29,41,Oregon,13
+2020-03-29,42,Pennsylvania,41
+2020-03-29,72,Puerto Rico,3
+2020-03-29,44,Rhode Island,3
+2020-03-29,45,South Carolina,16
+2020-03-29,46,South Dakota,1
+2020-03-29,47,Tennessee,8
+2020-03-29,48,Texas,37
+2020-03-29,49,Utah,2
+2020-03-29,50,Vermont,12
+2020-03-29,51,Virginia,20
+2020-03-29,53,Washington,198
+2020-03-29,54,West Virginia,0
+2020-03-29,55,Wisconsin,18
+2020-03-29,56,Wyoming,0
+2020-03-29,US,US,3518
+2020-03-30,01,Alabama,10
+2020-03-30,02,Alaska,3
+2020-03-30,60,American Samoa,0
+2020-03-30,04,Arizona,20
+2020-03-30,05,Arkansas,7
+2020-03-30,06,California,146
+2020-03-30,08,Colorado,47
+2020-03-30,09,Connecticut,36
+2020-03-30,10,Delaware,6
+2020-03-30,11,District of Columbia,9
+2020-03-30,12,Florida,63
+2020-03-30,13,Georgia,87
+2020-03-30,66,Guam,1
+2020-03-30,15,Hawaii,0
+2020-03-30,16,Idaho,6
+2020-03-30,17,Illinois,73
+2020-03-30,18,Indiana,35
+2020-03-30,19,Iowa,6
+2020-03-30,20,Kansas,8
+2020-03-30,21,Kentucky,11
+2020-03-30,22,Louisiana,185
+2020-03-30,23,Maine,3
+2020-03-30,24,Maryland,15
+2020-03-30,25,Massachusetts,56
+2020-03-30,26,Michigan,184
+2020-03-30,27,Minnesota,10
+2020-03-30,28,Mississippi,16
+2020-03-30,29,Missouri,13
+2020-03-30,30,Montana,5
+2020-03-30,31,Nebraska,2
+2020-03-30,32,Nevada,15
+2020-03-30,33,New Hampshire,3
+2020-03-30,34,New Jersey,198
+2020-03-30,35,New Mexico,2
+2020-03-30,36,New York,2556
+2020-03-30,37,North Carolina,7
+2020-03-30,38,North Dakota,2
+2020-03-30,69,Northern Mariana Islands,0
+2020-03-30,39,Ohio,40
+2020-03-30,40,Oklahoma,16
+2020-03-30,41,Oregon,16
+2020-03-30,42,Pennsylvania,50
+2020-03-30,72,Puerto Rico,6
+2020-03-30,44,Rhode Island,4
+2020-03-30,45,South Carolina,18
+2020-03-30,46,South Dakota,1
+2020-03-30,47,Tennessee,14
+2020-03-30,48,Texas,45
+2020-03-30,49,Utah,4
+2020-03-30,50,Vermont,12
+2020-03-30,51,Virginia,15
+2020-03-30,53,Washington,205
+2020-03-30,54,West Virginia,1
+2020-03-30,55,Wisconsin,20
+2020-03-30,56,Wyoming,0
+2020-03-30,US,US,4316
+2020-03-31,01,Alabama,23
+2020-03-31,02,Alaska,3
+2020-03-31,60,American Samoa,0
+2020-03-31,04,Arizona,25
+2020-03-31,05,Arkansas,8
+2020-03-31,06,California,173
+2020-03-31,08,Colorado,69
+2020-03-31,09,Connecticut,69
+2020-03-31,10,Delaware,10
+2020-03-31,11,District of Columbia,9
+2020-03-31,12,Florida,85
+2020-03-31,13,Georgia,111
+2020-03-31,66,Guam,2
+2020-03-31,15,Hawaii,0
+2020-03-31,16,Idaho,8
+2020-03-31,17,Illinois,99
+2020-03-31,18,Indiana,49
+2020-03-31,19,Iowa,7
+2020-03-31,20,Kansas,9
+2020-03-31,21,Kentucky,11
+2020-03-31,22,Louisiana,239
+2020-03-31,23,Maine,5
+2020-03-31,24,Maryland,18
+2020-03-31,25,Massachusetts,89
+2020-03-31,26,Michigan,259
+2020-03-31,27,Minnesota,12
+2020-03-31,28,Mississippi,20
+2020-03-31,29,Missouri,15
+2020-03-31,30,Montana,5
+2020-03-31,31,Nebraska,3
+2020-03-31,32,Nevada,26
+2020-03-31,33,New Hampshire,3
+2020-03-31,34,New Jersey,267
+2020-03-31,35,New Mexico,4
+2020-03-31,36,New York,3207
+2020-03-31,37,North Carolina,12
+2020-03-31,38,North Dakota,3
+2020-03-31,69,Northern Mariana Islands,0
+2020-03-31,39,Ohio,55
+2020-03-31,40,Oklahoma,23
+2020-03-31,41,Oregon,18
+2020-03-31,42,Pennsylvania,63
+2020-03-31,72,Puerto Rico,8
+2020-03-31,44,Rhode Island,8
+2020-03-31,45,South Carolina,22
+2020-03-31,46,South Dakota,1
+2020-03-31,47,Tennessee,23
+2020-03-31,48,Texas,54
+2020-03-31,49,Utah,5
+2020-03-31,50,Vermont,13
+2020-03-31,51,Virginia,27
+2020-03-31,53,Washington,225
+2020-03-31,54,West Virginia,1
+2020-03-31,55,Wisconsin,25
+2020-03-31,56,Wyoming,0
+2020-03-31,US,US,5531
+2020-04-01,01,Alabama,27
+2020-04-01,02,Alaska,3
+2020-04-01,60,American Samoa,0
+2020-04-01,04,Arizona,32
+2020-04-01,05,Arkansas,10
+2020-04-01,06,California,199
+2020-04-01,08,Colorado,69
+2020-04-01,09,Connecticut,85
+2020-04-01,10,Delaware,11
+2020-04-01,11,District of Columbia,9
+2020-04-01,12,Florida,87
+2020-04-01,13,Georgia,139
+2020-04-01,66,Guam,3
+2020-04-01,15,Hawaii,1
+2020-04-01,16,Idaho,9
+2020-04-01,17,Illinois,141
+2020-04-01,18,Indiana,65
+2020-04-01,19,Iowa,9
+2020-04-01,20,Kansas,10
+2020-04-01,21,Kentucky,18
+2020-04-01,22,Louisiana,273
+2020-04-01,23,Maine,5
+2020-04-01,24,Maryland,31
+2020-04-01,25,Massachusetts,122
+2020-04-01,26,Michigan,335
+2020-04-01,27,Minnesota,17
+2020-04-01,28,Mississippi,22
+2020-04-01,29,Missouri,18
+2020-04-01,30,Montana,6
+2020-04-01,31,Nebraska,4
+2020-04-01,32,Nevada,31
+2020-04-01,33,New Hampshire,3
+2020-04-01,34,New Jersey,355
+2020-04-01,35,New Mexico,5
+2020-04-01,36,New York,3917
+2020-04-01,37,North Carolina,14
+2020-04-01,38,North Dakota,3
+2020-04-01,69,Northern Mariana Islands,1
+2020-04-01,39,Ohio,65
+2020-04-01,40,Oklahoma,30
+2020-04-01,41,Oregon,19
+2020-04-01,42,Pennsylvania,74
+2020-04-01,72,Puerto Rico,11
+2020-04-01,44,Rhode Island,10
+2020-04-01,45,South Carolina,26
+2020-04-01,46,South Dakota,2
+2020-04-01,47,Tennessee,24
+2020-04-01,48,Texas,66
+2020-04-01,49,Utah,5
+2020-04-01,50,Vermont,16
+2020-04-01,51,Virginia,34
+2020-04-01,53,Washington,234
+2020-04-01,54,West Virginia,1
+2020-04-01,55,Wisconsin,27
+2020-04-01,56,Wyoming,0
+2020-04-01,US,US,6736
+2020-04-02,01,Alabama,32
+2020-04-02,02,Alaska,3
+2020-04-02,60,American Samoa,0
+2020-04-02,04,Arizona,35
+2020-04-02,05,Arkansas,12
+2020-04-02,06,California,238
+2020-04-02,08,Colorado,80
+2020-04-02,09,Connecticut,112
+2020-04-02,10,Delaware,12
+2020-04-02,11,District of Columbia,12
+2020-04-02,12,Florida,164
+2020-04-02,13,Georgia,163
+2020-04-02,66,Guam,3
+2020-04-02,15,Hawaii,1
+2020-04-02,16,Idaho,9
+2020-04-02,17,Illinois,163
+2020-04-02,18,Indiana,78
+2020-04-02,19,Iowa,11
+2020-04-02,20,Kansas,12
+2020-04-02,21,Kentucky,31
+2020-04-02,22,Louisiana,310
+2020-04-02,23,Maine,7
+2020-04-02,24,Maryland,36
+2020-04-02,25,Massachusetts,154
+2020-04-02,26,Michigan,417
+2020-04-02,27,Minnesota,18
+2020-04-02,28,Mississippi,26
+2020-04-02,29,Missouri,22
+2020-04-02,30,Montana,6
+2020-04-02,31,Nebraska,5
+2020-04-02,32,Nevada,38
+2020-04-02,33,New Hampshire,3
+2020-04-02,34,New Jersey,537
+2020-04-02,35,New Mexico,6
+2020-04-02,36,New York,4730
+2020-04-02,37,North Carolina,21
+2020-04-02,38,North Dakota,3
+2020-04-02,69,Northern Mariana Islands,1
+2020-04-02,39,Ohio,81
+2020-04-02,40,Oklahoma,34
+2020-04-02,41,Oregon,21
+2020-04-02,42,Pennsylvania,90
+2020-04-02,72,Puerto Rico,12
+2020-04-02,44,Rhode Island,12
+2020-04-02,45,South Carolina,31
+2020-04-02,46,South Dakota,2
+2020-04-02,47,Tennessee,36
+2020-04-02,48,Texas,77
+2020-04-02,49,Utah,7
+2020-04-02,50,Vermont,17
+2020-04-02,51,Virginia,41
+2020-04-02,53,Washington,271
+2020-04-02,54,West Virginia,2
+2020-04-02,55,Wisconsin,38
+2020-04-02,56,Wyoming,0
+2020-04-02,US,US,8286
+2020-04-03,01,Alabama,38
+2020-04-03,02,Alaska,3
+2020-04-03,60,American Samoa,0
+2020-04-03,04,Arizona,44
+2020-04-03,05,Arkansas,12
+2020-04-03,06,California,265
+2020-04-03,08,Colorado,97
+2020-04-03,09,Connecticut,131
+2020-04-03,10,Delaware,14
+2020-04-03,11,District of Columbia,15
+2020-04-03,12,Florida,170
+2020-04-03,13,Georgia,184
+2020-04-03,66,Guam,4
+2020-04-03,15,Hawaii,3
+2020-04-03,16,Idaho,9
+2020-04-03,17,Illinois,210
+2020-04-03,18,Indiana,102
+2020-04-03,19,Iowa,11
+2020-04-03,20,Kansas,18
+2020-04-03,21,Kentucky,34
+2020-04-03,22,Louisiana,370
+2020-04-03,23,Maine,9
+2020-04-03,24,Maryland,43
+2020-04-03,25,Massachusetts,192
+2020-04-03,26,Michigan,479
+2020-04-03,27,Minnesota,22
+2020-04-03,28,Mississippi,29
+2020-04-03,29,Missouri,25
+2020-04-03,30,Montana,5
+2020-04-03,31,Nebraska,6
+2020-04-03,32,Nevada,43
+2020-04-03,33,New Hampshire,5
+2020-04-03,34,New Jersey,646
+2020-04-03,35,New Mexico,10
+2020-04-03,36,New York,5418
+2020-04-03,37,North Carolina,27
+2020-04-03,38,North Dakota,3
+2020-04-03,69,Northern Mariana Islands,1
+2020-04-03,39,Ohio,91
+2020-04-03,40,Oklahoma,38
+2020-04-03,41,Oregon,22
+2020-04-03,42,Pennsylvania,102
+2020-04-03,72,Puerto Rico,15
+2020-04-03,44,Rhode Island,14
+2020-04-03,45,South Carolina,34
+2020-04-03,46,South Dakota,2
+2020-04-03,47,Tennessee,41
+2020-04-03,48,Texas,100
+2020-04-03,49,Utah,7
+2020-04-03,50,Vermont,17
+2020-04-03,51,Virginia,46
+2020-04-03,53,Washington,291
+2020-04-03,54,West Virginia,2
+2020-04-03,55,Wisconsin,51
+2020-04-03,56,Wyoming,0
+2020-04-03,US,US,9573
+2020-04-04,01,Alabama,44
+2020-04-04,02,Alaska,5
+2020-04-04,60,American Samoa,0
+2020-04-04,04,Arizona,52
+2020-04-04,05,Arkansas,14
+2020-04-04,06,California,289
+2020-04-04,08,Colorado,111
+2020-04-04,09,Connecticut,165
+2020-04-04,10,Delaware,14
+2020-04-04,11,District of Columbia,21
+2020-04-04,12,Florida,195
+2020-04-04,13,Georgia,201
+2020-04-04,66,Guam,4
+2020-04-04,15,Hawaii,3
+2020-04-04,16,Idaho,10
+2020-04-04,17,Illinois,244
+2020-04-04,18,Indiana,116
+2020-04-04,19,Iowa,14
+2020-04-04,20,Kansas,21
+2020-04-04,21,Kentucky,40
+2020-04-04,22,Louisiana,409
+2020-04-04,23,Maine,10
+2020-04-04,24,Maryland,54
+2020-04-04,25,Massachusetts,216
+2020-04-04,26,Michigan,540
+2020-04-04,27,Minnesota,24
+2020-04-04,28,Mississippi,35
+2020-04-04,29,Missouri,33
+2020-04-04,30,Montana,6
+2020-04-04,31,Nebraska,6
+2020-04-04,32,Nevada,46
+2020-04-04,33,New Hampshire,7
+2020-04-04,34,New Jersey,846
+2020-04-04,35,New Mexico,11
+2020-04-04,36,New York,5991
+2020-04-04,37,North Carolina,34
+2020-04-04,38,North Dakota,3
+2020-04-04,69,Northern Mariana Islands,1
+2020-04-04,39,Ohio,102
+2020-04-04,40,Oklahoma,42
+2020-04-04,41,Oregon,22
+2020-04-04,42,Pennsylvania,136
+2020-04-04,72,Puerto Rico,18
+2020-04-04,44,Rhode Island,17
+2020-04-04,45,South Carolina,40
+2020-04-04,46,South Dakota,2
+2020-04-04,47,Tennessee,50
+2020-04-04,48,Texas,116
+2020-04-04,49,Utah,8
+2020-04-04,50,Vermont,20
+2020-04-04,51,Virginia,52
+2020-04-04,53,Washington,315
+2020-04-04,54,West Virginia,2
+2020-04-04,55,Wisconsin,54
+2020-04-04,56,Wyoming,0
+2020-04-04,US,US,10834
+2020-04-05,01,Alabama,45
+2020-04-05,02,Alaska,6
+2020-04-05,60,American Samoa,0
+2020-04-05,04,Arizona,64
+2020-04-05,05,Arkansas,16
+2020-04-05,06,California,348
+2020-04-05,08,Colorado,140
+2020-04-05,09,Connecticut,189
+2020-04-05,10,Delaware,14
+2020-04-05,11,District of Columbia,22
+2020-04-05,12,Florida,221
+2020-04-05,13,Georgia,211
+2020-04-05,66,Guam,4
+2020-04-05,15,Hawaii,4
+2020-04-05,16,Idaho,10
+2020-04-05,17,Illinois,274
+2020-04-05,18,Indiana,127
+2020-04-05,19,Iowa,18
+2020-04-05,20,Kansas,22
+2020-04-05,21,Kentucky,45
+2020-04-05,22,Louisiana,477
+2020-04-05,23,Maine,10
+2020-04-05,24,Maryland,67
+2020-04-05,25,Massachusetts,231
+2020-04-05,26,Michigan,617
+2020-04-05,27,Minnesota,29
+2020-04-05,28,Mississippi,43
+2020-04-05,29,Missouri,44
+2020-04-05,30,Montana,6
+2020-04-05,31,Nebraska,8
+2020-04-05,32,Nevada,46
+2020-04-05,33,New Hampshire,9
+2020-04-05,34,New Jersey,917
+2020-04-05,35,New Mexico,12
+2020-04-05,36,New York,6785
+2020-04-05,37,North Carolina,38
+2020-04-05,38,North Dakota,3
+2020-04-05,69,Northern Mariana Islands,1
+2020-04-05,39,Ohio,119
+2020-04-05,40,Oklahoma,46
+2020-04-05,41,Oregon,27
+2020-04-05,42,Pennsylvania,151
+2020-04-05,72,Puerto Rico,20
+2020-04-05,44,Rhode Island,25
+2020-04-05,45,South Carolina,44
+2020-04-05,46,South Dakota,2
+2020-04-05,47,Tennessee,53
+2020-04-05,48,Texas,136
+2020-04-05,49,Utah,8
+2020-04-05,50,Vermont,22
+2020-04-05,51,Virginia,52
+2020-04-05,53,Washington,336
+2020-04-05,54,West Virginia,3
+2020-04-05,55,Wisconsin,74
+2020-04-05,56,Wyoming,0
+2020-04-05,US,US,12245
+2020-04-06,01,Alabama,49
+2020-04-06,02,Alaska,6
+2020-04-06,60,American Samoa,0
+2020-04-06,04,Arizona,65
+2020-04-06,05,Arkansas,16
+2020-04-06,06,California,380
+2020-04-06,08,Colorado,150
+2020-04-06,09,Connecticut,206
+2020-04-06,10,Delaware,15
+2020-04-06,11,District of Columbia,24
+2020-04-06,12,Florida,236
+2020-04-06,13,Georgia,229
+2020-04-06,66,Guam,4
+2020-04-06,15,Hawaii,5
+2020-04-06,16,Idaho,10
+2020-04-06,17,Illinois,307
+2020-04-06,18,Indiana,143
+2020-04-06,19,Iowa,25
+2020-04-06,20,Kansas,25
+2020-04-06,21,Kentucky,45
+2020-04-06,22,Louisiana,512
+2020-04-06,23,Maine,10
+2020-04-06,24,Maryland,91
+2020-04-06,25,Massachusetts,260
+2020-04-06,26,Michigan,727
+2020-04-06,27,Minnesota,30
+2020-04-06,28,Mississippi,51
+2020-04-06,29,Missouri,47
+2020-04-06,30,Montana,6
+2020-04-06,31,Nebraska,9
+2020-04-06,32,Nevada,46
+2020-04-06,33,New Hampshire,9
+2020-04-06,34,New Jersey,1003
+2020-04-06,35,New Mexico,12
+2020-04-06,36,New York,7809
+2020-04-06,37,North Carolina,45
+2020-04-06,38,North Dakota,3
+2020-04-06,69,Northern Mariana Islands,1
+2020-04-06,39,Ohio,142
+2020-04-06,40,Oklahoma,51
+2020-04-06,41,Oregon,27
+2020-04-06,42,Pennsylvania,179
+2020-04-06,72,Puerto Rico,21
+2020-04-06,44,Rhode Island,27
+2020-04-06,45,South Carolina,48
+2020-04-06,46,South Dakota,4
+2020-04-06,47,Tennessee,65
+2020-04-06,48,Texas,150
+2020-04-06,49,Utah,13
+2020-04-06,50,Vermont,23
+2020-04-06,51,Virginia,66
+2020-04-06,53,Washington,381
+2020-04-06,54,West Virginia,4
+2020-04-06,55,Wisconsin,78
+2020-04-06,56,Wyoming,0
+2020-04-06,US,US,13894
+2020-04-07,01,Alabama,64
+2020-04-07,02,Alaska,6
+2020-04-07,60,American Samoa,0
+2020-04-07,04,Arizona,73
+2020-04-07,05,Arkansas,18
+2020-04-07,06,California,432
+2020-04-07,08,Colorado,179
+2020-04-07,09,Connecticut,277
+2020-04-07,10,Delaware,16
+2020-04-07,11,District of Columbia,22
+2020-04-07,12,Florida,283
+2020-04-07,13,Georgia,329
+2020-04-07,66,Guam,4
+2020-04-07,15,Hawaii,5
+2020-04-07,16,Idaho,13
+2020-04-07,17,Illinois,380
+2020-04-07,18,Indiana,173
+2020-04-07,19,Iowa,25
+2020-04-07,20,Kansas,29
+2020-04-07,21,Kentucky,65
+2020-04-07,22,Louisiana,582
+2020-04-07,23,Maine,12
+2020-04-07,24,Maryland,103
+2020-04-07,25,Massachusetts,356
+2020-04-07,26,Michigan,845
+2020-04-07,27,Minnesota,34
+2020-04-07,28,Mississippi,60
+2020-04-07,29,Missouri,65
+2020-04-07,30,Montana,6
+2020-04-07,31,Nebraska,10
+2020-04-07,32,Nevada,72
+2020-04-07,33,New Hampshire,9
+2020-04-07,34,New Jersey,1232
+2020-04-07,35,New Mexico,13
+2020-04-07,36,New York,8886
+2020-04-07,37,North Carolina,53
+2020-04-07,38,North Dakota,4
+2020-04-07,69,Northern Mariana Islands,2
+2020-04-07,39,Ohio,167
+2020-04-07,40,Oklahoma,67
+2020-04-07,41,Oregon,29
+2020-04-07,42,Pennsylvania,247
+2020-04-07,72,Puerto Rico,23
+2020-04-07,44,Rhode Island,30
+2020-04-07,45,South Carolina,51
+2020-04-07,46,South Dakota,6
+2020-04-07,47,Tennessee,72
+2020-04-07,48,Texas,160
+2020-04-07,49,Utah,13
+2020-04-07,50,Vermont,23
+2020-04-07,51,Virginia,66
+2020-04-07,53,Washington,400
+2020-04-07,54,West Virginia,4
+2020-04-07,55,Wisconsin,92
+2020-04-07,56,Wyoming,0
+2020-04-07,US,US,16191
+2020-04-08,01,Alabama,66
+2020-04-08,02,Alaska,7
+2020-04-08,60,American Samoa,0
+2020-04-08,04,Arizona,89
+2020-04-08,05,Arkansas,18
+2020-04-08,06,California,495
+2020-04-08,08,Colorado,193
+2020-04-08,09,Connecticut,326
+2020-04-08,10,Delaware,19
+2020-04-08,11,District of Columbia,27
+2020-04-08,12,Florida,309
+2020-04-08,13,Georgia,362
+2020-04-08,66,Guam,4
+2020-04-08,15,Hawaii,5
+2020-04-08,16,Idaho,15
+2020-04-08,17,Illinois,462
+2020-04-08,18,Indiana,203
+2020-04-08,19,Iowa,27
+2020-04-08,20,Kansas,34
+2020-04-08,21,Kentucky,65
+2020-04-08,22,Louisiana,652
+2020-04-08,23,Maine,14
+2020-04-08,24,Maryland,124
+2020-04-08,25,Massachusetts,433
+2020-04-08,26,Michigan,959
+2020-04-08,27,Minnesota,39
+2020-04-08,28,Mississippi,67
+2020-04-08,29,Missouri,86
+2020-04-08,30,Montana,6
+2020-04-08,31,Nebraska,12
+2020-04-08,32,Nevada,72
+2020-04-08,33,New Hampshire,13
+2020-04-08,34,New Jersey,1504
+2020-04-08,35,New Mexico,13
+2020-04-08,36,New York,9834
+2020-04-08,37,North Carolina,66
+2020-04-08,38,North Dakota,4
+2020-04-08,69,Northern Mariana Islands,2
+2020-04-08,39,Ohio,193
+2020-04-08,40,Oklahoma,79
+2020-04-08,41,Oregon,33
+2020-04-08,42,Pennsylvania,318
+2020-04-08,72,Puerto Rico,24
+2020-04-08,44,Rhode Island,35
+2020-04-08,45,South Carolina,51
+2020-04-08,46,South Dakota,6
+2020-04-08,47,Tennessee,80
+2020-04-08,48,Texas,189
+2020-04-08,49,Utah,13
+2020-04-08,50,Vermont,23
+2020-04-08,51,Virginia,66
+2020-04-08,53,Washington,426
+2020-04-08,54,West Virginia,4
+2020-04-08,55,Wisconsin,100
+2020-04-08,56,Wyoming,0
+2020-04-08,US,US,18270
+2020-04-09,01,Alabama,70
+2020-04-09,02,Alaska,7
+2020-04-09,60,American Samoa,0
+2020-04-09,04,Arizona,98
+2020-04-09,05,Arkansas,21
+2020-04-09,06,California,544
+2020-04-09,08,Colorado,193
+2020-04-09,09,Connecticut,380
+2020-04-09,10,Delaware,23
+2020-04-09,11,District of Columbia,32
+2020-04-09,12,Florida,354
+2020-04-09,13,Georgia,379
+2020-04-09,66,Guam,4
+2020-04-09,15,Hawaii,6
+2020-04-09,16,Idaho,18
+2020-04-09,17,Illinois,528
+2020-04-09,18,Indiana,245
+2020-04-09,19,Iowa,29
+2020-04-09,20,Kansas,42
+2020-04-09,21,Kentucky,73
+2020-04-09,22,Louisiana,702
+2020-04-09,23,Maine,16
+2020-04-09,24,Maryland,138
+2020-04-09,25,Massachusetts,503
+2020-04-09,26,Michigan,1076
+2020-04-09,27,Minnesota,50
+2020-04-09,28,Mississippi,76
+2020-04-09,29,Missouri,93
+2020-04-09,30,Montana,6
+2020-04-09,31,Nebraska,14
+2020-04-09,32,Nevada,81
+2020-04-09,33,New Hampshire,21
+2020-04-09,34,New Jersey,1709
+2020-04-09,35,New Mexico,16
+2020-04-09,36,New York,10778
+2020-04-09,37,North Carolina,76
+2020-04-09,38,North Dakota,5
+2020-04-09,69,Northern Mariana Islands,2
+2020-04-09,39,Ohio,213
+2020-04-09,40,Oklahoma,80
+2020-04-09,41,Oregon,44
+2020-04-09,42,Pennsylvania,345
+2020-04-09,72,Puerto Rico,33
+2020-04-09,44,Rhode Island,43
+2020-04-09,45,South Carolina,67
+2020-04-09,46,South Dakota,6
+2020-04-09,47,Tennessee,94
+2020-04-09,48,Texas,210
+2020-04-09,49,Utah,13
+2020-04-09,50,Vermont,23
+2020-04-09,51,Virginia,109
+2020-04-09,53,Washington,456
+2020-04-09,54,West Virginia,5
+2020-04-09,55,Wisconsin,111
+2020-04-09,56,Wyoming,0
+2020-04-09,US,US,20264
+2020-04-10,01,Alabama,80
+2020-04-10,02,Alaska,7
+2020-04-10,60,American Samoa,0
+2020-04-10,04,Arizona,106
+2020-04-10,05,Arkansas,21
+2020-04-10,06,California,583
+2020-04-10,08,Colorado,226
+2020-04-10,09,Connecticut,448
+2020-04-10,10,Delaware,32
+2020-04-10,11,District of Columbia,38
+2020-04-10,12,Florida,390
+2020-04-10,13,Georgia,416
+2020-04-10,66,Guam,4
+2020-04-10,15,Hawaii,6
+2020-04-10,16,Idaho,24
+2020-04-10,17,Illinois,597
+2020-04-10,18,Indiana,300
+2020-04-10,19,Iowa,31
+2020-04-10,20,Kansas,42
+2020-04-10,21,Kentucky,90
+2020-04-10,22,Louisiana,755
+2020-04-10,23,Maine,17
+2020-04-10,24,Maryland,171
+2020-04-10,25,Massachusetts,599
+2020-04-10,26,Michigan,1276
+2020-04-10,27,Minnesota,57
+2020-04-10,28,Mississippi,82
+2020-04-10,29,Missouri,99
+2020-04-10,30,Montana,6
+2020-04-10,31,Nebraska,15
+2020-04-10,32,Nevada,90
+2020-04-10,33,New Hampshire,21
+2020-04-10,34,New Jersey,1932
+2020-04-10,35,New Mexico,17
+2020-04-10,36,New York,11605
+2020-04-10,37,North Carolina,83
+2020-04-10,38,North Dakota,6
+2020-04-10,69,Northern Mariana Islands,2
+2020-04-10,39,Ohio,231
+2020-04-10,40,Oklahoma,88
+2020-04-10,41,Oregon,44
+2020-04-10,42,Pennsylvania,418
+2020-04-10,72,Puerto Rico,39
+2020-04-10,44,Rhode Island,43
+2020-04-10,45,South Carolina,72
+2020-04-10,46,South Dakota,6
+2020-04-10,47,Tennessee,98
+2020-04-10,48,Texas,238
+2020-04-10,49,Utah,17
+2020-04-10,50,Vermont,24
+2020-04-10,51,Virginia,121
+2020-04-10,53,Washington,483
+2020-04-10,54,West Virginia,5
+2020-04-10,55,Wisconsin,128
+2020-04-10,56,Wyoming,0
+2020-04-10,US,US,22333
+2020-04-11,01,Alabama,92
+2020-04-11,02,Alaska,8
+2020-04-11,60,American Samoa,0
+2020-04-11,04,Arizona,117
+2020-04-11,05,Arkansas,25
+2020-04-11,06,California,604
+2020-04-11,08,Colorado,250
+2020-04-11,09,Connecticut,494
+2020-04-11,10,Delaware,33
+2020-04-11,11,District of Columbia,47
+2020-04-11,12,Florida,438
+2020-04-11,13,Georgia,429
+2020-04-11,66,Guam,5
+2020-04-11,15,Hawaii,8
+2020-04-11,16,Idaho,25
+2020-04-11,17,Illinois,677
+2020-04-11,18,Indiana,330
+2020-04-11,19,Iowa,34
+2020-04-11,20,Kansas,55
+2020-04-11,21,Kentucky,90
+2020-04-11,22,Louisiana,806
+2020-04-11,23,Maine,19
+2020-04-11,24,Maryland,206
+2020-04-11,25,Massachusetts,686
+2020-04-11,26,Michigan,1384
+2020-04-11,27,Minnesota,64
+2020-04-11,28,Mississippi,93
+2020-04-11,29,Missouri,116
+2020-04-11,30,Montana,6
+2020-04-11,31,Nebraska,17
+2020-04-11,32,Nevada,102
+2020-04-11,33,New Hampshire,22
+2020-04-11,34,New Jersey,2183
+2020-04-11,35,New Mexico,19
+2020-04-11,36,New York,12498
+2020-04-11,37,North Carolina,89
+2020-04-11,38,North Dakota,7
+2020-04-11,69,Northern Mariana Islands,2
+2020-04-11,39,Ohio,247
+2020-04-11,40,Oklahoma,94
+2020-04-11,41,Oregon,48
+2020-04-11,42,Pennsylvania,503
+2020-04-11,72,Puerto Rico,42
+2020-04-11,44,Rhode Island,56
+2020-04-11,45,South Carolina,80
+2020-04-11,46,South Dakota,6
+2020-04-11,47,Tennessee,106
+2020-04-11,48,Texas,266
+2020-04-11,49,Utah,18
+2020-04-11,50,Vermont,25
+2020-04-11,51,Virginia,130
+2020-04-11,53,Washington,495
+2020-04-11,54,West Virginia,5
+2020-04-11,55,Wisconsin,137
+2020-04-11,56,Wyoming,0
+2020-04-11,US,US,24342
+2020-04-12,01,Alabama,93
+2020-04-12,02,Alaska,8
+2020-04-12,60,American Samoa,0
+2020-04-12,04,Arizona,125
+2020-04-12,05,Arkansas,27
+2020-04-12,06,California,640
+2020-04-12,08,Colorado,289
+2020-04-12,09,Connecticut,554
+2020-04-12,10,Delaware,35
+2020-04-12,11,District of Columbia,50
+2020-04-12,12,Florida,461
+2020-04-12,13,Georgia,433
+2020-04-12,66,Guam,5
+2020-04-12,15,Hawaii,9
+2020-04-12,16,Idaho,27
+2020-04-12,17,Illinois,720
+2020-04-12,18,Indiana,343
+2020-04-12,19,Iowa,41
+2020-04-12,20,Kansas,56
+2020-04-12,21,Kentucky,97
+2020-04-12,22,Louisiana,840
+2020-04-12,23,Maine,19
+2020-04-12,24,Maryland,236
+2020-04-12,25,Massachusetts,756
+2020-04-12,26,Michigan,1479
+2020-04-12,27,Minnesota,70
+2020-04-12,28,Mississippi,96
+2020-04-12,29,Missouri,118
+2020-04-12,30,Montana,6
+2020-04-12,31,Nebraska,17
+2020-04-12,32,Nevada,112
+2020-04-12,33,New Hampshire,23
+2020-04-12,34,New Jersey,2350
+2020-04-12,35,New Mexico,26
+2020-04-12,36,New York,13442
+2020-04-12,37,North Carolina,89
+2020-04-12,38,North Dakota,7
+2020-04-12,69,Northern Mariana Islands,2
+2020-04-12,39,Ohio,253
+2020-04-12,40,Oklahoma,96
+2020-04-12,41,Oregon,52
+2020-04-12,42,Pennsylvania,557
+2020-04-12,72,Puerto Rico,44
+2020-04-12,44,Rhode Island,63
+2020-04-12,45,South Carolina,82
+2020-04-12,46,South Dakota,6
+2020-04-12,47,Tennessee,106
+2020-04-12,48,Texas,283
+2020-04-12,49,Utah,18
+2020-04-12,50,Vermont,27
+2020-04-12,51,Virginia,141
+2020-04-12,53,Washington,506
+2020-04-12,54,West Virginia,6
+2020-04-12,55,Wisconsin,144
+2020-04-12,56,Wyoming,0
+2020-04-12,US,US,26086
+2020-04-13,01,Alabama,99
+2020-04-13,02,Alaska,8
+2020-04-13,60,American Samoa,0
+2020-04-13,04,Arizona,132
+2020-04-13,05,Arkansas,29
+2020-04-13,06,California,714
+2020-04-13,08,Colorado,306
+2020-04-13,09,Connecticut,602
+2020-04-13,10,Delaware,41
+2020-04-13,11,District of Columbia,52
+2020-04-13,12,Florida,499
+2020-04-13,13,Georgia,465
+2020-04-13,66,Guam,5
+2020-04-13,15,Hawaii,9
+2020-04-13,16,Idaho,27
+2020-04-13,17,Illinois,798
+2020-04-13,18,Indiana,350
+2020-04-13,19,Iowa,41
+2020-04-13,20,Kansas,62
+2020-04-13,21,Kentucky,113
+2020-04-13,22,Louisiana,884
+2020-04-13,23,Maine,19
+2020-04-13,24,Maryland,262
+2020-04-13,25,Massachusetts,844
+2020-04-13,26,Michigan,1602
+2020-04-13,27,Minnesota,70
+2020-04-13,28,Mississippi,98
+2020-04-13,29,Missouri,123
+2020-04-13,30,Montana,7
+2020-04-13,31,Nebraska,17
+2020-04-13,32,Nevada,114
+2020-04-13,33,New Hampshire,23
+2020-04-13,34,New Jersey,2443
+2020-04-13,35,New Mexico,26
+2020-04-13,36,New York,14390
+2020-04-13,37,North Carolina,94
+2020-04-13,38,North Dakota,8
+2020-04-13,69,Northern Mariana Islands,2
+2020-04-13,39,Ohio,274
+2020-04-13,40,Oklahoma,99
+2020-04-13,41,Oregon,53
+2020-04-13,42,Pennsylvania,589
+2020-04-13,72,Puerto Rico,45
+2020-04-13,44,Rhode Island,63
+2020-04-13,45,South Carolina,82
+2020-04-13,46,South Dakota,6
+2020-04-13,47,Tennessee,109
+2020-04-13,48,Texas,305
+2020-04-13,49,Utah,13
+2020-04-13,50,Vermont,28
+2020-04-13,51,Virginia,149
+2020-04-13,53,Washington,513
+2020-04-13,54,West Virginia,8
+2020-04-13,55,Wisconsin,154
+2020-04-13,56,Wyoming,1
+2020-04-13,US,US,27870
+2020-04-14,01,Alabama,114
+2020-04-14,02,Alaska,9
+2020-04-14,60,American Samoa,0
+2020-04-14,04,Arizona,143
+2020-04-14,05,Arkansas,32
+2020-04-14,06,California,767
+2020-04-14,08,Colorado,327
+2020-04-14,09,Connecticut,671
+2020-04-14,10,Delaware,43
+2020-04-14,11,District of Columbia,67
+2020-04-14,12,Florida,571
+2020-04-14,13,Georgia,525
+2020-04-14,66,Guam,5
+2020-04-14,15,Hawaii,9
+2020-04-14,16,Idaho,33
+2020-04-14,17,Illinois,868
+2020-04-14,18,Indiana,387
+2020-04-14,19,Iowa,49
+2020-04-14,20,Kansas,69
+2020-04-14,21,Kentucky,106
+2020-04-14,22,Louisiana,1013
+2020-04-14,23,Maine,20
+2020-04-14,24,Maryland,302
+2020-04-14,25,Massachusetts,844
+2020-04-14,26,Michigan,1768
+2020-04-14,27,Minnesota,79
+2020-04-14,28,Mississippi,111
+2020-04-14,29,Missouri,149
+2020-04-14,30,Montana,7
+2020-04-14,31,Nebraska,20
+2020-04-14,32,Nevada,126
+2020-04-14,33,New Hampshire,25
+2020-04-14,34,New Jersey,2805
+2020-04-14,35,New Mexico,31
+2020-04-14,36,New York,15261
+2020-04-14,37,North Carolina,112
+2020-04-14,38,North Dakota,8
+2020-04-14,69,Northern Mariana Islands,2
+2020-04-14,39,Ohio,324
+2020-04-14,40,Oklahoma,108
+2020-04-14,41,Oregon,55
+2020-04-14,42,Pennsylvania,691
+2020-04-14,72,Puerto Rico,45
+2020-04-14,44,Rhode Island,80
+2020-04-14,45,South Carolina,97
+2020-04-14,46,South Dakota,6
+2020-04-14,47,Tennessee,124
+2020-04-14,48,Texas,342
+2020-04-14,49,Utah,18
+2020-04-14,50,Vermont,29
+2020-04-14,51,Virginia,154
+2020-04-14,53,Washington,530
+2020-04-14,54,West Virginia,9
+2020-04-14,55,Wisconsin,170
+2020-04-14,56,Wyoming,1
+2020-04-14,US,US,30262
+2020-04-15,01,Alabama,118
+2020-04-15,02,Alaska,9
+2020-04-15,60,American Samoa,0
+2020-04-15,04,Arizona,155
+2020-04-15,05,Arkansas,33
+2020-04-15,06,California,860
+2020-04-15,08,Colorado,328
+2020-04-15,09,Connecticut,868
+2020-04-15,10,Delaware,46
+2020-04-15,11,District of Columbia,72
+2020-04-15,12,Florida,596
+2020-04-15,13,Georgia,552
+2020-04-15,66,Guam,5
+2020-04-15,15,Hawaii,9
+2020-04-15,16,Idaho,39
+2020-04-15,17,Illinois,949
+2020-04-15,18,Indiana,436
+2020-04-15,19,Iowa,53
+2020-04-15,20,Kansas,71
+2020-04-15,21,Kentucky,115
+2020-04-15,22,Louisiana,1103
+2020-04-15,23,Maine,24
+2020-04-15,24,Maryland,311
+2020-04-15,25,Massachusetts,1108
+2020-04-15,26,Michigan,1921
+2020-04-15,27,Minnesota,87
+2020-04-15,28,Mississippi,122
+2020-04-15,29,Missouri,153
+2020-04-15,30,Montana,7
+2020-04-15,31,Nebraska,20
+2020-04-15,32,Nevada,131
+2020-04-15,33,New Hampshire,32
+2020-04-15,34,New Jersey,3156
+2020-04-15,35,New Mexico,36
+2020-04-15,36,New York,16013
+2020-04-15,37,North Carolina,130
+2020-04-15,38,North Dakota,9
+2020-04-15,69,Northern Mariana Islands,2
+2020-04-15,39,Ohio,362
+2020-04-15,40,Oklahoma,123
+2020-04-15,41,Oregon,58
+2020-04-15,42,Pennsylvania,779
+2020-04-15,72,Puerto Rico,51
+2020-04-15,44,Rhode Island,80
+2020-04-15,45,South Carolina,106
+2020-04-15,46,South Dakota,6
+2020-04-15,47,Tennessee,124
+2020-04-15,48,Texas,375
+2020-04-15,49,Utah,20
+2020-04-15,50,Vermont,29
+2020-04-15,51,Virginia,195
+2020-04-15,53,Washington,552
+2020-04-15,54,West Virginia,10
+2020-04-15,55,Wisconsin,183
+2020-04-15,56,Wyoming,1
+2020-04-15,US,US,32734
+2020-04-16,01,Alabama,133
+2020-04-16,02,Alaska,9
+2020-04-16,60,American Samoa,0
+2020-04-16,04,Arizona,164
+2020-04-16,05,Arkansas,37
+2020-04-16,06,California,956
+2020-04-16,08,Colorado,355
+2020-04-16,09,Connecticut,971
+2020-04-16,10,Delaware,55
+2020-04-16,11,District of Columbia,81
+2020-04-16,12,Florida,668
+2020-04-16,13,Georgia,587
+2020-04-16,66,Guam,5
+2020-04-16,15,Hawaii,9
+2020-04-16,16,Idaho,41
+2020-04-16,17,Illinois,1072
+2020-04-16,18,Indiana,477
+2020-04-16,19,Iowa,60
+2020-04-16,20,Kansas,80
+2020-04-16,21,Kentucky,129
+2020-04-16,22,Louisiana,1156
+2020-04-16,23,Maine,27
+2020-04-16,24,Maryland,319
+2020-04-16,25,Massachusetts,1108
+2020-04-16,26,Michigan,1996
+2020-04-16,27,Minnesota,87
+2020-04-16,28,Mississippi,129
+2020-04-16,29,Missouri,169
+2020-04-16,30,Montana,7
+2020-04-16,31,Nebraska,21
+2020-04-16,32,Nevada,137
+2020-04-16,33,New Hampshire,32
+2020-04-16,34,New Jersey,3518
+2020-04-16,35,New Mexico,36
+2020-04-16,36,New York,16729
+2020-04-16,37,North Carolina,150
+2020-04-16,38,North Dakota,9
+2020-04-16,69,Northern Mariana Islands,2
+2020-04-16,39,Ohio,407
+2020-04-16,40,Oklahoma,131
+2020-04-16,41,Oregon,64
+2020-04-16,42,Pennsylvania,841
+2020-04-16,72,Puerto Rico,56
+2020-04-16,44,Rhode Island,87
+2020-04-16,45,South Carolina,111
+2020-04-16,46,South Dakota,7
+2020-04-16,47,Tennessee,136
+2020-04-16,48,Texas,414
+2020-04-16,49,Utah,20
+2020-04-16,50,Vermont,33
+2020-04-16,51,Virginia,208
+2020-04-16,53,Washington,579
+2020-04-16,54,West Virginia,12
+2020-04-16,55,Wisconsin,197
+2020-04-16,56,Wyoming,2
+2020-04-16,US,US,34827
+2020-04-17,01,Alabama,148
+2020-04-17,02,Alaska,9
+2020-04-17,60,American Samoa,0
+2020-04-17,04,Arizona,183
+2020-04-17,05,Arkansas,37
+2020-04-17,06,California,1037
+2020-04-17,08,Colorado,372
+2020-04-17,09,Connecticut,1036
+2020-04-17,10,Delaware,61
+2020-04-17,11,District of Columbia,86
+2020-04-17,12,Florida,725
+2020-04-17,13,Georgia,650
+2020-04-17,66,Guam,5
+2020-04-17,15,Hawaii,9
+2020-04-17,16,Idaho,41
+2020-04-17,17,Illinois,1132
+2020-04-17,18,Indiana,522
+2020-04-17,19,Iowa,64
+2020-04-17,20,Kansas,82
+2020-04-17,21,Kentucky,137
+2020-04-17,22,Louisiana,1213
+2020-04-17,23,Maine,29
+2020-04-17,24,Maryland,334
+2020-04-17,25,Massachusetts,1245
+2020-04-17,26,Michigan,2227
+2020-04-17,27,Minnesota,111
+2020-04-17,28,Mississippi,140
+2020-04-17,29,Missouri,184
+2020-04-17,30,Montana,8
+2020-04-17,31,Nebraska,24
+2020-04-17,32,Nevada,142
+2020-04-17,33,New Hampshire,37
+2020-04-17,34,New Jersey,3840
+2020-04-17,35,New Mexico,44
+2020-04-17,36,New York,17755
+2020-04-17,37,North Carolina,177
+2020-04-17,38,North Dakota,9
+2020-04-17,69,Northern Mariana Islands,2
+2020-04-17,39,Ohio,418
+2020-04-17,40,Oklahoma,136
+2020-04-17,41,Oregon,70
+2020-04-17,42,Pennsylvania,921
+2020-04-17,72,Puerto Rico,58
+2020-04-17,44,Rhode Island,118
+2020-04-17,45,South Carolina,116
+2020-04-17,46,South Dakota,7
+2020-04-17,47,Tennessee,141
+2020-04-17,48,Texas,451
+2020-04-17,49,Utah,23
+2020-04-17,50,Vermont,35
+2020-04-17,51,Virginia,231
+2020-04-17,53,Washington,603
+2020-04-17,54,West Virginia,16
+2020-04-17,55,Wisconsin,206
+2020-04-17,56,Wyoming,2
+2020-04-17,US,US,37411
+2020-04-18,01,Alabama,153
+2020-04-18,02,Alaska,9
+2020-04-18,60,American Samoa,0
+2020-04-18,04,Arizona,180
+2020-04-18,05,Arkansas,38
+2020-04-18,06,California,1140
+2020-04-18,08,Colorado,389
+2020-04-18,09,Connecticut,1086
+2020-04-18,10,Delaware,67
+2020-04-18,11,District of Columbia,91
+2020-04-18,12,Florida,748
+2020-04-18,13,Georgia,673
+2020-04-18,66,Guam,5
+2020-04-18,15,Hawaii,9
+2020-04-18,16,Idaho,43
+2020-04-18,17,Illinois,1259
+2020-04-18,18,Indiana,545
+2020-04-18,19,Iowa,74
+2020-04-18,20,Kansas,85
+2020-04-18,21,Kentucky,144
+2020-04-18,22,Louisiana,1267
+2020-04-18,23,Maine,32
+2020-04-18,24,Maryland,421
+2020-04-18,25,Massachusetts,1404
+2020-04-18,26,Michigan,2308
+2020-04-18,27,Minnesota,121
+2020-04-18,28,Mississippi,152
+2020-04-18,29,Missouri,197
+2020-04-18,30,Montana,10
+2020-04-18,31,Nebraska,24
+2020-04-18,32,Nevada,151
+2020-04-18,33,New Hampshire,38
+2020-04-18,34,New Jersey,4070
+2020-04-18,35,New Mexico,53
+2020-04-18,36,New York,18760
+2020-04-18,37,North Carolina,187
+2020-04-18,38,North Dakota,9
+2020-04-18,69,Northern Mariana Islands,2
+2020-04-18,39,Ohio,451
+2020-04-18,40,Oklahoma,136
+2020-04-18,41,Oregon,72
+2020-04-18,42,Pennsylvania,1042
+2020-04-18,72,Puerto Rico,60
+2020-04-18,44,Rhode Island,137
+2020-04-18,45,South Carolina,119
+2020-04-18,46,South Dakota,7
+2020-04-18,47,Tennessee,142
+2020-04-18,48,Texas,476
+2020-04-18,49,Utah,25
+2020-04-18,50,Vermont,38
+2020-04-18,51,Virginia,258
+2020-04-18,53,Washington,613
+2020-04-18,54,West Virginia,16
+2020-04-18,55,Wisconsin,212
+2020-04-18,56,Wyoming,2
+2020-04-18,US,US,39753
+2020-04-19,01,Alabama,157
+2020-04-19,02,Alaska,9
+2020-04-19,60,American Samoa,0
+2020-04-19,04,Arizona,184
+2020-04-19,05,Arkansas,39
+2020-04-19,06,California,1177
+2020-04-19,08,Colorado,420
+2020-04-19,09,Connecticut,1127
+2020-04-19,10,Delaware,67
+2020-04-19,11,District of Columbia,96
+2020-04-19,12,Florida,774
+2020-04-19,13,Georgia,687
+2020-04-19,66,Guam,5
+2020-04-19,15,Hawaii,10
+2020-04-19,16,Idaho,44
+2020-04-19,17,Illinois,1290
+2020-04-19,18,Indiana,562
+2020-04-19,19,Iowa,75
+2020-04-19,20,Kansas,93
+2020-04-19,21,Kentucky,146
+2020-04-19,22,Louisiana,1296
+2020-04-19,23,Maine,34
+2020-04-19,24,Maryland,461
+2020-04-19,25,Massachusetts,1706
+2020-04-19,26,Michigan,2391
+2020-04-19,27,Minnesota,134
+2020-04-19,28,Mississippi,159
+2020-04-19,29,Missouri,199
+2020-04-19,30,Montana,10
+2020-04-19,31,Nebraska,28
+2020-04-19,32,Nevada,158
+2020-04-19,33,New Hampshire,38
+2020-04-19,34,New Jersey,4362
+2020-04-19,35,New Mexico,55
+2020-04-19,36,New York,18582
+2020-04-19,37,North Carolina,200
+2020-04-19,38,North Dakota,9
+2020-04-19,69,Northern Mariana Islands,2
+2020-04-19,39,Ohio,471
+2020-04-19,40,Oklahoma,140
+2020-04-19,41,Oregon,74
+2020-04-19,42,Pennsylvania,1276
+2020-04-19,72,Puerto Rico,62
+2020-04-19,44,Rhode Island,150
+2020-04-19,45,South Carolina,120
+2020-04-19,46,South Dakota,7
+2020-04-19,47,Tennessee,148
+2020-04-19,48,Texas,490
+2020-04-19,49,Utah,27
+2020-04-19,50,Vermont,38
+2020-04-19,51,Virginia,277
+2020-04-19,53,Washington,636
+2020-04-19,54,West Virginia,18
+2020-04-19,55,Wisconsin,220
+2020-04-19,56,Wyoming,2
+2020-04-19,US,US,40945
+2020-04-20,01,Alabama,163
+2020-04-20,02,Alaska,9
+2020-04-20,60,American Samoa,0
+2020-04-20,04,Arizona,191
+2020-04-20,05,Arkansas,41
+2020-04-20,06,California,1225
+2020-04-20,08,Colorado,420
+2020-04-20,09,Connecticut,1331
+2020-04-20,10,Delaware,72
+2020-04-20,11,District of Columbia,105
+2020-04-20,12,Florida,822
+2020-04-20,13,Georgia,775
+2020-04-20,66,Guam,5
+2020-04-20,15,Hawaii,10
+2020-04-20,16,Idaho,45
+2020-04-20,17,Illinois,1349
+2020-04-20,18,Indiana,577
+2020-04-20,19,Iowa,79
+2020-04-20,20,Kansas,102
+2020-04-20,21,Kentucky,154
+2020-04-20,22,Louisiana,1328
+2020-04-20,23,Maine,35
+2020-04-20,24,Maryland,582
+2020-04-20,25,Massachusetts,1706
+2020-04-20,26,Michigan,2468
+2020-04-20,27,Minnesota,143
+2020-04-20,28,Mississippi,169
+2020-04-20,29,Missouri,200
+2020-04-20,30,Montana,10
+2020-04-20,31,Nebraska,33
+2020-04-20,32,Nevada,159
+2020-04-20,33,New Hampshire,42
+2020-04-20,34,New Jersey,4496
+2020-04-20,35,New Mexico,58
+2020-04-20,36,New York,19176
+2020-04-20,37,North Carolina,218
+2020-04-20,38,North Dakota,9
+2020-04-20,69,Northern Mariana Islands,2
+2020-04-20,39,Ohio,509
+2020-04-20,40,Oklahoma,143
+2020-04-20,41,Oregon,75
+2020-04-20,42,Pennsylvania,1348
+2020-04-20,72,Puerto Rico,63
+2020-04-20,44,Rhode Island,155
+2020-04-20,45,South Carolina,123
+2020-04-20,46,South Dakota,7
+2020-04-20,47,Tennessee,152
+2020-04-20,48,Texas,507
+2020-04-20,49,Utah,28
+2020-04-20,50,Vermont,38
+2020-04-20,51,Virginia,300
+2020-04-20,53,Washington,643
+2020-04-20,54,West Virginia,24
+2020-04-20,55,Wisconsin,230
+2020-04-20,56,Wyoming,2
+2020-04-20,US,US,42659
+2020-04-21,01,Alabama,183
+2020-04-21,02,Alaska,9
+2020-04-21,60,American Samoa,0
+2020-04-21,04,Arizona,208
+2020-04-21,05,Arkansas,42
+2020-04-21,06,California,1282
+2020-04-21,08,Colorado,483
+2020-04-21,09,Connecticut,1423
+2020-04-21,10,Delaware,82
+2020-04-21,11,District of Columbia,112
+2020-04-21,12,Florida,867
+2020-04-21,13,Georgia,798
+2020-04-21,66,Guam,5
+2020-04-21,15,Hawaii,10
+2020-04-21,16,Idaho,48
+2020-04-21,17,Illinois,1468
+2020-04-21,18,Indiana,635
+2020-04-21,19,Iowa,83
+2020-04-21,20,Kansas,109
+2020-04-21,21,Kentucky,171
+2020-04-21,22,Louisiana,1405
+2020-04-21,23,Maine,36
+2020-04-21,24,Maryland,652
+2020-04-21,25,Massachusetts,1961
+2020-04-21,26,Michigan,2575
+2020-04-21,27,Minnesota,160
+2020-04-21,28,Mississippi,183
+2020-04-21,29,Missouri,224
+2020-04-21,30,Montana,12
+2020-04-21,31,Nebraska,33
+2020-04-21,32,Nevada,163
+2020-04-21,33,New Hampshire,42
+2020-04-21,34,New Jersey,4753
+2020-04-21,35,New Mexico,58
+2020-04-21,36,New York,19746
+2020-04-21,37,North Carolina,245
+2020-04-21,38,North Dakota,13
+2020-04-21,69,Northern Mariana Islands,2
+2020-04-21,39,Ohio,557
+2020-04-21,40,Oklahoma,164
+2020-04-21,41,Oregon,78
+2020-04-21,42,Pennsylvania,1614
+2020-04-21,72,Puerto Rico,64
+2020-04-21,44,Rhode Island,171
+2020-04-21,45,South Carolina,124
+2020-04-21,46,South Dakota,8
+2020-04-21,47,Tennessee,157
+2020-04-21,48,Texas,533
+2020-04-21,49,Utah,32
+2020-04-21,50,Vermont,40
+2020-04-21,51,Virginia,324
+2020-04-21,53,Washington,664
+2020-04-21,54,West Virginia,26
+2020-04-21,55,Wisconsin,244
+2020-04-21,56,Wyoming,2
+2020-04-21,US,US,45086
+2020-04-22,01,Alabama,196
+2020-04-22,02,Alaska,9
+2020-04-22,60,American Samoa,0
+2020-04-22,04,Arizona,231
+2020-04-22,05,Arkansas,42
+2020-04-22,06,California,1421
+2020-04-22,08,Colorado,506
+2020-04-22,09,Connecticut,1544
+2020-04-22,10,Delaware,89
+2020-04-22,11,District of Columbia,127
+2020-04-22,12,Florida,893
+2020-04-22,13,Georgia,848
+2020-04-22,66,Guam,5
+2020-04-22,15,Hawaii,12
+2020-04-22,16,Idaho,51
+2020-04-22,17,Illinois,1565
+2020-04-22,18,Indiana,666
+2020-04-22,19,Iowa,90
+2020-04-22,20,Kansas,112
+2020-04-22,21,Kentucky,185
+2020-04-22,22,Louisiana,1473
+2020-04-22,23,Maine,39
+2020-04-22,24,Maryland,698
+2020-04-22,25,Massachusetts,2182
+2020-04-22,26,Michigan,2813
+2020-04-22,27,Minnesota,179
+2020-04-22,28,Mississippi,193
+2020-04-22,29,Missouri,238
+2020-04-22,30,Montana,14
+2020-04-22,31,Nebraska,38
+2020-04-22,32,Nevada,172
+2020-04-22,33,New Hampshire,48
+2020-04-22,34,New Jersey,5150
+2020-04-22,35,New Mexico,71
+2020-04-22,36,New York,20203
+2020-04-22,37,North Carolina,265
+2020-04-22,38,North Dakota,14
+2020-04-22,69,Northern Mariana Islands,2
+2020-04-22,39,Ohio,610
+2020-04-22,40,Oklahoma,170
+2020-04-22,41,Oregon,78
+2020-04-22,42,Pennsylvania,1673
+2020-04-22,72,Puerto Rico,63
+2020-04-22,44,Rhode Island,181
+2020-04-22,45,South Carolina,140
+2020-04-22,46,South Dakota,9
+2020-04-22,47,Tennessee,157
+2020-04-22,48,Texas,556
+2020-04-22,49,Utah,32
+2020-04-22,50,Vermont,40
+2020-04-22,51,Virginia,349
+2020-04-22,53,Washington,686
+2020-04-22,54,West Virginia,27
+2020-04-22,55,Wisconsin,248
+2020-04-22,56,Wyoming,6
+2020-04-22,US,US,47412
+2020-04-23,01,Alabama,202
+2020-04-23,02,Alaska,9
+2020-04-23,60,American Samoa,0
+2020-04-23,04,Arizona,249
+2020-04-23,05,Arkansas,45
+2020-04-23,06,California,1533
+2020-04-23,08,Colorado,552
+2020-04-23,09,Connecticut,1639
+2020-04-23,10,Delaware,92
+2020-04-23,11,District of Columbia,139
+2020-04-23,12,Florida,987
+2020-04-23,13,Georgia,881
+2020-04-23,66,Guam,5
+2020-04-23,15,Hawaii,12
+2020-04-23,16,Idaho,54
+2020-04-23,17,Illinois,1688
+2020-04-23,18,Indiana,706
+2020-04-23,19,Iowa,96
+2020-04-23,20,Kansas,113
+2020-04-23,21,Kentucky,191
+2020-04-23,22,Louisiana,1599
+2020-04-23,23,Maine,44
+2020-04-23,24,Maryland,748
+2020-04-23,25,Massachusetts,2360
+2020-04-23,26,Michigan,2977
+2020-04-23,27,Minnesota,200
+2020-04-23,28,Mississippi,201
+2020-04-23,29,Missouri,252
+2020-04-23,30,Montana,14
+2020-04-23,31,Nebraska,47
+2020-04-23,32,Nevada,195
+2020-04-23,33,New Hampshire,51
+2020-04-23,34,New Jersey,5426
+2020-04-23,35,New Mexico,78
+2020-04-23,36,New York,20743
+2020-04-23,37,North Carolina,281
+2020-04-23,38,North Dakota,15
+2020-04-23,69,Northern Mariana Islands,2
+2020-04-23,39,Ohio,656
+2020-04-23,40,Oklahoma,179
+2020-04-23,41,Oregon,83
+2020-04-23,42,Pennsylvania,1724
+2020-04-23,72,Puerto Rico,69
+2020-04-23,44,Rhode Island,189
+2020-04-23,45,South Carolina,150
+2020-04-23,46,South Dakota,9
+2020-04-23,47,Tennessee,171
+2020-04-23,48,Texas,604
+2020-04-23,49,Utah,35
+2020-04-23,50,Vermont,43
+2020-04-23,51,Virginia,373
+2020-04-23,53,Washington,711
+2020-04-23,54,West Virginia,31
+2020-04-23,55,Wisconsin,258
+2020-04-23,56,Wyoming,7
+2020-04-23,US,US,49724
+2020-04-24,01,Alabama,209
+2020-04-24,02,Alaska,9
+2020-04-24,60,American Samoa,0
+2020-04-24,04,Arizona,266
+2020-04-24,05,Arkansas,47
+2020-04-24,06,California,1621
+2020-04-24,08,Colorado,674
+2020-04-24,09,Connecticut,1767
+2020-04-24,10,Delaware,100
+2020-04-24,11,District of Columbia,153
+2020-04-24,12,Florida,1046
+2020-04-24,13,Georgia,899
+2020-04-24,66,Guam,5
+2020-04-24,15,Hawaii,13
+2020-04-24,16,Idaho,54
+2020-04-24,17,Illinois,1795
+2020-04-24,18,Indiana,741
+2020-04-24,19,Iowa,107
+2020-04-24,20,Kansas,118
+2020-04-24,21,Kentucky,200
+2020-04-24,22,Louisiana,1660
+2020-04-24,23,Maine,47
+2020-04-24,24,Maryland,798
+2020-04-24,25,Massachusetts,2556
+2020-04-24,26,Michigan,3085
+2020-04-24,27,Minnesota,221
+2020-04-24,28,Mississippi,209
+2020-04-24,29,Missouri,272
+2020-04-24,30,Montana,14
+2020-04-24,31,Nebraska,50
+2020-04-24,32,Nevada,197
+2020-04-24,33,New Hampshire,53
+2020-04-24,34,New Jersey,5683
+2020-04-24,35,New Mexico,84
+2020-04-24,36,New York,20955
+2020-04-24,37,North Carolina,294
+2020-04-24,38,North Dakota,15
+2020-04-24,69,Northern Mariana Islands,2
+2020-04-24,39,Ohio,690
+2020-04-24,40,Oklahoma,188
+2020-04-24,41,Oregon,86
+2020-04-24,42,Pennsylvania,1747
+2020-04-24,72,Puerto Rico,77
+2020-04-24,44,Rhode Island,202
+2020-04-24,45,South Carolina,157
+2020-04-24,46,South Dakota,10
+2020-04-24,47,Tennessee,169
+2020-04-24,48,Texas,624
+2020-04-24,49,Utah,39
+2020-04-24,50,Vermont,44
+2020-04-24,51,Virginia,411
+2020-04-24,53,Washington,722
+2020-04-24,54,West Virginia,32
+2020-04-24,55,Wisconsin,263
+2020-04-24,56,Wyoming,7
+2020-04-24,US,US,51493
+2020-04-25,01,Alabama,209
+2020-04-25,02,Alaska,9
+2020-04-25,60,American Samoa,0
+2020-04-25,04,Arizona,273
+2020-04-25,05,Arkansas,48
+2020-04-25,06,California,1689
+2020-04-25,08,Colorado,684
+2020-04-25,09,Connecticut,1865
+2020-04-25,10,Delaware,112
+2020-04-25,11,District of Columbia,165
+2020-04-25,12,Florida,1055
+2020-04-25,13,Georgia,907
+2020-04-25,66,Guam,5
+2020-04-25,15,Hawaii,13
+2020-04-25,16,Idaho,56
+2020-04-25,17,Illinois,1875
+2020-04-25,18,Indiana,786
+2020-04-25,19,Iowa,112
+2020-04-25,20,Kansas,120
+2020-04-25,21,Kentucky,205
+2020-04-25,22,Louisiana,1707
+2020-04-25,23,Maine,47
+2020-04-25,24,Maryland,875
+2020-04-25,25,Massachusetts,2730
+2020-04-25,26,Michigan,3155
+2020-04-25,27,Minnesota,244
+2020-04-25,28,Mississippi,221
+2020-04-25,29,Missouri,281
+2020-04-25,30,Montana,14
+2020-04-25,31,Nebraska,50
+2020-04-25,32,Nevada,205
+2020-04-25,33,New Hampshire,53
+2020-04-25,34,New Jersey,5914
+2020-04-25,35,New Mexico,93
+2020-04-25,36,New York,22009
+2020-04-25,37,North Carolina,305
+2020-04-25,38,North Dakota,16
+2020-04-25,69,Northern Mariana Islands,2
+2020-04-25,39,Ohio,711
+2020-04-25,40,Oklahoma,194
+2020-04-25,41,Oregon,87
+2020-04-25,42,Pennsylvania,1793
+2020-04-25,72,Puerto Rico,83
+2020-04-25,44,Rhode Island,215
+2020-04-25,45,South Carolina,166
+2020-04-25,46,South Dakota,10
+2020-04-25,47,Tennessee,177
+2020-04-25,48,Texas,638
+2020-04-25,49,Utah,41
+2020-04-25,50,Vermont,46
+2020-04-25,51,Virginia,437
+2020-04-25,53,Washington,737
+2020-04-25,54,West Virginia,32
+2020-04-25,55,Wisconsin,266
+2020-04-25,56,Wyoming,7
+2020-04-25,US,US,53755
+2020-04-26,01,Alabama,219
+2020-04-26,02,Alaska,9
+2020-04-26,60,American Samoa,0
+2020-04-26,04,Arizona,275
+2020-04-26,05,Arkansas,51
+2020-04-26,06,California,1725
+2020-04-26,08,Colorado,688
+2020-04-26,09,Connecticut,1924
+2020-04-26,10,Delaware,120
+2020-04-26,11,District of Columbia,178
+2020-04-26,12,Florida,1075
+2020-04-26,13,Georgia,916
+2020-04-26,66,Guam,5
+2020-04-26,15,Hawaii,14
+2020-04-26,16,Idaho,56
+2020-04-26,17,Illinois,1933
+2020-04-26,18,Indiana,813
+2020-04-26,19,Iowa,118
+2020-04-26,20,Kansas,121
+2020-04-26,21,Kentucky,208
+2020-04-26,22,Louisiana,1729
+2020-04-26,23,Maine,50
+2020-04-26,24,Maryland,910
+2020-04-26,25,Massachusetts,2899
+2020-04-26,26,Michigan,3315
+2020-04-26,27,Minnesota,272
+2020-04-26,28,Mississippi,227
+2020-04-26,29,Missouri,283
+2020-04-26,30,Montana,14
+2020-04-26,31,Nebraska,56
+2020-04-26,32,Nevada,206
+2020-04-26,33,New Hampshire,60
+2020-04-26,34,New Jersey,5938
+2020-04-26,35,New Mexico,99
+2020-04-26,36,New York,22269
+2020-04-26,37,North Carolina,324
+2020-04-26,38,North Dakota,17
+2020-04-26,69,Northern Mariana Islands,2
+2020-04-26,39,Ohio,728
+2020-04-26,40,Oklahoma,195
+2020-04-26,41,Oregon,92
+2020-04-26,42,Pennsylvania,1816
+2020-04-26,72,Puerto Rico,84
+2020-04-26,44,Rhode Island,226
+2020-04-26,45,South Carolina,174
+2020-04-26,46,South Dakota,11
+2020-04-26,47,Tennessee,181
+2020-04-26,48,Texas,651
+2020-04-26,49,Utah,41
+2020-04-26,50,Vermont,46
+2020-04-26,51,Virginia,449
+2020-04-26,53,Washington,749
+2020-04-26,54,West Virginia,34
+2020-04-26,55,Wisconsin,272
+2020-04-26,56,Wyoming,7
+2020-04-26,US,US,54881
+2020-04-27,01,Alabama,228
+2020-04-27,02,Alaska,9
+2020-04-27,60,American Samoa,0
+2020-04-27,04,Arizona,275
+2020-04-27,05,Arkansas,51
+2020-04-27,06,California,1779
+2020-04-27,08,Colorado,706
+2020-04-27,09,Connecticut,2012
+2020-04-27,10,Delaware,125
+2020-04-27,11,District of Columbia,185
+2020-04-27,12,Florida,1088
+2020-04-27,13,Georgia,995
+2020-04-27,66,Guam,5
+2020-04-27,15,Hawaii,16
+2020-04-27,16,Idaho,56
+2020-04-27,17,Illinois,1983
+2020-04-27,18,Indiana,844
+2020-04-27,19,Iowa,127
+2020-04-27,20,Kansas,126
+2020-04-27,21,Kentucky,213
+2020-04-27,22,Louisiana,1740
+2020-04-27,23,Maine,51
+2020-04-27,24,Maryland,945
+2020-04-27,25,Massachusetts,3003
+2020-04-27,26,Michigan,3407
+2020-04-27,27,Minnesota,286
+2020-04-27,28,Mississippi,229
+2020-04-27,29,Missouri,343
+2020-04-27,30,Montana,14
+2020-04-27,31,Nebraska,56
+2020-04-27,32,Nevada,206
+2020-04-27,33,New Hampshire,60
+2020-04-27,34,New Jersey,6044
+2020-04-27,35,New Mexico,99
+2020-04-27,36,New York,22668
+2020-04-27,37,North Carolina,340
+2020-04-27,38,North Dakota,19
+2020-04-27,69,Northern Mariana Islands,2
+2020-04-27,39,Ohio,753
+2020-04-27,40,Oklahoma,197
+2020-04-27,41,Oregon,92
+2020-04-27,42,Pennsylvania,1886
+2020-04-27,72,Puerto Rico,84
+2020-04-27,44,Rhode Island,233
+2020-04-27,45,South Carolina,177
+2020-04-27,46,South Dakota,11
+2020-04-27,47,Tennessee,184
+2020-04-27,48,Texas,666
+2020-04-27,49,Utah,41
+2020-04-27,50,Vermont,47
+2020-04-27,51,Virginia,460
+2020-04-27,53,Washington,764
+2020-04-27,54,West Virginia,34
+2020-04-27,55,Wisconsin,281
+2020-04-27,56,Wyoming,7
+2020-04-27,US,US,56259
+2020-04-28,01,Alabama,242
+2020-04-28,02,Alaska,9
+2020-04-28,60,American Samoa,0
+2020-04-28,04,Arizona,275
+2020-04-28,05,Arkansas,57
+2020-04-28,06,California,1864
+2020-04-28,08,Colorado,736
+2020-04-28,09,Connecticut,2087
+2020-04-28,10,Delaware,137
+2020-04-28,11,District of Columbia,190
+2020-04-28,12,Florida,1171
+2020-04-28,13,Georgia,1036
+2020-04-28,66,Guam,5
+2020-04-28,15,Hawaii,16
+2020-04-28,16,Idaho,60
+2020-04-28,17,Illinois,2125
+2020-04-28,18,Indiana,901
+2020-04-28,19,Iowa,136
+2020-04-28,20,Kansas,127
+2020-04-28,21,Kentucky,225
+2020-04-28,22,Louisiana,1801
+2020-04-28,23,Maine,51
+2020-04-28,24,Maryland,1016
+2020-04-28,25,Massachusetts,3153
+2020-04-28,26,Michigan,3568
+2020-04-28,27,Minnesota,301
+2020-04-28,28,Mississippi,239
+2020-04-28,29,Missouri,330
+2020-04-28,30,Montana,15
+2020-04-28,31,Nebraska,56
+2020-04-28,32,Nevada,219
+2020-04-28,33,New Hampshire,60
+2020-04-28,34,New Jersey,6442
+2020-04-28,35,New Mexico,105
+2020-04-28,36,New York,22912
+2020-04-28,37,North Carolina,363
+2020-04-28,38,North Dakota,19
+2020-04-28,69,Northern Mariana Islands,2
+2020-04-28,39,Ohio,799
+2020-04-28,40,Oklahoma,207
+2020-04-28,41,Oregon,99
+2020-04-28,42,Pennsylvania,2046
+2020-04-28,72,Puerto Rico,86
+2020-04-28,44,Rhode Island,239
+2020-04-28,45,South Carolina,192
+2020-04-28,46,South Dakota,11
+2020-04-28,47,Tennessee,188
+2020-04-28,48,Texas,719
+2020-04-28,49,Utah,41
+2020-04-28,50,Vermont,47
+2020-04-28,51,Virginia,492
+2020-04-28,53,Washington,786
+2020-04-28,54,West Virginia,38
+2020-04-28,55,Wisconsin,300
+2020-04-28,56,Wyoming,7
+2020-04-28,US,US,58355
+2020-04-29,01,Alabama,256
+2020-04-29,02,Alaska,9
+2020-04-29,60,American Samoa,0
+2020-04-29,04,Arizona,308
+2020-04-29,05,Arkansas,57
+2020-04-29,06,California,1946
+2020-04-29,08,Colorado,766
+2020-04-29,09,Connecticut,2169
+2020-04-29,10,Delaware,144
+2020-04-29,11,District of Columbia,205
+2020-04-29,12,Florida,1218
+2020-04-29,13,Georgia,1101
+2020-04-29,66,Guam,5
+2020-04-29,15,Hawaii,16
+2020-04-29,16,Idaho,60
+2020-04-29,17,Illinois,2215
+2020-04-29,18,Indiana,964
+2020-04-29,19,Iowa,148
+2020-04-29,20,Kansas,134
+2020-04-29,21,Kentucky,234
+2020-04-29,22,Louisiana,1845
+2020-04-29,23,Maine,52
+2020-04-29,24,Maryland,1078
+2020-04-29,25,Massachusetts,3405
+2020-04-29,26,Michigan,3670
+2020-04-29,27,Minnesota,319
+2020-04-29,28,Mississippi,250
+2020-04-29,29,Missouri,338
+2020-04-29,30,Montana,16
+2020-04-29,31,Nebraska,56
+2020-04-29,32,Nevada,230
+2020-04-29,33,New Hampshire,60
+2020-04-29,34,New Jersey,6771
+2020-04-29,35,New Mexico,112
+2020-04-29,36,New York,23477
+2020-04-29,37,North Carolina,382
+2020-04-29,38,North Dakota,19
+2020-04-29,69,Northern Mariana Islands,2
+2020-04-29,39,Ohio,937
+2020-04-29,40,Oklahoma,214
+2020-04-29,41,Oregon,101
+2020-04-29,42,Pennsylvania,2373
+2020-04-29,72,Puerto Rico,86
+2020-04-29,44,Rhode Island,251
+2020-04-29,45,South Carolina,231
+2020-04-29,46,South Dakota,13
+2020-04-29,47,Tennessee,195
+2020-04-29,48,Texas,754
+2020-04-29,49,Utah,45
+2020-04-29,50,Vermont,47
+2020-04-29,51,Virginia,522
+2020-04-29,53,Washington,801
+2020-04-29,54,West Virginia,38
+2020-04-29,55,Wisconsin,308
+2020-04-29,56,Wyoming,7
+2020-04-29,US,US,60967
+2020-04-30,01,Alabama,272
+2020-04-30,02,Alaska,9
+2020-04-30,60,American Samoa,0
+2020-04-30,04,Arizona,320
+2020-04-30,05,Arkansas,61
+2020-04-30,06,California,2031
+2020-04-30,08,Colorado,777
+2020-04-30,09,Connecticut,2257
+2020-04-30,10,Delaware,152
+2020-04-30,11,District of Columbia,224
+2020-04-30,12,Florida,1268
+2020-04-30,13,Georgia,1132
+2020-04-30,66,Guam,5
+2020-04-30,15,Hawaii,16
+2020-04-30,16,Idaho,60
+2020-04-30,17,Illinois,2355
+2020-04-30,18,Indiana,1114
+2020-04-30,19,Iowa,162
+2020-04-30,20,Kansas,134
+2020-04-30,21,Kentucky,240
+2020-04-30,22,Louisiana,1905
+2020-04-30,23,Maine,53
+2020-04-30,24,Maryland,1140
+2020-04-30,25,Massachusetts,3562
+2020-04-30,26,Michigan,3789
+2020-04-30,27,Minnesota,343
+2020-04-30,28,Mississippi,261
+2020-04-30,29,Missouri,350
+2020-04-30,30,Montana,16
+2020-04-30,31,Nebraska,70
+2020-04-30,32,Nevada,243
+2020-04-30,33,New Hampshire,72
+2020-04-30,34,New Jersey,7228
+2020-04-30,35,New Mexico,123
+2020-04-30,36,New York,23587
+2020-04-30,37,North Carolina,406
+2020-04-30,38,North Dakota,19
+2020-04-30,69,Northern Mariana Islands,2
+2020-04-30,39,Ohio,976
+2020-04-30,40,Oklahoma,222
+2020-04-30,41,Oregon,103
+2020-04-30,42,Pennsylvania,2475
+2020-04-30,72,Puerto Rico,92
+2020-04-30,44,Rhode Island,266
+2020-04-30,45,South Carolina,244
+2020-04-30,46,South Dakota,17
+2020-04-30,47,Tennessee,199
+2020-04-30,48,Texas,812
+2020-04-30,49,Utah,46
+2020-04-30,50,Vermont,49
+2020-04-30,51,Virginia,552
+2020-04-30,53,Washington,814
+2020-04-30,54,West Virginia,41
+2020-04-30,55,Wisconsin,316
+2020-04-30,56,Wyoming,7
+2020-04-30,US,US,62996
+2020-05-01,01,Alabama,289
+2020-05-01,02,Alaska,9
+2020-05-01,60,American Samoa,0
+2020-05-01,04,Arizona,330
+2020-05-01,05,Arkansas,64
+2020-05-01,06,California,2126
+2020-05-01,08,Colorado,821
+2020-05-01,09,Connecticut,2339
+2020-05-01,10,Delaware,159
+2020-05-01,11,District of Columbia,231
+2020-05-01,12,Florida,1314
+2020-05-01,13,Georgia,1169
+2020-05-01,66,Guam,5
+2020-05-01,15,Hawaii,16
+2020-05-01,16,Idaho,63
+2020-05-01,17,Illinois,2457
+2020-05-01,18,Indiana,1175
+2020-05-01,19,Iowa,170
+2020-05-01,20,Kansas,140
+2020-05-01,21,Kentucky,246
+2020-05-01,22,Louisiana,1970
+2020-05-01,23,Maine,55
+2020-05-01,24,Maryland,1080
+2020-05-01,25,Massachusetts,3716
+2020-05-01,26,Michigan,3866
+2020-05-01,27,Minnesota,370
+2020-05-01,28,Mississippi,281
+2020-05-01,29,Missouri,360
+2020-05-01,30,Montana,16
+2020-05-01,31,Nebraska,73
+2020-05-01,32,Nevada,246
+2020-05-01,33,New Hampshire,81
+2020-05-01,34,New Jersey,7538
+2020-05-01,35,New Mexico,131
+2020-05-01,36,New York,24039
+2020-05-01,37,North Carolina,419
+2020-05-01,38,North Dakota,23
+2020-05-01,69,Northern Mariana Islands,2
+2020-05-01,39,Ohio,1003
+2020-05-01,40,Oklahoma,230
+2020-05-01,41,Oregon,104
+2020-05-01,42,Pennsylvania,2635
+2020-05-01,72,Puerto Rico,94
+2020-05-01,44,Rhode Island,279
+2020-05-01,45,South Carolina,256
+2020-05-01,46,South Dakota,21
+2020-05-01,47,Tennessee,204
+2020-05-01,48,Texas,840
+2020-05-01,49,Utah,46
+2020-05-01,50,Vermont,50
+2020-05-01,51,Virginia,581
+2020-05-01,53,Washington,824
+2020-05-01,54,West Virginia,46
+2020-05-01,55,Wisconsin,327
+2020-05-01,56,Wyoming,7
+2020-05-01,US,US,64943
+2020-05-02,01,Alabama,288
+2020-05-02,02,Alaska,9
+2020-05-02,60,American Samoa,0
+2020-05-02,04,Arizona,330
+2020-05-02,05,Arkansas,72
+2020-05-02,06,California,2180
+2020-05-02,08,Colorado,832
+2020-05-02,09,Connecticut,2436
+2020-05-02,10,Delaware,168
+2020-05-02,11,District of Columbia,240
+2020-05-02,12,Florida,1364
+2020-05-02,13,Georgia,1177
+2020-05-02,66,Guam,5
+2020-05-02,15,Hawaii,16
+2020-05-02,16,Idaho,64
+2020-05-02,17,Illinois,2559
+2020-05-02,18,Indiana,1115
+2020-05-02,19,Iowa,175
+2020-05-02,20,Kansas,142
+2020-05-02,21,Kentucky,248
+2020-05-02,22,Louisiana,1993
+2020-05-02,23,Maine,56
+2020-05-02,24,Maryland,1251
+2020-05-02,25,Massachusetts,3846
+2020-05-02,26,Michigan,4021
+2020-05-02,27,Minnesota,394
+2020-05-02,28,Mississippi,291
+2020-05-02,29,Missouri,376
+2020-05-02,30,Montana,16
+2020-05-02,31,Nebraska,73
+2020-05-02,32,Nevada,255
+2020-05-02,33,New Hampshire,84
+2020-05-02,34,New Jersey,7742
+2020-05-02,35,New Mexico,138
+2020-05-02,36,New York,24198
+2020-05-02,37,North Carolina,431
+2020-05-02,38,North Dakota,24
+2020-05-02,69,Northern Mariana Islands,2
+2020-05-02,39,Ohio,1022
+2020-05-02,40,Oklahoma,238
+2020-05-02,41,Oregon,109
+2020-05-02,42,Pennsylvania,2695
+2020-05-02,72,Puerto Rico,95
+2020-05-02,44,Rhode Island,296
+2020-05-02,45,South Carolina,267
+2020-05-02,46,South Dakota,21
+2020-05-02,47,Tennessee,209
+2020-05-02,48,Texas,863
+2020-05-02,49,Utah,49
+2020-05-02,50,Vermont,51
+2020-05-02,51,Virginia,617
+2020-05-02,53,Washington,830
+2020-05-02,54,West Virginia,48
+2020-05-02,55,Wisconsin,334
+2020-05-02,56,Wyoming,7
+2020-05-02,US,US,66369
+2020-05-03,01,Alabama,290
+2020-05-03,02,Alaska,9
+2020-05-03,60,American Samoa,0
+2020-05-03,04,Arizona,362
+2020-05-03,05,Arkansas,76
+2020-05-03,06,California,2216
+2020-05-03,08,Colorado,842
+2020-05-03,09,Connecticut,2436
+2020-05-03,10,Delaware,177
+2020-05-03,11,District of Columbia,251
+2020-05-03,12,Florida,1379
+2020-05-03,13,Georgia,1184
+2020-05-03,66,Guam,5
+2020-05-03,15,Hawaii,17
+2020-05-03,16,Idaho,64
+2020-05-03,17,Illinois,2618
+2020-05-03,18,Indiana,1132
+2020-05-03,19,Iowa,184
+2020-05-03,20,Kansas,144
+2020-05-03,21,Kentucky,253
+2020-05-03,22,Louisiana,2012
+2020-05-03,23,Maine,57
+2020-05-03,24,Maryland,1281
+2020-05-03,25,Massachusetts,4004
+2020-05-03,26,Michigan,4053
+2020-05-03,27,Minnesota,418
+2020-05-03,28,Mississippi,303
+2020-05-03,29,Missouri,381
+2020-05-03,30,Montana,16
+2020-05-03,31,Nebraska,78
+2020-05-03,32,Nevada,258
+2020-05-03,33,New Hampshire,86
+2020-05-03,34,New Jersey,7871
+2020-05-03,35,New Mexico,151
+2020-05-03,36,New York,24708
+2020-05-03,37,North Carolina,434
+2020-05-03,38,North Dakota,25
+2020-05-03,69,Northern Mariana Islands,2
+2020-05-03,39,Ohio,1039
+2020-05-03,40,Oklahoma,238
+2020-05-03,41,Oregon,109
+2020-05-03,42,Pennsylvania,2720
+2020-05-03,72,Puerto Rico,97
+2020-05-03,44,Rhode Island,320
+2020-05-03,45,South Carolina,275
+2020-05-03,46,South Dakota,21
+2020-05-03,47,Tennessee,210
+2020-05-03,48,Texas,878
+2020-05-03,49,Utah,50
+2020-05-03,50,Vermont,53
+2020-05-03,51,Virginia,660
+2020-05-03,53,Washington,834
+2020-05-03,54,West Virginia,48
+2020-05-03,55,Wisconsin,339
+2020-05-03,56,Wyoming,7
+2020-05-03,US,US,67682

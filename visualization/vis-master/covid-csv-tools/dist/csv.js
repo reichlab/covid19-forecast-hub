@@ -17,11 +17,12 @@ class CSV {
   /**
    * Initialize the csv with filename and some metadata
    */
-  constructor(filePath, epiweek, model) {
+  constructor(filePath, epiweek, model, target) {
     this.filePath = filePath;
     this.epiweek = epiweek;
     this.model = model;
-    this.season = u.epiweek.seasonFromEpiweek(epiweek);
+    this.target = target;
+    this.season = u.epiweek.seasonFromEpiweek(epiweek)
     this.parseCsv();
   }
   /**
@@ -54,9 +55,14 @@ class CSV {
       this.bins[state] = {};
       for (let target of meta_1.targetIds) {
         try {
-          let bins = csvData[meta_1.stateFullName[state]][meta_1.targetFullName[target]]
+          let targetFullName = meta_1.targetFullNameInc[target]
+          if (csvData[meta_1.stateFullName[state]][targetFullName] == undefined) {
+            targetFullName = meta_1.targetFullNameCum[target]
+          }
+          let bins = csvData[meta_1.stateFullName[state]][targetFullName]
             .filter(row => row[2] == 'Bin')
             .map(row => [row[4], row[5], row[6]]); // bin start, bin end, value
+
           if (meta_1.targetType[target] === 'week') {
             // Convert the week values in bins to epiweek
             bins = bins.map(b => [this.weekToEpiweek(b[0]), this.weekToEpiweek(b[1]), b[2]]);
@@ -78,7 +84,11 @@ class CSV {
       this.bins[state] = {};
       for (let target of meta_1.targetIds) {
         try {
-          let bins = csvData[meta_1.stateFullName[state]][meta_1.targetFullName[target]]
+          let targetFullName = meta_1.targetFullNameInc[target]
+          if (csvData[meta_1.stateFullName[state]][targetFullName] == undefined) {
+            targetFullName = meta_1.targetFullNameCum[target]
+          }
+          let bins = csvData[meta_1.stateFullName[state]][targetFullName]
             .filter(row => row[2] == 'quantile')
             .map(row => [row[4], row[5]]); // quantile, value
           this.bins[state][target] = u.bins.sortBins(bins, target);
@@ -104,7 +114,11 @@ class CSV {
       this.points[state] = {};
       for (let target of meta_1.targetIds) {
         try {
-          let point = csvData[meta_1.stateFullName[state]][meta_1.targetFullName[target]]
+          let targetFullName = meta_1.targetFullNameInc[target]
+          if (csvData[meta_1.stateFullName[state]][targetFullName] == undefined) {
+            targetFullName = meta_1.targetFullNameCum[target]
+          }
+          let point = csvData[meta_1.stateFullName[state]][targetFullName]
             .find(row => row[2] == 'point')[5];
           if (point === 'NA') {
             point = u.bins.inferPoint(this.getBins(target, state));

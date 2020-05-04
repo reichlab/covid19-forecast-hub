@@ -1,0 +1,10 @@
+.d3f-time-chart {
+  @import 'time-chart/overlay';
+  @import 'time-chart/onset';
+  @import 'time-chart/peak';
+  @import 'time-chart/prediction';
+  @import 'time-chart/observed';
+  @import 'time-chart/actual';
+  @import 'time-chart/baseline';
+  @import 'time-chart/history';
+}

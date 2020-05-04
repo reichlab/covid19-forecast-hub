@@ -23,7 +23,23 @@ def download_covid_zip_files(path):
     driver = webdriver.Chrome(ChromeDriverManager().install(),chrome_options=options)
     driver.get(url)
     try:
+        # Get US data
         element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "us-model-outputs-links")))
+        rows = element.find_elements(By.TAG_NAME, "tr")
+        # Get the columns (all the column 2)        
+        cols = rows[1].find_elements(By.TAG_NAME, "td") #note: index start from 0, 1 is col 2
+        for col in cols:
+            ele = col.find_elements(By.TAG_NAME, "a")[0]
+            name = ele.get_attribute('href').split('/')[-1]
+            filepath = path + '/' + name
+            if os.path.exists(filepath):
+                continue
+            else:
+                driver.get(ele.get_attribute('href'))
+                time.sleep(3)
+
+        # Get Global data
+        element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "global-model-outputs-links")))
         rows = element.find_elements(By.TAG_NAME, "tr")
         # Get the columns (all the column 2)        
         cols = rows[1].find_elements(By.TAG_NAME, "td") #note: index start from 0, 1 is col 2

@@ -16,22 +16,29 @@ const DATA_DIR = './data'
 const OUT_DIR = './src/assets/data'
 
 // Look for seasons in the data directory
-const SEASONS = utils.getSubDirectories(DATA_DIR)
+const TARGETS = utils.getSubDirectories(DATA_DIR)
 
 // Take input season from command line argument
-const SEASON_ID = parseInt(process.argv[2])
+const TARGET = process.argv[2].concat(" ".concat(process.argv[3]))
+const SEASON_ID = parseInt(2019)
 const SEASON = `${SEASON_ID}-${SEASON_ID + 1}`
-const MODELS_DIR = utils.getSubDirectories(path.join(DATA_DIR, SEASON))
+const MODELS_DIR = utils.getSubDirectories(path.join(DATA_DIR, TARGET))
 
 /**
  * Return season name for writing files
  */
 function getSeasonName() {
-  if (SEASONS.indexOf(SEASON) === SEASONS.length - 1) {
+  // if (TARGETS.indexOf(TARGET) === TARGETS.length - 1) {
+  //   return 'latest'
+  // } else {
+  //   return TARGET
+  // }
+  if (TARGET === "Cumulative Deaths") {
     return 'latest'
   } else {
-    return SEASON
+    return TARGET
   }
+
 }
 
 async function writeSeasonFile(data) {
@@ -51,7 +58,7 @@ async function writeDistsFile(data, stateId) {
     // We only use latest identifier in the latest AND nat data
     outputFile = path.join(distsDir, `season-${getSeasonName()}-nat.json`)
   } else {
-    outputFile = path.join(distsDir, `season-${SEASON}-${stateId}.json`)
+    outputFile = path.join(distsDir, `season-${TARGET}-${stateId}.json`)
   }
 
   await utils.writeJSON(outputFile, data)
@@ -98,7 +105,7 @@ function parseStateActual(seasonData, stateId) {
  */
 const getCsv = moize(function (modelPath, epiweek) {
   let modelId = path.basename(modelPath)
-  return new fct.Csv(path.join(modelPath, epiweek + '.csv'), epiweek, modelId)
+  return new fct.Csv(path.join(modelPath, epiweek + '.csv'), epiweek, modelId, TARGET)
 })
 
 /**
@@ -121,7 +128,6 @@ function parsePointData(csv, stateId) {
     let cis = [95, 50]
     try {
       let point = csv.getPoint(target, stateId)
-
       let ranges = cis.map(c => csv.getConfidenceRange(target, stateId, c))
 
       let low = ranges.map(r => r[0])
@@ -230,6 +236,7 @@ async function parseModelDir(modelPath, stateId) {
   let scores = []
 
   for (let epiweek of fct.utils.epiweek.seasonEpiweeks(SEASON_ID)) {
+
     if (availableEpiweeks.indexOf(epiweek) === -1) {
       // Prediction not available for this week, return null
       pointPredictions.push(null)
@@ -240,6 +247,7 @@ async function parseModelDir(modelPath, stateId) {
         binData,
         scoreData
       } = await parseCsv(getCsv(modelPath, epiweek), stateId)
+
       pointPredictions.push(pointData)
       binPredictions.push(binData)
       scores.push(scoreData)
@@ -270,13 +278,13 @@ async function parseModelDir(modelPath, stateId) {
 async function generateFiles(seasonData) {
   // Output to be written in file season-{season}.json
   let seasonOut = {
-    seasonId: SEASON, // NOTE: This id is full xxxx-yyyy type id
+    seasonId: TARGET, // NOTE: This id is full xxxx-yyyy type id
     regions: []
   }
 
   // Output to be written in file scores-{season}.json
   let scoresOut = {
-    seasonId: SEASON,
+    seasonId: TARGET,
     regions: []
   }
 
@@ -290,7 +298,7 @@ async function generateFiles(seasonData) {
     stateScoresData = []
 
     for (let model of MODELS_DIR) {
-      let modelPath = path.join(DATA_DIR, SEASON, model)
+      let modelPath = path.join(DATA_DIR, TARGET, model)
       let {
         pointData,
         distsData,
@@ -304,7 +312,7 @@ async function generateFiles(seasonData) {
       id: stateId,
       actual: parseStateActual(seasonData, stateId),
       models: statePointData,
-      baseline: 2.4 //baseline: await fct.truth.getBaseline(stateId, SEASON_ID)
+      baseline: 2.4
     })
 
     distsOut.push({
@@ -324,11 +332,11 @@ async function generateFiles(seasonData) {
     writeScoresFile(scoresOut),
     ...distsOut.map(d => writeDistsFile(d, d.stateId))
   ])
-  console.log(` Data files for season ${SEASON} written.`)
+  console.log(` Data files for season ${TARGET} written.`)
 }
 
 // Entry point
-fct.truth.getSeasonDataAllLags(SEASON_ID)
+fct.truth.getSeasonDataAllLags(TARGET)
   .then(sd => generateFiles(sd))
   .then(() => {
     console.log('All done')

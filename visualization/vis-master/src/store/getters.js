@@ -59,7 +59,6 @@ export const selectedDistData = (state, getters) => {
 export const selectedData = (state, getters) => {
   let selectedRegionIdx = getters['switches/selectedRegion']
   let seasonSubset = state.seasonData[getters.downloadedSeasons.indexOf(getters.selectedSeasonId)]
-
   return seasonSubset.regions[selectedRegionIdx]
 }
 
@@ -67,7 +66,8 @@ export const selectedData = (state, getters) => {
  * Return scores data for current selection
  */
 export const selectedScoresData = (state, getters) => {
-  let idx = getters.downloadedScores.indexOf(getters.selectedSeasonId)
+  //let idx = getters.downloadedScores.indexOf(getters.selectedSeasonId)
+  let idx = 0
   let subset = state.scoresData[idx].regions
     .find(({
       id
@@ -242,20 +242,16 @@ export const distributionChartData = (state, getters) => {
 export const choroplethData = (state, getters) => {
   let selectedSeasonIdx = getters['switches/selectedSeason']
   let relative = getters['switches/choroplethRelative']
-
   let output = {
     data: [],
     type: relative ? 'diverging' : 'sequential',
     decorator: relative ? x => x + ' % (baseline)' : x => x + ' %'
   }
-
   let downloadedSeasonIdx = getters.downloadedSeasons.indexOf(getters.seasons[selectedSeasonIdx])
 
   state.seasonData[downloadedSeasonIdx].regions.map((reg, regIdx) => {
     let values = reg.actual.map(d => d.actual)
-
     //if (relative) values = utils.baselineScale(values, reg.baseline)
-
     output.data.push({
       region: getters.metadata.regionData[regIdx].subId,
       states: getters.metadata.regionData[regIdx].states,
@@ -263,8 +259,23 @@ export const choroplethData = (state, getters) => {
     })
   })
 
+  // Get choropleth map range
   output.data = output.data.slice(1) // Remove national data
+  let rangeData = output.data
+  let dataRange = []
+  let maxVals = []
+  let minVals = []
+  rangeData.map(regionData => {
+    let actual = regionData.values.filter(d => d)
+    maxVals.push(Math.max(...actual))
+    minVals.push(Math.min(...actual))
+  })
+  dataRange = [Math.min(...minVals), Math.max(...maxVals)]
 
-  output.range = utils.choroplethDataRange(state.seasonData, relative)
+
+  output.range = dataRange
+
+  //output.range = utils.choroplethDataRange(state.seasonData, relative)
+
   return output
 }

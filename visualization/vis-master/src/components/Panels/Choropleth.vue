@@ -106,13 +106,13 @@ div
               select(v-model="currentRegion")
                 option(v-for="region in regions") {{ region }}
 
-      //- .level-right
-      //-   .level-item
-      //-     p.heading Season
-      //-     p.control.title
-      //-       span#season-selector.select.is-small
-      //-         select(v-model="currentSeason")
-      //-           option(v-for="season in seasons") {{ season }}
+      .level-right
+        .level-item
+          p.heading Target
+          p.control.title
+            span#season-selector.select
+              select(v-model="currentSeason")
+                option(v-for="season in seasons") {{ season }}
 
   // Main plotting div
   #choropleth
@@ -122,7 +122,7 @@ div
       v-on:mouseover="showWiliTooltip"
       v-on:mouseout="hideWiliTooltip"
       v-on:mousemove="moveWiliTooltip"
-    ) Cumulative Deaths (Observed)
+    ) {{ selectedSeasonId }} (Observed)
     #relative-button(
       v-on:click="toggleRelative"
       v-on:mouseover="showSwitchTooltip"

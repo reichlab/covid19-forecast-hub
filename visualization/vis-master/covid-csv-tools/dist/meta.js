@@ -56,14 +56,17 @@ exports.scoreIds = [
 /**
  * Mapping from target ids to full name as used in the csvs
  */
-exports.targetFullName = {
+exports.targetFullNameInc = {
+  '1-ahead': '1 wk ahead inc death',
+  '2-ahead': '2 wk ahead inc death',
+  '3-ahead': '3 wk ahead inc death',
+  '4-ahead': '4 wk ahead inc death'
+};
+exports.targetFullNameCum = {
   '1-ahead': '1 wk ahead cum death',
   '2-ahead': '2 wk ahead cum death',
   '3-ahead': '3 wk ahead cum death',
-  '4-ahead': '4 wk ahead cum death',
-  'peak': 'Season peak percentage',
-  'peak-wk': 'Season peak week',
-  'onset-wk': 'Season onset'
+  '4-ahead': '4 wk ahead cum death'
 };
 /**
  * Target type for each target. Note that there can be only two

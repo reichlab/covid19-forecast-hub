@@ -1,0 +1,30 @@
+
+team_name: UCLA Statistical Machine Learning Lab
+team_abbr: UCLA
+institution_affil: UCLA Computer Science Department
+team_funding: TBD
+team_experience: Statistical Machine Learning 
+
+model_name: SuEIR
+model_abbr: SuEIR
+model_output: https://covid19.uclaml.org/
+model_repo: 
+
+model_contributors: Quanquan Gu <qgu@cs.ucla.edu>, Pan Xu, Jinghui Chen, Lingxiao Wang, Difan Zou, Weitong Zhang
+Model_targets: days ahead cumulative deaths
+Target_loc: national (US), state
+time_horizon:
+Data_format: prediction and all requested quantiles
+forecast_startdate: 2020-05-01
+forecast_frequency: daily
+
+data_inputs_known: confirmed case and deaths
+data_source_known: New York Times -nytimes/covid-19-data
+
+this_model_is_an_ensemble: FALSE
+this_model_is_unconditional: TRUE
+
+methods: >-
+    Our model is a variant of the SEIR model, which takes into account the hidden factors of untested cases as well as unreported cases.
+methods_long: >-
+    Our model is a variant of the SEIR model, which takes into account the hidden factors of untested cases as well as unreported cases. For more details, please refer to https://covid19.uclaml.org/

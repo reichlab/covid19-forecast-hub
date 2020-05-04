@@ -37,7 +37,7 @@ read_my_csv = function(f, into) {
     tidyr::separate(file, into, sep="-|/") 
 }
 
-read_my_dir = function(path, pattern, into, exclude) {
+read_my_dir = function(path, pattern, into, exclude = NULL) {
   files = list.files(path       = path,
                      pattern    = pattern,
                      recursive  = TRUE,
@@ -64,14 +64,9 @@ fips <- read_csv("../template/state_fips_codes.csv",
 
 all_data = read_my_dir(".", "*.csv",
                 into = c("period","team","model",
-                         "year","month","day","team2","model_etc"),
-                exclude = c("./COVIDhub-ensemble/COVIDhub-ensemble-information.csv",
-                            "./truth-cum-death.csv",
-                            "./zoltar-truth-cum-death.csv",
-                            "./Imperial-ensemble1/Imperial-forecast-dates.csv",
-                            "./Imperial-ensemble2/Imperial-forecast-dates.csv")) %>%
+                         "year","month","day","team2","model_etc")) %>%
   
-  dplyr::select(team, model, forecast_date, type, location, target, quantile, value) %>%
+  dplyr::select(team, model, forecast_date, type, location, target, quantile, value, target_end_date) %>%
   
   dplyr::rename(fips_numeric = location) %>%
     

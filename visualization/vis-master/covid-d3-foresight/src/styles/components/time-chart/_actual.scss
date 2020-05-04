@@ -1,0 +1,11 @@
+.actual-group {
+  pointer-events: none;
+
+  .line-actual {
+    @include svg-line($actual);
+  }
+
+  .point-actual {
+    @include svg-point($actual);
+  }
+}

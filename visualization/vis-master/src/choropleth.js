@@ -70,7 +70,7 @@ export class ColorBar {
         .style('fill', cmap[cmap.length - 1 - i])
     }
 
-    // Add axis
+    // //Add axis
     // let scale = d3.scaleLinear()
     //   .range([0, bar.width])
     let scale = d3.scaleLog()
@@ -86,6 +86,7 @@ export class ColorBar {
 
   // Update scale of colorbar
   update(range) {
+    console.log(range)
     this.scale.domain(range)
     let nticks = 5
     // Setup custom ticks
@@ -93,8 +94,9 @@ export class ColorBar {
       // Relative values
       nticks = 3
     }
+    console.log(range)
 
-    let axis = d3.axisBottom(this.scale).ticks(nticks).tickFormat(d3.format(".2"))
+    let axis = d3.axisBottom(this.scale).ticks(4).tickFormat(d3.format(".2"))
 
     this.svg.select('.axis-color')
       .transition()
