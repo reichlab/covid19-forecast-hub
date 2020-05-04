@@ -1,0 +1,33 @@
+.d3f-tooltip {
+  background-color: $white;
+  @include shadow();
+  @include border($shadow);
+  font-size: 11px;
+  position: fixed;
+  max-width: 250px;
+  z-index: 100;
+
+  .tooltip-title {
+    @include cell-padding;
+    font-size: 13px;
+    margin-bottom: 0 !important;
+    margin-top: 5px;
+  }
+
+  .tooltip-text {
+    @include cell-padding;
+    margin-top: 0;
+  }
+
+  .tooltip-row {
+    @include cell-padding;
+    background-color: $white;
+    color: $gray;
+  }
+
+  .bold {
+    float: right;
+    margin-left: 5px;
+    font-weight: bold;
+  }
+}

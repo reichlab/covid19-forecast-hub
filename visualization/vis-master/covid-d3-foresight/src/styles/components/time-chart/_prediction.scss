@@ -1,0 +1,17 @@
+.prediction-group {
+  pointer-events: none;
+
+  .line-prediction {
+    fill: none;
+    stroke-width: 1.5px;
+  }
+
+  .point-prediction {
+    fill: $white;
+    stroke-width: 1.5px;
+  }
+
+  .area-prediction {
+    opacity: .2;
+  }
+}

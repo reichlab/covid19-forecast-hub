@@ -4,6 +4,9 @@
 set -e
 
 # Parse data model data files to flusight format
+../npm install
+cd ./visualization
+npm install
 yarn
 yarn run test
 yarn run parse-data
@@ -32,6 +35,10 @@ rm -r ./data/Incident\ Deaths/COVIDhub-ensemble
 # Remove MOBS_NEU-GLEAM_COVID Incident
 rm -r ./data/Incident\ Deaths/MOBS-GLEAM_COVID
 
+# Remove UMass-ExpertCrowd
+rm -r ./data/Incident\ Deaths/UMass-ExpertCrowd
+rm -r ./data/Cumulative\ Deaths/UMass-ExpertCrowd
+
 # Parse through forecasts and update format
 python3 ./scripts/convert-forecasts.py
 
@@ -43,6 +50,7 @@ rm -rf ./vis-master/data
 mv ./data ./vis-master
 
 cd ./vis-master
+npm install
 yarn
 yarn run parse # Parse visualization data to json
 #yarn run test
