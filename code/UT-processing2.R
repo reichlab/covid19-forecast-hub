@@ -14,7 +14,8 @@ last6weekdays <- wday(last6days, label = TRUE)
 
 lastMonday <- last6days[last6weekdays == "Mon"]
 
-raw <- read_csv(here(sprintf("data-raw/UT/%s-UT-Mobility-raw.csv", lastMonday)))
+raw <- read_csv(here(sprintf("data-raw/UT/%s-UT-sdmetrics-raw.csv", lastMonday)))
+
 
 glimpse(raw)
 
@@ -49,7 +50,7 @@ incDfList <- vector("list", 7)
 cumDfList <- vector("list", 7)
 
 
-for (j in 1:7) {
+for (j in 1:43) {
 
   dateJ <- today() + j
 
@@ -171,12 +172,15 @@ glimpse(deathSummaryFinal)
 
 glimpse(deathSummaryFinal)
 
-week_ahead <- read_csv("data-raw/UT/2020-04-27-UT-Mobility-raw2.csv")
+## week_ahead <- read_csv("data-raw/UT/2020-04-27-UT-Mobility-raw2.csv")
+
+week_ahead <- read_csv("data-raw/UT/umass-wkahead-2020-05-04.csv")
 
 deathSummaryFinal2 <- deathSummaryFinal %>%
   filter(str_detect(target, "wk ahead inc", negate = TRUE)) %>%
   rbind(week_ahead) %>%
-  arrange(location_name, str_detect(target, "wk"), target, type, quantile)
+  arrange(location_name, str_detect(target, "wk"), target, type, quantile) %>%
+  mutate(quantile = ifelse(is.na(quantile), NA, round(quantile, 3)))
 
 
 ###############################################################################

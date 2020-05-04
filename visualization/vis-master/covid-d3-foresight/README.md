@@ -8,7 +8,7 @@
 `d3-foresight` is a [d3](https://github.com/d3/d3) based library for visualizing
 time series forecasts.
 
-Check out [flusight](http://reichlab.io/flusight) for a demo. Documentation is
+Documentation is
 [here](http://reichlab.io/d3-foresight).
 
 
