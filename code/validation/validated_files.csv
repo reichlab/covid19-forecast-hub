@@ -103,3 +103,7 @@ file_path,validation_date
 ./data-processed/MIT_CovidAnalytics-DELPHI/2020-05-04-MIT_CovidAnalytics-DELPHI.csv,2020-05-04 20:52:20.580700
 ./data-processed/Imperial-ensemble1/2020-05-03-Imperial-ensemble1.csv,2020-05-04 20:52:20.594114
 ./data-processed/Imperial-ensemble2/2020-05-03-Imperial-ensemble2.csv,2020-05-04 20:52:20.606600
+./data-processed/Auquan-SEIR/2020-05-04-Auquan-SEIR.csv,2020-05-04 22:09:01.320080
+./data-processed/CU-80contactw/2020-05-03-CU-80contactw.csv,2020-05-04 22:09:03.984971
+./data-processed/CU-80contact/2020-05-03-CU-80contact.csv,2020-05-04 22:09:06.636614
+./data-processed/CU-80contact_1x/2020-05-03-CU-80contact_1x.csv,2020-05-04 22:09:09.305790
