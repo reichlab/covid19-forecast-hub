@@ -30,9 +30,9 @@ methods: >-
 
 methods_long: >-
     We start with a standard SEIR model and break down the Infectious compartment(I) into reported infections (Ir) and unreported infections (Iu).
-People from the Exposed compartment(E) with symptoms go into the reported infections (Ir) compartment. People with mild or no symptoms go into the unreported infections compartment.
-Both reported infections (Ir) and unreported infections (Iu) contribute to disease spread, but at different rates - a low spread for people quarantined in compartment Ir, and a high spread for, often, asymptomatic people in compartment Iu. This handles the quarantine measures taken by countries to limit the infections.
-Some people in reported infections (Iu) recover (compartment C) and some die (compartment D)
-All people in unreported infections (Iu) recover (compartment Cu), there are no mortalities in this compartment. If their symptoms were serious enough they would be reported (and therefore in compartment Ir).
+    People from the Exposed compartment(E) with symptoms go into the reported infections (Ir) compartment. People with mild or no symptoms go into the unreported infections compartment.
+    Both reported infections (Ir) and unreported infections (Iu) contribute to disease spread, but at different rates - a low spread for people quarantined in compartment Ir, and a high spread for, often, asymptomatic people in compartment Iu. This handles the quarantine measures taken by countries to limit the infections.
+    Some people in reported infections (Iu) recover (compartment C) and some die (compartment D)
+    All people in unreported infections (Iu) recover (compartment Cu), there are no mortalities in this compartment. If their symptoms were serious enough they would be reported (and therefore in compartment Ir).
 
-We fit our model to reported confirmed cases and reported deaths in a region to estimate beta1 and beta2 for that region. For other parameters, we use estimates from other studies as starting point and learn using hyperparameter optimization that minimizes the error between projected daily deaths and reported daily deaths.
+    We fit our model to reported confirmed cases and reported deaths in a region to estimate beta1 and beta2 for that region. For other parameters, we use estimates from other studies as starting point and learn using hyperparameter optimization that minimizes the error between projected daily deaths and reported daily deaths.

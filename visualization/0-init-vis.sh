@@ -16,15 +16,19 @@ yarn run parse-data
 rm -r ./data/Cumulative\ Deaths/CU-nointerv
 rm -r ./data/Incident\ Deaths/CU-nointerv
 
-# Remove NotreDame-FRED
-# rm -r ./data/Cumulative\ Deaths/NotreDame-FRED
-# rm -r ./data/Incident\ Deaths/NotreDame-FRED
-
 # Remove Iowa State
-# rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM10
-# rm -r ./data/Incident\ Deaths/IowaStateLW-STEM10
-# rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
-# rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
+rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM10
+rm -r ./data/Incident\ Deaths/IowaStateLW-STEM10
+rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
+rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
+
+# Remove LANL-GrowthRateHosp
+rm -r ./data/Cumulative\ Deaths/LANL-GrowthRateHosp
+rm -r ./data/Incident\ Deaths/LANL-GrowthRateHosp
+
+# Remove Auquan
+rm -r ./data/Cumulative\ Deaths/Auquan-MLOptimizedModifiedSEIR
+rm -r ./data/Incident\ Deaths/Auquan-MLOptimizedModifiedSEIR
 
 # Remove Imperial Incident
 rm -r ./data/Incident\ Deaths/Imperial-Ensemble1
@@ -33,8 +37,8 @@ rm -r ./data/Incident\ Deaths/Imperial-Ensemble2
 # Remove Ensemble Incident
 rm -r ./data/Incident\ Deaths/COVIDhub-ensemble
 
-# Remove MOBS_NEU-GLEAM_COVID Incident
-rm -r ./data/Incident\ Deaths/MOBS-GLEAM_COVID
+# # Remove MOBS_NEU-GLEAM_COVID Incident
+# rm -r ./data/Incident\ Deaths/MOBS-GLEAM_COVID
 
 # Remove UMass-ExpertCrowd
 rm -r ./data/Incident\ Deaths/UMass-ExpertCrowd
