@@ -4,10 +4,6 @@
 set -e
 
 # Parse data model data files to flusight format
-cd ../
-npm install
-cd ./visualization
-npm install
 yarn
 yarn run test
 yarn run parse-data
