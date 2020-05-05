@@ -37,6 +37,10 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts):
     dir_name = separator.join(forecasts[0].split(separator)[3:]).strip('.csv')
     metadata = metadata_dict_for_file(path_to_processed_model_forecasts+'metadata-'+dir_name+'.txt')
     model_name = metadata['model_name']
+
+    # Iowa State models have the same model name but different model abbreviation, so add their abbr ontop of the name
+    if model_name == "Spatiotemporal Epidemic Modeling":
+        model_name += " - "+metadata['model_abbr']
     model = [model for model in project_obj.models if model.name == model_name][0]
 
     # Get names of existing forecasts to avoid re-upload
