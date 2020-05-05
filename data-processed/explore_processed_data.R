@@ -77,7 +77,10 @@ ensemble_data <- latest %>%
 
 ensemble <- ensemble_data %>%
   group_by(team, model, forecast_date) %>%
-  filter(model != "ensemble", unit == "wk") %>%
+  filter(model != "ensemble", 
+         unit == "wk",
+         type == "quantile",
+         death_cases == "death") %>%
   dplyr::summarize(
     median    = ifelse(any(quantile == 0.5, na.rm = TRUE), "Yes", "-"),
     cum_death = ifelse(all(paste(1:4, "wk ahead cum death") %in% target), "Yes", "-"),
@@ -95,7 +98,7 @@ ensemble_quantiles <- ensemble_data %>%
          quantile = as.character(quantile)) 
 
 g_ensemble_quantiles <- ggplot(ensemble_quantiles %>%
-                                 mutate(team_model = paste0(team,model,sep="-")), 
+                                 mutate(team_model = paste(team,model,sep="-")), 
                                aes(x = quantile, y = team_model, fill = yes)) +
   geom_tile() +
   theme_bw() + 
