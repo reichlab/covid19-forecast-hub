@@ -259,8 +259,7 @@ If the pull request fails, please
 [follow these instructions](https://github.com/reichlab/covid19-forecast-hub/wiki/Troubleshooting-Pull-Requests)
 for details on how to troubleshoot.
 
-
-### Run validation tests locally
+#### Run validation tests locally
 
 To run these tests locally, you need to 
 [install python3.x](https://www.python.org/downloads/) and the following 
@@ -300,7 +299,6 @@ If you cannot get the python checks to run,
 you can use [these instructions](R_forecast_file_validation.html) to run some
 checks in R. 
 These checks will likely be deprecated in the future.
-
 
 
 ## Meta-data
