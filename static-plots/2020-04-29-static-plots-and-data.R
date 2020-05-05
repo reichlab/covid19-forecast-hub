@@ -125,8 +125,8 @@ model_colors <- c(
     "Imperial-ensemble1" = cols[15],
     "Imperial-ensemble2" = cols[16],
     "UMass-MechBayes" = cols[17],
-    "UCLA-SuEIR" = cols[18],
-    "Auquan-SEIR" = cols[19]
+    "UCLA-SuEIR" = cols[17],
+    "Auquan-SEIR" = cols[18]
 )
 
 model_display_names <- c(

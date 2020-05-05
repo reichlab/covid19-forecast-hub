@@ -3,8 +3,8 @@ require(stringr)
 require(lubridate)
 source("./code/ensemble-scripts/ew_quantile.R")
 source("./code/validation/functions_plausibility.R")
-source("./code/ensemble-scripts/component_check.R")
-
+#source("./code/ensemble-scripts/component_check.R")
+# run shinyapp first
 # change weekly
 last_friday <- Sys.Date() - wday(Sys.Date() + 1)
 this_date<-"2020-05-04"
@@ -15,8 +15,8 @@ truths <- read.csv("./data-truth/truth-Cumulative Deaths.csv",stringsAsFactors =
 # target
 targets <- c(paste(1:4,"wk ahead cum death"))
 # manual check for overlapping quantiles and targets
-latest <- unique(latest[,1:ncol(latest)])
-US_models<-latest %>% 
+# latest <- unique(latest[,1:ncol(latest)])
+US_models<-all_data%>% 
   filter(target%in%targets,fips_alpha=="US",type=="quantile",
          as.Date(forecast_date)>=as.Date(last_friday),(quantile==0.10|quantile==0.1))
 US_models_tar<-US_models %>%
@@ -27,17 +27,13 @@ US_models_tar<-US_models %>%
 US_models_10<-US_models %>% 
   filter(target==targets[1], value > truths$value[which(truths$location_name=="US")],
          model%in%c(US_models_tar$model))
-# US_models_inc<-latest %>% 
-#   filter(target%in%targets[5:8],fips_alpha=="US",type=="quantile") %>%
-#   group_by(model) %>%
-#   summarise(quan=paste(sort(quantile), collapse=','),count=length(quantile))%>%
-#   ungroup(.) %>%
-#   filter(count==92)
+
+#state
 
 truths_state <- truths %>%
   filter(location_name!="US") %>%
   left_join(fips, by=c("location"="fips_numeric"))
-state_models<-latest %>% 
+state_models<-all_data %>% 
   filter(target%in%targets,type=="quantile",
          as.Date(forecast_date)>=as.Date(last_friday),(quantile==0.10|quantile==0.1)) 
 list<-data.frame(cbind(unique(state_models$fips_alpha)))
@@ -82,15 +78,6 @@ list_mod <- list %>%
          -"80contact",-"80contactw") %>%
   select(fips_numeric,everything())
 
-  # group_by(location_name) %>%
-  # summarize(n=paste(model,collapse=',')) 
-# state_models_inc<-latest %>% 
-#   filter(target%in%targets[5:8],fips_alpha=="NY",type=="quantile") %>%
-#   group_by(model) %>%
-#   summarise(quan=paste(sort(quantile), collapse=','),count=length(quantile))%>%
-#   ungroup(.) %>%
-#   filter(count==92)
-
 # -------------  make ensemble (1-4 week ahead incident AND cumulative death) ------------------ #
 ## only take last friday
 ## state cum death
@@ -105,25 +92,8 @@ for (i in 1:length(list_mod$fips_numeric)){
   quant_ensemble<-rbind(quant_ensemble,quant_ensemble_each)
 }
 
-## state inc death
-# models_sinc <- state_models_inc %>%
-#   dplyr::filter(model!="GLEAM_COVID") %>%
-#   dplyr::select(model) 
-# models_sinc  <- c(models_sinc$model)
-# state_output_2 <- pull_all_forecasts(this_date,models_sinc,targets[5:8],quantiles=c(state_models$quan[1]))
-# combined_table_2 <- state_output_2[[1]] %>%
-#   dplyr::filter(location!="US")
-# # adding manual check
-# check_table <-combined_table_2 %>% 
-#   group_by(location,target,quantile) %>%
-#   dplyr::mutate(n=n())
-# mismatched_location <- unique(check_table$location[which(check_table$n==1)])
-# mismatched_location
-# # excluding mismatched location
-# combined_table_2 <- combined_table_2 %>%
-#   dplyr::filter(location!=66&location!=69&location!=72&location!=78)
-# quant_ensemble_2<-ew_quantile(combined_table_2,national=FALSE,this_date)
-
+# temp fix
+quant_ensemble$value[947] <- quant_ensemble$value[947]-1
 ## national
 models_n <- US_models_10 %>%
   dplyr::filter(model!="80contactw",model!="80contact") %>%
@@ -133,21 +103,12 @@ nat_output <- pull_all_forecasts(this_date,models_n,targets[1:4],quan,"US")
 combined_table_n <- nat_output[[1]]
 quant_ensemble_n<-ew_quantile(combined_table_n,national=TRUE,this_date)
 
-# models_n2 <- US_models_inc %>%
-#   dplyr::filter(model!="60contact",model!="80contact",model!="nointerv", model!="ensemble2",model!="GLEAM_COVID") %>%
-#   dplyr::select(model) 
-# models_n2 <- c(models_n2$model)
-# nat_output_2 <- pull_all_forecasts(this_date,models_n2,targets[5:8],quantiles=c(US_models_inc$quan[1]))
-# combined_table_n2 <- nat_output_2[[1]] %>%
-#   dplyr::filter(location=="US") 
-# quant_ensemble_n2<-ew_quantile(combined_table_n2,national=TRUE,this_date)
 
 ## -------- combine state and national -------- ##
 
 # final_ens <- rbind(quant_ensemble,quant_ensemble_2,quant_ensemble_n,quant_ensemble_n2)
 final_ens <- rbind(quant_ensemble,quant_ensemble_n)
-# recheck crossing next week
-verify_quantile_forecasts(final_ens)
+verify_quantile_forecasts(quant_ensemble_n)
 write.csv(final_ens,file=paste0("./data-processed/COVIDhub-ensemble/",this_date,"-COVIDhub-ensemble.csv"),
             row.names = FALSE)
 ## -------------------- write ensemble info ----------------------------##

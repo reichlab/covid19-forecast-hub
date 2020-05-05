@@ -94,5 +94,6 @@ ew_quantile <- function(forecast_data,national=FALSE, forecast_date_monday) {
     dplyr::mutate(forecast_date=forecast_date_monday) %>%
     dplyr::select(-"state") %>%
     dplyr::select(forecast_date,target,target_end_date,location,location_name,type,quantile,value)
+  
   return(ensemble)
 }
