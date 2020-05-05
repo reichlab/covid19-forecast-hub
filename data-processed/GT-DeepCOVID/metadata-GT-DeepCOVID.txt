@@ -3,7 +3,7 @@ team_abbr: GT
 
 model_name: DeepCOVID
 model_abbr: DeepCOVID
-
+model_repo: https://www.cc.gatech.edu/~badityap/
 
 model_contributors: <deep-covid@lists.gatech.edu> B. Aditya Prakash (Georgia Institute of Technology), Alexander Rodriguez (Georgia Institute of Technology), Anika Tabassum (Virginia Tech), Bijaya Adhikari (Virginia Tech), Jimeng Sun (University of Illinois, Urbana-Champaign), Danica Xiao (IQVIA), Cheng Qiang (IQVIA)
 
