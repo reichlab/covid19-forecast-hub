@@ -11,9 +11,11 @@ pull_all_forecasts <- function(monday_run_date, model,targets,
   all_files <- list.files("./data-processed", pattern = "*.csv", recursive=T)
   fcast_files <- all_files[grepl("[0-9]{4}-[0-9]{2}-[0-9]{2}",all_files)]
   current_fcast <- fcast_files[(grep(date_set, fcast_files))]
+  
   # remove models
-  list_op <- paste(model,collapse="|")
+  list_op <- paste(paste0(model, ".csv"), collapse="|")
   component_fcast <- current_fcast[(grep(list_op, current_fcast))]
+  
   # ensure single most recent forecast file for current week for each model
   forecast_files <- c()
   for (j in 1:length(model)){
