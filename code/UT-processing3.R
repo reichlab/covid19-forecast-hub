@@ -14,10 +14,10 @@ forecast0427$target %>% unique() %>% str_sub(1, 2) %>% as.numeric()
 
 forecast0427_new <- forecast0427 %>%
   filter(((target %>% str_detect("wk")) &
-          (as.numeric(str_sub(target, 1, 2)) %in% 1:3))
+          (as.numeric(str_sub(target, 1, 2)) %in% 1:4))
          |
          ((target %>% str_detect("day")) &
-          (as.numeric(str_sub(target, 1, 2)) %in% 1:22)))
+          (as.numeric(str_sub(target, 1, 2)) %in% 1:28)))
 
 forecast0427_new$target %>% unique()
 
@@ -35,10 +35,10 @@ forecast0504$target %>% unique() %>% str_sub(1, 2) %>% as.numeric()
 
 forecast0504_new <- forecast0504 %>%
   filter(((target %>% str_detect("wk")) &
-          (as.numeric(str_sub(target, 1, 2)) %in% 1:3))
+          (as.numeric(str_sub(target, 1, 2)) %in% 1:4))
          |
          ((target %>% str_detect("day")) &
-          (as.numeric(str_sub(target, 1, 2)) %in% 1:22)))
+          (as.numeric(str_sub(target, 1, 2)) %in% 1:28)))
 
 forecast0504_new$target %>% unique()
 
