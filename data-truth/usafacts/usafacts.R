@@ -43,7 +43,10 @@ d <- cases %>% dplyr::mutate(cases_deaths = "case") %>%
   ) %>%
   dplyr::mutate(date = as.Date(date, format = "%m/%d/%y")) %>%
   
-  # Calculate incident cases and deaths
+  # Calculate incident cases and deaths 
+  # aggregated across counties within a state
+  dplyr::group_by(location, cases_deaths, date) %>%
+  dplyr::summarize(cum = sum(cum)) %>%
   dplyr::group_by(location, cases_deaths) %>%
   dplyr::arrange(date) %>%
   dplyr::mutate(inc = diff(c(0,cum))) %>%
