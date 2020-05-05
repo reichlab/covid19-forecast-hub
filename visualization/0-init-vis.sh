@@ -27,8 +27,8 @@ rm -r ./data/Cumulative\ Deaths/LANL-GrowthRateHosp
 rm -r ./data/Incident\ Deaths/LANL-GrowthRateHosp
 
 # Remove Auquan
-rm -r ./data/Cumulative\ Deaths/Auquan-MLOptimizedModifiedSEIR
-rm -r ./data/Incident\ Deaths/Auquan-MLOptimizedModifiedSEIR
+rm -r ./data/Cumulative\ Deaths/Auquan-SEIR
+rm -r ./data/Incident\ Deaths/Auquan-SEIR
 
 # Remove Imperial Incident
 rm -r ./data/Incident\ Deaths/Imperial-Ensemble1
