@@ -4,7 +4,15 @@ from zoltpy.connection import ZoltarConnection
 from zoltpy.covid19 import COVID19_TARGET_NAMES, covid19_row_validator, validate_quantile_csv_file
 import os
 import sys
+import yaml
 
+# Function to read metadata file to get model name
+def metadata_dict_for_file(metadata_file):
+    with open(metadata_file) as metadata_fp:
+        metadata_dict = yaml.safe_load(metadata_fp)
+    return metadata_dict
+
+# Function to upload all forecasts in a specific directory
 def upload_covid_all_forecasts(path_to_processed_model_forecasts):
     # meta info
     project_name = 'COVID-19 Forecasts'
@@ -12,6 +20,8 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts):
     project_timezeros = []
     forecasts = os.listdir(path_to_processed_model_forecasts)
     conn = util.authenticate()
+
+    # Get all existing timezeros in the project 
     for project in conn.projects:
         if project.name == project_name:
             project_obj = project
@@ -20,8 +30,17 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts):
             break
     
     # Get model name
+    # separator = '-'
+    # model_name = separator.join(forecasts[0].split(separator)[3:]).strip('.csv')
+    # model = [model for model in project_obj.models if model.name == model_name][0]
     separator = '-'
-    model_name = separator.join(forecasts[0].split(separator)[3:]).strip('.csv')
+    dir_name = separator.join(forecasts[0].split(separator)[3:]).strip('.csv')
+    metadata = metadata_dict_for_file(path_to_processed_model_forecasts+'metadata-'+dir_name+'.txt')
+    model_name = metadata['model_name']
+
+    # Iowa State models have the same model name but different model abbreviation, so add their abbr ontop of the name
+    if model_name == "Spatiotemporal Epidemic Modeling":
+        model_name += " - "+metadata['model_abbr']
     model = [model for model in project_obj.models if model.name == model_name][0]
 
     # Get names of existing forecasts to avoid re-upload

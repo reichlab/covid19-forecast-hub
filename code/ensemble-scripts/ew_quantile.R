@@ -2,16 +2,20 @@ library(tidyverse)
 library(MMWRweek)
 library(lubridate)
 
-pull_all_forecasts <- function(monday_run_date, model,targets,quantiles=c(0.025,0.5,0.975)) {
+pull_all_forecasts <- function(monday_run_date, model,targets,
+                               quantiles=c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99),
+                               each_location) {
   # get files with this week's forecasts
   # change to only take Friday and later days from run date (previously take upto Tuesday)
   date_set <- paste(c(as.Date(monday_run_date),as.Date(monday_run_date)-1:3),collapse="|")
   all_files <- list.files("./data-processed", pattern = "*.csv", recursive=T)
   fcast_files <- all_files[grepl("[0-9]{4}-[0-9]{2}-[0-9]{2}",all_files)]
   current_fcast <- fcast_files[(grep(date_set, fcast_files))]
+  
   # remove models
-  list_op <- paste(model,collapse="|")
+  list_op <- paste(paste0(model, ".csv"), collapse="|")
   component_fcast <- current_fcast[(grep(list_op, current_fcast))]
+  
   # ensure single most recent forecast file for current week for each model
   forecast_files <- c()
   for (j in 1:length(model)){
@@ -42,7 +46,7 @@ pull_all_forecasts <- function(monday_run_date, model,targets,quantiles=c(0.025,
   for (i in 1:length(forecast_files)) {
     single_forecast <- read.csv(paste0("./data-processed/",forecast_files[i]),
                                 colClasses="character",stringsAsFactors = FALSE) %>%
-      dplyr::filter(type == "quantile",target %in% targets)
+      dplyr::filter(type == "quantile",target %in% targets,location==each_location)
     if ("location_name" %in% colnames(single_forecast)){
       single_forecast <- single_forecast %>% dplyr::select(-"location_name")
     }
@@ -92,5 +96,6 @@ ew_quantile <- function(forecast_data,national=FALSE, forecast_date_monday) {
     dplyr::mutate(forecast_date=forecast_date_monday) %>%
     dplyr::select(-"state") %>%
     dplyr::select(forecast_date,target,target_end_date,location,location_name,type,quantile,value)
+  
   return(ensemble)
 }

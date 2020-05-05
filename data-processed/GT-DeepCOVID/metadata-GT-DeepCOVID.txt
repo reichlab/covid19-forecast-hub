@@ -1,0 +1,21 @@
+team_name: Georgia Institute of Technology
+team_abbr: GT
+
+model_name: DeepCOVID
+model_abbr: DeepCOVID
+model_repo: https://www.cc.gatech.edu/~badityap/
+
+model_contributors: <deep-covid@lists.gatech.edu> B. Aditya Prakash (Georgia Institute of Technology), Alexander Rodriguez (Georgia Institute of Technology), Anika Tabassum (Virginia Tech), Bijaya Adhikari (Virginia Tech), Jimeng Sun (University of Illinois, Urbana-Champaign), Danica Xiao (IQVIA), Cheng Qiang (IQVIA)
+
+
+data_source1: COVID Tracking Project
+data_source2: COVID-Net
+data_source3: other point-of-care claims data, demographic and symptomatic data
+
+interventions: The model assumes that the effect of the current social distancing measures are reflected on the input data and these measures remain constant in near future. As the data is updated each week in real time, the effects of the most recent intervention measures are captured implicitly.
+
+this_model_is_an_ensemble: FALSE
+methods: Data-driven approach for forecasting based on syndromic, clinical and point of care data.
+
+
+methods_long:  This model learns the functional dependence of hospitalization and mortality rate on various syndromic, and clinical metrics (such as increase in positive Covid tests, recovery rate and no of patients on ventilation) from historical data. To compensate for the effects of noise (in data and initialization), the model is trained on several subsamples and then aggregated. 

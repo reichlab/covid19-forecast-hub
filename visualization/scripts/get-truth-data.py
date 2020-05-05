@@ -48,7 +48,6 @@ def configure_JHU_data(df, target):
 
     # only output "location", "epiweek", "value"
     df_byday = df_truth.rename(columns={"level_0": "date", "state_code": "location", "location_long": "location_name"})
-
     # select columns
     df_byday = df_byday[["date", "location", "location_name", "value"]]
 
