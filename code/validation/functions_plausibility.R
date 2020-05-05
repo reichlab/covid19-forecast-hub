@@ -78,11 +78,11 @@ verify_colnames <- function(entry){
   result <- TRUE
 
   # check whether there are colnames present which should not
-  if(!all(coln %in% colnames_template)){
-    warning("ERROR: there is at least one column name which does not conform with the template: ",
-            paste(coln[!(coln %in% colnames_template)], collapse = ", "))
-    result <- FALSE
-  }
+  # if(!all(coln %in% colnames_template)){
+  #   warning("ERROR: there is at least one column name which does not conform with the template: ",
+  #           paste(coln[!(coln %in% colnames_template)], collapse = ", "))
+  #   result <- FALSE
+  # }
 
   # check if essential columns are there
   if(!all(compulsory_colnames_template %in% coln)){
