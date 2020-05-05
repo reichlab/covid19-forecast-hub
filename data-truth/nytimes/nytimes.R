@@ -34,7 +34,9 @@ d <- us %>%
   ) %>%
   dplyr::group_by(location) %>%
   dplyr::arrange(date) %>%
-  dplyr::mutate(inc_deaths = diff(c(0,deaths))) %>%
+  dplyr::mutate(
+    inc_deaths = diff(c(0,deaths)),
+    inc_cases  = diff(c(0,cases))) %>%
   dplyr::arrange(location, date) 
 
 
@@ -43,5 +45,13 @@ readr::write_csv(
   path = "truth_nytimes-Cumulative Deaths.csv")
 
 readr::write_csv(
+  d %>% dplyr::select(date, location, cases) %>% dplyr::rename(value = cases),
+  path = "truth_nytimes-Cumulative Cases.csv")
+
+readr::write_csv(
   d %>% dplyr::select(date, location, inc_deaths) %>% dplyr::rename(value = inc_deaths),
   path = "truth_nytimes-Incident Deaths.csv")
+
+readr::write_csv(
+  d %>% dplyr::select(date, location, inc_cases) %>% dplyr::rename(value = inc_cases),
+  path = "truth_nytimes-Incident Cases.csv")
