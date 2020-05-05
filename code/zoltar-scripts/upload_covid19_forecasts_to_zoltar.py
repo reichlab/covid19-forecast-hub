@@ -8,7 +8,7 @@ import yaml
 
 # Function to read metadata file to get model name
 def metadata_dict_for_file(metadata_file):
-    with open(metadata_file) as metadata_fp:
+    with open(metadata_file, encoding="utf8") as metadata_fp:
         metadata_dict = yaml.safe_load(metadata_fp)
     return metadata_dict
 
@@ -59,7 +59,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts):
         with open(path_to_processed_model_forecasts+forecast) as fp:
 
             # Get timezero and create timezero on zoltar if not existed
-            time_zero_date = forecast.split(model_name)[0][:-1]
+            time_zero_date = forecast.split(dir_name)[0][:-1]
             if time_zero_date not in project_timezeros:
                 try:
                     project_obj.create_timezero(time_zero_date)
