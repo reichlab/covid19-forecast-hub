@@ -296,7 +296,7 @@ in your pull request.
 ### R validation checks
 
 If you cannot get the python checks to run, 
-you can use [these instructions](R_forecast_file_validation.html) to run some
+you can use [these instructions](R_forecast_file_validation.md) to run some
 checks in R. 
 These checks will likely be deprecated in the future.
 
