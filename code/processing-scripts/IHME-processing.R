@@ -123,9 +123,11 @@ filepaths <- list.files("./data-raw/IHME",pattern = "Hospitalization_all_locs.cs
 file_processed_dates <- substr(basename(list.files("./data-processed/IHME-CurveFit",pattern = ".csv", recursive =TRUE,full.names = TRUE)),start=1,stop=10)
 raw_file_dates <- substr(dirname(filepaths),start=17,stop=26)
 newfile_date <- setdiff(gsub("_", "-",raw_file_dates),file_processed_dates)
-new_filepath <- filepaths[grepl(gsub("-", "_",newfile_date),filepaths)]
-for(i in 1:length(new_filepath)){
-  formatted_file <- make_qntl_dat(new_filepath[i])
-  date <- gsub("_", "-",substr(dirname(new_filepath[i]),start=17,stop=26))
-  write_csv(formatted_file,path = paste0("data-processed/IHME-CurveFit/",date,"-IHME-CurveFit.csv"))
+if (length(newfile_date)) {
+  new_filepath <- filepaths[grepl(gsub("-", "_",newfile_date),filepaths)]
+  for(i in 1:length(new_filepath)){
+    formatted_file <- make_qntl_dat(new_filepath[i])
+    date <- gsub("_", "-",substr(dirname(new_filepath[i]),start=17,stop=26))
+    write_csv(formatted_file,path = paste0("data-processed/IHME-CurveFit/",date,"-IHME-CurveFit.csv"))
+  }
 }
