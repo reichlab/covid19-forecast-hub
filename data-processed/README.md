@@ -70,7 +70,7 @@ The date YYYY-MM-DD is the date the forecasts were made from your mdoel,
 i.e. the most recent data is YYYY-MM-DD.
 
 The `team` and `model` in this file must match the `team` and `model` in the
-directory this file is in.
+directory this file is in. Both `team` and `model` should be less than 20 characters, alpha-numeric and underscores only, with no spaces or hyphens.
 
 
 ### File format
@@ -305,3 +305,5 @@ These checks will likely be deprecated in the future.
 
 Participating teams must provide a metadata file (see [example](../data-processed/UMass-ExpertCrowd/metadata-UMass-ExpertCrowd.txt)), including methodological detail about their approach and a link to a file 
 (or a file itself) describing the methods used. 
+
+Note that the information in the `methods` field in the metadata is what will be shown on the [interactive visualization](https://reichlab.io/covid19-forecast-hub/) when a user hovers on your team name. For this reason, we request that the description be brief, around 200 characters (although at the moment this is not strictly enforced).
