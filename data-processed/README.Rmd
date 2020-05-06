@@ -51,6 +51,8 @@ where
 - `team` is the teamname and 
 - `model` is the name of your model. 
 
+Both team and model should be less than 15 characters and not include hyphens.
+
 
 ### Filenames
 
