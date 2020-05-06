@@ -5,7 +5,7 @@ team_funding: California DPH and US Government
 team_experience: Dr. Lessler and other team members have been working on dynamics models of infectious diseases including scenario forecasts for emerging infections for over a decade.
 
 model_name: CovidScenarioPipeline-0.2-HighEffectDistancing
-model_abbr: CovidSP-HighEffect
+model_abbr: CovidSPHighDist
 model_output:
 model_repo: https://github.com/HopkinsIDD/COVIDScenarioPipeline
 
