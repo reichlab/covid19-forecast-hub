@@ -14,19 +14,16 @@ The visualization uses these `.JSON` files for its data.
         id: < State Abbreviation "MA","CT" > ,  # "nat" i.e. National or US
         actual: [{
                 week: < year + epiweek 1 > , #i.e. 202001 means year 2020 epiweek 1
-                actual: < actual value of Cumulative / Incident Deaths
-                for that epiweek >
+                actual: < actual value of Cumulative / Incident Deaths for that epiweek >
             },
             {
                 week: < year + epiweek 2 > ,
-                actual: < actual value of Cumulative / Incident Deaths
-                for that epiweek >
+                actual: < actual value of Cumulative / Incident Deaths for that epiweek >
             },
             ...
             {
                 week: < year + last epiweek > ,
-                actual: < actual value of Cumulative / Incident Deaths
-                for that epiweek >
+                actual: < actual value of Cumulative / Incident Deaths for that epiweek >
             }],
         models: 
             [{
