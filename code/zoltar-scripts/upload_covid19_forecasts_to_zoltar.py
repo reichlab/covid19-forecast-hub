@@ -34,7 +34,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts):
     # model_name = separator.join(forecasts[0].split(separator)[3:]).strip('.csv')
     # model = [model for model in project_obj.models if model.name == model_name][0]
     separator = '-'
-    dir_name = separator.join(forecasts[0].split(separator)[3:]).strip('.csv')
+    dir_name = separator.join(forecasts[0].split(separator)[3:]).split('.csv')[0]
     metadata = metadata_dict_for_file(path_to_processed_model_forecasts+'metadata-'+dir_name+'.txt')
     model_name = metadata['model_name']
 
