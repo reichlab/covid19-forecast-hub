@@ -7,7 +7,7 @@ The visualization uses these `.JSON` files for its data.
 
 ### JSON Strucure
 ```
-seasonID: <Incident Deaths/Cumulative Deaths>
+seasonID: <Incident Deaths/Cumulative Deaths>,
 regions:
       [
         { id: <State Abbreviation i.e. "MA", "CT">,  # "nat" i.e. National or US
