@@ -4,6 +4,8 @@ import pandas as pd
 import pymmwr as pm
 import datetime
 import warnings
+import requests
+import io
 warnings.simplefilter(action='ignore')
 
 
@@ -100,7 +102,7 @@ def configure_JHU_data(df, target):
 
     # find week-ahead targets
     for i in range(4):
-        weeks_ahead = i + 1
+        weeks_ahead = i + 1  # add one to [0,3]
         days_back = 5 + ((weeks_ahead - 1) * 7)  # timezero is on Mondays
 
         df_calc = df_truth_values  # initialize df
@@ -141,8 +143,10 @@ def configure_JHU_data(df, target):
     return df_final
 
 
-df = pd.read_csv(
-    "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv")
+url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv"
+url_req = requests.get(url).content
+df = pd.read_csv(io.StringIO(url_req.decode('utf-8')))
+
 fips_codes = pd.read_csv('../../template/state_fips_codes.csv')
 
 # aggregate by state and nationally
