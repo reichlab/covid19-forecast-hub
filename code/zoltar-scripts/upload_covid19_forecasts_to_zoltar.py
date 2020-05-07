@@ -30,17 +30,10 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts):
             break
     
     # Get model name
-    # separator = '-'
-    # model_name = separator.join(forecasts[0].split(separator)[3:]).strip('.csv')
-    # model = [model for model in project_obj.models if model.name == model_name][0]
     separator = '-'
     dir_name = separator.join(forecasts[0].split(separator)[3:]).split('.csv')[0]
     metadata = metadata_dict_for_file(path_to_processed_model_forecasts+'metadata-'+dir_name+'.txt')
     model_name = metadata['model_name']
-
-    # Iowa State models have the same model name but different model abbreviation, so add their abbr ontop of the name
-    if model_name == "Spatiotemporal Epidemic Modeling":
-        model_name += " - "+metadata['model_abbr']
     model = [model for model in project_obj.models if model.name == model_name][0]
 
     # Get names of existing forecasts to avoid re-upload
@@ -75,8 +68,11 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts):
                 if len(error_from_transformation) >0 :
                     print(error_from_transformation)
                 else:
-                    util.upload_forecast(conn, quantile_json, forecast, 
-                                            project_name, model_name , time_zero_date, overwrite=False)
+                    try:
+                        util.upload_forecast(conn, quantile_json, forecast, 
+                                                project_name, model_name , time_zero_date, overwrite=False)
+                    except Exception as ex:
+                        print(ex)
             else:
                 print(errors_from_validation)
             fp.close()

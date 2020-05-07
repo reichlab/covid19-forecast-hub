@@ -1,0 +1,45 @@
+team_name: University of Chicago
+team_abbr: UChicago
+institution_affil: University of Chicago
+team_funding: NIH
+team_experience:
+
+model_name: CovidIL
+model_abbr: CovidIL
+model_output: 
+model_repo: https://github.com/cobeylab/covid_IL
+
+model_contributors: Sarah Cobey <cobey@uchicago.edu>, Philip Arevalo, Ed Baskerville, Spencer Carran, Katelyn Gostic, Laugen McGough, Sylvia Ranjeva, Frank Wen
+Model_targets: wk ahead cumulative deaths, wk ahead incident deaths, day ahead cumulative deaths, day ahead incident deaths
+team_contact: Sarah Cobey <cobey@uchicago.edu>
+target_loc: Illinois
+time_horizon: May 5 to June 13 (5 wk)
+data_format: all requested quantiles
+forecast_startdate: 2020-05-04
+forecast_frequency: weekly
+
+data_inputs_known: Confirmed COVID-19 deaths by EMS region in Illinois; ICU beds occupied by confirmed COVID-19 patients by EMS region in Illinois
+data_source_known: Illinois Department of Public Health.
+
+this_model_is_an_ensemble: FALSE
+this_model_is_unconditional: FALSE
+
+methods: >-
+    This is a compartmental, age-structured SEIR model that infers past SARS-CoV-2 transmission rates in Illinois and can be used to forecast community spread, hospital and ICU burden, and mortality under current and hypothetical public health interventions.
+
+methods_long: >-
+    The model is age-structured to capture both age-specific contact patterns and age-specific differences in the biological dynamics, such as the probability of asymptomatic infection. Each model compartment is sub-divided into nine different age categories. 
+    To model the state of Illinois, we divide the state into 3 regions based on similarities in epidemic dynamics. We infer a common statewide pre-intervention transmission rate, and a separate post-intervention transmission rate for each of the three regions. We also infer a region-specific initial number of infected individuals. Other model parameters are informed by Illinois-specific data or best estimates from existing literature.
+    We fit the model to incident in-hospital deaths and confirmed COVID-19 ICU cases prior to April 30, 2020.  
+    For inference, we use maximum likelihood inference via sequential Monte Carlo for partially observed Markov process models (POMP). 	
+    We assume that hospitalized deaths are reported with probability 0.8075. Because we do not know what might cause underreporting of non-hospitalized deaths, our simulations integrate over that uncertainty by assuming that the reporting rate for non-hospitalized deaths is uniformly distributed from 0.25 to 0.75.
+    The model can be adapted to investigate different types of interventions. 
+    We currently model shelter-in-place as a reduction in the overall transmission rate, which is shared by all infected individuals, and reductions in age- and location-specific contact rates.
+    
+    To model the relaxing of shelter-in-place interventions, we project four different scenarios.
+    1) The inferred post-intervention transmission rate remains unchanged. We assume that this is maximum reduction in transmission and call this model CovidIL_100. At our current estimates, this corresponds to a 77% reduction in pre-intervention transmission.
+    2) Transmission rates increase to 80% of the maximum reduction in transmission according to a logistic function centered on May 15. We call this model CovidIL_80. At our current estimates, this corresopnds to a 72% reduction in pre-intervention transmission.
+    3) Transmission rates increase to 60% of the maximum reduction in transmission according to a logistic function centered on May 15. We call this model CovidIL_60. At our current estimates, this corresopnds to a 67% reduction in pre-intervention transmission.
+    4) Transmission rates increase to 40% of the maximum reduction in transmission according to a logistic function centered on May 15. We call this model CovidIL_40. At our current estimates, this corresopnds to a 63% reduction in pre-intervention transmission.
+
+    Please see our repository for more information on model structure, parameter values, and caveats.

@@ -13,10 +13,10 @@ rm -r ./data/Cumulative\ Deaths/CU-nointerv
 rm -r ./data/Incident\ Deaths/CU-nointerv
 
 # Remove Iowa State
-rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM10
-rm -r ./data/Incident\ Deaths/IowaStateLW-STEM10
-rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
-rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
+# rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM10
+# rm -r ./data/Incident\ Deaths/IowaStateLW-STEM10
+# rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
+# rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
 
 # Remove LANL-GrowthRateHosp
 rm -r ./data/Cumulative\ Deaths/LANL-GrowthRateHosp

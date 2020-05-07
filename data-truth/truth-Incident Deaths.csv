@@ -5498,7 +5498,7 @@ date,location,location_name,value
 2020-04-27,26,Michigan,92.0
 2020-04-27,27,Minnesota,14.0
 2020-04-27,28,Mississippi,2.0
-2020-04-27,29,Missouri,60.0
+2020-04-27,29,Missouri,20.0
 2020-04-27,30,Montana,0.0
 2020-04-27,31,Nebraska,0.0
 2020-04-27,32,Nevada,0.0
@@ -5527,7 +5527,7 @@ date,location,location_name,value
 2020-04-27,54,West Virginia,0.0
 2020-04-27,55,Wisconsin,9.0
 2020-04-27,56,Wyoming,0.0
-2020-04-27,US,US,1378.0
+2020-04-27,US,US,1338.0
 2020-04-28,01,Alabama,14.0
 2020-04-28,02,Alaska,0.0
 2020-04-28,60,American Samoa,0.0
@@ -5555,7 +5555,7 @@ date,location,location_name,value
 2020-04-28,26,Michigan,161.0
 2020-04-28,27,Minnesota,15.0
 2020-04-28,28,Mississippi,10.0
-2020-04-28,29,Missouri,-13.0
+2020-04-28,29,Missouri,27.0
 2020-04-28,30,Montana,1.0
 2020-04-28,31,Nebraska,0.0
 2020-04-28,32,Nevada,13.0
@@ -5584,7 +5584,7 @@ date,location,location_name,value
 2020-04-28,54,West Virginia,4.0
 2020-04-28,55,Wisconsin,19.0
 2020-04-28,56,Wyoming,0.0
-2020-04-28,US,US,2096.0
+2020-04-28,US,US,2136.0
 2020-04-29,01,Alabama,14.0
 2020-04-29,02,Alaska,0.0
 2020-04-29,60,American Samoa,0.0
@@ -5927,3 +5927,117 @@ date,location,location_name,value
 2020-05-04,55,Wisconsin,1.0
 2020-05-04,56,Wyoming,0.0
 2020-05-04,US,US,1240.0
+2020-05-05,01,Alabama,17.0
+2020-05-05,02,Alaska,0.0
+2020-05-05,60,American Samoa,0.0
+2020-05-05,04,Arizona,33.0
+2020-05-05,05,Arkansas,3.0
+2020-05-05,06,California,103.0
+2020-05-05,08,Colorado,52.0
+2020-05-05,09,Connecticut,77.0
+2020-05-05,10,Delaware,5.0
+2020-05-05,11,District of Columbia,6.0
+2020-05-05,12,Florida,72.0
+2020-05-05,13,Georgia,53.0
+2020-05-05,66,Guam,0.0
+2020-05-05,15,Hawaii,0.0
+2020-05-05,16,Idaho,1.0
+2020-05-05,17,Illinois,175.0
+2020-05-05,18,Indiana,60.0
+2020-05-05,19,Iowa,19.0
+2020-05-05,20,Kansas,5.0
+2020-05-05,21,Kentucky,14.0
+2020-05-05,22,Louisiana,51.0
+2020-05-05,23,Maine,4.0
+2020-05-05,24,Maryland,73.0
+2020-05-05,25,Massachusetts,122.0
+2020-05-05,26,Michigan,44.0
+2020-05-05,27,Minnesota,28.0
+2020-05-05,28,Mississippi,32.0
+2020-05-05,29,Missouri,23.0
+2020-05-05,30,Montana,0.0
+2020-05-05,31,Nebraska,0.0
+2020-05-05,32,Nevada,5.0
+2020-05-05,33,New Hampshire,6.0
+2020-05-05,34,New Jersey,334.0
+2020-05-05,35,New Mexico,6.0
+2020-05-05,36,New York,125.0
+2020-05-05,37,North Carolina,30.0
+2020-05-05,38,North Dakota,0.0
+2020-05-05,69,Northern Mariana Islands,0.0
+2020-05-05,39,Ohio,78.0
+2020-05-05,40,Oklahoma,9.0
+2020-05-05,41,Oregon,4.0
+2020-05-05,42,Pennsylvania,341.0
+2020-05-05,72,Puerto Rico,2.0
+2020-05-05,44,Rhode Island,14.0
+2020-05-05,45,South Carolina,13.0
+2020-05-05,46,South Dakota,3.0
+2020-05-05,47,Tennessee,7.0
+2020-05-05,48,Texas,24.0
+2020-05-05,49,Utah,6.0
+2020-05-05,50,Vermont,0.0
+2020-05-05,78,Virgin Islands,0.0
+2020-05-05,51,Virginia,29.0
+2020-05-05,53,Washington,21.0
+2020-05-05,54,West Virginia,0.0
+2020-05-05,55,Wisconsin,13.0
+2020-05-05,56,Wyoming,0.0
+2020-05-05,US,US,2142.0
+2020-05-06,01,Alabama,28.0
+2020-05-06,02,Alaska,1.0
+2020-05-06,60,American Samoa,0.0
+2020-05-06,04,Arizona,31.0
+2020-05-06,05,Arkansas,4.0
+2020-05-06,06,California,83.0
+2020-05-06,08,Colorado,16.0
+2020-05-06,09,Connecticut,85.0
+2020-05-06,10,Delaware,6.0
+2020-05-06,11,District of Columbia,13.0
+2020-05-06,12,Florida,68.0
+2020-05-06,13,Georgia,28.0
+2020-05-06,66,Guam,0.0
+2020-05-06,15,Hawaii,0.0
+2020-05-06,16,Idaho,1.0
+2020-05-06,17,Illinois,140.0
+2020-05-06,18,Indiana,166.0
+2020-05-06,19,Iowa,12.0
+2020-05-06,20,Kansas,3.0
+2020-05-06,21,Kentucky,8.0
+2020-05-06,22,Louisiana,52.0
+2020-05-06,23,Maine,1.0
+2020-05-06,24,Maryland,47.0
+2020-05-06,25,Massachusetts,208.0
+2020-05-06,26,Michigan,73.0
+2020-05-06,27,Minnesota,30.0
+2020-05-06,28,Mississippi,32.0
+2020-05-06,29,Missouri,19.0
+2020-05-06,30,Montana,0.0
+2020-05-06,31,Nebraska,0.0
+2020-05-06,32,Nevada,19.0
+2020-05-06,33,New Hampshire,0.0
+2020-05-06,34,New Jersey,305.0
+2020-05-06,35,New Mexico,7.0
+2020-05-06,36,New York,499.0
+2020-05-06,37,North Carolina,20.0
+2020-05-06,38,North Dakota,6.0
+2020-05-06,69,Northern Mariana Islands,0.0
+2020-05-06,39,Ohio,90.0
+2020-05-06,40,Oklahoma,6.0
+2020-05-06,41,Oregon,2.0
+2020-05-06,42,Pennsylvania,166.0
+2020-05-06,72,Puerto Rico,0.0
+2020-05-06,44,Rhode Island,15.0
+2020-05-06,45,South Carolina,9.0
+2020-05-06,46,South Dakota,5.0
+2020-05-06,47,Tennessee,13.0
+2020-05-06,48,Texas,29.0
+2020-05-06,49,Utah,2.0
+2020-05-06,50,Vermont,0.0
+2020-05-06,78,Virgin Islands,0.0
+2020-05-06,51,Virginia,0.0
+2020-05-06,53,Washington,8.0
+2020-05-06,54,West Virginia,2.0
+2020-05-06,55,Wisconsin,9.0
+2020-05-06,56,Wyoming,0.0
+2020-05-06,US,US,2367.0
