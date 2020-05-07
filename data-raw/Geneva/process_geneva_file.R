@@ -34,7 +34,7 @@ process_geneva_file <- function(geneva_filepath, forecast_date){
     if(check_forecast_date != forecast_date) stop("forecast_date and date in file name differ.")
   }
 
-  dat <- read.csv(paste0("data-raw/Geneva/", geneva_filepath))
+  dat <- read.csv(geneva_filepath)
 
   # restrict to US, format:
   dat <- subset(dat, country == "United States of America" & observed == "Predicted")
