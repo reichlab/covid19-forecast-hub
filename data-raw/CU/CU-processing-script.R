@@ -3,11 +3,11 @@
 ## April 2020
 
 
-source("code/processing-fxns/process_cu_file.R")
+source("process_cu_file.R")
 # make sure that English names of days and months are used
 Sys.setlocale(category = "LC_TIME", locale = "en_US.UTF8")
 
-folders_to_process <- list.dirs("data-raw/CU", recursive = FALSE)
+folders_to_process <- list.dirs("./", recursive = FALSE)
 forecast_dates <- lapply(folders_to_process, date_from_cu_filepath)
 
 # process only files from 2020-04-12 onwards:
@@ -24,7 +24,7 @@ for(i in seq_along(folders_to_process)) {
   # run over different scenarios:
   for(sc in scenarios){
     # create directory if it is not already there:
-    dir.create(paste0("data-processed/CU-", sc, "/"), showWarnings = FALSE)
+    dir.create(paste0("../../data-processed/CU-", sc, "/"), showWarnings = FALSE)
 
     # if scenario is contained in the folder: process it
     if(any(grepl(pattern = paste0(sc, ".csv"), x = tmp_ls_files))){
@@ -35,7 +35,7 @@ for(i in seq_along(folders_to_process)) {
         file = paste0("state_cdchosp_", sc, ".csv"),
         forecast_date = forecast_date_temp)
 
-      write.csv(tmp_dat, paste0("data-processed/CU-", sc, "/",
+      write.csv(tmp_dat, paste0("../../data-processed/CU-", sc, "/",
                                 forecast_date_temp,
                                 "-CU-", sc, ".csv"), row.names = FALSE)
     }
