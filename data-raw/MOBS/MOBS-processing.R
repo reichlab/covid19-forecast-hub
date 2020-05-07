@@ -1,3 +1,5 @@
+stop("Moved from code/validation/processing-scripts/. Needs to be updated.")
+
 ## NEU processing
 ## one-off updates for 4/13 file.
 
