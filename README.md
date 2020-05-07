@@ -80,6 +80,7 @@ So far, we have identified a number of groups that are creating forecasts of COV
  - [Imperial](https://github.com/sangeetabhatia03/covid19-short-term-forecasts) (none given)
  - [MIT](https://www.covidanalytics.io/) (Apache 2.0)
  - [Notre Dame](https://github.com/confunguido/covid19_ND_forecasting) (none given)
+ - [University of California, Los Angeles - Statistical Machine Learning Lab](https://covid19.uclaml.org/)
  - [University of Geneva / Swiss Data Science Center](https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/) (none given)
  - [University of Massachusetts - Expert Model](https://github.com/tomcm39/COVID19_expert_survey) (MIT)
  - [University of Massachusetts - Mechanistic Bayesian model](https://github.com/dsheldon/covid) (MIT)
