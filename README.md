@@ -95,6 +95,7 @@ Carefully curating these datasets into a standard format has taken a Herculean t
 
  - Nutcha Wattanachit (ensemble model, data processing)
  - Nicholas Reich (project lead, ensemble model, data processing)
+ - Evan Ray (ensemble model)
  - Jarad Niemi (data processing and organization)
  - Khoa Le (validation, automation)
  - Katie House (visualization, validation, project management)

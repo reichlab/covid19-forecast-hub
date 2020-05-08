@@ -36,5 +36,9 @@ methods_long: >-
     was combined with the three CU models. 
     April 27: Different component models at state level and national level.
     Please see the model information file for more details. 
+    May 4: National ensemble combined 7 models, state ensembles combined between 2 
+    and 8 models. For details, see 
+    data-raw/COVIDhub-ensemble/state-weight-information.csv
+    All ensembles were equally weighted among all eligible models. 
 
 citation: 
