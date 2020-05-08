@@ -121,3 +121,6 @@ file_path,validation_date
 ./data-processed/UChicago-CovidIL_80/2020-05-05-UChicago-CovidIL_80.csv,2020-05-07 22:03:26.709361
 ./data-processed/UChicago-CovidIL_100/2020-05-05-UChicago-CovidIL_100.csv,2020-05-07 22:03:26.769307
 ./data-processed/LANL-GrowthRateHosp/2020-05-06-LANL-GrowthRateHosp.csv,2020-05-08 02:19:28.922767
+./data-processed/Geneva-DeterministicGrowth/2020-05-05-Geneva-DeterministicGrowth.csv,2020-05-08 12:37:50.889690
+./data-processed/Geneva-DeterministicGrowth/2020-05-04-Geneva-DeterministicGrowth.csv,2020-05-08 12:37:50.896711
+./data-processed/Geneva-DeterministicGrowth/2020-05-06-Geneva-DeterministicGrowth.csv,2020-05-08 12:37:50.902437
