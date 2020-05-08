@@ -1,0 +1,56 @@
+{
+  "name": "d3-foresight",
+  "version": "0.10.1",
+  "description": "Time series forecasts visualizations using d3",
+  "author": "Abhinav Tushar <lepisma@fastmail.com>",
+  "main": "./dist/d3-foresight.js",
+  "unpkg": "./dist/d3-foresight.min.js",
+  "repository": "git@github.com:reichlab/d3-foresight",
+  "license": "MIT",
+  "scripts": {
+    "compile": "webpack",
+    "build": "PROD_ENV=1 webpack && yes | cp ./dist/d3-foresight.min.js ./docs/assets/",
+    "prepare": "npm run test && npm run compile && npm run build",
+    "test": "mocha --require ts-node/register ./test/*.spec.ts && standard"
+  },
+  "standard": {
+    "ignore": [
+      "/docs/"
+    ]
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/d3": "4.5.0",
+    "@types/mocha": "^2.2.48",
+    "array-equal": "^1.0.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "css-loader": "^0.28.10",
+    "d3": "4.5.0",
+    "fs-extra": "^5.0.0",
+    "mocha": "^5.0.4",
+    "node-sass": "^4.7.2",
+    "node-sass-json-importer": "^3.1.5",
+    "sass-loader": "^6.0.7",
+    "scss-to-json": "^2.0.0",
+    "standard": "^8.6.0",
+    "style-loader": "^0.20.3",
+    "ts-loader": "^4.0.1",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.7.2",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
+  },
+  "dependencies": {
+    "ajv": "^6.3.0",
+    "colormap": "^2.3.0",
+    "mmwr-week": "^1.3.2",
+    "pubsub-js": "^1.6.0",
+    "textures": "^1.2.0",
+    "tinycolor2": "^1.4.1",
+    "uuid": "^3.2.1"
+  }
+}

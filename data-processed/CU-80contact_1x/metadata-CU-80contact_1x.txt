@@ -1,0 +1,41 @@
+team_name: Columbia University
+team_abbr: CU
+institution_affil: Columbia University
+team_contact: Jeffrey Shaman jls106@cumc.columbia.edu
+team_funding: Supported by US NIH grant GM110748 and US NSF RAPID grant DMS2027369
+team_experience: Won first 2 CDC FluSight Challenges, finished in top 5 in all other FluSight challenges
+
+model_name: 80-contact_1x
+model_abbr: 80-contact_1x
+model_output: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
+model_repo: https://github.com/shaman-lab/COVID-19Projection
+
+model_contributors: Sen Pei, Teresa Yamana, Sasikiran Kandula, Wan Yang, Marta Galanti, Jeffrey Shaman
+model_targets: daily new confirmed case, daily new infection (both reported and unreported), daily hospitalizations, daily deaths, cumulative deaths
+target_loc: county, aggregated to state and national
+Time_horizon: Six weeks ahead
+Data_format: 1, 2.5, 5 through 95 in increments of 5, 97.5 and 99 percentiles
+forecast_startdate: 2020-05-03 
+forecast_frequency: 1-2x weekly
+
+data_inputs_known: County-level confirmed cases and deaths
+data_source_known: USAFACTS. https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/
+
+this_model_is_an_ensemble: FALSE
+this_model_is_unconditional: FALSE
+
+methods: >-
+    This model makes predictions about the future that are dependent on a particular set 
+    of assumptions about how interventions are implemented and how effective they are. 
+    Metapopulation county-level SEIR model assuming the following on contacts: Weekly 20%
+    decrease in places with growing weekly cases and a one-time 10% increase in places with 
+    return to work (latter supersedes the former)
+
+methods_long: >-
+    This model makes predictions about the future that are dependent on a particular set 
+    of assumptions about how interventions are implemented and how effective they are. 
+    Estimates of spatio-temporal COVID-19 infections, hospitalizations and deaths were 
+    calculated for all US counties. 
+    Originally, we implemented 3 hypothetical control scenarios to reflect reduced contact between individuals due to stay-at-home orders, as well as reactive personal decisions to limit social contacts: starting from 14 days prior to the projection day, we applied 20%, 30% and 40% weekly reductions of the contact rate (β) in counties with ≥10 reported cases in a week, until the weekly numbers of new confirmed case in those counties decreased (i.e., the curve flattened). Here, we modify our earlier control scenarios to account for increases in contact rates due to loosening restrictions in states that have begun to reopen economically. We project three scenarios. In the first two scenarios, for states maintaining or increasing current social distancing restrictions, we continue to apply the 20% weekly reductions of contact rates, as described above. However, in states that reopen, we apply an increase to the contact rate of counties in those states. In the first scenario, we apply a one-time 10% increase to the contact rate during the week that the state is scheduled to reopen and maintain this new increased rate for the remainder of the projection.  In the second scenario, the contact rate is increased by an additional 10% each week to represent progressive loosening of restrictions and increased public confidence and frequenting of businesses.  A third comparison scenario assumes no effect due to reopening, and instead applies 20% weekly reductions in contact rates for all counties meeting the criteria described above.
+    
+Citation: "Sen Pei, Jeffrey Shaman, Initial Simulation of SARS-CoV2 Spread and Intervention Effects in the Continental US. medRxiv.doi: https://doi.org/10.1101/2020.03.21.20040303;  Teresa Yamana, Sen Pei, Jeffrey Shaman, Projection of COVID-19 Cases and Deaths in the US as Individual States Re-open. http://www.columbia.edu/~jls106/yamana_etal_reopening_projections.pdf"

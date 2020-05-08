@@ -1,0 +1,43 @@
+
+team_name: UT-Austin COVID-19 Consortium
+team_abbr: UT
+institution_affil: The University of Texas at Austin
+team_contact: Spencer Woody <spencer.woody@utexas.edu> ; James Scott <james.g.scott@mccombs.utexas.edu>
+team_funding: NSF
+team_experience:
+
+model_name: Mobility
+model_abbr: Mobility
+model_output: https://covid-19.tacc.utexas.edu/projections/
+model_repo:
+
+model_contributors: Spencer Woody, et al.
+model_targets: deaths (daily, for 6 weeks)
+target_loc: national (US), state
+time_horizon: 6 weeks, through June 1, 2020
+data_format: Posterior quantiles,
+forecast_startdate: 2020-04-20
+forecast_frequency: daily
+
+data_inputs_known: observed death rates, anonymized mobile-phone GPS traces aggregated at the state level
+data_source_known: New York Times <https://github.com/nytimes/covid-19-data>; SafeGraph <https://docs.safegraph.com/docs/social-distancing-metrics>
+
+this_model_is_an_ensemble: FALSE
+this_model_is_unconditional: FALSE
+
+methods: >-
+    This model makes predictions assuming that social distancing patterns, as measured by anonymized mobile-phone 
+    GPS traces, remain constant in the future.  However, we receive this data in real time to update forecasts on 
+    a weekly basis.  This model models only *first-wave deaths*.
+
+methods_long: >-
+    For each US state, we use local data from mobile-phone GPS traces made available by [SafeGraph] to quantify the 
+    changing impact of social-distancing measures on ``flattening the curve.''  SafeGraph is a data company that 
+    aggregates anonymized location data from numerous applications in order to provide insights about physical places. 
+    To enhance privacy, SafeGraph excludes census block group information if fewer than five devices visitedan 
+    establishment in a month from a given census block group.  These data are aggregated by state to create metrics 
+    of social distancing, which are used as predictors in the model.
+    We use a Bayesian multilevel negative binomial regression model for the number of deaths for each day, and implement 
+    the model in R using the rstanarm package. 
+    
+citation: See technical report at https://covid-19.tacc.utexas.edu/media/filer_public/87/63/87635a46-b060-4b5b-a3a5-1b31ab8e0bc6/ut_covid-19_mortality_forecasting_model_latest.pdf

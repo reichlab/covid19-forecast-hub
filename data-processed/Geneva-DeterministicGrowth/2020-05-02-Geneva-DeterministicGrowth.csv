@@ -1,0 +1,18 @@
+"forecast_date","target","target_end_date","location","location_name","type","quantile","value"
+2020-05-02,"1 day ahead inc death",2020-05-03,"US","US","point",NA,2047
+2020-05-02,"2 day ahead inc death",2020-05-04,"US","US","point",NA,2051
+2020-05-02,"3 day ahead inc death",2020-05-05,"US","US","point",NA,2051
+2020-05-02,"4 day ahead inc death",2020-05-06,"US","US","point",NA,2051
+2020-05-02,"5 day ahead inc death",2020-05-07,"US","US","point",NA,2051
+2020-05-02,"6 day ahead inc death",2020-05-08,"US","US","point",NA,2051
+2020-05-02,"7 day ahead inc death",2020-05-09,"US","US","point",NA,2051
+2020-05-02,"8 day ahead inc death",2020-05-10,"US","US","point",NA,2051
+2020-05-02,"1 day ahead cum death",2020-05-03,"US","US","point",NA,67115
+2020-05-02,"2 day ahead cum death",2020-05-04,"US","US","point",NA,69166
+2020-05-02,"3 day ahead cum death",2020-05-05,"US","US","point",NA,71217
+2020-05-02,"4 day ahead cum death",2020-05-06,"US","US","point",NA,73268
+2020-05-02,"5 day ahead cum death",2020-05-07,"US","US","point",NA,75319
+2020-05-02,"6 day ahead cum death",2020-05-08,"US","US","point",NA,77370
+2020-05-02,"7 day ahead cum death",2020-05-09,"US","US","point",NA,79421
+2020-05-02,"8 day ahead cum death",2020-05-10,"US","US","point",NA,81472
+2020-05-02,"1 wk ahead cum death",2020-05-09,"US","US","point",NA,79421

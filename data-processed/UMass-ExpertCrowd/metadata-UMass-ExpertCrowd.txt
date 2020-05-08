@@ -1,0 +1,33 @@
+team_name: UMass-Amherst Influenza Forecasting Center of Excellence
+team_abbr: UMass
+institution_affil: UMass-Amherst Influenza Forecasting Center of Excellence
+team_funding: CDC
+team_experience: FluSight challenges since 2015/2016
+
+model_name: Expert consensus distributions
+model_abbr: ExpertCrowd
+model_output: 
+model_repo: https://github.com/tomcm39/COVID19_expert_survey
+
+model_contributors: thomas mcandrew <mcandrew@umass.edu> Nicholas G. Reich <nick@schoolph.umass.edu> 
+Model_targets: wk ahead cumulative deaths
+Target_loc: US, some states
+time_horizon:
+Data_format: all requested quantiles
+forecast_startdate: 2020-04-13
+forecast_frequency: weekly
+
+data_inputs_known: expert elicitation
+data_source_known: 
+
+this_model_is_an_ensemble: TRUE
+this_model_is_unconditional: TRUE
+
+methods: >-
+    A consensus forecast from experts in the modeling of infectious disease, public health, and epidemiology. 
+
+methods_long: >-
+    April 22: Experts in the modeling of infectious disease, public health, and epidemiology provide forecasts of 
+    the smallest, most likely, and largest possible cumulative number of deaths at the US level. We transform each 
+    expert's three estimates into a triangular probability distribution and take an equally-weighted average of 
+    expert predictive densities.

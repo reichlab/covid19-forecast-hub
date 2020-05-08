@@ -1,0 +1,28 @@
+team_name: UMass-Amherst Influenza Forecasting Center of Excellence & College of Information and Computer Sciences
+team_abbr: UMass
+institution_affil: University of Massachusetts Amherst
+team_contact: Graham Gibson gcgibson@umass.edu
+team_funding: 
+team_experience: FluSight challenges since 2015/2016
+model_name: MechBayes
+model_abbr: MechBayes
+model_output: 
+model_repo: https://github.com/dsheldon/covid
+model_contributors: Dan Sheldon, Graham Gibson, Nick Reich
+model_targets: wk ahead cumulative deaths
+Target_loc: state
+Time_horizon: 
+Data_format: all requested quantiles
+forecast_startdate: 2020-04-26
+forecast_frequency: weekly
+data_inputs_known: State-level case data
+data_source_known: JHU -CSSEGISandData
+this_model_is_an_ensemble: FALSE
+this_model_is_unconditional: TRUE
+
+methods: >-
+   Bayesian compartmental model with observations on cumulative case counts and cumulative deaths. Model is fit independently to each state. Model includes observation noise and a case detection rate. 
+ 
+
+methods_long: >-
+    See GitHub for full description

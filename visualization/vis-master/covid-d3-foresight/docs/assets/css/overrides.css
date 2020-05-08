@@ -1,0 +1,10 @@
+/* Some minor tweaks over the basic css */
+
+.page-header {
+  margin-left: 0;
+}
+
+.page-meta a {
+  text-decoration: none;
+  color: gray;
+}

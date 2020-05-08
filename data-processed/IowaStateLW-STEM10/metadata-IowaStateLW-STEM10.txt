@@ -1,0 +1,31 @@
+team_name: Iowa State - Lily Wang's Research Group
+team_abbr: IowaStateLW
+institution_affil: Iowa State University - Department of Statistics
+team_funding:  
+team_experience: Spatiotemporal data analysis, motality studies
+
+model_name: Spatiotemporal Epidemic Modeling Daily Recovery 10%
+model_abbr: STEM10
+model_output:  
+model_repo:  
+
+model_contributors: Lily Wang <lilywang@iastate.edu> Guannan Wang <gwang01@wm.edu> Lei Gao <lgao@iastate.edu> Xinyi Li <xli@samsi.info> Shan Yu <syu@iastate.edu> Myungjin Kim <mjkim@iastate.edu> Yueying Wang <yueyingw@iastate.edu> Zhiling Gu <gzlcuhk@gmail.com>
+Model_targets: day ahead cumulative death 
+
+Target_loc: US, 48 mainland states and District of Columbia
+time_horizon: 
+Data_format: prediction and 0.025, 0.975 quantiles
+forecast_startdate: 2020-04-27
+forecast_frequency: daily
+
+data_inputs_known: County-level infected case and death data
+data_source_known: New York Times -nytimes/covid-19-data, health department webpages
+
+this_model_is_an_ensemble: FALSE
+this_model_is_unconditional: TRUE
+
+methods: >-
+    Spatiotemporal Dynamics, Nowcasting and Forecasting of COVID-19 in the United States.
+
+methods_long: >-
+    We develop a nonparametric space-time disease transmission model for the epidemic data, and to study the spatial-temporal pattern in the spread of COVID-19 at the county level. The proposed methodology can be used to dissect the spatial structure and dynamics of spread, as well as to forecast how this outbreak may unfold through time and space in the future.

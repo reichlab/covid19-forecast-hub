@@ -1,0 +1,5 @@
+JHU IDD model readme
+
+hosp = incident hospitalizations on the date in `time` column
+cum_death = cumulative deaths by the end of the date in `time` column
+death = incident deaths on the date in `time` column
