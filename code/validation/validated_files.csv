@@ -116,3 +116,7 @@ file_path,validation_date
 ./data-processed/IowaStateLW-STEM10/2020-05-01-IowaStateLW-STEM10.csv,2020-05-05 17:18:24.298503
 ./data-processed/JHU_IDD-CovidSPModDist/2020-05-03-JHU_IDD-CovidSPModDist.csv,2020-05-06 19:50:24.298428
 ./data-processed/JHU_IDD-CovidSPHighDist/2020-05-03-JHU_IDD-CovidSPHighDist.csv,2020-05-06 19:50:24.317443
+./data-processed/UChicago-CovidIL_40/2020-05-05-UChicago-CovidIL_40.csv,2020-05-07 22:03:26.583819
+./data-processed/UChicago-CovidIL_60/2020-05-05-UChicago-CovidIL_60.csv,2020-05-07 22:03:26.648372
+./data-processed/UChicago-CovidIL_80/2020-05-05-UChicago-CovidIL_80.csv,2020-05-07 22:03:26.709361
+./data-processed/UChicago-CovidIL_100/2020-05-05-UChicago-CovidIL_100.csv,2020-05-07 22:03:26.769307
