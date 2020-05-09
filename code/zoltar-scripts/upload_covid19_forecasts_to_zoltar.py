@@ -13,13 +13,9 @@ project_timezeros = []
 conn = util.authenticate()
 url = 'https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/'
 
-# Get all existing timezeros and models in the project 
-for project in conn.projects:
-    if project.name == project_name:
-        project_obj = project
-        for timezero in project.timezeros:
-            project_timezeros.append(timezero.timezero_date)
-        break
+# Get all existing timezeros and models in the project
+project_obj = [project for project in conn.projects if project.name == project_name][0]
+project_timezeros = [timezero.timezero_date for timezero in project_obj.timezeros]
 models = [model for model in project_obj.models]
 model_names = [model.name for model in models]
 
@@ -76,6 +72,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
             if time_zero_date not in project_timezeros:
                 try:
                     project_obj.create_timezero(time_zero_date)
+                    project_timezeros.append(time_zero_date)
                 except Exception as ex:
                     print(ex)
                     sys.exit("\n ERRORS FOUND EXITING BUILD...")
