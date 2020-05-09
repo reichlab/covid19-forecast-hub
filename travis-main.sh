@@ -46,6 +46,8 @@ fi
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
    echo "Merge detected.. push to github"
    bash ./travis/push.sh
+   echo "Upload forecasts to Zoltar"
+   bash ./travis/upload-to-zoltar.sh
 fi
 
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"trigger build"* ]]; then
