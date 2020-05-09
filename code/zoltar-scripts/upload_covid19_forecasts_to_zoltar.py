@@ -42,9 +42,12 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
         model_config = {}
         model_config['name'], model_config['abbreviation'], model_config['team_name'], model_config['description'], model_config['home_url'], model_config['aux_data_url'] \
             = metadata['model_name'], metadata['model_abbr'], metadata['team_name'], metadata['methods'], url + dir_name, 'NA'
-        project_obj.create_model(model_config)
-        models = project_obj.models
-        model_names = [model.name for model in models]
+        try:
+            project_obj.create_model(model_config)
+            models = project_obj.models
+            model_names = [model.name for model in models]
+        except Exception as ex:
+            return ex  
     model = [model for model in models if model.name == model_name][0]
 
     # Get names of existing forecasts to avoid re-upload
@@ -74,8 +77,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
                     project_obj.create_timezero(time_zero_date)
                     project_timezeros.append(time_zero_date)
                 except Exception as ex:
-                    print(ex)
-                    sys.exit("\n ERRORS FOUND EXITING BUILD...")
+                    return ex
 
             # Validate covid19 file
             errors_from_validation = validate_quantile_csv_file(path_to_processed_model_forecasts+forecast)
@@ -84,8 +86,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
             if "no errors" == errors_from_validation:
                 quantile_json, error_from_transformation = json_io_dict_from_quantile_csv_file(fp, VALID_TARGET_NAMES, covid19_row_validator)
                 if len(error_from_transformation) >0 :
-                    print(error_from_transformation)
-                    sys.exit("\n ERRORS FOUND EXITING BUILD...")
+                    return error_from_transformation
                 else:
                     # try:
                     #     util.upload_forecast(conn, quantile_json, forecast, 
@@ -96,8 +97,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
                     timezero_date_batch.append(time_zero_date)
                     forecast_filename_batch.append(forecast)
             else:
-                print(errors_from_validation)
-                sys.exit("\n ERRORS FOUND EXITING BUILD...")
+                return errors_from_validation
             fp.close()
     
     # Batch upload for better performance
@@ -105,14 +105,28 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
         try:
             util.upload_forecast_batch(conn, json_io_dict_batch, forecast_filename_batch, project_name, model_name, timezero_date_batch)
         except Exception as ex:
-            print(ex)
-            sys.exit("\n ERRORS FOUND EXITING BUILD...")
+            return ex
+    return "Pass"
 
 
 # Example Run: python3 ./code/zoltar-scripts/upload_covid19_forecasts_to+zoltar.py
 if __name__ == '__main__':
-    lst = os.listdir('./data-processed/')
-    for item in lst:
-        if "." in item:
+    list_of_model_directories = os.listdir('./data-processed/')
+    output_errors = {}
+    for directory in list_of_model_directories:
+        if "." in directory:
             continue
-        upload_covid_all_forecasts('./data-processed/'+item+'/',item)
+        output = upload_covid_all_forecasts('./data-processed/'+directory+'/',directory)
+        if output != "Pass":
+            output_errors[directory] = output
+    
+    # List all files that did not get upload and its error
+    if len(output_errors) > 0:
+        for directory, errors in output_errors.items():
+            print("\n* ERROR IN '", directory, "'")
+            for error in errors:
+                print(error)
+        sys.exit("\n ERRORS FOUND EXITING BUILD...")
+    else:
+        print("✓ no errors")
+    
