@@ -11,13 +11,17 @@ folders_to_process <- list.dirs("./", recursive = FALSE)
 forecast_dates <- lapply(folders_to_process, date_from_cu_filepath)
 
 # process only files from 2020-04-12 onwards:
-folders_to_process <- folders_to_process[forecast_dates >= as.Date("2020-04-12")]
+#------- commented out to avoid re-processing all files until we have updated the hosp forecasts in the repo
+# folders_to_process <- folders_to_process[forecast_dates >= as.Date("2020-04-12")]
+#-------------------------------------------------------
+# set folders_to_process <- ".//Projection_<Date>" to process a single folder
 
 # different versions of CU forecasts:
 scenarios <- c("60contact", "70contact", "80contact", "nointerv",
                "80contact_1x", "80contactw")
 
 for(i in seq_along(folders_to_process)) {
+  cat("Starting", folders_to_process[i], "...\n")
   # check if file naming still the same:
   tmp_ls_files <- list.files(paste0(folders_to_process[i], "/cdc_hosp"))
 
@@ -36,8 +40,8 @@ for(i in seq_along(folders_to_process)) {
         forecast_date = forecast_date_temp)
 
       write.csv(tmp_dat, paste0("../../data-processed/CU-", sc, "/",
-                                forecast_date_temp,
-                                "-CU-", sc, ".csv"), row.names = FALSE)
+                               forecast_date_temp,
+                              "-CU-", sc, ".csv"), row.names = FALSE)
     }
 
   }
