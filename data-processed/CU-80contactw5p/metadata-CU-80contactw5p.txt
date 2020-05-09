@@ -25,15 +25,10 @@ this_model_is_an_ensemble: FALSE
 this_model_is_unconditional: FALSE
 
 methods: >-
-    This model makes predictions about the future that are dependent on a particular set 
-    of assumptions about how interventions are implemented and how effective they are. 
-    Metapopulation county-level SEIR model assuming the following on contacts: Weekly 20%
-    decrease in places with growing weekly cases and a weekly 5% increase in places with 
-    return to work (latter supersedes the former)
+    This metapopulation county-level SEIR model makes projections of future COVID-19 incidence and deaths.  We produce a number of different intervention scenarios, each assuming various interventions and rates of compliance are implemented in the future.  This scenario assumes a weekly 20% decrease in counties with growing weekly cases and stay-at-home orders in place, and a weekly 5% increase in states that have reopened.
 
 methods_long: >-
-    This model makes predictions about the future that are dependent on a particular set 
-    of assumptions about how interventions are implemented and how effective they are. 
+     This metapopulation county-level SEIR model makes projections of future COVID-19 incidence and deaths.  We produce a number of different intervention scenarios, each assuming various interventions and rates of compliance are implemented in the future.  
     Estimates of spatio-temporal COVID-19 infections, hospitalizations and deaths were 
     calculated for all US counties. 
     April 5: Originally, we implemented 3 hypothetical control scenarios to reflect reduced contact between individuals due to stay-at-home orders, as well as reactive personal decisions to limit social contacts: starting from 14 days prior to the projection day, we applied 20%, 30% and 40% weekly reductions of the contact rate (β) in counties with ≥10 reported cases in a week, until the weekly numbers of new confirmed case in those counties decreased (i.e., the curve flattened). 

@@ -25,11 +25,7 @@ this_model_is_an_ensemble: FALSE
 this_model_is_unconditional: FALSE
 
 methods: >-
-    This model makes predictions about the future that are dependent on a particular set 
-    of assumptions about how interventions are implemented and how effective they are. 
-    Metapopulation county-level SEIR model assuming the following on contacts: Weekly 20%
-    decrease in places with growing weekly cases and a one-time 5% increase in places with 
-    return to work (latter supersedes the former)
+    This metapopulation county-level SEIR model makes projections of future COVID-19 incidence and deaths.  We produce a number of different intervention scenarios, each assuming various interventions and rates of compliance are implemented in the future.  This scenario assumes a weekly 20% decrease in counties with growing weekly cases and stay-at-home orders in place, and a one-time 5% increase in states that have reopened.
 
 methods_long: >-
     This model makes predictions about the future that are dependent on a particular set 
