@@ -5,7 +5,7 @@
 
 source("process_cu_file.R")
 # make sure that English names of days and months are used
-Sys.setlocale(category = "LC_TIME", locale = "en_US.UTF8")
+Sys.setlocale(category = "LC_TIME", locale = "en_US.UTF-8")
 
 folders_to_process <- list.dirs("./", recursive = FALSE)
 forecast_dates <- lapply(folders_to_process, date_from_cu_filepath)
@@ -17,8 +17,7 @@ forecast_dates <- lapply(folders_to_process, date_from_cu_filepath)
 # set folders_to_process <- ".//Projection_<Date>" to process a single folder
 
 # different versions of CU forecasts:
-scenarios <- c("60contact", "70contact", "80contact", "nointerv",
-               "80contact_1x", "80contactw")
+scenarios <- c("80contact", "80contact1x10p", "80contactw10p", "80contact1x5p", "80contactw5p")
 
 for(i in seq_along(folders_to_process)) {
   cat("Starting", folders_to_process[i], "...\n")
