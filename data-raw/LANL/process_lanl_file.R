@@ -7,13 +7,13 @@ source("../../code/processing-fxns/get_next_saturday.R")
 #' turn LANL forecast file into quantile-based format
 #'
 #' @param lanl_filepath path to a lanl submission file
+#' @param fips_file path to the fips codes file
 #'
 #' @details designed to process either an incidence or cumulative death forecast
 #'
 #' @return a data.frame in quantile format
 process_lanl_file <- function(lanl_filepath, 
-                              fips_file = "../../template/state_fips_codes.csv",
-                              forecast_dates_file = "../../template/covid19-death-forecast-dates.csv") {
+                              fips_file = "../../template/state_fips_codes.csv") {
     require(tidyverse)
     require(MMWRweek)
     require(lubridate)
@@ -29,7 +29,6 @@ process_lanl_file <- function(lanl_filepath,
     fips <- read_csv(fips_file)
     
     ## read in forecast dates
-    fcast_dates <- read_csv(forecast_dates_file)
     timezero <- as.Date(substr(basename(lanl_filepath), 0, 10))
     
     ## read in data
@@ -39,9 +38,8 @@ process_lanl_file <- function(lanl_filepath,
     if(forecast_date != timezero)
         stop("timezero in the filename is not equal to the forecast date in the data")
     
-    ## make USVI adjustment
-    usvi_idx <- which(dat$state=="Virgin Islands")
-    dat[usvi_idx, "state"] <- rep("U.S. Virgin Islands")
+    ## update forecast date to be day on which forecast is available, not last date of data
+    forecast_date <- forecast_date + 1
     
     ## put into long format
     dat_long <- pivot_longer(dat, cols=starts_with("q."), names_to = "q", values_to = "cum_deaths") %>%
