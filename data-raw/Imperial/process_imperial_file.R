@@ -1,6 +1,6 @@
 ## functions for Imperial data
 
-source("./code/processing-fxns/get_next_saturday.R")
+source("../../code/processing-fxns/get_next_saturday.R")
 
 #' Transform matrix of samples for one location into a quantile-format data_frame
 #'
@@ -28,7 +28,7 @@ process_imperial_file <- function(sample_mat, location, timezero, qntls=c(0.01, 
         target_end_date = get_next_saturday(timezero) + (wday(timezero)>2)*7)
  
     ## make cumulative death counts
-    obs_data <- read_csv("data-truth/truth-Cumulative Deaths.csv") %>%
+    obs_data <- read_csv("../../data-truth/truth-Cumulative Deaths.csv") %>%
         mutate(date = as.Date(date, "%m/%d/%y"))
     last_obs_date <- as.Date(colnames(sample_mat)[1])-1
     last_obs_death <- obs_data$value[which(obs_data$location=="US" & obs_data$date==last_obs_date)]

@@ -1,13 +1,13 @@
-## reformat Imperial forecasts
+## reformat Imperial forecasts, run from the directory the file is in
 ## Nicholas Reich
 ## April 2020
 
 library(tidyverse)
 
-source("code/processing-fxns/process_imperial_file.R")
+source("process_imperial_file.R")
 
 ## this reads in an RDS file provided by the Imperial team  on April 11
-ens_preds <- readRDS("./data-raw/Imperial/20200503-ensemble_model_predictions.rds")
+ens_preds <- readRDS("20200503-ensemble_model_predictions.rds")
 forecast_date = as.Date("2020-05-03")
 
 ## the object is a big list, with one element for each of the 5 times forecasts were made
@@ -29,7 +29,7 @@ ensemble2_output <- process_imperial_file(
     location="US",
     timezero=forecast_date)
 write_csv(ensemble1_output,
-    path = paste0("data-processed/Imperial-ensemble1/", forecast_date,"-Imperial-ensemble1.csv"))
+    path = paste0("../../data-processed/Imperial-ensemble1/", forecast_date,"-Imperial-ensemble1.csv"))
 write_csv(ensemble2_output,
-    path = paste0("data-processed/Imperial-ensemble2/", forecast_date,"-Imperial-ensemble2.csv"))
+    path = paste0("../../data-processed/Imperial-ensemble2/", forecast_date,"-Imperial-ensemble2.csv"))
 
