@@ -15,7 +15,8 @@ date_from_cu_filepath <- function(cu_filepath, year = 2020){
 
 #' turn CU forecast file into quantile-based format
 #'
-#' @param cu_filepath path to a CU submission file
+#' @param cu_filepath path to CU submission files. This is the folder containing "cdc_hosp"
+#' which in turn contains the forecast files.
 #' @param file the name of the file (CU forecast files are state_cdchosp_60contact.csv,
 #' state_cdchosp_70contact.csv, state_cdchosp_80contact.csv, state_cdchosp_nointerv.csv)
 #' @param forecast_date the time at which the forecast was issued; is internally compared
@@ -49,6 +50,7 @@ process_cu_file <- function(cu_filepath, file, forecast_date) {
   all_death_vars <- colnames(dat)[grepl(colnames(dat), pattern = "death")]
   c_death_vars <- colnames(dat)[grepl(colnames(dat), pattern = "cdeath")]
   i_death_vars <- setdiff(all_death_vars, c_death_vars)
+  i_hosp_vars <- colnames(dat)[grepl(colnames(dat), pattern = "hosp_new")]
 
   #####################################################
   # re-shape daily forecasts:
@@ -68,9 +70,16 @@ process_cu_file <- function(cu_filepath, file, forecast_date) {
   i_dat$id <- NULL
   i_dat$target <- paste(i_dat$Date - forecast_date, "day ahead inc death")
 
+  # incident hospitalization:
+  i_hosp_dat <- dat[, c("location", "fips", "Date", i_hosp_vars)]
+  i_hosp_dat <- reshape(i_hosp_dat, direction = "long", varying = list(i_hosp_vars),
+                   times = c(1, 2.5, seq(from = 5, to = 95, by = 5), 97.5, 99)/100)
+  i_hosp_dat$id <- NULL
+  i_hosp_dat$target <- paste(i_dat$Date - forecast_date, "day ahead inc hosp")
+
   # adapt columns and their names to template
-  colnames(c_dat) <- colnames(i_dat) <- c("location_name", "location", "target_end_date",
-                                          "quantile", "value", "target")
+  colnames(c_dat) <- colnames(i_dat) <- colnames(i_hosp_dat) <-
+    c("location_name", "location", "target_end_date", "quantile", "value", "target")
 
   ###################################################
   # add cumulative weekly forecasts:
@@ -102,7 +111,7 @@ process_cu_file <- function(cu_filepath, file, forecast_date) {
 
   ###################################################
   # pool daily and weekly forecasts, add type and forecast_date:
-  dat_quantiles <- rbind(i_dat, c_dat, c_weekly_dat)
+  dat_quantiles <- rbind(i_dat, c_dat, i_hosp_dat, c_weekly_dat)
   # add type variable (all quantiles until here):
   dat_quantiles$type <- "quantile"
   dat_quantiles$forecast_date <- forecast_date
