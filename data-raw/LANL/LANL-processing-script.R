@@ -11,6 +11,9 @@ lanl_filenames <- list.files(".", pattern=".csv", full.names=FALSE)
 dates <- unlist(lapply(lanl_filenames, FUN = function(x) substr(basename(x), 0, 10)))
 most_recent_date <- max(as.Date(dates))
 
+## LANL forecasts are typically available the day after the date in the filename
+forecast_date <- most_recent_date + 1
+
 cum_filename <- paste0(most_recent_date, "_deaths_quantiles_us_website.csv")
 inc_filename <- paste0(most_recent_date, "_deaths_incidence_quantiles_us_website.csv")
 
@@ -28,5 +31,5 @@ us_inc <- process_global_lanl_file(us_inc_filename)
 
 write_csv(bind_rows(cum_dat, inc_dat, us_cum, us_inc), 
           paste0("../../data-processed/LANL-GrowthRate/", 
-                          most_recent_date, 
+                          forecast_date, 
                           "-LANL-GrowthRate.csv"))
