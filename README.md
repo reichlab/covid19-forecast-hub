@@ -17,7 +17,7 @@ This README provides an overview of the project. Additional specific links can b
 </a>
 
 ## Data license and reuse
-We are grateful to the teams who have generated these forecasts. They have spent a huge amount of time and effort in a short amount of time to operationalize these important real-time forecasts. The groups have graciously and courageously made their public data available under different terms and licenses. You will find the licenses (when provided) within the model-specific folders in the [data-raw](./data-raw/) directory. Please consult these licenses before using these data to ensure that you follow the terms under which these data were released.
+We are grateful to the teams who have generated these forecasts. They have spent a huge amount of time and effort in a short amount of time to operationalize these important real-time forecasts. The groups have graciously and courageously made their public data available under different terms and licenses. You will find the licenses (when provided) within the model-specific folders in the [data-processed](./data-processed/) directory. Please consult these licenses before using these data to ensure that you follow the terms under which these data were released.
 
 We have stored the raw datafiles here as they were made available on the various websites or provided directly to us. We are working on creating standardized versions of these files and on building a queryable API for easy access to the data contained in the forecasts. 
 
@@ -80,7 +80,7 @@ So far, we have identified a number of groups that are creating forecasts of COV
  - [Imperial](https://github.com/sangeetabhatia03/covid19-short-term-forecasts) (none given)
  - [MIT](https://www.covidanalytics.io/) (Apache 2.0)
  - [Notre Dame](https://github.com/confunguido/covid19_ND_forecasting) (none given)
- - [University of California, Los Angeles - Statistical Machine Learning Lab](https://covid19.uclaml.org/)
+ - [University of California, Los Angeles](https://covid19.uclaml.org/) (CC-BY-4.0)
  - [University of Geneva / Swiss Data Science Center](https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/) (none given)
  - [University of Massachusetts - Expert Model](https://github.com/tomcm39/COVID19_expert_survey) (MIT)
  - [University of Massachusetts - Mechanistic Bayesian model](https://github.com/dsheldon/covid) (MIT)
@@ -91,10 +91,11 @@ So far, we have identified a number of groups that are creating forecasts of COV
 Participating teams must provide a metadata file (see [example](data-processed/UMass-ExpertCrowd/metadata-UMass-ExpertCrowd.txt)), including methodological detail about their approach and a link to a file (or a file itself) describing the methods used. 
 
 ## The COVID Forecast Hub Team
-Carefully curating these datasets into a standard format has taken a Herculean team effort. The following lists those who have helped out, in reverse alphabetical order:
+Carefully curating these datasets into a standard format has taken a Herculean team effort. The following lists those who have helped out, in reverse alphabetical order: 
 
  - Nutcha Wattanachit (ensemble model, data processing)
  - Nicholas Reich (project lead, ensemble model, data processing)
+ - Evan Ray (ensemble model)
  - Jarad Niemi (data processing and organization)
  - Khoa Le (validation, automation)
  - Katie House (visualization, validation, project management)
