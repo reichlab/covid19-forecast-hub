@@ -12,11 +12,12 @@ yarn run parse-data
 rm -r ./data/Cumulative\ Deaths/CU-nointerv
 rm -r ./data/Incident\ Deaths/CU-nointerv
 
-# Remove Iowa State
-# rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM10
-# rm -r ./data/Incident\ Deaths/IowaStateLW-STEM10
-# rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
-# rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
+# Remove JHU because no point estimates
+rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSPHighDist
+rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSPHighDist
+rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSPModDist
+rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSPModDist
+
 
 # Remove LANL-GrowthRateHosp
 rm -r ./data/Cumulative\ Deaths/LANL-GrowthRateHosp

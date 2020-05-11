@@ -35,6 +35,7 @@ def filename_match_forecast_date(filename):
         else:
             return None
 
+
 # Check forecast formatting
 
 
@@ -47,8 +48,19 @@ def check_formatting(my_path):
     for path in glob.iglob(my_path + "**/**/", recursive=False):
         for filepath in glob.iglob(path + "*.csv", recursive=False):
             files_in_repository += [filepath]
-            if filepath not in previous_checked:
+
+            # check if file has been edited since last checked
+            current_edit_date = os.path.getmtime(filepath)
+            print(df[df['file_path'] == filepath]['last_edit_date'])
+            saved_edit_date = df[df['file_path'] == filepath]['last_edit_date']
+
+            if filepath not in previous_checked or current_edit_date != saved_edit_date:
+                # delete validated file if currrently present
+                df = df[df['file_path'] != filepath]
+
+                # validate file
                 file_error = validate_quantile_csv_file(filepath)
+
                 # Check forecast file date = forecast_date column
                 forecast_date_error = filename_match_forecast_date(filepath)
                 if forecast_date_error is not None:
@@ -63,16 +75,13 @@ def check_formatting(my_path):
                     # add to previously checked files
                     current_time = datetime.datetime.now()
                     df = df.append({'file_path': filepath,
-                                    'validation_date': current_time}, ignore_index=True)
+                                    'validation_date': current_time,
+                                    'last_edit_date': current_edit_date}, ignore_index=True)
 
     # Remove files that have been deleted from repo
     # files that are in verify checks but NOT in repository
     deleted_files = np.setdiff1d(previous_checked, files_in_repository)
     df = df[~df['file_path'].isin(deleted_files)]
-
-    # delted files should be moved from the central validated_files.csv file
-    if len(deleted_files) > 0:
-        df.to_csv('code/validation/validated_files.csv', index=False)
 
     # update previously checked files
     df.to_csv('code/validation/locally_validated_files.csv', index=False)
