@@ -4,8 +4,8 @@ from pprint import pprint
 import sys
 import os
 import pandas as pd
-import datetime
 import numpy as np
+from datetime import datetime
 
 
 # Check for metadata file
@@ -51,6 +51,7 @@ def check_formatting(my_path):
 
             # check if file has been edited since last checked
             current_edit_date = os.path.getmtime(filepath)
+            current_edit_date = datetime.fromtimestamp(current_edit_date).strftime('%Y-%m-%d %H:%M:%S')
             saved_edit_date = df[df['file_path'] == filepath]['last_edit_date'].values
 
             if len(saved_edit_date) > 0:
@@ -74,7 +75,7 @@ def check_formatting(my_path):
                     output_errors[filepath] = file_error
                 else:
                     # add to previously checked files
-                    current_time = datetime.datetime.now()
+                    current_time = datetime.now()
                     df = df.append({'file_path': filepath,
                                     'validation_date': current_time,
                                     'last_edit_date': current_edit_date}, ignore_index=True)
