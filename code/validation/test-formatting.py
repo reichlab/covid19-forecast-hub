@@ -50,12 +50,6 @@ def check_formatting(my_path):
             files_in_repository += [filepath]
 
             # check if file has been edited since last checked
-            current_edit_date = os.path.getmtime(filepath)
-            current_edit_date = datetime.fromtimestamp(current_edit_date).strftime('%Y-%m-%d %H:%M:%S')
-            saved_edit_date = df[df['file_path'] == filepath]['last_edit_date'].values
-
-            if len(saved_edit_date) > 0:
-                saved_edit_date = saved_edit_date[0]
             if filepath not in previous_checked:
                 # delete validated file if currrently present
                 df = df[df['file_path'] != filepath]
@@ -77,8 +71,7 @@ def check_formatting(my_path):
                     # add to previously checked files
                     current_time = datetime.now()
                     df = df.append({'file_path': filepath,
-                                    'validation_date': current_time,
-                                    'last_edit_date': current_edit_date}, ignore_index=True)
+                                    'validation_date': current_time}, ignore_index=True)
 
     # Remove files that have been deleted from repo
     # files that are in verify checks but NOT in repository
