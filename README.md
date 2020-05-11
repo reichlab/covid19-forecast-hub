@@ -9,7 +9,7 @@ This README provides an overview of the project. Additional specific links can b
 * [Ensemble model](#ensemble-model)
 * [Raw forecast data](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-raw)
 * [Processed forecast data](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed)
-* [Truth data](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-truth/truth-cum-death.csv)
+* [Truth data](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-truth/)
 * [Technical README with detailed submission instructions](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md)
 
 <a href = "https://reichlab.io/covid19-forecast-hub/">
@@ -17,7 +17,7 @@ This README provides an overview of the project. Additional specific links can b
 </a>
 
 ## Data license and reuse
-We are grateful to the teams who have generated these forecasts. They have spent a huge amount of time and effort in a short amount of time to operationalize these important real-time forecasts. The groups have graciously and courageously made their public data available under different terms and licenses. You will find the licenses (when provided) within the model-specific folders in the [data-raw](./data-raw/) directory. Please consult these licenses before using these data to ensure that you follow the terms under which these data were released.
+We are grateful to the teams who have generated these forecasts. They have spent a huge amount of time and effort in a short amount of time to operationalize these important real-time forecasts. The groups have graciously and courageously made their public data available under different terms and licenses. You will find the licenses (when provided) within the model-specific folders in the [data-processed](./data-processed/) directory. Please consult these licenses before using these data to ensure that you follow the terms under which these data were released.
 
 We have stored the raw datafiles here as they were made available on the various websites or provided directly to us. We are working on creating standardized versions of these files and on building a queryable API for easy access to the data contained in the forecasts. 
 
@@ -30,13 +30,13 @@ Different groups are making forecasts at different times, and for different geog
 We will use the [daily reports containing death data from the JHU CSSE group](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv) as the gold standard reference data for deaths in the US. Note that there are not insignificant differences (especially in daily incident death data) between the JHU data and another commonly used source, from the New York Times. The team at UTexas-Austin is tracking this issue on [a separate GitHub repository](https://github.com/spencerwoody/covid19-data-comparsion).
 
 **When will forecast data be updated?** 
-We will be storing any new forecasts from each group as they are either provided to us directly (by pull request) or available for download online. We will attempt to make every version of each team's forecasts available in "processed" form in the GitHub repo. Teams are encouraged to submit data as often has they have it available, although we only support one upload for each day. 
+We will be storing any new forecasts from each group as they are either provided to us directly (by pull request) or available for download online. We will attempt to make every version of each team's forecasts available in "processed" form in the GitHub repo. Teams are encouraged to submit data as often has they have it available, although we only support one upload for each day. In general, "updates" to forecasts will not be permitted. Teams are responsible for checking that their forecasts are ready for public viewing upon submission. This can be done locally using our [interactive visualization tool](https://github.com/reichlab/covid19-forecast-hub/wiki/Interactive-Visualization).
 
 **What locations will have forecasts?**
 Currently, forecasts may be submitted for any state in the US and the US at the national level. At a future date, we may expand to include smaller geographic scales within the US and/or other international locations. 
 
 **How will probabilistic forecasts be represented?**
-Forecasts will be represented in [a standard format](#data-model) using quantile-based representations of predictive distributions. We encourage all groups to make available the following 23 quantiles for each distribution: `c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99)`. If this is infeasible, we ask teams to prioritize making  available at least the following quantiles: `c(0.01, 0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95, 0.99)`. One goal of this effort is to create probabilistic ensemble forecasts, and having high-resolution component distributions will provide data to create better ensembles. 
+Forecasts will be represented in [a standard format](#data-model) using quantile-based representations of predictive distributions. We encourage all groups to make available the following 23 quantiles for each distribution: `c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99)`. One goal of this effort is to create probabilistic ensemble forecasts, and having high-resolution component distributions will provide data to create better ensembles. 
 
 **What forecast targets will be stored?**
 We will store forecasts on 0 through 130 day-ahead _incident_ and _cumulative_ deaths, 1 through 20 week-ahead _incident_ and _cumulative_ deaths, and 0 through 130 day-ahead _incident_ hospitalizations. The targets should be labeled in files as, e.g., `"1 day ahead inc death"`, `"1 day ahead cum death"`, `"1 wk ahead inc death"`, `"1 wk ahead cum death"`, or `"1 wk ahead inc hosp"`. Please refer to the [technical README](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md) for details on aligning targets with forecast dates.
@@ -80,6 +80,7 @@ So far, we have identified a number of groups that are creating forecasts of COV
  - [Imperial](https://github.com/sangeetabhatia03/covid19-short-term-forecasts) (none given)
  - [MIT](https://www.covidanalytics.io/) (Apache 2.0)
  - [Notre Dame](https://github.com/confunguido/covid19_ND_forecasting) (none given)
+ - [University of California, Los Angeles](https://covid19.uclaml.org/) (CC-BY-4.0)
  - [University of Geneva / Swiss Data Science Center](https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/) (none given)
  - [University of Massachusetts - Expert Model](https://github.com/tomcm39/COVID19_expert_survey) (MIT)
  - [University of Massachusetts - Mechanistic Bayesian model](https://github.com/dsheldon/covid) (MIT)
@@ -90,10 +91,11 @@ So far, we have identified a number of groups that are creating forecasts of COV
 Participating teams must provide a metadata file (see [example](data-processed/UMass-ExpertCrowd/metadata-UMass-ExpertCrowd.txt)), including methodological detail about their approach and a link to a file (or a file itself) describing the methods used. 
 
 ## The COVID Forecast Hub Team
-Carefully curating these datasets into a standard format has taken a Herculean team effort. The following lists those who have helped out, in reverse alphabetical order:
+Carefully curating these datasets into a standard format has taken a Herculean team effort. The following lists those who have helped out, in reverse alphabetical order: 
 
  - Nutcha Wattanachit (ensemble model, data processing)
  - Nicholas Reich (project lead, ensemble model, data processing)
+ - Evan Ray (ensemble model)
  - Jarad Niemi (data processing and organization)
  - Khoa Le (validation, automation)
  - Katie House (visualization, validation, project management)
