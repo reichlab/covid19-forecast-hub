@@ -1,0 +1,37 @@
+team_name: Auquan Data Science
+team_abbr: Auquan
+institution_affil: None
+team_contact: vishal@auquan.com, chandini@auquan.com
+team_funding: N/A
+team_experience: Machine Learning, Data Science
+
+model_name: MLOptimizedModifiedSEIR
+model_abbr: SEIR
+model_output: https://covid19-infection-model.auquan.com/
+model_repo: 
+
+model_contributors: Vishal Tomar <vishal@auquan.com>, Chandini Jain <chandini@auquan.com> 
+Model_targets: daily infections, daily deaths
+Target_loc: state (US)
+time_horizon: 4 months, through Aug 4, 2020
+Data_format: point
+forecast_startdate: 2020-04-01
+forecast_frequency: daily
+
+data_inputs_known: reported daily deaths, reported daily confirmed cases, population
+data_source_known: JHU
+
+this_model_is_an_ensemble: FALSE
+this_model_is_unconditional: TRUE
+
+methods: >-
+    Modified SEIR model with compartments for reported and unreported infections. Non-linear mixed effects curve-fitting.
+ 
+
+methods_long: >-
+    We start with a standard SEIR model and break down the Infectious compartment(I) into reported infections (Ir) and unreported infections (Iu).
+    People from the Exposed compartment(E) with symptoms go into the reported infections (Ir) compartment. People with mild or no symptoms go into the unreported infections compartment.
+    Both reported infections (Ir) and unreported infections (Iu) contribute to disease spread, but at different rates - a low spread for people quarantined in compartment Ir, and a high spread for, often, asymptomatic people in compartment Iu. This handles the quarantine measures taken by countries to limit the infections.
+    Some people in reported infections (Iu) recover (compartment C) and some die (compartment D)
+    All people in unreported infections (Iu) recover (compartment Cu), there are no mortalities in this compartment. If their symptoms were serious enough they would be reported (and therefore in compartment Ir).
+    We fit our model to reported confirmed cases and reported deaths in a region to estimate beta1 and beta2 for that region. For other parameters, we use estimates from other studies as starting point and learn using hyperparameter optimization that minimizes the error between projected daily deaths and reported daily deaths.

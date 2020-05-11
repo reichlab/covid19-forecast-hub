@@ -68,7 +68,7 @@ latest_quantiles_summary <- latest_quantiles %>%
 
 offset <- 0 # currently 7 for testing, but should be 0
 ensemble_data <- latest %>%
-  filter(forecast_date > get_next_saturday(Sys.Date())-9)
+  filter(forecast_date > get_next_saturday(Sys.Date())-offset-9)
   # filter( (target_end_date == get_next_saturday(Sys.Date()-offset) & grepl("1 wk", target)) |
   #           (target_end_date == get_next_saturday(Sys.Date()+ 7-offset) & grepl("2 wk", target))|
   #           (target_end_date == get_next_saturday(Sys.Date()+14-offset) & grepl("3 wk", target))|
@@ -77,11 +77,15 @@ ensemble_data <- latest %>%
 
 ensemble <- ensemble_data %>%
   group_by(team, model, forecast_date) %>%
-  filter(model != "ensemble") %>%
+  filter(model != "ensemble", 
+         unit == "wk",
+         type == "quantile",
+         death_cases == "death") %>%
   dplyr::summarize(
     median    = ifelse(any(quantile == 0.5, na.rm = TRUE), "Yes", "-"),
     cum_death = ifelse(all(paste(1:4, "wk ahead cum death") %in% target), "Yes", "-"),
     inc_death = ifelse(all(paste(1:4, "wk ahead inc death") %in% target), "Yes", "-"),
+    all_weeks = ifelse(all(1:4 %in% n_unit), "Yes", "-"),
     has_US    = ifelse("US" %in% fips_alpha, "Yes", "-"),
     has_states = ifelse(all(state.abb %in% fips_alpha), "Yes", "-")
   )
@@ -94,12 +98,30 @@ ensemble_quantiles <- ensemble_data %>%
          quantile = as.character(quantile)) 
 
 g_ensemble_quantiles <- ggplot(ensemble_quantiles %>%
-                                 mutate(team_model = paste0(team,model,sep="-")), 
+                                 mutate(team_model = paste(team,model,sep="-")), 
                                aes(x = quantile, y = team_model, fill = yes)) +
   geom_tile() +
   theme_bw() + 
   theme(legend.position = "none",
         axis.text.x = element_text(angle = 90, hjust = 1))
+
+
+
+###############################################################################
+# Create shiny latest plot
+latest_plot_data <- latest %>%
+  filter(quantile %in% c(.025,.25,.5,.75,.975) | type == "point") %>%
+  
+  mutate(quantile = ifelse(type == "point", "point", quantile),
+         simple_target = paste(unit,ahead,inc_cum, death_cases)) %>%
+  select(-type) %>%
+  tidyr::pivot_wider(
+    names_from = quantile,
+    values_from = value
+  )
+
+
+
 
 
 
@@ -132,6 +154,20 @@ ui <- navbarPage(
   tabPanel("Latest",           
            DT::DTOutput("latest")),
   
+  tabPanel("Latest Viz",
+           sidebarLayout(
+             sidebarPanel(
+               selectInput("team",         "Team", sort(unique(latest_plot_data$team         ))),
+               selectInput("model",       "Model", sort(unique(latest_plot_data$model        ))),
+               selectInput("target",     "Target", sort(unique(latest_plot_data$simple_target))),
+               selectInput("location", "Location", sort(unique(latest_plot_data$fips_alpha   )))
+             ), 
+             mainPanel(
+               plotOutput("latest_plot")
+             )
+           )
+           ),
+  
   tabPanel("All",              
            DT::DTOutput("all_data")),
   
@@ -149,7 +185,7 @@ ui <- navbarPage(
 
 
 # Define server logic required to draw a histogram
-server <- function(input, output) {
+server <- function(input, output, session) {
   
   output$latest_targets   <- DT::renderDT(latest_targets,   filter = "top")
   output$latest_locations <- DT::renderDT(latest_locations, filter = "top")
@@ -161,6 +197,44 @@ server <- function(input, output) {
   output$ensemble_quantile_plot <- shiny::renderPlot(g_ensemble_quantiles)
   
   output$latest           <- DT::renderDT(latest,           filter = "top")
+  
+  #############################################################################
+  # Latest viz: Filter data based on user input
+  
+  latest_t    <- reactive({ latest_plot_data %>% filter(team          == input$team) })
+  latest_tm   <- reactive({ latest_t()       %>% filter(model         == input$model) })
+  latest_tmt  <- reactive({ latest_tm()      %>% filter(simple_target == input$target) })
+  latest_tmtl <- reactive({ latest_tmt()     %>% filter(fips_alpha    == input$location) })
+  
+  observe({
+    models <- sort(unique(latest_t()$model))
+    updateSelectInput(session, "model", choices = models, selected = models[1])
+  })
+  
+  observe({
+    targets <- sort(unique(latest_tm()$simple_target))
+    updateSelectInput(session, "target", choices = targets, selected = targets[1])
+  })
+  
+  observe({
+    locations <- sort(unique(latest_tmt()$fips_alpha))
+    updateSelectInput(session, "location", choices = locations, selected = "US")
+  })
+  
+  output$latest_plot      <- shiny::renderPlot({
+    d    <- latest_tmtl()
+    team <- unique(d$team)
+    model <- unique(d$model)
+    forecast_date <- unique(d$forecast_date)
+    
+    ggplot(d, aes(x = target_end_date)) + 
+      geom_ribbon(aes(ymin = `0.025`, ymax = `0.975`), fill = "lightgray") +
+      geom_ribbon(aes(ymin = `0.25`, ymax = `0.75`), fill = "gray") +
+      geom_point(aes(y=`0.5`), color = "white") + geom_line( aes(y=`0.5`), color = "white") + 
+      geom_point(aes(y=point)) + geom_line( aes(y=point)) + 
+      labs(y="value", main = forecast_date) +
+      theme_bw()
+  })
   
   output$all_data         <- DT::renderDT(all_data,         filter = "top")
 }

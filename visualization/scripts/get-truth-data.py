@@ -2,6 +2,8 @@ import pandas as pd
 import pymmwr as pm
 import datetime
 import warnings
+import io
+import requests
 warnings.simplefilter(action='ignore')
 
 
@@ -48,7 +50,6 @@ def configure_JHU_data(df, target):
 
     # only output "location", "epiweek", "value"
     df_byday = df_truth.rename(columns={"level_0": "date", "state_code": "location", "location_long": "location_name"})
-
     # select columns
     df_byday = df_byday[["date", "location", "location_name", "value"]]
 
@@ -77,18 +78,18 @@ def configure_JHU_data(df, target):
     # or group by week for incident deaths
     if target == 'Incident Deaths':
         df_vis = df_truth.groupby(['week', 'location_long'], as_index=False).agg({'level_0': 'last',
-                                                                         'value': 'sum', 
-                                                                         'year': 'last', 
-                                                                         'day': 'last', 
-                                                                         'state_code': 'last',
-                                                                         'state': 'last',
-                                                                         'state_name': 'last' })
+                                                                                  'value': 'sum',
+                                                                                  'year': 'last',
+                                                                                  'day': 'last',
+                                                                                  'state_code': 'last',
+                                                                                  'state': 'last',
+                                                                                  'state_name': 'last'})
         df_vis = df_vis[df_vis['day'] == 7]
-    else:   
+    else:
         df_vis = df_truth[df_truth['day'] == 7]
 
     df_vis['week'] = df_vis['week'] + 1  # shift epiweek on axis
-    
+
     # add leading zeros to epi week
     df_vis['week'] = df_vis['week'].apply(lambda x: '{0:0>2}'.format(x))
 
@@ -106,45 +107,11 @@ def configure_JHU_data(df, target):
     with open(file_path, 'w') as f:
         f.write(df_truth_short.to_json(orient='records'))
 
-    '''
-    ####################################
-    # Truth data output for Zoltar & Scoring
-    ####################################
-    '''
-    # rename location
-    df_truth_long = df_vis.rename(columns={"week": "epiweek",
-                                           "state_code": "unit",
-                                           "level_0": "date"})
-    # get timezero
-    df_truth_long['date'] = pd.to_datetime(df_truth_long['date'])
 
-    # find week-ahead targets
-    for i in range(4):
-        weeks_ahead = i + 1
-        days_back = 5 + (weeks_ahead * 7)  # timezero is on Mondays
+url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv"
+url_req = requests.get(url).content
+df = pd.read_csv(io.StringIO(url_req.decode('utf-8')))
 
-        df_calc = df_truth_long  # initialize df
-
-        # find timezero and target
-        df_calc['timezero'] = df_calc['date'] - datetime.timedelta(days=days_back)
-        df_calc['target'] = "%i_week_ahead_cum" % weeks_ahead
-
-        # select columns
-        df_calc = df_calc[["timezero", "unit", "target", "value"]]
-
-        # concatenate truth
-        if i == 0:
-            df_out = df_calc
-        else:
-            df_out = pd.concat([df_out, df_calc])
-
-    # write truth to csv
-    file_path = '../data-truth/zoltar-truth-' + target + '.csv'
-    df_out.to_csv(file_path, index=False)
-
-
-df = pd.read_csv(
-    "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv")
 fips_codes = pd.read_csv('../template/state_fips_codes.csv')
 
 # aggregate by state and nationally

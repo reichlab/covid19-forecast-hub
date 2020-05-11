@@ -4,12 +4,14 @@ library(tidyverse)
 
 source("../covid19-forecast-hub/code/processing-fxns/get_next_saturday.R")
 
-inclusion_dates <- as.Date("2020-04-27") - 0:3
+inclusion_dates <- as.Date("2020-05-04") - 0:3
 #timezero <- "2020-04-27"
-models_to_exclude <- c("CU-nointerv", "JHU_IDD-CovidSP")
+#models_to_exclude <- c("CU-nointerv", "JHU_IDD-CovidSP")
+models_to_exclude <- ""
+
 
 ## get truth data
-obs_data <- read_csv("../covid19-forecast-hub/data-truth/truth-cum-death.csv") %>%
+obs_data <- read_csv("../covid19-forecast-hub/data-truth/truth-Cumulative Deaths.csv") %>%
     mutate(wk_end_date = as.Date(date, "%m/%d/%y"),
       location_name = ifelse(location == 'US', 'National', location_name)) %>%
     select(-date) %>%
@@ -75,7 +77,7 @@ dat <- all_dat %>%
     left_join(wk_ahead_saturdays) %>%   ## add week end dates, limit to 1-4 wk ahead
     mutate(value = round(value)) %>%
     pivot_wider(names_from = c(type, quantile), values_from=value) %>%
-  rename(point = point_NA)
+    dplyr::rename(point = point_NA)
 # unique(filter(all_dat, duplicated(all_dat))$model)
 # unique(filter(all_dat, duplicated(all_dat))$target)
 # filter(all_dat, duplicated(all_dat), target == '1 wk ahead cum death')
@@ -104,14 +106,14 @@ dat <- all_dat %>%
 cols <- c("darkred", "#F3DF6C", "#CEAB07", "#D5D5D3", "#798E87", "#C27D38", 
     "#CCC591", "#85D4E3", "#F4B5BD", "#9C964A", "#FAD77B", 
   "#02401B", "#A2A475", "#81A88D", "#972D15", 
-  "#D8B70A", "#02401B", "#A2A475", "#81A88D", "#972D15")
+  "#D8B70A", "#02401B", "#A2A475", "#81A88D", "#972D15", "#FB6467FF","917C5DFF")
 model_colors <- c(
     "COVIDhub-ensemble" = cols[1],
     "LANL-GrowthRate" = cols[2],
     "MOBS_NEU-GLEAM_COVID" = cols[3],
     "IHME-CurveFit" = cols[4],
-    "CU-60contact" = cols[5],
-    "CU-70contact" = cols[6],
+    "CU-80contactw" = cols[5],
+    "CU-80contact_1x" = cols[6],
     "CU-80contact" = cols[7],
     "UMass-ExpertCrowd" = cols[8],
     "YYG-ParamSearch" = cols[9],
@@ -122,7 +124,9 @@ model_colors <- c(
     "JHU_IDD-CovidSP" = cols[14],
     "Imperial-ensemble1" = cols[15],
     "Imperial-ensemble2" = cols[16],
-    "UMass-MechBayes" = cols[17]
+    "UMass-MechBayes" = cols[17],
+    "UCLA-SuEIR" = cols[17],
+    "Auquan-SEIR" = cols[18]
 )
 
 model_display_names <- c(
@@ -130,8 +134,8 @@ model_display_names <- c(
   "LANL-GrowthRate" = "LANL",
   "MOBS_NEU-GLEAM_COVID" = "MOBS",
   "IHME-CurveFit" = "IHME",
-  "CU-60contact" = "CU-40", 
-  "CU-70contact" = "CU-30",
+  "CU-80contactw" = "CU-20w", 
+  "CU-80contact_1x" = "CU-20_1x",
   "CU-80contact" = "CU-20",
   "UMass-ExpertCrowd" = "UMass-EC",
   "YYG-ParamSearch" = "YYG",
@@ -142,7 +146,9 @@ model_display_names <- c(
   "JHU_IDD-CovidSP" = "JHU",
   "Imperial-ensemble1" = 'Imperial1',
   "Imperial-ensemble2" = 'Imperial2',
-  "UMass-MechBayes" = "UMass-MB"
+  "UMass-MechBayes" = "UMass-MB",
+  "UCLA-SuEIR" = "UCLA",
+  "Auquan-SEIR"="Auquan"
   )
 
 ### plots
@@ -161,7 +167,7 @@ all_locations <- c("National",
 #for (i in 1:10){
 #  par(mfrow=c(8, 4))
 plot_us <- function() {
-  jpeg(paste0("Forecast visualization/plots/National-plot-ensemble-", inclusion_dates[1], ".jpg"), 
+  jpeg(paste0("./static-plots/National-plot-ensemble-", inclusion_dates[1], ".jpg"), 
     width=7.5, height=3.5, units='in', res=300)
   par(mfrow=c(1, 2), mar=c(1.25, 1.25, 1.25, 0.5), oma=c(0.5, 2.5, 2, 0), 
     mgp=c(0.5, 0.3, 0), tck=-0.01, cex=0.8)
@@ -241,7 +247,7 @@ plot_us()
 
 
 plot_all <- function() {
-  pdf(paste0("Forecast visualization/plots/Consolidated-Forecasts-", inclusion_dates[1], ".pdf"), 
+  pdf(paste0("./static-plots/Consolidated-Forecasts-", inclusion_dates[1], ".pdf"), 
     width=7.5, height=10, paper='letter')
   par(mfrow=c(5, 2), mar=c(1.25, 1.25, 1.25, 0.5), oma=c(2.5, 2.5, 2, 0), 
     mgp=c(0.5, 0.3, 0), tck=-0.01)

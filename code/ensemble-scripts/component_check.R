@@ -70,7 +70,7 @@ fips <- read_csv("./template/state_fips_codes.csv",
                           fips_numeric = "US", 
                           full_name = "United States"))
 # take subset of overlapping location and quantiles and show each model's non overlapping from that set
-targets <- c(paste(1:4,"wk ahead cum death"),paste(1:4,"wk ahead inc death"))
+targets <- c(paste(1:4,"wk ahead cum death"))
 latest = read_dir(".",
                        "*.csv",
                        into = c("period","team","model",
@@ -85,34 +85,3 @@ latest = read_dir(".",
   ungroup() %>%
   tidyr::separate(target, into=c("n_unit","unit","ahead","inc_cum","death_cases"),
                   remove = FALSE)
-
-# Further process the processed data for ease of exploration
-latest_locations <- latest %>%
-  dplyr::group_by(team, model, forecast_date) %>%
-  dplyr::summarize(US = ifelse(any(fips_alpha == "US"), "Yes", "-"),
-                   n_states = sum(state.abb %in% fips_alpha),
-                   other = paste(unique(setdiff(fips_alpha, c(state.abb,"US"))),
-                                 collapse = " "))
-
-# Quantiles
-# take subset of overlapping quantiles and show each model's non overlapping from that set
-full_quantiles <- sprintf("%.3f", c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99))
-min_quantiles  <- sprintf("%.3f", c(0.01, 0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95, 0.99))
-
-latest_quantiles <- latest %>%
-  dplyr::filter(type == "quantile") %>%
-  dplyr::mutate(quantile = sprintf("%.3f", quantile)) %>%
-  dplyr::group_by(team, model, forecast_date, target) %>%
-  dplyr::summarize(
-    full = all(full_quantiles %in% quantile),
-    min  = all(min_quantiles  %in% quantile),
-    quantiles = paste(unique(quantile), collapse = " ")) 
-
-latest_quantiles_summary <- latest_quantiles %>%
-  dplyr::group_by(team, model, forecast_date) %>%
-  dplyr::summarize(
-    all_full = ifelse(all(full), "Yes", "-"),
-    any_full = ifelse(any(full), "Yes", "-"),
-    all_min  = ifelse(all(min),  "Yes", "-"),
-    any_min  = ifelse(any(min),  "Yes", "-")
-  )
