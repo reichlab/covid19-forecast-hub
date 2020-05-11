@@ -51,8 +51,10 @@ def check_formatting(my_path):
 
             # check if file has been edited since last checked
             current_edit_date = os.path.getmtime(filepath)
-            saved_edit_date = df[df['file_path'] == filepath]['last_edit_date']
+            saved_edit_date = df[df['file_path'] == filepath]['last_edit_date'].values
 
+            if len(saved_edit_date) > 0:
+                saved_edit_date = saved_edit_date[0]
             if filepath not in previous_checked or current_edit_date != saved_edit_date:
                 # delete validated file if currrently present
                 df = df[df['file_path'] != filepath]
