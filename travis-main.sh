@@ -43,6 +43,10 @@ if [[ "$TRAVIS_COMMIT_MESSAGE" == *"update data"* ]]; then
    bash ./travis/pull-data.sh
 fi
 
+if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then 
+   echo "PULL REQUEST" 
+fi
+
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
    echo "replace validated files"
    cp ./code/validation/locally_validated_files.csv ./code/validation/validated_files.csv 
