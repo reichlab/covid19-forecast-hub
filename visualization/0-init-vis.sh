@@ -18,7 +18,6 @@ rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSPHighDist
 rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSPModDist
 rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSPModDist
 
-
 # Remove LANL-GrowthRateHosp
 rm -r ./data/Cumulative\ Deaths/LANL-GrowthRateHosp
 rm -r ./data/Incident\ Deaths/LANL-GrowthRateHosp
