@@ -20,7 +20,24 @@ def check_for_metadata(my_path):
             print("MISSING ", metadata_filename)
 
 
+def filename_match_forecast_date(filename):
+    df = pd.read_csv(filename)
+    file_forecast_date = os.path.basename(os.path.basename(filename))[:10]
+    forecast_date_column = set(list(df['forecast_date']))
+    if len(forecast_date_column) > 1:
+        return "ERROR: %s has multiple forecast dates: %s. Forecast date must be unique" % (
+            filename, forecast_date_column)
+    else:
+        forecast_date_column = forecast_date_column.pop()
+        if (file_forecast_date != forecast_date_column):
+            return "ERROR %s forecast filename date %s does match forecast_date column %s" % (
+                filename, file_forecast_date, forecast_date_column)
+        else:
+            return None
+
 # Check forecast formatting
+
+
 def check_formatting(my_path):
     output_errors = {}
     df = pd.read_csv('code/validation/validated_files.csv')
@@ -32,6 +49,14 @@ def check_formatting(my_path):
             files_in_repository += [filepath]
             if filepath not in previous_checked:
                 file_error = validate_quantile_csv_file(filepath)
+                # Check forecast file date = forecast_date column
+                forecast_date_error = filename_match_forecast_date(filepath)
+                if forecast_date_error is not None:
+                    if file_error == 'no errors':
+                        file_error = [forecast_date_error]
+                    else:
+                        file_error += [forecast_date_error]
+
                 if file_error != 'no errors':
                     output_errors[filepath] = file_error
                 else:
@@ -45,8 +70,12 @@ def check_formatting(my_path):
     deleted_files = np.setdiff1d(previous_checked, files_in_repository)
     df = df[~df['file_path'].isin(deleted_files)]
 
+    # delted files should be moved from the central validated_files.csv file
+    if len(deleted_files) > 0:
+        df.to_csv('code/validation/validated_files.csv', index=False)
+
     # update previously checked files
-    df.to_csv('code/validation/validated_files.csv', index=False)
+    df.to_csv('code/validation/locally_validated_files.csv', index=False)
 
     # Output list of Errors
     if len(output_errors) > 0:
