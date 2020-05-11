@@ -48,6 +48,8 @@ if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
    bash ./travis/push.sh
    echo "Upload forecasts to Zoltar"
    bash ./travis/upload-to-zoltar.sh
+   echo "replace validated files"
+   cp ./code/validation/locally_validated_files.csv ./code/validation/validated_files.csv 
 fi
 
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"trigger build"* ]]; then
