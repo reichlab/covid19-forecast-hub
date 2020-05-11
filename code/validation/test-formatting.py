@@ -5,6 +5,7 @@ import sys
 import os
 import pandas as pd
 import datetime
+import numpy as np
 
 
 # Check for metadata file
@@ -24,9 +25,11 @@ def check_formatting(my_path):
     output_errors = {}
     df = pd.read_csv('code/validation/validated_files.csv')
     previous_checked = list(df['file_path'])
+    files_in_repository = []
     # Iterate through processed csvs
     for path in glob.iglob(my_path + "**/**/", recursive=False):
         for filepath in glob.iglob(path + "*.csv", recursive=False):
+            files_in_repository += [filepath]
             if filepath not in previous_checked:
                 file_error = validate_quantile_csv_file(filepath)
                 if file_error != 'no errors':
@@ -36,6 +39,12 @@ def check_formatting(my_path):
                     current_time = datetime.datetime.now()
                     df = df.append({'file_path': filepath,
                                     'validation_date': current_time}, ignore_index=True)
+
+    # Remove files that have been deleted from repo
+    # files that are in verify checks but NOT in repository
+    deleted_files = np.setdiff1d(previous_checked, files_in_repository)
+    df = df[~df['file_path'].isin(deleted_files)]
+
     # update previously checked files
     df.to_csv('code/validation/validated_files.csv', index=False)
 
