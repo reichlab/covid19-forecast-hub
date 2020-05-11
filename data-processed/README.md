@@ -199,10 +199,12 @@ quantile forecast.
 Point forecasts are used in visualization while quantile forecasts are used in
 visualization and in ensemble construction.
 
+**Forecasts must include exactly 1 "point" forecast for every location-target
+pair.**
 
 #### `quantile`
 
-Values in the `quantile` column are either missing (if `type` is "point") or 
+Values in the `quantile` column are either "NA" (if `type` is "point") or 
 a quantile in the format
 
     0.###
