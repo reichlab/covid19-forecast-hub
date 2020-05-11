@@ -1,130 +1,142 @@
-file_path,validation_date
-./data-processed/LANL-GrowthRateHosp/2020-05-03-LANL-GrowthRateHosp.csv,2020-05-11 10:01:02.857570
-./data-processed/LANL-GrowthRateHosp/2020-05-06-LANL-GrowthRateHosp.csv,2020-05-11 10:01:05.038041
-./data-processed/GT-DeepCOVID/2020-05-04-GT-DeepCOVID.csv,2020-05-11 10:01:05.685130
-./data-processed/CU-80contact1x10p/2020-05-07-CU-80contact1x10p.csv,2020-05-11 10:01:09.485998
-./data-processed/CU-80contact1x10p/2020-05-03-CU-80contact1x10p.csv,2020-05-11 10:01:15.164277
-./data-processed/IowaStateLW-STEM15/2020-04-26-IowaStateLW-STEM15.csv,2020-05-11 10:01:17.108968
-./data-processed/JHU_IDD-CovidSPHighDist/2020-05-03-JHU_IDD-CovidSPHighDist.csv,2020-05-11 10:01:17.152291
-./data-processed/NotreDame-FRED/2020-04-27-NotreDame-FRED.csv,2020-05-11 10:01:17.623387
-./data-processed/NotreDame-FRED/2020-05-04-NotreDame-FRED.csv,2020-05-11 10:01:18.293727
-./data-processed/JHU_IDD-CovidSPModDist/2020-05-03-JHU_IDD-CovidSPModDist.csv,2020-05-11 10:01:18.320087
-./data-processed/CU-nointerv/2020-04-12-CU-nointerv.csv,2020-05-11 10:01:22.773942
-./data-processed/CU-nointerv/2020-04-26-CU-nointerv.csv,2020-05-11 10:01:27.170471
-./data-processed/CU-nointerv/2020-04-23-CU-nointerv.csv,2020-05-11 10:01:32.037366
-./data-processed/CU-nointerv/2020-04-19-CU-nointerv.csv,2020-05-11 10:01:37.021769
-./data-processed/CU-nointerv/2020-04-16-CU-nointerv.csv,2020-05-11 10:01:41.644800
-./data-processed/Imperial-ensemble1/2020-04-05-Imperial-ensemble1.csv,2020-05-11 10:01:41.674779
-./data-processed/Imperial-ensemble1/2020-04-26-Imperial-ensemble1.csv,2020-05-11 10:01:41.702661
-./data-processed/Imperial-ensemble1/2020-03-22-Imperial-ensemble1.csv,2020-05-11 10:01:41.731734
-./data-processed/Imperial-ensemble1/2020-04-19-Imperial-ensemble1.csv,2020-05-11 10:01:41.758649
-./data-processed/Imperial-ensemble1/2020-04-12-Imperial-ensemble1.csv,2020-05-11 10:01:41.787095
-./data-processed/Imperial-ensemble1/2020-05-03-Imperial-ensemble1.csv,2020-05-11 10:01:41.813243
-./data-processed/Imperial-ensemble1/2020-03-29-Imperial-ensemble1.csv,2020-05-11 10:01:41.852889
-./data-processed/Imperial-ensemble1/2020-03-15-Imperial-ensemble1.csv,2020-05-11 10:01:41.885712
-./data-processed/CU-80contactw10p/2020-05-07-CU-80contactw10p.csv,2020-05-11 10:01:47.916321
-./data-processed/CU-80contactw10p/2020-05-03-CU-80contactw10p.csv,2020-05-11 10:01:53.245937
-./data-processed/Auquan-SEIR/2020-05-04-Auquan-SEIR.csv,2020-05-11 10:01:53.650424
-./data-processed/LANL-GrowthRate/2020-04-05-LANL-GrowthRate.csv,2020-05-11 10:01:54.540032
-./data-processed/LANL-GrowthRate/2020-04-19-LANL-GrowthRate.csv,2020-05-11 10:02:00.946641
-./data-processed/LANL-GrowthRate/2020-05-03-LANL-GrowthRate.csv,2020-05-11 10:02:07.433583
-./data-processed/LANL-GrowthRate/2020-04-15-LANL-GrowthRate.csv,2020-05-11 10:02:13.721955
-./data-processed/LANL-GrowthRate/2020-04-12-LANL-GrowthRate.csv,2020-05-11 10:02:14.936442
-./data-processed/LANL-GrowthRate/2020-04-08-LANL-GrowthRate.csv,2020-05-11 10:13:44.719037
-./data-processed/LANL-GrowthRate/2020-04-22-LANL-GrowthRate.csv,2020-05-11 10:13:51.366418
-./data-processed/LANL-GrowthRate/2020-04-26-LANL-GrowthRate.csv,2020-05-11 10:13:59.328586
-./data-processed/LANL-GrowthRate/2020-04-29-LANL-GrowthRate.csv,2020-05-11 10:14:06.316268
-./data-processed/CU-60contact/2020-04-26-CU-60contact.csv,2020-05-11 10:14:11.135012
-./data-processed/CU-60contact/2020-04-16-CU-60contact.csv,2020-05-11 10:14:15.614937
-./data-processed/CU-60contact/2020-04-23-CU-60contact.csv,2020-05-11 10:14:21.366070
-./data-processed/CU-60contact/2020-04-19-CU-60contact.csv,2020-05-11 10:14:27.815607
-./data-processed/CU-60contact/2020-04-12-CU-60contact.csv,2020-05-11 10:14:34.631723
-./data-processed/UChicago-CovidIL_40/2020-05-05-UChicago-CovidIL_40.csv,2020-05-11 10:14:34.760859
-./data-processed/CU-80contactw5p/2020-05-07-CU-80contactw5p.csv,2020-05-11 10:14:41.127095
-./data-processed/CU-70contact/2020-04-26-CU-70contact.csv,2020-05-11 10:14:48.562009
-./data-processed/CU-70contact/2020-04-12-CU-70contact.csv,2020-05-11 10:14:54.460381
-./data-processed/CU-70contact/2020-04-19-CU-70contact.csv,2020-05-11 10:15:01.661758
-./data-processed/CU-70contact/2020-04-23-CU-70contact.csv,2020-05-11 10:15:09.684742
-./data-processed/CU-70contact/2020-04-16-CU-70contact.csv,2020-05-11 10:15:15.646162
-./data-processed/UT-Mobility/2020-04-20-UT-Mobility.csv,2020-05-11 10:15:17.404701
-./data-processed/UT-Mobility/2020-04-27-UT-Mobility.csv,2020-05-11 10:15:19.258440
-./data-processed/UT-Mobility/2020-05-04-UT-Mobility.csv,2020-05-11 10:15:27.187215
-./data-processed/Quantori-Multiagents/2020-05-08-Quantori-Multiagents.csv,2020-05-11 10:15:27.210262
-./data-processed/JHU_IDD-CovidSP/2020-04-24-JHU_IDD-CovidSP.csv,2020-05-11 10:15:27.310987
-./data-processed/UCLA-SuEIR/2020-05-01-UCLA-SuEIR.csv,2020-05-11 10:15:36.180749
-./data-processed/YYG-ParamSearch/2020-04-13-YYG-ParamSearch.csv,2020-05-11 10:15:38.736889
-./data-processed/YYG-ParamSearch/2020-05-04-YYG-ParamSearch.csv,2020-05-11 10:15:47.510513
-./data-processed/YYG-ParamSearch/2020-04-20-YYG-ParamSearch.csv,2020-05-11 10:15:49.588664
-./data-processed/YYG-ParamSearch/2020-04-27-YYG-ParamSearch.csv,2020-05-11 10:15:51.636262
-./data-processed/Geneva-DeterministicGrowth/2020-05-04-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.652578
-./data-processed/Geneva-DeterministicGrowth/2020-05-02-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.664935
-./data-processed/Geneva-DeterministicGrowth/2020-04-16-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.675981
-./data-processed/Geneva-DeterministicGrowth/2020-04-27-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.687311
-./data-processed/Geneva-DeterministicGrowth/2020-04-21-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.699361
-./data-processed/Geneva-DeterministicGrowth/2020-05-03-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.716338
-./data-processed/Geneva-DeterministicGrowth/2020-04-17-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.734895
-./data-processed/Geneva-DeterministicGrowth/2020-05-05-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.749353
-./data-processed/Geneva-DeterministicGrowth/2020-04-20-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.773551
-./data-processed/Geneva-DeterministicGrowth/2020-05-06-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.797302
-./data-processed/Geneva-DeterministicGrowth/2020-04-18-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.810298
-./data-processed/Geneva-DeterministicGrowth/2020-04-25-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.821985
-./data-processed/Geneva-DeterministicGrowth/2020-04-23-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.834169
-./data-processed/Geneva-DeterministicGrowth/2020-04-30-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.846181
-./data-processed/Geneva-DeterministicGrowth/2020-04-29-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.860478
-./data-processed/Geneva-DeterministicGrowth/2020-04-15-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.878388
-./data-processed/Geneva-DeterministicGrowth/2020-05-01-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.894002
-./data-processed/Geneva-DeterministicGrowth/2020-04-19-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.905087
-./data-processed/Geneva-DeterministicGrowth/2020-04-22-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.920167
-./data-processed/Geneva-DeterministicGrowth/2020-04-24-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.930107
-./data-processed/Geneva-DeterministicGrowth/2020-04-28-Geneva-DeterministicGrowth.csv,2020-05-11 10:15:51.942167
-./data-processed/CU-80contact1x5p/2020-05-07-CU-80contact1x5p.csv,2020-05-11 10:15:59.080864
-./data-processed/UMass-ExpertCrowd/2020-04-13-UMass-ExpertCrowd.csv,2020-05-11 10:15:59.092005
-./data-processed/UMass-ExpertCrowd/2020-04-20-UMass-ExpertCrowd.csv,2020-05-11 10:15:59.099968
-./data-processed/COVIDhub-ensemble/2020-04-13-COVIDhub-ensemble.csv,2020-05-11 10:15:59.184558
-./data-processed/COVIDhub-ensemble/2020-04-27-COVIDhub-ensemble.csv,2020-05-11 10:15:59.603755
-./data-processed/COVIDhub-ensemble/2020-05-04-COVIDhub-ensemble.csv,2020-05-11 10:16:00.052771
-./data-processed/MOBS_NEU-GLEAM_COVID/2020-04-27-MOBS_NEU-GLEAM_COVID.csv,2020-05-11 10:16:09.322117
-./data-processed/MOBS_NEU-GLEAM_COVID/2020-04-20-MOBS_NEU-GLEAM_COVID.csv,2020-05-11 10:16:09.839311
-./data-processed/MOBS_NEU-GLEAM_COVID/2020-04-13-MOBS_NEU-GLEAM_COVID.csv,2020-05-11 10:16:10.032117
-./data-processed/MOBS_NEU-GLEAM_COVID/2020-05-04-MOBS_NEU-GLEAM_COVID.csv,2020-05-11 10:16:16.612088
-./data-processed/IowaStateLW-STEM10/2020-04-26-IowaStateLW-STEM10.csv,2020-05-11 10:16:17.905264
-./data-processed/IowaStateLW-STEM10/2020-05-01-IowaStateLW-STEM10.csv,2020-05-11 10:16:19.289850
-./data-processed/UChicago-CovidIL_100/2020-05-05-UChicago-CovidIL_100.csv,2020-05-11 10:16:19.406362
-./data-processed/UChicago-CovidIL_60/2020-05-05-UChicago-CovidIL_60.csv,2020-05-11 10:16:19.524977
-./data-processed/UMass-MechBayes/2020-04-26-UMass-MechBayes.csv,2020-05-11 10:16:19.828070
-./data-processed/UMass-MechBayes/2020-05-03-UMass-MechBayes.csv,2020-05-11 10:16:20.103073
-./data-processed/UChicago-CovidIL_80/2020-05-05-UChicago-CovidIL_80.csv,2020-05-11 10:16:20.222159
-./data-processed/CU-80contact/2020-04-19-CU-80contact.csv,2020-05-11 10:16:27.731810
-./data-processed/CU-80contact/2020-04-12-CU-80contact.csv,2020-05-11 10:16:32.806508
-./data-processed/CU-80contact/2020-04-16-CU-80contact.csv,2020-05-11 10:16:37.821135
-./data-processed/CU-80contact/2020-04-23-CU-80contact.csv,2020-05-11 10:16:43.922395
-./data-processed/CU-80contact/2020-05-07-CU-80contact.csv,2020-05-11 10:16:50.154849
-./data-processed/CU-80contact/2020-04-26-CU-80contact.csv,2020-05-11 10:16:54.786937
-./data-processed/CU-80contact/2020-05-03-CU-80contact.csv,2020-05-11 10:16:59.380806
-./data-processed/IHME-CurveFit/2020-03-31-IHME-CurveFit.csv,2020-05-11 10:17:02.561431
-./data-processed/IHME-CurveFit/2020-04-12-IHME-CurveFit.csv,2020-05-11 10:17:05.399501
-./data-processed/IHME-CurveFit/2020-04-16-IHME-CurveFit.csv,2020-05-11 10:17:08.127043
-./data-processed/IHME-CurveFit/2020-03-30-IHME-CurveFit.csv,2020-05-11 10:17:11.284131
-./data-processed/IHME-CurveFit/2020-03-29-IHME-CurveFit.csv,2020-05-11 10:17:14.485599
-./data-processed/IHME-CurveFit/2020-04-27-IHME-CurveFit.csv,2020-05-11 10:17:16.851476
-./data-processed/IHME-CurveFit/2020-04-21-IHME-CurveFit.csv,2020-05-11 10:17:19.473770
-./data-processed/IHME-CurveFit/2020-04-09-IHME-CurveFit.csv,2020-05-11 10:17:22.379775
-./data-processed/IHME-CurveFit/2020-04-20-IHME-CurveFit.csv,2020-05-11 10:17:24.937204
-./data-processed/IHME-CurveFit/2020-04-01-IHME-CurveFit.csv,2020-05-11 10:17:28.035021
-./data-processed/IHME-CurveFit/2020-03-27-IHME-CurveFit.csv,2020-05-11 10:17:31.246640
-./data-processed/IHME-CurveFit/2020-04-05-IHME-CurveFit.csv,2020-05-11 10:17:34.260764
-./data-processed/IHME-CurveFit/2020-04-28-IHME-CurveFit.csv,2020-05-11 10:17:36.285033
-./data-processed/IHME-CurveFit/2020-05-04-IHME-CurveFit.csv,2020-05-11 10:17:39.048173
-./data-processed/IHME-CurveFit/2020-04-07-IHME-CurveFit.csv,2020-05-11 10:17:41.920121
-./data-processed/Imperial-ensemble2/2020-04-05-Imperial-ensemble2.csv,2020-05-11 10:17:41.950449
-./data-processed/Imperial-ensemble2/2020-03-22-Imperial-ensemble2.csv,2020-05-11 10:17:41.974071
-./data-processed/Imperial-ensemble2/2020-04-26-Imperial-ensemble2.csv,2020-05-11 10:17:41.998608
-./data-processed/Imperial-ensemble2/2020-04-19-Imperial-ensemble2.csv,2020-05-11 10:17:42.021978
-./data-processed/Imperial-ensemble2/2020-04-12-Imperial-ensemble2.csv,2020-05-11 10:17:42.046344
-./data-processed/Imperial-ensemble2/2020-03-15-Imperial-ensemble2.csv,2020-05-11 10:17:42.070360
-./data-processed/Imperial-ensemble2/2020-05-03-Imperial-ensemble2.csv,2020-05-11 10:17:42.095516
-./data-processed/Imperial-ensemble2/2020-03-29-Imperial-ensemble2.csv,2020-05-11 10:17:42.119199
-./data-processed/MIT_CovidAnalytics-DELPHI/2020-05-04-MIT_CovidAnalytics-DELPHI.csv,2020-05-11 10:17:44.824923
-./data-processed/MIT_CovidAnalytics-DELPHI/2020-04-22-MIT_CovidAnalytics-DELPHI.csv,2020-05-11 10:17:47.628022
-./data-processed/MIT_CovidAnalytics-DELPHI/2020-04-30-MIT_CovidAnalytics-DELPHI.csv,2020-05-11 10:17:50.478789
-./data-processed/MIT_CovidAnalytics-DELPHI/2020-04-27-MIT_CovidAnalytics-DELPHI.csv,2020-05-11 10:17:53.530502
+file_path,validation_date,last_edit_date
+./data-processed/LANL-GrowthRateHosp/2020-05-03-LANL-GrowthRateHosp.csv,2020-05-11 15:50:02.905032,2020-05-05 14:43:36
+./data-processed/LANL-GrowthRateHosp/2020-05-06-LANL-GrowthRateHosp.csv,2020-05-11 15:50:05.324241,2020-05-11 09:05:45
+./data-processed/CovidActNow-SEIR_CAN/2020-05-09-CovidActNow-SEIR_CAN.csv,2020-05-11 15:50:07.692815,2020-05-11 15:36:41
+./data-processed/GT-DeepCOVID/2020-05-04-GT-DeepCOVID.csv,2020-05-11 15:50:08.560417,2020-05-05 14:43:34
+./data-processed/CU-80contact1x10p/2020-05-10-CU-80contact1x10p.csv,2020-05-11 15:50:13.984362,2020-05-11 15:36:41
+./data-processed/CU-80contact1x10p/2020-05-07-CU-80contact1x10p.csv,2020-05-11 15:50:17.888697,2020-05-11 09:05:44
+./data-processed/CU-80contact1x10p/2020-05-03-CU-80contact1x10p.csv,2020-05-11 15:50:21.826718,2020-05-11 09:05:44
+./data-processed/IowaStateLW-STEM15/2020-04-26-IowaStateLW-STEM15.csv,2020-05-11 15:50:22.766151,2020-05-05 14:43:35
+./data-processed/JHU_IDD-CovidSPHighDist/2020-05-03-JHU_IDD-CovidSPHighDist.csv,2020-05-11 15:50:22.796102,2020-05-06 16:18:58
+./data-processed/NotreDame-FRED/2020-04-27-NotreDame-FRED.csv,2020-05-11 15:50:23.374410,2020-05-05 14:43:36
+./data-processed/NotreDame-FRED/2020-05-04-NotreDame-FRED.csv,2020-05-11 15:50:24.204596,2020-05-05 14:43:36
+./data-processed/JHU_IDD-CovidSPModDist/2020-05-03-JHU_IDD-CovidSPModDist.csv,2020-05-11 15:50:24.243112,2020-05-06 16:18:58
+./data-processed/CU-nointerv/2020-04-12-CU-nointerv.csv,2020-05-11 15:50:28.576329,2020-05-05 14:43:34
+./data-processed/CU-nointerv/2020-04-26-CU-nointerv.csv,2020-05-11 15:50:34.362068,2020-05-05 14:43:34
+./data-processed/CU-nointerv/2020-04-23-CU-nointerv.csv,2020-05-11 15:50:38.988712,2020-05-05 14:43:34
+./data-processed/CU-nointerv/2020-04-19-CU-nointerv.csv,2020-05-11 15:50:43.232043,2020-05-05 14:43:34
+./data-processed/CU-nointerv/2020-04-16-CU-nointerv.csv,2020-05-11 15:50:47.632272,2020-05-05 14:43:34
+./data-processed/Imperial-ensemble1/2020-04-05-Imperial-ensemble1.csv,2020-05-11 15:50:47.665826,2020-05-05 14:43:35
+./data-processed/Imperial-ensemble1/2020-04-26-Imperial-ensemble1.csv,2020-05-11 15:50:47.693422,2020-05-05 14:43:35
+./data-processed/Imperial-ensemble1/2020-03-22-Imperial-ensemble1.csv,2020-05-11 15:50:47.722008,2020-05-05 14:43:35
+./data-processed/Imperial-ensemble1/2020-04-19-Imperial-ensemble1.csv,2020-05-11 15:50:47.747604,2020-05-05 14:43:35
+./data-processed/Imperial-ensemble1/2020-04-12-Imperial-ensemble1.csv,2020-05-11 15:50:47.775479,2020-05-05 14:43:35
+./data-processed/Imperial-ensemble1/2020-05-03-Imperial-ensemble1.csv,2020-05-11 15:50:47.806680,2020-05-05 14:43:35
+./data-processed/Imperial-ensemble1/2020-03-29-Imperial-ensemble1.csv,2020-05-11 15:50:47.834330,2020-05-05 14:43:35
+./data-processed/Imperial-ensemble1/2020-03-15-Imperial-ensemble1.csv,2020-05-11 15:50:47.859694,2020-05-05 14:43:35
+./data-processed/CU-80contactw10p/2020-05-10-CU-80contactw10p.csv,2020-05-11 15:50:55.777482,2020-05-11 15:36:41
+./data-processed/CU-80contactw10p/2020-05-07-CU-80contactw10p.csv,2020-05-11 15:50:59.732986,2020-05-11 09:05:45
+./data-processed/CU-80contactw10p/2020-05-03-CU-80contactw10p.csv,2020-05-11 15:51:03.837685,2020-05-11 09:05:45
+./data-processed/Auquan-SEIR/2020-05-04-Auquan-SEIR.csv,2020-05-11 15:51:04.177171,2020-05-05 14:43:33
+./data-processed/LANL-GrowthRate/2020-04-05-LANL-GrowthRate.csv,2020-05-11 15:51:04.906753,2020-05-05 14:43:35
+./data-processed/LANL-GrowthRate/2020-04-19-LANL-GrowthRate.csv,2020-05-11 15:51:10.984884,2020-05-05 14:43:35
+./data-processed/LANL-GrowthRate/2020-05-03-LANL-GrowthRate.csv,2020-05-11 15:51:17.718882,2020-05-05 14:43:36
+./data-processed/LANL-GrowthRate/2020-04-15-LANL-GrowthRate.csv,2020-05-11 15:51:24.245470,2020-05-05 14:43:35
+./data-processed/LANL-GrowthRate/2020-04-12-LANL-GrowthRate.csv,2020-05-11 15:51:25.353002,2020-05-05 14:43:35
+./data-processed/LANL-GrowthRate/2020-05-07-LANL-GrowthRate.csv,2020-05-11 15:51:37.960695,2020-05-11 15:36:41
+./data-processed/LANL-GrowthRate/2020-04-08-LANL-GrowthRate.csv,2020-05-11 15:51:39.859060,2020-05-06 15:21:27
+./data-processed/LANL-GrowthRate/2020-04-22-LANL-GrowthRate.csv,2020-05-11 15:51:49.090454,2020-05-05 14:43:35
+./data-processed/LANL-GrowthRate/2020-04-26-LANL-GrowthRate.csv,2020-05-11 15:51:56.706390,2020-05-05 14:43:35
+./data-processed/LANL-GrowthRate/2020-04-29-LANL-GrowthRate.csv,2020-05-11 15:52:04.420318,2020-05-05 14:43:35
+./data-processed/CU-60contact/2020-04-26-CU-60contact.csv,2020-05-11 15:52:09.784962,2020-05-05 14:43:33
+./data-processed/CU-60contact/2020-04-16-CU-60contact.csv,2020-05-11 15:52:15.960962,2020-05-05 14:43:33
+./data-processed/CU-60contact/2020-04-23-CU-60contact.csv,2020-05-11 15:52:22.718150,2020-05-05 14:43:33
+./data-processed/CU-60contact/2020-04-19-CU-60contact.csv,2020-05-11 15:52:27.780622,2020-05-05 14:43:33
+./data-processed/CU-60contact/2020-04-12-CU-60contact.csv,2020-05-11 15:52:32.521601,2020-05-05 14:43:33
+./data-processed/UChicago-CovidIL_40/2020-05-05-UChicago-CovidIL_40.csv,2020-05-11 15:52:32.640543,2020-05-07 15:19:02
+./data-processed/UChicago-CovidIL_40/2020-05-11-UChicago-CovidIL_40.csv,2020-05-11 15:52:32.741951,2020-05-11 15:36:41
+./data-processed/CU-80contactw5p/2020-05-07-CU-80contactw5p.csv,2020-05-11 15:52:37.426528,2020-05-11 09:05:45
+./data-processed/CU-80contactw5p/2020-05-10-CU-80contactw5p.csv,2020-05-11 15:52:44.511917,2020-05-11 15:36:41
+./data-processed/CU-70contact/2020-04-26-CU-70contact.csv,2020-05-11 15:52:49.378471,2020-05-05 14:43:34
+./data-processed/CU-70contact/2020-04-12-CU-70contact.csv,2020-05-11 15:52:54.449820,2020-05-05 14:43:33
+./data-processed/CU-70contact/2020-04-19-CU-70contact.csv,2020-05-11 15:52:59.191368,2020-05-05 14:43:34
+./data-processed/CU-70contact/2020-04-23-CU-70contact.csv,2020-05-11 15:53:03.794839,2020-05-05 14:43:34
+./data-processed/CU-70contact/2020-04-16-CU-70contact.csv,2020-05-11 15:53:08.473841,2020-05-05 14:43:33
+./data-processed/UT-Mobility/2020-04-20-UT-Mobility.csv,2020-05-11 15:53:09.968328,2020-05-06 15:21:27
+./data-processed/UT-Mobility/2020-04-27-UT-Mobility.csv,2020-05-11 15:53:11.485614,2020-05-05 14:43:36
+./data-processed/UT-Mobility/2020-05-11-UT-Mobility.csv,2020-05-11 15:53:14.424010,2020-05-11 15:36:41
+./data-processed/UT-Mobility/2020-05-04-UT-Mobility.csv,2020-05-11 15:53:22.267385,2020-05-05 14:43:36
+./data-processed/Quantori-Multiagents/2020-05-08-Quantori-Multiagents.csv,2020-05-11 15:53:22.288559,2020-05-11 09:05:45
+./data-processed/JHU_IDD-CovidSP/2020-04-24-JHU_IDD-CovidSP.csv,2020-05-11 15:53:22.377758,2020-05-05 14:43:35
+./data-processed/UCLA-SuEIR/2020-05-01-UCLA-SuEIR.csv,2020-05-11 15:53:28.589411,2020-05-05 14:43:36
+./data-processed/UCLA-SuEIR/2020-05-10-UCLA-SuEIR.csv,2020-05-11 15:53:34.647590,2020-05-11 15:36:41
+./data-processed/YYG-ParamSearch/2020-04-13-YYG-ParamSearch.csv,2020-05-11 15:53:36.249302,2020-05-05 14:43:36
+./data-processed/YYG-ParamSearch/2020-05-04-YYG-ParamSearch.csv,2020-05-11 15:53:43.484015,2020-05-05 14:43:37
+./data-processed/YYG-ParamSearch/2020-04-20-YYG-ParamSearch.csv,2020-05-11 15:53:45.174985,2020-05-05 14:43:37
+./data-processed/YYG-ParamSearch/2020-04-27-YYG-ParamSearch.csv,2020-05-11 15:53:46.786925,2020-05-05 14:43:37
+./data-processed/Geneva-DeterministicGrowth/2020-05-04-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:46.804543,2020-05-11 09:05:45
+./data-processed/Geneva-DeterministicGrowth/2020-05-02-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:46.817060,2020-05-05 14:43:34
+./data-processed/Geneva-DeterministicGrowth/2020-04-16-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:46.830195,2020-05-05 14:43:34
+./data-processed/Geneva-DeterministicGrowth/2020-04-27-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:46.843896,2020-05-05 14:43:34
+./data-processed/Geneva-DeterministicGrowth/2020-04-21-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:46.856442,2020-05-05 14:43:34
+./data-processed/Geneva-DeterministicGrowth/2020-05-03-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:46.871133,2020-05-05 14:43:34
+./data-processed/Geneva-DeterministicGrowth/2020-04-17-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:46.886823,2020-05-05 14:43:34
+./data-processed/Geneva-DeterministicGrowth/2020-05-05-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:46.902234,2020-05-11 09:05:45
+./data-processed/Geneva-DeterministicGrowth/2020-04-20-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:46.919991,2020-05-05 14:43:34
+./data-processed/Geneva-DeterministicGrowth/2020-05-06-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:46.937952,2020-05-11 09:05:45
+./data-processed/Geneva-DeterministicGrowth/2020-04-18-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:46.950600,2020-05-05 14:43:34
+./data-processed/Geneva-DeterministicGrowth/2020-04-25-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:46.966578,2020-05-05 14:43:34
+./data-processed/Geneva-DeterministicGrowth/2020-04-23-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:46.984025,2020-05-05 14:43:34
+./data-processed/Geneva-DeterministicGrowth/2020-04-30-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:46.996305,2020-05-05 14:43:34
+./data-processed/Geneva-DeterministicGrowth/2020-04-29-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:47.009469,2020-05-05 14:43:34
+./data-processed/Geneva-DeterministicGrowth/2020-04-15-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:47.029829,2020-05-05 14:43:34
+./data-processed/Geneva-DeterministicGrowth/2020-05-01-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:47.044136,2020-05-05 14:43:34
+./data-processed/Geneva-DeterministicGrowth/2020-04-19-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:47.066027,2020-05-05 14:43:34
+./data-processed/Geneva-DeterministicGrowth/2020-04-22-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:47.087579,2020-05-05 14:43:34
+./data-processed/Geneva-DeterministicGrowth/2020-04-24-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:47.112761,2020-05-05 14:43:34
+./data-processed/Geneva-DeterministicGrowth/2020-04-28-Geneva-DeterministicGrowth.csv,2020-05-11 15:53:47.142278,2020-05-05 14:43:34
+./data-processed/CU-80contact1x5p/2020-05-10-CU-80contact1x5p.csv,2020-05-11 15:53:53.630104,2020-05-11 15:36:41
+./data-processed/CU-80contact1x5p/2020-05-07-CU-80contact1x5p.csv,2020-05-11 15:53:57.861315,2020-05-11 09:05:44
+./data-processed/UMass-ExpertCrowd/2020-04-13-UMass-ExpertCrowd.csv,2020-05-11 15:53:57.881917,2020-05-05 14:43:36
+./data-processed/UMass-ExpertCrowd/2020-04-20-UMass-ExpertCrowd.csv,2020-05-11 15:53:57.893529,2020-05-05 14:43:36
+./data-processed/COVIDhub-ensemble/2020-04-13-COVIDhub-ensemble.csv,2020-05-11 15:53:57.976565,2020-05-05 14:43:33
+./data-processed/COVIDhub-ensemble/2020-04-27-COVIDhub-ensemble.csv,2020-05-11 15:53:58.292873,2020-05-05 14:43:33
+./data-processed/MOBS_NEU-GLEAM_COVID/2020-04-27-MOBS_NEU-GLEAM_COVID.csv,2020-05-11 15:54:01.835633,2020-05-05 14:43:36
+./data-processed/MOBS_NEU-GLEAM_COVID/2020-04-20-MOBS_NEU-GLEAM_COVID.csv,2020-05-11 15:54:02.223039,2020-05-05 14:43:36
+./data-processed/MOBS_NEU-GLEAM_COVID/2020-04-13-MOBS_NEU-GLEAM_COVID.csv,2020-05-11 15:54:02.374207,2020-05-05 14:43:36
+./data-processed/MOBS_NEU-GLEAM_COVID/2020-05-04-MOBS_NEU-GLEAM_COVID.csv,2020-05-11 15:54:05.904763,2020-05-05 14:43:36
+./data-processed/IowaStateLW-STEM10/2020-04-26-IowaStateLW-STEM10.csv,2020-05-11 15:54:06.934542,2020-05-05 14:43:35
+./data-processed/IowaStateLW-STEM10/2020-05-01-IowaStateLW-STEM10.csv,2020-05-11 15:54:07.966418,2020-05-05 14:34:21
+./data-processed/UChicago-CovidIL_100/2020-05-05-UChicago-CovidIL_100.csv,2020-05-11 15:54:08.073647,2020-05-07 15:19:02
+./data-processed/UChicago-CovidIL_100/2020-05-11-UChicago-CovidIL_100.csv,2020-05-11 15:54:08.167743,2020-05-11 15:36:41
+./data-processed/UChicago-CovidIL_60/2020-05-11-UChicago-CovidIL_60.csv,2020-05-11 15:54:08.279566,2020-05-11 15:36:41
+./data-processed/UChicago-CovidIL_60/2020-05-05-UChicago-CovidIL_60.csv,2020-05-11 15:54:08.387521,2020-05-07 15:19:02
+./data-processed/UMass-MechBayes/2020-04-26-UMass-MechBayes.csv,2020-05-11 15:54:08.642340,2020-05-05 14:43:36
+./data-processed/UMass-MechBayes/2020-05-03-UMass-MechBayes.csv,2020-05-11 15:54:08.893739,2020-05-05 14:43:36
+./data-processed/UChicago-CovidIL_80/2020-05-05-UChicago-CovidIL_80.csv,2020-05-11 15:54:08.998523,2020-05-07 15:19:02
+./data-processed/UChicago-CovidIL_80/2020-05-11-UChicago-CovidIL_80.csv,2020-05-11 15:54:09.090794,2020-05-11 15:36:41
+./data-processed/CU-80contact/2020-04-19-CU-80contact.csv,2020-05-11 15:54:13.372291,2020-05-05 14:43:34
+./data-processed/CU-80contact/2020-04-12-CU-80contact.csv,2020-05-11 15:54:17.703934,2020-05-05 14:43:34
+./data-processed/CU-80contact/2020-04-16-CU-80contact.csv,2020-05-11 15:54:21.885571,2020-05-05 14:43:34
+./data-processed/CU-80contact/2020-04-23-CU-80contact.csv,2020-05-11 15:54:26.069800,2020-05-05 14:43:34
+./data-processed/CU-80contact/2020-05-07-CU-80contact.csv,2020-05-11 15:54:30.267391,2020-05-11 09:05:44
+./data-processed/CU-80contact/2020-04-26-CU-80contact.csv,2020-05-11 15:54:34.542175,2020-05-05 14:43:34
+./data-processed/CU-80contact/2020-05-03-CU-80contact.csv,2020-05-11 15:54:38.871006,2020-05-05 14:43:34
+./data-processed/IHME-CurveFit/2020-03-31-IHME-CurveFit.csv,2020-05-11 15:54:41.838794,2020-05-05 14:43:34
+./data-processed/IHME-CurveFit/2020-04-12-IHME-CurveFit.csv,2020-05-11 15:54:44.503780,2020-05-05 14:43:35
+./data-processed/IHME-CurveFit/2020-04-16-IHME-CurveFit.csv,2020-05-11 15:54:47.076016,2020-05-05 14:43:35
+./data-processed/IHME-CurveFit/2020-03-30-IHME-CurveFit.csv,2020-05-11 15:54:50.059876,2020-05-05 14:43:34
+./data-processed/IHME-CurveFit/2020-03-29-IHME-CurveFit.csv,2020-05-11 15:54:53.070722,2020-05-05 14:43:34
+./data-processed/IHME-CurveFit/2020-04-27-IHME-CurveFit.csv,2020-05-11 15:54:55.301250,2020-05-05 14:43:35
+./data-processed/IHME-CurveFit/2020-04-21-IHME-CurveFit.csv,2020-05-11 15:54:57.827652,2020-05-05 14:43:35
+./data-processed/IHME-CurveFit/2020-04-09-IHME-CurveFit.csv,2020-05-11 15:55:00.629459,2020-05-05 14:43:35
+./data-processed/IHME-CurveFit/2020-04-20-IHME-CurveFit.csv,2020-05-11 15:55:03.206576,2020-05-05 14:43:35
+./data-processed/IHME-CurveFit/2020-04-01-IHME-CurveFit.csv,2020-05-11 15:55:06.195080,2020-05-05 14:43:34
+./data-processed/IHME-CurveFit/2020-03-27-IHME-CurveFit.csv,2020-05-11 15:55:09.281272,2020-05-05 14:43:34
+./data-processed/IHME-CurveFit/2020-04-05-IHME-CurveFit.csv,2020-05-11 15:55:12.119277,2020-05-05 14:43:35
+./data-processed/IHME-CurveFit/2020-04-28-IHME-CurveFit.csv,2020-05-11 15:55:14.063636,2020-05-05 14:43:35
+./data-processed/IHME-CurveFit/2020-05-04-IHME-CurveFit.csv,2020-05-11 15:55:16.713277,2020-05-05 14:43:35
+./data-processed/IHME-CurveFit/2020-04-07-IHME-CurveFit.csv,2020-05-11 15:55:19.476195,2020-05-05 14:43:35
+./data-processed/Imperial-ensemble2/2020-04-05-Imperial-ensemble2.csv,2020-05-11 15:55:19.508615,2020-05-05 14:43:35
+./data-processed/Imperial-ensemble2/2020-03-22-Imperial-ensemble2.csv,2020-05-11 15:55:19.533416,2020-05-05 14:43:35
+./data-processed/Imperial-ensemble2/2020-04-26-Imperial-ensemble2.csv,2020-05-11 15:55:19.563875,2020-05-05 14:43:35
+./data-processed/Imperial-ensemble2/2020-04-19-Imperial-ensemble2.csv,2020-05-11 15:55:19.590204,2020-05-05 14:43:35
+./data-processed/Imperial-ensemble2/2020-04-12-Imperial-ensemble2.csv,2020-05-11 15:55:19.621774,2020-05-05 14:43:35
+./data-processed/Imperial-ensemble2/2020-03-15-Imperial-ensemble2.csv,2020-05-11 15:55:19.648903,2020-05-05 14:43:35
+./data-processed/Imperial-ensemble2/2020-05-03-Imperial-ensemble2.csv,2020-05-11 15:55:19.677110,2020-05-05 14:43:35
+./data-processed/Imperial-ensemble2/2020-03-29-Imperial-ensemble2.csv,2020-05-11 15:55:19.705581,2020-05-05 14:43:35
+./data-processed/MIT_CovidAnalytics-DELPHI/2020-05-04-MIT_CovidAnalytics-DELPHI.csv,2020-05-11 15:55:22.336467,2020-05-05 14:43:36
+./data-processed/MIT_CovidAnalytics-DELPHI/2020-04-22-MIT_CovidAnalytics-DELPHI.csv,2020-05-11 15:55:25.012911,2020-05-06 15:21:27
+./data-processed/MIT_CovidAnalytics-DELPHI/2020-04-30-MIT_CovidAnalytics-DELPHI.csv,2020-05-11 15:55:27.733128,2020-05-06 15:21:27
+./data-processed/MIT_CovidAnalytics-DELPHI/2020-04-27-MIT_CovidAnalytics-DELPHI.csv,2020-05-11 15:55:30.767154,2020-05-06 15:21:27
+./data-processed/CU-select/2020-05-10-CU-select.csv,2020-05-11 15:55:37.179437,2020-05-11 15:36:41
