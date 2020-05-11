@@ -43,13 +43,20 @@ if [[ "$TRAVIS_COMMIT_MESSAGE" == *"update data"* ]]; then
    bash ./travis/pull-data.sh
 fi
 
+if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then 
+   echo "NOT PULL REQUEST" 
+   echo "replace validated files"
+   #cp ./code/validation/locally_validated_files.csv ./code/validation/validated_files.csv
+
+   echo "Merge detected.. push to github"
+   #bash ./travis/push.sh
+fi
+
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
    echo "Merge detected.. push to github"
    bash ./travis/push.sh
-   echo "Upload forecasts to Zoltar"
+   echo "Upload forecasts to Zoltar "
    bash ./travis/upload-to-zoltar.sh
-   echo "replace validated files"
-   cp ./code/validation/locally_validated_files.csv ./code/validation/validated_files.csv 
 fi
 
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"trigger build"* ]]; then
