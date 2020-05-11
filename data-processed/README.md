@@ -202,7 +202,7 @@ visualization and in ensemble construction.
 
 #### `quantile`
 
-Values in the `quantile` column are either missing (if `type` is "point") or 
+Values in the `quantile` column are either "NA" (if `type` is "point") or 
 a quantile in the format
 
     0.###
