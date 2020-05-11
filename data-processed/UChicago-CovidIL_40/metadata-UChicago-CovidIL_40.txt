@@ -30,16 +30,19 @@ methods: >-
 methods_long: >-
     The model is age-structured to capture both age-specific contact patterns and age-specific differences in the biological dynamics, such as the probability of asymptomatic infection. Each model compartment is sub-divided into nine different age categories. 
     To model the state of Illinois, we divide the state into 3 regions based on similarities in epidemic dynamics. We infer a common statewide pre-intervention transmission rate, and a separate post-intervention transmission rate for each of the three regions. We also infer a region-specific initial number of infected individuals. Other model parameters are informed by Illinois-specific data or best estimates from existing literature.
-    We fit the model to incident in-hospital deaths and confirmed COVID-19 ICU cases prior to April 30, 2020.  
+    We fit the model to incident in-hospital deaths and confirmed COVID-19 ICU cases prior to May 8, 2020.  
     For inference, we use maximum likelihood inference via sequential Monte Carlo for partially observed Markov process models (POMP). 	
     We assume that hospitalized deaths are reported with probability 0.8075. Because we do not know what might cause underreporting of non-hospitalized deaths, our simulations integrate over that uncertainty by assuming that the reporting rate for non-hospitalized deaths is uniformly distributed from 0.25 to 0.75.
     The model can be adapted to investigate different types of interventions. 
     We currently model shelter-in-place as a reduction in the overall transmission rate, which is shared by all infected individuals, and reductions in age- and location-specific contact rates.
     
     To model the relaxing of shelter-in-place interventions, we project four different scenarios.
-    1) The inferred post-intervention transmission rate remains unchanged. We assume that this is maximum reduction in transmission and call this model CovidIL_100. At our current estimates, this corresponds to a 77% reduction in pre-intervention transmission.
-    2) Transmission rates increase to 80% of the maximum reduction in transmission according to a logistic function centered on May 15. We call this model CovidIL_80. At our current estimates, this corresopnds to a 72% reduction in pre-intervention transmission.
-    3) Transmission rates increase to 60% of the maximum reduction in transmission according to a logistic function centered on May 15. We call this model CovidIL_60. At our current estimates, this corresopnds to a 67% reduction in pre-intervention transmission.
-    4) Transmission rates increase to 40% of the maximum reduction in transmission according to a logistic function centered on May 15. We call this model CovidIL_40. At our current estimates, this corresopnds to a 63% reduction in pre-intervention transmission.
+    1) The inferred post-intervention transmission rate remains unchanged. We assume that this is maximum reduction in transmission and call this model CovidIL_100. At our current estimates, this corresponds to a 78% reduction in pre-intervention transmission.
+    2) Transmission rates increase to 80% of the maximum reduction in transmission according to a logistic function centered on May 29. We call this model CovidIL_80. At our current estimates, this corresopnds to a 74% reduction in pre-intervention transmission.
+    3) Transmission rates increase to 60% of the maximum reduction in transmission according to a logistic function centered on May 29. We call this model CovidIL_60. At our current estimates, this corresopnds to a 69% reduction in pre-intervention transmission.
+    4) Transmission rates increase to 40% of the maximum reduction in transmission according to a logistic function centered on May 29. We call this model CovidIL_40. At our current estimates, this corresopnds to a 65% reduction in pre-intervention transmission.
+
+    Changelog:
+    2020-05-11: Changed date of transmission increase from May 15 to May 29; added non-hospitalized deaths to process model instead of calculating post-hoc; switched from statewide to region-specific, symmetric contact matrices; fitted with data through May 8, 2020. 
 
     Please see our repository for more information on model structure, parameter values, and caveats.
