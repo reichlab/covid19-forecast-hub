@@ -48,7 +48,7 @@ if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
    cp ./code/validation/locally_validated_files.csv ./code/validation/validated_files.csv 
    echo "Merge detected.. push to github"
    bash ./travis/push.sh
-   echo "Upload forecasts to Zoltar"
+   echo "Upload forecasts to Zoltar "
    bash ./travis/upload-to-zoltar.sh
 fi
 
