@@ -1,0 +1,30 @@
+.control-btns {
+  background-color: $white;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+
+  .btn {
+    @include btn();
+    @include shadow();
+    @include border(rgba($accent, 0.5));
+    color: $accent;
+    padding: 2px 6px;
+    margin-bottom: 5px;
+    font-size: 11px;
+
+    i::before {
+      margin: 0;
+    }
+
+    &.active {
+      background-color: $accent;
+      color: $white;
+    }
+
+    &:hover {
+      background-color: $accent;
+      color: $white;
+    }
+  }
+}

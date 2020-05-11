@@ -1,0 +1,106 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+
+  "definitions": {
+    "pred": {
+      "type": "object",
+      "description": "Prediction for season onset",
+      "properties": {
+        "point": {
+          "description": "Point value of the prediction",
+          "type": "number"
+        },
+        "high": {
+          "description": "High values for the confidence interval ranges",
+          "type": "array",
+          "items": { "type": "number" }
+        },
+        "low": {
+          "description": "Low values for the confidence interval ranges",
+          "type": "array",
+          "items": { "type": "number" }
+        }
+      },
+      "required": ["point"]
+    }
+  },
+
+  "title": "Model",
+  "description": "A model with data for timeChart",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "Short unique identifier for the model",
+      "type": "string"
+    },
+    "pinned": {
+      "description": "Whether to pin this model in legend",
+      "type": "boolean"
+    },
+    "meta": {
+      "description": "Metadata for the model",
+      "type": "object",
+      "properties": {
+        "description": {
+          "description": "Text with description of the model to show on tooltips",
+          "type": "string"
+        },
+        "name": {
+          "description": "Full name of the model",
+          "type": "string"
+        },
+        "url": {
+          "description": "Url for getting more details about the model",
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": ["description", "name"]
+    },
+    "style": {
+      "description": "Style settings for the model",
+      "type": "object",
+      "properties": {
+        "color": {
+          "description": "Base color for the model, by default this comes from the internal palette",
+          "type": "string"
+        },
+        "point": {
+          "description": "CSS styles for dots in the line",
+          "type": "object"
+        },
+        "area": {
+          "description": "CSS styles for the confidence area",
+          "type": "object"
+        },
+        "line": {
+          "description": "CSS styles for the main line",
+          "type": "object"
+        }
+      }
+    },
+    "predictions": {
+      "description": "Prediction array for each time point",
+      "type": "array",
+      "items": {
+        "description": "Set of predictions for one time point",
+        "type": ["object", "null"],
+        "properties": {
+          "onsetTime": { "$ref": "#/definitions/pred" },
+          "peakTime": { "$ref": "#/definitions/pred" },
+          "peakValue": { "$ref": "#/definitions/pred" },
+          "dataVersionTime": {
+            "description": "Time specifying the data available for that prediction"
+          },
+          "series": {
+            "description": "Time ahead predictions",
+            "type": "array",
+            "items": { "$ref": "#/definitions/pred" }
+          }
+        },
+        "required": ["series"]
+      }
+    }
+  },
+  "required": ["id", "meta", "predictions"]
+}

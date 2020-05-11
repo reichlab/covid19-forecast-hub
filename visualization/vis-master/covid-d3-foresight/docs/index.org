@@ -1,0 +1,801 @@
+#+TITLE: D3-foresight documentation
+
+#+OPTIONS: toc:nil title:nil num:nil html-postamble:nil
+#+OPTIONS: html5-fancy:t
+#+HTML_DOCTYPE: html5
+#+MACRO: js #+HTML_HEAD: <script src="$1"></script>
+#+MACRO: css #+HTML_HEAD: <link rel="stylesheet" href="$1" />
+#+MACRO: badge @@html:<a href="$1" class="image-link"><img src="$2" /></a>@@
+
+{{{js(https://d3js.org/d3.v4.min.js)}}}
+{{{js(https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js)}}}
+{{{js(./assets/d3-foresight.min.js)}}}
+{{{js(./assets/script.js)}}}
+
+{{{css(https://fonts.googleapis.com/css?family=Merriweather:900\,900italic\,300\,300italic)}}}
+{{{css(https://fonts.googleapis.com/css?family=Open+Sans:400\,300\,800)}}}
+{{{css(https://fonts.googleapis.com/css?family=Fira+Mono)}}}
+{{{css(./assets/css/main.css)}}}
+{{{css(./assets/css/overrides.css)}}}
+{{{css(./assets/fontello/fontello.css)}}}
+
+#+HTML: <div class="page-header">
+@@html:   <div class="page-meta small">Document last updated@@ {{{time(%Y-%m-%d %a %H:%M)}}}@@html:</div>@@
+#+HTML:   <h1>D3 <em>Foresight</em></h1>
+#+HTML: </div>
+
+{{{badge(https://travis-ci.org/reichlab/d3-foresight,https://img.shields.io/travis/reichlab/d3-foresight/master.svg?style=for-the-badge)}}}
+{{{badge(https://www.npmjs.com/package/d3-foresight,https://img.shields.io/npm/v/d3-foresight.svg?style=for-the-badge)}}}
+{{{badge(https://www.npmjs.com/package/d3-foresight,https://img.shields.io/npm/l/d3-foresight.svg?style=for-the-badge)}}}
+{{{badge(https://github.com/reichlab/d3-foresight/issues,https://img.shields.io/github/issues/reichlab/d3-foresight.svg?style=for-the-badge)}}}
+
+{{{badge(https://github.com/feross/standard,https://cdn.rawgit.com/feross/standard/master/badge.svg)}}}
+
+D3 Foresight is a [[https://github.com/d3/d3][d3]] based library for visualizing time series forecasts
+interactively. At a /time point/, a general time series model trying to predict a
+single variable series (like temperature) makes forecasts for some time points
+in the future with some uncertainty described by probability distributions.
+Other than these predictions, it might also provide an estimate of /peak/ and some
+/onset/outbreak/ point (as defined by a baseline). The visualizations in this
+library try to cover these cases. See [[http://reichlab.io/flusight][reichlab/flusight]] for a demo.
+
+#+TOC: headlines 2
+
+* Setting up
+:PROPERTIES:
+:CUSTOM_ID: setting-up
+:END:
+
+The library requires [[https://d3js.org/][d3]] and [[https://momentjs.com][momentjs]] as external dependencies. To build
+foresight itself, use ~npm compile~ (for ~./dist/d3-foresight.js~) or ~npm build~ (for
+~./dist/d3-foresight.min.js~). The library is also available on npm as
+[[https://www.npmjs.com/package/d3-foresight][d3-foresight]]. For browser, include these in your html:
+
+#+BEGIN_EXAMPLE
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <script src="./dist/d3-foresight.min.js"></script>
+  ;; Or use the unpkg url
+  <script src="https://unpkg.com/d3-foresight"></script>
+#+END_EXAMPLE
+
+Additionally, a few icons (in the legend) have an icon font dependency. The css
+for that can be added using:
+
+#+BEGIN_EXAMPLE
+<link rel="stylesheet" href="./assets/fontello/fontello.css" />
+#+END_EXAMPLE
+
+#+BEGIN_SRC js :tangle ./assets/script.js :exports none
+  document.addEventListener("DOMContentLoaded", function () {
+#+END_SRC
+
+* TimeChart
+:PROPERTIES:
+:CUSTOM_ID: timechart-section
+:END:
+
+A ~TimeChart~ displays the time series to be predicted and the models'
+predictions. Beyond the very minimal plots involving only model forecasts, it
+can show the following items:
+
+- The actual time series to be predicted.
+- The /observed/ time series. This might be different from the actual series if
+  the truth is revised (e.g. due to reporting delays in the incident count for
+  certain disease).
+- Baseline value for the year/season.
+- History of the series over some past years/seasons.
+- Additional prediction information from models like
+  + Confidence intervals
+  + Peak and onset prediction
+
+#+CAPTION: ~TimeChart~ shows model predictions and the actual time series
+[[file:./timechart.png]]
+
+** Basic plot
+:PROPERTIES:
+:CUSTOM_ID: timechart-basic-plot
+:END:
+In this section, we will create a very basic visualization involving one model
+providing random numbers as forecasts for a year.
+
+*** Configuration
+:PROPERTIES:
+:CUSTOM_ID: timechart-basic-plot-configuration
+:END:
+
+Time in foresight is represented using ~timePoints~ which is an array mapping to
+discrete date/time values. As of now, foresight supports the following three
+types of time points:
+
+1. ~week~
+2. ~mmwr-week~ based on [[https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf][MMWR definitions]]
+3. ~biweek~ denoting a unit of two weeks
+4. ~month~ denoting a month
+
+All points can be represented using either standard JS Date objects, a string
+readable by momentjs (like ~YYYYMMDD~) or using simple objects like shown:
+
+#+BEGIN_SRC js
+  {
+    week: 20, // biweek/month
+    year: 2016
+  }
+#+END_SRC
+
+Lets work on mmwr weeks for the year 2016. Our week choice can be passed to
+foresight charts using a config object which is the following in our case:
+
+#+BEGIN_SRC js :tangle ./assets/script.js
+  let config = {
+    pointType: 'mmwr-week', // Default is week
+    axes: {
+      y: {
+        title: 'Random numbers' // Title for the y axis
+      }
+    }
+  }
+#+END_SRC
+
+*** Data
+:PROPERTIES:
+:CUSTOM_ID: timechart-basic-plot-data
+:END:
+
+At minimum, ~TimeChart~ expects an array of time points and an array of model
+data. The time points in our case go from week 1 to week 52 of 2016 and can be
+represented as:
+
+#+BEGIN_SRC js :tangle ./assets/script.js
+  let timePoints = [...Array(51).keys()].map(w => {
+    return { week: w + 1, year: 2016 }
+  })
+#+END_SRC
+
+At each time point, our model provides predictions for the next 10 time points.
+These predictions are represented in an array of same size as the time points.
+For when the model has no predictions, we put in ~null~.
+
+#+BEGIN_SRC js :tangle ./assets/script.js
+  // Random sequence generator
+  function rseq (n) {
+    let seq = [Math.random()]
+    for (let i = 1; i < n; i++) {
+      seq.push(Math.random() * (1 + seq[i - 1]))
+    }
+    return seq
+  }
+
+  // Predictions look like [{ series: [{ point: 0.5 }, { point: 1.2 } ...] }, ..., null, null]
+  let predictions = timePoints.map(tp => {
+    if (tp.week > 30) {
+      // We only predict upto week 30
+      return null
+    } else {
+      // Provide 10 week ahead predictions
+      return {
+        series: rseq(10).map(r => { return { point: r } })
+      }
+    }
+  })
+#+END_SRC
+
+Finally we put everything together in a single object. Notice the extra metadata
+involved in putting together the values for the model:
+
+#+BEGIN_SRC js :tangle ./assets/script.js
+  let data = {
+    timePoints,
+    models: [
+      {
+        id: 'mod',
+        meta: {
+          name: 'Name',
+          description: 'Model description here',
+          url: 'http://github.com'
+        },
+        pinned: false, // Setting true shows the model in top section of the legend
+                       // In case of absence of `pinned` key (or false), the model
+                       // goes in the bottom section
+        predictions,
+        style: { // Optional parameter for applying custom css on svg elements
+          color: '#4682b4', // Defaults to values from the internal palette
+          point: {
+            // Style for the dots in prediction
+          },
+          area: {
+            // Style for the confidence area (shaded region around the line)
+          },
+          line: {
+            // Style for the main line
+          }
+        }
+      }
+    ]
+  }
+#+END_SRC
+
+*** Plotting
+:PROPERTIES:
+:CUSTOM_ID: timechart-basic-plot-plotting
+:END:
+
+The life cycle of ~TimeChart~ involves the following stages:
+
+1. Initialization
+2. Plotting
+3. Updating
+
+#+BEGIN_SRC js :tangle ./assets/script.js
+  // 1. Initialize
+  // Setup the id of div where we are going to plot
+  // Also pass in config options
+  let timeChart = new d3Foresight.TimeChart('#timechart', config)
+
+  // 2. Plot
+  // Provide the data for the complete year
+  timeChart.plot(data)
+
+  // 3. Update
+  // Move to the given index in the set of timePoints
+  timeChart.update(10)
+  // Or simply use
+  // timeChart.moveForward()
+  // timeChart.moveBackward()
+
+  // Lets also save the timechart object in global namespace
+  window.timeChart = timeChart
+#+END_SRC
+
+#+HTML: <br><br>
+#+HTML: <div id="timechart"></div>
+
+If you are able to see the plot above (which you should be, else file an [[https://github.com/reichlab/d3-foresight/issues][issue]]),
+you should be able to move around by clicking the arrow buttons in legend or
+clicking on the chart itself. These mouse click events can trigger user defined
+functions too. See the section on [[Hooks]] for more description.
+
+** Adding components
+:PROPERTIES:
+:CUSTOM_ID: timechart-adding-components
+:END:
+
+This section builds up on the chart above to add more information
+
+*** Baseline
+:PROPERTIES:
+:CUSTOM_ID: timechart-adding-components-baseline
+:END:
+
+A baseline is a horizontal line specifying some sort of baseline. To plot it,
+pass a ~baseline~ item in data. Optionally, set a label for the baseline by
+providing it in the ~config~.
+
+#+BEGIN_SRC js :tangle ./assets/script.js :exports none
+  let copy = it => Object.assign({}, it)
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max))
+  }
+#+END_SRC
+
+#+BEGIN_SRC js :tangle ./assets/script.js
+  let tcBaseline = new d3Foresight.TimeChart('#tc-baseline', Object.assign(copy(config), {
+    baseline: {
+      text: 'Baseline', // To show multiline text, pass an array of strings,
+      description: 'This is a sample baseline',
+      url: 'https://github.com'
+    }
+  }))
+  tcBaseline.plot(Object.assign(copy(data), {
+    baseline: 0.3
+  }))
+  tcBaseline.update(10)
+#+END_SRC
+
+#+HTML: <br><br>
+#+HTML: <div id="tc-baseline"></div>
+
+*** Actual
+:PROPERTIES:
+:CUSTOM_ID: timechart-adding-components-actual
+:END:
+
+Another important component to show is the actual line that we are trying to
+predict. The ~actual~ series is an array of the same length as the ~timePoints~ and
+can be something like this
+
+#+BEGIN_SRC js :tangle ./assets/script.js
+  // Suppose we have actual data for 20 time steps only. We give null for other points
+  let actual = rseq(20).concat(timePoints.slice(20).map(tp => null))
+#+END_SRC
+
+#+BEGIN_SRC js :tangle ./assets/script.js
+  let tcActual = new d3Foresight.TimeChart('#tc-actual', config)
+  tcActual.plot(Object.assign(copy(data), { actual: actual }))
+  tcActual.update(10)
+#+END_SRC
+
+#+HTML: <br><br>
+#+HTML: <div id="tc-actual"></div>
+
+*** Observed
+:PROPERTIES:
+:CUSTOM_ID: timechart-adding-components-observed
+:END:
+
+Observed data series refers to the time series /as observed/ at a certain time
+point. Observed lines are useful (only) when there are updates in actual data,
+resulting in different /versions/ based on when the data was released.
+
+We formalize these versions using /lags/. When we are at a time point $t$ what
+we get as truth (the value that creates the actual series) is a lag $0$ truth,
+$l_0(t)$. At the same time, we also get $l_1(t - 1)$ truth for time point $t -
+1$, $l_2(t - 2)$ truth for $t - 2$ and so on. In this case, even if we have
+higher lag truths for time $t$, the observed series at time $t$ will be made up
+of the series $[l_i(t - i), \forall i \in [t - 1, t - 2, \ldots 0]]$
+
+To display the observe data thus we need to provide the required lag truths for
+a time point. We do this by providing a list of lists. The outer list is over
+all the time points. The inner lists represent decreasing lag values (like ~{
+lag: 2, value: 0.2}~) for that time point.
+
+#+BEGIN_aside
+Current observed line API is not really nice. Follow [[https://github.com/reichlab/d3-foresight/issues/54][this issue]] for a better
+way.
+#+END_aside
+
+A simple example follows. Notice that the third time point is the latest one
+and so we only have lag 0 value for that.
+
+#+BEGIN_SRC js
+  // Assume there are 3 timepoints
+  let observedExample = [
+    [ { lag: 2, value: 0.88 }, { lag: 1, value: 0.88 }, { lag: 0, value: 0.93 }],
+    [ { lag: 1, value: 1.11 }, { lag: 0, value: 1.32 } ],
+    [ { lag: 0, value: 1.13 } ]
+  ]
+#+END_SRC
+
+The next snippet generates some random data programmatically for demoing
+purpose.
+
+#+BEGIN_SRC js :tangle ./assets/script.js
+  // Lets only show 20 time steps.
+  let observed = rseq(20).map((r, idx) => {
+    let delta = 0.05
+    let lags = []
+    for (let l = 20; l >= 0; l--) {
+      lags.push({ lag: l, value: r + (delta * (20 - l)) })
+    }
+    return lags
+  })
+
+  // Add [] for other points
+  observed = observed.concat(timePoints.slice(20).map(tp => []))
+#+END_SRC
+
+#+BEGIN_SRC js :tangle ./assets/script.js
+  let tcObserved = new d3Foresight.TimeChart('#tc-observed', config)
+  tcObserved.plot(Object.assign(copy(data), { observed: observed }))
+  tcObserved.update(10)
+#+END_SRC
+
+#+HTML: <br><br>
+#+HTML: <div id="tc-observed"></div>
+
+*** History
+:PROPERTIES:
+:CUSTOM_ID: timechart-adding-components-history
+:END:
+
+Historical data lines (similar to ~actual~ series) can be shown by passing an
+array of historical actual series like the following:
+
+#+BEGIN_SRC js :tangle ./assets/script.js
+  let historicalData = [
+    {
+      id: 'some-past-series',
+      actual: rseq(51)
+    },
+    {
+      id: 'another-past-series',
+      actual: rseq(51)
+    }
+  ]
+#+END_SRC
+
+#+BEGIN_SRC js :tangle ./assets/script.js
+  let tcHistory = new d3Foresight.TimeChart('#tc-history', config)
+  tcHistory.plot(Object.assign(copy(data), { history: historicalData }))
+  tcHistory.update(10)
+#+END_SRC
+
+#+HTML: <br><br>
+#+HTML: <div id="tc-history"></div>
+
+One possible issue with showing history is that the number of time units might
+not line up perfectly. For example, the current year might have 52 weeks but
+some older year might have had 53 weeks. Since we expect all the actual series
+passed as history to have the same length, the user is supposed to pad/clip all
+the series to match the current season's length.
+
+*** Confidence Intervals
+:PROPERTIES:
+:CUSTOM_ID: timechart-adding-components-ci
+:END:
+
+Confidence intervals show a region of uncertainty around the model predictions
+(peak, onset and the regular time step predictions). These involve users to
+specify:
+
+1. Label for the confidence intervals to be shown in legend. For example `90%`
+   etc.
+2. Additional ~low~ and ~high~ values along with ~point~ values in predictions.
+
+The legend label can be specified in the main chart option by passing the
+following key/value pair (say we want to show ~90%~ and ~50%~ CIs):
+
+#+BEGIN_SRC js
+  ...
+    confidenceIntervals: ['90%', '50%']
+  ...
+#+END_SRC
+
+Corresponding to the values specified above (and in the same order), we now
+attach a list of ~low~ and ~high~ values as shown below:
+
+#+BEGIN_SRC js :tangle ./assets/script.js
+  // Predictions now look like [{ series: [
+  // { point: 0.5, low: [0.3, 0.4], high: [0.7, 0.6] },
+  // { point: 1.2, low: [1.0, 1.1], high: [1.4, 1.3] }
+  // ...] }, ..., null, null]
+  let predictionsWithCI = timePoints.map(tp => {
+    if (tp.week > 30) {
+      // We only predict upto week 30
+      return null
+    } else {
+      // Provide 10 week ahead predictions adding a dummy 0.2 and 0.1 spacing
+      // to show the confidence interval
+      return {
+        series: rseq(10).map(r => {
+          return {
+            point: r,
+            low: [Math.max(0, r - 0.2), Math.max(0, r - 0.1)],
+            high: [r + 0.2, r + 0.1]
+          }
+        })
+      }
+    }
+  })
+#+END_SRC
+
+Putting everything together now:
+
+#+BEGIN_SRC js :tangle ./assets/script.js
+  let dataWithCI = {
+    timePoints,
+    models: [
+      {
+        id: 'mod',
+        meta: {
+          name: 'Name',
+          description: 'Model description here',
+          url: 'https://github.com'
+        },
+        predictions: predictionsWithCI
+      }
+    ]
+  }
+
+  let configCI = Object.assign(copy(config), { confidenceIntervals: ['90%', '50%'] })
+  let tcCI = new d3Foresight.TimeChart('#tc-ci', configCI)
+  tcCI.plot(dataWithCI)
+  tcCI.update(10)
+#+END_SRC
+
+#+HTML: <br><br>
+#+HTML: <div id="tc-ci"></div>
+
+*** Peak and Onset
+:PROPERTIES:
+:CUSTOM_ID: timechart-adding-components-peak-and-onset
+:END:
+
+Just like a ~series~ key in predictions, we can also add ~onsetTime~, ~peakTime~ and
+~peakValue~ keys to show the respective predictions. Each of these have a
+/mandatory/ ~point~ key and can have ~low~ and ~high~ ranges to show confidence
+intervals. Here is an example for a model's prediction at a certain timepoint
+with the onset and peak values specified (along with a confidence interval):
+
+#+BEGIN_SRC js
+  // Consider the confidence intervals ['90%', '50%']
+  {
+    onsetTime: {
+      high: [15, 17],
+      low: [9, 11],
+      point: 13
+    },
+    peakTime: {
+      high: [25, 27],
+      low: [19, 21],
+      point: 23
+    },
+    peakValue: {
+      high: [3.6, 3.8],
+      low: [3.0, 3.2],
+      point: 3.4
+    },
+    series: [
+      {
+        high: [1.4, 1.6],
+        low: [0.8, 1.0],
+        point: 1.2
+      },
+      ...
+    ]
+  }
+#+END_SRC
+
+Note that the values for ~peakTime~ and ~onsetTime~ are indices for the time points
+instead of actual week values. For example, suppose the time points actually
+refer to weeks from 5 to 15 (inclusive) for a year. An ~onsetTime~ value of 3 will
+now refer to week 9 (0 based index starting at 5).
+
+By not using the actual week value here, we localize the /meaning/ of time point
+in a single place, the series ~timePoints~ itself.
+
+Lets recreate the season data now with added peak and onset predictions. We will
+not be adding confidence intervals here to keep things simple.
+
+#+BEGIN_SRC js :tangle ./assets/script.js
+  let predictionsWithPeakOnset = timePoints.map(tp => {
+    if (tp.week > 30) {
+      // We only predict upto week 30
+      return null
+    } else {
+      return {
+        series: rseq(10).map(r => { return { point: r } }),
+        peakTime: { point: 12 + getRandomInt(5) },
+        onsetTime: { point: 8 + getRandomInt(5) },
+        peakValue: { point: Math.random() }
+      }
+    }
+  })
+
+#+END_SRC
+
+For showing the onset value, we also need to pass a config option ~{ onset: true
+}~ to the timeChart so that the onset panel is displayed just above the x axis.
+
+#+BEGIN_SRC js :tangle ./assets/script.js
+  let dataWithPeakOnset = {
+    timePoints,
+    models: [
+      {
+        id: 'mod',
+        meta: {
+          name: 'Name',
+          description: 'Model description here',
+          url: 'https://github.com'
+        },
+        predictions: predictionsWithPeakOnset
+      }
+    ]
+  }
+
+  let configOnset = Object.assign(copy(config), { onset: true })
+  let tcPeakOnset = new d3Foresight.TimeChart('#tc-peak-onset', configOnset)
+  tcPeakOnset.plot(dataWithPeakOnset)
+  tcPeakOnset.update(10)
+#+END_SRC
+
+#+HTML: <br><br>
+#+HTML: <div id="tc-peak-onset"></div>
+
+*** Additional lines
+:PROPERTIES:
+:CUSTOM_ID: timechart-adding-components-additional-lines
+:END:
+
+Starting from ~v0.10.0~, you can add extra lines to be shown in the plot. To keep
+the library backward compatible, you need to provide the extra data as another
+key in the data object that you send to the ~plot~ function. Here is an example
+and specification of the structure that we expect:
+
+#+BEGIN_SRC js :tangle ./assets/script.js
+  let tcAdditional = new d3Foresight.TimeChart('#timechart-additional', config)
+
+  let additionalLines = [
+    {
+      id: 'Extra 1',
+      data: 1.53, // Scalar makes it show up as horizontal line
+      style: { // Optional style parameter
+        color: 'red',
+        point: {
+          // Optional parameter for styling the dots
+        },
+        line: {
+          // Style for the main line
+          'stroke-dasharray': '5,5'
+        }
+      },
+      meta: {
+        // Similar to what is used in models, all optional
+        name: 'Extra baseline',
+        description: 'This is an additional baseline',
+        url: 'https://github.com'
+      },
+      tooltip: false, // Should the value show up in tooltip (false by default or when absent)
+      legend: true // Should the value show up in legend (true by default or when absent)
+    },
+    {
+      id: 'Extra 2',
+      data: rseq(51), // Structure similar to like the actual array
+      style: {
+        color: '#9b59b6',
+        point: {
+          r: 0
+        }
+      },
+      tooltip: true
+    }
+  ]
+
+  tcAdditional.plot(Object.assign(copy(data), { additionalLines }))
+  tcAdditional.update(10)
+#+END_SRC
+
+#+HTML: <br><br>
+#+HTML: <div id="timechart-additional"></div>
+
+** Data Version Time and Timezero
+:PROPERTIES:
+:CUSTOM_ID: timechart-dvt
+:END:
+
+There are two possible reference times for a prediction by a particular model:
+
+1. /Timezero/: The time with respect to which the forecasts are made. For example,
+   if a model predicts 3 steps ahead values of ~[1.0, 1.2, 0.5]~ with a timezero
+   of ~t~, then we say that the predicted values are for time steps ~t + 1~, ~t + 2~,
+   and ~t + 3~.
+2. /Data Version Time/: Specifies the data at a particular version (given by the
+   /time/ value) the model looked at while making its prediction.
+
+In a usual prediction task, when we are a time ~t~, our predictions are made by
+considering ~t~ as the /timezero/ *and* the /data version time/. The /data version time/
+is displayed using a gray shaded region (covering all the data that the model
+looked at) and a boundary text 'Data as of'. The timezero line is shown as a
+separate dashed vertical line with text 'Timezero'.
+
+When both times are the same, only data version time is displayed. In case the
+user provides data version times separately for each prediction, both times are
+shown since they /might/ be different. You can also override the display of the
+/timezero/ line by passing a Boolean key in either the /options/ parameter (passed
+when initializing the plot) or the data parameter (passed when calling the /plot/
+function):
+
+#+BEGIN_SRC js
+  ...
+    timezeroLine: true
+  ...
+#+END_SRC
+
+Here is an example plot where user passes in additional data version. Note that
+the ~dataVersionTime~ values are /not/ indices for the ~timePoints~ array but date
+time values themselves. We first define the function that adds dummy data
+version time to all the predictions.
+
+#+BEGIN_SRC js :tangle ./assets/script.js
+  // Lets just add 2 to the timezeros for dvds
+  function addDvts (data) {
+    let dvts = data.timePoints.map(tp => {
+      return { week: tp.week + 2, year: tp.year }
+    })
+
+    data.models.forEach(m => {
+      m.predictions.forEach((p, idx) => {
+        if (p) {
+          p.dataVersionTime = dvts[idx]
+        }
+      })
+    })
+
+    return data
+  }
+
+  let tcDvd = new d3Foresight.TimeChart('#timechart-dvt-plot', config)
+
+  tcDvd.plot(addDvts(copy(data)))
+  tcDvd.update(10)
+#+END_SRC
+
+#+HTML: <br><br>
+#+HTML: <div id="timechart-dvt-plot"></div>
+
+** TODO All config and data options
+:PROPERTIES:
+:CUSTOM_ID: timechart-config
+:END:
+
+Possible options to the constructor are described below:
+
+#+BEGIN_SRC js :tangle ./assets/script.js
+  let options = {
+    baseline: {
+      text: ['CDC', 'Baseline'], // A list of strings creates multiline text
+      description: `Baseline ILI value as defined by CDC.
+                      <br><br><em>Click to know more</em>`,
+      url: 'http://www.cdc.gov/flu/weekly/overview.htm' // url is optional
+    },
+    axes: {
+      x: {
+        title: ['Epidemic', 'Week'],
+        description: `Week of the calendar year, as measured by the CDC.
+                        <br><br><em>Click to know more</em>`,
+        url: 'https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf'
+      },
+      y: {
+        title: 'Weighted ILI (%)',
+        description: `Percentage of outpatient doctor visits for
+                        influenza-like illness, weighted by state population.
+                        <br><br><em>Click to know more</em>`,
+        url: 'http://www.cdc.gov/flu/weekly/overview.htm',
+        domain: [0, 13] // For explicitly clipping the y values
+      }
+    },
+    pointType: 'mmwr-week',
+    confidenceIntervals: ['90%', '50%'], // List of ci labels
+    onset: true, // Whether to show onset panel or not
+    timezeroLine: false // Whether to show the timezeroLine, skipping this makes us fall back to the
+                        // behavior based presence of data version time
+  }
+#+END_SRC
+
+/Options for plotting go here/
+
+* TODO DistributionChart
+:PROPERTIES:
+:CUSTOM_ID: distributionchart
+:END:
+
+#+CAPTION: ~DistributionChart~ displays probability distributions for the
+#+CAPTION: prediction targets
+[[file:./distchart.png]]
+
+* Hooks
+:PROPERTIES:
+:CUSTOM_ID: hooks
+:END:
+
+Charts can call user defined functions when movement events are triggered inside
+(e.g. by clicking on movement buttons or clicking on the overlay). To register
+your functions to be called on these events, you can use ~addHook~.
+
+#+BEGIN_SRC js
+  timeChart.addHook(d3Foresight.events.JUMP_TO_INDEX, index => {
+    // This is triggered when an event moves the
+    // visualization to certain `index` in `timePoints`
+
+    // Current index is `timeChart.currentIdx`
+    console.log('chart moved to ' + index)
+  })
+#+END_SRC
+
+~addHook~ returns a subscription token which can then be used to revoke that
+hook using ~removeHook~.
+
+#+BEGIN_SRC js
+  let token = timeChart.addHook(
+    d3Foresight.events.JUMP_TO_INDEX,
+    index => console.log(`Now at ${index}`)
+  )
+  timeChart.removeHook(token)
+#+END_SRC
+
+
+#+BEGIN_SRC js :tangle ./assets/script.js :exports none
+})
+#+END_SRC
+
+#+HTML: <br><br>

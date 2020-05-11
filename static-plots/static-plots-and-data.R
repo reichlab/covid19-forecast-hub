@@ -5,14 +5,14 @@
 library(tidyverse)
 library(ggforce)
 library(scales)
-source("code/get_next_saturday.R")
+source("code/processing-fxns/get_next_saturday.R")
 theme_set(theme_minimal())
 
 timezero <- "2020-04-13"
 models_to_exclude <- c("CU-nointerv")
 
 ## get truth data
-obs_data <- read_csv("data-processed/truth-cum-death.csv") %>%
+obs_data <- read_csv("data-truth/truth-Cumulative Deaths.csv") %>%
     mutate(wk_end_date = as.Date(date, "%m/%d/%y")) %>%
     select(-date) %>%
     filter(wk_end_date %in% c(get_next_saturday(timezero)+seq(0, -70, by=-7)))

@@ -1,6 +1,7 @@
-team_name: COVID forecast hub ensemble
-team_abbr: COVIDhub-ensemble
+team_name: COVID forecast hub
+team_abbr: COVIDhub
 institution_affil: UMass-Amherst Influenza Forecasting Center of Excellence
+team_contact: Nicholas Reich <nick@schoolph.umass.edu>
 team_funding: 
 team_experience: 
 
@@ -10,9 +11,10 @@ model_output: https://reichlab.io/covid19-forecast-hub/
 model_repo: https://github.com/reichlab/covid19-forecast-hub
 
 model_contributors: Nutcha Wattanachit, Nicholas Reich <nick@schoolph.umass.edu>
-Model_targets: 1 through 6-wk ahead cumulative deaths
+Model_targets: 1 through 4-wk ahead cumulative and incident deaths 
 Target_loc: US and state-level
-Data_format: median and 95% UI
+Time_horizon:
+Data_format: quantiles
 forecast_startdate: 
 forecast_frequency: 
 
@@ -32,6 +34,11 @@ methods_long: >-
     April 13: At state level, only two models included in first week, LANL and IHME,
     due to overlaps in location and reported quantiles. At national level, IHME
     was combined with the three CU models. 
-
+    April 27: Different component models at state level and national level.
+    Please see the model information file for more details. 
+    May 4: National ensemble combined 7 models, state ensembles combined between 2 
+    and 8 models. For details, see 
+    data-raw/COVIDhub-ensemble/state-weight-information.csv
+    All ensembles were equally weighted among all eligible models. 
 
 citation: 

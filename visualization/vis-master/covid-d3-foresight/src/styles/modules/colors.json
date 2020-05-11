@@ -1,0 +1,18 @@
+{
+  "accent": "#5c6bc0",
+  "actual": "#66d600",
+  "observed": "#18817f",
+  "history": "#ddd",
+  "history-highlight": "#ccc",
+
+  "axis-ticks": "#bbb",
+  "hover-line": "#bbb",
+  "disabled": "#bbb",
+
+  "black": "#000",
+  "gray": "#333",
+  "gray-light": "#666",
+  "white": "#fff",
+  "white-shade": "#f5f5f5",
+  "shadow": "#ccc"
+}

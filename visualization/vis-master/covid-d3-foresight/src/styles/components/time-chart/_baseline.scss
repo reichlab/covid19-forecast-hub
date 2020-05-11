@@ -1,0 +1,12 @@
+.baseline-group {
+  .baseline {
+    stroke: $gray;
+    stroke-dasharray: 5, 5;
+    stroke-width: .5px;
+  }
+
+  text {
+    fill: $gray;
+    font-size: 10px;
+  }
+}
