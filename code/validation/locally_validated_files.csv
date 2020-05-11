@@ -128,5 +128,9 @@ file_path,validation_date
 ./data-processed/MIT_CovidAnalytics-DELPHI/2020-04-22-MIT_CovidAnalytics-DELPHI.csv,2020-05-11 10:17:47.628022
 ./data-processed/MIT_CovidAnalytics-DELPHI/2020-04-30-MIT_CovidAnalytics-DELPHI.csv,2020-05-11 10:17:50.478789
 ./data-processed/MIT_CovidAnalytics-DELPHI/2020-04-27-MIT_CovidAnalytics-DELPHI.csv,2020-05-11 10:17:53.530502
-./data-processed/LANL-GrowthRate/2020-05-07-LANL-GrowthRate.csv,2020-05-11 15:12:53.751456
-./data-processed/UCLA-SuEIR/2020-05-10-UCLA-SuEIR.csv,2020-05-11 15:12:57.726711
+./data-processed/UChicago-CovidIL_40/2020-05-11-UChicago-CovidIL_40.csv,2020-05-11 16:40:03.419543
+./data-processed/LANL-GrowthRate/2020-05-07-LANL-GrowthRate.csv,2020-05-11 16:40:07.104842
+./data-processed/UChicago-CovidIL_60/2020-05-11-UChicago-CovidIL_60.csv,2020-05-11 16:40:07.158861
+./data-processed/UChicago-CovidIL_80/2020-05-11-UChicago-CovidIL_80.csv,2020-05-11 16:40:07.213882
+./data-processed/UChicago-CovidIL_100/2020-05-11-UChicago-CovidIL_100.csv,2020-05-11 16:40:07.267942
+./data-processed/UCLA-SuEIR/2020-05-10-UCLA-SuEIR.csv,2020-05-11 16:40:11.263654
