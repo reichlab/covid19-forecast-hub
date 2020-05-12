@@ -305,6 +305,16 @@ checks in R.
 These checks will likely be deprecated in the future.
 
 
+## Data visualization
+
+If you want to visualize your forecasts, 
+you can use our [R shiny app](./explore_processed_data.R) 
+to visualize your forecast.
+This is mainly an internal tool we use to help us know what forecasts are in 
+the repository. 
+Thus, it is provided as-is within no warranty. 
+
+
 ## Meta-data
 
 Participating teams must provide a metadata file (see [example](../data-processed/UMass-ExpertCrowd/metadata-UMass-ExpertCrowd.txt)), including methodological detail about their approach and a link to a file 
