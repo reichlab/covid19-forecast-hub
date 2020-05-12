@@ -8,15 +8,43 @@ yarn
 yarn run test
 yarn run parse-data
 
-# Remove CU-nointerv
+# Remove CU-models except select
 rm -r ./data/Cumulative\ Deaths/CU-nointerv
 rm -r ./data/Incident\ Deaths/CU-nointerv
+rm -r ./data/Cumulative\ Deaths/CU-60-contact
+rm -r ./data/Incident\ Deaths/CU-60-contact
+rm -r ./data/Cumulative\ Deaths/CU-70-contact
+rm -r ./data/Incident\ Deaths/CU-70-contact
+rm -r ./data/Cumulative\ Deaths/CU-80-contact
+rm -r ./data/Incident\ Deaths/CU-80-contact
+rm -r ./data/Cumulative\ Deaths/CU-80-contact1x5p
+rm -r ./data/Incident\ Deaths/CU-80-contact1x5p
+rm -r ./data/Cumulative\ Deaths/CU-80-contact1x10p
+rm -r ./data/Incident\ Deaths/CU-80-contact1x10p
+rm -r ./data/Cumulative\ Deaths/CU-80-contactw5p
+rm -r ./data/Incident\ Deaths/CU-80-contactw5p
+rm -r ./data/Cumulative\ Deaths/CU-80-contactw10p
+rm -r ./data/Incident\ Deaths/CU-80-contactw10p
 
-# Remove JHU because no point estimates
+# Remove UChicago except CovidIL_100
+rm -r ./data/Cumulative\ Deaths/UChicago-CovidIL_40
+rm -r ./data/Incident\ Deaths/UChicago-CovidIL_40
+rm -r ./data/Cumulative\ Deaths/UChicago-CovidIL_60
+rm -r ./data/Incident\ Deaths/UChicago-CovidIL_60
+rm -r ./data/Cumulative\ Deaths/UChicago-CovidIL_80
+rm -r ./data/Incident\ Deaths/UChicago-CovidIL_80
+
+# Remove JHU
 rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSPHighDist
 rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSPHighDist
 rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSPModDist
 rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSPModDist
+rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSP
+rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSP
+
+# Remove Iowa State Except STEM10
+rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
+rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
 
 # Remove LANL-GrowthRateHosp
 rm -r ./data/Cumulative\ Deaths/LANL-GrowthRateHosp
@@ -26,7 +54,13 @@ rm -r ./data/Incident\ Deaths/LANL-GrowthRateHosp
 rm -r ./data/Cumulative\ Deaths/Auquan-SEIR
 rm -r ./data/Incident\ Deaths/Auquan-SEIR
 
+# Remove CovidActNow-SEIR_CAN (no week estimates)
+rm -r ./data/Cumulative\ Deaths/CAN-SEIR_CAN
+rm -r ./data/Incident\ Deaths/CAN-SEIR_CAN
+
 # Remove Imperial Incident
+rm -r ./data/Cumulative\ Deaths/Imperial-Ensemble1
+rm -r ./data/Cumulative\ Deaths/Imperial-Ensemble2
 rm -r ./data/Incident\ Deaths/Imperial-Ensemble1
 rm -r ./data/Incident\ Deaths/Imperial-Ensemble2
 
