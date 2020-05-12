@@ -129,7 +129,9 @@ file_processed_dates <- substr(basename(list.files("../../data-processed/IHME-Cu
                                                    full.names = TRUE)),
                                start = 1,
                                stop  = 10)
-file_processed_dates <- file_processed_dates[-length(file_processed_dates)]
+
+## NGR: commented line below out to make the 2020-05-08 processing work.
+#file_processed_dates <- file_processed_dates[-length(file_processed_dates)]
 
 date_offset = 3
 raw_file_dates <- substr(dirname(filepaths),
