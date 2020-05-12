@@ -12,6 +12,20 @@ options(DT.options = list(pageLength = 25))
 source("../code/processing-fxns/get_next_saturday.R")
 source("read_processed_data.R")
 
+# Get truth 
+truth = bind_rows(
+  read_csv("../data-truth/truth-Incident Deaths.csv") %>% mutate(inc_cum = "inc"),
+  read_csv("../data-truth/truth-Cumulative Deaths.csv") %>% mutate(inc_cum = "cum")
+) %>%
+  rename(fips_numeric = location) %>%
+  left_join(read_csv("../template/state_fips_codes.csv") %>%
+              rename(fips_alpha = state,
+                     fips_numeric = state_code), by = c("fips_numeric")) %>%
+  mutate(fips_alpha = ifelse(fips_numeric == "US", "US", fips_alpha))
+
+
+
+
 # Further process the processed data for ease of exploration
 latest <- all_data %>% 
   filter(!is.na(forecast_date)) %>%
@@ -206,6 +220,12 @@ server <- function(input, output, session) {
   latest_tmt  <- reactive({ latest_tm()      %>% filter(simple_target == input$target) })
   latest_tmtl <- reactive({ latest_tmt()     %>% filter(fips_alpha    == input$location) })
   
+  truth_plot <- reactive({ 
+    truth %>% 
+      filter(fips_alpha == input$location,
+             inc_cum == ifelse(grepl("inc", input$target), "inc", "cum"))
+  })
+  
   observe({
     models <- sort(unique(latest_t()$model))
     updateSelectInput(session, "model", choices = models, selected = models[1])
@@ -236,6 +256,9 @@ server <- function(input, output, session) {
       geom_point(aes(y=`0.5`, color = "median")) + geom_line( aes(y=`0.5`, color = "median")) + 
       geom_point(aes(y=point, color = "point")) + geom_line( aes(y=point, color = "point")) + 
       scale_color_manual(name = "", values = c("median" = "slategray", "point" = "black")) +
+      
+      geom_line(data = truth_plot(), aes(x = date, y = value), color = "green") + 
+      
       labs(y="value", title = forecast_date) +
       theme_bw() +
       theme(plot.title = element_text(color = ifelse(Sys.Date() - forecast_date > 6, "red", "black")))
