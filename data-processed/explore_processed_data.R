@@ -218,7 +218,8 @@ server <- function(input, output, session) {
   
   observe({
     locations <- sort(unique(latest_tmt()$fips_alpha))
-    updateSelectInput(session, "location", choices = locations, selected = "US")
+    updateSelectInput(session, "location", choices = locations, 
+                      selected = ifelse(any("US" == locations), "US", locations[1]))
   })
   
   output$latest_plot      <- shiny::renderPlot({
