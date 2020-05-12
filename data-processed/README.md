@@ -309,7 +309,15 @@ These checks will likely be deprecated in the future.
 
 If you want to visualize your forecasts, 
 you can use our [R shiny app](./explore_processed_data.R) 
-to visualize your forecast.
+to visualize your forecast by running
+
+
+```r
+source("explore_processed_data.R")
+shinyApp(ui = ui, server = server)
+```
+
+from within the [data-processed/](./data-processed/) folder.
 This is mainly an internal tool we use to help us know what forecasts are in 
 the repository. 
 Thus, it is provided as-is within no warranty. 
