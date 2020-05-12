@@ -317,7 +317,7 @@ source("explore_processed_data.R")
 shinyApp(ui = ui, server = server)
 ```
 
-from within the [data-processed/](./data-processed/) folder.
+from within the [data-processed/](./) folder.
 This is mainly an internal tool we use to help us know what forecasts are in 
 the repository. 
 Thus, it is provided as-is within no warranty. 
