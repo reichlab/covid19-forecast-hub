@@ -157,7 +157,7 @@ ui <- navbarPage(
   tabPanel("Latest Viz",
            sidebarLayout(
              sidebarPanel(
-               selectInput("team",         "Team", sort(unique(latest_plot_data$team         ))),
+               selectInput("team",         "Team", sort(unique(latest_plot_data$team         )), "IHME"),
                selectInput("model",       "Model", sort(unique(latest_plot_data$model        ))),
                selectInput("target",     "Target", sort(unique(latest_plot_data$simple_target))),
                selectInput("location", "Location", sort(unique(latest_plot_data$fips_alpha   )))
@@ -228,10 +228,13 @@ server <- function(input, output, session) {
     forecast_date <- unique(d$forecast_date)
     
     ggplot(d, aes(x = target_end_date)) + 
-      geom_ribbon(aes(ymin = `0.025`, ymax = `0.975`), fill = "lightgray") +
-      geom_ribbon(aes(ymin = `0.25`, ymax = `0.75`), fill = "gray") +
-      geom_point(aes(y=`0.5`), color = "white") + geom_line( aes(y=`0.5`), color = "white") + 
-      geom_point(aes(y=point)) + geom_line( aes(y=point)) + 
+      geom_ribbon(aes(ymin = `0.025`, ymax = `0.975`, fill = "95%")) +
+      geom_ribbon(aes(ymin = `0.25`, ymax = `0.75`, fill = "50%")) +
+      scale_fill_manual(name = "", values = c("95%" = "lightgray", "50%" = "gray")) +
+      
+      geom_point(aes(y=`0.5`, color = "median")) + geom_line( aes(y=`0.5`, color = "median")) + 
+      geom_point(aes(y=point, color = "point")) + geom_line( aes(y=point, color = "point")) + 
+      scale_color_manual(name = "", values = c("median" = "slategray", "point" = "black")) +
       labs(y="value", main = forecast_date) +
       theme_bw()
   })
