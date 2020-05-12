@@ -236,8 +236,9 @@ server <- function(input, output, session) {
       geom_point(aes(y=`0.5`, color = "median")) + geom_line( aes(y=`0.5`, color = "median")) + 
       geom_point(aes(y=point, color = "point")) + geom_line( aes(y=point, color = "point")) + 
       scale_color_manual(name = "", values = c("median" = "slategray", "point" = "black")) +
-      labs(y="value", main = forecast_date) +
-      theme_bw()
+      labs(y="value", title = forecast_date) +
+      theme_bw() +
+      theme(plot.title = element_text(color = ifelse(Sys.Date() - forecast_date > 6, "red", "black")))
   })
   
   output$all_data         <- DT::renderDT(all_data,         filter = "top")
