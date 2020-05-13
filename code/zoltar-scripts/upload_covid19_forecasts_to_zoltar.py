@@ -5,6 +5,8 @@ from zoltpy.covid19 import VALID_TARGET_NAMES, covid19_row_validator, validate_q
 import os
 import sys
 import yaml
+import hashlib
+import pickle
 
 # meta info
 project_name = 'COVID-19 Forecasts'
@@ -12,6 +14,13 @@ project_obj = None
 project_timezeros = []
 conn = util.authenticate()
 url = 'https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/'
+try:
+    with open('./code/zoltar-scripts/validated_file_db.p', 'rb') as f:
+        l = pickle.load(f)
+        f.close()
+except Exception as ex:
+    l = []
+db = dict(l)
 
 # Get all existing timezeros and models in the project
 project_obj = [project for project in conn.projects if project.name == project_name][0]
@@ -57,12 +66,23 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
     json_io_dict_batch = []
     forecast_filename_batch = []
     timezero_date_batch = []
+    over_write = False
 
     for forecast in forecasts:
+        with open(path_to_processed_model_forecasts+forecast, "rb") as f:
+            # Check if forecast is already on zoltar
+            if forecast in existing_forecasts:
+                # Get the current hash of a processed file
+                checksum = hashlib.md5(f.read()).hexdigest()
+                f.close()
 
-        # Skip if forecast is already on zoltar
-        if forecast in existing_forecasts:
-            continue
+                # Check this hash against the previous version of hash
+                if db.get(forecast, None) != checksum:
+                    print(forecast)
+                    db[forecast] = checksum
+                    over_write = True
+                else:
+                    continue
 
         # Skip metadata text file
         if '.txt' in forecast:
@@ -103,7 +123,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
     # Batch upload for better performance
     if len(json_io_dict_batch) > 0:
         try:
-            util.upload_forecast_batch(conn, json_io_dict_batch, forecast_filename_batch, project_name, model_name, timezero_date_batch)
+            util.upload_forecast_batch(conn, json_io_dict_batch, forecast_filename_batch, project_name, model_name, timezero_date_batch, overwrite = over_write)
         except Exception as ex:
             return ex
     return "Pass"
@@ -129,4 +149,8 @@ if __name__ == '__main__':
         sys.exit("\n ERRORS FOUND EXITING BUILD...")
     else:
         print("✓ no errors")
+
+    with open('./code/zoltar-scripts/validated_file_db.p', 'wb') as fw:
+        pickle.dump(db, fw)
+        fw.close()
     
