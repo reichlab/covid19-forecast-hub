@@ -46,10 +46,10 @@ fi
 if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then 
    echo "NOT PULL REQUEST" 
    echo "replace validated files"
-   #cp ./code/validation/locally_validated_files.csv ./code/validation/validated_files.csv
+   cp ./code/validation/locally_validated_files.csv ./code/validation/validated_files.csv
 
    echo "Merge detected.. push to github"
-   #bash ./travis/push.sh
+   bash ./travis/push.sh
 fi
 
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
