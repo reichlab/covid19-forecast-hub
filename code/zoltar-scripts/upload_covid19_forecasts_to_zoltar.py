@@ -66,9 +66,9 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
     json_io_dict_batch = []
     forecast_filename_batch = []
     timezero_date_batch = []
-    over_write = False
 
     for forecast in forecasts:
+        over_write = False
         with open(path_to_processed_model_forecasts+forecast, "rb") as f:
             # Check if forecast is already on zoltar
             if forecast in existing_forecasts:
@@ -108,11 +108,12 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
                 if len(error_from_transformation) >0 :
                     return error_from_transformation
                 else:
-                    # try:
-                    #     util.upload_forecast(conn, quantile_json, forecast, 
-                    #                             project_name, model_name , time_zero_date, overwrite=False)
-                    # except Exception as ex:
-                    #     print(ex)
+                    try:
+                        util.upload_forecast(conn, quantile_json, forecast, 
+                                                project_name, model_name , time_zero_date, overwrite=over_write)
+                    except Exception as ex:
+                        print(ex)
+                        return ex
                     json_io_dict_batch.append(quantile_json)
                     timezero_date_batch.append(time_zero_date)
                     forecast_filename_batch.append(forecast)
@@ -120,12 +121,12 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
                 return errors_from_validation
             fp.close()
     
-    # Batch upload for better performance
-    if len(json_io_dict_batch) > 0:
-        try:
-            util.upload_forecast_batch(conn, json_io_dict_batch, forecast_filename_batch, project_name, model_name, timezero_date_batch, overwrite = over_write)
-        except Exception as ex:
-            return ex
+    # # Batch upload for better performance
+    # if len(json_io_dict_batch) > 0:
+    #     try:
+    #         util.upload_forecast_batch(conn, json_io_dict_batch, forecast_filename_batch, project_name, model_name, timezero_date_batch, overwrite = over_write)
+    #     except Exception as ex:
+    #         return ex
     return "Pass"
 
 
@@ -134,6 +135,8 @@ if __name__ == '__main__':
     list_of_model_directories = os.listdir('./data-processed/')
     output_errors = {}
     for directory in list_of_model_directories:
+        # if directory!= "CU-60contact":
+        #     continue
         if "." in directory:
             continue
         output = upload_covid_all_forecasts('./data-processed/'+directory+'/',directory)
