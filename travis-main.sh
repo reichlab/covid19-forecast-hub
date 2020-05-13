@@ -12,11 +12,6 @@ if [[ "$TRAVIS_BRANCH" != "master" ]]; then
     exit 0
 fi
 
-#if [[ "$TRAVIS_COMMIT_MESSAGE" != *"trigger build"* ]]; then
-#    echo "Do not trigger build. Exiting..."
-#    exit 0
-#fi
-
 # Save some useful information
 REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
