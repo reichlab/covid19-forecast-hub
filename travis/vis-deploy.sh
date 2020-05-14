@@ -5,7 +5,8 @@ setup_git() {
 }
 
 push_to_gh_pages() {
-  git fetch 
+  git remote add origin https://${GH_TOKEN}@github.com/reichlab/covid19-forecast-hub.git
+  git remote -v
   git checkout --track origin/gh-pages
   git fetch origin master
   git checkout origin/master  -- ./visualization/vis-master/dist
