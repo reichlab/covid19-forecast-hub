@@ -21,7 +21,9 @@ truth = bind_rows(
   left_join(read_csv("../template/state_fips_codes.csv") %>%
               rename(fips_alpha = state,
                      fips_numeric = state_code), by = c("fips_numeric")) %>%
-  mutate(fips_alpha = ifelse(fips_numeric == "US", "US", fips_alpha))
+  mutate(fips_alpha = ifelse(fips_numeric == "US", "US", fips_alpha),
+         death_cases = "death",
+         simple_target = paste(inc_cum, death_cases)) 
 
 
 
@@ -221,9 +223,11 @@ server <- function(input, output, session) {
   latest_tmtl <- reactive({ latest_tmt()     %>% filter(fips_alpha    == input$location) })
   
   truth_plot <- reactive({ 
+    input_simple_target <- unique(paste(latest_tmtl()$inc_cum, latest_tmtl()$death_cases))
+    
     truth %>% 
       filter(fips_alpha == input$location,
-             inc_cum == ifelse(grepl("inc", input$target), "inc", "cum"))
+             grepl(input_simple_target, simple_target))
   })
   
   observe({
