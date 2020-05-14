@@ -5,8 +5,8 @@ setup_git() {
 }
 
 push_to_gh_pages() {
-  git fetch
-  git checkout gh-pages 
+  git fetch 
+  git checkout --track origin/gh-pages
   git fetch origin master
   git checkout origin/master  -- ./visualization/vis-master/dist
   cd ./visualization/vis-master
