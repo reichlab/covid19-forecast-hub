@@ -12,6 +12,7 @@ push_to_gh_pages() {
   cp -r ./dist/* ../../
   git add .
   git commit -m "Auto Build Visualization"
+  git status
   #git push https://${GH_TOKEN}@github.com/reichlab/covid19-forecast-hub.git gh-pages
 }
 
