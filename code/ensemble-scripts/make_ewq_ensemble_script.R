@@ -157,6 +157,19 @@ for (i in 1:nrow(list_mod)){
 # offending_idx <- which(quant_ensemble$target=="4 wk ahead cum death" & quant_ensemble$location=="21" & quant_ensemble$quantile==0.050)
 # quant_ensemble$value[offending_idx] <- quant_ensemble$value[offending_idx] + 1
 
+# May 11 temp fix: this fixes one-off quantile crossing issues
+offending_idx1 <- which(quant_ensemble$target=="1 wk ahead cum death" & quant_ensemble$location=="30" & quant_ensemble$quantile==0.025)
+offending_idx2 <- which(quant_ensemble$target=="3 wk ahead cum death" & quant_ensemble$location=="30" & quant_ensemble$quantile==0.05)
+offending_idx3 <- which(quant_ensemble$target=="4 wk ahead cum death" & quant_ensemble$location=="30" & quant_ensemble$quantile==0.05)
+offending_idx4 <- which(quant_ensemble$target=="1 wk ahead cum death" & quant_ensemble$location=="50" & quant_ensemble$quantile==0.05)
+offending_idx5 <- which(quant_ensemble$target=="2 wk ahead cum death" & quant_ensemble$location=="50" & quant_ensemble$quantile==0.05)
+quant_ensemble$value[offending_idx1] <- quant_ensemble$value[offending_idx1] + 0.04
+quant_ensemble$value[offending_idx2] <- quant_ensemble$value[offending_idx2] + 0.04
+quant_ensemble$value[offending_idx3] <- quant_ensemble$value[offending_idx3] + 0.05
+quant_ensemble$value[offending_idx4] <- quant_ensemble$value[offending_idx4] + 0.11
+quant_ensemble$value[offending_idx5] <- quant_ensemble$value[offending_idx5] + 0.2
+
+
 ## build national ensemble 
 ## manually removing models that we don't want to include
 models_n <- US_models_10 %>%
