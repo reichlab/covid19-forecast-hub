@@ -47,14 +47,14 @@ if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
    bash ./travis/push.sh
 fi
 
-if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
+# if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
 #    echo "Merge detected.. push to github"
 #    bash ./travis/push.sh
 #    echo "Upload forecasts to Zoltar "
 #    bash ./travis/upload-to-zoltar.sh
 #    echo "Push the updated validated file db to Zoltar"
 #     bash ./travis/push.sh
-fi
+# fi
 
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"trigger build"* ]]; then
     source ./travis/vis-build.sh
