@@ -58,9 +58,8 @@ rm -r ./data/Incident\ Deaths/Auquan-SEIR
 rm -r ./data/Cumulative\ Deaths/CAN-SEIR_CAN
 rm -r ./data/Incident\ Deaths/CAN-SEIR_CAN
 
-# Remove Imperial Incident
+# Remove Imperial ensemble 1
 rm -r ./data/Cumulative\ Deaths/Imperial-Ensemble1
-rm -r ./data/Cumulative\ Deaths/Imperial-Ensemble2
 rm -r ./data/Incident\ Deaths/Imperial-Ensemble1
 rm -r ./data/Incident\ Deaths/Imperial-Ensemble2
 
@@ -79,6 +78,7 @@ python3 ./scripts/convert-forecasts.py
 
 # Get truth data
 python3 ./scripts/get-truth-data.py
+python3 ./scripts/zoltar-truth-data.py
 
 # Replace already present data
 rm -rf ./vis-master/data
