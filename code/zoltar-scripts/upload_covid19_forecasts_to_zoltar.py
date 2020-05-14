@@ -46,11 +46,11 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
 
     # Get model name or create a new model if it's not in the current Zoltar project
     metadata = metadata_dict_for_file(path_to_processed_model_forecasts+'metadata-'+dir_name+'.txt')
-    model_name = dir_name
+    model_name = metadata['model_name']
     if model_name not in model_names:
         model_config = {}
         model_config['name'], model_config['abbreviation'], model_config['team_name'], model_config['description'], model_config['home_url'], model_config['aux_data_url'] \
-            = dir_name, metadata['model_abbr'], metadata['team_name'], metadata['methods'], url + dir_name, 'NA'
+            = metadata['model_name'], metadata['model_abbr'], metadata['team_name'], metadata['methods'], url + dir_name, 'NA'
         try:
             project_obj.create_model(model_config)
             models = project_obj.models
