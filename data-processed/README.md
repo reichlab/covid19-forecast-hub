@@ -156,7 +156,7 @@ A week-ahead forecast should represent the total number of incident deaths withi
 
 ##### N day ahead inc hosp
 
-This target is the incident (weekly) number of deaths predicted by the model
+This target is the incident (daily) number of hospitalizations predicted by the model
 on day # after `forecast_date`.
 
 As an example, for day-ahead forecasts with a `forecast_date` of a Monday, a 1 day ahead inc hosp forecast corresponds to the number of incident hospitalizations on Tuesday, 2 day ahead to Wednesday, etc.... 
@@ -199,10 +199,12 @@ quantile forecast.
 Point forecasts are used in visualization while quantile forecasts are used in
 visualization and in ensemble construction.
 
+**Forecasts must include exactly 1 "point" forecast for every location-target
+pair.**
 
 #### `quantile`
 
-Values in the `quantile` column are either missing (if `type` is "point") or 
+Values in the `quantile` column are either "NA" (if `type` is "point") or 
 a quantile in the format
 
     0.###
@@ -301,6 +303,24 @@ If you cannot get the python checks to run,
 you can use [these instructions](R_forecast_file_validation.md) to run some
 checks in R. 
 These checks will likely be deprecated in the future.
+
+
+## Data visualization
+
+If you want to visualize your forecasts, 
+you can use our [R shiny app](./explore_processed_data.R) 
+to visualize your forecast by running
+
+
+```r
+source("explore_processed_data.R")
+shinyApp(ui = ui, server = server)
+```
+
+from within the [data-processed/](./) folder.
+This is mainly an internal tool we use to help us know what forecasts are in 
+the repository. 
+Thus, it is provided as-is within no warranty. 
 
 
 ## Meta-data

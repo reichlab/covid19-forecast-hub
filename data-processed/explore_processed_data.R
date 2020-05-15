@@ -12,6 +12,22 @@ options(DT.options = list(pageLength = 25))
 source("../code/processing-fxns/get_next_saturday.R")
 source("read_processed_data.R")
 
+# Get truth 
+truth = bind_rows(
+  read_csv("../data-truth/truth-Incident Deaths.csv") %>% mutate(inc_cum = "inc"),
+  read_csv("../data-truth/truth-Cumulative Deaths.csv") %>% mutate(inc_cum = "cum")
+) %>%
+  rename(fips_numeric = location) %>%
+  left_join(read_csv("../template/state_fips_codes.csv") %>%
+              rename(fips_alpha = state,
+                     fips_numeric = state_code), by = c("fips_numeric")) %>%
+  mutate(fips_alpha = ifelse(fips_numeric == "US", "US", fips_alpha),
+         death_cases = "death",
+         simple_target = paste(inc_cum, death_cases)) 
+
+
+
+
 # Further process the processed data for ease of exploration
 latest <- all_data %>% 
   filter(!is.na(forecast_date)) %>%
@@ -68,7 +84,7 @@ latest_quantiles_summary <- latest_quantiles %>%
 
 offset <- 0 # currently 7 for testing, but should be 0
 ensemble_data <- latest %>%
-  filter(forecast_date > get_next_saturday(Sys.Date())-9)
+  filter(forecast_date > get_next_saturday(Sys.Date())-offset-9)
   # filter( (target_end_date == get_next_saturday(Sys.Date()-offset) & grepl("1 wk", target)) |
   #           (target_end_date == get_next_saturday(Sys.Date()+ 7-offset) & grepl("2 wk", target))|
   #           (target_end_date == get_next_saturday(Sys.Date()+14-offset) & grepl("3 wk", target))|
@@ -107,6 +123,24 @@ g_ensemble_quantiles <- ggplot(ensemble_quantiles %>%
 
 
 
+###############################################################################
+# Create shiny latest plot
+latest_plot_data <- latest %>%
+  filter(quantile %in% c(.025,.25,.5,.75,.975) | type == "point") %>%
+  
+  mutate(quantile = ifelse(type == "point", "point", quantile),
+         simple_target = paste(unit,ahead,inc_cum, death_cases)) %>%
+  select(-type) %>%
+  tidyr::pivot_wider(
+    names_from = quantile,
+    values_from = value
+  )
+
+
+
+
+
+
 # Define UI for application that draws a histogram
 ui <- navbarPage(
   "Explore:",
@@ -136,6 +170,20 @@ ui <- navbarPage(
   tabPanel("Latest",           
            DT::DTOutput("latest")),
   
+  tabPanel("Latest Viz",
+           sidebarLayout(
+             sidebarPanel(
+               selectInput("team",         "Team", sort(unique(latest_plot_data$team         )), "IHME"),
+               selectInput("model",       "Model", sort(unique(latest_plot_data$model        ))),
+               selectInput("target",     "Target", sort(unique(latest_plot_data$simple_target))),
+               selectInput("location", "Location", sort(unique(latest_plot_data$fips_alpha   )))
+             ), 
+             mainPanel(
+               plotOutput("latest_plot")
+             )
+           )
+           ),
+  
   tabPanel("All",              
            DT::DTOutput("all_data")),
   
@@ -153,7 +201,7 @@ ui <- navbarPage(
 
 
 # Define server logic required to draw a histogram
-server <- function(input, output) {
+server <- function(input, output, session) {
   
   output$latest_targets   <- DT::renderDT(latest_targets,   filter = "top")
   output$latest_locations <- DT::renderDT(latest_locations, filter = "top")
@@ -165,6 +213,60 @@ server <- function(input, output) {
   output$ensemble_quantile_plot <- shiny::renderPlot(g_ensemble_quantiles)
   
   output$latest           <- DT::renderDT(latest,           filter = "top")
+  
+  #############################################################################
+  # Latest viz: Filter data based on user input
+  
+  latest_t    <- reactive({ latest_plot_data %>% filter(team          == input$team) })
+  latest_tm   <- reactive({ latest_t()       %>% filter(model         == input$model) })
+  latest_tmt  <- reactive({ latest_tm()      %>% filter(simple_target == input$target) })
+  latest_tmtl <- reactive({ latest_tmt()     %>% filter(fips_alpha    == input$location) })
+  
+  truth_plot <- reactive({ 
+    input_simple_target <- unique(paste(latest_tmtl()$inc_cum, latest_tmtl()$death_cases))
+    
+    truth %>% 
+      filter(fips_alpha == input$location,
+             grepl(input_simple_target, simple_target))
+  })
+  
+  observe({
+    models <- sort(unique(latest_t()$model))
+    updateSelectInput(session, "model", choices = models, selected = models[1])
+  })
+  
+  observe({
+    targets <- sort(unique(latest_tm()$simple_target))
+    updateSelectInput(session, "target", choices = targets, selected = targets[1])
+  })
+  
+  observe({
+    locations <- sort(unique(latest_tmt()$fips_alpha))
+    updateSelectInput(session, "location", choices = locations, 
+                      selected = ifelse(any("US" == locations), "US", locations[1]))
+  })
+  
+  output$latest_plot      <- shiny::renderPlot({
+    d    <- latest_tmtl()
+    team <- unique(d$team)
+    model <- unique(d$model)
+    forecast_date <- unique(d$forecast_date)
+    
+    ggplot(d, aes(x = target_end_date)) + 
+      geom_ribbon(aes(ymin = `0.025`, ymax = `0.975`, fill = "95%")) +
+      geom_ribbon(aes(ymin = `0.25`, ymax = `0.75`, fill = "50%")) +
+      scale_fill_manual(name = "", values = c("95%" = "lightgray", "50%" = "gray")) +
+      
+      geom_point(aes(y=`0.5`, color = "median")) + geom_line( aes(y=`0.5`, color = "median")) + 
+      geom_point(aes(y=point, color = "point")) + geom_line( aes(y=point, color = "point")) + 
+      scale_color_manual(name = "", values = c("median" = "slategray", "point" = "black")) +
+      
+      geom_line(data = truth_plot(), aes(x = date, y = value), color = "green") + 
+      
+      labs(y="value", title = forecast_date) +
+      theme_bw() +
+      theme(plot.title = element_text(color = ifelse(Sys.Date() - forecast_date > 6, "red", "black")))
+  })
   
   output$all_data         <- DT::renderDT(all_data,         filter = "top")
 }

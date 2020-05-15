@@ -11,8 +11,7 @@ source("../../code/processing-fxns/get_next_saturday.R")
 #' @details designed to process either an incidence or cumulative death forecast
 #'
 #' @return a data.frame in quantile format
-process_global_lanl_file <- function(lanl_filepath, 
-                              forecast_dates_file = "../../template/covid19-death-forecast-dates.csv") {
+process_global_lanl_file <- function(lanl_filepath) {
     require(tidyverse)
     require(MMWRweek)
     require(lubridate)
@@ -25,7 +24,6 @@ process_global_lanl_file <- function(lanl_filepath,
         "inc", "cum")
     
     ## read in forecast dates
-    fcast_dates <- read_csv(forecast_dates_file)
     timezero <- as.Date(substr(basename(lanl_filepath), 0, 10))
     
     ## read in data
@@ -35,6 +33,8 @@ process_global_lanl_file <- function(lanl_filepath,
     if(forecast_date != timezero)
         stop("timezero in the filename is not equal to the forecast date in the data")
     
+    ## update forecast date to be day on which forecast is available, not last date of data
+    forecast_date <- forecast_date + 1
     
     ## put into long format
     dat_long <- tidyr::pivot_longer(dat, cols=starts_with("q."), 
