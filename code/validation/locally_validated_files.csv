@@ -157,3 +157,9 @@ file_path,validation_date
 ./data-processed/Imperial-ensemble1/2020-05-10-Imperial-ensemble1.csv,2020-05-13 15:28:35.841938
 ./data-processed/Imperial-ensemble2/2020-05-10-Imperial-ensemble2.csv,2020-05-13 15:28:35.856813
 ./data-processed/GT-DeepCOVID/2020-05-11-GT-DeepCOVID.csv,2020-05-13 15:28:36.344225
+./data-processed/LANL-GrowthRate/2020-05-14-LANL-GrowthRate.csv,2020-05-15 01:24:10.240073
+./data-processed/LANL-GrowthRateHosp/2020-05-04-LANL-GrowthRateHosp.csv,2020-05-15 01:24:11.920695
+./data-processed/CU-80contact1x5p/2020-05-14-CU-80contact1x5p.csv,2020-05-15 03:28:21.850731
+./data-processed/CU-80contact1x10p/2020-05-14-CU-80contact1x10p.csv,2020-05-15 03:28:26.001041
+./data-processed/CU-80contactw10p/2020-05-14-CU-80contactw10p.csv,2020-05-15 03:28:30.133242
+./data-processed/CU-80contactw5p/2020-05-14-CU-80contactw5p.csv,2020-05-15 03:28:34.259242
