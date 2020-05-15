@@ -15,7 +15,7 @@ forecast_dates <- lapply(folders_to_process, date_from_cu_filepath)
 # folders_to_process <- folders_to_process[forecast_dates >= as.Date("2020-04-12")]
 #-------------------------------------------------------
 # set folders_to_process <- ".//Projection_<Date>" to process a single folder
-folders_to_process <- "./Projection_May10" 
+folders_to_process <- "./Projection_May14" 
 
 # different versions of CU forecasts:
 scenarios <- c( "80contact1x10p", "80contactw10p", "80contact1x5p", "80contactw5p")
@@ -47,4 +47,5 @@ for(i in seq_along(folders_to_process)) {
 
   }
 }
+
 
