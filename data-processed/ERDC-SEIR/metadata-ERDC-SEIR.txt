@@ -1,0 +1,29 @@
+team_name: US Army Engineer Research and Development Center
+team_abbr: ERDC
+institution_affil: DoD
+team_contact: covid19@erdc.dren.mil
+team_funding: US Army Geospatial Task Force
+team_experience: 
+
+model_name: SEIR
+model_abbr: SEIR
+model_output: 
+model_repo:
+
+model_contributors: Michael L. Mayo, Michael A. Rowland,  Matthew D. Parno, Ian Detwiller, Matthew W. Farthing, William P. England
+Target_loc: state
+Time_horizon: 90 days
+forecast_startdate: 
+forecasst_frequency: 1x daily
+
+data_source1: USA FACTS
+data_source2: JHU COVID-19 Git Repo
+
+this_model_is_an_ensemble: FALSE
+this_model_is_unconditional: FALSE
+
+methods: >-
+
+methods_long: >-
+
+citation: Pending
