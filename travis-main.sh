@@ -45,6 +45,10 @@ if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
 
    echo "Merge detected.. push to github"
    bash ./travis/push.sh
+   echo "Upload forecasts to Zoltar"
+    bash ./travis/upload-to-zoltar.sh
+    echo "Push the validated file db to Zoltar"
+    bash ./travis/push.sh
 fi
 
 # if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
@@ -61,9 +65,15 @@ if [[ "$TRAVIS_COMMIT_MESSAGE" == *"trigger build"* ]]; then
 fi
 
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test zoltar"* ]]; then
-    bash ./travis/create-validated-file-db.sh
     echo "Upload forecasts to Zoltar"
     bash ./travis/upload-to-zoltar.sh
+    echo "Push the validated file db to Zoltar"
+    bash ./travis/push.sh
+fi
+
+if [[ "$TRAVIS_COMMIT_MESSAGE" == *"zoltar validated db"* ]]; then
+    echo "Create new validated zoltar forecast list"
+    bash ./travis/create-validated-file-db.sh
     echo "Push the validated file db to Zoltar"
     bash ./travis/push.sh
 fi

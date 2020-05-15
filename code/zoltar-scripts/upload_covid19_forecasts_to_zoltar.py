@@ -69,20 +69,20 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
 
     for forecast in forecasts:
         over_write = False
+        # Check if forecast is already on zoltar
         with open(path_to_processed_model_forecasts+forecast, "rb") as f:
-            # Check if forecast is already on zoltar
-            if forecast in existing_forecasts:
-                # Get the current hash of a processed file
-                checksum = hashlib.md5(f.read()).hexdigest()
-                f.close()
+            # Get the current hash of a processed file
+            checksum = hashlib.md5(f.read()).hexdigest()
+            f.close()
 
-                # Check this hash against the previous version of hash
-                if db.get(forecast, None) != checksum:
-                    print(forecast)
-                    db[forecast] = checksum
+            # Check this hash against the previous version of hash
+            if db.get(forecast, None) != checksum:
+                print(forecast)
+                db[forecast] = checksum
+                if forecast in existing_forecasts:
                     over_write = True
-                else:
-                    continue
+            else:
+                continue
 
         # Skip metadata text file
         if '.txt' in forecast:
