@@ -35,7 +35,7 @@ add_one_day_to_forecast_date <- function(filepath, return_obj=TRUE, ...) {
     if(return_obj){
         return(new_dat)
     } else {
-        write_csv(new_dat, file.path(dir_name, paste(new_forecast_date, old_file_basename)))
+        write_csv(new_dat, file.path(dir_name, paste0(new_forecast_date, old_file_basename)))
     }    
 }
 
