@@ -70,3 +70,10 @@ if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test zoltar"* ]]; then
     echo "Push the validated file db to Zoltar"
     bash ./travis/push.sh
 fi
+
+if [[ "$TRAVIS_COMMIT_MESSAGE" == *"zoltar validated db"* ]]; then
+    echo "Create new validated zoltar forecast list"
+    bash ./travis/create-validated-file-db.sh
+    echo "Push the validated file db to Zoltar"
+    bash ./travis/push.sh
+fi
