@@ -130,7 +130,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
     return "Pass"
 
 
-# Example Run: python3 ./code/zoltar-scripts/upload_covid19_forecasts_to+zoltar.py
+# Example Run: python3 ./code/zoltar-scripts/upload_covid19_forecasts_to_zoltar.py
 if __name__ == '__main__':
     list_of_model_directories = os.listdir('./data-processed/')
     output_errors = {}
