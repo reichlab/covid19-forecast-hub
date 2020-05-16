@@ -1,6 +1,4 @@
 file_path,validation_date
-./data-processed/LANL-GrowthRateHosp/2020-05-03-LANL-GrowthRateHosp.csv,2020-05-11 16:56:26.378184
-./data-processed/LANL-GrowthRateHosp/2020-05-06-LANL-GrowthRateHosp.csv,2020-05-11 16:56:28.812101
 ./data-processed/CovidActNow-SEIR_CAN/2020-05-09-CovidActNow-SEIR_CAN.csv,2020-05-11 16:56:30.783547
 ./data-processed/GT-DeepCOVID/2020-05-04-GT-DeepCOVID.csv,2020-05-11 16:56:31.482847
 ./data-processed/CU-80contact1x10p/2020-05-10-CU-80contact1x10p.csv,2020-05-11 16:56:39.135480
@@ -29,17 +27,6 @@ file_path,validation_date
 ./data-processed/CU-80contactw10p/2020-05-03-CU-80contactw10p.csv,2020-05-11 16:57:33.711045
 ./data-processed/Auquan-SEIR/2020-05-11-Auquan-SEIR.csv,2020-05-11 16:57:42.012008
 ./data-processed/Auquan-SEIR/2020-05-04-Auquan-SEIR.csv,2020-05-11 16:57:42.403304
-./data-processed/LANL-GrowthRate/2020-04-05-LANL-GrowthRate.csv,2020-05-11 16:57:43.366090
-./data-processed/LANL-GrowthRate/2020-05-11-LANL-GrowthRate.csv,2020-05-11 16:57:55.719448
-./data-processed/LANL-GrowthRate/2020-04-19-LANL-GrowthRate.csv,2020-05-11 16:58:03.446383
-./data-processed/LANL-GrowthRate/2020-05-03-LANL-GrowthRate.csv,2020-05-11 16:58:11.300746
-./data-processed/LANL-GrowthRate/2020-04-15-LANL-GrowthRate.csv,2020-05-11 16:58:20.546425
-./data-processed/LANL-GrowthRate/2020-04-12-LANL-GrowthRate.csv,2020-05-11 16:58:21.943927
-./data-processed/LANL-GrowthRate/2020-05-07-LANL-GrowthRate.csv,2020-05-11 16:58:29.306379
-./data-processed/LANL-GrowthRate/2020-04-08-LANL-GrowthRate.csv,2020-05-11 16:58:30.037479
-./data-processed/LANL-GrowthRate/2020-04-22-LANL-GrowthRate.csv,2020-05-11 16:58:37.267785
-./data-processed/LANL-GrowthRate/2020-04-26-LANL-GrowthRate.csv,2020-05-11 16:58:44.819793
-./data-processed/LANL-GrowthRate/2020-04-29-LANL-GrowthRate.csv,2020-05-11 16:58:51.878756
 ./data-processed/CU-60contact/2020-04-26-CU-60contact.csv,2020-05-11 16:58:58.044353
 ./data-processed/CU-60contact/2020-04-16-CU-60contact.csv,2020-05-11 16:59:03.634039
 ./data-processed/CU-60contact/2020-04-23-CU-60contact.csv,2020-05-11 16:59:08.338359
@@ -157,8 +144,6 @@ file_path,validation_date
 ./data-processed/Imperial-ensemble1/2020-05-10-Imperial-ensemble1.csv,2020-05-13 15:28:35.841938
 ./data-processed/Imperial-ensemble2/2020-05-10-Imperial-ensemble2.csv,2020-05-13 15:28:35.856813
 ./data-processed/GT-DeepCOVID/2020-05-11-GT-DeepCOVID.csv,2020-05-13 15:28:36.344225
-./data-processed/LANL-GrowthRate/2020-05-14-LANL-GrowthRate.csv,2020-05-15 01:24:10.240073
-./data-processed/LANL-GrowthRateHosp/2020-05-04-LANL-GrowthRateHosp.csv,2020-05-15 01:24:11.920695
 ./data-processed/CU-80contact1x5p/2020-05-14-CU-80contact1x5p.csv,2020-05-15 03:28:21.850731
 ./data-processed/CU-80contact1x10p/2020-05-14-CU-80contact1x10p.csv,2020-05-15 03:28:26.001041
 ./data-processed/CU-80contactw10p/2020-05-14-CU-80contactw10p.csv,2020-05-15 03:28:30.133242
