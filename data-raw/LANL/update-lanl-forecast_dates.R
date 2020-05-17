@@ -45,8 +45,11 @@ add_one_day_to_forecast_date <- function(filepath, return_obj=TRUE, ...) {
 ## 2020-05-06/07
 lanl_0507 <- read_csv("data-processed/LANL-GrowthRate/2020-05-07-LANL-GrowthRate.csv", col_types = "DcDcccdd")
 lanlhosp_0507 <- add_one_day_to_forecast_date("data-processed/LANL-GrowthRateHosp/2020-05-06-LANL-GrowthRateHosp.csv")
+lanlhosp_0507_points <- lanlhosp_0507 %>% 
+    filter(quantile==0.5) %>% 
+    mutate(type="point", quantile=NA)
 
-new_lanl_0507 <- bind_rows(lanl_0507, lanlhosp_0507)
+new_lanl_0507 <- bind_rows(lanl_0507, lanlhosp_0507, lanlhosp_0507_points)
 write_csv(new_lanl_0507, "data-processed/LANL-GrowthRate/2020-05-07-LANL-GrowthRate.csv")
 
 ## 2020-05-03/04

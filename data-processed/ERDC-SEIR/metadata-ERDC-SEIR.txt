@@ -1,0 +1,41 @@
+team_name: US Army Engineer Research and Development Center
+team_abbr: ERDC
+institution_affil: DoD
+team_contact: glover.e.george@erdc.dren.mil
+team_funding: US Army Geospatial Task Force
+team_experience: 
+
+model_name: ERDC-SEIR
+model_abbr: ERDC-SEIR
+model_output: 
+model_repo:
+
+model_contributors: Michael L. Mayo <Michael.L.Mayo@erdc.dren.mil>, Michael A. Rowland <Michael.A.Rowland@erdc.dren.mil>,  Matthew D. Parno <Matthew.D.Parno@erdc.dren.mil>, Ian D. Detwiller <Ian.D.Dettwiller@erdc.dren.mil>, Matthew W. Farthing, William P. England
+Target_loc: state
+Time_horizon: 90 days
+forecast_startdate:  2020-05-15 
+forecasst_frequency: 1x daily
+
+data_source1: USA FACTS
+data_source2: JHU COVID-19 Git Repo
+
+this_model_is_an_ensemble: FALSE
+this_model_is_unconditional: FALSE
+
+methods: >-
+    The ERDC SEIR model makes predictions about future infection states of a population (e.g., susceptible, exposed, infections reported to authorities, infections unreported),
+    by using Bayesian curve-fitting methods to conform the model dynamically to past data.
+
+methods_long: >-
+    This model makes predictions about the future infection states of a population center (e.g., state, CBSA), which are based on several standard assumptions common to population modeling.
+    Relative to COVID-19, it assumes that trends in the data persist into the future beyond the latest available datum.  Other assumptions include:
+        (i)   modeled populations are large enough that fluctuations in the disease states grow slower than averages (i.e., coefficient of variation < 1);
+        (ii)  infection parameters change over time in response to changing social and policy factors which manifest in the data (e.g., social distancing policies);
+        (iii) recovered individuals are neither infectious nor become susceptible to further infection.
+    
+    A Bayesian approach is used to fit cumulative reported and new daily infection data to the infection states as predicted by the model.  Curve fitting is performed dynamically,
+    which leads to infection parameters (e.g., transmissibility) that change over itme. As a result, the effective reproduction number, as estimated by the model for SARS-CoV-2 using the next-generation matrix method approach,
+    changes with time, potentially up to the last reported dataum, after which the model parameters remain constant in reflection of our assumption regarding the contiuation of existing social policy.
+    Deaths are estimated from this model through a procedure which leverages state-level data on recoveries and fatalities.
+
+citation: In preparation
