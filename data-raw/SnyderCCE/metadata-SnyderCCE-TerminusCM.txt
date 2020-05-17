@@ -1,0 +1,11 @@
+team_name: Snyder Center for Computational Excellence
+team_abbr: SnyderCCE
+model_name: Terminus Compartmental Model
+model_abbr: TerminusCM
+model_contributors: Timothy L. Snyder <tsnyder701@gmail.com>
+data_source1: covidtracking.com
+data_source2: usafacts.org
+interventionsYN: Yes
+interventions: mixed. I assume that whatever latest social distancing and lockdown measures are currently announced remain in place indefinitely.
+this_model_is_an_ensemble: FALSE
+methods: Terminus is a newly created mechanistic Compartmental Model designed specifically for COVID-19.
