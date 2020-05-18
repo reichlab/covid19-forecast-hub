@@ -4,8 +4,8 @@ from pprint import pprint
 import sys
 import os
 import pandas as pd
-import datetime
 import numpy as np
+from datetime import datetime
 
 
 # Check for metadata file
@@ -35,6 +35,7 @@ def filename_match_forecast_date(filename):
         else:
             return None
 
+
 # Check forecast formatting
 
 
@@ -47,8 +48,15 @@ def check_formatting(my_path):
     for path in glob.iglob(my_path + "**/**/", recursive=False):
         for filepath in glob.iglob(path + "*.csv", recursive=False):
             files_in_repository += [filepath]
+
+            # check if file has been edited since last checked
             if filepath not in previous_checked:
+                # delete validated file if currrently present
+                df = df[df['file_path'] != filepath]
+
+                # validate file
                 file_error = validate_quantile_csv_file(filepath)
+
                 # Check forecast file date = forecast_date column
                 forecast_date_error = filename_match_forecast_date(filepath)
                 if forecast_date_error is not None:
@@ -61,7 +69,7 @@ def check_formatting(my_path):
                     output_errors[filepath] = file_error
                 else:
                     # add to previously checked files
-                    current_time = datetime.datetime.now()
+                    current_time = datetime.now()
                     df = df.append({'file_path': filepath,
                                     'validation_date': current_time}, ignore_index=True)
 
@@ -69,10 +77,6 @@ def check_formatting(my_path):
     # files that are in verify checks but NOT in repository
     deleted_files = np.setdiff1d(previous_checked, files_in_repository)
     df = df[~df['file_path'].isin(deleted_files)]
-
-    # delted files should be moved from the central validated_files.csv file
-    if len(deleted_files) > 0:
-        df.to_csv('code/validation/validated_files.csv', index=False)
 
     # update previously checked files
     df.to_csv('code/validation/locally_validated_files.csv', index=False)

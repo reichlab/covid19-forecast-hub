@@ -1,10 +1,10 @@
-team_name: NotreDame-FRED
+team_name: NotreDame
 team_abbr: NotreDame
 institution_affil: University of Notre Dame, Department of Biological Sciences
 team_funding: GE and TAP were supported by a RAPID grant from the National Science Foundation (DEB 2027718).
 team_experience: The Perkins lab is an infectious disease modeling lab with varying levels of experience. TAP and SM have many years experience with a variety of modeling approaches across a range of pathogens. GE and SMC have experience using complex agent-based models. RJO has experience producing disease forecasts.
 
-model_name: NotreDame-FRED
+model_name: FRED
 model_abbr: FRED
 model_output: cumulative deaths and incident deaths. The model also produces infections and symptomatic cases among other outputs, though we are just using deaths as a forecasting target.
 model_repo: https://github.com/confunguido/covid19_ND_forecasting
