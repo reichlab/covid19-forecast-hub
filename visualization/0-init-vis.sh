@@ -47,8 +47,8 @@ rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
 rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
 
 # Remove LANL-GrowthRateHosp
-rm -r ./data/Cumulative\ Deaths/LANL-GrowthRateHosp
-rm -r ./data/Incident\ Deaths/LANL-GrowthRateHosp
+# rm -r ./data/Cumulative\ Deaths/LANL-GrowthRateHosp
+# rm -r ./data/Incident\ Deaths/LANL-GrowthRateHosp
 
 # Remove Auquan
 rm -r ./data/Cumulative\ Deaths/Auquan-SEIR
