@@ -283,7 +283,7 @@ When a pull request is submitted,
 the data are validated through [Travis CI](https://travis-ci.org/) which runs
 the tests in [test-formatting.py](../code/validation/test-formatting.py).
 The intent for these tests are to validate the requirements above and 
-specifically enumerated [on the wiki](https://github.com/reichlab/covid19-forecast-hub/wiki/Validation-Checks).
+specifically enumerated [on the wiki](https://github.com/reichlab/covid19-forecast-hub/wiki/Validation-Checks#current-validation-checks).
 Please [let us know](https://github.com/reichlab/covid19-forecast-hub/issues) 
 if the wiki is inaccurate.
 
@@ -294,7 +294,7 @@ for details on how to troubleshoot.
 #### Run checks locally
 
 To run these checks locally rather than waiting for the results from a pull request, follow
-[these instructions](https://github.com/reichlab/covid19-forecast-hub/wiki/Validation-Checks).
+[these instructions](https://github.com/reichlab/covid19-forecast-hub/wiki/Validation-Checks#running-validations-locally).
 
 
 ### R validation checks
