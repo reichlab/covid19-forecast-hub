@@ -184,3 +184,6 @@ file_path,validation_date
 ./data-processed/MIT_CovidAnalytics-DELPHI/2020-05-18-MIT_CovidAnalytics-DELPHI.csv,2020-05-18 21:12:04.577397
 ./data-processed/Auquan-SEIR/2020-05-18-Auquan-SEIR.csv,2020-05-18 21:34:39.773345
 ./data-processed/LANL-GrowthRate/2020-05-18-LANL-GrowthRate.csv,2020-05-18 21:55:48.065503
+./data-processed/UMass-MechBayes/2020-05-17-UMass-MechBayes.csv,2020-05-18 22:06:39.893608
+./data-processed/JHU_IDD-CovidSP/2020-05-17-JHU_IDD-CovidSP.csv,2020-05-18 22:06:43.568180
+./data-processed/NotreDame-FRED/2020-05-18-NotreDame-FRED.csv,2020-05-18 22:06:43.920820
