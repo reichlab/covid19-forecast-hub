@@ -12,6 +12,22 @@ options(DT.options = list(pageLength = 25))
 source("../code/processing-fxns/get_next_saturday.R")
 source("read_processed_data.R")
 
+# Get truth 
+truth = bind_rows(
+  read_csv("../data-truth/truth-Incident Deaths.csv") %>% mutate(inc_cum = "inc"),
+  read_csv("../data-truth/truth-Cumulative Deaths.csv") %>% mutate(inc_cum = "cum")
+) %>%
+  rename(fips_numeric = location) %>%
+  left_join(read_csv("../template/state_fips_codes.csv") %>%
+              rename(fips_alpha = state,
+                     fips_numeric = state_code), by = c("fips_numeric")) %>%
+  mutate(fips_alpha = ifelse(fips_numeric == "US", "US", fips_alpha),
+         death_cases = "death",
+         simple_target = paste(inc_cum, death_cases)) 
+
+
+
+
 # Further process the processed data for ease of exploration
 latest <- all_data %>% 
   filter(!is.na(forecast_date)) %>%
@@ -157,7 +173,7 @@ ui <- navbarPage(
   tabPanel("Latest Viz",
            sidebarLayout(
              sidebarPanel(
-               selectInput("team",         "Team", sort(unique(latest_plot_data$team         ))),
+               selectInput("team",         "Team", sort(unique(latest_plot_data$team         )), "IHME"),
                selectInput("model",       "Model", sort(unique(latest_plot_data$model        ))),
                selectInput("target",     "Target", sort(unique(latest_plot_data$simple_target))),
                selectInput("location", "Location", sort(unique(latest_plot_data$fips_alpha   )))
@@ -206,6 +222,14 @@ server <- function(input, output, session) {
   latest_tmt  <- reactive({ latest_tm()      %>% filter(simple_target == input$target) })
   latest_tmtl <- reactive({ latest_tmt()     %>% filter(fips_alpha    == input$location) })
   
+  truth_plot <- reactive({ 
+    input_simple_target <- unique(paste(latest_tmtl()$inc_cum, latest_tmtl()$death_cases))
+    
+    truth %>% 
+      filter(fips_alpha == input$location,
+             grepl(input_simple_target, simple_target))
+  })
+  
   observe({
     models <- sort(unique(latest_t()$model))
     updateSelectInput(session, "model", choices = models, selected = models[1])
@@ -218,7 +242,8 @@ server <- function(input, output, session) {
   
   observe({
     locations <- sort(unique(latest_tmt()$fips_alpha))
-    updateSelectInput(session, "location", choices = locations, selected = "US")
+    updateSelectInput(session, "location", choices = locations, 
+                      selected = ifelse(any("US" == locations), "US", locations[1]))
   })
   
   output$latest_plot      <- shiny::renderPlot({
@@ -228,12 +253,19 @@ server <- function(input, output, session) {
     forecast_date <- unique(d$forecast_date)
     
     ggplot(d, aes(x = target_end_date)) + 
-      geom_ribbon(aes(ymin = `0.025`, ymax = `0.975`), fill = "lightgray") +
-      geom_ribbon(aes(ymin = `0.25`, ymax = `0.75`), fill = "gray") +
-      geom_point(aes(y=`0.5`), color = "white") + geom_line( aes(y=`0.5`), color = "white") + 
-      geom_point(aes(y=point)) + geom_line( aes(y=point)) + 
-      labs(y="value", main = forecast_date) +
-      theme_bw()
+      geom_ribbon(aes(ymin = `0.025`, ymax = `0.975`, fill = "95%")) +
+      geom_ribbon(aes(ymin = `0.25`, ymax = `0.75`, fill = "50%")) +
+      scale_fill_manual(name = "", values = c("95%" = "lightgray", "50%" = "gray")) +
+      
+      geom_point(aes(y=`0.5`, color = "median")) + geom_line( aes(y=`0.5`, color = "median")) + 
+      geom_point(aes(y=point, color = "point")) + geom_line( aes(y=point, color = "point")) + 
+      scale_color_manual(name = "", values = c("median" = "slategray", "point" = "black")) +
+      
+      geom_line(data = truth_plot(), aes(x = date, y = value), color = "green") + 
+      
+      labs(y="value", title = forecast_date) +
+      theme_bw() +
+      theme(plot.title = element_text(color = ifelse(Sys.Date() - forecast_date > 6, "red", "black")))
   })
   
   output$all_data         <- DT::renderDT(all_data,         filter = "top")
