@@ -291,38 +291,10 @@ If the pull request fails, please
 [follow these instructions](https://github.com/reichlab/covid19-forecast-hub/wiki/Troubleshooting-Pull-Requests)
 for details on how to troubleshoot.
 
-#### Run validation tests locally
+#### Run checks locally
 
-To run these tests locally, you need to 
-[install python3.x](https://www.python.org/downloads/) and the following 
-dependencies via 
-
-
-```bash
-sudo easy_install pip
-pip3 install --upgrade setuptools
-pip3 install pymmwr click requests urllib3 selenium webdriver-manager pandas
-pip3 install git+https://github.com/reichlab/zoltpy/
-```
-
-For those familiar with python, 
-you can run the tests in 
-[test-formatting.py](../code/validation/test-formatting.py) 
-prior to submitting a pull request to ensure the data will validate. 
-Specifically, you can run 
-
-
-```bash
-python3 code/validation/test-formatting.py
-```
-
-If the file passes, then you are ready for your pull request,
-but [test-formatting.py](../code/validation/test-formatting.py) currently adds
-your file to [validated_files.csv](../code/validation/validated_files.csv)
-(see #204). 
-You should **not** submit 
-[validated_files.csv](../code/validation/validated_files.csv)
-in your pull request. 
+To run these checks locally rather than waiting for the results from a pull request, follow
+[these instructions](https://github.com/reichlab/covid19-forecast-hub/wiki/Validation-Checks).
 
 
 ### R validation checks
