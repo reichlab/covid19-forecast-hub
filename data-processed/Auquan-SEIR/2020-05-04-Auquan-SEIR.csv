@@ -1,5 +1,5 @@
 forecast_date,target,target_end_date,location,type,quantile,value
-2020-05-04,1 day ahead cum death,2020-05-05,01,point,NA,319
+2020-05-04,1 day ahead cum,2020-05-05,01,point,NA,319
 2020-05-04,2 day ahead cum death,2020-05-06,01,point,NA,333
 2020-05-04,3 day ahead cum death,2020-05-07,01,point,NA,348
 2020-05-04,4 day ahead cum death,2020-05-08,01,point,NA,362
@@ -13,7 +13,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2020-05-04,12 day ahead cum death,2020-05-16,01,point,NA,481
 2020-05-04,13 day ahead cum death,2020-05-17,01,point,NA,497
 2020-05-04,14 day ahead cum death,2020-05-18,01,point,NA,513
-2020-05-04,15 day ahead cum death,2020-05-19,01,point,NA,529
+2020-05-05,15 day ahead cum death,2020-05-19,01,point,NA,529
 2020-05-04,16 day ahead cum death,2020-05-20,01,point,NA,545
 2020-05-04,17 day ahead cum death,2020-05-21,01,point,NA,562
 2020-05-04,18 day ahead cum death,2020-05-22,01,point,NA,579

@@ -24,8 +24,8 @@ data_source_known: JHU
 this_model_is_an_ensemble: FALSE
 this_model_is_unconditional: TRUE
 
-methods: >-
-    Modified SEIR model with compartments for reported and unreported infections. Non-linear mixed effects curve-fitting.
+methods: 
+    45983u59>><@<!Modified SEIR model with compartments for reported and unreported infections. Non-linear mixed effects curve-fitting.
  
 
 methods_long: >-
