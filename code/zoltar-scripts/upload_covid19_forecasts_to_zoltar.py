@@ -5,6 +5,8 @@ from zoltpy.covid19 import VALID_TARGET_NAMES, covid19_row_validator, validate_q
 import os
 import sys
 import yaml
+import hashlib
+import pickle
 
 # meta info
 project_name = 'COVID-19 Forecasts'
@@ -12,6 +14,13 @@ project_obj = None
 project_timezeros = []
 conn = util.authenticate()
 url = 'https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/'
+try:
+    with open('./code/zoltar-scripts/validated_file_db.p', 'rb') as f:
+        l = pickle.load(f)
+        f.close()
+except Exception as ex:
+    l = []
+db = dict(l)
 
 # Get all existing timezeros and models in the project
 project_obj = [project for project in conn.projects if project.name == project_name][0]
@@ -41,7 +50,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
     if model_name not in model_names:
         model_config = {}
         model_config['name'], model_config['abbreviation'], model_config['team_name'], model_config['description'], model_config['home_url'], model_config['aux_data_url'] \
-            = metadata['model_name'], metadata['model_abbr'], metadata['team_name'], metadata['methods'], url + dir_name, 'NA'
+            = metadata['model_name'], metadata['team_abbr']+'-'+metadata['model_abbr'], metadata['team_name'], metadata['methods'], url + dir_name, 'NA'
         try:
             project_obj.create_model(model_config)
             models = project_obj.models
@@ -59,10 +68,21 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
     timezero_date_batch = []
 
     for forecast in forecasts:
+        over_write = False
+        # Check if forecast is already on zoltar
+        with open(path_to_processed_model_forecasts+forecast, "rb") as f:
+            # Get the current hash of a processed file
+            checksum = hashlib.md5(f.read()).hexdigest()
+            f.close()
 
-        # Skip if forecast is already on zoltar
-        if forecast in existing_forecasts:
-            continue
+            # Check this hash against the previous version of hash
+            if db.get(forecast, None) != checksum:
+                print(forecast)
+                db[forecast] = checksum
+                if forecast in existing_forecasts:
+                    over_write = True
+            else:
+                continue
 
         # Skip metadata text file
         if '.txt' in forecast:
@@ -88,11 +108,12 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
                 if len(error_from_transformation) >0 :
                     return error_from_transformation
                 else:
-                    # try:
-                    #     util.upload_forecast(conn, quantile_json, forecast, 
-                    #                             project_name, model_name , time_zero_date, overwrite=False)
-                    # except Exception as ex:
-                    #     print(ex)
+                    try:
+                        util.upload_forecast(conn, quantile_json, forecast, 
+                                                project_name, model_name , time_zero_date, overwrite=over_write)
+                    except Exception as ex:
+                        print(ex)
+                        return ex
                     json_io_dict_batch.append(quantile_json)
                     timezero_date_batch.append(time_zero_date)
                     forecast_filename_batch.append(forecast)
@@ -100,16 +121,16 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
                 return errors_from_validation
             fp.close()
     
-    # Batch upload for better performance
-    if len(json_io_dict_batch) > 0:
-        try:
-            util.upload_forecast_batch(conn, json_io_dict_batch, forecast_filename_batch, project_name, model_name, timezero_date_batch)
-        except Exception as ex:
-            return ex
+    # # Batch upload for better performance
+    # if len(json_io_dict_batch) > 0:
+    #     try:
+    #         util.upload_forecast_batch(conn, json_io_dict_batch, forecast_filename_batch, project_name, model_name, timezero_date_batch, overwrite = over_write)
+    #     except Exception as ex:
+    #         return ex
     return "Pass"
 
 
-# Example Run: python3 ./code/zoltar-scripts/upload_covid19_forecasts_to+zoltar.py
+# Example Run: python3 ./code/zoltar-scripts/upload_covid19_forecasts_to_zoltar.py
 if __name__ == '__main__':
     list_of_model_directories = os.listdir('./data-processed/')
     output_errors = {}
@@ -129,4 +150,8 @@ if __name__ == '__main__':
         sys.exit("\n ERRORS FOUND EXITING BUILD...")
     else:
         print("✓ no errors")
+
+    with open('./code/zoltar-scripts/validated_file_db.p', 'wb') as fw:
+        pickle.dump(db, fw)
+        fw.close()
     

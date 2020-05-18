@@ -12,11 +12,6 @@ if [[ "$TRAVIS_BRANCH" != "master" ]]; then
     exit 0
 fi
 
-#if [[ "$TRAVIS_COMMIT_MESSAGE" != *"trigger build"* ]]; then
-#    echo "Do not trigger build. Exiting..."
-#    exit 0
-#fi
-
 # Save some useful information
 REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
@@ -44,18 +39,39 @@ if [[ "$TRAVIS_COMMIT_MESSAGE" == *"update data"* ]]; then
 fi
 
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
-   echo "Merge detected.. push to github"
-   bash ./travis/push.sh
-   echo "Upload forecasts to Zoltar"
+   echo "Upload forecasts to Zoltar "
    bash ./travis/upload-to-zoltar.sh
 fi
 
-if [[ "$TRAVIS_COMMIT_MESSAGE" == *"trigger build"* ]]; then
-    source ./travis/vis.sh
-    source ./travis/push.sh
+if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then 
+   echo "NOT PULL REQUEST" 
+   echo "replace validated files"
+   cp ./code/validation/locally_validated_files.csv ./code/validation/validated_files.csv
+
+   echo "Merge detected.. push to github"
+   bash ./travis/push.sh
 fi
 
+if [[ "$TRAVIS_COMMIT_MESSAGE" == *"trigger build"* ]]; then
+    source ./travis/vis-deploy.sh
+fi
+
+# Functions below are for testing purposes
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test zoltar"* ]]; then
     echo "Upload forecasts to Zoltar"
     bash ./travis/upload-to-zoltar.sh
+    echo "Push the validated file db to Zoltar"
+    bash ./travis/push.sh
+fi
+
+if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test truth zoltar"* ]]; then
+    echo "Upload truth to Zoltar"
+    python3 ./code/zoltar-scripts/upload_truth_to_zoltar.py
+fi
+
+if [[ "$TRAVIS_COMMIT_MESSAGE" == *"zoltar validated db"* ]]; then
+    echo "Create new validated zoltar forecast list"
+    bash ./travis/create-validated-file-db.sh
+    echo "Push the validated file db to Zoltar"
+    bash ./travis/push.sh
 fi

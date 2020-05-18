@@ -147,7 +147,7 @@ url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_cov
 url_req = requests.get(url).content
 df = pd.read_csv(io.StringIO(url_req.decode('utf-8')))
 
-fips_codes = pd.read_csv('../../template/state_fips_codes.csv')
+fips_codes = pd.read_csv('../template/state_fips_codes.csv')
 
 # aggregate by state and nationally
 state_agg = df.groupby(['Province_State']).sum()
@@ -170,5 +170,5 @@ df_inc_death = configure_JHU_data(df_truth_incident, "Incident Deaths")
 zoltar_truth = pd.concat([df_cum_death, df_inc_death])
 
 # write truth to csv
-file_path = '../../data-truth/zoltar-truth.csv'
+file_path = '../data-truth/zoltar-truth.csv'
 zoltar_truth.to_csv(file_path, index=False)
