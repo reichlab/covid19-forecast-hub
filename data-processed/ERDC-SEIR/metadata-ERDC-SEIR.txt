@@ -7,7 +7,7 @@ team_experience:
 
 model_name: ERDC-SEIR
 model_abbr: ERDC-SEIR
-model_output: 
+model_output: https://github.com/erdc-cv19/covid19-forecast-hub
 model_repo:
 
 model_contributors: Michael L. Mayo <Michael.L.Mayo@erdc.dren.mil>, Michael A. Rowland 
