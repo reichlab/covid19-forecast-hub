@@ -4,8 +4,8 @@ institution_affil: University of Chicago
 team_funding: NIH
 team_experience:
 
-model_name: CovidIL_100
-model_abbr: CovidIL_100
+model_name: CovidIL_30_increase
+model_abbr: CovidIL_30_increase
 model_output: 
 model_repo: https://github.com/cobeylab/covid_IL
 
