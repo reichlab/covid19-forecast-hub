@@ -7,7 +7,7 @@ team_experience: 20 plus years in life science and modeling
 model_name: The Agent-based local stochastic model of COVID-19
 model_abbr: Multiagents
 model_output:
-model_repo:
+model_repo: https://github.com/quantori/COVID19-MA-Transmission
 
 model_contributors: Yuriy Gankin <yuriy.gankin@quantori.com>  Semyon Semyonov <semyon.semyonov@quantori.com> 
 Model_targets: wk ahead incident deaths   day ahead incident deaths
