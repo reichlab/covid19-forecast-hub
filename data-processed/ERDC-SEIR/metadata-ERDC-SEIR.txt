@@ -23,19 +23,17 @@ this_model_is_an_ensemble: FALSE
 this_model_is_unconditional: FALSE
 
 methods: >-
-    The ERDC SEIR model makes predictions about future infection states of a population (e.g., susceptible, exposed, infections reported to authorities, infections unreported),
-    by using Bayesian curve-fitting methods to conform the model dynamically to past data.
+	The ERDC SEIR model makes predictions of several variables (e.g., reported new cases per day, cumulative reported cases, the susceptible population, etc...).  Model parameters are estimated using historical data using techniques from Bayesian inference.
 
 methods_long: >-
-    This model makes predictions about the future infection states of a population center (e.g., state, CBSA), which are based on several standard assumptions common to population modeling.
-    Relative to COVID-19, it assumes that trends in the data persist into the future beyond the latest available datum.  Other assumptions include:
-        (i)   modeled populations are large enough that fluctuations in the disease states grow slower than averages (i.e., coefficient of variation < 1);
-        (ii)  infection parameters change over time in response to changing social and policy factors which manifest in the data (e.g., social distancing policies);
-        (iii) recovered individuals are neither infectious nor become susceptible to further infection.
-    
-    A Bayesian approach is used to fit cumulative reported and new daily infection data to the infection states as predicted by the model.  Curve fitting is performed dynamically,
-    which leads to infection parameters (e.g., transmissibility) that change over itme. As a result, the effective reproduction number, as estimated by the model for SARS-CoV-2 using the next-generation matrix method approach,
-    changes with time, potentially up to the last reported dataum, after which the model parameters remain constant in reflection of our assumption regarding the contiuation of existing social policy.
-    Deaths are estimated from this model through a procedure which leverages state-level data on recoveries and fatalities.
+	The ERDC SEIR model is a process-based model that mathematically describes the virus dynamics in a population center (e.g., state, CBSA) using assumptions that are common in compartmental models:
+    	(i)   modeled populations are large enough that fluctuations in the disease states grow slower than averages (i.e., coefficient of variation < 1)
+    	(ii)  recovered individuals are neither infectious nor become susceptible to further infection.
+
+	The model is similar to classic SEIR models but with additional compartments for unreported infections and isolated individuals.  Model parameters describing reporting rates and transmission rates are allowed to vary in time over over the historical record as social and policy factors change.  Forecasts into the future, however, are made under the assumption that the parameters are held constant in time.
+
+	The model parameters are estimated from observations of the cumulative number of cases using a Bayesian approach. Information from subject matter experts (SMEs) is used to develop a prior probability distribution over the model parameters.  This then combined with a statistical model of the model-data mismatch to produce a posterior probability distribution over the model parameters that incorporates both the cumulative observations and subject matter expertise.  The parameters that maximize the posterior probability density are used to make forecasts into the future.  The effective reproduction number is computed using the next-generation matrix method.
+
+	Deaths are estimated from this model through a procedure which leverages state-level data on recoveries and fatalities.
 
 citation: In preparation
