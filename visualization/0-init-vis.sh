@@ -78,7 +78,6 @@ python3 ./scripts/convert-forecasts.py
 
 # Get truth data
 python3 ./scripts/get-truth-data.py
-python3 ./scripts/zoltar-truth-data.py
 
 # Replace already present data
 rm -rf ./vis-master/data
