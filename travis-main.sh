@@ -31,9 +31,7 @@ echo "build complete"
 if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* ]]; then
    echo "updating model data..."
    bash ./travis/pull-data.sh
-fi
 
-if [[ "$TRAVIS_COMMIT_MESSAGE" == *"CRON: update zoltar truth data"* ]]; then
    echo "updating truth data..."
    bash ./travis/update-zoltar-truth.sh
 fi
