@@ -213,7 +213,9 @@ ui <- navbarPage(
            h5("Latest quantiles: summarizes `Latest` to see which quantiles are included"),
            h3("Usage"),
            h4("Each table has the capability to be searched and filtered")
-           )
+           ),
+  
+  selected = "Latest Viz"
 )
 
 
