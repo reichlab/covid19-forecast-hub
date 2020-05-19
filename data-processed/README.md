@@ -2,6 +2,7 @@
 
 This page is intended to provide teams with all the information they need to
 submit forecasts.
+All forecasts should be submitted directly to the [data-processed/](./) folder.
 Data in this directory should be added to the repository through a pull request
 so that automatic data validation checks are run.
 
@@ -11,6 +12,7 @@ These instructions provide detail about the
 that you can do prior to this pull request. 
 In addition, we describe 
 [meta-data](#Meta-data) that each model should provide.
+
 
 *Table of Contents*
 
@@ -42,7 +44,8 @@ file can be used in the visualization and ensemble forecasting.
 
 ### Subdirectory
 
-Each subdirectory within this data-processed/ directory has the format
+Each subdirectory within the [data-processed/](data-processed/) directory has 
+the format
 
     team-model
     
@@ -53,10 +56,35 @@ where
 
 Both team and model should be less than 15 characters and not include hyphens.
 
+Within each subdirectory, there should be a metadata file, a license file
+(optional), and a set of forecasts. 
 
-### Filenames
 
-Each file within the subdirectory should have the following format
+### Metadata 
+
+Participating teams must provide a metadata file (see [example](./UMass-ExpertCrowd/metadata-UMass-ExpertCrowd.txt)), 
+including methodological detail about their approach and a link to a file 
+(or a file itself) describing the methods used. 
+
+Note that the information in the `methods` field in the metadata is what will be shown on the [interactive visualization](https://reichlab.io/covid19-forecast-hub/) when a user hovers on your team name. For this reason, we request that the description be brief, around 200 characters (although at the moment this is not strictly enforced).
+
+The metadata file should have the following format
+
+    metadata-team-model.txt
+    
+### License (optional)
+
+If you would like to include a license file, 
+please use the following format
+
+    LICENSE-team.txt
+
+
+
+
+### Forecasts
+
+Each forecast file within the subdirectory should have the following format
 
     YYYY-MM-DD-team-model.csv
     
@@ -75,7 +103,7 @@ The `team` and `model` in this file must match the `team` and `model` in the
 directory this file is in. Both `team` and `model` should be less than 20 characters, alpha-numeric and underscores only, with no spaces or hyphens.
 
 
-### File format
+## Forecast file format
 
 The file must be a comma-separated value (csv) file with the following 
 columns (in any order):
@@ -94,7 +122,7 @@ Each row in the file is either a point or quantile forecast for a location on a
 particular date for a particular target. 
 
 
-#### `forecast_date`
+### `forecast_date`
 
 Values in the `forecast_date` column must be a date in the format
 
@@ -103,7 +131,7 @@ Values in the `forecast_date` column must be a date in the format
 This is the date on which the submitted forecast data was made available in `YYYY-MM-DD` format. In general, this will typically be the date on which the model finishes running and produces the standard formatted file. `forecast_date` should correspond and be redundant with the date in the filename, but is included here by request from some analysts. We will enforce that the forecast_date for a file must be either the date on which the file was submitted to the repository or the previous day. Exceptions will be made for legitimate extenuating circumstances.
 
 
-#### `target`
+### `target`
 
 Values in the `target` column must be a character (string) and be one of the 
 following specific targets:
@@ -119,14 +147,14 @@ There are standard software packages to convert from dates to epidemic weeks and
 
 We have created [a csv file](../template/covid19-death-forecast-dates.csv) describing forecast collection dates and dates for which forecasts refer to can be found.
 
-##### N day ahead cum death
+#### N day ahead cum death
 
 This target is the cumulative number of deaths predicted by the model for 
 N days after `forecast_date`. 
 
 As an example, for day-ahead forecasts with a `forecast_date` of a Monday, a 1 day ahead cum death forecast corresponds to cumulative deaths by the end of Tuesday, 2 day ahead to Wednesday, etc.... 
 
-##### N day ahead inc death
+#### N day ahead inc death
 
 This target is the incident (daily) number of deaths predicted by the model
 on day N after `forecast_date`. 
@@ -134,7 +162,7 @@ on day N after `forecast_date`.
 As an example, for day-ahead forecasts with a `forecast_date` of a Monday, a 1 day ahead cum death forecast corresponds to incident deaths on Tuesday, 2 day ahead to Wednesday, etc.... 
 
 
-##### N wk ahead cum death
+#### N wk ahead cum death
 
 This target is the cumulative number of deaths predicted by the model up to 
 and including N weeks after `forecast_date`. 
@@ -144,7 +172,7 @@ For week-ahead forecasts with `forecast_date` of Sunday or Monday of EW12, a 1 w
 A week-ahead forecast should represent the cumulative number of deaths reported on the Saturday of a given epiweek.
 
 
-##### N wk ahead inc death
+#### N wk ahead inc death
 
 This target is the incident (weekly) number of deaths predicted by the model 
 during the week that is N weeks after `forecast_date`. 
@@ -154,15 +182,15 @@ For week-ahead forecasts with `forecast_date` of Sunday or Monday of EW12, a 1 w
 A week-ahead forecast should represent the total number of incident deaths within a given epiweek (from Sunday through Saturday, inclusive).
 
 
-##### N day ahead inc hosp
+#### N day ahead inc hosp
 
-This target is the incident (daily) number of hospitalizations predicted by the model
-on day # after `forecast_date`.
+This target is the incident (daily) number of deaths predicted by the model
+on day N after `forecast_date`.
 
 As an example, for day-ahead forecasts with a `forecast_date` of a Monday, a 1 day ahead inc hosp forecast corresponds to the number of incident hospitalizations on Tuesday, 2 day ahead to Wednesday, etc.... 
 
 
-#### `target_end_date`
+### `target_end_date`
 
 Values in the `target_end_date` column must be a date in the format
 
@@ -174,7 +202,7 @@ For "# wk" targets, `target_end_date` will be the Saturday at the end of the
 week time period.
 
 
-#### `location`
+### `location`
 
 Values in the `location` column must be
 
@@ -187,7 +215,7 @@ This location identifies the geographical location for the forecast.
 A file with FIPS codes for states in the US is available through the `fips_code` dataset in the `tigris` R package, and saved as a [public CSV file](./template/state_fips_codes.csv). Please note that when reading in FIPS codes, they should be read in as characters to preserve any leading zeroes.
 
 
-#### `type`
+### `type`
 
 Values in the `type` column are either
 
@@ -202,7 +230,7 @@ visualization and in ensemble construction.
 **Forecasts must include exactly 1 "point" forecast for every location-target
 pair.**
 
-#### `quantile`
+### `quantile`
 
 Values in the `quantile` column are either "NA" (if `type` is "point") or 
 a quantile in the format
@@ -226,7 +254,7 @@ c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99)
 ```
 
 
-#### `value`
+### `value`
 
 Values in the `value` column are numeric indicating the "point" or "quantile"
 prediction for this row. 
@@ -242,20 +270,20 @@ An example inverse CDF is below.
 
 
 
-## Data validation
+## Forecast validation
 
 To ensure proper data formatting, 
 pull requests for new data in data-processed/ will be automatically run.
 
 
 
-### Pull request data validation
+### Pull request forecast validation
 
 When a pull request is submitted, 
 the data are validated through [Travis CI](https://travis-ci.org/) which runs
 the tests in [test-formatting.py](../code/validation/test-formatting.py).
 The intent for these tests are to validate the requirements above and 
-specifically enumerated [on the wiki](https://github.com/reichlab/covid19-forecast-hub/wiki/Validation-Checks).
+specifically enumerated [on the wiki](https://github.com/reichlab/covid19-forecast-hub/wiki/Validation-Checks#current-validation-checks).
 Please [let us know](https://github.com/reichlab/covid19-forecast-hub/issues) 
 if the wiki is inaccurate.
 
@@ -263,38 +291,10 @@ If the pull request fails, please
 [follow these instructions](https://github.com/reichlab/covid19-forecast-hub/wiki/Troubleshooting-Pull-Requests)
 for details on how to troubleshoot.
 
-#### Run validation tests locally
+#### Run checks locally
 
-To run these tests locally, you need to 
-[install python3.x](https://www.python.org/downloads/) and the following 
-dependencies via 
-
-
-```bash
-sudo easy_install pip
-pip3 install --upgrade setuptools
-pip3 install pymmwr click requests urllib3 selenium webdriver-manager pandas
-pip3 install git+https://github.com/reichlab/zoltpy/
-```
-
-For those familiar with python, 
-you can run the tests in 
-[test-formatting.py](../code/validation/test-formatting.py) 
-prior to submitting a pull request to ensure the data will validate. 
-Specifically, you can run 
-
-
-```bash
-python3 code/validation/test-formatting.py
-```
-
-If the file passes, then you are ready for your pull request,
-but [test-formatting.py](../code/validation/test-formatting.py) currently adds
-your file to [validated_files.csv](../code/validation/validated_files.csv)
-(see #204). 
-You should **not** submit 
-[validated_files.csv](../code/validation/validated_files.csv)
-in your pull request. 
+To run these checks locally rather than waiting for the results from a pull request, follow
+[these instructions](https://github.com/reichlab/covid19-forecast-hub/wiki/Validation-Checks#running-validations-locally).
 
 
 ### R validation checks
@@ -323,9 +323,4 @@ the repository.
 Thus, it is provided as-is within no warranty. 
 
 
-## Meta-data
 
-Participating teams must provide a metadata file (see [example](../data-processed/UMass-ExpertCrowd/metadata-UMass-ExpertCrowd.txt)), including methodological detail about their approach and a link to a file 
-(or a file itself) describing the methods used. 
-
-Note that the information in the `methods` field in the metadata is what will be shown on the [interactive visualization](https://reichlab.io/covid19-forecast-hub/) when a user hovers on your team name. For this reason, we request that the description be brief, around 200 characters (although at the moment this is not strictly enforced).
