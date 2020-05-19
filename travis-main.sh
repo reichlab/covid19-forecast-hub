@@ -31,11 +31,19 @@ echo "build complete"
 if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* ]]; then
    echo "updating model data..."
    bash ./travis/pull-data.sh
+
+   echo "updating truth data..."
+   bash ./travis/update-zoltar-truth.sh
 fi
 
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"update data"* ]]; then
    echo "updating model data..."
    bash ./travis/pull-data.sh
+fi
+
+if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
+   echo "Upload forecasts to Zoltar "
+   bash ./travis/upload-to-zoltar.sh
 fi
 
 if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then 
@@ -45,30 +53,23 @@ if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
 
    echo "Merge detected.. push to github"
    bash ./travis/push.sh
-   echo "Upload forecasts to Zoltar"
-    bash ./travis/upload-to-zoltar.sh
-    echo "Push the validated file db to Zoltar"
-    bash ./travis/push.sh
 fi
-
-# if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
-#    echo "Merge detected.. push to github"
-#    bash ./travis/push.sh
-#    echo "Upload forecasts to Zoltar "
-#    bash ./travis/upload-to-zoltar.sh
-#    echo "Push the updated validated file db to Zoltar"
-#     bash ./travis/push.sh
-# fi
 
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"trigger build"* ]]; then
     source ./travis/vis-deploy.sh
 fi
 
+# Functions below are for testing purposes
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test zoltar"* ]]; then
     echo "Upload forecasts to Zoltar"
     bash ./travis/upload-to-zoltar.sh
     echo "Push the validated file db to Zoltar"
     bash ./travis/push.sh
+fi
+
+if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test truth zoltar"* ]]; then
+    echo "Upload truth to Zoltar"
+    python3 ./code/zoltar-scripts/upload_truth_to_zoltar.py
 fi
 
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"zoltar validated db"* ]]; then

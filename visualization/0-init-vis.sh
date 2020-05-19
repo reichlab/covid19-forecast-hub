@@ -33,35 +33,41 @@ rm -r ./data/Cumulative\ Deaths/UChicago-CovidIL_60
 rm -r ./data/Incident\ Deaths/UChicago-CovidIL_60
 rm -r ./data/Cumulative\ Deaths/UChicago-CovidIL_80
 rm -r ./data/Incident\ Deaths/UChicago-CovidIL_80
+rm -r ./data/Cumulative\ Deaths/UChicago-CovidIL_100
+rm -r ./data/Incident\ Deaths/UChicago-CovidIL_100
+rm -r ./data/Cumulative\ Deaths/UChicago-CovidIL_10_increase
+rm -r ./data/Incident\ Deaths/UChicago-CovidIL_10_increase
+rm -r ./data/Cumulative\ Deaths/UChicago-CovidIL_30_increase
+rm -r ./data/Incident\ Deaths/UChicago-CovidIL_30_increase
 
 # Remove JHU
 rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSPHighDist
 rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSPHighDist
 rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSPModDist
 rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSPModDist
-rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSP
-rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSP
+# rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSP
+# rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSP
 
 # Remove Iowa State Except STEM10
 rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
 rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
 
 # Remove LANL-GrowthRateHosp
-rm -r ./data/Cumulative\ Deaths/LANL-GrowthRateHosp
-rm -r ./data/Incident\ Deaths/LANL-GrowthRateHosp
+# rm -r ./data/Cumulative\ Deaths/LANL-GrowthRateHosp
+# rm -r ./data/Incident\ Deaths/LANL-GrowthRateHosp
 
 # Remove Auquan
-rm -r ./data/Cumulative\ Deaths/Auquan-SEIR
+# rm -r ./data/Cumulative\ Deaths/Auquan-SEIR
 rm -r ./data/Incident\ Deaths/Auquan-SEIR
 
 # Remove CovidActNow-SEIR_CAN (no week estimates)
-rm -r ./data/Cumulative\ Deaths/CAN-SEIR_CAN
-rm -r ./data/Incident\ Deaths/CAN-SEIR_CAN
+# rm -r ./data/Cumulative\ Deaths/CAN-SEIR_CAN
+# rm -r ./data/Incident\ Deaths/CAN-SEIR_CAN
 
 # Remove Imperial ensemble 1
 rm -r ./data/Cumulative\ Deaths/Imperial-Ensemble1
 rm -r ./data/Incident\ Deaths/Imperial-Ensemble1
-rm -r ./data/Incident\ Deaths/Imperial-Ensemble2
+# rm -r ./data/Incident\ Deaths/Imperial-Ensemble2
 
 # Remove Ensemble Incident
 rm -r ./data/Incident\ Deaths/COVIDhub-ensemble
@@ -78,7 +84,6 @@ python3 ./scripts/convert-forecasts.py
 
 # Get truth data
 python3 ./scripts/get-truth-data.py
-python3 ./scripts/zoltar-truth-data.py
 
 # Replace already present data
 rm -rf ./vis-master/data

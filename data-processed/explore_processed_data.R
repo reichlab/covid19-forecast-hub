@@ -6,6 +6,7 @@ library("tidyverse")
 library("shiny")
 library("DT")
 library("rmarkdown")
+library("MMWRweek")
 
 options(DT.options = list(pageLength = 25))
 
@@ -14,8 +15,24 @@ source("read_processed_data.R")
 
 # Get truth 
 truth = bind_rows(
-  read_csv("../data-truth/truth-Incident Deaths.csv") %>% mutate(inc_cum = "inc"),
-  read_csv("../data-truth/truth-Cumulative Deaths.csv") %>% mutate(inc_cum = "cum")
+  read_csv("../data-truth/truth-Incident Deaths.csv") %>% 
+    mutate(inc_cum = "inc", unit = "day"),
+  
+  read_csv("../data-truth/truth-Incident Deaths.csv") %>% 
+    dplyr::mutate(week = MMWRweek::MMWRweek(date)$MMWRweek) %>%
+    dplyr::group_by(location,week) %>%
+    dplyr::summarize(date = max(date),
+                     value = sum(value, na.rm = TRUE)) %>%
+    dplyr::filter(weekdays(date) == "Saturday") %>%
+    dplyr::mutate(inc_cum = "inc", unit = "wk") %>%
+    dplyr::select(-week),
+  
+  read_csv("../data-truth/truth-Cumulative Deaths.csv") %>% 
+    mutate(inc_cum = "cum", unit = "wk") %>%
+    dplyr::filter(weekdays(date) == "Saturday"),
+  
+  read_csv("../data-truth/truth-Cumulative Deaths.csv") %>% 
+    mutate(inc_cum = "cum", unit = "day")
 ) %>%
   rename(fips_numeric = location) %>%
   left_join(read_csv("../template/state_fips_codes.csv") %>%
@@ -23,7 +40,7 @@ truth = bind_rows(
                      fips_numeric = state_code), by = c("fips_numeric")) %>%
   mutate(fips_alpha = ifelse(fips_numeric == "US", "US", fips_alpha),
          death_cases = "death",
-         simple_target = paste(inc_cum, death_cases)) 
+         simple_target = paste(unit, "ahead", inc_cum, death_cases)) 
 
 
 
@@ -196,7 +213,9 @@ ui <- navbarPage(
            h5("Latest quantiles: summarizes `Latest` to see which quantiles are included"),
            h3("Usage"),
            h4("Each table has the capability to be searched and filtered")
-           )
+           ),
+  
+  selected = "Latest Viz"
 )
 
 
@@ -223,7 +242,8 @@ server <- function(input, output, session) {
   latest_tmtl <- reactive({ latest_tmt()     %>% filter(fips_alpha    == input$location) })
   
   truth_plot <- reactive({ 
-    input_simple_target <- unique(paste(latest_tmtl()$inc_cum, latest_tmtl()$death_cases))
+    input_simple_target <- unique(paste(
+      latest_tmtl()$unit, "ahead", latest_tmtl()$inc_cum, latest_tmtl()$death_cases))
     
     truth %>% 
       filter(fips_alpha == input$location,

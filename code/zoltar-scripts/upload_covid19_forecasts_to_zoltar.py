@@ -45,7 +45,10 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
     forecasts = os.listdir(path_to_processed_model_forecasts)
 
     # Get model name or create a new model if it's not in the current Zoltar project
-    metadata = metadata_dict_for_file(path_to_processed_model_forecasts+'metadata-'+dir_name+'.txt')
+    try:
+        metadata = metadata_dict_for_file(path_to_processed_model_forecasts+'metadata-'+dir_name+'.txt')
+    except Exception as ex:
+        return ex 
     model_name = metadata['model_name']
     if model_name not in model_names:
         model_config = {}
@@ -130,11 +133,13 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
     return "Pass"
 
 
-# Example Run: python3 ./code/zoltar-scripts/upload_covid19_forecasts_to+zoltar.py
+# Example Run: python3 ./code/zoltar-scripts/upload_covid19_forecasts_to_zoltar.py
 if __name__ == '__main__':
     list_of_model_directories = os.listdir('./data-processed/')
     output_errors = {}
     for directory in list_of_model_directories:
+        # if "CovidActNow-SEIR_CAN" not in directory:
+        #     continue
         if "." in directory:
             continue
         output = upload_covid_all_forecasts('./data-processed/'+directory+'/',directory)
@@ -145,8 +150,7 @@ if __name__ == '__main__':
     if len(output_errors) > 0:
         for directory, errors in output_errors.items():
             print("\n* ERROR IN '", directory, "'")
-            for error in errors:
-                print(error)
+            print(errors)
         sys.exit("\n ERRORS FOUND EXITING BUILD...")
     else:
         print("✓ no errors")
