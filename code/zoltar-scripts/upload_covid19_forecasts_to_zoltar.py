@@ -45,7 +45,10 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
     forecasts = os.listdir(path_to_processed_model_forecasts)
 
     # Get model name or create a new model if it's not in the current Zoltar project
-    metadata = metadata_dict_for_file(path_to_processed_model_forecasts+'metadata-'+dir_name+'.txt')
+    try:
+        metadata = metadata_dict_for_file(path_to_processed_model_forecasts+'metadata-'+dir_name+'.txt')
+    except Exception as ex:
+        return ex 
     model_name = metadata['model_name']
     if model_name not in model_names:
         model_config = {}
