@@ -1,0 +1,841 @@
+location,location_name,model_abbreviation,eligibility
+01,AL,Auquan-SEIR,eligible
+02,AK,Auquan-SEIR,eligible
+04,AZ,Auquan-SEIR,eligible
+05,AR,Auquan-SEIR,eligible
+06,CA,Auquan-SEIR,eligible
+08,CO,Auquan-SEIR,eligible
+09,CT,Auquan-SEIR,eligible
+10,DE,Auquan-SEIR,eligible
+11,DC,Auquan-SEIR,eligible
+12,FL,Auquan-SEIR,eligible
+13,GA,Auquan-SEIR,eligible
+15,HI,Auquan-SEIR,eligible
+16,ID,Auquan-SEIR,eligible
+17,IL,Auquan-SEIR,eligible
+18,IN,Auquan-SEIR,eligible
+19,IA,Auquan-SEIR,eligible
+20,KS,Auquan-SEIR,eligible
+21,KY,Auquan-SEIR,eligible
+22,LA,Auquan-SEIR,eligible
+23,ME,Auquan-SEIR,eligible
+24,MD,Auquan-SEIR,eligible
+25,MA,Auquan-SEIR,eligible
+26,MI,Auquan-SEIR,eligible
+27,MN,Auquan-SEIR,eligible
+28,MS,Auquan-SEIR,eligible
+29,MO,Auquan-SEIR,eligible
+30,MT,Auquan-SEIR,eligible
+31,NE,Auquan-SEIR,eligible
+32,NV,Auquan-SEIR,eligible
+33,NH,Auquan-SEIR,eligible
+34,NJ,Auquan-SEIR,eligible
+35,NM,Auquan-SEIR,eligible
+36,NY,Auquan-SEIR,eligible
+37,NC,Auquan-SEIR,eligible
+38,ND,Auquan-SEIR,eligible
+39,OH,Auquan-SEIR,eligible
+40,OK,Auquan-SEIR,eligible
+41,OR,Auquan-SEIR,eligible
+42,PA,Auquan-SEIR,eligible
+44,RI,Auquan-SEIR,eligible
+45,SC,Auquan-SEIR,eligible
+46,SD,Auquan-SEIR,eligible
+47,TN,Auquan-SEIR,eligible
+48,TX,Auquan-SEIR,eligible
+49,UT,Auquan-SEIR,eligible
+50,VT,Auquan-SEIR,eligible
+51,VA,Auquan-SEIR,eligible
+53,WA,Auquan-SEIR,eligible
+54,WV,Auquan-SEIR,eligible
+55,WI,Auquan-SEIR,eligible
+56,WY,Auquan-SEIR,eligible
+66,GU,Auquan-SEIR,missing required forecasts
+69,MP,Auquan-SEIR,missing required forecasts
+72,PR,Auquan-SEIR,missing required forecasts
+78,VI,Auquan-SEIR,missing required forecasts
+US,US,Auquan-SEIR,missing required forecasts
+01,AL,CAN-SEIR_CAN,missing required forecasts
+02,AK,CAN-SEIR_CAN,missing required forecasts
+04,AZ,CAN-SEIR_CAN,missing required forecasts
+05,AR,CAN-SEIR_CAN,missing required forecasts
+06,CA,CAN-SEIR_CAN,missing required forecasts
+08,CO,CAN-SEIR_CAN,missing required forecasts
+09,CT,CAN-SEIR_CAN,missing required forecasts
+10,DE,CAN-SEIR_CAN,missing required forecasts
+11,DC,CAN-SEIR_CAN,missing required forecasts
+12,FL,CAN-SEIR_CAN,missing required forecasts
+13,GA,CAN-SEIR_CAN,missing required forecasts
+15,HI,CAN-SEIR_CAN,missing required forecasts
+16,ID,CAN-SEIR_CAN,missing required forecasts
+17,IL,CAN-SEIR_CAN,missing required forecasts
+18,IN,CAN-SEIR_CAN,missing required forecasts
+19,IA,CAN-SEIR_CAN,missing required forecasts
+20,KS,CAN-SEIR_CAN,missing required forecasts
+21,KY,CAN-SEIR_CAN,missing required forecasts
+22,LA,CAN-SEIR_CAN,missing required forecasts
+23,ME,CAN-SEIR_CAN,missing required forecasts
+24,MD,CAN-SEIR_CAN,missing required forecasts
+25,MA,CAN-SEIR_CAN,missing required forecasts
+26,MI,CAN-SEIR_CAN,missing required forecasts
+27,MN,CAN-SEIR_CAN,missing required forecasts
+28,MS,CAN-SEIR_CAN,missing required forecasts
+29,MO,CAN-SEIR_CAN,missing required forecasts
+30,MT,CAN-SEIR_CAN,missing required forecasts
+31,NE,CAN-SEIR_CAN,missing required forecasts
+32,NV,CAN-SEIR_CAN,missing required forecasts
+33,NH,CAN-SEIR_CAN,missing required forecasts
+34,NJ,CAN-SEIR_CAN,missing required forecasts
+35,NM,CAN-SEIR_CAN,missing required forecasts
+36,NY,CAN-SEIR_CAN,missing required forecasts
+37,NC,CAN-SEIR_CAN,missing required forecasts
+38,ND,CAN-SEIR_CAN,missing required forecasts
+39,OH,CAN-SEIR_CAN,missing required forecasts
+40,OK,CAN-SEIR_CAN,missing required forecasts
+41,OR,CAN-SEIR_CAN,missing required forecasts
+42,PA,CAN-SEIR_CAN,missing required forecasts
+44,RI,CAN-SEIR_CAN,missing required forecasts
+45,SC,CAN-SEIR_CAN,missing required forecasts
+46,SD,CAN-SEIR_CAN,missing required forecasts
+47,TN,CAN-SEIR_CAN,missing required forecasts
+48,TX,CAN-SEIR_CAN,missing required forecasts
+49,UT,CAN-SEIR_CAN,missing required forecasts
+50,VT,CAN-SEIR_CAN,missing required forecasts
+51,VA,CAN-SEIR_CAN,missing required forecasts
+53,WA,CAN-SEIR_CAN,missing required forecasts
+54,WV,CAN-SEIR_CAN,missing required forecasts
+55,WI,CAN-SEIR_CAN,missing required forecasts
+56,WY,CAN-SEIR_CAN,missing required forecasts
+66,GU,CAN-SEIR_CAN,missing required forecasts
+69,MP,CAN-SEIR_CAN,missing required forecasts
+72,PR,CAN-SEIR_CAN,missing required forecasts
+78,VI,CAN-SEIR_CAN,missing required forecasts
+US,US,CAN-SEIR_CAN,missing required forecasts
+01,AL,CovidAnalytics-DELPHI,eligible
+02,AK,CovidAnalytics-DELPHI,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+04,AZ,CovidAnalytics-DELPHI,eligible
+05,AR,CovidAnalytics-DELPHI,eligible
+06,CA,CovidAnalytics-DELPHI,eligible
+08,CO,CovidAnalytics-DELPHI,eligible
+09,CT,CovidAnalytics-DELPHI,eligible
+10,DE,CovidAnalytics-DELPHI,eligible
+11,DC,CovidAnalytics-DELPHI,eligible
+12,FL,CovidAnalytics-DELPHI,eligible
+13,GA,CovidAnalytics-DELPHI,eligible
+15,HI,CovidAnalytics-DELPHI,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+16,ID,CovidAnalytics-DELPHI,eligible
+17,IL,CovidAnalytics-DELPHI,eligible
+18,IN,CovidAnalytics-DELPHI,eligible
+19,IA,CovidAnalytics-DELPHI,eligible
+20,KS,CovidAnalytics-DELPHI,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+21,KY,CovidAnalytics-DELPHI,eligible
+22,LA,CovidAnalytics-DELPHI,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+23,ME,CovidAnalytics-DELPHI,eligible
+24,MD,CovidAnalytics-DELPHI,eligible
+25,MA,CovidAnalytics-DELPHI,eligible
+26,MI,CovidAnalytics-DELPHI,eligible
+27,MN,CovidAnalytics-DELPHI,eligible
+28,MS,CovidAnalytics-DELPHI,eligible
+29,MO,CovidAnalytics-DELPHI,eligible
+30,MT,CovidAnalytics-DELPHI,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+31,NE,CovidAnalytics-DELPHI,eligible
+32,NV,CovidAnalytics-DELPHI,eligible
+33,NH,CovidAnalytics-DELPHI,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+34,NJ,CovidAnalytics-DELPHI,eligible
+35,NM,CovidAnalytics-DELPHI,eligible
+36,NY,CovidAnalytics-DELPHI,eligible
+37,NC,CovidAnalytics-DELPHI,eligible
+38,ND,CovidAnalytics-DELPHI,eligible
+39,OH,CovidAnalytics-DELPHI,eligible
+40,OK,CovidAnalytics-DELPHI,eligible
+41,OR,CovidAnalytics-DELPHI,eligible
+42,PA,CovidAnalytics-DELPHI,eligible
+44,RI,CovidAnalytics-DELPHI,eligible
+45,SC,CovidAnalytics-DELPHI,eligible
+46,SD,CovidAnalytics-DELPHI,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+47,TN,CovidAnalytics-DELPHI,eligible
+48,TX,CovidAnalytics-DELPHI,eligible
+49,UT,CovidAnalytics-DELPHI,eligible
+50,VT,CovidAnalytics-DELPHI,eligible
+51,VA,CovidAnalytics-DELPHI,eligible
+53,WA,CovidAnalytics-DELPHI,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+54,WV,CovidAnalytics-DELPHI,eligible
+55,WI,CovidAnalytics-DELPHI,eligible
+56,WY,CovidAnalytics-DELPHI,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+66,GU,CovidAnalytics-DELPHI,missing required forecasts
+69,MP,CovidAnalytics-DELPHI,missing required forecasts
+72,PR,CovidAnalytics-DELPHI,missing required forecasts
+78,VI,CovidAnalytics-DELPHI,missing required forecasts
+US,US,CovidAnalytics-DELPHI,eligible
+01,AL,CU-select,baseline misalignment
+02,AK,CU-select,baseline misalignment
+04,AZ,CU-select,baseline misalignment
+05,AR,CU-select,baseline misalignment
+06,CA,CU-select,baseline misalignment
+08,CO,CU-select,baseline misalignment
+09,CT,CU-select,baseline misalignment
+10,DE,CU-select,baseline misalignment
+11,DC,CU-select,baseline misalignment
+12,FL,CU-select,baseline misalignment
+13,GA,CU-select,baseline misalignment
+15,HI,CU-select,baseline misalignment
+16,ID,CU-select,baseline misalignment
+17,IL,CU-select,baseline misalignment
+18,IN,CU-select,baseline misalignment
+19,IA,CU-select,baseline misalignment
+20,KS,CU-select,baseline misalignment
+21,KY,CU-select,baseline misalignment
+22,LA,CU-select,baseline misalignment
+23,ME,CU-select,baseline misalignment
+24,MD,CU-select,baseline misalignment
+25,MA,CU-select,baseline misalignment
+26,MI,CU-select,baseline misalignment
+27,MN,CU-select,baseline misalignment
+28,MS,CU-select,baseline misalignment
+29,MO,CU-select,baseline misalignment
+30,MT,CU-select,baseline misalignment
+31,NE,CU-select,baseline misalignment
+32,NV,CU-select,baseline misalignment
+33,NH,CU-select,baseline misalignment
+34,NJ,CU-select,baseline misalignment
+35,NM,CU-select,baseline misalignment
+36,NY,CU-select,baseline misalignment
+37,NC,CU-select,baseline misalignment
+38,ND,CU-select,baseline misalignment
+39,OH,CU-select,baseline misalignment
+40,OK,CU-select,baseline misalignment
+41,OR,CU-select,baseline misalignment
+42,PA,CU-select,baseline misalignment
+44,RI,CU-select,baseline misalignment
+45,SC,CU-select,baseline misalignment
+46,SD,CU-select,baseline misalignment
+47,TN,CU-select,baseline misalignment
+48,TX,CU-select,baseline misalignment
+49,UT,CU-select,baseline misalignment
+50,VT,CU-select,baseline misalignment
+51,VA,CU-select,baseline misalignment
+53,WA,CU-select,baseline misalignment
+54,WV,CU-select,baseline misalignment
+55,WI,CU-select,baseline misalignment
+56,WY,CU-select,baseline misalignment
+66,GU,CU-select,baseline misalignment
+69,MP,CU-select,baseline misalignment
+72,PR,CU-select,baseline misalignment
+78,VI,CU-select,baseline misalignment
+US,US,CU-select,baseline misalignment
+01,AL,GT-DeepCOVID,eligible
+02,AK,GT-DeepCOVID,eligible
+04,AZ,GT-DeepCOVID,eligible
+05,AR,GT-DeepCOVID,eligible
+06,CA,GT-DeepCOVID,eligible
+08,CO,GT-DeepCOVID,eligible
+09,CT,GT-DeepCOVID,decreasing quantiles over time
+10,DE,GT-DeepCOVID,eligible
+11,DC,GT-DeepCOVID,decreasing quantiles over time
+12,FL,GT-DeepCOVID,missing required forecasts
+13,GA,GT-DeepCOVID,eligible
+15,HI,GT-DeepCOVID,missing required forecasts
+16,ID,GT-DeepCOVID,eligible
+17,IL,GT-DeepCOVID,eligible
+18,IN,GT-DeepCOVID,eligible
+19,IA,GT-DeepCOVID,eligible
+20,KS,GT-DeepCOVID,eligible
+21,KY,GT-DeepCOVID,eligible
+22,LA,GT-DeepCOVID,eligible
+23,ME,GT-DeepCOVID,eligible
+24,MD,GT-DeepCOVID,missing required forecasts
+25,MA,GT-DeepCOVID,missing required forecasts
+26,MI,GT-DeepCOVID,decreasing quantiles over time
+27,MN,GT-DeepCOVID,missing required forecasts
+28,MS,GT-DeepCOVID,missing required forecasts
+29,MO,GT-DeepCOVID,missing required forecasts
+30,MT,GT-DeepCOVID,eligible
+31,NE,GT-DeepCOVID,missing required forecasts
+32,NV,GT-DeepCOVID,missing required forecasts
+33,NH,GT-DeepCOVID,missing required forecasts
+34,NJ,GT-DeepCOVID,missing required forecasts
+35,NM,GT-DeepCOVID,missing required forecasts
+36,NY,GT-DeepCOVID,missing required forecasts
+37,NC,GT-DeepCOVID,missing required forecasts
+38,ND,GT-DeepCOVID,missing required forecasts
+39,OH,GT-DeepCOVID,missing required forecasts
+40,OK,GT-DeepCOVID,eligible
+41,OR,GT-DeepCOVID,missing required forecasts
+42,PA,GT-DeepCOVID,eligible
+44,RI,GT-DeepCOVID,missing required forecasts
+45,SC,GT-DeepCOVID,missing required forecasts
+46,SD,GT-DeepCOVID,missing required forecasts
+47,TN,GT-DeepCOVID,missing required forecasts
+48,TX,GT-DeepCOVID,missing required forecasts
+49,UT,GT-DeepCOVID,missing required forecasts
+50,VT,GT-DeepCOVID,missing required forecasts
+51,VA,GT-DeepCOVID,decreasing quantiles over time
+53,WA,GT-DeepCOVID,eligible
+54,WV,GT-DeepCOVID,missing required forecasts
+55,WI,GT-DeepCOVID,missing required forecasts
+56,WY,GT-DeepCOVID,missing required forecasts
+66,GU,GT-DeepCOVID,missing required forecasts
+69,MP,GT-DeepCOVID,missing required forecasts
+72,PR,GT-DeepCOVID,missing required forecasts
+78,VI,GT-DeepCOVID,missing required forecasts
+US,US,GT-DeepCOVID,eligible
+01,AL,IowaStateLW-STEM10,eligible
+02,AK,IowaStateLW-STEM10,missing required forecasts
+04,AZ,IowaStateLW-STEM10,eligible
+05,AR,IowaStateLW-STEM10,eligible
+06,CA,IowaStateLW-STEM10,eligible
+08,CO,IowaStateLW-STEM10,eligible
+09,CT,IowaStateLW-STEM10,eligible
+10,DE,IowaStateLW-STEM10,eligible
+11,DC,IowaStateLW-STEM10,eligible
+12,FL,IowaStateLW-STEM10,eligible
+13,GA,IowaStateLW-STEM10,eligible
+15,HI,IowaStateLW-STEM10,missing required forecasts
+16,ID,IowaStateLW-STEM10,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+17,IL,IowaStateLW-STEM10,eligible
+18,IN,IowaStateLW-STEM10,eligible
+19,IA,IowaStateLW-STEM10,eligible
+20,KS,IowaStateLW-STEM10,eligible
+21,KY,IowaStateLW-STEM10,eligible
+22,LA,IowaStateLW-STEM10,eligible
+23,ME,IowaStateLW-STEM10,eligible
+24,MD,IowaStateLW-STEM10,eligible
+25,MA,IowaStateLW-STEM10,eligible
+26,MI,IowaStateLW-STEM10,eligible
+27,MN,IowaStateLW-STEM10,eligible
+28,MS,IowaStateLW-STEM10,eligible
+29,MO,IowaStateLW-STEM10,eligible
+30,MT,IowaStateLW-STEM10,eligible
+31,NE,IowaStateLW-STEM10,eligible
+32,NV,IowaStateLW-STEM10,eligible
+33,NH,IowaStateLW-STEM10,eligible
+34,NJ,IowaStateLW-STEM10,eligible
+35,NM,IowaStateLW-STEM10,eligible
+36,NY,IowaStateLW-STEM10,eligible
+37,NC,IowaStateLW-STEM10,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+38,ND,IowaStateLW-STEM10,eligible
+39,OH,IowaStateLW-STEM10,eligible
+40,OK,IowaStateLW-STEM10,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+41,OR,IowaStateLW-STEM10,eligible
+42,PA,IowaStateLW-STEM10,eligible
+44,RI,IowaStateLW-STEM10,eligible
+45,SC,IowaStateLW-STEM10,eligible
+46,SD,IowaStateLW-STEM10,eligible
+47,TN,IowaStateLW-STEM10,eligible
+48,TX,IowaStateLW-STEM10,eligible
+49,UT,IowaStateLW-STEM10,eligible
+50,VT,IowaStateLW-STEM10,eligible
+51,VA,IowaStateLW-STEM10,eligible
+53,WA,IowaStateLW-STEM10,eligible
+54,WV,IowaStateLW-STEM10,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+55,WI,IowaStateLW-STEM10,eligible
+56,WY,IowaStateLW-STEM10,eligible
+66,GU,IowaStateLW-STEM10,missing required forecasts
+69,MP,IowaStateLW-STEM10,missing required forecasts
+72,PR,IowaStateLW-STEM10,missing required forecasts
+78,VI,IowaStateLW-STEM10,missing required forecasts
+US,US,IowaStateLW-STEM10,eligible
+01,AL,JHU_IDD-CovidSP,eligible
+02,AK,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+04,AZ,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+05,AR,JHU_IDD-CovidSP,eligible
+06,CA,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+08,CO,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+09,CT,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+10,DE,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+11,DC,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+12,FL,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+13,GA,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+15,HI,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+16,ID,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+17,IL,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+18,IN,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+19,IA,JHU_IDD-CovidSP,eligible
+20,KS,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+21,KY,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+22,LA,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+23,ME,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+24,MD,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+25,MA,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+26,MI,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+27,MN,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+28,MS,JHU_IDD-CovidSP,eligible
+29,MO,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+30,MT,JHU_IDD-CovidSP,eligible
+31,NE,JHU_IDD-CovidSP,eligible
+32,NV,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+33,NH,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+34,NJ,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+35,NM,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+36,NY,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+37,NC,JHU_IDD-CovidSP,eligible
+38,ND,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+39,OH,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+40,OK,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+41,OR,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+42,PA,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+44,RI,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+45,SC,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+46,SD,JHU_IDD-CovidSP,eligible
+47,TN,JHU_IDD-CovidSP,eligible
+48,TX,JHU_IDD-CovidSP,eligible
+49,UT,JHU_IDD-CovidSP,eligible
+50,VT,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+51,VA,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+53,WA,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+54,WV,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+55,WI,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+56,WY,JHU_IDD-CovidSP,eligible
+66,GU,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+69,MP,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+72,PR,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+78,VI,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+US,US,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+01,AL,LANL-GrowthRate,eligible
+02,AK,LANL-GrowthRate,eligible
+04,AZ,LANL-GrowthRate,eligible
+05,AR,LANL-GrowthRate,eligible
+06,CA,LANL-GrowthRate,eligible
+08,CO,LANL-GrowthRate,eligible
+09,CT,LANL-GrowthRate,eligible
+10,DE,LANL-GrowthRate,eligible
+11,DC,LANL-GrowthRate,eligible
+12,FL,LANL-GrowthRate,eligible
+13,GA,LANL-GrowthRate,eligible
+15,HI,LANL-GrowthRate,eligible
+16,ID,LANL-GrowthRate,eligible
+17,IL,LANL-GrowthRate,eligible
+18,IN,LANL-GrowthRate,eligible
+19,IA,LANL-GrowthRate,eligible
+20,KS,LANL-GrowthRate,eligible
+21,KY,LANL-GrowthRate,eligible
+22,LA,LANL-GrowthRate,eligible
+23,ME,LANL-GrowthRate,eligible
+24,MD,LANL-GrowthRate,eligible
+25,MA,LANL-GrowthRate,eligible
+26,MI,LANL-GrowthRate,eligible
+27,MN,LANL-GrowthRate,eligible
+28,MS,LANL-GrowthRate,eligible
+29,MO,LANL-GrowthRate,eligible
+30,MT,LANL-GrowthRate,eligible
+31,NE,LANL-GrowthRate,eligible
+32,NV,LANL-GrowthRate,eligible
+33,NH,LANL-GrowthRate,eligible
+34,NJ,LANL-GrowthRate,eligible
+35,NM,LANL-GrowthRate,eligible
+36,NY,LANL-GrowthRate,eligible
+37,NC,LANL-GrowthRate,eligible
+38,ND,LANL-GrowthRate,eligible
+39,OH,LANL-GrowthRate,eligible
+40,OK,LANL-GrowthRate,eligible
+41,OR,LANL-GrowthRate,eligible
+42,PA,LANL-GrowthRate,eligible
+44,RI,LANL-GrowthRate,eligible
+45,SC,LANL-GrowthRate,eligible
+46,SD,LANL-GrowthRate,eligible
+47,TN,LANL-GrowthRate,eligible
+48,TX,LANL-GrowthRate,eligible
+49,UT,LANL-GrowthRate,eligible
+50,VT,LANL-GrowthRate,eligible
+51,VA,LANL-GrowthRate,eligible
+53,WA,LANL-GrowthRate,eligible
+54,WV,LANL-GrowthRate,eligible
+55,WI,LANL-GrowthRate,eligible
+56,WY,LANL-GrowthRate,eligible
+66,GU,LANL-GrowthRate,missing required forecasts
+69,MP,LANL-GrowthRate,missing required forecasts
+72,PR,LANL-GrowthRate,eligible
+78,VI,LANL-GrowthRate,eligible
+US,US,LANL-GrowthRate,eligible
+01,AL,MOBS-GLEAM_COVID,eligible
+02,AK,MOBS-GLEAM_COVID,eligible
+04,AZ,MOBS-GLEAM_COVID,eligible
+05,AR,MOBS-GLEAM_COVID,eligible
+06,CA,MOBS-GLEAM_COVID,eligible
+08,CO,MOBS-GLEAM_COVID,eligible
+09,CT,MOBS-GLEAM_COVID,eligible
+10,DE,MOBS-GLEAM_COVID,eligible
+11,DC,MOBS-GLEAM_COVID,missing required forecasts
+12,FL,MOBS-GLEAM_COVID,eligible
+13,GA,MOBS-GLEAM_COVID,eligible
+15,HI,MOBS-GLEAM_COVID,eligible
+16,ID,MOBS-GLEAM_COVID,eligible
+17,IL,MOBS-GLEAM_COVID,eligible
+18,IN,MOBS-GLEAM_COVID,eligible
+19,IA,MOBS-GLEAM_COVID,eligible
+20,KS,MOBS-GLEAM_COVID,eligible
+21,KY,MOBS-GLEAM_COVID,eligible
+22,LA,MOBS-GLEAM_COVID,eligible
+23,ME,MOBS-GLEAM_COVID,eligible
+24,MD,MOBS-GLEAM_COVID,eligible
+25,MA,MOBS-GLEAM_COVID,eligible
+26,MI,MOBS-GLEAM_COVID,eligible
+27,MN,MOBS-GLEAM_COVID,eligible
+28,MS,MOBS-GLEAM_COVID,eligible
+29,MO,MOBS-GLEAM_COVID,eligible
+30,MT,MOBS-GLEAM_COVID,eligible
+31,NE,MOBS-GLEAM_COVID,eligible
+32,NV,MOBS-GLEAM_COVID,eligible
+33,NH,MOBS-GLEAM_COVID,eligible
+34,NJ,MOBS-GLEAM_COVID,eligible
+35,NM,MOBS-GLEAM_COVID,eligible
+36,NY,MOBS-GLEAM_COVID,eligible
+37,NC,MOBS-GLEAM_COVID,eligible
+38,ND,MOBS-GLEAM_COVID,eligible
+39,OH,MOBS-GLEAM_COVID,eligible
+40,OK,MOBS-GLEAM_COVID,eligible
+41,OR,MOBS-GLEAM_COVID,eligible
+42,PA,MOBS-GLEAM_COVID,eligible
+44,RI,MOBS-GLEAM_COVID,eligible
+45,SC,MOBS-GLEAM_COVID,eligible
+46,SD,MOBS-GLEAM_COVID,eligible
+47,TN,MOBS-GLEAM_COVID,eligible
+48,TX,MOBS-GLEAM_COVID,eligible
+49,UT,MOBS-GLEAM_COVID,eligible
+50,VT,MOBS-GLEAM_COVID,eligible
+51,VA,MOBS-GLEAM_COVID,eligible
+53,WA,MOBS-GLEAM_COVID,eligible
+54,WV,MOBS-GLEAM_COVID,eligible
+55,WI,MOBS-GLEAM_COVID,eligible
+56,WY,MOBS-GLEAM_COVID,eligible
+66,GU,MOBS-GLEAM_COVID,missing required forecasts
+69,MP,MOBS-GLEAM_COVID,missing required forecasts
+72,PR,MOBS-GLEAM_COVID,missing required forecasts
+78,VI,MOBS-GLEAM_COVID,missing required forecasts
+US,US,MOBS-GLEAM_COVID,eligible
+01,AL,NotreDame-FRED,missing required forecasts
+02,AK,NotreDame-FRED,missing required forecasts
+04,AZ,NotreDame-FRED,missing required forecasts
+05,AR,NotreDame-FRED,missing required forecasts
+06,CA,NotreDame-FRED,missing required forecasts
+08,CO,NotreDame-FRED,missing required forecasts
+09,CT,NotreDame-FRED,missing required forecasts
+10,DE,NotreDame-FRED,missing required forecasts
+11,DC,NotreDame-FRED,missing required forecasts
+12,FL,NotreDame-FRED,missing required forecasts
+13,GA,NotreDame-FRED,missing required forecasts
+15,HI,NotreDame-FRED,missing required forecasts
+16,ID,NotreDame-FRED,missing required forecasts
+17,IL,NotreDame-FRED,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+18,IN,NotreDame-FRED,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+19,IA,NotreDame-FRED,missing required forecasts
+20,KS,NotreDame-FRED,missing required forecasts
+21,KY,NotreDame-FRED,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+22,LA,NotreDame-FRED,missing required forecasts
+23,ME,NotreDame-FRED,missing required forecasts
+24,MD,NotreDame-FRED,missing required forecasts
+25,MA,NotreDame-FRED,missing required forecasts
+26,MI,NotreDame-FRED,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+27,MN,NotreDame-FRED,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+28,MS,NotreDame-FRED,missing required forecasts
+29,MO,NotreDame-FRED,missing required forecasts
+30,MT,NotreDame-FRED,missing required forecasts
+31,NE,NotreDame-FRED,missing required forecasts
+32,NV,NotreDame-FRED,missing required forecasts
+33,NH,NotreDame-FRED,missing required forecasts
+34,NJ,NotreDame-FRED,missing required forecasts
+35,NM,NotreDame-FRED,missing required forecasts
+36,NY,NotreDame-FRED,missing required forecasts
+37,NC,NotreDame-FRED,missing required forecasts
+38,ND,NotreDame-FRED,missing required forecasts
+39,OH,NotreDame-FRED,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+40,OK,NotreDame-FRED,missing required forecasts
+41,OR,NotreDame-FRED,missing required forecasts
+42,PA,NotreDame-FRED,missing required forecasts
+44,RI,NotreDame-FRED,missing required forecasts
+45,SC,NotreDame-FRED,missing required forecasts
+46,SD,NotreDame-FRED,missing required forecasts
+47,TN,NotreDame-FRED,missing required forecasts
+48,TX,NotreDame-FRED,missing required forecasts
+49,UT,NotreDame-FRED,missing required forecasts
+50,VT,NotreDame-FRED,missing required forecasts
+51,VA,NotreDame-FRED,missing required forecasts
+53,WA,NotreDame-FRED,missing required forecasts
+54,WV,NotreDame-FRED,missing required forecasts
+55,WI,NotreDame-FRED,quantile 0.1 of forecast for horizon 1 is less than most recent observed
+56,WY,NotreDame-FRED,missing required forecasts
+66,GU,NotreDame-FRED,missing required forecasts
+69,MP,NotreDame-FRED,missing required forecasts
+72,PR,NotreDame-FRED,missing required forecasts
+78,VI,NotreDame-FRED,missing required forecasts
+US,US,NotreDame-FRED,missing required forecasts
+01,AL,UChicago-CovidIL_10_increase,missing required forecasts
+02,AK,UChicago-CovidIL_10_increase,missing required forecasts
+04,AZ,UChicago-CovidIL_10_increase,missing required forecasts
+05,AR,UChicago-CovidIL_10_increase,missing required forecasts
+06,CA,UChicago-CovidIL_10_increase,missing required forecasts
+08,CO,UChicago-CovidIL_10_increase,missing required forecasts
+09,CT,UChicago-CovidIL_10_increase,missing required forecasts
+10,DE,UChicago-CovidIL_10_increase,missing required forecasts
+11,DC,UChicago-CovidIL_10_increase,missing required forecasts
+12,FL,UChicago-CovidIL_10_increase,missing required forecasts
+13,GA,UChicago-CovidIL_10_increase,missing required forecasts
+15,HI,UChicago-CovidIL_10_increase,missing required forecasts
+16,ID,UChicago-CovidIL_10_increase,missing required forecasts
+17,IL,UChicago-CovidIL_10_increase,eligible
+18,IN,UChicago-CovidIL_10_increase,missing required forecasts
+19,IA,UChicago-CovidIL_10_increase,missing required forecasts
+20,KS,UChicago-CovidIL_10_increase,missing required forecasts
+21,KY,UChicago-CovidIL_10_increase,missing required forecasts
+22,LA,UChicago-CovidIL_10_increase,missing required forecasts
+23,ME,UChicago-CovidIL_10_increase,missing required forecasts
+24,MD,UChicago-CovidIL_10_increase,missing required forecasts
+25,MA,UChicago-CovidIL_10_increase,missing required forecasts
+26,MI,UChicago-CovidIL_10_increase,missing required forecasts
+27,MN,UChicago-CovidIL_10_increase,missing required forecasts
+28,MS,UChicago-CovidIL_10_increase,missing required forecasts
+29,MO,UChicago-CovidIL_10_increase,missing required forecasts
+30,MT,UChicago-CovidIL_10_increase,missing required forecasts
+31,NE,UChicago-CovidIL_10_increase,missing required forecasts
+32,NV,UChicago-CovidIL_10_increase,missing required forecasts
+33,NH,UChicago-CovidIL_10_increase,missing required forecasts
+34,NJ,UChicago-CovidIL_10_increase,missing required forecasts
+35,NM,UChicago-CovidIL_10_increase,missing required forecasts
+36,NY,UChicago-CovidIL_10_increase,missing required forecasts
+37,NC,UChicago-CovidIL_10_increase,missing required forecasts
+38,ND,UChicago-CovidIL_10_increase,missing required forecasts
+39,OH,UChicago-CovidIL_10_increase,missing required forecasts
+40,OK,UChicago-CovidIL_10_increase,missing required forecasts
+41,OR,UChicago-CovidIL_10_increase,missing required forecasts
+42,PA,UChicago-CovidIL_10_increase,missing required forecasts
+44,RI,UChicago-CovidIL_10_increase,missing required forecasts
+45,SC,UChicago-CovidIL_10_increase,missing required forecasts
+46,SD,UChicago-CovidIL_10_increase,missing required forecasts
+47,TN,UChicago-CovidIL_10_increase,missing required forecasts
+48,TX,UChicago-CovidIL_10_increase,missing required forecasts
+49,UT,UChicago-CovidIL_10_increase,missing required forecasts
+50,VT,UChicago-CovidIL_10_increase,missing required forecasts
+51,VA,UChicago-CovidIL_10_increase,missing required forecasts
+53,WA,UChicago-CovidIL_10_increase,missing required forecasts
+54,WV,UChicago-CovidIL_10_increase,missing required forecasts
+55,WI,UChicago-CovidIL_10_increase,missing required forecasts
+56,WY,UChicago-CovidIL_10_increase,missing required forecasts
+66,GU,UChicago-CovidIL_10_increase,missing required forecasts
+69,MP,UChicago-CovidIL_10_increase,missing required forecasts
+72,PR,UChicago-CovidIL_10_increase,missing required forecasts
+78,VI,UChicago-CovidIL_10_increase,missing required forecasts
+US,US,UChicago-CovidIL_10_increase,missing required forecasts
+01,AL,UCLA-SuEIR,eligible
+02,AK,UCLA-SuEIR,eligible
+04,AZ,UCLA-SuEIR,eligible
+05,AR,UCLA-SuEIR,eligible
+06,CA,UCLA-SuEIR,eligible
+08,CO,UCLA-SuEIR,eligible
+09,CT,UCLA-SuEIR,eligible
+10,DE,UCLA-SuEIR,eligible
+11,DC,UCLA-SuEIR,eligible
+12,FL,UCLA-SuEIR,eligible
+13,GA,UCLA-SuEIR,eligible
+15,HI,UCLA-SuEIR,eligible
+16,ID,UCLA-SuEIR,eligible
+17,IL,UCLA-SuEIR,eligible
+18,IN,UCLA-SuEIR,eligible
+19,IA,UCLA-SuEIR,eligible
+20,KS,UCLA-SuEIR,eligible
+21,KY,UCLA-SuEIR,eligible
+22,LA,UCLA-SuEIR,eligible
+23,ME,UCLA-SuEIR,eligible
+24,MD,UCLA-SuEIR,eligible
+25,MA,UCLA-SuEIR,eligible
+26,MI,UCLA-SuEIR,eligible
+27,MN,UCLA-SuEIR,eligible
+28,MS,UCLA-SuEIR,eligible
+29,MO,UCLA-SuEIR,eligible
+30,MT,UCLA-SuEIR,eligible
+31,NE,UCLA-SuEIR,eligible
+32,NV,UCLA-SuEIR,eligible
+33,NH,UCLA-SuEIR,eligible
+34,NJ,UCLA-SuEIR,eligible
+35,NM,UCLA-SuEIR,eligible
+36,NY,UCLA-SuEIR,eligible
+37,NC,UCLA-SuEIR,eligible
+38,ND,UCLA-SuEIR,eligible
+39,OH,UCLA-SuEIR,eligible
+40,OK,UCLA-SuEIR,eligible
+41,OR,UCLA-SuEIR,eligible
+42,PA,UCLA-SuEIR,eligible
+44,RI,UCLA-SuEIR,eligible
+45,SC,UCLA-SuEIR,eligible
+46,SD,UCLA-SuEIR,eligible
+47,TN,UCLA-SuEIR,eligible
+48,TX,UCLA-SuEIR,eligible
+49,UT,UCLA-SuEIR,eligible
+50,VT,UCLA-SuEIR,eligible
+51,VA,UCLA-SuEIR,eligible
+53,WA,UCLA-SuEIR,eligible
+54,WV,UCLA-SuEIR,eligible
+55,WI,UCLA-SuEIR,eligible
+56,WY,UCLA-SuEIR,eligible
+66,GU,UCLA-SuEIR,missing required forecasts
+69,MP,UCLA-SuEIR,missing required forecasts
+72,PR,UCLA-SuEIR,missing required forecasts
+78,VI,UCLA-SuEIR,missing required forecasts
+US,US,UCLA-SuEIR,eligible
+01,AL,UMass-MechBayes,eligible
+02,AK,UMass-MechBayes,eligible
+04,AZ,UMass-MechBayes,eligible
+05,AR,UMass-MechBayes,eligible
+06,CA,UMass-MechBayes,eligible
+08,CO,UMass-MechBayes,eligible
+09,CT,UMass-MechBayes,eligible
+10,DE,UMass-MechBayes,eligible
+11,DC,UMass-MechBayes,eligible
+12,FL,UMass-MechBayes,eligible
+13,GA,UMass-MechBayes,eligible
+15,HI,UMass-MechBayes,eligible
+16,ID,UMass-MechBayes,eligible
+17,IL,UMass-MechBayes,eligible
+18,IN,UMass-MechBayes,eligible
+19,IA,UMass-MechBayes,eligible
+20,KS,UMass-MechBayes,eligible
+21,KY,UMass-MechBayes,eligible
+22,LA,UMass-MechBayes,eligible
+23,ME,UMass-MechBayes,eligible
+24,MD,UMass-MechBayes,eligible
+25,MA,UMass-MechBayes,eligible
+26,MI,UMass-MechBayes,eligible
+27,MN,UMass-MechBayes,eligible
+28,MS,UMass-MechBayes,eligible
+29,MO,UMass-MechBayes,eligible
+30,MT,UMass-MechBayes,eligible
+31,NE,UMass-MechBayes,eligible
+32,NV,UMass-MechBayes,eligible
+33,NH,UMass-MechBayes,eligible
+34,NJ,UMass-MechBayes,eligible
+35,NM,UMass-MechBayes,eligible
+36,NY,UMass-MechBayes,eligible
+37,NC,UMass-MechBayes,eligible
+38,ND,UMass-MechBayes,eligible
+39,OH,UMass-MechBayes,eligible
+40,OK,UMass-MechBayes,eligible
+41,OR,UMass-MechBayes,eligible
+42,PA,UMass-MechBayes,eligible
+44,RI,UMass-MechBayes,eligible
+45,SC,UMass-MechBayes,eligible
+46,SD,UMass-MechBayes,eligible
+47,TN,UMass-MechBayes,eligible
+48,TX,UMass-MechBayes,eligible
+49,UT,UMass-MechBayes,eligible
+50,VT,UMass-MechBayes,eligible
+51,VA,UMass-MechBayes,eligible
+53,WA,UMass-MechBayes,eligible
+54,WV,UMass-MechBayes,eligible
+55,WI,UMass-MechBayes,eligible
+56,WY,UMass-MechBayes,eligible
+66,GU,UMass-MechBayes,missing required forecasts
+69,MP,UMass-MechBayes,missing required forecasts
+72,PR,UMass-MechBayes,missing required forecasts
+78,VI,UMass-MechBayes,missing required forecasts
+US,US,UMass-MechBayes,eligible
+01,AL,UT-Mobility,eligible
+02,AK,UT-Mobility,eligible
+04,AZ,UT-Mobility,eligible
+05,AR,UT-Mobility,eligible
+06,CA,UT-Mobility,eligible
+08,CO,UT-Mobility,eligible
+09,CT,UT-Mobility,eligible
+10,DE,UT-Mobility,eligible
+11,DC,UT-Mobility,eligible
+12,FL,UT-Mobility,eligible
+13,GA,UT-Mobility,eligible
+15,HI,UT-Mobility,eligible
+16,ID,UT-Mobility,eligible
+17,IL,UT-Mobility,eligible
+18,IN,UT-Mobility,eligible
+19,IA,UT-Mobility,eligible
+20,KS,UT-Mobility,eligible
+21,KY,UT-Mobility,eligible
+22,LA,UT-Mobility,eligible
+23,ME,UT-Mobility,eligible
+24,MD,UT-Mobility,eligible
+25,MA,UT-Mobility,eligible
+26,MI,UT-Mobility,eligible
+27,MN,UT-Mobility,eligible
+28,MS,UT-Mobility,eligible
+29,MO,UT-Mobility,eligible
+30,MT,UT-Mobility,eligible
+31,NE,UT-Mobility,eligible
+32,NV,UT-Mobility,eligible
+33,NH,UT-Mobility,eligible
+34,NJ,UT-Mobility,eligible
+35,NM,UT-Mobility,eligible
+36,NY,UT-Mobility,eligible
+37,NC,UT-Mobility,eligible
+38,ND,UT-Mobility,eligible
+39,OH,UT-Mobility,eligible
+40,OK,UT-Mobility,eligible
+41,OR,UT-Mobility,eligible
+42,PA,UT-Mobility,eligible
+44,RI,UT-Mobility,eligible
+45,SC,UT-Mobility,eligible
+46,SD,UT-Mobility,eligible
+47,TN,UT-Mobility,eligible
+48,TX,UT-Mobility,eligible
+49,UT,UT-Mobility,eligible
+50,VT,UT-Mobility,eligible
+51,VA,UT-Mobility,eligible
+53,WA,UT-Mobility,eligible
+54,WV,UT-Mobility,eligible
+55,WI,UT-Mobility,eligible
+56,WY,UT-Mobility,eligible
+66,GU,UT-Mobility,missing required forecasts
+69,MP,UT-Mobility,missing required forecasts
+72,PR,UT-Mobility,missing required forecasts
+78,VI,UT-Mobility,missing required forecasts
+US,US,UT-Mobility,eligible
+01,AL,YYG-ParamSearch,eligible
+02,AK,YYG-ParamSearch,eligible
+04,AZ,YYG-ParamSearch,eligible
+05,AR,YYG-ParamSearch,eligible
+06,CA,YYG-ParamSearch,eligible
+08,CO,YYG-ParamSearch,eligible
+09,CT,YYG-ParamSearch,eligible
+10,DE,YYG-ParamSearch,eligible
+11,DC,YYG-ParamSearch,eligible
+12,FL,YYG-ParamSearch,eligible
+13,GA,YYG-ParamSearch,eligible
+15,HI,YYG-ParamSearch,eligible
+16,ID,YYG-ParamSearch,eligible
+17,IL,YYG-ParamSearch,eligible
+18,IN,YYG-ParamSearch,eligible
+19,IA,YYG-ParamSearch,eligible
+20,KS,YYG-ParamSearch,eligible
+21,KY,YYG-ParamSearch,eligible
+22,LA,YYG-ParamSearch,eligible
+23,ME,YYG-ParamSearch,eligible
+24,MD,YYG-ParamSearch,eligible
+25,MA,YYG-ParamSearch,eligible
+26,MI,YYG-ParamSearch,eligible
+27,MN,YYG-ParamSearch,eligible
+28,MS,YYG-ParamSearch,eligible
+29,MO,YYG-ParamSearch,eligible
+30,MT,YYG-ParamSearch,eligible
+31,NE,YYG-ParamSearch,eligible
+32,NV,YYG-ParamSearch,eligible
+33,NH,YYG-ParamSearch,eligible
+34,NJ,YYG-ParamSearch,eligible
+35,NM,YYG-ParamSearch,eligible
+36,NY,YYG-ParamSearch,eligible
+37,NC,YYG-ParamSearch,eligible
+38,ND,YYG-ParamSearch,eligible
+39,OH,YYG-ParamSearch,eligible
+40,OK,YYG-ParamSearch,eligible
+41,OR,YYG-ParamSearch,eligible
+42,PA,YYG-ParamSearch,eligible
+44,RI,YYG-ParamSearch,eligible
+45,SC,YYG-ParamSearch,eligible
+46,SD,YYG-ParamSearch,eligible
+47,TN,YYG-ParamSearch,eligible
+48,TX,YYG-ParamSearch,eligible
+49,UT,YYG-ParamSearch,eligible
+50,VT,YYG-ParamSearch,eligible
+51,VA,YYG-ParamSearch,eligible
+53,WA,YYG-ParamSearch,eligible
+54,WV,YYG-ParamSearch,eligible
+55,WI,YYG-ParamSearch,eligible
+56,WY,YYG-ParamSearch,eligible
+66,GU,YYG-ParamSearch,eligible
+69,MP,YYG-ParamSearch,eligible
+72,PR,YYG-ParamSearch,eligible
+78,VI,YYG-ParamSearch,eligible
+US,US,YYG-ParamSearch,eligible
