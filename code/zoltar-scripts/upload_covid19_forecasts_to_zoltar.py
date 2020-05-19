@@ -138,6 +138,8 @@ if __name__ == '__main__':
     list_of_model_directories = os.listdir('./data-processed/')
     output_errors = {}
     for directory in list_of_model_directories:
+        # if "CovidActNow-SEIR_CAN" not in directory:
+        #     continue
         if "." in directory:
             continue
         output = upload_covid_all_forecasts('./data-processed/'+directory+'/',directory)
@@ -148,8 +150,7 @@ if __name__ == '__main__':
     if len(output_errors) > 0:
         for directory, errors in output_errors.items():
             print("\n* ERROR IN '", directory, "'")
-            for error in errors:
-                print(error)
+            print(errors)
         sys.exit("\n ERRORS FOUND EXITING BUILD...")
     else:
         print("✓ no errors")
