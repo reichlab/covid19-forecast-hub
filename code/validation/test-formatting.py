@@ -10,6 +10,7 @@ import yaml
 import dateutil
 from dateutil.parser import parse
 from itertools import chain
+import collections
 
 
 def is_date(string):
@@ -22,6 +23,26 @@ def is_date(string):
         return True
     except ValueError:
         return False
+
+
+def get_metadata_model(filepath):
+    team_model = os.path.basename(os.path.dirname(filepath))
+    metadata_filename = "metadata-" + team_model + ".txt"
+    metdata_dir = filepath + metadata_filename
+    model_name = None
+    model_abbr = None
+    with open(metdata_dir, 'r') as stream:
+        try:
+            metadata = yaml.safe_load(stream)
+            # Output model name and model abbr if exists
+            if 'model_name' in metadata.keys():
+                model_name = metadata['model_name']
+            if 'model_abbr' in metadata.keys():
+                model_abbr = metadata['model_abbr']
+
+            return model_name, model_abbr
+        except yaml.YAMLError as exc:
+            return None, None
 
 
 def validate_metadata_contents(metadata, filepath):
@@ -121,6 +142,7 @@ def filename_match_forecast_date(filepath):
 def validate_forecast_file(filepath):
     # validate forecast file
     file_error = validate_quantile_csv_file(filepath)
+
     if file_error != 'no errors':
         return True, file_error
     else:
@@ -166,7 +188,7 @@ def print_output_errors(output_errors):
     # Output list of Errors
     if output_errors is not None:
         for filename, errors in output_errors.items():
-            print("\n* ERROR IN '", filename)
+            print("\n* ERROR IN ", filename)
             for error in errors:
                 print(error)
         sys.exit("\n ERRORS FOUND EXITING BUILD...")
@@ -180,6 +202,8 @@ def check_formatting(my_path):
     previous_checked = list(df['file_path'])
     files_in_repository = []
     output_errors = {}
+    existing_metadata_name = collections.defaultdict(list)
+    existing_metadata_abbr = collections.defaultdict(list)
     errors_exist = False  # Keep track of errors
 
     # Iterate through processed csvs
@@ -188,6 +212,16 @@ def check_formatting(my_path):
         # check metadata file
         is_metadata_error, metadata_error_output = check_for_metadata(path)
 
+        # check metadata names and abbreviations for duplicates
+        model_name, model_abbr = get_metadata_model(path)
+
+        # Add checked model_name and model_abbr to list to keep track of duplicates
+        if model_name is not None:
+            existing_metadata_name[model_name].append(path)
+        if model_abbr is not None:
+            existing_metadata_abbr[model_abbr].append(path)
+
+        # Iterate through forecast files to validate format
         for filepath in glob.iglob(path + "*.csv", recursive=False):
             files_in_repository += [filepath]
 
@@ -212,6 +246,18 @@ def check_formatting(my_path):
             current_time = datetime.now()
             df = df.append({'file_path': filepath,
                             'validation_date': current_time}, ignore_index=True)
+
+    # Output metadata errors
+    for abbr, filedir in existing_metadata_abbr.items():
+        if len(filedir) > 1:
+            error_string = ["METADATA ERROR: Found duplicate model abbreviation %s - in %s metadata" %
+                            (abbr, filedir)]
+            output_errors[abbr + "METADATA model_abbr"] = error_string
+    for mname, mfiledir in existing_metadata_name.items():
+        if len(mfiledir) > 1:
+            error_string = ["METADATA ERROR: Found duplicate model abbreviation %s - in %s metadata" %
+                            (mname, mfiledir)]
+            output_errors[mname + "METADATA model_name"] = error_string
 
     # Update the locally_validated_files.csv
     update_checked_files(df, previous_checked, files_in_repository)
