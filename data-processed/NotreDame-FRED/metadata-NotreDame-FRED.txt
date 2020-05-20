@@ -20,8 +20,8 @@ forecast_frequency: daily
 data_inputs_known: Daily reported deaths count
 data_source_known: New York Times https://github.com/midas-network/COVID-19/tree/master/data/cases/united%20states%20of%20america/nytimes_covid19_data
 
-this_model_is_an_ensemble: FALSE
-this_model_is_unconditional: FALSE
+this_model_is_an_ensemble: false
+this_model_is_unconditional: false
 
 methods: >-
     FRED is an agent-based model developed for influenza with parameters modified to represent the natural history of COVID-19

@@ -24,8 +24,8 @@ forecasst_frequency: 1x daily
 data_source1: USA FACTS 
 data_source2: JHU COVID-19 Git Repo 
 
-this_model_is_an_ensemble: FALSE
-this_model_is_unconditional: FALSE
+this_model_is_an_ensemble: false
+this_model_is_unconditional: false
 
 methods: >-
     The ERDC SEIR model makes predictions of several variables (e.g., reported new cases 

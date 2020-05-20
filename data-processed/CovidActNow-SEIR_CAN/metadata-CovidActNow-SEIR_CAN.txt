@@ -22,8 +22,8 @@ forecast_frequency: daily and weekly
 data_inputs_known: expert elicitation and literature review
 data_source_known: NYTimes for case and death data
 
-this_model_is_an_ensemble: FAdfsfdsfLSE
-this_model_is_unconditional: TRUE
+this_model_is_an_ensemble: false
+this_model_is_unconditional: true
 
 methods: >-
     Forecast by model built by PhDs in epidemiology and physics, based on expert opinions in public health and
