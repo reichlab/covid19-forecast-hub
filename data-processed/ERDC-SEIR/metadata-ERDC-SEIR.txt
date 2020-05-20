@@ -11,10 +11,17 @@ model_output: https://github.com/erdc-cv19/covid19-forecast-hub
 model_repo:
 
 model_contributors: Michael L. Mayo <Michael.L.Mayo@erdc.dren.mil>, Michael A. Rowland 
+<<<<<<< HEAD
     <Michael.A.Rowland@erdc.dren.mil>,  Matthew D. Parno <Matthew.D.Parno@erdc.dren.mil>, 
     Ian D. Detwiller <Ian.D.Dettwiller@erdc.dren.mil>, Matthew W. Farthing 
     <Matthew.W.Farthing@erdc.dren.mil>, William P. England <William.P.England@erdc.dren.mil>,
     Glover E. George <glover.e.george@erdc.dren.mil>
+=======
+ <Michael.A.Rowland@erdc.dren.mil>,  Matthew D. Parno <Matthew.D.Parno@erdc.dren.mil>, 
+ Ian D. Detwiller <Ian.D.Dettwiller@erdc.dren.mil>, Matthew W. Farthing 
+ <Matthew.W.Farthing@erdc.dren.mil>, William P. England <William.P.England@erdc.dren.mil>,
+ Glover E. George <glover.e.george@erdc.dren.mil>
+>>>>>>> a762934569f33468bdd624fe2de11ec2f8919c02
 
 Target_loc: state
 Time_horizon: 90 days
@@ -59,4 +66,8 @@ methods_long: >-
     Deaths are estimated from this model through a procedure which leverages state-level 
     data on recoveries and fatalities.
 
+<<<<<<< HEAD
     citation: In preparation
+=======
+citation: In preparation
+>>>>>>> a762934569f33468bdd624fe2de11ec2f8919c02
