@@ -15,7 +15,6 @@ Model_targets: 1 through 4-wk ahead cumulative and incident deaths
 Target_loc: US and state-level
 Time_horizon:
 Data_format: quantiles
-forecast_startdate:
 forecast_frequency:
 
 data_inputs_known:
@@ -45,3 +44,4 @@ methods_long: >-
     ensemble-metadata/2020-05-19-model-weights.csv for weights by location.
 
 citation:
+license: cc
