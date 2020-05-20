@@ -13,38 +13,6 @@ from itertools import chain
 import collections
 
 
-def is_date(string):
-    """
-    Return whether the string can be interpreted as a date.
-    :param string: str, string to check for date
-    """
-    try:
-        dateutil.parser.parse(string)
-        return True
-    except ValueError:
-        return False
-
-
-def get_metadata_model(filepath):
-    team_model = os.path.basename(os.path.dirname(filepath))
-    metadata_filename = "metadata-" + team_model + ".txt"
-    metdata_dir = filepath + metadata_filename
-    model_name = None
-    model_abbr = None
-    with open(metdata_dir, 'r') as stream:
-        try:
-            metadata = yaml.safe_load(stream)
-            # Output model name and model abbr if exists
-            if 'model_name' in metadata.keys():
-                model_name = metadata['model_name']
-            if 'model_abbr' in metadata.keys():
-                model_abbr = metadata['model_abbr']
-
-            return model_name, model_abbr
-        except yaml.YAMLError as exc:
-            return None, None
-
-
 def validate_metadata_contents(metadata, filepath):
     # Initialize output
     is_metadata_error = False
@@ -57,19 +25,23 @@ def validate_metadata_contents(metadata, filepath):
             is_metadata_error = True
             metadata_error_output += ["METADATA ERROR: %s missing '%s'" % (filepath, field)]
 
-    # Check methods character length
+    # Check methods character length (warning not error)
     if 'methods' in metadata.keys():
         methods_char_lenth = len(metadata['methods'])
         if methods_char_lenth > 200:
-            is_metadata_error = True
             metadata_error_output += [
-                "METADATA ERROR: %s methods is too many characters (%i should be less than 200)" %
+                "METADATA WARNING: %s methods is too many characters (%i should be less than 200)" %
                 (filepath, methods_char_lenth)]
 
     # Check if forecast_startdate is date
     if 'forecast_startdate' in metadata.keys():
         forecast_startdate = str(metadata['forecast_startdate'])
-        if not is_date(forecast_startdate):
+        try:
+            dateutil.parser.parse(forecast_startdate)
+            is_date = True
+        except ValueError:
+            is_date = False
+        if not is_date:
             is_metadata_error = True
             metadata_error_output += [
                 "METADATA ERROR: %s forecast_startdate %s must be a date and should be in YYYY-MM-DD format" %
@@ -77,10 +49,10 @@ def validate_metadata_contents(metadata, filepath):
 
     # Check if this_model_is_an_ensemble and this_model_is_unconditional are boolean
     boolean_fields = ['this_model_is_an_ensemble', 'this_model_is_unconditional']
-    possible_booleans = ['true', 'false', True, False]
+    possible_booleans = ['true', 'false']
     for field in boolean_fields:
         if field in metadata.keys():
-            if str(metadata[field]).lower() not in possible_booleans:
+            if str(metadata[field]) not in possible_booleans:
                 is_metadata_error = True
                 metadata_error_output += [
                     "METADATA ERROR: %s '%s' field must be boolean (True, False) not '%s'" %
@@ -149,17 +121,32 @@ def validate_forecast_file(filepath):
         return False, file_error
 
 
+def get_metadata_model(filepath):
+    team_model = os.path.basename(os.path.dirname(filepath))
+    metadata_filename = "metadata-" + team_model + ".txt"
+    metdata_dir = filepath + metadata_filename
+    model_name = None
+    model_abbr = None
+    with open(metdata_dir, 'r') as stream:
+        try:
+            metadata = yaml.safe_load(stream)
+            # Output model name and model abbr if exists
+            if 'model_name' in metadata.keys():
+                model_name = metadata['model_name']
+            if 'model_abbr' in metadata.keys():
+                model_abbr = metadata['model_abbr']
+
+            return model_name, model_abbr
+        except yaml.YAMLError as exc:
+            return None, None
+
+
 def compile_output_errors(filepath,
-                          is_metadata_error, metadata_error_output,
                           is_error, forecast_error_output,
                           is_date_error, forecast_date_output):
     # Initialize output errors
     output_error_text = []
     output_errors = {}
-
-    # Check for metadata file errors
-    if is_metadata_error:
-        output_error_text += [metadata_error_output]
 
     # Check for forecast file errors
     if is_error:
@@ -186,7 +173,7 @@ def update_checked_files(df, previous_checked, files_in_repository):
 
 def print_output_errors(output_errors):
     # Output list of Errors
-    if output_errors is not None:
+    if len(output_errors) > 0:
         for filename, errors in output_errors.items():
             print("\n* ERROR IN ", filename)
             for error in errors:
@@ -220,6 +207,10 @@ def check_formatting(my_path):
             existing_metadata_name[model_name].append(path)
         if model_abbr is not None:
             existing_metadata_abbr[model_abbr].append(path)
+        
+        # Output metadata errors
+        if is_metadata_error:
+            output_errors[path] = metadata_error_output
 
         # Iterate through forecast files to validate format
         for filepath in glob.iglob(path + "*.csv", recursive=False):
@@ -235,7 +226,6 @@ def check_formatting(my_path):
 
                 # add to previously checked files
                 output_error_text = compile_output_errors(filepath,
-                                                          is_metadata_error, metadata_error_output,
                                                           is_error, forecast_error_output,
                                                           is_date_error, forecast_date_output)
                 if output_error_text != []:

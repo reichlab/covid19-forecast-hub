@@ -15,7 +15,6 @@ Model_targets: 1 through 4-wk ahead cumulative and incident deaths
 Target_loc: US and state-level
 Time_horizon:
 Data_format: quantiles
-forecast_startdate:
 forecast_frequency:
 
 data_inputs_known:
