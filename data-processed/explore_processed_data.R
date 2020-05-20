@@ -14,11 +14,21 @@ source("../code/processing-fxns/get_next_saturday.R")
 source("read_processed_data.R")
 
 # Get truth 
+truth_cols = cols(
+  date = col_date(format = ""),
+  location = col_character(),
+  location_name = col_character(),
+  value = col_double()
+)
+
+
 truth = bind_rows(
-  read_csv("../data-truth/truth-Incident Deaths.csv") %>% 
+  read_csv("../data-truth/truth-Incident Deaths.csv",
+           col_types = truth_cols) %>% 
     mutate(inc_cum = "inc", unit = "day"),
   
-  read_csv("../data-truth/truth-Incident Deaths.csv") %>% 
+  read_csv("../data-truth/truth-Incident Deaths.csv",
+           col_types = truth_cols) %>% 
     dplyr::mutate(week = MMWRweek::MMWRweek(date)$MMWRweek) %>%
     dplyr::group_by(location,week) %>%
     dplyr::summarize(date = max(date),
@@ -27,15 +37,22 @@ truth = bind_rows(
     dplyr::mutate(inc_cum = "inc", unit = "wk") %>%
     dplyr::select(-week),
   
-  read_csv("../data-truth/truth-Cumulative Deaths.csv") %>% 
+  read_csv("../data-truth/truth-Cumulative Deaths.csv",
+           col_types = truth_cols) %>% 
     mutate(inc_cum = "cum", unit = "wk") %>%
     dplyr::filter(weekdays(date) == "Saturday"),
   
-  read_csv("../data-truth/truth-Cumulative Deaths.csv") %>% 
+  read_csv("../data-truth/truth-Cumulative Deaths.csv",
+           col_types = truth_cols) %>% 
     mutate(inc_cum = "cum", unit = "day")
 ) %>%
   rename(fips_numeric = location) %>%
-  left_join(read_csv("../template/state_fips_codes.csv") %>%
+  left_join(read_csv("../template/state_fips_codes.csv",
+                     col_types = cols(
+                       state = col_character(),
+                       state_code = col_character(),
+                       state_name = col_character()
+                     )) %>%
               rename(fips_alpha = state,
                      fips_numeric = state_code), by = c("fips_numeric")) %>%
   mutate(fips_alpha = ifelse(fips_numeric == "US", "US", fips_alpha),
