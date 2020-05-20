@@ -1,12 +1,12 @@
 team_name: US Army Engineer Research and Development Center
-team_abbr: USACE
+team_abbr: ERDC
 institution_affil: DoD
 team_contact: glover.e.george@erdc.dren.mil
 team_funding: US Army Geospatial Task Force
 team_experience: 
 
-model_name: ERDC_SEIR
-model_abbr: ERDC_SEIR
+model_name: ERDC-SEIR
+model_abbr: ERDC-SEIR
 model_output: https://github.com/erdc-cv19/covid19-forecast-hub
 model_repo:
 
