@@ -5,10 +5,8 @@ file_path,validation_date
 ./data-processed/CU-80contact1x10p/2020-05-07-CU-80contact1x10p.csv,2020-05-11 16:56:43.771835
 ./data-processed/CU-80contact1x10p/2020-05-03-CU-80contact1x10p.csv,2020-05-11 16:56:48.462800
 ./data-processed/IowaStateLW-STEM15/2020-04-26-IowaStateLW-STEM15.csv,2020-05-11 16:56:49.591622
-./data-processed/JHU_IDD-CovidSPHighDist/2020-05-03-JHU_IDD-CovidSPHighDist.csv,2020-05-11 16:56:49.624058
 ./data-processed/NotreDame-FRED/2020-04-27-NotreDame-FRED.csv,2020-05-11 16:56:50.047805
 ./data-processed/NotreDame-FRED/2020-05-04-NotreDame-FRED.csv,2020-05-11 16:56:50.757955
-./data-processed/JHU_IDD-CovidSPModDist/2020-05-03-JHU_IDD-CovidSPModDist.csv,2020-05-11 16:56:50.784884
 ./data-processed/CU-nointerv/2020-04-12-CU-nointerv.csv,2020-05-11 16:56:55.953229
 ./data-processed/CU-nointerv/2020-04-26-CU-nointerv.csv,2020-05-11 16:57:02.373405
 ./data-processed/CU-nointerv/2020-04-23-CU-nointerv.csv,2020-05-11 16:57:07.431282
@@ -25,7 +23,6 @@ file_path,validation_date
 ./data-processed/CU-80contactw10p/2020-05-10-CU-80contactw10p.csv,2020-05-11 16:57:23.776913
 ./data-processed/CU-80contactw10p/2020-05-07-CU-80contactw10p.csv,2020-05-11 16:57:28.815279
 ./data-processed/CU-80contactw10p/2020-05-03-CU-80contactw10p.csv,2020-05-11 16:57:33.711045
-./data-processed/Auquan-SEIR/2020-05-11-Auquan-SEIR.csv,2020-05-11 16:57:42.012008
 ./data-processed/Auquan-SEIR/2020-05-04-Auquan-SEIR.csv,2020-05-11 16:57:42.403304
 ./data-processed/CU-60contact/2020-04-26-CU-60contact.csv,2020-05-11 16:58:58.044353
 ./data-processed/CU-60contact/2020-04-16-CU-60contact.csv,2020-05-11 16:59:03.634039
@@ -163,7 +160,6 @@ file_path,validation_date
 ./data-processed/LANL-GrowthRate/2020-04-30-LANL-GrowthRate.csv,2020-05-16 00:51:00.437603
 ./data-processed/LANL-GrowthRate/2020-05-04-LANL-GrowthRate.csv,2020-05-16 00:51:05.446123
 ./data-processed/IHME-CurveFit/2020-05-12-IHME-CurveFit.csv,2020-05-16 12:23:00.520396
-./data-processed/ERDC-SEIR/2020-05-14-ERDC-SEIR.csv,2020-05-16 13:37:11.606394
 ./data-processed/UCLA-SuEIR/2020-05-17-UCLA-SuEIR.csv,2020-05-18 13:33:13.865270
 ./data-processed/Geneva-DeterministicGrowth/2020-05-14-Geneva-DeterministicGrowth.csv,2020-05-18 14:24:15.402623
 ./data-processed/Geneva-DeterministicGrowth/2020-05-17-Geneva-DeterministicGrowth.csv,2020-05-18 14:24:15.413278
