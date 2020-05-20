@@ -20,8 +20,8 @@ forecast_frequency: weekly
 data_inputs_known: cumulative deaths, U.S. age distribution
 data_source_known: JHU, worldpop
 
-this_model_is_an_ensemble: FALSE
-this_model_is_unconditional: FALSE
+this_model_is_an_ensemble: false
+this_model_is_unconditional: false
 
 methods: >-
     A stochastic/deterministic, single-population SEIRX model that stratifies by both age distribution and disease severity and includes generic intervention fitting. 

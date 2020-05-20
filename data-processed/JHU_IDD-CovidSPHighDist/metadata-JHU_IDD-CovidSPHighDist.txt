@@ -20,8 +20,8 @@ forecast_frequency: weekly
 data_inputs_known: confirmed cases; reported fatalities; population; mobility
 data_source_known: JHU CSSE, US Census
 
-this_model_is_an_ensemble: FALSE
-this_model_is_unconditional: FALSE
+this_model_is_an_ensemble: false
+this_model_is_unconditional: false
 
 methods: >- 
     County-level metapopulation model with commuting and stochastic SEIR disease dynamics. This model makes predictions about the future based on the best available information about state-level restrictions and their publicly-stated (past or future) start and end dates, assuming high intervention effectiveness. Prediction intervals include uncertainty from two different R0 reduction levels that reflect our uncertainty about the effectiveness of these state-level restrictions.

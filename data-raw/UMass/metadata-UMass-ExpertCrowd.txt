@@ -19,8 +19,8 @@ forecast_frequency: weekly
 data_inputs_known: expert elicitation
 data_source_known: 
 
-this_model_is_an_ensemble: TRUE
-this_model_is_unconditional: TRUE
+this_model_is_an_ensemble: true
+this_model_is_unconditional: true
 
 methods: >-
 A consensus forecast from experts in the modeling of infectious disease, public health, and epidemiology. 
