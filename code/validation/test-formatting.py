@@ -7,142 +7,21 @@ import pandas as pd
 import numpy as np
 from datetime import datetime
 import yaml
-import dateutil
-from dateutil.parser import parse
 from itertools import chain
 import collections
-import re
-
-
-def validate_metadata_contents(metadata, filepath):
-    # Initialize output
-    is_metadata_error = False
-    metadata_error_output = []
-
-    # Check for Required Fields
-    required_fields = ['team_name', 'team_abbr', 'model_name', 'model_abbr', 'methods']
-    # required_fields = ['team_name', 'team_abbr', 'model_name', 'model_abbr',\
-    #                        'methods', 'team_url', 'license', 'include_in_ensemble_and_visualization']
-    for field in required_fields:
-        if field not in metadata.keys():
-            is_metadata_error = True
-            metadata_error_output += ["METADATA ERROR: %s missing '%s'" % (filepath, field)]
-
-    # Check methods character length (warning not error)
-    if 'methods' in metadata.keys():
-        methods_char_lenth = len(metadata['methods'])
-        if methods_char_lenth > 200:
-            metadata_error_output += [
-                "METADATA WARNING: %s methods is too many characters (%i should be less than 200)" %
-                (filepath, methods_char_lenth)]
-
-    # Check if forecast_startdate is date
-    if 'forecast_startdate' in metadata.keys():
-        forecast_startdate = str(metadata['forecast_startdate'])
-        try:
-            dateutil.parser.parse(forecast_startdate)
-            is_date = True
-        except ValueError:
-            is_date = False
-        if not is_date:
-            is_metadata_error = True
-            metadata_error_output += [
-                "METADATA ERROR: %s forecast_startdate %s must be a date and should be in YYYY-MM-DD format" %
-                (filepath, forecast_startdate)]
-
-    # Check if this_model_is_an_ensemble and this_model_is_unconditional are boolean
-    boolean_fields = ['this_model_is_an_ensemble', 'this_model_is_unconditional',
-                      'include_in_ensemble_and_visualization']
-    possible_booleans = ['true', 'false']
-    for field in boolean_fields:
-        if field in metadata.keys():
-            if metadata[field] not in possible_booleans:
-                is_metadata_error = True
-                metadata_error_output += [
-                    "METADATA ERROR: %s '%s' field must be lowercase boolean (true, false) not '%s'" %
-                    (filepath, field, metadata[field])]
-
-    # Validate team URLS
-    regex = re.compile(
-        r'^(?:http|ftp)s?://'  # http:// or https://
-        r'(?:(?:[A-Z0-9](?:[A-Z0-9-]{0,61}[A-Z0-9])?\.)+(?:[A-Z]{2,6}\.?|[A-Z0-9-]{2,}\.?)|'
-        r'localhost|'  # localhost...
-        r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})'  # ...or ip
-        r'(?::\d+)?'  # optional port
-        r'(?:/?|[/?]\S+)$', re.IGNORECASE)
-
-    if 'team_url' in metadata.keys():
-        if re.match(regex, str(metadata['team_url'])) is None:
-            is_metadata_error = True
-            metadata_error_output += [
-                "METADATA ERROR: %s 'team_url' field must be a full URL (https://www.example.com) '%s'" %
-                (filepath, metadata[field])]
-
-    # Validate licenses
-    license_df = pd.read_csv('./code/validation/accepted-licenses.csv')
-    accepted_licenses = list(license_df['license'])
-    if 'license' in metadata.keys():
-        if metadata['license'] not in accepted_licenses:
-            is_metadata_error = True
-            metadata_error_output += [
-                "METADATA ERROR: %s 'license' field must be in `./code/validations/accepted-licenses.csv` 'license' column '%s'" %
-                (filepath, metadata[field])]
-    return is_metadata_error, metadata_error_output
-
-
-def check_metadata_file(filepath):
-    with open(filepath, 'r') as stream:
-        try:
-            Loader = yaml.BaseLoader  # Define Loader to avoid true/false auto conversion
-            metadata = yaml.load(stream, Loader=yaml.BaseLoader)
-            is_metadata_error, metadata_error_output = validate_metadata_contents(metadata, filepath)
-            if is_metadata_error:
-                return True, metadata_error_output
-            else:
-                return False, "no errors"
-        except yaml.YAMLError as exc:
-            return True, [
-                "METADATA ERROR: Metadata YAML Fromat Error for %s file. \
-                    \nCommon fixes (if parse error message is unclear):\
-                    \n* Try converting all tabs to spaces \
-                    \n* Try copying the example metadata file and follow formatting closely \
-                    \n Parse Error Message:\n%s \n"
-                % (filepath, exc)]
-
-
-# Check for metadata file
-def check_for_metadata(filepath):
-    team_model = os.path.basename(os.path.dirname(filepath))
-    metadata_filename = "metadata-" + team_model + ".txt"
-    txt_files = []
-    for metadata_file in glob.iglob(filepath + "*.txt", recursive=False):
-        txt_files += [os.path.basename(metadata_file)]
-    if metadata_filename in txt_files:
-        metadata_filepath = filepath + metadata_filename
-        is_metadata_error, metadata_error_output = check_metadata_file(metadata_filepath)
-        return is_metadata_error, metadata_error_output
-    else:
-        return True, ["METADATA ERROR: Missing Metadata: ", metadata_filename]
-
-
-def filename_match_forecast_date(filepath):
-    df = pd.read_csv(filepath)
-    file_forecast_date = os.path.basename(os.path.basename(filepath))[:10]
-    forecast_date_column = set(list(df['forecast_date']))
-    if len(forecast_date_column) > 1:
-        return True, ["FORECAST DATE ERROR: %s has multiple forecast dates: %s. Forecast date must be unique" % (
-            filepath, forecast_date_column)]
-    else:
-        forecast_date_column = forecast_date_column.pop()
-        if (file_forecast_date != forecast_date_column):
-            return True, ["FORECAST DATE ERROR %s forecast filename date %s does match forecast_date column %s" % (
-                filepath, file_forecast_date, forecast_date_column)]
-        else:
-            return False, "no errors"
+from validation_functions.metadata import check_for_metadata, get_metadata_model, output_duplicate_models
+from validation_functions.forecast_filename import validate_forecast_file_name
+from validation_functions.forecast_date import filename_match_forecast_date
 
 
 def validate_forecast_file(filepath):
-    # validate forecast file
+    """
+    purpose: Validates the forecast file with zoltpy 
+    link: https://github.com/reichlab/zoltpy/blob/master/zoltpy/covid19.py
+
+    params:
+    * filepath: Full filepath of the forecast
+    """
     file_error = validate_quantile_csv_file(filepath)
 
     if file_error != "no errors":
@@ -151,44 +30,24 @@ def validate_forecast_file(filepath):
         return False, file_error
 
 
-def validate_forecast_file_name(filepath, forecast_file_path):
-    # validate forecast file name == forecast file path
-    forecast_file_name = os.path.basename(filepath)[11:(len(filepath)-4)]
-
-    if forecast_file_name == forecast_file_path:
-        return False, "no errors"
-    else:
-        return True, ["FORECAST FILENAME ERROR: Please rename %s to proper format" % filepath]
-
-
-def get_metadata_model(filepath):
-    team_model = os.path.basename(os.path.dirname(filepath))
-    metadata_filename = "metadata-" + team_model + ".txt"
-    metdata_dir = filepath + metadata_filename
-    model_name = None
-    model_abbr = None
-    with open(metdata_dir, 'r') as stream:
-        try:
-            metadata = yaml.safe_load(stream)
-            # Output model name and model abbr if exists
-            if 'model_name' in metadata.keys():
-                model_name = metadata['model_name']
-            if 'model_abbr' in metadata.keys():
-                model_abbr = metadata['model_abbr']
-
-            return model_name, model_abbr
-        except yaml.YAMLError as exc:
-            return None, None
-
-
-def compile_output_errors(filepath,
-                          is_filename_error, filename_error_output,
-                          is_error, forecast_error_output,
+def compile_output_errors(filepath, is_filename_error, filename_error_output, is_error, forecast_error_output,
                           is_date_error, forecast_date_output):
-    # Initialize output errors
-    output_error_text = []
-    output_errors = {}
+    """
+    purpose: update locally_validated_files.csv and remove deleted files
 
+    params:
+    * filepath: Full filepath of the forecast
+    * is_filename_error: Filename != file path (True/False)
+    * filename_error_output: Text output error filename != file path
+    * is_error: Forecast file has error (True/False)
+    * forecast_error_output: Text output forecast file error
+    * is_date_error: forecast_date error (True/False)
+    * forecast_date_output: Text output forecast_date error
+    """
+    # Initialize output errors as list
+    output_error_text = []
+
+    # Iterate through params
     error_bool = [is_filename_error, is_error, is_date_error]
     error_text = [filename_error_output, forecast_error_output, forecast_date_output]
 
@@ -198,13 +57,21 @@ def compile_output_errors(filepath,
             output_error_text += error_text[i]
 
     # Output errors if present as dict
-    # output_error_text = list(chain.from_iterable(output_error_text))
+    # Output_error_text = list(chain.from_iterable(output_error_text))
     return output_error_text
 
 
 def update_checked_files(df, previous_checked, files_in_repository):
+    """
+    purpose: update locally_validated_files.csv and remove deleted files
+
+    params:
+    * df: Pandas dataframe containing currently checked files
+    * previous_checked: Previously checked files as list
+    * files_in_repository: Current files in repo as list
+    """
     # Remove files that have been deleted from repo
-    # files that are in verify checks but NOT in repository
+    # Files that are in verify checks but NOT in repository
     deleted_files = np.setdiff1d(previous_checked, files_in_repository)
     df = df[~df['file_path'].isin(deleted_files)]
 
@@ -213,6 +80,12 @@ def update_checked_files(df, previous_checked, files_in_repository):
 
 
 def print_output_errors(output_errors):
+    """
+    purpose: Print the final errors
+
+    params:
+    * output_errors: Dict with filepath as key and list of errors error as value
+    """
     # Output list of Errors
     if len(output_errors) > 0:
         for filename, errors in output_errors.items():
@@ -226,6 +99,14 @@ def print_output_errors(output_errors):
 
 # Check forecast formatting
 def check_formatting(my_path):
+    """
+    purpose: Iterate through every forecast file and metadatadata 
+             file and perform validation checks if haven't already.
+    link: https://github.com/reichlab/covid19-forecast-hub/wiki/Validation-Checks#current-validation-checks
+
+    params:
+    * my_path: string path to folder where forecasts are
+    """
     df = pd.read_csv('code/validation/validated_files.csv')
     previous_checked = list(df['file_path'])
     files_in_repository = []
@@ -237,10 +118,10 @@ def check_formatting(my_path):
     # Iterate through processed csvs
     for path in glob.iglob(my_path + "**/**/", recursive=False):
 
-        # check metadata file
+        # Check metadata file
         is_metadata_error, metadata_error_output = check_for_metadata(path)
 
-        # check metadata names and abbreviations for duplicates
+        # Check metadata names and abbreviations for duplicates
         model_name, model_abbr = get_metadata_model(path)
 
         # Add checked model_name and model_abbr to list to keep track of duplicates
@@ -264,7 +145,6 @@ def check_formatting(my_path):
             if filepath not in previous_checked:
 
                 # Validate forecast file name = forecast file path
-                # Get forecast file teamname-modelname
                 is_filename_error, filename_error_output = validate_forecast_file_name(filepath, forecast_file_path)
 
                 # Validate forecast file formatting
@@ -273,7 +153,7 @@ def check_formatting(my_path):
                 # Validate forecast file date = forecast_date column
                 is_date_error, forecast_date_output = filename_match_forecast_date(filepath)
 
-                # add to previously checked files
+                # Add to previously checked files
                 output_error_text = compile_output_errors(filepath,
                                                           is_filename_error, filename_error_output,
                                                           is_error, forecast_error_output,
@@ -281,23 +161,15 @@ def check_formatting(my_path):
                 if output_error_text != []:
                     output_errors[filepath] = output_error_text
 
-                # add validated file to locally_validated_files.csv
+                # Add validated file to locally_validated_files.csv
                 if len(output_errors) == 0:
                     current_time = datetime.now()
                     df = df.append({'file_path': filepath,
                                     'validation_date': current_time}, ignore_index=True)
 
     # Output duplicate model name or abbreviation metadata errors
-    for abbr, filedir in existing_metadata_abbr.items():
-        if len(filedir) > 1:
-            error_string = ["METADATA ERROR: Found duplicate model abbreviation %s - in %s metadata" %
-                            (abbr, filedir)]
-            output_errors[abbr + "METADATA model_abbr"] = error_string
-    for mname, mfiledir in existing_metadata_name.items():
-        if len(mfiledir) > 1:
-            error_string = ["METADATA ERROR: Found duplicate model abbreviation %s - in %s metadata" %
-                            (mname, mfiledir)]
-            output_errors[mname + "METADATA model_name"] = error_string
+    output_errors = output_duplicate_models(existing_metadata_abbr, output_errors)
+    output_errors = output_duplicate_models(existing_metadata_name, output_errors)
 
     # Update the locally_validated_files.csv
     update_checked_files(df, previous_checked, files_in_repository)
