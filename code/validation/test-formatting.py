@@ -52,6 +52,7 @@ def validate_metadata_contents(metadata, filepath):
     possible_booleans = ['true', 'false']
     for field in boolean_fields:
         if field in metadata.keys():
+            print(str(metadata[field]))
             if str(metadata[field]) not in possible_booleans:
                 is_metadata_error = True
                 metadata_error_output += [
@@ -207,7 +208,7 @@ def check_formatting(my_path):
             existing_metadata_name[model_name].append(path)
         if model_abbr is not None:
             existing_metadata_abbr[model_abbr].append(path)
-        
+
         # Output metadata errors
         if is_metadata_error:
             output_errors[path] = metadata_error_output
