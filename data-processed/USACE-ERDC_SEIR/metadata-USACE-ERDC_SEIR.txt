@@ -1,12 +1,12 @@
 team_name: US Army Engineer Research and Development Center
-team_abbr: ERDC
+team_abbr: USACE
 institution_affil: DoD
 team_contact: glover.e.george@erdc.dren.mil
 team_funding: US Army Geospatial Task Force
 team_experience: 
 
-model_name: ERDC-SEIR
-model_abbr: ERDC-SEIR
+model_name: ERDC_SEIR
+model_abbr: ERDC_SEIR
 model_output: https://github.com/erdc-cv19/covid19-forecast-hub
 model_repo:
 
@@ -36,9 +36,9 @@ methods_long: >-
     The ERDC SEIR model is a process-based model that mathematically describes the virus 
     dynamics in a population center (e.g., state, CBSA) using assumptions that are common 
     in compartmental models:
-        (i)   modeled populations are large enough that fluctuations in the disease 
+    (i)   modeled populations are large enough that fluctuations in the disease 
     states grow slower than averages (i.e., coefficient of variation < 1)
-        (ii)  recovered individuals are neither infectious nor become susceptible to 
+    (ii)  recovered individuals are neither infectious nor become susceptible to 
     further infection.
 
     The model is similar to classic SEIR models but with additional compartments for 

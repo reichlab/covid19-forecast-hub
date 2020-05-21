@@ -14,7 +14,6 @@ Model_targets: deaths; hospitalizations; cases
 Target_loc: state, national
 Time_horizon: Till 06/15
 Data_format: mean 
-forecast_startdate: 
 forecast_frequency: 
 
 data_inputs_known: New York Times 
