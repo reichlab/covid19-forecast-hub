@@ -41,10 +41,10 @@ rm -r ./data/Cumulative\ Deaths/UChicago-CovidIL_30_increase
 rm -r ./data/Incident\ Deaths/UChicago-CovidIL_30_increase
 
 # Remove JHU
-rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSPHighDist
-rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSPHighDist
-rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSPModDist
-rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSPModDist
+# rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSPHighDist
+# rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSPHighDist
+# rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSPModDist
+# rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSPModDist
 # rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSP
 # rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSP
 
@@ -83,7 +83,9 @@ rm -r ./data/Cumulative\ Deaths/UMass-ExpertCrowd
 python3 ./scripts/convert-forecasts.py
 
 # Get truth data
-python3 ./scripts/get-truth-data.py
+cd ../data-truth
+python3 ./get-truth-data.py
+cd ../visualization
 
 # Replace already present data
 rm -rf ./vis-master/data
