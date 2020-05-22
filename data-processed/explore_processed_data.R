@@ -238,8 +238,8 @@ ui <- navbarPage(
                selectInput("model",       "Model", sort(unique(latest_plot_data$model        ))),
                selectInput("target",     "Target", sort(unique(latest_plot_data$simple_target))),
                selectInput("abbreviation", "Location", sort(unique(latest_plot_data$abbreviation   ))),
-               checkboxInput("fourweeks", "Limit forecast to 4 weeks", value = TRUE),
-               selectInput("sources", "Truth sources", truth_sources, selected = "JHU-CSSE", multiple = TRUE)
+               selectInput("sources", "Truth sources", truth_sources, selected = "JHU-CSSE", multiple = TRUE),
+               dateRangeInput("dates", "Date range", start = "2020-03-01", end = fourweek_date)
              ), 
              mainPanel(
                plotOutput("latest_plot")
@@ -308,13 +308,6 @@ server <- function(input, output, session) {
   latest_tm   <- reactive({ latest_t()       %>% filter(model         == input$model) })
   latest_tmt  <- reactive({ latest_tm()      %>% filter(simple_target == input$target) })
   latest_tmtl <- reactive({ latest_tmt()     %>% filter(abbreviation    == input$abbreviation) })
-  latest_tmtll <- reactive({ 
-    if (input$fourweeks) 
-      latest_tmtl()   %>% filter(target_end_date <= fourweek_date)
-    else
-      latest_tmtl()
-    })
-  
   
   truth_plot_data <- reactive({ 
     input_simple_target <- unique(paste(
@@ -330,7 +323,7 @@ server <- function(input, output, session) {
 
   
   output$latest_plot      <- shiny::renderPlot({
-    d    <- latest_tmtll()
+    d    <- latest_tmtl()
     team <- unique(d$team)
     model <- unique(d$model)
     forecast_date <- unique(d$forecast_date)
@@ -357,6 +350,8 @@ server <- function(input, output, session) {
       scale_linetype_manual(values = c("JHU-CSSE" = 1,
                                     "USAFacts" = 2,
                                     "NYTimes"  = 3)) +
+      
+      xlim(input$dates) + 
       
       labs(y="value", title = paste("Forecast date:", forecast_date)) +
       theme_bw() +
