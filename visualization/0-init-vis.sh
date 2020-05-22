@@ -41,10 +41,10 @@ rm -r ./data/Cumulative\ Deaths/UChicago-CovidIL_30_increase
 rm -r ./data/Incident\ Deaths/UChicago-CovidIL_30_increase
 
 # Remove JHU
-rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSPHighDist
-rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSPHighDist
-rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSPModDist
-rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSPModDist
+# rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSPHighDist
+# rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSPHighDist
+# rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSPModDist
+# rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSPModDist
 # rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSP
 # rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSP
 
