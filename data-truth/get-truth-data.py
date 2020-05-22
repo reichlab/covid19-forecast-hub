@@ -26,22 +26,16 @@ def configure_JHU_data(df, target):
     # rename columns
     df_truth = df_truth.rename(columns={0: "value",
                                         "level_1": "location_long"})
+
     # Get state IDs
-    df_truth = df_truth.merge(fips_codes, left_on='location_long', right_on='state_name', how='left')
+    df_truth = df_truth.merge(fips_codes, left_on='location_long', right_on='location_name', how='left')
 
-    df_truth.loc[df_truth["location_long"] == "US", "state_code"] = "US"
-    df_truth["state_code"].replace({"US": 1000}, inplace=True)  # so that can be converted to int
-
-    # convert FIPS code to int
-    df_truth = df_truth.dropna(subset=['state_code'])
-    df_truth["state_code"] = df_truth["state_code"].astype(int)
+    # Drop NAs
+    df_truth = df_truth.dropna(subset=['location', 'value'])
 
     # add leading zeros to state code
-    df_truth['state_code'] = df_truth['state_code'].apply(lambda x: '{0:0>2}'.format(x))
+    df_truth['location'] = df_truth['location'].apply(lambda x: '{0:0>2}'.format(x))
 
-    # convert 1000 back to US
-    df_truth["state_code"].replace({"1000": "US"}, inplace=True)
-    df_truth.loc[df_truth["location_long"] == "US", "state"] = "nat"
     '''
     ####################################
     # Daily truth data output for reference
@@ -49,9 +43,14 @@ def configure_JHU_data(df, target):
     '''
 
     # only output "location", "epiweek", "value"
-    df_byday = df_truth.rename(columns={"level_0": "date", "state_code": "location", "location_long": "location_name"})
+    df_truth = df_truth.drop(['location_name'], axis=1)
+    df_byday = df_truth.rename(columns={"level_0": "date", "location_long": "location_name"})
+
     # select columns
     df_byday = df_byday[["date", "location", "location_name", "value"]]
+
+    # ensure value column is integer
+    df_byday['value'] = df_byday['value'].astype(int)
 
     # change to yyyy/mm/dd format
     df_byday['date'] = pd.to_datetime(df_byday['date'])
@@ -81,9 +80,8 @@ def configure_JHU_data(df, target):
                                                                                   'value': 'sum',
                                                                                   'year': 'last',
                                                                                   'day': 'last',
-                                                                                  'state_code': 'last',
-                                                                                  'state': 'last',
-                                                                                  'state_name': 'last'})
+                                                                                  'location': 'last',
+                                                                                  'abbreviation': 'last'})
         df_vis = df_vis[df_vis['day'] == 7]
     else:
         df_vis = df_truth[df_truth['day'] == 7]
@@ -96,13 +94,16 @@ def configure_JHU_data(df, target):
     # define epiweek
     df_vis['epiweek'] = df_vis['year'].astype(str) + df_vis['week']
 
+    # Replace US with "nat"
+    df_vis.loc[df_vis["location_long"] == "US", "state"] = "nat"
+    print(df_vis)
     # only output "location", "epiweek", "value"
-    df_vis = df_vis.rename(columns={"state": "location"})
-    df_truth_short = df_vis[["location", "epiweek", "value"]]
+    df_truth_short = df_vis[["abbreviation", "epiweek", "value"]]
+    df_truth_short = df_truth_short.rename(columns={"abbreviation": "location"})
 
     df_truth_short["value"].replace({0: 0.1}, inplace=True)
 
-    file_path = './vis-master/covid-csv-tools/dist/truth/' + target + '.json'
+    file_path = '../visualization/vis-master/covid-csv-tools/dist/truth/' + target + '.json'
     # write to json
     with open(file_path, 'w') as f:
         f.write(df_truth_short.to_json(orient='records'))
@@ -112,7 +113,7 @@ url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_cov
 url_req = requests.get(url).content
 df = pd.read_csv(io.StringIO(url_req.decode('utf-8')))
 
-fips_codes = pd.read_csv('../template/state_fips_codes.csv')
+fips_codes = pd.read_csv('../data-locations/locations.csv')
 
 # aggregate by state and nationally
 state_agg = df.groupby(['Province_State']).sum()

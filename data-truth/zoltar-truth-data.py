@@ -51,20 +51,16 @@ def configure_JHU_data(df, target):
                                         "level_1": "location_long"})
 
     # Get state IDs
-    df_truth = df_truth.merge(fips_codes, left_on='location_long', right_on='state_name', how='left')
-    df_truth.loc[df_truth["location_long"] == "US", "state_code"] = "US"
-    df_truth["state_code"].replace({"US": 1000}, inplace=True)  # so that can be converted to int
+    df_truth = df_truth.merge(fips_codes, left_on='location_long', right_on='location_name', how='left')
 
-    # convert FIPS code to int
-    df_truth = df_truth.dropna(subset=['state_code'])
-    df_truth["state_code"] = df_truth["state_code"].astype(int)
+    # Drop duplicate column
+    df_truth = df_truth.drop(['location_name'], axis=1)
+
+    # Drop NAs
+    df_truth = df_truth.dropna(subset=['location', 'value'])
 
     # add leading zeros to state code
-    df_truth['state_code'] = df_truth['state_code'].apply(lambda x: '{0:0>2}'.format(x))
-
-    # convert 1000 back to US
-    df_truth["state_code"].replace({"1000": "US"}, inplace=True)
-    df_truth.loc[df_truth["location_long"] == "US", "state"] = "nat"
+    df_truth['location'] = df_truth['location'].apply(lambda x: '{0:0>2}'.format(x))
 
     # Observed data on the seventh day
     # or group by week for incident deaths
@@ -73,9 +69,8 @@ def configure_JHU_data(df, target):
                                                                                   'value': 'sum',
                                                                                   'year': 'last',
                                                                                   'day': 'last',
-                                                                                  'state_code': 'last',
-                                                                                  'state': 'last',
-                                                                                  'state_name': 'last'})
+                                                                                  'location': 'last',
+                                                                                  'abbreviation': 'last'})
     else:
         df_vis = df_truth
     df_vis['week'] = df_vis['week'] + 1  # shift epiweek on axis
@@ -87,9 +82,8 @@ def configure_JHU_data(df, target):
     df_vis['epiweek'] = df_vis['year'].astype(str) + df_vis['week']
 
     # rename columns
-    df_truth_long = df_vis.rename(columns={"state": "location",
-                                           "week": "epiweek",
-                                           "state_code": "unit",
+    df_truth_long = df_vis.rename(columns={"week": "epiweek",
+                                           "location": "unit",
                                            "level_0": "date"})
     # get timezero
     df_truth_long['date'] = pd.to_datetime(df_truth_long['date'])
@@ -147,7 +141,7 @@ url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_cov
 url_req = requests.get(url).content
 df = pd.read_csv(io.StringIO(url_req.decode('utf-8')))
 
-fips_codes = pd.read_csv('../template/state_fips_codes.csv')
+fips_codes = pd.read_csv('../data-locations/locations.csv')
 
 # aggregate by state and nationally
 state_agg = df.groupby(['Province_State']).sum()
@@ -170,5 +164,5 @@ df_inc_death = configure_JHU_data(df_truth_incident, "Incident Deaths")
 zoltar_truth = pd.concat([df_cum_death, df_inc_death])
 
 # write truth to csv
-file_path = '../data-truth/zoltar-truth.csv'
+file_path = './zoltar-truth.csv'
 zoltar_truth.to_csv(file_path, index=False)
