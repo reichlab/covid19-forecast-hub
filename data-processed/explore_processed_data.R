@@ -289,13 +289,18 @@ server <- function(input, output, session) {
   
   observe({
     targets <- sort(unique(latest_tm()$simple_target))
-    updateSelectInput(session, "target", choices = targets, selected = targets[1])
+    updateSelectInput(session, "target", choices = targets, 
+                      selected = ifelse("wk ahead cum death" %in% targets, 
+                                        "wk ahead cum death", 
+                                        targets[1]))
   })
   
   observe({
     abbreviations <- sort(unique(latest_tmt()$abbreviation))
     updateSelectInput(session, "abbreviation", choices = abbreviations, 
-                      selected = ifelse(any("US" == abbreviations), "US", abbreviations[1]))
+                      selected = ifelse("US" %in% abbreviations, 
+                                        "US", 
+                                        abbreviations[1]))
   })
   
   
