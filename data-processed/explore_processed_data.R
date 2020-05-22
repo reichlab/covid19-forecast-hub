@@ -353,7 +353,8 @@ server <- function(input, output, session) {
       
       xlim(input$dates) + 
       
-      labs(y="value", title = paste("Forecast date:", forecast_date)) +
+      labs(x = "Date", y="Number", 
+           title = paste("Forecast date:", forecast_date)) +
       theme_bw() +
       theme(plot.title = element_text(color = ifelse(Sys.Date() - forecast_date > 6, "red", "black")))
   })
