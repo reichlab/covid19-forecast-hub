@@ -13,6 +13,8 @@ options(DT.options = list(pageLength = 25))
 source("../code/processing-fxns/get_next_saturday.R")
 source("read_processed_data.R")
 
+fourweek_date <- get_next_saturday(Sys.Date() + 3*7)
+
 # Get truth 
 truth_cols = cols(
   date = col_date(format = ""),
@@ -175,7 +177,7 @@ latest_plot_data <- latest %>%
 
 
 
-# Define UI for application that draws a histogram
+
 ui <- navbarPage(
   "Explore:",
   
@@ -210,7 +212,8 @@ ui <- navbarPage(
                selectInput("team",         "Team", sort(unique(latest_plot_data$team         )), "IHME"),
                selectInput("model",       "Model", sort(unique(latest_plot_data$model        ))),
                selectInput("target",     "Target", sort(unique(latest_plot_data$simple_target))),
-               selectInput("location", "Location", sort(unique(latest_plot_data$fips_alpha   )))
+               selectInput("location", "Location", sort(unique(latest_plot_data$fips_alpha   ))),
+               checkboxInput("fourweeks", "Limit forecast to 4 weeks", value = TRUE)
              ), 
              mainPanel(
                plotOutput("latest_plot")
@@ -257,6 +260,12 @@ server <- function(input, output, session) {
   latest_tm   <- reactive({ latest_t()       %>% filter(model         == input$model) })
   latest_tmt  <- reactive({ latest_tm()      %>% filter(simple_target == input$target) })
   latest_tmtl <- reactive({ latest_tmt()     %>% filter(fips_alpha    == input$location) })
+  latest_tmtll <- reactive({ 
+    if (input$fourweeks) 
+      latest_tmtl()   %>% filter(target_end_date <= fourweek_date)
+    else
+      latest_tmtl()
+    })
   
   truth_plot <- reactive({ 
     input_simple_target <- unique(paste(
@@ -284,7 +293,7 @@ server <- function(input, output, session) {
   })
   
   output$latest_plot      <- shiny::renderPlot({
-    d    <- latest_tmtl()
+    d    <- latest_tmtll()
     team <- unique(d$team)
     model <- unique(d$model)
     forecast_date <- unique(d$forecast_date)
@@ -300,7 +309,7 @@ server <- function(input, output, session) {
       
       geom_line(data = truth_plot(), aes(x = date, y = value), color = "green") + 
       
-      labs(y="value", title = forecast_date) +
+      labs(y="value", title = paste("Forecast date:", forecast_date)) +
       theme_bw() +
       theme(plot.title = element_text(color = ifelse(Sys.Date() - forecast_date > 6, "red", "black")))
   })
