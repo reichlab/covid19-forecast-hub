@@ -34,7 +34,7 @@ if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* ]]; then
 #    bash ./travis/pull-data.sh
 
    echo "updating truth data..."
-   bash ./travis/update-zoltar-truth.sh
+   bash ./travis/update-truth.sh
 fi
 
 # if [[ "$TRAVIS_COMMIT_MESSAGE" == *"update data"* ]]; then
