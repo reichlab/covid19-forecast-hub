@@ -94,7 +94,7 @@ def configure_JHU_data(df, target):
     # define epiweek
     df_vis['epiweek'] = df_vis['year'].astype(str) + df_vis['week']
 
-    # Replace US with "nat"
+    # Replace US with "nat" this is NECESSARY for visualization code!
     df_vis.loc[df_vis["location_long"] == "US", "abbreviation"] = "nat"
 
     # only output "location", "epiweek", "value"
