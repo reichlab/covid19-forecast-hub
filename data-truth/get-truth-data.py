@@ -95,8 +95,8 @@ def configure_JHU_data(df, target):
     df_vis['epiweek'] = df_vis['year'].astype(str) + df_vis['week']
 
     # Replace US with "nat"
-    df_vis.loc[df_vis["location_long"] == "US", "state"] = "nat"
-    print(df_vis)
+    df_vis.loc[df_vis["location_long"] == "US", "abbreviation"] = "nat"
+
     # only output "location", "epiweek", "value"
     df_truth_short = df_vis[["abbreviation", "epiweek", "value"]]
     df_truth_short = df_truth_short.rename(columns={"abbreviation": "location"})
