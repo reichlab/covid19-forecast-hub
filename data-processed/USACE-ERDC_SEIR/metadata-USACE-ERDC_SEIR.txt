@@ -24,8 +24,8 @@ forecasst_frequency: 1x daily
 data_source1: USA FACTS 
 data_source2: JHU COVID-19 Git Repo 
 
-this_model_is_an_ensemble: FALSE
-this_model_is_unconditional: FALSE
+this_model_is_an_ensemble: false
+this_model_is_unconditional: false
 
 methods: >-
     The ERDC SEIR model makes predictions of several variables (e.g., reported new cases 
@@ -36,9 +36,9 @@ methods_long: >-
     The ERDC SEIR model is a process-based model that mathematically describes the virus 
     dynamics in a population center (e.g., state, CBSA) using assumptions that are common 
     in compartmental models:
-        (i)   modeled populations are large enough that fluctuations in the disease 
+    (i)   modeled populations are large enough that fluctuations in the disease 
     states grow slower than averages (i.e., coefficient of variation < 1)
-        (ii)  recovered individuals are neither infectious nor become susceptible to 
+    (ii)  recovered individuals are neither infectious nor become susceptible to 
     further infection.
 
     The model is similar to classic SEIR models but with additional compartments for 
