@@ -30,9 +30,6 @@ if [[ "$TRAVIS_BRANCH" != "master" ]]; then
 fi
 
 if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* ]]; then
-#    echo "updating model data..."
-#    bash ./travis/pull-data.sh
-
    echo "updating truth data..."
    bash ./travis/update-truth.sh
 fi
@@ -61,6 +58,15 @@ if [[ "$TRAVIS_COMMIT_MESSAGE" == *"trigger build"* ]]; then
 fi
 
 # Functions below are for testing purposes
+if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test truth"* ]]; then
+    echo "updating truth data..."
+    bash ./travis/update-truth.sh
+    echo "Push the truth"
+    bash ./travis/push.sh
+    echo "Upload truth to Zoltar"
+    python3 ./code/zoltar-scripts/upload_truth_to_zoltar.py
+fi
+
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test zoltar"* ]]; then
     echo "Upload forecasts to Zoltar"
     bash ./travis/upload-to-zoltar.sh
