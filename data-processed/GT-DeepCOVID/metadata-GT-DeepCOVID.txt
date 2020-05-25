@@ -21,8 +21,8 @@ data_source1: COVID Tracking Project, JHU
 data_source2: COVID-Net, NYT 
 data_source3: Other (proprietary) point-of-care claims data, demographic, mobility and symptomatic data
 
-this_model_is_an_ensemble: FALSE
-this_model_is_unconditional: FALSE
+this_model_is_an_ensemble: false
+this_model_is_unconditional: false
 
 
 
