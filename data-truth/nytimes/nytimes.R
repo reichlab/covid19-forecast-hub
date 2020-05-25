@@ -2,7 +2,8 @@
 # Jarad Niemi
 # May 2020
 
-library("tidyverse")
+library("readr")
+library("dplyr")
 
 us_url     <- "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us.csv"
 states_url <- "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv"

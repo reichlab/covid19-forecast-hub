@@ -21,8 +21,8 @@ forecast_frequency: daily
 data_inputs_known: confirmed case and deaths
 data_source_known: New York Times -nytimes/covid-19-data
 
-this_model_is_an_ensemble: FALSE
-this_model_is_unconditional: FALSE
+this_model_is_an_ensemble: false
+this_model_is_unconditional: false
 
 methods: >-
     The SuEIR model is a variant of the SEIR model considering both untested and unreported cases.
