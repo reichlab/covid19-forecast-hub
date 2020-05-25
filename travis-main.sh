@@ -51,6 +51,7 @@ fi
 # if [[ "$TRAVIS_COMMIT_MESSAGE" == *"trigger build"* ]]; then
 #     source ./travis/vis-deploy.sh
 # fi
+#
 
 # Functions below are for testing purposes
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test truth"* ]]; then
