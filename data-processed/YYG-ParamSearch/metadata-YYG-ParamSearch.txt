@@ -21,16 +21,16 @@ forecast_frequency: updated daily
 data_inputs_known: reported daily deaths; population
 data_source_known: JHU
 
-this_model_is_an_ensemble: FALSE
-this_model_is_unconditional: TRUE
+this_model_is_an_ensemble: false
+this_model_is_unconditional: true
 
 methods: >-
-    We've built a simulator based on the SEIS model with learned parameters to make daily projections regarding 
+    We've built a simulator based on the SEIR model with learned parameters to make daily projections regarding 
     COVID-19 infections and deaths in all 50 US states and 40 countries. The model also accounts for individual 
     state-by-state reopenings and the resulting effects on infections and deaths.
 
 methods_long: >-
-    We've built a simulator based on the SEIS model with learned parameters to make daily projections regarding 
+    We've built a simulator based on the SEIR model with learned parameters to make daily projections regarding 
     COVID-19 infections and deaths in all 50 US states and 40 countries. The model also accounts for individual 
     state-by-state reopenings and the resulting effects on infections and deaths. The parameters/inputs of this 
     simulator are learned using hyperparameter optimization that minimizes the error between the projected outputs 

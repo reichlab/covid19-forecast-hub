@@ -20,8 +20,8 @@ forecast_frequency: daily
 data_inputs_known: 
 data_source_known:
 
-this_model_is_an_ensemble: FALSE
-this_model_is_unconditional: TRUE
+this_model_is_an_ensemble: false
+this_model_is_unconditional: true
 
 methods: >- 
     The Agent-based local stochastic model of COVID-19 transmission

@@ -7,7 +7,6 @@ This README provides an overview of the project. Additional specific links can b
 
 * [Interactive Visualization](https://reichlab.io/covid19-forecast-hub/)
 * [Ensemble model](#ensemble-model)
-* [Raw forecast data](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-raw)
 * [Processed forecast data](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed)
 * [Truth data](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-truth/)
 * [Technical README with detailed submission instructions](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md)
@@ -18,8 +17,6 @@ This README provides an overview of the project. Additional specific links can b
 
 ## Data license and reuse
 We are grateful to the teams who have generated these forecasts. They have spent a huge amount of time and effort in a short amount of time to operationalize these important real-time forecasts. The groups have graciously and courageously made their public data available under different terms and licenses. You will find the licenses (when provided) within the model-specific folders in the [data-processed](./data-processed/) directory. Please consult these licenses before using these data to ensure that you follow the terms under which these data were released.
-
-We have stored the raw datafiles here as they were made available on the various websites or provided directly to us. We are working on creating standardized versions of these files and on building a queryable API for easy access to the data contained in the forecasts. 
 
 All source code that is specific to this project, along with our [d3-foresight](http://reichlab.io/d3-foresight/) visualization tool is available under an open-source [MIT license](./LICENSE). We note that this license does NOT cover model code from the various teams (maybe available from them under other licenses) or model forecast data (available under specified licenses as described above). 
 
@@ -49,7 +46,7 @@ For week-ahead forecasts with `forecast_date` of Sunday or Monday of EW12, a 1 w
 -->
 
 ## Ensemble model
-Every Monday at 6pm ET, we will upate our [COVID Forecast Hub ensemble forecast](data-processed/COVIDhub-ensemble) and [interactive visualization](https://reichlab.io/covid19-forecast-hub/) using the most recent forecast from each team. Therefore, at the very least we encourage teams to provide a new forecast on Mondays that uses the most recent data. Depending on how the project evolves, we may add additional weekly builds for the ensemble and visualization. Currently, our ensemble is created by taking the arithmetic average of each quantile for all models that submit 1- through 4-week ahead targets for a given location. Ensemble methods may evolve as more data becomes available. 
+Every Monday at 6pm ET, we will upate our [COVID Forecast Hub ensemble forecast](data-processed/COVIDhub-ensemble) and [interactive visualization](https://reichlab.io/covid19-forecast-hub/) using the most recent forecast from each team as long as it was submitted on either Sunday or Monday. Therefore, at the very least we encourage teams to provide a new forecast on Mondays that uses the most recent data. Depending on how the project evolves, we may add additional weekly builds for the ensemble and visualization. Currently, our ensemble is created by taking the arithmetic average of each quantile for all models that submit 1- through 4-week ahead targets for a given location. Ensemble methods may evolve as more data becomes available. 
 
 ## Data model
 Most groups are providing their forecasts in a quantile-based format. We have developed a general data model that can be used to represent all of the forecasts that have been made publicly available. The tabular version of the data model is a simple, long-form data format, with six required columns and several optional columns.
@@ -66,20 +63,29 @@ Most groups are providing their forecasts in a quantile-based format. We have de
 For example, if `quantile` is 0.3 and `value` is 10, then this row is saying that the 30th percentile of the distribution is 10. If `type` is `"point"` and `value` is 15, then this row is saying that the point estimate from this model is 15. 
 
 ## Forecast file format
-Raw data from the `data-raw` subfolders will be processed and put into corresponding subfolders in `data-processed`. All files must follow the format outlined above. Teams can use [this file](data-processed/YYG-ParamSearch/2020-04-27-YYG-ParamSearch.csv) as an example or template to follow. 
+All forecast data should be submitted to a team's subfolder in the `data-processed` directory. All files must follow the format outlined above. Teams can use [this file](data-processed/YYG-ParamSearch/2020-04-27-YYG-ParamSearch.csv) as an example or template to follow. 
 
 Each file must have a specific naming scheme that represents when the forecast was made and what model made the forecast. Files will follow the following name scheme: `YYYY-MM-DD-[team]-[model].csv`. Where `YYYY-MM-DD` is the `forecast_date` as defined above. Teams are welcome to submit up to one file a day to be stored in the repository.
 
 ## Teams and models
 So far, we have identified a number of groups that are creating forecasts of COVID-19-related deaths in the US and globally. Our list of groups whose forecasts are currently standardized and in the repository are (with data reuse license):
 
- - [Columbia University](https://github.com/shaman-lab/COVID-19Projection) (Apache2.0)
+ - [Auquan](https://covid19-infection-model.auquan.com/) (none given)
+ - [Columbia University](https://github.com/shaman-lab/COVID-19Projection) (Apache 2.0)
+ - [CovidActNow](https://covidactnow.org/) (none given)
  - [GLEAM from Northeastern University](https://www.gleamproject.org/covid-19) (CC-BY-4.0)
+ - [Georgia Institute of Technology](https://www.cc.gatech.edu/~badityap/covid.html) (none given)
  - [IHME](https://covid19.healthdata.org/united-states-of-america) (CC-AT-NC4.0)
- - [LANL](https://covid-19.bsvgateway.org/) ([custom](data-raw/LANL/LICENSE-LANL.txt))
+ - [Iowa State University](http://www.covid19dashboard.us/) (none given)
+ - [LANL](https://covid-19.bsvgateway.org/) ([custom](data-processed/LANL-GrowthRate/LICENSE-LANL.txt))
  - [Imperial](https://github.com/sangeetabhatia03/covid19-short-term-forecasts) (none given)
- - [MIT](https://www.covidanalytics.io/) (Apache 2.0)
+ - [Johns Hopkins ID Dynamics COVID-19 Working Group](https://github.com/HopkinsIDD/COVIDScenarioPipeline) (MIT)
+ - [Massachusetts Institute of Technology](https://www.covidanalytics.io/) (Apache 2.0)
  - [Notre Dame](https://github.com/confunguido/covid19_ND_forecasting) (none given)
+ - Predictive Science Inc (none given)
+ - Quantori (none given)
+ - US Army Engineer Research and Development Center (ERDC) (see [license](./data-processed/ERDC-SEIR/LICENSE.txt))
+ - University of Arizona (CC-BY-NC-SA 4.0)
  - [University of California, Los Angeles](https://covid19.uclaml.org/) (CC-BY-4.0)
  - [University of Geneva / Swiss Data Science Center](https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/) (none given)
  - [University of Massachusetts - Expert Model](https://github.com/tomcm39/COVID19_expert_survey) (MIT)
