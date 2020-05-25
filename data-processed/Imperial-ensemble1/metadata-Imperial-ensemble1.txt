@@ -5,8 +5,8 @@ model_abbr: Ensemble1
 model_contributors: Sangeeta Bhatia <s.bhatia@imperial.ac.uk>
 
 
-this_model_is_an_ensemble: TRUE
-this_model_is_unconditional: TRUE
+this_model_is_an_ensemble: true
+this_model_is_unconditional: true
 
 methods: >-
     This model makes predictions about the future, unconditional on particular intervention strategies.
