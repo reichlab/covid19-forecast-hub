@@ -28,11 +28,11 @@ sed -i '/href="branding.tweetUrl"/,/span Tweet/d' ./src/components/Navbar.vue
 sed -i 's/span.brand.title-text {{ branding.title }}/a.brand.title-text(v-bind:href="branding.parentUrl") {{ branding.title }}/'\
     ./src/components/Navbar.vue
 
-# Change text above map
-# CDC COVID-19
-sed -i 's/| Real-time <b>COVID-19 Forecasts<\/b>/a(v-bind:href="branding.parentUrl") CDC COVID-19 Forecast Project/' ./src/components/Panels.vue
-sed -i 's/CDC FluSight Challenge/COVID-19/' ./src/components/Panels.vue
-sed -i "/computed/a...mapGetters(['branding'])," ./src/components/Panels.vue
+# # Change text above map
+# # CDC COVID-19
+# sed -i 's/| Real-time <b>COVID-19 Forecasts<\/b>/a(v-bind:href="branding.parentUrl") CDC COVID-19 Forecast Project/' ./src/components/Panels.vue
+# sed -i 's/CDC FluSight Challenge/COVID-19/' ./src/components/Panels.vue
+# sed -i "/computed/a...mapGetters(['branding'])," ./src/components/Panels.vue
 
 # Change score description links
 sed -i 's/reichlab\/flusight\/wiki\/Scoring#1-absolute-error/FluSightNetwork\/cdc-flusight-ensemble\/wiki\/Evaluation/' ./src/store/modules/scores.js

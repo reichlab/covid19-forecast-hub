@@ -4,37 +4,76 @@
 set -e
 
 # Parse data model data files to flusight format
-cd ../
-npm install
-cd ./visualization
-npm install
 yarn
 yarn run test
 yarn run parse-data
 
-# Remove CU-nointerv
+# Remove CU-models except select
 rm -r ./data/Cumulative\ Deaths/CU-nointerv
 rm -r ./data/Incident\ Deaths/CU-nointerv
+rm -r ./data/Cumulative\ Deaths/CU-60-contact
+rm -r ./data/Incident\ Deaths/CU-60-contact
+rm -r ./data/Cumulative\ Deaths/CU-70-contact
+rm -r ./data/Incident\ Deaths/CU-70-contact
+rm -r ./data/Cumulative\ Deaths/CU-80-contact
+rm -r ./data/Incident\ Deaths/CU-80-contact
+rm -r ./data/Cumulative\ Deaths/CU-80-contact1x5p
+rm -r ./data/Incident\ Deaths/CU-80-contact1x5p
+rm -r ./data/Cumulative\ Deaths/CU-80-contact1x10p
+rm -r ./data/Incident\ Deaths/CU-80-contact1x10p
+rm -r ./data/Cumulative\ Deaths/CU-80-contactw5p
+rm -r ./data/Incident\ Deaths/CU-80-contactw5p
+rm -r ./data/Cumulative\ Deaths/CU-80-contactw10p
+rm -r ./data/Incident\ Deaths/CU-80-contactw10p
 
-# Remove NotreDame-FRED
-# rm -r ./data/Cumulative\ Deaths/NotreDame-FRED
-# rm -r ./data/Incident\ Deaths/NotreDame-FRED
+# Remove UChicago except CovidIL_100
+rm -r ./data/Cumulative\ Deaths/UChicago-CovidIL_40
+rm -r ./data/Incident\ Deaths/UChicago-CovidIL_40
+rm -r ./data/Cumulative\ Deaths/UChicago-CovidIL_60
+rm -r ./data/Incident\ Deaths/UChicago-CovidIL_60
+rm -r ./data/Cumulative\ Deaths/UChicago-CovidIL_80
+rm -r ./data/Incident\ Deaths/UChicago-CovidIL_80
+rm -r ./data/Cumulative\ Deaths/UChicago-CovidIL_100
+rm -r ./data/Incident\ Deaths/UChicago-CovidIL_100
+rm -r ./data/Cumulative\ Deaths/UChicago-CovidIL_10_increase
+rm -r ./data/Incident\ Deaths/UChicago-CovidIL_10_increase
+rm -r ./data/Cumulative\ Deaths/UChicago-CovidIL_30_increase
+rm -r ./data/Incident\ Deaths/UChicago-CovidIL_30_increase
 
-# Remove Iowa State
-# rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM10
-# rm -r ./data/Incident\ Deaths/IowaStateLW-STEM10
-# rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
-# rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
+# Remove JHU
+# rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSPHighDist
+# rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSPHighDist
+# rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSPModDist
+# rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSPModDist
+# rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSP
+# rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSP
 
-# Remove Imperial Incident
+# Remove Iowa State Except STEM10
+rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
+rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
+
+# Remove LANL-GrowthRateHosp
+# rm -r ./data/Cumulative\ Deaths/LANL-GrowthRateHosp
+# rm -r ./data/Incident\ Deaths/LANL-GrowthRateHosp
+
+# Remove Auquan
+# rm -r ./data/Cumulative\ Deaths/Auquan-SEIR
+rm -r ./data/Incident\ Deaths/Auquan-SEIR
+
+# Remove CovidActNow-SEIR_CAN (no week estimates)
+# rm -r ./data/Cumulative\ Deaths/CAN-SEIR_CAN
+# rm -r ./data/Incident\ Deaths/CAN-SEIR_CAN
+
+# Remove Imperial ensemble 1
+rm -r ./data/Cumulative\ Deaths/Imperial-Ensemble1
 rm -r ./data/Incident\ Deaths/Imperial-Ensemble1
-rm -r ./data/Incident\ Deaths/Imperial-Ensemble2
+# rm -r ./data/Incident\ Deaths/Imperial-Ensemble2
 
 # Remove Ensemble Incident
 rm -r ./data/Incident\ Deaths/COVIDhub-ensemble
 
-# Remove MOBS_NEU-GLEAM_COVID Incident
-rm -r ./data/Incident\ Deaths/MOBS-GLEAM_COVID
+# # Remove MOBS_NEU-GLEAM_COVID Incident
+# rm -r ./data/Incident\ Deaths/MOBS-GLEAM_COVID
 
 # Remove UMass-ExpertCrowd
 rm -r ./data/Incident\ Deaths/UMass-ExpertCrowd
@@ -44,7 +83,9 @@ rm -r ./data/Cumulative\ Deaths/UMass-ExpertCrowd
 python3 ./scripts/convert-forecasts.py
 
 # Get truth data
-python3 ./scripts/get-truth-data.py
+cd ../data-truth
+python3 ./get-truth-data.py
+cd ../visualization
 
 # Replace already present data
 rm -rf ./vis-master/data

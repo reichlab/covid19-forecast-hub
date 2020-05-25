@@ -52,9 +52,9 @@ check_agreement_forecast_date <- function(file, entry){
   forecast_date_entry <- as.Date(entry$forecast_date)
   if(!all(forecast_date_entry == date_file)){
     warning("ERROR: Date in file name and forecast_date do not agree.")
-    return(FALSE)
+    return(invisible(FALSE))
   }else{
-    return(TRUE)
+    return(invisible(TRUE))
   }
 }
 
@@ -78,11 +78,11 @@ verify_colnames <- function(entry){
   result <- TRUE
 
   # check whether there are colnames present which should not
-  if(!all(coln %in% colnames_template)){
-    warning("ERROR: there is at least one column name which does not conform with the template: ",
-            paste(coln[!(coln %in% colnames_template)], collapse = ", "))
-    result <- FALSE
-  }
+  # if(!all(coln %in% colnames_template)){
+  #   warning("ERROR: there is at least one column name which does not conform with the template: ",
+  #           paste(coln[!(coln %in% colnames_template)], collapse = ", "))
+  #   result <- FALSE
+  # }
 
   # check if essential columns are there
   if(!all(compulsory_colnames_template %in% coln)){
@@ -99,13 +99,36 @@ verify_colnames <- function(entry){
     cat("VALIDATED: column names\n")
 
     # check order and give warning if not as recommended
-    if(any(coln != colnames_template_available)){
+    if(any(coln[coln %in% colnames_template_available] != colnames_template_available)){
       cat("  MESSAGE: Preferred order of columns is (forecast_date, target, target_end_date, location,
-        location_name (optional), type, quantile, value), but this is not compulsory.\n")
+          location_name (optional), type, quantile, value), but this is not compulsory.\n")
     }
   }
 
   return(invisible(result))
+}
+
+#' Checking that all entries in quantile are from the allowed list of values
+#'
+#' @param entry the file (to avoid floating point issues with R the file is read in
+#' with `quantile` as character rather than numeric)
+#'
+#' @return invisibly TRUE if all values acceptable, vector with unacceptable values otherwise
+
+verify_quantile_levels <- function(file){
+  # read in file with `qualtile` variable as string
+  entry_temp <- read.csv(file, stringsAsFactors = FALSE, colClasses = c("quantile" = "character"))
+  vals_quantiles <- unique(gsub("0+$", "", entry_temp$quantile))
+  allowed_values <- as.character(c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99, NA))
+  if(!all(vals_quantiles %in% allowed_values)){
+    warning("  ERROR: `quantile` may only contain values from c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99)).",
+            " This error may be due to floating point issues. Disallowed values found:",
+            vals_quantiles[!vals_quantiles %in% allowed_values])
+    return(invisible(vals_quantiles[!vals_quantiles %in% allowed_values]))
+  }else{
+    cat("VALIDATED: entries of `quantile`\n")
+    return(invisible(TRUE))
+  }
 }
 
 #' Checking whether there are any NA values
@@ -211,7 +234,7 @@ verify_forecast_date_end_date <- function(entry){
       as.numeric(entry_week$target_end_date - entry_week$forecast_date) > 11 + (horizon_week - 1)*7
     )){
       warning("ERROR: Difference between target_date and forecast_date needs to be between 5 and 11 days for 1 week ahead forecasts,",
-            " between 12 and 18 days for two week ahead and so on.")
+              " between 12 and 18 days for two week ahead and so on.")
       result <- FALSE
     }
   }
@@ -247,7 +270,7 @@ verify_no_quantile_crossings <- function(entry){
   # warn if there are crossing and return info on where they ocurred
   if(any(is_crossing)){
     cat("  WARNING: Quantile crossing found for ", sum(is_crossing),
-            " combination(s) of location and target. Details in returned table.")
+        " combination(s) of location and target. Details in returned table.")
     return(invisible(entry_wide[is_crossing, c("location", "target")]))
   }else{
     cat("VALIDATED: no quantile crossing\n")
@@ -296,8 +319,8 @@ verify_monotonicity_cumulative <- function(entry){
   # warn if there are crossing and return info on where they ocurred
   if(any(c(is_decreasing_daily, is_decreasing_weekly), na.rm = TRUE)){
     cat("  WARNING: Temporal non-monotonicity found in forecasts of cumulative deaths for ",
-            sum(c(is_decreasing_daily, is_decreasing_weekly)),
-            " combination(s) of location and quantile/point forecast. Details in returned table. \n")
+        sum(c(is_decreasing_daily, is_decreasing_weekly)),
+        " combination(s) of location and quantile/point forecast. Details in returned table. \n")
     ret_obj <- rbind(entry_daily_wide[is_decreasing_daily, c("location", "quantile")],
                      entry_weekly_wide[is_decreasing_weekly, c("location", "quantile")])
     rownames(ret_obj) <- NULL
@@ -362,7 +385,7 @@ verify_cumulative_geq_incident <- function(entry){
 
   if(any(inc_exceeds_cum, na.rm = TRUE)){
     cat("WARNING: Incidence forecast exceed cumulative forecast for ", sum(inc_exceeds_cum),
-            " combinations of location, forecast horizon and quantile. Details in returned table.")
+        " combinations of location, forecast horizon and quantile. Details in returned table.")
     return(invisible(entry_wide[inc_exceeds_cum, c("location", "horizon", "quantile")]))
   }else{
     cat("VALIDATED: cum geq inc\n")
@@ -382,7 +405,11 @@ verify_cumulative_geq_incident <- function(entry){
 #' @return invisibly returns a named list with entries corresponding to the results of the different
 #' plausibility checks
 verify_quantile_forecasts <- function(entry){
-  options(warn = 1) # show warnings as they happen
+  #  show warnings as they occur
+  op <- options("warn")
+  on.exit(options(op))
+  options(warn = 1)
+
   results <- list()
   # run different checks:
   results$colnames <- verify_colnames(entry)
@@ -393,7 +420,6 @@ verify_quantile_forecasts <- function(entry){
   results$no_quantile_crossings <- verify_no_quantile_crossings(entry)
   results$monotonicity_cumulative <- verify_monotonicity_cumulative(entry)
   results$cumulative_geq_incident <- verify_cumulative_geq_incident(entry)
-  options(warn = 0)
   return(invisible(results))
 }
 
@@ -403,6 +429,7 @@ verify_quantile_forecasts <- function(entry){
 #' @return invisibly returns a named list with entries corresponding to the results of the different
 #' plausibility checks
 validate_file <- function(file){
+
   cat("\n\n Validating", file, "...\n")
   # check file name:
   check_filename_temp <- verify_filename(basename(file))
@@ -417,6 +444,10 @@ validate_file <- function(file){
   plausibility_checks <- verify_quantile_forecasts(entry_temp)
   plausibility_checks$agreement_forecast_date <- agreement_forecast_date
 
+  # check that `quantile` column only contains allowed values (done separately
+  # as this reads in the file with `quantile`as character):
+  plausibility_checks$quantile_levels <- verify_quantile_levels(file)
+
   return(invisible(plausibility_checks))
 }
 
@@ -428,6 +459,11 @@ validate_file <- function(file){
 validate_directory <- function(dir){
   cat("--------------------------\n \n")
   cat("\n Validating directory", dir, "...\n ")
+
+  #  show warnings as they occur
+  op <- options("warn")
+  on.exit(options(op))
+  options(warn = 1)
 
   files_temp <- list.files(dir)
   # select files which look roughly like forecast files:
