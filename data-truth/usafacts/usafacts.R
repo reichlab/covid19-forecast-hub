@@ -55,9 +55,12 @@ states <- cases %>% dplyr::mutate(cases_deaths = "case") %>%
   
 us <- states %>% 
   dplyr::group_by(cases_deaths, date) %>%
-  dplyr::mutate(cum = sum(cum),
-                inc = sum(inc),
-                location = "US")
+  dplyr::summarize(cum = sum(cum)) %>%
+  dplyr::group_by(cases_deaths) %>%
+  dplyr::arrange(date) %>%
+  dplyr::mutate(inc = diff(c(0,cum))) %>%
+  ungroup() %>% 
+  dplyr::mutate(location = "US")
   
 d <- bind_rows(states, us)
 
