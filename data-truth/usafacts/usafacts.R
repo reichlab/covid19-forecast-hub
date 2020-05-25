@@ -2,7 +2,8 @@
 # Jarad Niemi
 # May 2020
 
-library("tidyverse")
+library("readr")
+library("dplyr")
 
 confirmed_url <- "https://usafactsstatic.blob.core.windows.net/public/data/covid-19/covid_confirmed_usafacts.csv"
 deaths_url    <- "https://usafactsstatic.blob.core.windows.net/public/data/covid-19/covid_deaths_usafacts.csv"
@@ -30,7 +31,7 @@ readr::write_csv(cases,  path = "raw/covid_confirmed_usafacts.csv")
 readr::write_csv(deaths, path = "raw/covid_deaths_usafacts.csv")
 
 
-d <- cases %>% dplyr::mutate(cases_deaths = "case") %>%
+states <- cases %>% dplyr::mutate(cases_deaths = "case") %>%
   bind_rows(deaths %>% dplyr::mutate(cases_deaths = "death")) %>%
   
   dplyr::select(-countyFIPS, -`County Name`, -State) %>%
@@ -52,6 +53,17 @@ d <- cases %>% dplyr::mutate(cases_deaths = "case") %>%
   dplyr::mutate(inc = diff(c(0,cum))) %>%
   ungroup()
   
+us <- states %>% 
+  dplyr::group_by(cases_deaths, date) %>%
+  dplyr::summarize(cum = sum(cum)) %>%
+  dplyr::group_by(cases_deaths) %>%
+  dplyr::arrange(date) %>%
+  dplyr::mutate(inc = diff(c(0,cum))) %>%
+  ungroup() %>% 
+  dplyr::mutate(location = "US")
+  
+d <- bind_rows(states, us)
+
   
 
 readr::write_csv(

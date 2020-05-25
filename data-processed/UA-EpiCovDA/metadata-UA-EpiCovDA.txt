@@ -7,7 +7,7 @@ anonymity: named
 data_source1: covidtracking.com
 data_source2: US Census Bureau, Population Division
 data_source3: JHU CSSE GitHub repo
-this_model_is_an_ensemble: FALSE
+this_model_is_an_ensemble: false
 interventionsYN: Yes
 interventions: This model assumes that current interventions will remain in
    effect for at least four weeks after the forecasts were made.
