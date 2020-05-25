@@ -34,11 +34,6 @@ if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* ]]; then
    bash ./travis/update-truth.sh
 fi
 
-# if [[ "$TRAVIS_COMMIT_MESSAGE" == *"update data"* ]]; then
-#    echo "updating model data..."
-#    bash ./travis/pull-data.sh
-# fi
-
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
    echo "Upload forecasts to Zoltar "
    bash ./travis/upload-to-zoltar.sh
@@ -53,9 +48,9 @@ if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
    bash ./travis/push.sh
 fi
 
-if [[ "$TRAVIS_COMMIT_MESSAGE" == *"trigger build"* ]]; then
-    source ./travis/vis-deploy.sh
-fi
+# if [[ "$TRAVIS_COMMIT_MESSAGE" == *"trigger build"* ]]; then
+#     source ./travis/vis-deploy.sh
+# fi
 
 # Functions below are for testing purposes
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test truth"* ]]; then
