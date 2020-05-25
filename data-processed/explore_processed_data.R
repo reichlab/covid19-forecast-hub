@@ -238,8 +238,8 @@ ui <- navbarPage(
                selectInput("model",       "Model", sort(unique(latest_plot_data$model        ))),
                selectInput("target",     "Target", sort(unique(latest_plot_data$simple_target))),
                selectInput("abbreviation", "Location", sort(unique(latest_plot_data$abbreviation   ))),
-               checkboxInput("fourweeks", "Limit forecast to 4 weeks", value = TRUE),
-               selectInput("sources", "Truth sources", truth_sources, selected = "JHU-CSSE", multiple = TRUE)
+               selectInput("sources", "Truth sources", truth_sources, selected = "JHU-CSSE", multiple = TRUE),
+               dateRangeInput("dates", "Date range", start = "2020-03-01", end = fourweek_date)
              ), 
              mainPanel(
                plotOutput("latest_plot")
@@ -289,13 +289,18 @@ server <- function(input, output, session) {
   
   observe({
     targets <- sort(unique(latest_tm()$simple_target))
-    updateSelectInput(session, "target", choices = targets, selected = targets[1])
+    updateSelectInput(session, "target", choices = targets, 
+                      selected = ifelse("wk ahead cum death" %in% targets, 
+                                        "wk ahead cum death", 
+                                        targets[1]))
   })
   
   observe({
     abbreviations <- sort(unique(latest_tmt()$abbreviation))
     updateSelectInput(session, "abbreviation", choices = abbreviations, 
-                      selected = ifelse(any("US" == abbreviations), "US", abbreviations[1]))
+                      selected = ifelse("US" %in% abbreviations, 
+                                        "US", 
+                                        abbreviations[1]))
   })
   
   
@@ -303,13 +308,6 @@ server <- function(input, output, session) {
   latest_tm   <- reactive({ latest_t()       %>% filter(model         == input$model) })
   latest_tmt  <- reactive({ latest_tm()      %>% filter(simple_target == input$target) })
   latest_tmtl <- reactive({ latest_tmt()     %>% filter(abbreviation    == input$abbreviation) })
-  latest_tmtll <- reactive({ 
-    if (input$fourweeks) 
-      latest_tmtl()   %>% filter(target_end_date <= fourweek_date)
-    else
-      latest_tmtl()
-    })
-  
   
   truth_plot_data <- reactive({ 
     input_simple_target <- unique(paste(
@@ -325,7 +323,7 @@ server <- function(input, output, session) {
 
   
   output$latest_plot      <- shiny::renderPlot({
-    d    <- latest_tmtll()
+    d    <- latest_tmtl()
     team <- unique(d$team)
     model <- unique(d$model)
     forecast_date <- unique(d$forecast_date)
@@ -353,7 +351,10 @@ server <- function(input, output, session) {
                                     "USAFacts" = 2,
                                     "NYTimes"  = 3)) +
       
-      labs(y="value", title = paste("Forecast date:", forecast_date)) +
+      xlim(input$dates) + 
+      
+      labs(x = "Date", y="Number", 
+           title = paste("Forecast date:", forecast_date)) +
       theme_bw() +
       theme(plot.title = element_text(color = ifelse(Sys.Date() - forecast_date > 6, "red", "black")))
   })
