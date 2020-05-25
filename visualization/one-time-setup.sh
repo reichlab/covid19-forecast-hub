@@ -1,6 +1,6 @@
 # Python Dependencies
 pip3 install --upgrade setuptools
-pip3 install pandas pymmwr click requests urllib3 selenium webdriver-manager
+pip3 install pandas requests pymmwr click requests urllib3 selenium webdriver-manager pyyaml
 pip3 install git+https://github.com/reichlab/zoltpy/
 
 # npm dependencies

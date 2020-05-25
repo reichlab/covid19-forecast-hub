@@ -80,21 +80,21 @@ function parseStateActual(seasonData, stateId) {
       return {
         week: ewData.epiweek,
         actual: ewData.wili,
-        lagData: ewData.lagData.map(({
-          lag,
-          wili
-        }) => {
-          return {
-            lag,
-            value: wili
-          }
-        })
+        // lagData: ewData.lagData.map(({
+        //   lag,
+        //   wili
+        // }) => {
+        //   return {
+        //     lag,
+        //     value: wili
+        //   }
+        // })
       }
     } else {
       return {
         week: ew,
         actual: null,
-        lagData: []
+        //lagData: []
       }
     }
   })
@@ -312,7 +312,7 @@ async function generateFiles(seasonData) {
       id: stateId,
       actual: parseStateActual(seasonData, stateId),
       models: statePointData,
-      baseline: 2.4
+      //baseline: 2.4
     })
 
     distsOut.push({
