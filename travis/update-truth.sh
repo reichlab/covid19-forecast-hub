@@ -8,7 +8,7 @@ cd ./data-truth
 python3 ./zoltar-truth-data.py
 
 # upload daily truth
-python3 ./get-truth-data
+python3 ./get-truth-data.py
 
 # update nytimes and usa facts
 cd ./usafacts
