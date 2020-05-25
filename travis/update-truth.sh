@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+Rscript -e 'install.packages(c("readr"), repos="http://cran.us.r-project.org")'
 
 # update truth data
 cd ./data-truth
