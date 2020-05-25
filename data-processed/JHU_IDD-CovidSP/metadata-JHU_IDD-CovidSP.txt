@@ -25,8 +25,8 @@ model_contributors: >-
 data_inputs_known: confirmed cases; reported fatalities; population; mobility
 data_source_known: USA Facts, US Census
 
-this_model_is_an_ensemble: FALSE
-this_model_is_unconditional: FALSE
+this_model_is_an_ensemble: false
+this_model_is_unconditional: false
 
 methods: >-
   County-level metapopulation model with commuting and stochastic SEIR disease dynamics.
