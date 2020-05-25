@@ -24,7 +24,7 @@ this_model_is_unconditional: false
 
 methods: >-
     This model makes predictions for future cases based on a heavily modified SEIR model taking
-    into account underdetection and government intervention. Loosening in interventions are considered but projections assume the last implemented intervention continues.
+    into account underdetection and government intervention. Loosening in interventions are considered and projections assume the last implemented intervention continues.
 
 methods_long: >-
     This model makes predictions for future cases based on a heavily modified SEIR model.
