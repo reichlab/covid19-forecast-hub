@@ -8,7 +8,6 @@ file_path,validation_date
 ./data-processed/CU-80contact1x10p/2020-05-07-CU-80contact1x10p.csv,2020-05-20 15:38:24.464764
 ./data-processed/CU-80contact1x10p/2020-05-03-CU-80contact1x10p.csv,2020-05-20 15:38:28.397899
 ./data-processed/CU-80contact1x10p/2020-05-17-CU-80contact1x10p.csv,2020-05-20 15:38:32.628057
-./data-processed/IowaStateLW-STEM15/2020-04-26-IowaStateLW-STEM15.csv,2020-05-20 15:38:33.564602
 ./data-processed/USACE-ERDC_SEIR/2020-05-18-USACE-ERDC_SEIR.csv,2020-05-20 15:38:34.442877
 ./data-processed/NotreDame-FRED/2020-04-27-NotreDame-FRED.csv,2020-05-20 15:38:34.861451
 ./data-processed/NotreDame-FRED/2020-05-18-NotreDame-FRED.csv,2020-05-20 15:38:35.324938
@@ -135,9 +134,6 @@ file_path,validation_date
 ./data-processed/MOBS_NEU-GLEAM_COVID/2020-04-20-MOBS_NEU-GLEAM_COVID.csv,2020-05-20 15:44:20.059014
 ./data-processed/MOBS_NEU-GLEAM_COVID/2020-04-13-MOBS_NEU-GLEAM_COVID.csv,2020-05-20 15:44:20.216401
 ./data-processed/MOBS_NEU-GLEAM_COVID/2020-05-04-MOBS_NEU-GLEAM_COVID.csv,2020-05-20 15:44:25.014840
-./data-processed/IowaStateLW-STEM10/2020-05-17-IowaStateLW-STEM10.csv,2020-05-20 15:44:33.778808
-./data-processed/IowaStateLW-STEM10/2020-04-26-IowaStateLW-STEM10.csv,2020-05-20 15:44:34.901364
-./data-processed/IowaStateLW-STEM10/2020-05-01-IowaStateLW-STEM10.csv,2020-05-20 15:44:36.165446
 ./data-processed/UChicago-CovidIL_100/2020-05-05-UChicago-CovidIL_100.csv,2020-05-20 15:44:36.414859
 ./data-processed/UChicago-CovidIL_100/2020-05-11-UChicago-CovidIL_100.csv,2020-05-20 15:44:36.610776
 ./data-processed/UChicago-CovidIL_100/2020-05-18-UChicago-CovidIL_100.csv,2020-05-20 15:44:36.716661
@@ -233,7 +229,10 @@ file_path,validation_date
 ./data-processed/Imperial-ensemble2/2020-05-24-Imperial-ensemble2.csv,2020-05-25 21:26:42.627278
 ./data-processed/NotreDame-FRED/2020-05-25-NotreDame-FRED.csv,2020-05-25 21:26:43.104717
 ./data-processed/UMass-MechBayes/2020-05-24-UMass-MechBayes.csv,2020-05-25 22:50:26.803140
-./data-processed/IowaStateLW-STEM8/2020-05-24-IowaStateLW-STEM8.csv,2020-05-25 23:56:16.200245
 ./data-processed/UT-Mobility/2020-05-25-UT-Mobility.csv,2020-05-25 23:56:18.451426
 ./data-processed/GT-DeepCOVID/2020-05-25-GT-DeepCOVID.csv,2020-05-25 23:56:19.395564
 ./data-processed/COVIDhub-ensemble/2020-05-25-COVIDhub-ensemble.csv,2020-05-26 16:14:59.250046
+./data-processed/IowaStateLW-STEM/2020-05-24-IowaStateLW-STEM.csv,2020-05-26 19:12:01.432037
+./data-processed/IowaStateLW-STEM/2020-05-01-IowaStateLW-STEM.csv,2020-05-26 19:12:02.173575
+./data-processed/IowaStateLW-STEM/2020-04-26-IowaStateLW-STEM.csv,2020-05-26 19:12:02.917898
+./data-processed/IowaStateLW-STEM/2020-05-17-IowaStateLW-STEM.csv,2020-05-26 19:12:08.138941
