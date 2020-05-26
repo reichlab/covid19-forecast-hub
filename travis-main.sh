@@ -63,7 +63,7 @@ if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test truth"* ]]; then
     python3 ./code/zoltar-scripts/upload_truth_to_zoltar.py
 fi
 
-if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test zoltar"* ]]; then
+if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test zoltar upload"* ]]; then
     echo "Upload forecasts to Zoltar"
     bash ./travis/upload-to-zoltar.sh
     echo "Push the validated file db to Zoltar"
