@@ -1,0 +1,9 @@
+pandas
+requests
+pymmwr
+click
+urllib3
+selenium
+webdriver-manager
+pyyaml
+git+https://github.com/reichlab/zoltpy/
