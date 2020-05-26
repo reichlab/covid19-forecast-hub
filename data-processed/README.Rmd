@@ -306,7 +306,7 @@ To run these checks locally rather than waiting for the results from a pull requ
 If you cannot get the python checks to run, 
 you can use [these instructions](R_forecast_file_validation.md) to run some
 checks in R. 
-These checks will likely be deprecated in the future.
+These checks are no longer maintained, but may still be of use to teams working with R.
 
 
 ## Data visualization
