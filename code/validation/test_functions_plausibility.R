@@ -1,6 +1,9 @@
 # A modest attempt at testing the R functions for plausibility checks
 # Keep in mind that the checks in Python are authoritative.
 
+### THESE FUNCTIONS ARE NO LONGER MAINTAINED OR KEPT IN SYNC WITH THE AUTORITATIVE PYTHON CHECKS
+### THEY ARE KEPT HERE MERELY AS A RESSOURCE FOR TEAMS SPECIALIZING IN R.
+
 # Johannes Bracher, April 2020
 
 # make sure locale is English US

@@ -1,6 +1,9 @@
 # Some functions to perform plausibility checks on forecasts in quantiel format
 # Johannes Bracher, April 2020
 
+### THESE FUNCTIONS ARE NO LONGER MAINTAINED OR KEPT IN SYNC WITH THE AUTORITATIVE PYTHON CHECKS
+### THEY ARE KEPT HERE MERELY AS A RESSOURCE FOR TEAMS SPECIALIZING IN R.
+
 #' Checking if the filename corresponds to the requirements for quantile death functions
 #'
 #' Format should be: YYYY-MM-DD-Team-Model.csv
