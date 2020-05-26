@@ -311,7 +311,7 @@ US,US,Imperial-Ensemble2,missing required forecasts
 33,NH,JHU_IDD-CovidSP,eligible
 34,NJ,JHU_IDD-CovidSP,eligible
 35,NM,JHU_IDD-CovidSP,eligible
-36,NY,JHU_IDD-CovidSP,eligible
+36,NY,JHU_IDD-CovidSP,quantile 0.1 of forecast for horizon 1 is less than most recent observed
 37,NC,JHU_IDD-CovidSP,eligible
 38,ND,JHU_IDD-CovidSP,eligible
 39,OH,JHU_IDD-CovidSP,eligible
