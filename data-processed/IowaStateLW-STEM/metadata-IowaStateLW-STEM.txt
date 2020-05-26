@@ -5,7 +5,7 @@ team_funding:
 team_experience: Spatiotemporal data analysis, motality studies
 
 model_name: Spatiotemporal Epidemic Modeling
-model_abbr: STEM8
+model_abbr: STEM
 model_output:  https://covid19.stat.iastate.edu
 model_repo:  
 
@@ -14,7 +14,7 @@ Model_targets: day ahead cumulative death
 
 Target_loc: US, 48 mainland states and District of Columbia
 time_horizon: 
-Data_format: prediction and 0.025, 0.25, 0.5, 0.75, 0.975 quantiles
+Data_format: prediction and quantiles
 forecast_startdate: 2020-04-27
 forecast_frequency: daily
 
