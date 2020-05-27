@@ -84,6 +84,7 @@ So far, we have identified a number of groups that are creating forecasts of COV
  - [Notre Dame](https://github.com/confunguido/covid19_ND_forecasting) (none given)
  - Predictive Science Inc (none given)
  - Quantori (none given)
+ - Snyder Wilson Consulting (none given)
  - US Army Engineer Research and Development Center (ERDC) (see [license](./data-processed/ERDC-SEIR/LICENSE.txt))
  - University of Arizona (CC-BY-NC-SA 4.0)
  - [University of California, Los Angeles](https://covid19.uclaml.org/) (CC-BY-4.0)
