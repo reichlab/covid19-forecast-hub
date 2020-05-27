@@ -48,9 +48,15 @@ rm -r ./data/Incident\ Deaths/UChicago-CovidIL_30_increase
 # rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSP
 # rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSP
 
+<<<<<<< HEAD
 # # Remove Iowa State Except STEM10
 # rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
 # rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
+=======
+# Remove Iowa State Except STEM10
+#rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
+#rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
+>>>>>>> 7fed2c77543223ebb8b828ed19934ac933b51b87
 
 # Remove LANL-GrowthRateHosp
 # rm -r ./data/Cumulative\ Deaths/LANL-GrowthRateHosp
