@@ -77,6 +77,7 @@ So far, we have identified a number of groups that are creating forecasts of COV
  - [Georgia Institute of Technology](https://www.cc.gatech.edu/~badityap/covid.html) (none given)
  - [IHME](https://covid19.healthdata.org/united-states-of-america) (CC-AT-NC4.0)
  - [Iowa State University](http://www.covid19dashboard.us/) (none given)
+ - [Iowa State University and Peking University](https://yumouqiu.shinyapps.io/covid-predict/) (none given)
  - [LANL](https://covid-19.bsvgateway.org/) ([custom](data-processed/LANL-GrowthRate/LICENSE-LANL.txt))
  - [Imperial](https://github.com/sangeetabhatia03/covid19-short-term-forecasts) (none given)
  - [Johns Hopkins ID Dynamics COVID-19 Working Group](https://github.com/HopkinsIDD/COVIDScenarioPipeline) (MIT)
