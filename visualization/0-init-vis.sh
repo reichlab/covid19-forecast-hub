@@ -95,5 +95,5 @@ cd ./vis-master
 # npm install
 yarn
 yarn run parse-viz-master # Parse visualization data to json
-yarn run test-viz-master
+# yarn run test
 cd .. # in flusight-deploy now
