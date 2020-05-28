@@ -46,7 +46,7 @@ For week-ahead forecasts with `forecast_date` of Sunday or Monday of EW12, a 1 w
 -->
 
 ## Ensemble model
-Every Monday at 6pm ET, we will upate our [COVID Forecast Hub ensemble forecast](data-processed/COVIDhub-ensemble) and [interactive visualization](https://reichlab.io/covid19-forecast-hub/) using the most recent forecast from each team as long as it was submitted on either Sunday or Monday. Therefore, at the very least we encourage teams to provide a new forecast on Mondays that uses the most recent data. Depending on how the project evolves, we may add additional weekly builds for the ensemble and visualization. Currently, our ensemble is created by taking the arithmetic average of each quantile for all models that submit 1- through 4-week ahead targets for a given location. Ensemble methods may evolve as more data becomes available. 
+Every Monday at 6pm ET, we will update our [COVID Forecast Hub ensemble forecast](data-processed/COVIDhub-ensemble) and [interactive visualization](https://reichlab.io/covid19-forecast-hub/) using the most recent forecast from each team as long as it was submitted on either Sunday or Monday. Therefore, at the very least we encourage teams to provide a new forecast on Mondays that uses the most recent data. Depending on how the project evolves, we may add additional weekly builds for the ensemble and visualization. Currently, our ensemble is created by taking the arithmetic average of each quantile for all models that submit 1- through 4-week ahead targets for a given location. Ensemble methods may evolve as more data becomes available. 
 
 ## Data model
 Most groups are providing their forecasts in a quantile-based format. We have developed a general data model that can be used to represent all of the forecasts that have been made publicly available. The tabular version of the data model is a simple, long-form data format, with six required columns and several optional columns.
@@ -77,6 +77,7 @@ So far, we have identified a number of groups that are creating forecasts of COV
  - [Georgia Institute of Technology](https://www.cc.gatech.edu/~badityap/covid.html) (none given)
  - [IHME](https://covid19.healthdata.org/united-states-of-america) (CC-AT-NC4.0)
  - [Iowa State University](http://www.covid19dashboard.us/) (none given)
+ - [Iowa State University and Peking University](https://yumouqiu.shinyapps.io/covid-predict/) (none given)
  - [LANL](https://covid-19.bsvgateway.org/) ([custom](data-processed/LANL-GrowthRate/LICENSE-LANL.txt))
  - [Imperial](https://github.com/sangeetabhatia03/covid19-short-term-forecasts) (none given)
  - [Johns Hopkins ID Dynamics COVID-19 Working Group](https://github.com/HopkinsIDD/COVIDScenarioPipeline) (MIT)
@@ -84,6 +85,7 @@ So far, we have identified a number of groups that are creating forecasts of COV
  - [Notre Dame](https://github.com/confunguido/covid19_ND_forecasting) (none given)
  - Predictive Science Inc (none given)
  - Quantori (none given)
+ - Snyder Wilson Consulting (none given)
  - US Army Engineer Research and Development Center (ERDC) (see [license](./data-processed/ERDC-SEIR/LICENSE.txt))
  - University of Arizona (CC-BY-NC-SA 4.0)
  - [University of California, Los Angeles](https://covid19.uclaml.org/) (CC-BY-4.0)

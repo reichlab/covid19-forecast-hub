@@ -208,11 +208,11 @@ Values in the `location` column must be
 
 - "US" or
 - a two-digit number representing the US state, territory, or district 
-[fips numeric code](./data-locations/locations.csv). 
+[fips numeric code](../data-locations/locations.csv). 
 
 This location identifies the geographical location for the forecast.
 
-A file with FIPS codes for states in the US is available through the `fips_code` dataset in the `tigris` R package, and saved as a [public CSV file](./data-locations/locations.csv). Please note that when reading in FIPS codes, they should be read in as characters to preserve any leading zeroes.
+A file with FIPS codes for states in the US is available through the `fips_code` dataset in the `tigris` R package, and saved as a [public CSV file](../data-locations/locations.csv). Please note that when reading in FIPS codes, they should be read in as characters to preserve any leading zeroes.
 
 
 ### `type`
@@ -302,7 +302,7 @@ To run these checks locally rather than waiting for the results from a pull requ
 If you cannot get the python checks to run, 
 you can use [these instructions](R_forecast_file_validation.md) to run some
 checks in R. 
-These checks will likely be deprecated in the future.
+These checks are no longer maintained, but may still be of use to teams working with R.
 
 
 ## Data visualization
