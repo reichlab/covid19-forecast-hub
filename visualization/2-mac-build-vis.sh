@@ -22,7 +22,7 @@ sed -i "" 's/span.brand.title-text {{ branding.title }}/a.brand.title-text(v-bin
     ./src/components/Navbar.vue
 
 # Change max heap size
-sed -i "" 's/node build\/build.js/node --max_old_space_size=6000 build\/build.js/' ./package.json
+sed -i "" 's/node build\/build.js/node --max_old_space_size=6000 build\/build.js/' ../../package.json
 
 # Build the site
 yarn run build

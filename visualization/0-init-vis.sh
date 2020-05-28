@@ -48,9 +48,9 @@ rm -r ./data/Incident\ Deaths/UChicago-CovidIL_30_increase
 # rm -r ./data/Cumulative\ Deaths/JHU_IDD-CovidSP
 # rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSP
 
-# Remove Iowa State Except STEM10
-#rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
-#rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
+# # Remove Iowa State Except STEM10
+# rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
+# rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
 
 # Remove LANL-GrowthRateHosp
 # rm -r ./data/Cumulative\ Deaths/LANL-GrowthRateHosp
@@ -94,6 +94,6 @@ mv ./data ./vis-master
 cd ./vis-master
 npm install
 yarn
-yarn run parse # Parse visualization data to json
+yarn run parse-viz-master # Parse visualization data to json
 #yarn run test
 cd .. # in flusight-deploy now
