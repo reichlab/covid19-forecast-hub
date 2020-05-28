@@ -14,40 +14,51 @@ SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
 
 
-echo "Running test script..."
+# Importing necessary python libraries
+echo "Updating Dependencies..."
 npm install
 sudo apt-get install python3-pandas
 sudo apt install python3-pip
 pip3 install --upgrade setuptools
 pip3 install pymmwr click requests urllib3 selenium webdriver-manager pyyaml python-dateutil numpy
 pip3 install git+https://github.com/reichlab/zoltpy/
-source ./travis/validate-data.sh
-echo "build complete"
 
+# Validate the data
+source ./travis/validate-data.sh
+
+# Do not run builds on branches outside of master
 if [[ "$TRAVIS_BRANCH" != "master" ]]; then
     echo "Not on master. Not doing anything else."
     exit 0
 fi
 
+# Update the truth data
 if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* ]]; then
-   echo "updating truth data..."
-   bash ./travis/update-truth.sh
+    echo "updating truth data..."
+    bash ./travis/update-truth.sh
+    echo "Push the truth"
+    bash ./travis/push.sh
+    echo "Upload truth to Zoltar"
+    python3 ./code/zoltar-scripts/upload_truth_to_zoltar.py
 fi
 
+# Upload to zoltar at every merged pull request
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
    echo "Upload forecasts to Zoltar "
    bash ./travis/upload-to-zoltar.sh
 fi
 
+# Replace the validated_files.csv with locally_validated_files.csv at every build except PRs
 if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then 
-   echo "NOT PULL REQUEST" 
-   echo "replace validated files"
+   echo "replacing validated files"
    cp ./code/validation/locally_validated_files.csv ./code/validation/validated_files.csv
 
    echo "Merge detected.. push to github"
    bash ./travis/push.sh
 fi
 
+## Automatically deploy visualization.
+## TODO - This code does not work yet
 # if [[ "$TRAVIS_COMMIT_MESSAGE" == *"trigger build"* ]]; then
 #     source ./travis/vis-deploy.sh
 # fi
