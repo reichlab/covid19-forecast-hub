@@ -6,7 +6,7 @@
     "format-metadata": "node ./scripts/format-metadata.js",
     "generate-scores": "node ./scripts/generate-scores.js",
     "generate-id-mappings": "node ./scripts/generate-id-mappings.js",
-    "test-viz-master": " cd visualization/viz-master && standard \"./**/*.vue\" \"./**/*.js\" && mocha && cd ../..",
+    "test-viz-master": " cd visualization/vis-master && standard \"./**/*.vue\" \"./**/*.js\" && mocha && cd ../..",
     "test": " cd visualization && mocha scripts/test-data.js -R min && cd ..",
     "parse-data": "cd visualization && node scripts/parse-data.js && cd ..",
     "dev": "cd visualization/vis-master && node build/dev-server.js && cd ../..",
