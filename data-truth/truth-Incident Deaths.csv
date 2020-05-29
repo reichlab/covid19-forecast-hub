@@ -6844,7 +6844,7 @@ date,location,location_name,value
 2020-05-22,60,American Samoa,0
 2020-05-22,04,Arizona,11
 2020-05-22,05,Arkansas,3
-2020-05-22,06,California,83
+2020-05-22,06,California,82
 2020-05-22,08,Colorado,14
 2020-05-22,09,Connecticut,54
 2020-05-22,10,Delaware,5
@@ -6895,7 +6895,7 @@ date,location,location_name,value
 2020-05-22,54,West Virginia,2
 2020-05-22,55,Wisconsin,9
 2020-05-22,56,Wyoming,0
-2020-05-22,US,US,1277
+2020-05-22,US,US,1276
 2020-05-23,01,Alabama,8
 2020-05-23,02,Alaska,0
 2020-05-23,60,American Samoa,0
@@ -7181,3 +7181,60 @@ date,location,location_name,value
 2020-05-27,55,Wisconsin,22
 2020-05-27,56,Wyoming,1
 2020-05-27,US,US,1505
+2020-05-28,01,Alabama,8
+2020-05-28,02,Alaska,0
+2020-05-28,60,American Samoa,0
+2020-05-28,04,Arizona,26
+2020-05-28,05,Arkansas,5
+2020-05-28,06,California,99
+2020-05-28,08,Colorado,29
+2020-05-28,09,Connecticut,23
+2020-05-28,10,Delaware,1
+2020-05-28,11,District of Columbia,8
+2020-05-28,12,Florida,45
+2020-05-28,13,Georgia,40
+2020-05-28,66,Guam,0
+2020-05-28,15,Hawaii,0
+2020-05-28,16,Idaho,1
+2020-05-28,17,Illinois,103
+2020-05-28,18,Indiana,38
+2020-05-28,19,Iowa,10
+2020-05-28,20,Kansas,1
+2020-05-28,21,Kentucky,9
+2020-05-28,22,Louisiana,18
+2020-05-28,23,Maine,3
+2020-05-28,24,Maryland,36
+2020-05-28,25,Massachusetts,93
+2020-05-28,26,Michigan,38
+2020-05-28,27,Minnesota,35
+2020-05-28,28,Mississippi,23
+2020-05-28,29,Missouri,19
+2020-05-28,30,Montana,0
+2020-05-28,31,Nebraska,10
+2020-05-28,32,Nevada,4
+2020-05-28,33,New Hampshire,9
+2020-05-28,34,New Jersey,70
+2020-05-28,35,New Mexico,6
+2020-05-28,36,New York,45
+2020-05-28,37,North Carolina,32
+2020-05-28,38,North Dakota,1
+2020-05-28,69,Northern Mariana Islands,0
+2020-05-28,39,Ohio,54
+2020-05-28,40,Oklahoma,3
+2020-05-28,41,Oregon,3
+2020-05-28,42,Pennsylvania,108
+2020-05-28,72,Puerto Rico,2
+2020-05-28,44,Rhode Island,22
+2020-05-28,45,South Carolina,4
+2020-05-28,46,South Dakota,0
+2020-05-28,47,Tennessee,3
+2020-05-28,48,Texas,30
+2020-05-28,49,Utah,1
+2020-05-28,50,Vermont,1
+2020-05-28,78,Virgin Islands,0
+2020-05-28,51,Virginia,57
+2020-05-28,53,Washington,11
+2020-05-28,54,West Virginia,0
+2020-05-28,55,Wisconsin,11
+2020-05-28,56,Wyoming,1
+2020-05-28,US,US,1199

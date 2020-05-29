@@ -73,6 +73,7 @@ So far, we have identified a number of groups that are creating forecasts of COV
  - [Auquan](https://covid19-infection-model.auquan.com/) (none given)
  - [Columbia University](https://github.com/shaman-lab/COVID-19Projection) (Apache 2.0)
  - [CovidActNow](https://covidactnow.org/) (none given)
+ - [COVID-19 Simulator Consortium](https://covid19sim.org/) (CC-BY-4.0)
  - [GLEAM from Northeastern University](https://www.gleamproject.org/covid-19) (CC-BY-4.0)
  - [Georgia Institute of Technology](https://www.cc.gatech.edu/~badityap/covid.html) (none given)
  - [IHME](https://covid19.healthdata.org/united-states-of-america) (CC-AT-NC4.0)

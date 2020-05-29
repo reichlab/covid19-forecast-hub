@@ -6901,7 +6901,7 @@ date,location,location_name,value
 2020-05-22,60,American Samoa,0
 2020-05-22,04,Arizona,775
 2020-05-22,05,Arkansas,113
-2020-05-22,06,California,3666
+2020-05-22,06,California,3665
 2020-05-22,08,Colorado,1324
 2020-05-22,09,Connecticut,3637
 2020-05-22,10,Delaware,322
@@ -6952,13 +6952,13 @@ date,location,location_name,value
 2020-05-22,54,West Virginia,72
 2020-05-22,55,Wisconsin,496
 2020-05-22,56,Wyoming,12
-2020-05-22,US,US,95979
+2020-05-22,US,US,95978
 2020-05-23,01,Alabama,549
 2020-05-23,02,Alaska,10
 2020-05-23,60,American Samoa,0
 2020-05-23,04,Arizona,801
 2020-05-23,05,Arkansas,115
-2020-05-23,06,California,3738
+2020-05-23,06,California,3737
 2020-05-23,08,Colorado,1327
 2020-05-23,09,Connecticut,3675
 2020-05-23,10,Delaware,322
@@ -7009,13 +7009,13 @@ date,location,location_name,value
 2020-05-23,54,West Virginia,72
 2020-05-23,55,Wisconsin,507
 2020-05-23,56,Wyoming,12
-2020-05-23,US,US,97087
+2020-05-23,US,US,97086
 2020-05-24,01,Alabama,551
 2020-05-24,02,Alaska,10
 2020-05-24,60,American Samoa,0
 2020-05-24,04,Arizona,801
 2020-05-24,05,Arkansas,116
-2020-05-24,06,California,3754
+2020-05-24,06,California,3753
 2020-05-24,08,Colorado,1332
 2020-05-24,09,Connecticut,3693
 2020-05-24,10,Delaware,326
@@ -7066,13 +7066,13 @@ date,location,location_name,value
 2020-05-24,54,West Virginia,72
 2020-05-24,55,Wisconsin,510
 2020-05-24,56,Wyoming,12
-2020-05-24,US,US,97720
+2020-05-24,US,US,97719
 2020-05-25,01,Alabama,566
 2020-05-25,02,Alaska,10
 2020-05-25,60,American Samoa,0
 2020-05-25,04,Arizona,807
 2020-05-25,05,Arkansas,117
-2020-05-25,06,California,3769
+2020-05-25,06,California,3768
 2020-05-25,08,Colorado,1333
 2020-05-25,09,Connecticut,3742
 2020-05-25,10,Delaware,332
@@ -7123,13 +7123,13 @@ date,location,location_name,value
 2020-05-25,54,West Virginia,72
 2020-05-25,55,Wisconsin,514
 2020-05-25,56,Wyoming,12
-2020-05-25,US,US,98220
+2020-05-25,US,US,98219
 2020-05-26,01,Alabama,580
 2020-05-26,02,Alaska,10
 2020-05-26,60,American Samoa,0
 2020-05-26,04,Arizona,810
 2020-05-26,05,Arkansas,119
-2020-05-26,06,California,3819
+2020-05-26,06,California,3818
 2020-05-26,08,Colorado,1352
 2020-05-26,09,Connecticut,3769
 2020-05-26,10,Delaware,335
@@ -7180,13 +7180,13 @@ date,location,location_name,value
 2020-05-26,54,West Virginia,72
 2020-05-26,55,Wisconsin,517
 2020-05-26,56,Wyoming,13
-2020-05-26,US,US,98913
+2020-05-26,US,US,98912
 2020-05-27,01,Alabama,583
 2020-05-27,02,Alaska,10
 2020-05-27,60,American Samoa,0
 2020-05-27,04,Arizona,834
 2020-05-27,05,Arkansas,120
-2020-05-27,06,California,3895
+2020-05-27,06,California,3894
 2020-05-27,08,Colorado,1392
 2020-05-27,09,Connecticut,3803
 2020-05-27,10,Delaware,344
@@ -7237,4 +7237,61 @@ date,location,location_name,value
 2020-05-27,54,West Virginia,74
 2020-05-27,55,Wisconsin,539
 2020-05-27,56,Wyoming,14
-2020-05-27,US,US,100418
+2020-05-27,US,US,100417
+2020-05-28,01,Alabama,591
+2020-05-28,02,Alaska,10
+2020-05-28,60,American Samoa,0
+2020-05-28,04,Arizona,860
+2020-05-28,05,Arkansas,125
+2020-05-28,06,California,3993
+2020-05-28,08,Colorado,1421
+2020-05-28,09,Connecticut,3826
+2020-05-28,10,Delaware,345
+2020-05-28,11,District of Columbia,453
+2020-05-28,12,Florida,2364
+2020-05-28,13,Georgia,1973
+2020-05-28,66,Guam,5
+2020-05-28,15,Hawaii,17
+2020-05-28,16,Idaho,82
+2020-05-28,17,Illinois,5186
+2020-05-28,18,Indiana,2068
+2020-05-28,19,Iowa,506
+2020-05-28,20,Kansas,214
+2020-05-28,21,Kentucky,409
+2020-05-28,22,Louisiana,2741
+2020-05-28,23,Maine,84
+2020-05-28,24,Maryland,2428
+2020-05-28,25,Massachusetts,6640
+2020-05-28,26,Michigan,5372
+2020-05-28,27,Minnesota,977
+2020-05-28,28,Mississippi,693
+2020-05-28,29,Missouri,708
+2020-05-28,30,Montana,17
+2020-05-28,31,Nebraska,163
+2020-05-28,32,Nevada,406
+2020-05-28,33,New Hampshire,232
+2020-05-28,34,New Jersey,11409
+2020-05-28,35,New Mexico,335
+2020-05-28,36,New York,29529
+2020-05-28,37,North Carolina,876
+2020-05-28,38,North Dakota,57
+2020-05-28,69,Northern Mariana Islands,2
+2020-05-28,39,Ohio,2098
+2020-05-28,40,Oklahoma,325
+2020-05-28,41,Oregon,151
+2020-05-28,42,Pennsylvania,5373
+2020-05-28,72,Puerto Rico,131
+2020-05-28,44,Rhode Island,677
+2020-05-28,45,South Carolina,470
+2020-05-28,46,South Dakota,54
+2020-05-28,47,Tennessee,356
+2020-05-28,48,Texas,1611
+2020-05-28,49,Utah,106
+2020-05-28,50,Vermont,55
+2020-05-28,78,Virgin Islands,6
+2020-05-28,51,Virginia,1338
+2020-05-28,53,Washington,1106
+2020-05-28,54,West Virginia,74
+2020-05-28,55,Wisconsin,550
+2020-05-28,56,Wyoming,15
+2020-05-28,US,US,101616
