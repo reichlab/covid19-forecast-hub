@@ -4,9 +4,8 @@
 set -e
 
 # Parse data model data files to flusight format
-yarn
-yarn run test
-yarn run parse-data
+npm run test
+npm run parse-data
 
 # Remove CU-models except select
 rm -r ./data/Cumulative\ Deaths/CU-nointerv
@@ -92,8 +91,6 @@ rm -rf ./vis-master/data
 mv ./data ./vis-master
 
 cd ./vis-master
-# npm install
-yarn
-yarn run parse-viz-master # Parse visualization data to json
+npm run parse-viz-master # Parse visualization data to json
 #yarn run test
 cd .. # in flusight-deploy now

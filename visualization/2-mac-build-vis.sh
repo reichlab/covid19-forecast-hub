@@ -25,6 +25,6 @@ sed -i "" 's/span.brand.title-text {{ branding.title }}/a.brand.title-text(v-bin
 sed -i "" 's/node build\/build.js/node --max_old_space_size=6000 build\/build.js/' ../../package.json
 
 # Build the site
-yarn run build
+npm run build
 #cp -r ./dist/* ../../ # Copy to repo root
 cd .. # in ./flusight-deploy
