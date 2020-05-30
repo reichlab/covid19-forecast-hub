@@ -9,8 +9,8 @@ model_abbr: SEIR_CAN
 model_output: https://covidactnow.org/
 model_repo: https://github.com/covid-projections/covid-data-model
 
-model_contributors: Eric Carlson <eric.carlson@grandrounds.com>, Max Henderson <max@maxhenderson.com>
-Chris Kelly <ghop02@gmail.com> Igor Kofman <kofman@gmail.com> Xinyu Zhang <xinyu.zhang@grandrounds.com>
+model_contributors: Eric Carlson <eric.carlson@grandrounds.com>, Max Henderson <max@maxhenderson.com>,
+Chris Kelly <ghop02@gmail.com>, Igor Kofman <kofman@gmail.com>, Xinyu Zhang <xinyu.zhang@grandrounds.com>
 
 Model_targets: day ahead cum death, day ahead inc death, day ahead inc hosp, wk ahead cum death, wk ahead inc death
 
