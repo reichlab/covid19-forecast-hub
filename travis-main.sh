@@ -32,7 +32,7 @@ if [[ "$TRAVIS_BRANCH" != "master" ]]; then
 fi
 
 # Update the truth data
-if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* ]]; then
+if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* || "$TRAVIS_COMMIT_MESSAGE" == *"FORCE_ZOLTAR"* ]]; then
     echo "updating truth data..."
     bash ./travis/update-truth.sh
     echo "Push the truth"
