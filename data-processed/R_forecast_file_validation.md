@@ -3,11 +3,13 @@
 For those familiar with R (but not python),
 there is a separate set of tests that **may** be useful to diagnose data 
 formatting issues in
-[functions_plausibility.R](../code/validation/functions_plausibility.R).
-We intend to keep these tests in sync with the python checks 
-automatically run during a pull request.
-If you discover any discrepancies,
-please [let us know](https://github.com/reichlab/covid19-forecast-hub/issues).
+[functions_plausibility.R](../code/validation/R-scripts/functions_plausibility.R).
+We have tried to keep these in sync with the python checks 
+automatically run during a pull request, but **have now stopped maintaining the checks in R.
+They are kept in the repository merely as an additional resource for teams who work exclusively with R.**
+If you discover major discrepancies,
+you can nonetheless [let us know](https://github.com/reichlab/covid19-forecast-hub/issues)
+and we may address them as time permits.
 
 As an example of using these test from the base of the repository run
 
