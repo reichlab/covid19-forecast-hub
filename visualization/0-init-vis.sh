@@ -4,9 +4,8 @@
 set -e
 
 # Parse data model data files to flusight format
-yarn
-yarn run test
-yarn run parse-data
+npm run test
+npm run parse-data
 
 # Remove CU-models except select
 rm -r ./data/Cumulative\ Deaths/CU-nointerv
@@ -49,8 +48,8 @@ rm -r ./data/Incident\ Deaths/UChicago-CovidIL_30_increase
 # rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSP
 
 # Remove Iowa State Except STEM10
-rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
-rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
+# rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
+# rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
 
 # Remove LANL-GrowthRateHosp
 # rm -r ./data/Cumulative\ Deaths/LANL-GrowthRateHosp
@@ -92,8 +91,6 @@ rm -rf ./vis-master/data
 mv ./data ./vis-master
 
 cd ./vis-master
-npm install
-yarn
-yarn run parse # Parse visualization data to json
+npm run parse-viz-master # Parse visualization data to json
 #yarn run test
 cd .. # in flusight-deploy now

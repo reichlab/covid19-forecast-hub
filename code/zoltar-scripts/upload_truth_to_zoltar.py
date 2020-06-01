@@ -21,6 +21,6 @@ project_obj = [project for project in conn.projects if project.name == project_n
 if __name__ == '__main__':
     with open(path_to_zoltar_truth) as fr:
         upload_file_job = project_obj.upload_truth_data(fr)
-    util.busy_poll_upload_file_job(upload_file_job)
+    util.busy_poll_job(upload_file_job)
     print(f"- upload truth done")
     
