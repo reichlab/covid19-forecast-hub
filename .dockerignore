@@ -5,7 +5,9 @@
 node_modules
 visualization/data
 visualization/vis-master/data
+visualization/vis-master/dist
 
 .vscode
+.git
 packrat
 __pycache__

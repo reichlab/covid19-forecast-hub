@@ -72,6 +72,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
 
     for forecast in forecasts:
         over_write = False
+        checksum = 0
         # Check if forecast is already on zoltar
         with open(path_to_processed_model_forecasts+forecast, "rb") as f:
             # Get the current hash of a processed file
@@ -81,7 +82,6 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
             # Check this hash against the previous version of hash
             if db.get(forecast, None) != checksum:
                 print(forecast)
-                db[forecast] = checksum
                 if forecast in existing_forecasts:
                     over_write = True
             else:
@@ -95,6 +95,8 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
 
             # Get timezero and create timezero on zoltar if not existed
             time_zero_date = forecast.split(dir_name)[0][:-1]
+            # if time_zero_date != "2020-05-25":
+            #     continue
             if time_zero_date not in project_timezeros:
                 try:
                     project_obj.create_timezero(time_zero_date)
@@ -114,6 +116,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
                     try:
                         util.upload_forecast(conn, quantile_json, forecast, 
                                                 project_name, model_name , time_zero_date, overwrite=over_write)
+                        db[forecast] = checksum
                     except Exception as ex:
                         print(ex)
                         return ex
@@ -138,14 +141,18 @@ if __name__ == '__main__':
     list_of_model_directories = os.listdir('./data-processed/')
     output_errors = {}
     for directory in list_of_model_directories:
-        # if "CovidActNow-SEIR_CAN" not in directory:
+        # if "MOBS_NEU-GLEAM_COVID" not in directory:
         #     continue
         if "." in directory:
             continue
         output = upload_covid_all_forecasts('./data-processed/'+directory+'/',directory)
         if output != "Pass":
             output_errors[directory] = output
-    
+
+    with open('./code/zoltar-scripts/validated_file_db.p', 'wb') as fw:
+        pickle.dump(db, fw)
+        fw.close()
+
     # List all files that did not get upload and its error
     if len(output_errors) > 0:
         for directory, errors in output_errors.items():
@@ -154,8 +161,3 @@ if __name__ == '__main__':
         sys.exit("\n ERRORS FOUND EXITING BUILD...")
     else:
         print("✓ no errors")
-
-    with open('./code/zoltar-scripts/validated_file_db.p', 'wb') as fw:
-        pickle.dump(db, fw)
-        fw.close()
-    
