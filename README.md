@@ -76,6 +76,7 @@ So far, we have identified a number of groups that are creating forecasts of COV
  - [COVID-19 Simulator Consortium](https://covid19sim.org/) (CC-BY-4.0)
  - [GLEAM from Northeastern University](https://www.gleamproject.org/covid-19) (CC-BY-4.0)
  - [Georgia Institute of Technology](https://www.cc.gatech.edu/~badityap/covid.html) (none given)
+ - [Georgia Institute of Technology - Center for Health and Humanitarian Systems](https://github.com/pkeskinocak/COVID19GA) (none given)
  - [IHME](https://covid19.healthdata.org/united-states-of-america) (CC-AT-NC4.0)
  - [Iowa State University](http://www.covid19dashboard.us/) (none given)
  - [Iowa State University and Peking University](https://yumouqiu.shinyapps.io/covid-predict/) (none given)
