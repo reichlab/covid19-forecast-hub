@@ -27,8 +27,7 @@ this_model_is_unconditional: false
 
 methods: >-
     Data-driven approach based on deep learning for forecasting mortality and hospitalizations using syndromic, clinical, demographic, mobility and point-of-care data.
-    The model makes predictions about the future assuming that the effect of the current social distancing measures and patterns are reflected in the input data and these measures remain constant in near future. 
-    However, as the data is updated each week in real time, we update to capture the effects of the most recent intervention measures and distancing patterns. 
+    The model are uses data sources (mobility patterns etc) which implicitly capture the interventions in place. As the model is updated each week, the effect of any new intervention is taken into account via the changes in the input data. 
 
 
 methods_long: >-
