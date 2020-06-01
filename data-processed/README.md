@@ -214,11 +214,11 @@ Values in the `location` column must be
 
 - "US" or
 - a two-digit number representing the US state, territory, or district 
-[fips numeric code](./data-locations/locations.csv). 
+[fips numeric code](../data-locations/locations.csv). 
 
 This location identifies the geographical location for the forecast.
 
-A file with FIPS codes for states in the US is available through the `fips_code` dataset in the `tigris` R package, and saved as a [public CSV file](./data-locations/locations.csv). Please note that when reading in FIPS codes, they should be read in as characters to preserve any leading zeroes.
+A file with FIPS codes for states in the US is available through the `fips_code` dataset in the `tigris` R package, and saved as a [public CSV file](../data-locations/locations.csv). Please note that when reading in FIPS codes, they should be read in as characters to preserve any leading zeroes.
 
 
 ### `type`
