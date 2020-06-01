@@ -33,11 +33,4 @@ In this study, we limited the interventions to school closure and shelter in pla
 
 See the methods file in our repo for more detailed methods and model limitations.
 
-Updates 2020-05-11:
-- We updated our likelihood used in our calibration, switching from a Poisson to a negative binomial distribution in order to allow for greater over-dispersion in the distribution of deaths.
-- We changed the way that we calculate the proportion of the population that is sheltering in place. We no longer use the dates at which government advisories were issued. Instead, we now exclusively use the google mobility data (https://www.google.com/covid19/mobility/) on journeys made to residential locations. We calibrate the maximum compliance to shelter in place, and use a generalized additive model fitted to the google data to forecast movement in the coming 5 weeks. For more details on this approach, see the methods file in our repo.
-Updates 2020-05-25:
-- We added an extra component to the likelihood calculations to include proportion of positive tests
-
-Updates 2020-06-01:
-- Given that the inclusion of likelihood of proportion of positive tests affected the quality of the fit and forecast of deaths, we are removing this feature for the current submission
+Updates 2020-05-11. We updated our likelihood used in our calibration, switching from a Poisson to a negative binomial distribution in order to allow for greater over-dispersion in the distribution of deaths. We changed the way that we calculate the proportion of the population that is sheltering in place. We no longer use the dates at which government advisories were issued. Instead, we now exclusively use the google mobility data (https://www.google.com/covid19/mobility/) on journeys made to residential locations. We calibrate the maximum compliance to shelter in place, and use a generalized additive model fitted to the google data to forecast movement in the coming 5 weeks. For more details on this approach, see the methods file in our repo. Updates 2020-05-25. We added an extra component to the likelihood calculations to include proportion of positive tests. Updates 2020-06-01. Given that the inclusion of likelihood of proportion of positive tests affected the quality of the fit and forecast of deaths, we are removing this feature for the current submission
