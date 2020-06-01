@@ -295,3 +295,9 @@ file_path,validation_date
 ./data-processed/IHME-CurveFit/2020-05-29-IHME-CurveFit.csv,2020-06-01 19:54:54.251089
 ./data-processed/UMass-MechBayes/2020-05-31-UMass-MechBayes.csv,2020-06-01 19:54:54.671007
 ./data-processed/MOBS_NEU-GLEAM_COVID/2020-06-01-MOBS_NEU-GLEAM_COVID.csv,2020-06-01 19:54:57.082438
+./data-processed/CU-80contact1x5p/2020-05-31-CU-80contact1x5p.csv,2020-06-01 20:21:14.163769
+./data-processed/CU-80contact1x10p/2020-05-31-CU-80contact1x10p.csv,2020-06-01 20:21:17.315472
+./data-processed/CU-nochange/2020-05-31-CU-nochange.csv,2020-06-01 20:21:20.402766
+./data-processed/CU-select/2020-05-31-CU-select.csv,2020-06-01 20:21:23.553770
+./data-processed/MIT_CovidAnalytics-DELPHI/2020-06-01-MIT_CovidAnalytics-DELPHI.csv,2020-06-01 20:21:25.502134
+./data-processed/CU-80contactw5p/2020-05-31-CU-80contactw5p.csv,2020-06-01 20:21:28.765350
