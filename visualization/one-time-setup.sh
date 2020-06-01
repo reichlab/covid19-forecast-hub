@@ -6,6 +6,5 @@ pip3 install -r requirements.txt
 cd ../
 npm install
 cd ./visualization
-npm install
 
 echo "SETUP COMPLETE"
