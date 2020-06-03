@@ -79,7 +79,7 @@ def update_checked_files(df, previous_checked, files_in_repository):
     df.to_csv('code/validation/locally_validated_files.csv', index=False)
 
 
-def print_output_errors(output_errors):
+def print_output_errors(output_errors, exit=True, prefix=""):
     """
     purpose: Print the final errors
 
@@ -92,9 +92,10 @@ def print_output_errors(output_errors):
             print("\n* ERROR IN ", filename)
             for error in errors:
                 print(error)
-        sys.exit("\n ERRORS FOUND EXITING BUILD...")
+        if exit:
+            sys.exit("\n ERRORS FOUND EXITING BUILD...")
     else:
-        print("✓ no errors")
+        print("✓ no %s errors"% (prefix))
 
 
 # Check forecast formatting
@@ -111,6 +112,7 @@ def check_formatting(my_path):
     previous_checked = list(df['file_path'])
     files_in_repository = []
     output_errors = {}
+    meta_output_errors = {}
     existing_metadata_name = collections.defaultdict(list)
     existing_metadata_abbr = collections.defaultdict(list)
     errors_exist = False  # Keep track of errors
@@ -132,7 +134,7 @@ def check_formatting(my_path):
 
         # Output metadata errors
         if is_metadata_error:
-            output_errors[path] = metadata_error_output
+            meta_output_errors[path] = metadata_error_output
 
         # Get filepath
         forecast_file_path = os.path.basename(os.path.dirname(path))
@@ -175,7 +177,8 @@ def check_formatting(my_path):
     update_checked_files(df, previous_checked, files_in_repository)
 
     # Error if necessary and print to console
-    print_output_errors(output_errors)
+    print_output_errors(meta_output_errors, exit=False, prefix='metadata')
+    print_output_errors(output_errors, prefix='data')
 
 
 def main():
