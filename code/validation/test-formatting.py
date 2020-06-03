@@ -79,7 +79,7 @@ def update_checked_files(df, previous_checked, files_in_repository):
     df.to_csv('code/validation/locally_validated_files.csv', index=False)
 
 
-def print_output_errors(output_errors, exit=True, prefix=""):
+def print_output_errors(output_errors, prefix=""):
     """
     purpose: Print the final errors
 
@@ -92,10 +92,9 @@ def print_output_errors(output_errors, exit=True, prefix=""):
             print("\n* ERROR IN ", filename)
             for error in errors:
                 print(error)
-        if exit:
-            sys.exit("\n ERRORS FOUND EXITING BUILD...")
+        print("\n✗ %s error found in %d file%s. Error details are above." % (prefix, len(output_errors) ,("s" if len(output_errors)>1 else "")))
     else:
-        print("✓ no %s errors"% (prefix))
+        print("\n✓ no %s errors"% (prefix))
 
 
 # Check forecast formatting
@@ -177,9 +176,10 @@ def check_formatting(my_path):
     update_checked_files(df, previous_checked, files_in_repository)
 
     # Error if necessary and print to console
-    print_output_errors(meta_output_errors, exit=False, prefix='metadata')
+    print_output_errors(meta_output_errors, prefix='metadata')
     print_output_errors(output_errors, prefix='data')
-
+    if len(meta_output_errors) + len(output_errors) > 0:
+        sys.exit("\n ERRORS FOUND EXITING BUILD...")
 
 def main():
     my_path = "./data-processed"
