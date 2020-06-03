@@ -7505,7 +7505,7 @@ date,location,location_name,value
 2020-06-01,38,North Dakota,61
 2020-06-01,69,Northern Mariana Islands,2
 2020-06-01,39,Ohio,2207
-2020-06-01,40,Oklahoma,350
+2020-06-01,40,Oklahoma,334
 2020-06-01,41,Oregon,154
 2020-06-01,42,Pennsylvania,5567
 2020-06-01,72,Puerto Rico,136
@@ -7522,4 +7522,61 @@ date,location,location_name,value
 2020-06-01,54,West Virginia,76
 2020-06-01,55,Wisconsin,595
 2020-06-01,56,Wyoming,17
-2020-06-01,US,US,105165
+2020-06-01,US,US,105149
+2020-06-02,01,Alabama,653
+2020-06-02,02,Alaska,10
+2020-06-02,60,American Samoa,0
+2020-06-02,04,Arizona,943
+2020-06-02,05,Arkansas,136
+2020-06-02,06,California,4305
+2020-06-02,08,Colorado,1474
+2020-06-02,09,Connecticut,3972
+2020-06-02,10,Delaware,373
+2020-06-02,11,District of Columbia,470
+2020-06-02,12,Florida,2530
+2020-06-02,13,Georgia,2102
+2020-06-02,66,Guam,5
+2020-06-02,15,Hawaii,17
+2020-06-02,16,Idaho,83
+2020-06-02,17,Illinois,5525
+2020-06-02,18,Indiana,2197
+2020-06-02,19,Iowa,561
+2020-06-02,20,Kansas,222
+2020-06-02,21,Kentucky,442
+2020-06-02,22,Louisiana,2835
+2020-06-02,23,Maine,94
+2020-06-02,24,Maryland,2597
+2020-06-02,25,Massachusetts,7085
+2020-06-02,26,Michigan,5553
+2020-06-02,27,Minnesota,1082
+2020-06-02,28,Mississippi,767
+2020-06-02,29,Missouri,786
+2020-06-02,30,Montana,17
+2020-06-02,31,Nebraska,170
+2020-06-02,32,Nevada,417
+2020-06-02,33,New Hampshire,256
+2020-06-02,34,New Jersey,11771
+2020-06-02,35,New Mexico,367
+2020-06-02,36,New York,29968
+2020-06-02,37,North Carolina,961
+2020-06-02,38,North Dakota,65
+2020-06-02,69,Northern Mariana Islands,2
+2020-06-02,39,Ohio,2259
+2020-06-02,40,Oklahoma,339
+2020-06-02,41,Oregon,157
+2020-06-02,42,Pennsylvania,5667
+2020-06-02,72,Puerto Rico,138
+2020-06-02,44,Rhode Island,732
+2020-06-02,45,South Carolina,501
+2020-06-02,46,South Dakota,62
+2020-06-02,47,Tennessee,381
+2020-06-02,48,Texas,1716
+2020-06-02,49,Utah,113
+2020-06-02,50,Vermont,55
+2020-06-02,78,Virgin Islands,6
+2020-06-02,51,Virginia,1407
+2020-06-02,53,Washington,1129
+2020-06-02,54,West Virginia,78
+2020-06-02,55,Wisconsin,607
+2020-06-02,56,Wyoming,17
+2020-06-02,US,US,106180
