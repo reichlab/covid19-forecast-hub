@@ -78,6 +78,10 @@ rm -r ./data/Incident\ Deaths/COVIDhub-ensemble
 rm -r ./data/Incident\ Deaths/UMass-ExpertCrowd
 rm -r ./data/Cumulative\ Deaths/UMass-ExpertCrowd
 
+#Remove CU-nochange
+rm -r ./data/Incident\ Deaths/CU-nochange
+rm -r ./data/Cumulative\ Deaths/CU-nochange
+
 # Parse through forecasts and update format
 python3 ./scripts/convert-forecasts.py
 
