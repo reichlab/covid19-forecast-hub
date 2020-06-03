@@ -190,7 +190,7 @@ A week-ahead forecast should represent the total number of incident deaths withi
 
 #### N day ahead inc hosp
 
-This target is the incident (weekly) number of hospitalizations predicted by the
+This target is the number of daily hospitalizations predicted by the
 model on day N after `forecast_date`.
 
 As an example, for day-ahead forecasts with a `forecast_date` of a Monday, a 1 day ahead inc hosp forecast corresponds to the number of incident hospitalizations on Tuesday, 2 day ahead to Wednesday, etc.... 
