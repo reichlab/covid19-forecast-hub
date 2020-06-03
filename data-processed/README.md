@@ -190,8 +190,8 @@ A week-ahead forecast should represent the total number of incident deaths withi
 
 #### N day ahead inc hosp
 
-This target is the incident (weekly) number of deaths predicted by the model
-on day # after `forecast_date`.
+This target is the incident (weekly) number of hospitalizations predicted by the
+model on day N after `forecast_date`.
 
 As an example, for day-ahead forecasts with a `forecast_date` of a Monday, a 1 day ahead inc hosp forecast corresponds to the number of incident hospitalizations on Tuesday, 2 day ahead to Wednesday, etc.... 
 
@@ -214,11 +214,11 @@ Values in the `location` column must be
 
 - "US" or
 - a two-digit number representing the US state, territory, or district 
-[fips numeric code](../data-locations/locations.csv). 
+[fips numeric code](./data-locations/locations.csv). 
 
 This location identifies the geographical location for the forecast.
 
-A file with FIPS codes for states in the US is available through the `fips_code` dataset in the `tigris` R package, and saved as a [public CSV file](../data-locations/locations.csv). Please note that when reading in FIPS codes, they should be read in as characters to preserve any leading zeroes.
+A file with FIPS codes for states in the US is available through the `fips_code` dataset in the `tigris` R package, and saved as a [public CSV file](./data-locations/locations.csv). Please note that when reading in FIPS codes, they should be read in as characters to preserve any leading zeroes.
 
 
 ### `type`
@@ -254,9 +254,8 @@ c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99)
 ```
 
 ```
-##  [1] 0.010 0.025 0.050 0.100 0.150 0.200 0.250 0.300 0.350 0.400 0.450
-## [12] 0.500 0.550 0.600 0.650 0.700 0.750 0.800 0.850 0.900 0.950 0.975
-## [23] 0.990
+##  [1] 0.010 0.025 0.050 0.100 0.150 0.200 0.250 0.300 0.350 0.400 0.450 0.500 0.550
+## [14] 0.600 0.650 0.700 0.750 0.800 0.850 0.900 0.950 0.975 0.990
 ```
 
 
