@@ -1,4 +1,4 @@
-﻿forecast_date,target,target_end_date,location,type,quantile,value
+﻿forecast_date,target,target_end_date,location,type,quantile,value 
 2020-06-04,0 day ahead inc death,2020-06-04,US,point,NA,1055
 2020-06-04,1 day ahead inc death,2020-06-05,US,point,NA,1057
 2020-06-04,2 day ahead inc death,2020-06-06,US,point,NA,1057
