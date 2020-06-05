@@ -73,7 +73,7 @@ Each file must have a specific naming scheme that represents when the forecast w
 So far, we have identified a number of groups that are creating forecasts of COVID-19-related deaths in the US and globally. Our list of groups whose forecasts are currently standardized and in the repository are (with data reuse license):
 
  - [Auquan](https://covid19-infection-model.auquan.com/) (none given)
- - [CCDEP](https://cddep.org/covid-19/) (none given)
+ - [CDDEP](https://cddep.org/covid-19/) (none given)
  - [Columbia University](https://github.com/shaman-lab/COVID-19Projection) (Apache 2.0)
  - [CovidActNow](https://covidactnow.org/) (none given)
  - [COVID-19 Simulator Consortium](https://covid19sim.org/) (CC-BY-4.0)
