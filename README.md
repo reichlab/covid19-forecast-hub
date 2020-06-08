@@ -88,7 +88,7 @@ So far, we have identified a number of groups that are creating forecasts of COV
  - [Johns Hopkins ID Dynamics COVID-19 Working Group](https://github.com/HopkinsIDD/COVIDScenarioPipeline) (MIT)
  - [Massachusetts Institute of Technology](https://www.covidanalytics.io/) (Apache 2.0)
  - [Notre Dame](https://github.com/confunguido/covid19_ND_forecasting) (none given)
- - Predictive Science Inc (none given)
+ - Predictive Science Inc (https://predsci.com) (MIT)
  - Quantori (none given)
  - Snyder Wilson Consulting (none given)
  - [STH](https://public.tableau.com/profile/covid19model#!/vizhome/COVID-19DeathProjections/USDeaths) (none given)
