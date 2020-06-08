@@ -12,7 +12,7 @@ def reformat_forecasts(file_path, target):
     df.columns = map(str.lower, df.columns)
 
     # join the location ID in the forecast file
-    df['location'] = df['location'].astype(str)
+    df['location'] = df['location'].astype(str).str.zfill(2)
 
     # Ignore location_name in forecast file
     if "location_name" in df.columns:

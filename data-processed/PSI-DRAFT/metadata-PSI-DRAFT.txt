@@ -7,10 +7,10 @@ team_experience: FluSight challenges since 2015/2016
 model_name: Disease Rapid Analysis and Forecasting Tool
 model_abbr: DRAFT
 model_output: daily infection incidence, ICU incidence, death incidence
-model_repo: 
+model_repo: https://github.com/predsci/DRAFT
 
-model_contributors: Michal Ben-Nun <mbennun@predsci.com>, Pete Riley <pete@predsci.com>, Jamie Turtle <jturtle@predsci.com>
-Model_targets: day ahead cumulative deaths
+model_contributors: Jamie Turtle <jturtle@predsci.com>, Michal Ben-Nun <mbennun@predsci.com>, Pete Riley <pete@predsci.com>
+Model_targets: N-day ahead cumulative deaths, N-week ahead cumulative deaths
 Target_loc: US, all states
 time_horizon: 0-42 days
 Data_format: all requested quantiles
