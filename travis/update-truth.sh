@@ -11,5 +11,5 @@ python3 ./get-truth-data.py
 
 # update nytimes and usa facts
 cd ../
-Rscript ./data-truth/usafacts/usafacts.R
-Rscript ./data-truth/nytimes/nytimes.R
+# Rscript ./data-truth/usafacts/usafacts.R
+# Rscript ./data-truth/nytimes/nytimes.R

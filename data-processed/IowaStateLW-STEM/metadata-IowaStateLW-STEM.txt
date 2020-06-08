@@ -22,10 +22,10 @@ data_inputs_known: County-level infected case and death data
 data_source_known: New York Times -nytimes/covid-19-data, health department webpages
 
 this_model_is_an_ensemble: false
-this_model_is_unconditional: true
+this_model_is_unconditional: false
 
 methods: >-
     Spatiotemporal Dynamics, Nowcasting and Forecasting of COVID-19 in the United States.
 
 methods_long: >-
-    We develop a nonparametric space-time disease transmission model for the epidemic data, and to study the spatial-temporal pattern in the spread of COVID-19 at the county level. The proposed methodology can be used to dissect the spatial structure and dynamics of spread, as well as to forecast how this outbreak may unfold through time and space in the future.
+    We develop a nonparametric space-time disease transmission model for the epidemic data, and to study the spatial-temporal pattern in the spread of COVID-19 at the county level. The proposed methodology can be used to dissect the spatial structure and dynamics of spread, as well as to forecast how this outbreak may unfold through time and space in the future. The projections assume that the data used is reliable, the future will continue to follow the current pattern, and current interventions will remain the same till the end of forecasting period.
