@@ -1,1 +1,0 @@
-# Init validation functions
