@@ -66,6 +66,9 @@ rm -r ./data/Incident\ Deaths/Auquan-SEIR
 # Remove Imperial ensemble 1
 rm -r ./data/Cumulative\ Deaths/Imperial-Ensemble1
 rm -r ./data/Incident\ Deaths/Imperial-Ensemble1
+
+rm -r ./data/Cumulative\ Deaths/CovidActNow-SEIR_CAN
+rm -r ./data/Incident\ Deaths/CovidActNow-SEIR_CAN
 # rm -r ./data/Incident\ Deaths/Imperial-Ensemble2
 
 # Remove Ensemble Incident
