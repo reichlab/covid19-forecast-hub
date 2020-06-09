@@ -7560,7 +7560,7 @@ date,location,location_name,value
 2020-06-03,36,New York,51
 2020-06-03,37,North Carolina,38
 2020-06-03,38,North Dakota,1
-2020-06-03,69,Northern Mariana Islands,14
+2020-06-03,69,Northern Mariana Islands,0
 2020-06-03,39,Ohio,41
 2020-06-03,40,Oklahoma,2
 2020-06-03,41,Oregon,2
@@ -7579,7 +7579,7 @@ date,location,location_name,value
 2020-06-03,54,West Virginia,0
 2020-06-03,55,Wisconsin,9
 2020-06-03,56,Wyoming,0
-2020-06-03,US,US,995
+2020-06-03,US,US,981
 2020-06-04,01,Alabama,0
 2020-06-04,02,Alaska,0
 2020-06-04,60,American Samoa,0
@@ -7731,7 +7731,7 @@ date,location,location_name,value
 2020-06-06,36,New York,44
 2020-06-06,37,North Carolina,13
 2020-06-06,38,North Dakota,1
-2020-06-06,69,Northern Mariana Islands,1
+2020-06-06,69,Northern Mariana Islands,0
 2020-06-06,39,Ohio,15
 2020-06-06,40,Oklahoma,2
 2020-06-06,41,Oregon,0
@@ -7750,7 +7750,7 @@ date,location,location_name,value
 2020-06-06,54,West Virginia,0
 2020-06-06,55,Wisconsin,12
 2020-06-06,56,Wyoming,0
-2020-06-06,US,US,670
+2020-06-06,US,US,669
 2020-06-07,01,Alabama,3
 2020-06-07,02,Alaska,0
 2020-06-07,60,American Samoa,0
@@ -7788,7 +7788,7 @@ date,location,location_name,value
 2020-06-07,36,New York,94
 2020-06-07,37,North Carolina,4
 2020-06-07,38,North Dakota,0
-2020-06-07,69,Northern Mariana Islands,2
+2020-06-07,69,Northern Mariana Islands,0
 2020-06-07,39,Ohio,7
 2020-06-07,40,Oklahoma,1
 2020-06-07,41,Oregon,2
@@ -7802,9 +7802,66 @@ date,location,location_name,value
 2020-06-07,49,Utah,0
 2020-06-07,50,Vermont,0
 2020-06-07,78,Virgin Islands,0
-2020-06-07,51,Virginia,0
+2020-06-07,51,Virginia,11
 2020-06-07,53,Washington,4
 2020-06-07,54,West Virginia,0
 2020-06-07,55,Wisconsin,2
 2020-06-07,56,Wyoming,0
-2020-06-07,US,US,712
+2020-06-07,US,US,721
+2020-06-08,01,Alabama,26
+2020-06-08,02,Alaska,0
+2020-06-08,60,American Samoa,0
+2020-06-08,04,Arizona,2
+2020-06-08,05,Arkansas,1
+2020-06-08,06,California,25
+2020-06-08,08,Colorado,16
+2020-06-08,09,Connecticut,13
+2020-06-08,10,Delaware,0
+2020-06-08,11,District of Columbia,2
+2020-06-08,12,Florida,12
+2020-06-08,13,Georgia,28
+2020-06-08,66,Guam,0
+2020-06-08,15,Hawaii,0
+2020-06-08,16,Idaho,0
+2020-06-08,17,Illinois,20
+2020-06-08,18,Indiana,13
+2020-06-08,19,Iowa,12
+2020-06-08,20,Kansas,3
+2020-06-08,21,Kentucky,2
+2020-06-08,22,Louisiana,8
+2020-06-08,23,Maine,0
+2020-06-08,24,Maryland,27
+2020-06-08,25,Massachusetts,37
+2020-06-08,26,Michigan,0
+2020-06-08,27,Minnesota,11
+2020-06-08,28,Mississippi,20
+2020-06-08,29,Missouri,8
+2020-06-08,30,Montana,0
+2020-06-08,31,Nebraska,1
+2020-06-08,32,Nevada,4
+2020-06-08,33,New Hampshire,0
+2020-06-08,34,New Jersey,38
+2020-06-08,35,New Mexico,4
+2020-06-08,36,New York,43
+2020-06-08,37,North Carolina,9
+2020-06-08,38,North Dakota,0
+2020-06-08,69,Northern Mariana Islands,0
+2020-06-08,39,Ohio,27
+2020-06-08,40,Oklahoma,0
+2020-06-08,41,Oregon,1
+2020-06-08,42,Pennsylvania,10
+2020-06-08,72,Puerto Rico,0
+2020-06-08,44,Rhode Island,27
+2020-06-08,45,South Carolina,11
+2020-06-08,46,South Dakota,0
+2020-06-08,47,Tennessee,3
+2020-06-08,48,Texas,7
+2020-06-08,49,Utah,3
+2020-06-08,50,Vermont,0
+2020-06-08,78,Virgin Islands,0
+2020-06-08,51,Virginia,5
+2020-06-08,53,Washington,4
+2020-06-08,54,West Virginia,0
+2020-06-08,55,Wisconsin,-1
+2020-06-08,56,Wyoming,0
+2020-06-08,US,US,482
