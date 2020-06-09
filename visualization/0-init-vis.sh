@@ -72,7 +72,7 @@ rm -r ./data/Incident\ Deaths/CovidActNow-SEIR_CAN
 # rm -r ./data/Incident\ Deaths/Imperial-Ensemble2
 
 # Remove Ensemble Incident
-rm -r ./data/Incident\ Deaths/COVIDhub-ensemble
+# rm -r ./data/Incident\ Deaths/COVIDhub-ensemble
 
 # # Remove MOBS_NEU-GLEAM_COVID Incident
 # rm -r ./data/Incident\ Deaths/MOBS-GLEAM_COVID
