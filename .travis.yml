@@ -15,7 +15,7 @@ before_install:
   - sudo apt-get update
   
 node_js:
-  - 7
+  - 10.2
 
 cache:
   directories: $TRAVIS_BUILD_DIR/packrat/
