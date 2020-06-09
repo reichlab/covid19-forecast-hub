@@ -1,11 +1,11 @@
 team_name: COVID-19 Simulator
-team_abbr: CovidSim
+team_abbr: Covid19Sim
 institution_affil: MGH/Harvard/GaTech/BMC
 team_funding: none
 team_experience: Hep C Simulator, Hep C Calculator, NAFLD Simulator
 
-model_name: Susceptible-Exposed-Infectious-Recovered
-model_abbr: SEIR
+model_name: Simulator
+model_abbr: Simulator
 model_output: https://covid19sim.org/
 model_repo: 
 
