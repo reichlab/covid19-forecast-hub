@@ -244,7 +244,6 @@ file_path,validation_date
 ./data-processed/CU-select/2020-05-28-CU-select.csv,2020-05-29 12:10:09.251909
 ./data-processed/CU-80contactw10p/2020-05-28-CU-80contactw10p.csv,2020-05-29 12:10:12.374995
 ./data-processed/CU-80contactw5p/2020-05-28-CU-80contactw5p.csv,2020-05-29 12:10:15.550541
-./data-processed/COVID19SimCons-COVID19Sim/2020-05-24-COVID19SimCons-COVID19Sim.csv,2020-05-29 15:33:35.106185
 ./data-processed/USACE-ERDC_SEIR/2020-05-28-USACE-ERDC_SEIR.csv,2020-05-29 21:27:39.324009
 ./data-processed/YYG-ParamSearch/2020-05-02-YYG-ParamSearch.csv,2020-05-29 21:47:13.465269
 ./data-processed/YYG-ParamSearch/2020-04-30-YYG-ParamSearch.csv,2020-05-29 21:47:14.563865
@@ -310,7 +309,6 @@ file_path,validation_date
 ./data-processed/GT-DeepCOVID/2020-06-01-GT-DeepCOVID.csv,2020-06-01 21:46:53.255362
 ./data-processed/USACE-ERDC_SEIR/2020-06-01-USACE-ERDC_SEIR.csv,2020-06-01 22:01:34.017301
 ./data-processed/ISUandPKU-vSEIdR/2020-06-01-ISUandPKU-vSEIdR.csv,2020-06-01 23:23:52.981998
-./data-processed/COVID19SimCons-COVID19Sim/2020-05-31-COVID19SimCons-COVID19Sim.csv,2020-06-02 01:35:33.601599
 ./data-processed/STH-3PU/2020-06-02-STH-3PU.csv,2020-06-02 14:30:24.300892
 ./data-processed/Imperial-ensemble1/2020-05-31-Imperial-ensemble1.csv,2020-06-02 14:30:24.427150
 ./data-processed/Imperial-ensemble2/2020-05-31-Imperial-ensemble2.csv,2020-06-02 14:30:24.448881
@@ -380,3 +378,6 @@ file_path,validation_date
 ./data-processed/YYG-ParamSearch/2020-06-10-YYG-ParamSearch.csv,2020-06-10 08:42:11.623864
 ./data-processed/STH-3PU/2020-06-10-STH-3PU.csv,2020-06-10 14:00:12.138132
 ./data-processed/Areon_OW-Navigator/2020-06-07-Areon_OW-Navigator.csv,2020-06-10 15:34:51.963269
+./data-processed/Covid19Sim-Simulator/2020-05-24-Covid19Sim-Simulator.csv,2020-06-10 16:54:43.267684
+./data-processed/Covid19Sim-Simulator/2020-06-07-Covid19Sim-Simulator.csv,2020-06-10 16:55:00.653743
+./data-processed/Covid19Sim-Simulator/2020-05-31-Covid19Sim-Simulator.csv,2020-06-10 16:55:17.895734
