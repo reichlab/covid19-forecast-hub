@@ -7718,7 +7718,7 @@ date,location,location_name,value
 2020-06-05,23,Maine,98
 2020-06-05,24,Maryland,2702
 2020-06-05,25,Massachusetts,7235
-2020-06-05,26,Michigan,5613
+2020-06-05,26,Michigan,5854
 2020-06-05,27,Minnesota,1159
 2020-06-05,28,Mississippi,803
 2020-06-05,29,Missouri,805
@@ -7750,7 +7750,7 @@ date,location,location_name,value
 2020-06-05,54,West Virginia,84
 2020-06-05,55,Wisconsin,633
 2020-06-05,56,Wyoming,17
-2020-06-05,US,US,109118
+2020-06-05,US,US,109359
 2020-06-06,01,Alabama,689
 2020-06-06,02,Alaska,10
 2020-06-06,60,American Samoa,0
@@ -7775,7 +7775,7 @@ date,location,location_name,value
 2020-06-06,23,Maine,98
 2020-06-06,24,Maryland,2740
 2020-06-06,25,Massachusetts,7289
-2020-06-06,26,Michigan,5613
+2020-06-06,26,Michigan,5894
 2020-06-06,27,Minnesota,1181
 2020-06-06,28,Mississippi,811
 2020-06-06,29,Missouri,815
@@ -7807,7 +7807,7 @@ date,location,location_name,value
 2020-06-06,54,West Virginia,84
 2020-06-06,55,Wisconsin,645
 2020-06-06,56,Wyoming,17
-2020-06-06,US,US,109787
+2020-06-06,US,US,110068
 2020-06-07,01,Alabama,692
 2020-06-07,02,Alaska,10
 2020-06-07,60,American Samoa,0
@@ -7832,7 +7832,7 @@ date,location,location_name,value
 2020-06-07,23,Maine,99
 2020-06-07,24,Maryland,2749
 2020-06-07,25,Massachusetts,7316
-2020-06-07,26,Michigan,5895
+2020-06-07,26,Michigan,5898
 2020-06-07,27,Minnesota,1197
 2020-06-07,28,Mississippi,817
 2020-06-07,29,Missouri,815
@@ -7864,7 +7864,7 @@ date,location,location_name,value
 2020-06-07,54,West Virginia,84
 2020-06-07,55,Wisconsin,647
 2020-06-07,56,Wyoming,17
-2020-06-07,US,US,110508
+2020-06-07,US,US,110511
 2020-06-08,01,Alabama,718
 2020-06-08,02,Alaska,10
 2020-06-08,60,American Samoa,0
@@ -7889,7 +7889,7 @@ date,location,location_name,value
 2020-06-08,23,Maine,99
 2020-06-08,24,Maryland,2776
 2020-06-08,25,Massachusetts,7353
-2020-06-08,26,Michigan,5895
+2020-06-08,26,Michigan,5916
 2020-06-08,27,Minnesota,1208
 2020-06-08,28,Mississippi,837
 2020-06-08,29,Missouri,823
@@ -7921,4 +7921,61 @@ date,location,location_name,value
 2020-06-08,54,West Virginia,84
 2020-06-08,55,Wisconsin,646
 2020-06-08,56,Wyoming,17
-2020-06-08,US,US,110990
+2020-06-08,US,US,111011
+2020-06-09,01,Alabama,729
+2020-06-09,02,Alaska,11
+2020-06-09,60,American Samoa,0
+2020-06-09,04,Arizona,1076
+2020-06-09,05,Arkansas,161
+2020-06-09,06,California,4745
+2020-06-09,08,Colorado,1553
+2020-06-09,09,Connecticut,4097
+2020-06-09,10,Delaware,410
+2020-06-09,11,District of Columbia,495
+2020-06-09,12,Florida,2765
+2020-06-09,13,Georgia,2285
+2020-06-09,66,Guam,5
+2020-06-09,15,Hawaii,17
+2020-06-09,16,Idaho,85
+2020-06-09,17,Illinois,6018
+2020-06-09,18,Indiana,2339
+2020-06-09,19,Iowa,626
+2020-06-09,20,Kansas,237
+2020-06-09,21,Kentucky,477
+2020-06-09,22,Louisiana,2957
+2020-06-09,23,Maine,100
+2020-06-09,24,Maryland,2811
+2020-06-09,25,Massachusetts,7408
+2020-06-09,26,Michigan,5948
+2020-06-09,27,Minnesota,1228
+2020-06-09,28,Mississippi,847
+2020-06-09,29,Missouri,845
+2020-06-09,30,Montana,18
+2020-06-09,31,Nebraska,189
+2020-06-09,32,Nevada,446
+2020-06-09,33,New Hampshire,286
+2020-06-09,34,New Jersey,12303
+2020-06-09,35,New Mexico,404
+2020-06-09,36,New York,30458
+2020-06-09,37,North Carolina,1068
+2020-06-09,38,North Dakota,72
+2020-06-09,69,Northern Mariana Islands,2
+2020-06-09,39,Ohio,2423
+2020-06-09,40,Oklahoma,354
+2020-06-09,41,Oregon,169
+2020-06-09,42,Pennsylvania,6014
+2020-06-09,72,Puerto Rico,142
+2020-06-09,44,Rhode Island,808
+2020-06-09,45,South Carolina,568
+2020-06-09,46,South Dakota,68
+2020-06-09,47,Tennessee,435
+2020-06-09,48,Texas,1867
+2020-06-09,49,Utah,127
+2020-06-09,50,Vermont,55
+2020-06-09,78,Virgin Islands,6
+2020-06-09,51,Virginia,1496
+2020-06-09,53,Washington,1176
+2020-06-09,54,West Virginia,84
+2020-06-09,55,Wisconsin,661
+2020-06-09,56,Wyoming,17
+2020-06-09,US,US,111994
