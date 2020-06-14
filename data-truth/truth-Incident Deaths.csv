@@ -2816,7 +2816,7 @@ date,location,location_name,value
 2020-03-12,23,Maine,0
 2020-03-12,24,Maryland,0
 2020-03-12,25,Massachusetts,0
-2020-03-12,26,Michigan,0
+2020-03-12,26,Michigan,1
 2020-03-12,27,Minnesota,0
 2020-03-12,28,Mississippi,0
 2020-03-12,29,Missouri,0
@@ -2848,7 +2848,7 @@ date,location,location_name,value
 2020-03-12,54,West Virginia,0
 2020-03-12,55,Wisconsin,0
 2020-03-12,56,Wyoming,0
-2020-03-12,US,US,10
+2020-03-12,US,US,11
 2020-03-13,01,Alabama,0
 2020-03-13,02,Alaska,0
 2020-03-13,60,American Samoa,0
@@ -3272,7 +3272,7 @@ date,location,location_name,value
 2020-03-20,23,Maine,0
 2020-03-20,24,Maryland,1
 2020-03-20,25,Massachusetts,1
-2020-03-20,26,Michigan,0
+2020-03-20,26,Michigan,1
 2020-03-20,27,Minnesota,0
 2020-03-20,28,Mississippi,0
 2020-03-20,29,Missouri,2
@@ -3304,7 +3304,7 @@ date,location,location_name,value
 2020-03-20,54,West Virginia,0
 2020-03-20,55,Wisconsin,-1
 2020-03-20,56,Wyoming,0
-2020-03-20,US,US,96
+2020-03-20,US,US,97
 2020-03-21,01,Alabama,0
 2020-03-21,02,Alaska,0
 2020-03-21,60,American Samoa,0
@@ -3329,7 +3329,7 @@ date,location,location_name,value
 2020-03-21,23,Maine,0
 2020-03-21,24,Maryland,0
 2020-03-21,25,Massachusetts,0
-2020-03-21,26,Michigan,2
+2020-03-21,26,Michigan,3
 2020-03-21,27,Minnesota,1
 2020-03-21,28,Mississippi,0
 2020-03-21,29,Missouri,0
@@ -3361,7 +3361,7 @@ date,location,location_name,value
 2020-03-21,54,West Virginia,0
 2020-03-21,55,Wisconsin,1
 2020-03-21,56,Wyoming,0
-2020-03-21,US,US,89
+2020-03-21,US,US,90
 2020-03-22,01,Alabama,0
 2020-03-22,02,Alaska,0
 2020-03-22,60,American Samoa,0
@@ -3500,7 +3500,7 @@ date,location,location_name,value
 2020-03-24,23,Maine,0
 2020-03-24,24,Maryland,1
 2020-03-24,25,Massachusetts,2
-2020-03-24,26,Michigan,9
+2020-03-24,26,Michigan,13
 2020-03-24,27,Minnesota,0
 2020-03-24,28,Mississippi,0
 2020-03-24,29,Missouri,4
@@ -3532,7 +3532,7 @@ date,location,location_name,value
 2020-03-24,54,West Virginia,0
 2020-03-24,55,Wisconsin,0
 2020-03-24,56,Wyoming,0
-2020-03-24,US,US,231
+2020-03-24,US,US,235
 2020-03-25,01,Alabama,1
 2020-03-25,02,Alaska,1
 2020-03-25,60,American Samoa,0
@@ -3557,7 +3557,7 @@ date,location,location_name,value
 2020-03-25,23,Maine,0
 2020-03-25,24,Maryland,0
 2020-03-25,25,Massachusetts,4
-2020-03-25,26,Michigan,19
+2020-03-25,26,Michigan,20
 2020-03-25,27,Minnesota,0
 2020-03-25,28,Mississippi,2
 2020-03-25,29,Missouri,1
@@ -3589,7 +3589,7 @@ date,location,location_name,value
 2020-03-25,54,West Virginia,0
 2020-03-25,55,Wisconsin,2
 2020-03-25,56,Wyoming,0
-2020-03-25,US,US,309
+2020-03-25,US,US,310
 2020-03-26,01,Alabama,0
 2020-03-26,02,Alaska,0
 2020-03-26,60,American Samoa,0
@@ -3614,7 +3614,7 @@ date,location,location_name,value
 2020-03-26,23,Maine,0
 2020-03-26,24,Maryland,0
 2020-03-26,25,Massachusetts,10
-2020-03-26,26,Michigan,18
+2020-03-26,26,Michigan,20
 2020-03-26,27,Minnesota,1
 2020-03-26,28,Mississippi,3
 2020-03-26,29,Missouri,0
@@ -3646,7 +3646,7 @@ date,location,location_name,value
 2020-03-26,54,West Virginia,0
 2020-03-26,55,Wisconsin,3
 2020-03-26,56,Wyoming,0
-2020-03-26,US,US,405
+2020-03-26,US,US,407
 2020-03-27,01,Alabama,3
 2020-03-27,02,Alaska,0
 2020-03-27,60,American Samoa,0
@@ -3671,7 +3671,7 @@ date,location,location_name,value
 2020-03-27,23,Maine,1
 2020-03-27,24,Maryland,1
 2020-03-27,25,Massachusetts,10
-2020-03-27,26,Michigan,31
+2020-03-27,26,Michigan,36
 2020-03-27,27,Minnesota,2
 2020-03-27,28,Mississippi,2
 2020-03-27,29,Missouri,0
@@ -3703,7 +3703,7 @@ date,location,location_name,value
 2020-03-27,54,West Virginia,0
 2020-03-27,55,Wisconsin,4
 2020-03-27,56,Wyoming,0
-2020-03-27,US,US,543
+2020-03-27,US,US,548
 2020-03-28,01,Alabama,0
 2020-03-28,02,Alaska,1
 2020-03-28,60,American Samoa,0
@@ -3728,7 +3728,7 @@ date,location,location_name,value
 2020-03-28,23,Maine,0
 2020-03-28,24,Maryland,0
 2020-03-28,25,Massachusetts,9
-2020-03-28,26,Michigan,19
+2020-03-28,26,Michigan,23
 2020-03-28,27,Minnesota,1
 2020-03-28,28,Mississippi,5
 2020-03-28,29,Missouri,4
@@ -3760,7 +3760,7 @@ date,location,location_name,value
 2020-03-28,54,West Virginia,0
 2020-03-28,55,Wisconsin,3
 2020-03-28,56,Wyoming,0
-2020-03-28,US,US,633
+2020-03-28,US,US,637
 2020-03-29,01,Alabama,6
 2020-03-29,02,Alaska,0
 2020-03-29,60,American Samoa,0
@@ -3785,7 +3785,7 @@ date,location,location_name,value
 2020-03-29,23,Maine,2
 2020-03-29,24,Maryland,5
 2020-03-29,25,Massachusetts,4
-2020-03-29,26,Michigan,21
+2020-03-29,26,Michigan,27
 2020-03-29,27,Minnesota,4
 2020-03-29,28,Mississippi,1
 2020-03-29,29,Missouri,3
@@ -3817,7 +3817,7 @@ date,location,location_name,value
 2020-03-29,54,West Virginia,0
 2020-03-29,55,Wisconsin,1
 2020-03-29,56,Wyoming,0
-2020-03-29,US,US,619
+2020-03-29,US,US,625
 2020-03-30,01,Alabama,0
 2020-03-30,02,Alaska,1
 2020-03-30,60,American Samoa,0
@@ -3842,7 +3842,7 @@ date,location,location_name,value
 2020-03-30,23,Maine,0
 2020-03-30,24,Maryland,5
 2020-03-30,25,Massachusetts,8
-2020-03-30,26,Michigan,52
+2020-03-30,26,Michigan,56
 2020-03-30,27,Minnesota,1
 2020-03-30,28,Mississippi,2
 2020-03-30,29,Missouri,0
@@ -3874,7 +3874,7 @@ date,location,location_name,value
 2020-03-30,54,West Virginia,1
 2020-03-30,55,Wisconsin,2
 2020-03-30,56,Wyoming,0
-2020-03-30,US,US,802
+2020-03-30,US,US,806
 2020-03-31,01,Alabama,13
 2020-03-31,02,Alaska,0
 2020-03-31,60,American Samoa,0
@@ -3899,7 +3899,7 @@ date,location,location_name,value
 2020-03-31,23,Maine,2
 2020-03-31,24,Maryland,3
 2020-03-31,25,Massachusetts,33
-2020-03-31,26,Michigan,75
+2020-03-31,26,Michigan,79
 2020-03-31,27,Minnesota,2
 2020-03-31,28,Mississippi,4
 2020-03-31,29,Missouri,3
@@ -3931,7 +3931,7 @@ date,location,location_name,value
 2020-03-31,54,West Virginia,0
 2020-03-31,55,Wisconsin,5
 2020-03-31,56,Wyoming,0
-2020-03-31,US,US,1212
+2020-03-31,US,US,1216
 2020-04-01,01,Alabama,4
 2020-04-01,02,Alaska,0
 2020-04-01,60,American Samoa,0
@@ -3956,7 +3956,7 @@ date,location,location_name,value
 2020-04-01,23,Maine,0
 2020-04-01,24,Maryland,13
 2020-04-01,25,Massachusetts,33
-2020-04-01,26,Michigan,76
+2020-04-01,26,Michigan,78
 2020-04-01,27,Minnesota,5
 2020-04-01,28,Mississippi,2
 2020-04-01,29,Missouri,5
@@ -3988,7 +3988,7 @@ date,location,location_name,value
 2020-04-01,54,West Virginia,0
 2020-04-01,55,Wisconsin,2
 2020-04-01,56,Wyoming,0
-2020-04-01,US,US,1217
+2020-04-01,US,US,1219
 2020-04-02,01,Alabama,5
 2020-04-02,02,Alaska,0
 2020-04-02,60,American Samoa,0
@@ -4013,7 +4013,7 @@ date,location,location_name,value
 2020-04-02,23,Maine,2
 2020-04-02,24,Maryland,5
 2020-04-02,25,Massachusetts,32
-2020-04-02,26,Michigan,82
+2020-04-02,26,Michigan,83
 2020-04-02,27,Minnesota,1
 2020-04-02,28,Mississippi,4
 2020-04-02,29,Missouri,8
@@ -4045,7 +4045,7 @@ date,location,location_name,value
 2020-04-02,54,West Virginia,1
 2020-04-02,55,Wisconsin,11
 2020-04-02,56,Wyoming,0
-2020-04-02,US,US,1561
+2020-04-02,US,US,1562
 2020-04-03,01,Alabama,6
 2020-04-03,02,Alaska,0
 2020-04-03,60,American Samoa,0
@@ -4070,7 +4070,7 @@ date,location,location_name,value
 2020-04-03,23,Maine,2
 2020-04-03,24,Maryland,7
 2020-04-03,25,Massachusetts,38
-2020-04-03,26,Michigan,62
+2020-04-03,26,Michigan,65
 2020-04-03,27,Minnesota,4
 2020-04-03,28,Mississippi,3
 2020-04-03,29,Missouri,13
@@ -4102,7 +4102,7 @@ date,location,location_name,value
 2020-04-03,54,West Virginia,0
 2020-04-03,55,Wisconsin,13
 2020-04-03,56,Wyoming,0
-2020-04-03,US,US,1294
+2020-04-03,US,US,1297
 2020-04-04,01,Alabama,6
 2020-04-04,02,Alaska,2
 2020-04-04,60,American Samoa,0
@@ -4127,7 +4127,7 @@ date,location,location_name,value
 2020-04-04,23,Maine,1
 2020-04-04,24,Maryland,11
 2020-04-04,25,Massachusetts,24
-2020-04-04,26,Michigan,61
+2020-04-04,26,Michigan,67
 2020-04-04,27,Minnesota,2
 2020-04-04,28,Mississippi,6
 2020-04-04,29,Missouri,6
@@ -4159,7 +4159,7 @@ date,location,location_name,value
 2020-04-04,54,West Virginia,0
 2020-04-04,55,Wisconsin,3
 2020-04-04,56,Wyoming,0
-2020-04-04,US,US,1260
+2020-04-04,US,US,1266
 2020-04-05,01,Alabama,1
 2020-04-05,02,Alaska,1
 2020-04-05,60,American Samoa,0
@@ -4184,7 +4184,7 @@ date,location,location_name,value
 2020-04-05,23,Maine,0
 2020-04-05,24,Maryland,13
 2020-04-05,25,Massachusetts,15
-2020-04-05,26,Michigan,77
+2020-04-05,26,Michigan,90
 2020-04-05,27,Minnesota,5
 2020-04-05,28,Mississippi,8
 2020-04-05,29,Missouri,13
@@ -4216,7 +4216,7 @@ date,location,location_name,value
 2020-04-05,54,West Virginia,1
 2020-04-05,55,Wisconsin,20
 2020-04-05,56,Wyoming,0
-2020-04-05,US,US,1398
+2020-04-05,US,US,1411
 2020-04-06,01,Alabama,4
 2020-04-06,02,Alaska,0
 2020-04-06,60,American Samoa,0
@@ -4241,7 +4241,7 @@ date,location,location_name,value
 2020-04-06,23,Maine,0
 2020-04-06,24,Maryland,24
 2020-04-06,25,Massachusetts,29
-2020-04-06,26,Michigan,110
+2020-04-06,26,Michigan,118
 2020-04-06,27,Minnesota,1
 2020-04-06,28,Mississippi,8
 2020-04-06,29,Missouri,8
@@ -4273,7 +4273,7 @@ date,location,location_name,value
 2020-04-06,54,West Virginia,1
 2020-04-06,55,Wisconsin,4
 2020-04-06,56,Wyoming,0
-2020-04-06,US,US,1654
+2020-04-06,US,US,1662
 2020-04-07,01,Alabama,15
 2020-04-07,02,Alaska,0
 2020-04-07,60,American Samoa,0
@@ -4298,7 +4298,7 @@ date,location,location_name,value
 2020-04-07,23,Maine,2
 2020-04-07,24,Maryland,12
 2020-04-07,25,Massachusetts,96
-2020-04-07,26,Michigan,118
+2020-04-07,26,Michigan,124
 2020-04-07,27,Minnesota,4
 2020-04-07,28,Mississippi,9
 2020-04-07,29,Missouri,20
@@ -4330,7 +4330,7 @@ date,location,location_name,value
 2020-04-07,54,West Virginia,0
 2020-04-07,55,Wisconsin,14
 2020-04-07,56,Wyoming,0
-2020-04-07,US,US,2299
+2020-04-07,US,US,2305
 2020-04-08,01,Alabama,2
 2020-04-08,02,Alaska,1
 2020-04-08,60,American Samoa,0
@@ -4355,7 +4355,7 @@ date,location,location_name,value
 2020-04-08,23,Maine,2
 2020-04-08,24,Maryland,21
 2020-04-08,25,Massachusetts,77
-2020-04-08,26,Michigan,114
+2020-04-08,26,Michigan,120
 2020-04-08,27,Minnesota,5
 2020-04-08,28,Mississippi,7
 2020-04-08,29,Missouri,15
@@ -4387,7 +4387,7 @@ date,location,location_name,value
 2020-04-08,54,West Virginia,0
 2020-04-08,55,Wisconsin,8
 2020-04-08,56,Wyoming,0
-2020-04-08,US,US,2073
+2020-04-08,US,US,2079
 2020-04-09,01,Alabama,4
 2020-04-09,02,Alaska,0
 2020-04-09,60,American Samoa,0
@@ -4412,7 +4412,7 @@ date,location,location_name,value
 2020-04-09,23,Maine,2
 2020-04-09,24,Maryland,14
 2020-04-09,25,Massachusetts,70
-2020-04-09,26,Michigan,117
+2020-04-09,26,Michigan,127
 2020-04-09,27,Minnesota,11
 2020-04-09,28,Mississippi,9
 2020-04-09,29,Missouri,16
@@ -4444,7 +4444,7 @@ date,location,location_name,value
 2020-04-09,54,West Virginia,1
 2020-04-09,55,Wisconsin,11
 2020-04-09,56,Wyoming,0
-2020-04-09,US,US,2036
+2020-04-09,US,US,2046
 2020-04-10,01,Alabama,10
 2020-04-10,02,Alaska,0
 2020-04-10,60,American Samoa,0
@@ -4469,7 +4469,7 @@ date,location,location_name,value
 2020-04-10,23,Maine,1
 2020-04-10,24,Maryland,33
 2020-04-10,25,Massachusetts,96
-2020-04-10,26,Michigan,200
+2020-04-10,26,Michigan,207
 2020-04-10,27,Minnesota,7
 2020-04-10,28,Mississippi,6
 2020-04-10,29,Missouri,10
@@ -4501,7 +4501,7 @@ date,location,location_name,value
 2020-04-10,54,West Virginia,0
 2020-04-10,55,Wisconsin,17
 2020-04-10,56,Wyoming,0
-2020-04-10,US,US,2064
+2020-04-10,US,US,2071
 2020-04-11,01,Alabama,12
 2020-04-11,02,Alaska,1
 2020-04-11,60,American Samoa,0
@@ -4526,7 +4526,7 @@ date,location,location_name,value
 2020-04-11,23,Maine,2
 2020-04-11,24,Maryland,35
 2020-04-11,25,Massachusetts,87
-2020-04-11,26,Michigan,108
+2020-04-11,26,Michigan,116
 2020-04-11,27,Minnesota,7
 2020-04-11,28,Mississippi,11
 2020-04-11,29,Missouri,12
@@ -4558,7 +4558,7 @@ date,location,location_name,value
 2020-04-11,54,West Virginia,0
 2020-04-11,55,Wisconsin,9
 2020-04-11,56,Wyoming,0
-2020-04-11,US,US,2004
+2020-04-11,US,US,2012
 2020-04-12,01,Alabama,1
 2020-04-12,02,Alaska,0
 2020-04-12,60,American Samoa,0
@@ -4583,7 +4583,7 @@ date,location,location_name,value
 2020-04-12,23,Maine,0
 2020-04-12,24,Maryland,30
 2020-04-12,25,Massachusetts,70
-2020-04-12,26,Michigan,95
+2020-04-12,26,Michigan,105
 2020-04-12,27,Minnesota,6
 2020-04-12,28,Mississippi,3
 2020-04-12,29,Missouri,12
@@ -4615,7 +4615,7 @@ date,location,location_name,value
 2020-04-12,54,West Virginia,1
 2020-04-12,55,Wisconsin,7
 2020-04-12,56,Wyoming,0
-2020-04-12,US,US,1730
+2020-04-12,US,US,1740
 2020-04-13,01,Alabama,6
 2020-04-13,02,Alaska,0
 2020-04-13,60,American Samoa,0
@@ -4640,7 +4640,7 @@ date,location,location_name,value
 2020-04-13,23,Maine,0
 2020-04-13,24,Maryland,26
 2020-04-13,25,Massachusetts,88
-2020-04-13,26,Michigan,123
+2020-04-13,26,Michigan,132
 2020-04-13,27,Minnesota,0
 2020-04-13,28,Mississippi,2
 2020-04-13,29,Missouri,10
@@ -4672,7 +4672,7 @@ date,location,location_name,value
 2020-04-13,54,West Virginia,2
 2020-04-13,55,Wisconsin,10
 2020-04-13,56,Wyoming,1
-2020-04-13,US,US,1789
+2020-04-13,US,US,1798
 2020-04-14,01,Alabama,15
 2020-04-14,02,Alaska,1
 2020-04-14,60,American Samoa,0
@@ -4697,7 +4697,7 @@ date,location,location_name,value
 2020-04-14,23,Maine,1
 2020-04-14,24,Maryland,40
 2020-04-14,25,Massachusetts,0
-2020-04-14,26,Michigan,166
+2020-04-14,26,Michigan,175
 2020-04-14,27,Minnesota,9
 2020-04-14,28,Mississippi,13
 2020-04-14,29,Missouri,18
@@ -4729,7 +4729,7 @@ date,location,location_name,value
 2020-04-14,54,West Virginia,1
 2020-04-14,55,Wisconsin,16
 2020-04-14,56,Wyoming,0
-2020-04-14,US,US,2384
+2020-04-14,US,US,2393
 2020-04-15,01,Alabama,4
 2020-04-15,02,Alaska,0
 2020-04-15,60,American Samoa,0
@@ -4754,7 +4754,7 @@ date,location,location_name,value
 2020-04-15,23,Maine,4
 2020-04-15,24,Maryland,9
 2020-04-15,25,Massachusetts,264
-2020-04-15,26,Michigan,153
+2020-04-15,26,Michigan,157
 2020-04-15,27,Minnesota,8
 2020-04-15,28,Mississippi,11
 2020-04-15,29,Missouri,17
@@ -4786,7 +4786,7 @@ date,location,location_name,value
 2020-04-15,54,West Virginia,1
 2020-04-15,55,Wisconsin,13
 2020-04-15,56,Wyoming,0
-2020-04-15,US,US,2511
+2020-04-15,US,US,2515
 2020-04-16,01,Alabama,15
 2020-04-16,02,Alaska,0
 2020-04-16,60,American Samoa,0
@@ -4811,7 +4811,7 @@ date,location,location_name,value
 2020-04-16,23,Maine,3
 2020-04-16,24,Maryland,8
 2020-04-16,25,Massachusetts,0
-2020-04-16,26,Michigan,75
+2020-04-16,26,Michigan,80
 2020-04-16,27,Minnesota,0
 2020-04-16,28,Mississippi,7
 2020-04-16,29,Missouri,14
@@ -4843,7 +4843,7 @@ date,location,location_name,value
 2020-04-16,54,West Virginia,2
 2020-04-16,55,Wisconsin,14
 2020-04-16,56,Wyoming,1
-2020-04-16,US,US,2082
+2020-04-16,US,US,2087
 2020-04-17,01,Alabama,15
 2020-04-17,02,Alaska,0
 2020-04-17,60,American Samoa,0
@@ -4868,7 +4868,7 @@ date,location,location_name,value
 2020-04-17,23,Maine,2
 2020-04-17,24,Maryland,15
 2020-04-17,25,Massachusetts,137
-2020-04-17,26,Michigan,231
+2020-04-17,26,Michigan,239
 2020-04-17,27,Minnesota,24
 2020-04-17,28,Mississippi,11
 2020-04-17,29,Missouri,13
@@ -4900,7 +4900,7 @@ date,location,location_name,value
 2020-04-17,54,West Virginia,4
 2020-04-17,55,Wisconsin,9
 2020-04-17,56,Wyoming,0
-2020-04-17,US,US,2582
+2020-04-17,US,US,2590
 2020-04-18,01,Alabama,5
 2020-04-18,02,Alaska,0
 2020-04-18,60,American Samoa,0
@@ -4925,7 +4925,7 @@ date,location,location_name,value
 2020-04-18,23,Maine,3
 2020-04-18,24,Maryland,87
 2020-04-18,25,Massachusetts,159
-2020-04-18,26,Michigan,81
+2020-04-18,26,Michigan,85
 2020-04-18,27,Minnesota,10
 2020-04-18,28,Mississippi,12
 2020-04-18,29,Missouri,7
@@ -4957,7 +4957,7 @@ date,location,location_name,value
 2020-04-18,54,West Virginia,0
 2020-04-18,55,Wisconsin,6
 2020-04-18,56,Wyoming,0
-2020-04-18,US,US,2341
+2020-04-18,US,US,2345
 2020-04-19,01,Alabama,4
 2020-04-19,02,Alaska,0
 2020-04-19,60,American Samoa,0
@@ -4982,7 +4982,7 @@ date,location,location_name,value
 2020-04-19,23,Maine,2
 2020-04-19,24,Maryland,40
 2020-04-19,25,Massachusetts,302
-2020-04-19,26,Michigan,83
+2020-04-19,26,Michigan,91
 2020-04-19,27,Minnesota,13
 2020-04-19,28,Mississippi,7
 2020-04-19,29,Missouri,6
@@ -5014,7 +5014,7 @@ date,location,location_name,value
 2020-04-19,54,West Virginia,2
 2020-04-19,55,Wisconsin,8
 2020-04-19,56,Wyoming,0
-2020-04-19,US,US,1174
+2020-04-19,US,US,1182
 2020-04-20,01,Alabama,6
 2020-04-20,02,Alaska,0
 2020-04-20,60,American Samoa,0
@@ -5039,7 +5039,7 @@ date,location,location_name,value
 2020-04-20,23,Maine,1
 2020-04-20,24,Maryland,121
 2020-04-20,25,Massachusetts,0
-2020-04-20,26,Michigan,77
+2020-04-20,26,Michigan,86
 2020-04-20,27,Minnesota,9
 2020-04-20,28,Mississippi,10
 2020-04-20,29,Missouri,21
@@ -5071,7 +5071,7 @@ date,location,location_name,value
 2020-04-20,54,West Virginia,6
 2020-04-20,55,Wisconsin,10
 2020-04-20,56,Wyoming,0
-2020-04-20,US,US,1761
+2020-04-20,US,US,1770
 2020-04-21,01,Alabama,20
 2020-04-21,02,Alaska,0
 2020-04-21,60,American Samoa,0
@@ -5096,7 +5096,7 @@ date,location,location_name,value
 2020-04-21,23,Maine,1
 2020-04-21,24,Maryland,70
 2020-04-21,25,Massachusetts,255
-2020-04-21,26,Michigan,107
+2020-04-21,26,Michigan,109
 2020-04-21,27,Minnesota,17
 2020-04-21,28,Mississippi,14
 2020-04-21,29,Missouri,18
@@ -5128,7 +5128,7 @@ date,location,location_name,value
 2020-04-21,54,West Virginia,2
 2020-04-21,55,Wisconsin,14
 2020-04-21,56,Wyoming,0
-2020-04-21,US,US,2394
+2020-04-21,US,US,2396
 2020-04-22,01,Alabama,13
 2020-04-22,02,Alaska,0
 2020-04-22,60,American Samoa,0
@@ -5153,7 +5153,7 @@ date,location,location_name,value
 2020-04-22,23,Maine,3
 2020-04-22,24,Maryland,46
 2020-04-22,25,Massachusetts,221
-2020-04-22,26,Michigan,238
+2020-04-22,26,Michigan,241
 2020-04-22,27,Minnesota,19
 2020-04-22,28,Mississippi,10
 2020-04-22,29,Missouri,20
@@ -5185,7 +5185,7 @@ date,location,location_name,value
 2020-04-22,54,West Virginia,1
 2020-04-22,55,Wisconsin,4
 2020-04-22,56,Wyoming,4
-2020-04-22,US,US,2332
+2020-04-22,US,US,2335
 2020-04-23,01,Alabama,6
 2020-04-23,02,Alaska,0
 2020-04-23,60,American Samoa,0
@@ -5210,7 +5210,7 @@ date,location,location_name,value
 2020-04-23,23,Maine,5
 2020-04-23,24,Maryland,50
 2020-04-23,25,Massachusetts,178
-2020-04-23,26,Michigan,164
+2020-04-23,26,Michigan,170
 2020-04-23,27,Minnesota,21
 2020-04-23,28,Mississippi,8
 2020-04-23,29,Missouri,16
@@ -5242,7 +5242,7 @@ date,location,location_name,value
 2020-04-23,54,West Virginia,4
 2020-04-23,55,Wisconsin,10
 2020-04-23,56,Wyoming,1
-2020-04-23,US,US,2314
+2020-04-23,US,US,2320
 2020-04-24,01,Alabama,7
 2020-04-24,02,Alaska,0
 2020-04-24,60,American Samoa,0
@@ -5267,7 +5267,7 @@ date,location,location_name,value
 2020-04-24,23,Maine,3
 2020-04-24,24,Maryland,50
 2020-04-24,25,Massachusetts,196
-2020-04-24,26,Michigan,108
+2020-04-24,26,Michigan,110
 2020-04-24,27,Minnesota,21
 2020-04-24,28,Mississippi,8
 2020-04-24,29,Missouri,26
@@ -5299,7 +5299,7 @@ date,location,location_name,value
 2020-04-24,54,West Virginia,1
 2020-04-24,55,Wisconsin,5
 2020-04-24,56,Wyoming,0
-2020-04-24,US,US,1775
+2020-04-24,US,US,1777
 2020-04-25,01,Alabama,0
 2020-04-25,02,Alaska,0
 2020-04-25,60,American Samoa,0
@@ -5324,7 +5324,7 @@ date,location,location_name,value
 2020-04-25,23,Maine,0
 2020-04-25,24,Maryland,77
 2020-04-25,25,Massachusetts,174
-2020-04-25,26,Michigan,70
+2020-04-25,26,Michigan,72
 2020-04-25,27,Minnesota,23
 2020-04-25,28,Mississippi,12
 2020-04-25,29,Missouri,14
@@ -5356,7 +5356,7 @@ date,location,location_name,value
 2020-04-25,54,West Virginia,0
 2020-04-25,55,Wisconsin,3
 2020-04-25,56,Wyoming,0
-2020-04-25,US,US,2267
+2020-04-25,US,US,2269
 2020-04-26,01,Alabama,10
 2020-04-26,02,Alaska,0
 2020-04-26,60,American Samoa,0
@@ -5381,7 +5381,7 @@ date,location,location_name,value
 2020-04-26,23,Maine,3
 2020-04-26,24,Maryland,35
 2020-04-26,25,Massachusetts,169
-2020-04-26,26,Michigan,160
+2020-04-26,26,Michigan,166
 2020-04-26,27,Minnesota,28
 2020-04-26,28,Mississippi,6
 2020-04-26,29,Missouri,17
@@ -5413,7 +5413,7 @@ date,location,location_name,value
 2020-04-26,54,West Virginia,2
 2020-04-26,55,Wisconsin,6
 2020-04-26,56,Wyoming,0
-2020-04-26,US,US,1141
+2020-04-26,US,US,1147
 2020-04-27,01,Alabama,9
 2020-04-27,02,Alaska,0
 2020-04-27,60,American Samoa,0
@@ -5438,7 +5438,7 @@ date,location,location_name,value
 2020-04-27,23,Maine,1
 2020-04-27,24,Maryland,35
 2020-04-27,25,Massachusetts,104
-2020-04-27,26,Michigan,92
+2020-04-27,26,Michigan,93
 2020-04-27,27,Minnesota,14
 2020-04-27,28,Mississippi,2
 2020-04-27,29,Missouri,21
@@ -5470,7 +5470,7 @@ date,location,location_name,value
 2020-04-27,54,West Virginia,0
 2020-04-27,55,Wisconsin,9
 2020-04-27,56,Wyoming,0
-2020-04-27,US,US,1339
+2020-04-27,US,US,1340
 2020-04-28,01,Alabama,14
 2020-04-28,02,Alaska,0
 2020-04-28,60,American Samoa,0
@@ -5495,7 +5495,7 @@ date,location,location_name,value
 2020-04-28,23,Maine,0
 2020-04-28,24,Maryland,71
 2020-04-28,25,Massachusetts,150
-2020-04-28,26,Michigan,161
+2020-04-28,26,Michigan,168
 2020-04-28,27,Minnesota,15
 2020-04-28,28,Mississippi,10
 2020-04-28,29,Missouri,14
@@ -5527,7 +5527,7 @@ date,location,location_name,value
 2020-04-28,54,West Virginia,4
 2020-04-28,55,Wisconsin,19
 2020-04-28,56,Wyoming,0
-2020-04-28,US,US,2123
+2020-04-28,US,US,2130
 2020-04-29,01,Alabama,14
 2020-04-29,02,Alaska,0
 2020-04-29,60,American Samoa,0
@@ -5552,7 +5552,7 @@ date,location,location_name,value
 2020-04-29,23,Maine,1
 2020-04-29,24,Maryland,62
 2020-04-29,25,Massachusetts,252
-2020-04-29,26,Michigan,102
+2020-04-29,26,Michigan,103
 2020-04-29,27,Minnesota,18
 2020-04-29,28,Mississippi,11
 2020-04-29,29,Missouri,15
@@ -5584,7 +5584,7 @@ date,location,location_name,value
 2020-04-29,54,West Virginia,0
 2020-04-29,55,Wisconsin,8
 2020-04-29,56,Wyoming,0
-2020-04-29,US,US,2619
+2020-04-29,US,US,2620
 2020-04-30,01,Alabama,16
 2020-04-30,02,Alaska,0
 2020-04-30,60,American Samoa,0
@@ -5609,7 +5609,7 @@ date,location,location_name,value
 2020-04-30,23,Maine,1
 2020-04-30,24,Maryland,62
 2020-04-30,25,Massachusetts,157
-2020-04-30,26,Michigan,119
+2020-04-30,26,Michigan,122
 2020-04-30,27,Minnesota,24
 2020-04-30,28,Mississippi,11
 2020-04-30,29,Missouri,19
@@ -5641,7 +5641,7 @@ date,location,location_name,value
 2020-04-30,54,West Virginia,3
 2020-04-30,55,Wisconsin,8
 2020-04-30,56,Wyoming,0
-2020-04-30,US,US,2036
+2020-04-30,US,US,2039
 2020-05-01,01,Alabama,17
 2020-05-01,02,Alaska,0
 2020-05-01,60,American Samoa,0
@@ -5666,7 +5666,7 @@ date,location,location_name,value
 2020-05-01,23,Maine,2
 2020-05-01,24,Maryland,-60
 2020-05-01,25,Massachusetts,154
-2020-05-01,26,Michigan,77
+2020-05-01,26,Michigan,78
 2020-05-01,27,Minnesota,27
 2020-05-01,28,Mississippi,20
 2020-05-01,29,Missouri,14
@@ -5698,7 +5698,7 @@ date,location,location_name,value
 2020-05-01,54,West Virginia,5
 2020-05-01,55,Wisconsin,11
 2020-05-01,56,Wyoming,0
-2020-05-01,US,US,1951
+2020-05-01,US,US,1952
 2020-05-02,01,Alabama,-1
 2020-05-02,02,Alaska,0
 2020-05-02,60,American Samoa,0
@@ -5780,7 +5780,7 @@ date,location,location_name,value
 2020-05-03,23,Maine,1
 2020-05-03,24,Maryland,30
 2020-05-03,25,Massachusetts,158
-2020-05-03,26,Michigan,32
+2020-05-03,26,Michigan,34
 2020-05-03,27,Minnesota,24
 2020-05-03,28,Mississippi,12
 2020-05-03,29,Missouri,12
@@ -5812,7 +5812,7 @@ date,location,location_name,value
 2020-05-03,54,West Virginia,0
 2020-05-03,55,Wisconsin,5
 2020-05-03,56,Wyoming,0
-2020-05-03,US,US,1320
+2020-05-03,US,US,1322
 2020-05-04,01,Alabama,8
 2020-05-04,02,Alaska,0
 2020-05-04,60,American Samoa,0
@@ -5837,7 +5837,7 @@ date,location,location_name,value
 2020-05-04,23,Maine,0
 2020-05-04,24,Maryland,36
 2020-05-04,25,Massachusetts,86
-2020-05-04,26,Michigan,86
+2020-05-04,26,Michigan,87
 2020-05-04,27,Minnesota,9
 2020-05-04,28,Mississippi,7
 2020-05-04,29,Missouri,11
@@ -5869,7 +5869,7 @@ date,location,location_name,value
 2020-05-04,54,West Virginia,0
 2020-05-04,55,Wisconsin,1
 2020-05-04,56,Wyoming,0
-2020-05-04,US,US,1246
+2020-05-04,US,US,1247
 2020-05-05,01,Alabama,17
 2020-05-05,02,Alaska,0
 2020-05-05,60,American Samoa,0
@@ -5894,7 +5894,7 @@ date,location,location_name,value
 2020-05-05,23,Maine,4
 2020-05-05,24,Maryland,73
 2020-05-05,25,Massachusetts,122
-2020-05-05,26,Michigan,44
+2020-05-05,26,Michigan,46
 2020-05-05,27,Minnesota,28
 2020-05-05,28,Mississippi,32
 2020-05-05,29,Missouri,29
@@ -5926,7 +5926,7 @@ date,location,location_name,value
 2020-05-05,54,West Virginia,0
 2020-05-05,55,Wisconsin,13
 2020-05-05,56,Wyoming,0
-2020-05-05,US,US,2148
+2020-05-05,US,US,2150
 2020-05-06,01,Alabama,28
 2020-05-06,02,Alaska,1
 2020-05-06,60,American Samoa,0
@@ -5951,7 +5951,7 @@ date,location,location_name,value
 2020-05-06,23,Maine,1
 2020-05-06,24,Maryland,47
 2020-05-06,25,Massachusetts,208
-2020-05-06,26,Michigan,73
+2020-05-06,26,Michigan,74
 2020-05-06,27,Minnesota,30
 2020-05-06,28,Mississippi,32
 2020-05-06,29,Missouri,15
@@ -5983,7 +5983,7 @@ date,location,location_name,value
 2020-05-06,54,West Virginia,2
 2020-05-06,55,Wisconsin,9
 2020-05-06,56,Wyoming,0
-2020-05-06,US,US,2387
+2020-05-06,US,US,2388
 2020-05-07,01,Alabama,26
 2020-05-07,02,Alaska,0
 2020-05-07,60,American Samoa,0
@@ -6008,7 +6008,7 @@ date,location,location_name,value
 2020-05-07,23,Maine,0
 2020-05-07,24,Maryland,66
 2020-05-07,25,Massachusetts,132
-2020-05-07,26,Michigan,89
+2020-05-07,26,Michigan,91
 2020-05-07,27,Minnesota,23
 2020-05-07,28,Mississippi,22
 2020-05-07,29,Missouri,23
@@ -6040,7 +6040,7 @@ date,location,location_name,value
 2020-05-07,54,West Virginia,1
 2020-05-07,55,Wisconsin,12
 2020-05-07,56,Wyoming,0
-2020-05-07,US,US,2209
+2020-05-07,US,US,2211
 2020-05-08,01,Alabama,14
 2020-05-08,02,Alaska,0
 2020-05-08,60,American Samoa,0
@@ -6065,7 +6065,7 @@ date,location,location_name,value
 2020-05-08,23,Maine,1
 2020-05-08,24,Maryland,57
 2020-05-08,25,Massachusetts,150
-2020-05-08,26,Michigan,54
+2020-05-08,26,Michigan,58
 2020-05-08,27,Minnesota,26
 2020-05-08,28,Mississippi,13
 2020-05-08,29,Missouri,21
@@ -6097,7 +6097,7 @@ date,location,location_name,value
 2020-05-08,54,West Virginia,1
 2020-05-08,55,Wisconsin,10
 2020-05-08,56,Wyoming,0
-2020-05-08,US,US,1505
+2020-05-08,US,US,1509
 2020-05-09,01,Alabama,7
 2020-05-09,02,Alaska,0
 2020-05-09,60,American Samoa,0
@@ -6122,7 +6122,7 @@ date,location,location_name,value
 2020-05-09,23,Maine,1
 2020-05-09,24,Maryland,54
 2020-05-09,25,Massachusetts,138
-2020-05-09,26,Michigan,131
+2020-05-09,26,Michigan,143
 2020-05-09,27,Minnesota,24
 2020-05-09,28,Mississippi,12
 2020-05-09,29,Missouri,11
@@ -6154,7 +6154,7 @@ date,location,location_name,value
 2020-05-09,54,West Virginia,0
 2020-05-09,55,Wisconsin,14
 2020-05-09,56,Wyoming,0
-2020-05-09,US,US,1615
+2020-05-09,US,US,1627
 2020-05-10,01,Alabama,3
 2020-05-10,02,Alaska,0
 2020-05-10,60,American Samoa,0
@@ -6179,7 +6179,7 @@ date,location,location_name,value
 2020-05-10,23,Maine,0
 2020-05-10,24,Maryland,30
 2020-05-10,25,Massachusetts,139
-2020-05-10,26,Michigan,25
+2020-05-10,26,Michigan,26
 2020-05-10,27,Minnesota,20
 2020-05-10,28,Mississippi,9
 2020-05-10,29,Missouri,11
@@ -6211,7 +6211,7 @@ date,location,location_name,value
 2020-05-10,54,West Virginia,2
 2020-05-10,55,Wisconsin,2
 2020-05-10,56,Wyoming,0
-2020-05-10,US,US,733
+2020-05-10,US,US,734
 2020-05-11,01,Alabama,10
 2020-05-11,02,Alaska,0
 2020-05-11,60,American Samoa,0
@@ -6293,7 +6293,7 @@ date,location,location_name,value
 2020-05-12,23,Maine,0
 2020-05-12,24,Maryland,73
 2020-05-12,25,Massachusetts,33
-2020-05-12,26,Michigan,90
+2020-05-12,26,Michigan,92
 2020-05-12,27,Minnesota,23
 2020-05-12,28,Mississippi,22
 2020-05-12,29,Missouri,10
@@ -6325,7 +6325,7 @@ date,location,location_name,value
 2020-05-12,54,West Virginia,4
 2020-05-12,55,Wisconsin,9
 2020-05-12,56,Wyoming,0
-2020-05-12,US,US,1689
+2020-05-12,US,US,1691
 2020-05-13,01,Alabama,15
 2020-05-13,02,Alaska,0
 2020-05-13,60,American Samoa,0
@@ -6350,7 +6350,7 @@ date,location,location_name,value
 2020-05-13,23,Maine,1
 2020-05-13,24,Maryland,53
 2020-05-13,25,Massachusetts,174
-2020-05-13,26,Michigan,40
+2020-05-13,26,Michigan,41
 2020-05-13,27,Minnesota,24
 2020-05-13,28,Mississippi,8
 2020-05-13,29,Missouri,21
@@ -6382,7 +6382,7 @@ date,location,location_name,value
 2020-05-13,54,West Virginia,0
 2020-05-13,55,Wisconsin,3
 2020-05-13,56,Wyoming,0
-2020-05-13,US,US,1742
+2020-05-13,US,US,1743
 2020-05-14,01,Alabama,23
 2020-05-14,02,Alaska,0
 2020-05-14,60,American Samoa,0
@@ -6407,7 +6407,7 @@ date,location,location_name,value
 2020-05-14,23,Maine,3
 2020-05-14,24,Maryland,57
 2020-05-14,25,Massachusetts,167
-2020-05-14,26,Michigan,73
+2020-05-14,26,Michigan,74
 2020-05-14,27,Minnesota,34
 2020-05-14,28,Mississippi,15
 2020-05-14,29,Missouri,12
@@ -6439,7 +6439,7 @@ date,location,location_name,value
 2020-05-14,54,West Virginia,2
 2020-05-14,55,Wisconsin,13
 2020-05-14,56,Wyoming,0
-2020-05-14,US,US,1776
+2020-05-14,US,US,1777
 2020-05-15,01,Alabama,10
 2020-05-15,02,Alaska,0
 2020-05-15,60,American Samoa,0
@@ -6464,7 +6464,7 @@ date,location,location_name,value
 2020-05-15,23,Maine,0
 2020-05-15,24,Maryland,45
 2020-05-15,25,Massachusetts,110
-2020-05-15,26,Michigan,38
+2020-05-15,26,Michigan,39
 2020-05-15,27,Minnesota,20
 2020-05-15,28,Mississippi,13
 2020-05-15,29,Missouri,15
@@ -6496,7 +6496,7 @@ date,location,location_name,value
 2020-05-15,54,West Virginia,4
 2020-05-15,55,Wisconsin,11
 2020-05-15,56,Wyoming,0
-2020-05-15,US,US,1632
+2020-05-15,US,US,1633
 2020-05-16,01,Alabama,2
 2020-05-16,02,Alaska,0
 2020-05-16,60,American Samoa,0
@@ -6749,7 +6749,7 @@ date,location,location_name,value
 2020-05-20,23,Maine,0
 2020-05-20,24,Maryland,42
 2020-05-20,25,Massachusetts,128
-2020-05-20,26,Michigan,43
+2020-05-20,26,Michigan,46
 2020-05-20,27,Minnesota,29
 2020-05-20,28,Mississippi,16
 2020-05-20,29,Missouri,11
@@ -6781,7 +6781,7 @@ date,location,location_name,value
 2020-05-20,54,West Virginia,1
 2020-05-20,55,Wisconsin,14
 2020-05-20,56,Wyoming,1
-2020-05-20,US,US,1520
+2020-05-20,US,US,1523
 2020-05-21,01,Alabama,7
 2020-05-21,02,Alaska,0
 2020-05-21,60,American Samoa,0
@@ -6806,7 +6806,7 @@ date,location,location_name,value
 2020-05-21,23,Maine,0
 2020-05-21,24,Maryland,36
 2020-05-21,25,Massachusetts,82
-2020-05-21,26,Michigan,69
+2020-05-21,26,Michigan,70
 2020-05-21,27,Minnesota,32
 2020-05-21,28,Mississippi,10
 2020-05-21,29,Missouri,9
@@ -6838,7 +6838,7 @@ date,location,location_name,value
 2020-05-21,54,West Virginia,1
 2020-05-21,55,Wisconsin,6
 2020-05-21,56,Wyoming,1
-2020-05-21,US,US,1244
+2020-05-21,US,US,1245
 2020-05-22,01,Alabama,12
 2020-05-22,02,Alaska,0
 2020-05-22,60,American Samoa,0
@@ -6977,7 +6977,7 @@ date,location,location_name,value
 2020-05-24,23,Maine,1
 2020-05-24,24,Maryland,34
 2020-05-24,25,Massachusetts,68
-2020-05-24,26,Michigan,5
+2020-05-24,26,Michigan,6
 2020-05-24,27,Minnesota,17
 2020-05-24,28,Mississippi,9
 2020-05-24,29,Missouri,3
@@ -7009,7 +7009,7 @@ date,location,location_name,value
 2020-05-24,54,West Virginia,0
 2020-05-24,55,Wisconsin,3
 2020-05-24,56,Wyoming,0
-2020-05-24,US,US,632
+2020-05-24,US,US,633
 2020-05-25,01,Alabama,15
 2020-05-25,02,Alaska,0
 2020-05-25,60,American Samoa,0
@@ -7091,7 +7091,7 @@ date,location,location_name,value
 2020-05-26,23,Maine,1
 2020-05-26,24,Maryland,31
 2020-05-26,25,Massachusetts,57
-2020-05-26,26,Michigan,25
+2020-05-26,26,Michigan,27
 2020-05-26,27,Minnesota,18
 2020-05-26,28,Mississippi,17
 2020-05-26,29,Missouri,7
@@ -7123,7 +7123,7 @@ date,location,location_name,value
 2020-05-26,54,West Virginia,0
 2020-05-26,55,Wisconsin,3
 2020-05-26,56,Wyoming,1
-2020-05-26,US,US,696
+2020-05-26,US,US,698
 2020-05-27,01,Alabama,3
 2020-05-27,02,Alaska,0
 2020-05-27,60,American Samoa,0
@@ -7433,7 +7433,7 @@ date,location,location_name,value
 2020-06-01,23,Maine,0
 2020-06-01,24,Maryland,20
 2020-06-01,25,Massachusetts,189
-2020-06-01,26,Michigan,25
+2020-06-01,26,Michigan,27
 2020-06-01,27,Minnesota,10
 2020-06-01,28,Mississippi,5
 2020-06-01,29,Missouri,1
@@ -7465,7 +7465,7 @@ date,location,location_name,value
 2020-06-01,54,West Virginia,1
 2020-06-01,55,Wisconsin,3
 2020-06-01,56,Wyoming,1
-2020-06-01,US,US,769
+2020-06-01,US,US,771
 2020-06-02,01,Alabama,7
 2020-06-02,02,Alaska,0
 2020-06-02,60,American Samoa,0
@@ -7547,7 +7547,7 @@ date,location,location_name,value
 2020-06-03,23,Maine,1
 2020-06-03,24,Maryland,44
 2020-06-03,25,Massachusetts,67
-2020-06-03,26,Michigan,17
+2020-06-03,26,Michigan,18
 2020-06-03,27,Minnesota,15
 2020-06-03,28,Mississippi,15
 2020-06-03,29,Missouri,6
@@ -7579,7 +7579,7 @@ date,location,location_name,value
 2020-06-03,54,West Virginia,0
 2020-06-03,55,Wisconsin,9
 2020-06-03,56,Wyoming,0
-2020-06-03,US,US,982
+2020-06-03,US,US,983
 2020-06-04,01,Alabama,0
 2020-06-04,02,Alaska,0
 2020-06-04,60,American Samoa,0
@@ -7604,7 +7604,7 @@ date,location,location_name,value
 2020-06-04,23,Maine,0
 2020-06-04,24,Maryland,27
 2020-06-04,25,Massachusetts,49
-2020-06-04,26,Michigan,25
+2020-06-04,26,Michigan,26
 2020-06-04,27,Minnesota,29
 2020-06-04,28,Mississippi,12
 2020-06-04,29,Missouri,2
@@ -7636,7 +7636,7 @@ date,location,location_name,value
 2020-06-04,54,West Virginia,1
 2020-06-04,55,Wisconsin,10
 2020-06-04,56,Wyoming,0
-2020-06-04,US,US,1034
+2020-06-04,US,US,1035
 2020-06-05,01,Alabama,23
 2020-06-05,02,Alaska,0
 2020-06-05,60,American Samoa,0
@@ -7661,7 +7661,7 @@ date,location,location_name,value
 2020-06-05,23,Maine,3
 2020-06-05,24,Maryland,34
 2020-06-05,25,Massachusetts,34
-2020-06-05,26,Michigan,259
+2020-06-05,26,Michigan,70
 2020-06-05,27,Minnesota,33
 2020-06-05,28,Mississippi,9
 2020-06-05,29,Missouri,7
@@ -7693,7 +7693,7 @@ date,location,location_name,value
 2020-06-05,54,West Virginia,5
 2020-06-05,55,Wisconsin,7
 2020-06-05,56,Wyoming,0
-2020-06-05,US,US,1159
+2020-06-05,US,US,970
 2020-06-06,01,Alabama,13
 2020-06-06,02,Alaska,0
 2020-06-06,60,American Samoa,0
@@ -7718,7 +7718,7 @@ date,location,location_name,value
 2020-06-06,23,Maine,0
 2020-06-06,24,Maryland,38
 2020-06-06,25,Massachusetts,54
-2020-06-06,26,Michigan,40
+2020-06-06,26,Michigan,7
 2020-06-06,27,Minnesota,22
 2020-06-06,28,Mississippi,8
 2020-06-06,29,Missouri,8
@@ -7750,7 +7750,7 @@ date,location,location_name,value
 2020-06-06,54,West Virginia,0
 2020-06-06,55,Wisconsin,12
 2020-06-06,56,Wyoming,0
-2020-06-06,US,US,707
+2020-06-06,US,US,674
 2020-06-07,01,Alabama,3
 2020-06-07,02,Alaska,0
 2020-06-07,60,American Samoa,0
@@ -7775,7 +7775,7 @@ date,location,location_name,value
 2020-06-07,23,Maine,1
 2020-06-07,24,Maryland,9
 2020-06-07,25,Massachusetts,27
-2020-06-07,26,Michigan,4
+2020-06-07,26,Michigan,11
 2020-06-07,27,Minnesota,16
 2020-06-07,28,Mississippi,6
 2020-06-07,29,Missouri,2
@@ -7807,7 +7807,7 @@ date,location,location_name,value
 2020-06-07,54,West Virginia,0
 2020-06-07,55,Wisconsin,2
 2020-06-07,56,Wyoming,0
-2020-06-07,US,US,445
+2020-06-07,US,US,452
 2020-06-08,01,Alabama,26
 2020-06-08,02,Alaska,0
 2020-06-08,60,American Samoa,0
@@ -7832,7 +7832,7 @@ date,location,location_name,value
 2020-06-08,23,Maine,0
 2020-06-08,24,Maryland,27
 2020-06-08,25,Massachusetts,37
-2020-06-08,26,Michigan,18
+2020-06-08,26,Michigan,15
 2020-06-08,27,Minnesota,11
 2020-06-08,28,Mississippi,20
 2020-06-08,29,Missouri,4
@@ -7864,7 +7864,7 @@ date,location,location_name,value
 2020-06-08,54,West Virginia,0
 2020-06-08,55,Wisconsin,-1
 2020-06-08,56,Wyoming,0
-2020-06-08,US,US,496
+2020-06-08,US,US,493
 2020-06-09,01,Alabama,11
 2020-06-09,02,Alaska,1
 2020-06-09,60,American Samoa,0
@@ -7889,7 +7889,7 @@ date,location,location_name,value
 2020-06-09,23,Maine,1
 2020-06-09,24,Maryland,35
 2020-06-09,25,Massachusetts,55
-2020-06-09,26,Michigan,32
+2020-06-09,26,Michigan,9
 2020-06-09,27,Minnesota,20
 2020-06-09,28,Mississippi,10
 2020-06-09,29,Missouri,8
@@ -7921,7 +7921,7 @@ date,location,location_name,value
 2020-06-09,54,West Virginia,0
 2020-06-09,55,Wisconsin,15
 2020-06-09,56,Wyoming,0
-2020-06-09,US,US,969
+2020-06-09,US,US,946
 2020-06-10,01,Alabama,15
 2020-06-10,02,Alaska,0
 2020-06-10,60,American Samoa,0
@@ -7946,7 +7946,7 @@ date,location,location_name,value
 2020-06-10,23,Maine,0
 2020-06-10,24,Maryland,33
 2020-06-10,25,Massachusetts,46
-2020-06-10,26,Michigan,7
+2020-06-10,26,Michigan,1
 2020-06-10,27,Minnesota,39
 2020-06-10,28,Mississippi,21
 2020-06-10,29,Missouri,3
@@ -7978,7 +7978,7 @@ date,location,location_name,value
 2020-06-10,54,West Virginia,1
 2020-06-10,55,Wisconsin,10
 2020-06-10,56,Wyoming,1
-2020-06-10,US,US,927
+2020-06-10,US,US,921
 2020-06-11,01,Alabama,11
 2020-06-11,02,Alaska,0
 2020-06-11,60,American Samoa,0
@@ -8003,7 +8003,7 @@ date,location,location_name,value
 2020-06-11,23,Maine,0
 2020-06-11,24,Maryland,31
 2020-06-11,25,Massachusetts,38
-2020-06-11,26,Michigan,30
+2020-06-11,26,Michigan,33
 2020-06-11,27,Minnesota,13
 2020-06-11,28,Mississippi,0
 2020-06-11,29,Missouri,0
@@ -8035,7 +8035,7 @@ date,location,location_name,value
 2020-06-11,54,West Virginia,1
 2020-06-11,55,Wisconsin,11
 2020-06-11,56,Wyoming,0
-2020-06-11,US,US,885
+2020-06-11,US,US,888
 2020-06-12,01,Alabama,14
 2020-06-12,02,Alaska,1
 2020-06-12,60,American Samoa,0
@@ -8093,3 +8093,60 @@ date,location,location_name,value
 2020-06-12,55,Wisconsin,7
 2020-06-12,56,Wyoming,0
 2020-06-12,US,US,846
+2020-06-13,01,Alabama,4
+2020-06-13,02,Alaska,0
+2020-06-13,60,American Samoa,0
+2020-06-13,04,Arizona,33
+2020-06-13,05,Arkansas,1
+2020-06-13,06,California,98
+2020-06-13,08,Colorado,15
+2020-06-13,09,Connecticut,27
+2020-06-13,10,Delaware,5
+2020-06-13,11,District of Columbia,5
+2020-06-13,12,Florida,48
+2020-06-13,13,Georgia,29
+2020-06-13,66,Guam,0
+2020-06-13,15,Hawaii,0
+2020-06-13,16,Idaho,0
+2020-06-13,17,Illinois,29
+2020-06-13,18,Indiana,17
+2020-06-13,19,Iowa,6
+2020-06-13,20,Kansas,2
+2020-06-13,21,Kentucky,2
+2020-06-13,22,Louisiana,8
+2020-06-13,23,Maine,0
+2020-06-13,24,Maryland,26
+2020-06-13,25,Massachusetts,38
+2020-06-13,26,Michigan,23
+2020-06-13,27,Minnesota,9
+2020-06-13,28,Mississippi,8
+2020-06-13,29,Missouri,4
+2020-06-13,30,Montana,0
+2020-06-13,31,Nebraska,0
+2020-06-13,32,Nevada,1
+2020-06-13,33,New Hampshire,3
+2020-06-13,34,New Jersey,132
+2020-06-13,35,New Mexico,11
+2020-06-13,36,New York,37
+2020-06-13,37,North Carolina,6
+2020-06-13,38,North Dakota,0
+2020-06-13,69,Northern Mariana Islands,0
+2020-06-13,39,Ohio,46
+2020-06-13,40,Oklahoma,-1
+2020-06-13,41,Oregon,0
+2020-06-13,42,Pennsylvania,49
+2020-06-13,72,Puerto Rico,0
+2020-06-13,44,Rhode Island,0
+2020-06-13,45,South Carolina,6
+2020-06-13,46,South Dakota,1
+2020-06-13,47,Tennessee,6
+2020-06-13,48,Texas,15
+2020-06-13,49,Utah,0
+2020-06-13,50,Vermont,0
+2020-06-13,78,Virgin Islands,0
+2020-06-13,51,Virginia,7
+2020-06-13,53,Washington,9
+2020-06-13,54,West Virginia,0
+2020-06-13,55,Wisconsin,2
+2020-06-13,56,Wyoming,0
+2020-06-13,US,US,767
