@@ -28,6 +28,14 @@ include a dash (-) or a whitespace.
 A brief description of your forecasting methodology that is less than 200 
 characters.
 
+## model_url
+
+A url to a website that has additional data about your model. We encourage teams to 
+submit a url to the most user-friendly version of your model, e.g. a dashboard, 
+or similar, that displays your model forecasts. If you have additionally a data repository
+where you store forecasts and other model code, please include that in your methods
+section below. If you only have a more technical site, please include that link here.
+
 
 ## Optional
 
@@ -39,15 +47,6 @@ You institutional affiliation, if you have one.
 
 Like an acknowledgement in a manuscript, you can acknowledge funding here.
 
-
-### model_output
-
-A url for a dashboard, or similar, that displays your model forecasts. 
-
-
-### model_repo
-
-A repository for your model code and forecasts. 
 
 ### model_contributors
 
