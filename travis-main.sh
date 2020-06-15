@@ -76,7 +76,7 @@ fi
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test zoltar upload"* ]]; then
     echo "Upload forecasts to Zoltar"
     bash ./travis/upload-to-zoltar.sh
-    echo "Push the validated file db to Zoltar"
+    echo "Push validated file db to Zoltar"
     bash ./travis/push.sh
 fi
 
