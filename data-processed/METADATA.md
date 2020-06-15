@@ -7,21 +7,21 @@ This file describes each of the variables (keys) in the yaml document.
 
 ### team_name
 
-The name of your team. 
+The name of your team that is less than 50 characters.
 
 ### team_abbr
 
-An abbreviated name for your team that is less than 15 characters and cannot 
-inlucde a dash (-). 
+An abbreviated name for your team that is less than 15 alphanumeric characters and cannot 
+inlucde a dash (-) or a whitespace. 
 
 ### model_name
 
-The name of your model.
+The name of your model that is less than 50 characters.
 
 ### model_abbr
 
-An abbreviated name for your model that is less than 15 characters and cannot
-include a dash (-).
+An abbreviated name for your model that is less than 15 alphanumeric characters and cannot
+include a dash (-) or a whitespace.
 
 ### methods
 
@@ -39,15 +39,10 @@ You institutional affiliation, if you have one.
 
 Like an acknowledgement in a manuscript, you can acknowledge funding here.
 
-### team_experience
-
-???  what is expected here?
 
 ### model_output
 
-A url for a dashboard, or similar, for your model forecasts. 
-
-??? is this accurate?
+A url for a dashboard, or similar, that displays your model forecasts. 
 
 
 ### model_repo
@@ -56,77 +51,21 @@ A repository for your model code and forecasts.
 
 ### model_contributors
 
-A list of individuals involved in the forecasting effort.
-
-### Model_targets
-
-A subset of the [model targets](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed#target)
-that your model provides forecasts for.
-
-??? formatting
-
-??? why is this key capitalized
-
-??? Do we need this field? We can just extract this information from the 
-forecasts themselves.
-
-### target_loc
-
-The locations this model provides forecasts for. 
-
-??? format
-
-??? Do we need this field? We can just extract this information from the 
-forecasts themselves.
-
-### Data_format
-
-??? what is this?
-
-??? why is this capitalized
-
-### forecast_startdate
-
-The earliest date forecasts were provided from this model. 
-
-??? Is the earliest on the Hub or earliest on their website?
-
-??? Do we need this field? We can just extract this information from the 
-forecasts themselves.
-
-### forecast_frequency
-
-The frequency of forecasts from this model, e.g. daily, weekly. 
-
-??? Is the frequency on the Hub or frequency on their website?
-
-??? Do we need this field? We can just extract this information from the 
-forecasts themselves.
+A list of individuals involved in the forecasting effort. At least one contributor
+needs to have a valid email address. Any email addresses provided will be added to 
+an email distribution list for model contributors.
 
 
 ### data_inputs_known
 
 A description of the data sources used to inform the model, 
-e.g. deaths, cases, mobile, etc. 
-
-
-### data_source_known
-
-A description of the source of the data in the previous key. 
+e.g. "NYTimes death data", "JHU CSSE case and death data", mobility data, etc. 
 
 
 ### this_model_is_an_ensemble
 
 true/false indicating whether the model here is a combination of a set of other
 models
-
-
-### this_model_is_unconditional
-
-true/false indicating whether this model assumes a particular future scenario
-(false) or whether it is trying to predict the future that will occur (true). 
-
-??? is this accurate
 
 
 ### methods_long
@@ -138,4 +77,5 @@ modification and a description of the change.
 
 ### citation
 
-A url to an extended description of your model. 
+A url to an extended description of your model,
+e.g. blog post, website, preprint, or peer-reviewed manuscript. 
