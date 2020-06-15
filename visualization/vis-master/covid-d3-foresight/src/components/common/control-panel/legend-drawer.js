@@ -40,6 +40,7 @@ export default class LegendDrawer extends Component {
       {
         color: colors.actual,
         text: 'Actual',
+        textLong: `Observed Deaths`,
         tooltipData: {
           title: 'Actual Data',
           text: 'Latest data available for the week'
@@ -48,6 +49,7 @@ export default class LegendDrawer extends Component {
       {
         color: colors.observed,
         text: 'Observed',
+        textLong: 'Observed',
         tooltipData: {
           title: 'Observed Data',
           text: 'Data available for weeks when the predictions were made'
@@ -56,6 +58,7 @@ export default class LegendDrawer extends Component {
       {
         color: colors['history'],
         text: 'History',
+        textLong: 'History',
         tooltipData: {
           title: 'Historical Data',
           text: 'Toggle historical data lines'
@@ -66,7 +69,7 @@ export default class LegendDrawer extends Component {
     // Add rows for top items
     this.topRowsMap = {}
     topItems.forEach(data => {
-      let drawerRow = new DrawerRow(data.text, data.color)
+      let drawerRow = new DrawerRow(data.textLong, data.color)
       drawerRow.addOnClick(({ id, state }) => {
         ev.publish(config.uuid, ev.LEGEND_ITEM, { id, state })
       })
@@ -212,4 +215,9 @@ export default class LegendDrawer extends Component {
       }
     })
   }
+
+  updateTitle(title) {
+    this.topRowsMap['actual'].setText(`Observed ${title}`)
+  }
+  
 }
