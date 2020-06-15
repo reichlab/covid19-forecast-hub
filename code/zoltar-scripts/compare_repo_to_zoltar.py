@@ -4,9 +4,6 @@ from zoltpy.connection import ZoltarConnection
 from zoltpy.covid19 import VALID_TARGET_NAMES, covid19_row_validator, validate_quantile_csv_file
 import os
 import sys
-import yaml
-import hashlib
-import pickle
 
 # meta info
 project_name = 'COVID-19 Forecasts'
@@ -27,8 +24,8 @@ for model in models:
 for directory in [model for model in os.listdir('../../data-processed/') if "." not in model]:
     forecasts = [forecast for forecast in os.listdir('../../data-processed/'+directory+"/") if ".csv" in forecast]
     repo_forecasts.extend(forecasts)
-print(len(zoltar_forecasts))
-print(len(repo_forecasts))
+print("number of forecasts in zoltar: " + str(len(zoltar_forecasts)))
+print("number of forecasts in repo: " + str(len(repo_forecasts)))
 for forecast in zoltar_forecasts:
     if forecast not in repo_forecasts:
         print("This forecast in zoltar but not in repo "+forecast)

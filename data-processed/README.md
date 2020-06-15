@@ -299,7 +299,7 @@ for details on how to troubleshoot.
 #### Run checks locally
 
 To run these checks locally rather than waiting for the results from a pull request, follow
-[these instructions](https://github.com/reichlab/covid19-forecast-hub/wiki/Validation-Checks#running-validations-locally).
+[these instructions](https://github.com/reichlab/covid19-forecast-hub/wiki/Running-Checks-Locally).
 
 
 ### R validation checks
