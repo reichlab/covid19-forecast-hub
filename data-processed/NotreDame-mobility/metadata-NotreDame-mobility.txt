@@ -20,11 +20,11 @@ forecast_frequency: daily
 data_inputs_known: Daily reported deaths count, Daily reported test positivity rate
 data_source_known: New York Times https://github.com/midas-network/COVID-19/tree/master/data/cases/united%20states%20of%20america/nytimes_covid19_data
 
-this_model_is_an_ensemble: TRUE
-this_model_is_unconditional: FALSE
+this_model_is_an_ensemble: true
+this_model_is_unconditional: false
 
 methods: >-
-    This forecast is an ensemble of nine models that are identical except that they are driven by different mobility indices from Apple and Google. The model underlying each is a deterministic, SEIR-like model.
+    This is an ensemble of nine models that are identical except that they are driven by different mobility indices from Apple and Google. The model underlying each is a deterministic, SEIR-like model.
 
 methods_long: >-
     This forecast is an ensemble of nine models that are identical except that they are driven by different mobility indices from Apple and Google. The model underlying each is a deterministic, SEIR-like model. Model simulations are initiated by imported infections, which arrive from January 1 onward according to a scaled Normal probability density. Each imported and then local infection gives rise to an average number of secondary infections distributed forward in time according to a generation interval distribution. Once infected, a proportion of those infected die at times distributed according to a distribution between symptom onset and death. Testing of a subset of symptomatic infections is distributed in time in a similar manner, and the model is fitted to data on test positivity by accounting for those seeking testing and a differential probabililty of seeking testing conditional on one's infection status. The model is simultaneously fitted to deaths according to a Poisson likelihood of daily incidence of death. There are a total of twelve model parameters that are all estimated. First, a parameter sweep is conducted to identify the parameter combination from the sweep with the highest likelihood. Then, a region around that parameter combination is assumed to have a uniform prior, and a posterior set of parameters is obtained with MCMC. The model is then simulated forward under each sampled parameter set from the posterior distribution. This process is repeated for each of nine mobility metrics from Apple and Google for 50 states and some territories where at least one type of mobility data is available. Simulations from the posterior predictive distribution of each model are pooled evenly and used to generate a probabilistic forecast in each state and at the national level.
