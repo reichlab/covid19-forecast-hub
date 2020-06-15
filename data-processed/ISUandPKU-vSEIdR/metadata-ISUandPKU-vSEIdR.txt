@@ -14,7 +14,7 @@ Model_targets: N days ahead new (daily) deaths
 Target_loc: US, all the states
 time_horizon:
 Data_format: all requested quantiles
-forecast_startdate: 2020-06-10
+forecast_startdate: 2020-06-15
 forecast_frequency: weekly
 
 data_inputs_known: confirmed cases; reported fatalities; population
