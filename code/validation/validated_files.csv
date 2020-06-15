@@ -377,7 +377,6 @@ file_path,validation_date
 ./data-processed/GT-DeepCOVID/2020-06-08-GT-DeepCOVID.csv,2020-06-09 19:34:34.171005
 ./data-processed/YYG-ParamSearch/2020-06-10-YYG-ParamSearch.csv,2020-06-10 08:42:11.623864
 ./data-processed/STH-3PU/2020-06-10-STH-3PU.csv,2020-06-10 14:00:12.138132
-./data-processed/Areon_OW-Navigator/2020-06-07-Areon_OW-Navigator.csv,2020-06-10 15:34:51.963269
 ./data-processed/Covid19Sim-Simulator/2020-05-24-Covid19Sim-Simulator.csv,2020-06-10 16:54:43.267684
 ./data-processed/Covid19Sim-Simulator/2020-06-07-Covid19Sim-Simulator.csv,2020-06-10 16:55:00.653743
 ./data-processed/Covid19Sim-Simulator/2020-05-31-Covid19Sim-Simulator.csv,2020-06-10 16:55:17.895734
@@ -386,3 +385,14 @@ file_path,validation_date
 ./data-processed/YYG-ParamSearch/2020-06-11-YYG-ParamSearch.csv,2020-06-11 11:42:40.744052
 ./data-processed/STH-3PU/2020-06-11-STH-3PU.csv,2020-06-11 11:57:38.871322
 ./data-processed/LANL-GrowthRate/2020-06-11-LANL-GrowthRate.csv,2020-06-12 00:08:47.034029
+./data-processed/CU-80contact1x5p/2020-06-11-CU-80contact1x5p.csv,2020-06-12 05:40:09.911209
+./data-processed/CU-nochange/2020-06-11-CU-nochange.csv,2020-06-12 05:40:13.198174
+./data-processed/CU-select/2020-06-11-CU-select.csv,2020-06-12 05:40:16.483767
+./data-processed/CU-80contactw5p/2020-06-11-CU-80contactw5p.csv,2020-06-12 05:40:19.838640
+./data-processed/STH-3PU/2020-06-12-STH-3PU.csv,2020-06-12 13:07:48.473906
+./data-processed/STH-3PU/2020-06-13-STH-3PU.csv,2020-06-13 13:59:35.854138
+./data-processed/OliverWyman-Navigator/2020-06-07-OliverWyman-Navigator.csv,2020-06-13 22:17:51.263659
+./data-processed/GT_CHHS-COVID19/2020-06-14-GT_CHHS-COVID19.csv,2020-06-15 01:52:38.696402
+./data-processed/UCLA-SuEIR/2020-06-14-UCLA-SuEIR.csv,2020-06-15 08:36:21.972270
+./data-processed/STH-3PU/2020-06-15-STH-3PU.csv,2020-06-15 14:00:40.346687
+./data-processed/STH-3PU/2020-06-14-STH-3PU.csv,2020-06-15 14:00:40.364204
