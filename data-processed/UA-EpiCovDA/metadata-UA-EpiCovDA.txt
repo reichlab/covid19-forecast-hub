@@ -17,4 +17,4 @@ methods: >
   4D-Var) to fit model parameters. For the data assimilation piece of EpiCovDA, a  prior 
   distribution of the parameters was estimated by fitting the model to states whose
   epidemic curves were further along early during the pandemic. 
-  See <https://doi.org/10.1016/j.epidem.2016.10.002> for more information about EpiGro. 
+  See <https://jocelinelega.github.io/EpiGro/> for more information about EpiGro. 

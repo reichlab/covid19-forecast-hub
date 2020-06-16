@@ -4,9 +4,8 @@
 set -e
 
 # Parse data model data files to flusight format
-yarn
-yarn run test
-yarn run parse-data
+npm run test
+npm run parse-data
 
 # Remove CU-models except select
 rm -r ./data/Cumulative\ Deaths/CU-nointerv
@@ -49,8 +48,8 @@ rm -r ./data/Incident\ Deaths/UChicago-CovidIL_30_increase
 # rm -r ./data/Incident\ Deaths/JHU_IDD-CovidSP
 
 # Remove Iowa State Except STEM10
-rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
-rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
+# rm -r ./data/Cumulative\ Deaths/IowaStateLW-STEM15
+# rm -r ./data/Incident\ Deaths/IowaStateLW-STEM15
 
 # Remove LANL-GrowthRateHosp
 # rm -r ./data/Cumulative\ Deaths/LANL-GrowthRateHosp
@@ -67,10 +66,22 @@ rm -r ./data/Incident\ Deaths/Auquan-SEIR
 # Remove Imperial ensemble 1
 rm -r ./data/Cumulative\ Deaths/Imperial-Ensemble1
 rm -r ./data/Incident\ Deaths/Imperial-Ensemble1
+
+rm -r ./data/Cumulative\ Deaths/CovidActNow-SEIR_CAN
+rm -r ./data/Incident\ Deaths/CovidActNow-SEIR_CAN
 # rm -r ./data/Incident\ Deaths/Imperial-Ensemble2
 
+rm -r ./data/Cumulative\ Deaths/CU-high
+rm -r ./data/Incident\ Deaths/CU-high
+
+rm -r ./data/Cumulative\ Deaths/CU-low
+rm -r ./data/Incident\ Deaths/CU-low
+
+rm -r ./data/Cumulative\ Deaths/CU-mid
+rm -r ./data/Incident\ Deaths/CU-mid
+
 # Remove Ensemble Incident
-rm -r ./data/Incident\ Deaths/COVIDhub-ensemble
+# rm -r ./data/Incident\ Deaths/COVIDhub-ensemble
 
 # # Remove MOBS_NEU-GLEAM_COVID Incident
 # rm -r ./data/Incident\ Deaths/MOBS-GLEAM_COVID
@@ -78,6 +89,10 @@ rm -r ./data/Incident\ Deaths/COVIDhub-ensemble
 # Remove UMass-ExpertCrowd
 rm -r ./data/Incident\ Deaths/UMass-ExpertCrowd
 rm -r ./data/Cumulative\ Deaths/UMass-ExpertCrowd
+
+#Remove CU-nochange
+rm -r ./data/Incident\ Deaths/CU-nochange
+rm -r ./data/Cumulative\ Deaths/CU-nochange
 
 # Parse through forecasts and update format
 python3 ./scripts/convert-forecasts.py
@@ -92,8 +107,6 @@ rm -rf ./vis-master/data
 mv ./data ./vis-master
 
 cd ./vis-master
-npm install
-yarn
-yarn run parse # Parse visualization data to json
+npm run parse-viz-master # Parse visualization data to json
 #yarn run test
 cd .. # in flusight-deploy now
