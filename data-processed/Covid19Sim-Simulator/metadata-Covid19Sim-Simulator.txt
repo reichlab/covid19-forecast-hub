@@ -14,7 +14,7 @@ Model_targets: day ahead cum death, day ahead inc death, wk ahead cumulative dea
 Target_loc: US, all states, District of Columbia, Puerto Rico
 time_horizon: 2020-03-15 to 2020-08-31 
 Data_format: all requested quantiles
-forecast_startdate: 2020-05-31
+forecast_startdate: 2020-06-14
 forecast_frequency: weekly
 
 data_inputs_known: JHU CSSE, covidtracking.com
