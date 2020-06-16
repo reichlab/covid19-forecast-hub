@@ -23,7 +23,8 @@ this_model_is_an_ensemble: false
 this_model_is_unconditional: false
 
 methods: >-
-A robust survival-convolution model with piece-wise transmission rates that incorporate latent incubation period provide  time-varying effective reproduction number.
+A robust survival-convolution model with piece-wise transmission rates that incorporate latent incubation period 
+provide time-varying effective reproduction number.
  
 methods_long: >-
 We aim to predict COVID-19 daily new cases using a robust and parsimonious survival-convolution model and 
