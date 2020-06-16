@@ -25,7 +25,19 @@ this_model_is_an_ensemble: false
 this_model_is_unconditional: false
 
 methods: >-
-    A robust survival-convolution model with few parameters that incorporates the date of unknown patient zero, latent incubation periods, and time-varying reproduction numbers.
+    A robust survival-convolution model with few parameters that incorporates the date of unknown patient zero, 
+    latent incubation periods, and time-varying reproduction numbers.
 
 methods_long: >-
-    Countries around the globe have implemented unprecedented measures to mitigate the coronavirus disease 2019 (COVID-19) pandemic. We aim to predict COVID-19 disease course and compare effectiveness of mitigation measures across countries to inform policy decision making using a robust and parsimonious survival-convolution model. We account for transmission during a pre-symptomatic incubation period and use a time-varying effective reproduction number (Rt) to reflect the temporal trend of transmission and change in response to a public health intervention. We estimate the intervention effect on reducing the transmission rate using a natural experiment design and quantify uncertainty by permutation. In China and South Korea, we pre- dicted the entire disease epidemic using only early phase data (two to three weeks after the outbreak). A fast rate of decline in Rt was observed and adopting mitiga- tion strategies early in the epidemic was effective in reducing the transmission rate in these two countries. The nationwide lockdown in Italy did not accelerate the speed at which the transmission rate decreases. In the United States, Rt significantly decreased during a 2-week period after the declaration of national emergency, but declines at a much slower rate afterwards. If the trend continues after May 1, COVID-19 may be controlled by late July. However, a loss of temporal effect (e.g., due to relaxing mitigation measures after May 1) could lead to a long delay in controlling the epidemic (mid November with less than 100 daily cases) and a total of more than 2 million cases.  
+    Countries around the globe have implemented unprecedented measures to mitigate 
+    the coronavirus disease 2019 (COVID-19) pandemic. We aim to predict COVID-19 disease course 
+    and compare effectiveness of mitigation measures across countries to inform policy decision making 
+    using a robust and parsimonious survival-convolution model. We account for transmission during a pre-symptomatic
+    incubation period and use a time-varying effective reproduction number (Rt) to reflect the temporal trend 
+    of transmission and change in response to a public health intervention. We estimate the intervention effect 
+    on reducing the transmission rate using a natural experiment design and quantify uncertainty by permutation. 
+    In the United States, Rt significantly decreased during a 2-week period after the declaration of national emergency, 
+    but declines at a much slower rate afterwards. If the trend continues after May 1, COVID-19 may be controlled by 
+    late July. However, a loss of temporal effect (e.g., due to relaxing mitigation measures after May 1) could lead 
+    to a long delay in controlling the epidemic (mid November with less than 100 daily cases) and a total of more 
+    than 2 million cases.  
