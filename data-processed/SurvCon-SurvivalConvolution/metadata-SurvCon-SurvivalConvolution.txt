@@ -9,6 +9,7 @@ model_name: Survival-Convolution Models
 model_repo: https://github.com/COVID19BIOSTAT/covid19_prediction
 
 model_contributors: Qinxia Wang, Shanghong Xie, Yuanjia Wang (yw2016@cumc.columbia.edu), and Donglin Zeng (dzeng@email.unc.edu)
+
 Model_targets: daily new confirmed case, daily new infected, cumulative deaths
 Target_loc: US
 time_horizon: Four weeks ahead
