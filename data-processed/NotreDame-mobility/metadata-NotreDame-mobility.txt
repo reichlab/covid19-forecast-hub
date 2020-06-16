@@ -10,7 +10,7 @@ model_output: cumulative deaths and incident deaths. The model also produces inf
 model_repo: https://github.com/TAlexPerkins/covid19_NDmobility_forecasting
 
 model_contributors: guido espana <guido.espana@nd.edu>, rachel oidtman, sean cavany, alan costello, anneliese wieler, anita lerch, carly barbera, marya poterek, quan tran, sean moore, alex perkins <taperkins@nd.edu>   
-Model_targets: daily inc deaths, daily cum deaths, weekly inc deaths, weekly cum deaths
+Model_targets: daily inc deaths, daily cum deaths
 Target_loc: all states and national
 time_horizon: 6 weeks
 Data_format: all requested quantiles
