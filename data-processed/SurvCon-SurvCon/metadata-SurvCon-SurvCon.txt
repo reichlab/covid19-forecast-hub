@@ -37,9 +37,8 @@ experiment design and quantify uncertainty by permutation. We use a regression m
 deaths from predicted time-lagged cumulative total number of cases. 
  
     
-Citation: Survival-Convolution Models for Predicting COVID-19 Cases and Assessing Effects of Mitigation Strategies
-Qinxia Wang, Shanghong Xie, Yuanjia Wang, Donglin Zeng
-https://github.com/COVID19BIOSTAT/covid19_prediction/blob/master/manuscript/COVID_Final.pdf
+Citation: Citation: Wang Q, Xie S, Wang Y, Zeng D (2020). Survival-Convolution Models for Predicting COVID-19 Cases and Assessing Effects of Mitigation Strategies. Frontiers in Public Health. In press.
+ 
+Manuscript available at: https://github.com/COVID19BIOSTAT/covid19_prediction/blob/master/manuscript/COVID_Final.pdf
+Real time prediction:
 https://github.com/COVID19BIOSTAT/covid19_prediction
-
-In press in Frontiers in Public Health
