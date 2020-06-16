@@ -29,8 +29,8 @@ methods: >-
     latent incubation periods, and time-varying reproduction numbers.
 
 methods_long: >-
-    Countries around the globe have implemented unprecedented measures to mitigate 
-    the coronavirus disease 2019 (COVID-19) pandemic. We aim to predict COVID-19 disease course 
+    Countries around the globe have implemented unprecedented measures to mitigate the 
+    coronavirus disease 2019 (COVID-19) pandemic. We aim to predict COVID-19 disease course 
     and compare effectiveness of mitigation measures across countries to inform policy decision making 
     using a robust and parsimonious survival-convolution model. We account for transmission during a pre-symptomatic
     incubation period and use a time-varying effective reproduction number (Rt) to reflect the temporal trend 
