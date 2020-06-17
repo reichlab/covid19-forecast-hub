@@ -2,24 +2,20 @@
 
 This page is intended to provide teams with all the information they need to
 submit forecasts.
-All forecasts should be submitted directly to the [data-processed/](./) folder.
+All forecasts should be submitted directly to the [data-processed/](../data-processed/) folder.
 Data in this directory should be added to the repository through a pull request
 so that automatic data validation checks are run.
 
-These instructions provide detail about the 
-[data format](#Data-formatting) as well as 
-[validation](#Data-validation)
-that you can do prior to this pull request. 
-In addition, we describe 
-[meta-data](#Meta-data) that each model should provide.
+These instructions provide detail about the [data format](#data-formatting) as well as [validation](#forecast-validation) that you can do prior to this pull request. 
+In addition, we describe [metadata](#metadata) that each model should provide.
 
 
 *Table of Contents*
 
 - [ground truth data](#ground-truth-data)
-- [data formatting](#Data-formatting)
-- [data validation](#Data-validation)
-- [metadata format](#Meta-data)
+- [data formatting](#data-formatting)
+- [data validation](#forecast-validation)
+- [metadata format](#metadata)
 
 
 ## Ground truth data
@@ -214,11 +210,11 @@ Values in the `location` column must be
 
 - "US" or
 - a two-digit number representing the US state, territory, or district 
-[fips numeric code](./data-locations/locations.csv). 
+[fips numeric code](../data-locations/locations.csv). 
 
 This location identifies the geographical location for the forecast.
 
-A file with FIPS codes for states in the US is available through the `fips_code` dataset in the `tigris` R package, and saved as a [public CSV file](./data-locations/locations.csv). Please note that when reading in FIPS codes, they should be read in as characters to preserve any leading zeroes.
+A file with FIPS codes for states in the US is available through the `fips_code` dataset in the `tigris` R package, and saved as a [public CSV file](../data-locations/locations.csv). Please note that when reading in FIPS codes, they should be read in as characters to preserve any leading zeroes.
 
 
 ### `type`
