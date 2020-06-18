@@ -3,10 +3,9 @@ team_abbr: Imperial
 model_name: Ensemble2
 model_abbr: Ensemble2
 model_contributors: Sangeeta Bhatia <s.bhatia@imperial.ac.uk>
-
-
-this_model_is_an_ensemble: true
-this_model_is_unconditional: true
+website_url:
+license: cc-by-4.0
+team_model_designation: primary
 
 methods: >-
     This model makes predictions about the future, unconditional on particular intervention strategies.
