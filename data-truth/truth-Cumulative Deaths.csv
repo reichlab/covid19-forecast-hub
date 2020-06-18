@@ -7756,7 +7756,7 @@ date,location,location_name,value
 2020-06-06,60,American Samoa,0
 2020-06-06,04,Arizona,1043
 2020-06-06,05,Arkansas,154
-2020-06-06,06,California,4606
+2020-06-06,06,California,4607
 2020-06-06,08,Colorado,1527
 2020-06-06,09,Connecticut,4055
 2020-06-06,10,Delaware,390
@@ -7807,7 +7807,7 @@ date,location,location_name,value
 2020-06-06,54,West Virginia,84
 2020-06-06,55,Wisconsin,645
 2020-06-06,56,Wyoming,17
-2020-06-06,US,US,110123
+2020-06-06,US,US,110124
 2020-06-07,01,Alabama,692
 2020-06-07,02,Alaska,10
 2020-06-07,60,American Samoa,0
@@ -8247,7 +8247,7 @@ date,location,location_name,value
 2020-06-14,69,Northern Mariana Islands,2
 2020-06-14,39,Ohio,2559
 2020-06-14,40,Oklahoma,359
-2020-06-14,41,Oregon,173
+2020-06-14,41,Oregon,176
 2020-06-14,42,Pennsylvania,6215
 2020-06-14,72,Puerto Rico,147
 2020-06-14,44,Rhode Island,833
@@ -8263,4 +8263,175 @@ date,location,location_name,value
 2020-06-14,54,West Virginia,88
 2020-06-14,55,Wisconsin,692
 2020-06-14,56,Wyoming,18
-2020-06-14,US,US,115732
+2020-06-14,US,US,115735
+2020-06-15,01,Alabama,774
+2020-06-15,02,Alaska,12
+2020-06-15,60,American Samoa,0
+2020-06-15,04,Arizona,1203
+2020-06-15,05,Arkansas,182
+2020-06-15,06,California,5114
+2020-06-15,08,Colorado,1605
+2020-06-15,09,Connecticut,4204
+2020-06-15,10,Delaware,423
+2020-06-15,11,District of Columbia,515
+2020-06-15,12,Florida,2938
+2020-06-15,13,Georgia,2494
+2020-06-15,66,Guam,5
+2020-06-15,15,Hawaii,17
+2020-06-15,16,Idaho,87
+2020-06-15,17,Illinois,6326
+2020-06-15,18,Indiana,2433
+2020-06-15,19,Iowa,658
+2020-06-15,20,Kansas,246
+2020-06-15,21,Kentucky,505
+2020-06-15,22,Louisiana,3018
+2020-06-15,23,Maine,101
+2020-06-15,24,Maryland,2947
+2020-06-15,25,Massachusetts,7647
+2020-06-15,26,Michigan,6018
+2020-06-15,27,Minnesota,1335
+2020-06-15,28,Mississippi,895
+2020-06-15,29,Missouri,887
+2020-06-15,30,Montana,19
+2020-06-15,31,Nebraska,220
+2020-06-15,32,Nevada,465
+2020-06-15,33,New Hampshire,320
+2020-06-15,34,New Jersey,12708
+2020-06-15,35,New Mexico,440
+2020-06-15,36,New York,30856
+2020-06-15,37,North Carolina,1140
+2020-06-15,38,North Dakota,74
+2020-06-15,69,Northern Mariana Islands,2
+2020-06-15,39,Ohio,2575
+2020-06-15,40,Oklahoma,359
+2020-06-15,41,Oregon,180
+2020-06-15,42,Pennsylvania,6243
+2020-06-15,72,Puerto Rico,147
+2020-06-15,44,Rhode Island,851
+2020-06-15,45,South Carolina,602
+2020-06-15,46,South Dakota,75
+2020-06-15,47,Tennessee,482
+2020-06-15,48,Texas,2001
+2020-06-15,49,Utah,143
+2020-06-15,50,Vermont,55
+2020-06-15,78,Virgin Islands,6
+2020-06-15,51,Virginia,1552
+2020-06-15,53,Washington,1220
+2020-06-15,54,West Virginia,88
+2020-06-15,55,Wisconsin,694
+2020-06-15,56,Wyoming,18
+2020-06-15,US,US,116127
+2020-06-16,01,Alabama,785
+2020-06-16,02,Alaska,12
+2020-06-16,60,American Samoa,0
+2020-06-16,04,Arizona,1228
+2020-06-16,05,Arkansas,188
+2020-06-16,06,California,5200
+2020-06-16,08,Colorado,1617
+2020-06-16,09,Connecticut,4210
+2020-06-16,10,Delaware,424
+2020-06-16,11,District of Columbia,520
+2020-06-16,12,Florida,2993
+2020-06-16,13,Georgia,2529
+2020-06-16,66,Guam,5
+2020-06-16,15,Hawaii,17
+2020-06-16,16,Idaho,88
+2020-06-16,17,Illinois,6398
+2020-06-16,18,Indiana,2447
+2020-06-16,19,Iowa,665
+2020-06-16,20,Kansas,246
+2020-06-16,21,Kentucky,505
+2020-06-16,22,Louisiana,3042
+2020-06-16,23,Maine,101
+2020-06-16,24,Maryland,2982
+2020-06-16,25,Massachusetts,7664
+2020-06-16,26,Michigan,6034
+2020-06-16,27,Minnesota,1344
+2020-06-16,28,Mississippi,915
+2020-06-16,29,Missouri,891
+2020-06-16,30,Montana,19
+2020-06-16,31,Nebraska,231
+2020-06-16,32,Nevada,467
+2020-06-16,33,New Hampshire,326
+2020-06-16,34,New Jersey,12792
+2020-06-16,35,New Mexico,447
+2020-06-16,36,New York,30909
+2020-06-16,37,North Carolina,1169
+2020-06-16,38,North Dakota,74
+2020-06-16,69,Northern Mariana Islands,2
+2020-06-16,39,Ohio,2599
+2020-06-16,40,Oklahoma,363
+2020-06-16,41,Oregon,182
+2020-06-16,42,Pennsylvania,6276
+2020-06-16,72,Puerto Rico,147
+2020-06-16,44,Rhode Island,865
+2020-06-16,45,South Carolina,607
+2020-06-16,46,South Dakota,77
+2020-06-16,47,Tennessee,493
+2020-06-16,48,Texas,2049
+2020-06-16,49,Utah,145
+2020-06-16,50,Vermont,55
+2020-06-16,78,Virgin Islands,6
+2020-06-16,51,Virginia,1570
+2020-06-16,53,Washington,1231
+2020-06-16,54,West Virginia,88
+2020-06-16,55,Wisconsin,703
+2020-06-16,56,Wyoming,18
+2020-06-16,US,US,116963
+2020-06-17,01,Alabama,790
+2020-06-17,02,Alaska,12
+2020-06-17,60,American Samoa,0
+2020-06-17,04,Arizona,1249
+2020-06-17,05,Arkansas,197
+2020-06-17,06,California,5271
+2020-06-17,08,Colorado,1631
+2020-06-17,09,Connecticut,4219
+2020-06-17,10,Delaware,426
+2020-06-17,11,District of Columbia,523
+2020-06-17,12,Florida,3018
+2020-06-17,13,Georgia,2575
+2020-06-17,66,Guam,5
+2020-06-17,15,Hawaii,17
+2020-06-17,16,Idaho,88
+2020-06-17,17,Illinois,6485
+2020-06-17,18,Indiana,2475
+2020-06-17,19,Iowa,675
+2020-06-17,20,Kansas,247
+2020-06-17,21,Kentucky,518
+2020-06-17,22,Louisiana,3062
+2020-06-17,23,Maine,102
+2020-06-17,24,Maryland,2996
+2020-06-17,25,Massachusetts,7733
+2020-06-17,26,Michigan,6036
+2020-06-17,27,Minnesota,1357
+2020-06-17,28,Mississippi,938
+2020-06-17,29,Missouri,909
+2020-06-17,30,Montana,20
+2020-06-17,31,Nebraska,234
+2020-06-17,32,Nevada,473
+2020-06-17,33,New Hampshire,330
+2020-06-17,34,New Jersey,12835
+2020-06-17,35,New Mexico,452
+2020-06-17,36,New York,30939
+2020-06-17,37,North Carolina,1181
+2020-06-17,38,North Dakota,74
+2020-06-17,69,Northern Mariana Islands,2
+2020-06-17,39,Ohio,2611
+2020-06-17,40,Oklahoma,364
+2020-06-17,41,Oregon,183
+2020-06-17,42,Pennsylvania,6319
+2020-06-17,72,Puerto Rico,147
+2020-06-17,44,Rhode Island,876
+2020-06-17,45,South Carolina,617
+2020-06-17,46,South Dakota,78
+2020-06-17,47,Tennessee,498
+2020-06-17,48,Texas,2089
+2020-06-17,49,Utah,149
+2020-06-17,50,Vermont,55
+2020-06-17,78,Virgin Islands,6
+2020-06-17,51,Virginia,1583
+2020-06-17,53,Washington,1226
+2020-06-17,54,West Virginia,88
+2020-06-17,55,Wisconsin,713
+2020-06-17,56,Wyoming,18
+2020-06-17,US,US,117717

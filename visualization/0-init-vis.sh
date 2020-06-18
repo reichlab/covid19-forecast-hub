@@ -71,6 +71,15 @@ rm -r ./data/Cumulative\ Deaths/CovidActNow-SEIR_CAN
 rm -r ./data/Incident\ Deaths/CovidActNow-SEIR_CAN
 # rm -r ./data/Incident\ Deaths/Imperial-Ensemble2
 
+rm -r ./data/Cumulative\ Deaths/CU-high
+rm -r ./data/Incident\ Deaths/CU-high
+
+rm -r ./data/Cumulative\ Deaths/CU-low
+rm -r ./data/Incident\ Deaths/CU-low
+
+rm -r ./data/Cumulative\ Deaths/CU-mid
+rm -r ./data/Incident\ Deaths/CU-mid
+
 # Remove Ensemble Incident
 # rm -r ./data/Incident\ Deaths/COVIDhub-ensemble
 
