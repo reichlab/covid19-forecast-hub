@@ -1,6 +1,6 @@
 team_name: SurvCon
 team_abbr: SurvCon
-contact_person: Yuanjia Wang(yw2016@cumc.columbia.edu)and Donglin Zeng(dzeng@email.unc.edu)
+contact_person: Qinxia Wang(qw2223@cumc.columbia.edu), Shanghong Xie(sx2168@cumc.columbia.edu), Yuanjia Wang(yw2016@cumc.columbia.edu)and Donglin Zeng(dzeng@email.unc.edu)
 
 institution_affil: Department of Biostatistics, Mailman School of Public Health, Columbia University;Department of Biostatistics, Gillings School of Public Health, University of North Carolina at Chapal Hill
 
@@ -8,7 +8,7 @@ model_name: Survival-Convolution Models
 model_abbr: SurvCon
 model_repo: https://github.com/COVID19BIOSTAT/covid19_prediction
 
-model_contributors: Qinxia Wang (qw2223@cumc.columbia.edu), Shanghong Xie (sx2168@cumc.columbia.edu), Yuanjia Wang (yw2016@cumc.columbia.edu),and Donglin Zeng (dzeng@email.unc.edu)
+model_contributors: Qinxia Wang, Shanghong Xie, Yuanjia Wang,and Donglin Zeng
 model_targets: daily new confirmed case, daily new infected, cumulative deaths
 Target_loc: US
 time_horizon: 
