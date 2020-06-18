@@ -23,14 +23,20 @@ The name of your model that is less than 50 characters.
 An abbreviated name for your model that is less than 15 alphanumeric characters and cannot
 include a dash (-) or a whitespace.
 
-### methods
+### model_contributors
 
-A brief description of your forecasting methodology that is less than 200 
-characters.
+A list of all individuals involved in the forecasting effort. 
+At least one contributor needs to have a valid email address. 
+Any email addresses provided will be added to 
+an email distribution list for model contributors.
+
+The syntax of this field should be 
+
+    name1 <user@address>, name2 <user2@address2>
 
 ### website_url
 
-(previously named `model_url`)
+(previously named `model_output`)
 
 A url to a website that has additional data about your model. 
 We encourage teams to submit the most user-friendly version of your 
@@ -45,7 +51,7 @@ please include that link here.
 
 One of [these license keywords](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository) or "LICENSE.txt" 
 (if none of these license keywords are appropriate).
-We encourage teams to submit as a CC-BY-4.0.
+We encourage teams to submit as a cc-by-4.0.
 If the value is "LICENSE.txt", 
 then a LICENSE.txt file must exist within the folder and provide a license.
 
@@ -67,11 +73,13 @@ Models proposed as “other” will not be ranked in evaluations
 in the ensemble.
 
 
+### methods
+
+A brief description of your forecasting methodology that is less than 200 
+characters.
+
+
 ## Optional
-
-### repo_url
-
-A github (or similar) repository url. 
 
 ### institional_affil
 
@@ -81,17 +89,15 @@ University or company names, if relevant.
 
 Like an acknowledgement in a manuscript, you can acknowledge funding here.
 
+### repo_url
 
-### model_contributors
+(previously `model_repo`)
 
-A list of all individuals involved in the forecasting effort. 
-At least one contributor needs to have a valid email address. 
-Any email addresses provided will be added to 
-an email distribution list for model contributors.
+A github (or similar) repository url. 
 
-The syntax of this field should be 
+### twitter_handles
 
-    name1 <user@address>, name2 <user2@address2>
+One or more twitter handles (without the @) separated by commas.
 
 
 ### data_inputs
@@ -115,9 +121,6 @@ models
 A url (doi link preferred) to an extended description of your model,
 e.g. blog post, website, preprint, or peer-reviewed manuscript. 
 
-### twitter_handles
-
-One or more twitter handles (without the @) separated by commas.
 
 
 ### methods_long
