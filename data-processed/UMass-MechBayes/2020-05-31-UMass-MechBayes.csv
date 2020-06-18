@@ -9983,4 +9983,3 @@ quantile,value,type,location,target,forecast_date,target_end_date
 0.950,50,quantile,56,4 wk ahead cum death,2020-05-31,2020-06-27
 0.975,58,quantile,56,4 wk ahead cum death,2020-05-31,2020-06-27
 0.990,65,quantile,56,4 wk ahead cum death,2020-05-31,2020-06-27
-0.990,68,quantile,56,5 wk ahead cum death,2020-05-31,2020-07-04
