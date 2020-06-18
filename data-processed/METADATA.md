@@ -45,6 +45,7 @@ please include that link here.
 
 One of [these license keywords](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository) or "LICENSE.txt" 
 (if none of these license keywords are appropriate).
+We encourage teams to submit as a CC-BY-4.0.
 If the value is "LICENSE.txt", 
 then a LICENSE.txt file must exist within the folder and provide a license.
 
