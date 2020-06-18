@@ -1,7 +1,9 @@
 # Metadata dictionary
 
-Each model is required to have metadata in yaml format.
+Each model is required to have metadata in 
+[yaml format](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html).
 This file describes each of the variables (keys) in the yaml document.
+Please order the variables in this order.
 
 ## Required variables
 
