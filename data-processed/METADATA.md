@@ -28,7 +28,7 @@ include a dash (-) or a whitespace.
 A brief description of your forecasting methodology that is less than 200 
 characters.
 
-## model_url
+### model_url
 
 A url to a website that has additional data about your model. We encourage teams to 
 submit a url to the most user-friendly version of your model, e.g. a dashboard, 
