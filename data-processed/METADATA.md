@@ -116,7 +116,7 @@ e.g. blog post, website, preprint, or peer-reviewed manuscript.
 
 ### twitter_handles
 
-One or more twitter handles separated by commas.
+One or more twitter handles (without the @) separated by commas.
 
 
 ### methods_long
