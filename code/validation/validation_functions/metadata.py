@@ -14,7 +14,7 @@ def validate_metadata_contents(metadata, filepath):
     metadata_error_output = []
 
     # Check for Required Fields
-    required_fields = ['team_name', 'team_abbr', 'model_name', 'model_abbr', 'methods']
+    required_fields = ['team_name', 'team_abbr', 'model_name', 'model_contributors', 'model_abbr', 'website_url','license', 'team_model_designation', 'methods']
     # required_fields = ['team_name', 'team_abbr', 'model_name', 'model_abbr',\
     #                        'methods', 'team_url', 'license', 'include_in_ensemble_and_visualization']
     for field in required_fields:
@@ -80,7 +80,7 @@ def validate_metadata_contents(metadata, filepath):
             is_metadata_error = True
             metadata_error_output += [
                 "METADATA ERROR: %s 'license' field must be in `./code/validations/accepted-licenses.csv` 'license' column '%s'" %
-                (filepath, metadata[field])]
+                (filepath, metadata['license'])]
     return is_metadata_error, metadata_error_output
 
 
