@@ -5,7 +5,7 @@ model_abbr: Ensemble1
 model_contributors: Sangeeta Bhatia <s.bhatia@imperial.ac.uk>
 website_url:
 license: cc-by-4.0
-team_model_designation: primary
+team_model_designation: other
 
 methods: >-
     This model makes predictions about the future, unconditional on particular intervention strategies.
