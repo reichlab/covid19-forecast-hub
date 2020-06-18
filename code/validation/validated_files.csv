@@ -57,11 +57,6 @@ file_path,validation_date
 ./data-processed/YYG-ParamSearch/2020-05-04-YYG-ParamSearch.csv,2020-05-27 20:52:36.240268
 ./data-processed/YYG-ParamSearch/2020-04-13-YYG-ParamSearch.csv,2020-05-27 20:52:37.302703
 ./data-processed/ISUandPKU-vSEIdR/2020-05-25-ISUandPKU-vSEIdR.csv,2020-05-27 20:52:41.936454
-./data-processed/CU-nointerv/2020-04-19-CU-nointerv.csv,2020-05-27 20:52:44.880218
-./data-processed/CU-nointerv/2020-04-26-CU-nointerv.csv,2020-05-27 20:52:47.914948
-./data-processed/CU-nointerv/2020-04-23-CU-nointerv.csv,2020-05-27 20:52:50.826740
-./data-processed/CU-nointerv/2020-04-12-CU-nointerv.csv,2020-05-27 20:52:53.841120
-./data-processed/CU-nointerv/2020-04-16-CU-nointerv.csv,2020-05-27 20:52:56.733654
 ./data-processed/LANL-GrowthRate/2020-04-06-LANL-GrowthRate.csv,2020-05-27 20:52:57.206714
 ./data-processed/LANL-GrowthRate/2020-05-11-LANL-GrowthRate.csv,2020-05-27 20:53:02.686470
 ./data-processed/LANL-GrowthRate/2020-05-24-LANL-GrowthRate.csv,2020-05-27 20:53:08.282397
@@ -322,7 +317,6 @@ file_path,validation_date
 ./data-processed/STH-3PU/2020-06-08-STH-3PU.csv,2020-06-08 16:54:09.562637
 ./data-processed/Geneva-DeterministicGrowth/2020-06-07-Geneva-DeterministicGrowth.csv,2020-06-08 16:54:09.613811
 ./data-processed/UT-Mobility/2020-06-08-UT-Mobility.csv,2020-06-08 16:54:11.964418
-./data-processed/CU-80contactw5p/2020-06-04-CU-80contactw5p.csv,2020-06-08 16:54:15.164053
 ./data-processed/UCLA-SuEIR/2020-06-07-UCLA-SuEIR.csv,2020-06-08 16:54:19.233381
 ./data-processed/JHU_IDD-CovidSP/2020-06-07-JHU_IDD-CovidSP.csv,2020-06-08 19:39:06.244467
 ./data-processed/UA-EpiCovDA/2020-06-07-UA-EpiCovDA.csv,2020-06-08 19:39:07.519369
@@ -337,7 +331,6 @@ file_path,validation_date
 ./data-processed/MOBS_NEU-GLEAM_COVID/2020-06-08-MOBS_NEU-GLEAM_COVID.csv,2020-06-08 22:44:00.888279
 ./data-processed/CovidActNow-SEIR_CAN/2020-06-07-CovidActNow-SEIR_CAN.csv,2020-06-08 22:44:04.263586
 ./data-processed/MIT_CovidAnalytics-DELPHI/2020-06-08-MIT_CovidAnalytics-DELPHI.csv,2020-06-08 22:44:05.920195
-./data-processed/CU-80contactw5p/2020-06-07-CU-80contactw5p.csv,2020-06-08 22:44:09.285508
 ./data-processed/Imperial-ensemble1/2020-06-07-Imperial-ensemble1.csv,2020-06-08 22:44:09.322173
 ./data-processed/Imperial-ensemble2/2020-06-07-Imperial-ensemble2.csv,2020-06-08 22:44:09.342460
 ./data-processed/NotreDame-FRED/2020-06-08-NotreDame-FRED.csv,2020-06-08 22:44:09.804864
@@ -359,7 +352,6 @@ file_path,validation_date
 ./data-processed/LANL-GrowthRate/2020-06-11-LANL-GrowthRate.csv,2020-06-12 00:08:47.034029
 ./data-processed/CU-nochange/2020-06-11-CU-nochange.csv,2020-06-12 05:40:13.198174
 ./data-processed/CU-select/2020-06-11-CU-select.csv,2020-06-12 05:40:16.483767
-./data-processed/CU-80contactw5p/2020-06-11-CU-80contactw5p.csv,2020-06-12 05:40:19.838640
 ./data-processed/STH-3PU/2020-06-12-STH-3PU.csv,2020-06-12 13:07:48.473906
 ./data-processed/STH-3PU/2020-06-13-STH-3PU.csv,2020-06-13 13:59:35.854138
 ./data-processed/OliverWyman-Navigator/2020-06-07-OliverWyman-Navigator.csv,2020-06-13 22:17:51.263659
@@ -452,3 +444,17 @@ file_path,validation_date
 ./data-processed/CU-scenario_mid/2020-06-04-CU-scenario_mid.csv,2020-06-18 19:14:15.972462
 ./data-processed/CU-scenario_mid/2020-04-23-CU-scenario_mid.csv,2020-06-18 19:14:18.918675
 ./data-processed/CU-scenario_mid/2020-05-28-CU-scenario_mid.csv,2020-06-18 19:14:22.051296
+./data-processed/CU-scenario_low/2020-06-07-CU-scenario_low.csv,2020-06-18 20:42:20.984007
+./data-processed/CU-scenario_low/2020-06-04-CU-scenario_low.csv,2020-06-18 20:42:24.197401
+./data-processed/CU-scenario_low/2020-06-11-CU-scenario_low.csv,2020-06-18 20:42:27.415563
+./data-processed/CU-nochange/2020-04-12-CU-nochange.csv,2020-06-18 20:42:30.551486
+./data-processed/CU-nochange/2020-04-19-CU-nochange.csv,2020-06-18 20:42:33.585608
+./data-processed/CU-nochange/2020-04-23-CU-nochange.csv,2020-06-18 20:42:36.591301
+./data-processed/CU-nochange/2020-04-26-CU-nochange.csv,2020-06-18 20:42:39.644372
+./data-processed/CU-nochange/2020-04-16-CU-nochange.csv,2020-06-18 20:42:42.701848
+./data-processed/CU-select/2020-04-23-CU-select.csv,2020-06-18 20:42:45.747489
+./data-processed/CU-select/2020-04-16-CU-select.csv,2020-06-18 20:42:48.733701
+./data-processed/CU-select/2020-04-12-CU-select.csv,2020-06-18 20:42:51.773400
+./data-processed/CU-select/2020-04-26-CU-select.csv,2020-06-18 20:42:54.815271
+./data-processed/CU-select/2020-05-07-CU-select.csv,2020-06-18 20:42:57.811587
+./data-processed/CU-select/2020-04-19-CU-select.csv,2020-06-18 20:43:00.842812
