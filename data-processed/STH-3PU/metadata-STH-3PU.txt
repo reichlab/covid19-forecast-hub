@@ -2,8 +2,10 @@ team_name: STH
 team_abbr: STH
 model_name: 3 Phase Unadjusted
 model_abbr: 3PU
-model_contributors: Steve Horstman <covid19_model@nym.hush.com> 
+model_contributors: >-
+    Steve Horstman <covid19_model@nym.hush.com> 
 website_url: https://public.tableau.com/profile/covid19model#!/vizhome/COVID-19DeathProjections/USDeaths
+license: apache-2.0
 team_model_designation: primary
 
 methods: >-
