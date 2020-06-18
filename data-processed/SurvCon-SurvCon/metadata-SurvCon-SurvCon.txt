@@ -8,10 +8,8 @@ model_name: Survival-Convolution Models
 model_abbr: SurvCon
 model_repo: https://github.com/COVID19BIOSTAT/covid19_prediction
 
-model_contributors: Qinxia Wang (qw2223@cumc.columbia.edu), Shanghong Xie (sx2168@cumc.columbia.edu), Yuanjia Wang (yw2016@cumc.columbia.edu),
-and Donglin Zeng (dzeng@email.unc.edu)
-
-Model_targets: daily new confirmed case, daily new infected, cumulative deaths
+model_contributors: Qinxia Wang (qw2223@cumc.columbia.edu), Shanghong Xie (sx2168@cumc.columbia.edu), Yuanjia Wang (yw2016@cumc.columbia.edu),and Donglin Zeng (dzeng@email.unc.edu)
+model_targets: daily new confirmed case, daily new infected, cumulative deaths
 Target_loc: US
 time_horizon: 
 Data_format: all requested quantiles
