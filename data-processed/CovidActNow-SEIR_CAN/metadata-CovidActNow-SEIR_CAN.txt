@@ -7,8 +7,8 @@ website_url: 'https://covidactnow.org/'
 license: cc-by-4.0
 team_model_designation: primary
 methods: >-
-    Forecast by model built by PhDs in epidemiology and physics, based on expert opinions in public health and
-    epidemiology of infectious disease, and updated based on daily feed data in cases, deaths, and hostpitalizations.
+    SEIR model forecasts of cumulative deaths, incident deaths, incident hospitalizations 
+    by fitting predicted cases, deaths, and hospitalizations to the observations.
 
 repo_url: 'https://github.com/covid-projections/covid-data-model'
 data_inputs: NYTimes for case and death data
