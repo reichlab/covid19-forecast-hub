@@ -1,9 +1,11 @@
 name: metadata file schema
+example: Please check https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/METADATA.md
 desc: This is the schema of the metadata file, please refer to https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/METADATA.md for more info.
 type: map
 mapping:
     'team_name':
         required: True
+        example: Team name is a MUST
     'team_abbr':
         required: True
         range:
@@ -22,7 +24,7 @@ mapping:
     'website_url':
         required: True
         type: str
-        pattern: ^((https?):\/\/)?(www.)?[a-z0-9]+\.[a-z]+(\/[a-zA-Z0-9#]+\/?)*$
+        pattern: ((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z]){2,6}([a-zA-Z0-9\.\&\/\?\:@\-_=#])*
     'license':
         required: True
         type: str
@@ -38,12 +40,12 @@ mapping:
             max: 200
     'repo_url':
         type: str
-        pattern: ^((https?):\/\/)?(www.)?[a-z0-9]+\.[a-z]+(\/[a-zA-Z0-9#]+\/?)*$
+        pattern: ((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z]){2,6}([a-zA-Z0-9\.\&\/\?\:@\-_=#])*
     'this_model_is_an_ensemble':
-        type: str
+        type: bool
     'citation':
         type: str
-        pattern: ^((https?):\/\/)?(www.)?[a-z0-9]+\.[a-z]+(\/[a-zA-Z0-9#]+\/?)*$
+        pattern: ((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z]){2,6}([a-zA-Z0-9\.\&\/\?\:@\-_=#])*
     'institution_affil':
         type: str
     'team_funding':
@@ -54,6 +56,3 @@ mapping:
         type: str
     'methods_long':
         type: str
-        
-
-    
