@@ -5,7 +5,7 @@ model_abbr: ExpertCrowd
 model_contributors: thomas mcandrew <mcandrew@umass.edu> Nicholas G. Reich <nick@schoolph.umass.edu>
 website_url: https://github.com/tomcm39/COVID19_expert_survey
 license: LICENSE.txt
-team_model_designation: primary
+team_model_designation: other
 
 methods: >-
     A consensus forecast from experts in the modeling of infectious disease, public health, and epidemiology. 
