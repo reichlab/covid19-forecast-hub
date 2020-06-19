@@ -3,7 +3,7 @@ team_abbr: Auquan
 model_name: MLOptimizedModifiedSEIR
 model_abbr: SEIR
 model_contributors: Vishal Tomar <vishal@auquan.com>, Chandini Jain <chandini@auquan.com> 
-website_url: https://covid19-infection-model.auquan.com/
+website_url: 'https://covid19-infection-model.auquan.com/'
 license: cc-by-4.0
 team-model-designation: primary
 

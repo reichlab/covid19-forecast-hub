@@ -3,7 +3,7 @@ team_abbr: CDDEP
 model_name: GlobalAgentBasedModel
 model_abbr: ABM
 model_contributors: Eili Klein <klein@cddep.org> 
-website_url: https://cddep.org/
+website_url: 'https://cddep.org/'
 license: cc-by-4.0
 team_model_designation: primary
 methods: >-
