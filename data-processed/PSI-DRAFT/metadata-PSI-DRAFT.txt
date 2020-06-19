@@ -6,7 +6,7 @@ model_contributors: >-
     Jamie Turtle <jturtle@predsci.com>, Michal Ben-Nun <mbennun@predsci.com>, Pete Riley <pete@predsci.com>
 team_model_designation: primary
 license: mit
-
+website_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/PSI-DRAFT
 methods: >-
     A stochastic/deterministic, single-population SEIRX model that stratifies by both age distribution and disease severity and includes generic intervention fitting. 
 
