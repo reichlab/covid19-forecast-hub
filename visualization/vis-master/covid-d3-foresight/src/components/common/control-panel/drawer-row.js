@@ -52,6 +52,16 @@ export default class DrawerRow extends Component {
     this.selection.classed('na', state)
   }
 
+
+  /**
+   * This function is caled everytime the target is changed (from Incident to Cumulative or vice-versa)
+   * @param {string} text  - the text to update the header of the control panel
+   */
+  setText(text) {
+    this.selection.select('.row-title').text(text)
+  }
+
+  
   addLink (url, tooltip) {
     let urlAnchor = this.selection.append('a')
         .attr('href', url)

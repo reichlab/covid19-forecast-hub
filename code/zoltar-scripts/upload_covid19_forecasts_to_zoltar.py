@@ -53,7 +53,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
     if model_name not in model_names:
         model_config = {}
         model_config['name'], model_config['abbreviation'], model_config['team_name'], model_config['description'], model_config['home_url'], model_config['aux_data_url'] \
-            = metadata['model_name'], metadata['team_abbr']+'-'+metadata['model_abbr'], metadata['team_name'], metadata['methods'], url + dir_name, 'NA'
+            = metadata['model_name'], metadata['team_abbr']+'-'+metadata['model_abbr'], metadata['team_name'], metadata['methods'], metadata['model_repo'] if metadata.get('model_repo')!= None else url + dir_name, 'NA'
         try:
             project_obj.create_model(model_config)
             models = project_obj.models
@@ -95,8 +95,6 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
 
             # Get timezero and create timezero on zoltar if not existed
             time_zero_date = forecast.split(dir_name)[0][:-1]
-            # if time_zero_date != "2020-05-25":
-            #     continue
             if time_zero_date not in project_timezeros:
                 try:
                     project_obj.create_timezero(time_zero_date)
@@ -141,8 +139,6 @@ if __name__ == '__main__':
     list_of_model_directories = os.listdir('./data-processed/')
     output_errors = {}
     for directory in list_of_model_directories:
-        # if "MOBS_NEU-GLEAM_COVID" not in directory:
-        #     continue
         if "." in directory:
             continue
         output = upload_covid_all_forecasts('./data-processed/'+directory+'/',directory)

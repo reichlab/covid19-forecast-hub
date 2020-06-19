@@ -32,7 +32,7 @@ if [[ "$TRAVIS_BRANCH" != "master" ]]; then
 fi
 
 # Update the truth data
-if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* ]]; then
+if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* || "$TRAVIS_COMMIT_MESSAGE" == *"FORCE_ZOLTAR"* ]]; then
     echo "updating truth data..."
     bash ./travis/update-truth.sh
     echo "Push the truth"
@@ -76,7 +76,7 @@ fi
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test zoltar upload"* ]]; then
     echo "Upload forecasts to Zoltar"
     bash ./travis/upload-to-zoltar.sh
-    echo "Push the validated file db to Zoltar"
+    echo "Push validated file db to Zoltar"
     bash ./travis/push.sh
 fi
 
@@ -85,7 +85,7 @@ if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test truth zoltar"* ]]; then
     python3 ./code/zoltar-scripts/upload_truth_to_zoltar.py
 fi
 
-if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test zoltar validated db"* ]]; then
+if [[ "$TRAVIS_COMMIT_MESSAGE" == *"create zoltar validated db"* ]]; then
     echo "Create new validated zoltar forecast list"
     bash ./travis/create-validated-file-db.sh
     echo "Push the validated file db to Zoltar"
