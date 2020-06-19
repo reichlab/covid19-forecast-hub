@@ -1,7 +1,7 @@
 team_name: University of Geneva / Swiss Data Science Center
 team_abbr: Geneva
 model_name: DeterministicGrowth
-model_abbr: DeterministicGrowth
+model_abbr: DetGrowth
 model_contributors: Antoine Flahault, Elisa Manetti, Thomas Simonson, Christine Choirat
 
 website_url: https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/
