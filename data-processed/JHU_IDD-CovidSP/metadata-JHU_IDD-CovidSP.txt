@@ -31,9 +31,7 @@ team_model_designation: primary
 
 methods: >-
     County-level metapopulation model with commuting and stochastic SEIR disease 
-    dynamics. Model includesindicators of shelter-in-place or social-distancing 
-    policies in place and assumes a reduced intervention effectiveness after 
-    shelter-in-place orders are lifted.
+    dynamics with social-distancing indicators.
 
 institution_affil: Johns Hopkins Bloomberg School of Public Health
 team_funding: State of California and US Government
