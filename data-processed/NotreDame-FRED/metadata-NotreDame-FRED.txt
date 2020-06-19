@@ -16,8 +16,8 @@ model_contributors: >-
     alex perkins <taperkins@nd.edu>  
     
 website_url: https://github.com/confunguido/covid19_ND_forecasting
-license:
-team_model_designation: 
+license: cc-by-4.0
+team_model_designation: secondary
 
 methods: >-
     FRED is an agent-based model developed for influenza with parameters modified to represent the natural history of COVID-19

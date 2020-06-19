@@ -15,8 +15,8 @@ model_contributors: >-
     sean moore, 
     alex perkins <taperkins@nd.edu>   
 website_url: https://github.com/TAlexPerkins/covid19_NDmobility_forecasting
-license:
-team_model_designation:
+license: cc-by-4.0
+team_model_designation: primary
 
 methods: >-
     This is an ensemble of nine models that are identical except that they are driven by different mobility indices from Apple and Google. The model underlying each is a deterministic, SEIR-like model.
