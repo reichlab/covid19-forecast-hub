@@ -5,8 +5,8 @@ team_contact: Jeffrey Shaman jls106@cumc.columbia.edu
 team_funding: Supported by US NIH grant GM110748 and US NSF RAPID grant DMS2027369
 team_experience: Won first 2 CDC FluSight Challenges, finished in top 5 in all other FluSight challenges
 
-model_name: scenario_high
-model_abbr: scenario_high
+model_name: high
+model_abbr: high
 model_output: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
 model_repo: https://github.com/shaman-lab/COVID-19Projection
 
