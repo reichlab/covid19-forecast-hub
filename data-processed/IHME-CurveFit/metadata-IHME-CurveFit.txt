@@ -16,7 +16,6 @@ methods: >-
 
 institution_affil: University of Washington
 team_funding: Bill & Melinda Gates Foundation
-model_repo: http://www.healthdata.org/covid/data-downloads
 data_inputs: JHU observed deaths, data on hospital capacity and utilization for US states
 citation: https://www.medrxiv.org/content/10.1101/2020.03.27.20043752v1
 

@@ -19,10 +19,7 @@ team_model_designation: primary
 methods: >-
     Data-driven approach based on deep learning for forecasting mortality and 
     hospitalizations using syndromic, clinical, demographic, mobility and 
-    point-of-care data. The model are uses data sources (mobility patterns etc) 
-    which implicitly capture the interventions in place. As the model is updated 
-    each week, the effect of any new intervention is taken into account via the 
-    changes in the input data. 
+    point-of-care data. 
 
 institution_affil: >-
     Georgia Institute of Technology, IQVIA, Univ. of Illinois, Urbana-Champaign
