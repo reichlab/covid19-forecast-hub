@@ -9,10 +9,7 @@ license: cc-by-4.0
 team_model_designation: primary
 
 methods: >-
-    The ensemble combines models unconditional on particular interventions
-    being in place with those conditional on existing social distancing measures
-    continuing. Models are combined by taking arithmetic averages of quantiles and
-    point estimates.
+    An ensemble, or model average, of submitted forecasts to the COVID-19 Forecast Hub.
 
 team_funding: CDC
 repo_url: https://github.com/reichlab/covid19-forecast-hub
