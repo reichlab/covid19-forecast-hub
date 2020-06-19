@@ -10,8 +10,9 @@ import pandas as pd
 from pykwalify.core import Core
 
 SCHEMA_FILE = 'schema.yml'
+DESIGNATED_MODEL_CACHE_KEY = 'designated_model_cache'
 
-def validate_metadata_contents(metadata, filepath):
+def validate_metadata_contents(metadata, filepath, cache):
     # Initialize output
     is_metadata_error = False
     metadata_error_output = []
@@ -22,6 +23,19 @@ def validate_metadata_contents(metadata, filepath):
     if len(core.validation_errors)>0:
         metadata_error_output.extend(['METADATA_ERROR: %s' % err for err in core.validation_errors])
         is_metadata_error = True
+    if 'team_abbr' in metadata.keys():
+        # add designated primary model acche entry to the cache if not present
+        if DESIGNATED_MODEL_CACHE_KEY not in cache:
+            cache[DESIGNATED_MODEL_CACHE_KEY] = []
+        
+        # if the current models designation is primary AND the team_name is already present in the cache, then report error
+        if metadata['team_abbr'] in cache[DESIGNATED_MODEL_CACHE_KEY] and metadata['team_model_designation'] == 'primary':
+            is_metadata_error = True
+            metadata_error_output.append('METADATA ERROR: %s has more than 1 model designated as \"primary\"' % (metadata['team_abbr']))
+        # else if the current model designation is "primary", then add it to the cache
+        elif metadata['team_model_designation'] == 'primary':
+            cache[DESIGNATED_MODEL_CACHE_KEY].append(metadata['team_abbr'])
+    
     # Check for Required Fields
     required_fields = ['team_name', 'team_abbr', 'model_name', 'model_contributors', 'model_abbr', 'website_url','license', 'team_model_designation', 'methods']
     # required_fields = ['team_name', 'team_abbr', 'model_name', 'model_abbr',\
@@ -94,12 +108,12 @@ def validate_metadata_contents(metadata, filepath):
     return is_metadata_error, metadata_error_output
 
 
-def check_metadata_file(filepath):
+def check_metadata_file(filepath, cache={}):
     with open(filepath, 'r') as stream:
         try:
             Loader = yaml.BaseLoader  # Define Loader to avoid true/false auto conversion
             metadata = yaml.load(stream, Loader=yaml.BaseLoader)
-            is_metadata_error, metadata_error_output = validate_metadata_contents(metadata, filepath)
+            is_metadata_error, metadata_error_output = validate_metadata_contents(metadata, filepath, cache)
             if is_metadata_error:
                 return True, metadata_error_output
             else:
@@ -115,7 +129,7 @@ def check_metadata_file(filepath):
 
 
 # Check for metadata file
-def check_for_metadata(filepath):
+def check_for_metadata(filepath, cache= {}):
     team_model = os.path.basename(os.path.dirname(filepath))
     metadata_filename = "metadata-" + team_model + ".txt"
     txt_files = []
@@ -123,7 +137,7 @@ def check_for_metadata(filepath):
         txt_files += [os.path.basename(metadata_file)]
     if metadata_filename in txt_files:
         metadata_filepath = filepath + metadata_filename
-        is_metadata_error, metadata_error_output = check_metadata_file(metadata_filepath)
+        is_metadata_error, metadata_error_output = check_metadata_file(metadata_filepath, cache=cache)
         return is_metadata_error, metadata_error_output
     else:
         return True, ["METADATA ERROR: Missing Metadata: ", metadata_filename]
