@@ -9,7 +9,7 @@ team_model_designation: primary
 methods: >-
     An interactive tool developed by researchers at Mass General Hospital, Harvard Medical School, Georgia Tech and Boston Medical Center to inform COVID-19 intervention policy decisions in the US.
 
-institutional_affil: MGH, Harvard, GaTech, BMC
+institution_affil: MGH, Harvard, GaTech, BMC
 data_inputs: JHU CSSE, covidtracking.com
 
 methods_long: >-
