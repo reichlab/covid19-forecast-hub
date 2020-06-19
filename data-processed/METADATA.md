@@ -1,7 +1,9 @@
 # Metadata dictionary
 
-Each model is required to have metadata in yaml format.
+Each model is required to have metadata in 
+[yaml format](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html).
 This file describes each of the variables (keys) in the yaml document.
+Please order the variables in this order.
 
 ## Required variables
 
@@ -25,14 +27,15 @@ include a dash (-) or a whitespace.
 
 ### model_contributors
 
-A list of all individuals involved in the forecasting effort. 
+A list of all individuals involved in the forecasting effort
+affiliations, and email address.
 At least one contributor needs to have a valid email address. 
-Any email addresses provided will be added to 
+All email addresses provided will be added to 
 an email distribution list for model contributors.
 
 The syntax of this field should be 
 
-    name1 <user@address>, name2 <user2@address2>
+    name1 (affiliation1) <user@address>, name2 (affiliation2) <user2@address2>
 
 ### website_url
 

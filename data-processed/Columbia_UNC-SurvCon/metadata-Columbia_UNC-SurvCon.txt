@@ -17,4 +17,5 @@ data_inputs: >-
 citation: 'https://github.com/COVID19BIOSTAT/covid19_prediction/blob/master/manuscript/COVID_Final.pdf'
 
 methods_long: >-
-    We aim to predict COVID-19 daily new cases using a robust and parsimonious survival-convolution model and predict  cumulative deaths from predicted cumulative cases using a time-lagged regression model. We account for transmission during a pre-symptomatic incubation period and use a time-varying effective reproduction number (Rt) to reflect the temporal trend of transmission and change in response to a public health intervention. We estimate the intervention effect on reducing the transmission rate using a natural experiment design and quantify uncertainty by permutation. We use a regression model to predict cumulative deaths from predicted time-lagged cumulative total number of cases. 
+    We predict COVID-19 daily new cases using a robust and parsimonious survival-convolution model. We account for transmission during the pre-symptomatic incubation period, use a time-varying effective reproductive number (Rt) to reflect the temporal trend of transmission and change in response to a public health intervention, and quantify uncertainty by permutation. We use a regression model to predict cumulative deaths from estimated time-lagged cumulative total number of COVID-19 cases.
+
