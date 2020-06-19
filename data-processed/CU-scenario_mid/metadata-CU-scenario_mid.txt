@@ -25,7 +25,7 @@ this_model_is_an_ensemble: false
 this_model_is_unconditional: false
 
 methods: >-
-    We produce a number of different intervention scenarios, each assuming various interventions and rates of compliance are implemented in the future; these assumptions may change from week to week, and are detailed in methods_long.  This projection assumes moderate transmission.  Currently, this scenario assumes that current contact rates will remain unchanged in the future.  In addition, we assume a seasonal decrease in disease transmission leading to a weekly 4% decrease in reproductive number R(t).
+    This projection assumes moderate transmission.  It assumes that current levels of social mixing will remain unchanged in the future.  In addition, it assumes a seasonal decrease in disease transmission leading to a weekly 4% decrease in reproductive number R(t).
 
 methods_long: >-
     This metapopulation county-level SEIR model makes projections of future COVID-19 incidence and deaths.  We produce a number of different intervention scenarios, each assuming various interventions and rates of compliance are implemented in the future.    
