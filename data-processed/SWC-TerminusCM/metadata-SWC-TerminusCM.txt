@@ -4,6 +4,8 @@ model_name: Terminus Compartmental Model
 model_abbr: TerminusCM
 model_contributors: >-
     Timothy L. Snyder <tsnyder701@gmail.com>, Davison D. Wilson <davisondwilson@gmail.com>
+website_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/SWC-TerminusCM
+license: cc-by-4.0
 team_model_designation: primary
 
 methods: >-
