@@ -4,7 +4,9 @@ model_name: CovidIL_80
 model_abbr: CovidIL_80
 model_contributors: >-
     Sarah Cobey <cobey@uchicago.edu>, Philip Arevalo, Ed Baskerville, Spencer Carran, Katelyn Gostic, Laugen McGough, Sylvia Ranjeva, Frank Wen
-License: LICENSE.txt
+license: cc-by-nc-4.0
+team_model_designation: other 
+
 
 methods: >-
     This is a compartmental, age-structured SEIR model that infers past SARS-CoV-2 transmission rates in Illinois and can be used to forecast community spread, hospital and ICU burden, and mortality under current and hypothetical public health interventions.
