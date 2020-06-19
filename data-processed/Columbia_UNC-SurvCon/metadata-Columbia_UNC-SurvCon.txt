@@ -1,34 +1,20 @@
 team_name: Columbia_UNC
 team_abbr: Columbia_UNC
-contact_person: Yuanjia Wang(yw2016@cumc.columbia.edu), Donglin Zeng(dzeng@email.unc.edu),Qinxia Wang(qw2223@cumc.columbia.edu), and Shanghong Xie(sx2168@cumc.columbia.edu), 
-
-institution_affil: Department of Biostatistics, Mailman School of Public Health, Columbia University;Department of Biostatistics, Gillings School of Public Health, University of North Carolina at Chapal Hill
-
 model_name: Survival-Convolution Models
 model_abbr: SurvCon
-model_repo: https://github.com/COVID19BIOSTAT/covid19_prediction
-
-model_contributors: Qinxia Wang, Shanghong Xie, Yuanjia Wang,and Donglin Zeng
-model_targets: daily new confirmed case, daily new infected, cumulative deaths
-Target_loc: US
-time_horizon: 
-Data_format: all requested quantiles
-forecast_startdate: 2020-06-16
-forecast_frequency: biweekly
-
-data_inputs_known: confirmed cases and deaths
-data_source_known: confirmed cases from Worldmeter https://www.worldometers.info/coronavirus/country/us/; deaths from JHU https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data
-
-this_model_is_an_ensemble: false
-this_model_is_unconditional: false
-
+model_contributors: Yuanjia Wang <yw2016@cumc.columbia.edu>, Donglin Zeng <dzeng@email.unc.edu>, Qinxia Wang <qw2223@cumc.columbia.edu>, Shanghong Xie <sx2168@cumc.columbia.edu> 
+website_url: 'https://github.com/COVID19BIOSTAT/covid19_prediction'
+license: apache-2.0
+team_model_designation: primary
 methods: >-
     A robust survival-convolution model with piece-wise transmission rates that incorporate latent incubation period provide time-varying effective reproduction number. 
-    
+
+institution_affil: Department of Biostatistics, Mailman School of Public Health, Columbia University; Department of Biostatistics, Gillings School of Public Health, University of North Carolina at Chapal Hill
+
+data_inputs: >-
+    confirmed cases from Worldmeter https://www.worldometers.info/coronavirus/country/us/, deaths from JHU https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data
+
+citation: 'https://github.com/COVID19BIOSTAT/covid19_prediction/blob/master/manuscript/COVID_Final.pdf'
+
 methods_long: >-
     We aim to predict COVID-19 daily new cases using a robust and parsimonious survival-convolution model and predict  cumulative deaths from predicted cumulative cases using a time-lagged regression model. We account for transmission during a pre-symptomatic incubation period and use a time-varying effective reproduction number (Rt) to reflect the temporal trend of transmission and change in response to a public health intervention. We estimate the intervention effect on reducing the transmission rate using a natural experiment design and quantify uncertainty by permutation. We use a regression model to predict cumulative deaths from predicted time-lagged cumulative total number of cases. 
-
-Citation: Wang Q, Xie S, Wang Y, Zeng D (2020). Survival-Convolution Models for Predicting COVID-19 Cases and Assessing Effects of Mitigation Strategies. Frontiers in Public Health. In press.
- 
-Manuscript available at: https://github.com/COVID19BIOSTAT/covid19_prediction/blob/master/manuscript/COVID_Final.pdf
-Real time prediction: https://github.com/COVID19BIOSTAT/covid19_prediction
