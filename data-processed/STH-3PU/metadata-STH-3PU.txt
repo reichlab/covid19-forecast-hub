@@ -6,8 +6,17 @@ team_experience:
 
 model_name: 3 Phase Unadjusted
 model_abbr: 3PU
+<<<<<<< Updated upstream
 model_output: https://public.tableau.com/profile/covid19model#!/vizhome/COVID-19DeathProjections/USDeaths
 model_repo: 
+=======
+model_contributors: >-
+    Steve Horstman <covid19_model@nym.hush.com> 
+website_url: https://public.tableau.com/profile/covid19model#!/vizhome/COVID-19DeathProjections/USDeaths
+twitter_handles: STHorstman
+license: cc-by-4.0
+team_model_designation: primary
+>>>>>>> Stashed changes
 
 model_contributors: Steve Horstman <covid19_model@nym.hush.com> 
 Model_targets: daily incremental deaths
