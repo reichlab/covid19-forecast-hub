@@ -1,0 +1,17 @@
+team_name: EpiForecasts group at the London School of Hygiene & Tropical Medicine
+team_abbr: epiforecasts
+model_name: ensemble1
+model_abbr: ensemble1
+model_contributors: Katharine Sherratt, Nikos Bosse, Sam Abbott, Joel Hellewell, Sophie Meakin, James Munday, Sebastian Funk <sebastian.funk@lshtm.ac.uk>
+website_url: 'https://github.com/epiforecasts/covid-us-deaths'
+license: cc-by-4.0
+team_model_designation: primary
+
+methods: >-
+    A deaths forecast using the renewal equation and time-series forecasts of the time-varying reproduction number.
+
+institution_affil: London School of Hygiene & Tropical Medicine
+team_funding: Wellcome Trust
+
+methods_long: >-
+    2020-06-15: A deaths forecast using the renewal equation and time-series forecasts of the time-varying reproduction number; to be updated as an ensemble forecast.

@@ -7,12 +7,7 @@ from zoltpy.connection import ZoltarConnection
 from zoltpy.covid19 import VALID_TARGET_NAMES, covid19_row_validator, validate_quantile_csv_file
 
 # Create a db that holds the hash of every processed forecast
-try:
-    with open('./code/zoltar-scripts/validated_file_db.p', 'rb') as f:
-        l = pickle.load(f)
-        f.close()
-except Exception as ex:
-    l = []
+l = []
 db = dict(l)
 
 list_of_model_directories = os.listdir('./data-processed/')
