@@ -11,6 +11,8 @@ methods: >-
 
 institution_affil: Department of Biostatistics, Mailman School of Public Health, Columbia University; Department of Biostatistics, Gillings School of Public Health, University of North Carolina at Chapal Hill
 
+team_funding: NIH grant GM124104
+
 data_inputs: >-
     confirmed cases from Worldmeter https://www.worldometers.info/coronavirus/country/us/, deaths from JHU https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data
 
