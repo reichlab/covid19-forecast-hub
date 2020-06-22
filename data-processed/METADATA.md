@@ -1,9 +1,11 @@
 # Metadata dictionary
 
 Each model is required to have metadata in 
-[yaml format](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html).
+[yaml format](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html), 
+e.g. [see this metadata file](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/JHU_IDD-CovidSP/metadata-JHU_IDD-CovidSP.txt).
 This file describes each of the variables (keys) in the yaml document.
 Please order the variables in this order.
+
 
 ## Required variables
 
