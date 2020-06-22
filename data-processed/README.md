@@ -2,24 +2,20 @@
 
 This page is intended to provide teams with all the information they need to
 submit forecasts.
-All forecasts should be submitted directly to the [data-processed/](./) folder.
+All forecasts should be submitted directly to the [data-processed/](../data-processed/) folder.
 Data in this directory should be added to the repository through a pull request
 so that automatic data validation checks are run.
 
-These instructions provide detail about the 
-[data format](#Data-formatting) as well as 
-[validation](#Data-validation)
-that you can do prior to this pull request. 
-In addition, we describe 
-[meta-data](#Meta-data) that each model should provide.
+These instructions provide detail about the [data format](#data-formatting) as well as [validation](#forecast-validation) that you can do prior to this pull request. 
+In addition, we describe [metadata](#metadata) that each model should provide.
 
 
 *Table of Contents*
 
 - [ground truth data](#ground-truth-data)
-- [data formatting](#Data-formatting)
-- [data validation](#Data-validation)
-- [metadata format](#Meta-data)
+- [data formatting](#data-formatting)
+- [data validation](#forecast-validation)
+- [metadata format](#metadata)
 
 
 ## Ground truth data
@@ -96,8 +92,7 @@ where
 - `team` is the teamname, and
 - `model` is the name of your model. 
 
-The date YYYY-MM-DD is the date the forecasts were made from your mdoel, 
-i.e. the most recent data is YYYY-MM-DD.
+The date YYYY-MM-DD is the [`forecast_date`](#forecast_date).
 
 The `team` and `model` in this file must match the `team` and `model` in the
 directory this file is in. Both `team` and `model` should be less than 20 characters, alpha-numeric and underscores only, with no spaces or hyphens.
@@ -128,7 +123,14 @@ Values in the `forecast_date` column must be a date in the format
 
     YYYY-MM-DD
     
-This is the date on which the submitted forecast data was made available in `YYYY-MM-DD` format. In general, this will typically be the date on which the model finishes running and produces the standard formatted file. `forecast_date` should correspond and be redundant with the date in the filename, but is included here by request from some analysts. We will enforce that the forecast_date for a file must be either the date on which the file was submitted to the repository or the previous day. Exceptions will be made for legitimate extenuating circumstances.
+This is the date on which the submitted forecast were available.
+This will typically be the date on which the computation finishes running and 
+produces the standard formatted file. 
+`forecast_date` should correspond and be redundant with the date in the filename, 
+but is included here by request from some analysts. 
+We will enforce that the `forecast_date` for a file must be either the date on 
+which the file was submitted to the repository or the previous day. 
+Exceptions will be made for legitimate extenuating circumstances.
 
 
 ### `target`
@@ -184,8 +186,8 @@ A week-ahead forecast should represent the total number of incident deaths withi
 
 #### N day ahead inc hosp
 
-This target is the incident (daily) number of deaths predicted by the model
-on day N after `forecast_date`.
+This target is the number of new daily hospitalizations predicted by the
+model on day N after `forecast_date`.
 
 As an example, for day-ahead forecasts with a `forecast_date` of a Monday, a 1 day ahead inc hosp forecast corresponds to the number of incident hospitalizations on Tuesday, 2 day ahead to Wednesday, etc.... 
 
@@ -248,9 +250,8 @@ c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99)
 ```
 
 ```
-##  [1] 0.010 0.025 0.050 0.100 0.150 0.200 0.250 0.300 0.350 0.400 0.450
-## [12] 0.500 0.550 0.600 0.650 0.700 0.750 0.800 0.850 0.900 0.950 0.975
-## [23] 0.990
+##  [1] 0.010 0.025 0.050 0.100 0.150 0.200 0.250 0.300 0.350 0.400 0.450 0.500 0.550
+## [14] 0.600 0.650 0.700 0.750 0.800 0.850 0.900 0.950 0.975 0.990
 ```
 
 
@@ -294,7 +295,7 @@ for details on how to troubleshoot.
 #### Run checks locally
 
 To run these checks locally rather than waiting for the results from a pull request, follow
-[these instructions](https://github.com/reichlab/covid19-forecast-hub/wiki/Validation-Checks#running-validations-locally).
+[these instructions](https://github.com/reichlab/covid19-forecast-hub/wiki/Running-Checks-Locally).
 
 
 ### R validation checks

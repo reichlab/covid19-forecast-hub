@@ -1,0 +1,23 @@
+team_name: University of Geneva / Swiss Data Science Center
+team_abbr: Geneva
+model_name: DeterministicGrowth
+model_abbr: DetGrowth
+model_contributors: Antoine Flahault, Elisa Manetti, Thomas Simonson, Christine Choirat
+
+website_url: https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/
+license: LICENSE.txt
+team_model_designation: primary
+methods: >-
+    We calculate the growth rate of cumulative cases (resp. deaths) between two days ago and today. 
+    If greater than 5%, we use an exponential model to forecast. Otherwise, we use a linear model.
+
+repo_url: https://renkulab.io/gitlab/covid-19/covid-19-forecast
+this_model_is_an_ensemble: false
+citation: https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/
+institution_affil: Institute of Global Health, Faculty of Medicine, University of Geneva and the Swiss Data Science Center, ETH Zürich-EPFL
+team_funding: NA
+data_inputs: confirmed cases; reported fatalities; ECDC
+methods_long: >-
+    "We calculate the growth rate of cumulative cases (resp. deaths) between two days ago and today. 
+    If it's greater than 5%, we use an exponential model to forecast the cumulative number of cases (resp. deaths), 
+    and then derive the daily number of cases (resp. deaths). If it's less than 5%, we use an linear model instead."

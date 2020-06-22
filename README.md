@@ -5,13 +5,13 @@ The goal of this repository is to create a standardized set of data on forecasts
 
 This README provides an overview of the project. Additional specific links can be found in the list below:
 
-* [Interactive Visualization](https://reichlab.io/covid19-forecast-hub/)
+* [Interactive Visualization](http://viz.covid19forecasthub.org)
 * [Ensemble model](#ensemble-model)
 * [Processed forecast data](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed)
 * [Truth data](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-truth/)
 * [Technical README with detailed submission instructions](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md)
 
-<a href = "https://reichlab.io/covid19-forecast-hub/">
+<a href = "http://viz.covid19forecasthub.org">
  <img src="https://github.com/reichlab/covid19-forecast-hub/blob/master/visualization/vis-master/chart.png" width="500" alt="chart">
 </a>
 
@@ -24,7 +24,7 @@ All source code that is specific to this project, along with our [d3-foresight](
 Different groups are making forecasts at different times, and for different geographic scales. The specifications below were created by consulting with collaborators at CDC and looking at what models forecasting teams were already building. 
 
 **What do we consider to be "gold standard" death data?**
-We will use the [daily reports containing death data from the JHU CSSE group](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv) as the gold standard reference data for deaths in the US. Note that there are not insignificant differences (especially in daily incident death data) between the JHU data and another commonly used source, from the New York Times. The team at UTexas-Austin is tracking this issue on [a separate GitHub repository](https://github.com/spencerwoody/covid19-data-comparsion).
+We will use the [daily reports containing death data from the JHU CSSE group](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv) as the gold standard reference data for deaths in the US. These data are the time-series version of the JHU data that do occasionally contain "revisions" of previous daily reports. Note that there are not insignificant differences (especially in daily incident death data) between the JHU data and another commonly used source, from the New York Times. The team at UTexas-Austin is tracking this issue on [a separate GitHub repository](https://github.com/spencerwoody/covid19-data-comparsion).
 
 **When will forecast data be updated?** 
 We will be storing any new forecasts from each group as they are either provided to us directly (by pull request) or available for download online. We will attempt to make every version of each team's forecasts available in "processed" form in the GitHub repo. Teams are encouraged to submit data as often has they have it available, although we only support one upload for each day. In general, "updates" to forecasts will not be permitted. Teams are responsible for checking that their forecasts are ready for public viewing upon submission. This can be done locally using our [interactive visualization tool](https://github.com/reichlab/covid19-forecast-hub/wiki/Interactive-Visualization).
@@ -46,7 +46,9 @@ For week-ahead forecasts with `forecast_date` of Sunday or Monday of EW12, a 1 w
 -->
 
 ## Ensemble model
-Every Monday at 6pm ET, we will update our [COVID Forecast Hub ensemble forecast](data-processed/COVIDhub-ensemble) and [interactive visualization](https://reichlab.io/covid19-forecast-hub/) using the most recent forecast from each team as long as it was submitted on either Sunday or Monday. Therefore, at the very least we encourage teams to provide a new forecast on Mondays that uses the most recent data. Depending on how the project evolves, we may add additional weekly builds for the ensemble and visualization. Currently, our ensemble is created by taking the arithmetic average of each quantile for all models that submit 1- through 4-week ahead targets for a given location. Ensemble methods may evolve as more data becomes available. 
+Every Monday at 6pm ET, we will update our [COVID Forecast Hub ensemble forecast](data-processed/COVIDhub-ensemble) and [interactive visualization](http://viz.covid19forecasthub.org) using the most recent forecast from each team as long as it was submitted before 6pm ET on Monday and has a `forecast_date` of Sunday or Monday. All models meeting the above criteria will be considered for the ensemble. For inclusion in the ensemble, we additionally require that forecasts include a full set of 23 quantiles to be submitted (see [technical README](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md#quantile) for details), and that the 10th quantile of the predictive distribution for a 1 week ahead forecast is not below the most recently observed data. Additionally, we perform manual visual inspection checks to ensure that forecasts are in alignment with the ground truth data. Details on which models were included each week in the ensemble are available in the [ensemble metadata](https://github.com/reichlab/covid19-forecast-hub/tree/master/ensemble-metadata) folder.
+
+Depending on how the project evolves, we may add additional weekly builds for the ensemble and visualization. Currently, our ensemble is created by taking the arithmetic average of each quantile for all models that submit 1- through 4-week ahead cumulative death targets for a given location. Ensemble methods and inclusion criteria may evolve as more data becomes available. 
 
 ## Data model
 Most groups are providing their forecasts in a quantile-based format. We have developed a general data model that can be used to represent all of the forecasts that have been made publicly available. The tabular version of the data model is a simple, long-form data format, with six required columns and several optional columns.
@@ -71,19 +73,27 @@ Each file must have a specific naming scheme that represents when the forecast w
 So far, we have identified a number of groups that are creating forecasts of COVID-19-related deaths in the US and globally. Our list of groups whose forecasts are currently standardized and in the repository are (with data reuse license):
 
  - [Auquan](https://covid19-infection-model.auquan.com/) (none given)
+ - [CDDEP](https://cddep.org/covid-19/) (none given)
  - [Columbia University](https://github.com/shaman-lab/COVID-19Projection) (Apache 2.0)
  - [CovidActNow](https://covidactnow.org/) (none given)
+ - [COVID-19 Simulator Consortium](https://covid19sim.org/) (CC-BY-4.0)
+ - [epiforecasts](https://github.com/epiforecasts/covid-us-deaths) 
  - [GLEAM from Northeastern University](https://www.gleamproject.org/covid-19) (CC-BY-4.0)
  - [Georgia Institute of Technology](https://www.cc.gatech.edu/~badityap/covid.html) (none given)
+ - [Georgia Institute of Technology - Center for Health and Humanitarian Systems](https://github.com/pkeskinocak/COVID19GA) (none given)
  - [IHME](https://covid19.healthdata.org/united-states-of-america) (CC-AT-NC4.0)
  - [Iowa State University](http://www.covid19dashboard.us/) (none given)
+ - [Iowa State University and Peking University](https://yumouqiu.shinyapps.io/covid-predict/) (none given)
  - [LANL](https://covid-19.bsvgateway.org/) ([custom](data-processed/LANL-GrowthRate/LICENSE-LANL.txt))
- - [Imperial](https://github.com/sangeetabhatia03/covid19-short-term-forecasts) (none given)
+ - [Imperial](https://github.com/sangeetabhatia03/covid19-short-term-forecasts) (CC BY-NC-ND 4.0)
  - [Johns Hopkins ID Dynamics COVID-19 Working Group](https://github.com/HopkinsIDD/COVIDScenarioPipeline) (MIT)
  - [Massachusetts Institute of Technology](https://www.covidanalytics.io/) (Apache 2.0)
  - [Notre Dame](https://github.com/confunguido/covid19_ND_forecasting) (none given)
- - Predictive Science Inc (none given)
+ - [Predictive Science Inc](https://predsci.com) (MIT)
+ - [Areon Oliver Wyman](https://pandemicnavigator.oliverwyman.com/)(none given)
  - Quantori (none given)
+ - Snyder Wilson Consulting (none given)
+ - [STH](https://public.tableau.com/profile/covid19model#!/vizhome/COVID-19DeathProjections/USDeaths) (none given)
  - US Army Engineer Research and Development Center (ERDC) (see [license](./data-processed/ERDC-SEIR/LICENSE.txt))
  - University of Arizona (CC-BY-NC-SA 4.0)
  - [University of California, Los Angeles](https://covid19.uclaml.org/) (CC-BY-4.0)

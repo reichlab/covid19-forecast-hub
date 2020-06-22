@@ -292,6 +292,8 @@ export default class TimeChart extends Chart {
   */
   updateYAxisTitle(newAxisTitle) {
     this.yAxis.changeTitle(newAxisTitle)
+    // update the panel description also according to the type of target
+    this.controlPanel.updateTitle(newAxisTitle)
   }
 
   /**

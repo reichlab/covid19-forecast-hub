@@ -1,5 +1,5 @@
 /**
- * Module for handling `yarn run parse`
+ * Module for handling `npm run parse-viz-master`
  * Generate following data files in ./src/assets/data/
  * - history.json :: historical data for states
  * - metadata.json :: metadata for states with season prediction availability
