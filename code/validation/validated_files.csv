@@ -406,3 +406,7 @@ file_path,validation_date
 ./data-processed/UA-EpiCovDA/2020-06-21-UA-EpiCovDA.csv,2020-06-22 22:03:52.178656
 ./data-processed/GT-DeepCOVID/2020-06-22-GT-DeepCOVID.csv,2020-06-22 22:03:53.376881
 ./data-processed/NotreDame-FRED/2020-06-22-NotreDame-FRED.csv,2020-06-22 22:03:53.850306
+./data-processed/NotreDame-mobility/2020-06-22-NotreDame-mobility.csv,2020-06-22 22:59:31.375386
+./data-processed/epiforecasts-ensemble1/2020-06-22-epiforecasts-ensemble1.csv,2020-06-22 22:59:32.045277
+./data-processed/Imperial-ensemble1/2020-06-21-Imperial-ensemble1.csv,2020-06-22 22:59:32.076636
+./data-processed/Imperial-ensemble2/2020-06-21-Imperial-ensemble2.csv,2020-06-22 22:59:32.106792
