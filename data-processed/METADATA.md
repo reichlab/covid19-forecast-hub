@@ -1,4 +1,4 @@
-# Metadata dictionary
+# Metadata file structure
 
 Each model is required to have metadata in 
 [yaml format](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html), 
@@ -107,7 +107,7 @@ One or more twitter handles (without the @) separated by commas.
 
 ### data_inputs
 
-(previously `data_inputs_known`)
+(previously `data_inputs_known` and `data_source_known`)
 
 A description of the data sources used to inform the model, 
 e.g. "NYTimes death data", "JHU CSSE case and death data", mobility data, etc. 
@@ -115,7 +115,8 @@ e.g. "NYTimes death data", "JHU CSSE case and death data", mobility data, etc.
 
 ### this_model_is_an_ensemble
 
-_**DEPRECATED**_
+_**DEPRECATED**_: please remove from metadata file. 
+In the future, inclusion of this field will be an error.
 
 true/false indicating whether the model here is a combination of a set of other
 models
