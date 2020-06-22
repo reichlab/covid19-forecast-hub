@@ -5,7 +5,7 @@ model_name: SuEIR
 model_abbr: SuEIR
 model_contributors: Quanquan Gu <qgu@cs.ucla.edu>, Pan Xu, Jinghui Chen, Lingxiao Wang, Difan Zou, Weitong Zhang
 website_url: https://covid19.uclaml.org/
-license: LICENSE.txt
+license: cc-by-4.0
 team_model_designation: primary
 methods: >-
     The SuEIR model is a variant of the SEIR model considering both untested and unreported cases. The model takes reopening into consideration and assumes contact rate will increase after the reopen.
