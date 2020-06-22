@@ -10,8 +10,6 @@ python3 ./zoltar-truth-data.py
 python3 ./get-truth-data.py
 
 # update nytimes and usa facts
-cd ./usafacts
-Rscript ./usafacts.R
-cd ../nytimes
-Rscript ./nytimes.R
-cd ../../
+cd ../
+# Rscript ./data-truth/usafacts/usafacts.R
+# Rscript ./data-truth/nytimes/nytimes.R

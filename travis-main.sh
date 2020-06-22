@@ -20,8 +20,7 @@ npm install
 sudo apt-get install python3-pandas
 sudo apt install python3-pip
 pip3 install --upgrade setuptools
-pip3 install pymmwr click requests urllib3 selenium webdriver-manager pyyaml python-dateutil numpy
-pip3 install git+https://github.com/reichlab/zoltpy/
+pip3 install -r visualization/requirements.txt
 
 # Validate the data
 source ./travis/validate-data.sh
@@ -33,7 +32,7 @@ if [[ "$TRAVIS_BRANCH" != "master" ]]; then
 fi
 
 # Update the truth data
-if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* ]]; then
+if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* || "$TRAVIS_COMMIT_MESSAGE" == *"FORCE_ZOLTAR"* ]]; then
     echo "updating truth data..."
     bash ./travis/update-truth.sh
     echo "Push the truth"
@@ -77,7 +76,7 @@ fi
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test zoltar upload"* ]]; then
     echo "Upload forecasts to Zoltar"
     bash ./travis/upload-to-zoltar.sh
-    echo "Push the validated file db to Zoltar"
+    echo "Push validated file db to GitHub"
     bash ./travis/push.sh
 fi
 
@@ -86,7 +85,7 @@ if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test truth zoltar"* ]]; then
     python3 ./code/zoltar-scripts/upload_truth_to_zoltar.py
 fi
 
-if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test zoltar validated db"* ]]; then
+if [[ "$TRAVIS_COMMIT_MESSAGE" == *"create zoltar validated file"* ]]; then
     echo "Create new validated zoltar forecast list"
     bash ./travis/create-validated-file-db.sh
     echo "Push the validated file db to Zoltar"

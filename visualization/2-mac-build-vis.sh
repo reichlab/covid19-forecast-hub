@@ -21,10 +21,10 @@ sed -i "" '/href="branding.tweetUrl"/,/span Tweet/d' ./src/components/Navbar.vue
 sed -i "" 's/span.brand.title-text {{ branding.title }}/a.brand.title-text(v-bind:href="branding.parentUrl") {{ branding.title }}/'\
     ./src/components/Navbar.vue
 
-# Change max heap size
-sed -i "" 's/node build\/build.js/node --max_old_space_size=6000 build\/build.js/' ./package.json
+# Uncomment the following line to change max heap size
+# sed -i "" 's/node build\/build.js/node --max_old_space_size=6000 build\/build.js/' ../../package.json
 
 # Build the site
-yarn run build
+npm run build
 #cp -r ./dist/* ../../ # Copy to repo root
 cd .. # in ./flusight-deploy
