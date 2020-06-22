@@ -66,7 +66,7 @@ The metadata file should have the following format
 
     metadata-team-model.txt
     
-and here is [the structure of the metadata file](METADATA.html).
+and here is [the structure of the metadata file](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/METADATA.md).
 
 ### License (optional)
 
