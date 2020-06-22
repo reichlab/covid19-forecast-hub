@@ -15,7 +15,7 @@ repo_url: https://github.com/COVIDAnalytics/DELPHI
 this_model_is_an_ensemble: false
 citation: https://www.covidanalytics.io/DELPHI_documentation_pdf
 institution_affil: Massachusetts Institute of Technology
-twitter_handles: @covid_analytics
+twitter_handles: covid_analytics
 data_inputs: JHU CSSE case and death data
 
 methods_long: >-
