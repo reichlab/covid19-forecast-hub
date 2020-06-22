@@ -1,33 +1,23 @@
 team_name: YYG
 team_abbr: YYG
-institution_affil: None
-team_contact: Youyang Gu <youyanggu@gmail.com>
-team_funding: N/A
-team_experience:
-
 model_name: ParamSearch
 model_abbr: ParamSearch
-model_output: http://covid19-projections.com
-model_repo: https://github.com/youyanggu/covid19_projections
-
-model_contributors: Youyang Gu
-model_targets: daily, peak, and total deaths; estimated daily new infections and current infections
-target_loc: national (US), state (US), country (40 countries)
-Time_horizon: 4 months, through Aug 4, 2020
-Data_format: "mean + following quantiles [0.01, 0.025, 0.05, 0.1, 0.15, ..., 0.5, ..., 0.85, 0.9, 0.95, 0.975, 0.99]"
-forecast_startdate: 2020-04-01
-forecast_frequency: updated daily
-
-data_inputs_known: reported daily deaths; population
-data_source_known: JHU
-
-this_model_is_an_ensemble: false
-this_model_is_unconditional: true
+model_contributors: Youyang Gu <youyanggu@gmail.com>
+website_url: http://covid19-projections.com
+license: cc-by-4.0
+team_model_designation: primary
 
 methods: >-
-    We've built a simulator based on the SEIR model with learned parameters to make daily projections regarding 
-    COVID-19 infections and deaths in all 50 US states and 40 countries. The model also accounts for individual 
-    state-by-state reopenings and the resulting effects on infections and deaths.
+    Based on the SEIR model to make daily projections regarding 
+    COVID-19 infections and deaths in 50 US states. The model accounts for
+    state reopenings and its effects on infections and deaths.
+
+repo_url: https://github.com/youyanggu/covid19_projections
+this_model_is_an_ensemble: false
+
+citation: http://covid19-projections.com/about/
+
+data_inputs: JHU
 
 methods_long: >-
     We've built a simulator based on the SEIR model with learned parameters to make daily projections regarding 
@@ -41,4 +31,3 @@ methods_long: >-
     literature. After some additional validation techniques to minimize overfitting, we use the learned parameters to 
     simulate the future and make projections.
 
-citation: http://covid19-projections.com/about/
