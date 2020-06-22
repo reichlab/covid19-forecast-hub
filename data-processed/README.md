@@ -2,20 +2,24 @@
 
 This page is intended to provide teams with all the information they need to
 submit forecasts.
-All forecasts should be submitted directly to the [data-processed/](../data-processed/) folder.
+All forecasts should be submitted directly to the [data-processed/](./) folder.
 Data in this directory should be added to the repository through a pull request
 so that automatic data validation checks are run.
 
-These instructions provide detail about the [data format](#data-formatting) as well as [validation](#forecast-validation) that you can do prior to this pull request. 
-In addition, we describe [metadata](#metadata) that each model should provide.
+These instructions provide detail about the 
+[data format](#Data-formatting) as well as 
+[validation](#Data-validation)
+that you can do prior to this pull request. 
+In addition, we describe 
+[meta-data](#Meta-data) that each model should provide.
 
 
 *Table of Contents*
 
 - [ground truth data](#ground-truth-data)
-- [data formatting](#data-formatting)
-- [data validation](#forecast-validation)
-- [metadata format](#metadata)
+- [data formatting](#Data-formatting)
+- [data validation](#Data-validation)
+- [metadata format](#Meta-data)
 
 
 ## Ground truth data
@@ -186,8 +190,8 @@ A week-ahead forecast should represent the total number of incident deaths withi
 
 #### N day ahead inc hosp
 
-This target is the number of new daily hospitalizations predicted by the
-model on day N after `forecast_date`.
+This target is the incident (weekly) number of deaths predicted by the model
+on day # after `forecast_date`.
 
 As an example, for day-ahead forecasts with a `forecast_date` of a Monday, a 1 day ahead inc hosp forecast corresponds to the number of incident hospitalizations on Tuesday, 2 day ahead to Wednesday, etc.... 
 
@@ -250,8 +254,9 @@ c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99)
 ```
 
 ```
-##  [1] 0.010 0.025 0.050 0.100 0.150 0.200 0.250 0.300 0.350 0.400 0.450 0.500 0.550
-## [14] 0.600 0.650 0.700 0.750 0.800 0.850 0.900 0.950 0.975 0.990
+##  [1] 0.010 0.025 0.050 0.100 0.150 0.200 0.250 0.300 0.350 0.400 0.450
+## [12] 0.500 0.550 0.600 0.650 0.700 0.750 0.800 0.850 0.900 0.950 0.975
+## [23] 0.990
 ```
 
 
@@ -295,7 +300,7 @@ for details on how to troubleshoot.
 #### Run checks locally
 
 To run these checks locally rather than waiting for the results from a pull request, follow
-[these instructions](https://github.com/reichlab/covid19-forecast-hub/wiki/Running-Checks-Locally).
+[these instructions](https://github.com/reichlab/covid19-forecast-hub/wiki/Validation-Checks#running-validations-locally).
 
 
 ### R validation checks

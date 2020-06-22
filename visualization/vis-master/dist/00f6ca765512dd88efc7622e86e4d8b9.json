@@ -1,0 +1,786 @@
+module.exports = {
+	"seasonId": "2020-2021",
+	"regions": [
+		{
+			"id": "nat",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"meta": {
+						"name": "CMU-Delphi - Crowdcast",
+						"description": "The model assesses the performance of a forecasting framework based on collective human judgment. The authors developed a website for collecting predi...",
+						"url": "https://github.com/cdcepi/COVID-19-ILI-forecasting/blob/master/nation-region-forecast-data/component-models/CMU_Delphi-Crowdcast/metadata.txt"
+					},
+					"predictions": [
+						null,
+						null,
+						{
+							"series": [
+								{
+									"point": 6.198665,
+									"low": [
+										3.3,
+										5.2
+									],
+									"high": [
+										18.9,
+										7.9
+									]
+								},
+								{
+									"point": 6.58884,
+									"low": [
+										2.6,
+										5.1
+									],
+									"high": [
+										18.8,
+										8.9
+									]
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								}
+							]
+						},
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null
+					]
+				}
+			]
+		},
+		{
+			"id": "hhs1",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"meta": {
+						"name": "CMU-Delphi - Crowdcast",
+						"description": "The model assesses the performance of a forecasting framework based on collective human judgment. The authors developed a website for collecting predi...",
+						"url": "https://github.com/cdcepi/COVID-19-ILI-forecasting/blob/master/nation-region-forecast-data/component-models/CMU_Delphi-Crowdcast/metadata.txt"
+					},
+					"predictions": [
+						null,
+						null,
+						{
+							"series": [
+								{
+									"point": 5.25934,
+									"low": [
+										2.5,
+										4.3
+									],
+									"high": [
+										18.9,
+										7
+									]
+								},
+								{
+									"point": 5.60711,
+									"low": [
+										1.7,
+										4.2
+									],
+									"high": [
+										18.9,
+										8.2
+									]
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								}
+							]
+						},
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null
+					]
+				}
+			]
+		},
+		{
+			"id": "hhs2",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"meta": {
+						"name": "CMU-Delphi - Crowdcast",
+						"description": "The model assesses the performance of a forecasting framework based on collective human judgment. The authors developed a website for collecting predi...",
+						"url": "https://github.com/cdcepi/COVID-19-ILI-forecasting/blob/master/nation-region-forecast-data/component-models/CMU_Delphi-Crowdcast/metadata.txt"
+					},
+					"predictions": [
+						null,
+						null,
+						{
+							"series": [
+								{
+									"point": 8.49161,
+									"low": [
+										3.1,
+										6.5
+									],
+									"high": [
+										18.9,
+										11.3
+									]
+								},
+								{
+									"point": 9.167,
+									"low": [
+										2.6,
+										6.6
+									],
+									"high": [
+										19.3,
+										12.6
+									]
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								}
+							]
+						},
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null
+					]
+				}
+			]
+		},
+		{
+			"id": "hhs3",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"meta": {
+						"name": "CMU-Delphi - Crowdcast",
+						"description": "The model assesses the performance of a forecasting framework based on collective human judgment. The authors developed a website for collecting predi...",
+						"url": "https://github.com/cdcepi/COVID-19-ILI-forecasting/blob/master/nation-region-forecast-data/component-models/CMU_Delphi-Crowdcast/metadata.txt"
+					},
+					"predictions": [
+						null,
+						null,
+						{
+							"series": [
+								{
+									"point": 6.742555,
+									"low": [
+										3.2,
+										5.5
+									],
+									"high": [
+										18.9,
+										8.7
+									]
+								},
+								{
+									"point": 7.14806,
+									"low": [
+										2.6,
+										5.5
+									],
+									"high": [
+										18.9,
+										9.8
+									]
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								}
+							]
+						},
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null
+					]
+				}
+			]
+		},
+		{
+			"id": "hhs4",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"meta": {
+						"name": "CMU-Delphi - Crowdcast",
+						"description": "The model assesses the performance of a forecasting framework based on collective human judgment. The authors developed a website for collecting predi...",
+						"url": "https://github.com/cdcepi/COVID-19-ILI-forecasting/blob/master/nation-region-forecast-data/component-models/CMU_Delphi-Crowdcast/metadata.txt"
+					},
+					"predictions": [
+						null,
+						null,
+						{
+							"series": [
+								{
+									"point": 5.84383,
+									"low": [
+										2.9,
+										4.8
+									],
+									"high": [
+										18.9,
+										7.6
+									]
+								},
+								{
+									"point": 6.29449,
+									"low": [
+										2.3,
+										4.8
+									],
+									"high": [
+										18.9,
+										8.7
+									]
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								}
+							]
+						},
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null
+					]
+				}
+			]
+		},
+		{
+			"id": "hhs5",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"meta": {
+						"name": "CMU-Delphi - Crowdcast",
+						"description": "The model assesses the performance of a forecasting framework based on collective human judgment. The authors developed a website for collecting predi...",
+						"url": "https://github.com/cdcepi/COVID-19-ILI-forecasting/blob/master/nation-region-forecast-data/component-models/CMU_Delphi-Crowdcast/metadata.txt"
+					},
+					"predictions": [
+						null,
+						null,
+						{
+							"series": [
+								{
+									"point": 5.075,
+									"low": [
+										2.2,
+										4
+									],
+									"high": [
+										18.9,
+										7
+									]
+								},
+								{
+									"point": 5.49002,
+									"low": [
+										1.6,
+										4
+									],
+									"high": [
+										18.9,
+										8.1
+									]
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								}
+							]
+						},
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null
+					]
+				}
+			]
+		},
+		{
+			"id": "hhs6",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"meta": {
+						"name": "CMU-Delphi - Crowdcast",
+						"description": "The model assesses the performance of a forecasting framework based on collective human judgment. The authors developed a website for collecting predi...",
+						"url": "https://github.com/cdcepi/COVID-19-ILI-forecasting/blob/master/nation-region-forecast-data/component-models/CMU_Delphi-Crowdcast/metadata.txt"
+					},
+					"predictions": [
+						null,
+						null,
+						{
+							"series": [
+								{
+									"point": 8.28276,
+									"low": [
+										4.3,
+										6.9
+									],
+									"high": [
+										18.9,
+										10.2
+									]
+								},
+								{
+									"point": 8.80258,
+									"low": [
+										3.7,
+										6.9
+									],
+									"high": [
+										18.9,
+										11.3
+									]
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								}
+							]
+						},
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null
+					]
+				}
+			]
+		},
+		{
+			"id": "hhs7",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"meta": {
+						"name": "CMU-Delphi - Crowdcast",
+						"description": "The model assesses the performance of a forecasting framework based on collective human judgment. The authors developed a website for collecting predi...",
+						"url": "https://github.com/cdcepi/COVID-19-ILI-forecasting/blob/master/nation-region-forecast-data/component-models/CMU_Delphi-Crowdcast/metadata.txt"
+					},
+					"predictions": [
+						null,
+						null,
+						{
+							"series": [
+								{
+									"point": 8.04574,
+									"low": [
+										4.5,
+										6.9
+									],
+									"high": [
+										18.9,
+										9.7
+									]
+								},
+								{
+									"point": 8.33576,
+									"low": [
+										3.6,
+										6.6
+									],
+									"high": [
+										18.9,
+										10.7
+									]
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								}
+							]
+						},
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null
+					]
+				}
+			]
+		},
+		{
+			"id": "hhs8",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"meta": {
+						"name": "CMU-Delphi - Crowdcast",
+						"description": "The model assesses the performance of a forecasting framework based on collective human judgment. The authors developed a website for collecting predi...",
+						"url": "https://github.com/cdcepi/COVID-19-ILI-forecasting/blob/master/nation-region-forecast-data/component-models/CMU_Delphi-Crowdcast/metadata.txt"
+					},
+					"predictions": [
+						null,
+						null,
+						{
+							"series": [
+								{
+									"point": 6.55,
+									"low": [
+										3.5,
+										5.5
+									],
+									"high": [
+										18.9,
+										8.3
+									]
+								},
+								{
+									"point": 6.835,
+									"low": [
+										2.6,
+										5.3
+									],
+									"high": [
+										18.9,
+										9.3
+									]
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								}
+							]
+						},
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null
+					]
+				}
+			]
+		},
+		{
+			"id": "hhs9",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"meta": {
+						"name": "CMU-Delphi - Crowdcast",
+						"description": "The model assesses the performance of a forecasting framework based on collective human judgment. The authors developed a website for collecting predi...",
+						"url": "https://github.com/cdcepi/COVID-19-ILI-forecasting/blob/master/nation-region-forecast-data/component-models/CMU_Delphi-Crowdcast/metadata.txt"
+					},
+					"predictions": [
+						null,
+						null,
+						{
+							"series": [
+								{
+									"point": 5.01216,
+									"low": [
+										1.5,
+										3.7
+									],
+									"high": [
+										18.9,
+										7.5
+									]
+								},
+								{
+									"point": 5.47552,
+									"low": [
+										1.3,
+										3.9
+									],
+									"high": [
+										18.9,
+										8.6
+									]
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								}
+							]
+						},
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null
+					]
+				}
+			]
+		},
+		{
+			"id": "hhs10",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"meta": {
+						"name": "CMU-Delphi - Crowdcast",
+						"description": "The model assesses the performance of a forecasting framework based on collective human judgment. The authors developed a website for collecting predi...",
+						"url": "https://github.com/cdcepi/COVID-19-ILI-forecasting/blob/master/nation-region-forecast-data/component-models/CMU_Delphi-Crowdcast/metadata.txt"
+					},
+					"predictions": [
+						null,
+						null,
+						{
+							"series": [
+								{
+									"point": 6.53355,
+									"low": [
+										3.5,
+										5.5
+									],
+									"high": [
+										18.9,
+										8.2
+									]
+								},
+								{
+									"point": 6.96121,
+									"low": [
+										2.7,
+										5.4
+									],
+									"high": [
+										18.9,
+										9.4
+									]
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								},
+								{
+									"point": null,
+									"low": null,
+									"high": null
+								}
+							]
+						},
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null,
+						null
+					]
+				}
+			]
+		}
+	]
+};

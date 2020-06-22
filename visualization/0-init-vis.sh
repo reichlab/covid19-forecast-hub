@@ -66,22 +66,10 @@ rm -r ./data/Incident\ Deaths/Auquan-SEIR
 # Remove Imperial ensemble 1
 rm -r ./data/Cumulative\ Deaths/Imperial-Ensemble1
 rm -r ./data/Incident\ Deaths/Imperial-Ensemble1
-
-rm -r ./data/Cumulative\ Deaths/CovidActNow-SEIR_CAN
-rm -r ./data/Incident\ Deaths/CovidActNow-SEIR_CAN
 # rm -r ./data/Incident\ Deaths/Imperial-Ensemble2
 
-rm -r ./data/Cumulative\ Deaths/CU-high
-rm -r ./data/Incident\ Deaths/CU-high
-
-rm -r ./data/Cumulative\ Deaths/CU-low
-rm -r ./data/Incident\ Deaths/CU-low
-
-rm -r ./data/Cumulative\ Deaths/CU-mid
-rm -r ./data/Incident\ Deaths/CU-mid
-
 # Remove Ensemble Incident
-# rm -r ./data/Incident\ Deaths/COVIDhub-ensemble
+rm -r ./data/Incident\ Deaths/COVIDhub-ensemble
 
 # # Remove MOBS_NEU-GLEAM_COVID Incident
 # rm -r ./data/Incident\ Deaths/MOBS-GLEAM_COVID
@@ -89,10 +77,6 @@ rm -r ./data/Incident\ Deaths/CU-mid
 # Remove UMass-ExpertCrowd
 rm -r ./data/Incident\ Deaths/UMass-ExpertCrowd
 rm -r ./data/Cumulative\ Deaths/UMass-ExpertCrowd
-
-#Remove CU-nochange
-rm -r ./data/Incident\ Deaths/CU-nochange
-rm -r ./data/Cumulative\ Deaths/CU-nochange
 
 # Parse through forecasts and update format
 python3 ./scripts/convert-forecasts.py

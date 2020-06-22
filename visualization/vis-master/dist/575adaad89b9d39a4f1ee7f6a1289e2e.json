@@ -1,0 +1,555 @@
+module.exports = {
+	"seasonId": "2019-2020",
+	"stateId": "WI",
+	"models": [
+		{
+			"id": "CU-60-contact",
+			"predictions": [
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				{
+					"series": [
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						}
+					]
+				},
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			]
+		},
+		{
+			"id": "CU-70-contact",
+			"predictions": [
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				{
+					"series": [
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						}
+					]
+				},
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			]
+		},
+		{
+			"id": "CU-80-contact",
+			"predictions": [
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				{
+					"series": [
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						}
+					]
+				},
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			]
+		},
+		{
+			"id": "IHME-CurveFit",
+			"predictions": [
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				{
+					"series": [
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						}
+					]
+				},
+				{
+					"series": [
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						}
+					]
+				},
+				{
+					"series": [
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						}
+					]
+				},
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			]
+		},
+		{
+			"id": "LANL-GrowthRate",
+			"predictions": [
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				{
+					"series": [
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						}
+					]
+				},
+				{
+					"series": [
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						}
+					]
+				},
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			]
+		},
+		{
+			"id": "UMassCoE-ensemble",
+			"predictions": [
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				{
+					"series": [
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						},
+						{
+							"bins": [
+								null
+							]
+						}
+					]
+				},
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null,
+				null
+			]
+		}
+	]
+};

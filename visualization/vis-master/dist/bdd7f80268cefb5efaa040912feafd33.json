@@ -1,0 +1,7100 @@
+module.exports = {
+	"seasonId": "2019-2020",
+	"regions": [
+		{
+			"id": "nat",
+			"models": [
+				{
+					"id": "CMU_Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.73395867176492,
+							"logScoreMultiBin": -1.3591150416311706,
+							"absError": 0.16803750000000006
+						},
+						"2-ahead": {
+							"logScore": -4.000757378039859,
+							"logScoreMultiBin": -1.614517559121789,
+							"absError": 0.6367400000000005
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.21436560275657,
+							"logScoreMultiBin": -0.6540335576320866,
+							"absError": 0.71149787102487
+						},
+						"2-ahead": {
+							"logScore": -6.604080151433793,
+							"logScoreMultiBin": -3.6822424670941434,
+							"absError": 1.8711607230043406
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.623882322647091,
+							"logScoreMultiBin": -1.8529756440915424,
+							"absError": 0.7838500000000002
+						},
+						"2-ahead": {
+							"logScore": -4.691054925145261,
+							"logScoreMultiBin": -2.416638841095559,
+							"absError": 2.1938000000000004
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.94002890997292,
+							"logScoreMultiBin": -1.3249859916584859,
+							"absError": 1.1765499999999998
+						},
+						"2-ahead": {
+							"logScore": -5.0915146016218795,
+							"logScoreMultiBin": -2.414292373488553,
+							"absError": 1.9958
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-hybrid1",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.6805642936815617,
+							"logScoreMultiBin": -0.8058180023706243,
+							"absError": 0.6019848084775452
+						},
+						"2-ahead": {
+							"logScore": -7.669895331021891,
+							"logScoreMultiBin": -4.779523573131678,
+							"absError": 1.8080315463173804
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.6951785134482655,
+							"logScoreMultiBin": -1.321429836328398,
+							"absError": 0.42713
+						},
+						"2-ahead": {
+							"logScore": -4.2355891098413485,
+							"logScoreMultiBin": -1.835932231715839,
+							"absError": 1.4992400000000004
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "EpiDeep-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.3660485438292205,
+							"logScoreMultiBin": -1.006857002469498,
+							"absError": 0.5363000000000002
+						},
+						"2-ahead": {
+							"logScore": -5.501990943946445,
+							"logScoreMultiBin": -2.6609363217441167,
+							"absError": 1.4561000000000002
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "ILIForecastProject-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.8306285385651453,
+							"logScoreMultiBin": -1.2161629492611241,
+							"absError": 0.5723500000000006
+						},
+						"2-ahead": {
+							"logScore": -5.030655788423734,
+							"logScoreMultiBin": -2.2326727467535945,
+							"absError": 1.3958000000000004
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "PSI-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.89967669913296,
+							"logScoreMultiBin": -1.0438578390660407,
+							"absError": 0.6121560052581203
+						},
+						"2-ahead": {
+							"logScore": -5.115995809754082,
+							"logScoreMultiBin": -1.4961092271270973,
+							"absError": 0.7471362858983
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": -7.923348211940175,
+							"logScoreMultiBin": -4.12860836711873,
+							"absError": 1.16364444444444
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.6803469142598626,
+							"logScoreMultiBin": -1.2994951987738785,
+							"absError": 0.8223500000000001
+						},
+						"2-ahead": {
+							"logScore": -4.4800073371517755,
+							"logScoreMultiBin": -2.06609113625076,
+							"absError": 1.7958000000000007
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-SIRRW",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-experts",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": -5.383926496917075,
+							"logScoreMultiBin": -1.80761655641638,
+							"absError": 0.9648829893033217
+						},
+						"2-ahead": {
+							"logScore": -6.127839508103654,
+							"logScoreMultiBin": -1.8386663191253318,
+							"absError": 0.9359311216933905
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.537594067101549,
+							"logScoreMultiBin": -1.8775601393893373,
+							"absError": 1.0015794502258304
+						},
+						"2-ahead": {
+							"logScore": -6.899065705194708,
+							"logScoreMultiBin": -4.476464666772529,
+							"absError": 2.7121003921508793
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs1",
+			"models": [
+				{
+					"id": "CMU_Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.747063381804079,
+							"logScoreMultiBin": -1.3717431241820415,
+							"absError": 0.4620600000000006
+						},
+						"2-ahead": {
+							"logScore": -4.075058650530439,
+							"logScoreMultiBin": -1.6861907181446019,
+							"absError": 1.0640600000000004
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -7.0403209700795015,
+							"logScoreMultiBin": -2.647438287058717,
+							"absError": 1.1072785273679853
+						},
+						"2-ahead": {
+							"logScore": -8.656189849720963,
+							"logScoreMultiBin": -6.190276116617139,
+							"absError": 2.45653844284016
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.494200576789909,
+							"logScoreMultiBin": -2.018279842705531,
+							"absError": 1.0779450000000006
+						},
+						"2-ahead": {
+							"logScore": -4.4790663091923655,
+							"logScoreMultiBin": -2.3856406681313715,
+							"absError": 2.1068800000000003
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.436948151856409,
+							"logScoreMultiBin": -0.9928364885398276,
+							"absError": 0.6144450000000004
+						},
+						"2-ahead": {
+							"logScore": -6.781034526202981,
+							"logScoreMultiBin": -4.2643637840172035,
+							"absError": 2.16488
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-hybrid1",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.078912751279891,
+							"logScoreMultiBin": -1.4866208275742205,
+							"absError": 1.1526513397430054
+						},
+						"2-ahead": {
+							"logScore": -8.517126522538657,
+							"logScoreMultiBin": -4.89723993990319,
+							"absError": 2.2462862714282603
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.8264810898018458,
+							"logScoreMultiBin": -1.4427015735337534,
+							"absError": 0.8231600000000006
+						},
+						"2-ahead": {
+							"logScore": -4.590807882063012,
+							"logScoreMultiBin": -2.1810443018803656,
+							"absError": 2.0813200000000003
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "EpiDeep-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.693279726981484,
+							"logScoreMultiBin": -1.3020132023022832,
+							"absError": 0.8876950000000003
+						},
+						"2-ahead": {
+							"logScore": -7.499999999999999,
+							"logScoreMultiBin": -3.717751391959581,
+							"absError": 1.9242800000000004
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "ILIForecastProject-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.8589142467167363,
+							"logScoreMultiBin": -1.3644770274545313,
+							"absError": 0.8144450000000001
+						},
+						"2-ahead": {
+							"logScore": -4.453318953579126,
+							"logScoreMultiBin": -2.1403665716142717,
+							"absError": 1.9648800000000004
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "PSI-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": -2.815080167392794,
+							"logScoreMultiBin": -0.42589798084682157,
+							"absError": 0.2577834281900997
+						},
+						"2-ahead": {
+							"logScore": -2.5902671654458267,
+							"logScoreMultiBin": -0.38566248081198473,
+							"absError": 0.18054365759745927
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": -5.073735887948562,
+							"logScoreMultiBin": -1.360377458961326,
+							"absError": 0.6151200000000001
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.043142400642452,
+							"logScoreMultiBin": -1.6410718593173708,
+							"absError": 1.1644450000000006
+						},
+						"2-ahead": {
+							"logScore": -4.639071703181014,
+							"logScoreMultiBin": -2.244441975800285,
+							"absError": 2.0648800000000005
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-SIRRW",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-experts",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.8729741283243193,
+							"logScoreMultiBin": -1.3115732624538377,
+							"absError": 0.892191789769595
+						},
+						"2-ahead": {
+							"logScore": -6.479937095673682,
+							"logScoreMultiBin": -3.4076967644318676,
+							"absError": 1.7219655937275613
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": -6.633947727213889,
+							"logScoreMultiBin": -3.9916316949443438,
+							"absError": 1.8965754798126224
+						},
+						"2-ahead": {
+							"logScore": -6.907745179191951,
+							"logScoreMultiBin": -4.509849901223352,
+							"absError": 3.766059075241089
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs2",
+			"models": [
+				{
+					"id": "CMU_Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.6946208010922845,
+							"logScoreMultiBin": -2.2938474553639985,
+							"absError": 2.502955
+						},
+						"2-ahead": {
+							"logScore": -6.02240607060795,
+							"logScoreMultiBin": -3.6072589993807123,
+							"absError": 5.16392
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -8.14961545626162,
+							"logScoreMultiBin": -5.627964481425839,
+							"absError": 3.208806160976995
+						},
+						"2-ahead": {
+							"logScore": -8.660756641446595,
+							"logScoreMultiBin": -6.2631729302041235,
+							"absError": 6.99261844907301
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": -6.281702474169528,
+							"logScoreMultiBin": -3.7589963145364975,
+							"absError": 7.90039
+						},
+						"2-ahead": {
+							"logScore": -7.3232707229438025,
+							"logScoreMultiBin": -5.01449272442356,
+							"absError": 6.734
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": -5.3064395608194825,
+							"logScoreMultiBin": -2.8720615620676604,
+							"absError": 2.0328899999999996
+						},
+						"2-ahead": {
+							"logScore": -8.062969665674302,
+							"logScoreMultiBin": -5.665074392875932,
+							"absError": 7.311
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-hybrid1",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": -6.715491897805844,
+							"logScoreMultiBin": -4.213152801905386,
+							"absError": 3.462970167708
+						},
+						"2-ahead": {
+							"logScore": -10,
+							"logScoreMultiBin": -10,
+							"absError": 7.57949525636733
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.574773557119373,
+							"logScoreMultiBin": -2.178646364516924,
+							"absError": 2.07507
+						},
+						"2-ahead": {
+							"logScore": -6.154099356627823,
+							"logScoreMultiBin": -3.746496538473763,
+							"absError": 6.29233
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "EpiDeep-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": -7.499999999999999,
+							"logScoreMultiBin": -5.017641592161504,
+							"absError": 3.2506899999999996
+						},
+						"2-ahead": {
+							"logScore": -7.499999999999999,
+							"logScoreMultiBin": -5.102104727201628,
+							"absError": 6.8384
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "ILIForecastProject-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": -5.6422919508310425,
+							"logScoreMultiBin": -3.2480722033503646,
+							"absError": 2.9328899999999996
+						},
+						"2-ahead": {
+							"logScore": -7.170864550898773,
+							"logScoreMultiBin": -4.751927004568196,
+							"absError": 6.911
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "PSI-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": -8.107304049211095,
+							"logScoreMultiBin": -6.981658149907848,
+							"absError": 2.6446457611322494
+						},
+						"2-ahead": {
+							"logScore": -10,
+							"logScoreMultiBin": -10,
+							"absError": 4.99350378720812
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": -7.923348211940175,
+							"logScoreMultiBin": -5.525452939141804,
+							"absError": 1.6735000000000007
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": -5.369841088517168,
+							"logScoreMultiBin": -2.9720673112125673,
+							"absError": 3.88289
+						},
+						"2-ahead": {
+							"logScore": -6.824640065523211,
+							"logScoreMultiBin": -4.338201132162949,
+							"absError": 6.811
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-SIRRW",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-experts",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": -11.512180219829123,
+							"logScoreMultiBin": -9.082882670860984,
+							"absError": 3.128885111872091
+						},
+						"2-ahead": {
+							"logScore": -11.512925464970229,
+							"logScoreMultiBin": -9.115030192171858,
+							"absError": 7.219747056188682
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": -6.904653362731228,
+							"logScoreMultiBin": -4.4984380821046654,
+							"absError": 3.5363547464752196
+						},
+						"2-ahead": {
+							"logScore": -6.907754918343682,
+							"logScoreMultiBin": -4.509859645545311,
+							"absError": 7.781724105834961
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs3",
+			"models": [
+				{
+					"id": "CMU_Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.903827325628706,
+							"logScoreMultiBin": -1.519113471023614,
+							"absError": 0.5846974999999994
+						},
+						"2-ahead": {
+							"logScore": -4.2196501355803955,
+							"logScoreMultiBin": -1.8249871009840621,
+							"absError": 1.4970400000000001
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.53103912016474,
+							"logScoreMultiBin": -1.483451760041064,
+							"absError": 1.2207027632978797
+						},
+						"2-ahead": {
+							"logScore": -6.959747685007079,
+							"logScoreMultiBin": -3.9228132142646173,
+							"absError": 2.66919041655859
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.582961414995433,
+							"logScoreMultiBin": -2.2113262165542573,
+							"absError": 1.311795
+						},
+						"2-ahead": {
+							"logScore": -5.014191610299033,
+							"logScoreMultiBin": -2.7182672175128104,
+							"absError": 2.73553
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.32950201930703,
+							"logScoreMultiBin": -1.747436778269976,
+							"absError": 1.156765
+						},
+						"2-ahead": {
+							"logScore": -7.082811293864362,
+							"logScoreMultiBin": -4.778835714523759,
+							"absError": 3.18353
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-hybrid1",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": -5.803007944030645,
+							"logScoreMultiBin": -2.491379730326222,
+							"absError": 0.8162950606139998
+						},
+						"2-ahead": {
+							"logScore": -8.922658299549402,
+							"logScoreMultiBin": -6.524763026730577,
+							"absError": 2.6804122776513903
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.0257175770811555,
+							"logScoreMultiBin": -1.638892885091027,
+							"absError": 0.8763599999999991
+						},
+						"2-ahead": {
+							"logScore": -4.599507257208359,
+							"logScoreMultiBin": -2.19650005438773,
+							"absError": 2.20953
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "EpiDeep-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.9845447775245635,
+							"logScoreMultiBin": -1.4949400460182511,
+							"absError": 0.9485649999999999
+						},
+						"2-ahead": {
+							"logScore": -5.32533943618408,
+							"logScoreMultiBin": -2.829172922523743,
+							"absError": 2.2604300000000004
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "ILIForecastProject-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.896695354895021,
+							"logScoreMultiBin": -1.5158879669956975,
+							"absError": 0.790295
+						},
+						"2-ahead": {
+							"logScore": -4.899324504980157,
+							"logScoreMultiBin": -2.3586883821444657,
+							"absError": 2.18353
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "PSI-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": -2.5209855872030547,
+							"logScoreMultiBin": -0.3182265483633568,
+							"absError": 0.2843058970117145
+						},
+						"2-ahead": {
+							"logScore": -5.115995809754082,
+							"logScoreMultiBin": -2.162823150618887,
+							"absError": 0.9512739835762796
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": -6.762656755736062,
+							"logScoreMultiBin": -4.002196692777264,
+							"absError": 1.2409241484716205
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.221395488420889,
+							"logScoreMultiBin": -1.8314859855683288,
+							"absError": 1.3402949999999998
+						},
+						"2-ahead": {
+							"logScore": -4.822497310555842,
+							"logScoreMultiBin": -2.3895237380832492,
+							"absError": 2.3835300000000004
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-SIRRW",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-experts",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": -7.330337450860235,
+							"logScoreMultiBin": -3.4049899579629628,
+							"absError": 1.3849225317950093
+						},
+						"2-ahead": {
+							"logScore": -3.5784075161192193,
+							"logScoreMultiBin": -1.003382401615503,
+							"absError": 0.7908999665030443
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": -5.732420404587652,
+							"logScoreMultiBin": -3.23776070383012,
+							"absError": 1.7220460604858396
+						},
+						"2-ahead": {
+							"logScore": -6.907755028272379,
+							"logScoreMultiBin": -4.50985422657782,
+							"absError": 3.5516721756744385
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs4",
+			"models": [
+				{
+					"id": "CMU_Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.6697092865089345,
+							"logScoreMultiBin": -1.2999819282085574,
+							"absError": 0.4518249999999999
+						},
+						"2-ahead": {
+							"logScore": -3.786212181344265,
+							"logScoreMultiBin": -1.4069598702598178,
+							"absError": 0.1771900000000004
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.451123641592926,
+							"logScoreMultiBin": -0.8619351767869932,
+							"absError": 0.5258932943874903
+						},
+						"2-ahead": {
+							"logScore": -3.45904271343259,
+							"logScoreMultiBin": -1.1668949420439185,
+							"absError": 1.0865288635538306
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": -5.08877957457999,
+							"logScoreMultiBin": -2.6241408558288084,
+							"absError": 1.5360850000000001
+						},
+						"2-ahead": {
+							"logScore": -4.74892508963323,
+							"logScoreMultiBin": -2.408679211005623,
+							"absError": 2.00557
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.133924951166082,
+							"logScoreMultiBin": -1.7638861523902438,
+							"absError": 1.6245150000000002
+						},
+						"2-ahead": {
+							"logScore": -6.739532646567684,
+							"logScoreMultiBin": -4.271479671914911,
+							"absError": 2.4025700000000003
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-hybrid1",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.773647422729833,
+							"logScoreMultiBin": -1.2061782191055537,
+							"absError": 0.5630811045647905
+						},
+						"2-ahead": {
+							"logScore": -5.854605364389622,
+							"logScoreMultiBin": -3.1342283508082223,
+							"absError": 1.5095053902919902
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.9238615214292767,
+							"logScoreMultiBin": -1.541086892839731,
+							"absError": 0.29589
+						},
+						"2-ahead": {
+							"logScore": -4.136173126952344,
+							"logScoreMultiBin": -1.747224461227818,
+							"absError": 0.649
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "EpiDeep-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.418420568962555,
+							"logScoreMultiBin": -1.933536891123854,
+							"absError": 1.2953649999999999
+						},
+						"2-ahead": {
+							"logScore": -3.8220549616369155,
+							"logScoreMultiBin": -1.4305348212937883,
+							"absError": 0.9310700000000001
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "ILIForecastProject-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.5942807049194894,
+							"logScoreMultiBin": -1.198641218659176,
+							"absError": 0.4745149999999998
+						},
+						"2-ahead": {
+							"logScore": -4.431880023065921,
+							"logScoreMultiBin": -2.0148305696668927,
+							"absError": 1.10257
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "PSI-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": -2.505292647673107,
+							"logScoreMultiBin": -0.28187855067423884,
+							"absError": 0.26974176685178497
+						},
+						"2-ahead": {
+							"logScore": -10,
+							"logScoreMultiBin": -10,
+							"absError": 3.03925015532442
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": -6.664145149620151,
+							"logScoreMultiBin": -4.087848152660435,
+							"absError": 1.7356209547738697
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.691492833654052,
+							"logScoreMultiBin": -1.2894275624144504,
+							"absError": 0.7270850000000002
+						},
+						"2-ahead": {
+							"logScore": -4.307537535158421,
+							"logScoreMultiBin": -1.8823409350441453,
+							"absError": 1.4025700000000003
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-SIRRW",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-experts",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.7911819592657086,
+							"logScoreMultiBin": -1.181632504608448,
+							"absError": 0.7736708172845148
+						},
+						"2-ahead": {
+							"logScore": -5.273082131747927,
+							"logScoreMultiBin": -2.4457206492864327,
+							"absError": 1.3798175073541046
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.794771206677178,
+							"logScoreMultiBin": -1.2831536173241271,
+							"absError": 0.6004415807342531
+						},
+						"2-ahead": {
+							"logScore": -5.456401892135685,
+							"logScoreMultiBin": -2.6973798603312824,
+							"absError": 1.387539997406006
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs5",
+			"models": [
+				{
+					"id": "CMU_Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.740799690986769,
+							"logScoreMultiBin": -1.3664969430023255,
+							"absError": 0.22022999999999993
+						},
+						"2-ahead": {
+							"logScore": -3.884693080476524,
+							"logScoreMultiBin": -1.501836922946796,
+							"absError": 0.13180999999999976
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -2.463079495435908,
+							"logScoreMultiBin": -0.40471670922547653,
+							"absError": 0.37774132051559484
+						},
+						"2-ahead": {
+							"logScore": -3.4401835482427625,
+							"logScoreMultiBin": -0.9994941897131645,
+							"absError": 0.96391895392936
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.830138479543541,
+							"logScoreMultiBin": -1.2258730425426854,
+							"absError": 0.5319349999999998
+						},
+						"2-ahead": {
+							"logScore": -4.015995595811124,
+							"logScoreMultiBin": -1.8748237372207233,
+							"absError": 0.8055399999999997
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.5196946523730612,
+							"logScoreMultiBin": -1.2160297079324214,
+							"absError": 0.5378950000000002
+						},
+						"2-ahead": {
+							"logScore": -3.723222482536482,
+							"logScoreMultiBin": -1.4035223137373178,
+							"absError": 1.27554
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-hybrid1",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.0569206420024164,
+							"logScoreMultiBin": -0.44934064733222306,
+							"absError": 0.38675905507877983
+						},
+						"2-ahead": {
+							"logScore": -3.780994743021742,
+							"logScoreMultiBin": -0.7946632437524642,
+							"absError": 0.5955233310901695
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.4613496444359093,
+							"logScoreMultiBin": -1.103868076051135,
+							"absError": 0.19308000000000014
+						},
+						"2-ahead": {
+							"logScore": -3.9831713616849025,
+							"logScoreMultiBin": -1.589248135585765,
+							"absError": 1.1103199999999998
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "EpiDeep-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": -5.423927004928425,
+							"logScoreMultiBin": -2.562780116901906,
+							"absError": 1.341495
+						},
+						"2-ahead": {
+							"logScore": -3.448435235826046,
+							"logScoreMultiBin": -1.0821091070463391,
+							"absError": 0.6550399999999996
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "ILIForecastProject-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.3077961895534047,
+							"logScoreMultiBin": -0.9204254167915314,
+							"absError": 0.18789500000000015
+						},
+						"2-ahead": {
+							"logScore": -3.87706794938312,
+							"logScoreMultiBin": -1.3972730441179235,
+							"absError": 0.47553999999999963
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "PSI-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": -6.6094379124341005,
+							"logScoreMultiBin": -3.0199074040245146,
+							"absError": 0.667102963909715
+						},
+						"2-ahead": {
+							"logScore": -10,
+							"logScoreMultiBin": -10,
+							"absError": 4.44056005055368
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": -7.923348211940175,
+							"logScoreMultiBin": -5.525452939141804,
+							"absError": 1.5923171428571399
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.4121801641589373,
+							"logScoreMultiBin": -1.0292085316369257,
+							"absError": 0.4134350000000002
+						},
+						"2-ahead": {
+							"logScore": -3.8954938674113753,
+							"logScoreMultiBin": -1.4902041074304422,
+							"absError": 0.87554
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-SIRRW",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-experts",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": -2.7694027720083767,
+							"logScoreMultiBin": -0.4822672646858511,
+							"absError": 0.2816902602180673
+						},
+						"2-ahead": {
+							"logScore": -3.3506068202521595,
+							"logScoreMultiBin": -0.9523779583157068,
+							"absError": 0.6139295352178946
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.6364464890651114,
+							"logScoreMultiBin": -1.163656524962374,
+							"absError": 0.6147542892074584
+						},
+						"2-ahead": {
+							"logScore": -6.3610965889359985,
+							"logScoreMultiBin": -3.4950974467809,
+							"absError": 1.6530974207305906
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs6",
+			"models": [
+				{
+					"id": "CMU_Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.106143707172334,
+							"logScoreMultiBin": -1.7179762210686156,
+							"absError": 0.7056650000000007
+						},
+						"2-ahead": {
+							"logScore": -4.2376539531733295,
+							"logScoreMultiBin": -1.8467764602422725,
+							"absError": 0.5193500000000011
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.8856502958935923,
+							"logScoreMultiBin": -1.5320325671447133,
+							"absError": 0.9731217996678398
+						},
+						"2-ahead": {
+							"logScore": -4.805538896156947,
+							"logScoreMultiBin": -2.332930151142388,
+							"absError": 2.131153371942239
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": -5.088539377947092,
+							"logScoreMultiBin": -2.631994146586391,
+							"absError": 1.4077849999999996
+						},
+						"2-ahead": {
+							"logScore": -5.011035374117595,
+							"logScoreMultiBin": -2.4610299797443274,
+							"absError": 2.499789999999999
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.7670375455326015,
+							"logScoreMultiBin": -1.3667973740487696,
+							"absError": 0.7465049999999995
+						},
+						"2-ahead": {
+							"logScore": -5.27183124131221,
+							"logScoreMultiBin": -2.7034403428448113,
+							"absError": 2.2427899999999994
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-hybrid1",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.8547643371763423,
+							"logScoreMultiBin": -1.3541686396711299,
+							"absError": 1.1011110433125197
+						},
+						"2-ahead": {
+							"logScore": -4.604903483759292,
+							"logScoreMultiBin": -2.064351910559683,
+							"absError": 1.6347885656721797
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.291039669827299,
+							"logScoreMultiBin": -1.8993623044550634,
+							"absError": 1.2143300000000004
+						},
+						"2-ahead": {
+							"logScore": -4.355863053639474,
+							"logScoreMultiBin": -1.9637968629702547,
+							"absError": 0.6218499999999993
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "EpiDeep-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.6212071663664966,
+							"logScoreMultiBin": -1.2138660269511528,
+							"absError": 0.7908550000000001
+						},
+						"2-ahead": {
+							"logScore": -3.1525231503774425,
+							"logScoreMultiBin": -0.8245275120584072,
+							"absError": 0.3696899999999994
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "ILIForecastProject-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.8832325543968755,
+							"logScoreMultiBin": -1.4518837686837498,
+							"absError": 0.8965049999999994
+						},
+						"2-ahead": {
+							"logScore": -4.122141193798768,
+							"logScoreMultiBin": -1.7504341797499579,
+							"absError": 0.842789999999999
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "PSI-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.53454921469545,
+							"logScoreMultiBin": -0.9257547368169146,
+							"absError": 0.6042504339693897
+						},
+						"2-ahead": {
+							"logScore": -10,
+							"logScoreMultiBin": -10,
+							"absError": 2.9634420111897004
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": -7.923348211940175,
+							"logScoreMultiBin": -5.525452939141804,
+							"absError": 1.7166361538461494
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.938942222906264,
+							"logScoreMultiBin": -1.5418112098165984,
+							"absError": 0.9465050000000002
+						},
+						"2-ahead": {
+							"logScore": -4.2276471810173515,
+							"logScoreMultiBin": -1.8239933845962313,
+							"absError": 0.7427899999999994
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-SIRRW",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-experts",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.902420101843426,
+							"logScoreMultiBin": -2.0724593608183017,
+							"absError": 0.9489148020919598
+						},
+						"2-ahead": {
+							"logScore": -2.93428204079265,
+							"logScoreMultiBin": -0.6216788336592544,
+							"absError": 0.27476632638915977
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.317810758465294,
+							"logScoreMultiBin": -1.8452666400834574,
+							"absError": 1.1048278714752193
+						},
+						"2-ahead": {
+							"logScore": -6.903712356098776,
+							"logScoreMultiBin": -4.494955233252587,
+							"absError": 2.967945353546142
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs7",
+			"models": [
+				{
+					"id": "CMU_Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.366799346632613,
+							"logScoreMultiBin": -1.9682135253061461,
+							"absError": 1.4319200000000003
+						},
+						"2-ahead": {
+							"logScore": -4.6081358768420655,
+							"logScoreMultiBin": -2.2094449701568055,
+							"absError": 2.4279800000000007
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.078427528090306,
+							"logScoreMultiBin": -1.4031733801269395,
+							"absError": 0.530173156299325
+						},
+						"2-ahead": {
+							"logScore": -3.4982672291294468,
+							"logScoreMultiBin": -1.1807612354485706,
+							"absError": 0.5143682355994601
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.258081650967259,
+							"logScoreMultiBin": -1.942679987303479,
+							"absError": 4.61936
+						},
+						"2-ahead": {
+							"logScore": -4.257758009328544,
+							"logScoreMultiBin": -1.9597758349169516,
+							"absError": 0.5278800000000006
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.724344139206551,
+							"logScoreMultiBin": -2.163596309825178,
+							"absError": 1.5978599999999998
+						},
+						"2-ahead": {
+							"logScore": -3.6037298090722554,
+							"logScoreMultiBin": -1.2135350438296282,
+							"absError": 0.7938800000000006
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-hybrid1",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": -6.8278309285100525,
+							"logScoreMultiBin": -3.8351048330704787,
+							"absError": 2.275651545081705
+						},
+						"2-ahead": {
+							"logScore": -5.324545718765268,
+							"logScoreMultiBin": -2.672848454214344,
+							"absError": 1.60610963381819
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.8986726633052426,
+							"logScoreMultiBin": -1.5171075879042857,
+							"absError": 0.12858999999999998
+						},
+						"2-ahead": {
+							"logScore": -4.080930717546185,
+							"logScoreMultiBin": -1.6935027424972984,
+							"absError": 0.8441900000000002
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "EpiDeep-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": -5.431169493711989,
+							"logScoreMultiBin": -2.6988361732204122,
+							"absError": 1.25256
+						},
+						"2-ahead": {
+							"logScore": -3.2229787057207955,
+							"logScoreMultiBin": -0.8886822778720984,
+							"absError": 0.48758000000000035
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "ILIForecastProject-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.365474945328051,
+							"logScoreMultiBin": -1.8971982831114889,
+							"absError": 1.0978600000000003
+						},
+						"2-ahead": {
+							"logScore": -4.067221173679898,
+							"logScoreMultiBin": -1.6900407038002296,
+							"absError": 0.9938799999999999
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "PSI-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": -7.2114243145970685,
+							"logScoreMultiBin": -5.775584502155063,
+							"absError": 1.2537564916306354
+						},
+						"2-ahead": {
+							"logScore": -10,
+							"logScoreMultiBin": -10,
+							"absError": 4.684148465985401
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": -7.923348211940175,
+							"logScoreMultiBin": -5.525452939141804,
+							"absError": 2.40255579908676
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.149467944576349,
+							"logScoreMultiBin": -1.7588964866134553,
+							"absError": 0.8478600000000003
+						},
+						"2-ahead": {
+							"logScore": -4.2845370133966245,
+							"logScoreMultiBin": -1.899656465701896,
+							"absError": 1.2938800000000006
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-SIRRW",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-experts",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.9574165672682446,
+							"logScoreMultiBin": -1.4872753466963657,
+							"absError": 0.7959157743618555
+						},
+						"2-ahead": {
+							"logScore": -5.014140984197232,
+							"logScoreMultiBin": -2.4884347660468658,
+							"absError": 1.8452266116343816
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.005708209248042,
+							"logScoreMultiBin": -1.6062098489460501,
+							"absError": 1.0495213960266114
+						},
+						"2-ahead": {
+							"logScore": -3.8265291557051713,
+							"logScoreMultiBin": -1.450803017707503,
+							"absError": 0.5723847247314451
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs8",
+			"models": [
+				{
+					"id": "CMU_Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.7670548113925673,
+							"logScoreMultiBin": -1.388673597767196,
+							"absError": 0.5433049999999997
+						},
+						"2-ahead": {
+							"logScore": -3.9161144169235262,
+							"logScoreMultiBin": -1.5323414522387504,
+							"absError": 0.31930499999999995
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -5.248120800347378,
+							"logScoreMultiBin": -2.0122321263367455,
+							"absError": 1.1532254550452303
+						},
+						"2-ahead": {
+							"logScore": -7.87417451805611,
+							"logScoreMultiBin": -4.777085387049575,
+							"absError": 2.38350865891042
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.2315025018892385,
+							"logScoreMultiBin": -1.7327680120284068,
+							"absError": 3.356045
+						},
+						"2-ahead": {
+							"logScore": -4.539288816874579,
+							"logScoreMultiBin": -1.994732813752882,
+							"absError": 1.3675699999999997
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": -5.185308285917442,
+							"logScoreMultiBin": -2.460464798854746,
+							"absError": 1.888045
+						},
+						"2-ahead": {
+							"logScore": -6.3047516482751575,
+							"logScoreMultiBin": -3.845250730976157,
+							"absError": 1.8065699999999998
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-hybrid1",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.311391962707335,
+							"logScoreMultiBin": -1.8915642532784354,
+							"absError": 1.1850343937042251
+						},
+						"2-ahead": {
+							"logScore": -5.8523361249469925,
+							"logScoreMultiBin": -3.491043431126001,
+							"absError": 2.5120962146473
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.804185525714646,
+							"logScoreMultiBin": -1.4193573151192589,
+							"absError": 0.8567299999999998
+						},
+						"2-ahead": {
+							"logScore": -4.1382418733923245,
+							"logScoreMultiBin": -1.7391003148639277,
+							"absError": 1.25758
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "EpiDeep-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.550117659124165,
+							"logScoreMultiBin": -1.178927201445512,
+							"absError": 0.4553950000000002
+						},
+						"2-ahead": {
+							"logScore": -4.916308346757122,
+							"logScoreMultiBin": -2.3967826450306298,
+							"absError": 1.6168700000000005
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "ILIForecastProject-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.081109258263162,
+							"logScoreMultiBin": -1.6789308372126768,
+							"absError": 0.888045
+						},
+						"2-ahead": {
+							"logScore": -4.845201867374622,
+							"logScoreMultiBin": -2.378005353822024,
+							"absError": 1.6065700000000005
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "PSI-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": -7.414156868651151,
+							"logScoreMultiBin": -6.374436097811232,
+							"absError": 1.8341207179467198
+						},
+						"2-ahead": {
+							"logScore": -10,
+							"logScoreMultiBin": -10,
+							"absError": 5.4999414148073
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": -7.923348211940175,
+							"logScoreMultiBin": -5.525452939141804,
+							"absError": 1.9368089954337906
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.071064780250222,
+							"logScoreMultiBin": -1.6890641550239096,
+							"absError": 1.0446150000000003
+						},
+						"2-ahead": {
+							"logScore": -4.4504485263436955,
+							"logScoreMultiBin": -2.0634107797167416,
+							"absError": 1.7065700000000001
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-SIRRW",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-experts",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.192033670836685,
+							"logScoreMultiBin": -1.342400375127055,
+							"absError": 0.7399429673459657
+						},
+						"2-ahead": {
+							"logScore": -4.033603374092062,
+							"logScoreMultiBin": -1.4010268135772899,
+							"absError": 0.9230984871379366
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": -5.189742712021419,
+							"logScoreMultiBin": -2.790626497818377,
+							"absError": 1.512227338066101
+						},
+						"2-ahead": {
+							"logScore": -6.907746636961423,
+							"logScoreMultiBin": -4.509745959853992,
+							"absError": 3.2099188273620607
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs9",
+			"models": [
+				{
+					"id": "CMU_Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.7298295021368015,
+							"logScoreMultiBin": -1.36312901199932,
+							"absError": 0.06464500000000006
+						},
+						"2-ahead": {
+							"logScore": -3.7414595630211096,
+							"logScoreMultiBin": -1.36345488854428,
+							"absError": 0.6350099999999994
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.8778058362015178,
+							"logScoreMultiBin": -1.1812538986537475,
+							"absError": 0.73213947214339
+						},
+						"2-ahead": {
+							"logScore": -5.9210332962285666,
+							"logScoreMultiBin": -3.1737909256783587,
+							"absError": 1.5993947067990395
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.029109734277844,
+							"logScoreMultiBin": -1.444045041897696,
+							"absError": 0.748005
+						},
+						"2-ahead": {
+							"logScore": -4.4226819764148155,
+							"logScoreMultiBin": -2.0002090082626958,
+							"absError": 1.5639299999999996
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.5591855900108507,
+							"logScoreMultiBin": -1.2742754935479592,
+							"absError": 0.8125750000000003
+						},
+						"2-ahead": {
+							"logScore": -4.505686907503141,
+							"logScoreMultiBin": -2.2547468102914934,
+							"absError": 1.2979299999999996
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-hybrid1",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": -2.7919146754503217,
+							"logScoreMultiBin": -0.26009102950503876,
+							"absError": 0.27747882501084997
+						},
+						"2-ahead": {
+							"logScore": -6.2484429812065,
+							"logScoreMultiBin": -3.7268608528616975,
+							"absError": 1.4896692866335495
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.7888527626066706,
+							"logScoreMultiBin": -1.4109830348881183,
+							"absError": 0.14482000000000017
+						},
+						"2-ahead": {
+							"logScore": -4.099546296365504,
+							"logScoreMultiBin": -1.707037537838322,
+							"absError": 1.2557799999999997
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "EpiDeep-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.4741295852247767,
+							"logScoreMultiBin": -1.1146606491608884,
+							"absError": 0.493055
+						},
+						"2-ahead": {
+							"logScore": -6.3918940235659685,
+							"logScoreMultiBin": -3.6206970785078543,
+							"absError": 2.03923
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "ILIForecastProject-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.4909060923192397,
+							"logScoreMultiBin": -1.0824719630126256,
+							"absError": 0.31050500000000003
+						},
+						"2-ahead": {
+							"logScore": -4.791600058365505,
+							"logScoreMultiBin": -2.2488242915076224,
+							"absError": 1.2979299999999996
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "PSI-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": -10,
+							"logScoreMultiBin": -10,
+							"absError": 1.43454915633572
+						},
+						"2-ahead": {
+							"logScore": -10,
+							"logScoreMultiBin": -10,
+							"absError": 4.22018088283544
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": -7.923348211940175,
+							"logScoreMultiBin": -5.525452939141804,
+							"absError": 1.5300029608938504
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.4004624021218657,
+							"logScoreMultiBin": -1.0291215770973947,
+							"absError": 0.5105049999999998
+						},
+						"2-ahead": {
+							"logScore": -4.134749768610598,
+							"logScoreMultiBin": -1.69619472182881,
+							"absError": 1.3979299999999997
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-SIRRW",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-experts",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": -2.882239324955087,
+							"logScoreMultiBin": -0.48440631058731143,
+							"absError": 0.4795343373516825
+						},
+						"2-ahead": {
+							"logScore": -4.79288380724706,
+							"logScoreMultiBin": -1.501364854723718,
+							"absError": 0.9243048724899254
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.5921610771736825,
+							"logScoreMultiBin": -1.1189332827665441,
+							"absError": 0.6429080876159667
+						},
+						"2-ahead": {
+							"logScore": -6.849616675121408,
+							"logScoreMultiBin": -4.249504430100583,
+							"absError": 1.9090374447631833
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs10",
+			"models": [
+				{
+					"id": "CMU_Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.8605660941159545,
+							"logScoreMultiBin": -1.4801113568090705,
+							"absError": 0.47175999999999974
+						},
+						"2-ahead": {
+							"logScore": -4.246742007954738,
+							"logScoreMultiBin": -1.8556366861394107,
+							"absError": 0.8073800000000002
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.2612529267069608,
+							"logScoreMultiBin": -0.9740615706383297,
+							"absError": 0.7519539218536302
+						},
+						"2-ahead": {
+							"logScore": -4.615097336896846,
+							"logScoreMultiBin": -1.9710834150967036,
+							"absError": 1.73053580584856
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.119452085438191,
+							"logScoreMultiBin": -1.6325988413723909,
+							"absError": 1.3254100000000002
+						},
+						"2-ahead": {
+							"logScore": -5.713529826111081,
+							"logScoreMultiBin": -2.328426114753871,
+							"absError": 1.3147900000000003
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CU-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.5716431761567953,
+							"logScoreMultiBin": -1.268355230538829,
+							"absError": 0.24890999999999996
+						},
+						"2-ahead": {
+							"logScore": -3.3510652611761556,
+							"logScoreMultiBin": -1.017598360474255,
+							"absError": 0.3727900000000002
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-hybrid1",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DACVT_FORECOURT-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": -6.8606118121356285,
+							"logScoreMultiBin": -5.630982692201128,
+							"absError": 1.91678149714254
+						},
+						"2-ahead": {
+							"logScore": -10,
+							"logScoreMultiBin": -10,
+							"absError": 4.56931458627954
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.945935174904162,
+							"logScoreMultiBin": -1.5625353057140001,
+							"absError": 0.3226300000000002
+						},
+						"2-ahead": {
+							"logScore": -3.89192220482975,
+							"logScoreMultiBin": -1.5092171030430492,
+							"absError": 0.6912000000000003
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "EpiDeep-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.512300593110526,
+							"logScoreMultiBin": -1.1534220417003909,
+							"absError": 0.6463199999999998
+						},
+						"2-ahead": {
+							"logScore": -4.870794553744379,
+							"logScoreMultiBin": -2.36138205324197,
+							"absError": 1.67469
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "ILIForecastProject-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.849409062283878,
+							"logScoreMultiBin": -1.4978264742138925,
+							"absError": 0.42612000000000005
+						},
+						"2-ahead": {
+							"logScore": -4.57579206026174,
+							"logScoreMultiBin": -2.1617267649128875,
+							"absError": 1.3727900000000002
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "PSI-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": -10,
+							"logScoreMultiBin": -10,
+							"absError": 3.3295823523946044
+						},
+						"2-ahead": {
+							"logScore": -10,
+							"logScoreMultiBin": -10,
+							"absError": 7.2734706659111
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.575843703481173,
+							"logScoreMultiBin": -2.1956464477444957,
+							"absError": 1.0982482513661198
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": -4.06822298386535,
+							"logScoreMultiBin": -1.66269957025057,
+							"absError": 0.59891
+						},
+						"2-ahead": {
+							"logScore": -4.345887588058009,
+							"logScoreMultiBin": -1.9254737128545176,
+							"absError": 0.9727899999999998
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-SIRRW",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMassCoE-experts",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": -3.3457685721933066,
+							"logScoreMultiBin": -0.9861171519856867,
+							"absError": 0.325593890736672
+						},
+						"2-ahead": {
+							"logScore": -6.383598256294386,
+							"logScoreMultiBin": -3.8185061250744403,
+							"absError": 2.9569816437943803
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": -5.14929129344735,
+							"logScoreMultiBin": -2.7777469095006717,
+							"absError": 1.290826584968567
+						},
+						"2-ahead": {
+							"logScore": -6.907754628599453,
+							"logScoreMultiBin": -4.509836868819587,
+							"absError": 3.05637850479126
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		}
+	]
+};

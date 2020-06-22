@@ -35,8 +35,4 @@ export default class ControlPanel extends Component {
   update (predictions) {
     this.legendDrawer.update(predictions)
   }
-
-  updateTitle(title) {
-    this.legendDrawer.updateTitle(title)
-  }
 }

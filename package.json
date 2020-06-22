@@ -11,10 +11,9 @@
     "parse-data": "cd visualization && node scripts/parse-data.js && cd ..",
     "dev": "cd visualization/vis-master && node build/dev-server.js && cd ../..",
     "parse-viz-master": "cd visualization/vis-master && node scripts/parse.js && cd ../..",
-    "build": "cd visualization/vis-master && rm -rf dist && node --max_old_space_size=6000 build/build.js && cd ../..",
+    "build": "cd visualization/vis-master && node --max_old_space_size=6000 build/build.js && cd ../..",
     "deploy": "gh-pages-deploy",
     "build-viz-mac": "cd visualization && ./0-init-vis.sh && ./2-mac-build-vis.sh && cd ..",
-    "build-viz-linux": "cd visualization && ./0-init-vis.sh && ./1-patch-vis.sh && ./2-build-vis.sh && cd ..",
     "setup-viz": "cd visualization && ./one-time-setup.sh && cd ..",
     "build-run": "npm run build-viz-mac && npm run dev"
   },

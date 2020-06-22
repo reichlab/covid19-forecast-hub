@@ -1,0 +1,5780 @@
+module.exports = {
+	"seasonId": "2019-2020",
+	"regions": [
+		{
+			"id": "nat",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "COVID-19 ILI Forecast Project-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Carnegie Mellon University Delphi Group-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DAC@VT FORECOURT -- Discovery Analytics Center @ Virginia Tech FOREcasting COvid UnceRtainTy-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Deep Learning for Epidemiology-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Predictive Science Inc-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMass-Amherst Influenza Forecasting Center of Excellence-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs1",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "COVID-19 ILI Forecast Project-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Carnegie Mellon University Delphi Group-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DAC@VT FORECOURT -- Discovery Analytics Center @ Virginia Tech FOREcasting COvid UnceRtainTy-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Deep Learning for Epidemiology-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Predictive Science Inc-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMass-Amherst Influenza Forecasting Center of Excellence-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs2",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "COVID-19 ILI Forecast Project-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Carnegie Mellon University Delphi Group-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DAC@VT FORECOURT -- Discovery Analytics Center @ Virginia Tech FOREcasting COvid UnceRtainTy-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Deep Learning for Epidemiology-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Predictive Science Inc-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMass-Amherst Influenza Forecasting Center of Excellence-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs3",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "COVID-19 ILI Forecast Project-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Carnegie Mellon University Delphi Group-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DAC@VT FORECOURT -- Discovery Analytics Center @ Virginia Tech FOREcasting COvid UnceRtainTy-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Deep Learning for Epidemiology-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Predictive Science Inc-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMass-Amherst Influenza Forecasting Center of Excellence-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs4",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "COVID-19 ILI Forecast Project-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Carnegie Mellon University Delphi Group-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DAC@VT FORECOURT -- Discovery Analytics Center @ Virginia Tech FOREcasting COvid UnceRtainTy-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Deep Learning for Epidemiology-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Predictive Science Inc-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMass-Amherst Influenza Forecasting Center of Excellence-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs5",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "COVID-19 ILI Forecast Project-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Carnegie Mellon University Delphi Group-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DAC@VT FORECOURT -- Discovery Analytics Center @ Virginia Tech FOREcasting COvid UnceRtainTy-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Deep Learning for Epidemiology-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Predictive Science Inc-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMass-Amherst Influenza Forecasting Center of Excellence-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs6",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "COVID-19 ILI Forecast Project-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Carnegie Mellon University Delphi Group-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DAC@VT FORECOURT -- Discovery Analytics Center @ Virginia Tech FOREcasting COvid UnceRtainTy-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Deep Learning for Epidemiology-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Predictive Science Inc-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMass-Amherst Influenza Forecasting Center of Excellence-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs7",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "COVID-19 ILI Forecast Project-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Carnegie Mellon University Delphi Group-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DAC@VT FORECOURT -- Discovery Analytics Center @ Virginia Tech FOREcasting COvid UnceRtainTy-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Deep Learning for Epidemiology-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Predictive Science Inc-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMass-Amherst Influenza Forecasting Center of Excellence-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs8",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "COVID-19 ILI Forecast Project-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Carnegie Mellon University Delphi Group-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DAC@VT FORECOURT -- Discovery Analytics Center @ Virginia Tech FOREcasting COvid UnceRtainTy-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Deep Learning for Epidemiology-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Predictive Science Inc-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMass-Amherst Influenza Forecasting Center of Excellence-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs9",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "COVID-19 ILI Forecast Project-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Carnegie Mellon University Delphi Group-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DAC@VT FORECOURT -- Discovery Analytics Center @ Virginia Tech FOREcasting COvid UnceRtainTy-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Deep Learning for Epidemiology-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Predictive Science Inc-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMass-Amherst Influenza Forecasting Center of Excellence-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "hhs10",
+			"models": [
+				{
+					"id": "CMU-Delphi-Crowdcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "CMU_Delphi-CrowdcastMturk",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "COVID-19 ILI Forecast Project-ensemble",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Carnegie Mellon University Delphi Group-Stat_Nowcast",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Mech",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Columbia University-Ravens",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "DAC@VT FORECOURT -- Discovery Analytics Center @ Virginia Tech FOREcasting COvid UnceRtainTy-presage",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Deep Learning for Epidemiology-EpiDeep",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "Predictive Science Inc-DICE",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UA-EpiCos",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UMass-Amherst Influenza Forecasting Center of Excellence-KernelOfTruth",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-ARLR",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				},
+				{
+					"id": "UVA_FluX-LSTM",
+					"scores": {
+						"1-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"2-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"3-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"4-ahead": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"peak-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						},
+						"onset-wk": {
+							"logScore": null,
+							"logScoreMultiBin": null,
+							"absError": null
+						}
+					}
+				}
+			]
+		}
+	]
+};
