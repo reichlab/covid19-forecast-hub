@@ -113,7 +113,7 @@ e.g. "NYTimes death data", "JHU CSSE case and death data", mobility data, etc.
 
 ### this_model_is_an_ensemble
 
-DEPRECATED
+_**DEPRECATED**_
 
 true/false indicating whether the model here is a combination of a set of other
 models
