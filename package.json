@@ -113,7 +113,7 @@
     "webpack-hot-middleware": "^2.12.2",
     "webpack-merge": "^0.14.1",
     "yaml-loader": "^0.4.0",
-    "gh-deploy": "0.2.3"
+    "gh-pages": "3.1.0"
   },
   "engines": {
     "node": ">= 4.0.0",
@@ -122,8 +122,8 @@
   "gh-pages-deploy": {
     "staticpath": "visualization/vis-master/dist",
     "prep": [
-      "build"
+      "build-viz-mac"
     ],
-    "noprompt": true
+    "noprompt": false
   }
 }
