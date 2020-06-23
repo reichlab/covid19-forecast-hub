@@ -53,7 +53,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
     if model_name not in model_names:
         model_config = {}
         model_config['name'], model_config['abbreviation'], model_config['team_name'], model_config['description'], model_config['home_url'], model_config['aux_data_url'] \
-            = metadata['model_name'], metadata['team_abbr']+'-'+metadata['model_abbr'], metadata['team_name'], metadata['methods'], metadata['model_repo'] if metadata.get('model_repo')!= None else url + dir_name, 'NA'
+            = metadata['model_name'], metadata['team_abbr']+'-'+metadata['model_abbr'], metadata['team_name'], metadata['methods'], metadata['website_url'] if metadata.get('website_url')!= None else url + dir_name, 'NA'
         try:
             project_obj.create_model(model_config)
             models = project_obj.models
@@ -63,7 +63,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
     model = [model for model in models if model.name == model_name][0]
 
     # Get names of existing forecasts to avoid re-upload
-    existing_forecasts = [forecast.source for forecast in model.forecasts]
+    existing_time_zeros = [forecast.timezero.timezero_date for forecast in model.forecasts]
 
     # Batch upload
     json_io_dict_batch = []
@@ -71,8 +71,12 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
     timezero_date_batch = []
 
     for forecast in forecasts:
+
+        # Default config
         over_write = False
         checksum = 0
+        time_zero_date = forecast.split(dir_name)[0][:-1]
+
         # Check if forecast is already on zoltar
         with open(path_to_processed_model_forecasts+forecast, "rb") as f:
             # Get the current hash of a processed file
@@ -82,7 +86,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
             # Check this hash against the previous version of hash
             if db.get(forecast, None) != checksum:
                 print(forecast)
-                if forecast in existing_forecasts:
+                if time_zero_date in existing_time_zeros:
                     over_write = True
             else:
                 continue
@@ -92,9 +96,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
             continue
 
         with open(path_to_processed_model_forecasts+forecast) as fp:
-
-            # Get timezero and create timezero on zoltar if not existed
-            time_zero_date = forecast.split(dir_name)[0][:-1]
+            # Create timezero on zoltar if not existed
             if time_zero_date not in project_timezeros:
                 try:
                     project_obj.create_timezero(time_zero_date)

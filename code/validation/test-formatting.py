@@ -115,12 +115,12 @@ def check_formatting(my_path):
     existing_metadata_name = collections.defaultdict(list)
     existing_metadata_abbr = collections.defaultdict(list)
     errors_exist = False  # Keep track of errors
-
+    metadata_validation_cache = {}
     # Iterate through processed csvs
     for path in glob.iglob(my_path + "**/**/", recursive=False):
 
         # Check metadata file
-        is_metadata_error, metadata_error_output = check_for_metadata(path)
+        is_metadata_error, metadata_error_output = check_for_metadata(path, cache= metadata_validation_cache)
 
         # Check metadata names and abbreviations for duplicates
         model_name, model_abbr = get_metadata_model(path)
@@ -178,6 +178,7 @@ def check_formatting(my_path):
     # Error if necessary and print to console
     print_output_errors(meta_output_errors, prefix='metadata')
     print_output_errors(output_errors, prefix='data')
+    print('Using validation code v2...')
     if len(meta_output_errors) + len(output_errors) > 0:
         sys.exit("\n ERRORS FOUND EXITING BUILD...")
 
