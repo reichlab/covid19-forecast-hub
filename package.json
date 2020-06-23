@@ -12,7 +12,7 @@
     "dev": "cd visualization/vis-master && node build/dev-server.js && cd ../..",
     "parse-viz-master": "cd visualization/vis-master && node scripts/parse.js && cd ../..",
     "build": "cd visualization/vis-master && rm -rf dist && node --max_old_space_size=6000 build/build.js && cd ../..",
-    "deploy": "gh-pages-deploy",
+    "deploy": "node ./visualization/scripts/gh-deploy.js",
     "build-viz-mac": "cd visualization && ./0-init-vis.sh && ./2-mac-build-vis.sh && cd ..",
     "build-viz-linux": "cd visualization && ./0-init-vis.sh && ./1-patch-vis.sh && ./2-build-vis.sh && cd ..",
     "setup-viz": "cd visualization && ./one-time-setup.sh && cd ..",
@@ -112,7 +112,8 @@
     "webpack-dev-middleware": "^1.8.3",
     "webpack-hot-middleware": "^2.12.2",
     "webpack-merge": "^0.14.1",
-    "yaml-loader": "^0.4.0"
+    "yaml-loader": "^0.4.0",
+    "gh-deploy": "0.2.3"
   },
   "engines": {
     "node": ">= 4.0.0",
