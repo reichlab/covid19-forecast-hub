@@ -7,6 +7,28 @@ set -e
 npm run test
 npm run parse-data
 
+# Remove CU-models except select
+rm -rf ./data/Cumulative\ Deaths/CU-nointerv
+rm -rf ./data/Incident\ Deaths/CU-nointerv
+rm -rf ./data/Cumulative\ Deaths/CU-60-contact
+rm -rf ./data/Incident\ Deaths/CU-60-contact
+rm -rf ./data/Cumulative\ Deaths/CU-70-contact
+rm -rf ./data/Incident\ Deaths/CU-70-contact
+rm -rf ./data/Cumulative\ Deaths/CU-80-contact
+rm -rf ./data/Incident\ Deaths/CU-80-contact
+rm -rf ./data/Cumulative\ Deaths/CU-80-contact1x5p
+rm -rf ./data/Incident\ Deaths/CU-80-contact1x5p
+rm -rf ./data/Cumulative\ Deaths/CU-80-contact1x10p
+rm -rf ./data/Incident\ Deaths/CU-80-contact1x10p
+rm -rf ./data/Cumulative\ Deaths/CU-80-contactw5p
+rm -rf ./data/Incident\ Deaths/CU-80-contactw5p
+rm -rf ./data/Cumulative\ Deaths/CU-80-contactw10p
+rm -rf ./data/Incident\ Deaths/CU-80-contactw10p
+
+rm -rf ./data/Cumulative\ Deaths/CU-scenario_*
+rm -rf ./data/Incident\ Deaths/CU-scenario_*
+
+
 # Remove UChicago except CovidIL_100
 rm -rf ./data/Cumulative\ Deaths/UChicago-CovidIL_40
 rm -rf ./data/Incident\ Deaths/UChicago-CovidIL_40
