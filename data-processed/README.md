@@ -62,16 +62,12 @@ Within each subdirectory, there should be a metadata file, a license file
 
 ### Metadata 
 
-Participating teams must provide a metadata file (see [example](./UMass-ExpertCrowd/metadata-UMass-ExpertCrowd.txt)), 
-including methodological detail about their approach and a link to a file 
-(or a file itself) describing the methods used. 
-
-Note that the information in the `methods` field in the metadata is what will be shown on the [interactive visualization](https://reichlab.io/covid19-forecast-hub/) when a user hovers on your team name. For this reason, we request that the description be brief, around 200 characters (although at the moment this is not strictly enforced).
-
 The metadata file should have the following format
 
     metadata-team-model.txt
     
+and here is [the structure of the metadata file](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/METADATA.md).
+
 ### License (optional)
 
 If you would like to include a license file, 
@@ -96,8 +92,7 @@ where
 - `team` is the teamname, and
 - `model` is the name of your model. 
 
-The date YYYY-MM-DD is the date the forecasts were made from your mdoel, 
-i.e. the most recent data is YYYY-MM-DD.
+The date YYYY-MM-DD is the [`forecast_date`](#forecast_date).
 
 The `team` and `model` in this file must match the `team` and `model` in the
 directory this file is in. Both `team` and `model` should be less than 20 characters, alpha-numeric and underscores only, with no spaces or hyphens.
@@ -128,7 +123,14 @@ Values in the `forecast_date` column must be a date in the format
 
     YYYY-MM-DD
     
-This is the date on which the submitted forecast data was made available in `YYYY-MM-DD` format. In general, this will typically be the date on which the model finishes running and produces the standard formatted file. `forecast_date` should correspond and be redundant with the date in the filename, but is included here by request from some analysts. We will enforce that the forecast_date for a file must be either the date on which the file was submitted to the repository or the previous day. Exceptions will be made for legitimate extenuating circumstances.
+This is the date on which the submitted forecast were available.
+This will typically be the date on which the computation finishes running and 
+produces the standard formatted file. 
+`forecast_date` should correspond and be redundant with the date in the filename, 
+but is included here by request from some analysts. 
+We will enforce that the `forecast_date` for a file must be either the date on 
+which the file was submitted to the repository or the previous day. 
+Exceptions will be made for legitimate extenuating circumstances.
 
 
 ### `target`
@@ -184,8 +186,8 @@ A week-ahead forecast should represent the total number of incident deaths withi
 
 #### N day ahead inc hosp
 
-This target is the incident (daily) number of deaths predicted by the model
-on day N after `forecast_date`.
+This target is the number of new daily hospitalizations predicted by the
+model on day N after `forecast_date`.
 
 As an example, for day-ahead forecasts with a `forecast_date` of a Monday, a 1 day ahead inc hosp forecast corresponds to the number of incident hospitalizations on Tuesday, 2 day ahead to Wednesday, etc.... 
 
@@ -208,11 +210,11 @@ Values in the `location` column must be
 
 - "US" or
 - a two-digit number representing the US state, territory, or district 
-[fips numeric code](../template/state_fips_codes.csv). 
+[fips numeric code](./data-locations/locations.csv). 
 
 This location identifies the geographical location for the forecast.
 
-A file with FIPS codes for states in the US is available through the `fips_code` dataset in the `tigris` R package, and saved as a [public CSV file](./template/state_fips_codes.csv). Please note that when reading in FIPS codes, they should be read in as characters to preserve any leading zeroes.
+A file with FIPS codes for states in the US is available through the `fips_code` dataset in the `tigris` R package, and saved as a [public CSV file](./data-locations/locations.csv). Please note that when reading in FIPS codes, they should be read in as characters to preserve any leading zeroes.
 
 
 ### `type`
@@ -248,9 +250,8 @@ c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99)
 ```
 
 ```
-##  [1] 0.010 0.025 0.050 0.100 0.150 0.200 0.250 0.300 0.350 0.400 0.450
-## [12] 0.500 0.550 0.600 0.650 0.700 0.750 0.800 0.850 0.900 0.950 0.975
-## [23] 0.990
+##  [1] 0.010 0.025 0.050 0.100 0.150 0.200 0.250 0.300 0.350 0.400 0.450 0.500 0.550 0.600
+## [15] 0.650 0.700 0.750 0.800 0.850 0.900 0.950 0.975 0.990
 ```
 
 
@@ -302,7 +303,7 @@ To run these checks locally rather than waiting for the results from a pull requ
 If you cannot get the python checks to run, 
 you can use [these instructions](R_forecast_file_validation.md) to run some
 checks in R. 
-These checks will likely be deprecated in the future.
+These checks are no longer maintained, but may still be of use to teams working with R.
 
 
 ## Data visualization

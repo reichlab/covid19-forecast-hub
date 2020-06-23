@@ -3,7 +3,7 @@ language: node_js
 dist: bionic
 sudo: required
 git:
-  depth: 1
+  depth: 5
 
 before_install:
   # Key for cran trusty ppa
@@ -15,7 +15,7 @@ before_install:
   - sudo apt-get update
   
 node_js:
-  - 7
+  - 10.2
 
 cache:
   directories: $TRAVIS_BUILD_DIR/packrat/

@@ -1,32 +1,16 @@
 team_name: Auquan Data Science
 team_abbr: Auquan
-institution_affil: None
-team_contact: vishal@auquan.com, chandini@auquan.com
-team_funding: N/A
-team_experience: Machine Learning, Data Science
-
 model_name: MLOptimizedModifiedSEIR
 model_abbr: SEIR
-model_output: https://covid19-infection-model.auquan.com/
-model_repo: 
-
 model_contributors: Vishal Tomar <vishal@auquan.com>, Chandini Jain <chandini@auquan.com> 
-Model_targets: daily infections, daily deaths
-Target_loc: state (US)
-time_horizon: 4 months, through Aug 4, 2020
-Data_format: point
-forecast_startdate: 2020-04-01
-forecast_frequency: daily
-
-data_inputs_known: reported daily deaths, reported daily confirmed cases, population
-data_source_known: JHU
-
-this_model_is_an_ensemble: FALSE
-this_model_is_unconditional: TRUE
+website_url: 'https://covid19-infection-model.auquan.com/'
+license: cc-by-4.0
+team_model_designation: primary
 
 methods: >-
     Modified SEIR model with compartments for reported and unreported infections. Non-linear mixed effects curve-fitting.
- 
+
+data_inputs: JHU reported daily deaths, reported daily confirmed cases, population
 
 methods_long: >-
     We start with a standard SEIR model and break down the Infectious compartment(I) into reported infections (Ir) and unreported infections (Iu).

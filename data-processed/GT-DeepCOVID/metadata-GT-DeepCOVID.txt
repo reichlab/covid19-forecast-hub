@@ -1,37 +1,38 @@
-team_name: Georgia Institute of Technology
+team_name: GT
 team_abbr: GT
-institution_affil: Georgia Institute of Technology
-team_contact: deep-covid@lists.gatech.edu; badityap@cc.gatech.edu
-team_funding: Partly supported by multiple grants from NSF (NSF CAREER, NSF CISE Expeditions, NSF IIS, NSF COVID RAPID) and GT
-team_experience: Regular participant in CDC FluSight challenges. Had the best performance in the HHS1 region for 2018. A data science and AI driven lab which regularly participates in other forecasting and epidemiological tasks (inference, detection, interventions etc). 
-
-
 model_name: DeepCOVID
 model_abbr: DeepCOVID
-model_output: https://www.cc.gatech.edu/~badityap/covid.html 
-model_repo: 
-
-model_contributors: B. Aditya Prakash (Georgia Institute of Technology), Alexander Rodriguez (Georgia Institute of Technology), Anika Tabassum (Virginia Tech), Bijaya Adhikari (Virginia Tech), Jimeng Sun (University of Illinois, Urbana-Champaign), Danica Xiao (IQVIA), Cheng Qiang (IQVIA)
-Target_loc: state, national
-Time_horizon: 28 days (4 weeks ahead) 
-forecast_startdate: 2020-04-09
-forecast_frequency: 1x weekly
-
-data_source1: COVID Tracking Project, JHU
-data_source2: COVID-Net, NYT 
-data_source3: Other (proprietary) point-of-care claims data, demographic, mobility and symptomatic data
-
-this_model_is_an_ensemble: FALSE
-this_model_is_unconditional: FALSE
-
+model_contributors: >-
+    B. Aditya Prakash (Georgia Institute of Technology) <badityap@cc.gatech.edu>, 
+    Alexander Rodriguez (Georgia Institute of Technology),
+    Jiaming Cui (Georgia Institute of Technology),
+    Anika Tabassum (Virginia Tech), 
+    Bijaya Adhikari (University of Iowa/Virginia Tech),
+    Jimeng Sun (University of Illinois, Urbana-Champaign), 
+    Danica Xiao (IQVIA), 
+    Cheng Qiang (IQVIA),
+    Full Team <deep-covid@lists.gatech.edu>
+website_url: https://deepcovid.github.io/ 
+license: cc-by-4.0
+team_model_designation: primary
 
 methods: >-
-    Data-driven approach based on deep learning for forecasting mortality and hospitalizations using syndromic, clinical, demographic, mobility and point-of-care data.
-    The model makes predictions about the future assuming that the effect of the current social distancing measures and patterns are reflected in the input data and these measures remain constant in near future. 
-    However, as the data is updated each week in real time, we update to capture the effects of the most recent intervention measures and distancing patterns. 
+    Data-driven approach based on deep learning for forecasting mortality and 
+    hospitalizations using syndromic, clinical, demographic, mobility and 
+    point-of-care data. 
 
+institution_affil: >-
+    Georgia Institute of Technology, IQVIA, Univ. of Illinois, Urbana-Champaign
+    
+team_funding: >-
+    Partly supported by multiple grants from NSF 
+    (NSF CAREER, NSF CISE Expeditions, NSF IIS, NSF COVID RAPID) and GA Tech
+    
+data_inputs: >-
+    COVID Tracking Project, JHU
+    COVID-Net, NYT 
+    Other (proprietary) point-of-care claims data, demographic, mobility and symptomatic data
 
 methods_long: >-
     May 11 - This data-driven deep learning model learns the dependence of hospitalization and mortality rate on various detailed syndromic, demographic, mobility and clinical data (such as increase in positive Covid tests etc) from historical data. The learned model is then used to predict mortality and hospitalization at various points in future. To compensate for the effects of noise (in data and initialization), the model is bootstrapped on several subsamples and then aggregated. The model also propagates uncertainties in the data to show the confidence intervals in the forecasts.
 
-citation: See publications at https://www.cc.gatech.edu/~badityap/covid.html. Cite B. Aditya Prakash et al. Forecasting the COVID-19 trajectory. 2020.

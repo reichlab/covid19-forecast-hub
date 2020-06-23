@@ -5,22 +5,26 @@ import os
 
 def reformat_forecasts(file_path, target):
     # read forecast
-    fips_codes = pd.read_csv('../template/state_fips_codes.csv')
+    fips_codes = pd.read_csv('../data-locations/locations.csv')
     df = pd.read_csv(file_path)
 
     # lowercase all column headers
     df.columns = map(str.lower, df.columns)
 
-    # Include US and state data
+    # join the location ID in the forecast file
+    df['location'] = df['location'].astype(str).str.zfill(2)
+
+    # Ignore location_name in forecast file
+    if "location_name" in df.columns:
+        df = df.drop(['location_name'], axis=1)
+
+    # Get location_name from location.csv file
+    df = df.merge(fips_codes, left_on='location', right_on='location', how='left')
+
+    # Rename US
     locations_in_file = df["location"].unique()
     if "US" in locations_in_file:
-        df["location"].replace({"US": 1000}, inplace=True)
-        df["location"] = df["location"].apply(pd.to_numeric)
-        df = df.merge(fips_codes, left_on='location', right_on='state_code', how='left')
-        df.loc[df["location"] == 1000, "state_name"] = "US National"
-    else:
-        df["location"] = df["location"].apply(pd.to_numeric)
-        df = df.merge(fips_codes, left_on='location', right_on='state_code', how='left')
+        df.loc[df["location"] == 'US', "location_name"] = "US National"
 
     # Only visualize wk ahead forecasts
     if target == 'Cumulative Deaths':
@@ -43,7 +47,7 @@ def reformat_forecasts(file_path, target):
               'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
               'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington',
               'West Virginia', 'Wisconsin', 'Wyoming', 'District of Columbia']
-    df = df[df["state_name"].isin(states)]
+    df = df[df["location_name"].isin(states)]
 
     # Only visualize certain quantiles
     quantiles = [0.025, 0.25, 0.75, 0.975, None]  # 95 and 50 % CI
@@ -55,7 +59,7 @@ def reformat_forecasts(file_path, target):
 
     # Rename bin column
     df = df.rename(columns={"target": "Target",
-                            "state_name": "Location",
+                            "location_name": "Location",
                             "type": "Type",
                             "quantile": "Quantile",
                             "value": "Value"})

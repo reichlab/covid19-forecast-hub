@@ -2,10 +2,12 @@
 # Jarad Niemi
 # May 2020
 
-library("tidyverse")
+library("readr")
+library("dplyr")
 
 us_url     <- "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us.csv"
 states_url <- "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv"
+relative_path <- "./data-truth/nytimes/"
 
 us <- readr::read_csv(us_url,
                       col_types = readr::cols(
@@ -23,8 +25,8 @@ states <- readr::read_csv(states_url,
                        deaths = readr::col_integer()
                      )) 
   
-readr::write_csv(us,     path = "raw/us.csv")
-readr::write_csv(states, path = "raw/us-states.csv")
+readr::write_csv(us,     path = paste0(relative_path,"raw/us.csv"))
+readr::write_csv(states, path = paste0(relative_path,"raw/us-states.csv"))
 
 d <- us %>%
   dplyr::mutate(location = "US") %>%
@@ -42,16 +44,16 @@ d <- us %>%
 
 readr::write_csv(
   d %>% dplyr::select(date, location, deaths) %>% dplyr::rename(value = deaths),
-  path = "truth_nytimes-Cumulative Deaths.csv")
+  path = paste0(relative_path,"truth_nytimes-Cumulative Deaths.csv"))
 
 readr::write_csv(
   d %>% dplyr::select(date, location, cases) %>% dplyr::rename(value = cases),
-  path = "truth_nytimes-Cumulative Cases.csv")
+  path = paste0(relative_path,"truth_nytimes-Cumulative Cases.csv"))
 
 readr::write_csv(
   d %>% dplyr::select(date, location, inc_deaths) %>% dplyr::rename(value = inc_deaths),
-  path = "truth_nytimes-Incident Deaths.csv")
+  path = paste0(relative_path,"truth_nytimes-Incident Deaths.csv"))
 
 readr::write_csv(
   d %>% dplyr::select(date, location, inc_cases) %>% dplyr::rename(value = inc_cases),
-  path = "truth_nytimes-Incident Cases.csv")
+  path = paste0(relative_path,"truth_nytimes-Incident Cases.csv"))

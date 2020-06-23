@@ -1,0 +1,10 @@
+pandas
+requests
+pymmwr
+click
+urllib3
+selenium
+webdriver-manager
+pyyaml
+git+https://github.com/reichlab/zoltpy/
+https://github.com/hannanabdul55/pykwalify/archive/master.zip

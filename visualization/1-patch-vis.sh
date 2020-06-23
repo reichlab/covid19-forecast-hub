@@ -40,6 +40,6 @@ sed -i 's/reichlab\/flusight\/wiki\/Scoring#2-log-score-single-bin/FluSightNetwo
 sed -i 's/reichlab\/flusight\/wiki\/Scoring#3-log-score-multi-bin/FluSightNetwork\/cdc-flusight-ensemble\/wiki\/Evaluation/' ./src/store/modules/scores.js
 
 # Change max heap size
-sed -i 's/node build\/build.js/node --max_old_space_size=6000 build\/build.js/' ./package.json
+sed -i 's/node build\/build.js/node --max_old_space_size=6000 build\/build.js/' ../../package.json
 
 cd ..
