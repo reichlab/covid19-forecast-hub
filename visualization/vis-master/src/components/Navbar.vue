@@ -22,7 +22,7 @@
     }
 
     img {
-      max-height: 40px;
+      max-height: 45px;
     }
   }
 }
@@ -55,7 +55,9 @@
       .nav-left
         span.nav-item.is-brand
           span.brand.title
-            a.brand.title-text(v-bind:href="branding.parentUrl") {{ branding.title }}
+            a(v-bind:href="branding.parentUrl") 
+              img(src="https://covid19forecasthub.org/images/forecast-hub-logo_DARKBLUE.png")
+            //- a.brand.title-text(v-bind:href="branding.parentUrl") {{ branding.title }}
 
       // Right side buttons
       #nav-menu.nav-right.nav-menu
