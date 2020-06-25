@@ -37,7 +37,6 @@ body {
 
   &#panel-section {
     padding-bottom: 10px !important;
-    background: #f7f9fb;
   }
 }
 
