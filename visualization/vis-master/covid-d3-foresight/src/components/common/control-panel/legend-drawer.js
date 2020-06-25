@@ -180,15 +180,21 @@ export default class LegendDrawer extends Component {
     this.bottomRows = predictions
       .filter(p => config.pinnedModels.indexOf(p.id) === -1)
       .map(p => {
+        p.hidden = true
         let drawerRow = makePredictionRow(p, this.tooltip)
         drawerRow.addOnClick(({ id, state }) => {
           this.showHideButtons.reset()
           ev.publish(this.uuid, ev.LEGEND_ITEM, { id, state })
         })
-
+        // drawerRow.click()
         this.bottomContainer.append(() => drawerRow.node)
         return drawerRow
       })
+    
+      let ensembleRow = this.bottomRows.find(r => r.id === 'COVIDhub-ensemble')
+      if (ensembleRow) {
+        ensembleRow.click()
+      }
 
     // Handle pinned models separately
     this.pinnedContainer.selectAll('*').remove()
@@ -197,6 +203,7 @@ export default class LegendDrawer extends Component {
       ...additional.filter(ad => ad.legend)
     ]
       .map(it => {
+        console.log('in pinned')
         let drawerRow = makePredictionRow(it, this.tooltip)
         drawerRow.addOnClick(({ id, state }) => {
           ev.publish(this.uuid, ev.LEGEND_ITEM, { id, state })
@@ -208,8 +215,10 @@ export default class LegendDrawer extends Component {
   }
 
   update (predictions) {
+    console.log('Update legend drawer')
     predictions.forEach(p => {
       let row = this.bottomRows.find(r => r.id === p.id) || this.pinnedRows.find(r => r.id === p.id)
+      
       if (row) {
         row.na = p.noData
       }
