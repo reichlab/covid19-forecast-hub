@@ -58,9 +58,11 @@ div
 
   // Main layout components
   navbar
+  hr(style="margin:0px;")
   .section#panel-section
     #app.container
       panels
+  hr(style="margin:0px;")
   foot
 </template>
 
