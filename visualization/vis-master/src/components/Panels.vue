@@ -9,13 +9,14 @@ h1 a {
 }
 #choropleth-container,
 #chart-container {
-  background: white;
+  background: #f7f9fb;
 }
 #chart-container.column.is-8 {
   margin-top: -4px;
   margin-bottom: 0;
   padding-bottom: 0;
   padding-top: 0;
+  background: #f7f9fb;
 }
 
 #help-button {

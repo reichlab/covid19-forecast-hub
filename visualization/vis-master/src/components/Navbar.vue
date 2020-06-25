@@ -96,7 +96,7 @@ $palette: (
  */
 .site-header {
   background: #fff;
-  padding-bottom: 1.25em;
+  padding-bottom: 0.5em;
   padding-top: 1.125em;
   padding-left: 3vw;
   padding-right: 3vw;
