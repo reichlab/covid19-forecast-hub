@@ -8,7 +8,9 @@ license: cc-by-4.0
 team_model_designation: primary
 
 methods: >-
-today's "Daily New Confirmed Cases" + today's "Encounter Density" ==> today's newly infected Cases ==> next 2-3 weeks' "Daily New Confirmed Cases"
+today's "Daily New Confirmed Cases" + today's "Encounter Density" 
+==> today's newly infected Cases 
+==> next 2-3 weeks' "Daily New Confirmed Cases"
 
 repo_url: https://github.com/qjhong/covid19
 this_model_is_an_ensemble: false
