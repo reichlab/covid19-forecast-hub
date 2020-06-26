@@ -1,15 +1,10 @@
-team_name: Center for Disease Dynamics, Economics & Policy
-team_abbr: CDDEP
-model_name: GlobalAgentBasedModel
-model_abbr: ABM
-model_contributors: Eili Klein <klein@cddep.org> 
-website_url: 'https://cddep.org/'
-license: cc-by-4.0
-team_model_designation: primary
-methods: >-
-    GlobalAgentBasedModel
-
 data_inputs: JHU reported daily deaths, reported daily confirmed cases
-
-methods_long: >-
-    GlobalAgentBasedModel
+license: cc-by-4.0
+methods: GlobalAgentBasedModel
+methods_long: GlobalAgentBasedModel
+model_abbr: CDDEP-ABM
+model_contributors: Eili Klein <klein@cddep.org>
+model_name: GlobalAgentBasedModel
+team_model_designation: primary
+team_name: Center for Disease Dynamics, Economics & Policy
+website_url: https://cddep.org/

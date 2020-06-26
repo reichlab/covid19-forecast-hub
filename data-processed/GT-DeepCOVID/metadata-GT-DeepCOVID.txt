@@ -1,38 +1,25 @@
-team_name: GT
-team_abbr: GT
-model_name: DeepCOVID
-model_abbr: DeepCOVID
-model_contributors: >-
-    B. Aditya Prakash (Georgia Institute of Technology) <badityap@cc.gatech.edu>, 
-    Alexander Rodriguez (Georgia Institute of Technology),
-    Jiaming Cui (Georgia Institute of Technology),
-    Anika Tabassum (Virginia Tech), 
-    Bijaya Adhikari (University of Iowa/Virginia Tech),
-    Jimeng Sun (University of Illinois, Urbana-Champaign), 
-    Danica Xiao (IQVIA), 
-    Cheng Qiang (IQVIA),
-    Full Team <deep-covid@lists.gatech.edu>
-website_url: https://deepcovid.github.io/ 
+data_inputs: COVID Tracking Project, JHU COVID-Net, NYT  Other (proprietary) point-of-care
+  claims data, demographic, mobility and symptomatic data
+institution_affil: Georgia Institute of Technology, IQVIA, Univ. of Illinois, Urbana-Champaign
 license: cc-by-4.0
+methods: 'Data-driven approach based on deep learning for forecasting mortality and  hospitalizations
+  using syndromic, clinical, demographic, mobility and  point-of-care data. '
+methods_long: May 11 - This data-driven deep learning model learns the dependence
+  of hospitalization and mortality rate on various detailed syndromic, demographic,
+  mobility and clinical data (such as increase in positive Covid tests etc) from historical
+  data. The learned model is then used to predict mortality and hospitalization at
+  various points in future. To compensate for the effects of noise (in data and initialization),
+  the model is bootstrapped on several subsamples and then aggregated. The model also
+  propagates uncertainties in the data to show the confidence intervals in the forecasts.
+model_abbr: GT-DeepCOVID
+model_contributors: B. Aditya Prakash (Georgia Institute of Technology) <badityap@cc.gatech.edu>,  Alexander
+  Rodriguez (Georgia Institute of Technology), Jiaming Cui (Georgia Institute of Technology),
+  Anika Tabassum (Virginia Tech),  Bijaya Adhikari (University of Iowa/Virginia Tech),
+  Jimeng Sun (University of Illinois, Urbana-Champaign),  Danica Xiao (IQVIA),  Cheng
+  Qiang (IQVIA), Full Team <deep-covid@lists.gatech.edu>
+model_name: DeepCOVID
+team_funding: Partly supported by multiple grants from NSF  (NSF CAREER, NSF CISE
+  Expeditions, NSF IIS, NSF COVID RAPID) and GA Tech
 team_model_designation: primary
-
-methods: >-
-    Data-driven approach based on deep learning for forecasting mortality and 
-    hospitalizations using syndromic, clinical, demographic, mobility and 
-    point-of-care data. 
-
-institution_affil: >-
-    Georgia Institute of Technology, IQVIA, Univ. of Illinois, Urbana-Champaign
-    
-team_funding: >-
-    Partly supported by multiple grants from NSF 
-    (NSF CAREER, NSF CISE Expeditions, NSF IIS, NSF COVID RAPID) and GA Tech
-    
-data_inputs: >-
-    COVID Tracking Project, JHU
-    COVID-Net, NYT 
-    Other (proprietary) point-of-care claims data, demographic, mobility and symptomatic data
-
-methods_long: >-
-    May 11 - This data-driven deep learning model learns the dependence of hospitalization and mortality rate on various detailed syndromic, demographic, mobility and clinical data (such as increase in positive Covid tests etc) from historical data. The learned model is then used to predict mortality and hospitalization at various points in future. To compensate for the effects of noise (in data and initialization), the model is bootstrapped on several subsamples and then aggregated. The model also propagates uncertainties in the data to show the confidence intervals in the forecasts.
-
+team_name: GT
+website_url: https://deepcovid.github.io/
