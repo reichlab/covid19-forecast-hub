@@ -121,4 +121,4 @@ forecast_date,target,target_end_date,location,location_name,type,quantile,value
 2020-06-24,40 day ahead cum death,2020-08-03,US,US,quantile,0.95,254348.85390731224
 2020-06-24,41 day ahead cum death,2020-08-04,US,US,quantile,0.05,162325.8360171307
 2020-06-24,41 day ahead cum death,2020-08-04,US,US,quantile,0.5,189264.09970331498
-2020-06-24,41 day ahead cum death,2020-08-04,US,US,quantile,0.95,259851.46398239466
+2020-06-24,41 day ahead cum death,2020-08-04,US,US,quantile,0.95,259851.46398239467
