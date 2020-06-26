@@ -71,6 +71,7 @@ import Intro from "./components/Intro";
 import Panels from "./components/Panels";
 import Foot from "./components/Foot";
 
+import brandLogo from "../brand-logo.png";
 
 import { mapGetters, mapActions } from "vuex";
 
