@@ -1,14 +1,7 @@
 team_name: US Army Engineer Research and Development Center
 team_abbr: USACE
-institution_affil: DoD
-team_contact: glover.e.george@erdc.dren.mil
-team_funding: US Army Geospatial Task Force
-team_experience: 
-
 model_name: ERDC_SEIR
 model_abbr: ERDC_SEIR
-model_output: https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/USACE-ERDC_SEIR/metadata-USACE-ERDC_SEIR.txt 
-model_repo:
 
 model_contributors: Michael L. Mayo <Michael.L.Mayo@erdc.dren.mil>, Michael A. Rowland 
  <Michael.A.Rowland@erdc.dren.mil>,  Matthew D. Parno <Matthew.D.Parno@erdc.dren.mil>, 
@@ -16,21 +9,20 @@ model_contributors: Michael L. Mayo <Michael.L.Mayo@erdc.dren.mil>, Michael A. R
  <Matthew.W.Farthing@erdc.dren.mil>, William P. England <William.P.England@erdc.dren.mil>,
  Glover E. George <glover.e.george@erdc.dren.mil>
 
-Target_loc: state
-Time_horizon: 90 days
-forecast_startdate:  2020-05-15 
-forecasst_frequency: 1x daily
+website_url: https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/USACE-ERDC_SEIR/metadata-USACE-ERDC_SEIR.txt 
+license: LICENSE.txt
+institution_affil: DoD
 
-data_source1: USA FACTS 
-data_source2: JHU COVID-19 Git Repo 
-
-this_model_is_an_ensemble: false
-this_model_is_unconditional: false
+team_funding: US Army Geospatial Task Force
+team_model_designation: primary
 
 methods: >-
-    The ERDC SEIR model makes predictions of several variables (e.g., reported new cases 
-    per day, cumulative reported cases, the susceptible population, etc...).  Model parameters 
-    are estimated using historical data using techniques from Bayesian inference.
+    The ERDC SEIR model makes predictions of several variables (e.g., reported new/cumulative cases 
+    per day, etc.). Model parameters are estimated using historical data using Bayesian inference.
+
+data_inputs: USA FACTS, JHU COVID-19 Git Repo
+
+this_model_is_an_ensemble: false
 
 methods_long: >-
     The ERDC SEIR model is a process-based model that mathematically describes the virus 
@@ -59,4 +51,3 @@ methods_long: >-
     Deaths are estimated from this model through a procedure which leverages state-level 
     data on recoveries and fatalities.
 
-citation: In preparation

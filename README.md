@@ -5,13 +5,13 @@ The goal of this repository is to create a standardized set of data on forecasts
 
 This README provides an overview of the project. Additional specific links can be found in the list below:
 
-* [Interactive Visualization](https://reichlab.io/covid19-forecast-hub/)
+* [Interactive Visualization](http://viz.covid19forecasthub.org)
 * [Ensemble model](#ensemble-model)
 * [Processed forecast data](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed)
 * [Truth data](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-truth/)
 * [Technical README with detailed submission instructions](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md)
 
-<a href = "https://reichlab.io/covid19-forecast-hub/">
+<a href = "http://viz.covid19forecasthub.org">
  <img src="https://github.com/reichlab/covid19-forecast-hub/blob/master/visualization/vis-master/chart.png" width="500" alt="chart">
 </a>
 
@@ -24,7 +24,7 @@ All source code that is specific to this project, along with our [d3-foresight](
 Different groups are making forecasts at different times, and for different geographic scales. The specifications below were created by consulting with collaborators at CDC and looking at what models forecasting teams were already building. 
 
 **What do we consider to be "gold standard" death data?**
-We will use the [daily reports containing death data from the JHU CSSE group](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv) as the gold standard reference data for deaths in the US. Note that there are not insignificant differences (especially in daily incident death data) between the JHU data and another commonly used source, from the New York Times. The team at UTexas-Austin is tracking this issue on [a separate GitHub repository](https://github.com/spencerwoody/covid19-data-comparsion).
+We will use the [daily reports containing death data from the JHU CSSE group](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv) as the gold standard reference data for deaths in the US. These data are the time-series version of the JHU data that do occasionally contain "revisions" of previous daily reports. Note that there are not insignificant differences (especially in daily incident death data) between the JHU data and another commonly used source, from the New York Times. The team at UTexas-Austin is tracking this issue on [a separate GitHub repository](https://github.com/spencerwoody/covid19-data-comparsion).
 
 **When will forecast data be updated?** 
 We will be storing any new forecasts from each group as they are either provided to us directly (by pull request) or available for download online. We will attempt to make every version of each team's forecasts available in "processed" form in the GitHub repo. Teams are encouraged to submit data as often has they have it available, although we only support one upload for each day. In general, "updates" to forecasts will not be permitted. Teams are responsible for checking that their forecasts are ready for public viewing upon submission. This can be done locally using our [interactive visualization tool](https://github.com/reichlab/covid19-forecast-hub/wiki/Interactive-Visualization).
@@ -46,7 +46,7 @@ For week-ahead forecasts with `forecast_date` of Sunday or Monday of EW12, a 1 w
 -->
 
 ## Ensemble model
-Every Monday at 6pm ET, we will update our [COVID Forecast Hub ensemble forecast](data-processed/COVIDhub-ensemble) and [interactive visualization](https://reichlab.io/covid19-forecast-hub/) using the most recent forecast from each team as long as it was submitted before 6pm ET on Monday and has a `forecast_date` of Sunday or Monday. All models meeting the above criteria will be considered for the ensemble. For inclusion in the ensemble, we additionally require that forecasts include a full set of 23 quantiles to be submitted (see [technical README](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md#quantile) for details), and that the 10th quantile of the predictive distribution for a 1 week ahead forecast is not below the most recently observed data. Additionally, we perform manual visual inspection checks to ensure that forecasts are in alignment with the ground truth data. Details on which models were included each week in the ensemble are available in the [ensemble metadata](https://github.com/reichlab/covid19-forecast-hub/tree/master/ensemble-metadata) folder.
+Every Monday at 6pm ET, we will update our [COVID Forecast Hub ensemble forecast](data-processed/COVIDhub-ensemble) and [interactive visualization](http://viz.covid19forecasthub.org) using the most recent forecast from each team as long as it was submitted before 6pm ET on Monday and has a `forecast_date` of Sunday or Monday. All models meeting the above criteria will be considered for the ensemble. For inclusion in the ensemble, we additionally require that forecasts include a full set of 23 quantiles to be submitted (see [technical README](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md#quantile) for details), and that the 10th quantile of the predictive distribution for a 1 week ahead forecast is not below the most recently observed data. Additionally, we perform manual visual inspection checks to ensure that forecasts are in alignment with the ground truth data. Details on which models were included each week in the ensemble are available in the [ensemble metadata](https://github.com/reichlab/covid19-forecast-hub/tree/master/ensemble-metadata) folder.
 
 Depending on how the project evolves, we may add additional weekly builds for the ensemble and visualization. Currently, our ensemble is created by taking the arithmetic average of each quantile for all models that submit 1- through 4-week ahead cumulative death targets for a given location. Ensemble methods and inclusion criteria may evolve as more data becomes available. 
 
@@ -77,6 +77,7 @@ So far, we have identified a number of groups that are creating forecasts of COV
  - [Columbia University](https://github.com/shaman-lab/COVID-19Projection) (Apache 2.0)
  - [CovidActNow](https://covidactnow.org/) (none given)
  - [COVID-19 Simulator Consortium](https://covid19sim.org/) (CC-BY-4.0)
+ - [epiforecasts](https://github.com/epiforecasts/covid-us-deaths) 
  - [GLEAM from Northeastern University](https://www.gleamproject.org/covid-19) (CC-BY-4.0)
  - [Georgia Institute of Technology](https://www.cc.gatech.edu/~badityap/covid.html) (none given)
  - [Georgia Institute of Technology - Center for Health and Humanitarian Systems](https://github.com/pkeskinocak/COVID19GA) (none given)
