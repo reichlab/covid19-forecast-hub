@@ -178,6 +178,7 @@ def check_formatting(my_path):
     # Error if necessary and print to console
     print_output_errors(meta_output_errors, prefix='metadata')
     print_output_errors(output_errors, prefix='data')
+    print('Using validation code v2...')
     if len(meta_output_errors) + len(output_errors) > 0:
         sys.exit("\n ERRORS FOUND EXITING BUILD...")
 

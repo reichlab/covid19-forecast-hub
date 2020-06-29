@@ -3,9 +3,9 @@ team_abbr: CovidAnalytics
 model_name: DELPHI
 model_abbr: DELPHI
 
-model_contributors: Michael Lingzhi Li (Model Creator and Maintainer), Hamza Tazi Bouardi (Maintainer), Dimitris Bertsimas (Advisor). For a full list of general contributors to the team, see https://www.covidanalytics.io/team.
+model_contributors: Michael Lingzhi Li (Massachusetts Institute of Technology) <mlli@mit.edu>, Hamza Tazi Bouardi (Massachusetts Institute of Technology), Omar Skali Lami (Massachusetts Institute of Technology), Thomas A. Trikalinos (Brown University), Nikolaos K. Trichakis (Massachusetts Institute of Technology), Dimitris Bertsimas (Massachusetts Institute of Technology)  
 website_url: https://www.covidanalytics.io/
-license: LICENSE.txt
+license: apache-2.0
 team_model_designation: primary
 
 methods: >-
@@ -15,7 +15,8 @@ repo_url: https://github.com/COVIDAnalytics/DELPHI
 this_model_is_an_ensemble: false
 citation: https://www.covidanalytics.io/DELPHI_documentation_pdf
 institution_affil: Massachusetts Institute of Technology
-data_inputs: New York Times
+twitter_handles: covid_analytics
+data_inputs: JHU CSSE case and death data
 
 methods_long: >-
     This model makes predictions for future cases based on a heavily modified SEIR model.

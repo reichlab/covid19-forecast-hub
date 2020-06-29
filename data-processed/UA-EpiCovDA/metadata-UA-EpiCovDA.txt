@@ -1,22 +1,19 @@
 team_name: University of Arizona
 team_abbr: UA
-model_name: Epidemic Covid-19 Curve with Variational Data Assimilation
+model_name: EpiGro Covid-19 model with Data Assimilation
 model_abbr: EpiCovDA
 model_contributors: >-
-   Hannah Biegel <hbiegel@math.arizona.edu> and Joceline Lega
+   Hannah Biegel <hbiegel@math.arizona.edu> and Joceline Lega <lega@math.arizona.edu>
 website_url: https://jocelinelega.github.io/EpiGro/
-license: cc-by-sa-4.0
+license: cc-by-4.0
 team_model_designation: primary
 
 methods: >-
-  EpiCovDA is a variational data assimilation extension of the EpiGro model. 
-
-this_model_is_an_ensemble: false
+  SIR mechanistic model with data assimilation.  
 
 methods_long: >-
-  EpiCovDA is an extension of the EpiGro model. To combine Covid-19 data with the model
-  during the pandemic, a variational data assimilation  method is used (sometimes called 
-  4D-Var) to fit model parameters. For the data assimilation piece of EpiCovDA, a  prior 
-  distribution of the parameters was estimated by fitting the model to states whose
-  epidemic curves were further along early during the pandemic. 
+  EpiCovDA is an extension of the EpiGro model. Model parameters are fit to Covid-19 data
+  using a variational data assimilation method. A prior distribution of the parameters is
+  estimated by fitting an SIR Incidence-Cumulative Cases curve to data from states that had
+  at least 1000 cases by 04/01/2020.
   See <https://jocelinelega.github.io/EpiGro/> for more information about EpiGro. 
