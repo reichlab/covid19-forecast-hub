@@ -529,3 +529,11 @@ file_path,validation_date
 ./data-processed/UCLA-SuEIR/2020-06-28-UCLA-SuEIR.csv,2020-06-29 21:35:07.118823
 ./data-processed/epiforecasts-ensemble1/2020-06-29-epiforecasts-ensemble1.csv,2020-06-29 21:35:07.258826
 ./data-processed/GT-DeepCOVID/2020-06-29-GT-DeepCOVID.csv,2020-06-29 21:35:08.512661
+./data-processed/CU-scenario_low/2020-06-28-CU-scenario_low.csv,2020-06-29 22:33:35.997069
+./data-processed/CU-scenario_mid/2020-06-28-CU-scenario_mid.csv,2020-06-29 22:33:39.376755
+./data-processed/UMass-MechBayes/2020-06-28-UMass-MechBayes.csv,2020-06-29 22:33:39.839017
+./data-processed/LANL-GrowthRate/2020-06-29-LANL-GrowthRate.csv,2020-06-29 22:33:45.982925
+./data-processed/CU-nochange/2020-06-28-CU-nochange.csv,2020-06-29 22:33:49.347860
+./data-processed/CU-select/2020-06-28-CU-select.csv,2020-06-29 22:33:52.780417
+./data-processed/MOBS_NEU-GLEAM_COVID/2020-06-29-MOBS_NEU-GLEAM_COVID.csv,2020-06-29 22:33:55.128755
+./data-processed/CU-scenario_high/2020-06-28-CU-scenario_high.csv,2020-06-29 22:33:58.549115
