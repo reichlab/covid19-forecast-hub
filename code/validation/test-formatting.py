@@ -120,7 +120,8 @@ def check_formatting(my_path):
     for path in glob.iglob(my_path + "**/**/", recursive=False):
 
         # Check metadata file
-        is_metadata_error, metadata_error_output = check_for_metadata(path, cache= metadata_validation_cache)
+        is_metadata_error, metadata_error_output = check_for_metadata(
+            path, cache=metadata_validation_cache)
 
         # Check metadata names and abbreviations for duplicates
         model_name, model_abbr = get_metadata_model(path)
@@ -181,6 +182,7 @@ def check_formatting(my_path):
     print('Using validation code v2...')
     if len(meta_output_errors) + len(output_errors) > 0:
         sys.exit("\n ERRORS FOUND EXITING BUILD...")
+
 
 def main():
     my_path = "./data-processed"
