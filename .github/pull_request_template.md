@@ -21,5 +21,4 @@ If you are **adding new forecasts** to an existing model, please include the fol
 ## Checklist
 
 - [ ] Specify a proper PR title with your team name.
-- [ ] Is this a new submission? If so, please include the `new-team-submission` label to this PR. Otherwise, add the `forecast-update` label to this PR. 
 - [ ] All validation checks ran successfully on your branch. Instructions to run the tests locally is present [here](https://github.com/reichlab/covid19-forecast-hub/wiki/Running-Checks-Locally).
