@@ -38,7 +38,7 @@ if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* || "$TRAVIS_COMMIT_MESSAGE" == *"FORCE_ZO
     echo "Push the truth"
     bash ./travis/push.sh
     echo "Upload truth to Zoltar"
-    python3 ./code/zoltar-scripts/upload_truth_to_zoltar.py
+    python3 ./code/zoltar_scripts/upload_truth_to_zoltar.py
 fi
 
 # Upload to zoltar at every merged pull request
@@ -70,7 +70,7 @@ if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test truth"* ]]; then
     echo "Push the truth"
     bash ./travis/push.sh
     echo "Upload truth to Zoltar"
-    python3 ./code/zoltar-scripts/upload_truth_to_zoltar.py
+    python3 ./code/zoltar_scripts/upload_truth_to_zoltar.py
 fi
 
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test zoltar upload"* ]]; then
@@ -82,7 +82,7 @@ fi
 
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test truth zoltar"* ]]; then
     echo "Upload truth to Zoltar"
-    python3 ./code/zoltar-scripts/upload_truth_to_zoltar.py
+    python3 ./code/zoltar_scripts/upload_truth_to_zoltar.py
 fi
 
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"create zoltar validated file"* ]]; then

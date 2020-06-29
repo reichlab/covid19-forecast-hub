@@ -1,32 +1,23 @@
-team_name: Institute for Health Metrics and Evaluation
-team_abbr: IHME
-model_name: CurveFit
-model_abbr: CurveFit
-model_contributors: >-
-    Christopher Murry <cjlm@u.washington.edu>, 
-    et al, 
-    IHME-CurveFit Team <covid19@healthdata.org>
-website_url: https://covid19.healthdata.org/united-states-of-america
-license: cc-by-nc-4.0
-team_model_designation: primary
-
-methods: >-
-    This model makes predictions about the future that are dependent on the assumption 
-    that current interventions continue. Non-linear mixed efects curve-fitting.
-
-institution_affil: University of Washington
-team_funding: Bill & Melinda Gates Foundation
-data_inputs: JHU observed deaths, data on hospital capacity and utilization for US states
 citation: https://www.medrxiv.org/content/10.1101/2020.03.27.20043752v1
-
-methods_long: >-
-    This model makes predictions about the future that are dependent on the assumption 
-    that current interventions continue. The modeling approach in this study is divided into four components: 
-    (i) identification and processing of COVID-19 data; 
-    (ii) statistical model estimation for population death rates as a function of time 
-    since the death rate exceeds a threshold in a location; 
-    (iii) predicting time to exceed a given population death threshold in states early in the pandemic; and 
-    (iv) modeling health service utilization as a function of deaths."
-    CurveFit package available at: https://github.com/ihmeuw-msca/CurveFit
-
-
+data_inputs: JHU observed deaths, data on hospital capacity and utilization for US
+  states
+institution_affil: University of Washington
+license: cc-by-nc-4.0
+methods: This model makes predictions about the future that are dependent on the assumption  that
+  current interventions continue. Non-linear mixed efects curve-fitting.
+methods_long: 'This model makes predictions about the future that are dependent on
+  the assumption  that current interventions continue. The modeling approach in this
+  study is divided into four components:  (i) identification and processing of COVID-19
+  data;  (ii) statistical model estimation for population death rates as a function
+  of time  since the death rate exceeds a threshold in a location;  (iii) predicting
+  time to exceed a given population death threshold in states early in the pandemic;
+  and  (iv) modeling health service utilization as a function of deaths." CurveFit
+  package available at: https://github.com/ihmeuw-msca/CurveFit'
+model_abbr: IHME-CurveFit
+model_contributors: Christopher Murry <cjlm@u.washington.edu>,  et al,  IHME-CurveFit
+  Team <covid19@healthdata.org>
+model_name: CurveFit
+team_funding: Bill & Melinda Gates Foundation
+team_model_designation: primary
+team_name: Institute for Health Metrics and Evaluation
+website_url: https://covid19.healthdata.org/united-states-of-america

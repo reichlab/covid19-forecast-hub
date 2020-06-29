@@ -30,4 +30,4 @@ jobs:
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
     - run: npm install
     - run: pip3 install -r visualization/requirements.txt
-    - run: python3 code/validation/test-formatting.py
+    - run: python3 code/validation/test_formatting.py
