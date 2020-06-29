@@ -62,16 +62,12 @@ Within each subdirectory, there should be a metadata file, a license file
 
 ### Metadata 
 
-Participating teams must provide a metadata file (see [example](./UMass-ExpertCrowd/metadata-UMass-ExpertCrowd.txt)), 
-including methodological detail about their approach and a link to a file 
-(or a file itself) describing the methods used. 
-
-Note that the information in the `methods` field in the metadata is what will be shown on the [interactive visualization](https://reichlab.io/covid19-forecast-hub/) when a user hovers on your team name. For this reason, we request that the description be brief, around 200 characters (although at the moment this is not strictly enforced).
-
 The metadata file should have the following format
 
     metadata-team-model.txt
     
+and here is [the structure of the metadata file](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/METADATA.md).
+
 ### License (optional)
 
 If you would like to include a license file, 

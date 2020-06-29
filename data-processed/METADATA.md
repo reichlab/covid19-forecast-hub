@@ -1,9 +1,11 @@
-# Metadata dictionary
+# Metadata file structure
 
 Each model is required to have metadata in 
-[yaml format](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html).
+[yaml format](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html), 
+e.g. [see this metadata file](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/JHU_IDD-CovidSP/metadata-JHU_IDD-CovidSP.txt).
 This file describes each of the variables (keys) in the yaml document.
 Please order the variables in this order.
+
 
 ## Required variables
 
@@ -52,9 +54,12 @@ please include that link here.
 
 ### license
 
-One of [these license keywords](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository) or "LICENSE.txt" 
+One of [these license keywords](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository) or "LICENSE.txt" (or 
+"cc-by-nc-4.0"" which we expect to deprecate in the future).
 (if none of these license keywords are appropriate).
-We encourage teams to submit as a cc-by-4.0.
+We encourage teams to submit as a "cc-by-4.0" to allow the broadest possible uses
+including private vaccine production 
+(which would be excluded by the "cc-by-nc-4.0" license). 
 If the value is "LICENSE.txt", 
 then a LICENSE.txt file must exist within the folder and provide a license.
 
@@ -105,7 +110,7 @@ One or more twitter handles (without the @) separated by commas.
 
 ### data_inputs
 
-(previously `data_inputs_known`)
+(previously `data_inputs_known` and `data_source_known`)
 
 A description of the data sources used to inform the model, 
 e.g. "NYTimes death data", "JHU CSSE case and death data", mobility data, etc. 
@@ -113,7 +118,8 @@ e.g. "NYTimes death data", "JHU CSSE case and death data", mobility data, etc.
 
 ### this_model_is_an_ensemble
 
-DEPRECATED
+_**DEPRECATED**_: please remove from metadata file. 
+In the future, inclusion of this field will be an error.
 
 true/false indicating whether the model here is a combination of a set of other
 models

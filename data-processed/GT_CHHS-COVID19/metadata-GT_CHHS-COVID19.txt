@@ -10,7 +10,6 @@ team_model_designation: primary
 methods: >-
     Agent-based simulation model to project COVID19 infection spread.
 
-this_model_is_an_ensemble: false
 institution_affil: Georgia Institute of Technology
 data_inputs: Georgia Department of Public Health
 
