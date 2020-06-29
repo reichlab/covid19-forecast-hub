@@ -43,22 +43,9 @@ class UploadCovidAllForecastsTestCase(unittest.TestCase):
             val_errors_or_pass = upload_covid_all_forecasts(
                 'code/test/data/COVIDhub-ensemble/',
                 'COVIDhub-ensemble')
-            self.assertEqual("Pass", val_errors_or_pass)
-
-            # has_changed is True, should not call the edit function in zoltpy
-            model1.edit.assert_not_called()
         # Case: has_changed =True
-        with patch('code.zoltar_scripts.upload_covid19_forecasts_to_zoltar.has_changed',
-                   return_value=True), \
-             patch('code.zoltar_scripts.upload_covid19_forecasts_to_zoltar.upload_forecasts',
-                   return_value="Pass"), \
-             patch('zoltpy.connection.Model.edit', return_value=True):
-            val_errors_or_pass = upload_covid_all_forecasts(
-                'code/test/data/COVIDhub-ensemble/',
-                'COVIDhub-ensemble')
-            self.assertEqual("Pass", val_errors_or_pass)
 
-        print('Zoltar upload test success.')
+        self.assertEqual("Pass", val_errors_or_pass)
 
 # class MockConnection:
 #

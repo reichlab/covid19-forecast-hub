@@ -36,7 +36,7 @@ repo_forecasts = []
 
 def read_validation_db():
     try:
-        with open('./code/zoltar-scripts/validated_file_db.p', 'rb') as f:
+        with open('./code/zoltar_scripts/validated_file_db.p', 'rb') as f:
             l = pickle.load(f)
     except Exception as ex:
         l = []
@@ -44,7 +44,7 @@ def read_validation_db():
 
 
 def write_db(db):
-    with open('./code/zoltar-scripts/validated_file_db.p', 'wb') as fw:
+    with open('./code/zoltar_scripts/validated_file_db.p', 'wb') as fw:
         pickle.dump(db, fw)
 
 # Function to read metadata file to get model name
