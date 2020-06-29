@@ -7,6 +7,9 @@ import sys
 import yaml
 import hashlib
 import pickle
+import logging
+
+logger = logging.getLogger(__name__)
 
 # meta info
 project_name = 'COVID-19 Forecasts'
@@ -14,6 +17,20 @@ project_obj = None
 project_timezeros = []
 conn = util.authenticate()
 url = 'https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/'
+
+# mapping of variables in the metadata to the parameters in Zoltar
+zoltar_mapping = {
+    'team_name': 'team_name',
+    'model_name': 'name',
+    'model_abbr': 'abbreviation',
+    'model_contributors': 'contributors',
+    'website_url': 'home_url',
+    'team_model_designation': 'notes',
+    'methods': 'description',
+    'repo_url': 'aux_data_url',
+    'citation': 'citation',
+    'methods_long': 'methods'
+}
 try:
     with open('./code/zoltar-scripts/validated_file_db.p', 'rb') as f:
         l = pickle.load(f)
@@ -26,7 +43,7 @@ db = dict(l)
 project_obj = [project for project in conn.projects if project.name == project_name][0]
 project_timezeros = [timezero.timezero_date for timezero in project_obj.timezeros]
 models = [model for model in project_obj.models]
-model_names = [model.name for model in models]
+model_abbrs = [model.abbreviation for model in models]
 
 
 # Function to read metadata file to get model name
@@ -35,11 +52,41 @@ def metadata_dict_for_file(metadata_file):
         metadata_dict = yaml.safe_load(metadata_fp)
     return metadata_dict
 
+'''
+    Get Zoltar model_config object from the metadata file using the zoltar_mapping dict.
+'''
+def zoltar_config_from_metadata(metadata):
+    conf = {}
+    for key, mapping in zoltar_mapping.items():
+        # if key present in metadata, assign the value of the 
+        # key in metadata to a mapping key-value in model_config
+        if key in metadata:
+            conf[mapping] = metadata[key]
+    return conf
+
+def has_changed(metadata, model):
+    try:
+        conditions = [
+            model.team_name != metadata['team_name'],
+            model.name != metadata['model_name'],
+            model.abbreviation != metadata['model_abbr'],
+            model.contributors != metadata.get('model_contributors'),
+            model.home_url != metadata.get('website_url'),
+            model.license != metadata['license'],
+            model.notes != metadata['team_model_designation'],
+            model.description != metadata['methods'],
+            model.aux_data_url != metadata.get('aux_data_url'),
+            model.citation != metadata.get('citation')
+        ]
+        return any(conditions)
+    except KeyError:
+        # if any key does not exist, return true to update the zoltar with latest data
+        return True
 
 # Function to upload all forecasts in a specific directory
 def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
     global models
-    global model_names
+    global model_abbrs
 
     # Get all forecasts in the directory of this model
     forecasts = os.listdir(path_to_processed_model_forecasts)
@@ -49,18 +96,28 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
         metadata = metadata_dict_for_file(path_to_processed_model_forecasts+'metadata-'+dir_name+'.txt')
     except Exception as ex:
         return ex 
-    model_name = metadata['model_name']
-    if model_name not in model_names:
-        model_config = {}
-        model_config['name'], model_config['abbreviation'], model_config['team_name'], model_config['description'], model_config['home_url'], model_config['aux_data_url'] \
-            = metadata['model_name'], metadata['team_abbr']+'-'+metadata['model_abbr'], metadata['team_name'], metadata['methods'], metadata['website_url'] if metadata.get('website_url')!= None else url + dir_name, 'NA'
+    model_abbreviation = metadata['model_abbr']
+
+    # get the corresponding model_config for the metadata file
+    model_config = zoltar_config_from_metadata(metadata)
+
+    if model_abbreviation not in model_abbrs:
+        print('%s not in models'% (model_abbreviation))
+        if 'website_url' not in model_config:
+            model_config['website_url'] = url + dir_name
         try:
-            project_obj.create_model(model_config)
-            models = project_obj.models
-            model_names = [model.name for model in models]
+            models.append(project_obj.create_model(model_config))
+            model_abbrs = [model.abbreviation for model in models]
         except Exception as ex:
             return ex  
-    model = [model for model in models if model.name == model_name][0]
+        
+    # fetch model based on model_abbr
+    model = [model for model in models if model.abbreviation == model_abbreviation][0]
+
+    if has_changed(metadata, model):
+        # model metadata has changed, call teh edit function in zoltpy to update metadata
+        logger.info('%s model has changed metadata contents. Updating on Zoltar...'% (metadata['model_name']))
+        model.edit(model_config)
 
     # Get names of existing forecasts to avoid re-upload
     existing_time_zeros = [forecast.timezero.timezero_date for forecast in model.forecasts]
@@ -115,7 +172,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
                 else:
                     try:
                         util.upload_forecast(conn, quantile_json, forecast, 
-                                                project_name, model_name , time_zero_date, overwrite=over_write)
+                                                project_name, metadata['model_name'] , time_zero_date, overwrite=over_write)
                         db[forecast] = checksum
                     except Exception as ex:
                         print(ex)
