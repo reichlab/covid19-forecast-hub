@@ -13,6 +13,7 @@ export default class ToggleButtons extends Component {
         .classed('toggle-button', true)
         .text(txt)
     })
+    this.idx = -1
   }
 
   addOnClick (fn) {
@@ -28,6 +29,7 @@ export default class ToggleButtons extends Component {
   }
 
   set (idx) {
+    this.idx = idx
     this.buttons[idx].classed('selected', true)
   }
 
@@ -37,5 +39,6 @@ export default class ToggleButtons extends Component {
 
   reset () {
     this.buttons.forEach((btn, idx) => this.unset(idx))
+    this.idx = -1
   }
 }
