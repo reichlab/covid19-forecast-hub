@@ -131,7 +131,6 @@ export default class TimeChart extends Chart {
         this.observed.hidden = !this.observed.hidden
       } else {
         let marker = [...this.predictions, ...this.additional].find(m => m.id === id)
-        console.log(`Setting ${id} as ${!state} `)
         if (marker) {
           marker.hidden = !state
         }
