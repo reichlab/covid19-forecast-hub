@@ -180,13 +180,12 @@ export default class LegendDrawer extends Component {
     this.bottomRows = predictions
       .filter(p => config.pinnedModels.indexOf(p.id) === -1)
       .map(p => {
-        p.hidden = true
         let drawerRow = makePredictionRow(p, this.tooltip)
         drawerRow.addOnClick(({ id, state }) => {
           this.showHideButtons.reset()
           ev.publish(this.uuid, ev.LEGEND_ITEM, { id, state })
         })
-        // drawerRow.click()
+        drawerRow.click()
         this.bottomContainer.append(() => drawerRow.node)
         return drawerRow
       })
