@@ -18,7 +18,7 @@ function makePredictionRow (p, tooltip) {
     ttText = tt.parseText({ title: p.id, text: '' })
   }
 
-  drawerRow.addTooltip(tooltip, ttText, 'left')
+  drawerRow.addTooltip(tooltip, ttText, 'right')
   drawerRow.active = !p.hidden
   return drawerRow
 }
@@ -108,7 +108,7 @@ export default class LegendDrawer extends Component {
         .attr('class', 'row control-row')
     showHideRow.append('span').text('Show')
 
-    this.showHideButtons = new ToggleButtons(['all', 'none', 'default'])
+    this.showHideButtons = new ToggleButtons(['all', 'none', 'ensemble'])
     this.showHideButtons.addTooltip(
       config.tooltip,
       tt.parseText({
