@@ -211,6 +211,7 @@ export default class LegendDrawer extends Component {
         if (this.ensembleRow) {
           this.ensembleRow.click()
         }
+        this.showHideButtons.set(2)
       }
       
 

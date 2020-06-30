@@ -29,6 +29,7 @@ export default class ToggleButtons extends Component {
   }
 
   set (idx) {
+    this.reset()
     this.idx = idx
     this.buttons[idx].classed('selected', true)
   }
