@@ -13,7 +13,7 @@ methods: >-
 team_funding: None (I'm a retired Experimental Physicist working at home)
 data_inputs: Existing case and death raw data from Microsoft Bing Tracker
 
-methods_long:>-
+methods_long: >-
     The existing case and death raw data is cleaned slightly for anomolies, then is fit with model consisting of one or more skewed gaussian distributions using a distribution model I developed.  The model estimates the height, position, and spread of each peak that appears in the data and can be used to project ahead with reasonable results.
     This is an emperical approach that makes no epidemiological assumptions but simply fits the existing data as well as possible.
     The model assumes that the effects of current interventions are reflected in the observed data and that those effects will continue going forward.
