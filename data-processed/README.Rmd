@@ -111,7 +111,7 @@ columns (in any order):
 - `quantile`
 - `value`
 
-Additional columns are allowed, but ignored. 
+No additional columns are allowed.
 
 Each row in the file is either a point or quantile forecast for a location on a 
 particular date for a particular target. 
@@ -138,30 +138,15 @@ Exceptions will be made for legitimate extenuating circumstances.
 Values in the `target` column must be a character (string) and be one of the 
 following specific targets:
 
-- "N day ahead cum death" where N is a number between 0 and 130
-- "N day ahead inc death" where N is a number between 0 and 130
 - "N wk ahead cum death"  where N is a number between 1 and  20
 - "N wk ahead inc death"  where N is a number between 1 and  20
+- "N wk ahead inc case"  where N is a number between 1 and  8
 - "N day ahead inc hosp"  where N is a number between 0 and 130
 
 For week-ahead forecasts, we will use the specification of epidemiological weeks (EWs) [defined by the US CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf). 
 There are standard software packages to convert from dates to epidemic weeks and vice versa. E.g. [MMWRweek](https://cran.r-project.org/web/packages/MMWRweek/) for R and [pymmwr](https://pypi.org/project/pymmwr/) and [epiweeks](https://pypi.org/project/epiweeks/) for python.
 
 We have created [a csv file](../template/covid19-death-forecast-dates.csv) describing forecast collection dates and dates for which forecasts refer to can be found.
-
-#### N day ahead cum death
-
-This target is the cumulative number of deaths predicted by the model for 
-N days after `forecast_date`. 
-
-As an example, for day-ahead forecasts with a `forecast_date` of a Monday, a 1 day ahead cum death forecast corresponds to cumulative deaths by the end of Tuesday, 2 day ahead to Wednesday, etc.... 
-
-#### N day ahead inc death
-
-This target is the incident (daily) number of deaths predicted by the model
-on day N after `forecast_date`. 
-
-As an example, for day-ahead forecasts with a `forecast_date` of a Monday, a 1 day ahead cum death forecast corresponds to incident deaths on Tuesday, 2 day ahead to Wednesday, etc.... 
 
 
 #### N wk ahead cum death
@@ -192,6 +177,22 @@ model on day N after `forecast_date`.
 As an example, for day-ahead forecasts with a `forecast_date` of a Monday, a 1 day ahead inc hosp forecast corresponds to the number of incident hospitalizations on Tuesday, 2 day ahead to Wednesday, etc.... 
 
 
+#### N wk ahead inc case
+
+This target is the number of new cases reported, as recorded by 
+[JHU CSSE](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv).
+
+
+#### REMOVED targets
+
+On 2020-06-06, these targets were removed:
+
+- N day ahead inc death
+- N day ahead cum death
+
+
+
+
 ### `target_end_date`
 
 Values in the `target_end_date` column must be a date in the format
@@ -206,15 +207,13 @@ week time period.
 
 ### `location`
 
-Values in the `location` column must be
+Values in the `location` column must be one of the "locations" in this
+[FIPS numeric code file](./data-locations/locations.csv) which includes 
+numeric FIPS codes for U.S. states, counties, territories, and districts as
+well as "US" for national forecasts. 
 
-- "US" or
-- a two-digit number representing the US state, territory, or district 
-[fips numeric code](./data-locations/locations.csv). 
-
-This location identifies the geographical location for the forecast.
-
-A file with FIPS codes for states in the US is available through the `fips_code` dataset in the `tigris` R package, and saved as a [public CSV file](./data-locations/locations.csv). Please note that when reading in FIPS codes, they should be read in as characters to preserve any leading zeroes.
+Please note that when writing FIPS codes, they should be written in as a
+character string to preserve any leading zeroes.
 
 
 ### `type`
@@ -244,10 +243,16 @@ in this row.
 
 Teams should provide the following 23 quantiles:
 
-```{r, echo=TRUE}
+```{r, echo = TRUE}
 c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99)
 ```
 
+for all `target`s except "N wk ahead inc case" target.
+The "N wk ahead inc case" target should include only these quantiles:
+
+```{r, echo = TRUE}
+c(0.025, 0.100, 0.250, 0.500, 0.750, 0.900, 0.975)
+```
 
 ### `value`
 
