@@ -73,8 +73,10 @@ and here is [the structure of the metadata file](https://github.com/reichlab/cov
 If you would like to include a license file, 
 please use the following format
 
-    LICENSE-team.txt
+    LICENSE.txt
 
+If you are not using one of the [standard licenses](https://github.com/reichlab/covid19-forecast-hub/blob/master/code/validation/accepted-licenses.csv),
+then you must include a license file.
 
 
 
@@ -95,7 +97,9 @@ where
 The date YYYY-MM-DD is the [`forecast_date`](#forecast_date).
 
 The `team` and `model` in this file must match the `team` and `model` in the
-directory this file is in. Both `team` and `model` should be less than 20 characters, alpha-numeric and underscores only, with no spaces or hyphens.
+directory this file is in. 
+Both `team` and `model` should be less than 15 characters, 
+alpha-numeric and underscores only, with no spaces or hyphens.
 
 
 ## Forecast file format
@@ -231,6 +235,7 @@ visualization and in ensemble construction.
 **Forecasts must include exactly 1 "point" forecast for every location-target
 pair.**
 
+
 ### `quantile`
 
 Values in the `quantile` column are either "NA" (if `type` is "point") or 
@@ -248,16 +253,18 @@ c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99)
 ```
 
 for all `target`s except "N wk ahead inc case" target.
-The "N wk ahead inc case" target should include only these quantiles:
+For the "N wk ahead inc case" target, teams should provide the following 6 
+quantiles: 
 
 ```{r, echo = TRUE}
 c(0.025, 0.100, 0.250, 0.500, 0.750, 0.900, 0.975)
 ```
 
+
 ### `value`
 
-Values in the `value` column are numeric indicating the "point" or "quantile"
-prediction for this row. 
+Values in the `value` column are non-negative numbers indicating the "point" or 
+"quantile" prediction for this row. 
 For a "point" prediction, `value` is simply the value of that point prediction
 for the `target` and `location` associated with that row. 
 For a "quantile" prediction, `value` is the inverse of the cumulative 
