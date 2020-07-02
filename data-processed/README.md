@@ -153,14 +153,23 @@ There are standard software packages to convert from dates to epidemic weeks and
 We have created [a csv file](../template/covid19-death-forecast-dates.csv) describing forecast collection dates and dates for which forecasts refer to can be found.
 
 
+For week-ahead forecasts with `forecast_date` of Sunday or Monday of EW12, 
+a 1 week ahead forecast corresponds to EW12 and should have `target_end_date` of 
+the Saturday of EW12. For week-ahead forecasts with `forecast_date` of Tuesday 
+through Saturday of EW12, a 1 week ahead forecast corresponds to EW13 and should 
+have `target_end_date` of the Saturday of EW13. 
+
 #### N wk ahead cum death
 
 This target is the cumulative number of deaths predicted by the model up to 
 and including N weeks after `forecast_date`. 
 
-For week-ahead forecasts with `forecast_date` of Sunday or Monday of EW12, a 1 week ahead forecast corresponds to EW12 and should have `target_end_date` of the Saturday of EW12. For week-ahead forecasts with `forecast_date` of Tuesday through Saturday of EW12, a 1 week ahead forecast corresponds to EW13 and should have `target_end_date` of the Saturday of EW13. 
+A week-ahead forecast should represent the cumulative number of deaths reported 
+on the Saturday of a given epiweek.
 
-A week-ahead forecast should represent the cumulative number of deaths reported on the Saturday of a given epiweek.
+Predictions for this target will be evaluated compared to the cumulative of the
+number of new reported cases, as recorded by 
+[JHU CSSE](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv).
 
 
 #### N wk ahead inc death
@@ -168,9 +177,24 @@ A week-ahead forecast should represent the cumulative number of deaths reported 
 This target is the incident (weekly) number of deaths predicted by the model 
 during the week that is N weeks after `forecast_date`. 
 
-For week-ahead forecasts with `forecast_date` of Sunday or Monday of EW12, a 1 week ahead forecast corresponds to EW12 and should have `target_end_date` of the Saturday of EW12. For week-ahead forecasts with `forecast_date` of Tuesday through Saturday of EW12, a 1 week ahead forecast corresponds to EW13 and should have `target_end_date` of the Saturday of EW13. 
+A week-ahead forecast should represent the total number of new deaths 
+reported during a given epiweek (from Sunday through Saturday, inclusive).
 
-A week-ahead forecast should represent the total number of incident deaths within a given epiweek (from Sunday through Saturday, inclusive).
+Predictions for this target will be evaluated compared to the number of new 
+reported cases, as recorded by 
+[JHU CSSE](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv).
+
+#### N wk ahead inc case
+
+This target is the incident (weekly) number of cases predicted by the model 
+during the week that is N weeks after `forecast_date`. 
+
+A week-ahead forecast should represent the total number of new cases 
+reported during a given epiweek (from Sunday through Saturday, inclusive).
+
+Predictions for this target will be evaluated compared to the number of new 
+reported cases, as recorded by 
+[JHU CSSE](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv).
 
 
 #### N day ahead inc hosp
@@ -178,13 +202,11 @@ A week-ahead forecast should represent the total number of incident deaths withi
 This target is the number of new daily hospitalizations predicted by the
 model on day N after `forecast_date`.
 
-As an example, for day-ahead forecasts with a `forecast_date` of a Monday, a 1 day ahead inc hosp forecast corresponds to the number of incident hospitalizations on Tuesday, 2 day ahead to Wednesday, etc.... 
+As an example, for day-ahead forecasts with a `forecast_date` of a Monday, 
+a 1 day ahead inc hosp forecast corresponds to the number of incident 
+hospitalizations on Tuesday, 2 day ahead to Wednesday, etc.... 
 
-
-#### N wk ahead inc case
-
-This target is the number of new cases reported, as recorded by 
-[JHU CSSE](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv).
+Currently there is no "gold standard" for hospitalization data. 
 
 
 #### REMOVED targets
