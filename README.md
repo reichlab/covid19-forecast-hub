@@ -116,11 +116,15 @@ Participating teams must provide a
 Carefully curating these datasets into a standard format has taken a Herculean team effort. The following lists those who have helped out, in reverse alphabetical order: 
 
  - Nutcha Wattanachit (ensemble model, data processing)
+ - Serena Wang (data curation)
  - Nicholas Reich (project lead, ensemble model, data processing)
  - Evan Ray (ensemble model)
  - Jarad Niemi (data processing and organization)
  - Khoa Le (validation, automation)
+ - Ayush Khandelwal (architecture, data curation)
+ - Abdul Hannan Kanji (architecture, data curation)
  - Katie House (visualization, validation, project management)
+ - Estee Cramer (data curation, ensemble model)
  - Matt Cornell (validation, Zoltar integration)
  - Andrea Brennen (metadata curation)
  - Johannes Bracher (evaluation, data processing)
