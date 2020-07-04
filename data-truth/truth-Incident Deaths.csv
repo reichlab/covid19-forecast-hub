@@ -18862,7 +18862,7 @@ date,location,location_name,value
 2020-07-02,15001,Hawaii,0
 2020-07-02,16,Idaho,0
 2020-07-02,16049,Idaho,0
-2020-07-02,17,Illinois,0
+2020-07-02,17,Illinois,36
 2020-07-02,18,Indiana,12
 2020-07-02,42063,Indiana,12
 2020-07-02,19,Iowa,2
@@ -18892,10 +18892,10 @@ date,location,location_name,value
 2020-07-02,37,North Carolina,11
 2020-07-02,38,North Dakota,0
 2020-07-02,69,Northern Mariana Islands,0
-2020-07-02,39,Ohio,0
-2020-07-02,18115,Ohio,0
-2020-07-02,21183,Ohio,0
-2020-07-02,54069,Ohio,0
+2020-07-02,39,Ohio,27
+2020-07-02,18115,Ohio,27
+2020-07-02,21183,Ohio,27
+2020-07-02,54069,Ohio,27
 2020-07-02,40,Oklahoma,6
 2020-07-02,40109,Oklahoma,6
 2020-07-02,41,Oregon,1
@@ -18952,4 +18952,121 @@ date,location,location_name,value
 2020-07-02,36121,Wyoming,0
 2020-07-02,42131,Wyoming,0
 2020-07-02,54109,Wyoming,0
-2020-07-02,US,US,635
+2020-07-02,US,US,698
+2020-07-03,01,Alabama,21
+2020-07-03,02,Alaska,1
+2020-07-03,60,American Samoa,0
+2020-07-03,04,Arizona,34
+2020-07-03,05,Arkansas,2
+2020-07-03,05001,Arkansas,2
+2020-07-03,06,California,50
+2020-07-03,08,Colorado,0
+2020-07-03,48089,Colorado,0
+2020-07-03,09,Connecticut,9
+2020-07-03,10,Delaware,2
+2020-07-03,18035,Delaware,2
+2020-07-03,19055,Delaware,2
+2020-07-03,36025,Delaware,2
+2020-07-03,39041,Delaware,2
+2020-07-03,40041,Delaware,2
+2020-07-03,42045,Delaware,2
+2020-07-03,11,District of Columbia,1
+2020-07-03,11001,District of Columbia,1
+2020-07-03,12,Florida,67
+2020-07-03,13,Georgia,8
+2020-07-03,66,Guam,0
+2020-07-03,15,Hawaii,1
+2020-07-03,15001,Hawaii,1
+2020-07-03,16,Idaho,1
+2020-07-03,16049,Idaho,1
+2020-07-03,17,Illinois,18
+2020-07-03,18,Indiana,19
+2020-07-03,42063,Indiana,19
+2020-07-03,19,Iowa,2
+2020-07-03,19095,Iowa,2
+2020-07-03,55049,Iowa,2
+2020-07-03,20,Kansas,2
+2020-07-03,21,Kentucky,4
+2020-07-03,22,Louisiana,23
+2020-07-03,23,Maine,0
+2020-07-03,24,Maryland,11
+2020-07-03,25,Massachusetts,17
+2020-07-03,26,Michigan,3
+2020-07-03,27,Minnesota,8
+2020-07-03,28,Mississippi,11
+2020-07-03,05093,Mississippi,11
+2020-07-03,29133,Mississippi,11
+2020-07-03,29,Missouri,3
+2020-07-03,30,Montana,1
+2020-07-03,31,Nebraska,2
+2020-07-03,32,Nevada,3
+2020-07-03,05099,Nevada,3
+2020-07-03,06057,Nevada,3
+2020-07-03,33,New Hampshire,1
+2020-07-03,34,New Jersey,57
+2020-07-03,35,New Mexico,8
+2020-07-03,36,New York,73
+2020-07-03,37,North Carolina,10
+2020-07-03,38,North Dakota,0
+2020-07-03,69,Northern Mariana Islands,0
+2020-07-03,39,Ohio,0
+2020-07-03,18115,Ohio,0
+2020-07-03,21183,Ohio,0
+2020-07-03,54069,Ohio,0
+2020-07-03,40,Oklahoma,3
+2020-07-03,40109,Oklahoma,3
+2020-07-03,41,Oregon,0
+2020-07-03,29149,Oregon,0
+2020-07-03,42,Pennsylvania,34
+2020-07-03,72,Puerto Rico,1
+2020-07-03,44,Rhode Island,1
+2020-07-03,45,South Carolina,9
+2020-07-03,46,South Dakota,0
+2020-07-03,47,Tennessee,13
+2020-07-03,48,Texas,50
+2020-07-03,29215,Texas,50
+2020-07-03,40139,Texas,50
+2020-07-03,49,Utah,5
+2020-07-03,49049,Utah,5
+2020-07-03,50,Vermont,0
+2020-07-03,78,Virgin Islands,0
+2020-07-03,51,Virginia,29
+2020-07-03,53,Washington,10
+2020-07-03,01129,Washington,10
+2020-07-03,05143,Washington,10
+2020-07-03,08121,Washington,10
+2020-07-03,12133,Washington,10
+2020-07-03,13303,Washington,10
+2020-07-03,16087,Washington,10
+2020-07-03,17189,Washington,10
+2020-07-03,18175,Washington,10
+2020-07-03,19183,Washington,10
+2020-07-03,20201,Washington,10
+2020-07-03,21229,Washington,10
+2020-07-03,22117,Washington,10
+2020-07-03,23029,Washington,10
+2020-07-03,24043,Washington,10
+2020-07-03,27163,Washington,10
+2020-07-03,28151,Washington,10
+2020-07-03,29221,Washington,10
+2020-07-03,31177,Washington,10
+2020-07-03,36115,Washington,10
+2020-07-03,37187,Washington,10
+2020-07-03,39167,Washington,10
+2020-07-03,40147,Washington,10
+2020-07-03,41067,Washington,10
+2020-07-03,42125,Washington,10
+2020-07-03,44009,Washington,10
+2020-07-03,47179,Washington,10
+2020-07-03,48477,Washington,10
+2020-07-03,49053,Washington,10
+2020-07-03,50023,Washington,10
+2020-07-03,51191,Washington,10
+2020-07-03,55131,Washington,10
+2020-07-03,54,West Virginia,0
+2020-07-03,55,Wisconsin,3
+2020-07-03,56,Wyoming,0
+2020-07-03,36121,Wyoming,0
+2020-07-03,42131,Wyoming,0
+2020-07-03,54109,Wyoming,0
+2020-07-03,US,US,631
