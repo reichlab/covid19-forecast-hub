@@ -8,6 +8,7 @@ from zoltpy import util
 from zoltpy.covid19 import COVID_TARGETS, COVID_ADDL_REQ_COLS, covid19_row_validator, \
     validate_quantile_csv_file
 from zoltpy.quantile_io import json_io_dict_from_quantile_csv_file
+from datetime import datetime
 
 # meta info
 project_name = 'COVID-19 Forecasts'
@@ -44,7 +45,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
 
     # Get all forecasts in the directory of this model
     forecasts = os.listdir(path_to_processed_model_forecasts)
-    conn = util.authenticate()
+    conn.re_authenticate_if_necessary()
     # Get model name or create a new model if it's not in the current Zoltar project
     try:
         metadata = metadata_dict_for_file(
@@ -66,6 +67,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
             model_names = [model.name for model in models]
         except Exception as ex:
             return ex
+    print('Time: %s \t Model: %s' % (datetime.now(), model_name))
     model = [model for model in models if model.name == model_name][0]
 
     # Get names of existing forecasts to avoid re-upload
