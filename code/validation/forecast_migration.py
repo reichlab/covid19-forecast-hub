@@ -24,13 +24,12 @@ def remove_cols_2(df):
 
 
 def remove_rows_2(df):
-    rows_to_remove = [f"{_} day ahead inc death" for _ in range(131)] + \
-                     [f"{_} day ahead cum death" for _ in range(131)] + \
-                     [f"{_} wk ahead inc death" for _ in range(1, 21)] + \
-                     [f"{_} wk ahead cum death" for _ in range(1, 21)] + \
-                     [f"{_} day ahead inc hosp" for _ in range(131)] + \
+    rows_to_retain = [f"{_} day ahead inc hosp" for _ in range(131)] + \
+                         [f"{_} wk ahead inc death" for _ in range(1, 21)] + \
+                         [f"{_} wk ahead cum death" for _ in range(1, 21)] + \
                      [f"{_} wk ahead inc case" for _ in range(1, 9)]
-    return df.loc[~df['target'].isin(rows_to_remove)], False
+    df_rows = df['target'].isin(rows_to_retain)
+    return df.loc[df_rows], df_rows.sum() == df.shape[0]
 
 
 # dictionary containing a list of function for migration.
@@ -61,8 +60,14 @@ def migrate_to(data_dir, version):
                 has_not_changed = has_not_changed & flag
             # write the modified forecast file back
             if not has_not_changed:
-                print('Writing file %s' % csv.name)
-                df.to_csv(csv)
+                if df.shape[0] == 0:
+                    print('Deleting file %s' % csv.name)
+                    csv.unlink()
+                else:
+                    print('Writing file %s' % csv.name)
+                    df.to_csv(csv)
+            else:
+                print('%s has not changed.' % csv.name)
     except Exception as e:
         return e
     return True
