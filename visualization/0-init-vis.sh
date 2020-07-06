@@ -28,6 +28,9 @@ rm -rf ./data/Incident\ Deaths/CU-80-contactw10p
 rm -rf ./data/Cumulative\ Deaths/CU-scenario_*
 rm -rf ./data/Incident\ Deaths/CU-scenario_*
 
+rm -rf ./data/Cumulative\ Deaths/Auquan-SEIR
+rm -rf ./data/Incident\ Deaths/Auquan-SEIR
+
 
 # Remove UChicago except CovidIL_100
 rm -rf ./data/Cumulative\ Deaths/UChicago-CovidIL_40

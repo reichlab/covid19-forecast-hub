@@ -8,11 +8,11 @@ website_url: https://covid19.uclaml.org/
 license: cc-by-4.0
 team_model_designation: primary
 methods: >-
-    The SuEIR model is a variant of the SEIR model considering both untested and unreported cases. The model takes reopening into consideration and assumes contact rate will increase after the reopen.
+    The SuEIR model is a variant of the SEIR model considering both untested and unreported cases. The model considers reopening and assumes susceptible population will increase after the reopen.
 
 institution_affil: UCLA Computer Science Department
 team_funding: TBD
-data_inputs: New York Times -nytimes/covid-19-data
+data_inputs: JHU CSSE case and death data, COVID19 tracking project hospitalization data
 twitter_handles: QuanquanGu
 
 
@@ -22,4 +22,3 @@ methods_long: >-
     Reference: Difan Zou, Lingxiao Wang, Pan Xu, Jinghui Chen, Weitong Zhang and Quanquan Gu, Epidemic Model Guided Machine Learning for COVID-19 Forecasts in the United States, medRxiv:2020.05.24.20111989, 2020.
 
 citation: https://www.medrxiv.org/content/10.1101/2020.05.24.20111989v1
-
