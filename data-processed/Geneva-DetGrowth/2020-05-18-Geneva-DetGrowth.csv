@@ -1,18 +1,18 @@
-"forecast_date","target","target_end_date","location","location_name","type","quantile","value"
-2020-05-18,"1 day ahead inc death",2020-05-19,"US","US","point",NA,1060
-2020-05-18,"2 day ahead inc death",2020-05-20,"US","US","point",NA,997
-2020-05-18,"3 day ahead inc death",2020-05-21,"US","US","point",NA,997
-2020-05-18,"4 day ahead inc death",2020-05-22,"US","US","point",NA,997
-2020-05-18,"5 day ahead inc death",2020-05-23,"US","US","point",NA,997
-2020-05-18,"6 day ahead inc death",2020-05-24,"US","US","point",NA,997
-2020-05-18,"7 day ahead inc death",2020-05-25,"US","US","point",NA,997
-2020-05-18,"8 day ahead inc death",2020-05-26,"US","US","point",NA,997
-2020-05-18,"1 day ahead cum death",2020-05-19,"US","US","point",NA,90622
-2020-05-18,"2 day ahead cum death",2020-05-20,"US","US","point",NA,91619
-2020-05-18,"3 day ahead cum death",2020-05-21,"US","US","point",NA,92616
-2020-05-18,"4 day ahead cum death",2020-05-22,"US","US","point",NA,93613
-2020-05-18,"5 day ahead cum death",2020-05-23,"US","US","point",NA,94610
-2020-05-18,"6 day ahead cum death",2020-05-24,"US","US","point",NA,95607
-2020-05-18,"7 day ahead cum death",2020-05-25,"US","US","point",NA,96604
-2020-05-18,"8 day ahead cum death",2020-05-26,"US","US","point",NA,97601
-2020-05-18,"1 wk ahead cum death",2020-05-23,"US","US","point",NA,94610
+,location,target,type,quantile,forecast_date,target_end_date,value
+0,US,1 day ahead inc death,point,,2020-05-18,2020-05-19,1060
+1,US,2 day ahead inc death,point,,2020-05-18,2020-05-20,997
+2,US,3 day ahead inc death,point,,2020-05-18,2020-05-21,997
+3,US,4 day ahead inc death,point,,2020-05-18,2020-05-22,997
+4,US,5 day ahead inc death,point,,2020-05-18,2020-05-23,997
+5,US,6 day ahead inc death,point,,2020-05-18,2020-05-24,997
+6,US,7 day ahead inc death,point,,2020-05-18,2020-05-25,997
+7,US,8 day ahead inc death,point,,2020-05-18,2020-05-26,997
+8,US,1 day ahead cum death,point,,2020-05-18,2020-05-19,90622
+9,US,2 day ahead cum death,point,,2020-05-18,2020-05-20,91619
+10,US,3 day ahead cum death,point,,2020-05-18,2020-05-21,92616
+11,US,4 day ahead cum death,point,,2020-05-18,2020-05-22,93613
+12,US,5 day ahead cum death,point,,2020-05-18,2020-05-23,94610
+13,US,6 day ahead cum death,point,,2020-05-18,2020-05-24,95607
+14,US,7 day ahead cum death,point,,2020-05-18,2020-05-25,96604
+15,US,8 day ahead cum death,point,,2020-05-18,2020-05-26,97601
+16,US,1 wk ahead cum death,point,,2020-05-18,2020-05-23,94610

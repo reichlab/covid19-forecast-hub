@@ -1,15 +1,15 @@
-"forecast_date","target","target_end_date","location","location_name","type","quantile","value"
-2020-05-26,"1 day ahead inc death",2020-05-27,"US","US","point",NA,567
-2020-05-26,"2 day ahead inc death",2020-05-28,"US","US","point",NA,567
-2020-05-26,"3 day ahead inc death",2020-05-29,"US","US","point",NA,567
-2020-05-26,"4 day ahead inc death",2020-05-30,"US","US","point",NA,567
-2020-05-26,"5 day ahead inc death",2020-05-31,"US","US","point",NA,567
-2020-05-26,"6 day ahead inc death",2020-06-01,"US","US","point",NA,567
-2020-05-26,"7 day ahead inc death",2020-06-02,"US","US","point",NA,567
-2020-05-26,"1 day ahead cum death",2020-05-27,"US","US","point",NA,99375
-2020-05-26,"2 day ahead cum death",2020-05-28,"US","US","point",NA,99942
-2020-05-26,"3 day ahead cum death",2020-05-29,"US","US","point",NA,100508
-2020-05-26,"4 day ahead cum death",2020-05-30,"US","US","point",NA,101075
-2020-05-26,"5 day ahead cum death",2020-05-31,"US","US","point",NA,101641
-2020-05-26,"6 day ahead cum death",2020-06-01,"US","US","point",NA,102208
-2020-05-26,"7 day ahead cum death",2020-06-02,"US","US","point",NA,102774
+,location,target,type,quantile,forecast_date,target_end_date,value
+0,US,1 day ahead inc death,point,,2020-05-26,2020-05-27,567
+1,US,2 day ahead inc death,point,,2020-05-26,2020-05-28,567
+2,US,3 day ahead inc death,point,,2020-05-26,2020-05-29,567
+3,US,4 day ahead inc death,point,,2020-05-26,2020-05-30,567
+4,US,5 day ahead inc death,point,,2020-05-26,2020-05-31,567
+5,US,6 day ahead inc death,point,,2020-05-26,2020-06-01,567
+6,US,7 day ahead inc death,point,,2020-05-26,2020-06-02,567
+7,US,1 day ahead cum death,point,,2020-05-26,2020-05-27,99375
+8,US,2 day ahead cum death,point,,2020-05-26,2020-05-28,99942
+9,US,3 day ahead cum death,point,,2020-05-26,2020-05-29,100508
+10,US,4 day ahead cum death,point,,2020-05-26,2020-05-30,101075
+11,US,5 day ahead cum death,point,,2020-05-26,2020-05-31,101641
+12,US,6 day ahead cum death,point,,2020-05-26,2020-06-01,102208
+13,US,7 day ahead cum death,point,,2020-05-26,2020-06-02,102774

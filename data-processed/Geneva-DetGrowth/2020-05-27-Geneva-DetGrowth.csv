@@ -1,15 +1,15 @@
-"forecast_date","target","target_end_date","location","location_name","type","quantile","value"
-2020-05-27,"1 day ahead inc death",2020-05-28,"US","US","point",NA,597
-2020-05-27,"2 day ahead inc death",2020-05-29,"US","US","point",NA,597
-2020-05-27,"3 day ahead inc death",2020-05-30,"US","US","point",NA,596
-2020-05-27,"4 day ahead inc death",2020-05-31,"US","US","point",NA,597
-2020-05-27,"5 day ahead inc death",2020-06-01,"US","US","point",NA,596
-2020-05-27,"6 day ahead inc death",2020-06-02,"US","US","point",NA,597
-2020-05-27,"7 day ahead inc death",2020-06-03,"US","US","point",NA,597
-2020-05-27,"1 day ahead cum death",2020-05-28,"US","US","point",NA,100074
-2020-05-27,"2 day ahead cum death",2020-05-29,"US","US","point",NA,100670
-2020-05-27,"3 day ahead cum death",2020-05-30,"US","US","point",NA,101267
-2020-05-27,"4 day ahead cum death",2020-05-31,"US","US","point",NA,101863
-2020-05-27,"5 day ahead cum death",2020-06-01,"US","US","point",NA,102460
-2020-05-27,"6 day ahead cum death",2020-06-02,"US","US","point",NA,103056
-2020-05-27,"7 day ahead cum death",2020-06-03,"US","US","point",NA,103653
+,location,target,type,quantile,forecast_date,target_end_date,value
+0,US,1 day ahead inc death,point,,2020-05-27,2020-05-28,597
+1,US,2 day ahead inc death,point,,2020-05-27,2020-05-29,597
+2,US,3 day ahead inc death,point,,2020-05-27,2020-05-30,596
+3,US,4 day ahead inc death,point,,2020-05-27,2020-05-31,597
+4,US,5 day ahead inc death,point,,2020-05-27,2020-06-01,596
+5,US,6 day ahead inc death,point,,2020-05-27,2020-06-02,597
+6,US,7 day ahead inc death,point,,2020-05-27,2020-06-03,597
+7,US,1 day ahead cum death,point,,2020-05-27,2020-05-28,100074
+8,US,2 day ahead cum death,point,,2020-05-27,2020-05-29,100670
+9,US,3 day ahead cum death,point,,2020-05-27,2020-05-30,101267
+10,US,4 day ahead cum death,point,,2020-05-27,2020-05-31,101863
+11,US,5 day ahead cum death,point,,2020-05-27,2020-06-01,102460
+12,US,6 day ahead cum death,point,,2020-05-27,2020-06-02,103056
+13,US,7 day ahead cum death,point,,2020-05-27,2020-06-03,103653

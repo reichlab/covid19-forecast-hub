@@ -1,15 +1,15 @@
-"forecast_date","target","target_end_date","location","location_name","type","quantile","value"
-2020-05-21,"1 day ahead inc death",2020-05-22,"US","US","point",NA,1546
-2020-05-21,"2 day ahead inc death",2020-05-23,"US","US","point",NA,1546
-2020-05-21,"3 day ahead inc death",2020-05-24,"US","US","point",NA,1546
-2020-05-21,"4 day ahead inc death",2020-05-25,"US","US","point",NA,1546
-2020-05-21,"5 day ahead inc death",2020-05-26,"US","US","point",NA,1546
-2020-05-21,"6 day ahead inc death",2020-05-27,"US","US","point",NA,1546
-2020-05-21,"7 day ahead inc death",2020-05-28,"US","US","point",NA,1546
-2020-05-21,"1 day ahead cum death",2020-05-22,"US","US","point",NA,96540
-2020-05-21,"2 day ahead cum death",2020-05-23,"US","US","point",NA,98086
-2020-05-21,"3 day ahead cum death",2020-05-24,"US","US","point",NA,99632
-2020-05-21,"4 day ahead cum death",2020-05-25,"US","US","point",NA,101178
-2020-05-21,"5 day ahead cum death",2020-05-26,"US","US","point",NA,102724
-2020-05-21,"6 day ahead cum death",2020-05-27,"US","US","point",NA,104270
-2020-05-21,"7 day ahead cum death",2020-05-28,"US","US","point",NA,105816
+,location,target,type,quantile,forecast_date,target_end_date,value
+0,US,1 day ahead inc death,point,,2020-05-21,2020-05-22,1546
+1,US,2 day ahead inc death,point,,2020-05-21,2020-05-23,1546
+2,US,3 day ahead inc death,point,,2020-05-21,2020-05-24,1546
+3,US,4 day ahead inc death,point,,2020-05-21,2020-05-25,1546
+4,US,5 day ahead inc death,point,,2020-05-21,2020-05-26,1546
+5,US,6 day ahead inc death,point,,2020-05-21,2020-05-27,1546
+6,US,7 day ahead inc death,point,,2020-05-21,2020-05-28,1546
+7,US,1 day ahead cum death,point,,2020-05-21,2020-05-22,96540
+8,US,2 day ahead cum death,point,,2020-05-21,2020-05-23,98086
+9,US,3 day ahead cum death,point,,2020-05-21,2020-05-24,99632
+10,US,4 day ahead cum death,point,,2020-05-21,2020-05-25,101178
+11,US,5 day ahead cum death,point,,2020-05-21,2020-05-26,102724
+12,US,6 day ahead cum death,point,,2020-05-21,2020-05-27,104270
+13,US,7 day ahead cum death,point,,2020-05-21,2020-05-28,105816

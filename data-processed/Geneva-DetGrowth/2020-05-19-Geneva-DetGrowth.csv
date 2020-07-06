@@ -1,15 +1,15 @@
-"forecast_date","target","target_end_date","location","location_name","type","quantile","value"
-2020-05-19,"1 day ahead inc death",2020-05-20,"US","US","point",NA,796
-2020-05-19,"2 day ahead inc death",2020-05-21,"US","US","point",NA,797
-2020-05-19,"3 day ahead inc death",2020-05-22,"US","US","point",NA,797
-2020-05-19,"4 day ahead inc death",2020-05-23,"US","US","point",NA,797
-2020-05-19,"5 day ahead inc death",2020-05-24,"US","US","point",NA,797
-2020-05-19,"6 day ahead inc death",2020-05-25,"US","US","point",NA,796
-2020-05-19,"7 day ahead inc death",2020-05-26,"US","US","point",NA,797
-2020-05-19,"1 day ahead cum death",2020-05-20,"US","US","point",NA,91944
-2020-05-19,"2 day ahead cum death",2020-05-21,"US","US","point",NA,92740
-2020-05-19,"3 day ahead cum death",2020-05-22,"US","US","point",NA,93537
-2020-05-19,"4 day ahead cum death",2020-05-23,"US","US","point",NA,94333
-2020-05-19,"5 day ahead cum death",2020-05-24,"US","US","point",NA,95130
-2020-05-19,"6 day ahead cum death",2020-05-25,"US","US","point",NA,95926
-2020-05-19,"7 day ahead cum death",2020-05-26,"US","US","point",NA,96723
+,location,target,type,quantile,forecast_date,target_end_date,value
+0,US,1 day ahead inc death,point,,2020-05-19,2020-05-20,796
+1,US,2 day ahead inc death,point,,2020-05-19,2020-05-21,797
+2,US,3 day ahead inc death,point,,2020-05-19,2020-05-22,797
+3,US,4 day ahead inc death,point,,2020-05-19,2020-05-23,797
+4,US,5 day ahead inc death,point,,2020-05-19,2020-05-24,797
+5,US,6 day ahead inc death,point,,2020-05-19,2020-05-25,796
+6,US,7 day ahead inc death,point,,2020-05-19,2020-05-26,797
+7,US,1 day ahead cum death,point,,2020-05-19,2020-05-20,91944
+8,US,2 day ahead cum death,point,,2020-05-19,2020-05-21,92740
+9,US,3 day ahead cum death,point,,2020-05-19,2020-05-22,93537
+10,US,4 day ahead cum death,point,,2020-05-19,2020-05-23,94333
+11,US,5 day ahead cum death,point,,2020-05-19,2020-05-24,95130
+12,US,6 day ahead cum death,point,,2020-05-19,2020-05-25,95926
+13,US,7 day ahead cum death,point,,2020-05-19,2020-05-26,96723
