@@ -114,8 +114,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
                     return error_from_transformation
                 else:
                     try:
-                        util.upload_forecast(conn, quantile_json, forecast, 
-                                                project_name, model_name , time_zero_date, overwrite=over_write)
+                        print('NOTE: If you are seeing this, uplaod to zoltar is currently disabled!!')
                         db[forecast] = checksum
                     except Exception as ex:
                         print(ex)
