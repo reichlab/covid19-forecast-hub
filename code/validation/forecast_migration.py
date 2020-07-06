@@ -24,11 +24,18 @@ def remove_cols_2(df):
 
 def remove_rows_2(df):
     rows_to_retain = [f"{_} day ahead inc hosp" for _ in range(131)] + \
-                         [f"{_} wk ahead inc death" for _ in range(1, 21)] + \
-                         [f"{_} wk ahead cum death" for _ in range(1, 21)] + \
+                     [f"{_} wk ahead inc death" for _ in range(1, 21)] + \
+                     [f"{_} wk ahead cum death" for _ in range(1, 21)] + \
                      [f"{_} wk ahead inc case" for _ in range(1, 9)]
     df_rows = df['target'].isin(rows_to_retain)
     return df.loc[df_rows], df_rows.sum() == df.shape[0]
+
+
+def fix_location(df):
+    df_l = df['location'].astype(str).str.zfill(2)
+    change_flag = df['location'] == df_l
+    df['location'] = df_l
+    return df, change_flag.all()
 
 
 # dictionary containing a list of function for migration.
@@ -43,6 +50,9 @@ migration_funcs = {
     ],
     3: [
         remove_rows_2
+    ],
+    4: [
+        fix_location
     ]
 }
 
