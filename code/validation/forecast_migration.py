@@ -11,7 +11,6 @@ def remove_cols_2(df):
     Migration function to extract only the specified columns in teh DataFrame
     """
     cols_to_keep = [
-
         'location',
         'target',
         'type',
@@ -65,7 +64,7 @@ def migrate_to(data_dir, version):
                     csv.unlink()
                 else:
                     print('Writing file %s' % csv.name)
-                    df.to_csv(csv)
+                    df.to_csv(csv, index=False)
             else:
                 print('%s has not changed.' % csv.name)
     except Exception as e:
@@ -85,7 +84,7 @@ if __name__ == "__main__":
             print('forecast_migration.py -v <version>')
             sys.exit()
         elif opt in ("-v", "--version"):
-            version = arg
+            version = int(arg)
         elif opt in ("-d", "--data-dir"):
             data_dir = arg
     res = migrate_to(data_dir, version)
