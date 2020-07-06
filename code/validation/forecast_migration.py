@@ -23,6 +23,16 @@ def remove_cols_2(df):
     return df.loc[:, cols_to_keep], set(cols_to_keep) == set(df.columns)
 
 
+def remove_rows_2(df):
+    rows_to_remove = [f"{_} day ahead inc death" for _ in range(131)] + \
+                     [f"{_} day ahead cum death" for _ in range(131)] + \
+                     [f"{_} wk ahead inc death" for _ in range(1, 21)] + \
+                     [f"{_} wk ahead cum death" for _ in range(1, 21)] + \
+                     [f"{_} day ahead inc hosp" for _ in range(131)] + \
+                     [f"{_} wk ahead inc case" for _ in range(1, 9)]
+    return df.loc[~df['target'].isin(rows_to_remove)], False
+
+
 # dictionary containing a list of function for migration.
 # Example: for migration to version "2": specify a list of functions that accept
 # a pandas.DataFrame and return a modified pandas.DataFrame and a boolean flag indicating
@@ -32,6 +42,9 @@ def remove_cols_2(df):
 migration_funcs = {
     2: [
         remove_cols_2
+    ],
+    3: [
+        remove_rows_2
     ]
 }
 
@@ -61,7 +74,7 @@ if __name__ == "__main__":
     except getopt.GetoptError:
         print('forecast_migration.py -v <version>')
         sys.exit(2)
-    version, data_dir = 2, './data-processed'
+    version, data_dir = 3, './data-processed'
     for opt, arg in opts:
         if opt == '-h':
             print('forecast_migration.py -v <version>')
@@ -72,7 +85,7 @@ if __name__ == "__main__":
             data_dir = arg
     res = migrate_to(data_dir, version)
     if isinstance(res, Exception):
-        sys.stderr.write("Execption while migrating: " + str(res))
+        sys.stderr.write("Exception while migrating: " + str(res))
         sys.exit(3)
     else:
         print("Successful migration")
