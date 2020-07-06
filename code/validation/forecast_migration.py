@@ -16,15 +16,17 @@ def remove_cols_2(df):
         'target',
         'type',
         'quantile',
+        'forecast_date',
+        'target_end_date',
         'value'
     ]
-    return df.loc[:, cols_to_keep]
+    return df.loc[:, cols_to_keep], set(cols_to_keep) == set(df.columns)
 
 
 # dictionary containing a list of function for migration.
 # Example: for migration to version "2": specify a list of functions that accept
-# a pandas.DataFrame and return a modified pandas.DataFrame that will be used in the
-# subsequent cal in the chain.
+# a pandas.DataFrame and return a modified pandas.DataFrame and a boolean flag indicating
+# whether the data has been changed that will be used in the subsequent call in the chain.
 # Basically, the dict has key = version and value = list of function to be
 # executed **sequentially**
 migration_funcs = {
@@ -39,11 +41,15 @@ def migrate_to(data_dir, version):
     try:
         csvs = d_dir.glob('**/*.csv')
         for csv in csvs:
+            has_not_changed = True
             df = pd.read_csv(csv)
             for funcs in migration_funcs[version]:
-                df = funcs(df)
+                df, flag = funcs(df)
+                has_not_changed = has_not_changed & flag
             # write the modified forecast file back
-            df.to_csv(csv)
+            if not has_not_changed:
+                print('Writing file %s' % csv.name)
+                df.to_csv(csv)
     except Exception as e:
         return e
     return True
