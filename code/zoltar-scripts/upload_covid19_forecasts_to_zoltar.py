@@ -44,7 +44,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
 
     # Get all forecasts in the directory of this model
     forecasts = os.listdir(path_to_processed_model_forecasts)
-
+    conn = util.authenticate()
     # Get model name or create a new model if it's not in the current Zoltar project
     try:
         metadata = metadata_dict_for_file(
@@ -60,6 +60,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
               metadata['team_name'], metadata['methods'], metadata['website_url'] if metadata.get(
             'website_url') != None else url + dir_name, 'NA'
         try:
+            print('Create model %s' % model_name)
             project_obj.create_model(model_config)
             models = project_obj.models
             model_names = [model.name for model in models]
