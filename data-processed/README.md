@@ -234,7 +234,7 @@ week time period.
 ### `location`
 
 Values in the `location` column must be one of the "locations" in this
-[FIPS numeric code file](./data-locations/locations.csv) which includes 
+[FIPS numeric code file](../data-locations/locations.csv) which includes 
 numeric FIPS codes for U.S. states, counties, territories, and districts as
 well as "US" for national forecasts. 
 
