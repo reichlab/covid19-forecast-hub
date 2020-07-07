@@ -11,7 +11,7 @@ methods: >-
     Multiple skewed gaussian distribution peaks fit to raw data
 
 team_funding: None (I'm a retired Experimental Physicist working at home)
-data_inputs: Existing case and death raw data from Microsoft Bing Tracker
+data_inputs: Existing case and death raw data from Microsoft Bing Tracker. In process of switching to JHU data.
 
 methods_long: >-
     The existing case and death raw data is cleaned slightly for anomolies, then is fit with model consisting of one or more skewed gaussian distributions using a distribution model I developed.  The model estimates the height, position, and spread of each peak that appears in the data and can be used to project ahead with reasonable results.
