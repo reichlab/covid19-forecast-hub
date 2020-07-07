@@ -9,7 +9,7 @@ license: apache-2.0
 team_model_designation: primary
 
 methods: >-
-    This model makes predictions for future cases based on an SEIR model taking into account underdetection and government intervention. Projections assume the last implemented intervention continues.
+    This model predicts based on an SEIR model augmented with underdetection and interventions. Projections account for reopening and assume interventions would be re-enacted if cases continue to climb. 
 
 repo_url: https://github.com/COVIDAnalytics/DELPHI
 this_model_is_an_ensemble: false
