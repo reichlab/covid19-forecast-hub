@@ -2,7 +2,8 @@ team_name: CovidActNow
 team_abbr: CovidActNow
 model_name: SEIR_CAN
 model_abbr: SEIR_CAN
-model_contributors: Eric Carlson <eric.carlson@grandrounds.com>, Max Henderson <max@maxhenderson.com>, Chris Kelly <ghop02@gmail.com>, Igor Kofman <kofman@gmail.com>, Xinyu Zhang <xinyu.zhang@grandrounds.com>
+model_contributors: Eric Carlson <eric.carlson@grandrounds.com>, 
+Brett Boval <brettboval@gmail.com>, Max Henderson <max@maxhenderson.com>, Chris Kelly <ghop02@gmail.com>, Igor Kofman <kofman@gmail.com>, Xinyu Zhang <xinyu.zhang@grandrounds.com>
 website_url: 'https://covidactnow.org/'
 license: cc-by-4.0
 team_model_designation: primary
