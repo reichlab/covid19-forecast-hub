@@ -14,6 +14,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 01,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 01,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 01,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+01,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 01,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 01,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 01,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -34,6 +35,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 02,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 02,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 02,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+02,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 02,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 02,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 02,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -54,6 +56,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 04,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 04,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 04,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+04,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 04,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 04,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 04,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -74,6 +77,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 05,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 05,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 05,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+05,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 05,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 05,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 05,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -94,6 +98,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 06,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 06,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 06,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+06,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 06,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 06,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 06,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -114,6 +119,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 08,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 08,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 08,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+08,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 08,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 08,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 08,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -134,6 +140,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 09,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 09,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 09,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+09,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 09,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 09,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 09,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -154,6 +161,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 10,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 10,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 10,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+10,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 10,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 10,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 10,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -174,6 +182,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 11,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 11,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 11,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+11,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 11,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 11,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 11,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -194,6 +203,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 12,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 12,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 12,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+12,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 12,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 12,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 12,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -214,6 +224,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 13,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 13,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 13,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+13,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 13,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 13,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 13,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -234,6 +245,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 15,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 15,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 15,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+15,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 15,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 15,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 15,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -254,6 +266,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 16,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 16,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 16,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+16,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 16,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 16,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 16,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -274,6 +287,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 17,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 17,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 17,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+17,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 17,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 17,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 17,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -294,6 +308,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 18,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 18,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 18,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+18,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 18,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 18,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 18,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -314,6 +329,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 19,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 19,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 19,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+19,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 19,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 19,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 19,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -334,6 +350,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 20,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 20,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 20,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+20,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 20,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 20,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 20,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -354,6 +371,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 21,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 21,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 21,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+21,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 21,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 21,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 21,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -374,6 +392,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 22,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 22,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 22,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+22,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 22,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 22,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 22,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -394,6 +413,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 23,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 23,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 23,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+23,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 23,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 23,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 23,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -414,6 +434,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 24,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 24,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 24,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+24,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 24,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 24,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 24,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -434,6 +455,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 25,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 25,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 25,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+25,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 25,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 25,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 25,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -454,6 +476,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 26,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 26,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 26,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+26,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 26,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 26,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 26,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -474,6 +497,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 27,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 27,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 27,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+27,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 27,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 27,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 27,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -494,6 +518,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 28,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 28,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 28,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+28,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 28,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 28,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 28,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -514,6 +539,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 29,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 29,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 29,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+29,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 29,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 29,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 29,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -534,6 +560,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 30,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 30,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 30,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+30,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 30,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 30,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 30,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -554,6 +581,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 31,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 31,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 31,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+31,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 31,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 31,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 31,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -574,6 +602,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 32,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 32,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 32,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+32,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 32,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 32,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 32,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -594,6 +623,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 33,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 33,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 33,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+33,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 33,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 33,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 33,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -614,6 +644,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 34,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 34,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 34,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+34,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 34,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 34,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 34,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -634,6 +665,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 35,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 35,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 35,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+35,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 35,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 35,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 35,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -654,6 +686,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 36,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 36,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 36,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+36,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 36,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 36,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 36,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -674,6 +707,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 37,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 37,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 37,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+37,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 37,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 37,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 37,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -694,6 +728,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 38,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 38,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 38,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+38,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 38,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 38,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 38,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -714,6 +749,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 39,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 39,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 39,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+39,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 39,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 39,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 39,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -734,6 +770,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 40,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 40,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 40,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+40,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 40,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 40,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 40,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -754,6 +791,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 41,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 41,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 41,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+41,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 41,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 41,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 41,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -774,6 +812,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 42,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 42,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 42,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+42,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 42,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 42,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 42,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -794,6 +833,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 44,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 44,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 44,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+44,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 44,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 44,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 44,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -814,6 +854,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 45,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 45,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 45,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+45,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 45,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 45,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 45,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -834,6 +875,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 46,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 46,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 46,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+46,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 46,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 46,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 46,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -854,6 +896,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 47,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 47,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 47,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+47,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 47,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 47,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 47,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -874,6 +917,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 48,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 48,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 48,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+48,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 48,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 48,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 48,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -894,6 +938,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 49,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 49,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 49,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+49,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 49,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 49,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 49,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -914,6 +959,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 50,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 50,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 50,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+50,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 50,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 50,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 50,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -934,6 +980,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 51,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 51,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 51,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+51,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 51,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 51,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 51,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -954,6 +1001,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 53,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 53,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 53,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+53,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 53,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 53,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 53,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -974,6 +1022,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 54,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 54,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 54,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+54,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 54,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 54,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 54,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -994,6 +1043,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 55,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 55,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 55,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+55,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 55,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 55,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 55,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -1014,6 +1064,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 56,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 56,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 56,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+56,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 56,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 56,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 56,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -1034,6 +1085,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 60,OliverWyman-Navigator,missing required forecasts,"NA","NA","NA",ineligible
 60,PSI-DRAFT,missing required forecasts,"NA","NA","NA",ineligible
 60,RobertWalraven-ESG,missing required forecasts,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+60,UCLA-SuEIR,missing required forecasts,"NA","NA","NA",ineligible
 60,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 60,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 60,USACE-ERDC_SEIR,missing required forecasts,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -1054,6 +1106,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 66,OliverWyman-Navigator,missing required forecasts,"NA","NA","NA",ineligible
 66,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 66,RobertWalraven-ESG,missing required forecasts,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+66,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 66,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 66,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 66,USACE-ERDC_SEIR,missing required forecasts,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -1074,6 +1127,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 69,OliverWyman-Navigator,missing required forecasts,"NA","NA","NA",ineligible
 69,PSI-DRAFT,missing required forecasts,"NA","NA","NA",ineligible
 69,RobertWalraven-ESG,missing required forecasts,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+69,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 69,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 69,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 69,USACE-ERDC_SEIR,missing required forecasts,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -1094,6 +1148,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 72,OliverWyman-Navigator,missing required forecasts,"NA","NA","NA",ineligible
 72,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 72,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+72,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 72,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 72,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 72,USACE-ERDC_SEIR,missing required forecasts,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -1114,6 +1169,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 78,OliverWyman-Navigator,missing required forecasts,"NA","NA","NA",ineligible
 78,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 78,RobertWalraven-ESG,missing required forecasts,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+78,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 78,UM_CFG-RidgeTfReg,missing required forecasts,"NA","NA","NA",ineligible
 78,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 78,USACE-ERDC_SEIR,missing required forecasts,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
@@ -1134,6 +1190,7 @@ US,NotreDame-mobility,eligible,"NA","NA","NA",eligible
 US,OliverWyman-Navigator,eligible,"NA","NA","NA",eligible
 US,PSI-DRAFT,eligible,"NA","NA","NA",eligible
 US,RobertWalraven-ESG,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+US,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 US,UM_CFG-RidgeTfReg,eligible,"NA","NA","NA",eligible
 US,UMass-MechBayes,eligible,"NA","NA","NA",eligible
 US,USACE-ERDC_SEIR,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
