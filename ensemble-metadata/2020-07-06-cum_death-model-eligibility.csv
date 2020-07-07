@@ -10,7 +10,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 01,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 01,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 01,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-01,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 01,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 01,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 01,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -34,7 +33,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 02,IHME-CurveFit,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",ineligible
 02,JHU_IDD-CovidSP,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",ineligible
 02,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-02,MITCovAlliance-SIR,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 02,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 02,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 02,NotreDame-mobility,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",ineligible
@@ -58,7 +56,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 04,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 04,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 04,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-04,MITCovAlliance-SIR,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 04,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 04,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 04,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -82,7 +79,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 05,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 05,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 05,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-05,MITCovAlliance-SIR,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 05,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 05,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 05,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -106,7 +102,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 06,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 06,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 06,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-06,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 06,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 06,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 06,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -130,7 +125,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 08,IHME-CurveFit,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",ineligible
 08,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 08,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-08,MITCovAlliance-SIR,eligible,eligible,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 08,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 08,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 08,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -154,7 +148,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 09,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 09,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 09,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-09,MITCovAlliance-SIR,eligible,eligible,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 09,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 09,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 09,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -178,7 +171,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 10,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 10,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 10,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-10,MITCovAlliance-SIR,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 10,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 10,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 10,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -202,7 +194,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 11,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 11,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 11,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-11,MITCovAlliance-SIR,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 11,MOBS-GLEAM_COVID,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 11,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 11,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -226,7 +217,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 12,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 12,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 12,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-12,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 12,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 12,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 12,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -250,7 +240,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 13,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 13,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 13,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-13,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 13,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 13,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 13,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -274,7 +263,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 15,IHME-CurveFit,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",ineligible
 15,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 15,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-15,MITCovAlliance-SIR,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 15,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 15,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 15,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -298,7 +286,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 16,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 16,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 16,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-16,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 16,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 16,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 16,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -322,7 +309,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 17,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 17,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 17,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-17,MITCovAlliance-SIR,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 17,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 17,NotreDame-FRED,eligible,eligible,eligible,"NA",eligible
 17,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -346,7 +332,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 18,IHME-CurveFit,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",ineligible
 18,JHU_IDD-CovidSP,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",ineligible
 18,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-18,MITCovAlliance-SIR,eligible,eligible,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 18,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 18,NotreDame-FRED,eligible,eligible,eligible,"NA",eligible
 18,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -370,7 +355,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 19,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 19,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 19,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-19,MITCovAlliance-SIR,eligible,eligible,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 19,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 19,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 19,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -394,7 +378,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 20,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 20,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 20,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-20,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 20,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 20,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 20,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -418,7 +401,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 21,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 21,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 21,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-21,MITCovAlliance-SIR,eligible,eligible,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 21,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 21,NotreDame-FRED,eligible,eligible,eligible,"NA",eligible
 21,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -442,7 +424,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 22,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 22,JHU_IDD-CovidSP,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",ineligible
 22,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-22,MITCovAlliance-SIR,eligible,eligible,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 22,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 22,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 22,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -466,7 +447,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 23,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 23,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 23,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-23,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 23,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 23,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 23,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -490,7 +470,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 24,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 24,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 24,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-24,MITCovAlliance-SIR,eligible,eligible,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 24,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 24,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 24,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -514,7 +493,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 25,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 25,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 25,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-25,MITCovAlliance-SIR,eligible,eligible,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 25,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 25,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 25,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -538,7 +516,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 26,IHME-CurveFit,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",ineligible
 26,JHU_IDD-CovidSP,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",ineligible
 26,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-26,MITCovAlliance-SIR,eligible,eligible,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 26,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 26,NotreDame-FRED,eligible,eligible,eligible,"NA",eligible
 26,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -562,7 +539,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 27,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 27,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 27,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-27,MITCovAlliance-SIR,eligible,eligible,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 27,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 27,NotreDame-FRED,eligible,eligible,eligible,"NA",eligible
 27,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -586,7 +562,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 28,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 28,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 28,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-28,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 28,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 28,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 28,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -610,7 +585,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 29,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 29,JHU_IDD-CovidSP,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",ineligible
 29,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-29,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 29,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 29,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 29,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -634,7 +608,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 30,IHME-CurveFit,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",ineligible
 30,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 30,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-30,MITCovAlliance-SIR,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 30,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 30,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 30,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -658,7 +631,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 31,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 31,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 31,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-31,MITCovAlliance-SIR,eligible,eligible,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 31,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 31,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 31,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -682,7 +654,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 32,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 32,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 32,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-32,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 32,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 32,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 32,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -706,7 +677,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 33,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 33,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 33,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-33,MITCovAlliance-SIR,eligible,eligible,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 33,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 33,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 33,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -730,7 +700,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 34,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 34,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 34,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-34,MITCovAlliance-SIR,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 34,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 34,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 34,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -754,7 +723,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 35,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 35,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 35,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-35,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 35,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 35,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 35,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -778,7 +746,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 36,IHME-CurveFit,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",ineligible
 36,JHU_IDD-CovidSP,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",ineligible
 36,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-36,MITCovAlliance-SIR,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 36,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 36,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 36,NotreDame-mobility,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",ineligible
@@ -802,7 +769,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 37,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 37,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 37,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-37,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 37,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 37,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 37,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -826,7 +792,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 38,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 38,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 38,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-38,MITCovAlliance-SIR,eligible,eligible,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 38,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 38,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 38,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -850,7 +815,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 39,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 39,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 39,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-39,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 39,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 39,NotreDame-FRED,eligible,eligible,eligible,"NA",eligible
 39,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -874,7 +838,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 40,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 40,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 40,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-40,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 40,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 40,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 40,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -898,7 +861,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 41,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 41,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 41,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-41,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 41,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 41,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 41,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -922,7 +884,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 42,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 42,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 42,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-42,MITCovAlliance-SIR,eligible,eligible,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 42,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 42,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 42,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -946,7 +907,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 44,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 44,JHU_IDD-CovidSP,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",ineligible
 44,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-44,MITCovAlliance-SIR,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 44,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 44,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 44,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -970,7 +930,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 45,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 45,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 45,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-45,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 45,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 45,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 45,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -994,7 +953,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 46,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 46,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 46,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-46,MITCovAlliance-SIR,eligible,eligible,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 46,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 46,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 46,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -1018,7 +976,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 47,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 47,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 47,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-47,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 47,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 47,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 47,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -1042,7 +999,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 48,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 48,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 48,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-48,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 48,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 48,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 48,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -1066,7 +1022,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 49,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 49,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 49,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-49,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 49,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 49,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 49,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -1090,7 +1045,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 50,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 50,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 50,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-50,MITCovAlliance-SIR,eligible,eligible,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 50,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 50,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 50,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -1114,7 +1068,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 51,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 51,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 51,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-51,MITCovAlliance-SIR,eligible,eligible,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 51,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 51,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 51,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -1138,7 +1091,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 53,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 53,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 53,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-53,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 53,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 53,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 53,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -1162,7 +1114,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 54,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 54,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 54,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-54,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 54,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 54,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 54,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -1186,7 +1137,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 55,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 55,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 55,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-55,MITCovAlliance-SIR,eligible,eligible,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 55,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 55,NotreDame-FRED,eligible,eligible,eligible,"NA",eligible
 55,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -1210,7 +1160,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 56,IHME-CurveFit,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA",ineligible
 56,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 56,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-56,MITCovAlliance-SIR,eligible,eligible,eligible,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 56,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 56,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 56,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -1234,7 +1183,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 60,IHME-CurveFit,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 60,JHU_IDD-CovidSP,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 60,LANL-GrowthRate,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
-60,MITCovAlliance-SIR,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 60,MOBS-GLEAM_COVID,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 60,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 60,NotreDame-mobility,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
@@ -1258,7 +1206,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 66,IHME-CurveFit,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 66,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 66,LANL-GrowthRate,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
-66,MITCovAlliance-SIR,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 66,MOBS-GLEAM_COVID,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 66,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 66,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -1282,7 +1229,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 69,IHME-CurveFit,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 69,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 69,LANL-GrowthRate,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
-69,MITCovAlliance-SIR,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 69,MOBS-GLEAM_COVID,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 69,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 69,NotreDame-mobility,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
@@ -1306,7 +1252,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 72,IHME-CurveFit,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 72,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 72,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-72,MITCovAlliance-SIR,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 72,MOBS-GLEAM_COVID,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 72,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 72,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -1330,7 +1275,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 78,IHME-CurveFit,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 78,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 78,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-78,MITCovAlliance-SIR,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 78,MOBS-GLEAM_COVID,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 78,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 78,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
@@ -1354,7 +1298,6 @@ US,GT-DeepCOVID,eligible,quantile 0.1 of forecast for horizon 1 is less than mos
 US,IHME-CurveFit,eligible,eligible,eligible,"NA",eligible
 US,JHU_IDD-CovidSP,eligible,eligible,eligible,"NA",eligible
 US,LANL-GrowthRate,eligible,eligible,eligible,"NA",eligible
-US,MITCovAlliance-SIR,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,decreasing quantiles over time,"NA",Visual misalignment of predictive quantiles with JHU reference data.
 US,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA",eligible
 US,NotreDame-FRED,missing required forecasts,quantile 0.1 of forecast for horizon 1 is missing,missing forecasts; cannot evaluate decreasing quantiles criterion,"NA",ineligible
 US,NotreDame-mobility,eligible,eligible,eligible,"NA",eligible
