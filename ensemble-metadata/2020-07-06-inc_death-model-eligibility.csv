@@ -1,6 +1,6 @@
 location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_eligibility,baseline_eligibility,overall_eligibility
 01,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-01,CU-select,eligible,"NA","NA","NA",eligible
+01,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 01,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 01,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 01,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",ineligible
@@ -21,7 +21,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 01,UT-Mobility,eligible,"NA","NA","NA",eligible
 01,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 02,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-02,CU-select,eligible,"NA","NA","NA",eligible
+02,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 02,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 02,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 02,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -42,7 +42,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 02,UT-Mobility,eligible,"NA","NA","NA",eligible
 02,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 04,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-04,CU-select,eligible,"NA","NA","NA",eligible
+04,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 04,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 04,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 04,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -63,7 +63,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 04,UT-Mobility,eligible,"NA","NA","NA",eligible
 04,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 05,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-05,CU-select,eligible,"NA","NA","NA",eligible
+05,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 05,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 05,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 05,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -84,7 +84,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 05,UT-Mobility,eligible,"NA","NA","NA",eligible
 05,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 06,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-06,CU-select,eligible,"NA","NA","NA",eligible
+06,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 06,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 06,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 06,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -105,7 +105,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 06,UT-Mobility,eligible,"NA","NA","NA",eligible
 06,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 08,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-08,CU-select,eligible,"NA","NA","NA",eligible
+08,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 08,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 08,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 08,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -126,7 +126,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 08,UT-Mobility,eligible,"NA","NA","NA",eligible
 08,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 09,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-09,CU-select,eligible,"NA","NA","NA",eligible
+09,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 09,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 09,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 09,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -147,7 +147,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 09,UT-Mobility,eligible,"NA","NA","NA",eligible
 09,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 10,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-10,CU-select,eligible,"NA","NA","NA",eligible
+10,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 10,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 10,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 10,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",ineligible
@@ -168,7 +168,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 10,UT-Mobility,eligible,"NA","NA","NA",eligible
 10,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 11,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-11,CU-select,eligible,"NA","NA","NA",eligible
+11,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 11,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 11,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 11,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -189,7 +189,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 11,UT-Mobility,eligible,"NA","NA","NA",eligible
 11,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 12,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-12,CU-select,eligible,"NA","NA","NA",eligible
+12,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 12,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 12,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 12,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",ineligible
@@ -210,7 +210,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 12,UT-Mobility,eligible,"NA","NA","NA",eligible
 12,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 13,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-13,CU-select,eligible,"NA","NA","NA",eligible
+13,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 13,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 13,GT_CHHS-COVID19,eligible,"NA","NA","NA",eligible
 13,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",ineligible
@@ -231,7 +231,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 13,UT-Mobility,eligible,"NA","NA","NA",eligible
 13,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 15,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-15,CU-select,eligible,"NA","NA","NA",eligible
+15,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 15,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 15,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 15,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",ineligible
@@ -252,7 +252,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 15,UT-Mobility,eligible,"NA","NA","NA",eligible
 15,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 16,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-16,CU-select,eligible,"NA","NA","NA",eligible
+16,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 16,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 16,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 16,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -273,7 +273,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 16,UT-Mobility,eligible,"NA","NA","NA",eligible
 16,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 17,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-17,CU-select,eligible,"NA","NA","NA",eligible
+17,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 17,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 17,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 17,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -294,7 +294,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 17,UT-Mobility,eligible,"NA","NA","NA",eligible
 17,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 18,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-18,CU-select,eligible,"NA","NA","NA",eligible
+18,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 18,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 18,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 18,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -315,7 +315,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 18,UT-Mobility,eligible,"NA","NA","NA",eligible
 18,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 19,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-19,CU-select,eligible,"NA","NA","NA",eligible
+19,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 19,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 19,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 19,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -336,7 +336,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 19,UT-Mobility,eligible,"NA","NA","NA",eligible
 19,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 20,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-20,CU-select,eligible,"NA","NA","NA",eligible
+20,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 20,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 20,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 20,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -357,7 +357,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 20,UT-Mobility,eligible,"NA","NA","NA",eligible
 20,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 21,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-21,CU-select,eligible,"NA","NA","NA",eligible
+21,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 21,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 21,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 21,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -378,7 +378,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 21,UT-Mobility,eligible,"NA","NA","NA",eligible
 21,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 22,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-22,CU-select,eligible,"NA","NA","NA",eligible
+22,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 22,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 22,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 22,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -399,7 +399,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 22,UT-Mobility,eligible,"NA","NA","NA",eligible
 22,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 23,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-23,CU-select,eligible,"NA","NA","NA",eligible
+23,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 23,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 23,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 23,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -420,7 +420,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 23,UT-Mobility,eligible,"NA","NA","NA",eligible
 23,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 24,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-24,CU-select,eligible,"NA","NA","NA",eligible
+24,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 24,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 24,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 24,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -441,7 +441,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 24,UT-Mobility,eligible,"NA","NA","NA",eligible
 24,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 25,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-25,CU-select,eligible,"NA","NA","NA",eligible
+25,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 25,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 25,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 25,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -462,7 +462,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 25,UT-Mobility,eligible,"NA","NA","NA",eligible
 25,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 26,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-26,CU-select,eligible,"NA","NA","NA",eligible
+26,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 26,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 26,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 26,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -483,7 +483,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 26,UT-Mobility,eligible,"NA","NA","NA",eligible
 26,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 27,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-27,CU-select,eligible,"NA","NA","NA",eligible
+27,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 27,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 27,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 27,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -504,7 +504,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 27,UT-Mobility,eligible,"NA","NA","NA",eligible
 27,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 28,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-28,CU-select,eligible,"NA","NA","NA",eligible
+28,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 28,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 28,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 28,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -525,7 +525,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 28,UT-Mobility,eligible,"NA","NA","NA",eligible
 28,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 29,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-29,CU-select,eligible,"NA","NA","NA",eligible
+29,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 29,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 29,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 29,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -546,7 +546,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 29,UT-Mobility,eligible,"NA","NA","NA",eligible
 29,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 30,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-30,CU-select,eligible,"NA","NA","NA",eligible
+30,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 30,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 30,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 30,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -567,7 +567,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 30,UT-Mobility,eligible,"NA","NA","NA",eligible
 30,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 31,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-31,CU-select,eligible,"NA","NA","NA",eligible
+31,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 31,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 31,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 31,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -588,7 +588,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 31,UT-Mobility,eligible,"NA","NA","NA",eligible
 31,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 32,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-32,CU-select,eligible,"NA","NA","NA",eligible
+32,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 32,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 32,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 32,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",ineligible
@@ -609,7 +609,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 32,UT-Mobility,eligible,"NA","NA","NA",eligible
 32,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 33,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-33,CU-select,eligible,"NA","NA","NA",eligible
+33,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 33,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 33,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 33,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -630,7 +630,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 33,UT-Mobility,eligible,"NA","NA","NA",eligible
 33,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 34,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-34,CU-select,eligible,"NA","NA","NA",eligible
+34,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 34,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 34,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 34,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",ineligible
@@ -651,7 +651,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 34,UT-Mobility,eligible,"NA","NA","NA",eligible
 34,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 35,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-35,CU-select,eligible,"NA","NA","NA",eligible
+35,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 35,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 35,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 35,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -672,7 +672,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 35,UT-Mobility,eligible,"NA","NA","NA",eligible
 35,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 36,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-36,CU-select,eligible,"NA","NA","NA",eligible
+36,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 36,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 36,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 36,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -693,7 +693,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 36,UT-Mobility,eligible,"NA","NA","NA",eligible
 36,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 37,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-37,CU-select,eligible,"NA","NA","NA",eligible
+37,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 37,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 37,GT_CHHS-COVID19,eligible,"NA","NA","NA",eligible
 37,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -714,7 +714,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 37,UT-Mobility,eligible,"NA","NA","NA",eligible
 37,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 38,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-38,CU-select,eligible,"NA","NA","NA",eligible
+38,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 38,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 38,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 38,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -735,7 +735,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 38,UT-Mobility,eligible,"NA","NA","NA",eligible
 38,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 39,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-39,CU-select,eligible,"NA","NA","NA",eligible
+39,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 39,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 39,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 39,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",ineligible
@@ -756,7 +756,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 39,UT-Mobility,eligible,"NA","NA","NA",eligible
 39,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 40,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-40,CU-select,eligible,"NA","NA","NA",eligible
+40,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 40,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 40,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 40,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -777,7 +777,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 40,UT-Mobility,eligible,"NA","NA","NA",eligible
 40,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 41,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-41,CU-select,eligible,"NA","NA","NA",eligible
+41,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 41,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 41,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 41,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -798,7 +798,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 41,UT-Mobility,eligible,"NA","NA","NA",eligible
 41,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 42,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-42,CU-select,eligible,"NA","NA","NA",eligible
+42,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 42,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 42,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 42,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -819,7 +819,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 42,UT-Mobility,eligible,"NA","NA","NA",eligible
 42,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 44,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-44,CU-select,eligible,"NA","NA","NA",eligible
+44,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 44,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 44,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 44,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -840,7 +840,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 44,UT-Mobility,eligible,"NA","NA","NA",eligible
 44,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 45,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-45,CU-select,eligible,"NA","NA","NA",eligible
+45,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 45,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 45,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 45,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -861,7 +861,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 45,UT-Mobility,eligible,"NA","NA","NA",eligible
 45,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 46,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-46,CU-select,eligible,"NA","NA","NA",eligible
+46,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 46,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 46,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 46,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -882,7 +882,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 46,UT-Mobility,eligible,"NA","NA","NA",eligible
 46,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 47,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-47,CU-select,eligible,"NA","NA","NA",eligible
+47,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 47,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 47,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 47,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -903,7 +903,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 47,UT-Mobility,eligible,"NA","NA","NA",eligible
 47,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 48,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-48,CU-select,eligible,"NA","NA","NA",eligible
+48,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 48,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 48,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 48,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -924,7 +924,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 48,UT-Mobility,eligible,"NA","NA","NA",eligible
 48,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 49,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-49,CU-select,eligible,"NA","NA","NA",eligible
+49,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 49,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 49,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 49,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",ineligible
@@ -945,7 +945,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 49,UT-Mobility,eligible,"NA","NA","NA",eligible
 49,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 50,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-50,CU-select,eligible,"NA","NA","NA",eligible
+50,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 50,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 50,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 50,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -966,7 +966,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 50,UT-Mobility,eligible,"NA","NA","NA",eligible
 50,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 51,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-51,CU-select,eligible,"NA","NA","NA",eligible
+51,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 51,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 51,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 51,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -987,7 +987,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 51,UT-Mobility,eligible,"NA","NA","NA",eligible
 51,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 53,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-53,CU-select,eligible,"NA","NA","NA",eligible
+53,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 53,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 53,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 53,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",ineligible
@@ -1008,7 +1008,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 53,UT-Mobility,eligible,"NA","NA","NA",eligible
 53,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 54,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-54,CU-select,eligible,"NA","NA","NA",eligible
+54,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 54,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 54,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 54,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -1029,7 +1029,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 54,UT-Mobility,eligible,"NA","NA","NA",eligible
 54,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 55,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-55,CU-select,eligible,"NA","NA","NA",eligible
+55,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 55,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 55,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 55,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -1050,7 +1050,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 55,UT-Mobility,eligible,"NA","NA","NA",eligible
 55,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 56,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-56,CU-select,eligible,"NA","NA","NA",eligible
+56,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 56,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 56,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 56,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
@@ -1071,7 +1071,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 56,UT-Mobility,eligible,"NA","NA","NA",eligible
 56,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 60,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-60,CU-select,missing required forecasts,"NA","NA","NA",ineligible
+60,CU-select,missing required forecasts,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 60,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 60,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 60,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",ineligible
@@ -1092,7 +1092,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 60,UT-Mobility,missing required forecasts,"NA","NA","NA",ineligible
 60,YYG-ParamSearch,missing required forecasts,"NA","NA","NA",ineligible
 66,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-66,CU-select,missing required forecasts,"NA","NA","NA",ineligible
+66,CU-select,missing required forecasts,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 66,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 66,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 66,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",ineligible
@@ -1113,7 +1113,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 66,UT-Mobility,missing required forecasts,"NA","NA","NA",ineligible
 66,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 69,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-69,CU-select,missing required forecasts,"NA","NA","NA",ineligible
+69,CU-select,missing required forecasts,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 69,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 69,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 69,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",ineligible
@@ -1134,7 +1134,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 69,UT-Mobility,missing required forecasts,"NA","NA","NA",ineligible
 69,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 72,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-72,CU-select,missing required forecasts,"NA","NA","NA",ineligible
+72,CU-select,missing required forecasts,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 72,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 72,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 72,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",ineligible
@@ -1155,7 +1155,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 72,UT-Mobility,missing required forecasts,"NA","NA","NA",ineligible
 72,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 78,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-78,CU-select,missing required forecasts,"NA","NA","NA",ineligible
+78,CU-select,missing required forecasts,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 78,epiforecasts-ensemble1,missing required forecasts,"NA","NA","NA",ineligible
 78,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 78,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",ineligible
@@ -1176,7 +1176,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 78,UT-Mobility,missing required forecasts,"NA","NA","NA",ineligible
 78,YYG-ParamSearch,eligible,"NA","NA","NA",eligible
 US,COVIDhub-baseline,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
-US,CU-select,eligible,"NA","NA","NA",eligible
+US,CU-select,eligible,"NA","NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
 US,epiforecasts-ensemble1,eligible,"NA","NA","NA",eligible
 US,GT_CHHS-COVID19,missing required forecasts,"NA","NA","NA",ineligible
 US,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
