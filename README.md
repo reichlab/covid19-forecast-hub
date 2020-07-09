@@ -105,6 +105,7 @@ repository are (with data reuse license):
  - [University of Geneva / Swiss Data Science Center](https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/) (none given)
  - [University of Massachusetts - Expert Model](https://github.com/tomcm39/COVID19_expert_survey) (MIT)
  - [University of Massachusetts - Mechanistic Bayesian model](https://github.com/dsheldon/covid) (MIT)
+ - [The University of Michigan](https://gitlab.com/sabcorse/covid-19-collaboration) (cc-by-4.0)
  - [University of Texas-Austin](https://covid-19.tacc.utexas.edu/projections/) (BSD-3)
  - [YYG](http://covid19-projections.com) (MIT) 
  - COVIDhub ensemble forecast: this is a combination of the above models. 
