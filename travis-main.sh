@@ -39,22 +39,32 @@ if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* || "$TRAVIS_COMMIT_MESSAGE" == *"FORCE_ZO
     bash ./travis/push.sh
     echo "Upload truth to Zoltar"
     python3 ./code/zoltar-scripts/upload_truth_to_zoltar.py
+    # Upload to zoltar at every merged pull request
+    echo "Upload forecasts to Zoltar "
+    bash ./travis/upload-to-zoltar.sh
+
+    # Replace the validated_files.csv with locally_validated_files.csv at every build except PRs
+    echo "replacing validated files"
+    cp ./code/validation/locally_validated_files.csv ./code/validation/validated_files.csv
+
+    echo "Merge detected.. push to github"
+    bash ./travis/push.sh
 fi
 
 # Upload to zoltar at every merged pull request
-if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
-   echo "Upload forecasts to Zoltar "
-   bash ./travis/upload-to-zoltar.sh
-fi
+# if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
+#    echo "Upload forecasts to Zoltar "
+#    bash ./travis/upload-to-zoltar.sh
+# fi
 
 # Replace the validated_files.csv with locally_validated_files.csv at every build except PRs
-if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then 
-   echo "replacing validated files"
-   cp ./code/validation/locally_validated_files.csv ./code/validation/validated_files.csv
+# if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then 
+#    echo "replacing validated files"
+#    cp ./code/validation/locally_validated_files.csv ./code/validation/validated_files.csv
 
-   echo "Merge detected.. push to github"
-   bash ./travis/push.sh
-fi
+#    echo "Merge detected.. push to github"
+#    bash ./travis/push.sh
+# fi
 
 ## Automatically deploy visualization.
 ## TODO - This code does not work yet
