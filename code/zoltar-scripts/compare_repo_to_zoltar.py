@@ -1,7 +1,7 @@
 from zoltpy.quantile_io import json_io_dict_from_quantile_csv_file
 from zoltpy import util
 from zoltpy.connection import ZoltarConnection
-from zoltpy.covid19 import VALID_TARGET_NAMES, covid19_row_validator, validate_quantile_csv_file
+from zoltpy.covid19 import COVID_TARGETS, COVID_ADDL_REQ_COLS, covid19_row_validator, validate_quantile_csv_file
 import os
 import sys
 
@@ -29,6 +29,9 @@ print("number of forecasts in repo: " + str(len(repo_forecasts)))
 for forecast in zoltar_forecasts:
     if forecast not in repo_forecasts:
         print("This forecast in zoltar but not in repo "+forecast)
+print()
+print('----------------------------------------------------------')
+print()
 for forecast in repo_forecasts:
     if forecast not in zoltar_forecasts:
         print("This forecast in repo but not in zoltar "+forecast)

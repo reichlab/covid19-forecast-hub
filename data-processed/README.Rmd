@@ -147,6 +147,8 @@ following specific targets:
 - "N wk ahead inc case"  where N is a number between 1 and  8
 - "N day ahead inc hosp"  where N is a number between 0 and 130
 
+For county locations, the only target should be "N wk ahead inc case".
+
 For week-ahead forecasts, we will use the specification of epidemiological weeks (EWs) [defined by the US CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf). 
 There are standard software packages to convert from dates to epidemic weeks and vice versa. E.g. [MMWRweek](https://cran.r-project.org/web/packages/MMWRweek/) for R and [pymmwr](https://pypi.org/project/pymmwr/) and [epiweeks](https://pypi.org/project/epiweeks/) for python.
 
@@ -184,6 +186,7 @@ Predictions for this target will be evaluated compared to the number of new
 reported cases, as recorded by 
 [JHU CSSE](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv).
 
+
 #### N wk ahead inc case
 
 This target is the incident (weekly) number of cases predicted by the model 
@@ -207,6 +210,7 @@ a 1 day ahead inc hosp forecast corresponds to the number of incident
 hospitalizations on Tuesday, 2 day ahead to Wednesday, etc.... 
 
 Currently there is no "gold standard" for hospitalization data. 
+
 
 
 #### REMOVED targets
@@ -234,7 +238,7 @@ week time period.
 ### `location`
 
 Values in the `location` column must be one of the "locations" in this
-[FIPS numeric code file](./data-locations/locations.csv) which includes 
+[FIPS numeric code file](../data-locations/locations.csv) which includes 
 numeric FIPS codes for U.S. states, counties, territories, and districts as
 well as "US" for national forecasts. 
 

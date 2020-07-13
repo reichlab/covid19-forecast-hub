@@ -1,0 +1,27 @@
+team_name: COVID-19 Forecast Hub
+team_abbr: COVIDhub
+model_name: baseline
+model_abbr: baseline
+model_contributors: >-
+    Evan L. Ray <elray@umass.edu>
+website_url: https://covid19forecasthub.org/
+license: cc-by-4.0
+team_model_designation: proposed
+
+methods: >-
+    This model is a baseline predictive model.
+
+team_funding: CDC
+repo_url: https://github.com/reichlab/covidModels
+twitter_handles: reichlab, jaradniemi
+data_inputs: cumulative and incident deaths or cases
+
+methods_long: >-
+    Forecasts of incidence are generated through the following procedure:
+    1) Calculate first differences of incidence; 2) Collect all first
+    differences and their negatives; 3) Sample first differences in incidence
+    and add to the most recent observed incidence; 4) Enforce that the mean of
+    the predictive distribution for incidence is equal to the most recent
+    observed incidence; 5) truncate the predictive distribution for incidence at
+    0.  Forecasts of cumulative quantities are obtained by adding forecasts of
+    incidence to the last observed cumulative value.
