@@ -3,8 +3,8 @@ team_abbr: LNQ
 model_name: ens1
 model_abbr: ens1
 model_contributors: >-
-	Russ Wolfinger (SAS),
-	David Lander (NQ)
+    Russ Wolfinger (SAS),
+    David Lander (NQ)
 
 website_url: https://www.kaggle.com/sasrdw/locknquay
 license: mit
@@ -17,7 +17,7 @@ methods: >-
 institution_affil: SAS Institute and Independent
 
 data_inputs: >-
-	JHU
+    JHU
 
 citation: https://www.kaggle.com/c/covid19-global-forecasting-week-5/overview
 
