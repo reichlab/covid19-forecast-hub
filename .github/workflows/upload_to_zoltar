@@ -1,0 +1,32 @@
+name: Manually trigger zoltar upload
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Trigger'
+
+jobs:
+  upload_zoltar:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.2]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+        architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+    - run: npm install
+    - run: pip3 install -r visualization/requirements.txt
+    - run: bash travis/upload_zoltar_master.sh
+      env:
+        Z_USERNAME: ${{ secrets.Z_USERNAME}}
+        Z_PASSWORD: ${{ secrets.Z_PASSWORD}}
+        GH_TOKEN: ${{secrets.GH_TOKEN}}
