@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       name:
-        description: 'Trigger'
+        description: 'Trigger Zoltar Upload'
 
 jobs:
   upload_zoltar:
