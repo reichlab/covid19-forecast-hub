@@ -28,6 +28,9 @@ rm -rf ./data/Incident\ Deaths/CU-80-contactw10p
 rm -rf ./data/Cumulative\ Deaths/CU-scenario_*
 rm -rf ./data/Incident\ Deaths/CU-scenario_*
 
+rm -rf ./data/Cumulative\ Deaths/Auquan-SEIR
+rm -rf ./data/Incident\ Deaths/Auquan-SEIR
+
 
 # Remove UChicago except CovidIL_100
 rm -rf ./data/Cumulative\ Deaths/UChicago-CovidIL_40
@@ -83,6 +86,10 @@ rm -rf ./data/Incident\ Deaths/CU-low
 
 rm -rf ./data/Cumulative\ Deaths/CU-mid
 rm -rf ./data/Incident\ Deaths/CU-mid
+
+# Remove failing models right now
+rm -rf ./data/Cumulative\ Deaths/RobertWalraven-ESG
+rm -rf ./data/Incident\ Deaths/RobertWalraven-ESG
 
 # Remove Ensemble Incident
 # rm -rf ./data/Incident\ Deaths/COVIDhub-ensemble
