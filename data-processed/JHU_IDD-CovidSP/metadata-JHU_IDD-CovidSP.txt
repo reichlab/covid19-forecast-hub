@@ -72,7 +72,7 @@ methods_long: >-
     
     For each county, we estimate the seeding time and amount, the baseline 
     reproductive number, the case confirmation to infection ratio, and the 
-    effectiveness of stay-at-home and social distancing interventions. We use an 
+    effectiveness of interventions (from closing to phased reopenings). We use an 
     MCMC-like inference procedure that calibrates model outputs to weekly county 
     aggregations of incident confirmed cases and deaths as reported by USA 
     Facts. For the inference of the baseline reproductive number and the case 
@@ -85,4 +85,4 @@ methods_long: >-
     The estimates reported by this model incorporate uncertainty in both 
     epidemiological parameters (e.g., R0, infectious period, time delays to 
     health outcomes) and the effectiveness of state-wide intervention policies 
-    on social distancing and stay-at-home orders.
+    on social distancing, stay-at-home orders, and phased reopenings.
