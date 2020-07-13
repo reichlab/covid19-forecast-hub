@@ -35,8 +35,7 @@ fi
 if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* || "$TRAVIS_COMMIT_MESSAGE" == *"FORCE_ZOLTAR"* ]]; then
     echo "updating truth data..."
     bash ./travis/update-truth.sh
-    echo "Push the truth"
-    bash ./travis/push.sh
+    
     echo "Upload truth to Zoltar"
     python3 ./code/zoltar-scripts/upload_truth_to_zoltar.py
     # Upload to zoltar at every merged pull request
