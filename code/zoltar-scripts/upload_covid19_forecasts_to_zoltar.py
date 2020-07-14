@@ -92,11 +92,17 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
             f.close()
 
             # Check this hash against the previous version of hash
-            if db.get(forecast, None) != checksum:
-                print(forecast)
-                if time_zero_date in existing_time_zeros:
-                    over_write = True
-            else:
+            # if db.get(forecast, None) != checksum:
+            #     print(forecast, db.get(forecast, None))
+            #     if time_zero_date in existing_time_zeros:
+            #         over_write = True
+            # else:
+            #     continue
+
+            # if timezero existing, then don't write again
+            if time_zero_date in existing_time_zeros:
+                #update checksum
+                # db[forecast] = checksum
                 continue
 
         # Skip metadata text file
