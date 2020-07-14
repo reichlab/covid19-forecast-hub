@@ -1,4 +1,4 @@
-# COVID-19 Forecast Hub
+# COVID-19 Forecast Hub 
 <img src="https://travis-ci.com/reichlab/covid19-forecast-hub.svg?branch=master">
 
 The goal of this repository is to create a standardized set of data on forecasts from teams making projections of cumulative and incident deaths and incident hospitalizations due to COVID-19 in the United States. This repository is the data source for [the official CDC COVID-19 Forecasting page](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html). This project to collect, standardize, visualize and synthesize forecast data has been led by the CDC-funded UMass-Amherst Influenza Forecasting Center of Excellence based at the [Reich Lab](https://reichlab.io/), with [contributions from many others](https://github.com/reichlab/covid19-forecast-hub/blob/master/README.md#the-covid-forecast-hub-team). 

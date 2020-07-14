@@ -1,5 +1,5 @@
-team_name: University of Michigan COVID-19 Forecasting Group
-team_abbr: UM_CFG
+team_name: The University of Michigan
+team_abbr: UMich
 model_name: RidgeTensorFlowRegressor
 model_abbr: RidgeTfReg
 model_contributors: >-
