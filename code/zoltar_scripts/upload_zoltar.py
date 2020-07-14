@@ -10,6 +10,8 @@ from pathlib import Path
 import pprint
 import yaml
 import logging
+import pickle
+import hashlib
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -30,6 +32,20 @@ models = [model for model in project_obj.models]
 model_abbrs = [model.abbreviation for model in models]
 zoltar_forecasts = []
 repo_forecasts = []
+
+
+def read_validation_db():
+    try:
+        with open('./code/zoltar-scripts/validated_file_db.p', 'rb') as f:
+            l = pickle.load(f)
+    except Exception as ex:
+        l = []
+    return dict(l)
+
+
+def write_db(db):
+    with open('./code/zoltar-scripts/validated_file_db.p', 'wb') as fw:
+        pickle.dump(db, fw)
 
 # Function to read metadata file to get model name
 def metadata_dict_for_file(metadata_file):
@@ -74,6 +90,8 @@ def create_timezero(tz):
 
 def upload_forecast(forecast_name):
     path = get_forecast_info(forecast_name)
+    db = read_validation_db()
+
     metadata = metadata_dict_for_file(list(Path(path).parent.glob('metadata-*.txt'))[0])
     if f"{metadata['team_abbr']}-{metadata['model_abbr']}"  not in [m.abbreviation for m in models]:
         create_model(path, metadata)
@@ -91,6 +109,8 @@ def upload_forecast(forecast_name):
             return errors_from_validation, True
         with open(path) as fp:
             print('uploading %s' % path)
+            checksum = hashlib.md5(str(fp.read()).encode('utf-8')).hexdigest()
+            fp.seek(0)
             quantile_json, error_from_transformation = json_io_dict_from_quantile_csv_file(fp,
             COVID_TARGETS,
             covid19_row_validator, 
@@ -100,7 +120,10 @@ def upload_forecast(forecast_name):
                 return error_from_transformation, True
             
             try:
-                util.upload_forecast(conn, quantile_json, forecast, project_name, f"{metadata['team_abbr']}-{metadata['model_abbr']}" , time_zero_date)
+                fr = util.upload_forecast(conn, quantile_json, forecast, project_name, f"{metadata['team_abbr']}-{metadata['model_abbr']}" , time_zero_date)
+                db[forecast_name] = checksum
+                write_db(db)
+                return None, fr
             except Exception as e:
                 raise e
                 return e, True
