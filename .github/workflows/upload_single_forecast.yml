@@ -31,3 +31,6 @@ jobs:
         Z_USERNAME: ${{ secrets.Z_USERNAME}}
         Z_PASSWORD: ${{ secrets.Z_PASSWORD}}
         GH_TOKEN: ${{secrets.GH_TOKEN}}
+    - run: bash travis/push-gh.sh
+      env:
+        GH_TOKEN: ${{secrets.GH_TOKEN}} 
