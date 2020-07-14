@@ -3,7 +3,7 @@ team_abbr: LNQ
 model_name: ens1
 model_abbr: ens1
 model_contributors: >-
-    Russ Wolfinger (SAS),
+    Russ Wolfinger (SAS) <russ.wolfinger@sas.com>,
     David Lander (NQ)
 
 website_url: https://www.kaggle.com/sasrdw/locknquay
