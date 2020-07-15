@@ -184,7 +184,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
                     return error_from_transformation
                 else:
                     try:
-                        logger.debug('Upload forecast for model: %s \t|\t File: %s\n' % (model_name,forecast))
+                        logger.debug('Upload forecast for model: %s \t|\t File: %s\n' % (metadata['model_name'],forecast))
                         util.upload_forecast(conn, quantile_json, forecast,
                                              project_name, metadata['model_name'], time_zero_date,
                                              overwrite=over_write)
