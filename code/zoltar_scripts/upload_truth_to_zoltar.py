@@ -17,7 +17,7 @@ url = 'https://github.com/reichlab/covid19-forecast-hub/tree/master/data-process
 project_obj = [project for project in conn.projects if project.name == project_name][0]
 
 
-# Example Run: python3 ./code/zoltar-scripts/upload_truth_to_zoltar.py
+# Example Run: python3 ./code/zoltar_scripts/upload_truth_to_zoltar.py
 if __name__ == '__main__':
     with open(path_to_zoltar_truth) as fr:
         upload_file_job = project_obj.upload_truth_data(fr)

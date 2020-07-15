@@ -36,7 +36,7 @@ for directory in list_of_model_directories:
                 if db.get(forecast, None) != checksum:
                     print(forecast)
                     db[forecast] = checksum
-                with open('./code/zoltar-scripts/validated_file_db.p', 'wb') as fw:
+                with open('./code/zoltar_scripts/validated_file_db.p', 'wb') as fw:
                     pickle.dump(db, fw)
                 f.close()
         else:

@@ -1,0 +1,27 @@
+citation: https://www.covidanalytics.io/DELPHI_documentation_pdf
+data_inputs: JHU CSSE case and death data
+institution_affil: Massachusetts Institute of Technology
+license: apache-2.0
+methods: 'This model predicts based on an SEIR model augmented with underdetection
+  and interventions. Projections account for reopening and assume interventions would
+  be re-enacted if cases continue to climb. '
+methods_long: 'This model makes predictions for future cases based on a heavily modified
+  SEIR model. New states are added to the SEIR model to account for cases that went
+  undetected, and an explicit death state is included. The infection rate is corrected
+  with a nonlinear curve that represents the governmental and societal response (which
+  is assumed to change according to the magnitude of the outbreak). Key parameters
+  for the disease are fixed using a metanalysis  conducted by the CovidAnalytics group
+  of over 150 parameters while epidemiological parameters are fitted to hisotical
+  death counts and detected cases. '
+model_abbr: CovidAnalytics-DELPHI
+model_contributors: Michael Lingzhi Li (Massachusetts Institute of Technology) <mlli@mit.edu>,
+  Hamza Tazi Bouardi (Massachusetts Institute of Technology), Omar Skali Lami (Massachusetts
+  Institute of Technology), Thomas A. Trikalinos (Brown University), Nikolaos K. Trichakis
+  (Massachusetts Institute of Technology), Dimitris Bertsimas (Massachusetts Institute
+  of Technology)
+model_name: DELPHI
+repo_url: https://github.com/COVIDAnalytics/DELPHI
+team_model_designation: primary
+team_name: CovidAnalytics at MIT
+twitter_handles: covid_analytics
+website_url: https://www.covidanalytics.io/
