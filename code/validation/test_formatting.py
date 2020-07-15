@@ -13,7 +13,7 @@ from validation_functions.metadata import check_for_metadata, get_metadata_model
 from validation_functions.forecast_filename import validate_forecast_file_name
 from validation_functions.forecast_date import filename_match_forecast_date
 
-metadata_version = 3
+metadata_version = 4
 
 def validate_forecast_file(filepath):
     """
