@@ -1,22 +1,23 @@
-
-team_name: UT-Austin COVID-19 Consortium
-team_abbr: UT
-model_name: Mobility
-model_abbr: Mobility
-model_contributors: Spencer Woody<spencer.woody@utexas.edu>, et al.
-website_url: https://covid-19.tacc.utexas.edu/projections/
-license: LICENSE.txt
-team_model_designation: primary
-
-institution_affil: The University of Texas at Austin
-team_funding: NSF
 data_inputs: JHU CSSE
-this_model_is_an_ensemble: false
-
-methods: >-
-    This model makes predictions assuming that social distancing patterns, as measured by anonymized mobile-phone GPS traces, 
-    remain constant in the future.This model models only *first-wave deaths*.
-
-methods_long: >-
-    For each US state, we use local data from mobile-phone GPS traces made available by [SafeGraph] to quantify the changing impact of social-distancing measures on ``flattening the curve.''  SafeGraph is a data company that aggregates anonymized location data from numerous applications in order to provide insights about physical places. To enhance privacy, SafeGraph excludes census block group information if fewer than five devices visitedan establishment in a month from a given census block group.  These data are aggregated by state to create metrics of social distancing, which are used as predictors in the model.
-    We use a Bayesian multilevel negative binomial regression model for the number of deaths for each day, and implement the model in R using the rstanarm package. See technical report at https://covid-19.tacc.utexas.edu/media/filer_public/87/63/87635a46-b060-4b5b-a3a5-1b31ab8e0bc6/ut_covid-19_mortality_forecasting_model_latest.pdf
+institution_affil: The University of Texas at Austin
+license: other
+methods: This model makes predictions assuming that social distancing patterns, as
+  measured by anonymized mobile-phone GPS traces,  remain constant in the future.This
+  model models only *first-wave deaths*.
+methods_long: For each US state, we use local data from mobile-phone GPS traces made
+  available by [SafeGraph] to quantify the changing impact of social-distancing measures
+  on ``flattening the curve.''  SafeGraph is a data company that aggregates anonymized
+  location data from numerous applications in order to provide insights about physical
+  places. To enhance privacy, SafeGraph excludes census block group information if
+  fewer than five devices visitedan establishment in a month from a given census block
+  group.  These data are aggregated by state to create metrics of social distancing,
+  which are used as predictors in the model. We use a Bayesian multilevel negative
+  binomial regression model for the number of deaths for each day, and implement the
+  model in R using the rstanarm package. See technical report at https://covid-19.tacc.utexas.edu/media/filer_public/87/63/87635a46-b060-4b5b-a3a5-1b31ab8e0bc6/ut_covid-19_mortality_forecasting_model_latest.pdf
+model_abbr: UT-Mobility
+model_contributors: Spencer Woody<spencer.woody@utexas.edu>, et al.
+model_name: Mobility
+team_funding: NSF
+team_model_designation: primary
+team_name: UT-Austin COVID-19 Consortium
+website_url: https://covid-19.tacc.utexas.edu/projections/

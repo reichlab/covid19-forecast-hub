@@ -1,27 +1,21 @@
-team_name: Predictive Science Inc
-team_abbr: PSI
-model_name: Disease Rapid Analysis and Forecasting Tool
-model_abbr: DRAFT
-model_contributors: >-
-    James Turtle <jturtle@predsci.com>, 
-    Michal Ben-Nun <mbennun@predsci.com>, 
-    Pete Riley <pete@predsci.com>
-team_model_designation: primary
-license: mit
-website_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/PSI-DRAFT
-
-methods: >-
-    A stochastic/deterministic, single-population SEIRX model that stratifies by both age distribution and disease severity and includes generic intervention fitting. 
-
-team_funding: NSF
-repo_url: https://github.com/predsci/DRAFT
+data_inputs: JHU cumulative deaths,  U.S. Census populations and age distributions
 institution_affil: Predictive Science Inc
-data_inputs: >- 
-    JHU cumulative deaths, 
-    U.S. Census populations and age distributions
-
-methods_long: >-
-    Deterministic fit of a compartmental SEIRX model to cumulative death profiles, followed by stochastic simulations using the optimal parameters. All compartments are stratified by age. 'I' compartments are additionally divided by disease severity into Asymptomatic, Mild, Flu-like, and Severe.  Severe disease is defined by the need for an ICU bed. Interventions are fit generically to a three value smooth function.  Forward projections are conditional on interventions/reproductive number remaining unchanged.
-  
-
-
+license: mit
+methods: 'A stochastic/deterministic, single-population SEIRX model that stratifies
+  by both age distribution and disease severity and includes generic intervention
+  fitting. '
+methods_long: Deterministic fit of a compartmental SEIRX model to cumulative death
+  profiles, followed by stochastic simulations using the optimal parameters. All compartments
+  are stratified by age. 'I' compartments are additionally divided by disease severity
+  into Asymptomatic, Mild, Flu-like, and Severe.  Severe disease is defined by the
+  need for an ICU bed. Interventions are fit generically to a three value smooth function.  Forward
+  projections are conditional on interventions/reproductive number remaining unchanged.
+model_abbr: PSI-DRAFT
+model_contributors: James Turtle <jturtle@predsci.com>,  Michal Ben-Nun <mbennun@predsci.com>,  Pete
+  Riley <pete@predsci.com>
+model_name: Disease Rapid Analysis and Forecasting Tool
+repo_url: https://github.com/predsci/DRAFT
+team_funding: NSF
+team_model_designation: primary
+team_name: Predictive Science Inc
+website_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/PSI-DRAFT
