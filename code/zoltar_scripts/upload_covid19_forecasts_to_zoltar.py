@@ -1,7 +1,7 @@
 from zoltpy.quantile_io import json_io_dict_from_quantile_csv_file
 from zoltpy import util
 from zoltpy.connection import ZoltarConnection
-from zoltpy.covid19 import COVID_TARGETS, covid19_row_validator, validate_quantile_csv_file
+from zoltpy.covid19 import COVID_TARGETS, covid19_row_validator, validate_quantile_csv_file, COVID_ADDL_REQ_COLS
 import os
 import sys
 import yaml
@@ -125,9 +125,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
     model = [model for model in models if model.abbreviation == model_abbreviation][0]
 
     if has_changed(metadata, model):
-        # model metadata has changed, call teh edit function in zoltpy to update metadata
-        # pprint.pprint(model.json)
-        # pprint.pprint(metadata)
+        # model metadata has changed, call the edit function in zoltpy to update metadata
         print(f"{metadata['model_abbr']!r} model has changed metadata contents. Updating on Zoltar...")
         model.edit(model_config)
     
@@ -180,17 +178,19 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
             if "no errors" == errors_from_validation:
                 quantile_json, error_from_transformation = json_io_dict_from_quantile_csv_file(fp,
                                                                                                COVID_TARGETS,
-                                                                                               covid19_row_validator)
+                                                                                               covid19_row_validator,
+                                                                                               COVID_ADDL_REQ_COLS)
                 if len(error_from_transformation) > 0:
                     return error_from_transformation
                 else:
                     try:
+                        logger.debug('Upload forecast for model: %s \t|\t File: %s\n' % (model_name,forecast))
                         util.upload_forecast(conn, quantile_json, forecast,
                                              project_name, metadata['model_name'], time_zero_date,
                                              overwrite=over_write)
                         db[forecast] = checksum
                     except Exception as ex:
-                        print(ex)
+                        logger.error(ex)
                         return ex
                     json_io_dict_batch.append(quantile_json)
                     timezero_date_batch.append(time_zero_date)
