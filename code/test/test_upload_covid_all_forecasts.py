@@ -1,20 +1,70 @@
 import unittest
 from unittest.mock import patch, MagicMock
 
-from zoltpy.connection import Project
+from zoltpy.connection import Project, Model
 
-from code.zoltar_scripts.upload_covid19_forecasts_to_zoltar import upload_covid_all_forecasts
+from code.zoltar_scripts.upload_covid19_forecasts_to_zoltar import upload_covid_all_forecasts, has_changed
 
 
+# metadata_field_to_zoltar = {
+#     'team_name': 'team_name',
+#     'model_name': 'name',
+#     'model_abbr': 'abbreviation',
+#     'model_contributors': 'contributors',
+#     'website_url': 'home_url',
+#     'license': 'license',
+#     'team_model_designation': 'notes',
+#     'methods': 'description',
+#     'repo_url': 'aux_data_url',
+#     'citation': 'citation',
+#     'methods_long': 'methods'
+# }
 class UploadCovidAllForecastsTestCase(unittest.TestCase):
+
+    def test_has_changed(self):
+
+        metadata_dict = {
+            'team_name': 'test_team',
+            'model_name': 'test_name',
+            'model_abbr': 'test_abbr',
+            'model_contributors': 'test_contrib',
+            'website_url': 'test_url',
+            'license': 'test_license',
+            'team_model_designation': 'test_notes',
+            'methods': 'test_methods',
+            'repo_url': 'test_repo_url',
+            'citation': 'test_citation',
+            'methods_long': 'test_methods_long'
+        }
+
+        zoltar_json = {
+            'team_name': 'test_team',
+            'name': 'test_name',
+            'abbreviation': 'test_abbr',
+            'contributors': 'test_contrib',
+            'home_url': 'test_url',
+            'license': 'test_license',
+            'notes': 'test_notes',
+            'description': 'test_methods',
+            'aux_data_url': 'test_repo_url',
+            'citation': 'test_citation',
+            'methods': 'test_methods_long'
+        }
+        # Case: Not has changed.
+        zoltar_model = Model(None, None, initial_json=zoltar_json)
+        self.assertFalse(has_changed(metadata_dict, zoltar_model))
+
+        # Case: missing field?
+        tmp_metadata_dict = dict(metadata_dict)
+        del tmp_metadata_dict['model_contributors']
+        self.assertTrue(has_changed(tmp_metadata_dict, zoltar_model))
+
+        # Case: field nto equal
+        tmp_metadata_dict = dict(metadata_dict)
+        tmp_metadata_dict['model_contributors'] = 'something not equal'
+        self.assertTrue(has_changed(tmp_metadata_dict, zoltar_model))
+
     def test_upload_covid_all_forecasts(self):
-        # has_changed: True | False
-        # util.authenticate
-        # conn.projects
-        # project.name
-        # model.abbreviation
-        # model.edit
-        # project.create_model
         connection_mock = MagicMock()
         project_mock = MagicMock()
         project_mock.name = 'COVID-19 Forecasts'
@@ -38,8 +88,9 @@ class UploadCovidAllForecastsTestCase(unittest.TestCase):
 
         with patch('code.zoltar_scripts.upload_covid19_forecasts_to_zoltar.has_changed',
                    return_value=False), \
-             patch('code.zoltar_scripts.upload_covid19_forecasts_to_zoltar.upload_forecasts',
-                   return_value="Pass"):
+             patch(
+                 'code.zoltar_scripts.upload_covid19_forecasts_to_zoltar.upload_covid_all_forecasts',
+                 return_value="Pass"):
             val_errors_or_pass = upload_covid_all_forecasts(
                 'code/test/data/COVIDhub-ensemble/',
                 'COVIDhub-ensemble')
