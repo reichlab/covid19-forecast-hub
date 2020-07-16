@@ -1,26 +1,16 @@
-team_name: Quantori modeling
-team_abbr: Quantori
-model_name: The Agent-based local stochastic model of COVID-19
-model_abbr: Multiagents
-model_contributors: >-
-    Yuriy Gankin <yuriy.gankin@quantori.com>  Semyon Semyonov <semyon.semyonov@quantori.com> 
-website_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Quantori-Multiagents
-license: cc-by-4.0
-team_model_designation: primary
-
-methods: >- 
-    The Agent-based local stochastic model of COVID-19 transmission
-
 institution_affil: none
+license: cc-by-4.0
+methods: The Agent-based local stochastic model of COVID-19 transmission
+methods_long: "This model incorporates the reported geographic incidence data, which\
+  \ include individual\u2019s age, infection status, and the severity of the disease.\
+  \  The model accounts for the latent period of the individual\u2019s infection before\
+  \ detection and proper reporting as well as for different disease severity levels.\
+  \  The framework also allows to incorporate the exact geographic addresses of individuals\
+  \ (if available) or the random geographic distribution of individuals."
+model_abbr: Quantori-Multiagents
+model_contributors: 'Yuriy Gankin <yuriy.gankin@quantori.com>  Semyon Semyonov <semyon.semyonov@quantori.com> '
+model_name: The Agent-based local stochastic model of COVID-19
 team_funding: private
-this_model_is_an_ensemble: false
-
-methods_long: >- 
-    This model incorporates the reported geographic incidence data, which include individual’s age, infection status, and the severity of the disease. 
-    The model accounts for the latent period of the individual’s infection before detection and proper reporting as well as for different disease severity levels. 
-    The framework also allows to incorporate the exact geographic addresses of individuals (if available) or the random geographic distribution of individuals.
-
-
-
-    
-
+team_model_designation: primary
+team_name: Quantori modeling
+website_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Quantori-Multiagents

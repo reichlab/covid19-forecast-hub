@@ -1,50 +1,28 @@
-team_name: Los Alamos National Labs
-team_abbr: LANL
-model_name: GrowthRate
-model_abbr: GrowthRate
-model_contributors: >-
-    Dave Osthus <dosthus@lanl.gov>, 
-    Sara Del Valle, 
-    Carrie Manore, 
-    Brian Weaver, 
-    Lauren Castro, 
-    Courtney Shelley, 
-    Manhong (Mandy) Smith, 
-    Julie Spencer, 
-    Geoffrey Fairchild, 
-    Travis Pitts, 
-    Dax Gerts, 
-    Lori Dauelsberg, 
-    Ashlynn Daughton,
-    Morgan Gorris, 
-    Beth Hornbein, 
-    Daniel Israel, 
-    Nidhi Parikh, 
-    Deborah Shutt, 
-    Amanda Ziemann
-
-website_url: https://covid-19.bsvgateway.org/
-license: LICENSE.txt
-team_model_designation: primary
-
-methods: >-
-    This model makes predictions about the future, unconditional on particular intervention strategies.
-    Statistical dynamical growth model accounting for population susceptibility.
-
-institution_affil: Los Alamos National Labs
-team_funding: U.S. Department of Energy
-
 data_inputs: JHU (confirmed cases; reported fatalities), population
-
-methods_long: >-
-    This model makes predictions about the future, unconditional on particular intervention strategies.
-    The model consists of two processes. The first process is a statistical model of how the 
-    number of COVID-19 infections changes over time. The second process maps the number of 
-    infections to the reported data. We model the growth of new cases as the product of a 
-    dynamic growth parameter and the underlying numbers of susceptible and infected cases 
-    in the population at the previous time step, scaled by the size of the state's starting 
-    susceptible population. The growth parameter can be thought of as the transmissibility of 
-    the virus in that state on that date. To model new deaths in the population, we assume that a 
-    fraction of the newly generated cases will die and learn that fraction from observations. 
-    We can also anticipate when the outbreak is likely to peak, i.e. when the daily number of new 
-    confirmed cases reaches its maximum."
+institution_affil: Los Alamos National Labs
+license: other
+methods: This model makes predictions about the future, unconditional on particular
+  intervention strategies. Statistical dynamical growth model accounting for population
+  susceptibility.
+methods_long: "This model makes predictions about the future, unconditional on particular\
+  \ intervention strategies. The model consists of two processes. The first process\
+  \ is a statistical model of how the  number of COVID-19 infections changes over\
+  \ time. The second process maps the number of  infections to the reported data.\_\
+  We model the growth of new cases as the product of a  dynamic growth parameter and\
+  \ the underlying numbers of susceptible and infected cases  in the population at\
+  \ the previous time step, scaled by the size of the state's starting  susceptible\
+  \ population. The growth parameter can be thought of as the transmissibility of\
+  \  the virus in that state on that date. To model new deaths in the population,\
+  \ we assume that a  fraction of the newly generated cases will die and learn that\
+  \ fraction from observations.  We can also anticipate when the outbreak is likely\
+  \ to peak, i.e.\_when the daily number of new  confirmed cases reaches its maximum.\""
+model_abbr: LANL-GrowthRate
+model_contributors: Dave Osthus <dosthus@lanl.gov>,  Sara Del Valle,  Carrie Manore,  Brian
+  Weaver,  Lauren Castro,  Courtney Shelley,  Manhong (Mandy) Smith,  Julie Spencer,  Geoffrey
+  Fairchild,  Travis Pitts,  Dax Gerts,  Lori Dauelsberg,  Ashlynn Daughton, Morgan
+  Gorris,  Beth Hornbein,  Daniel Israel,  Nidhi Parikh,  Deborah Shutt,  Amanda Ziemann
+model_name: GrowthRate
+team_funding: U.S. Department of Energy
+team_model_designation: primary
+team_name: Los Alamos National Labs
+website_url: https://covid-19.bsvgateway.org/

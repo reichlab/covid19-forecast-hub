@@ -1,0 +1,13 @@
+citation: https://www.kaggle.com/c/covid19-global-forecasting-week-5/overview
+data_inputs: JHU
+institution_affil: SAS Institute and Independent
+license: mit
+methods: County-level ensemble of boosted tree and neural net models. Lots of engineered
+  features.
+methods_long: https://www.kaggle.com/c/m5-forecasting-uncertainty/discussion/163368,  https://www.kaggle.com/aerdem4/covid-19-w5-pipeline
+model_abbr: LNQ-ens1
+model_contributors: Russ Wolfinger (SAS) <russ.wolfinger@sas.com>, David Lander (NQ)
+model_name: ens1
+team_model_designation: primary
+team_name: LockNQuay
+website_url: https://www.kaggle.com/sasrdw/locknquay
