@@ -15,7 +15,7 @@ from validation_functions.forecast_date import filename_match_forecast_date
 
 metadata_version = 4
 
-def validate_forecast_file(filepath):
+def validate_forecast_file(filepath, silent=False):
     """
     purpose: Validates the forecast file with zoltpy 
     link: https://github.com/reichlab/zoltpy/blob/master/zoltpy/covid19.py
@@ -23,7 +23,7 @@ def validate_forecast_file(filepath):
     params:
     * filepath: Full filepath of the forecast
     """
-    file_error = validate_quantile_csv_file(filepath)
+    file_error = validate_quantile_csv_file(filepath, silent=silent)
 
     if file_error != "no errors":
         return True, file_error
