@@ -8,6 +8,7 @@ import yaml
 import hashlib
 import pickle
 import logging
+import json
 
 import pprint
 
@@ -47,13 +48,9 @@ metadata_field_to_zoltar = {
 }
 
 MISSING_METADATA_VALUE = "Missing"
-try:
-    with open('./code/zoltar_scripts/validated_file_db.p', 'rb') as f:
-        l = pickle.load(f)
-        f.close()
-except Exception as ex:
-    l = []
-db = dict(l)
+db = {}
+with open('./code/zoltar_scripts/validated_file_db.json', 'r') as f:
+    db = json.load(f)
 
 # Get all existing timezeros and models in the project
 project_obj = [project for project in conn.projects if project.name == project_name][0]
@@ -139,6 +136,10 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
 
     for forecast in forecasts:
 
+        # Skip metadata text file
+        if not forecast.endswith('.csv'):
+            continue
+
         # Default config
         over_write = False
         checksum = 0
@@ -151,22 +152,14 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
             f.close()
 
             # Check this hash against the previous version of hash
-            # if db.get(forecast, None) != checksum:
-            #     print(forecast, db.get(forecast, None))
-            #     if time_zero_date in existing_time_zeros:
-            #         over_write = True
-            # else:
-            #     continue
-
-            # if timezero existing, then don't write again
-            if time_zero_date in existing_time_zeros:
-                #update checksum
-                # db[forecast] = checksum
+            if db.get(forecast, None) != checksum:
+                print(forecast, db.get(forecast, None))
+                if time_zero_date in existing_time_zeros:
+                    over_write = True
+            else:
                 continue
 
-        # Skip metadata text file
-        if '.txt' in forecast:
-            continue
+
 
         with open(path_to_processed_model_forecasts + forecast) as fp:
             # Create timezero on zoltar if not existed
@@ -175,9 +168,11 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
                     project_obj.create_timezero(time_zero_date)
                     project_timezeros.append(time_zero_date)
                 except Exception as ex:
+                    print(ex)
                     return ex
 
             # Validate covid19 file
+            print(f"Validating {forecast}")
             errors_from_validation = validate_quantile_csv_file(
                 path_to_processed_model_forecasts + forecast)
 
@@ -226,9 +221,8 @@ if __name__ == '__main__':
         if output != "Pass":
             output_errors[directory] = output
 
-    with open('./code/zoltar_scripts/validated_file_db.p', 'wb') as fw:
-        pickle.dump(db, fw)
-        fw.close()
+    with open('./code/zoltar_scripts/validated_file_db.json', 'w') as fw:
+        json.dump(db, fw, indent=4)
 
     # List all files that did not get upload and its error
     if len(output_errors) > 0:

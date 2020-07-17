@@ -12,6 +12,7 @@ import yaml
 import logging
 import pickle
 import hashlib
+import json
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -36,16 +37,16 @@ repo_forecasts = []
 
 def read_validation_db():
     try:
-        with open('./code/zoltar_scripts/validated_file_db.p', 'rb') as f:
-            l = pickle.load(f)
+        with open('./code/zoltar_scripts/validated_file_db.json', 'rb') as f:
+            l = json.load(f)
     except Exception as ex:
-        l = []
+        l = {}
     return dict(l)
 
 
 def write_db(db):
-    with open('./code/zoltar_scripts/validated_file_db.p', 'wb') as fw:
-        pickle.dump(db, fw)
+    with open('./code/zoltar_scripts/validated_file_db.json', 'wb') as fw:
+        json.dump(db, fw, indent=4)
 
 # Function to read metadata file to get model name
 def metadata_dict_for_file(metadata_file):
