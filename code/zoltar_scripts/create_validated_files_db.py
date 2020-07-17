@@ -56,7 +56,7 @@ for directory in list_of_model_directories:
         if "no errors" == errors_from_validation:
             # Check this hash against the previous version of hash
             if db.get(get_filename_from_path(forecast), None) != checksum:
-                db[forecast] = checksum
+                db[get_filename_from_path(forecast)] = checksum
         else:
             print(errors_from_validation)
 print('Dumping db')

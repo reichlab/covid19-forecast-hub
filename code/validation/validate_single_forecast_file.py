@@ -16,9 +16,9 @@ if __name__ == "__main__":
         else:
             filenames = [filename]
         for forecast in filenames:
-            print(f"VALIDATING {forecast}")
+            print(f"\nVALIDATING {forecast}")
             is_error, errors = validate_forecast_file(forecast, silent=True)
             if is_error:
-                print(f"\n✘ Error in {forecast}. Error(s):\n {errors}")
+                print(f"✘ Error in {forecast}. Error(s):\n {errors}")
             else:
-                print(f"\n✓ {forecast} is valid with no errors")
+                print(f"✓ {forecast} is valid with no errors")
