@@ -50,12 +50,6 @@ if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* || "$TRAVIS_COMMIT_MESSAGE" == *"FORCE_ZO
     bash ./travis/push.sh
 fi
 
-if [[ "$TRAVIS_COMMIT_MESSAGE" == *"refactor_forecast"* ]]; then
-    echo "Refactoring forecasts to reset source"
-    python3 code/zoltar_scripts/refactor_forecast_source.py
-    echo "SUCCESS"
-fi
-
 # Upload to zoltar at every merged pull request
 # if [[ "$TRAVIS_COMMIT_MESSAGE" == *"Merge pull request"* ]]; then
 #    echo "Upload forecasts to Zoltar "
