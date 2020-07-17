@@ -184,9 +184,36 @@ def check_formatting(my_path):
     if len(meta_output_errors) + len(output_errors) > 0:
         sys.exit("\n ERRORS FOUND EXITING BUILD...")
 
+# remove all entries of type files_changed from validated_files.csv
+def remove_all_entries_from_validated_files(files_changed):
+    val_path = './code/validation/validated_files.csv'
+    validated_files = pd.read_csv(val_path)
+    if len(files_changed)>0:
+        for f in files_changed:
+            validated_files = validated_files[validated_files.file_path != f]
+        validated_files.to_csv(val_path, index=False)
 
 def main():
     my_path = "./data-processed"
+    forecasts_changed = []
+    if os.environ.get('GITHUB_ACTIONS')=='true':
+        from github import Github
+        g = Github()
+        repo = g.get_repo('reichlab/covid19-forecast-hub')
+        
+        print(f"Github event name: {os.environ.get('GITHUB_EVENT_NAME')}")
+        if os.environ.get('GITHUB_EVENT_NAME') == 'pull_request':
+            # GIHUB_REF for PR is in the format: refs/pull/:prNumber/merge, extracting that here:
+            pr_num = int(os.environ.get('GITHUB_REF').split('/')[-2])
+            pr = repo.get_pull(pr_num)
+            files_changed = [f for f in pr.get_files()]
+        elif os.environ.get('GITHUB_EVENT_NAME') == 'push':
+            commit = repo.get_commit(sha = os.environ.get('GITHUB_SHA'))
+            files_changed = commit.files
+        if files_changed is not None:
+            forecasts_changed.extend([f"./{file.filename}" for file in files_changed if file.filename.startswith('data-processed') and file.filename.endswith('.csv')])
+    remove_all_entries_from_validated_files(forecasts_changed)
+    print(f"files changed: {forecasts_changed}")
     check_formatting(my_path)
 
 
