@@ -1,9 +1,27 @@
-citation: https://www.medrxiv.org/content/10.1101/2020.06.11.20127894v1
-data_inputs: USAFacts (confirmed cases; reported fatalities), US Census (population),  mobility
-institution_affil: Johns Hopkins Bloomberg School of Public Health
+team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
+model_name: CovidScenarioPipeline
+model_abbr: JHU_IDD-CovidSP
+model_contributors: Joseph C. Lemaitre (EPFL),  Qifang Bi (Johns Hopkins Infectious
+  Disease Dynamics),  Juan Dent Hulse (Johns Hopkins Infectious Disease Dynamics),  M.
+  Kate Grabowski (Johns Hopkins Infectious Disease Dynamics),  Kyra H. Grantz (Johns
+  Hopkins Infectious Disease Dynamics),  Joshua Kaminsky (Johns Hopkins Infectious
+  Disease Dynamics),  Stephen A. Lauer (Johns Hopkins Infectious Disease Dynamics),  Elizabeth
+  C. Lee (Johns Hopkins Infectious Disease Dynamics)<elizabeth.c.lee@jhu.edu>,  Justin
+  Lessler (Johns Hopkins Infectious Disease Dynamics)<justin@jhu.edu>,  Hannah R.
+  Meredith (Johns Hopkins Infectious Disease Dynamics),  Javier Perez-Saez (Johns
+  Hopkins Infectious Disease Dynamics),  Shaun A. Truelove (Johns Hopkins Infectious
+  Disease Dynamics),  Lindsay T. Keegan (University of Utah),  Kathryn Kaminsky,  Sam
+  Shah,  Josh Wills, Pierre-Yves Aquilanti (Amazon Web Services),  Karthik Raman (Amazon
+  Web Services),  Arun Subramaniyan (Amazon Web Services),  Greg Thursam (Amazon Web
+  Services),  Anh Tran (Amazon Web Services)
+website_url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
 license: mit
+team_model_designation: primary
 methods: County-level metapopulation model with commuting and stochastic SEIR disease  dynamics
   with social-distancing indicators.
+team_funding: State of California and US Government
+data_inputs: USAFacts (confirmed cases; reported fatalities), US Census (population),  mobility
+citation: https://www.medrxiv.org/content/10.1101/2020.06.11.20127894v1
 methods_long: "This is a county-level metapopulation model with stochastic SEIR disease\
   \  dynamics. This model incorporates uncertainty in epidemiological parameters \
   \ and the effectiveness of state-wide intervention policies on social  distancing\
@@ -36,22 +54,3 @@ methods_long: "This is a county-level metapopulation model with stochastic SEIR 
   \ R0, infectious period, time delays to  health outcomes) and the effectiveness\
   \ of state-wide intervention policies  on social distancing, stay-at-home orders,\
   \ and phased reopenings."
-model_abbr: JHU_IDD-CovidSP
-model_contributors: Joseph C. Lemaitre (EPFL),  Qifang Bi (Johns Hopkins Infectious
-  Disease Dynamics),  Juan Dent Hulse (Johns Hopkins Infectious Disease Dynamics),  M.
-  Kate Grabowski (Johns Hopkins Infectious Disease Dynamics),  Kyra H. Grantz (Johns
-  Hopkins Infectious Disease Dynamics),  Joshua Kaminsky (Johns Hopkins Infectious
-  Disease Dynamics),  Stephen A. Lauer (Johns Hopkins Infectious Disease Dynamics),  Elizabeth
-  C. Lee (Johns Hopkins Infectious Disease Dynamics)<elizabeth.c.lee@jhu.edu>,  Justin
-  Lessler (Johns Hopkins Infectious Disease Dynamics)<justin@jhu.edu>,  Hannah R.
-  Meredith (Johns Hopkins Infectious Disease Dynamics),  Javier Perez-Saez (Johns
-  Hopkins Infectious Disease Dynamics),  Shaun A. Truelove (Johns Hopkins Infectious
-  Disease Dynamics),  Lindsay T. Keegan (University of Utah),  Kathryn Kaminsky,  Sam
-  Shah,  Josh Wills, Pierre-Yves Aquilanti (Amazon Web Services),  Karthik Raman (Amazon
-  Web Services),  Arun Subramaniyan (Amazon Web Services),  Greg Thursam (Amazon Web
-  Services),  Anh Tran (Amazon Web Services)
-model_name: CovidScenarioPipeline
-team_funding: State of California and US Government
-team_model_designation: primary
-team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
-website_url: https://github.com/HopkinsIDD/COVIDScenarioPipeline

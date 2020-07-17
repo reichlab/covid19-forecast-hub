@@ -1,17 +1,17 @@
-data_inputs: NYTimes for case and death data
+team_name: CovidActNow
+model_name: SEIR_CAN
+model_abbr: CovidActNow-SEIR_CAN
+model_contributors: Eric Carlson <eric.carlson@grandrounds.com>, Max Henderson <max@maxhenderson.com>,
+  Chris Kelly <ghop02@gmail.com>, Igor Kofman <kofman@gmail.com>, Xinyu Zhang <xinyu.zhang@grandrounds.com>
+website_url: https://covidactnow.org/
 license: cc-by-4.0
+team_model_designation: primary
 methods: SEIR model forecasts of cumulative deaths, incident deaths, incident hospitalizations  by
   fitting predicted cases, deaths, and hospitalizations to the observations.
+repo_url: https://github.com/covid-projections/covid-data-model
+data_inputs: NYTimes for case and death data
 methods_long: 'The SEIR Model makes forecast of cumulative deaths, incident deaths,
   incident hospitalizations by fitting predicted cases, deaths, and hospitalizations
   to the observations. Quantiles of the forecast are derived from forecast error (comparing
   latest observation and corresponding forecast) rescaled based on days forward of
   forecast. '
-model_abbr: CovidActNow-SEIR_CAN
-model_contributors: Eric Carlson <eric.carlson@grandrounds.com>, Max Henderson <max@maxhenderson.com>,
-  Chris Kelly <ghop02@gmail.com>, Igor Kofman <kofman@gmail.com>, Xinyu Zhang <xinyu.zhang@grandrounds.com>
-model_name: SEIR_CAN
-repo_url: https://github.com/covid-projections/covid-data-model
-team_model_designation: primary
-team_name: CovidActNow
-website_url: https://covidactnow.org/

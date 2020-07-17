@@ -1,10 +1,17 @@
-data_inputs: Confirmed COVID-19 deaths by EMS region in Illinois; ICU beds occupied
-  by confirmed COVID-19 patients by EMS region in Illinois
-institution_affil: University of Chicago
+team_name: University of Chicago
+model_name: CovidIL_80
+model_abbr: UChicago-CovidIL_80
+model_contributors: Sarah Cobey <cobey@uchicago.edu>, Philip Arevalo, Ed Baskerville,
+  Spencer Carran, Katelyn Gostic, Laugen McGough, Sylvia Ranjeva, Frank Wen
+website_url: https://github.com/cobeylab/covid_IL
 license: cc-by-nc-4.0
+team_model_designation: other
 methods: This is a compartmental, age-structured SEIR model that infers past  SARS-CoV-2
   transmission rates and forecasts mortality  under current and hypothetical public
   health interventions.
+team_funding: NIH
+data_inputs: Confirmed COVID-19 deaths by EMS region in Illinois; ICU beds occupied
+  by confirmed COVID-19 patients by EMS region in Illinois
 methods_long: "The model is age-structured to capture both age-specific contact patterns\
   \ and age-specific differences in the biological dynamics, such as the probability\
   \ of asymptomatic infection. Each model compartment is sub-divided into nine different\
@@ -38,11 +45,3 @@ methods_long: "The model is age-structured to capture both age-specific contact 
   \ transmission according to a logistic function centered on May 29. We call this\
   \ model CovidIL_40. At our current estimates, this corresopnds to a 65% reduction\
   \ in pre-intervention transmission."
-model_abbr: UChicago-CovidIL_80
-model_contributors: Sarah Cobey <cobey@uchicago.edu>, Philip Arevalo, Ed Baskerville,
-  Spencer Carran, Katelyn Gostic, Laugen McGough, Sylvia Ranjeva, Frank Wen
-model_name: CovidIL_80
-team_funding: NIH
-team_model_designation: other
-team_name: University of Chicago
-website_url: https://github.com/cobeylab/covid_IL

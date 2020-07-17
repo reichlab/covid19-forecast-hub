@@ -1,13 +1,14 @@
-data_inputs: JHU -CSSEGISandData
-institution_affil: University of Massachusetts Amherst
+team_name: UMass-Amherst Influenza Forecasting Center of Excellence & College of Information
+  and Computer Sciences
+model_name: MechBayes
+model_abbr: UMass-MechBayes
+model_contributors: Dan Sheldon<sheldon@cs.umass.edu>, Graham Gibson<gcgibson@umass.edu>,
+  Nick Reich
+website_url: https://github.com/dsheldon/covid
 license: cc-by-4.0
+team_model_designation: primary
 methods: 'Bayesian compartmental model with observations on cumulative case counts
   and cumulative deaths. Model is fit independently to each state. Model includes
   observation noise and a case detection rate. '
+data_inputs: JHU -CSSEGISandData
 methods_long: See GitHub for full description
-model_abbr: UMass-MechBayes
-model_contributors: Dan Sheldon<sheldon@cs.umass.edu>, Graham Gibson<gcgibson@umass.edu>, Nick Reich
-model_name: MechBayes
-team_model_designation: primary
-team_name: UMass-Amherst
-website_url: https://github.com/dsheldon/covid
