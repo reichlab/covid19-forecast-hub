@@ -212,6 +212,12 @@ def main():
             files_changed = commit.files
         if files_changed is not None:
             forecasts_changed.extend([f"./{file.filename}" for file in files_changed if file.filename.startswith('data-processed') and file.filename.endswith('.csv')])
+    elif os.environ.get('TRAVIS')=='true':
+        if os.environ.get('TRAVIS_EVENT_TYPE')=='pull_request':
+            pr_num = int(os.environ.get('TRAVIS_PULL_REQUEST'))
+            pr = repo.get_pull(pr_num)
+            files_changed = [f for f in pr.get_files()]
+            forecasts_changed.extend([f"./{file.filename}" for file in files_changed if file.filename.startswith('data-processed') and file.filename.endswith('.csv')])
     remove_all_entries_from_validated_files(forecasts_changed)
     print(f"files changed: {forecasts_changed}")
     check_formatting(my_path)
