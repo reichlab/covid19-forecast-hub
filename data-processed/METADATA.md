@@ -10,15 +10,6 @@ Please order the variables in this order.
 ## Required variables
 
 ### team_name
-
-The name of your team that is less than 50 characters.
-
-### team_abbr
-
-An abbreviated name for your team that is less than 15 alphanumeric characters and cannot 
-inlucde a dash (-) or a whitespace. 
-
-### team_name
 The name of your team that is less than 50 characters.
 
 ### model_name
