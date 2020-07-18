@@ -1,5 +1,5 @@
 forecast_date,target,target_end_date,location,type,quantile,value
-2020-07-17,1 wk ahead cum death,2020-07-25,US,quantile,0.025,147422.56899918508
+2020-07-17,1 wk ahead cum death,2020-07-25,US,quantile,0.025,147422.5689991851
 2020-07-17,1 wk ahead cum death,2020-07-25,US,quantile,0.25,148099.16246912448
 2020-07-17,1 wk ahead cum death,2020-07-25,US,point,NA,148432.4099990946
 2020-07-17,1 wk ahead cum death,2020-07-25,US,quantile,0.75,148765.65752906475
