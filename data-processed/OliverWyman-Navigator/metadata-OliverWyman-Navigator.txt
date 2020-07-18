@@ -1,8 +1,15 @@
-data_inputs: reported daily confirmed cases, reported daily deaths
+team_name: Oliver Wyman
+model_name: Pandemic Navigator
+model_abbr: OliverWyman-Navigator
+model_contributors: 'Ugur Koyluoglu <ugur.koyluoglu@oliverwyman.com>, John Milliken
+  <john.milliken@oliverwyman.com> '
+website_url: https://pandemicnavigator.oliverwyman.com/
 license: other
+team_model_designation: primary
 methods: Oliver Wyman's Pandemic Navigator provides forecasts & scenario analysis
   for Detected and Undetected cases and death counts following a compartmental formulation
   with non-stationary transition rates.
+data_inputs: reported daily confirmed cases, reported daily deaths
 methods_long: 'Oliver Wyman''s COVID-19 Pandemic Navigator provides forecasts and
   scenario analysis for Detected and Undetected cases and deaths. Our compartmental
   models are based on a discrete form of nonlinear differential equations, parameterized
@@ -19,10 +26,3 @@ methods_long: 'Oliver Wyman''s COVID-19 Pandemic Navigator provides forecasts an
   testing, population density, social behaviour norms and public responses, re-opening
   plans, and demographics are extremely relevant. Additional details on our approach,
   as well as selected forecast results, can be found at: https://pandemicnavigator.oliverwyman.com/'
-model_abbr: OliverWyman-Navigator
-model_contributors: 'Ugur Koyluoglu <ugur.koyluoglu@oliverwyman.com>, John Milliken
-  <john.milliken@oliverwyman.com> '
-model_name: Pandemic Navigator
-team_model_designation: primary
-team_name: Oliver Wyman
-website_url: https://pandemicnavigator.oliverwyman.com/

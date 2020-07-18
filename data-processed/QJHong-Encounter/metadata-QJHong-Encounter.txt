@@ -1,8 +1,15 @@
-citation: https://github.com/qjhong/covid19
-data_inputs: Covid Tracking Project, and JHU
+team_name: QJHong
+model_name: Encounter
+model_abbr: QJHong-Encounter
+model_contributors: Qi-Jun Hong <qhong@alumni.caltech.edu>
+website_url: https://qjhong.github.io
 license: cc-by-4.0
+team_model_designation: primary
 methods: today's "Daily New Confirmed Cases" + today's "Encounter Density"  ==> today's
   newly infected Cases  ==> next 2-3 weeks' "Daily New Confirmed Cases"
+repo_url: https://github.com/qjhong/covid19
+data_inputs: Covid Tracking Project, and JHU
+citation: https://github.com/qjhong/covid19
 methods_long: '
 
   today''s "Daily New Confirmed Cases" + today''s "Encounter Density" ==> today''s
@@ -23,10 +30,3 @@ methods_long: '
   Using (1) R and D relation in the past as a training set, (2) future D as input,
   and (3) machine learning / regression, my model can predict future R, and ultimately
   future Daily New Cases.'
-model_abbr: QJHong-Encounter
-model_contributors: Qi-Jun Hong <qhong@alumni.caltech.edu>
-model_name: Encounter
-repo_url: https://github.com/qjhong/covid19
-team_model_designation: primary
-team_name: QJHong
-website_url: https://qjhong.github.io

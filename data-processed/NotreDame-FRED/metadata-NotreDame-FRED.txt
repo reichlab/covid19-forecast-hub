@@ -1,8 +1,17 @@
-data_inputs: NYTimes Daily reported deaths count
-institution_affil: University of Notre Dame, Department of Biological Sciences
+team_name: NotreDame-FRED
+model_name: NotreDame-FRED
+model_abbr: NotreDame-FRED
+model_contributors: 'guido espana <guido.espana@nd.edu>,  rachel oidtman,  sean cavany,  alan
+  costello,  anneliese wieler,  anita lerch,  carly barbera,  marya poterek,  quan
+  tran,  sean moore,  alex perkins <taperkins@nd.edu>  '
+website_url: https://github.com/confunguido/covid19_ND_forecasting
 license: cc-by-4.0
+team_model_designation: secondary
 methods: FRED is an agent-based model developed for influenza with parameters modified
   to represent the natural history of COVID-19
+team_funding: GE and TAP were supported by a RAPID grant from the National Science
+  Foundation (DEB 2027718).
+data_inputs: NYTimes Daily reported deaths count
 methods_long: "We used an existing agent-based model, FRED (Framework for Reconstructing\
   \ Epidemic Dynamics) which was developed by the university of Pittsburgh in response\
   \ to the 2009 influenza pandemic (Grefenstette et al. 2013). We modified the model\
@@ -42,13 +51,3 @@ methods_long: "We used an existing agent-based model, FRED (Framework for Recons
   \ in place, and use a generalized additive model fitted to the google data to forecast\
   \ movement in the coming 5 weeks. For more details on this approach, see the methods\
   \ file in our repo."
-model_abbr: NotreDame-FRED
-model_contributors: 'guido espana <guido.espana@nd.edu>,  rachel oidtman,  sean cavany,  alan
-  costello,  anneliese wieler,  anita lerch,  carly barbera,  marya poterek,  quan
-  tran,  sean moore,  alex perkins <taperkins@nd.edu>  '
-model_name: NotreDame-FRED
-team_funding: GE and TAP were supported by a RAPID grant from the National Science
-  Foundation (DEB 2027718).
-team_model_designation: secondary
-team_name: NotreDame-FRED
-website_url: https://github.com/confunguido/covid19_ND_forecasting

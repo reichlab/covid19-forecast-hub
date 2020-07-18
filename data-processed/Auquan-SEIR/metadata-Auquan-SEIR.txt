@@ -1,7 +1,13 @@
-data_inputs: JHU reported daily deaths, reported daily confirmed cases, population
+team_name: Auquan Data Science
+model_name: MLOptimizedModifiedSEIR
+model_abbr: Auquan-SEIR
+model_contributors: Vishal Tomar <vishal@auquan.com>, Chandini Jain <chandini@auquan.com>
+website_url: https://covid19-infection-model.auquan.com/
 license: cc-by-4.0
+team_model_designation: primary
 methods: Modified SEIR model with compartments for reported and unreported infections.
   Non-linear mixed effects curve-fitting.
+data_inputs: JHU reported daily deaths, reported daily confirmed cases, population
 methods_long: We start with a standard SEIR model and break down the Infectious compartment(I)
   into reported infections (Ir) and unreported infections (Iu). People from the Exposed
   compartment(E) with symptoms go into the reported infections (Ir) compartment. People
@@ -18,9 +24,3 @@ methods_long: We start with a standard SEIR model and break down the Infectious 
   other parameters, we use estimates from other studies as starting point and learn
   using hyperparameter optimization that minimizes the error between projected daily
   deaths and reported daily deaths.
-model_abbr: Auquan-SEIR
-model_contributors: Vishal Tomar <vishal@auquan.com>, Chandini Jain <chandini@auquan.com>
-model_name: MLOptimizedModifiedSEIR
-team_model_designation: primary
-team_name: Auquan Data Science
-website_url: https://covid19-infection-model.auquan.com/

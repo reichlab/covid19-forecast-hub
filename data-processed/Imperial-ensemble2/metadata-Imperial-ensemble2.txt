@@ -1,9 +1,9 @@
-license: cc-by-nc-4.0
-methods: A disease transmission model with no assumptions about the future intervention
-  strategies.
+team_name: Imperial
+model_name: Ensemble2
 model_abbr: Imperial-ensemble2
 model_contributors: Sangeeta Bhatia <s.bhatia@imperial.ac.uk>
-model_name: Ensemble2
-team_model_designation: primary
-team_name: Imperial
 website_url: https://mrc-ide.github.io/covid19-short-term-forecasts/index.html
+license: cc-by-nc-4.0
+team_model_designation: primary
+methods: A disease transmission model with no assumptions about the future intervention
+  strategies.

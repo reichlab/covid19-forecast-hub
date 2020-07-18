@@ -1,7 +1,15 @@
-institution_affil: University of Michigan Department of Physics
+team_name: The University of Michigan
+model_name: RidgeTensorFlowRegressor
+model_abbr: UMich-RidgeTfReg
+model_contributors: 'Sabrina Corsetti (University of Michigan Department of Physics)
+  <sabcorse@umich.edu>,  Thomas Schwarz (University of Michigan Department of Physics)
+  <schwarzt@umich.edu>, '
+website_url: https://gitlab.com/sabcorse/covid-19-collaboration
 license: cc-by-4.0
+team_model_designation: primary
 methods: Nation-level model of confirmed cases and deaths based on ridge regression.  No
   assumptions made about social distancing.
+team_funding: University of Michigan
 methods_long: "This model uses ridge regression (penalized Ordinary Least Squares\
   \ regression) to make predictions about future confirmed case and mortality trends.\
   \  The model makes forecasts based solely on previous data, so no external  assumptions\
@@ -16,12 +24,3 @@ methods_long: "This model uses ridge regression (penalized Ordinary Least Square
   \ off of the accumulated projections. Finally, a gradient  boosting regressor is\
   \ used to provide a least squares fit to the projections and  is used to provide\
   \ point predictions."
-model_abbr: UMich-RidgeTfReg
-model_contributors: 'Sabrina Corsetti (University of Michigan Department of Physics)
-  <sabcorse@umich.edu>,  Thomas Schwarz (University of Michigan Department of Physics)
-  <schwarzt@umich.edu>, '
-model_name: RidgeTensorFlowRegressor
-team_funding: University of Michigan
-team_model_designation: primary
-team_name: The University of Michigan
-website_url: https://gitlab.com/sabcorse/covid-19-collaboration

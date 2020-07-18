@@ -1,9 +1,18 @@
-data_inputs: JHU (confirmed cases; reported fatalities), population
-institution_affil: Los Alamos National Labs
+team_name: Los Alamos National Labs
+model_name: GrowthRate
+model_abbr: LANL-GrowthRate
+model_contributors: Dave Osthus <dosthus@lanl.gov>,  Sara Del Valle,  Carrie Manore,  Brian
+  Weaver,  Lauren Castro,  Courtney Shelley,  Manhong (Mandy) Smith,  Julie Spencer,  Geoffrey
+  Fairchild,  Travis Pitts,  Dax Gerts,  Lori Dauelsberg,  Ashlynn Daughton, Morgan
+  Gorris,  Beth Hornbein,  Daniel Israel,  Nidhi Parikh,  Deborah Shutt,  Amanda Ziemann
+website_url: https://covid-19.bsvgateway.org/
 license: other
+team_model_designation: primary
 methods: This model makes predictions about the future, unconditional on particular
   intervention strategies. Statistical dynamical growth model accounting for population
   susceptibility.
+team_funding: U.S. Department of Energy
+data_inputs: JHU (confirmed cases; reported fatalities), population
 methods_long: "This model makes predictions about the future, unconditional on particular\
   \ intervention strategies. The model consists of two processes. The first process\
   \ is a statistical model of how the  number of COVID-19 infections changes over\
@@ -16,13 +25,3 @@ methods_long: "This model makes predictions about the future, unconditional on p
   \ we assume that a  fraction of the newly generated cases will die and learn that\
   \ fraction from observations.  We can also anticipate when the outbreak is likely\
   \ to peak, i.e.\_when the daily number of new  confirmed cases reaches its maximum.\""
-model_abbr: LANL-GrowthRate
-model_contributors: Dave Osthus <dosthus@lanl.gov>,  Sara Del Valle,  Carrie Manore,  Brian
-  Weaver,  Lauren Castro,  Courtney Shelley,  Manhong (Mandy) Smith,  Julie Spencer,  Geoffrey
-  Fairchild,  Travis Pitts,  Dax Gerts,  Lori Dauelsberg,  Ashlynn Daughton, Morgan
-  Gorris,  Beth Hornbein,  Daniel Israel,  Nidhi Parikh,  Deborah Shutt,  Amanda Ziemann
-model_name: GrowthRate
-team_funding: U.S. Department of Energy
-team_model_designation: primary
-team_name: Los Alamos National Labs
-website_url: https://covid-19.bsvgateway.org/

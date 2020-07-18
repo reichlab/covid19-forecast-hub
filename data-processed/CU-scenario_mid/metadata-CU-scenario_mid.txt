@@ -1,10 +1,18 @@
-citation: https://doi.org/10.1101/2020.03.21.20040303
-data_inputs: USAFACTS County-level confirmed cases and deaths
-institution_affil: Columbia University
+team_name: Columbia University
+model_name: scenario_mid
+model_abbr: CU-scenario_mid
+model_contributors: Sen Pei, Teresa Yamana, Sasikiran Kandula, Wan Yang, Marta Galanti,
+  Jeffrey Shaman <jls106@cumc.columbia.edu>
+website_url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
 license: apache-2.0
+team_model_designation: other
 methods: We produce different intervention scenarios, assuming various interventions
   and rates of compliance are implemented in the future. This projection assumes relatively
   moderate transmission.
+team_funding: Supported by US NIH grant GM110748 and US NSF RAPID grant DMS2027369
+repo_url: https://github.com/shaman-lab/COVID-19Projection
+data_inputs: USAFACTS County-level confirmed cases and deaths
+citation: https://doi.org/10.1101/2020.03.21.20040303
 methods_long: 'This metapopulation county-level SEIR model makes projections of future
   COVID-19 incidence and deaths.  We produce a number of different intervention scenarios,
   each assuming various interventions and rates of compliance are implemented in the
@@ -26,12 +34,3 @@ methods_long: 'This metapopulation county-level SEIR model makes projections of 
   Counties that had previously exceeded 10 confirmed cases and also experience an
   increase in the number of weekly reported confirmed cases impose a further, multiplicative
   30% contact rate reduction, depending on the projection scenario. '
-model_abbr: CU-scenario_mid
-model_contributors: Sen Pei, Teresa Yamana, Sasikiran Kandula, Wan Yang, Marta Galanti,
-  Jeffrey Shaman <jls106@cumc.columbia.edu>
-model_name: scenario_mid
-repo_url: https://github.com/shaman-lab/COVID-19Projection
-team_funding: Supported by US NIH grant GM110748 and US NSF RAPID grant DMS2027369
-team_model_designation: other
-team_name: Columbia University
-website_url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/

@@ -51,10 +51,11 @@ the format
     
 where 
 
-- `team` is the teamname and 
-- `model` is the name of your model. 
+- `team` is an short abbreviation of your team name and 
+- `model` is the model abbreviation. 
 
-Both team and model should be less than 15 characters and not include hyphens.
+The `team-model` string should be less than or equal to 31 characters. This field should contain two separate alphanumeric identifiers, one for the team and one for the model, separated by a hyphen. No other whitespace or non-alphanumeric characters are allowed in this field. See [metadata formatting guidelines](METADATA.md) for details. 
+This `team-model` string is a unique identifier for a given model and should be chosen carefully as it cannot be changed.
 
 Within each subdirectory, there should be a metadata file, a license file
 (optional), and a set of forecasts. 
@@ -91,15 +92,12 @@ where
 - `YYYY` is the 4 digit year, 
 - `MM` is the 2 digit month,
 - `DD` is the 2 digit day,
-- `team` is the teamname, and
-- `model` is the name of your model. 
+- `team-model` is the unique identifier for your model, as described [above](#Subdirectory). 
 
 The date YYYY-MM-DD is the [`forecast_date`](#forecast_date).
 
-The `team` and `model` in this file must match the `team` and `model` in the
+The `team-model` in this file must match the `team-model` in the
 directory this file is in. 
-Both `team` and `model` should be less than 15 characters, 
-alpha-numeric and underscores only, with no spaces or hyphens.
 
 
 ## Forecast file format

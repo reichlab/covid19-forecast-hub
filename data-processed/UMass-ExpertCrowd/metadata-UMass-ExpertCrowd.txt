@@ -1,16 +1,15 @@
-institution_affil: UMass-Amherst Influenza Forecasting Center of Excellence
+team_name: UMass-Amherst Influenza Forecasting Center of Excellence
+model_name: Expert consensus distributions
+model_abbr: UMass-ExpertCrowd
+model_contributors: thomas mcandrew <mcandrew@umass.edu> Nicholas G. Reich <nick@schoolph.umass.edu>
+website_url: https://github.com/tomcm39/COVID19_expert_survey
 license: other
+team_model_designation: other
 methods: 'A consensus forecast from experts in the modeling of infectious disease,
   public health, and epidemiology. '
+team_funding: CDC
 methods_long: 'April 22: Experts in the modeling of infectious disease, public health,
   and epidemiology provide forecasts of  the smallest, most likely, and largest possible
   cumulative number of deaths at the US level. We transform each  expert''s three
   estimates into a triangular probability distribution and take an equally-weighted
   average of  expert predictive densities.'
-model_abbr: UMass-ExpertCrowd
-model_contributors: thomas mcandrew <mcandrew@umass.edu> Nicholas G. Reich <nick@schoolph.umass.edu>
-model_name: Expert consensus distributions
-team_funding: CDC
-team_model_designation: other
-team_name: UMass-Amherst Influenza Forecasting Center of Excellence
-website_url: https://github.com/tomcm39/COVID19_expert_survey
