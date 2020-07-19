@@ -9,6 +9,9 @@ from datetime import datetime
 import yaml
 from itertools import chain
 import collections
+from github import Github
+
+
 from validation_functions.metadata import check_for_metadata, get_metadata_model, output_duplicate_models
 from validation_functions.forecast_filename import validate_forecast_file_name
 from validation_functions.forecast_date import filename_match_forecast_date
@@ -201,7 +204,6 @@ def main():
     repo = g.get_repo('reichlab/covid19-forecast-hub')    
     
     if os.environ.get('GITHUB_ACTIONS')=='true':
-        from github import Github
         print(f"Github event name: {os.environ.get('GITHUB_EVENT_NAME')}")
         if os.environ.get('GITHUB_EVENT_NAME') == 'pull_request':
             # GIHUB_REF for PR is in the format: refs/pull/:prNumber/merge, extracting that here:
