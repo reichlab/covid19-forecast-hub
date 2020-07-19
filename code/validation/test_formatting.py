@@ -196,11 +196,12 @@ def remove_all_entries_from_validated_files(files_changed):
 def main():
     my_path = "./data-processed"
     forecasts_changed = []
+
+    g = Github()
+    repo = g.get_repo('reichlab/covid19-forecast-hub')    
+    
     if os.environ.get('GITHUB_ACTIONS')=='true':
         from github import Github
-        g = Github()
-        repo = g.get_repo('reichlab/covid19-forecast-hub')
-        
         print(f"Github event name: {os.environ.get('GITHUB_EVENT_NAME')}")
         if os.environ.get('GITHUB_EVENT_NAME') == 'pull_request':
             # GIHUB_REF for PR is in the format: refs/pull/:prNumber/merge, extracting that here:
