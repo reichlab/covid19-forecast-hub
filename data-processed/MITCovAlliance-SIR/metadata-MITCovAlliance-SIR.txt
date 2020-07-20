@@ -1,0 +1,25 @@
+team_name: COVID Alliance at MIT
+model_name: Two-Stage SIR
+model_abbr: MITCovAlliance-SIR
+model_contributors: Jackie Baek (MIT) <baek@mit.edu>, Vivek Farias (MIT) <vivekf@mit.edu>,
+  Andreea Georgescu (MIT) <andreeag@mit.edu>, Retsef Levi (MIT) <retsef@mit.edu>,
+  Deeksha Sinha (MIT) <deeksha.sinha7@gmail.com>, Josh Wilde (MIT) <josh.t.wilde@gmail.com>,
+  Andy Zheng (MIT) <atz@mit.edu>
+website_url: http://infectiontrajectory.covidalliance.com/
+license: cc-by-4.0
+team_model_designation: primary
+methods: SIR model trained on public heath regions. SIR parameters are functions of
+  static demographic and time-varying mobility features. Two-stage approach that first
+  learns magnitude of peak infections.
+data_inputs: NYT county-level cases and deaths. County and state-level static and
+  dynamic covariates related to pace of disease transmission rate from Safegraph,
+  US Census Bureau, CDC, Claritas, University of Michigan Health and Retirement Study
+citation: https://arxiv.org/abs/2006.06373
+methods_long: A SIR model trained at the public heath region level. SIR parameters
+  are functions of over 60 static demographic features and time-varying dynamic features
+  that measure changes in mobility patterns. This model proposes a two stage approach
+  to overcome the inherent difficulty in learning the magnitude of the peak infection
+  rate. The first stage treats the total susceptible population as an unknown parameter
+  and learns this parameter for regions that have not yet seen a peak in cumulative
+  infections. The second stage fits a typical SIR model with time and location varying
+  contact parameters.

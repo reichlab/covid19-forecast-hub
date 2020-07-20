@@ -5119,7 +5119,7 @@ date,location,location_name,value
 2020-04-21,45,South Carolina,1
 2020-04-21,46,South Dakota,1
 2020-04-21,47,Tennessee,5
-2020-04-21,48,Texas,26
+2020-04-21,48,Texas,30
 2020-04-21,49,Utah,4
 2020-04-21,50,Vermont,2
 2020-04-21,78,Virgin Islands,0
@@ -5128,7 +5128,7 @@ date,location,location_name,value
 2020-04-21,54,West Virginia,2
 2020-04-21,55,Wisconsin,14
 2020-04-21,56,Wyoming,0
-2020-04-21,US,US,2453
+2020-04-21,US,US,2457
 2020-04-22,01,Alabama,13
 2020-04-22,02,Alaska,0
 2020-04-22,60,American Samoa,0
@@ -5176,7 +5176,7 @@ date,location,location_name,value
 2020-04-22,45,South Carolina,16
 2020-04-22,46,South Dakota,1
 2020-04-22,47,Tennessee,0
-2020-04-22,48,Texas,23
+2020-04-22,48,Texas,19
 2020-04-22,49,Utah,0
 2020-04-22,50,Vermont,0
 2020-04-22,78,Virgin Islands,0
@@ -5185,7 +5185,7 @@ date,location,location_name,value
 2020-04-22,54,West Virginia,1
 2020-04-22,55,Wisconsin,4
 2020-04-22,56,Wyoming,4
-2020-04-22,US,US,2393
+2020-04-22,US,US,2389
 2020-04-23,01,Alabama,6
 2020-04-23,02,Alaska,0
 2020-04-23,60,American Samoa,0
@@ -5461,7 +5461,7 @@ date,location,location_name,value
 2020-04-27,45,South Carolina,3
 2020-04-27,46,South Dakota,0
 2020-04-27,47,Tennessee,3
-2020-04-27,48,Texas,15
+2020-04-27,48,Texas,17
 2020-04-27,49,Utah,0
 2020-04-27,50,Vermont,1
 2020-04-27,78,Virgin Islands,0
@@ -5470,7 +5470,7 @@ date,location,location_name,value
 2020-04-27,54,West Virginia,0
 2020-04-27,55,Wisconsin,9
 2020-04-27,56,Wyoming,0
-2020-04-27,US,US,1423
+2020-04-27,US,US,1425
 2020-04-28,01,Alabama,14
 2020-04-28,02,Alaska,0
 2020-04-28,60,American Samoa,0
@@ -5518,7 +5518,7 @@ date,location,location_name,value
 2020-04-28,45,South Carolina,15
 2020-04-28,46,South Dakota,0
 2020-04-28,47,Tennessee,4
-2020-04-28,48,Texas,53
+2020-04-28,48,Texas,51
 2020-04-28,49,Utah,0
 2020-04-28,50,Vermont,0
 2020-04-28,78,Virgin Islands,0
@@ -5527,7 +5527,7 @@ date,location,location_name,value
 2020-04-28,54,West Virginia,4
 2020-04-28,55,Wisconsin,19
 2020-04-28,56,Wyoming,0
-2020-04-28,US,US,2221
+2020-04-28,US,US,2219
 2020-04-29,01,Alabama,14
 2020-04-29,02,Alaska,0
 2020-04-29,60,American Samoa,0
@@ -5575,7 +5575,7 @@ date,location,location_name,value
 2020-04-29,45,South Carolina,39
 2020-04-29,46,South Dakota,2
 2020-04-29,47,Tennessee,7
-2020-04-29,48,Texas,35
+2020-04-29,48,Texas,40
 2020-04-29,49,Utah,4
 2020-04-29,50,Vermont,0
 2020-04-29,78,Virgin Islands,0
@@ -5584,7 +5584,7 @@ date,location,location_name,value
 2020-04-29,54,West Virginia,0
 2020-04-29,55,Wisconsin,8
 2020-04-29,56,Wyoming,0
-2020-04-29,US,US,2501
+2020-04-29,US,US,2506
 2020-04-30,01,Alabama,16
 2020-04-30,02,Alaska,0
 2020-04-30,60,American Samoa,0
@@ -5632,7 +5632,7 @@ date,location,location_name,value
 2020-04-30,45,South Carolina,13
 2020-04-30,46,South Dakota,4
 2020-04-30,47,Tennessee,4
-2020-04-30,48,Texas,58
+2020-04-30,48,Texas,53
 2020-04-30,49,Utah,1
 2020-04-30,50,Vermont,2
 2020-04-30,78,Virgin Islands,0
@@ -5641,7 +5641,7 @@ date,location,location_name,value
 2020-04-30,54,West Virginia,3
 2020-04-30,55,Wisconsin,8
 2020-04-30,56,Wyoming,0
-2020-04-30,US,US,2301
+2020-04-30,US,US,2296
 2020-05-01,01,Alabama,17
 2020-05-01,02,Alaska,0
 2020-05-01,60,American Samoa,0
@@ -6316,7 +6316,7 @@ date,location,location_name,value
 2020-05-12,45,South Carolina,9
 2020-05-12,46,South Dakota,5
 2020-05-12,47,Tennessee,15
-2020-05-12,48,Texas,29
+2020-05-12,48,Texas,32
 2020-05-12,49,Utah,5
 2020-05-12,50,Vermont,0
 2020-05-12,78,Virgin Islands,1
@@ -6325,7 +6325,7 @@ date,location,location_name,value
 2020-05-12,54,West Virginia,4
 2020-05-12,55,Wisconsin,9
 2020-05-12,56,Wyoming,0
-2020-05-12,US,US,1612
+2020-05-12,US,US,1615
 2020-05-13,01,Alabama,15
 2020-05-13,02,Alaska,0
 2020-05-13,60,American Samoa,0
@@ -6373,7 +6373,7 @@ date,location,location_name,value
 2020-05-13,45,South Carolina,7
 2020-05-13,46,South Dakota,0
 2020-05-13,47,Tennessee,7
-2020-05-13,48,Texas,26
+2020-05-13,48,Texas,23
 2020-05-13,49,Utah,2
 2020-05-13,50,Vermont,0
 2020-05-13,78,Virgin Islands,0
@@ -6382,7 +6382,7 @@ date,location,location_name,value
 2020-05-13,54,West Virginia,0
 2020-05-13,55,Wisconsin,3
 2020-05-13,56,Wyoming,0
-2020-05-13,US,US,1754
+2020-05-13,US,US,1751
 2020-05-14,01,Alabama,23
 2020-05-14,02,Alaska,0
 2020-05-14,60,American Samoa,0
@@ -6772,7 +6772,7 @@ date,location,location_name,value
 2020-05-20,45,South Carolina,8
 2020-05-20,46,South Dakota,0
 2020-05-20,47,Tennessee,0
-2020-05-20,48,Texas,38
+2020-05-20,48,Texas,43
 2020-05-20,49,Utah,2
 2020-05-20,50,Vermont,0
 2020-05-20,78,Virgin Islands,0
@@ -6781,7 +6781,7 @@ date,location,location_name,value
 2020-05-20,54,West Virginia,1
 2020-05-20,55,Wisconsin,14
 2020-05-20,56,Wyoming,1
-2020-05-20,US,US,1563
+2020-05-20,US,US,1568
 2020-05-21,01,Alabama,7
 2020-05-21,02,Alaska,0
 2020-05-21,60,American Samoa,0
@@ -6829,7 +6829,7 @@ date,location,location_name,value
 2020-05-21,45,South Carolina,9
 2020-05-21,46,South Dakota,2
 2020-05-21,47,Tennessee,8
-2020-05-21,48,Texas,34
+2020-05-21,48,Texas,29
 2020-05-21,49,Utah,2
 2020-05-21,50,Vermont,0
 2020-05-21,78,Virgin Islands,0
@@ -6838,7 +6838,7 @@ date,location,location_name,value
 2020-05-21,54,West Virginia,1
 2020-05-21,55,Wisconsin,6
 2020-05-21,56,Wyoming,1
-2020-05-21,US,US,1228
+2020-05-21,US,US,1223
 2020-05-22,01,Alabama,12
 2020-05-22,02,Alaska,0
 2020-05-22,60,American Samoa,0
@@ -7342,7 +7342,7 @@ date,location,location_name,value
 2020-05-30,45,South Carolina,4
 2020-05-30,46,South Dakota,3
 2020-05-30,47,Tennessee,3
-2020-05-30,48,Texas,33
+2020-05-30,48,Texas,38
 2020-05-30,49,Utah,5
 2020-05-30,50,Vermont,0
 2020-05-30,78,Virgin Islands,0
@@ -7351,7 +7351,7 @@ date,location,location_name,value
 2020-05-30,54,West Virginia,1
 2020-05-30,55,Wisconsin,20
 2020-05-30,56,Wyoming,1
-2020-05-30,US,US,964
+2020-05-30,US,US,969
 2020-05-31,01,Alabama,12
 2020-05-31,02,Alaska,0
 2020-05-31,60,American Samoa,0
@@ -7399,7 +7399,7 @@ date,location,location_name,value
 2020-05-31,45,South Carolina,7
 2020-05-31,46,South Dakota,0
 2020-05-31,47,Tennessee,0
-2020-05-31,48,Texas,23
+2020-05-31,48,Texas,18
 2020-05-31,49,Utah,1
 2020-05-31,50,Vermont,0
 2020-05-31,78,Virgin Islands,0
@@ -7408,7 +7408,7 @@ date,location,location_name,value
 2020-05-31,54,West Virginia,0
 2020-05-31,55,Wisconsin,4
 2020-05-31,56,Wyoming,0
-2020-05-31,US,US,591
+2020-05-31,US,US,586
 2020-06-01,01,Alabama,16
 2020-06-01,02,Alaska,0
 2020-06-01,60,American Samoa,0
@@ -8995,7 +8995,7 @@ date,location,location_name,value
 2020-06-28,45,South Carolina,5
 2020-06-28,46,South Dakota,0
 2020-06-28,47,Tennessee,0
-2020-06-28,48,Texas,14
+2020-06-28,48,Texas,15
 2020-06-28,49,Utah,0
 2020-06-28,50,Vermont,0
 2020-06-28,78,Virgin Islands,0
@@ -9004,7 +9004,7 @@ date,location,location_name,value
 2020-06-28,54,West Virginia,0
 2020-06-28,55,Wisconsin,0
 2020-06-28,56,Wyoming,0
-2020-06-28,US,US,240
+2020-06-28,US,US,241
 2020-06-29,01,Alabama,10
 2020-06-29,02,Alaska,0
 2020-06-29,60,American Samoa,0
@@ -9052,7 +9052,7 @@ date,location,location_name,value
 2020-06-29,45,South Carolina,4
 2020-06-29,46,South Dakota,0
 2020-06-29,47,Tennessee,8
-2020-06-29,48,Texas,14
+2020-06-29,48,Texas,13
 2020-06-29,49,Utah,1
 2020-06-29,50,Vermont,0
 2020-06-29,78,Virgin Islands,0
@@ -9061,7 +9061,7 @@ date,location,location_name,value
 2020-06-29,54,West Virginia,0
 2020-06-29,55,Wisconsin,0
 2020-06-29,56,Wyoming,0
-2020-06-29,US,US,351
+2020-06-29,US,US,350
 2020-06-30,01,Alabama,21
 2020-06-30,02,Alaska,0
 2020-06-30,60,American Samoa,0
@@ -9679,7 +9679,7 @@ date,location,location_name,value
 2020-07-10,45,South Carolina,24
 2020-07-10,46,South Dakota,6
 2020-07-10,47,Tennessee,13
-2020-07-10,48,Texas,56
+2020-07-10,48,Texas,65
 2020-07-10,49,Utah,2
 2020-07-10,50,Vermont,0
 2020-07-10,78,Virgin Islands,0
@@ -9688,7 +9688,7 @@ date,location,location_name,value
 2020-07-10,54,West Virginia,0
 2020-07-10,55,Wisconsin,5
 2020-07-10,56,Wyoming,0
-2020-07-10,US,US,802
+2020-07-10,US,US,811
 2020-07-11,01,Alabama,10
 2020-07-11,02,Alaska,0
 2020-07-11,60,American Samoa,0
@@ -9736,7 +9736,7 @@ date,location,location_name,value
 2020-07-11,45,South Carolina,22
 2020-07-11,46,South Dakota,2
 2020-07-11,47,Tennessee,15
-2020-07-11,48,Texas,76
+2020-07-11,48,Texas,67
 2020-07-11,49,Utah,5
 2020-07-11,50,Vermont,0
 2020-07-11,78,Virgin Islands,0
@@ -9745,7 +9745,7 @@ date,location,location_name,value
 2020-07-11,54,West Virginia,1
 2020-07-11,55,Wisconsin,7
 2020-07-11,56,Wyoming,0
-2020-07-11,US,US,685
+2020-07-11,US,US,676
 2020-07-12,01,Alabama,7
 2020-07-12,02,Alaska,0
 2020-07-12,60,American Samoa,0
@@ -9917,3 +9917,288 @@ date,location,location_name,value
 2020-07-14,55,Wisconsin,6
 2020-07-14,56,Wyoming,1
 2020-07-14,US,US,900
+2020-07-15,01,Alabama,47
+2020-07-15,02,Alaska,0
+2020-07-15,60,American Samoa,0
+2020-07-15,04,Arizona,97
+2020-07-15,05,Arkansas,4
+2020-07-15,06,California,125
+2020-07-15,08,Colorado,6
+2020-07-15,09,Connecticut,8
+2020-07-15,10,Delaware,3
+2020-07-15,11,District of Columbia,3
+2020-07-15,12,Florida,112
+2020-07-15,13,Georgia,37
+2020-07-15,66,Guam,0
+2020-07-15,15,Hawaii,0
+2020-07-15,16,Idaho,7
+2020-07-15,17,Illinois,8
+2020-07-15,18,Indiana,10
+2020-07-15,19,Iowa,20
+2020-07-15,20,Kansas,5
+2020-07-15,21,Kentucky,10
+2020-07-15,22,Louisiana,16
+2020-07-15,23,Maine,0
+2020-07-15,24,Maryland,7
+2020-07-15,25,Massachusetts,28
+2020-07-15,26,Michigan,4
+2020-07-15,27,Minnesota,10
+2020-07-15,28,Mississippi,18
+2020-07-15,29,Missouri,5
+2020-07-15,30,Montana,0
+2020-07-15,31,Nebraska,5
+2020-07-15,32,Nevada,6
+2020-07-15,33,New Hampshire,2
+2020-07-15,34,New Jersey,52
+2020-07-15,35,New Mexico,6
+2020-07-15,36,New York,19
+2020-07-15,37,North Carolina,18
+2020-07-15,38,North Dakota,0
+2020-07-15,69,Northern Mariana Islands,0
+2020-07-15,39,Ohio,6
+2020-07-15,40,Oklahoma,4
+2020-07-15,41,Oregon,3
+2020-07-15,42,Pennsylvania,26
+2020-07-15,72,Puerto Rico,2
+2020-07-15,44,Rhode Island,2
+2020-07-15,45,South Carolina,5
+2020-07-15,46,South Dakota,2
+2020-07-15,47,Tennessee,16
+2020-07-15,48,Texas,144
+2020-07-15,49,Utah,7
+2020-07-15,50,Vermont,0
+2020-07-15,78,Virgin Islands,0
+2020-07-15,51,Virginia,15
+2020-07-15,53,Washington,17
+2020-07-15,54,West Virginia,1
+2020-07-15,55,Wisconsin,1
+2020-07-15,56,Wyoming,0
+2020-07-15,US,US,949
+2020-07-16,01,Alabama,19
+2020-07-16,02,Alaska,0
+2020-07-16,60,American Samoa,0
+2020-07-16,04,Arizona,58
+2020-07-16,05,Arkansas,6
+2020-07-16,06,California,114
+2020-07-16,08,Colorado,1
+2020-07-16,09,Connecticut,9
+2020-07-16,10,Delaware,0
+2020-07-16,11,District of Columbia,3
+2020-07-16,12,Florida,156
+2020-07-16,13,Georgia,14
+2020-07-16,66,Guam,0
+2020-07-16,15,Hawaii,0
+2020-07-16,16,Idaho,4
+2020-07-16,17,Illinois,25
+2020-07-16,18,Indiana,10
+2020-07-16,19,Iowa,4
+2020-07-16,20,Kansas,1
+2020-07-16,21,Kentucky,5
+2020-07-16,22,Louisiana,24
+2020-07-16,23,Maine,0
+2020-07-16,24,Maryland,6
+2020-07-16,25,Massachusetts,12
+2020-07-16,26,Michigan,18
+2020-07-16,27,Minnesota,8
+2020-07-16,28,Mississippi,18
+2020-07-16,29,Missouri,2
+2020-07-16,30,Montana,1
+2020-07-16,31,Nebraska,8
+2020-07-16,32,Nevada,8
+2020-07-16,33,New Hampshire,1
+2020-07-16,34,New Jersey,31
+2020-07-16,35,New Mexico,5
+2020-07-16,36,New York,19
+2020-07-16,37,North Carolina,18
+2020-07-16,38,North Dakota,1
+2020-07-16,69,Northern Mariana Islands,0
+2020-07-16,39,Ohio,28
+2020-07-16,40,Oklahoma,6
+2020-07-16,41,Oregon,2
+2020-07-16,42,Pennsylvania,27
+2020-07-16,72,Puerto Rico,1
+2020-07-16,44,Rhode Island,1
+2020-07-16,45,South Carolina,72
+2020-07-16,46,South Dakota,4
+2020-07-16,47,Tennessee,13
+2020-07-16,48,Texas,151
+2020-07-16,49,Utah,1
+2020-07-16,50,Vermont,0
+2020-07-16,78,Virgin Islands,0
+2020-07-16,51,Virginia,15
+2020-07-16,53,Washington,6
+2020-07-16,54,West Virginia,1
+2020-07-16,55,Wisconsin,4
+2020-07-16,56,Wyoming,2
+2020-07-16,US,US,943
+2020-07-17,01,Alabama,35
+2020-07-17,02,Alaska,0
+2020-07-17,60,American Samoa,0
+2020-07-17,04,Arizona,91
+2020-07-17,05,Arkansas,12
+2020-07-17,06,California,114
+2020-07-17,08,Colorado,6
+2020-07-17,09,Connecticut,7
+2020-07-17,10,Delaware,0
+2020-07-17,11,District of Columbia,3
+2020-07-17,12,Florida,128
+2020-07-17,13,Georgia,27
+2020-07-17,66,Guam,0
+2020-07-17,15,Hawaii,1
+2020-07-17,16,Idaho,4
+2020-07-17,17,Illinois,13
+2020-07-17,18,Indiana,8
+2020-07-17,19,Iowa,4
+2020-07-17,20,Kansas,1
+2020-07-17,21,Kentucky,8
+2020-07-17,22,Louisiana,24
+2020-07-17,23,Maine,1
+2020-07-17,24,Maryland,12
+2020-07-17,25,Massachusetts,22
+2020-07-17,26,Michigan,7
+2020-07-17,27,Minnesota,7
+2020-07-17,28,Mississippi,24
+2020-07-17,29,Missouri,4
+2020-07-17,30,Montana,2
+2020-07-17,31,Nebraska,2
+2020-07-17,32,Nevada,11
+2020-07-17,33,New Hampshire,0
+2020-07-17,34,New Jersey,19
+2020-07-17,35,New Mexico,3
+2020-07-17,36,New York,17
+2020-07-17,37,North Carolina,16
+2020-07-17,38,North Dakota,1
+2020-07-17,69,Northern Mariana Islands,0
+2020-07-17,39,Ohio,9
+2020-07-17,40,Oklahoma,7
+2020-07-17,41,Oregon,5
+2020-07-17,42,Pennsylvania,20
+2020-07-17,72,Puerto Rico,5
+2020-07-17,44,Rhode Island,2
+2020-07-17,45,South Carolina,26
+2020-07-17,46,South Dakota,1
+2020-07-17,47,Tennessee,19
+2020-07-17,48,Texas,163
+2020-07-17,49,Utah,1
+2020-07-17,50,Vermont,0
+2020-07-17,78,Virgin Islands,0
+2020-07-17,51,Virginia,6
+2020-07-17,53,Washington,7
+2020-07-17,54,West Virginia,1
+2020-07-17,55,Wisconsin,2
+2020-07-17,56,Wyoming,0
+2020-07-17,US,US,908
+2020-07-18,01,Alabama,21
+2020-07-18,02,Alaska,1
+2020-07-18,60,American Samoa,0
+2020-07-18,04,Arizona,147
+2020-07-18,05,Arkansas,4
+2020-07-18,06,California,99
+2020-07-18,08,Colorado,1
+2020-07-18,09,Connecticut,0
+2020-07-18,10,Delaware,2
+2020-07-18,11,District of Columbia,1
+2020-07-18,12,Florida,90
+2020-07-18,13,Georgia,37
+2020-07-18,66,Guam,0
+2020-07-18,15,Hawaii,1
+2020-07-18,16,Idaho,1
+2020-07-18,17,Illinois,18
+2020-07-18,18,Indiana,17
+2020-07-18,19,Iowa,4
+2020-07-18,20,Kansas,2
+2020-07-18,21,Kentucky,9
+2020-07-18,22,Louisiana,0
+2020-07-18,23,Maine,2
+2020-07-18,24,Maryland,9
+2020-07-18,25,Massachusetts,17
+2020-07-18,26,Michigan,9
+2020-07-18,27,Minnesota,5
+2020-07-18,28,Mississippi,14
+2020-07-18,29,Missouri,11
+2020-07-18,30,Montana,0
+2020-07-18,31,Nebraska,0
+2020-07-18,32,Nevada,9
+2020-07-18,33,New Hampshire,1
+2020-07-18,34,New Jersey,15
+2020-07-18,35,New Mexico,4
+2020-07-18,36,New York,15
+2020-07-18,37,North Carolina,25
+2020-07-18,38,North Dakota,0
+2020-07-18,69,Northern Mariana Islands,0
+2020-07-18,39,Ohio,20
+2020-07-18,40,Oklahoma,6
+2020-07-18,41,Oregon,3
+2020-07-18,42,Pennsylvania,11
+2020-07-18,72,Puerto Rico,1
+2020-07-18,44,Rhode Island,0
+2020-07-18,45,South Carolina,39
+2020-07-18,46,South Dakota,0
+2020-07-18,47,Tennessee,23
+2020-07-18,48,Texas,119
+2020-07-18,49,Utah,8
+2020-07-18,50,Vermont,0
+2020-07-18,78,Virgin Islands,0
+2020-07-18,51,Virginia,12
+2020-07-18,53,Washington,10
+2020-07-18,54,West Virginia,0
+2020-07-18,55,Wisconsin,10
+2020-07-18,56,Wyoming,0
+2020-07-18,US,US,853
+2020-07-19,01,Alabama,1
+2020-07-19,02,Alaska,0
+2020-07-19,60,American Samoa,0
+2020-07-19,04,Arizona,31
+2020-07-19,05,Arkansas,0
+2020-07-19,06,California,13
+2020-07-19,08,Colorado,0
+2020-07-19,09,Connecticut,0
+2020-07-19,10,Delaware,0
+2020-07-19,11,District of Columbia,0
+2020-07-19,12,Florida,87
+2020-07-19,13,Georgia,5
+2020-07-19,66,Guam,0
+2020-07-19,15,Hawaii,0
+2020-07-19,16,Idaho,0
+2020-07-19,17,Illinois,5
+2020-07-19,18,Indiana,2
+2020-07-19,19,Iowa,4
+2020-07-19,20,Kansas,1
+2020-07-19,21,Kentucky,3
+2020-07-19,22,Louisiana,34
+2020-07-19,23,Maine,0
+2020-07-19,24,Maryland,9
+2020-07-19,25,Massachusetts,12
+2020-07-19,26,Michigan,2
+2020-07-19,27,Minnesota,3
+2020-07-19,28,Mississippi,9
+2020-07-19,29,Missouri,0
+2020-07-19,30,Montana,0
+2020-07-19,31,Nebraska,0
+2020-07-19,32,Nevada,1
+2020-07-19,33,New Hampshire,2
+2020-07-19,34,New Jersey,7
+2020-07-19,35,New Mexico,2
+2020-07-19,36,New York,17
+2020-07-19,37,North Carolina,4
+2020-07-19,38,North Dakota,2
+2020-07-19,69,Northern Mariana Islands,0
+2020-07-19,39,Ohio,42
+2020-07-19,40,Oklahoma,0
+2020-07-19,41,Oregon,3
+2020-07-19,42,Pennsylvania,7
+2020-07-19,72,Puerto Rico,0
+2020-07-19,44,Rhode Island,0
+2020-07-19,45,South Carolina,20
+2020-07-19,46,South Dakota,2
+2020-07-19,47,Tennessee,5
+2020-07-19,48,Texas,73
+2020-07-19,49,Utah,0
+2020-07-19,50,Vermont,0
+2020-07-19,78,Virgin Islands,0
+2020-07-19,51,Virginia,2
+2020-07-19,53,Washington,3
+2020-07-19,54,West Virginia,0
+2020-07-19,55,Wisconsin,1
+2020-07-19,56,Wyoming,1
+2020-07-19,US,US,415

@@ -325,7 +325,7 @@ pull requests for new data in data-processed/ will be automatically run.
 
 When a pull request is submitted, 
 the data are validated through [Travis CI](https://travis-ci.org/) which runs
-the tests in [test-formatting.py](../code/validation/test-formatting.py).
+the tests in [test_formatting.py](../code/validation/test_formatting.py).
 The intent for these tests are to validate the requirements above and 
 specifically enumerated [on the wiki](https://github.com/reichlab/covid19-forecast-hub/wiki/Validation-Checks#current-validation-checks).
 Please [let us know](https://github.com/reichlab/covid19-forecast-hub/issues) 

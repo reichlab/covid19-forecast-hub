@@ -1,0 +1,26 @@
+team_name: The University of Michigan
+model_name: RidgeTensorFlowRegressor
+model_abbr: UMich-RidgeTfReg
+model_contributors: 'Sabrina Corsetti (University of Michigan Department of Physics)
+  <sabcorse@umich.edu>,  Thomas Schwarz (University of Michigan Department of Physics)
+  <schwarzt@umich.edu>, '
+website_url: https://gitlab.com/sabcorse/covid-19-collaboration
+license: cc-by-4.0
+team_model_designation: primary
+methods: Nation-level model of confirmed cases and deaths based on ridge regression.  No
+  assumptions made about social distancing.
+team_funding: University of Michigan
+methods_long: "This model uses ridge regression (penalized Ordinary Least Squares\
+  \ regression) to make predictions about future confirmed case and mortality trends.\
+  \  The model makes forecasts based solely on previous data, so no external  assumptions\
+  \ are necessary.    \nThe ridge regressors built for this model use Finite Impulse\
+  \ Response (FIR)  filtration to predict each day's confirmed cases and deaths as\
+  \ a function of  the counts on previous days. Specifically, each day's counts are\
+  \ predicted as  a linear combination of the counts on a user-specified number of\
+  \ previous days.  The goal of the regressors is the determination of an optimal\
+  \ coefficient vector  for these predictive linear combinations. The model currently\
+  \ makes predictions  based on the previous 15 days.\nOnce a spectrum of forecasts\
+  \ is produced, a TensorFlow module is used to create  quantile predictions based\
+  \ off of the accumulated projections. Finally, a gradient  boosting regressor is\
+  \ used to provide a least squares fit to the projections and  is used to provide\
+  \ point predictions."

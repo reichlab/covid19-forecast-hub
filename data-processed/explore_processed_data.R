@@ -98,7 +98,7 @@ latest <- all_data %>%
 
 latest_locations <- latest %>%
   dplyr::group_by(team, model, forecast_date) %>%
-  dplyr::summarize(US = ifelse(any(abbreviation == "US"), "Yes", "-"),
+  dplyr::summarize(US = ifelse(any(abbreviation == "US", na.rm=TRUE), "Yes", "-"),
                    n_states = sum(state.abb %in% abbreviation),
                    other = paste(unique(setdiff(abbreviation, c(state.abb,"US"))),
                                  collapse = " "),
