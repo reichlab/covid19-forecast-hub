@@ -51,10 +51,11 @@ the format
     
 where 
 
-- `team` is the teamname and 
-- `model` is the name of your model. 
+- `team` is an short abbreviation of your team name and 
+- `model` is the model abbreviation. 
 
-Both team and model should be less than 15 characters and not include hyphens.
+The `team-model` string should be less than or equal to 31 characters. This field should contain two separate alphanumeric identifiers, one for the team and one for the model, separated by a hyphen. No other whitespace or non-alphanumeric characters are allowed in this field. See [metadata formatting guidelines](METADATA.md) for details. 
+This `team-model` string is a unique identifier for a given model and should be chosen carefully as it cannot be changed.
 
 Within each subdirectory, there should be a metadata file, a license file
 (optional), and a set of forecasts. 
@@ -62,23 +63,21 @@ Within each subdirectory, there should be a metadata file, a license file
 
 ### Metadata 
 
-Participating teams must provide a metadata file (see [example](./UMass-ExpertCrowd/metadata-UMass-ExpertCrowd.txt)), 
-including methodological detail about their approach and a link to a file 
-(or a file itself) describing the methods used. 
-
-Note that the information in the `methods` field in the metadata is what will be shown on the [interactive visualization](https://reichlab.io/covid19-forecast-hub/) when a user hovers on your team name. For this reason, we request that the description be brief, around 200 characters (although at the moment this is not strictly enforced).
-
 The metadata file should have the following format
 
     metadata-team-model.txt
     
+and here is [the structure of the metadata file](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/METADATA.md).
+
 ### License (optional)
 
 If you would like to include a license file, 
 please use the following format
 
-    LICENSE-team.txt
+    LICENSE.txt
 
+If you are not using one of the [standard licenses](https://github.com/reichlab/covid19-forecast-hub/blob/master/code/validation/accepted-licenses.csv),
+then you must include a license file.
 
 
 
@@ -93,13 +92,12 @@ where
 - `YYYY` is the 4 digit year, 
 - `MM` is the 2 digit month,
 - `DD` is the 2 digit day,
-- `team` is the teamname, and
-- `model` is the name of your model. 
+- `team-model` is the unique identifier for your model, as described [above](#Subdirectory). 
 
 The date YYYY-MM-DD is the [`forecast_date`](#forecast_date).
 
-The `team` and `model` in this file must match the `team` and `model` in the
-directory this file is in. Both `team` and `model` should be less than 20 characters, alpha-numeric and underscores only, with no spaces or hyphens.
+The `team-model` in this file must match the `team-model` in the
+directory this file is in. 
 
 
 ## Forecast file format
@@ -115,7 +113,7 @@ columns (in any order):
 - `quantile`
 - `value`
 
-Additional columns are allowed, but ignored. 
+No additional columns are allowed.
 
 Each row in the file is either a point or quantile forecast for a location on a 
 particular date for a particular target. 
@@ -142,40 +140,36 @@ Exceptions will be made for legitimate extenuating circumstances.
 Values in the `target` column must be a character (string) and be one of the 
 following specific targets:
 
-- "N day ahead cum death" where N is a number between 0 and 130
-- "N day ahead inc death" where N is a number between 0 and 130
 - "N wk ahead cum death"  where N is a number between 1 and  20
 - "N wk ahead inc death"  where N is a number between 1 and  20
+- "N wk ahead inc case"  where N is a number between 1 and  8
 - "N day ahead inc hosp"  where N is a number between 0 and 130
+
+For county locations, the only target should be "N wk ahead inc case".
 
 For week-ahead forecasts, we will use the specification of epidemiological weeks (EWs) [defined by the US CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf). 
 There are standard software packages to convert from dates to epidemic weeks and vice versa. E.g. [MMWRweek](https://cran.r-project.org/web/packages/MMWRweek/) for R and [pymmwr](https://pypi.org/project/pymmwr/) and [epiweeks](https://pypi.org/project/epiweeks/) for python.
 
 We have created [a csv file](../template/covid19-death-forecast-dates.csv) describing forecast collection dates and dates for which forecasts refer to can be found.
 
-#### N day ahead cum death
 
-This target is the cumulative number of deaths predicted by the model for 
-N days after `forecast_date`. 
-
-As an example, for day-ahead forecasts with a `forecast_date` of a Monday, a 1 day ahead cum death forecast corresponds to cumulative deaths by the end of Tuesday, 2 day ahead to Wednesday, etc.... 
-
-#### N day ahead inc death
-
-This target is the incident (daily) number of deaths predicted by the model
-on day N after `forecast_date`. 
-
-As an example, for day-ahead forecasts with a `forecast_date` of a Monday, a 1 day ahead cum death forecast corresponds to incident deaths on Tuesday, 2 day ahead to Wednesday, etc.... 
-
+For week-ahead forecasts with `forecast_date` of Sunday or Monday of EW12, 
+a 1 week ahead forecast corresponds to EW12 and should have `target_end_date` of 
+the Saturday of EW12. For week-ahead forecasts with `forecast_date` of Tuesday 
+through Saturday of EW12, a 1 week ahead forecast corresponds to EW13 and should 
+have `target_end_date` of the Saturday of EW13. 
 
 #### N wk ahead cum death
 
 This target is the cumulative number of deaths predicted by the model up to 
 and including N weeks after `forecast_date`. 
 
-For week-ahead forecasts with `forecast_date` of Sunday or Monday of EW12, a 1 week ahead forecast corresponds to EW12 and should have `target_end_date` of the Saturday of EW12. For week-ahead forecasts with `forecast_date` of Tuesday through Saturday of EW12, a 1 week ahead forecast corresponds to EW13 and should have `target_end_date` of the Saturday of EW13. 
+A week-ahead forecast should represent the cumulative number of deaths reported 
+on the Saturday of a given epiweek.
 
-A week-ahead forecast should represent the cumulative number of deaths reported on the Saturday of a given epiweek.
+Predictions for this target will be evaluated compared to the cumulative of the
+number of new reported cases, as recorded by 
+[JHU CSSE](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv).
 
 
 #### N wk ahead inc death
@@ -183,9 +177,25 @@ A week-ahead forecast should represent the cumulative number of deaths reported 
 This target is the incident (weekly) number of deaths predicted by the model 
 during the week that is N weeks after `forecast_date`. 
 
-For week-ahead forecasts with `forecast_date` of Sunday or Monday of EW12, a 1 week ahead forecast corresponds to EW12 and should have `target_end_date` of the Saturday of EW12. For week-ahead forecasts with `forecast_date` of Tuesday through Saturday of EW12, a 1 week ahead forecast corresponds to EW13 and should have `target_end_date` of the Saturday of EW13. 
+A week-ahead forecast should represent the total number of new deaths 
+reported during a given epiweek (from Sunday through Saturday, inclusive).
 
-A week-ahead forecast should represent the total number of incident deaths within a given epiweek (from Sunday through Saturday, inclusive).
+Predictions for this target will be evaluated compared to the number of new 
+reported cases, as recorded by 
+[JHU CSSE](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv).
+
+
+#### N wk ahead inc case
+
+This target is the incident (weekly) number of cases predicted by the model 
+during the week that is N weeks after `forecast_date`. 
+
+A week-ahead forecast should represent the total number of new cases 
+reported during a given epiweek (from Sunday through Saturday, inclusive).
+
+Predictions for this target will be evaluated compared to the number of new 
+reported cases, as recorded by 
+[JHU CSSE](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_US.csv).
 
 
 #### N day ahead inc hosp
@@ -193,7 +203,22 @@ A week-ahead forecast should represent the total number of incident deaths withi
 This target is the number of new daily hospitalizations predicted by the
 model on day N after `forecast_date`.
 
-As an example, for day-ahead forecasts with a `forecast_date` of a Monday, a 1 day ahead inc hosp forecast corresponds to the number of incident hospitalizations on Tuesday, 2 day ahead to Wednesday, etc.... 
+As an example, for day-ahead forecasts with a `forecast_date` of a Monday, 
+a 1 day ahead inc hosp forecast corresponds to the number of incident 
+hospitalizations on Tuesday, 2 day ahead to Wednesday, etc.... 
+
+Currently there is no "gold standard" for hospitalization data. 
+
+
+
+#### REMOVED targets
+
+On 2020-06-06, these targets were removed:
+
+- N day ahead inc death
+- N day ahead cum death
+
+
 
 
 ### `target_end_date`
@@ -210,15 +235,13 @@ week time period.
 
 ### `location`
 
-Values in the `location` column must be
+Values in the `location` column must be one of the "locations" in this
+[FIPS numeric code file](../data-locations/locations.csv) which includes 
+numeric FIPS codes for U.S. states, counties, territories, and districts as
+well as "US" for national forecasts. 
 
-- "US" or
-- a two-digit number representing the US state, territory, or district 
-[fips numeric code](./data-locations/locations.csv). 
-
-This location identifies the geographical location for the forecast.
-
-A file with FIPS codes for states in the US is available through the `fips_code` dataset in the `tigris` R package, and saved as a [public CSV file](./data-locations/locations.csv). Please note that when reading in FIPS codes, they should be read in as characters to preserve any leading zeroes.
+Please note that when writing FIPS codes, they should be written in as a
+character string to preserve any leading zeroes.
 
 
 ### `type`
@@ -235,6 +258,7 @@ visualization and in ensemble construction.
 
 **Forecasts must include exactly 1 "point" forecast for every location-target
 pair.**
+
 
 ### `quantile`
 
@@ -254,15 +278,28 @@ c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99)
 ```
 
 ```
-##  [1] 0.010 0.025 0.050 0.100 0.150 0.200 0.250 0.300 0.350 0.400 0.450 0.500 0.550
-## [14] 0.600 0.650 0.700 0.750 0.800 0.850 0.900 0.950 0.975 0.990
+##  [1] 0.010 0.025 0.050 0.100 0.150 0.200 0.250 0.300 0.350 0.400 0.450 0.500 0.550 0.600 0.650 0.700
+## [17] 0.750 0.800 0.850 0.900 0.950 0.975 0.990
+```
+
+for all `target`s except "N wk ahead inc case" target.
+For the "N wk ahead inc case" target, teams should provide the following 6 
+quantiles: 
+
+
+```r
+c(0.025, 0.100, 0.250, 0.500, 0.750, 0.900, 0.975)
+```
+
+```
+## [1] 0.025 0.100 0.250 0.500 0.750 0.900 0.975
 ```
 
 
 ### `value`
 
-Values in the `value` column are numeric indicating the "point" or "quantile"
-prediction for this row. 
+Values in the `value` column are non-negative numbers indicating the "point" or 
+"quantile" prediction for this row. 
 For a "point" prediction, `value` is simply the value of that point prediction
 for the `target` and `location` associated with that row. 
 For a "quantile" prediction, `value` is the inverse of the cumulative 
@@ -286,7 +323,7 @@ pull requests for new data in data-processed/ will be automatically run.
 
 When a pull request is submitted, 
 the data are validated through [Travis CI](https://travis-ci.org/) which runs
-the tests in [test-formatting.py](../code/validation/test-formatting.py).
+the tests in [test_formatting.py](../code/validation/test_formatting.py).
 The intent for these tests are to validate the requirements above and 
 specifically enumerated [on the wiki](https://github.com/reichlab/covid19-forecast-hub/wiki/Validation-Checks#current-validation-checks).
 Please [let us know](https://github.com/reichlab/covid19-forecast-hub/issues) 
@@ -299,7 +336,7 @@ for details on how to troubleshoot.
 #### Run checks locally
 
 To run these checks locally rather than waiting for the results from a pull request, follow
-[these instructions](https://github.com/reichlab/covid19-forecast-hub/wiki/Running-Checks-Locally).
+[these instructions](https://github.com/reichlab/covid19-forecast-hub/wiki/Validation-Checks#running-validations-locally).
 
 
 ### R validation checks

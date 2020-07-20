@@ -1,62 +1,39 @@
 team_name: US Army Engineer Research and Development Center
-team_abbr: USACE
-institution_affil: DoD
-team_contact: glover.e.george@erdc.dren.mil
-team_funding: US Army Geospatial Task Force
-team_experience: 
-
 model_name: ERDC_SEIR
-model_abbr: ERDC_SEIR
-model_output: https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/USACE-ERDC_SEIR/metadata-USACE-ERDC_SEIR.txt 
-model_repo:
+model_abbr: USACE-ERDC_SEIR
+model_contributors: Michael L. Mayo <Michael.L.Mayo@erdc.dren.mil>, Michael A. Rowland
+  <Michael.A.Rowland@erdc.dren.mil>,  Matthew D. Parno <Matthew.D.Parno@erdc.dren.mil>,
+  Ian D. Detwiller <Ian.D.Dettwiller@erdc.dren.mil>, Matthew W. Farthing <Matthew.W.Farthing@erdc.dren.mil>,
+  William P. England <William.P.England@erdc.dren.mil>, Glover E. George <glover.e.george@erdc.dren.mil>
+website_url: https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/USACE-ERDC_SEIR/metadata-USACE-ERDC_SEIR.txt
+license: other
+team_model_designation: primary
+methods: The ERDC SEIR model makes predictions of several variables (e.g., reported
+  new/cumulative cases  per day, etc.). Model parameters are estimated using historical
+  data using Bayesian inference.
+team_funding: US Army Geospatial Task Force
+data_inputs: USA FACTS, JHU COVID-19 Git Repo
+methods_long: 'The ERDC SEIR model is a process-based model that mathematically describes
+  the virus  dynamics in a population center (e.g., state, CBSA) using assumptions
+  that are common  in compartmental models: (i)   modeled populations are large enough
+  that fluctuations in the disease  states grow slower than averages (i.e., coefficient
+  of variation < 1) (ii)  recovered individuals are neither infectious nor become
+  susceptible to  further infection.
 
-model_contributors: Michael L. Mayo <Michael.L.Mayo@erdc.dren.mil>, Michael A. Rowland 
- <Michael.A.Rowland@erdc.dren.mil>,  Matthew D. Parno <Matthew.D.Parno@erdc.dren.mil>, 
- Ian D. Detwiller <Ian.D.Dettwiller@erdc.dren.mil>, Matthew W. Farthing 
- <Matthew.W.Farthing@erdc.dren.mil>, William P. England <William.P.England@erdc.dren.mil>,
- Glover E. George <glover.e.george@erdc.dren.mil>
+  The model is similar to classic SEIR models but with additional compartments for  unreported
+  infections and isolated individuals.  Model parameters describing reporting  rates
+  and transmission rates are allowed to vary in time over over the historical  record
+  as social and policy factors change.  Forecasts into the future, however,  are made
+  under the assumption that the parameters are held constant in time.
 
-Target_loc: state
-Time_horizon: 90 days
-forecast_startdate:  2020-05-15 
-forecasst_frequency: 1x daily
+  The model parameters are estimated from observations of the cumulative number of  cases
+  using a Bayesian approach. Information from subject matter experts (SMEs) is  used
+  to develop a prior probability distribution over the model parameters.  This  then
+  combined with a statistical model of the model-data mismatch to produce a posterior  probability
+  distribution over the model parameters that incorporates both the cumulative  observations
+  and subject matter expertise.  The parameters that maximize the posterior  probability
+  density are used to make forecasts into the future.  The effective reproduction  number
+  is computed using the next-generation matrix method.
 
-data_source1: USA FACTS 
-data_source2: JHU COVID-19 Git Repo 
-
-this_model_is_an_ensemble: false
-this_model_is_unconditional: false
-
-methods: >-
-    The ERDC SEIR model makes predictions of several variables (e.g., reported new cases 
-    per day, cumulative reported cases, the susceptible population, etc...).  Model parameters 
-    are estimated using historical data using techniques from Bayesian inference.
-
-methods_long: >-
-    The ERDC SEIR model is a process-based model that mathematically describes the virus 
-    dynamics in a population center (e.g., state, CBSA) using assumptions that are common 
-    in compartmental models:
-    (i)   modeled populations are large enough that fluctuations in the disease 
-    states grow slower than averages (i.e., coefficient of variation < 1)
-    (ii)  recovered individuals are neither infectious nor become susceptible to 
-    further infection.
-
-    The model is similar to classic SEIR models but with additional compartments for 
-    unreported infections and isolated individuals.  Model parameters describing reporting 
-    rates and transmission rates are allowed to vary in time over over the historical 
-    record as social and policy factors change.  Forecasts into the future, however, 
-    are made under the assumption that the parameters are held constant in time.
-
-    The model parameters are estimated from observations of the cumulative number of 
-    cases using a Bayesian approach. Information from subject matter experts (SMEs) is 
-    used to develop a prior probability distribution over the model parameters.  This 
-    then combined with a statistical model of the model-data mismatch to produce a posterior 
-    probability distribution over the model parameters that incorporates both the cumulative 
-    observations and subject matter expertise.  The parameters that maximize the posterior 
-    probability density are used to make forecasts into the future.  The effective reproduction 
-    number is computed using the next-generation matrix method.
-
-    Deaths are estimated from this model through a procedure which leverages state-level 
-    data on recoveries and fatalities.
-
-citation: In preparation
+  Deaths are estimated from this model through a procedure which leverages state-level  data
+  on recoveries and fatalities.'

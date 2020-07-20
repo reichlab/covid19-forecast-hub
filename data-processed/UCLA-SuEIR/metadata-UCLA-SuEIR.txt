@@ -1,34 +1,33 @@
-
 team_name: UCLA Statistical Machine Learning Lab
-team_abbr: UCLA
-institution_affil: UCLA Computer Science Department
-team_funding: TBD
-team_experience: Statistical Machine Learning 
-
 model_name: SuEIR
-model_abbr: SuEIR
-model_output: https://covid19.uclaml.org/
-model_repo: 
-
-model_contributors: Quanquan Gu <qgu@cs.ucla.edu>, Pan Xu, Jinghui Chen, Lingxiao Wang, Difan Zou, Weitong Zhang
-Model_targets: days ahead cumulative deaths
-Target_loc: national (US), state
-time_horizon:
-Data_format: prediction and all requested quantiles
-forecast_startdate: 2020-05-01
-forecast_frequency: daily
-
-data_inputs_known: confirmed case and deaths
-data_source_known: New York Times -nytimes/covid-19-data
-
-this_model_is_an_ensemble: false
-this_model_is_unconditional: false
-
-methods: >-
-    The SuEIR model is a variant of the SEIR model considering both untested and unreported cases. The model takes reopening into consideration and assumes that the contact rate will increase after the reopen.
-
-methods_long: >-
-    We update our model by considering the effects of reopenings. In particular, for the states that have reopened or partially reopened, we assume there is a transition from a virtual  “Quarantined/Isolated” group to the “Susceptible” group at a certain rate after the reopen date. This rate along with other model parameters are jointly estimated based on the reported data. The key feature of the SuEIR model is that it can infer the untested cases as well as unreported cases. More specifically, we treat the “Exposed” group in the SEIR model as the individuals that have already been infected and have not been tested, which are also capable of infecting the “Susceptible” group. Moreover, some of the people in the “Exposed” group can get tested and transferred to the “Infectious” group (which are reported to the public), while the rest of them will recover/die and transit to the so-called “Unreported Recovered” group (which are not reported to the public). More detailed model descriptions and projections can be found at https://covid19.uclaml.org.
-
-    Reference: Difan Zou, Lingxiao Wang, Pan Xu, Jinghui Chen, Weitong Zhang and Quanquan Gu, Epidemic Model Guided Machine Learning for COVID-19 Forecasts in the United States, medRxiv:2020.05.24.20111989, 2020.
-
+model_abbr: UCLA-SuEIR
+model_contributors: Quanquan Gu <qgu@cs.ucla.edu>, Pan Xu, Jinghui Chen, Lingxiao
+  Wang, Difan Zou, Weitong Zhang
+website_url: https://covid19.uclaml.org/
+license: cc-by-4.0
+team_model_designation: primary
+methods: The SuEIR model is a variant of the SEIR model considering both untested
+  and unreported cases. The model considers reopening and assumes susceptible population
+  will increase after the reopen.
+team_funding: TBD
+twitter_handles: QuanquanGu
+data_inputs: JHU CSSE case and death data, COVID19 tracking project hospitalization
+  data
+citation: https://www.medrxiv.org/content/10.1101/2020.05.24.20111989v1
+methods_long: "We update our model by considering the effects of reopenings. In particular,\
+  \ for the states that have reopened or partially reopened, we assume there is a\
+  \ transition from a virtual  \u201CQuarantined/Isolated\u201D group to the \u201C\
+  Susceptible\u201D group at a certain rate after the reopen date. This rate along\
+  \ with other model parameters are jointly estimated based on the reported data.\
+  \ The key feature of the SuEIR model is that it can infer the untested cases as\
+  \ well as unreported cases. More specifically, we treat the \u201CExposed\u201D\
+  \ group in the SEIR model as the individuals that have already been infected and\
+  \ have not been tested, which are also capable of infecting the \u201CSusceptible\u201D\
+  \ group. Moreover, some of the people in the \u201CExposed\u201D group can get tested\
+  \ and transferred to the \u201CInfectious\u201D group (which are reported to the\
+  \ public), while the rest of them will recover/die and transit to the so-called\
+  \ \u201CUnreported Recovered\u201D group (which are not reported to the public).\
+  \ More detailed model descriptions and projections can be found at https://covid19.uclaml.org.\n\
+  Reference: Difan Zou, Lingxiao Wang, Pan Xu, Jinghui Chen, Weitong Zhang and Quanquan\
+  \ Gu, Epidemic Model Guided Machine Learning for COVID-19 Forecasts in the United\
+  \ States, medRxiv:2020.05.24.20111989, 2020."

@@ -1,40 +1,24 @@
-team_name: DeepCOVID
-team_abbr: DeepCOVID
-institution_affil: Georgia Institute of Technology, IQVIA, Univ. of Illinois, Urbana-Champaign
-team_contact: deep-covid@lists.gatech.edu; badityap@cc.gatech.edu
-team_funding: Partly supported by multiple grants from NSF (NSF CAREER, NSF CISE Expeditions, NSF IIS, NSF COVID RAPID) and GA Tech
-team_experience: The GATech team members are regular participants in CDC FluSight challenges and had the best performance in the HHS1 region for 2018. Further team members (GATech) regularly
-         participate in other forecasting, epidemiological tasks like inference, detection, interventions etc and (IQVIA/UIUC) healthcare problems like patient trajectory analysis etc.  
-
-
+team_name: GT
 model_name: DeepCOVID
-model_abbr: DeepCOVID
-model_output: https://deepcovid.github.io/ 
-model_repo: 
-
-model_contributors: B. Aditya Prakash (Georgia Institute of Technology), Alexander Rodriguez (Georgia Institute of Technology),
-            Jiaming Cui (Georgia Institute of Technology)
-            Anika Tabassum (Virginia Tech), Bijaya Adhikari (University of Iowa/Virginia Tech),
-            Jimeng Sun (University of Illinois, Urbana-Champaign), Danica Xiao (IQVIA), Cheng Qiang (IQVIA)
-Target_loc: state, national
-Time_horizon: 28 days (4 weeks ahead) 
-forecast_startdate: 2020-04-09
-forecast_frequency: 1x weekly
-
-data_source1: COVID Tracking Project, JHU
-data_source2: COVID-Net, NYT 
-data_source3: Other (proprietary) point-of-care claims data, demographic, mobility and symptomatic data
-
-this_model_is_an_ensemble: false
-this_model_is_unconditional: false
-
-
-methods: >-
-    Data-driven approach based on deep learning for forecasting mortality and hospitalizations using syndromic, clinical, demographic, mobility and point-of-care data.
-    The model are uses data sources (mobility patterns etc) which implicitly capture the interventions in place. As the model is updated each week, the effect of any new intervention is taken into account via the changes in the input data. 
-
-
-methods_long: >-
-    May 11 - This data-driven deep learning model learns the dependence of hospitalization and mortality rate on various detailed syndromic, demographic, mobility and clinical data (such as increase in positive Covid tests etc) from historical data. The learned model is then used to predict mortality and hospitalization at various points in future. To compensate for the effects of noise (in data and initialization), the model is bootstrapped on several subsamples and then aggregated. The model also propagates uncertainties in the data to show the confidence intervals in the forecasts.
-
-citation: See publications at https://www.cc.gatech.edu/~badityap/covid.html. Cite B. Aditya Prakash et al. Forecasting the COVID-19 trajectory. 2020.
+model_abbr: GT-DeepCOVID
+model_contributors: B. Aditya Prakash (Georgia Institute of Technology) <badityap@cc.gatech.edu>,  Alexander
+  Rodriguez (Georgia Institute of Technology), Jiaming Cui (Georgia Institute of Technology),
+  Anika Tabassum (Virginia Tech),  Bijaya Adhikari (University of Iowa/Virginia Tech),
+  Jimeng Sun (University of Illinois, Urbana-Champaign),  Danica Xiao (IQVIA),  Cheng
+  Qiang (IQVIA), Full Team <deep-covid@lists.gatech.edu>
+website_url: https://deepcovid.github.io/
+license: cc-by-4.0
+team_model_designation: primary
+methods: 'Data-driven approach based on deep learning for forecasting mortality and  hospitalizations
+  using syndromic, clinical, demographic, mobility and  point-of-care data. '
+team_funding: Partly supported by multiple grants from NSF  (NSF CAREER, NSF CISE
+  Expeditions, NSF IIS, NSF COVID RAPID) and GA Tech
+data_inputs: COVID Tracking Project, JHU COVID-Net, NYT  Other (proprietary) point-of-care
+  claims data, demographic, mobility and symptomatic data
+methods_long: May 11 - This data-driven deep learning model learns the dependence
+  of hospitalization and mortality rate on various detailed syndromic, demographic,
+  mobility and clinical data (such as increase in positive Covid tests etc) from historical
+  data. The learned model is then used to predict mortality and hospitalization at
+  various points in future. To compensate for the effects of noise (in data and initialization),
+  the model is bootstrapped on several subsamples and then aggregated. The model also
+  propagates uncertainties in the data to show the confidence intervals in the forecasts.
