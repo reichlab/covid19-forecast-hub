@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../zoltpy"
+		},
+		{
+			"path": "../covid19-forecast-hub-web"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

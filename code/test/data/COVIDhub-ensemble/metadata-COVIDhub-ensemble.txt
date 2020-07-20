@@ -1,0 +1,23 @@
+data_inputs: cumulative and incident death forecasts from other models.
+license: cc-by-4.0
+methods: An ensemble, or model average, of submitted forecasts to the COVID-19 Forecast
+  Hub.
+methods_long: 'April 13: At state level, only two models included in first week, LANL
+  and IHME, due to overlaps in location and reported quantiles. At national level,
+  IHME was combined with the three CU models. April 27: Different component models
+  at state level and national level. Please see the model information file for more
+  details. May 4: National ensemble combined 7 models, state ensembles combined between
+  2 and 8 models. For details, see ensemble-metadata/state-weight-information.csv
+  All ensembles were equally weighted among all eligible models. May 19: See ensemble-metadata/2020-05-19-model-eligibility.csv
+  for models included/excluded at each location with reasons, and ensemble-metadata/2020-05-19-model-weights.csv
+  for weights by location. May 26: See ensemble-metadata folder for models included/excluded
+  in each location, and weights by location.'
+model_abbr: COVIDhub-ensemble
+model_contributors: Nutcha Wattanachit, Evan L. Ray, Nicholas Reich <nick@schoolph.umass.edu>
+model_name: ensemble
+repo_url: https://github.com/reichlab/covid19-forecast-hub
+team_funding: CDC
+team_model_designation: primary
+team_name: COVID-19 Forecast Hub
+twitter_handles: reichlab, jaradniemi
+website_url: https://covid19forecasthub.org/

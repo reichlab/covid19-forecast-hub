@@ -51,10 +51,11 @@ the format
     
 where 
 
-- `team` is the teamname and 
-- `model` is the name of your model. 
+- `team` is an short abbreviation of your team name and 
+- `model` is the model abbreviation. 
 
-Both team and model should be less than 15 characters and not include hyphens.
+The `team-model` string should be less than or equal to 31 characters. This field should contain two separate alphanumeric identifiers, one for the team and one for the model, separated by a hyphen. No other whitespace or non-alphanumeric characters are allowed in this field. See [metadata formatting guidelines](METADATA.md) for details. 
+This `team-model` string is a unique identifier for a given model and should be chosen carefully as it cannot be changed.
 
 Within each subdirectory, there should be a metadata file, a license file
 (optional), and a set of forecasts. 
@@ -91,15 +92,12 @@ where
 - `YYYY` is the 4 digit year, 
 - `MM` is the 2 digit month,
 - `DD` is the 2 digit day,
-- `team` is the teamname, and
-- `model` is the name of your model. 
+- `team-model` is the unique identifier for your model, as described [above](#Subdirectory). 
 
 The date YYYY-MM-DD is the [`forecast_date`](#forecast_date).
 
-The `team` and `model` in this file must match the `team` and `model` in the
+The `team-model` in this file must match the `team-model` in the
 directory this file is in. 
-Both `team` and `model` should be less than 15 characters, 
-alpha-numeric and underscores only, with no spaces or hyphens.
 
 
 ## Forecast file format
@@ -147,6 +145,8 @@ following specific targets:
 - "N wk ahead inc case"  where N is a number between 1 and  8
 - "N day ahead inc hosp"  where N is a number between 0 and 130
 
+For county locations, the only target should be "N wk ahead inc case".
+
 For week-ahead forecasts, we will use the specification of epidemiological weeks (EWs) [defined by the US CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf). 
 There are standard software packages to convert from dates to epidemic weeks and vice versa. E.g. [MMWRweek](https://cran.r-project.org/web/packages/MMWRweek/) for R and [pymmwr](https://pypi.org/project/pymmwr/) and [epiweeks](https://pypi.org/project/epiweeks/) for python.
 
@@ -184,6 +184,7 @@ Predictions for this target will be evaluated compared to the number of new
 reported cases, as recorded by 
 [JHU CSSE](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv).
 
+
 #### N wk ahead inc case
 
 This target is the incident (weekly) number of cases predicted by the model 
@@ -207,6 +208,7 @@ a 1 day ahead inc hosp forecast corresponds to the number of incident
 hospitalizations on Tuesday, 2 day ahead to Wednesday, etc.... 
 
 Currently there is no "gold standard" for hospitalization data. 
+
 
 
 #### REMOVED targets
@@ -234,7 +236,7 @@ week time period.
 ### `location`
 
 Values in the `location` column must be one of the "locations" in this
-[FIPS numeric code file](./data-locations/locations.csv) which includes 
+[FIPS numeric code file](../data-locations/locations.csv) which includes 
 numeric FIPS codes for U.S. states, counties, territories, and districts as
 well as "US" for national forecasts. 
 
@@ -321,7 +323,7 @@ pull requests for new data in data-processed/ will be automatically run.
 
 When a pull request is submitted, 
 the data are validated through [Travis CI](https://travis-ci.org/) which runs
-the tests in [test-formatting.py](../code/validation/test-formatting.py).
+the tests in [test_formatting.py](../code/validation/test_formatting.py).
 The intent for these tests are to validate the requirements above and 
 specifically enumerated [on the wiki](https://github.com/reichlab/covid19-forecast-hub/wiki/Validation-Checks#current-validation-checks).
 Please [let us know](https://github.com/reichlab/covid19-forecast-hub/issues) 
