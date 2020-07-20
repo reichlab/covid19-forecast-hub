@@ -1,29 +1,22 @@
-# Metadata dictionary
+# Metadata file structure
 
 Each model is required to have metadata in 
-[yaml format](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html).
+[yaml format](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html), 
+e.g. [see this metadata file](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/JHU_IDD-CovidSP/metadata-JHU_IDD-CovidSP.txt).
 This file describes each of the variables (keys) in the yaml document.
 Please order the variables in this order.
+
 
 ## Required variables
 
 ### team_name
-
 The name of your team that is less than 50 characters.
 
-### team_abbr
-
-An abbreviated name for your team that is less than 15 alphanumeric characters and cannot 
-inlucde a dash (-) or a whitespace. 
-
 ### model_name
-
 The name of your model that is less than 50 characters.
 
 ### model_abbr
-
-An abbreviated name for your model that is less than 15 alphanumeric characters and cannot
-include a dash (-) or a whitespace.
+An abbreviated name for your model that is less than 30 alphanumeric characters. The model abbreviation must be in the format of `[team_abbr]-[model_abbr]`. where each of the `[team_abbr]` and `[model_abbr]` are text strings that are each less than 15 alphanumeric characters that do not include a hyphen or whitespace  Note that this is a uniquely identifying field in our system, so please choose this name carefully, as it may not be changed once defined. An example of a valid `model_abbr` is `UMass-MechBayes` or `UCLA-SuEIR`. 
 
 ### model_contributors
 
@@ -52,9 +45,11 @@ please include that link here.
 
 ### license
 
-One of [these license keywords](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository) or "LICENSE.txt" 
-(if none of these license keywords are appropriate).
-We encourage teams to submit as a cc-by-4.0.
+One of [licenses](https://github.com/reichlab/covid19-forecast-hub/blob/master/code/validation/accepted-licenses.csv).
+
+We encourage teams to submit as a "cc-by-4.0" to allow the broadest possible uses
+including private vaccine production 
+(which would be excluded by the "cc-by-nc-4.0" license). 
 If the value is "LICENSE.txt", 
 then a LICENSE.txt file must exist within the folder and provide a license.
 
@@ -105,7 +100,7 @@ One or more twitter handles (without the @) separated by commas.
 
 ### data_inputs
 
-(previously `data_inputs_known`)
+(previously `data_inputs_known` and `data_source_known`)
 
 A description of the data sources used to inform the model, 
 e.g. "NYTimes death data", "JHU CSSE case and death data", mobility data, etc. 
@@ -113,7 +108,8 @@ e.g. "NYTimes death data", "JHU CSSE case and death data", mobility data, etc.
 
 ### this_model_is_an_ensemble
 
-_**DEPRECATED**_
+_**DEPRECATED**_: please remove from metadata file. 
+In the future, inclusion of this field will be an error.
 
 true/false indicating whether the model here is a combination of a set of other
 models

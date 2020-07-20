@@ -1,0 +1,28 @@
+team_name: University of Southern California Data Science Lab
+model_name: SI_kJalpha
+model_abbr: USC-SI_kJalpha
+model_contributors: Ajitesh Srivastava <ajiteshs@usc.edu>, Viktor K. Prasanna <prasanna@usc.edu>,
+  Frost Tianjian Xu
+website_url: https://scc-usc.github.io/ReCOVER-COVID-19
+license: mit
+team_model_designation: primary
+methods: A heterogeneous infection rate model with human mobility for epidemic modeling.
+  Our model adapts to changing trends and provide predictions of confirmed cases and
+  deaths.
+team_funding: Supported by US National Science Foundation Award No. 2027007 (RAPID)
+repo_url: https://github.com/scc-usc/ReCOVER-COVID-19
+data_inputs: JHU
+citation: https://arxiv.org/abs/2007.05180
+methods_long: We use our own epidemic model called SI-kJalpha, preliminary version
+  of which we have successfully used during DARPA Grand Challenge 2014. Our model
+  can consider the effect of many complexities of the epidemic process and yet be
+  simplified to a few parameters that are learned using fast linear regressions. Therefore,
+  our approach can learn and generate forecasts extremely quickly. On a 2 core desktop
+  machine, our approach takes only 3.18s to tune hyper-parameters, learn parameters
+  and generate 100 days of forecasts of reported cases and deaths for all the states
+  in the US. The total execution time for 184 countries is 11.83s and for more than
+  3000 US counties is 101.03s. Despite being fast, the accuracy of our forecasts is
+  on par with the state-of-the-art as demonstrated on the leaderboard page. at https://scc-usc.github.io/ReCOVER-COVID-19.
+  Our model is able to quickly adapt to changing trends, and the variations in parameters
+  during different times/policies allow us to forecast different scenarios such as
+  what would happen if we were to disregard social distancing suggestions.

@@ -8,7 +8,6 @@ import * as tt from '../../../utilities/tooltip'
 
 function makePredictionRow (p, tooltip) {
   let drawerRow = new DrawerRow(p.id, p.style.color)
-
   let ttText
   if (p.meta) {
     if (p.meta.url) {
@@ -19,7 +18,7 @@ function makePredictionRow (p, tooltip) {
     ttText = tt.parseText({ title: p.id, text: '' })
   }
 
-  drawerRow.addTooltip(tooltip, ttText, 'left')
+  drawerRow.addTooltip(tooltip, ttText, 'right')
   drawerRow.active = !p.hidden
   return drawerRow
 }
@@ -109,7 +108,7 @@ export default class LegendDrawer extends Component {
         .attr('class', 'row control-row')
     showHideRow.append('span').text('Show')
 
-    this.showHideButtons = new ToggleButtons(['all', 'none'])
+    this.showHideButtons = new ToggleButtons(['all', 'none', 'ensemble'])
     this.showHideButtons.addTooltip(
       config.tooltip,
       tt.parseText({
@@ -118,8 +117,20 @@ export default class LegendDrawer extends Component {
       }), 'left')
 
     this.showHideButtons.addOnClick(({ idx }) => {
-      this.showHideAllItems(idx === 0)
+      if(idx !=2) {
+        this.showHideAllItems(idx === 0)
+      } else {
+      this.showHideAllItems(false)
+      let id = 'COVIDhub-ensemble'
+      let state = true
+      ev.publish(this.uuid, ev.LEGEND_ITEM, { id, state })
+      if(!this.ensembleRow) {
+        this.ensembleRow = this.bottomRows.find(r => r.id === 'COVIDhub-ensemble')
+      }
+      this.ensembleRow.active = true
+      }
     })
+    this.showHideButtons.set(2)
     showHideRow.append(() => this.showHideButtons.node)
 
     // Add search box
@@ -181,14 +192,28 @@ export default class LegendDrawer extends Component {
       .filter(p => config.pinnedModels.indexOf(p.id) === -1)
       .map(p => {
         let drawerRow = makePredictionRow(p, this.tooltip)
+        if(drawerRow.id ==='COVIDhub-ensemble') {
+          this.ensembleRow = drawerRow
+        }
         drawerRow.addOnClick(({ id, state }) => {
           this.showHideButtons.reset()
           ev.publish(this.uuid, ev.LEGEND_ITEM, { id, state })
         })
-
         this.bottomContainer.append(() => drawerRow.node)
         return drawerRow
       })
+    
+      if(this.showHideButtons.idx == 2) {
+        this.showHideAllItems(false)
+        if(!this.ensembleRow) {
+          this.ensembleRow = this.bottomRows.find(r => r.id === 'COVIDhub-ensemble')
+        }
+        if (this.ensembleRow) {
+          this.ensembleRow.click()
+        }
+        this.showHideButtons.set(2)
+      }
+      
 
     // Handle pinned models separately
     this.pinnedContainer.selectAll('*').remove()
@@ -210,6 +235,7 @@ export default class LegendDrawer extends Component {
   update (predictions) {
     predictions.forEach(p => {
       let row = this.bottomRows.find(r => r.id === p.id) || this.pinnedRows.find(r => r.id === p.id)
+      
       if (row) {
         row.na = p.noData
       }

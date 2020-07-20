@@ -23,6 +23,13 @@ def validate_metadata_contents(metadata, filepath, cache):
     if len(core.validation_errors)>0:
         metadata_error_output.extend(['METADATA_ERROR: %s' % err for err in core.validation_errors])
         is_metadata_error = True
+
+    folder_name = filepath.split('/')[-2]
+    if folder_name != metadata['model_abbr']:
+        metadata_error_output.append(f"METADATA_ERROR: Model abreviation in metadata inconsistent with folder name for model_abbr={metadata['model_abbr']} as specified in metadata. NOTE: Folder name is: {folder_name}")
+        is_metadata_error = True
+    metadata['team_abbr'] = metadata['model_abbr'].split('-')[0]
+    # Check if every team has only one `team_model_designation` as `primary`
     if 'team_abbr' in metadata.keys():
         # add designated primary model acche entry to the cache if not present
         if DESIGNATED_MODEL_CACHE_KEY not in cache:
@@ -35,6 +42,8 @@ def validate_metadata_contents(metadata, filepath, cache):
         # else if the current model designation is "primary", then add it to the cache
         elif metadata['team_model_designation'] == 'primary':
             cache[DESIGNATED_MODEL_CACHE_KEY].append(metadata['team_abbr'])
+    
+    # if `this_model_is_an_emnsemble` is rpesent, show a warning.
     
     # Check for Required Fields
     required_fields = ['team_name', 'team_abbr', 'model_name', 'model_contributors', 'model_abbr', 'website_url','license', 'team_model_designation', 'methods']
