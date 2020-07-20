@@ -1,4 +1,4 @@
-# COVID-19 Forecast Hub
+# COVID-19 Forecast Hub 
 <img src="https://travis-ci.com/reichlab/covid19-forecast-hub.svg?branch=master">
 
 The goal of this repository is to create a standardized set of data on forecasts from teams making projections of cumulative and incident deaths and incident hospitalizations due to COVID-19 in the United States. This repository is the data source for [the official CDC COVID-19 Forecasting page](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html). This project to collect, standardize, visualize and synthesize forecast data has been led by the CDC-funded UMass-Amherst Influenza Forecasting Center of Excellence based at the [Reich Lab](https://reichlab.io/), with [contributions from many others](https://github.com/reichlab/covid19-forecast-hub/blob/master/README.md#the-covid-forecast-hub-team). 
@@ -59,7 +59,7 @@ For week-ahead forecasts with `forecast_date` of Sunday or Monday of EW12, a 1 w
 -->
 
 ## Ensemble model
-Every Monday at 6pm ET, we will update our [COVID Forecast Hub ensemble forecast](data-processed/COVIDhub-ensemble) and [interactive visualization](http://viz.covid19forecasthub.org) using the most recent forecast from each team as long as it was submitted before 6pm ET on Monday and has a `forecast_date` of Sunday or Monday. All models meeting the above criteria will be considered for the ensemble. For inclusion in the ensemble, we additionally require that forecasts include a full set of 23 quantiles to be submitted (see [technical README](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md#quantile) for details), and that the 10th quantile of the predictive distribution for a 1 week ahead forecast is not below the most recently observed data. Additionally, we perform manual visual inspection checks to ensure that forecasts are in alignment with the ground truth data. Details on which models were included each week in the ensemble are available in the [ensemble metadata](https://github.com/reichlab/covid19-forecast-hub/tree/master/ensemble-metadata) folder.
+Every Monday at 6pm ET, we will update our [COVID Forecast Hub ensemble forecast](data-processed/COVIDhub-ensemble) and [interactive visualization](http://viz.covid19forecasthub.org) using the most recent forecast from each team as long as it was submitted before 6pm ET on Monday and has a `forecast_date` of any day since the previous Tuesday. All models meeting the above criteria will be considered for the ensemble. For inclusion in the ensemble, we additionally require that forecasts include a full set of 23 quantiles to be submitted (see [technical README](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md#quantile) for details), and that the 10th quantile of the predictive distribution for a 1 week ahead forecast is not below the most recently observed data. Additionally, we perform manual visual inspection checks to ensure that forecasts are in alignment with the ground truth data. Details on which models were included each week in the ensemble are available in the [ensemble metadata](https://github.com/reichlab/covid19-forecast-hub/tree/master/ensemble-metadata) folder.
 
 Depending on how the project evolves, we may add additional weekly builds for the ensemble and visualization. Currently, our ensemble is created by taking the arithmetic average of each quantile for all models that submit 1- through 4-week ahead cumulative death targets for a given location. Ensemble methods and inclusion criteria may evolve as more data becomes available. 
 
@@ -82,7 +82,7 @@ repository are (with data reuse license):
  - [Columbia University](https://github.com/shaman-lab/COVID-19Projection) (Apache 2.0)
  - [CovidActNow](https://covidactnow.org/) (none given)
  - [COVID-19 Simulator Consortium](https://covid19sim.org/) (CC-BY-4.0)
- - [epiforecasts](https://github.com/epiforecasts/covid-us-deaths) 
+ - [epiforecasts](https://github.com/epiforecasts/covid-us-deaths) (MIT)
  - [GLEAM from Northeastern University](https://www.gleamproject.org/covid-19) (CC-BY-4.0)
  - [Georgia Institute of Technology](https://www.cc.gatech.edu/~badityap/covid.html) (none given)
  - [Georgia Institute of Technology - Center for Health and Humanitarian Systems](https://github.com/pkeskinocak/COVID19GA) (none given)
@@ -99,12 +99,13 @@ repository are (with data reuse license):
  - Quantori (none given)
  - Snyder Wilson Consulting (none given)
  - [STH](https://public.tableau.com/profile/covid19model#!/vizhome/COVID-19DeathProjections/USDeaths) (none given)
- - US Army Engineer Research and Development Center (ERDC) (see [license](./data-processed/ERDC-SEIR/LICENSE.txt))
+ - US Army Engineer Research and Development Center (ERDC) (see [license](./data-processed/USACE-ERDC_SEIR/LICENSE.txt))
  - University of Arizona (CC-BY-NC-SA 4.0)
  - [University of California, Los Angeles](https://covid19.uclaml.org/) (CC-BY-4.0)
  - [University of Geneva / Swiss Data Science Center](https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/) (none given)
  - [University of Massachusetts - Expert Model](https://github.com/tomcm39/COVID19_expert_survey) (MIT)
  - [University of Massachusetts - Mechanistic Bayesian model](https://github.com/dsheldon/covid) (MIT)
+ - [The University of Michigan](https://gitlab.com/sabcorse/covid-19-collaboration) (cc-by-4.0)
  - [University of Texas-Austin](https://covid-19.tacc.utexas.edu/projections/) (BSD-3)
  - [YYG](http://covid19-projections.com) (MIT) 
  - COVIDhub ensemble forecast: this is a combination of the above models. 

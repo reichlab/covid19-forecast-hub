@@ -1,0 +1,19 @@
+team_name: Columbia_UNC
+model_name: Survival-Convolution Models
+model_abbr: Columbia_UNC-SurvCon
+model_contributors: Yuanjia Wang <yw2016@cumc.columbia.edu>, Donglin Zeng <dzeng@email.unc.edu>,
+  Qinxia Wang <qw2223@cumc.columbia.edu>, Shanghong Xie <sx2168@cumc.columbia.edu>
+website_url: https://github.com/COVID19BIOSTAT/covid19_prediction
+license: apache-2.0
+team_model_designation: primary
+methods: A survival-convolution model with piece-wise transmission rates that incorporates
+  latent incubation period and provides time-varying effective reproductive number.
+team_funding: NIH grant GM124104
+data_inputs: confirmed cases and deaths from JHU CSSE https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series
+citation: https://www.frontiersin.org/articles/10.3389/fpubh.2020.00325/full?&utm_source=Email_to_authors_&utm_medium=Email&utm_content=T1_11.5e1_author&utm_campaign=Email_publication&field=&journalName=Frontiers_in_Public_Health&id=561170
+methods_long: We predict COVID-19 daily new cases using a robust and parsimonious
+  survival-convolution model. We account for transmission during the pre-symptomatic
+  incubation period, use a time-varying effective reproductive number (Rt) to reflect
+  the temporal trend of transmission and change in response to a public health intervention,
+  and quantify uncertainty by permutation. We use a regression model to predict cumulative
+  deaths from estimated time-lagged cumulative total number of COVID-19 cases.

@@ -27,8 +27,9 @@ def configure_JHU_data(df, target):
     df_truth = df_truth.rename(columns={0: "value",
                                         "level_1": "location_long"})
 
+    fips_states = fips_codes[fips_codes['abbreviation'].notna()]
     # Get state IDs
-    df_truth = df_truth.merge(fips_codes, left_on='location_long', right_on='location_name', how='left')
+    df_truth = df_truth.merge(fips_states, left_on='location_long', right_on='location_name', how='left')
 
     # Drop NAs
     df_truth = df_truth.dropna(subset=['location', 'value'])
