@@ -13,3 +13,6 @@ covid19-forecast-hub.Rproj
 .vscode
 packrat/lib*/
 __pycache__
+.idea
+
+*.pyc

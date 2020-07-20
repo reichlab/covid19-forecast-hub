@@ -1,0 +1,36 @@
+team_name: Columbia University
+model_name: scenario_mid
+model_abbr: CU-scenario_mid
+model_contributors: Sen Pei, Teresa Yamana, Sasikiran Kandula, Wan Yang, Marta Galanti,
+  Jeffrey Shaman <jls106@cumc.columbia.edu>
+website_url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
+license: apache-2.0
+team_model_designation: other
+methods: We produce different intervention scenarios, assuming various interventions
+  and rates of compliance are implemented in the future. This projection assumes relatively
+  moderate transmission.
+team_funding: Supported by US NIH grant GM110748 and US NSF RAPID grant DMS2027369
+repo_url: https://github.com/shaman-lab/COVID-19Projection
+data_inputs: USAFACTS County-level confirmed cases and deaths
+citation: https://doi.org/10.1101/2020.03.21.20040303
+methods_long: 'This metapopulation county-level SEIR model makes projections of future
+  COVID-19 incidence and deaths.  We produce a number of different intervention scenarios,
+  each assuming various interventions and rates of compliance are implemented in the
+  future.     June 14 - present ''season4'': This scenario assumes that current contact
+  rates will remain unchanged in the future.  In addition, we assume a seasonal decrease
+  in disease transmission leading to a weekly 4% decrease in reproductive number R(t).
+  May 3 - June 7 ''80contactw5p'': For states maintaining or increasing current social
+  distancing restrictions, we apply a 20% weekly reductions of contact rates, as described
+  above. However, in states that reopen, we apply an increase to the contact rate
+  of counties in those states. In the first scenario, we apply a one-time 10% increase
+  to the contact rate during the week that the state is scheduled to reopen and maintain
+  this new increased rate for the remainder of the projection. April 12 - April 26
+  ''70contact'': This scenario mimics adaptive adjustments in contact imposed both
+  by government regulations (e.g. school closures, restrictions on mass gatherings)
+  and population self-regulation (e.g. isolation, mask wearing, social distancing).  Upon
+  initiation of projections, all counties with 10 or more confirmed cases impose a
+  30% contact rate reduction. Each week following, if a county newly exceeds 10 confirmed
+  cases, a 30% contact rate reduction is imposed, depending on the projection scenario.
+  Counties that had previously exceeded 10 confirmed cases and also experience an
+  increase in the number of weekly reported confirmed cases impose a further, multiplicative
+  30% contact rate reduction, depending on the projection scenario. '

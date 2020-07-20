@@ -1,0 +1,24 @@
+team_name: COVID-19 Simulator
+model_name: Simulator
+model_abbr: Covid19Sim-Simulator
+model_contributors: Jagpreet Chhatwal <jagchhatwal@mgh.harvard.edu>, Turgay Ayer <ayer@isye.gatech.edu>,  Benjamin
+  Linas <Benjamin.Linas@bmc.org>, Ozden Dalgic <ozden.onur.dalgic@gmail.com>, Peter
+  Mueller <PCMUELLER@mgh.harvard.edu>, Madeline Adee <MADEE@mgh.harvard.edu>, Mary
+  Ann (M.A.) Ladd <maladd@mgh-ita.org>, Jade Xiao <yxiao348@gatech.edu>
+website_url: https://covid19sim.org/
+license: cc-by-nc-4.0
+team_model_designation: primary
+methods: An interactive tool developed by researchers at Mass General Hospital, Harvard
+  Medical School, Georgia Tech and Boston Medical Center to inform COVID-19 intervention
+  policy decisions in the US.
+data_inputs: JHU CSSE, covidtracking.com
+methods_long: 'The COVID-19 Simulator uses a validated compartment model to simulate
+  the trajectory of COVID-19 at the state level from March 15, 2020 to August 31,
+  2020 in the United States. Utilizing the most recent data for each state, the COVID-19
+  Simulator considers state-specific disease spread dynamics. Specifically, to reproduce
+  the observed trends and project future cases of COVID-19, time-varying and state-specific
+  effective reproductive numbers are estimated and fed as inputs into a compartment
+  model. The compartment model is defined using Susceptible, Exposed, Infectious,
+  and Recovered compartments (i.e., SEIR model) with continuous time progression.
+  Model programming and analysis were performed in R (version 3.6.2), and the package
+  deSolve was used to solve the ordinary differential equation system. '

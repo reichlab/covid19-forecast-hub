@@ -1,0 +1,14 @@
+team_name: Collaborative team of Iowa State and Peking University
+model_name: Extended varying coefficient SEIR model
+model_abbr: ISUandPKU-vSEIdR
+model_contributors: 'Yumou Qiu <yumouqiu@iastate.edu>,  Song Xi Chen <csx@gsm.pku.edu.cn> '
+website_url: https://yumouqiu.shinyapps.io/covid-predict/
+license: cc-by-4.0
+team_model_designation: primary
+methods: 'Estimate the effective reproduction number and conduct forecast for the  number
+  of daily new cases and death based on an extended varying coefficient  SEIR model. '
+data_inputs: https://covidtracking.com; confirmed cases; reported fatalities; population
+methods_long: 'May 23: We propose an extended varying coefficient Susceptible-Exposed-Infected-Recovered
+  (vSEIdR) model, which extends the classical epidemic SIR and SEIR models by allowing
+  infections in the exposed E state. This would better capture the COVID-19 reality
+  that most infections are made before clinical diagnosed.'
