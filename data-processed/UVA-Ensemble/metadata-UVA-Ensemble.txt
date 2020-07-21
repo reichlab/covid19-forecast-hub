@@ -2,7 +2,7 @@ team_name: University of Virginia, Biocomplexity COVID-19 Response Team
 model_name: Ensemble model
 model_abbr: UVA-Ensemble
 model_contributors: Aniruddha Adiga (UVA),  Lijing Wang(UVA),  Srinivasan Venkatramanan (UVA), Akhil Sai Peddireddy (UVA), Bryan Lewis (UVA), Madhav Marathe (UVA), Jiangzhou Chen, Anil Vullikanti. 
-website_url:https://biocomplexity.virginia.edu/
+website_url: https://biocomplexity.virginia.edu/
 license:
 team_model_designation: primary
 methods: The forecasts are an ensemble of multiple methods such as auto-regressive (AR) models with exogenous variables, Long short-term memory () deep learning models, and PatchSim (an SEIR model) with interventions incorporated. 
