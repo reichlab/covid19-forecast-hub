@@ -1,0 +1,32 @@
+team_name: QJHong
+model_name: Encounter
+model_abbr: QJHong-Encounter
+model_contributors: Qi-Jun Hong <qhong@alumni.caltech.edu>
+website_url: https://qjhong.github.io
+license: cc-by-4.0
+team_model_designation: primary
+methods: today's "Daily New Confirmed Cases" + today's "Encounter Density"  ==> today's
+  newly infected Cases  ==> next 2-3 weeks' "Daily New Confirmed Cases"
+repo_url: https://github.com/qjhong/covid19
+data_inputs: Covid Tracking Project, and JHU
+citation: https://github.com/qjhong/covid19
+methods_long: '
+
+  today''s "Daily New Confirmed Cases" + today''s "Encounter Density" ==> today''s
+  newly infected Cases ==> next 2-3 weeks'' "Daily New Confirmed Cases" (Encounter
+  Density D data source: Unacast''s Social Distancing Scoreboard, which analyzes cell
+  phone location data, counts "Human Encounters", defined as two      cell phone devices
+  that were in the same place at the same time, and then derives the probability and
+  "Encounter Density".)
+
+  My model uses current "Encounter Density" D to predict future "Reproductive Number"
+  R and "Daily New Confirmed Cases". This is the most fundamental idea and    assumption
+  in this model.
+
+  The strong correlation between R and D (D is shifted by 22 days) is evident. While
+  social distancing quickly brought down R, easing policy is slowly increasing R back
+  above 1.
+
+  Using (1) R and D relation in the past as a training set, (2) future D as input,
+  and (3) machine learning / regression, my model can predict future R, and ultimately
+  future Daily New Cases.'

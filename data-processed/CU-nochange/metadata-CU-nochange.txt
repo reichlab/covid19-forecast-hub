@@ -1,36 +1,17 @@
 team_name: Columbia University
-team_abbr: CU
-institution_affil: Columbia University
-team_contact: Jeffrey Shaman jls106@cumc.columbia.edu
-team_funding: Supported by US NIH grant GM110748 and US NSF RAPID grant DMS2027369
-team_experience: Won first 2 CDC FluSight Challenges, finished in top 5 in all other FluSight challenges
-
 model_name: nochange
-model_abbr: nochange
-model_output: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
-model_repo: https://github.com/shaman-lab/COVID-19Projection
-
-model_contributors: Sen Pei, Teresa Yamana, Sasikiran Kandula, Wan Yang, Marta Galanti, Jeffrey Shaman
-model_targets: daily new confirmed case, daily new infection (both reported and unreported), daily hospitalizations, daily deaths, cumulative deaths
-target_loc: county, aggregated to state and national
-Time_horizon: Six weeks ahead
-Data_format: 1, 2.5, 5 through 95 in increments of 5, 97.5 and 99 percentiles
-forecast_startdate: 2020-05-31
-forecast_frequency: 1-2x weekly
-
-data_inputs_known: County-level confirmed cases and deaths
-data_source_known: USAFACTS. https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/
-
-this_model_is_an_ensemble: false
-this_model_is_unconditional: false
-
-methods: >-
-    This metapopulation county-level SEIR model assumes that current contact rates will remain unchanged in the future.
-
-methods_long: >-
-    This Metapopulation county-level SEIR model assumes that current contact rates will remain unchanged in the future.
-    Estimates of spatio-temporal COVID-19 infections, hospitalizations and deaths were 
-    calculated for all US counties. 
-   
-    
-Citation: "Sen Pei, Jeffrey Shaman, Initial Simulation of SARS-CoV2 Spread and Intervention Effects in the Continental US. medRxiv.doi: https://doi.org/10.1101/2020.03.21.20040303"
+model_abbr: CU-nochange
+model_contributors: Sen Pei, Teresa Yamana, Sasikiran Kandula, Wan Yang, Marta Galanti,
+  Jeffrey Shaman <jls106@cumc.columbia.edu>
+website_url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
+license: apache-2.0
+team_model_designation: other
+methods: This metapopulation county-level SEIR model assumes that current contact
+  rates will remain unchanged in the future.
+team_funding: Supported by US NIH grant GM110748 and US NSF RAPID grant DMS2027369
+repo_url: https://github.com/shaman-lab/COVID-19Projection
+data_inputs: USAFACTS County-level confirmed cases and deaths
+citation: https://doi.org/10.1101/2020.03.21.20040303
+methods_long: 'This Metapopulation county-level SEIR model assumes that current contact
+  rates will remain unchanged in the future. Estimates of spatio-temporal COVID-19
+  infections, hospitalizations and deaths were  calculated for all US counties. '

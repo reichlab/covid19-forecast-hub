@@ -1,31 +1,23 @@
 team_name: Iowa State - Lily Wang's Research Group
-team_abbr: IowaStateLW
-institution_affil: Iowa State University - Department of Statistics
-team_funding:  
-team_experience: Spatiotemporal data analysis, motality studies
-
 model_name: Spatiotemporal Epidemic Modeling
-model_abbr: STEM
-model_output:  https://covid19.stat.iastate.edu
-model_repo:  
-
-model_contributors: Lily Wang <lilywang@iastate.edu> Guannan Wang <gwang01@wm.edu> Lei Gao <lgao@iastate.edu> Xinyi Li <xli@samsi.info> Shan Yu <syu@iastate.edu> Myungjin Kim <mjkim@iastate.edu> Yueying Wang <yueyingw@iastate.edu> Zhiling Gu <zlgu@iastate.edu>
-Model_targets: day ahead cumulative death 
-
-Target_loc: US, 48 mainland states and District of Columbia
-time_horizon: 
-Data_format: prediction and quantiles
-forecast_startdate: 2020-04-27
-forecast_frequency: daily
-
-data_inputs_known: County-level infected case and death data
-data_source_known: New York Times -nytimes/covid-19-data, health department webpages
-
-this_model_is_an_ensemble: false
-this_model_is_unconditional: false
-
-methods: >-
-    Spatiotemporal Dynamics, Nowcasting and Forecasting of COVID-19 in the United States.
-
-methods_long: >-
-    We develop a nonparametric space-time disease transmission model for the epidemic data, and to study the spatial-temporal pattern in the spread of COVID-19 at the county level. The proposed methodology can be used to dissect the spatial structure and dynamics of spread, as well as to forecast how this outbreak may unfold through time and space in the future. The projections assume that the data used is reliable, the future will continue to follow the current pattern, and current interventions will remain the same till the end of forecasting period.
+model_abbr: IowaStateLW-STEM
+model_contributors: Lily Wang <lilywang@iastate.edu>, Guannan Wang <gwang01@wm.edu>,
+  Lei Gao <lgao@iastate.edu>, Xinyi Li <xli@samsi.info>, Shan Yu <syu@iastate.edu>,
+  Myungjin Kim <mjkim@iastate.edu>, Yueying Wang <yueyingw@iastate.edu>, Zhiling Gu
+  <zlgu@iastate.edu>
+website_url: https://covid19.stat.iastate.edu
+license: cc-by-4.0
+team_model_designation: primary
+methods: Spatiotemporal Dynamics, Nowcasting and Forecasting of COVID-19 in the United
+  States.
+data_inputs: New York Times -nytimes/covid-19-data, health department webpages,  County-level
+  infected case and death data
+methods_long: We develop a nonparametric space-time disease transmission model for
+  the epidemic data, and to study the spatial-temporal pattern in the spread of COVID-19
+  at the county level. The proposed methodology can be used to dissect the spatial
+  structure and dynamics of spread, as well as to forecast how this outbreak may unfold
+  through time and space in the future. The projections assume that the data used
+  is reliable, the future will continue to follow the current pattern, and current
+  interventions will remain the same till the end of forecasting period.
+citation: https://arxiv.org/abs/2004.14103 
+twitter_handles: LilyWan84496995

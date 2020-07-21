@@ -1,36 +1,38 @@
-# Metadata dictionary
+# Metadata file structure
 
-Each model is required to have metadata in yaml format.
+Each model is required to have metadata in 
+[yaml format](https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html), 
+e.g. [see this metadata file](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/JHU_IDD-CovidSP/metadata-JHU_IDD-CovidSP.txt).
 This file describes each of the variables (keys) in the yaml document.
+Please order the variables in this order.
+
 
 ## Required variables
 
 ### team_name
-
 The name of your team that is less than 50 characters.
 
-### team_abbr
-
-An abbreviated name for your team that is less than 15 alphanumeric characters and cannot 
-inlucde a dash (-) or a whitespace. 
-
 ### model_name
-
 The name of your model that is less than 50 characters.
 
 ### model_abbr
+An abbreviated name for your model that is less than 30 alphanumeric characters. The model abbreviation must be in the format of `[team_abbr]-[model_abbr]`. where each of the `[team_abbr]` and `[model_abbr]` are text strings that are each less than 15 alphanumeric characters that do not include a hyphen or whitespace  Note that this is a uniquely identifying field in our system, so please choose this name carefully, as it may not be changed once defined. An example of a valid `model_abbr` is `UMass-MechBayes` or `UCLA-SuEIR`. 
 
-An abbreviated name for your model that is less than 15 alphanumeric characters and cannot
-include a dash (-) or a whitespace.
+### model_contributors
 
-### methods
+A list of all individuals involved in the forecasting effort
+affiliations, and email address.
+At least one contributor needs to have a valid email address. 
+All email addresses provided will be added to 
+an email distribution list for model contributors.
 
-A brief description of your forecasting methodology that is less than 200 
-characters.
+The syntax of this field should be 
+
+    name1 (affiliation1) <user@address>, name2 (affiliation2) <user2@address2>
 
 ### website_url
 
-(previously named `model_url`)
+(previously named `model_output`)
 
 A url to a website that has additional data about your model. 
 We encourage teams to submit the most user-friendly version of your 
@@ -43,9 +45,11 @@ please include that link here.
 
 ### license
 
-One of [these license keywords](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/licensing-a-repository) or "LICENSE.txt" 
-(if none of these license keywords are appropriate).
-We encourage teams to submit as a CC-BY-4.0.
+One of [licenses](https://github.com/reichlab/covid19-forecast-hub/blob/master/code/validation/accepted-licenses.csv).
+
+We encourage teams to submit as a "cc-by-4.0" to allow the broadest possible uses
+including private vaccine production 
+(which would be excluded by the "cc-by-nc-4.0" license). 
 If the value is "LICENSE.txt", 
 then a LICENSE.txt file must exist within the folder and provide a license.
 
@@ -67,11 +71,13 @@ Models proposed as “other” will not be ranked in evaluations
 in the ensemble.
 
 
+### methods
+
+A brief description of your forecasting methodology that is less than 200 
+characters.
+
+
 ## Optional
-
-### repo_url
-
-A github (or similar) repository url. 
 
 ### institional_affil
 
@@ -81,22 +87,20 @@ University or company names, if relevant.
 
 Like an acknowledgement in a manuscript, you can acknowledge funding here.
 
+### repo_url
 
-### model_contributors
+(previously `model_repo`)
 
-A list of all individuals involved in the forecasting effort. 
-At least one contributor needs to have a valid email address. 
-Any email addresses provided will be added to 
-an email distribution list for model contributors.
+A github (or similar) repository url. 
 
-The syntax of this field should be 
+### twitter_handles
 
-    name1 <user@address>, name2 <user2@address2>
+One or more twitter handles (without the @) separated by commas.
 
 
 ### data_inputs
 
-(previously `data_inputs_known`)
+(previously `data_inputs_known` and `data_source_known`)
 
 A description of the data sources used to inform the model, 
 e.g. "NYTimes death data", "JHU CSSE case and death data", mobility data, etc. 
@@ -104,7 +108,8 @@ e.g. "NYTimes death data", "JHU CSSE case and death data", mobility data, etc.
 
 ### this_model_is_an_ensemble
 
-DEPRECATED
+_**DEPRECATED**_: please remove from metadata file. 
+In the future, inclusion of this field will be an error.
 
 true/false indicating whether the model here is a combination of a set of other
 models
@@ -115,9 +120,6 @@ models
 A url (doi link preferred) to an extended description of your model,
 e.g. blog post, website, preprint, or peer-reviewed manuscript. 
 
-### twitter_handles
-
-One or more twitter handles (without the @) separated by commas.
 
 
 ### methods_long

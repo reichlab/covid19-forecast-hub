@@ -1,30 +1,21 @@
 team_name: Predictive Science Inc
-team_abbr: PSI
-institution_affil: None
-team_funding: NSF
-team_experience: FluSight challenges since 2015/2016
-
 model_name: Disease Rapid Analysis and Forecasting Tool
-model_abbr: DRAFT
-model_output: daily infection incidence, ICU incidence, death incidence
-model_repo: https://github.com/predsci/DRAFT
+model_abbr: PSI-DRAFT
+model_contributors: James Turtle <jturtle@predsci.com>,  Michal Ben-Nun <mbennun@predsci.com>,  Pete
+  Riley <pete@predsci.com>
+website_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/PSI-DRAFT
+license: mit
+team_model_designation: primary
+methods: 'A stochastic/deterministic, single-population SEIRX model that stratifies
+  by both age distribution and disease severity and includes generic intervention
+  fitting. '
+team_funding: NSF
+repo_url: https://github.com/predsci/DRAFT
+data_inputs: JHU cumulative deaths,  U.S. Census populations and age distributions
+methods_long: "Deterministic fit of a compartmental SEIRX model to cumulative death
+  profiles, followed by stochastic simulations using the optimal parameters. All compartments
+  are stratified by age. 'I' compartments are additionally divided by disease severity
+  into Asymptomatic, Mild, Flu-like, and Severe.  Severe disease is defined by the
+  need for an ICU bed. Interventions are fit generically to a three value smooth function.  Forward
+  projections are conditional on interventions/reproductive number remaining unchanged.\n Updates:\n July 20 - model is fit using MCMC procedure"
 
-model_contributors: Jamie Turtle <jturtle@predsci.com>, Michal Ben-Nun <mbennun@predsci.com>, Pete Riley <pete@predsci.com>
-Model_targets: N-day ahead cumulative deaths, N-week ahead cumulative deaths
-Target_loc: US, all states
-time_horizon: 0-42 days
-Data_format: all requested quantiles
-forecast_startdate: 2020-05-18
-forecast_frequency: weekly
-
-data_inputs_known: cumulative deaths, U.S. age distribution
-data_source_known: JHU, worldpop
-
-this_model_is_an_ensemble: false
-this_model_is_unconditional: false
-
-methods: >-
-    A stochastic/deterministic, single-population SEIRX model that stratifies by both age distribution and disease severity and includes generic intervention fitting. 
-
-methods_long: >-
-    May 18: Deterministic fit of a compartmental SEIRX model to cumulative death profiles, followed by stochastic simulations using the optimal parameters. All compartments are stratified by age. 'I' compartments are additionally divided by disease severity into Asymptomatic, Mild, Flu-like, and Severe.  Severe disease is defined by the need for an ICU bed. Interventions are fit generically to a two value smooth function.  Forward projections are conditional on interventions/reproductive number remaining unchanged.  

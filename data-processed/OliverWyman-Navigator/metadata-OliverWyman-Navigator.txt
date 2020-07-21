@@ -1,28 +1,28 @@
 team_name: Oliver Wyman
-team_abbr: OliverWyman
-institution_affil: N/A
-team_funding: N/A
-team_experience: Extensive experience applying mathematics to industry phenomena 
-
 model_name: Pandemic Navigator
-model_abbr: Navigator
-model_output: https://pandemicnavigator.oliverwyman.com/
-model_repo: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/OliverWyman-Navigator
-
-model_contributors: Ugur Koyluoglu <ugur.koyluoglu@oliverwyman.com>, John Milliken <john.milliken@oliverwyman.com> 
-Model_targets: daily new cases, daily active cases, daily deaths (daily and weekly incident and cumulative deaths provided for Reich Lab)
-Target_loc: US (nationally), all states (individually), county level forecasts for US available
-time_horizon: Up to 4 weeks from forecast date
-Data_format: all requested quantiles
-forecast_startdate: 2020-06-08
-forecast_frequency: daily (forecasts have been published daily on Oliver Wyman website since early April)
-
-data_inputs_known: reported daily confirmed cases, reported daily deaths
-data_source_known: JHU
-
-this_model_is_an_ensemble: false
-
-methods: >-
-        Oliver Wyman's Pandemic Navigator provides forecasts and scenario analysis for Detected and Undetected cases and death counts following a compartmental formulation with non-stationary transition rates. For more: https://pandemicnavigator.oliverwyman.com/
-methods_long: >-
-    Oliver Wyman's COVID-19 Pandemic Navigator provides forecasts and scenario analysis for Detected and Undetected cases and deaths. Our compartmental models are based on a discrete form of nonlinear differential equations, parameterized with dynamic functions (i.e. time-dependent transition rates) that incorporate: (1) the modeled effects of physical distancing and government actions; (2) evolving testing practices in terms of timeliness and scale; (3) the link to tracking and contact tracing, and (4) other region-specific characteristics. Our formulation draws on core methods from both epidemiology and physics. It is data-driven to characterize non-linear transition rates and posits underlying causal mechanisms that we have verified against mobility indices representing physical distancing in mass scale and government response actions.  Our models recalibrate daily with the arrival of new information on COVID-19.  By design, the calibration of our models use region-specific data, as the differences in the timing and execution of government restrictions, testing, population density, social behaviour norms and public responses, re-opening plans, and demographics are extremely relevant. Additional details on our approach, as well as selected forecast results, can be found at: https://pandemicnavigator.oliverwyman.com/
+model_abbr: OliverWyman-Navigator
+model_contributors: 'Ugur Koyluoglu <ugur.koyluoglu@oliverwyman.com>, John Milliken
+  <john.milliken@oliverwyman.com> '
+website_url: https://pandemicnavigator.oliverwyman.com/
+license: other
+team_model_designation: primary
+methods: Oliver Wyman's Pandemic Navigator provides forecasts & scenario analysis
+  for Detected and Undetected cases and death counts following a compartmental formulation
+  with non-stationary transition rates.
+data_inputs: reported daily confirmed cases, reported daily deaths
+methods_long: 'Oliver Wyman''s COVID-19 Pandemic Navigator provides forecasts and
+  scenario analysis for Detected and Undetected cases and deaths. Our compartmental
+  models are based on a discrete form of nonlinear differential equations, parameterized
+  with dynamic functions (i.e. time-dependent transition rates) that incorporate:
+  (1) the modeled effects of physical distancing and government actions; (2) evolving
+  testing practices in terms of timeliness and scale; (3) the link to tracking and
+  contact tracing, and (4) other region-specific characteristics. Our formulation
+  draws on core methods from both epidemiology and physics. It is data-driven to characterize
+  non-linear transition rates and posits underlying causal mechanisms that we have
+  verified against mobility indices representing physical distancing in mass scale
+  and government response actions.  Our models recalibrate daily with the arrival
+  of new information on COVID-19.  By design, the calibration of our models use region-specific
+  data, as the differences in the timing and execution of government restrictions,
+  testing, population density, social behaviour norms and public responses, re-opening
+  plans, and demographics are extremely relevant. Additional details on our approach,
+  as well as selected forecast results, can be found at: https://pandemicnavigator.oliverwyman.com/'

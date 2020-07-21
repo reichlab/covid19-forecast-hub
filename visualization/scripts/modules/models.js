@@ -35,7 +35,7 @@ const writeModelMetadata = (data, modelDir) => {
  */
 const getModelId = modelDir => {
   let meta = getModelMetadata(modelDir)
-  return `${meta.team_abbr}-${meta.model_abbr}`
+  return `${meta.model_abbr}`
 }
 
 /**

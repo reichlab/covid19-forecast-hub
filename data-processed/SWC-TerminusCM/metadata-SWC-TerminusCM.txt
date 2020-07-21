@@ -1,30 +1,12 @@
 team_name: Snyder Wilson Consulting
-team_abbr: SWC
-institution_affil: None
-team_contact: tsnyder701@gmail.com
-team_funding: N/A
-team_experience: Data Science
-
 model_name: Terminus Compartmental Model
-model_abbr: TerminusCM
-model_output: N/A
-model_repo: https://github.com/tsnyder701/terminus
-
+model_abbr: SWC-TerminusCM
 model_contributors: Timothy L. Snyder <tsnyder701@gmail.com>, Davison D. Wilson <davisondwilson@gmail.com>
-model_targets: daily new exposures, daily new illnesses (both reported and unreported), daily hospitalizations, daily deaths
-target_loc: state, aggregated to national
-time_horizon: six weeks ahead, by day
-data_format: 1, 2.5, 5 through 95 increments of 5, 97.5, and 99 quantiles
-forecast_startdate: 2020-05-26
-forecast_frequency: 1-2x weekly
-
-data_inputs_known: County-level confirmed cases and deaths, state-level hospitalizations, policy change dates
-data_source1: usafacts.org
-data_source2: covidtracking.com
-
-this_model_is_an_ensemble: false
-this_model_is_unconditional: true
-
-methods: >-
-    Terminus is a mechanistic Compartmental Model using disease parameter estimates from literature. It uses Bayesian inference to predict the most likely model parameters.
-
+website_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/SWC-TerminusCM
+license: cc-by-4.0
+team_model_designation: primary
+methods: Terminus is a mechanistic Compartmental Model using disease parameter estimates
+  from literature. It uses Bayesian inference to predict the most likely model parameters.
+repo_url: https://github.com/tsnyder701/terminus
+data_inputs: County-level confirmed cases and deaths, state-level hospitalizations,
+  policy change dates

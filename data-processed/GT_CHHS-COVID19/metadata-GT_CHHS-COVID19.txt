@@ -1,33 +1,22 @@
 team_name: Georgia Institute of Technology Center for Health and Humanitarian Systems
-team_abbr: GT_CHHS
-institution_affil: Georgia Institute of Technology
-team_funding: 
-team_experience:
-
 model_name: COVID19
-model_abbr: COVID19
-model_output: 
-model_repo: https://github.com/pkeskinocak/COVID19GA
-
-model_contributors: Pinar Keskinocak (Georgia Tech)<pinar@isye.gatech.edu>, Buse Eylul Oruc Aglar (Georgia Tech)<beo.aglar@gatech.edu>, Arden Baxter (Georgia Tech)<abaxter@gatech.edu>, John Asplund (Georgia Tech and Metron, Inc.), Nicoleta Serban (Georgia Tech)
-Model_targets: wk ahead cumulative deaths, wk ahead inc deaths
-Target_loc: GA, NC
-time_horizon:
-Data_format: all requested quantiles
-forecast_startdate: 2020-05-31
-forecast_frequency: weekly
-
-data_inputs_known: cases
-data_source_known: Georgia Department of Public Health
-
-this_model_is_an_ensemble: false
-this_model_is_unconditional: false
-
-methods: >-
-    Agent-based simulation model to project COVID19 infection spread.
-
-methods_long: >-
-    We developed an agent-based simulation model to predict the spread of COVID19 geographically and over time. The model captures both the
-    natural history of the disease and interactions in households, workplaces, schools, and communities. The model was populated
-    with COVID19 parameters from the literature and population-related data from the state of Georgia, including demographic information,
-    household sizes, and travel patterns, and validated using data regarding COVID19 confirmed cases and deaths in Georgia. We have also extended our model to include results for North Carolina using population-related data from the state of North Carolina.
+model_abbr: GT_CHHS-COVID19
+model_contributors: Pinar Keskinocak (Georgia Tech) <pinar@isye.gatech.edu>, 
+    Buse Eylul Oruc Aglar (Georgia Tech) <beo.aglar@gatech.edu>, 
+    Arden Baxter (Georgia Tech) <abaxter@gatech.edu>, 
+    John Asplund (Georgia Tech and Metron, Inc.), 
+    Nicoleta Serban (Georgia Tech)
+website_url: https://github.com/pkeskinocak/COVID19GA
+license: cc-by-4.0
+team_model_designation: primary
+methods: Agent-based simulation model to project COVID19 infection spread.
+institution_affil: Georgia Institute of Technology
+data_inputs: Georgia Department of Public Health
+methods_long: "We developed an agent-based simulation model to predict the spread of COVID19 \
+    \ geographically and over time. The model captures both the \
+    \ natural history of the disease and interactions in households, workplaces, schools, and communities. \
+    \ The model was populated with COVID19 parameters from the literature and population-related data \
+    \ from the state of Georgia, including demographic information,\
+    \ household sizes, and travel patterns, and validated using data regarding COVID19 confirmed cases \
+    \ and deaths in Georgia. We have also extended our model to include results for North Carolina using \
+    population-related data from the state of North Carolina."

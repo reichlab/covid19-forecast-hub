@@ -1,34 +1,17 @@
 team_name: CovidActNow
-team_abbr: CovidActNow
-institution_affil: covidactnow.org
-team_funding: ~
-team_experience: Mathematical modeling of covid transmission at state/county level and UI reporting since Apr. 2020.
-
 model_name: SEIR_CAN
-model_abbr: SEIR_CAN
-model_output: https://covidactnow.org/
-model_repo: https://github.com/covid-projections/covid-data-model
-
-model_contributors: Eric Carlson <eric.carlson@grandrounds.com> Max Henderson <max@maxhenderson.com> Chris Kelly <ghop02@gmail.com> Igor Kofman <kofman@gmail.com> Xinyu Zhang <xinyu.zhang@grandrounds.com>
-
-Model_targets: day ahead cum death, day ahead inc death, day ahead inc hosp, wk ahead cum death, wk ahead inc death
-
-Target_loc: some states
-time_horizon: ~
-Data_format: all requested quantiles
-forecast_startdate: 2020-06-01
-forecast_frequency: daily and weekly
-
-data_inputs_known: expert elicitation and literature review
-data_source_known: NYTimes for case and death data
-
-this_model_is_an_ensemble: false
-this_model_is_unconditional: true
-
-methods: >-
-    Forecast by model built by PhDs in epidemiology and physics, based on expert opinions in public health and
-    epidemiology of infectious disease, and updated based on daily feed data in cases, deaths, and hostpitalizations.
-
-methods_long: >-
-    The SEIR Model makes forecast of cumulative deaths, incident deaths, incident hospitalizations by fitting predicted cases, deaths, and hospitalizations to
-    the observations. Quantiles of the forecast are derived from forecast error (comparing latest observation and corresponding forecast) rescaled based on days forward of forecast. 
+model_abbr: CovidActNow-SEIR_CAN
+model_contributors: Eric Carlson <eric.carlson@grandrounds.com>, Max Henderson <max@maxhenderson.com>,
+  Chris Kelly <ghop02@gmail.com>, Igor Kofman <kofman@gmail.com>, Xinyu Zhang <xinyu.zhang@grandrounds.com>
+website_url: https://covidactnow.org/
+license: cc-by-4.0
+team_model_designation: primary
+methods: SEIR model forecasts of cumulative deaths, incident deaths, incident hospitalizations  by
+  fitting predicted cases, deaths, and hospitalizations to the observations.
+repo_url: https://github.com/covid-projections/covid-data-model
+data_inputs: NYTimes for case and death data
+methods_long: 'The SEIR Model makes forecast of cumulative deaths, incident deaths,
+  incident hospitalizations by fitting predicted cases, deaths, and hospitalizations
+  to the observations. Quantiles of the forecast are derived from forecast error (comparing
+  latest observation and corresponding forecast) rescaled based on days forward of
+  forecast. '
