@@ -566,7 +566,6 @@ file_path,validation_date
 ./data-processed/epiforecasts-ensemble1/2020-07-13-epiforecasts-ensemble1.csv,2020-07-14 04:05:13.846311
 ./data-processed/GT-DeepCOVID/2020-07-13-GT-DeepCOVID.csv,2020-07-14 04:05:15.911419
 ./data-processed/NotreDame-FRED/2020-07-13-NotreDame-FRED.csv,2020-07-14 04:05:16.060618
-./data-processed/QJHong-Encounter/2020-07-13-QJHong-Encounter.csv,2020-07-14 11:05:59.873684
 ./data-processed/COVIDhub-ensemble/2020-07-13-COVIDhub-ensemble.csv,2020-07-14 17:46:02.548016
 ./data-processed/STH-3PU/2020-07-14-STH-3PU.csv,2020-07-14 17:46:02.640512
 ./data-processed/MOBS-GLEAM_COVID/2020-04-20-MOBS-GLEAM_COVID.csv,2020-07-15 22:14:47.873506
@@ -658,5 +657,7 @@ file_path,validation_date
 ./data-processed/YYG-ParamSearch/2020-07-21-YYG-ParamSearch.csv,2020-07-21 14:22:31.282947
 ./data-processed/Covid19Sim-Simulator/2020-07-19-Covid19Sim-Simulator.csv,2020-07-21 14:22:44.378044
 ./data-processed/STH-3PU/2020-07-21-STH-3PU.csv,2020-07-21 14:22:44.667610
-./data-processed/Karlen-pypm/2020-07-20-Karlen-pypm.csv,2020-07-21 20:39:55.423843
 ./data-processed/COVIDhub-ensemble/2020-07-20-COVIDhub-ensemble.csv,2020-07-21 20:40:02.218597
+./data-processed/STH-3PU/2020-07-22-STH-3PU.csv,2020-07-22 11:10:59.859648
+./data-processed/YYG-ParamSearch/2020-07-22-YYG-ParamSearch.csv,2020-07-23 11:11:47.160726
+./data-processed/Karlen-pypm/2020-07-20-Karlen-pypm.csv,2020-07-23 11:11:47.874459
