@@ -1,7 +1,7 @@
 team_name: University of California Merced MESA Lab
 team_abbr: UCM_MESALab 
 model_name: Fractional order Generalized SEIR model
-model_abbr: FoGSEIR
+model_abbr: UCM_MESALab-FoGSEIR
 model_contributors: 
         YangQuan Chen (Department of Engineering, University of California, Merced) <ychen53@ucmerced.edu>
         Yanting Zhao (Department of Automation, University of Science and Technology of China) <zyt9lsb@mail.ustc.edu.cn>
