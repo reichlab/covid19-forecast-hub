@@ -1,0 +1,28 @@
+team_name: Carnegie Mellon Delphi Group
+model_name: TimeSeries
+model_abbr: CMU-TimeSeries
+model_contributors: Alden Green (Lead modeler, Carnegie Mellon University) 
+  <ajgreen@andrew.cmu.edu>, Valerie Ventura (Carnegie Mellon University), Larry Wasserman 
+  (Carnegie Mellon University), Jacob Bien (University of Southern California), Logan Brooks 
+  (Carnegie Mellon University), Addison Hu (Carnegie Mellon University), Maria Jahja (Carnegie 
+  Mellon University), Balasubramanian Narasimham (Stanford University), Samyak Rajanala 
+  (Stanford University), Aaron Rumack (Carnegie Mellon University), Noah Simon (University of 
+  Washington), Rob Tibshirani (Stanford University), Ryan Tibshirani (Carnegie Mellon 
+  University), and the Delphi COVID-19 Response Team
+website_url: https://delphi.cmu.edu
+license: cc-by-4.0
+team_model_designation: primary
+methods: A basic AR-type time series model fit using lagged values of case counts and deaths as 
+  features. No assumptions are made regarding reopening or governmental interventions.
+team_funding: CDC Center of Excellence, gifts from Google and Facebook
+data_inputs: JHU CSSE confirmed case counts and deaths
+citation: 
+methods_long: "A basic AR-type time series model fit using lagged values of case counts and\
+  \ deaths as features. No assumptions are made regarding reopening or governmental\
+  \ interventions. The model is jointly fit across all 50 US states, after some time-alignment\
+  \ is performed as a preprocessing step to facilitate comparison between states. Heavier\
+  \ weight is placed on more recent training data, to account for nonstationarity in the\
+  \ underlying process. A lasso penalty is added to induce variable selection and prevent\
+  \ overfitting. Quantiles are computed using a residual (Gaussian) bootstrap, separately for\
+  \ each location."
+
