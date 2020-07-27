@@ -89,6 +89,7 @@ repository are (with data reuse license):
  - [IHME](https://covid19.healthdata.org/united-states-of-america) (CC-AT-NC-4.0)
  - [Iowa State University](http://www.covid19dashboard.us/) (none given)
  - [Iowa State University and Peking University](https://yumouqiu.shinyapps.io/covid-predict/) (none given)
+ - [Karlen Working Group](https://pypm.github.io/home/) (gpl-3.0)
  - [LANL](https://covid-19.bsvgateway.org/) (see [license](./data-processed/LANL-GrowthRate/LICENSE.txt))
  - [Imperial](https://github.com/sangeetabhatia03/covid19-short-term-forecasts) (CC-BY-NC-ND 4.0)
  - [Johns Hopkins ID Dynamics COVID-19 Working Group](https://github.com/HopkinsIDD/COVIDScenarioPipeline) (MIT)
@@ -105,8 +106,9 @@ repository are (with data reuse license):
  - [University of Geneva / Swiss Data Science Center](https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/) (none given)
  - [University of Massachusetts - Expert Model](https://github.com/tomcm39/COVID19_expert_survey) (MIT)
  - [University of Massachusetts - Mechanistic Bayesian model](https://github.com/dsheldon/covid) (MIT)
- - [The University of Michigan](https://gitlab.com/sabcorse/covid-19-collaboration) (cc-by-4.0)
+ - [University of Michigan](https://gitlab.com/sabcorse/covid-19-collaboration) (cc-by-4.0)
  - [University of Texas-Austin](https://covid-19.tacc.utexas.edu/projections/) (BSD-3)
+ - [University of Virginia](https://biocomplexity.virginia.edu/) (cc-by-4.0)
  - [YYG](http://covid19-projections.com) (MIT) 
  - COVIDhub ensemble forecast: this is a combination of the above models. 
 

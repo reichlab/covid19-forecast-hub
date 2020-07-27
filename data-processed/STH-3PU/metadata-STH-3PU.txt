@@ -1,25 +1,27 @@
 team_name: STH
 model_name: 3 Phase Unadjusted
 model_abbr: STH-3PU
-model_contributors: 'Steve Horstman <covid19_model@nym.hush.com> '
+model_contributors: >-
+    Steve Horstman <covid19_model@nym.hush.com> 
 website_url: https://public.tableau.com/profile/covid19model#!/vizhome/COVID-19DeathProjections/USDeaths
+twitter_handles: STHorstman
 license: cc-by-4.0
 team_model_designation: primary
-methods: 'Model assumes pandemics hit in 3 distinct phases. Each phase can be represented
-  by a single variable and therefore the variables can be isolated. '
-twitter_handles: STHorstman
-data_inputs: reported deaths, government restrictions and recommendations, mobility
-  data, surveys on isolation behavior
-methods_long: "Simplified model: Deaths(x) = Deaths(x-1)*R  * (1-E) * (1-H) where\n\
-  \            R is the rate of growth in a given society with no prior infections\
-  \ and no societal intervention.\n            E is the effectiveness of societal\
-  \ interventions such as social distancing, face masks, etc.\n            H is the\
-  \ % of the population with immunity to the virus\n    In modeling E known societal\
-  \ restrictions are used for near-term projections. Projections greater than 1 month\
-  \ out assume that \n            effectiveness will be adjusted relative to the daily\
-  \ deaths at that location on April 30. i.e.  The more that day's deaths is below\
-  \ the April 30,\n            mark the greater the effectiveness will be reduced\
-  \ and the more that day's deaths exceed deaths on April 30, the more the effectiveness\
-  \ is increased.\n    In modeling H, death totals and not infection totals are used.\
-  \ Current assumptions being a 0.50% death rate and 20% of the population had \n\
-  \            some prior resistance."
+
+methods: >-
+    Model assumes pandemics hit in 3 distinct phases. Each phase can be represented by a single function and therefore the variables can be isolated. 
+
+data_inputs: reported deaths, government restrictions and recommendations, mobility data, surveys on isolation behavior
+this_model_is_an_ensemble: false
+
+
+methods_long: >-
+    Simplified model: Deaths(x) = Deaths(x-1)*R  * (1-E) * (1-H) where
+                R is the rate of growth in a given society with no prior infections and no societal intervention.
+                E is the effectiveness of societal interventions such as social distancing, face masks, etc. 
+                H is the % of the population with immunity to the virus
+        In modeling E known societal restrictions are used for near-term projections. Projections greater than 1 month out assume that 
+                effectiveness will be adjusted relative to the daily deaths at that location on April 30. i.e.  The more that day's deaths is below the April 30,
+                mark the greater the effectiveness will be reduced and the more that day's deaths exceed deaths on April 30, the more the effectiveness is increased.
+        In modeling H, death totals and not infection totals are used. Current assumptions being a 0.50% death rate and 20% of the population had 
+                some prior resistance.
