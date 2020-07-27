@@ -1,0 +1,9 @@
+team_name: University of Virginia, Biocomplexity COVID-19 Response Team
+model_name: Ensemble model
+model_abbr: UVA-Ensemble
+model_contributors: Aniruddha Adiga (UVA)<aniruddha@virginia.edu>,  Lijing Wang(UVA),  Srinivasan Venkatramanan (UVA), Akhil Sai Peddireddy (UVA), Bryan Lewis (UVA), Madhav Marathe (UVA), Jiangzhou Chen, Anil Vullikanti.
+website_url: https://biocomplexity.virginia.edu/
+license: cc-by-4.0
+team_model_designation: primary
+methods: An ensemble of multiple methods such as auto-regressive (AR) models with exogenous variables, Long short-term memory (lSTM) models, and PatchSim (an SEIR model).
+methods_long: "This is a Virginia county-level multi-method model forecasting the new confirmed cases. Multiple methods include AR methods with exogenous variables such as mobility, other county case counts time-series, an LSTM model with mobility data as additional predictor, and PatchSim, variant of SEIR with interaction  between counties modeled using commuter data (model calibrated on new confirmed cases). The model forecasts are combined using Bayesian model averaging."
