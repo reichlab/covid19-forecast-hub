@@ -1,0 +1,11 @@
+team_name: Karlen Working Group
+model_name: python Population Modeller
+model_abbr: Karlen-pypm
+model_contributors: Dean Karlen (University of Victoria and TRIUMF) <karlen@uvic.ca>
+website_url: https://pypm.github.io/home/
+license: gpl-3.0
+team_model_designation: primary
+methods: Discrete-time difference equations with long periods of constant transmission rate
+team_funding: none
+data_inputs: https://covidtracking.com
+citation: https://arxiv.org/abs/2007.07156

@@ -59,7 +59,7 @@ For week-ahead forecasts with `forecast_date` of Sunday or Monday of EW12, a 1 w
 -->
 
 ## Ensemble model
-Every Monday at 6pm ET, we will update our [COVID Forecast Hub ensemble forecast](data-processed/COVIDhub-ensemble) and [interactive visualization](http://viz.covid19forecasthub.org) using the most recent forecast from each team as long as it was submitted before 6pm ET on Monday and has a `forecast_date` of Sunday or Monday. All models meeting the above criteria will be considered for the ensemble. For inclusion in the ensemble, we additionally require that forecasts include a full set of 23 quantiles to be submitted (see [technical README](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md#quantile) for details), and that the 10th quantile of the predictive distribution for a 1 week ahead forecast is not below the most recently observed data. Additionally, we perform manual visual inspection checks to ensure that forecasts are in alignment with the ground truth data. Details on which models were included each week in the ensemble are available in the [ensemble metadata](https://github.com/reichlab/covid19-forecast-hub/tree/master/ensemble-metadata) folder.
+Every Monday at 6pm ET, we will update our [COVID Forecast Hub ensemble forecast](data-processed/COVIDhub-ensemble) and [interactive visualization](http://viz.covid19forecasthub.org) using the most recent forecast from each team as long as it was submitted before 6pm ET on Monday and has a `forecast_date` of any day since the previous Tuesday. All models meeting the above criteria will be considered for the ensemble. For inclusion in the ensemble, we additionally require that forecasts include a full set of 23 quantiles to be submitted (see [technical README](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md#quantile) for details), and that the 10th quantile of the predictive distribution for a 1 week ahead forecast is not below the most recently observed data. Additionally, we perform manual visual inspection checks to ensure that forecasts are in alignment with the ground truth data. Details on which models were included each week in the ensemble are available in the [ensemble metadata](https://github.com/reichlab/covid19-forecast-hub/tree/master/ensemble-metadata) folder.
 
 Depending on how the project evolves, we may add additional weekly builds for the ensemble and visualization. Currently, our ensemble is created by taking the arithmetic average of each quantile for all models that submit 1- through 4-week ahead cumulative death targets for a given location. Ensemble methods and inclusion criteria may evolve as more data becomes available. 
 
@@ -89,6 +89,7 @@ repository are (with data reuse license):
  - [IHME](https://covid19.healthdata.org/united-states-of-america) (CC-AT-NC-4.0)
  - [Iowa State University](http://www.covid19dashboard.us/) (none given)
  - [Iowa State University and Peking University](https://yumouqiu.shinyapps.io/covid-predict/) (none given)
+ - [Karlen Working Group](https://pypm.github.io/home/) (gpl-3.0)
  - [LANL](https://covid-19.bsvgateway.org/) (see [license](./data-processed/LANL-GrowthRate/LICENSE.txt))
  - [Imperial](https://github.com/sangeetabhatia03/covid19-short-term-forecasts) (CC-BY-NC-ND 4.0)
  - [Johns Hopkins ID Dynamics COVID-19 Working Group](https://github.com/HopkinsIDD/COVIDScenarioPipeline) (MIT)
@@ -105,8 +106,9 @@ repository are (with data reuse license):
  - [University of Geneva / Swiss Data Science Center](https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/) (none given)
  - [University of Massachusetts - Expert Model](https://github.com/tomcm39/COVID19_expert_survey) (MIT)
  - [University of Massachusetts - Mechanistic Bayesian model](https://github.com/dsheldon/covid) (MIT)
- - [The University of Michigan](https://gitlab.com/sabcorse/covid-19-collaboration) (cc-by-4.0)
+ - [University of Michigan](https://gitlab.com/sabcorse/covid-19-collaboration) (cc-by-4.0)
  - [University of Texas-Austin](https://covid-19.tacc.utexas.edu/projections/) (BSD-3)
+ - [University of Virginia](https://biocomplexity.virginia.edu/) (cc-by-4.0)
  - [YYG](http://covid19-projections.com) (MIT) 
  - COVIDhub ensemble forecast: this is a combination of the above models. 
 

@@ -35,9 +35,9 @@ fi
 if [[ "$TRAVIS_EVENT_TYPE" == *"cron"* || "$TRAVIS_COMMIT_MESSAGE" == *"FORCE_ZOLTAR"* ]]; then
     echo "updating truth data..."
     bash ./travis/update-truth.sh
-    
+
     echo "Upload truth to Zoltar"
-    python3 ./code/zoltar-scripts/upload_truth_to_zoltar.py
+    python3 ./code/zoltar_scripts/upload_truth_to_zoltar.py
     # Upload to zoltar at every merged pull request
     echo "Upload forecasts to Zoltar "
     bash ./travis/upload-to-zoltar.sh
@@ -57,7 +57,7 @@ fi
 # fi
 
 # Replace the validated_files.csv with locally_validated_files.csv at every build except PRs
-# if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then 
+# if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
 #    echo "replacing validated files"
 #    cp ./code/validation/locally_validated_files.csv ./code/validation/validated_files.csv
 
@@ -79,7 +79,7 @@ if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test truth"* ]]; then
     echo "Push the truth"
     bash ./travis/push.sh
     echo "Upload truth to Zoltar"
-    python3 ./code/zoltar-scripts/upload_truth_to_zoltar.py
+    python3 ./code/zoltar_scripts/upload_truth_to_zoltar.py
 fi
 
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test zoltar upload"* ]]; then
@@ -91,7 +91,7 @@ fi
 
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"test truth zoltar"* ]]; then
     echo "Upload truth to Zoltar"
-    python3 ./code/zoltar-scripts/upload_truth_to_zoltar.py
+    python3 ./code/zoltar_scripts/upload_truth_to_zoltar.py
 fi
 
 if [[ "$TRAVIS_COMMIT_MESSAGE" == *"create zoltar validated file"* ]]; then

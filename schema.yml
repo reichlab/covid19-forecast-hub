@@ -6,10 +6,6 @@ mapping:
     'team_name':
         required: True
         example: Team name is a MUST
-    'team_abbr':
-        required: True
-        range:
-            max: 15
     'model_name':
         required: True
         type: str
@@ -17,7 +13,7 @@ mapping:
         required: True
         type: str
         range:
-            max: 15
+            max: 31
     'model_contributors':
         required: True
         type: str
