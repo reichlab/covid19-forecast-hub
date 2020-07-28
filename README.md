@@ -82,6 +82,7 @@ repository are (with data reuse license):
  - [Columbia University](https://github.com/shaman-lab/COVID-19Projection) (Apache 2.0)
  - [CovidActNow](https://covidactnow.org/) (none given)
  - [COVID-19 Simulator Consortium](https://covid19sim.org/) (CC-BY-4.0)
+ - [Discrete Dynamical Systems](https://dds-covid19.github.io/) (MIT)
  - [epiforecasts](https://github.com/epiforecasts/covid-us-deaths) (MIT)
  - [GLEAM from Northeastern University](https://www.gleamproject.org/covid-19) (CC-BY-4.0)
  - [Georgia Institute of Technology](https://www.cc.gatech.edu/~badityap/covid.html) (none given)
