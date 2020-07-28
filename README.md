@@ -105,6 +105,7 @@ repository are (with data reuse license):
  - US Army Engineer Research and Development Center (ERDC) (see [license](./data-processed/USACE-ERDC_SEIR/LICENSE.txt))
  - University of Arizona (CC-BY-NC-SA 4.0)
  - [University of California, Los Angeles](https://covid19.uclaml.org/) (CC-BY-4.0)
+ - [University of California Merced MESA Lab](http://mechatronics.ucmerced.edu/covid19)(CC-BY-4.0)
  - [University of Geneva / Swiss Data Science Center](https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/) (none given)
  - [University of Massachusetts - Expert Model](https://github.com/tomcm39/COVID19_expert_survey) (MIT)
  - [University of Massachusetts - Mechanistic Bayesian model](https://github.com/dsheldon/covid) (MIT)
