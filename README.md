@@ -92,6 +92,7 @@ repository are (with data reuse license):
  - [Karlen Working Group](https://pypm.github.io/home/) (gpl-3.0)
  - [LANL](https://covid-19.bsvgateway.org/) (see [license](./data-processed/LANL-GrowthRate/LICENSE.txt))
  - [Imperial](https://github.com/sangeetabhatia03/covid19-short-term-forecasts) (CC-BY-NC-ND 4.0)
+ - [John Burant (JCB)](https://github.com/JohnBurant/COVID19-PRM) (CC-BY-4.0)
  - [Johns Hopkins ID Dynamics COVID-19 Working Group](https://github.com/HopkinsIDD/COVIDScenarioPipeline) (MIT)
  - [Massachusetts Institute of Technology](https://www.covidanalytics.io/) (Apache 2.0)
  - [Notre Dame](https://github.com/confunguido/covid19_ND_forecasting) (none given)
