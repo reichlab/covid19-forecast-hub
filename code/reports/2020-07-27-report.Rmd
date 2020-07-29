@@ -242,7 +242,7 @@ datatable(wide_point_dat %>%
     select(location_name, Population,
       cum_deaths_at_forecast_start, 
       last_2wk_deaths, next_2wk_deaths, diff_2wk_deaths),
-  caption = 'Table 1: US national and state-level observed and predicted daily deaths for the previous two weeks (ending July 25, 2020) and the next two weeks (ending August 8, 2020).',
+  caption = 'Table 1: US national and state-level observed deaths to date and for the previous two weeks (ending July 25, 2020) with forecasted COVID-19 deaths for the next two weeks (ending August 8, 2020).',
   options = list(
     autoWidth = TRUE,
     columnDefs = list(list(width = '100px', targets = c(0, 1, 2, 3, 4, 5)))
