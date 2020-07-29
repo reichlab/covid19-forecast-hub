@@ -848,7 +848,7 @@
     "2020-07-26-Columbia_UNC-SurvCon.csv": "3f54120e18bbabec315aa6f5d903a850",
     "2020-07-26-MITCovAlliance-SIR.csv": "6466d9134d40b83fb26b1de653c93b03",
     "2020-07-26-UMass-MechBayes.csv": "31c206b27ac5bbbf75709d01719bf59d",
-    "2020-07-26-Karlen-pypm.csv": "b938a9273c0d2eb904387b24c29e814b",
+    "2020-07-26-Karlen-pypm.csv": "b2e68455352f4f01fbc5a925349bd551",
     "2020-07-27-CovidAnalytics-DELPHI.csv": "8aeedd51d94d367f90655dbc0bb52518",
     "2020-07-27-USACE-ERDC_SEIR.csv": "0e7b73952af662633b0c1d7ef539b924",
     "2020-07-24-USACE-ERDC_SEIR.csv": "624dc7dd85884f6615ec14c397a21268",
@@ -864,5 +864,7 @@
     "2020-07-27-QJHong-Encounter.csv": "f72993ab1be3b1064e3ea081b48899d9",
     "2020-07-27-USC-SI_kJalpha.csv": "79e1543943c75047edab0b2af34cfd5e",
     "2020-07-26-JHU_IDD-CovidSP.csv": "832509ef70e2e305554249e4a5606191",
-    "2020-07-27-UVA-Ensemble.csv": "8b0e4ec08a0124e270ff5a0995401893"
+    "2020-07-27-UVA-Ensemble.csv": "8b0e4ec08a0124e270ff5a0995401893",
+    "2020-07-28-YYG-ParamSearch.csv": "5887c318f0f9bbdb5fa8d7cd824ee2d6",
+    "2020-07-27-COVIDhub-ensemble.csv": "e1d739703a5e9f92a96b87f58fdb0ee6"
 }
