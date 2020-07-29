@@ -33,6 +33,10 @@ Note that there are significant differences
 between the JHU data and another commonly used source, from the New York Times. 
 The team at UTexas-Austin is tracking this issue on [a separate GitHub repository](https://github.com/spencerwoody/covid19-data-comparsion).
 
+Weekly incident data are the sum of daily incident data from Sunday through 
+Saturday. 
+Weekly cumulative data is the cumulative data up to and including Saturday. 
+
 We may add additional sources of ground-truth data at a future time.
 
 
@@ -51,11 +55,10 @@ the format
     
 where 
 
-- `team` is an short abbreviation of your team name and 
-- `model` is the model abbreviation. 
+- `team` is the teamname and 
+- `model` is the name of your model. 
 
-The `team-model` string should be less than or equal to 31 characters. This field should contain two separate alphanumeric identifiers, one for the team and one for the model, separated by a hyphen. No other whitespace or non-alphanumeric characters are allowed in this field. See [metadata formatting guidelines](METADATA.md) for details. 
-This `team-model` string is a unique identifier for a given model and should be chosen carefully as it cannot be changed.
+Both team and model should be less than 15 characters and not include hyphens.
 
 Within each subdirectory, there should be a metadata file, a license file
 (optional), and a set of forecasts. 
@@ -92,12 +95,15 @@ where
 - `YYYY` is the 4 digit year, 
 - `MM` is the 2 digit month,
 - `DD` is the 2 digit day,
-- `team-model` is the unique identifier for your model, as described [above](#Subdirectory). 
+- `team` is the teamname, and
+- `model` is the name of your model. 
 
 The date YYYY-MM-DD is the [`forecast_date`](#forecast_date).
 
-The `team-model` in this file must match the `team-model` in the
+The `team` and `model` in this file must match the `team` and `model` in the
 directory this file is in. 
+Both `team` and `model` should be less than 15 characters, 
+alpha-numeric and underscores only, with no spaces or hyphens.
 
 
 ## Forecast file format
@@ -147,7 +153,8 @@ following specific targets:
 
 For county locations, the only target should be "N wk ahead inc case".
 
-For week-ahead forecasts, we will use the specification of epidemiological weeks (EWs) [defined by the US CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf). 
+For week-ahead forecasts, we will use the specification of epidemiological weeks (EWs) [defined by the US CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf) which run
+Sunday through Saturday.
 There are standard software packages to convert from dates to epidemic weeks and vice versa. E.g. [MMWRweek](https://cran.r-project.org/web/packages/MMWRweek/) for R and [pymmwr](https://pypi.org/project/pymmwr/) and [epiweeks](https://pypi.org/project/epiweeks/) for python.
 
 We have created [a csv file](../template/covid19-death-forecast-dates.csv) describing forecast collection dates and dates for which forecasts refer to can be found.
@@ -278,8 +285,8 @@ c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99)
 ```
 
 ```
-##  [1] 0.010 0.025 0.050 0.100 0.150 0.200 0.250 0.300 0.350 0.400 0.450 0.500 0.550 0.600 0.650 0.700
-## [17] 0.750 0.800 0.850 0.900 0.950 0.975 0.990
+##  [1] 0.010 0.025 0.050 0.100 0.150 0.200 0.250 0.300 0.350 0.400 0.450 0.500 0.550 0.600 0.650 0.700 0.750
+## [18] 0.800 0.850 0.900 0.950 0.975 0.990
 ```
 
 for all `target`s except "N wk ahead inc case" target.
