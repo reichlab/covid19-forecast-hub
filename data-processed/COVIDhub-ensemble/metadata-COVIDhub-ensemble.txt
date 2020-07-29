@@ -20,4 +20,9 @@ methods_long: 'April 13: At state level, only two models included in first week,
   All ensembles were equally weighted among all eligible models. May 19: See ensemble-metadata/2020-05-19-model-eligibility.csv
   for models included/excluded at each location with reasons, and ensemble-metadata/2020-05-19-model-weights.csv
   for weights by location. May 26: See ensemble-metadata folder for models included/excluded
-  in each location, and weights by location.'
+  in each location, and weights by location. July 28: switched to using a per-quantile
+  median prediction across all eligible models. For cumulative deaths, we still implemented
+  the automated checks that the 10th percentile of the 1-week ahead predictive distribution
+  must be at least the most recent observed cumulative death, and the quantiles must be
+  non-decreasing over time at each quantile level. We did not eliminate any models based on
+  visual misalignment with the reference JHU data this week.'
