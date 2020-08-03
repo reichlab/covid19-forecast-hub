@@ -64,9 +64,10 @@ export function parseText({ title, text }): string {
 export function parsePoint({ title, values, color }): string {
   let html = `<div class='tooltip-row' style='background:${color};color:white'>${title}</div>`
   values.forEach(v => {
+    console.log(v)
     html += `<div class='tooltip-row'>
                ${v.key}
-               <span class='bold'>${v.value.toFixed(0)}</span>
+               <span class='bold'> ${parseInt(v.value).toLocaleString()}</span>
              </div>`
   })
   return html
@@ -100,7 +101,7 @@ export function parsePredictions({ title, predictions, index }): string {
     html += `<div class='tooltip-row' style='${style}'>
                ${p.id}
                <span class='bold'>
-                 ${p.query(index).toFixed(0)}
+                 ${parseInt(p.query(index)).toLocaleString()}
                </span>
              </div>`
   })
