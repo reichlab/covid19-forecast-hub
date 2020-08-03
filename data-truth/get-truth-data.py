@@ -18,6 +18,8 @@ def read_fips_codes(filepath):
   # only output "location (fips code)","location_name","(state) abbreviation"
   fips_codes = fips_codes.drop('abbreviation',axis=1)
   fips_codes.rename({'state_abbr': 'abbreviation'}, axis=1, inplace=True)
+  # took out DC county
+  fips_codes = fips_codes[fips_codes.location != '11001']
   return fips_codes
 
 def get_epi_data(date):
