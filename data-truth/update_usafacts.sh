@@ -13,3 +13,4 @@ git add 'data-truth/usafacts/truth_usafacts-Incident Cases.csv'
 git add 'data-truth/usafacts/truth_usafacts-Incident Deaths.csv'
 
 git commit -m "Update USAFacts truth data"
+git push

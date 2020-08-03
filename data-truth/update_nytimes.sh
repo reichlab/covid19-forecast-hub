@@ -14,3 +14,4 @@ git add 'data-truth/nytimes/truth_nytimes-Incident Cases.csv'
 git add 'data-truth/nytimes/truth_nytimes-Incident Deaths.csv'
 
 git commit -m "Update NYTimes truth data"
+git push
