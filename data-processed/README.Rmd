@@ -33,6 +33,10 @@ Note that there are significant differences
 between the JHU data and another commonly used source, from the New York Times. 
 The team at UTexas-Austin is tracking this issue on [a separate GitHub repository](https://github.com/spencerwoody/covid19-data-comparsion).
 
+Weekly incident data are the sum of daily incident data from Sunday through 
+Saturday. 
+Weekly cumulative data is the cumulative data up to and including Saturday. 
+
 We may add additional sources of ground-truth data at a future time.
 
 
@@ -149,7 +153,8 @@ following specific targets:
 
 For county locations, the only target should be "N wk ahead inc case".
 
-For week-ahead forecasts, we will use the specification of epidemiological weeks (EWs) [defined by the US CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf). 
+For week-ahead forecasts, we will use the specification of epidemiological weeks (EWs) [defined by the US CDC](https://wwwn.cdc.gov/nndss/document/MMWR_Week_overview.pdf) which run
+Sunday through Saturday.
 There are standard software packages to convert from dates to epidemic weeks and vice versa. E.g. [MMWRweek](https://cran.r-project.org/web/packages/MMWRweek/) for R and [pymmwr](https://pypi.org/project/pymmwr/) and [epiweeks](https://pypi.org/project/epiweeks/) for python.
 
 We have created [a csv file](../template/covid19-death-forecast-dates.csv) describing forecast collection dates and dates for which forecasts refer to can be found.
