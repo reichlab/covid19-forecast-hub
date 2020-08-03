@@ -48,9 +48,10 @@ methods_long: "This is a county-level metapopulation model with stochastic SEIR 
   \ confirmed cases and deaths as reported by USA  Facts. For the inference of the\
   \ baseline reproductive number and the case  confirmation to infection ratio, hierarchical\
   \ grouping terms enable sharing  of strength among counties in the same state.\n\
-  Our procedure forecasts incident and cumulative deaths by incorporating the  last\
+  Our procedure forecasts incident and cumulative deaths by incorporating the last\
   \ reported data point (pre-forecast date) from USA Facts.\nThe estimates reported\
-  \ by this model incorporate uncertainty in both  epidemiological parameters (e.g.,\
-  \ R0, infectious period, time delays to  health outcomes) and the effectiveness\
+  \ by this model incorporate uncertainty in both epidemiological parameters (e.g.,\
+  \ R0, infectious period, time delays to health outcomes) and the effectiveness\
   \ of state-wide intervention policies  on social distancing, stay-at-home orders,\
-  \ and phased reopenings."
+  \ and phased reopenings. We submit a case-optimized calibration to forecast confirmed\
+  \ cases and a deaths-optimized calibration to forecast deaths and hospitalizations."
