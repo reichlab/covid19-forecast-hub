@@ -109,7 +109,7 @@ repository are (with data reuse license):
  - [Robert Walraven](http://rwalraven.com/COVID19)(CC-BY-4.0)
  - Snyder Wilson Consulting (CC-BY-4.0)
  - [STH](https://public.tableau.com/profile/covid19model#!/vizhome/COVID-19DeathProjections/USDeaths) (CC-BY-4.0)
- - US Army Engineer Research and Development Center (ERDC) (see [license](./data-processed/USACE-ERDC_SEIR/LICENSE.txt))
+ - [US Army Engineer Research and Development Center (ERDC)](https://github.com/erdc-cv19/seir-model) (see [license](./data-processed/USACE-ERDC_SEIR/LICENSE.txt))
  - [University of Arizona](https://jocelinelega.github.io/EpiGro/) (CC-BY-NC-SA 4.0)
  - [University of California, Los Angeles](https://covid19.uclaml.org/) (CC-BY-4.0)
  - [University of California Merced MESA Lab](http://mechatronics.ucmerced.edu/covid19) (CC-BY-4.0)
