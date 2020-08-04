@@ -1,7 +1,7 @@
 team_name: RPI and UW
 model_name: Mobility-informed Collision Model
 model_abbr: RPI-UW-Mob-Collision
-model_contributors: Yunfeng Shi (RPI),  Xuegang Ban (Univ. of Washington)
+model_contributors: Yunfeng Shi (RPI) shiy2@rpi.edu,  Xuegang Ban (Univ. of Washington) 
 website_url: https://www.medrxiv.org/content/10.1101/2020.07.25.20162016v1
 license: cc-by-4.0
 team_model_designation: primary
@@ -28,4 +28,4 @@ methods_long: "We incorporate mobility information into a simplified SIR model w
   \ analysis on our forecast in which the uncertainty comes from both the fitting \
   \ error and the variation of the reference fatality. Quantile forecast is calculated \
   \ based on standard error assuming normal distribution. State-level forecast and \
-  \ county-level forecast will be conducted later."
+  \ county-level forecast will be conducted later."2
