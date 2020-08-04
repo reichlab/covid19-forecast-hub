@@ -2,7 +2,7 @@ team_name: RPI and UW
 model_name: Mobility-informed Collision Model
 model_abbr: RPI-UW-Mob-Collision
 model_contributors: Yunfeng Shi (RPI),  Xuegang Ban (Univ. of Washington)
-website_url: 
+website_url: https://www.medrxiv.org/content/10.1101/2020.07.25.20162016v1
 license: cc-by-4.0
 team_model_designation: primary
 methods: A mobility-informed simplified SIR model motivated by collision theory.
