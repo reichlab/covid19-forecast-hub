@@ -13,10 +13,8 @@ commit_website_files() {
 
 upload_files() {
   echo "Uploading files..."
-  git remote add origin-pages https://${GH_TOKEN}@github.com/reichlab/covid19-forecast-hub.git > /dev/null 2>&1
-  git branch --set-upstream-to origin-pages HEAD:master
-  git pull --rebase
-  git push HEAD:master
+  git pull --rebase https://${GH_TOKEN}@github.com/reichlab/covid19-forecast-hub.git
+  git push https://${GH_TOKEN}@github.com/reichlab/covid19-forecast-hub.git HEAD:master
   echo "pushed to github"
 }
 
