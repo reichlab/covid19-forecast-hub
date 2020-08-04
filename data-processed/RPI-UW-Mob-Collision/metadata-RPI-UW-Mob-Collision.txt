@@ -1,4 +1,4 @@
-team_name: RPI and Univ. of Washington
+team_name: RPI and UW
 model_name: Mobility-informed Collision Model
 model_abbr: RPI-UW-Mob-Collision
 model_contributors: Yunfeng Shi (RPI),  Xuegang Ban (Univ. of Washington)
@@ -23,7 +23,7 @@ methods_long: "We incorporate mobility information into a simplified SIR model w
   \ meaningful model parameters. The forecast is based on Eq. 3 of the citation above \
   \ in which the reference fatality is a 11-day average centered on 07-28-2020. \
   \ The cumulative mobility is the average of three Google mobility categories: \
-  \ "retail and recreation", "transit station" and "work place". We have shown in \
+  \ retail and recreation, transit station and work place. We have shown in \
   \ our paper those three categorites behave similarly. We conducted standard error \
   \ analysis on our forecast in which the uncertainty comes from both the fitting \
   \ error and the variation of the reference fatality. Quantile forecast is calculated \
