@@ -1,9 +1,11 @@
-name: Manually trigger zoltar upload
+name: Trigger zoltar upload
 on:
   workflow_dispatch:
     inputs:
       name:
         description: 'Trigger'
+  schedule:
+    - cron: '0 4/3 * * 1-5'
 
 jobs:
   upload_zoltar:
