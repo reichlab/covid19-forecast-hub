@@ -88,7 +88,7 @@ repository are (with data reuse license):
  - [epiforecasts](https://github.com/epiforecasts/covid-us-deaths) (MIT)
  - [GLEAM from Northeastern University](https://www.gleamproject.org/covid-19) (CC-BY-4.0)
  - [Georgia Institute of Technology](https://www.cc.gatech.edu/~badityap/covid.html) (CC-BY-4.0)
- - [Georgia Institute of Technology - Center for Health and Humanitarian Systems](https://github.com/pkeskinocak/COVID19GA) (CC-BY-4.0)
+ - [Georgia Institute of Technology - Center for Health and Humanitarian Systems](https://github.com/pkeskinocak/Center-for-Health-and-Humanitarian-Systems/tree/master/COVID-19) (CC-BY-4.0)
  - [IHME](https://covid19.healthdata.org/united-states-of-america) (CC-AT-NC-4.0)
  - [Iowa State University](http://www.covid19dashboard.us/) (CC-BY-4.0)
  - [Iowa State University and Peking University](https://yumouqiu.shinyapps.io/covid-predict/) (CC-BY-4.0)
