@@ -778,3 +778,6 @@ file_path,validation_date
 ./data-processed/COVIDhub-ensemble/2020-08-03-COVIDhub-ensemble.csv,2020-08-05 11:23:13.809681
 ./data-processed/UVA-Ensemble/2020-08-03-UVA-Ensemble.csv,2020-08-05 11:23:14.282396
 ./data-processed/YYG-ParamSearch/2020-08-05-YYG-ParamSearch.csv,2020-08-06 11:23:05.164157
+./data-processed/LANL-GrowthRate/2020-08-06-LANL-GrowthRate.csv,2020-08-07 11:02:58.790093
+./data-processed/YYG-ParamSearch/2020-08-06-YYG-ParamSearch.csv,2020-08-07 11:03:01.350781
+./data-processed/IHME-CurveFit/2020-08-06-IHME-CurveFit.csv,2020-08-07 11:03:15.108699
