@@ -781,3 +781,9 @@ file_path,validation_date
 ./data-processed/LANL-GrowthRate/2020-08-06-LANL-GrowthRate.csv,2020-08-07 11:02:58.790093
 ./data-processed/YYG-ParamSearch/2020-08-06-YYG-ParamSearch.csv,2020-08-07 11:03:01.350781
 ./data-processed/IHME-CurveFit/2020-08-06-IHME-CurveFit.csv,2020-08-07 11:03:15.108699
+./data-processed/YYG-ParamSearch/2020-08-07-YYG-ParamSearch.csv,2020-08-08 18:15:35.656397
+./data-processed/CU-nochange/2020-08-06-CU-nochange.csv,2020-08-08 18:15:53.374835
+./data-processed/CU-scenario_mid/2020-08-06-CU-scenario_mid.csv,2020-08-08 18:16:10.505336
+./data-processed/CU-scenario_low/2020-08-06-CU-scenario_low.csv,2020-08-08 18:16:27.689847
+./data-processed/CU-scenario_high/2020-08-06-CU-scenario_high.csv,2020-08-08 18:16:44.672732
+./data-processed/CU-select/2020-08-06-CU-select.csv,2020-08-08 18:17:01.975338
