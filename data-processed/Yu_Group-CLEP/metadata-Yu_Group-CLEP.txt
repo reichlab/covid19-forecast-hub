@@ -1,11 +1,10 @@
-team_name: Berkeley Yu Group 
-model_name: Combined Linear and Exponential Predictor 
-model_abbr: Yu_Group-CLEP
-model_contributors: Bin Yu (UC Berkeley) <binyu@berkeley.edu>, Nick Altieri (UC Berkeley), Rebecca L Barter (UC Berkeley), 
-James Duncan (UC Berkeley), Raaz Dwivedi (UC Berkeley), Karl Kumbier (UC Berkeley), Xiao Li (UC Berkeley),
-Robert Netzorg (UC Berkeley),Briton Park (UC Berkeley), Chandan Singh (UC Berkeley), Yan Shuo Tan (UC Berkeley), 
-Tiffany Tang (UC Berkeley), Chao Zhang (UC Berkeley), Abhineet Agarwal (UC Berkeley) <aa3797@berkeley.edu> , 
-Danqing Wang (UC Berkeley), Maya Shen (UC Berkeley)
+team_name:Yu_Group 
+model_name:Combined Linear and Exponential Predictor 
+model_abbr:Yu_Group-CLEP
+model_contributors:Bin Yu (UC Berkeley) <binyu@berkeley.edu>, Nick Altieri (UC Berkeley), Rebecca L Barter (UC Berkeley),James Duncan (UC Berkeley),Raaz Dwivedi (UC Berkeley),Karl Kumbier (UC Berkeley),Xiao Li (UC Berkeley),
+Robert Netzorg (UC Berkeley),Briton Park (UC Berkeley),Chandan Singh (UC Berkeley),Yan Shuo Tan (UC Berkeley), 
+Tiffany Tang (UC Berkeley),Chao Zhang (UC Berkeley),Abhineet Agarwal (UC Berkeley) <aa3797@berkeley.edu> , 
+Danqing Wang (UC Berkeley),Maya Shen (UC Berkeley)
 website_url: covidseverity.com
 license : "cc by 4.0" 
 team_model_designation: primary
