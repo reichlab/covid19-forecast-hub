@@ -6,6 +6,6 @@ Robert Netzorg (UC Berkeley),Briton Park (UC Berkeley),Chandan Singh (UC Berkele
 Tiffany Tang (UC Berkeley),Chao Zhang (UC Berkeley),Abhineet Agarwal (UC Berkeley) <aa3797@berkeley.edu> , 
 Danqing Wang (UC Berkeley),Maya Shen (UC Berkeley)
 website_url: covidseverity.com
-license : "cc by 4.0" 
+license : cc by 4.0
 team_model_designation: primary
 methods:Ensemble of a linear and exponential predictor (CLEP) for forecasting county-level deaths and cases with prediction intervals.CLEP weighs each method by its recent historical prediction performance.
