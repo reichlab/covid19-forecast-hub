@@ -79,6 +79,7 @@ repository are (with data reuse license):
 
  - [Auquan](https://covid19-infection-model.auquan.com/) (CC-BY-4.0)
  - [CDDEP](https://cddep.org/covid-19/) (CC-BY-4.0)
+ - [CEID](https://github.com/e3bo/random-walks) (CC-BY-4.0)
  - [Carnegie Mellon Delphi Group](https://delphi.cmu.edu) (CC-BY-4.0)
  - [Columbia University](https://github.com/shaman-lab/COVID-19Projection) (Apache 2.0)
  - [Columbia University and University of North Carolina at Chapel Hill](https://github.com/COVID19BIOSTAT/covid19_prediction) (Apache 2.0)
