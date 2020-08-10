@@ -9,7 +9,8 @@ license: cc-by-4.0
 team_model_designation: primary
 methods: Nation-level model of confirmed cases and deaths based on ridge regression.  No
   assumptions made about social distancing.
-team_funding: University of Michigan
+team_funding: University of Michigan Physics Department; University of Michigan Office of
+  Research
 methods_long: "This model uses ridge regression (penalized Ordinary Least Squares\
   \ regression) to make predictions about future confirmed case and mortality trends.\
   \  The model makes forecasts based solely on previous data, so no external  assumptions\
