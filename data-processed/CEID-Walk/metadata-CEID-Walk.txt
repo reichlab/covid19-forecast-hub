@@ -1,6 +1,6 @@
 team_name: University of Georgia Center for the Ecology of Infectious Diseses Forecasting Working Group
 model_name: Walk
-model_abbr: Walk
+model_abbr: CEID-Walk
 model_contributors: Eamon O'Dea (CEID) <odea35@gmail.com>
 website_url: https://github.com/e3bo/random-walks
 license: cc-by-4.0
