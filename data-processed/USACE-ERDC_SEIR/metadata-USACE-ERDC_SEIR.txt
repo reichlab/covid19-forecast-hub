@@ -5,7 +5,7 @@ model_contributors: Michael L. Mayo <Michael.L.Mayo@erdc.dren.mil>, Michael A. R
   <Michael.A.Rowland@erdc.dren.mil>,  Matthew D. Parno <Matthew.D.Parno@erdc.dren.mil>,
   Ian D. Detwiller <Ian.D.Dettwiller@erdc.dren.mil>, Matthew W. Farthing <Matthew.W.Farthing@erdc.dren.mil>,
   William P. England <William.P.England@erdc.dren.mil>, Glover E. George <glover.e.george@erdc.dren.mil>
-website_url: https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/USACE-ERDC_SEIR/metadata-USACE-ERDC_SEIR.txt
+website_url: https://github.com/erdc-cv19/seir-model
 license: other
 team_model_designation: primary
 methods: The ERDC SEIR model makes predictions of several variables (e.g., reported

@@ -88,8 +88,8 @@ rm -rf ./data/Cumulative\ Deaths/CU-mid
 rm -rf ./data/Incident\ Deaths/CU-mid
 
 # Remove failing models right now
-rm -rf ./data/Cumulative\ Deaths/RobertWalraven-ESG
-rm -rf ./data/Incident\ Deaths/RobertWalraven-ESG
+# rm -rf ./data/Cumulative\ Deaths/RobertWalraven-ESG
+# rm -rf ./data/Incident\ Deaths/RobertWalraven-ESG
 
 # Remove Ensemble Incident
 # rm -rf ./data/Incident\ Deaths/COVIDhub-ensemble

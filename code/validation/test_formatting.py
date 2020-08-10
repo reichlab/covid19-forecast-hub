@@ -213,7 +213,8 @@ def main():
         elif os.environ.get('GITHUB_EVENT_NAME') == 'push':
             commit = repo.get_commit(sha = os.environ.get('GITHUB_SHA'))
             files_changed = commit.files
-        if files_changed is not None:
+        
+        if 'files_changed' in locals() and files_changed is not None:
             forecasts_changed.extend([f"./{file.filename}" for file in files_changed if file.filename.startswith('data-processed') and file.filename.endswith('.csv')])
     elif os.environ.get('TRAVIS')=='true':
         if os.environ.get('TRAVIS_EVENT_TYPE')=='pull_request':
