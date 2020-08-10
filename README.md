@@ -103,6 +103,7 @@ repository are (with data reuse license):
  - [Notre Dame - FRED](https://github.com/confunguido/covid19_ND_forecasting) (CC-BY-4.0)
  - [Notre Dame - mobility](https://github.com/TAlexPerkins/covid19_NDmobility_forecasting) (CC-BY-4.0)
  - [Oliver Wyman](https://pandemicnavigator.oliverwyman.com/) (see [license](./data-processed/OliverWyman-Navigator/LICENSE.txt))
+ - [PandemicCentral-USCounty](https://itsonit.com/) (MIT)
  - [Predictive Science Inc](https://predsci.com) (MIT)
  - [QJHong](https://qjhong.github.io) (CC-BY-4.0)
  - Quantori (CC-BY-4.0)
@@ -122,7 +123,7 @@ repository are (with data reuse license):
  - [University of Southern California Data Science Lab](https://scc-usc.github.io/ReCOVER-COVID-19) (MIT)
  - [University of Texas-Austin](https://covid-19.tacc.utexas.edu/projections/) (BSD-3)
  - [University of Virginia](https://biocomplexity.virginia.edu/) (CC-BY-4.0)
- - [Yu_Group-CLEP](https://covidseverity.com/) (cc-by-4.0)
+ - [Yu_Group-CLEP](https://covidseverity.com/) (CC-BY-4.0)
  - [YYG](http://covid19-projections.com) (MIT) 
  - COVIDhub ensemble forecast: this is a combination of the above models. 
 
