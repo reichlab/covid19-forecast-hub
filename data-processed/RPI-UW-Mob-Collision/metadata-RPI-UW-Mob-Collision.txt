@@ -1,0 +1,31 @@
+team_name: RPI and UW
+model_name: Mobility-informed Collision Model
+model_abbr: RPI-UW-Mob-Collision
+model_contributors: Yunfeng Shi (RPI) shiy2@rpi.edu,  Xuegang Ban (Univ. of Washington) banx@uw.edu
+website_url: https://www.medrxiv.org/content/10.1101/2020.07.25.20162016v1
+license: cc-by-4.0
+team_model_designation: primary
+methods: A mobility-informed simplified SIR model motivated by collision theory.
+team_funding: No funding support.
+data_inputs: JHU COVID-19 fatality and Google Mobility.
+citation: https://www.medrxiv.org/content/10.1101/2020.07.25.20162016v1
+methods_long: "We incorporate mobility information into a simplified SIR model which\
+  \ has an analytical solution with only two fitting parameters. Without any social-\
+  \ distancing policy or geological/demographic inputs, the model works very well \
+  \ for the twenty hardest-hit counties in the United States. This model is quite \
+  \ different from other models yet provide parameters with clear physical meaning. \
+  \ We have shown the cumulative mobility plays the role of time in controling \
+  \ exponential growth of outbreak. Furthermore, there exists a critical relative \
+  \ mobility above which outbreak will occur. For NYC, this critical relative \
+  \ mobility is 30%. The critical relative mobility is ~60% for all other counties. \
+  \ In this forecast, we chose the 31 heaviest hit states, while combine the rest \
+  \ of the states together into one superstate. This practice is necessary to obtain \
+  \ meaningful model parameters. The forecast is based on Eq. 3 of the citation above \
+  \ in which the reference fatality is a 11-day average centered on 07-28-2020. \
+  \ The cumulative mobility is the average of three Google mobility categories: \
+  \ retail and recreation, transit station and work place. We have shown in \
+  \ our paper those three categorites behave similarly. We conducted standard error \
+  \ analysis on our forecast in which the uncertainty comes from both the fitting \
+  \ error and the variation of the reference fatality. Quantile forecast is calculated \
+  \ based on standard error assuming normal distribution. State-level forecast and \
+  \ county-level forecast will be conducted later."
