@@ -25,7 +25,8 @@ theme_set(theme_bw())
 
 ```{r get-date-boundaries}
 next_saturday <- get_next_saturday(today())
-last_5_saturdays <- next_saturday - 7*c(5:1)
+# last_5_saturdays <- next_saturday - 7*c(5:1)
+last_5_saturdays <- as.Date("2020-08-03") - 7*c(5:1)
 # this_monday <- next_saturday - 5
 this_monday <- as.Date("2020-08-03")
 ```
@@ -85,6 +86,7 @@ locs <- read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/mast
 ```{r download-ensemble-data}
 inc_death_targets <- paste(1:4, "wk ahead inc death")
 cum_death_targets <- paste(1:4, "wk ahead cum death")
+inc_case_targets <- paste(1:4, "wk ahead inc case")
 
 ## connect to Zoltar
 zoltar_connection <- new_connection()
@@ -97,7 +99,7 @@ project_url <- "https://www.zoltardata.com/api/project/44/"
 dat <- zoltr:: do_zoltar_query(
   zoltar_connection, project_url, 
   models = c("COVIDhub-ensemble"),
-  targets = c(inc_death_targets, cum_death_targets,inc_case_models),
+  targets = c(inc_death_targets, cum_death_targets,inc_case_targets),
   units=c("01003","US","25","25001","25003","25005","25007","25009","25011","25013","25015","25017","25019","25021"),
   timezeros = as.character(this_monday),
   types = c("point", "quantile"), 
@@ -115,11 +117,11 @@ dat <- zoltr:: do_zoltar_query(
 
 # COVID-19 Mortality Forecasts 
 
-## National level
+## State level
 
 This week, our ensemble combined forecasts from `r n_unique_models` different models. We note that this week several states, most notably Texas, modified the way in which they were reporting "probable" COVID-19 deaths. In Texas, this resulted in [a one-time additional count of over 600 deaths](https://www.dshs.texas.gov/news/releases/2020/20200727.aspx) in the data that we consider to be "ground truth".
 
-At the national level, the ensemble model's best guess is that we will see between 6,500 and 7,400 deaths each week for the next four weeks with around 181,000 deaths by August 29th (Figure 1). However for the week ending August 29th, the ensemble shows substantial uncertainty, with observed deaths between 4,500 and 10,500 deemed possible (95% prediction interval: 4,560 - 10,587).
+At the state level, the ensemble model's best guess is that we will see between 91 and 106 deaths each week for the next four weeks with around 9087 deaths by August 29th (Figure 1). However for the week ending August 29th, the ensemble shows substantial uncertainty, with observed deaths between 4,500 and 10,500 deemed possible (95% prediction interval: 4,560 - 10,587) WHERE DO i FIND THESE NUMBERS?.
 
 Throughought most of July, models have in general shown broad agreement about the trajectory of the outbreak over the coming weeks. However, the recent surge in cases has left models with quite different interpretations about what the next few weeks hold in terms of how many reported deaths from COVID-19 we will see. You can explore the full set of models, including their forecasts for past weeks online at our [interactive forecast visualization](https://viz.covid19forecasthub.org/).
 
@@ -187,7 +189,7 @@ ggplot() +
   scale_color_manual(values = c("black", tail(blues,1))) +
   scale_x_date(name = NULL, date_breaks="1 month", date_labels = "%b %d") +
   ylab("incident deaths") +
-  labs(title="Weekly reported COVID-19 deaths in the US: observed and forecasted",
+  labs(title="Weekly reported COVID-19 deaths in the Massachusetts: observed and forecasted",
     caption="source: JHU CSSE (observed data), COVID-19 Forecast Hub (forecasts)") +
   theme(legend.position = c(.05,.95), legend.justification = c(0,1))
 ```
@@ -215,6 +217,25 @@ recent_inc_death_totals <- read_csv("../../data-truth/truth-Incident Deaths.csv"
   left_join(locs, by=c("location" = "FIPS")) %>%
   left_join(cum_death_start) %>% 
   rename(fips = location, target_end_date = date)
+
+## get last saturday observed cumulative cases
+cum_case_start <- read_csv("../../data-truth/truth-Cumulative cases.csv") %>%
+  filter(date == last_5_saturdays[5]) %>%
+  select(date, location, location_name, value) %>%
+  rename(cum_cases_at_forecast_start = value) 
+## get recent observed inc cases
+recent_inc_case_totals <- read_csv("../../data-truth/truth-Incident Cases.csv") %>%
+  # filter(date > last_5_saturdays[3] & date <= last_5_saturdays[5]) %>%
+  mutate(last_2wk = date > last_5_saturdays[3] & date <= last_5_saturdays[5],
+    last_4wk = date > last_5_saturdays[1] & date <= last_5_saturdays[5]) %>%
+  select(date, location, location_name, value, last_2wk, last_4wk) %>%
+  group_by(location, location_name) %>%
+  summarize(last_2wk_cases = sum(value*last_2wk),
+    last_4wk_cases = sum(value*last_4wk)) %>%
+  ungroup() %>%
+  left_join(locs, by=c("location" = "FIPS")) %>%
+  left_join(cum_case_start) %>% 
+  rename(fips = location, target_end_date = date)
 ```
 
 ```{r one-time-tx-fix}
@@ -228,12 +249,18 @@ recent_inc_death_totals[which(recent_inc_death_totals$location_name=="Texas"), "
 ```
 
 
-```{r process-ensemble-data}
+```{r process-ensemble-data-deaths for US and MA}
+ensemble_pointdat1  <- dat  %>%
+  filter(grepl('inc case', target)) %>%
+  filter(class=="point") %>%
+  select(fips, target, value, timezero)
+
 ensemble_pointdat  <- dat  %>%
   filter(grepl('cum death', target)) %>%
   filter(class=="point") %>%
   select(fips, target, value, timezero)
 
+#deaths
 wide_point_dat <- spread(ensemble_pointdat, target, value) %>%
   left_join(recent_inc_death_totals) %>%
   mutate(next_2wk_deaths = `2 wk ahead cum death` - cum_deaths_at_forecast_start,
@@ -255,7 +282,7 @@ wide_point_dat <- spread(ensemble_pointdat, target, value) %>%
     last_4wk_deaths_rate, next_4wk_deaths_rate, 
     diff_2wk_deaths_rate, diff_4wk_deaths_rate, next_2wk_cum_deaths)
 
-
+  
 #filter quantile data for predicting future weeks
 ensemble_quantdat <- dat %>%
   filter(target == "2 wk ahead cum death") %>%
@@ -270,6 +297,7 @@ quant.5_cutoff <- wide_quant_dat %>%
 
 quant.25_cutoff <- wide_quant_dat %>% 
   filter(quantile == .25, next_2wk_deaths >= last_2wk_deaths) 
+
 
 ```
 
@@ -286,7 +314,8 @@ The ensemble model estimates that `r nrow(quant.5_cutoff)` states and territorie
 
 
 
-The sortable and searchable table below shows the total number of reported COVID-19 deaths at the US level and by state over the last two weeks (ending Saturday, August 1, 2020) and the forecasted counts for the subsequent two weeks (ending August 15, 2020).
+The sortable and searchable table below shows the total number of reported COVID-19 deaths at the US level and for Massachusetts over the last two weeks (ending Saturday, August 1, 2020) and the forecasted counts for the subsequent two weeks (ending August 15, 2020).
+
 
 ```{r make-datatable-inc-death-counts}
 death_max_2wk <- max(abs(wide_point_dat$diff_2wk_deaths))
@@ -324,7 +353,46 @@ datatable(wide_point_dat %>%
 ```
 
 
-The sortable and searchable table below shows the total number of reported COVID-19 deaths at the US level and by state as of Saturday, August 1, 2020 ("Total COVID-19 Deaths") as well as the rate of reported COVID-19 deaths in the population (standardized per 100,000 population) over the last two weeks and over the next two weeks. Looking at the rates allows for easier comparison across states, where you can see which states have had or are predicted to have propoportionally higher rates in comparison to other states. These tables calculate an average daily number of deaths per 100,000 population across the last two weeks (ending Saturday, August 1, 2020) and forecasted for the following two weeks (ending August 15, 2020).
+The sortable and searchable table below shows the total number of reported COVID-19 cases at the county level for Massachusetts as of Saturday, August 1, 2020 ("Total COVID-19 Cases") as well as the rate of reported COVID-19 cases in the population (standardized per 100,000 population) over the last two weeks and over the next two weeks. Looking at the rates allows for easier comparison across counties, where you can see which counties have had or are predicted to have propoportionally higher rates in comparison to other counties. These tables calculate an average daily number of cases per 100,000 population across the last two weeks (ending Saturday, August 1, 2020) and forecasted for the following two weeks (ending August 15, 2020).
+
+```{r process-ensemble-data-cases}
+#cases
+wide_point_dat1 <- spread(ensemble_pointdat1, target, value) %>%
+  left_join(recent_inc_case_totals) %>%
+  mutate(next_2wk_cases = `2 wk ahead inc case`,
+    diff_2wk_cases = next_2wk_cases - last_2wk_cases,
+    next_4wk_cases = `4 wk ahead inc case`,
+    diff_4wk_cases = next_4wk_cases - last_4wk_cases,
+    pop_x_1k = round(Population/1000),
+    last_2wk_cases_rate = round(last_2wk_cases/Population*100000/14,3),
+    last_4wk_cases_rate = round(last_4wk_cases/Population*100000/28,3),
+    next_2wk_cases_rate = round(next_2wk_cases/Population*100000/14,3),
+    next_4wk_cases_rate = round(next_4wk_cases/Population*100000/28, 3),
+    diff_2wk_cases_rate = round(next_2wk_cases_rate - last_2wk_cases_rate, 3),
+    diff_4wk_case_rate = round(next_4wk_cases_rate - last_4wk_cases_rate, 3) %>%
+  select(location_name, Population, cum_cases_at_forecast_start,
+    last_2wk_cases, next_2wk_cases, diff_2wk_cases, 
+    last_4wk_cases, next_4wk_cases, diff_4wk_cases,
+    last_2wk_cases_rate, next_2wk_cases_rate,  
+    last_4wk_cases_rate, next_4wk_cases_rate, 
+    diff_2wk_cases_rate, diff_4wk_cases_rate, next_2wk_inc_cases)
+  
+
+#filter quantile data for predicting future weeks
+ensemble_quantdat1 <- dat %>%
+  filter(target == "2 wk ahead inc case") %>%
+  filter(class == "quantile")
+
+wide_quant_dat1 <- spread(ensemble_quantdat1, target, value) %>%
+  left_join(recent_inc_case_totals %>% select(fips, location_name, last_2wk_cases, cum_cases_at_forecast_start)) %>%
+  mutate(next_2wk_cases = `2 wk ahead inc case` - cum_cases_at_forecast_start)
+
+quant.5_cutoff <- wide_quant_dat %>%
+  filter(quantile == .5, next_2wk_cases >= last_2wk_cases)
+
+quant.25_cutoff <- wide_quant_dat %>%
+  filter(quantile == .25, next_2wk_cases >= last_2wk_cases)
+```
 
 ```{r make-datatable-inc-death-rates}
 
@@ -345,7 +413,7 @@ datatable(wide_point_dat %>%
       cum_deaths_at_forecast_start, 
       last_2wk_deaths_rate, next_2wk_deaths_rate, diff_2wk_deaths_rate) %>%
     arrange(desc(diff_2wk_deaths_rate)),
-  caption = 'Table 2: US national and state-level observed and predicted daily death rates for the previous two weeks (ending July 25, 2020) and the next two weeks (ending August 8, 2020).',
+  caption = 'Table 2: County -level observed and predicted daily death rates for the previous two weeks (ending July 25, 2020) and the next two weeks (ending August 8, 2020).',
   options = list(
     autoWidth = TRUE,
     columnDefs = list(list(width = '100px', targets = c(0, 1, 2, 3, 4, 5)))
