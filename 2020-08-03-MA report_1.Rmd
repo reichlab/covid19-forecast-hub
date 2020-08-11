@@ -100,7 +100,7 @@ dat <- zoltr:: do_zoltar_query(
   zoltar_connection, project_url, 
   models = c("COVIDhub-ensemble"),
   targets = c(inc_death_targets, cum_death_targets,inc_case_targets),
-  units=c("01003","US","25","25001","25003","25005","25007","25009","25011","25013","25015","25017","25019","25021"),
+  units=c("US","25","25001","25003","25005","25007","25009","25011","25013","25015","25017","25019","25021"),
   timezeros = as.character(this_monday),
   types = c("point", "quantile"), 
   verbose = FALSE) %>%
@@ -323,7 +323,7 @@ datatable(wide_point_dat %>%
       cum_deaths_at_forecast_start, 
       last_2wk_deaths, next_2wk_deaths, diff_2wk_deaths) %>%
     arrange(desc(diff_2wk_deaths)),
-  caption = 'Table 1: US national and state-level observed deaths to date and for the previous two weeks (ending August 1, 2020) with forecasted COVID-19 deaths for the next two weeks (ending August 15, 2020).',
+  caption = 'Table 1: US national and Massachusetts observed deaths to date and for the previous two weeks (ending August 1, 2020) with forecasted COVID-19 deaths for the next two weeks (ending August 15, 2020).',
   options = list(
     autoWidth = TRUE,
     columnDefs = list(list(width = '100px', targets = c(0, 1, 2, 3, 4, 5)))
@@ -367,13 +367,13 @@ wide_point_dat1 <- spread(ensemble_pointdat1, target, value) %>%
     next_2wk_cases_rate = round(next_2wk_cases/Population*100000/14,3),
     next_4wk_cases_rate = round(next_4wk_cases/Population*100000/28, 3),
     diff_2wk_cases_rate = round(next_2wk_cases_rate - last_2wk_cases_rate, 3),
-    diff_4wk_case_rate = round(next_4wk_cases_rate - last_4wk_cases_rate, 3) %>%
+    diff_4wk_case_rate = round(next_4wk_cases_rate - last_4wk_cases_rate, 3)) %>%
   select(location_name, Population, cum_cases_at_forecast_start,
-    last_2wk_cases, next_2wk_cases, diff_2wk_cases, 
+    last_2wk_cases, next_2wk_cases, diff_2wk_cases,
     last_4wk_cases, next_4wk_cases, diff_4wk_cases,
-    last_2wk_cases_rate, next_2wk_cases_rate,  
-    last_4wk_cases_rate, next_4wk_cases_rate, 
-    diff_2wk_cases_rate, diff_4wk_cases_rate, next_2wk_inc_cases)
+    last_2wk_cases_rate, next_2wk_cases_rate,
+    last_4wk_cases_rate, next_4wk_cases_rate,
+    diff_2wk_cases_rate, diff_4wk_case_rate)
 
 #filter quantile data for predicting future weeks
 ensemble_quantdat1 <- dat %>%
@@ -384,33 +384,33 @@ wide_quant_dat1 <- spread(ensemble_quantdat1, target, value) %>%
   left_join(recent_inc_case_totals %>% select(fips, location_name, last_2wk_cases, cum_cases_at_forecast_start)) %>%
   mutate(next_2wk_cases = `2 wk ahead inc case` - cum_cases_at_forecast_start)
 
-quant.5_cutoff <- wide_quant_dat %>%
+quant.5_cutoff <- wide_quant_dat1 %>%
   filter(quantile == .5, next_2wk_cases >= last_2wk_cases)
 
-quant.25_cutoff <- wide_quant_dat %>%
+quant.25_cutoff <- wide_quant_dat1 %>%
   filter(quantile == .25, next_2wk_cases >= last_2wk_cases)
 ```
 
-```{r make-datatable-inc-death-rates}
+```{r make-datatable-inc-case-rates}
 
 ## color for rates
-death_rate_max_2wk <- max(c(wide_point_dat$last_2wk_deaths_rate, wide_point_dat$next_2wk_deaths_rate))
-brks <- seq(0, death_rate_max_2wk, length.out = 100) #quantile(df, probs = seq(.05, .95, .05), na.rm = TRUE)
+case_rate_max_2wk <- max(c(wide_point_dat1$last_2wk_cases_rate, wide_point_dat1$next_2wk_cases_rate))
+brks <- seq(0, case_rate_max_2wk, length.out = 100) #quantile(df, probs = seq(.05, .95, .05), na.rm = TRUE)
 clrs <- round(seq(255, 40, length.out = length(brks) + 1), 0) %>%
   {paste0("rgb(255,", ., ",", ., ")")}
 
 ## colors for rate difference
-death_rate_diff_2wk <- max(abs(wide_point_dat$diff_2wk_deaths_rate))
-brks1 <- seq(-death_rate_diff_2wk, death_rate_diff_2wk, length.out = 100) #quantile(df, probs = seq(.05, .95, .05), na.rm = TRUE)
+case_rate_diff_2wk <- max(abs(wide_point_dat1$diff_2wk_cases_rate))
+brks1 <- seq(-case_rate_diff_2wk, case_rate_diff_2wk, length.out = 100) #quantile(df, probs = seq(.05, .95, .05), na.rm = TRUE)
 clrs1 <- colorRampPalette(colors = rev(RColorBrewer::brewer.pal(n=3, "RdBu")))(length(brks1)+1)
 
 
-datatable(wide_point_dat %>% 
+datatable(wide_point_dat1 %>% 
     select(location_name, Population,
-      cum_deaths_at_forecast_start, 
-      last_2wk_deaths_rate, next_2wk_deaths_rate, diff_2wk_deaths_rate) %>%
-    arrange(desc(diff_2wk_deaths_rate)),
-  caption = 'Table 2: County -level observed and predicted daily death rates for the previous two weeks (ending July 25, 2020) and the next two weeks (ending August 8, 2020).',
+      cum_cases_at_forecast_start, 
+      last_2wk_cases_rate, next_2wk_cases_rate, diff_2wk_cases_rate) %>%
+    arrange(desc(diff_2wk_cases_rate)),
+  caption = 'Table 2: County level observed and predicted daily case rates for the previous two weeks (ending July 25, 2020) and the next two weeks (ending August 8, 2020).',
   options = list(
     autoWidth = TRUE,
     columnDefs = list(list(width = '100px', targets = c(0, 1, 2, 3, 4, 5)))
@@ -419,14 +419,14 @@ datatable(wide_point_dat %>%
   colnames=c('county'='location_name', 
     #'Population, \'000'='pop_x_1k',
     'Population' = 'Population',
-    'Total COVID-19 deaths'='cum_deaths_at_forecast_start',
-    'Daily deaths per 100k, last 2 weeks'='last_2wk_deaths_rate',
-    'Daily deaths per 100k, next 2 weeks'='next_2wk_deaths_rate',
-    'Death rate difference' = 'diff_2wk_deaths_rate')) %>%
+    'Total COVID-19 cases'='cum_cases_at_forecast_start',
+    'Daily cases per 100k, last 2 weeks'='last_2wk_cases_rate',
+    'Daily cases per 100k, next 2 weeks'='next_2wk_cases_rate',
+    'Case rate difference' = 'diff_2wk_cases_rate')) %>%
   ## formatStyle("Daily deaths per 100k, last 2 weeks", backgroundColor = styleInterval(brks, clrs)) %>%
   ## formatStyle("Daily deaths per 100k, next 2 weeks", backgroundColor = styleInterval(brks, clrs))  %>%
-  formatStyle('Death rate difference', backgroundColor = styleInterval(brks1, clrs1))  %>%
-  formatCurrency('Total COVID-19 deaths',currency = "", interval = 3, mark = ",", digits=0) %>%
+  formatStyle('Case rate difference', backgroundColor = styleInterval(brks1, clrs1))  %>%
+  formatCurrency('Total COVID-19 cases',currency = "", interval = 3, mark = ",", digits=0) %>%
   formatCurrency('Population',currency = "", interval = 3, mark = ",", digits=0)
 
 ```
