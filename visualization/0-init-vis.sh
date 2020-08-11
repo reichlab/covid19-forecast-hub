@@ -106,7 +106,7 @@ rm -rf ./data/Incident\ Deaths/CU-nochange
 rm -rf ./data/Cumulative\ Deaths/CU-nochange
 
 # Parse through forecasts and update format
-python3 ./scripts/convert-forecasts.py
+python3 ./scripts/convert_forecasts.py
 
 # Get truth data
 cd ../data-truth
