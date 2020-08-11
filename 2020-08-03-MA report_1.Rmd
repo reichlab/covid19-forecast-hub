@@ -250,17 +250,11 @@ recent_inc_death_totals[which(recent_inc_death_totals$location_name=="Texas"), "
 
 
 ```{r process-ensemble-data-deaths for US and MA}
-ensemble_pointdat1  <- dat  %>%
-  filter(grepl('inc case', target)) %>%
-  filter(class=="point") %>%
-  select(fips, target, value, timezero)
-
 ensemble_pointdat  <- dat  %>%
   filter(grepl('cum death', target)) %>%
   filter(class=="point") %>%
   select(fips, target, value, timezero)
 
-#deaths
 wide_point_dat <- spread(ensemble_pointdat, target, value) %>%
   left_join(recent_inc_death_totals) %>%
   mutate(next_2wk_deaths = `2 wk ahead cum death` - cum_deaths_at_forecast_start,
@@ -355,8 +349,12 @@ datatable(wide_point_dat %>%
 
 The sortable and searchable table below shows the total number of reported COVID-19 cases at the county level for Massachusetts as of Saturday, August 1, 2020 ("Total COVID-19 Cases") as well as the rate of reported COVID-19 cases in the population (standardized per 100,000 population) over the last two weeks and over the next two weeks. Looking at the rates allows for easier comparison across counties, where you can see which counties have had or are predicted to have propoportionally higher rates in comparison to other counties. These tables calculate an average daily number of cases per 100,000 population across the last two weeks (ending Saturday, August 1, 2020) and forecasted for the following two weeks (ending August 15, 2020).
 
-```{r process-ensemble-data-cases}
-#cases
+```{r process-ensemble-data-cases for MA counties}
+ensemble_pointdat1  <- dat  %>%
+  filter(grepl('inc case', target)) %>%
+  filter(class=="point") %>%
+  select(fips, target, value, timezero)
+
 wide_point_dat1 <- spread(ensemble_pointdat1, target, value) %>%
   left_join(recent_inc_case_totals) %>%
   mutate(next_2wk_cases = `2 wk ahead inc case`,
@@ -376,7 +374,6 @@ wide_point_dat1 <- spread(ensemble_pointdat1, target, value) %>%
     last_2wk_cases_rate, next_2wk_cases_rate,  
     last_4wk_cases_rate, next_4wk_cases_rate, 
     diff_2wk_cases_rate, diff_4wk_cases_rate, next_2wk_inc_cases)
-  
 
 #filter quantile data for predicting future weeks
 ensemble_quantdat1 <- dat %>%
