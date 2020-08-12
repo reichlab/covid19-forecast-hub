@@ -47,7 +47,7 @@ this_monday <- next_saturday - 5
 This report provides a brief summary of the weekly ensemble forecast from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/) based on forecasts submitted on `r format(this_monday, "%B %d, %Y")`. In collaboration with the US CDC, our team aggregates COVID-19 forecasts from dozens of teams around the globe. Typically on Wednesday or Thursday of each week, a summary of the week's forecasts from the COVID-19 Forecast Hub appear on the [official CDC COVID-19 forecasting page](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html).
 
 
-```{r nmodels-this-week, eval=FALSE}
+```{r nmodels-this-week}
 models_this_week <- zoltr::do_zoltar_query(
   zoltar_connection, project_url, 
   targets = c("1 wk ahead cum death", "1 wk ahead inc death", "1 wk ahead inc case", "1 day ahead inc hosp"),
