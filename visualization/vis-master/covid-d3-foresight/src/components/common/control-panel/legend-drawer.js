@@ -212,6 +212,9 @@ export default class LegendDrawer extends Component {
           this.ensembleRow.click()
         }
         this.showHideButtons.set(2)
+      } else if(this.showHideButtons.idx == 0) {
+        this.bottomRows.forEach (p => p.click())
+        this.showHideButtons.set(0)
       }
       
 
