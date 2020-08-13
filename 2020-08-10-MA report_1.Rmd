@@ -226,7 +226,7 @@ ggplot() +
   scale_color_manual(values = c("black", tail(blues,1))) +
   scale_x_date(name = NULL, date_breaks="1 month", date_labels = "%b %d") +
   ylab("incident deaths") +
-  labs(title="Weekly reported COVID-19 deaths in the Massachusetts: observed and forecasted",
+  labs(title="Weekly reported COVID-19 deaths in state: observed and forecasted",
     caption="source: JHU CSSE (observed data), COVID-19 Forecast Hub (forecasts)") +
   theme(legend.position = c(.05,.95), legend.justification = c(0,1))
 ```
@@ -452,14 +452,14 @@ ggplot() +
   scale_color_manual(values = c("black", tail(blues,1))) +
   scale_x_date(name = NULL, date_breaks="1 month", date_labels = "%b %d") +
   ylab("incident cases") +
-  labs(title="Weekly reported COVID-19 cases in Massachusetts: \nobserved and forecasted",
+  labs(title="Weekly reported COVID-19 cases in state: observed and forecasted",
     caption="source: JHU CSSE (observed data), COVID-19 Forecast Hub (forecasts)") +
   theme(legend.position = c(.05,.95), legend.justification = c(0,1))
 ```
 
 
 
-The sortable and searchable table below shows the total number of reported COVID-19 cases at the US and state level for Massachusetts as of Saturday,`r format(last_5_saturdays[5], "%B %d, %Y")`  ("Total COVID-19 Cases") as well as the rate of reported COVID-19 cases in the population (standardized per 100,000 population) over the last two weeks and over the next two weeks. These tables calculate an average number of cases per 100,000 population across the last two weeks (ending Saturday, `r format(last_5_saturdays[5], "%B %d, %Y")`) and forecasted for the following two weeks (ending  `r format(last_5_saturdays[5]+14, "%B %d, %Y")`).
+The sortable and searchable table below shows the total number of reported COVID-19 cases at the US and state level for Massachusetts as of Saturday,`r format(last_5_saturdays[5], "%B %d, %Y")`  ("Total COVID-19 Cases") as well as the rate of reported COVID-19 cases in the population (standardized per 100,000 population) over the last two weeks and over the next two weeks.
 
 ```{r process-ensemble-data-cases for MA and US}
 MA_US<- c("US","25") 
@@ -472,9 +472,9 @@ ensemble_pointdat2  <- dat  %>%
 
 wide_point_dat2 <- spread(ensemble_pointdat2, target, value) %>%
   left_join(recent_inc_case_totals) %>%
-  mutate(next_2wk_cases = `2 wk ahead inc case`,
+  mutate(next_2wk_cases = `2 wk ahead inc case` + `1 wk ahead inc case`,
     diff_2wk_cases = next_2wk_cases - last_2wk_cases,
-    next_4wk_cases = `4 wk ahead inc case`,
+    next_4wk_cases = `4 wk ahead inc case` + `3 wk ahead inc case` + next_2wk_cases,
     diff_4wk_cases = next_4wk_cases - last_4wk_cases,
     pop_x_1k = round(Population/1000),
     last_2wk_cases_rate = round(last_2wk_cases/Population*100000/14,3),
@@ -550,10 +550,8 @@ datatable(wide_point_dat2 %>%
 ## County level
 
 
-```{r make-state-inc-case-plot-bycounties, fig.cap="Figure 3: Weekly observed and forecasted COVID-19 Cases by County. Observed data from [JHU CSSE](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/) and forecasts from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/).", fig.topcaption=TRUE}
-
-MA_counties <- c("25001","25003","25005","25007","25009","25011","25013","25015","25017","25019","25021","25023","25025","25027")    
-           
+```{r make-state-inc-case-plot-bycounties, fig.cap="Figure 3: Weekly observed and forecasted COVID-19 Cases by County for those with Low Incidence. Observed data from [JHU CSSE](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/) and forecasts from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/).", fig.topcaption=TRUE}
+MA_counties <- c("25001","25003","25005","25007","25009","25011","25013","25015","25017","25019","25021","25023","25025","25027")
 ggplot() +
   geom_ribbon(data = inc_case_quantiles %>% filter(fips %in% MA_counties),
     mapping = aes(x = target_end_date,
@@ -565,16 +563,57 @@ ggplot() +
   geom_point(data=inc_case_all_points %>%
       dplyr::filter(fips %in% MA_counties, !(model=="COVIDhub-ensemble" & target_end_date <= this_monday)),
     mapping = aes(x = target_end_date, y = value, color = model)) +
-    facet_wrap( ~ fips ) +
+    facet_wrap( ~ fips,labeller = labeller(fips=
+           c("25001"="Barnstable", "25003"="Berkshire","25005"="Bristol","25007"="Dukes",
+             "25009"="Essex","25011"="Franklin","25013"="Hampden","25015"="Hampshire",
+             "25017"="Middlesex","25019"="Nantucket","25021"="Norfolk","25023"="Plymouth",
+             "25025"="Suffolk","25027"="Worcester")
+                                               )) +
+  scale_fill_manual(values = blues[1:(length(blues)-1)]) +
+  scale_color_manual(values = c("black", tail(blues,1))) +
+  scale_x_date(name = NULL, date_breaks="2 month", date_labels = "%b %d") +
+  ylab("incident cases") +
+  labs(title="Weekly reported COVID-19 cases in Massachusetts Counties:\n observed and forecasted",
+    caption="source: JHU CSSE (observed data), COVID-19 Forecast Hub (forecasts)") +
+  theme(axis.text.x = element_text(angle=90))
+ # vertical rotation of x axis text
+# theme(axis.text.x = element_text(angle=90))
+  # theme(axis.text.x = element_text(angle=90))
+```
+
+The figure below examines the counties with low incidence of cases.
+
+```{r make-state-inc-case-plot-bycountieslow, fig.cap="Figure 4: Weekly observed and forecasted COVID-19 Cases by County for Counties with Low Incidence. Observed data from [JHU CSSE](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/) and forecasts from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/).", fig.topcaption=TRUE}
+Low_MA_counties <- c("25001","25003","25007","25011","25015","25019")    
+          
+ggplot() +
+  geom_ribbon(data = inc_case_quantiles %>% filter(fips %in% Low_MA_counties),
+    mapping = aes(x = target_end_date,
+      ymin=lower, ymax=upper,
+      fill=`Prediction Interval`)) +
+  geom_line(data=inc_case_all_points %>%
+      dplyr::filter(fips %in% Low_MA_counties),
+    mapping = aes(x = target_end_date, y = value, color = model)) +
+  geom_point(data=inc_case_all_points %>%
+      dplyr::filter(fips %in% Low_MA_counties, !(model=="COVIDhub-ensemble" & target_end_date <= this_monday)),
+    mapping = aes(x = target_end_date, y = value, color = model)) +
+    facet_wrap( ~ fips,labeller = labeller(fips=
+           c("25001"="Barnstable", "25003"="Berkshire","25005"="Bristol","25007"="Dukes",
+             "25009"="Essex","25011"="Franklin","25013"="Hampden","25015"="Hampshire",
+             "25017"="Middlesex","25019"="Nantucket","25021"="Norfolk","25023"="Plymouth",
+             "25025"="Suffolk","25027"="Worcester")
+                                               )) +
   scale_fill_manual(values = blues[1:(length(blues)-1)]) +
   scale_color_manual(values = c("black", tail(blues,1))) +
   scale_x_date(name = NULL, date_breaks="1 month", date_labels = "%b %d") +
   ylab("incident cases") +
-  labs(title="Weekly reported COVID-19 cases in Massachusetts Counties:\n observed and forecasted",
-    caption="source: JHU CSSE (observed data), COVID-19 Forecast Hub (forecasts)")
-  #theme(legend.position = c(.05,.95), legend.justification = c(0,1))
+  labs(title="Weekly reported COVID-19 cases in Massachusetts Counties with low incidence  \n of cases: observed and forecasted",
+    caption="source: JHU CSSE (observed data), COVID-19 Forecast Hub (forecasts)") +
+  theme(axis.text.x = element_text(angle=90))
+ # vertical rotation of x axis text
+# theme(axis.text.x = element_text(angle=90))
+  # theme(axis.text.x = element_text(angle=90))
 ```
-
 
 
 
@@ -592,9 +631,9 @@ ensemble_pointdat1  <- dat  %>%
 
 wide_point_dat1 <- spread(ensemble_pointdat1, target, value) %>%
   left_join(recent_inc_case_totals) %>%
-  mutate(next_2wk_cases = `2 wk ahead inc case`,
+  mutate(next_2wk_cases = `2 wk ahead inc case` + `1 wk ahead inc case`,
     diff_2wk_cases = next_2wk_cases - last_2wk_cases,
-    next_4wk_cases = `4 wk ahead inc case`,
+    next_4wk_cases = `4 wk ahead inc case` + `3 wk ahead inc case` + next_2wk_cases,
     diff_4wk_cases = next_4wk_cases - last_4wk_cases,
     pop_x_1k = round(Population/1000),
     last_2wk_cases_rate = round(last_2wk_cases/Population*100000/14,3),
