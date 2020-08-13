@@ -65,7 +65,7 @@ export function y_pred(actual, predictions, dataConfig): Range {
     })
   })
 
-  return [min, 1.3 * max]
+  return [min, 1.2 * max]
 }
 
 /**
