@@ -318,12 +318,14 @@ brks <- seq(-death_max_2wk, death_max_2wk, length.out = 100) #quantile(df, probs
 #clrs <- scico(n=length(brks)+1, palette="roma")
 clrs <- colorRampPalette(colors = rev(RColorBrewer::brewer.pal(n=3, "RdBu")))(length(brks)+1)
 
+table1_cap <- paste0("Table 1: US national and state-level observed deaths to date and for the previous two weeks (ending ", format(last_5_saturdays[5], "%B %d, %Y") ,") and the next two weeks (ending ", format(last_5_saturdays[5]+14, "%B %d, %Y"), ").")
+
 datatable(wide_point_dat %>% 
     select(location_name, Population,
       cum_deaths_at_forecast_start, 
       last_2wk_deaths, next_2wk_deaths, diff_2wk_deaths) %>%
     arrange(desc(diff_2wk_deaths)),
-  caption = 'Table 1: US national and state-level observed deaths to date and for the previous two weeks (ending August 1, 2020) with forecasted COVID-19 deaths for the next two weeks (ending August 15, 2020).',
+  caption = table1_cap,
   options = list(
     autoWidth = TRUE,
     columnDefs = list(list(width = '100px', targets = c(0, 1, 2, 3, 4, 5)))
@@ -363,12 +365,14 @@ brks1 <- seq(-death_rate_diff_2wk, death_rate_diff_2wk, length.out = 100) #quant
 clrs1 <- colorRampPalette(colors = rev(RColorBrewer::brewer.pal(n=3, "RdBu")))(length(brks1)+1)
 
 
+table2_cap <- paste0("Table 2: US national and state-level observed and predicted daily death rates for the previous two weeks (ending ", format(last_5_saturdays[5], "%B %d, %Y") ,") and the next two weeks (ending ", format(last_5_saturdays[5]+14, "%B %d, %Y"), ").")
+
 datatable(wide_point_dat %>% 
     select(location_name, Population,
       cum_deaths_at_forecast_start, 
       last_2wk_deaths_rate, next_2wk_deaths_rate, diff_2wk_deaths_rate) %>%
     arrange(desc(diff_2wk_deaths_rate)),
-  caption = 'Table 2: US national and state-level observed and predicted daily death rates for the previous two weeks (ending July 25, 2020) and the next two weeks (ending August 8, 2020).',
+  caption = table2_cap,
   options = list(
     autoWidth = TRUE,
     columnDefs = list(list(width = '100px', targets = c(0, 1, 2, 3, 4, 5)))
