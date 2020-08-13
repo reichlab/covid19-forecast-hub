@@ -148,11 +148,11 @@ state_cum_deaths <- dat %>%
 state_inc_death_range <- dat %>% 
   filter(fips=="25", target %in% inc_death_targets, class=="point") %>% 
   pull(value) %>% range() %>%
-  round(-2) %>% format(big.mark = ",")
+  round(-1) %>% format(big.mark = ",")
 state_inc_death_wk_pi_round <- dat %>% 
   filter(fips=="25", target == "4 wk ahead inc death", quantile %in% c(0.025, 0.975)) %>% 
   pull(value) %>% sort() %>%
-  round(-2) %>% format(big.mark = ",")
+  round(-1) %>% format(big.mark = ",")
 state_inc_death_wk_pi <- dat %>% 
   filter(fips=="25", target == "4 wk ahead inc death", quantile %in% c(0.025, 0.975)) %>% 
   pull(value) %>% sort() %>% 
@@ -459,7 +459,7 @@ ggplot() +
 
 
 
-The sortable and searchable table below shows the total number of reported COVID-19 cases at the US and state level for Massachusetts as of Saturday,`r format(last_5_saturdays[5], "%B %d, %Y")`  ("Total COVID-19 Cases") as well as the rate of reported COVID-19 cases in the population (standardized per 100,000 population) over the last two weeks and over the next two weeks. These tables calculate an average daily number of cases per 100,000 population across the last two weeks (ending Saturday, `r format(last_5_saturdays[5], "%B %d, %Y")`) and forecasted for the following two weeks (ending  `r format(last_5_saturdays[5]+14, "%B %d, %Y")`).
+The sortable and searchable table below shows the total number of reported COVID-19 cases at the US and state level for Massachusetts as of Saturday,`r format(last_5_saturdays[5], "%B %d, %Y")`  ("Total COVID-19 Cases") as well as the rate of reported COVID-19 cases in the population (standardized per 100,000 population) over the last two weeks and over the next two weeks. These tables calculate an average number of cases per 100,000 population across the last two weeks (ending Saturday, `r format(last_5_saturdays[5], "%B %d, %Y")`) and forecasted for the following two weeks (ending  `r format(last_5_saturdays[5]+14, "%B %d, %Y")`).
 
 ```{r process-ensemble-data-cases for MA and US}
 MA_US<- c("US","25") 
