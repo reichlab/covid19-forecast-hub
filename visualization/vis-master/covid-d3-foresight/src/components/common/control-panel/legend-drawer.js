@@ -188,6 +188,7 @@ export default class LegendDrawer extends Component {
 
     // Plot models which are unpinned in the bottom section
     this.bottomContainer.selectAll('*').remove()
+    predictions.forEach(p => p.hidden = true)
     this.bottomRows = predictions
       .filter(p => config.pinnedModels.indexOf(p.id) === -1)
       .map(p => {
@@ -204,7 +205,6 @@ export default class LegendDrawer extends Component {
       })
     
       if(this.showHideButtons.idx == 2) {
-        this.showHideAllItems(false)
         if(!this.ensembleRow) {
           this.ensembleRow = this.bottomRows.find(r => r.id === 'COVIDhub-ensemble')
         }
@@ -240,6 +240,7 @@ export default class LegendDrawer extends Component {
         row.na = p.noData
       }
     })
+    ev.publish(this.uuid, ev.LEGEND_RESCALE, {})
   }
 
   updateTitle(title) {
