@@ -29,7 +29,7 @@ function makePredictionRow (p, tooltip) {
 export default class LegendDrawer extends Component {
   constructor (config) {
     super()
-
+    this.init = false
     this.selection.classed('legend-drawer', true)
 
     // Items above the controls (actual, observed, history)
@@ -188,7 +188,9 @@ export default class LegendDrawer extends Component {
 
     // Plot models which are unpinned in the bottom section
     this.bottomContainer.selectAll('*').remove()
-    predictions.forEach(p => p.hidden = true)
+    if(this.init == false) {
+      predictions.forEach(p => p.hidden = true)
+    }
     this.bottomRows = predictions
       .filter(p => config.pinnedModels.indexOf(p.id) === -1)
       .map(p => {
@@ -203,7 +205,8 @@ export default class LegendDrawer extends Component {
         this.bottomContainer.append(() => drawerRow.node)
         return drawerRow
       })
-    
+    // If not initialized sset the initial status based on the selected 'Show' toggle
+    if(this.init == false) { 
       if(this.showHideButtons.idx == 2) {
         if(!this.ensembleRow) {
           this.ensembleRow = this.bottomRows.find(r => r.id === 'COVIDhub-ensemble')
@@ -216,6 +219,9 @@ export default class LegendDrawer extends Component {
         this.bottomRows.forEach (p => p.click())
         this.showHideButtons.set(0)
       }
+      this.init = true
+    }
+
       
 
     // Handle pinned models separately
