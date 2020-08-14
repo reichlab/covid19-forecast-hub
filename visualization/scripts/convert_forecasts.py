@@ -1,11 +1,12 @@
 import pandas as pd
 import glob
 import os
+from utils import _utils
+from pathlib import Path
 
-
-def reformat_forecasts(file_path, target):
+def reformat_forecasts(file_path, target, root, data):
     # read forecast
-    fips_codes = pd.read_csv('../data-locations/locations.csv')
+    fips_codes = pd.read_csv(root / 'data-locations/locations.csv')
     df = pd.read_csv(file_path)
 
     # lowercase all column headers
@@ -72,11 +73,13 @@ def reformat_forecasts(file_path, target):
 
     return df
 
-
+root = _utils.get_root()
+data = _utils.get_data()
+print(root, data)
 # loop through model directories
-my_path = "./data/"
-for file_path in glob.iglob(my_path + "**/**/*.csv", recursive=False):
+my_path = Path("./data/")
+for file_path in my_path.glob("**/**/*.csv"):
     target = os.path.basename(os.path.dirname(os.path.dirname(file_path)))
     print(file_path)
-    df2 = reformat_forecasts(file_path, target)
+    df2 = reformat_forecasts(file_path, target, root, data)
     df2.to_csv(file_path, index=False, float_format='%.14f')
