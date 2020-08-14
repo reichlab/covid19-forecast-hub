@@ -6,7 +6,7 @@ on:
         description: 'Deploy to GitHub Pages'
 
 jobs:
-  upload_zoltar:
+  deploy_gh_pages:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -25,6 +25,12 @@ jobs:
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
     - run: npm install
     - run: pip3 install -r visualization/requirements.txt
-    - run: npm run build-viz-linux  && npm run deploy-ci
+    - run: npm run build-viz-linux
       env:
         GH_TOKEN: ${{secrets.GH_TOKEN}}
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@3.5.9
+      with:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: visualization/vis-master/dist
