@@ -5,7 +5,7 @@ model_contributors: Afraz Mohammad (Google Cloud AI) <afraz@google.com>, Brian K
 website_url: https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-is-releasing-the-covid-19-public-forecasts
 license: other
 team_model_designation: primary
-methods: Our model improves upon standard compartmental models by using temporally and spatially rich data, and integrating covariate encodings into compartment transitions to extract information via end-to-end learning.
-citation: Interpretable Sequence Learning for COVID-19 Forecasting (arxiv.org/abs/2008.00646)
+methods: Our model improves upon standard compartmental models by using temporally and spatially rich data, and integrating covariate encodings into compartment transitions via end-to-end learning.
+citation: https://arxiv.org/abs/2008.00646
 
 
