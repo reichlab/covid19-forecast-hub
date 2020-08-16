@@ -90,6 +90,7 @@ repository are (with data reuse license):
  - [GLEAM from Northeastern University](https://www.gleamproject.org/covid-19) (CC-BY-4.0)
  - [Georgia Institute of Technology](https://www.cc.gatech.edu/~badityap/covid.html) (CC-BY-4.0)
  - [Georgia Institute of Technology - Center for Health and Humanitarian Systems](https://github.com/pkeskinocak/Center-for-Health-and-Humanitarian-Systems/tree/master/COVID-19) (CC-BY-4.0)
+ - [Google Cloud AI](https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-is-releasing-the-covid-19-public-forecasts) (other)
  - [IHME](https://covid19.healthdata.org/united-states-of-america) (CC-AT-NC-4.0)
  - [Iowa State University](http://www.covid19dashboard.us/) (CC-BY-4.0)
  - [Iowa State University and Peking University](https://yumouqiu.shinyapps.io/covid-predict/) (CC-BY-4.0)
