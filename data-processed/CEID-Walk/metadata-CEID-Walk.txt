@@ -1,0 +1,9 @@
+team_name: University of Georgia Center for the Ecology of Infectious Diseses Forecasting Working Group
+model_name: Walk
+model_abbr: CEID-Walk
+model_contributors: Eamon O'Dea (CEID) <odea35@gmail.com>
+website_url: https://github.com/e3bo/random-walks
+license: cc-by-4.0
+team_model_designation: primary
+data_inputs: Johns Hopkins CSSE case and death data
+methods: We use a random walk model with drift. A least squares line is fitted to the tail observations of a target time series to estimate the drift and step variance of a random walk model.

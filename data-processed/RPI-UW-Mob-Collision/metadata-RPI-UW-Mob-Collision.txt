@@ -27,5 +27,5 @@ methods_long: "We incorporate mobility information into a simplified SIR model w
   \ our paper those three categorites behave similarly. We conducted standard error \
   \ analysis on our forecast in which the uncertainty comes from both the fitting \
   \ error and the variation of the reference fatality. Quantile forecast is calculated \
-  \ based on standard error assuming normal distribution. State-level forecast and \
-  \ county-level forecast will be conducted later."
+  \ based on standard error assuming normal distribution. State-level forecast has been
+  \ included for 29 states. Other states and county-level forecast will be included later." 
