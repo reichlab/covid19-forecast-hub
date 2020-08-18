@@ -60,24 +60,28 @@ let modelDirs = models.getModelDirs(
 
 modelDirs.forEach(modelDir => {
   // Read metadata and parse to usable form
+  let rootMeta = models.getModelMetadata(modelDir)
   let flusightMetadata = parseMetadata(modelDir)
   let modelId = models.getModelId(modelDir)
   let target_categories = meta.targets_cats
 
-  target_categories.forEach(target_cats => // Cumulative Deaths, Incident Deaths
-    models.getModelCsvs(modelDir)
-    .forEach(csvFile => {
-      let info = parseCSVInfo(path.basename(csvFile))
+  // parse only those models that are designated "primary" or "secondary"
+  if(rootMeta.team_model_designation === 'primary' || rootMeta.team_model_designation === 'secondary') {
+    target_categories.forEach(target_cats => // Cumulative Deaths, Incident Deaths
+      models.getModelCsvs(modelDir)
+      .forEach(csvFile => {
+        let info = parseCSVInfo(path.basename(csvFile))
 
-      // CSV target path
-      let csvTargetDir = path.join('./data', target_cats, modelId)
-      fs.ensureDirSync(csvTargetDir)
+        // CSV target path
+        let csvTargetDir = path.join('./data', target_cats, modelId)
+        fs.ensureDirSync(csvTargetDir)
 
-      // Copy csv
-      fs.copySync(csvFile, path.join(csvTargetDir, info.name))
+        // Copy csv
+        fs.copySync(csvFile, path.join(csvTargetDir, info.name))
 
-      // Write metadata
-      ensureMetadata(path.join(csvTargetDir, 'meta.yml'), flusightMetadata)
-    })
-  )
+        // Write metadata
+        ensureMetadata(path.join(csvTargetDir, 'meta.yml'), flusightMetadata)
+      })
+    )
+  }
 })

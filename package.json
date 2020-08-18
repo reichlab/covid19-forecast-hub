@@ -14,6 +14,7 @@
     "build": "cd visualization/vis-master && rm -rf dist && node --max_old_space_size=6000 build/build.js && cd ../..",
     "deploy": "node ./visualization/scripts/gh-deploy.js",
     "deploy-origin": "node ./visualization/scripts/gh-deploy-origin.js",
+    "deploy-ci": "node ./visualization/scripts/gh-deploy-ci.js",
     "build-viz-mac": "cd visualization && ./0-init-vis.sh && ./2-mac-build-vis.sh && cd ..",
     "build-viz-linux": "cd visualization && ./0-init-vis.sh && ./1-patch-vis.sh && ./2-build-vis.sh && cd ..",
     "setup-viz": "cd visualization && ./one-time-setup.sh && cd ..",

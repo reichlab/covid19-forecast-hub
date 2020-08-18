@@ -1,3 +1,5 @@
+bash ./travis/validate-data.sh
+
 echo "updating truth data..."
 bash ./travis/update-truth.sh
 

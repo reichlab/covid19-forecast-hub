@@ -1,5 +1,5 @@
 # COVID-19 Forecast Hub 
-<img src="https://travis-ci.com/reichlab/covid19-forecast-hub.svg?branch=master">
+![Node.js CI](https://github.com/reichlab/covid19-forecast-hub/workflows/Node.js%20CI/badge.svg)
 
 The goal of this repository is to create a standardized set of data on forecasts from teams making projections of cumulative and incident deaths and incident hospitalizations due to COVID-19 in the United States. This repository is the data source for [the official CDC COVID-19 Forecasting page](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html). This project to collect, standardize, visualize and synthesize forecast data has been led by the CDC-funded UMass-Amherst Influenza Forecasting Center of Excellence based at the [Reich Lab](https://reichlab.io/), with [contributions from many others](https://github.com/reichlab/covid19-forecast-hub/blob/master/README.md#the-covid-forecast-hub-team). 
 
@@ -79,6 +79,7 @@ repository are (with data reuse license):
 
  - [Auquan](https://covid19-infection-model.auquan.com/) (CC-BY-4.0)
  - [CDDEP](https://cddep.org/covid-19/) (CC-BY-4.0)
+ - [CEID](https://github.com/e3bo/random-walks) (CC-BY-4.0)
  - [Carnegie Mellon Delphi Group](https://delphi.cmu.edu) (CC-BY-4.0)
  - [Columbia University](https://github.com/shaman-lab/COVID-19Projection) (Apache 2.0)
  - [Columbia University and University of North Carolina at Chapel Hill](https://github.com/COVID19BIOSTAT/covid19_prediction) (Apache 2.0)
@@ -88,7 +89,8 @@ repository are (with data reuse license):
  - [epiforecasts](https://github.com/epiforecasts/covid-us-deaths) (MIT)
  - [GLEAM from Northeastern University](https://www.gleamproject.org/covid-19) (CC-BY-4.0)
  - [Georgia Institute of Technology](https://www.cc.gatech.edu/~badityap/covid.html) (CC-BY-4.0)
- - [Georgia Institute of Technology - Center for Health and Humanitarian Systems](https://github.com/pkeskinocak/COVID19GA) (CC-BY-4.0)
+ - [Georgia Institute of Technology - Center for Health and Humanitarian Systems](https://github.com/pkeskinocak/Center-for-Health-and-Humanitarian-Systems/tree/master/COVID-19) (CC-BY-4.0)
+ - [Google Cloud AI](https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-is-releasing-the-covid-19-public-forecasts) (other)
  - [IHME](https://covid19.healthdata.org/united-states-of-america) (CC-AT-NC-4.0)
  - [Iowa State University](http://www.covid19dashboard.us/) (CC-BY-4.0)
  - [Iowa State University and Peking University](https://yumouqiu.shinyapps.io/covid-predict/) (CC-BY-4.0)
@@ -103,6 +105,7 @@ repository are (with data reuse license):
  - [Notre Dame - FRED](https://github.com/confunguido/covid19_ND_forecasting) (CC-BY-4.0)
  - [Notre Dame - mobility](https://github.com/TAlexPerkins/covid19_NDmobility_forecasting) (CC-BY-4.0)
  - [Oliver Wyman](https://pandemicnavigator.oliverwyman.com/) (see [license](./data-processed/OliverWyman-Navigator/LICENSE.txt))
+ - [PandemicCentral-USCounty](https://itsonit.com/) (MIT)
  - [Predictive Science Inc](https://predsci.com) (MIT)
  - [QJHong](https://qjhong.github.io) (CC-BY-4.0)
  - Quantori (CC-BY-4.0)
@@ -121,7 +124,9 @@ repository are (with data reuse license):
  - [University of Michigan](https://gitlab.com/sabcorse/covid-19-collaboration) (CC-BY-4.0)
  - [University of Southern California Data Science Lab](https://scc-usc.github.io/ReCOVER-COVID-19) (MIT)
  - [University of Texas-Austin](https://covid-19.tacc.utexas.edu/projections/) (BSD-3)
+ - [Texas Tech University](https://github.com/fvbttu/squider) (CC-BY-4.0)
  - [University of Virginia](https://biocomplexity.virginia.edu/) (CC-BY-4.0)
+ - [Yu_Group-CLEP](https://covidseverity.com/) (CC-BY-4.0)
  - [YYG](http://covid19-projections.com) (MIT) 
  - COVIDhub ensemble forecast: this is a combination of the above models. 
 
