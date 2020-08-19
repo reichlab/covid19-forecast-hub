@@ -8,9 +8,9 @@ output:
     toc_float:
       collapsed: false
       smooth_scroll: false
-
 ---
 
+commit 1. 8/18
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
