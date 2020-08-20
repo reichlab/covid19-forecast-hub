@@ -4,7 +4,7 @@
 #' @return a data.frame with location summaries
 get_forecast_locations <- function(d) {
   d %>% 
-    dplyr::group_by(team_model, forecast_date) %>%
+    dplyr::group_by(model_abbr, forecast_date) %>%
     dplyr::summarize(
       US = ifelse(any(abbreviation == "US"), "Yes", "-"),
       n_states = sum(state.abb %in% abbreviation),

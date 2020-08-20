@@ -22,8 +22,8 @@ read_forecast_file <- function(f) {
                                    "year","month","day","team2","model_etc"), 
                     sep="-|/") %>%
     
-    dplyr:: mutate(team_model = paste(team,model,sep="-")) %>%
+    dplyr:: mutate(model_abbr = paste(team,model,sep="-")) %>%
     
-    dplyr::select(team_model, forecast_date, type, location, target, quantile, 
+    dplyr::select(model_abbr, forecast_date, type, location, target, quantile, 
                   value, target_end_date)   
 }

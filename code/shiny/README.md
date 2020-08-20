@@ -21,7 +21,7 @@ from the base folder of the repository.
 If you would like to set default team and default model to Latest Viz in shiny app,
 please add to ```.Rprofile``` and then restart R session
 
-    shiny::shinyOptions(default_team_model = "default model_abbr")
+    shiny::shinyOptions(default_model_abbr = "default model_abbr")
 
 Note: JHU New York City County truth is different from those from other sources because five boroughs in NYC were aggregated under “New York City.” For more information: please go to https://coronavirus.jhu.edu/us-map-faq
 
@@ -50,3 +50,15 @@ This tab provides a visualization of all the teams forecasts similar to the
 Dashboard, but with some slightly different features. 
 This tab can be used to visualize forecasts before submitting those forecasts
 to the Hub. 
+
+## ToDo
+
+A number of upgrades to the shiny app are on the to do list:
+
+- Improve speed of reading the data in
+  - Use [fread](https://www.rdocumentation.org/packages/data.table/versions/1.12.8/topics/fread) rather than [read_csv](https://readr.tidyverse.org/reference/read_delim.html)
+  - Use [drake](https://github.com/ropensci/drake) to provide GNU make functionality
+- Allow users to specify default team and model through [options](https://stat.ethz.ch/R-manual/R-devel/library/base/html/options.html)
+- Maintain target and location while changing team and model
+- Display figures rather than tables
+- Remove "Latest" tab and associated `loadd(latest)` from the app as this is the slowest step
