@@ -8,11 +8,11 @@ plan = drake::drake_plan(
     read_forecast_file(file_in(file)) %>%
       dplyr::left_join(locations, by = c("location"))%>%
            tidyr::separate(target, into=c("n_unit","unit","ahead","inc_cum","death_cases"),remove = FALSE),
-    # create id with forecast date and team_model name
+    # create id with forecast date and model_abbr name
     transform = map(file = !!forecast_files,times = !!ids_times, models = !!paste0(ids,"_"),.id = c(times,models))
   ),
   
-  # Combine forecasts by team_model name
+  # Combine forecasts by model_abbr name
   raw_data_by_model = target(
     dplyr::bind_rows(raw_data),
     transform = combine(raw_data,.by = models)
@@ -80,8 +80,8 @@ plan = drake::drake_plan(
    
   latest_targets = target(
     dplyr::bind_rows(latest_targets_by_model) %>%
-      dplyr::select(team_model, forecast_date, type, max_n, target) %>%
-      dplyr::arrange(team_model, forecast_date, type, target),
+      dplyr::select(model_abbr, forecast_date, type, max_n, target) %>%
+      dplyr::arrange(model_abbr, forecast_date, type, target),
     transform = combine(latest_targets_by_model)
   ),
   
@@ -95,8 +95,8 @@ plan = drake::drake_plan(
   
   submissions = target(
     dplyr::bind_rows(submissions_by_model) %>%
-      dplyr::select(team_model, forecast_date, type, max_n, target) %>%
-      dplyr::arrange(team_model, forecast_date, type, target),
+      dplyr::select(model_abbr, forecast_date, type, max_n, target) %>%
+      dplyr::arrange(model_abbr, forecast_date, type, target),
     transform = combine(submissions_by_model)
   ),
   
@@ -136,8 +136,7 @@ plan = drake::drake_plan(
   ##############
 )
 
-shiny <- c("raw_data_by_model",
-           "truth",
+shiny <- c("truth",
            "latest_locations",
            "latest_targets",
            "plot_submissions",
