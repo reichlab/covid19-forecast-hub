@@ -1,6 +1,6 @@
 team_name: RPI and UW
 model_name: Mobility-informed Collision Model
-model_abbr: RPI-UW-Mob-Collision
+model_abbr: RPI_UW-Mob_Collision
 model_contributors: Yunfeng Shi (RPI) shiy2@rpi.edu, Tanooj Shah (RPI) shaht2@rpi.edu, Xuegang Ban (Univ. of Washington) banx@uw.edu
 website_url: http://rpi-uw-covid-mobility.herokuapp.com/
 license: cc-by-4.0
