@@ -124,6 +124,7 @@ repository are (with data reuse license):
  - [University of Michigan](https://gitlab.com/sabcorse/covid-19-collaboration) (CC-BY-4.0)
  - [University of Southern California Data Science Lab](https://scc-usc.github.io/ReCOVER-COVID-19) (MIT)
  - [University of Texas-Austin](https://covid-19.tacc.utexas.edu/projections/) (BSD-3)
+ - [Texas Tech University](https://github.com/fvbttu/squider) (CC-BY-4.0)
  - [University of Virginia](https://biocomplexity.virginia.edu/) (CC-BY-4.0)
  - [Yu_Group-CLEP](https://covidseverity.com/) (CC-BY-4.0)
  - [YYG](http://covid19-projections.com) (MIT) 
