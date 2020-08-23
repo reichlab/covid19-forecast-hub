@@ -112,6 +112,7 @@ repository are (with data reuse license):
  - [Robert Walraven](http://rwalraven.com/COVID19) (CC-BY-4.0)
  - [Rensselaer Polytechnic Institute and University of Washington](https://www.medrxiv.org/content/10.1101/2020.07.25.20162016v1) (CC-BY-4.0)
  - Snyder Wilson Consulting (CC-BY-4.0)
+ - [Steve McConnell](https://stevemcconnell.com/covid) (CC-BY-4.0)
  - [STH](https://public.tableau.com/profile/covid19model#!/vizhome/COVID-19DeathProjections/USDeaths) (CC-BY-4.0)
  - [US Army Engineer Research and Development Center (ERDC)](https://github.com/erdc-cv19/seir-model) (see [license](./data-processed/USACE-ERDC_SEIR/LICENSE.txt))
  - [University of Arizona](https://jocelinelega.github.io/EpiGro/) (CC-BY-NC-SA 4.0)
