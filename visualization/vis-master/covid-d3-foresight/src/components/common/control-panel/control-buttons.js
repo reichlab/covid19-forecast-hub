@@ -30,6 +30,12 @@ export default class ControlButtons extends Component {
         iconClass: 'icon-right-big',
         tooltipText: 'Move forward',
         event: ev.PANEL_MOVE_NEXT
+      },
+      {
+          name: 'rescaleBtn',
+          iconClass: 'fa fa-refresh',
+          tooltipText: 'Rescale',
+          event: ev.LEGEND_RESCALE
       }
     ]
 
