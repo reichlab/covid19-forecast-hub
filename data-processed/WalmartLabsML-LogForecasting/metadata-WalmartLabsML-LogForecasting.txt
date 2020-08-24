@@ -1,8 +1,8 @@
 team_name: Walmart Labs Data Science Team
 model_name: Prophet Logistic Forecasting
 model_abbr: WalmartLabsML-LogForecasting
-model_contributors: Prakhar Mehrotra (Lead modeler - Vice President, Walmart), 
-  <Prakhar.Mehrotra@walmart.com>, Ivan JI (Co-lead modeler - Senior Machine Learning Engineer, Walmart Labs), and the Walmart Labs COVID-19 Team
+model_contributors: Prakhar Mehrotra (Team Leader - Vice President, Walmart), 
+  <Prakhar.Mehrotra@walmart.com>, Ivan JI (lead modeler - Senior Machine Learning Engineer, Walmart Labs), and the Walmart Labs COVID-19 Team
 website_url: https://github.com/ivan-ji-walmart/covid19-forecast-hub
 license: cc-by-4.0
 team_model_designation: primary
