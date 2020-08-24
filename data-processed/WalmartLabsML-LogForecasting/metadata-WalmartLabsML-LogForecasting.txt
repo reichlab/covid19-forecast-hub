@@ -9,6 +9,5 @@ team_model_designation: primary
 methods: (State) A logistic growth prophet forecasting model fit using case counts and deaths as features.
 team_funding: Walmart
 data_inputs: JHU CSSE confirmed case counts and deaths
-citation: 
-methods_long: "State level - Using Propeht model with logistic growths to forecast the US cumulative deaths. By sampleing from 
-  \ uniform distribution to get the quantiles.\
+methods_long: The Model is built by Propeht model with logistic growths to forecast the US cumulative deaths.
+  By sampling from uniform distribution to get the quantiles.
