@@ -48,6 +48,33 @@ export default class Actual extends SComponent {
       .attr('r', 2)
   }
 
+  // rescale the same data
+  rescale(scales) {
+    let line = d3.line()
+        .x(d => scales.xScale(d.x))
+        .y(d => scales.yScale(d.y))
+    this.line
+      .datum(this.data.filter(d => d.y))
+      .transition()
+      .duration(200)
+      .attr('d', line)
+
+    // Only plot non nulls
+    let circles = this.selection.selectAll('.point-actual')
+        .data(this.data.filter(d => d.y))
+
+    circles.exit().remove()
+
+    circles.enter().append('circle')
+      .merge(circles)
+      .attr('class', 'point-actual')
+      .transition(200)
+      .ease(d3.easeQuadOut)
+      .attr('cx', d => scales.xScale(d.x))
+      .attr('cy', d => scales.yScale(d.y))
+      .attr('r', 2)
+  }
+
   query (idx) {
     if (this.hidden) {
       return false

@@ -8,4 +8,4 @@ license: mit
 team_model_designation: primary
 data_inputs: Apple Mobility Trends, Google Mobility Reports, Facebook Movement Ranges,
   CCVI, Census, COVIDTracking, IHME, JHU CSSEGISandData
-methods: County-level Projected Hospitalizations using Random Forest learning method
+methods: County-level Projected New Cases using Random Forest learning method

@@ -1,8 +1,8 @@
 team_name: MOBS Lab at Northeastern
 model_name: GLEAM COVID-19
 model_abbr: MOBS-GLEAM_COVID
-model_contributors: "Alessandro Vespignani, Matteo Chinazzi, Jessica T. Davis, Kunpeng\
-  \ Mu, Ana Pastore y Piontti, Nicole Samay, Xinyue Xiong, M. Elizabeth Halloran,\
+model_contributors: "Alessandro Vespignani <alexves@gmail.com>, Matteo Chinazzi, Jessica T. Davis, Kunpeng\
+  \ Mu, Ana Pastore y Piontti, Nicole Samay, Xinyue Xiong <xiong.xin@northeastern.edu>, M. Elizabeth Halloran,\
   \ Ira M. Longini, Jr., Natalie E. Dean, C\xE9cile Viboud, Kaiyuan Sun, Maria Litvinova,\
   \ Corrado Gioannini, Luca Rossi, Marco Ajelli"
 website_url: https://covid19.gleamproject.org/
