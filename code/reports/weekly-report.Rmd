@@ -131,7 +131,6 @@ dat <- zoltr:: do_zoltar_query(
 ```
 
 
-
 # COVID-19 Mortality Forecasts 
 
 ## National level
@@ -142,7 +141,7 @@ This week, our ensemble combined forecasts from `r n_unique_models` different mo
 us_cum_deaths <- dat %>% 
   filter(fips=="US", target=="4 wk ahead cum death", class=="point") %>% 
   pull(value) %>% 
-  round(-3) %>% 
+  round(-2) %>% 
   format(big.mark = ",")
 us_inc_death_range <- dat %>% 
   filter(fips=="US", target %in% inc_death_targets, class=="point") %>% 
