@@ -1,7 +1,7 @@
 ---
-title: "COVID-19 Forecast Hub weekly report"
-author: "Nicholas G Reich, Estee Y Cramer, Martha W Zorn"
-date: "report generated `r Sys.Date()`"
+title: "COVID-19 Massachusetts Forecast Hub report, 2020-08-03 "
+author: "Nicholas G Reich, Estee Y Cramer, Martha Zorn"
+date: "`r Sys.Date()`"
 output:
   html_document:
     toc: true
@@ -16,56 +16,31 @@ output:
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 library(lubridate)
 library(DT)
-library(zoltr) ## devtools::install_github("reichlab/zoltr")
+library(zoltr)
 library(scico)
 source("../processing-fxns/get_next_saturday.R")
 library(tidyverse)
-library(htmltools)
 theme_set(theme_bw())
 ```
 
-```{r zoltar-setup}
-## connect to Zoltar
-zoltar_connection <- new_connection()
-zoltar_authenticate(zoltar_connection, Sys.getenv("Z_USERNAME"), Sys.getenv("Z_PASSWORD"))
-
-## construct Zoltar query
-project_url <- "https://www.zoltardata.com/api/project/44/"
-```
-
-
 ```{r get-date-boundaries}
 next_saturday <- get_next_saturday(today())
-saturday_4_wk_ahead <- next_saturday + 7*3
-saturday_4_wk_ahead_txt <- format(saturday_4_wk_ahead, "%B %d")
 last_5_saturdays <- next_saturday - 7*c(5:1)
-this_monday <- next_saturday - 5
+###this_monday <- next_saturday - 5###
+this_monday <- as.Date("2020-08-03")
 ```
 
 
 # Background
-This report provides a brief summary of the weekly ensemble forecast from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/) based on forecasts submitted on `r format(this_monday, "%B %d, %Y")`. In collaboration with the US CDC, our team aggregates COVID-19 forecasts from dozens of teams around the globe. Typically on Wednesday or Thursday of each week, a summary of the week's forecasts from the COVID-19 Forecast Hub appear on the [official CDC COVID-19 forecasting page](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html).
-
-
-```{r nmodels-this-week}
-models_this_week <- zoltr::do_zoltar_query(
-  zoltar_connection, project_url, 
-  targets = c("1 wk ahead cum death", "1 wk ahead inc death", "1 wk ahead inc case", "1 day ahead inc hosp"),
-  timezeros = as.character(seq.Date(this_monday, this_monday-6, by="-1 day")),
-  types = c("point"), 
-  verbose = FALSE) %>%
-  pull(model) %>%
-  unique()
-nmodels_this_week <- length(models_this_week)
-```
+This report provides a brief summary of the weekly ensemble forecast for Massachusetts from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/). In collaboration with the US CDC, our team aggregates COVID-19 forecasts from dozens of teams around the globe. Typically on Wednesday or Thursday of each week, a summary of the week's forecasts from the COVID-19 Forecast Hub appear on the [official CDC COVID-19 forecasting page](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html).
 
 
 Every week, teams submit their forecasts to the COVID-19 Forecast Hub. 
-This past week, `r nmodels_this_week` models were submitted. 
+This past week, 44 models were submitted, including one model from a new team. 
 
-Each Monday evening or Tuesday morning, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 cases at the county, state, and national level and deaths at the state and national level. At the moment, we only generate ensemble forecasts for four weeks into the future, as we don't have reliable evidence that the models are accurate past that horizon.
+Each Tuesday, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 cases at the county, state, and national level and deaths at the state and national level. At the moment, we only generate ensemble forecasts for four weeks into the future, as we don't have reliable evidence that the models are accurate past that horizon.
 
-An archive of weekly reports from the COVID-19 Forecast Hub can be found at [this page](https://covid19forecasthub.org/doc/reports/). 
+Weekly reports from the COVID-19 Forecast Hub can be found at [this page](https://covid19forecasthub.org/doc/reports/). We expect that these reports will become more detailed as the weeks go on. 
 
 
 ```{r count-models}
@@ -93,6 +68,7 @@ n_unique_models <- length(unique(c(names(inc_death_models)[inc_death_models>0],
 ```
 
 ```{r aux-data}
+
 ## get our FIPS codes
 fips_codes <- read_csv("../../data-locations/locations.csv")
 
@@ -110,11 +86,19 @@ locs <- read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/mast
 inc_death_targets <- paste(1:4, "wk ahead inc death")
 cum_death_targets <- paste(1:4, "wk ahead cum death")
 
+## connect to Zoltar
+zoltar_connection <- new_connection()
+zoltar_authenticate(zoltar_connection, Sys.getenv("Z_USERNAME"), Sys.getenv("Z_PASSWORD"))
+
+## construct Zoltar query
+project_url <- "https://www.zoltardata.com/api/project/44/"
+
 # submit query
 dat <- zoltr:: do_zoltar_query(
   zoltar_connection, project_url, 
   models = c("COVIDhub-ensemble"),
   targets = c(inc_death_targets, cum_death_targets),
+  units=c("25","25001","25003","25005","25007","25009","25011","25013","25015","25017","25019","25021"),
   timezeros = as.character(this_monday),
   types = c("point", "quantile"), 
   verbose = FALSE) %>%
@@ -133,38 +117,14 @@ dat <- zoltr:: do_zoltar_query(
 
 ## National level
 
-This week, our ensemble combined forecasts from `r n_unique_models` different models. 
+This week, our ensemble combined forecasts from `r n_unique_models` different models. We note that this week several states, most notably Texas, modified the way in which they were reporting "probable" COVID-19 deaths. In Texas, this resulted in [a one-time additional count of over 600 deaths](https://www.dshs.texas.gov/news/releases/2020/20200727.aspx) in the data that we consider to be "ground truth".
 
-```{r us-summary}
-us_cum_deaths <- dat %>% 
-  filter(fips=="US", target=="4 wk ahead cum death", class=="point") %>% 
-  pull(value) %>% 
-  round(-2) %>% 
-  format(big.mark = ",")
-us_inc_death_range <- dat %>% 
-  filter(fips=="US", target %in% inc_death_targets, class=="point") %>% 
-  pull(value) %>% range() %>%
-  round(-2) %>% format(big.mark = ",")
+At the national level, the ensemble model's best guess is that we will see between 6,500 and 7,400 deaths each week for the next four weeks with around 181,000 deaths by August 29th (Figure 1). However for the week ending August 29th, the ensemble shows substantial uncertainty, with observed deaths between 4,500 and 10,500 deemed possible (95% prediction interval: 4,560 - 10,587).
 
-us_inc_death_wk_pi_round <- dat %>% 
-  filter(fips=="US", target == "4 wk ahead inc death", quantile %in% c(0.025, 0.975)) %>% 
-  pull(value) %>% sort() %>%
-  round(-2) %>% format(big.mark = ",")
-
-us_inc_death_wk_pi <- dat %>% 
-  filter(fips=="US", target == "4 wk ahead inc death", quantile %in% c(0.025, 0.975)) %>% 
-  pull(value) %>% sort() %>% 
-  format(big.mark = ",")
-
-```
-
-At the national level, the ensemble model's best guess is that we will see between `r us_inc_death_range[1]` and `r us_inc_death_range[2]` deaths each week for the next four weeks with around `r us_cum_deaths` deaths by `r saturday_4_wk_ahead_txt` (Figure 1). For the week ending `r saturday_4_wk_ahead_txt`, the ensemble forecasts that reported COVID-19 deaths in the US will be between `r us_inc_death_wk_pi_round[1]` and `r us_inc_death_wk_pi_round[2]` (95% prediction interval: `r us_inc_death_wk_pi[1]` - `r us_inc_death_wk_pi[2]`).
-
-<!-- Throughought most of July, models have in general shown broad agreement about the trajectory of the outbreak over the coming weeks. However, the recent surge in cases has left models with quite different interpretations about what the next few weeks hold in terms of how many reported deaths from COVID-19 we will see.  -->
-You can explore the full set of models, including their forecasts for past weeks online at our [interactive forecast visualization](https://viz.covid19forecasthub.org/).
+Throughought most of July, models have in general shown broad agreement about the trajectory of the outbreak over the coming weeks. However, the recent surge in cases has left models with quite different interpretations about what the next few weeks hold in terms of how many reported deaths from COVID-19 we will see. You can explore the full set of models, including their forecasts for past weeks online at our [interactive forecast visualization](https://viz.covid19forecasthub.org/).
 
 
-```{r make-US-inc-death-plot, fig.cap="__Figure 1__: Weekly observed and forecasted COVID-19 deaths. Observed data from [JHU CSSE](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/) and forecasts from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/).", fig.topcaption=TRUE}
+```{r make-US-inc-death-plot, fig.cap="Figure 1: Weekly observed and forecasted COVID-19 deaths. Observed data from [JHU CSSE](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/) and forecasts from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/).", fig.topcaption=TRUE}
 
 quantiles_to_plot <- c(0.025, 0.1, 0.25, 0.75, 0.9, 0.975)
 
@@ -213,15 +173,15 @@ inc_death_quantiles <- inc_death_forecast %>%
   tidyr::pivot_wider(names_from='endpoint_type', values_from='value')
 
 ggplot() +
-  geom_ribbon(data = inc_death_quantiles %>% dplyr::filter(fips=="US"),
+  geom_ribbon(data = inc_death_quantiles %>% dplyr::filter(fips=="25"),
     mapping = aes(x = target_end_date,
       ymin=lower, ymax=upper,
       fill=`Prediction Interval`)) +
   geom_line(data=inc_death_all_points %>%
-      dplyr::filter(fips == "US"),
+      dplyr::filter(fips == "25"),
     mapping = aes(x = target_end_date, y = value, color = model)) +
   geom_point(data=inc_death_all_points %>%
-      dplyr::filter(fips == "US", !(model=="COVIDhub-ensemble" & target_end_date <= this_monday)),
+      dplyr::filter(fips == "25", !(model=="COVIDhub-ensemble" & target_end_date <= this_monday)),
     mapping = aes(x = target_end_date, y = value, color = model)) +
   scale_fill_manual(values = blues[1:(length(blues)-1)]) +
   scale_color_manual(values = c("black", tail(blues,1))) +
@@ -255,6 +215,16 @@ recent_inc_death_totals <- read_csv("../../data-truth/truth-Incident Deaths.csv"
   left_join(locs, by=c("location" = "FIPS")) %>%
   left_join(cum_death_start) %>% 
   rename(fips = location, target_end_date = date)
+```
+
+```{r one-time-tx-fix}
+## subtract 631 deaths from Texas total in last week
+## https://www.dshs.texas.gov/news/releases/2020/20200727.aspx: 5713 - 5038 - 44
+
+recent_inc_death_totals[which(recent_inc_death_totals$location_name=="Texas"), "last_2wk_deaths"] <- recent_inc_death_totals[which(recent_inc_death_totals$location_name=="Texas"), "last_2wk_deaths"] - 631
+
+recent_inc_death_totals[which(recent_inc_death_totals$location_name=="Texas"), "last_4wk_deaths"] <- recent_inc_death_totals[which(recent_inc_death_totals$location_name=="Texas"), "last_4wk_deaths"] - 631
+
 ```
 
 
@@ -306,10 +276,17 @@ quant.25_cutoff <- wide_quant_dat %>%
 
 ## State-by-state Breakdown
 
-The ensemble model estimates that `r nrow(quant.5_cutoff)` states and territories of the US have a greater than 50% chance of having more deaths in the next two weeks compared to the past two weeks (Table 1).The model forecasts that `r nrow(quant.25_cutoff)` states and territories have a greater than 75% chance of an increase over the next two weeks (`r paste(quant.25_cutoff$location_name, collapse=", ")`). 
+The ensemble model estimates that `r nrow(quant.5_cutoff)` states and territories of the US have a greater than 50% chance of having more deaths in the next two weeks compared to the past two weeks (Table 1). But the model shows substantial uncertainty about the increases, with only `r nrow(quant.25_cutoff)` states and territories showing a greater than 75% chance of an increase over the next two weeks (`r paste(quant.25_cutoff$location_name, collapse=", ")`). Note that for the purposes of the tables below, we did not count any of the 631 "probable" COVID-19 deaths [newly reported last week in Texas](https://www.dshs.texas.gov/news/releases/2020/20200727.aspx) as having occured in the last two weeks.
+
+<!-- In the following states, the probability that the deaths in the next two weeks will greater than in the last two weeks is greater than or equal to 85% -->
+<!-- ```{r} -->
+<!-- knitr::kable(wide_quant_dat1$location_name, col.names  = NULL) -->
+<!-- ``` -->
 
 
-The sortable and searchable table below shows the total number of reported COVID-19 deaths at the US level and by state over the last two weeks (ending Saturday, `r format(last_5_saturdays[5], "%B %d, %Y")`) and the forecasted counts for the subsequent two weeks (ending `r format(last_5_saturdays[5]+14, "%B %d, %Y")`).
+
+
+The sortable and searchable table below shows the total number of reported COVID-19 deaths at the US level and by state over the last two weeks (ending Saturday, August 1, 2020) and the forecasted counts for the subsequent two weeks (ending August 15, 2020).
 
 ```{r make-datatable-inc-death-counts}
 death_max_2wk <- max(abs(wide_point_dat$diff_2wk_deaths))
@@ -318,20 +295,18 @@ brks <- seq(-death_max_2wk, death_max_2wk, length.out = 100) #quantile(df, probs
 #clrs <- scico(n=length(brks)+1, palette="roma")
 clrs <- colorRampPalette(colors = rev(RColorBrewer::brewer.pal(n=3, "RdBu")))(length(brks)+1)
 
-table1_cap <- paste0("Table 1: US national and state-level observed deaths to date and for the previous two weeks (ending ", format(last_5_saturdays[5], "%B %d, %Y") ,") and the next two weeks (ending ", format(last_5_saturdays[5]+14, "%B %d, %Y"), ").")
-
 datatable(wide_point_dat %>% 
     select(location_name, Population,
       cum_deaths_at_forecast_start, 
       last_2wk_deaths, next_2wk_deaths, diff_2wk_deaths) %>%
     arrange(desc(diff_2wk_deaths)),
-  caption = table1_cap,
+  caption = 'Table 1: US national and state-level observed deaths to date and for the previous two weeks (ending August 1, 2020) with forecasted COVID-19 deaths for the next two weeks (ending August 15, 2020).',
   options = list(
     autoWidth = TRUE,
     columnDefs = list(list(width = '100px', targets = c(0, 1, 2, 3, 4, 5)))
   ),  #width=paste0(c(10, 100, 100, 100), 'px'),
   rownames=FALSE,
-  colnames=c('state'='location_name', 
+  colnames=c('county'='location_name', 
     #'Population, \'000'='pop_x_1k',
     'Population' = 'Population',
     'Total COVID-19 deaths'='cum_deaths_at_forecast_start',
@@ -349,7 +324,7 @@ datatable(wide_point_dat %>%
 ```
 
 
-The sortable and searchable table below shows the total number of reported COVID-19 deaths at the US level and by state as of Saturday, `r format(last_5_saturdays[5], "%B %d, %Y")` ("Total COVID-19 Deaths") as well as the rate of reported COVID-19 deaths in the population (standardized per 100,000 population) over the last two weeks and over the next two weeks. Looking at the rates allows for easier comparison across states, where you can see which states have had or are predicted to have propoportionally higher rates in comparison to other states. These tables calculate an average daily number of deaths per 100,000 population across the last two weeks (ending Saturday, `r format(last_5_saturdays[5], "%B %d, %Y")`) and forecasted for the following two weeks (ending `r format(last_5_saturdays[5]+14, "%B %d, %Y")`).
+The sortable and searchable table below shows the total number of reported COVID-19 deaths at the US level and by state as of Saturday, August 1, 2020 ("Total COVID-19 Deaths") as well as the rate of reported COVID-19 deaths in the population (standardized per 100,000 population) over the last two weeks and over the next two weeks. Looking at the rates allows for easier comparison across states, where you can see which states have had or are predicted to have propoportionally higher rates in comparison to other states. These tables calculate an average daily number of deaths per 100,000 population across the last two weeks (ending Saturday, August 1, 2020) and forecasted for the following two weeks (ending August 15, 2020).
 
 ```{r make-datatable-inc-death-rates}
 
@@ -365,20 +340,18 @@ brks1 <- seq(-death_rate_diff_2wk, death_rate_diff_2wk, length.out = 100) #quant
 clrs1 <- colorRampPalette(colors = rev(RColorBrewer::brewer.pal(n=3, "RdBu")))(length(brks1)+1)
 
 
-table2_cap <- paste0("Table 2: US national and state-level observed and predicted daily death rates for the previous two weeks (ending ", format(last_5_saturdays[5], "%B %d, %Y") ,") and the next two weeks (ending ", format(last_5_saturdays[5]+14, "%B %d, %Y"), ").")
-
 datatable(wide_point_dat %>% 
     select(location_name, Population,
       cum_deaths_at_forecast_start, 
       last_2wk_deaths_rate, next_2wk_deaths_rate, diff_2wk_deaths_rate) %>%
     arrange(desc(diff_2wk_deaths_rate)),
-  caption = table2_cap,
+  caption = 'Table 2: US national and state-level observed and predicted daily death rates for the previous two weeks (ending July 25, 2020) and the next two weeks (ending August 8, 2020).',
   options = list(
     autoWidth = TRUE,
     columnDefs = list(list(width = '100px', targets = c(0, 1, 2, 3, 4, 5)))
   ),  #width=paste0(c(10, 100, 100, 100), 'px'),
   rownames=FALSE,
-  colnames=c('state'='location_name', 
+  colnames=c('county'='location_name', 
     #'Population, \'000'='pop_x_1k',
     'Population' = 'Population',
     'Total COVID-19 deaths'='cum_deaths_at_forecast_start',
@@ -395,10 +368,5 @@ datatable(wide_point_dat %>%
 
 
 This report was reproducibly and dynamically generated using RMarkdown. The code for the report can be found [here](https://github.com/reichlab/covid19-forecast-hub/tree/master/code/reports).
-
-
-```{r}
-htmltools::includeScript("statcounter.js") 
-```
 
 
