@@ -1,6 +1,6 @@
 ---
 title: "COVID-19 Forecast Hub weekly report"
-author: "Nicholas G Reich, Estee Y Cramer"
+author: "Nicholas G Reich, Estee Y Cramer, Martha W Zorn"
 date: "report generated `r Sys.Date()`"
 output:
   html_document:
@@ -139,7 +139,7 @@ This week, our ensemble combined forecasts from `r n_unique_models` different mo
 us_cum_deaths <- dat %>% 
   filter(fips=="US", target=="4 wk ahead cum death", class=="point") %>% 
   pull(value) %>% 
-  round(-3) %>% 
+  round(-2) %>% 
   format(big.mark = ",")
 us_inc_death_range <- dat %>% 
   filter(fips=="US", target %in% inc_death_targets, class=="point") %>% 
