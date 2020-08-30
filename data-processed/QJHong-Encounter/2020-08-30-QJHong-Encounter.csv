@@ -1,4 +1,4 @@
-forecast_date,target,target_end_date,location,type,quantile,value 
+forecast_date,target,target_end_date,location,type,quantile,value
 2020-08-30,1 wk ahead cum death,2020-09-05,US,quantile,0.025,187474.94415926933
 2020-08-30,1 wk ahead cum death,2020-09-05,US,quantile,0.25,188264.52980594698
 2020-08-30,1 wk ahead cum death,2020-09-05,US,point,NA,188653.4301990867
@@ -59,16 +59,6 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2020-08-30,6 wk ahead inc death,2020-10-10,US,point,NA,3467.0514651221165
 2020-08-30,6 wk ahead inc death,2020-10-10,US,quantile,0.75,3695.876861820182
 2020-08-30,6 wk ahead inc death,2020-10-10,US,quantile,0.975,4160.461758146557
-2020-08-30,7 wk ahead inc death,2020-10-17,US,quantile,0.025,2515.0108402248006
-2020-08-30,7 wk ahead inc death,2020-10-17,US,quantile,0.25,2936.2751559624353
-2020-08-30,7 wk ahead inc death,2020-10-17,US,point,NA,3143.7635502809717
-2020-08-30,7 wk ahead inc death,2020-10-17,US,quantile,0.75,3351.2519445995085
-2020-08-30,7 wk ahead inc death,2020-10-17,US,quantile,0.975,3772.5162603371427
-2020-08-30,8 wk ahead inc death,2020-10-24,US,quantile,0.025,2312.046836832975
-2020-08-30,8 wk ahead inc death,2020-10-24,US,quantile,0.25,2699.3146820025227
-2020-08-30,8 wk ahead inc death,2020-10-24,US,point,NA,2890.058546041255
-2020-08-30,8 wk ahead inc death,2020-10-24,US,quantile,0.75,3080.8024100799685
-2020-08-30,8 wk ahead inc death,2020-10-24,US,quantile,0.975,3468.0702552494768
 2020-08-30,1 wk ahead inc case,2020-09-05,US,quantile,0.10,254736.12499999997
 2020-08-30,1 wk ahead inc case,2020-09-05,US,point,NA,264134.9
 2020-08-30,1 wk ahead inc case,2020-09-05,US,quantile,0.90,275548.238
