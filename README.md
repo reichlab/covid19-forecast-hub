@@ -101,6 +101,7 @@ repository are (with data reuse license):
  - [Imperial](https://github.com/sangeetabhatia03/covid19-short-term-forecasts) (CC-BY-NC-ND 4.0)
  - [John Burant (JCB)](https://github.com/JohnBurant/COVID19-PRM) (CC-BY-4.0)
  - [Johns Hopkins ID Dynamics COVID-19 Working Group](https://github.com/HopkinsIDD/COVIDScenarioPipeline) (MIT)
+ - [Johns Hopkins University Applied Physics Laboratory](https://buckymodel.com) (MIT)
  - [Massachusetts Institute of Technology - Covid Analytics](https://www.covidanalytics.io/) (Apache 2.0)
  - [Massachusetts Institute of Technology - Covid Alliance](http://infectiontrajectory.covidalliance.com/) (CC-BY-4.0)
  - [Notre Dame - FRED](https://github.com/confunguido/covid19_ND_forecasting) (CC-BY-4.0)
