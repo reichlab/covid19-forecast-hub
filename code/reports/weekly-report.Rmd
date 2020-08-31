@@ -1,6 +1,6 @@
 ---
 title: "COVID-19 Forecast Hub weekly report"
-author: "Nicholas G Reich, Estee Y Cramer"
+author: "Nicholas G Reich, Estee Y Cramer, Martha W Zorn"
 date: "report generated `r Sys.Date()`"
 output:
   html_document:
@@ -53,7 +53,9 @@ models_this_week <- zoltr::do_zoltar_query(
   targets = c("1 wk ahead cum death", "1 wk ahead inc death", "1 wk ahead inc case", "1 day ahead inc hosp"),
   timezeros = as.character(seq.Date(this_monday, this_monday-6, by="-1 day")),
   types = c("point"), 
-  verbose = FALSE) %>%
+  verbose = FALSE,
+  models = c(),
+  units = c("25")) %>%
   pull(model) %>%
   unique()
 nmodels_this_week <- length(models_this_week)
@@ -117,6 +119,7 @@ dat <- zoltr:: do_zoltar_query(
   targets = c(inc_death_targets, cum_death_targets),
   timezeros = as.character(this_monday),
   types = c("point", "quantile"), 
+  units = c(),
   verbose = FALSE) %>%
   ## choose only columns we need and with data
   select(model, timezero, unit, target, class, quantile, value) %>%
@@ -126,7 +129,6 @@ dat <- zoltr:: do_zoltar_query(
     ## recreates the target_end_date from GitHub
     target_end_date = get_next_saturday(timezero + 7*(week_ahead-1))) 
 ```
-
 
 
 # COVID-19 Mortality Forecasts 
@@ -139,7 +141,7 @@ This week, our ensemble combined forecasts from `r n_unique_models` different mo
 us_cum_deaths <- dat %>% 
   filter(fips=="US", target=="4 wk ahead cum death", class=="point") %>% 
   pull(value) %>% 
-  round(-3) %>% 
+  round(-2) %>% 
   format(big.mark = ",")
 us_inc_death_range <- dat %>% 
   filter(fips=="US", target %in% inc_death_targets, class=="point") %>% 
@@ -390,7 +392,6 @@ datatable(wide_point_dat %>%
   formatStyle('Death rate difference', backgroundColor = styleInterval(brks1, clrs1))  %>%
   formatCurrency('Total COVID-19 deaths',currency = "", interval = 3, mark = ",", digits=0) %>%
   formatCurrency('Population',currency = "", interval = 3, mark = ",", digits=0)
-
 ```
 
 
