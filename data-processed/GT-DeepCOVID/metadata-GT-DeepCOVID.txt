@@ -9,7 +9,7 @@ website_url: https://deepcovid.github.io/
 license: cc-by-4.0
 team_model_designation: primary
 methods: 'Data-driven approach based on deep learning for forecasting mortality and  hospitalizations
-  using syndromic, clinical, demographic, mobility and  point-of-care data. '
+  using syndromic, clinical, demographic, and mobility. '
 team_funding: Partly supported by multiple grants from NSF  (NSF CAREER, NSF CISE
   Expeditions, NSF IIS, NSF COVID RAPID) and GA Tech
 data_inputs: COVID Tracking Project, JHU, COVID-Net, NYT,
