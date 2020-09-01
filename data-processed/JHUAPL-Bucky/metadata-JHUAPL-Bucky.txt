@@ -1,0 +1,8 @@
+team_name: Johns Hopkins University Applied Physics Lab
+model_name: Bucky
+model_abbr: JHUAPL-Bucky
+model_contributors: Matt Kinsey (JHU/APL) <matt.kinsey@jhuapl.edu>, Kate Tallaksen (JHU/APL) <kate.tallaksen@jhuapl.edu>, R.F. Obrecht (JHU/APL) <freddy.obrecht@jhuapl.edu>, Laura Asher (JHU/APL) <laura.asher@jhuapl.edu>, Cash Costello (JHU/APL) <cash.costello@jhuapl.edu>, Michael Kelbaugh (JHU/APL) <michael.kelbaugh@jhuapl.edu>, Shelby Wilson (JHU/APL) <shelby.wilson@jhuapl.edu>
+website_url: https://buckymodel.com
+license: mit
+team_model_designation: primary
+methods: Metapopulation compartment model using public mobility data. Localalized parameters (e.g. case reporting rates, doubling times, etc) are estimated using historical data and CDC Planning scenario 5.
