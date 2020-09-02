@@ -51,6 +51,7 @@
     "pubsub-js": "^1.6.0",
     "textures": "^1.2.0",
     "tinycolor2": "^1.4.1",
-    "uuid": "^3.2.1"
+    "uuid": "^3.2.1",
+    "iwanthue": "^1.4.0"
   }
 }
