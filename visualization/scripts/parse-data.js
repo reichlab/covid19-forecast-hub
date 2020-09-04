@@ -57,7 +57,6 @@ let modelDirs = models.getModelDirs(
   '../data-processed',
   ['component-models']
 )
-
 modelDirs.forEach(modelDir => {
   // Read metadata and parse to usable form
   let rootMeta = models.getModelMetadata(modelDir)
@@ -71,7 +70,6 @@ modelDirs.forEach(modelDir => {
       models.getModelCsvs(modelDir)
       .forEach(csvFile => {
         let info = parseCSVInfo(path.basename(csvFile))
-
         // CSV target path
         let csvTargetDir = path.join('./data', target_cats, modelId)
         fs.ensureDirSync(csvTargetDir)
