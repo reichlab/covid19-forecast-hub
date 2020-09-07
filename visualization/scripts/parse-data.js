@@ -71,7 +71,7 @@ modelDirs.forEach(modelDir => {
       models.getModelCsvs(modelDir)
       .forEach(csvFile => {
         let info = parseCSVInfo(path.basename(csvFile))
-        
+
         // CSV target path
         let csvTargetDir = path.join('./data', target_cats, modelId)
         fs.ensureDirSync(csvTargetDir)
