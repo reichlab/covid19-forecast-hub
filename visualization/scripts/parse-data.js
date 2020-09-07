@@ -57,6 +57,7 @@ let modelDirs = models.getModelDirs(
   '../data-processed',
   ['component-models']
 )
+
 modelDirs.forEach(modelDir => {
   // Read metadata and parse to usable form
   let rootMeta = models.getModelMetadata(modelDir)
