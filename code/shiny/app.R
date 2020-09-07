@@ -137,8 +137,11 @@ server <- function(input, output, session) {
   })
   
   observe({
-    counties <- sort(unique(latest_tmtl()$location_name))
-    updateSelectInput(session, "county", choices = counties, selected =counties[1])
+    counties <- unique(latest_tmtl()[order(latest_tmtl()$location),]$location_name)
+    updateSelectInput(session, "county", choices = list(
+      "All" = c(counties[1],""),
+      "County" = counties[-1]
+    ), selected =counties[1])
   })
   
   latest_t    <- reactive({ latest_plot_data %>% filter(model_abbr    == input$model_abbr) })
@@ -201,8 +204,11 @@ server <- function(input, output, session) {
   latest_loc_ltct <- reactive({ latest_loc_ltc()    %>% filter(model_abbr     %in% input$loc_model_abbr) })
   
   observe({
-    counties <- sort(unique(latest_loc_l()$location_name))
-    updateSelectInput(session, "loc_county", choices = counties, selected = counties[1])
+    counties <- unique(latest_loc_l()[order(latest_loc_l()$location),]$location_name)
+    updateSelectInput(session, "loc_county", choices = list(
+      "All" = c(counties[1],""),
+      "County" = counties[-1]
+    ), selected =counties[1])
   })
   
   observe({
