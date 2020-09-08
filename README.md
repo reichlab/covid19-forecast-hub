@@ -120,6 +120,7 @@ repository are (with data reuse license):
  - [University of Arizona](https://jocelinelega.github.io/EpiGro/) (CC-BY-NC-SA 4.0)
  - [University of California, Los Angeles](https://covid19.uclaml.org/) (CC-BY-4.0)
  - [University of California Merced MESA Lab](http://mechatronics.ucmerced.edu/covid19) (CC-BY-4.0)
+ - [University of California San Diego](https://sites.google.com/view/yianma/epidemiology) (CC-BY-4.0)
  - University of Chicago (CC-BY-NC-4.0)
  - [University of Geneva / Swiss Data Science Center](https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/) (see [license](./data-processed/Geneva-DetGrowth/LICENSE.txt))
  - [University of Massachusetts - Expert Model](https://github.com/tomcm39/COVID19_expert_survey) (MIT)
