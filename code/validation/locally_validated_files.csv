@@ -1085,3 +1085,6 @@ file_path,validation_date
 ./data-processed/RPI_UW-Mob_Collision/2020-09-06-RPI_UW-Mob_Collision.csv,2020-09-08 06:21:25.705929
 ./data-processed/UCSD_NEU-DeepGLEAM/2020-09-07-UCSD_NEU-DeepGLEAM.csv,2020-09-08 06:21:27.193844
 ./data-processed/NotreDame-FRED/2020-09-07-NotreDame-FRED.csv,2020-09-08 06:21:28.991775
+./data-processed/IBF-TimeSeries/2020-09-07-IBF-TimeSeries.csv,2020-09-08 18:20:15.927327
+./data-processed/COVIDhub-ensemble/2020-09-07-COVIDhub-ensemble.csv,2020-09-08 18:20:26.893588
+./data-processed/UVA-Ensemble/2020-09-07-UVA-Ensemble.csv,2020-09-08 18:20:34.751222
