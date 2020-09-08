@@ -1,7 +1,7 @@
 team_name: Institute of Business Forecasting
 model_name: Time Series Model with a unique technique to capture the pattern and using it to prepare the forecast.
 model_abbr: IBF-TimeSeries
-model_contributors: Dr. Chaman L. Jain
+model_contributors: Dr. Chaman L. Jain (IBF) <cjain@ibf.org>
 website_url: https://ibf.org
 license: mit
 team_model_designation: primary
