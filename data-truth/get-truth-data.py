@@ -174,6 +174,9 @@ def get_truth(url):
   df_state_nat_truth_incident = df_state_nat_truth_cumulative - df_state_nat_truth_cumulative.shift(periods=1, axis='columns')
   df_county_truth_incident = df_county_truth_cumulative-df_county_truth_cumulative.shift(periods=1, axis='columns')
 
+  # lower bound truth values to 0.0
+  df_state_nat_truth_incident = df_state_nat_truth_incident.clip(lower=0.0)
+  df_county_truth_incident = df_county_truth_incident.clip(lower=0.0)
 
   return df_state_nat_truth_cumulative,df_state_nat_truth_incident,df_county_truth_cumulative,df_county_truth_incident
 
