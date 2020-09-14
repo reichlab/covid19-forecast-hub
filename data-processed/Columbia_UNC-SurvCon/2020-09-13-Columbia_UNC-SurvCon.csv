@@ -1,4 +1,4 @@
-﻿forecast_date,target,target_end_date,location,type,quantile,value
+forecast_date,target,target_end_date,location,type,quantile,value
 2020-09-13,1 wk ahead cum death,2020-09-19,US,point,NA,198865
 2020-09-13,2 wk ahead cum death,2020-09-26,US,point,NA,203782
 2020-09-13,3 wk ahead cum death,2020-10-03,US,point,NA,208534
