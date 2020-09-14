@@ -121,6 +121,7 @@ def configure_JHU_data(df, target):
     # Map all timezeros in Zoltar to Corresponding weeks
     df_map_wk_to_tz = pd.DataFrame(columns=['timezero'])
     df_map_wk_to_tz['timezero'] = get_available_timezeros("COVID-19 Forecasts")
+    df_map_wk_to_tz['timezero'] = df_map_wk_to_tz['timezero'].astype(str)
     df_map_wk_to_tz['tz_year'], df_map_wk_to_tz['tz_week'], df_map_wk_to_tz['tz_day'] = \
         zip(*df_map_wk_to_tz['timezero'].map(get_epi_data_TZ))
 
