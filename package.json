@@ -32,7 +32,7 @@
     "moment": "^2.18.1",
     "nan": "^2.11.1",
     "node-sass": "^4.9.4",
-    "papaparse": "^4.1.2",
+    "papaparse": "^5.2.0",
     "progress": "^1.1.8",
     "request-promise-native": "^1.0.8",
     "wildcard": "^2.0.0",
