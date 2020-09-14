@@ -10,13 +10,51 @@ import yaml
 from itertools import chain
 import collections
 from github import Github
-
+from pathlib import Path
 
 from validation_functions.metadata import check_for_metadata, get_metadata_model, output_duplicate_models
 from validation_functions.forecast_filename import validate_forecast_file_name
 from validation_functions.forecast_date import filename_match_forecast_date
 
-metadata_version = 4
+metadata_version = 5
+
+# this is the root of the repository. 
+root = (Path(__file__) / '..'/'..'/'..').resolve()
+pop_df = pd.read_csv(open(root/'data-locations'/'populations.csv'))
+
+
+
+'''
+    Get the numer of invalid predictions in a forecast file.
+    
+    What counts as an `invalid` prediction? 
+    - A prediction who's `value` is greater than the population of that region. 
+
+    Method:
+    1. replace all rows with the `location` column as `US` to -1.
+    2. convert the location column to an integer (so that we can do an efficient `join` with the forecast DataFrame)
+    3. Do a left join of the forecast DataFrame with population dataframe on the `location` column.
+    4. Find number of rows that have the value in `value` column >= the value of the `Population` column.
+
+    Population data: 
+    Retrieved from the JHU timeseries data used for generating the truth data file. (See /data-locations/populations.csv)
+    County population aggregated to state and state thereafter aggregated to national. 
+'''
+def get_num_invalid_predictions(forecast_filename):
+    model_df = pd.read_csv(open(forecast_filename, 'r'))
+    # preprocess model dataframe
+    model_df['location'].replace('US', -1, inplace=True)
+    model_df = model_df.astype({'location':'int64'})
+    merged = model_df.merge(pop_df[['location', 'Population']], on='location', how='left')
+    invalid_preds = np.sum(merged['value'] >= merged['Population'])
+    return invalid_preds
+    
+
+def validate_forecast_values(filepath):
+    num_invalid = get_num_invalid_predictions(filepath)
+    if  num_invalid> 0:
+        return True, [f"PREDICTION ERROR: You have {num_invalid} invalid predictions in your file."]
+    return  False, "no errors"
 
 def validate_forecast_file(filepath, silent=False):
     """
@@ -155,6 +193,11 @@ def check_formatting(my_path):
 
                 # Validate forecast file formatting
                 is_error, forecast_error_output = validate_forecast_file(filepath)
+
+                # valdate predictions
+                if not is_error:
+                    is_error, forecast_error_output = validate_forecast_values(filepath)
+
 
                 # Validate forecast file date = forecast_date column
                 is_date_error, forecast_date_output = filename_match_forecast_date(filepath)
