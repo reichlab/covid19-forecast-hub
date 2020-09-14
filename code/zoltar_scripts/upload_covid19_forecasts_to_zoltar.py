@@ -1,5 +1,6 @@
 from zoltpy.quantile_io import json_io_dict_from_quantile_csv_file
 from zoltpy import util
+from zoltpy.cdc_io import YYYY_MM_DD_DATE_FORMAT
 from zoltpy.connection import ZoltarConnection
 from zoltpy.covid19 import COVID_TARGETS, covid19_row_validator, validate_quantile_csv_file, COVID_ADDL_REQ_COLS
 import os
@@ -58,6 +59,8 @@ project_timezeros = [timezero.timezero_date for timezero in project_obj.timezero
 models = [model for model in project_obj.models]
 model_abbrs = [model.abbreviation for model in models]
 
+# Convert all timezeros from Date type to str type
+project_timezeros = [project_timezero.strftime(YYYY_MM_DD_DATE_FORMAT) for project_timezero in project_timezeros]
 
 # Function to read metadata file to get model name
 def metadata_dict_for_file(metadata_file):
@@ -157,6 +160,9 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
     
     # Get names of existing forecasts to avoid re-upload
     existing_time_zeros = [forecast.timezero.timezero_date for forecast in model.forecasts]
+
+    # Convert all timezeros from Date type to str type
+    existing_time_zeros = [existing_time_zero.strftime(YYYY_MM_DD_DATE_FORMAT) for existing_time_zero in existing_time_zeros]
 
     # Batch upload
     json_io_dict_batch = []
