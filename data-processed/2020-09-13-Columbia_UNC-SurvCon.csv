@@ -1,0 +1,1793 @@
+﻿forecast_date,target,target_end_date,location,type,quantile,value
+2020-09-13,1 wk ahead cum death,2020-09-19,US,point,NA,198865
+2020-09-13,2 wk ahead cum death,2020-09-26,US,point,NA,203782
+2020-09-13,3 wk ahead cum death,2020-10-03,US,point,NA,208534
+2020-09-13,4 wk ahead cum death,2020-10-10,US,point,NA,213174
+2020-09-13,5 wk ahead cum death,2020-10-17,US,point,NA,217732
+2020-09-13,6 wk ahead cum death,2020-10-24,US,point,NA,222222
+2020-09-13,7 wk ahead cum death,2020-10-31,US,point,NA,226647
+2020-09-13,8 wk ahead cum death,2020-11-07,US,point,NA,231008
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.01,197518
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.01,201151
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.01,204434
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.01,207700
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.01,210406
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.01,212811
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.01,214946
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.01,216554
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.025,197730
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.025,201461
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.025,204841
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.025,208091
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.025,210825
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.025,213478
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.025,215913
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.025,218158
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.05,197927
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.05,201753
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.05,205322
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.05,208651
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.05,211723
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.05,214648
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.05,217582
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.05,219774
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.1,198088
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.1,202185
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.1,206066
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.1,209630
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.1,212829
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.1,216029
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.1,218945
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.1,221683
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.15,198236
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.15,202530
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.15,206571
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.15,210349
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.15,213949
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.15,217205
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.15,220210
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.15,223147
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.2,198361
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.2,202738
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.2,206854
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.2,210771
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.2,214453
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.2,217998
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.2,221432
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.2,224782
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.25,198429
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.25,202891
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.25,207096
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.25,211137
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.25,215028
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.25,218810
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.25,222323
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.25,225629
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.3,198525
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.3,203059
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.3,207412
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.3,211588
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.3,215522
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.3,219361
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.3,223041
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.3,226381
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.35,198601
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.35,203226
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.35,207636
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.35,211909
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.35,215996
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.35,219886
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.35,223731
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.35,227602
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.4,198666
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.4,203396
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.4,207916
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.4,212251
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.4,216447
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.4,220676
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.4,224756
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.4,228570
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.45,198790
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.45,203567
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.45,208130
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.45,212578
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.45,216908
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.45,221224
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.45,225255
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.45,229379
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.5,198839
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.5,203709
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.5,208374
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.5,212947
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.5,217472
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.5,221889
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.5,226174
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.5,230446
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.55,198901
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.55,203891
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.55,208704
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.55,213401
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.55,218123
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.55,222620
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.55,227276
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.55,232033
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.6,198987
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.6,204061
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.6,208973
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.6,213707
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.6,218583
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.6,223535
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.6,228287
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.6,233098
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.65,199072
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.65,204204
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.65,209217
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.65,214300
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.65,219128
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.65,224159
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.65,229263
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.65,234370
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.7,199121
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.7,204366
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.7,209536
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.7,214658
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.7,219869
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.7,224936
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.7,230098
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.7,235504
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.75,199192
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.75,204513
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.75,209820
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.75,215104
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.75,220487
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.75,225761
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.75,231185
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.75,236614
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.8,199287
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.8,204649
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.8,210067
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.8,215489
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.8,221100
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.8,226778
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.8,232533
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.8,238335
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.85,199443
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.85,204995
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.85,210465
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.85,216073
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.85,221742
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.85,227558
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.85,233721
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.85,240018
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.9,199605
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.9,205354
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.9,211165
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.9,216972
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.9,222931
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.9,229284
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.9,235832
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.9,242395
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.95,199832
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.95,205836
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.95,211780
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.95,218072
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.95,224684
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.95,232157
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.95,239363
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.95,247496
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.975,199983
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.975,206111
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.975,212445
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.975,219021
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.975,225948
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.975,233320
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.975,241564
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.975,250242
+2020-09-13,1 wk ahead cum death,2020-09-19,US,quantile,0.99,200247
+2020-09-13,2 wk ahead cum death,2020-09-26,US,quantile,0.99,206663
+2020-09-13,3 wk ahead cum death,2020-10-03,US,quantile,0.99,213137
+2020-09-13,4 wk ahead cum death,2020-10-10,US,quantile,0.99,220110
+2020-09-13,5 wk ahead cum death,2020-10-17,US,quantile,0.99,227440
+2020-09-13,6 wk ahead cum death,2020-10-24,US,quantile,0.99,234920
+2020-09-13,7 wk ahead cum death,2020-10-31,US,quantile,0.99,243967
+2020-09-13,8 wk ahead cum death,2020-11-07,US,quantile,0.99,253059
+2020-09-13,1 wk ahead inc death,2020-09-19,US,point,NA,5172
+2020-09-13,2 wk ahead inc death,2020-09-26,US,point,NA,4917
+2020-09-13,3 wk ahead inc death,2020-10-03,US,point,NA,4751
+2020-09-13,4 wk ahead inc death,2020-10-10,US,point,NA,4640
+2020-09-13,5 wk ahead inc death,2020-10-17,US,point,NA,4558
+2020-09-13,6 wk ahead inc death,2020-10-24,US,point,NA,4489
+2020-09-13,7 wk ahead inc death,2020-10-31,US,point,NA,4425
+2020-09-13,8 wk ahead inc death,2020-11-07,US,point,NA,4362
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.01,3825
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.01,3559
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.01,3306
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.01,2940
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.01,2587
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.01,2256
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.01,1967
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.01,1715
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.025,4037
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.025,3698
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.025,3389
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.025,3113
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.025,2856
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.025,2583
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.025,2357
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.025,2096
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.05,4234
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.05,3857
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.05,3565
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.05,3320
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.05,3052
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.05,2781
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.05,2568
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.05,2350
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.1,4395
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.1,4098
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.1,3787
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.1,3555
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.1,3314
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.1,3078
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.1,2871
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.1,2656
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.15,4543
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.15,4264
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.15,4005
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.15,3729
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.15,3492
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.15,3251
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.15,3066
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.15,2889
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.2,4668
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.2,4361
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.2,4102
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.2,3895
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.2,3706
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.2,3499
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.2,3296
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.2,3100
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.25,4736
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.25,4446
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.25,4214
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.25,4019
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.25,3834
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.25,3644
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.25,3465
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.25,3292
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.3,4832
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.3,4537
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.3,4318
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.3,4123
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.3,3909
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.3,3769
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.3,3622
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.3,3480
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.35,4908
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.35,4620
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.35,4408
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.35,4219
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.35,4081
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.35,3966
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.35,3816
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.35,3692
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.4,4973
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.4,4718
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.4,4495
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.4,4365
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.4,4222
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.4,4106
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.4,4003
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.4,3888
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.45,5097
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.45,4783
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.45,4586
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.45,4448
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.45,4337
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.45,4226
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.45,4151
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.45,4069
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.5,5146
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.5,4863
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.5,4696
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.5,4562
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.5,4474
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.5,4474
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.5,4370
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.5,4372
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.55,5208
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.55,4970
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.55,4816
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.55,4713
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.55,4681
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.55,4653
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.55,4611
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.55,4571
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.6,5294
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.6,5068
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.6,4904
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.6,4856
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.6,4817
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.6,4795
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.6,4835
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.6,4843
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.65,5379
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.65,5136
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.65,5029
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.65,4990
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.65,5002
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.65,4994
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.65,5022
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.65,5066
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.7,5428
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.7,5239
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.7,5151
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.7,5117
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.7,5140
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.7,5210
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.7,5230
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.7,5277
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.75,5499
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.75,5324
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.75,5270
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.75,5285
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.75,5301
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.75,5384
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.75,5480
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.75,5597
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.8,5594
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.8,5421
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.8,5393
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.8,5431
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.8,5516
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.8,5608
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.8,5750
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.8,5905
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.85,5750
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.85,5547
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.85,5507
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.85,5590
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.85,5770
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.85,5974
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.85,6171
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.85,6288
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.9,5912
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.9,5777
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.9,5770
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.9,5898
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.9,6075
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.9,6304
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.9,6638
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.9,6861
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.95,6139
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.95,5988
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.95,6067
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.95,6359
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.95,6720
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.95,7125
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.95,7579
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.95,8038
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.975,6290
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.975,6182
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.975,6314
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.975,6640
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.975,7107
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.975,7674
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.975,8338
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.975,8902
+2020-09-13,1 wk ahead inc death,2020-09-19,US,quantile,0.99,6554
+2020-09-13,2 wk ahead inc death,2020-09-26,US,quantile,0.99,6414
+2020-09-13,3 wk ahead inc death,2020-10-03,US,quantile,0.99,6626
+2020-09-13,4 wk ahead inc death,2020-10-10,US,quantile,0.99,6956
+2020-09-13,5 wk ahead inc death,2020-10-17,US,quantile,0.99,7430
+2020-09-13,6 wk ahead inc death,2020-10-24,US,quantile,0.99,8123
+2020-09-13,7 wk ahead inc death,2020-10-31,US,quantile,0.99,8809
+2020-09-13,8 wk ahead inc death,2020-11-07,US,quantile,0.99,9459
+2020-09-13,1 wk ahead inc case,2020-09-19,US,point,NA,248822
+2020-09-13,2 wk ahead inc case,2020-09-26,US,point,NA,245060
+2020-09-13,3 wk ahead inc case,2020-10-03,US,point,NA,241565
+2020-09-13,4 wk ahead inc case,2020-10-10,US,point,NA,238109
+2020-09-13,5 wk ahead inc case,2020-10-17,US,point,NA,234703
+2020-09-13,6 wk ahead inc case,2020-10-24,US,point,NA,231346
+2020-09-13,7 wk ahead inc case,2020-10-31,US,point,NA,228036
+2020-09-13,8 wk ahead inc case,2020-11-07,US,point,NA,224774
+2020-09-13,1 wk ahead inc case,2020-09-19,US,quantile,0.025,211846
+2020-09-13,2 wk ahead inc case,2020-09-26,US,quantile,0.025,191028
+2020-09-13,3 wk ahead inc case,2020-10-03,US,quantile,0.025,170644
+2020-09-13,4 wk ahead inc case,2020-10-10,US,quantile,0.025,152769
+2020-09-13,5 wk ahead inc case,2020-10-17,US,quantile,0.025,136927
+2020-09-13,6 wk ahead inc case,2020-10-24,US,quantile,0.025,122717
+2020-09-13,7 wk ahead inc case,2020-10-31,US,quantile,0.025,109983
+2020-09-13,8 wk ahead inc case,2020-11-07,US,quantile,0.025,98572
+2020-09-13,1 wk ahead inc case,2020-09-19,US,quantile,0.1,223294
+2020-09-13,2 wk ahead inc case,2020-09-26,US,quantile,0.1,206506
+2020-09-13,3 wk ahead inc case,2020-10-03,US,quantile,0.1,190775
+2020-09-13,4 wk ahead inc case,2020-10-10,US,quantile,0.1,176054
+2020-09-13,5 wk ahead inc case,2020-10-17,US,quantile,0.1,162649
+2020-09-13,6 wk ahead inc case,2020-10-24,US,quantile,0.1,150156
+2020-09-13,7 wk ahead inc case,2020-10-31,US,quantile,0.1,138643
+2020-09-13,8 wk ahead inc case,2020-11-07,US,quantile,0.1,128121
+2020-09-13,1 wk ahead inc case,2020-09-19,US,quantile,0.25,233652
+2020-09-13,2 wk ahead inc case,2020-09-26,US,quantile,0.25,222887
+2020-09-13,3 wk ahead inc case,2020-10-03,US,quantile,0.25,212436
+2020-09-13,4 wk ahead inc case,2020-10-10,US,quantile,0.25,202163
+2020-09-13,5 wk ahead inc case,2020-10-17,US,quantile,0.25,192848
+2020-09-13,6 wk ahead inc case,2020-10-24,US,quantile,0.25,183197
+2020-09-13,7 wk ahead inc case,2020-10-31,US,quantile,0.25,173569
+2020-09-13,8 wk ahead inc case,2020-11-07,US,quantile,0.25,164597
+2020-09-13,1 wk ahead inc case,2020-09-19,US,quantile,0.5,249478
+2020-09-13,2 wk ahead inc case,2020-09-26,US,quantile,0.5,246587
+2020-09-13,3 wk ahead inc case,2020-10-03,US,quantile,0.5,243303
+2020-09-13,4 wk ahead inc case,2020-10-10,US,quantile,0.5,240389
+2020-09-13,5 wk ahead inc case,2020-10-17,US,quantile,0.5,237518
+2020-09-13,6 wk ahead inc case,2020-10-24,US,quantile,0.5,234348
+2020-09-13,7 wk ahead inc case,2020-10-31,US,quantile,0.5,231300
+2020-09-13,8 wk ahead inc case,2020-11-07,US,quantile,0.5,228642
+2020-09-13,1 wk ahead inc case,2020-09-19,US,quantile,0.75,265043
+2020-09-13,2 wk ahead inc case,2020-09-26,US,quantile,0.75,269136
+2020-09-13,3 wk ahead inc case,2020-10-03,US,quantile,0.75,273639
+2020-09-13,4 wk ahead inc case,2020-10-10,US,quantile,0.75,278007
+2020-09-13,5 wk ahead inc case,2020-10-17,US,quantile,0.75,283466
+2020-09-13,6 wk ahead inc case,2020-10-24,US,quantile,0.75,289373
+2020-09-13,7 wk ahead inc case,2020-10-31,US,quantile,0.75,295255
+2020-09-13,8 wk ahead inc case,2020-11-07,US,quantile,0.75,300457
+2020-09-13,1 wk ahead inc case,2020-09-19,US,quantile,0.9,277909
+2020-09-13,2 wk ahead inc case,2020-09-26,US,quantile,0.9,290302
+2020-09-13,3 wk ahead inc case,2020-10-03,US,quantile,0.9,303935
+2020-09-13,4 wk ahead inc case,2020-10-10,US,quantile,0.9,318321
+2020-09-13,5 wk ahead inc case,2020-10-17,US,quantile,0.9,333958
+2020-09-13,6 wk ahead inc case,2020-10-24,US,quantile,0.9,349527
+2020-09-13,7 wk ahead inc case,2020-10-31,US,quantile,0.9,365160
+2020-09-13,8 wk ahead inc case,2020-11-07,US,quantile,0.9,382016
+2020-09-13,1 wk ahead inc case,2020-09-19,US,quantile,0.975,292978
+2020-09-13,2 wk ahead inc case,2020-09-26,US,quantile,0.975,313759
+2020-09-13,3 wk ahead inc case,2020-10-03,US,quantile,0.975,339310
+2020-09-13,4 wk ahead inc case,2020-10-10,US,quantile,0.975,366226
+2020-09-13,5 wk ahead inc case,2020-10-17,US,quantile,0.975,395606
+2020-09-13,6 wk ahead inc case,2020-10-24,US,quantile,0.975,427266
+2020-09-13,7 wk ahead inc case,2020-10-31,US,quantile,0.975,461639
+2020-09-13,8 wk ahead inc case,2020-11-07,US,quantile,0.975,499606
+2020-09-13,1 wk ahead cum death,2020-09-19,01,point,NA,2450
+2020-09-13,2 wk ahead cum death,2020-09-26,01,point,NA,2556
+2020-09-13,3 wk ahead cum death,2020-10-03,01,point,NA,2677
+2020-09-13,4 wk ahead cum death,2020-10-10,01,point,NA,2820
+2020-09-13,5 wk ahead cum death,2020-10-17,01,point,NA,2991
+2020-09-13,6 wk ahead cum death,2020-10-24,01,point,NA,3197
+2020-09-13,7 wk ahead cum death,2020-10-31,01,point,NA,3445
+2020-09-13,8 wk ahead cum death,2020-11-07,01,point,NA,3744
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.01,2435
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.01,2523
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.01,2618
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.01,2720
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.01,2819
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.01,2924
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.01,3034
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.01,3150
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.025,2440
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.025,2534
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.025,2632
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.025,2736
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.025,2847
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.025,2977
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.025,3121
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.025,3264
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.05,2441
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.05,2537
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.05,2639
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.05,2750
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.05,2875
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.05,3007
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.05,3153
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.05,3308
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.1,2443
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.1,2541
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.1,2651
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.1,2770
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.1,2901
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.1,3050
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.1,3217
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.1,3405
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.15,2445
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.15,2546
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.15,2656
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.15,2780
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.15,2920
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.15,3075
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.15,3256
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.15,3461
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.2,2446
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.2,2548
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.2,2659
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.2,2791
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.2,2931
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.2,3100
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.2,3290
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.2,3510
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.25,2447
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.25,2550
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.25,2667
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.25,2799
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.25,2953
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.25,3132
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.25,3348
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.25,3602
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.3,2449
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.3,2554
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.3,2675
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.3,2808
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.3,2975
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.3,3175
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.3,3414
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.3,3689
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.35,2450
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.35,2558
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.35,2680
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.35,2828
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.35,3003
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.35,3208
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.35,3461
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.35,3755
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.4,2452
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.4,2561
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.4,2687
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.4,2835
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.4,3017
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.4,3232
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.4,3484
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.4,3784
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.45,2453
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.45,2565
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.45,2695
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.45,2851
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.45,3030
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.45,3250
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.45,3524
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.45,3848
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.5,2455
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.5,2569
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.5,2703
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.5,2860
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.5,3048
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.5,3276
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.5,3551
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.5,3887
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.55,2456
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.55,2573
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.55,2710
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.55,2873
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.55,3069
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.55,3305
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.55,3591
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.55,3931
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.6,2457
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.6,2576
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.6,2715
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.6,2883
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.6,3088
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.6,3337
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.6,3627
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.6,3985
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.65,2459
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.65,2580
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.65,2721
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.65,2895
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.65,3100
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.65,3351
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.65,3657
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.65,4030
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.7,2461
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.7,2584
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.7,2727
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.7,2903
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.7,3116
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.7,3384
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.7,3701
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.7,4118
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.75,2463
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.75,2589
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.75,2734
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.75,2915
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.75,3140
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.75,3428
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.75,3765
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.75,4217
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.8,2464
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.8,2593
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.8,2745
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.8,2932
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.8,3165
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.8,3455
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.8,3829
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.8,4293
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.85,2466
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.85,2598
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.85,2756
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.85,2953
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.85,3202
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.85,3513
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.85,3923
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.85,4420
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.9,2468
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.9,2603
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.9,2768
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.9,2978
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.9,3239
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.9,3586
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.9,4011
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.9,4554
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.95,2472
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.95,2616
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.95,2796
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.95,3026
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.95,3323
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.95,3711
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.95,4233
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.95,4920
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.975,2474
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.975,2623
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.975,2813
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.975,3057
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.975,3373
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.975,3787
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.975,4335
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.975,5069
+2020-09-13,1 wk ahead cum death,2020-09-19,01,quantile,0.99,2477
+2020-09-13,2 wk ahead cum death,2020-09-26,01,quantile,0.99,2633
+2020-09-13,3 wk ahead cum death,2020-10-03,01,quantile,0.99,2838
+2020-09-13,4 wk ahead cum death,2020-10-10,01,quantile,0.99,3116
+2020-09-13,5 wk ahead cum death,2020-10-17,01,quantile,0.99,3472
+2020-09-13,6 wk ahead cum death,2020-10-24,01,quantile,0.99,3918
+2020-09-13,7 wk ahead cum death,2020-10-31,01,quantile,0.99,4498
+2020-09-13,8 wk ahead cum death,2020-11-07,01,quantile,0.99,5249
+2020-09-13,1 wk ahead cum death,2020-09-19,02,point,NA,49
+2020-09-13,2 wk ahead cum death,2020-09-26,02,point,NA,55
+2020-09-13,3 wk ahead cum death,2020-10-03,02,point,NA,63
+2020-09-13,4 wk ahead cum death,2020-10-10,02,point,NA,74
+2020-09-13,5 wk ahead cum death,2020-10-17,02,point,NA,87
+2020-09-13,6 wk ahead cum death,2020-10-24,02,point,NA,105
+2020-09-13,7 wk ahead cum death,2020-10-31,02,point,NA,129
+2020-09-13,8 wk ahead cum death,2020-11-07,02,point,NA,161
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.01,48
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.01,52
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.01,57
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.01,63
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.01,70
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.01,79
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.01,89
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.01,102
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.025,48
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.025,52
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.025,58
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.025,64
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.025,72
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.025,82
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.025,94
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.025,108
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.05,48
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.05,53
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.05,58
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.05,66
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.05,74
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.05,86
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.05,98
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.05,115
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.1,48
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.1,53
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.1,59
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.1,67
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.1,77
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.1,89
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.1,104
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.1,123
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.15,49
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.15,54
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.15,60
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.15,69
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.15,79
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.15,92
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.15,108
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.15,128
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.2,49
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.2,54
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.2,61
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.2,69
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.2,80
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.2,93
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.2,110
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.2,132
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.25,49
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.25,54
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.25,61
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.25,70
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.25,81
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.25,95
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.25,113
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.25,137
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.3,49
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.3,54
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.3,61
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.3,70
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.3,82
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.3,98
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.3,117
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.3,142
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.35,49
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.35,55
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.35,62
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.35,71
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.35,83
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.35,98
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.35,119
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.35,145
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.4,49
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.4,55
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.4,62
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.4,72
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.4,85
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.4,102
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.4,125
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.4,153
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.45,49
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.45,55
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.45,63
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.45,73
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.45,87
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.45,105
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.45,128
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.45,158
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.5,49
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.5,55
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.5,64
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.5,74
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.5,88
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.5,106
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.5,130
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.5,163
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.55,49
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.55,56
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.55,64
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.55,75
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.55,89
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.55,109
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.55,134
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.55,168
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.6,49
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.6,56
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.6,64
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.6,75
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.6,90
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.6,110
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.6,138
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.6,173
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.65,49
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.65,56
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.65,65
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.65,76
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.65,92
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.65,113
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.65,141
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.65,180
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.7,50
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.7,56
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.7,65
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.7,77
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.7,93
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.7,115
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.7,145
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.7,185
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.75,50
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.75,57
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.75,66
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.75,78
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.75,94
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.75,117
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.75,148
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.75,190
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.8,50
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.8,57
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.8,66
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.8,79
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.8,96
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.8,119
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.8,153
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.8,200
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.85,50
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.85,57
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.85,67
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.85,81
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.85,99
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.85,124
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.85,160
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.85,208
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.9,50
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.9,58
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.9,68
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.9,82
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.9,102
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.9,129
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.9,169
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.9,223
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.95,50
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.95,59
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.95,70
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.95,86
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.95,107
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.95,136
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.95,179
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.95,240
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.975,51
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.975,59
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.975,71
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.975,89
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.975,113
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.975,147
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.975,195
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.975,261
+2020-09-13,1 wk ahead cum death,2020-09-19,02,quantile,0.99,52
+2020-09-13,2 wk ahead cum death,2020-09-26,02,quantile,0.99,63
+2020-09-13,3 wk ahead cum death,2020-10-03,02,quantile,0.99,80
+2020-09-13,4 wk ahead cum death,2020-10-10,02,quantile,0.99,101
+2020-09-13,5 wk ahead cum death,2020-10-17,02,quantile,0.99,130
+2020-09-13,6 wk ahead cum death,2020-10-24,02,quantile,0.99,170
+2020-09-13,7 wk ahead cum death,2020-10-31,02,quantile,0.99,229
+2020-09-13,8 wk ahead cum death,2020-11-07,02,quantile,0.99,320
+2020-09-13,1 wk ahead cum death,2020-09-19,04,point,NA,5439
+2020-09-13,2 wk ahead cum death,2020-09-26,04,point,NA,5551
+2020-09-13,3 wk ahead cum death,2020-10-03,04,point,NA,5662
+2020-09-13,4 wk ahead cum death,2020-10-10,04,point,NA,5780
+2020-09-13,5 wk ahead cum death,2020-10-17,04,point,NA,5909
+2020-09-13,6 wk ahead cum death,2020-10-24,04,point,NA,6051
+2020-09-13,7 wk ahead cum death,2020-10-31,04,point,NA,6207
+2020-09-13,8 wk ahead cum death,2020-11-07,04,point,NA,6381
+2020-09-13,1 wk ahead cum death,2020-09-19,04,quantile,0.01,5434
+2020-09-13,2 wk ahead cum death,2020-09-26,04,quantile,0.01,5539
+2020-09-13,3 wk ahead cum death,2020-10-03,04,quantile,0.01,5630
+2020-09-13,4 wk ahead cum death,2020-10-10,04,quantile,0.01,5713
+2020-09-13,5 wk ahead cum death,2020-10-17,04,quantile,0.01,5789
+2020-09-13,6 wk ahead cum death,2020-10-24,04,quantile,0.01,5861
+2020-09-13,7 wk ahead cum death,2020-10-31,04,quantile,0.01,5928
+2020-09-13,8 wk ahead cum death,2020-11-07,04,quantile,0.01,5991
+2020-09-13,1 wk ahead cum death,2020-09-19,04,quantile,0.025,5436
+2020-09-13,2 wk ahead cum death,2020-09-26,04,quantile,0.025,5542
+2020-09-13,3 wk ahead cum death,2020-10-03,04,quantile,0.025,5641
+2020-09-13,4 wk ahead cum death,2020-10-10,04,quantile,0.025,5738
+2020-09-13,5 wk ahead cum death,2020-10-17,04,quantile,0.025,5838
+2020-09-13,6 wk ahead cum death,2020-10-24,04,quantile,0.025,5933
+2020-09-13,7 wk ahead cum death,2020-10-31,04,quantile,0.025,6027
+2020-09-13,8 wk ahead cum death,2020-11-07,04,quantile,0.025,6121
+2020-09-13,1 wk ahead cum death,2020-09-19,04,quantile,0.05,5437
+2020-09-13,2 wk ahead cum death,2020-09-26,04,quantile,0.05,5545
+2020-09-13,3 wk ahead cum death,2020-10-03,04,quantile,0.05,5650
+2020-09-13,4 wk ahead cum death,2020-10-10,04,quantile,0.05,5754
+2020-09-13,5 wk ahead cum death,2020-10-17,04,quantile,0.05,5853
+2020-09-13,6 wk ahead cum death,2020-10-24,04,quantile,0.05,5955
+2020-09-13,7 wk ahead cum death,2020-10-31,04,quantile,0.05,6058
+2020-09-13,8 wk ahead cum death,2020-11-07,04,quantile,0.05,6160
+2020-09-13,1 wk ahead cum death,2020-09-19,04,quantile,0.1,5440
+2020-09-13,2 wk ahead cum death,2020-09-26,04,quantile,0.1,5553
+2020-09-13,3 wk ahead cum death,2020-10-03,04,quantile,0.1,5660
+2020-09-13,4 wk ahead cum death,2020-10-10,04,quantile,0.1,5771
+2020-09-13,5 wk ahead cum death,2020-10-17,04,quantile,0.1,5887
+2020-09-13,6 wk ahead cum death,2020-10-24,04,quantile,0.1,6001
+2020-09-13,7 wk ahead cum death,2020-10-31,04,quantile,0.1,6112
+2020-09-13,8 wk ahead cum death,2020-11-07,04,quantile,0.1,6220
+2020-09-13,1 wk ahead cum death,2020-09-19,04,quantile,0.15,5442
+2020-09-13,2 wk ahead cum death,2020-09-26,04,quantile,0.15,5558
+2020-09-13,3 wk ahead cum death,2020-10-03,04,quantile,0.15,5673
+2020-09-13,4 wk ahead cum death,2020-10-10,04,quantile,0.15,5788
+2020-09-13,5 wk ahead cum death,2020-10-17,04,quantile,0.15,5903
+2020-09-13,6 wk ahead cum death,2020-10-24,04,quantile,0.15,6029
+2020-09-13,7 wk ahead cum death,2020-10-31,04,quantile,0.15,6165
+2020-09-13,8 wk ahead cum death,2020-11-07,04,quantile,0.15,6316
+2020-09-13,1 wk ahead cum death,2020-09-19,04,quantile,0.2,5444
+2020-09-13,2 wk ahead cum death,2020-09-26,04,quantile,0.2,5564
+2020-09-13,3 wk ahead cum death,2020-10-03,04,quantile,0.2,5683
+2020-09-13,4 wk ahead cum death,2020-10-10,04,quantile,0.2,5807
+2020-09-13,5 wk ahead cum death,2020-10-17,04,quantile,0.2,5940
+2020-09-13,6 wk ahead cum death,2020-10-24,04,quantile,0.2,6074
+2020-09-13,7 wk ahead cum death,2020-10-31,04,quantile,0.2,6214
+2020-09-13,8 wk ahead cum death,2020-11-07,04,quantile,0.2,6358
+2020-09-13,1 wk ahead cum death,2020-09-19,04,quantile,0.25,5445
+2020-09-13,2 wk ahead cum death,2020-09-26,04,quantile,0.25,5566
+2020-09-13,3 wk ahead cum death,2020-10-03,04,quantile,0.25,5689
+2020-09-13,4 wk ahead cum death,2020-10-10,04,quantile,0.25,5818
+2020-09-13,5 wk ahead cum death,2020-10-17,04,quantile,0.25,5947
+2020-09-13,6 wk ahead cum death,2020-10-24,04,quantile,0.25,6089
+2020-09-13,7 wk ahead cum death,2020-10-31,04,quantile,0.25,6239
+2020-09-13,8 wk ahead cum death,2020-11-07,04,quantile,0.25,6397
+2020-09-13,1 wk ahead cum death,2020-09-19,04,quantile,0.3,5447
+2020-09-13,2 wk ahead cum death,2020-09-26,04,quantile,0.3,5571
+2020-09-13,3 wk ahead cum death,2020-10-03,04,quantile,0.3,5694
+2020-09-13,4 wk ahead cum death,2020-10-10,04,quantile,0.3,5824
+2020-09-13,5 wk ahead cum death,2020-10-17,04,quantile,0.3,5968
+2020-09-13,6 wk ahead cum death,2020-10-24,04,quantile,0.3,6117
+2020-09-13,7 wk ahead cum death,2020-10-31,04,quantile,0.3,6283
+2020-09-13,8 wk ahead cum death,2020-11-07,04,quantile,0.3,6457
+2020-09-13,1 wk ahead cum death,2020-09-19,04,quantile,0.35,5450
+2020-09-13,2 wk ahead cum death,2020-09-26,04,quantile,0.35,5574
+2020-09-13,3 wk ahead cum death,2020-10-03,04,quantile,0.35,5698
+2020-09-13,4 wk ahead cum death,2020-10-10,04,quantile,0.35,5832
+2020-09-13,5 wk ahead cum death,2020-10-17,04,quantile,0.35,5978
+2020-09-13,6 wk ahead cum death,2020-10-24,04,quantile,0.35,6138
+2020-09-13,7 wk ahead cum death,2020-10-31,04,quantile,0.35,6317
+2020-09-13,8 wk ahead cum death,2020-11-07,04,quantile,0.35,6505
+2020-09-13,1 wk ahead cum death,2020-09-19,04,quantile,0.4,5451
+2020-09-13,2 wk ahead cum death,2020-09-26,04,quantile,0.4,5577
+2020-09-13,3 wk ahead cum death,2020-10-03,04,quantile,0.4,5704
+2020-09-13,4 wk ahead cum death,2020-10-10,04,quantile,0.4,5838
+2020-09-13,5 wk ahead cum death,2020-10-17,04,quantile,0.4,5991
+2020-09-13,6 wk ahead cum death,2020-10-24,04,quantile,0.4,6156
+2020-09-13,7 wk ahead cum death,2020-10-31,04,quantile,0.4,6342
+2020-09-13,8 wk ahead cum death,2020-11-07,04,quantile,0.4,6540
+2020-09-13,1 wk ahead cum death,2020-09-19,04,quantile,0.45,5452
+2020-09-13,2 wk ahead cum death,2020-09-26,04,quantile,0.45,5580
+2020-09-13,3 wk ahead cum death,2020-10-03,04,quantile,0.45,5712
+2020-09-13,4 wk ahead cum death,2020-10-10,04,quantile,0.45,5849
+2020-09-13,5 wk ahead cum death,2020-10-17,04,quantile,0.45,6005
+2020-09-13,6 wk ahead cum death,2020-10-24,04,quantile,0.45,6176
+2020-09-13,7 wk ahead cum death,2020-10-31,04,quantile,0.45,6359
+2020-09-13,8 wk ahead cum death,2020-11-07,04,quantile,0.45,6568
+2020-09-13,1 wk ahead cum death,2020-09-19,04,quantile,0.5,5453
+2020-09-13,2 wk ahead cum death,2020-09-26,04,quantile,0.5,5584
+2020-09-13,3 wk ahead cum death,2020-10-03,04,quantile,0.5,5721
+2020-09-13,4 wk ahead cum death,2020-10-10,04,quantile,0.5,5867
+2020-09-13,5 wk ahead cum death,2020-10-17,04,quantile,0.5,6026
+2020-09-13,6 wk ahead cum death,2020-10-24,04,quantile,0.5,6197
+2020-09-13,7 wk ahead cum death,2020-10-31,04,quantile,0.5,6395
+2020-09-13,8 wk ahead cum death,2020-11-07,04,quantile,0.5,6613
+2020-09-13,1 wk ahead cum death,2020-09-19,04,quantile,0.55,5455
+2020-09-13,2 wk ahead cum death,2020-09-26,04,quantile,0.55,5589
+2020-09-13,3 wk ahead cum death,2020-10-03,04,quantile,0.55,5728
+2020-09-13,4 wk ahead cum death,2020-10-10,04,quantile,0.55,5881
+2020-09-13,5 wk ahead cum death,2020-10-17,04,quantile,0.55,6052
+2020-09-13,6 wk ahead cum death,2020-10-24,04,quantile,0.55,6238
+2020-09-13,7 wk ahead cum death,2020-10-31,04,quantile,0.55,6458
+2020-09-13,8 wk ahead cum death,2020-11-07,04,quantile,0.55,6688
+2020-09-13,1 wk ahead cum death,2020-09-19,04,quantile,0.6,5456
+2020-09-13,2 wk ahead cum death,2020-09-26,04,quantile,0.6,5593
+2020-09-13,3 wk ahead cum death,2020-10-03,04,quantile,0.6,5739
+2020-09-13,4 wk ahead cum death,2020-10-10,04,quantile,0.6,5895
+2020-09-13,5 wk ahead cum death,2020-10-17,04,quantile,0.6,6072
+2020-09-13,6 wk ahead cum death,2020-10-24,04,quantile,0.6,6275
+2020-09-13,7 wk ahead cum death,2020-10-31,04,quantile,0.6,6494
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,04,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,05,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,06,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,08,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
+,,,09,,,
