@@ -80,7 +80,7 @@ def configure_JHU_data(county_truth, state_nat_truth, target):
     '''
     ####################################
     # Daily truth data output for reference
-    #################################### 
+    ####################################
     '''
     county_truth_byday = get_byday(county_truth)
     state_nat_truth_byday = get_byday(state_nat_truth)
