@@ -194,7 +194,14 @@ export default class LegendDrawer extends Component {
     this.bottomRows = predictions
       .filter(p => config.pinnedModels.indexOf(p.id) === -1)
       .map(p => {
+        if(this.init == false) {
         p.hidden = !((this.showHideButtons.idx == 2) && (p.id == 'COVIDhub-ensemble'))
+        } else
+        {
+          if(this.showHideButtons.idx == 2 && p.id != 'COVIDhub-ensemble') {
+            p.hidden = true
+          }
+        }
         let drawerRow = makePredictionRow(p, this.tooltip)
         if(drawerRow.id ==='COVIDhub-ensemble') {
           this.ensembleRow = drawerRow
