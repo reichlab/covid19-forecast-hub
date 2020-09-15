@@ -4,7 +4,7 @@ model_abbr: GT-DeepCOVID
 model_contributors: B. Aditya Prakash (Georgia Institute of Technology) <badityap@cc.gatech.edu>,  Alexander
   Rodriguez (Georgia Institute of Technology), Jiaming Cui (Georgia Institute of Technology),
   Anika Tabassum (Virginia Tech),  Bijaya Adhikari (University of Iowa/Virginia Tech),
-  Jimeng Sun (University of Illinois, Urbana-Champaign), Full Team <deep-covid@lists.gatech.edu>
+  Full Team <deep-covid@lists.gatech.edu>
 website_url: https://deepcovid.github.io/
 license: cc-by-4.0
 team_model_designation: primary

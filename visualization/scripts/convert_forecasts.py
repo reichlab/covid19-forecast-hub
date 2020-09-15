@@ -3,6 +3,7 @@ import glob
 import os
 from utils import _utils
 from pathlib import Path
+import shutil
 
 def reformat_forecasts(file_path, target, root, data):
     # read forecast
@@ -78,8 +79,22 @@ data = _utils.get_data()
 print(root, data)
 # loop through model directories
 my_path = Path("./data/")
+to_be_deleted= []
 for file_path in my_path.glob("**/**/*.csv"):
     target = os.path.basename(os.path.dirname(os.path.dirname(file_path)))
     print(file_path)
     df2 = reformat_forecasts(file_path, target, root, data)
-    df2.to_csv(file_path, index=False, float_format='%.14f')
+    if df2.size > 0:
+        df2.to_csv(file_path, index=False, float_format='%.14f')
+    else:
+        # Remove file as it has no data! 
+        file_path.unlink()
+
+model_dirs = list(my_path.glob("**/**/*.yml"))
+for file_path in model_dirs:
+    if len(list((file_path / '..').resolve().glob('*.csv'))) ==0:
+        # empty list delete directory
+        shutil.rmtree((file_path / '..').resolve())
+        print(f"Deleted {(file_path / '..').resolve()!r}")
+    
+
