@@ -95,7 +95,7 @@ def configure_JHU_data(df, target):
     df_truth_values = df_truth_long[df_truth_long['day'] == 7]
 
     # find week-ahead targets
-    for i in range(4):
+    for i in range(20):
         weeks_ahead = i + 1  # add one to [0,3]
         days_back = 5 + ((weeks_ahead - 1) * 7)  # timezero is on Mondays
 
