@@ -137,6 +137,10 @@ export default class TimeChart extends Chart {
       }
     })
 
+    ev.addSub(this.uuid, ev.LEGEND_RESCALE, (msg, {}) => {
+      this.updateDomains(this.predictions)
+    })
+
     ev.addSub(this.uuid, ev.LEGEND_CI, (msg, {
       idx
     }) => {
@@ -147,6 +151,16 @@ export default class TimeChart extends Chart {
     })
   }
 
+  updateDomains(predictions) {
+    if (this.config.axes.y.domain) {
+      this.yScale.domain(this.config.axes.y.domain)
+    } else {
+      this.yScale.domain(domains.y_pred(this.actual.data, predictions, this.dataConfig))
+    }
+    this.yAxis.plot(this.scales)
+    this.actual.rescale(this.scales)
+    this.predictions.forEach(p => p.update(this.currentIdx))
+  }
   // plot data
   plot(data) {
     verifyTimeChartData(data)
@@ -165,6 +179,14 @@ export default class TimeChart extends Chart {
     this.xScaleDate.domain(domains.xDate(data, this.dataConfig))
     this.xScalePoint.domain(domains.xPoint(data, this.dataConfig))
 
+    this.plotChart(data)
+
+    // Hot start the chart
+    this.currentIdx = 0
+    this.update(this.currentIdx)
+  }
+
+  plotChart(data) {
     this.xAxis.plot(this.scales)
     this.yAxis.plot(this.scales)
 
@@ -205,7 +227,8 @@ export default class TimeChart extends Chart {
           })
           this.append(addMarker)
           this.additional.push(addMarker)
-        } else {
+        }
+        else {
           addMarker = this.additional[markerIndex]
         }
         addMarker.plot(this.scales, ad.data)
@@ -242,7 +265,8 @@ export default class TimeChart extends Chart {
         })
         this.append(predMarker)
         this.predictions.push(predMarker)
-      } else {
+      }
+      else {
         predMarker = this.predictions[markerIndex]
       }
       predMarker.plot(this.scales, m.predictions)
@@ -254,10 +278,6 @@ export default class TimeChart extends Chart {
       this.actual, this.observed,
       ...this.predictions, ...this.additional
     ])
-
-    // Hot start the chart
-    this.currentIdx = 0
-    this.update(this.currentIdx)
   }
 
   /**
@@ -266,13 +286,13 @@ export default class TimeChart extends Chart {
   update(idx) {
     if (idx !== this.currentIdx) {
       this.currentIdx = idx
-
       // Use data versions to update the timerect
       this.timerect.update(this.dataVersionTimes[idx])
 
       this.predictions.forEach(p => {
         p.update(idx)
       })
+      this.updateDomains([...this.predictions, ...this.additional].filter(m => !m.hidden))
       this.overlay.update(this.predictions)
       if (this.dataConfig.observed) {
         this.observed.update(idx)

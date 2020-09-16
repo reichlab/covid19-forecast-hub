@@ -1,0 +1,9 @@
+team_name: University of Georgia Center for the Ecology of Infectious Diseases Forecasting Working Group
+model_name: Walk
+model_abbr: CEID-Walk
+model_contributors: Eamon O'Dea (CEID) <odea35@gmail.com>
+website_url: https://github.com/e3bo/random-walks
+license: cc-by-4.0
+team_model_designation: primary
+data_inputs: Johns Hopkins CSSE case and death data
+methods: We use a random walk model without drift. The last few observations of a target time series are used to estimate the variance in step size of the random walk.

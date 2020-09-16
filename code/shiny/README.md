@@ -5,6 +5,27 @@ The shiny app is complementary to the COVID-19 Forecast Hub
 These files are a work-in-progress version of the files in [data-processed/](../../data-processed).
 For now, the data-processed/ files should be used.
 
+Software requirements: R 4.0 or higher and the following packages:
+
+    install.packages(c("tidyverse","data.table","R.utils","shiny","DT",
+                       "shinyWidgets","ggnewscale","reshape2","drake","MMWRweek","scales","future"))
+
+If you want to try out this new version of the shiny app you can use 
+    
+    future::plan(future::multiprocess)  
+    drake::r_make("code/shiny/_drake.R") # this line can take over 10 minutes to run
+    source("code/shiny/app.R")
+    shinyApp(ui = ui, server = server) # if it doesn't automatically run
+    
+from the base folder of the repository.
+
+If you would like to set default team and default model to Latest Viz in shiny app,
+please add to ```.Rprofile``` and then restart R session
+
+    shiny::shinyOptions(default_model_abbr = "default model_abbr")
+
+Note: JHU New York City County truth is different from those from other sources because five boroughs in NYC were aggregated under “New York City.” For more information: please go to https://coronavirus.jhu.edu/us-map-faq
+
 ## Background
 
 Originally the app was designed to be an internal tool for the COVID-19 Forecast
@@ -31,14 +52,3 @@ Dashboard, but with some slightly different features.
 This tab can be used to visualize forecasts before submitting those forecasts
 to the Hub. 
 
-## ToDo
-
-A number of upgrades to the shiny app are on the to do list:
-
-- Fix paths that have broken due to moving the code
-- Improve speed of reading the data in
-  - Use [fread](https://www.rdocumentation.org/packages/data.table/versions/1.12.8/topics/fread) rather than [read_csv](https://readr.tidyverse.org/reference/read_delim.html)
-  - Use [drake](https://github.com/ropensci/drake) to provide GNU make functionality
-- Allow users to specify default team and model through [options](https://stat.ethz.ch/R-manual/R-devel/library/base/html/options.html)
-- Maintain target and location while changing team and model
-- Display figures rather than tables
