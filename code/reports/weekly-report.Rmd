@@ -55,7 +55,7 @@ models_this_week <- zoltr::do_zoltar_query(
   types = c("point"), 
   verbose = FALSE,
   models = c(),
-  units = c("25")) %>%
+  is_forecast_query = TRUE) %>%
   pull(model) %>%
   unique()
 nmodels_this_week <- length(models_this_week)
