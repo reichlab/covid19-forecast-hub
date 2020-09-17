@@ -194,6 +194,14 @@ export default class LegendDrawer extends Component {
     this.bottomRows = predictions
       .filter(p => config.pinnedModels.indexOf(p.id) === -1)
       .map(p => {
+        if(this.init == false) {
+        p.hidden = !((this.showHideButtons.idx == 2) && (p.id == 'COVIDhub-ensemble'))
+        } else
+        {
+          if(this.showHideButtons.idx == 2 && p.id != 'COVIDhub-ensemble') {
+            p.hidden = true
+          }
+        }
         let drawerRow = makePredictionRow(p, this.tooltip)
         if(drawerRow.id ==='COVIDhub-ensemble') {
           this.ensembleRow = drawerRow
@@ -210,9 +218,6 @@ export default class LegendDrawer extends Component {
       if(this.showHideButtons.idx == 2) {
         if(!this.ensembleRow) {
           this.ensembleRow = this.bottomRows.find(r => r.id === 'COVIDhub-ensemble')
-        }
-        if (this.ensembleRow) {
-          this.ensembleRow.click()
         }
         this.showHideButtons.set(2)
       } else if(this.showHideButtons.idx == 0) {

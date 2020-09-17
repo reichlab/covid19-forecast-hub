@@ -138,7 +138,6 @@ export default class TimeChart extends Chart {
     })
 
     ev.addSub(this.uuid, ev.LEGEND_RESCALE, (msg, {}) => {
-      console.log(`Updatinng scale`)
       this.updateDomains(this.predictions)
     })
 
