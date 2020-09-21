@@ -63,7 +63,7 @@ ui <- navbarPage(
            sidebarLayout(
              sidebarPanel(
                selectInput("model_abbr","Model Abbreviation", sort(unique(latest_plot_data$model_abbr )), 
-                           shiny::getShinyOption("default_model_abbr",default = "IHME-CurveFit")),
+                           shiny::getShinyOption("default_model_abbr",default = "COVIDhub-ensemble")),
                selectInput("target","Target", sort(unique(latest_plot_data$simple_target))),
                selectInput("abbreviation","Location", sort(unique(latest_plot_data$abbreviation   ))),
                selectInput("county","County", sort(unique(latest_plot_data$location_name  ))),
@@ -84,7 +84,7 @@ ui <- navbarPage(
                selectInput("loc_target", "Target", sort(unique(latest_plot_data$simple_target))),
                selectInput("loc_sources", "Truth sources", truth_sources, selected = "JHU-CSSE", multiple = TRUE),
                selectInput("loc_model_abbr", "Model Abbreviation", sort(unique(latest_plot_data$model_abbr)),
-                           selected =c("UMass-MechBayes", "LANL-GrowthRate", "YYG-ParamSearch", "UCLA-SuEIR"), multiple = TRUE),
+                           selected =c("COVIDhub-ensemble","UMass-MechBayes", "LANL-GrowthRate", "YYG-ParamSearch", "UCLA-SuEIR"), multiple = TRUE),
                dateRangeInput("loc_dates", "Date range", start = "2020-03-01", end = fourweek_date)
              ),
              mainPanel(
@@ -223,9 +223,9 @@ server <- function(input, output, session) {
     model_abbrs <- sort(unique(latest_loc_ltc()$model_abbr))
     updateSelectInput(session, "loc_model_abbr", choices = model_abbrs, 
                       selected = ifelse(
-                        c("UMass-MechBayes","LANL-GrowthRate",
+                        c("COVIDhub-ensemble", "UMass-MechBayes","LANL-GrowthRate",
                           "YYG-ParamSearch","UCLA-SuEIR") %in% model_abbrs,
-                        c("UMass-MechBayes","LANL-GrowthRate",
+                        c("COVIDhub-ensemble", "UMass-MechBayes","LANL-GrowthRate",
                           "YYG-ParamSearch","UCLA-SuEIR"),
                         model_abbrs[1]))
   })

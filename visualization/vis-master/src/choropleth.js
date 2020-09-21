@@ -79,7 +79,6 @@ export class ColorBar {
     group.append('g')
       .attr('class', 'axis axis-color')
       .attr('transform', 'translate(' + bar.x + ',' + (bar.y + bar.height) + ')')
-    console.log(scale)
     this.svg = svg
     this.scale = scale
   }
