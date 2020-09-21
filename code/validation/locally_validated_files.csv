@@ -1170,3 +1170,6 @@ file_path,validation_date
 ./data-processed/DDS-NBDS/2020-09-20-DDS-NBDS.csv,2020-09-21 06:22:09.352666
 ./data-processed/QJHong-Encounter/2020-09-20-QJHong-Encounter.csv,2020-09-21 06:22:09.631297
 ./data-processed/RPI_UW-Mob_Collision/2020-09-20-RPI_UW-Mob_Collision.csv,2020-09-21 06:22:10.630018
+./data-processed/UCLA-SuEIR/2020-09-20-UCLA-SuEIR.csv,2020-09-21 12:26:03.894072
+./data-processed/PandemicCentral-USCounty/2020-09-21-PandemicCentral-USCounty.csv,2020-09-21 12:26:04.662189
+./data-processed/WalmartLabsML-LogForecasting/2020-09-20-WalmartLabsML-LogForecasting.csv,2020-09-21 12:26:06.280721
