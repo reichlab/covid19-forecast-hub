@@ -402,4 +402,3 @@ This report was reproducibly and dynamically generated using RMarkdown. The code
 htmltools::includeScript("statcounter.js") 
 ```
 
-
