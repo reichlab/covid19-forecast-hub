@@ -73,11 +73,7 @@ exports.targetFullNameIncCase = {
   '2-ahead': '2 wk ahead inc case',
   '3-ahead': '3 wk ahead inc case',
   '4-ahead': '4 wk ahead inc case'
-<<<<<<< HEAD
 };
-=======
-}
->>>>>>> 88a03fa783e1c903f16b300ec48e7e5763b7c7c2
 /**
  * Target type for each target. Note that there can be only two
  * target types, 'percent' and 'week'.
