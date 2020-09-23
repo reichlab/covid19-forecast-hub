@@ -114,7 +114,7 @@ cum_death_targets <- paste(1:4, "wk ahead cum death")
 
 # submit query
 dat <- zoltr:: do_zoltar_query(
-  zoltar_connection, project_url, 
+  zoltar_connection, project_url, TRUE,
   models = c("COVIDhub-ensemble"),
   targets = c(inc_death_targets, cum_death_targets),
   timezeros = as.character(this_monday),
