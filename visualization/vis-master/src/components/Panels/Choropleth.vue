@@ -299,7 +299,7 @@ export default {
     require.ensure(["../../store/data"], () => {
       this.importLatestChunk(require("../../store/data"));
 
-      this.updateSelectedSeason(this.seasons.length - 1);
+      this.updateSelectedSeason(0); // first loaded season is Incident Deaths
 
       // Setup map
       this.initChoropleth(
