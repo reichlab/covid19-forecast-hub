@@ -22,7 +22,7 @@ export const importLatestChunk = (context, dataChunk) => {
   addScoresData(context, dataChunk.latestScoresData)
   addDistData(context, dataChunk.latestDistData)
   initMetadata(context, dataChunk.metadata)
-  addSeasonData(context, dataChunk.incCaseSeasonData)
+  addSeasonData(context, dataChunk.incDeathSeasonData)
   //initHistory(context, dataChunk.history)
 }
 

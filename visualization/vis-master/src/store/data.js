@@ -8,6 +8,8 @@ import latestDistData from '!json!../assets/data/distributions/season-latest-nat
 
 import incCaseSeasonData from '!json!../assets/data/season-Incident Cases.json'
 
+import incDeathSeasonData from '!json!../assets/data/season-Incident Deaths.json'
+
 const seasonDataCtx = require.context(
   'file-loader!../assets/data/',
   false,
@@ -58,6 +60,7 @@ export {
   latestScoresData,
   latestDistData,
   incCaseSeasonData,
+  incDeathSeasonData,
   //history,
   metadata
 }
