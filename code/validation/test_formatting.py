@@ -20,8 +20,7 @@ metadata_version = 5
 
 # this is the root of the repository. 
 root = (Path(__file__) / '..'/'..'/'..').resolve()
-pop_df = pd.read_csv(open(root/'data-locations'/'populations.csv'))
-
+pop_df = pd.read_csv(open(root/'data-locations'/'locations.csv')).astype({'location':str})
 
 
 '''
@@ -31,10 +30,9 @@ pop_df = pd.read_csv(open(root/'data-locations'/'populations.csv'))
     - A prediction who's `value` is greater than the population of that region. 
 
     Method:
-    1. replace all rows with the `location` column as `US` to -1.
-    2. convert the location column to an integer (so that we can do an efficient `join` with the forecast DataFrame)
-    3. Do a left join of the forecast DataFrame with population dataframe on the `location` column.
-    4. Find number of rows that have the value in `value` column >= the value of the `Population` column.
+    1. convert the location column to an integer (so that we can do an efficient `join` with the forecast DataFrame)
+    2. Do a left join of the forecast DataFrame with population dataframe on the `location` column.
+    3. Find number of rows that have the value in `value` column >= the value of the `Population` column.
 
     Population data: 
     Retrieved from the JHU timeseries data used for generating the truth data file. (See /data-locations/populations.csv)
@@ -43,17 +41,17 @@ pop_df = pd.read_csv(open(root/'data-locations'/'populations.csv'))
 def get_num_invalid_predictions(forecast_filename):
     model_df = pd.read_csv(open(forecast_filename, 'r'))
     # preprocess model dataframe
-    model_df['location'].replace('US', -1, inplace=True)
-    model_df = model_df.astype({'location':'int64'})
-    merged = model_df.merge(pop_df[['location', 'Population']], on='location', how='left')
-    invalid_preds = np.sum(merged['value'] >= merged['Population'])
-    return invalid_preds
+#     model_df['location'].replace('US', -1, inplace=True)
+    model_df = model_df.astype({'location':str})
+    merged = model_df.merge(pop_df[['location', 'population']], on='location', how='left')
+    num_invalid_preds = np.sum(merged['value'] >= merged['population'])
+    return num_invalid_preds, merged[merged['value'] >= merged['population']]
     
 
 def validate_forecast_values(filepath):
-    num_invalid = get_num_invalid_predictions(filepath)
+    num_invalid, preds = get_num_invalid_predictions(filepath)
     if  num_invalid> 0:
-        return True, [f"PREDICTION ERROR: You have {num_invalid} invalid predictions in your file."]
+        return True, [f"PREDICTION ERROR: You have {num_invalid} invalid predictions in your file. Invalid Predictions:\n {preds}"]
     return  False, "no errors"
 
 def validate_forecast_file(filepath, silent=False):
