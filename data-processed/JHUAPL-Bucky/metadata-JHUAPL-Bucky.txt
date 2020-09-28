@@ -5,4 +5,4 @@ model_contributors: Matt Kinsey (JHU/APL) <matt.kinsey@jhuapl.edu>, Kate Tallaks
 website_url: https://buckymodel.com
 license: mit
 team_model_designation: primary
-methods: Metapopulation compartment model using public mobility data. Localalized parameters (e.g. case reporting rates, doubling times, etc) are estimated using historical data and CDC Planning scenario 5.
+methods: Metapopulation compartment model using public mobility data. Localized parameters (e.g. case reporting rates, doubling times, etc) are estimated using historical data from CSSE and CDC Planning scenario 5. The primary output of Bucky is case incidence at the county level and, as a result, is the primary validation target.
