@@ -28,16 +28,14 @@ methods_long: "This is a county-level metapopulation model with stochastic SEIR 
   \ and stay-at-home orders. Infections are seeded stochastically  with roughly 10\
   \ times the number of confirmed cases in the first five days  of a county epidemic\
   \ and R0 and the duration of the infectious period were  drawn stochastically for\
-  \ each county and simulation. Disease follows SEIR  dynamics and county commuting\
-  \ data modulates the spread of disease within  counties. \nStay-at-home orders were\
-  \ applied and lifted at the state level according to  recent policy documents. After\
-  \ stay-at-home orders end, social distancing  remains in effect through the end\
-  \ of the simulation with a roughly 25%  reduction in effectiveness relative to that\
-  \ from stay-at-home orders. States  that did not implement stay-at-home orders had\
-  \ a single social distancing  intervention that began on the day of the first reported\
+  \ each county and simulation. Disease follows SEIR dynamics and county commuting\
+  \ data modulates the spread of disease within counties. \nStay-at-home orders and \
+  \ subsequent social distancing interventions are updated at the state-level according\
+  \ to recent policy documents. States that did not implement stay-at-home orders had\
+  \ a single social distancing intervention that began on the day of the first reported\
   \ order and endured  for the whole simulation period. Intervention effects are inferred\
   \ where  possible.\nTo model deaths and hospitalizations in the population, we incorporated\
-  \  realistic time delays from infection to symptom onset to hospitalization to \
+  \  realistic but fixed time delays from infection to symptom onset to hospitalization to \
   \ ICU to ventilator use to death and used age-specific demographics to perform \
   \ a county-level age standardization of health outcome risk. Currently, we  assume\
   \ a 0.25% infection fatality rate and a 7:1 ratio of incident  hospitalizations\
