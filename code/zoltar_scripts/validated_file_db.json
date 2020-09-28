@@ -1345,7 +1345,7 @@
     "2020-09-21-GT-DeepCOVID.csv": "f20d9c82954d548006b26bab30f50ef7",
     "2020-09-21-IHME-CurveFit.csv": "fb8bd4e5b68381332bf0c795fd7bf53b",
     "2020-09-21-IBF-TimeSeries.csv": "d46dcb1693c58af21d83a73eac682cb9",
-    "2020-09-21-MOBS-GLEAM_COVID.csv": "199c574481d58ec0b5dd250ff8bb4cce",
+    "2020-09-21-MOBS-GLEAM_COVID.csv": "1c57298ded316b670d49de80ba2e7141",
     "2020-09-21-RobertWalraven-ESG.csv": "f500d6a373a6352e66e3d90595f40cc1",
     "2020-09-20-CU-scenario_mid.csv": "f890adab74abffc2a8b65d985fa170ce",
     "2020-09-20-OliverWyman-Navigator.csv": "b20b7a58c1d9b6d31405a3c329c5b9ee",
@@ -1385,5 +1385,11 @@
     "2020-09-27-UCLA-SuEIR.csv": "fd27c702b6f01bd88a6eaeeca6b146da",
     "2020-09-28-PandemicCentral-USCounty.csv": "68b1e0c4dbf8a46f836962637c14a6eb",
     "2020-09-27-UCM_MESALab-FoGSEIR.csv": "8ca7f129475c881639032f73aaaa6790",
-    "2020-09-27-WalmartLabsML-LogForecasting.csv": "dd34fae15d79bb786de76b20603bb5e3"
+    "2020-09-27-WalmartLabsML-LogForecasting.csv": "dd34fae15d79bb786de76b20603bb5e3",
+    "2020-09-28-UT-Mobility.csv": "dbb6ea397199e5b7beb103de7a0d8739",
+    "2020-09-27-CEID-Walk.csv": "151a8527d2d927ef76c6cf65017d5e4e",
+    "2020-09-27-Covid19Sim-Simulator.csv": "143e4045ef958e38f3f0e45b70d3e38b",
+    "2020-09-28-UMich-RidgeTfReg.csv": "3874ea165939e7e20dec7f06da0934c8",
+    "2020-09-27-UA-EpiCovDA.csv": "1b5eba7e032c54bc6595efe2f61f6ea1",
+    "2020-09-27-MIT_CritData-GBCF.csv": "234e7af526f0573486e897ac02c7bb98"
 }
