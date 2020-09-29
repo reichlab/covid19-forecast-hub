@@ -1280,3 +1280,6 @@ file_path,validation_date
 ./data-processed/CMU-TimeSeries/2020-09-28-CMU-TimeSeries.csv,2020-09-29 06:23:24.020564
 ./data-processed/RPI_UW-Mob_Collision/2020-09-27-RPI_UW-Mob_Collision.csv,2020-09-29 06:23:25.793532
 ./data-processed/USACE-ERDC_SEIR/2020-09-28-USACE-ERDC_SEIR.csv,2020-09-29 06:23:36.856906
+./data-processed/STH-3PU/2020-09-29-STH-3PU.csv,2020-09-29 15:06:16.989596
+./data-processed/COVIDhub-ensemble/2020-09-28-COVIDhub-ensemble.csv,2020-09-29 15:06:27.338674
+./data-processed/UVA-Ensemble/2020-09-28-UVA-Ensemble.csv,2020-09-29 15:06:36.370505
