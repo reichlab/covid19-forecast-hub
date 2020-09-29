@@ -1,45 +1,33 @@
 ﻿Report_date,date_of_error,first_fcast_date,target ,location_name,Error_message
-6/5/20,6/13/20,6/6/20,1 wk ahead cum death,Michigan,a
-6/5/20,6/13/20,5/30/20,2 wk ahead cum death,Michigan,a
-6/5/20,6/13/20,5/23/20,3 wk ahead cum death,Michigan,a
-6/5/20,6/13/20,5/16/20,4 wk ahead cum death,Michigan,a
-6/12/20,6/11/20,6/6/20,1 wk ahead cum death,Missouri,b
-6/12/20,6/11/20,5/30/20,2 wk ahead cum death,Missouri,b
-6/12/20,6/11/20,5/23/20,3 wk ahead cum death,Missouri,b
-6/12/20,6/11/20,5/16/20,4 wk ahead cum death,Missouri,b
-6/16/20,6/14/20,6/13/20,1 wk ahead cum death,Oregon,c
-6/17/20,6/14/20,6/6/20,2 wk ahead cum death,Oregon,c
-6/18/20,6/14/20,5/30/20,3 wk ahead cum death,Oregon,c
-6/19/20,6/14/20,5/23/20,4 wk ahead cum death,Oregon,c
-6/22/20,6/27/20,6/20/20,1 wk ahead cum death,Mississippi,d
-6/22/20,6/27/20,6/13/20,2 wk ahead cum death,Mississippi,d
-6/22/20,6/27/20,6/6/20,3 wk ahead cum death,Mississippi,d
-6/22/20,6/27/20,5/30/20,4 wk ahead cum death,Mississippi,d
-6/23/20,6/23/20,6/20/20,1 wk ahead cum death,Delaware,e
-6/23/20,6/23/20,6/13/20,2 wk ahead cum death,Delaware,e
-6/23/20,6/23/20,6/6/20,3 wk ahead cum death,Delaware,e
-6/23/20,6/23/20,5/30/20,4 wk ahead cum death,Delaware,e
-6/25/20,6/4/20,5/28/20,1 wk ahead cum death,New Jersey,f
-6/25/20,6/4/20,5/21/20,2 wk ahead cum death,New Jersey,f
-6/25/20,6/4/20,5/14/20,3 wk ahead cum death,New Jersey,f
-6/25/20,6/4/20,5/7/20,4 wk ahead cum death,New Jersey,f
-6/30/20,7/11/20,7/4/20,1 wk ahead cum death,New York,g
-6/30/20,7/11/20,6/27/20,2 wk ahead cum death,New York,g
-6/30/20,7/11/20,6/20/20,3 wk ahead cum death,New York,g
-6/30/20,7/11/20,6/13/20,4 wk ahead cum death,New York,g
-7/27/20,8/1/20,7/25/20,1 wk ahead cum death,Texas,h
-7/27/20,8/1/20,7/18/20,2 wk ahead cum death,Texas,h
-7/27/20,8/1/20,7/11/20,3 wk ahead cum death,Texas,h
-7/27/20,8/1/20,7/4/20,4 wk ahead cum death,Texas,h
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
+2020-06-05,2020-06-13,2020-06-06,1 wk ahead cum death,Michigan,a
+2020-06-05,2020-06-13,2020-05-30,2 wk ahead cum death,Michigan,a
+2020-06-05,2020-06-13,2020-05-23,3 wk ahead cum death,Michigan,a
+2020-06-05,2020-06-13,2020-05-16,4 wk ahead cum death,Michigan,a
+2020-06-12,2020-06-11,2020-06-06,1 wk ahead cum death,Missouri,b
+2020-06-12,2020-06-11,2020-05-30,2 wk ahead cum death,Missouri,b
+2020-06-12,2020-06-11,2020-05-23,3 wk ahead cum death,Missouri,b
+2020-06-12,2020-06-11,2020-05-16,4 wk ahead cum death,Missouri,b
+2020-06-16,2020-06-14,2020-06-13,1 wk ahead cum death,Oregon,c
+2020-06-17,2020-06-14,2020-06-06,2 wk ahead cum death,Oregon,c
+2020-06-18,2020-06-14,2020-05-30,3 wk ahead cum death,Oregon,c
+2020-06-19,2020-06-14,2020-05-23,4 wk ahead cum death,Oregon,c
+2020-06-22,2020-06-27,2020-06-20,1 wk ahead cum death,Mississippi,d
+2020-06-22,2020-06-27,2020-06-13,2 wk ahead cum death,Mississippi,d
+2020-06-22,2020-06-27,2020-06-06,3 wk ahead cum death,Mississippi,d
+2020-06-22,2020-06-27,2020-05-30,4 wk ahead cum death,Mississippi,d
+2020-06-23,2020-06-23,2020-06-20,1 wk ahead cum death,Delaware,e
+2020-06-23,2020-06-23,2020-06-13,2 wk ahead cum death,Delaware,e
+2020-06-23,2020-06-23,2020-06-06,3 wk ahead cum death,Delaware,e
+2020-06-23,2020-06-23,2020-05-30,4 wk ahead cum death,Delaware,e
+2020-06-25,2020-06-04,2020-05-28,1 wk ahead cum death,New Jersey,f
+2020-06-25,2020-06-04,2020-05-21,2 wk ahead cum death,New Jersey,f
+2020-06-25,2020-06-04,2020-05-14,3 wk ahead cum death,New Jersey,f
+2020-06-25,2020-06-04,2020-05-07,4 wk ahead cum death,New Jersey,f
+2020-06-30,2020-07-11,2020-07-04,1 wk ahead cum death,New York,g
+2020-06-30,2020-07-11,2020-06-27,2 wk ahead cum death,New York,g
+2020-06-30,2020-07-11,2020-06-20,3 wk ahead cum death,New York,g
+2020-06-30,2020-07-11,2020-06-13,4 wk ahead cum death,New York,g
+2020-07-27,2020-08-01,2020-07-25,1 wk ahead cum death,Texas,h
+2020-07-27,2020-08-01,2020-07-18,2 wk ahead cum death,Texas,h
+2020-07-27,2020-08-01,2020-07-11,3 wk ahead cum death,Texas,h
+2020-07-27,2020-08-01,2020-07-04,4 wk ahead cum death,Texas,h
