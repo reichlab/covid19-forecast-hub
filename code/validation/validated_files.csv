@@ -1277,3 +1277,6 @@ file_path,validation_date
 ./data-processed/CU-scenario_low/2020-09-24-CU-scenario_low.csv,2020-09-29 00:58:05.113438
 ./data-processed/LNQ-ens1/2020-09-27-LNQ-ens1.csv,2020-09-29 00:58:17.207368
 ./data-processed/NotreDame-FRED/2020-09-28-NotreDame-FRED.csv,2020-09-29 00:58:17.570250
+./data-processed/CMU-TimeSeries/2020-09-28-CMU-TimeSeries.csv,2020-09-29 06:23:24.020564
+./data-processed/RPI_UW-Mob_Collision/2020-09-27-RPI_UW-Mob_Collision.csv,2020-09-29 06:23:25.793532
+./data-processed/USACE-ERDC_SEIR/2020-09-28-USACE-ERDC_SEIR.csv,2020-09-29 06:23:36.856906
