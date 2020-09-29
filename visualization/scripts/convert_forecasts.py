@@ -28,7 +28,7 @@ def reformat_forecasts(file_path, target, root, data):
     if "US" in locations_in_file:
         df.loc[df["location"] == 'US', "location_name"] = "US National"
 
-    # Only visualize wk ahead forecasts
+    # Only visualize 4 wk ahead forecasts
     if target == 'Cumulative Deaths':
         targets = ['1 wk ahead cum death',
                    '2 wk ahead cum death',
@@ -39,6 +39,11 @@ def reformat_forecasts(file_path, target, root, data):
                    '2 wk ahead inc death',
                    '3 wk ahead inc death',
                    '4 wk ahead inc death']
+    elif target == 'Incident Cases':
+        targets = ['1 wk ahead inc case',
+                   '2 wk ahead inc case',
+                   '3 wk ahead inc case',
+                   '4 wk ahead inc case']
     df = df[df["target"].isin(targets)]
 
     # Only visualize certain states
