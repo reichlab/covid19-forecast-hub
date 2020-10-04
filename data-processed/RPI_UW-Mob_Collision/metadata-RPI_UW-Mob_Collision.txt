@@ -32,4 +32,5 @@ methods_long: "We incorporate mobility information into a simplified SIR model w
   \ Since Sep 6, 2020, the infection rate and recovery rate were fitted up to Aug 9, 2020, \
   \ while assuming the infection rate drops 15% afterwards. This is motivated by the \
   \ consistent over-prediction from our model solely based on mobility. This is also reasonable\
-  \ considering the mutation of the virus over more than half-year. " 
+  \ considering the mutation of the virus over more than half year. \
+  \ Google mobility data may have been affected by a recent Sep update. " 
