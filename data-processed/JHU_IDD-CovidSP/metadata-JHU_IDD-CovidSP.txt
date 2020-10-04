@@ -20,7 +20,7 @@ team_model_designation: primary
 methods: County-level metapopulation model with commuting and stochastic SEIR disease  dynamics
   with social-distancing indicators.
 team_funding: State of California and US Government
-data_inputs: USAFacts (confirmed cases; reported fatalities), US Census (population),  mobility
+data_inputs: USAFacts (confirmed cases; reported fatalities), NYT (territories), US Census (population),  mobility
 citation: https://www.medrxiv.org/content/10.1101/2020.06.11.20127894v1
 methods_long: "This is a county-level metapopulation model with stochastic SEIR disease\
   \  dynamics. This model incorporates uncertainty in epidemiological parameters \
