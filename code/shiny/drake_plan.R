@@ -3,34 +3,16 @@ plan = drake::drake_plan(
   
   
   ##############
-  # All Forecasts
-  raw_data = target(
-    read_forecast_file(file_in(file)) %>%
-      dplyr::left_join(locations, by = c("location"))%>%
-           tidyr::separate(target, into=c("n_unit","unit","ahead","inc_cum","death_cases"),remove = FALSE),
-    # create id with forecast date and model_abbr name
-    transform = map(file = !!forecast_files,times = !!ids_times, models = !!paste0(ids,"_"),.id = c(times,models))
-  ),
-  
-  # Combine forecasts by model_abbr name
-  raw_data_by_model = target(
-    dplyr::bind_rows(raw_data),
-    transform = combine(raw_data,.by = models)
-  ),
-  
-  all_forecasts = target(
-    dplyr::bind_rows(raw_data),
-    transform = combine(raw_data)
-  ),
-  
-  ##############
   # Latest Forecasts
+  
   latest_forecasts = target(
-    dplyr::filter(raw_data_by_model,forecast_date == max(forecast_date)),
-    transform = map(raw_data_by_model)
+    read_forecast_file(file_in(file)) %>%
+      dplyr::left_join(locations, by = c("location")) %>%
+      tidyr::separate(target, into=c("n_unit","unit","ahead","inc_cum","death_cases"),
+                      remove = FALSE),
+    transform = map(file = !!latest_forecast_files,id_var = !!paste0(latest_ids,"_"), .id=id_var)
   ),
   
-
   latest = target(
     dplyr::bind_rows(latest_forecasts),
     transform = combine(latest_forecasts)
@@ -88,13 +70,25 @@ plan = drake::drake_plan(
   ##############
   # Submissions
   # Include all forecasts from each model
-  submissions_by_model = target(
-    get_forecast_targets(raw_data_by_model),
-    transform = map(raw_data_by_model)
+  
+  submissions_by_file = target(
+    read_forecast_file(file_in(file)) %>%
+      dplyr::left_join(locations, by = c("location"))%>%
+      tidyr::separate(target, into=c("n_unit","unit","ahead","inc_cum","death_cases"),remove = FALSE) %>%
+      get_forecast_targets(),
+    
+    # create id with forecast date and model_abbr name
+    transform = map(file = !!forecast_files,times = !!ids_times, models = !!paste0(ids,"_"),.id = c(times,models))
   ),
   
+  # Combine submissions by model_abbr name
+  submissions_by_model = target(
+    dplyr::bind_rows(submissions_by_file),
+    transform = combine(submissions_by_file,.by = models)
+  ),
+
   submissions = target(
-    dplyr::bind_rows(submissions_by_model) %>%
+    dplyr::bind_rows(submissions_by_model) %>% 
       dplyr::select(model_abbr, forecast_date, type, max_n, target) %>%
       dplyr::arrange(model_abbr, forecast_date, type, target),
     transform = combine(submissions_by_model)
@@ -144,6 +138,6 @@ shiny <- c("truth",
            "latest_quantiles_summary",
            "latest_plot_data")
 
-all_forecasts <- c("all_forecasts")
+#all_forecasts <- c("all_forecasts")
 
 latest <-c("latest")

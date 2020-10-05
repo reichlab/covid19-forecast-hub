@@ -8,10 +8,11 @@ For now, the data-processed/ files should be used.
 Software requirements: R 4.0 or higher and the following packages:
 
     install.packages(c("tidyverse","data.table","R.utils","shiny","DT",
-                       "shinyWidgets","ggnewscale","reshape2","drake","MMWRweek","scales"))
+                       "shinyWidgets","ggnewscale","reshape2","drake","MMWRweek","scales","future"))
 
 If you want to try out this new version of the shiny app you can use 
-
+    
+    future::plan(future::multiprocess)  
     drake::r_make("code/shiny/_drake.R") # this line can take over 10 minutes to run
     source("code/shiny/app.R")
     shinyApp(ui = ui, server = server) # if it doesn't automatically run
@@ -50,3 +51,4 @@ This tab provides a visualization of all the teams forecasts similar to the
 Dashboard, but with some slightly different features. 
 This tab can be used to visualize forecasts before submitting those forecasts
 to the Hub. 
+
