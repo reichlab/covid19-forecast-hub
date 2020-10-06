@@ -2,7 +2,7 @@ team_name: UCSD_NEU
 model_name: DeepGLEAM
 model_abbr: UCSD_NEU-DeepGLEAM
 model_contributors: "Dongxia Wu <dowu@ucsd.edu>, Liyao Gao <marsgao@uw.edu>, Yian Ma <yianma@ucsd.edu>, Rose Yu <roseyu@ucsd.edu>, Alessandro Vespignani <alexves@gmail.com>, Matteo Chinazzi <m.chinazzi@northeastern.edu>, Jessica T. Davis, Kunpeng Mu, Ana Pastore y Piontti, Xinyue Xiong <xiong.xin@northeastern.edu>"
-website_url: https://sites.google.com/view/yianma/epidemiology
+website_url: https://datascience.ucsd.edu/COVID19/
 license: cc-by-4.0
 team_model_designation: primary
 methods: 'This forecasting model combines the signal of a discrete stochastic epidemic computational model GLEAM with a deep learning spatiotemporal forecasting framework to further improve predictions.'
