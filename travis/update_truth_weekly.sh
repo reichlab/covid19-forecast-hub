@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Tell bash shell to report errors and exit
+set -e
 
 echo "updating truth data..."
 # update truth data
