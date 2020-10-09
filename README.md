@@ -78,6 +78,7 @@ Our list of teams whose forecasts are currently standardized and in the
 repository are (with data reuse license):
 
  - [Auquan](https://covid19-infection-model.auquan.com/) (CC-BY-4.0)
+ - [BPagano](https://bobpagano.com) (CC-BY-4.0)
  - [CDDEP](https://cddep.org/covid-19/) (CC-BY-4.0)
  - [CEID](https://github.com/e3bo/random-walks) (CC-BY-4.0)
  - [Carnegie Mellon Delphi Group](https://delphi.cmu.edu) (CC-BY-4.0)
