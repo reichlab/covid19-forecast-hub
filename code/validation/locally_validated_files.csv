@@ -1343,3 +1343,8 @@ file_path,validation_date
 ./data-processed/COVIDhub-ensemble/2020-10-05-COVIDhub-ensemble.csv,2020-10-06 14:05:45.149839
 ./data-processed/BPagano-RtDriven/2020-10-04-BPagano-RtDriven.csv,2020-10-07 06:25:26.166659
 ./data-processed/LANL-GrowthRate/2020-10-08-LANL-GrowthRate.csv,2020-10-09 12:38:53.896964
+./data-processed/CU-scenario_high/2020-10-08-CU-scenario_high.csv,2020-10-09 18:25:24.005404
+./data-processed/CU-scenario_low/2020-10-08-CU-scenario_low.csv,2020-10-09 18:25:42.846275
+./data-processed/CU-scenario_mid/2020-10-08-CU-scenario_mid.csv,2020-10-09 18:26:02.946092
+./data-processed/CU-select/2020-10-08-CU-select.csv,2020-10-09 18:26:22.169341
+./data-processed/CU-nochange/2020-10-08-CU-nochange.csv,2020-10-09 18:26:41.089195
