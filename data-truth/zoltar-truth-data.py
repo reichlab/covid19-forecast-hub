@@ -143,6 +143,7 @@ url_req = requests.get(url).content
 df = pd.read_csv(io.StringIO(url_req.decode('utf-8')))
 
 fips_codes = pd.read_csv('../data-locations/locations.csv')
+fips_codes = fips_codes[fips_codes.location != '11001']
 
 # aggregate by state and nationally
 state_agg = df.groupby(['Province_State']).sum()
