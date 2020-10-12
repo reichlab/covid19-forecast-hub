@@ -1,26 +1,28 @@
-team_name: YYG
+team_name: Youyang Gu (YYG)
 model_name: ParamSearch
 model_abbr: YYG-ParamSearch
-model_contributors: Youyang Gu <youyanggu@gmail.com>
-website_url: http://covid19-projections.com
+model_contributors: Youyang Gu <covid19projections@gmail.com>
+website_url: https://covid19-projections.com
 license: cc-by-4.0
 team_model_designation: primary
-methods: Based on the SEIR model to make daily projections regarding  COVID-19 infections
-  and deaths in 50 US states. The model accounts for state reopenings and its effects
-  on infections and deaths.
+methods: An SEIR model that makes daily infections and deaths projections for US states.
+  A machine learning layer learns the best parameters/inputs for each state.
+  The model accounts for state reopenings.
 repo_url: https://github.com/youyanggu/covid19_projections
+twitter_handles: youyanggu
 data_inputs: JHU
-citation: http://covid19-projections.com/about/
-methods_long: 'We''ve built a simulator based on the SEIR model with learned parameters
-  to make daily projections regarding  COVID-19 infections and deaths in all 50 US
-  states and 40 countries. The model also accounts for individual  state-by-state
-  reopenings and the resulting effects on infections and deaths. The parameters/inputs
-  of this  simulator are learned using hyperparameter optimization that minimizes
-  the error between the projected outputs  (projected daily deaths) and the actual
-  results (reported daily deaths). Because the infections curve is unique  for every
+citation: https://covid19-projections.com/about/
+methods_long: 'We''ve built a SEIR model with learned parameters to make daily
+  projections regarding COVID-19 infections and deaths in all 50 US states and
+  70+ countries. The model also accounts for individual state-by-state reopenings
+  and the resulting effects on infections and deaths. The parameters/inputs
+  of this simulator are learned using hyperparameter optimization that minimizes
+  the error between the projected outputs (projected daily deaths) and the actual
+  results (reported daily deaths). Because the infections curve is unique for every
   region, we let the model use each region''s own data to learn the best set of parameters
-  for that region.  This includes parameters such as: mortality rate, initial R_0,
-  post-lockdown R, and the inflection date of any lockdowns.  Other variables such
+  for that region. This includes parameters such as: mortality rate, initial R_0,
+  post-lockdown R, and the inflection date of any lockdowns. Other variables such
   as the latency period, infectious period, and virus shedding period are fixed based
-  on published  literature. After some additional validation techniques to minimize
-  overfitting, we use the learned parameters to  simulate the future and make projections.'
+  on published literature. After some additional validation techniques to minimize
+  overfitting, we use the learned parameters to simulate the future and make
+  projections. See website for full description, methods, and results.'

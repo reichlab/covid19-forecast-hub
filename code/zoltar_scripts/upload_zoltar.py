@@ -94,7 +94,7 @@ def upload_forecast(forecast_name):
     db = read_validation_db()
 
     metadata = metadata_dict_for_file(list(Path(path).parent.glob('metadata-*.txt'))[0])
-    if f"{metadata['team_abbr']}-{metadata['model_abbr']}"  not in [m.abbreviation for m in models]:
+    if f"{metadata['model_abbr']}"  not in [m.abbreviation for m in models]:
         create_model(path, metadata)
     
     time_zero_date = '-'.join(forecast_name.split('-')[:3])
@@ -121,7 +121,7 @@ def upload_forecast(forecast_name):
                 return error_from_transformation, True
             
             try:
-                fr = util.upload_forecast(conn, quantile_json, forecast, project_name, f"{metadata['team_abbr']}-{metadata['model_abbr']}" , time_zero_date)
+                fr = util.upload_forecast(conn, quantile_json, path, project_name, f"{metadata['model_abbr']}" , time_zero_date)
                 db[forecast_name] = checksum
                 write_db(db)
                 return None, fr

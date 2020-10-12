@@ -1,5 +1,4 @@
-team_name: UMass-Amherst Influenza Forecasting Center of Excellence & College of Information
-  and Computer Sciences
+team_name: UMass-Amherst
 model_name: MechBayes
 model_abbr: UMass-MechBayes
 model_contributors: Dan Sheldon<sheldon@cs.umass.edu>, Graham Gibson<gcgibson@umass.edu>,
@@ -12,3 +11,4 @@ methods: 'Bayesian compartmental model with observations on cumulative case coun
   observation noise and a case detection rate. '
 data_inputs: JHU -CSSEGISandData
 methods_long: See GitHub for full description
+team_funding: This model development is supported by NIGMS grant R35GM119582. The content is solely the responsibility of the authors and does not necessarily represent the official views of NIGMS or the National Institutes of Health.

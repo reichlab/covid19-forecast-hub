@@ -79,7 +79,6 @@ export class ColorBar {
     group.append('g')
       .attr('class', 'axis axis-color')
       .attr('transform', 'translate(' + bar.x + ',' + (bar.y + bar.height) + ')')
-    console.log(scale)
     this.svg = svg
     this.scale = scale
   }
@@ -247,7 +246,7 @@ export default class Choropleth {
         let stateName = this.getAttribute('class').split(' ')[1]
         let region = data.data
           .filter(d => (d.states.indexOf(stateName) > -1))[0].region
-        let value = parseFloat(this.getAttribute('data-value')).toFixed(0)
+        let value = parseInt(this.getAttribute('data-value')).toLocaleString()
         tooltip.select('.value').text(value)
         tooltip.select('.region').text(region + ' : ' + stateName)
       })

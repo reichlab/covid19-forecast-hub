@@ -1,5 +1,6 @@
 from zoltpy.quantile_io import json_io_dict_from_quantile_csv_file
 from zoltpy import util
+from zoltpy.cdc_io import YYYY_MM_DD_DATE_FORMAT
 from zoltpy.connection import ZoltarConnection
 from zoltpy.covid19 import COVID_TARGETS, covid19_row_validator, validate_quantile_csv_file, COVID_ADDL_REQ_COLS
 import os
@@ -58,6 +59,8 @@ project_timezeros = [timezero.timezero_date for timezero in project_obj.timezero
 models = [model for model in project_obj.models]
 model_abbrs = [model.abbreviation for model in models]
 
+# Convert all timezeros from Date type to str type
+project_timezeros = [project_timezero.strftime(YYYY_MM_DD_DATE_FORMAT) for project_timezero in project_timezeros]
 
 # Function to read metadata file to get model name
 def metadata_dict_for_file(metadata_file):
@@ -85,6 +88,35 @@ def has_changed(metadata, model):
             logging.debug(f"{metadata_field} has changed in {metadata['model_abbr']}")
             return True
     return False
+
+
+'''
+    Upload a covid forecast with a reference to the model itself. This is based off zoltpy's util.upload_forecast()
+    but remove any codes that require polling of model information from zoltar.
+'''
+def upload_covid_forecast_by_model(conn, json_io_dict, forecast_filename, project_name, model, model_abbr, timezero_date, notes='',
+                    overwrite=False, sync=True):
+    conn.re_authenticate_if_necessary()
+    if overwrite:
+        util.delete_forecast(conn, project_name, model_abbr, timezero_date)
+
+    # check json formatting before upload
+    # accepts either string or dictionary
+    if isinstance(json_io_dict, str):
+        try:
+            with open(json_io_dict) as jsonfile:
+                json_io_dict = json.load(jsonfile)
+        except:
+            print("""\nERROR - cannot read JSON Format. 
+            Uploading a CSV? Consider converting to quantile csv style with:
+            quantile_json, error_from_transformation = quantile_io.json_io_dict_from_quantile_csv_file(...)""")
+            sys.exit(1)
+
+    job = model.upload_forecast(json_io_dict, forecast_filename, timezero_date, notes)
+    if sync:
+        return util.busy_poll_job(job)
+    else:
+        return job
 
 
 # Function to upload all forecasts in a specific directory
@@ -128,6 +160,9 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
     
     # Get names of existing forecasts to avoid re-upload
     existing_time_zeros = [forecast.timezero.timezero_date for forecast in model.forecasts]
+
+    # Convert all timezeros from Date type to str type
+    existing_time_zeros = [existing_time_zero.strftime(YYYY_MM_DD_DATE_FORMAT) for existing_time_zero in existing_time_zeros]
 
     # Batch upload
     json_io_dict_batch = []
@@ -187,8 +222,8 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
                 else:
                     try:
                         logger.debug('Upload forecast for model: %s \t|\t File: %s\n' % (metadata['model_abbr'],forecast))
-                        util.upload_forecast(conn, quantile_json, forecast,
-                                             project_name, metadata['model_abbr'], time_zero_date,
+                        upload_covid_forecast_by_model(conn, quantile_json, forecast,
+                                             project_name, model, metadata['model_abbr'], time_zero_date,
                                              overwrite=over_write)
                         db[forecast] = checksum
                     except Exception as ex:

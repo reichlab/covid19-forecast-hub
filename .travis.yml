@@ -3,7 +3,7 @@ language: node_js
 dist: bionic
 sudo: required
 git:
-  depth: 5
+  depth: 3
 
 before_install:
   # Key for cran trusty ppa
