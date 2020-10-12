@@ -97,9 +97,9 @@ def configure_JHU_data(df, target):
     # find week-ahead targets
     for i in range(20):
         weeks_ahead = i + 1  # add one to [0,3]
-        days_back = (weeks_ahead * 7)  # timezero is on Mondays
+        days_back = 5 + ((weeks_ahead - 1) * 7)  # timezero is on Mondays
 
-        df_calc = df_truth_long  # initialize df
+        df_calc = df_truth_values  # initialize df
 
         # find timezero and target
         df_calc['timezero'] = df_calc['date'] - datetime.timedelta(days=days_back)
@@ -116,7 +116,7 @@ def configure_JHU_data(df, target):
         zip(*df_targets['timezero'].map(get_epi_data_TZ))
 
     # truth targets by timezero week
-    # df_targets = df_targets[["tz_week", "unit", "target", "value"]]
+    df_targets = df_targets[["tz_week", "unit", "target", "value"]]
 
     # Map all timezeros in Zoltar to Corresponding weeks
     df_map_wk_to_tz = pd.DataFrame(columns=['timezero'])
@@ -124,8 +124,9 @@ def configure_JHU_data(df, target):
     df_map_wk_to_tz['timezero'] = df_map_wk_to_tz['timezero'].astype(str)
     df_map_wk_to_tz['tz_year'], df_map_wk_to_tz['tz_week'], df_map_wk_to_tz['tz_day'] = \
         zip(*df_map_wk_to_tz['timezero'].map(get_epi_data_TZ))
+
     # Merge timezeros with truth values and targets
-    df_final = pd.merge(df_targets, df_map_wk_to_tz, how='right', on=['timezero'])
+    df_final = pd.merge(df_targets, df_map_wk_to_tz, how='right', on=['tz_week'])
 
     # select columns
     df_final = df_final[["timezero", "unit", "target", "value"]]
