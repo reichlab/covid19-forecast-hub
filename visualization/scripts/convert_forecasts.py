@@ -3,6 +3,7 @@ import glob
 import os
 from utils import _utils
 from pathlib import Path
+import shutil
 
 def reformat_forecasts(file_path, target, root, data):
     # read forecast
@@ -27,7 +28,7 @@ def reformat_forecasts(file_path, target, root, data):
     if "US" in locations_in_file:
         df.loc[df["location"] == 'US', "location_name"] = "US National"
 
-    # Only visualize wk ahead forecasts
+    # Only visualize 4 wk ahead forecasts
     if target == 'Cumulative Deaths':
         targets = ['1 wk ahead cum death',
                    '2 wk ahead cum death',
@@ -38,6 +39,11 @@ def reformat_forecasts(file_path, target, root, data):
                    '2 wk ahead inc death',
                    '3 wk ahead inc death',
                    '4 wk ahead inc death']
+    elif target == 'Incident Cases':
+        targets = ['1 wk ahead inc case',
+                   '2 wk ahead inc case',
+                   '3 wk ahead inc case',
+                   '4 wk ahead inc case']
     df = df[df["target"].isin(targets)]
 
     # Only visualize certain states
@@ -78,8 +84,22 @@ data = _utils.get_data()
 print(root, data)
 # loop through model directories
 my_path = Path("./data/")
+to_be_deleted= []
 for file_path in my_path.glob("**/**/*.csv"):
     target = os.path.basename(os.path.dirname(os.path.dirname(file_path)))
     print(file_path)
     df2 = reformat_forecasts(file_path, target, root, data)
-    df2.to_csv(file_path, index=False, float_format='%.14f')
+    if df2.size > 0:
+        df2.to_csv(file_path, index=False, float_format='%.14f')
+    else:
+        # Remove file as it has no data! 
+        file_path.unlink()
+
+model_dirs = list(my_path.glob("**/**/*.yml"))
+for file_path in model_dirs:
+    if len(list((file_path / '..').resolve().glob('*.csv'))) ==0:
+        # empty list delete directory
+        shutil.rmtree((file_path / '..').resolve())
+        print(f"Deleted {(file_path / '..').resolve()!r}")
+    
+

@@ -3,7 +3,8 @@ model_name: RidgeTensorFlowRegressor
 model_abbr: UMich-RidgeTfReg
 model_contributors: 'Sabrina Corsetti (University of Michigan Department of Physics)
   <sabcorse@umich.edu>,  Thomas Schwarz (University of Michigan Department of Physics)
-  <schwarzt@umich.edu>, '
+  <schwarzt@umich.edu>,  Robert Myers (University of Michigan Department of Physics)
+  <romyers@umich.edu>, '
 website_url: https://gitlab.com/sabcorse/covid-19-collaboration
 license: cc-by-4.0
 team_model_designation: primary

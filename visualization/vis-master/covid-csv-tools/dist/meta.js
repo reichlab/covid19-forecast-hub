@@ -68,6 +68,12 @@ exports.targetFullNameCum = {
   '3-ahead': '3 wk ahead cum death',
   '4-ahead': '4 wk ahead cum death'
 };
+exports.targetFullNameIncCase = {
+  '1-ahead': '1 wk ahead inc case',
+  '2-ahead': '2 wk ahead inc case',
+  '3-ahead': '3 wk ahead inc case',
+  '4-ahead': '4 wk ahead inc case'
+};
 /**
  * Target type for each target. Note that there can be only two
  * target types, 'percent' and 'week'.
