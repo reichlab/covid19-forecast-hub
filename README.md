@@ -78,6 +78,7 @@ Our list of teams whose forecasts are currently standardized and in the
 repository are (with data reuse license):
 
  - [Auquan](https://covid19-infection-model.auquan.com/) (CC-BY-4.0)
+ - [BPagano](https://bobpagano.com) (CC-BY-4.0)
  - [CDDEP](https://cddep.org/covid-19/) (CC-BY-4.0)
  - [CEID](https://github.com/e3bo/random-walks) (CC-BY-4.0)
  - [Carnegie Mellon Delphi Group](https://delphi.cmu.edu) (CC-BY-4.0)
@@ -107,6 +108,7 @@ repository are (with data reuse license):
  - [Massachusetts Institute of Technology - Covid Analytics](https://www.covidanalytics.io/) (Apache 2.0)
  - [Massachusetts Institute of Technology - Covid Alliance](http://infectiontrajectory.covidalliance.com/) (CC-BY-4.0)
  - [Massachusetts Institute of Technology - Critical Data](https://github.com/sakethsundar/covid-forecaster) (MIT)
+ - [Microsoft Research Asia](https://covid.msra.cn) (CC-BY-4.0)
  - [Notre Dame - FRED](https://github.com/confunguido/covid19_ND_forecasting) (CC-BY-4.0)
  - [Notre Dame - mobility](https://github.com/TAlexPerkins/covid19_NDmobility_forecasting) (CC-BY-4.0)
  - [Oliver Wyman](https://pandemicnavigator.oliverwyman.com/) (see [license](./data-processed/OliverWyman-Navigator/LICENSE.txt))

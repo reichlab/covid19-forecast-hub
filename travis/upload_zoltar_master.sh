@@ -1,3 +1,7 @@
+# Tell bash shell to report errors and exit
+set -e
+
+# Re-validate data before uploading
 bash ./travis/validate-data.sh
 
 # Upload to zoltar at every merged pull request
