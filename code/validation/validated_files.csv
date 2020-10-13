@@ -1402,3 +1402,5 @@ file_path,validation_date
 ./data-processed/DDS-NBDS/2020-10-12-DDS-NBDS.csv,2020-10-13 06:27:26.559021
 ./data-processed/CovidAnalytics-DELPHI/2020-10-12-CovidAnalytics-DELPHI.csv,2020-10-13 06:27:30.299952
 ./data-processed/epiforecasts-ensemble1/2020-10-12-epiforecasts-ensemble1.csv,2020-10-13 12:30:51.380813
+./data-processed/IBF-TimeSeries/2020-10-12-IBF-TimeSeries.csv,2020-10-13 13:38:36.724894
+./data-processed/COVIDhub-ensemble/2020-10-12-COVIDhub-ensemble.csv,2020-10-13 13:38:50.739557
