@@ -1398,3 +1398,6 @@ file_path,validation_date
 ./data-processed/Google_Harvard-CPF/2020-10-11-Google_Harvard-CPF.csv,2020-10-13 01:00:02.465082
 ./data-processed/CU-nochange/2020-10-11-CU-nochange.csv,2020-10-13 01:00:19.468384
 ./data-processed/CMU-TimeSeries/2020-10-12-CMU-TimeSeries.csv,2020-10-13 01:00:20.532372
+./data-processed/UVA-Ensemble/2020-10-12-UVA-Ensemble.csv,2020-10-13 06:27:24.394377
+./data-processed/DDS-NBDS/2020-10-12-DDS-NBDS.csv,2020-10-13 06:27:26.559021
+./data-processed/CovidAnalytics-DELPHI/2020-10-12-CovidAnalytics-DELPHI.csv,2020-10-13 06:27:30.299952
