@@ -1557,5 +1557,11 @@
     "2020-10-12-CovidAnalytics-DELPHI.csv": "62cd54029c59a7de57e33b400411e053",
     "2020-10-12-epiforecasts-ensemble1.csv": "334284a6bd10c1b7e08a51dda176c70d",
     "2020-10-12-IBF-TimeSeries.csv": "4da3082d80053db0393322b06073c512",
-    "2020-10-12-COVIDhub-ensemble.csv": "e4bf4a91785a637409e5e51e4a2226cd"
+    "2020-10-12-COVIDhub-ensemble.csv": "e4bf4a91785a637409e5e51e4a2226cd",
+    "2020-10-15-CU-scenario_high.csv": "3c9976ebb28cd4508cb91fb931f553ab",
+    "2020-10-15-CU-scenario_low.csv": "5dca0de532e9ddcefc33ebb2c4dc9b9c",
+    "2020-10-15-CU-scenario_mid.csv": "6e4182edba6c0dfcb280921ad63f6506",
+    "2020-10-15-LANL-GrowthRate.csv": "a4e00007a02855bc26dabba0906790ac",
+    "2020-10-15-CU-select.csv": "6e4182edba6c0dfcb280921ad63f6506",
+    "2020-10-15-CU-nochange.csv": "759e034d05732d62158fc1e5a3e140ff"
 }

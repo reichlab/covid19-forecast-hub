@@ -1404,3 +1404,9 @@ file_path,validation_date
 ./data-processed/epiforecasts-ensemble1/2020-10-12-epiforecasts-ensemble1.csv,2020-10-13 12:30:51.380813
 ./data-processed/IBF-TimeSeries/2020-10-12-IBF-TimeSeries.csv,2020-10-13 13:38:36.724894
 ./data-processed/COVIDhub-ensemble/2020-10-12-COVIDhub-ensemble.csv,2020-10-13 13:38:50.739557
+./data-processed/CU-scenario_high/2020-10-15-CU-scenario_high.csv,2020-10-16 06:43:18.429478
+./data-processed/CU-scenario_low/2020-10-15-CU-scenario_low.csv,2020-10-16 06:43:35.795383
+./data-processed/CU-scenario_mid/2020-10-15-CU-scenario_mid.csv,2020-10-16 06:43:54.272431
+./data-processed/LANL-GrowthRate/2020-10-15-LANL-GrowthRate.csv,2020-10-16 06:44:16.592841
+./data-processed/CU-select/2020-10-15-CU-select.csv,2020-10-16 06:44:33.951451
+./data-processed/CU-nochange/2020-10-15-CU-nochange.csv,2020-10-16 06:44:51.124369
