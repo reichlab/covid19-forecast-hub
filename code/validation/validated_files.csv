@@ -1411,3 +1411,6 @@ file_path,validation_date
 ./data-processed/CU-select/2020-10-15-CU-select.csv,2020-10-16 06:44:33.951451
 ./data-processed/CU-nochange/2020-10-15-CU-nochange.csv,2020-10-16 06:44:51.124369
 ./data-processed/IHME-CurveFit/2020-10-16-IHME-CurveFit.csv,2020-10-18 01:10:35.712311
+./data-processed/UCM_MESALab-FoGSEIR/2020-10-18-UCM_MESALab-FoGSEIR.csv,2020-10-19 01:12:09.719816
+./data-processed/CEID-Walk/2020-10-18-CEID-Walk.csv,2020-10-19 01:12:20.308242
+./data-processed/STH-3PU/2020-10-18-STH-3PU.csv,2020-10-19 01:12:20.501986
