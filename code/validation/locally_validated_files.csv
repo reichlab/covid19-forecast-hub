@@ -1422,3 +1422,16 @@ file_path,validation_date
 ./data-processed/PandemicCentral-USCounty/2020-10-19-PandemicCentral-USCounty.csv,2020-10-19 12:46:42.525938
 ./data-processed/WalmartLabsML-LogForecasting/2020-10-18-WalmartLabsML-LogForecasting.csv,2020-10-19 12:46:43.971839
 ./data-processed/UCLA-SuEIR/2020-10-18-UCLA-SuEIR.csv,2020-10-19 12:47:05.643254
+./data-processed/CU-scenario_high/2020-10-18-CU-scenario_high.csv,2020-10-19 18:40:52.607778
+./data-processed/CU-scenario_low/2020-10-18-CU-scenario_low.csv,2020-10-19 18:41:11.656725
+./data-processed/Geneva-DetGrowth/2020-10-18-Geneva-DetGrowth.csv,2020-10-19 18:41:11.717551
+./data-processed/JCB-PRM/2020-10-19-JCB-PRM.csv,2020-10-19 18:41:11.957716
+./data-processed/COVIDhub-baseline/2020-10-19-COVIDhub-baseline.csv,2020-10-19 18:41:32.875132
+./data-processed/UMass-MechBayes/2020-10-18-UMass-MechBayes.csv,2020-10-19 18:41:35.471844
+./data-processed/MSRA-DeepST/2020-10-19-MSRA-DeepST.csv,2020-10-19 18:41:36.502540
+./data-processed/UMich-RidgeTfReg/2020-10-19-UMich-RidgeTfReg.csv,2020-10-19 18:41:37.857563
+./data-processed/Covid19Sim-Simulator/2020-10-18-Covid19Sim-Simulator.csv,2020-10-19 18:41:59.867927
+./data-processed/MIT_CritData-GBCF/2020-10-18-MIT_CritData-GBCF.csv,2020-10-19 18:42:00.181487
+./data-processed/CU-scenario_mid/2020-10-18-CU-scenario_mid.csv,2020-10-19 18:42:18.121255
+./data-processed/CU-select/2020-10-18-CU-select.csv,2020-10-19 18:42:36.158715
+./data-processed/CU-nochange/2020-10-18-CU-nochange.csv,2020-10-19 18:42:53.784984
