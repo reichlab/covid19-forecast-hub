@@ -1463,3 +1463,9 @@ file_path,validation_date
 ./data-processed/SteveMcConnell-CovidComplete/2020-10-19-SteveMcConnell-CovidComplete.csv,2020-10-20 18:45:22.326948
 ./data-processed/CMU-TimeSeries/2020-10-19-CMU-TimeSeries.csv,2020-10-20 18:45:23.600179
 ./data-processed/COVIDhub-ensemble/2020-10-19-COVIDhub-ensemble.csv,2020-10-20 18:45:34.694053
+./data-processed/CU-nochange/2020-10-22-CU-nochange.csv,2020-10-23 06:43:21.888343
+./data-processed/LANL-GrowthRate/2020-10-22-LANL-GrowthRate.csv,2020-10-23 06:43:45.814681
+./data-processed/CU-scenario_low/2020-10-22-CU-scenario_low.csv,2020-10-23 06:44:04.187869
+./data-processed/CU-scenario_mid/2020-10-22-CU-scenario_mid.csv,2020-10-23 06:44:22.450716
+./data-processed/CU-select/2020-10-22-CU-select.csv,2020-10-23 06:44:41.062334
+./data-processed/CU-scenario_high/2020-10-22-CU-scenario_high.csv,2020-10-23 06:44:59.546687
