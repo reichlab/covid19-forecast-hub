@@ -52,4 +52,4 @@ methods_long: "This is a county-level metapopulation model with stochastic SEIR 
   \ R0, infectious period, time delays to health outcomes) and the effectiveness\
   \ of state-wide intervention policies  on social distancing, stay-at-home orders,\
   \ and phased reopenings. We submit a case-optimized calibration to forecast confirmed\
-  \ cases and a deaths-optimized calibration to forecast deaths and hospitalizations."
+  \ cases and hospitalizations and a deaths-optimized calibration to forecast deaths."
