@@ -1,4 +1,4 @@
-﻿forecast_date,target,target_end_date,location,type,quantile,value
+forecast_date,target,target_end_date,location,type,quantile,value
 2020-10-25,1 wk ahead inc death,2020-10-31,US,quantile,0.01,3406.76046
 2020-10-25,1 wk ahead inc death,2020-10-31,US,quantile,0.025,3826.08137
 2020-10-25,1 wk ahead inc death,2020-10-31,US,quantile,0.05,4200.93218
