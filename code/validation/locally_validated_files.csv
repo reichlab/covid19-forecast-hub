@@ -1522,3 +1522,6 @@ file_path,validation_date
 ./data-processed/MITCovAlliance-SIR/2020-10-26-MITCovAlliance-SIR.csv,2020-10-27 01:18:43.361141
 ./data-processed/RPI_UW-Mob_Collision/2020-10-25-RPI_UW-Mob_Collision.csv,2020-10-27 06:43:14.675528
 ./data-processed/MSRA-DeepST/2020-10-26-MSRA-DeepST.csv,2020-10-27 06:43:16.056331
+./data-processed/COVIDhub-ensemble/2020-10-26-COVIDhub-ensemble.csv,2020-10-27 18:39:52.165618
+./data-processed/UVA-Ensemble/2020-10-26-UVA-Ensemble.csv,2020-10-27 18:39:57.358169
+./data-processed/NotreDame-FRED/2020-10-26-NotreDame-FRED.csv,2020-10-27 18:39:58.091018
