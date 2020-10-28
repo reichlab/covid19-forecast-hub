@@ -11,7 +11,7 @@
     as well as a statistical model. The statistical model  enforces  that similar places have  similar mechanistic 
     coefficients. 
   repo_url: https://github.com/HopkinsIDD/EpiForecastStatMech
-  data_inputs: Opencovijoingd Data Repo https://github.com/GoogleCloudPlatform/covid-19-open-data
+  data_inputs: https://github.com/GoogleCloudPlatform/covid-19-open-data
   methods_long: The model uses a detailed list of demographic parameters for US Counties, with demographic parameters taken 
     from https://github.com/Yu-Group/covid19-severity-prediction/ and other variables (weather, mobility, etc) 
     taken from the Opencovid Data Repo.   The prediction rollouts from the model are generated from the mechanistic model, where the allowed range 
