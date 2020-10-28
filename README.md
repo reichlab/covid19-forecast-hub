@@ -105,6 +105,7 @@ repository are (with data reuse license):
  - [Johns Hopkins Center for Systems Science and Engineering](https://systems.jhu.edu/research/public-health/predicting-covid-19-risk/) (CC-BY-4.0)
  - [Johns Hopkins ID Dynamics COVID-19 Working Group](https://github.com/HopkinsIDD/COVIDScenarioPipeline) (MIT)
  - [Johns Hopkins University Applied Physics Laboratory](https://buckymodel.com) (MIT)
+ - [The Johns Hopkins University Justin Lessler lab. Google Inc. ](https://github.com/HopkinsIDD/COVIDScenarioPipeline) (gpl-3.0)
  - [Massachusetts Institute of Technology - Covid Analytics](https://www.covidanalytics.io/) (Apache 2.0)
  - [Massachusetts Institute of Technology - Covid Alliance](http://infectiontrajectory.covidalliance.com/) (CC-BY-4.0)
  - [Massachusetts Institute of Technology - Critical Data](https://github.com/sakethsundar/covid-forecaster) (MIT)
