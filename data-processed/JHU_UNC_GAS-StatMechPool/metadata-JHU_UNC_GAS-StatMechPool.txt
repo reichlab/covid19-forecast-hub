@@ -4,7 +4,7 @@
   model_contributors: Justin Lessler (JHU) <justin@jhu.edu>, Jess Edwards (UNC) <jkedwar@email.unc.edu>, Keya Joshi (JHU/Harvard),
     Claire Smith (JHU), Paul  Zivich (JHU) , Marc Coram (Google) <mcoram@google.com>, Ellen Klein (Google), Michael Brenner (Harvard/Google), 
     Lusann Yang (Google), Anton Geraschenko   (Google), Stephan Hoyer (Google), Dmitri Kochkov (Google), Jamie Smith (Google)
-  website_url: None.
+  website_url: https://github.com/HopkinsIDD/EpiForecastStatMech
   license: gpl-3.0
   team_model_designation: primary
   methods:  This model trains jointly over all states and counties in the US, with a loss that contains both a simple mechanistic model
