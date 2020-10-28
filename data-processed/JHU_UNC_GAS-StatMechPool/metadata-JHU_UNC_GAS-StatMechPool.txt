@@ -17,8 +17,8 @@
   repo_url: https://github.com/HopkinsIDD/EpiForecastStatMech
   data_inputs: Opencovid Data Repo https://github.com/GoogleCloudPlatform/covid-19-open-data
   methods_long: To arrive at the best model, we experimented with a large range of mechanistic and statistical models and 
-    competed these models against each other. For mechanistic models, we tried: SEIR models and curve fitting models. For the 
-    statistical model, we tried:linear model and  a simple multilayer perceptron. We experimented with statistical models 
+    competed these models against each other. For mechanistic models, we tried SEIR models and curve fitting models. For the 
+    statistical model, we tried linear model and  a simple multilayer perceptron. We experimented with statistical models 
     enforcing constraints among different numbers of the mechanistic parameters. We also tried models with priors and without. 
     We also varied how much of the trajectories are fitted with the model (last 4 week, 6 week, and so forth).  
     Including all combinatorial choices, we ended up with 450 different models.  We evaluated model performance with split dates 
