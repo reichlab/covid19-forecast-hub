@@ -15,7 +15,7 @@
     Finally, the prediction rollouts from the model are generated from the mechanistic model, where the allowed range 
     of mechanistic parameters is fit on historical data for coverage. 
   repo_url: https://github.com/HopkinsIDD/EpiForecastStatMech
-  data_inputs: Opencovid Data Repo: https://github.com/GoogleCloudPlatform/covid-19-open-data
+  data_inputs: Opencovid Data Repo https://github.com/GoogleCloudPlatform/covid-19-open-data
   methods_long: To arrive at the best model, we experimented with a large range of mechanistic and statistical models and 
     competed these models against each other. For mechanistic models, we tried: SEIR models and curve fitting models. For the 
     statistical model, we tried:linear model and  a simple multilayer perceptron. We experimented with statistical models 
