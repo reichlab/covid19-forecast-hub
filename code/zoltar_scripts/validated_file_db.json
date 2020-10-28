@@ -1664,7 +1664,7 @@
     "2020-10-26-epiforecasts-ensemble1.csv": "da195bc0e6573fdab85f4e3b0274108f",
     "2020-10-26-GT-DeepCOVID.csv": "761e2a3d33e922089698812504744ee9",
     "2020-10-25-UA-EpiCovDA.csv": "5563e323a3e41a4f76229ca049683652",
-    "2020-10-26-CovidAnalytics-DELPHI.csv": "97e454ecb497aab6981c8024fb3d29f1",
+    "2020-10-26-CovidAnalytics-DELPHI.csv": "08c6c5201dca9a7cb7d5c15ae052bfd0",
     "2020-10-26-UCSD_NEU-DeepGLEAM.csv": "892bf8fb5bb5e415c7002d88f2f2ce97",
     "2020-10-26-COVIDhub-baseline.csv": "0d7169eaeb17788a6952a9ea26f47866",
     "2020-10-26-SteveMcConnell-CovidComplete.csv": "816717e9ded803184a5dd5775b5386e7",
@@ -1674,5 +1674,10 @@
     "2020-10-26-PSI-DRAFT.csv": "a7f20a634e2ccf1da26decd52b071baa",
     "2020-10-25-IowaStateLW-STEM.csv": "4f7de9579ea50dd12a776cf8702fbf1d",
     "2020-10-26-CMU-TimeSeries.csv": "8960541bd2b714fb0ec8ffa7814748bc",
-    "2020-10-26-MITCovAlliance-SIR.csv": "95738f5dec850141448458ef13bd557a"
+    "2020-10-26-MITCovAlliance-SIR.csv": "95738f5dec850141448458ef13bd557a",
+    "2020-10-25-RPI_UW-Mob_Collision.csv": "3d375776d01d03d01969db00a4efc9ad",
+    "2020-10-26-MSRA-DeepST.csv": "6495853fe1f99cdc609269b67145b927",
+    "2020-10-26-COVIDhub-ensemble.csv": "4e5ea3b5a5df803b7137225f85c50b25",
+    "2020-10-26-UVA-Ensemble.csv": "38443410540a5d6ff48d6d2ae85eebba",
+    "2020-10-26-NotreDame-FRED.csv": "815c3eaa5ac7f59aa3537f794a6baeb4"
 }
