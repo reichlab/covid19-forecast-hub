@@ -3,8 +3,6 @@ from truth_utils._utils import get_epi_data, get_epi_data_TZ, get_available_time
 import pandas as pd
 import datetime
 import warnings
-import requests
-import io
 warnings.simplefilter(action='ignore')
 
 

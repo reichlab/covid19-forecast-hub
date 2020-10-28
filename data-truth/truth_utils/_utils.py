@@ -3,6 +3,7 @@ import datetime
 import pandas as pd
 from zoltpy import util
 import requests
+import io
 
 
 '''

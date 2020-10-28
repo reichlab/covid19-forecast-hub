@@ -2,8 +2,6 @@ from truth_utils._utils import get_epi_data, read_fips_codes, pre_process_truth,
 import pandas as pd
 import datetime
 import warnings
-import io
-import requests
 warnings.simplefilter(action='ignore')
 
 
