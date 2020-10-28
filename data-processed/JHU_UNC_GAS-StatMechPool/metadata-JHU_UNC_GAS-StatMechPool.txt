@@ -7,8 +7,8 @@
   website_url: https://github.com/HopkinsIDD/EpiForecastStatMech
   license: gpl-3.0
   team_model_designation: primary
-  methods:  This model jointly trains over all US states and counties, with a loss that contains both a simple mechanistic model
-    as well as a statistical model. The statistical model  enforces the constraint that places with similar properties have  similar mechanistic 
+  methods:  This model jointly trains over all locations, with a loss that contains both a simple mechanistic model
+    as well as a statistical model. The statistical model  enforces  that similar places have  similar mechanistic 
     coefficients. 
   repo_url: https://github.com/HopkinsIDD/EpiForecastStatMech
   data_inputs: Opencovijoingd Data Repo https://github.com/GoogleCloudPlatform/covid-19-open-data
