@@ -53,7 +53,8 @@ def reformat_forecasts(file_path, target, root, data):
               'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York',
               'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
               'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington',
-              'West Virginia', 'Wisconsin', 'Wyoming', 'District of Columbia']
+              'West Virginia', 'Wisconsin', 'Wyoming', 'District of Columbia',
+              'Puerto Rico', 'Virgin Islands', 'Guam', 'Northern Mariana Islands', 'American Samoa']
     df = df[df["location_name"].isin(states)]
 
     # Only visualize certain quantiles

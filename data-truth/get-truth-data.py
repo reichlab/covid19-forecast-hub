@@ -101,7 +101,8 @@ def configure_JHU_data(county_truth, state_nat_truth, target):
               'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York',
               'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
               'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington',
-              'West Virginia', 'Wisconsin', 'Wyoming', 'District of Columbia']
+              'West Virginia', 'Wisconsin', 'Wyoming', 'District of Columbia', 'Puerto Rico', 'Guam', 'Virgin Islands',
+              'Northern Mariana Islands', 'American Samoa']
 
     state_nat_truth = state_nat_truth.drop(['location_name'], axis=1)
     state_nat_truth = state_nat_truth[state_nat_truth["location_long"].isin(states)]
