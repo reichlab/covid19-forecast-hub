@@ -7,6 +7,11 @@ const meta = require('./modules/meta')
 const mmwr = require('mmwr-week')
 const moment = require('moment')
 
+const is_ci = process.env.CI
+// Add a log message when running from Github Actions
+if(is_ci) {
+  console.log("Running parse-data from Github Actions")
+}
 const parseMetadata = (modelDir) => {
   // Return a flusight compatible metadata object
   let rootMetadata = models.getModelMetadata(modelDir)
@@ -76,8 +81,13 @@ modelDirs.forEach(modelDir => {
         let csvTargetDir = path.join('./data', target_cats, modelId)
         fs.ensureDirSync(csvTargetDir)
 
-        // Copy csv
-        fs.copySync(csvFile, path.join(csvTargetDir, info.name))
+        if(is_ci) {
+        // move the csv files instead of copying on CI machines to save memory
+        fs.renameSync(csvFile, path.join(csvTargetDir, info.name))
+        } else {
+          // else we just copy to avoid removal of actual forecast files in local machines
+          fs.copySync(csvFile, path.join(csvTargetDir, info.name))
+        }
 
         // Write metadata
         ensureMetadata(path.join(csvTargetDir, 'meta.yml'), flusightMetadata)
