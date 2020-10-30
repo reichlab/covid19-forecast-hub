@@ -85,7 +85,7 @@ div
             tr(v-for="(i, id) in modelIds")
               td
                 a(v-bind:href="modelMeta[i].url" target="_blank") {{ id }}
-              td(v-for="(j, scr) in selectedScoresData[i]" v-bind:class="[scr.best ? 'bold' : '']" track-by="$index")
+              // td(v-for="(j, scr) in selectedScoresData[i]" v-bind:class="[scr.best ? 'bold' : '']" track-by="$index")
                 | {{  scr.value === null ? 'NA' : parseInt(scr.value * 1000) / 1000 }}
       .score-footer
         | {{{ selectedScoresMeta.desc }}} Scores for the current season are calculated using the most recently

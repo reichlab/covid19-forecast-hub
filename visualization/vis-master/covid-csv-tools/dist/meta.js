@@ -107,7 +107,9 @@ exports.regionFullName = {
 /**
  * List of US state abbreviations
  */
-exports.stateIds = ['nat', 'AK', 'AL', 'AR', 'AZ', 'CA',
+exports.stateIds = [
+  'nat',
+  'AK', 'AL', 'AR', 'AZ', 'CA',
   'CO', 'CT', 'DC', 'DE', 'FL',
   'GA', 'HI', 'IA', 'ID', 'IL',
   'IN', 'KS', 'KY', 'LA', 'MA',
@@ -116,11 +118,12 @@ exports.stateIds = ['nat', 'AK', 'AL', 'AR', 'AZ', 'CA',
   'NH', 'NJ', 'NM', 'NV', 'NY',
   'OH', 'OK', 'OR', 'PA', 'RI',
   'SC', 'SD', 'TN', 'TX', 'UT',
-  'VA', 'VT', 'WA', 'WI', 'WV',
-  'WY'
-]; // 50
+  'VA', 'VT', 'WA', 'WI', 'WV', 'WY',
+  'PR', 'VI', 'GU', 'MP', 'AS'
+]; // 56
 
-exports.stateForNatIds = ['AK', 'AL', 'AR', 'AZ', 'CA',
+exports.stateForNatIds = [
+  'AK', 'AL', 'AR', 'AZ', 'CA',
   'CO', 'CT', 'DC', 'DE', 'FL',
   'GA', 'HI', 'IA', 'ID', 'IL',
   'IN', 'KS', 'KY', 'LA', 'MA',
@@ -129,9 +132,9 @@ exports.stateForNatIds = ['AK', 'AL', 'AR', 'AZ', 'CA',
   'NH', 'NJ', 'NM', 'NV', 'NY',
   'OH', 'OK', 'OR', 'PA', 'RI',
   'SC', 'SD', 'TN', 'TX', 'UT',
-  'VA', 'VT', 'WA', 'WI', 'WV',
-  'WY'
-]; // 50
+  'VA', 'VT', 'WA', 'WI', 'WV', 'WY',
+  'PR', 'VI', 'GU', 'MP', 'AS'
+]; // 55
 
 /**
  * Mapping from region ids to the states in those regions
@@ -207,7 +210,12 @@ exports.stateFullName = {
   'WA': 'Washington',
   'WI': 'Wisconsin',
   'WV': 'West Virginia',
-  'WY': 'Wyoming'
+  'WY': 'Wyoming',
+  'PR': 'Puerto Rico',
+  'VI': 'Virgin Islands',
+  'GU': 'Guam',
+  'MP': 'Northern Mariana Islands',
+  'AS': 'American Samoa'
 };
 
 /**
@@ -265,5 +273,10 @@ exports.stateStates = {
   'WA': [47].map(i => exports.stateForNatIds[i]),
   'WI': [48].map(i => exports.stateForNatIds[i]),
   'WV': [49].map(i => exports.stateForNatIds[i]),
-  'WY': [50].map(i => exports.stateForNatIds[i])
+  'WY': [50].map(i => exports.stateForNatIds[i]),
+  'PR': [51].map(i => exports.stateForNatIds[i]),
+  'VI': [52].map(i => exports.stateForNatIds[i]),
+  'GU': [53].map(i => exports.stateForNatIds[i]),
+  'MP': [54].map(i => exports.stateForNatIds[i]),
+  'AS': [55].map(i => exports.stateForNatIds[i])
 };
