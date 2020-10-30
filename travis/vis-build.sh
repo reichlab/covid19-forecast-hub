@@ -9,7 +9,7 @@ setup_git() {
 
 commit_website_files() {
   echo "Commiting files..."
-  git add visualization/\*
+  git add .
   git commit --message "Build local visualization: $GITHUB_RUN_NUMBER"
 }
 
