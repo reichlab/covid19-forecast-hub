@@ -1,43 +1,9 @@
+from truth_utils._utils import get_epi_data, read_fips_codes, pre_process_truth, pre_process_epiweek, get_raw_truth_df, extract_raw_us_and_state_truth, extract_raw_county_truth
 import pandas as pd
-import pymmwr as pm
 import datetime
 import warnings
-import io
-import requests
 warnings.simplefilter(action='ignore')
 
-def read_fips_codes(filepath):
-  # read file
-  fips_codes = pd.read_csv(filepath)
-  # take state code from all fips codes
-  fips_codes['state_abbr'] = fips_codes['location'].str[:2]
-
-  # match state abbrevaition with state fips code
-  fips_codes['state_abbr'] = fips_codes['state_abbr'].apply(lambda x: fips_codes[fips_codes.location ==x].abbreviation.tolist()[0] if str(x) in fips_codes['location'].tolist() else 'NA')
-  
-  # only output "location (fips code)","location_name","(state) abbreviation"
-  fips_codes = fips_codes.drop('abbreviation',axis=1)
-  fips_codes.rename({'state_abbr': 'abbreviation'}, axis=1, inplace=True)
-  # took out DC county
-  fips_codes = fips_codes[fips_codes.location != '11001']
-  return fips_codes
-
-def get_epi_data(date):
-    # The format
-    format_str = '%m/%d/%y' 
-    dt = datetime.datetime.strptime(date, format_str).date()
-    epi = pm.date_to_epiweek(dt)
-    return epi.year, epi.week, epi.day
-
-def pre_process (df):
-  # convert matrix to repeating row format
-  df_truth = df.unstack()
-  df_truth = df_truth.reset_index()
-  
-  # get epi data from date
-  df_truth['year'], df_truth['week'], df_truth['day'] = \
-  zip(*df_truth['level_0'].map(get_epi_data))
-  return df_truth
 
 def get_byday (df_truth):
   # only output "location", "epiweek", "value"
@@ -56,8 +22,8 @@ def get_byday (df_truth):
 
 def configure_JHU_data(county_truth, state_nat_truth, target):
     # pre process both county truth and state_nat_truth
-    county_truth = pre_process(county_truth)
-    state_nat_truth = pre_process(state_nat_truth)
+    county_truth = pre_process_truth(county_truth)
+    state_nat_truth = pre_process_truth(state_nat_truth)
 
     # rename columns
     county_truth = county_truth.rename(columns={0: "value","FIPS": "location_long"})
@@ -101,36 +67,16 @@ def configure_JHU_data(county_truth, state_nat_truth, target):
               'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York',
               'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island',
               'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington',
-              'West Virginia', 'Wisconsin', 'Wyoming', 'District of Columbia']
+              'West Virginia', 'Wisconsin', 'Wyoming', 'District of Columbia', 'Puerto Rico', 'Guam', 'Virgin Islands',
+              'Northern Mariana Islands', 'American Samoa']
 
     state_nat_truth = state_nat_truth.drop(['location_name'], axis=1)
     state_nat_truth = state_nat_truth[state_nat_truth["location_long"].isin(states)]
     df_truth = state_nat_truth
 
     
-    # Observed data on the seventh day
-    # or group by week for incident deaths
-    if target in ('Incident Deaths','Incident Cases'):
-        df_vis = df_truth.groupby(['week', 'location_long'], as_index=False).agg({'level_0': 'last',
-                                                                                  'value': 'sum',
-                                                                                  'year': 'last',
-                                                                                  'day': 'last',
-                                                                                  'location': 'last',
-                                                                                  'abbreviation': 'last'})
-                                                                                  
-        df_vis = df_vis[df_vis['day'] == 7]
-    else:
-        df_vis = df_truth[df_truth['day'] == 7]
-
-
-    # shift epiweek on axis
-    df_vis['week'] = df_vis['week'] + 1  
-
-    # add leading zeros to epi week
-    df_vis['week'] = df_vis['week'].apply(lambda x: '{0:0>2}'.format(x))
-
-    # define epiweek
-    df_vis['epiweek'] = df_vis['year'].astype(str) + df_vis['week']
+    # Pre-process epiweek
+    df_vis = pre_process_epiweek(df_truth, target, for_zoltar = False)
 
     # Replace US with "nat" this is NECESSARY for visualization code!
     df_vis.loc[df_vis["location_long"] == "US", "abbreviation"] = "nat"
@@ -146,37 +92,15 @@ def configure_JHU_data(county_truth, state_nat_truth, target):
     with open(file_path, 'w') as f:
         f.write(df_truth_short.to_json(orient='records'))
 
-def get_county_truth(df):
-  county = df[pd.notnull(df.FIPS)]
-  county = county[(county.FIPS >=100) & (county.FIPS <80001)]
-  county.FIPS = (county.FIPS.astype(int)).map("{:05d}".format)
-  county_agg = county.groupby(['FIPS']).sum()
-  return county_agg
-
 
 def get_truth(url):
-  url_req = requests.get(url).content
-  df = pd.read_csv(io.StringIO(url_req.decode('utf-8')))
+  df = get_raw_truth_df(url)
 
-  # aggregate by state and nationally
-  state_agg = df.groupby(['Province_State']).sum()
-  us_nat = df.groupby(['Country_Region']).sum()
-  county_agg = get_county_truth(df)
-  df_state_nat = state_agg.append(us_nat)
+  # Extraction of cumulative and incident truths for national and state level
+  df_state_nat_truth_cumulative, df_state_nat_truth_incident = extract_raw_us_and_state_truth(df, for_zoltar = False)
 
-  # drop unnecessary columns
-  df_state_nat_truth = df_state_nat.drop(df_state_nat.columns[list(range(0, 6))], axis=1)
-  df_county_truth = county_agg.drop(county_agg.columns[list(range(0, 5))], axis=1)
-
-  df_state_nat_truth_cumulative = df_state_nat_truth
-  df_county_truth_cumulative = df_county_truth
-
-  df_state_nat_truth_incident = df_state_nat_truth_cumulative - df_state_nat_truth_cumulative.shift(periods=1, axis='columns')
-  df_county_truth_incident = df_county_truth_cumulative-df_county_truth_cumulative.shift(periods=1, axis='columns')
-
-  # lower bound truth values to 0.0
-  df_state_nat_truth_incident = df_state_nat_truth_incident.clip(lower=0.0)
-  df_county_truth_incident = df_county_truth_incident.clip(lower=0.0)
+  # Extraction of cumulative and incident truths for counties level
+  df_county_truth_cumulative, df_county_truth_incident = extract_raw_county_truth(df, for_zoltar = False)
 
   return df_state_nat_truth_cumulative,df_state_nat_truth_incident,df_county_truth_cumulative,df_county_truth_incident
 
