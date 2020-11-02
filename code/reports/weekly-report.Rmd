@@ -48,14 +48,21 @@ This report provides a brief summary of the weekly ensemble forecast from the [C
 
 
 ```{r nmodels-this-week}
+
+possible_timezeroes <- seq.Date(this_monday, this_monday-6, by="-1 day")
+this_week_timezeroes <- timezeros(zoltar_connection, project_url) %>%
+  filter(timezero_date %in% possible_timezeroes) %>%
+  pull(timezero_date)
+
 models_this_week <- zoltr::do_zoltar_query(
   zoltar_connection, project_url, 
   targets = c("1 wk ahead cum death", "1 wk ahead inc death", "1 wk ahead inc case", "1 day ahead inc hosp"),
-  timezeros = as.character(seq.Date(this_monday, this_monday-6, by="-1 day")),
+  # timezeros = as.character(seq.Date(this_monday, this_monday-6, by="-1 day")),
+   timezeros = as.character(this_week_timezeroes),
   types = c("point"), 
   verbose = FALSE,
   models = c(),
-  units = c("25")) %>%
+  is_forecast_query = TRUE) %>%
   pull(model) %>%
   unique()
 nmodels_this_week <- length(models_this_week)
@@ -114,7 +121,7 @@ cum_death_targets <- paste(1:4, "wk ahead cum death")
 
 # submit query
 dat <- zoltr:: do_zoltar_query(
-  zoltar_connection, project_url, 
+  zoltar_connection, project_url, TRUE,
   models = c("COVIDhub-ensemble"),
   targets = c(inc_death_targets, cum_death_targets),
   timezeros = as.character(this_monday),
@@ -401,5 +408,4 @@ This report was reproducibly and dynamically generated using RMarkdown. The code
 ```{r}
 htmltools::includeScript("statcounter.js") 
 ```
-
 

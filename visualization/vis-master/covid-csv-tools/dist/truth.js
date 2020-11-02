@@ -168,8 +168,8 @@ function getSeasonDataAllLags(season) {
     let latestData = (yield getSeasonData(season));
     let lagData = yield Promise.all(lags.map(l => getSeasonData(season, l)));
 
-    meta_1.stateIds.forEach(rid => {
-      latestData[rid].forEach(({
+    meta_1.stateIds.forEach(sid => {
+      latestData[sid].forEach(({
         epiweek,
         wili
       }, idx) => {
@@ -177,8 +177,8 @@ function getSeasonDataAllLags(season) {
           .filter(d => d)
           .map((ld, idx) => {
             let lagItem;
-            if (ld[rid])
-              lagItem = ld[rid].find(d => d.epiweek === epiweek);
+            if (ld[sid])
+              lagItem = ld[sid].find(d => d.epiweek === epiweek);
             return lagItem ? {
               epiweek: lagItem.epiweek,
               wili: lagItem.wili,
@@ -196,7 +196,7 @@ function getSeasonDataAllLags(season) {
               wili
             };
           });
-        latestData[rid][idx] = {
+        latestData[sid][idx] = {
           epiweek,
           wili,
           lagData: lagValues
