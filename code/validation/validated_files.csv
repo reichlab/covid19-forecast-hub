@@ -1532,3 +1532,6 @@ file_path,validation_date
 ./data-processed/UCSB-ACTS/2020-11-01-UCSB-ACTS.csv,2020-11-02 00:40:10.425879
 ./data-processed/Karlen-pypm/2020-11-01-Karlen-pypm.csv,2020-11-02 00:40:16.174736
 ./data-processed/STH-3PU/2020-11-01-STH-3PU.csv,2020-11-02 00:40:17.557823
+./data-processed/QJHong-Encounter/2020-11-01-QJHong-Encounter.csv,2020-11-02 06:24:28.770858
+./data-processed/UCLA-SuEIR/2020-11-01-UCLA-SuEIR.csv,2020-11-02 06:24:49.480564
+./data-processed/RPI_UW-Mob_Collision/2020-11-01-RPI_UW-Mob_Collision.csv,2020-11-02 06:24:50.850728
