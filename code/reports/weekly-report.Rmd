@@ -18,7 +18,6 @@ library(lubridate)
 library(DT)
 library(zoltr) ## devtools::install_github("reichlab/zoltr")
 library(scico)
-#source("../processing-fxns/get_next_saturday.R")
 library(tidyverse)
 library(htmltools)
 library(covidHubUtils)
@@ -103,29 +102,9 @@ n_unique_models <- length(unique(c(names(inc_death_models)[inc_death_models>0],
 ```
 
 ```{r aux-data}
-# ## get our FIPS codes
-# fips_codes <- read_csv("../../data-locations/locations.csv")
-# 
-# # ## this has populations
-# # locs <- read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/UID_ISO_FIPS_LookUp_Table.csv") %>%
-# #   mutate(FIPS = ifelse(UID==840, "US", FIPS)) %>%
-# #   mutate(state_fips = substr(FIPS, 0, 2)) %>%
-# #   right_join(select(fips_codes, -location_name), by=c("state_fips" = "location")) %>%
-# #   mutate(loc_name = reorder(factor(Province_State), X=-Population)) %>%
-# #   select(FIPS, abbreviation, Population) 
-# # 
-# # statefips_pop <- hub_locations %>%
-# #   filter(location_name %in% c(datasets::state.name, "District of Columbia")) %>%
-# #   select(FIPS = fips, abbreviation, Population = population)
-# # 
-# # locs <- locs %>% 
-# #   rbind(statefips_pop)
-
-
 locs <- hub_locations %>%
   rename(Population = population)
 ```
-
 
 
 ```{r download-ensemble-data}
