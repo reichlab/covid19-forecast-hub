@@ -1572,3 +1572,17 @@ file_path,validation_date
 ./data-processed/Caltech-CS156/2020-11-01-Caltech-CS156.csv,2020-11-03 00:44:57.134723
 ./data-processed/IowaStateLW-STEM/2020-11-01-IowaStateLW-STEM.csv,2020-11-03 00:45:24.410868
 ./data-processed/JHU_UNC_GAS-StatMechPool/2020-11-01-JHU_UNC_GAS-StatMechPool.csv,2020-11-03 00:45:28.736892
+./data-processed/CU-nochange/2020-11-01-CU-nochange.csv,2020-11-03 06:23:06.217369
+./data-processed/CU-nochange/2020-10-29-CU-nochange.csv,2020-11-03 06:23:23.024349
+./data-processed/JHU_CSSE-DECOM/2020-11-01-JHU_CSSE-DECOM.csv,2020-11-03 06:23:24.480866
+./data-processed/CU-scenario_low/2020-11-01-CU-scenario_low.csv,2020-11-03 06:23:40.927412
+./data-processed/CU-scenario_low/2020-10-29-CU-scenario_low.csv,2020-11-03 06:23:57.080311
+./data-processed/CU-scenario_mid/2020-10-29-CU-scenario_mid.csv,2020-11-03 06:24:13.524093
+./data-processed/CU-scenario_mid/2020-11-01-CU-scenario_mid.csv,2020-11-03 06:24:30.417620
+./data-processed/CU-select/2020-11-01-CU-select.csv,2020-11-03 06:24:47.389688
+./data-processed/CU-select/2020-10-29-CU-select.csv,2020-11-03 06:25:04.985047
+./data-processed/CU-scenario_high/2020-10-29-CU-scenario_high.csv,2020-11-03 06:25:22.805396
+./data-processed/CU-scenario_high/2020-11-01-CU-scenario_high.csv,2020-11-03 06:25:40.496172
+./data-processed/CMU-TimeSeries/2020-11-02-CMU-TimeSeries.csv,2020-11-03 06:25:41.890910
+./data-processed/NotreDame-FRED/2020-11-02-NotreDame-FRED.csv,2020-11-03 06:25:42.213320
+./data-processed/MSRA-DeepST/2020-11-02-MSRA-DeepST.csv,2020-11-03 06:25:43.206108

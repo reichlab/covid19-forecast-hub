@@ -1726,5 +1726,19 @@
     "2020-11-02-PSI-DRAFT.csv": "8afc4c85f2b50cf386d6eb5fe9bc234a",
     "2020-11-01-Caltech-CS156.csv": "19992cdc7ff803fd171f39cf30987081",
     "2020-11-01-IowaStateLW-STEM.csv": "03dc1b98b5c977970ecd71f0ebd19089",
-    "2020-11-01-JHU_UNC_GAS-StatMechPool.csv": "0cdf43046b3870ee7a4c7e805f1a6b6f"
+    "2020-11-01-JHU_UNC_GAS-StatMechPool.csv": "0cdf43046b3870ee7a4c7e805f1a6b6f",
+    "2020-11-01-CU-nochange.csv": "da22dbe9c90cba5ef58ffd04626ca8c9",
+    "2020-10-29-CU-nochange.csv": "82f13c83fd1949a4a6cc1f068101074a",
+    "2020-11-01-JHU_CSSE-DECOM.csv": "ee0b813e4b124584e6ad1fe6e474448c",
+    "2020-11-01-CU-scenario_low.csv": "a3be8e81d1f71e2107e3480cc5ae05a9",
+    "2020-10-29-CU-scenario_low.csv": "d0e07bd01d8a343f14e3f0f7280bd20a",
+    "2020-10-29-CU-scenario_mid.csv": "1f44817cd885008b08aa573a6bca7a3b",
+    "2020-11-01-CU-scenario_mid.csv": "8178ccc2245352e1f90617e834dc6294",
+    "2020-11-01-CU-select.csv": "8178ccc2245352e1f90617e834dc6294",
+    "2020-10-29-CU-select.csv": "1f44817cd885008b08aa573a6bca7a3b",
+    "2020-10-29-CU-scenario_high.csv": "aaaef93b5c8421feb145a3fa6ec408fe",
+    "2020-11-01-CU-scenario_high.csv": "fac8fb0ce3ae0ab0d95e110e48b3e800",
+    "2020-11-02-CMU-TimeSeries.csv": "6fe35998eccac9c8dcd22a0a42cf9e8f",
+    "2020-11-02-NotreDame-FRED.csv": "4adbd777d28cd5b24f5bba30b8d28008",
+    "2020-11-02-MSRA-DeepST.csv": "aa44ce4338127f46920ec54bb223b2da"
 }
