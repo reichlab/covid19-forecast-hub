@@ -18,9 +18,10 @@ library(lubridate)
 library(DT)
 library(zoltr) ## devtools::install_github("reichlab/zoltr")
 library(scico)
-source("../processing-fxns/get_next_saturday.R")
+#source("../processing-fxns/get_next_saturday.R")
 library(tidyverse)
 library(htmltools)
+library(covidHubUtils)
 theme_set(theme_bw())
 ```
 
@@ -35,7 +36,8 @@ project_url <- "https://www.zoltardata.com/api/project/44/"
 
 
 ```{r get-date-boundaries}
-next_saturday <- get_next_saturday(today())
+next_saturday <- as.Date(calc_target_week_end_date(today(), horizon = 0))
+
 saturday_4_wk_ahead <- next_saturday + 7*3
 saturday_4_wk_ahead_txt <- format(saturday_4_wk_ahead, "%B %d")
 last_5_saturdays <- next_saturday - 7*c(5:1)
@@ -48,7 +50,6 @@ This report provides a brief summary of the weekly ensemble forecast from the [C
 
 
 ```{r nmodels-this-week}
-
 possible_timezeroes <- seq.Date(this_monday, this_monday-6, by="-1 day")
 this_week_timezeroes <- timezeros(zoltar_connection, project_url) %>%
   filter(timezero_date %in% possible_timezeroes) %>%
@@ -58,7 +59,7 @@ models_this_week <- zoltr::do_zoltar_query(
   zoltar_connection, project_url, 
   targets = c("1 wk ahead cum death", "1 wk ahead inc death", "1 wk ahead inc case", "1 day ahead inc hosp"),
   # timezeros = as.character(seq.Date(this_monday, this_monday-6, by="-1 day")),
-   timezeros = as.character(this_week_timezeroes),
+  timezeros = as.character(this_week_timezeroes),
   types = c("point"), 
   verbose = FALSE,
   models = c(),
@@ -102,17 +103,29 @@ n_unique_models <- length(unique(c(names(inc_death_models)[inc_death_models>0],
 ```
 
 ```{r aux-data}
-## get our FIPS codes
-fips_codes <- read_csv("../../data-locations/locations.csv")
+# ## get our FIPS codes
+# fips_codes <- read_csv("../../data-locations/locations.csv")
+# 
+# # ## this has populations
+# # locs <- read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/UID_ISO_FIPS_LookUp_Table.csv") %>%
+# #   mutate(FIPS = ifelse(UID==840, "US", FIPS)) %>%
+# #   mutate(state_fips = substr(FIPS, 0, 2)) %>%
+# #   right_join(select(fips_codes, -location_name), by=c("state_fips" = "location")) %>%
+# #   mutate(loc_name = reorder(factor(Province_State), X=-Population)) %>%
+# #   select(FIPS, abbreviation, Population) 
+# # 
+# # statefips_pop <- hub_locations %>%
+# #   filter(location_name %in% c(datasets::state.name, "District of Columbia")) %>%
+# #   select(FIPS = fips, abbreviation, Population = population)
+# # 
+# # locs <- locs %>% 
+# #   rbind(statefips_pop)
 
-## this has populations
-locs <- read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/UID_ISO_FIPS_LookUp_Table.csv") %>%
-  mutate(FIPS = ifelse(UID==840, "US", FIPS)) %>%
-  mutate(state_fips = substr(FIPS, 0, 2)) %>%
-  right_join(select(fips_codes, -location_name), by=c("state_fips" = "location")) %>%
-  mutate(loc_name = reorder(factor(Province_State), X=-Population)) %>%
-  select(FIPS, abbreviation, Population) 
+
+locs <- hub_locations %>%
+  rename(Population = population)
 ```
+
 
 
 ```{r download-ensemble-data}
@@ -134,7 +147,7 @@ dat <- zoltr:: do_zoltar_query(
   ## create rate variable and week-ahead
   mutate(week_ahead = as.numeric(substr(target, 0,1)),
     ## recreates the target_end_date from GitHub
-    target_end_date = get_next_saturday(timezero + 7*(week_ahead-1))) 
+    target_end_date = as.Date(calc_target_week_end_date(timezero, horizon = week_ahead)))
 ```
 
 
@@ -164,7 +177,6 @@ us_inc_death_wk_pi <- dat %>%
   filter(fips=="US", target == "4 wk ahead inc death", quantile %in% c(0.025, 0.975)) %>% 
   pull(value) %>% sort() %>% 
   format(big.mark = ",")
-
 ```
 
 At the national level, the ensemble model's best guess is that we will see between `r us_inc_death_range[1]` and `r us_inc_death_range[2]` deaths each week for the next four weeks with around `r us_cum_deaths` deaths by `r saturday_4_wk_ahead_txt` (Figure 1). For the week ending `r saturday_4_wk_ahead_txt`, the ensemble forecasts that reported COVID-19 deaths in the US will be between `r us_inc_death_wk_pi_round[1]` and `r us_inc_death_wk_pi_round[2]` (95% prediction interval: `r us_inc_death_wk_pi[1]` - `r us_inc_death_wk_pi[2]`).
@@ -189,7 +201,7 @@ inc_death_truth <- read_csv("../../data-truth/truth-Incident Deaths.csv") %>%
   group_by(fips, model) %>% arrange(target_end_date) %>%
   mutate(value = RcppRoll::roll_sum(value, 7, align = "right", fill = NA)) %>%
   ungroup() %>%
-  left_join(locs, by=c("fips" = "FIPS")) %>%
+  left_join(locs, by=c("fips")) %>%
   filter(target_end_date %in% seq.Date(as.Date("2020-01-25"), to = Sys.Date(), by="1 week"),
     fips %in% unique(inc_death_forecast$fips)) 
 
@@ -261,7 +273,7 @@ recent_inc_death_totals <- read_csv("../../data-truth/truth-Incident Deaths.csv"
   summarize(last_2wk_deaths = sum(value*last_2wk),
     last_4wk_deaths = sum(value*last_4wk)) %>%
   ungroup() %>%
-  left_join(locs, by=c("location" = "FIPS")) %>%
+  left_join(locs, by=c("location" = "fips")) %>%
   left_join(cum_death_start) %>% 
   rename(fips = location, target_end_date = date)
 ```
