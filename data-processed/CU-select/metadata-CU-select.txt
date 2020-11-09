@@ -18,7 +18,11 @@ methods_long: 'This metapopulation county-level SEIR model makes projections of 
   each assuming various interventions and rates of compliance are implemented in the
   future.  This submission is the selection of the weekly scenario we believe to be
   most plausible given current observations and planned intervention policies.  The
-  selected scenarios are listed below: October 4 - present ''5_1xhold'': This scenario assumes a one-time
+  selected scenarios are listed below: 
+  November 8 - present ''5_2xhold'': This scenario
+  assumes a weekly 5% increase in contact rates for two weeks.  The following week,
+  the reproduction number R is set to 1 for the remainder of the projection.  
+  October 4 - November 5 ''5_1xhold'': This scenario assumes a one-time
       5% increase in contact rates, which is applied at the start of the projection and maintained for one week.  After one week, the reproduction
       number R is set to 1 for the remainder of the projection.
   June 14 - September 27 ''5_2xhold'': This scenario
