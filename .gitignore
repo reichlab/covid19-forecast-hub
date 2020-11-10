@@ -16,4 +16,8 @@ packrat/lib*/
 __pycache__
 .idea
 
+# compiled python files
 *.pyc
+
+# virtualenv (python)
+env
