@@ -4,7 +4,6 @@
 .RData
 .Ruserdata
 
-node_modules
 visualization/data
 visualization/vis-master/data
 .ipynb_checkpoints
@@ -16,8 +15,11 @@ packrat/lib*/
 __pycache__
 .idea
 
-# compiled python files
 *.pyc
 
 # virtualenv (python)
 env
+
+# node/npm related
+node_modules
+package-lock.json
