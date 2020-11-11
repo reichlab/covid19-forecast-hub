@@ -98,6 +98,7 @@ def upload_covid_forecast_by_model(conn, json_io_dict, forecast_filename, projec
                     overwrite=False, sync=True):
     conn.re_authenticate_if_necessary()
     if overwrite:
+        print(f"Existing forecast({forecast_filename}) present. Deleting it on Zoltar to upload latest one")
         util.delete_forecast(conn, project_name, model_abbr, timezero_date)
 
     # check json formatting before upload
@@ -112,11 +113,27 @@ def upload_covid_forecast_by_model(conn, json_io_dict, forecast_filename, projec
             quantile_json, error_from_transformation = quantile_io.json_io_dict_from_quantile_csv_file(...)""")
             sys.exit(1)
 
-    job = model.upload_forecast(json_io_dict, forecast_filename, timezero_date, notes)
-    if sync:
-        return util.busy_poll_job(job)
-    else:
-        return job
+    tries=0
+    # Runs only twice
+    while tries<2:
+        try:
+            job = model.upload_forecast(json_io_dict, forecast_filename, timezero_date, notes)
+            if sync:
+                return util.busy_poll_job(job)
+            else:
+                return job
+        except RuntimeError as err:
+            print(f"RuntimeError occured while uploading forecast. Error: {err}")
+            if err is not None and err.args[1]==400:
+                # status code is 400 and we need to rewrite this model.
+                response = err.args[1]
+                if str(json.loads(response.text)["error"]).startswith("A forecast already exists"): 
+                    # now we are sure it is the existing forecast error,, delete the one on zoltar and then try again.
+                    print(f"This forecast({model_abbr}) with timezero ({timezero_date}) is already present, deleting forecast on Zoltar and then retrying...")
+                    util.delete_forecast(conn, project_name, model_abbr, timezero_date)
+                    print("Deleted on Zoltar. Retrying now.")
+                    tries+=1
+
 
 
 # Function to upload all forecasts in a specific directory
