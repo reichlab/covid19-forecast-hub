@@ -1651,3 +1651,5 @@ file_path,validation_date
 ./data-processed/CMU-TimeSeries/2020-11-09-CMU-TimeSeries.csv,2020-11-11 20:36:09.723340
 ./data-processed/JHU_UNC_GAS-StatMechPool/2020-11-08-JHU_UNC_GAS-StatMechPool.csv,2020-11-11 20:36:14.317028
 ./data-processed/NotreDame-FRED/2020-11-09-NotreDame-FRED.csv,2020-11-11 20:36:14.603157
+./data-processed/LANL-GrowthRate/2020-11-12-LANL-GrowthRate.csv,2020-11-13 12:15:54.108372
+./data-processed/USACE-ERDC_SEIR/2020-11-12-USACE-ERDC_SEIR.csv,2020-11-13 12:16:06.632979
