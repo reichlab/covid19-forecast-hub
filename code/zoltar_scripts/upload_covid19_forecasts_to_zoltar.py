@@ -124,7 +124,7 @@ def upload_covid_forecast_by_model(conn, json_io_dict, forecast_filename, projec
                 return job
         except RuntimeError as err:
             print(f"RuntimeError occured while uploading forecast. Error: {err}")
-            if err is not None and err.args[1]==400:
+            if err.args is not None and len(err.args)>1 and err.args[1].status_code==400:
                 # status code is 400 and we need to rewrite this model.
                 response = err.args[1]
                 if str(json.loads(response.text)["error"]).startswith("A forecast already exists"): 
