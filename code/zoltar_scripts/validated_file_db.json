@@ -1807,5 +1807,10 @@
     "2020-11-08-JHU_UNC_GAS-StatMechPool.csv": "03023138a4c51ed398621c5187931a1d",
     "2020-11-09-NotreDame-FRED.csv": "bff896627246ffba4968291c79dc7192",
     "2020-11-12-LANL-GrowthRate.csv": "eae283a328d0a82f87c44c44dd8499ea",
-    "2020-11-12-USACE-ERDC_SEIR.csv": "7fc5a85d0a1d9937feff82fa97cc8d57"
+    "2020-11-12-USACE-ERDC_SEIR.csv": "7fc5a85d0a1d9937feff82fa97cc8d57",
+    "2020-11-12-CU-nochange.csv": "12b2af741dd227718b5b4210a3905b94",
+    "2020-11-12-CU-scenario_low.csv": "4ec68aca6e1799c5ecf2eeb35db5373b",
+    "2020-11-12-CU-scenario_mid.csv": "1b8f5e4e6b797e9bd98fdf1e6c5ab1a5",
+    "2020-11-12-CU-select.csv": "4ec68aca6e1799c5ecf2eeb35db5373b",
+    "2020-11-12-CU-scenario_high.csv": "66afd02cbe6714c1e931bcd0c3828678"
 }

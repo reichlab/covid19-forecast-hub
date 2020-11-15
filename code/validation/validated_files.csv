@@ -1653,3 +1653,8 @@ file_path,validation_date
 ./data-processed/NotreDame-FRED/2020-11-09-NotreDame-FRED.csv,2020-11-11 20:36:14.603157
 ./data-processed/LANL-GrowthRate/2020-11-12-LANL-GrowthRate.csv,2020-11-13 12:15:54.108372
 ./data-processed/USACE-ERDC_SEIR/2020-11-12-USACE-ERDC_SEIR.csv,2020-11-13 12:16:06.632979
+./data-processed/CU-nochange/2020-11-12-CU-nochange.csv,2020-11-15 18:14:37.945101
+./data-processed/CU-scenario_low/2020-11-12-CU-scenario_low.csv,2020-11-15 18:14:58.977807
+./data-processed/CU-scenario_mid/2020-11-12-CU-scenario_mid.csv,2020-11-15 18:15:19.241135
+./data-processed/CU-select/2020-11-12-CU-select.csv,2020-11-15 18:15:39.761349
+./data-processed/CU-scenario_high/2020-11-12-CU-scenario_high.csv,2020-11-15 18:15:59.963584
