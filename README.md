@@ -131,6 +131,7 @@ repository are (with data reuse license):
  - [University of California San Diego](https://datascience.ucsd.edu/COVID19/) (CC-BY-4.0)
  - University of Chicago (CC-BY-NC-4.0)
  - [University of Chicago, Chattopadhyay Lab](https://github.com/zeroknowledgediscovery/unitcov) (MIT)
+ - [University of Central Florida](https://github.com/UCF-AEM/UCF-AEM) (CC-BY-4.0)
  - [University of Geneva / Swiss Data Science Center](https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/) (see [license](./data-processed/Geneva-DetGrowth/LICENSE.txt))
  - [University of Massachusetts - Expert Model](https://github.com/tomcm39/COVID19_expert_survey) (MIT)
  - [University of Massachusetts - Mechanistic Bayesian model](https://github.com/dsheldon/covid) (MIT)
