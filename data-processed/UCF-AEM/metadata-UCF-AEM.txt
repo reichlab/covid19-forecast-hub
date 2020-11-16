@@ -2,7 +2,7 @@ team_name: University of Central Florida
 model_name: AI-Powered and Epidemiology-Informed Modeling System
 model_abbr: UCF-AEM
 model_contributors: Dongdong Wang (UCF) <daniel.wang@knights.ucf.edu>, Timothy Summer (UCF) <tsumner@knights.ucf.edu>, Shunpu Zhang (UCF) <Shunpu.Zhang@ucf.edu>, Liqiang Wang (UCF) <Liqiang.Wang@ucf.edu>
-website_url: pending
+website_url: https://github.com/tim-sumner/UCF-AEM
 license: cc-by-4.0
 team_model_designation: primary
 methods: This model leverages conventional SEIR model with mixture modeling and distilled the knowledge of complex mixture modeling system with ensemble neural networks.
