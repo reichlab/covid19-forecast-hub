@@ -13,7 +13,8 @@ model_contributors: Joseph C. Lemaitre (EPFL),  Qifang Bi (Johns Hopkins Infecti
   Disease Dynamics),  Lindsay T. Keegan (University of Utah),  Kathryn Kaminsky,  Sam
   Shah,  Josh Wills, Pierre-Yves Aquilanti (Amazon Web Services),  Karthik Raman (Amazon
   Web Services),  Arun Subramaniyan (Amazon Web Services),  Greg Thursam (Amazon Web
-  Services),  Anh Tran (Amazon Web Services)
+  Services),  Anh Tran (Amazon Web Services), Claire Smith (Johns Hopkins Infectious
+  Disease Dynamics)
 website_url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
 license: mit
 team_model_designation: primary
@@ -51,4 +52,5 @@ methods_long: "This is a county-level metapopulation model with stochastic SEIR 
   \ by this model incorporate uncertainty in both epidemiological parameters (e.g.,\
   \ R0, infectious period, time delays to health outcomes) and the effectiveness\
   \ of state-wide intervention policies  on social distancing, stay-at-home orders,\
-  \ and phased reopenings. We submit a deaths-optimized calibration to forecast deaths."
+  \ and phased reopenings. We submit a single calibration to forecast deaths, cases,\
+  \ and hospitalizations."
