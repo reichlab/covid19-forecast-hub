@@ -141,6 +141,10 @@ us_cum_deaths <- dat %>%
   pull(value) %>% 
   round(-2) %>% 
   format(big.mark = ",")
+us_cum_deaths_wk_pi <- dat %>% 
+  filter(fips=="US", target=="4 wk ahead cum death", quantile %in% c(0.025, 0.975)) %>% 
+  pull(value) %>% 
+  format(big.mark = ",")
 us_inc_death_range <- dat %>% 
   filter(fips=="US", target %in% inc_death_targets, class=="point") %>% 
   pull(value) %>% range() %>%
@@ -157,7 +161,9 @@ us_inc_death_wk_pi <- dat %>%
   format(big.mark = ",")
 ```
 
-At the national level, the ensemble model's best guess is that we will see between `r us_inc_death_range[1]` and `r us_inc_death_range[2]` deaths each week for the next four weeks with around `r us_cum_deaths` deaths by `r saturday_4_wk_ahead_txt` (Figure 1). For the week ending `r saturday_4_wk_ahead_txt`, the ensemble forecasts that reported COVID-19 deaths in the US will be between `r us_inc_death_wk_pi_round[1]` and `r us_inc_death_wk_pi_round[2]` (95% prediction interval: `r us_inc_death_wk_pi[1]` - `r us_inc_death_wk_pi[2]`).
+At the national level, the ensemble model's best guess is that we will see between `r us_inc_death_range[1]` and `r us_inc_death_range[2]` deaths each week for the next four weeks (Figure 1) with around `r us_cum_deaths` deaths by `r saturday_4_wk_ahead_txt` (95% prediction interval: `r us_cum_deaths_wk_pi[2]` - `r us_cum_deaths_wk_pi[1]`). 
+
+For the week ending `r saturday_4_wk_ahead_txt`, the ensemble forecasts that reported COVID-19 deaths in the US will be between `r us_inc_death_wk_pi_round[1]` and `r us_inc_death_wk_pi_round[2]` (95% prediction interval: `r us_inc_death_wk_pi[1]` - `r us_inc_death_wk_pi[2]`).
 
 <!-- Throughought most of July, models have in general shown broad agreement about the trajectory of the outbreak over the coming weeks. However, the recent surge in cases has left models with quite different interpretations about what the next few weeks hold in terms of how many reported deaths from COVID-19 we will see.  -->
 You can explore the full set of models, including their forecasts for past weeks online at our [interactive forecast visualization](https://viz.covid19forecasthub.org/).
