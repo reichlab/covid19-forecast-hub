@@ -60,7 +60,8 @@ For teams submitting only one model, this should be “primary”.
 For each team, only one model can be designated as “primary”. 
 
 *Primary* means the model will be scored in evaluations, eligible for inclusion
-in the ensemble, and [visualized](https://viz.covid19forecasthub.org/).
+in the [ensemble](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/COVIDhub-ensemble), 
+and [visualized](https://viz.covid19forecasthub.org/).
 
 *Proposed* means the team would like the model to be considered as a "secondary"
 model rather than an "other" model. 
@@ -71,8 +72,8 @@ If the methodology is not distinct enough, e.g. it differs from the primary mode
 by setting certain parameters to specific values, then the model will be 
 designated as "other". 
 
-*Secondary* means the forecasts will be visualized and eligible for inclusion
-in the ensemble, but will not be scored in evaluations. 
+*Secondary* means the forecasts will be [visualized](https://viz.covid19forecasthub.org/) and eligible for inclusion
+in the [ensemble](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/COVIDhub-ensemble), but will not be scored in evaluations. 
 
 *Other* means the forecasts will not be visualized, included in the ensemble, 
 nor scored in evaluations.
