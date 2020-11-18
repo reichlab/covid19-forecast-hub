@@ -99,7 +99,8 @@ def upload_covid_forecast_by_model(conn, json_io_dict, forecast_filename, projec
     conn.re_authenticate_if_necessary()
     if overwrite:
         print(f"Existing forecast({forecast_filename}) present. Deleting it on Zoltar to upload latest one")
-        util.delete_forecast(conn, project_name, model_abbr, timezero_date)
+        del_job = util.delete_forecast(conn, project_name, model_abbr, timezero_date)
+        util.busy_poll_job(del_job)
 
     # check json formatting before upload
     # accepts either string or dictionary
@@ -124,15 +125,18 @@ def upload_covid_forecast_by_model(conn, json_io_dict, forecast_filename, projec
                 return job
         except RuntimeError as err:
             print(f"RuntimeError occured while uploading forecast. Error: {err}")
-            if err.args is not None and len(err.args)>1 and err.args[1].status_code==400:
+            if err.args is not None and len(err.args)>1 and err.args[1].status_code==400 and not overwrite:
                 # status code is 400 and we need to rewrite this model.
                 response = err.args[1]
                 if str(json.loads(response.text)["error"]).startswith("A forecast already exists"): 
                     # now we are sure it is the existing forecast error,, delete the one on zoltar and then try again.
                     print(f"This forecast({model_abbr}) with timezero ({timezero_date}) is already present, deleting forecast on Zoltar and then retrying...")
-                    util.delete_forecast(conn, project_name, model_abbr, timezero_date)
+                    del_job = util.delete_forecast(conn, project_name, model_abbr, timezero_date)
+                    util.busy_poll_job(del_job)
                     print("Deleted on Zoltar. Retrying now.")
-                    tries+=1
+        finally:
+            # always update the number of tries.
+            tries+=1
 
 
 
