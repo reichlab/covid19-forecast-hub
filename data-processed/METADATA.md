@@ -55,20 +55,27 @@ then a LICENSE.txt file must exist within the folder and provide a license.
 
 ### team_model_designation 
 
-Upon submission this field should be one of “primary”, “proposed” or “other”. 
+Upon initial submission this field should be one of “primary”, “proposed” or “other”. 
 For teams submitting only one model, this should be “primary”. 
-For each team, one model can be designated as “primary”. 
-Primary means the model will be ranked in evaluations and considered eligible 
-for ensemble inclusion.
+For each team, only one model can be designated as “primary”. 
 
-Other models can be designated as “proposed” or “other”. 
-For models proposed as “proposed” the Hub team will determine whether the 
+*Primary* means the model will be scored in evaluations, eligible for inclusion
+in the ensemble, and [visualized](https://viz.covid19forecasthub.org/).
+
+*Proposed* means the team would like the model to be considered as a "secondary"
+model rather than an "other" model. 
+The Hub team will determine whether the model's
 methodology is distinct enough that the model should be included in the ensemble 
-(for as long as there are limits on the number of models per team in the 
-ensemble). 
-Models proposed as “other” will not be ranked in evaluations 
-(they may still be listed, just not with a rank) and not eligible for inclusion 
-in the ensemble.
+in which case the model will get the "secondary" designation.
+If the methodology is not distinct enough, e.g. it differs from the primary model
+by setting certain parameters to specific values, then the model will be 
+designated as "other". 
+
+*Secondary* means the forecasts will be visualized and eligible for inclusion
+in the ensemble, but will not be scored in evaluations. 
+
+*Other* means the forecasts will not be visualized, included in the ensemble, 
+nor scored in evaluations.
 
 
 ### methods
