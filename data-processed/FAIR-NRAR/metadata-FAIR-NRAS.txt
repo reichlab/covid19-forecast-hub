@@ -1,0 +1,20 @@
+team_name: Facebook AI Research
+model_name: NRAR
+model_abbr: FAIR-NRAR
+model_contributors: Matthew Le, Mark Ibrahim, Levent Sagun, Timothee Lacroix, Maximilian Nickel <maxn@fb.com>
+website_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
+license: cc-by-nc-4.0 
+team_model_designation: primary
+methods: We combine recurrent neural networks with a vector autoregressive model and
+    train the joint model with a specific regularization scheme that increases the
+    coupling between regions. This approach is akin to using Granger causality as a
+    relational inductive bias and helps training of high-resolution models by
+    borrowing statistical strength across regions.
+data_inputs: 
+    - New York Times case counts
+    - Google mobility data: "https://www.gstatic.com/covid19/mobility/Global_Mobility_Report.csv"
+    - Facebook mobility: https://data.humdata.org/dataset/movement-range-maps
+    - Google Weather, Testing data: https://github.com/GoogleCloudPlatform/covid-19-open-data
+    - Testing data: https://api.covidtracking.com/v1/states/daily.csv
+    - Facebook/CMU Delphi Symptom Survey data: https://delphi.cmu.edu/blog/2020/08/26/covid-19-symptom-surveys-through-facebook/
+citation: https://ai.facebook.com/research/publications/neural-relational-autoregression-for-high-resolution-covid-19-forecasting/
