@@ -62,6 +62,11 @@ For the Hub, the ground truth data will be the sum of the columns
 These columns provide the new daily admission for adults and kids, 
 respectively.
 
+Alternatively, daily hospitalizations are also released (weekly) as a 
+time series at [HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries) which, presumably, is updated with all revisions. 
+This will likely be a more straight-forward version to use, 
+but released less frequently than the daily data. 
+
 
 
 
