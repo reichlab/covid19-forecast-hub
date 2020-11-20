@@ -81,6 +81,13 @@ which, presumably, is updated with all revisions. This will likely be a
 more straight-forward version to use, but released less frequently than
 the daily data.
 
+Additional, resources that describe this data source are available.
+
+-   [data dictionary for the
+    dataset](https://healthdata.gov/covid-19-reported-patient-impact-and-hospital-capacity-state-data-dictionary)
+-   the [official document describing the “guidance for hospital
+    reporting”](https://www.hhs.gov/sites/default/files/covid-19-faqs-hospitals-hospital-laboratory-acute-care-facility-data-reporting.pdf)
+
 We are working with our collaborators at the [COVIDcast Epidata
 API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast.html) to
 develop a fully versioned set of these data available through their
