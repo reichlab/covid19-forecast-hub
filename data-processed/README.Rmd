@@ -1,3 +1,6 @@
+---
+output: md_document
+---
 # Data submission instructions
 
 This page is intended to provide teams with all the information they need to
@@ -31,15 +34,20 @@ Additional sources of ground-truth data at a future time.
 
 ### Cases and Deaths
 
-There are several different sources for death data. Currently, 
-all forecasts will be compared to the 
+There are several different sources for death data. 
+All forecasts will be compared to the 
 [daily reports containing death data from the JHU CSSE group](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv) 
 as the gold standard reference data for deaths in the US. 
 Note that there are significant differences 
 (especially in daily incident death data) 
 between the JHU data and another commonly used source, from the New York Times. 
-The team at UTexas-Austin is tracking this issue on [a separate GitHub repository](https://github.com/spencerwoody/covid19-data-comparsion).
+The team at UTexas-Austin has tracked this issue on [a separate GitHub repository](https://github.com/spencerwoody/covid19-data-comparsion).
 
+Data from a variety of sources are available via the
+[COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast.html).
+
+Details on how data from JHU are processed and aggregated are available on the 
+[Truth Data page on the COVID-19 Foreast hub Wiki](https://github.com/reichlab/covid19-forecast-hub/wiki/Truth-Data).
 Weekly incident data are the sum of daily incident data from Sunday through 
 Saturday. 
 Weekly cumulative data is the cumulative data up to and including Saturday. 
@@ -50,7 +58,8 @@ Weekly cumulative data is the cumulative data up to and including Saturday.
 As of the week of 16 Nov 2020, 
 a proposal has been made to use HealthData.gov confirmed admissions as the 
 ground truth hospitalizations. 
-Prior to this week, there was no official hospitalization ground truth. 
+Prior to this week, no official source for hospitalization ground truth data 
+had been identified.
 
 Hospitalization data are released (approximately) daily at 
 [HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state)
@@ -61,14 +70,18 @@ For the Hub, the ground truth data will be the sum of the columns
 `previous_day_admission_pediatric_covid_confirmed`.
 These columns provide the new daily admission for adults and kids, 
 respectively.
+Other columns represent "suspected" COVID-19 hospitalizations, however because 
+definitions and implementations of suspected cases vary widely, our public health
+collaborators have recommended using the above columns only.
 
-Alternatively, daily hospitalizations are also released (weekly) as a 
+Additionally, daily hospitalizations are also released (weekly) as a 
 time series at [HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries) which, presumably, is updated with all revisions. 
 This will likely be a more straight-forward version to use, 
 but released less frequently than the daily data. 
 
-
-
+We are working with our collaborators at the [COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast.html) 
+to develop a fully versioned set of these data available through their system.
+More details will be forthcoming as we learn more about these data sources.
 
 
 
