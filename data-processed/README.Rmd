@@ -24,6 +24,13 @@ In addition, we describe
 
 ## Ground truth data
 
+Case and death ground truth data are from JHU CSSE while 
+hospitalization ground truth data are from HealthData.gov. 
+
+Additional sources of ground-truth data at a future time.
+
+### Cases and Deaths
+
 There are several different sources for death data. Currently, 
 all forecasts will be compared to the 
 [daily reports containing death data from the JHU CSSE group](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv) 
@@ -37,7 +44,27 @@ Weekly incident data are the sum of daily incident data from Sunday through
 Saturday. 
 Weekly cumulative data is the cumulative data up to and including Saturday. 
 
-We may add additional sources of ground-truth data at a future time.
+
+### Hospitalizations
+
+As of the week of 16 Nov 2020, 
+a proposal has been made to use HealthData.gov confirmed admissions as the 
+ground truth hospitalizations. 
+Prior to this week, there was no official hospitalization ground truth. 
+
+Hospitalization data are released (approximately) daily at 
+[HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state)
+with possible [revisions and historical](https://healthdata.gov/node/3281081/revisions). 
+Each daily file includes hospitalization data for each state.
+For the Hub, the ground truth data will be the sum of the columns
+`previous_day_admission_adult_covid_confirmed` and 
+`previous_day_admission_pediatric_covid_confirmed`.
+These columns provide the new daily admission for adults and kids, 
+respectively.
+
+
+
+
 
 
 ## Data formatting
