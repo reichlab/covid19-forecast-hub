@@ -115,6 +115,7 @@ repository are (with data reuse license):
  - [Notre Dame - FRED](https://github.com/confunguido/covid19_ND_forecasting) (CC-BY-4.0)
  - [Notre Dame - mobility](https://github.com/TAlexPerkins/covid19_NDmobility_forecasting) (CC-BY-4.0)
  - [Oliver Wyman](https://pandemicnavigator.oliverwyman.com/) (see [license](./data-processed/OliverWyman-Navigator/LICENSE.txt))
+ - [One Quiet Night](https://github.com/One-Quiet-Night/COVID-19-forecast) (MIT)
  - [PandemicCentral-USCounty](https://itsonit.com/) (MIT)
  - [Predictive Science Inc](https://predsci.com) (MIT)
  - [QJHong](https://qjhong.github.io) (CC-BY-4.0)
