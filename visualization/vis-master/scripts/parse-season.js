@@ -70,6 +70,10 @@ async function writeDistsFile(data, stateId) {
 function parseStateActual(seasonData, stateId) {
   let stateSubset = seasonData[stateId]
   let epiweeks = fct.utils.epiweek.seasonEpiweeks(SEASON_ID)
+  // Temporary: expand to next 4 weeks while working on the main fix
+  let epiweeks_next_year = fct.utils.epiweek.seasonEpiweeks(SEASON_ID+1)
+  epiweeks_next_year_first_4_ew = epiweeks_next_year.slice(0, 4)
+  epiweeks = epiweeks.concat(epiweeks_next_year_first_4_ew)
   return epiweeks.map(ew => {
     let ewData = stateSubset.find(({
       epiweek
@@ -235,7 +239,10 @@ async function parseModelDir(modelPath, stateId) {
   let binPredictions = []
   let scores = []
 
-  for (let epiweek of fct.utils.epiweek.seasonEpiweeks(SEASON_ID)) {
+  let epiweeks_next_year = fct.utils.epiweek.seasonEpiweeks(SEASON_ID+1)
+  let epiweeks_next_year_first_4_ew = epiweeks_next_year.slice(0,4)
+  let epiweeks = fct.utils.epiweek.seasonEpiweeks(SEASON_ID).concat(epiweeks_next_year_first_4_ew)
+  for (let epiweek of epiweeks) {
 
     if (availableEpiweeks.indexOf(epiweek) === -1) {
       // Prediction not available for this week, return null
