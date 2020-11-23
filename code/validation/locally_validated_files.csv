@@ -1723,3 +1723,7 @@ file_path,validation_date
 ./data-processed/CU-select/2020-11-19-CU-select.csv,2020-11-20 12:18:51.927147
 ./data-processed/CU-nochange/2020-11-19-CU-nochange.csv,2020-11-20 12:19:14.601586
 ./data-processed/FAIR-NRAR/2020-11-19-FAIR-NRAR.csv,2020-11-21 00:20:42.601069
+./data-processed/IQVIA_ACOE-STAN/2020-11-22-IQVIA_ACOE-STAN.csv,2020-11-23 00:20:42.014335
+./data-processed/TTU-squider/2020-11-22-TTU-squider.csv,2020-11-23 00:20:42.806153
+./data-processed/NotreDame-mobility/2020-11-21-NotreDame-mobility.csv,2020-11-23 00:20:44.719550
+./data-processed/OneQuietNight-ML/2020-11-21-OneQuietNight-ML.csv,2020-11-23 00:20:47.695344
