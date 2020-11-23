@@ -29,6 +29,9 @@ import {
   filterActiveLines
 } from './utilities/misc'
 import * as ev from './events'
+import {
+  getTick
+} from './utilities/data/timepoints'
 
 export default class TimeChart extends Chart {
   constructor(element, options = {}) {
@@ -167,7 +170,7 @@ export default class TimeChart extends Chart {
 
     this.dataConfig = getTimeChartDataConfig(data, this.config)
     this.dataVersionTimes = tpUtils.parseDataVersionTimes(data, this.dataConfig)
-    this.ticks = this.dataConfig.ticks
+    this.ticks = data.timePoints.map(tp => getTick(tp, "year-week"))
 
     if (this.config.axes.y.domain) {
       this.yScale.domain(this.config.axes.y.domain)
@@ -177,7 +180,9 @@ export default class TimeChart extends Chart {
 
     this.xScale.domain(domains.x(data, this.dataConfig))
     this.xScaleDate.domain(domains.xDate(data, this.dataConfig))
-    this.xScalePoint.domain(domains.xPoint(data, this.dataConfig))
+
+    // Avoid duplicate domain value due to same epidemic week in different years
+    this.xScalePoint.domain(data.timePoints.map(tp => getTick(tp, "year-week")))
 
     this.plotChart(data)
 

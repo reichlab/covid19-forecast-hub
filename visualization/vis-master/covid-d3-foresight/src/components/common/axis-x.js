@@ -173,6 +173,9 @@ export class XAxisDate extends SComponent {
   plot(scales) {
     let xAxis = d3.axisBottom(scales.xScalePoint)
       .tickValues(scales.xScalePoint.domain().filter((d, i) => !(i % 2)))
+      .tickFormat(function(d, i) {
+        return d.split("-")[1]
+      })
 
     let xAxisReverseTick = d3.axisTop(scales.xScalePoint)
       .tickValues(scales.xScalePoint.domain().filter((d, i) => !(i % 2)))
