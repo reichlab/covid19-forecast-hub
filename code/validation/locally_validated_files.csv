@@ -1777,3 +1777,6 @@ file_path,validation_date
 ./data-processed/Caltech-CS156/2020-11-22-Caltech-CS156.csv,2020-11-24 06:15:30.205019
 ./data-processed/CMU-TimeSeries/2020-11-23-CMU-TimeSeries.csv,2020-11-24 06:15:31.821658
 ./data-processed/Google_Harvard-CPF/2020-11-22-Google_Harvard-CPF.csv,2020-11-24 06:15:37.109219
+./data-processed/RPI_UW-Mob_Collision/2020-11-22-RPI_UW-Mob_Collision.csv,2020-11-24 12:16:00.471439
+./data-processed/COVIDhub-ensemble/2020-11-23-COVIDhub-ensemble.csv,2020-11-24 12:16:13.509078
+./data-processed/IHME-CurveFit/2020-11-23-IHME-CurveFit.csv,2020-11-24 12:16:38.457390
