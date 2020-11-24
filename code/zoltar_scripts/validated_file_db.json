@@ -1885,7 +1885,7 @@
     "2020-11-22-UChicagoCHATTOPADHYAY-UnIT.csv": "48cbfadc11492cdd0326a6d8fc48e0b8",
     "2020-11-22-QJHong-Encounter.csv": "7d8101363f561caff620c6d4072f9f6e",
     "2020-11-22-Columbia_UNC-SurvCon.csv": "50d6c72bc5e7373c7049d6942e3c998b",
-    "2020-11-22-USC-SI_kJalpha.csv": "7594a1cea667cf28fdadbd73172db455",
+    "2020-11-22-USC-SI_kJalpha.csv": "22501b0d9629df05124ac99db1270169",
     "2020-11-22-UCLA-SuEIR.csv": "2a28bfe2c3feedad3c4191e9ef678a22",
     "2020-11-22-UCSB-ACTS.csv": "da3b77cc759a7f43ef1528234403cb81",
     "2020-11-22-BPagano-RtDriven.csv": "5113476eee199270ab43708eb7fa3607",
@@ -1926,5 +1926,10 @@
     "2020-11-22-UCM_MESALab-FoGSEIR.csv": "dbe1f30d6ce191d6831bc7fbdfed0a7d",
     "2020-11-22-CU-nochange.csv": "7e114530be00c96ebf5ef5b30f08c182",
     "2020-11-22-LNQ-ens1.csv": "e138ffded746921e30cc3c908edf61d6",
-    "2020-11-23-SteveMcConnell-CovidComplete.csv": "90fc27681664e31c4dce9a6b6a39eea6"
+    "2020-11-23-SteveMcConnell-CovidComplete.csv": "90fc27681664e31c4dce9a6b6a39eea6",
+    "2020-11-22-UMass-MechBayes.csv": "b25136c78236f80c02e335db1561bf36",
+    "2020-11-23-COVIDhub-baseline.csv": "cb19fc099952fb9ae10ef059b71c5d67",
+    "2020-11-22-Caltech-CS156.csv": "2415232248d9b0903c6a1ec41ca7d383",
+    "2020-11-23-CMU-TimeSeries.csv": "53080bfd142e2f4997879acf5e685930",
+    "2020-11-22-Google_Harvard-CPF.csv": "83f7928ae6181450eefb98e3e407fbc0"
 }
