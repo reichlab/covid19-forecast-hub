@@ -1,3 +1,5 @@
+team_name: The University of Michigan
+model_name: RidgeTensorFlowRegressor
 model_abbr: UMich-RidgeTfReg
 model_contributors: 'Sabrina Corsetti (University of Michigan Department of Physics)
   <sabcorse@umich.edu>, Robert Myers (University of Michigan Department of Physics)
