@@ -285,6 +285,7 @@ if __name__ == '__main__':
         for directory, errors in output_errors.items():
             print("\n* ERROR IN '", directory, "'")
             print(errors)
+        os.sync()  # make sure we flush before exiting
         sys.exit("\n ERRORS FOUND EXITING BUILD...")
     else:
         print("✓ no errors")
