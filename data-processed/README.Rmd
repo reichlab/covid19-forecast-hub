@@ -60,26 +60,35 @@ a proposal has been made to use HealthData.gov confirmed admissions as the
 ground truth hospitalizations. 
 Prior to this week, no official source for hospitalization ground truth data 
 had been identified.
+On 1 Dec 2020, a final determination of has been made as detailed below. 
 
-Hospitalization data are released (approximately) daily at 
-[HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state)
-with possible [revisions and historical](https://healthdata.gov/node/3281081/revisions). 
-Each daily file includes hospitalization data for each state.
-For the Hub, the ground truth data will be the sum of the columns
+#### HealthData.gov Hospitalization Timeseries
+
+The truth data that hospitalization forecasts (`inc hosp`) will be evaluated against are 
+the [HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries). 
+These data are released weekly although, sometimes, updated more frequently. 
+
+The hospitalization truth data will be the sum of the columns
 `previous_day_admission_adult_covid_confirmed` and 
-`previous_day_admission_pediatric_covid_confirmed`.
-These columns provide the new daily admission for adults and kids, 
-respectively.
-Other columns represent "suspected" COVID-19 hospitalizations, however because 
+`previous_day_admission_pediatric_covid_confirmed` which
+provide the new daily admission for adults and kids, respectively.
+(Other columns represent "suspected" COVID-19 hospitalizations, however because 
 definitions and implementations of suspected cases vary widely, our public health
-collaborators have recommended using the above columns only.
+collaborators have recommended using the above columns only.)
 
-Additionally, daily hospitalizations are also released (weekly) as a 
-time series at [HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries) which, presumably, is updated with all revisions. 
-This will likely be a more straight-forward version to use, 
-but released less frequently than the daily data. 
+Since these admission data are "previous day" admissions, 
+the truth data will have a date one day earlier so that `inc hosp` align with 
+the date the admissions occurred. 
 
-Additional, resources that describe this data source are available.
+#### HealthData.gov Daily Hospitalizations
+
+An alternative data source that should be consistent and should be updated 
+more frequently are 
+[HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state).
+
+#### Additional resources
+
+Additional, resources that describe these data source are available.
 
 - [data dictionary for the dataset](https://healthdata.gov/covid-19-reported-patient-impact-and-hospital-capacity-state-data-dictionary)
 - the [official document describing the "guidance for hospital reporting"](https://www.hhs.gov/sites/default/files/covid-19-faqs-hospitals-hospital-laboratory-acute-care-facility-data-reporting.pdf)
