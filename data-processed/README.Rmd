@@ -80,6 +80,10 @@ Since these admission data are "previous day" admissions,
 the truth data will have a date one day earlier so that `inc hosp` align with 
 the date the admissions occurred. 
 
+National hospitalization, i.e. US, data are constructed from these data by
+summing the data across all 50 states, DC, PR, and VI 
+(as the data do not include admissions for additional territories).
+
 #### HealthData.gov Daily Hospitalizations
 
 An alternative data source that should be consistent and should be updated 
