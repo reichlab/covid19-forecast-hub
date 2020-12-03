@@ -353,7 +353,7 @@ c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99)
 ```
 
 for all `target`s except "N wk ahead inc case" target.
-For the "N wk ahead inc case" target, teams should provide the following 6 
+For the "N wk ahead inc case" target, teams should provide the following 7 
 quantiles: 
 
 
