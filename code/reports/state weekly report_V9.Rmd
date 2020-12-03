@@ -653,7 +653,7 @@ PI50_bias<-paste0(PI50_cover$bias)
 ```
 For state-level case forecasts made over the last 6 weeks in `r state_name` for which observed data are now available, the 95% prediction intervals covered the truth `r PI95_covern`% of the time, and the 50% prediction intervals covered the truth `r PI50_covern`% of the time. The truth tended to be `r PI50_bias` than the prediction interval.
 
-The sortable and searchable table below shows the total number of reported COVID-19 cases at the US and state level for `r state_name` as of Saturday,`r format(last_5_saturdays[5], "%B %d, %Y")`  ("Total COVID-19 Cases"), as well as the weekly case count and rate of reported COVID-19 cases in the population (standardized per 100,000 population) over the last week(`r format(last_5_saturdays[4]+1, "%B %d, %Y")` to `r format(last_5_saturdays[5], "%B %d, %Y")`) and two weeks ahead (`r format(last_5_saturdays[5]+8, "%B %d, %Y")` to `r format(last_5_saturdays[5]+14, "%B %d, %Y")`).
+The sortable and searchable table below shows the total number of reported COVID-19 cases at the US and state level for `r state_name` as of Saturday, `r format(last_5_saturdays[5], "%B %d, %Y")`  ("Total COVID-19 Cases"), as well as the weekly case count and rate of reported COVID-19 cases in the population (standardized per 100,000 population) over the last week (`r format(last_5_saturdays[4]+1, "%B %d, %Y")` to `r format(last_5_saturdays[5], "%B %d, %Y")`) and two weeks ahead (`r format(last_5_saturdays[5]+8, "%B %d, %Y")` to `r format(last_5_saturdays[5]+14, "%B %d, %Y")`).
 
 
 When interpreting probability of an increase, it's important to note that the increase or decrease is relative to the location-specific recent observed incidence, which varies across locations.
