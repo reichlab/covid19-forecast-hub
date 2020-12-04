@@ -1,0 +1,12 @@
+team_name: Wadhwani AI Covid Data Science Team
+model_name: BayesOpt
+model_abbr: Wadhwani_AI-BayesOpt
+model_contributors: 
+website_url: https://github.com/WadhwaniAI/covid19-forecast-hub
+license: cc-by-4.0
+team_model_designation: primary
+methods: 
+team_funding: USAID
+data_inputs: JHU CSSE confirmed case counts and deaths
+methods_long: 
+s
