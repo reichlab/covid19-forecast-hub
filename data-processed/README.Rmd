@@ -64,11 +64,38 @@ On 1 Dec 2020, a final determination of has been made as detailed below.
 
 #### HealthData.gov Hospitalization Timeseries
 
-The truth data that hospitalization forecasts (`inc hosp`) will be evaluated against are 
+The truth data that hospitalization forecasts (`inc hosp` targets) will be evaluated against are 
 the [HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries). 
-These data are released weekly although, sometimes, updated more frequently. 
+These data are released weekly although, sometimes, are updated more frequently. 
 
-The hospitalization truth data will be the sum of the columns
+A supplemental data source with daily counts that should be updated 
+more frequently (typically daily) but does not include the full time-series is 
+[HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state).
+
+
+#### Resources for Accessing Hospitalization Data
+
+1. We are working with our collaborators at the [Delphi Group at CMU](https://delphi.cmu.edu/) to make these
+data available through their [Delphi Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/README.html).
+The current weekly timeseries of the hospitalization data as well as prior 
+versions of the data are available as the
+[`covid_hosp` endpoint of the API](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp.html).
+At some point, this endpoint will likely be added to the 
+[COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast.html), 
+but at this point it is only available through the regular Epidata API.
+
+2. The Forecast Hub has developed the [`covidData` R package](https://github.com/reichlab/covidData)
+which facilitates downloading and storing JHU data on cases and deaths and 
+HealthData.gov data on hospitalizations. This package is under active development
+and requires a bit of set-up with python and `make` but it does provide tools to
+access all ground truth data used by the Hub. A vignette showing some basic 
+functionality for the package is available in 
+[Rmarkdown](https://github.com/reichlab/covidData/blob/master/vignettes/covidData.Rmd) 
+([click here to view the HTML vignette](https://htmlpreview.github.io/?https://github.com/reichlab/covidData/blob/master/vignettes/covidData.html)).
+
+#### Data processing
+
+The hospitalization truth data is computed as the sum of the columns
 `previous_day_admission_adult_covid_confirmed` and 
 `previous_day_admission_pediatric_covid_confirmed` which
 provide the new daily admission for adults and kids, respectively.
@@ -76,31 +103,37 @@ provide the new daily admission for adults and kids, respectively.
 definitions and implementations of suspected cases vary widely, our public health
 collaborators have recommended using the above columns only.)
 
-Since these admission data are "previous day" admissions, 
-the truth data will have a date one day earlier so that `inc hosp` align with 
-the date the admissions occurred. 
+Since these admission data are listed as "previous day" admissions in the raw data, 
+the truth data shifts values in the `date` column one day earlier so that 
+`inc hosp` align with the date the admissions occurred. 
+
+As an example, the following data from HealthData.gov
+```
+   date    | previous_day_admission_adult_covid_confirmed | previous_day_admission_pediatric_covid_confirmed
+-----------|----------------------------------------------|-------------------------------------------------
+2020-10-30 |                  5                           |                       12                        
+```
+would turn into the following observed data for incident hospitalizations
+```
+   date    | incident_hospitalizations
+-----------|----------------------------
+2020-10-29 |          17               
+```
 
 National hospitalization, i.e. US, data are constructed from these data by
-summing the data across all 50 states, DC, PR, and VI 
-(as the data do not include admissions for additional territories).
+summing the data across all 50 states, Washington DC (DC), Puerto Rico(PR), 
+and the US Virgin Islands (VI). The HHS data do not include admissions for 
+additional territories.
 
-#### HealthData.gov Daily Hospitalizations
-
-An alternative data source that should be consistent and should be updated 
-more frequently are 
-[HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state).
 
 #### Additional resources
 
-Additional, resources that describe these data source are available.
+Here are a few additional resources that describe these hospitalization data:
 
 - [data dictionary for the dataset](https://healthdata.gov/covid-19-reported-patient-impact-and-hospital-capacity-state-data-dictionary)
 - the [official document describing the "guidance for hospital reporting"](https://www.hhs.gov/sites/default/files/covid-19-faqs-hospitals-hospital-laboratory-acute-care-facility-data-reporting.pdf)
-
-We are working with our collaborators at the [COVIDcast Epidata API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast.html) 
-to develop a fully versioned set of these data available through their system.
-More details will be forthcoming as we learn more about these data sources.
-
+- [US Hospital Reporting Dashboard](https://protect-public.hhs.gov/pages/covid19-module) 
+showing the percent of hospitals that report data into the hospitalization dataset, by state
 
 
 ## Data formatting

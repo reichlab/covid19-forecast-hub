@@ -21,6 +21,8 @@ We are grateful to the teams who have generated these forecasts. They have spent
 
 All source code that is specific to this project, along with our [d3-foresight](http://reichlab.io/d3-foresight/) visualization tool is available under an open-source [MIT license](./LICENSE). We note that this license does NOT cover model code from the various teams (maybe available from them under other licenses) or model forecast data (available under specified licenses as described above). 
 
+To cite the COVID-19 Forecast Hub, please use a [relevant research article or preprint produced by the group](https://covid19forecasthub.org/doc/research/) and a [permanent DOI for the GitHub repo](https://zenodo.org/badge/latestdoi/254453761) (the DOI is updated by Zenodo when we create a new "release" of this GitHub repository).
+
 ## What forecasts we are tracking, and for which locations
 Different groups are making forecasts at different times, and for different geographic scales. The specifications below were created by consulting with collaborators at CDC and looking at what models forecasting teams were already building. 
 
