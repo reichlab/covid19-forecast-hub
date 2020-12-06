@@ -1,7 +1,7 @@
 team_name: Wadhwani AI Covid Data Science Team
 model_name: BayesOpt
 model_abbr: Wadhwani_AI-BayesOpt
-model_contributors: 
+model_contributors: Sansiddh Jain <sansiddh@wadhwaniai.org>, Avtansh Tiwari <avtansh@wadhwaniai.org>, Ayush Deva <ayush@wadhwaniai.org>, Mihir Kulkarni <mihir@wadhwaniai.org>, Siddhant Shingi <siddhant@wadhwaniai.org>, Nayana Bannur <nayana.bannur@wadhwaniai.org>, Jerome White <jerome@wadhwaniai.org>, Srujana Merugu <srujana@wadhwaniai.org>, Alpan Raval <alpan@wadhwaniai.org> 
 website_url: https://github.com/WadhwaniAI/covid19-forecast-hub
 license: cc-by-4.0
 team_model_designation: primary
@@ -9,4 +9,3 @@ methods:
 team_funding: USAID
 data_inputs: JHU CSSE confirmed case counts and deaths
 methods_long: 
-s
