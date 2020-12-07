@@ -91,8 +91,8 @@ State](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospi
 
 2.  The Forecast Hub has developed the [`covidData` R
     package](https://github.com/reichlab/covidData) which facilitates
-    downloading and storing JHU data on cases and deaths and
-    HealthData.gov data on hospitalizations. This package is under
+    downloading and storing HealthData.gov data on hospitalizations 
+    (as well as JHU data on cases and deaths). This package is under
     active development and requires a bit of set-up with python and
     `make` but it does provide tools to access all ground truth data
     used by the Hub. A vignette showing some basic functionality for the
