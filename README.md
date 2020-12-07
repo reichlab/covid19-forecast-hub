@@ -145,6 +145,7 @@ repository are (with data reuse license):
  - [University of Texas-Austin](https://covid-19.tacc.utexas.edu/projections/) (BSD-3)
  - [Texas Tech University](https://github.com/fvbttu/squider) (CC-BY-4.0)
  - [University of Virginia](https://biocomplexity.virginia.edu/) (CC-BY-4.0)
+ - [Wadhwanaia](http://wadhwaniai.org/) (other)
  - [Walmart Labs](https://github.com/ivan-ji-walmart/covid19-forecast-hub) (CC-BY-4.0)
  - [Yu_Group-CLEP](https://covidseverity.com/) (CC-BY-4.0) 
  - [YYG](http://covid19-projections.com) (MIT) 
