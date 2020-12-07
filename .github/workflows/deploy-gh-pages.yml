@@ -11,7 +11,6 @@ jobs:
     strategy:
       matrix:
         node-version: [10.2]
-
     steps:
     - name: check disk space and free
       run: |
@@ -30,17 +29,17 @@ jobs:
       with:
         python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
-    - run: npm install
-    - run: pip3 install -r visualization/requirements.txt
-    - run: npm run build-viz-linux
+    - name: install Node.js requirements
+      run: npm install
+    - name: install python
+      run: pip3 install -r visualization/requirements.txt
+    # - name: build visualization
+    #   run: npm run build-viz-linux
+    - name: Deploy to GitHub Pages
+      if: success()
+      uses: crazy-max/ghaction-github-pages@v2
+      with:
+        target_branch: gh-pages
+        build_dir: visualization/vis-master/dist
       env:
-        GH_TOKEN: ${{secrets.GH_TOKEN}}
-    -
-        name: Deploy to GitHub Pages
-        if: success()
-        uses: crazy-max/ghaction-github-pages@v2
-        with:
-          target_branch: gh-pages
-          build_dir: visualization/vis-master/dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

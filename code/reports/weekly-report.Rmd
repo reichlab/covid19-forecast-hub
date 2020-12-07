@@ -61,7 +61,7 @@ models_this_week <- zoltr::do_zoltar_query(
   types = c("point"), 
   verbose = FALSE,
   models = c(),
-  is_forecast_query = TRUE) %>%
+  query_type = "forecasts") %>%
   pull(model) %>%
   unique()
 nmodels_this_week <- length(models_this_week)
@@ -112,8 +112,9 @@ cum_death_targets <- paste(1:4, "wk ahead cum death")
 
 # submit query
 dat <- zoltr:: do_zoltar_query(
-  zoltar_connection, project_url, TRUE,
+  zoltar_connection, project_url, 
   models = c("COVIDhub-ensemble"),
+  query_type = "forecasts",
   targets = c(inc_death_targets, cum_death_targets),
   timezeros = as.character(this_monday),
   types = c("point", "quantile"), 

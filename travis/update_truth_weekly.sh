@@ -14,8 +14,8 @@ python3 ./get-truth-data.py
 
 # update nytimes and usa facts
 cd ../
-echo "updating nytimes truth data..."
-python3 ./data-truth/nytimes/nytimes.py
+# echo "updating nytimes truth data..."
+# python3 ./data-truth/nytimes/nytimes.py
 
 echo "updating usafacts truth data..."
 python3 ./data-truth/usafacts/usafacts.py
