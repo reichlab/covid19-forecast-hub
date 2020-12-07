@@ -1,5 +1,6 @@
 # COVID-19 Forecast Hub 
-![Node.js CI](https://github.com/reichlab/covid19-forecast-hub/workflows/Node.js%20CI/badge.svg)
+![Node.js CI](https://github.com/reichlab/covid19-forecast-hub/workflows/Node.js%20CI/badge.svg) [![DOI](https://zenodo.org/badge/254453761.svg)](https://zenodo.org/badge/latestdoi/254453761)
+
 
 The goal of this repository is to create a standardized set of data on forecasts from teams making projections of cumulative and incident deaths and incident hospitalizations due to COVID-19 in the United States. This repository is the data source for [the official CDC COVID-19 Forecasting page](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html). This project to collect, standardize, visualize and synthesize forecast data has been led by the CDC-funded UMass-Amherst Influenza Forecasting Center of Excellence based at the [Reich Lab](https://reichlab.io/), with [contributions from many others](https://github.com/reichlab/covid19-forecast-hub/blob/master/README.md#the-covid-forecast-hub-team). 
 
@@ -19,6 +20,8 @@ This README provides an overview of the project. Additional specific links can b
 We are grateful to the teams who have generated these forecasts. They have spent a huge amount of time and effort in a short amount of time to operationalize these important real-time forecasts. The groups have graciously and courageously made their public data available under different terms and licenses. You will find the licenses (when provided) within the model-specific folders in the [data-processed](./data-processed/) directory. Please consult these licenses before using these data to ensure that you follow the terms under which these data were released.
 
 All source code that is specific to this project, along with our [d3-foresight](http://reichlab.io/d3-foresight/) visualization tool is available under an open-source [MIT license](./LICENSE). We note that this license does NOT cover model code from the various teams (maybe available from them under other licenses) or model forecast data (available under specified licenses as described above). 
+
+To cite the COVID-19 Forecast Hub, please use a [relevant research article or preprint produced by the group](https://covid19forecasthub.org/doc/research/) and a [permanent DOI for the GitHub repo](https://zenodo.org/badge/latestdoi/254453761) (the DOI is updated by Zenodo when we create a new "release" of this GitHub repository).
 
 ## What forecasts we are tracking, and for which locations
 Different groups are making forecasts at different times, and for different geographic scales. The specifications below were created by consulting with collaborators at CDC and looking at what models forecasting teams were already building. 
@@ -142,6 +145,7 @@ repository are (with data reuse license):
  - [University of Texas-Austin](https://covid-19.tacc.utexas.edu/projections/) (BSD-3)
  - [Texas Tech University](https://github.com/fvbttu/squider) (CC-BY-4.0)
  - [University of Virginia](https://biocomplexity.virginia.edu/) (CC-BY-4.0)
+ - [Wadhwanaia](http://wadhwaniai.org/) (other)
  - [Walmart Labs](https://github.com/ivan-ji-walmart/covid19-forecast-hub) (CC-BY-4.0)
  - [Yu_Group-CLEP](https://covidseverity.com/) (CC-BY-4.0) 
  - [YYG](http://covid19-projections.com) (MIT) 
