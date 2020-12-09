@@ -108,19 +108,22 @@ One or more twitter handles (without the @) separated by commas.
 
 ### data_inputs
 
-(previously `data_inputs_known` and `data_source_known`)
+A description of the data sources used to inform the model and the truth data
+targetted by model forecasts. 
+Common data sources are 
+[NYTimes](https://github.com/nytimes/covid-19-data), 
+[JHU CSSE](https://github.com/CSSEGISandData/COVID-19), 
+[COVIDTracking](https://covidtracking.com/data), 
+[Google mobility](https://www.google.com/covid19/mobility/), 
+[HHS hospitalization](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries), etc. 
 
-A description of the data sources used to inform the model, 
-e.g. "NYTimes death data", "JHU CSSE case and death data", mobility data, etc. 
+An example description could be 
+
+> cases forecasts use NYTimes data and target JHU CSSE truth data,
+> hospitalization forecasts use and target HHS hospitalization data
 
 
-### this_model_is_an_ensemble
 
-_**DEPRECATED**_: please remove from metadata file. 
-In the future, inclusion of this field will be an error.
-
-true/false indicating whether the model here is a combination of a set of other
-models
 
 
 ### citation
