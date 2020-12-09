@@ -582,3 +582,14 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 78,UCLA-SuEIR,missing required forecasts,"NA","NA","NA",ineligible
 78,UCSB-ACTS,missing required forecasts,"NA","NA","NA",ineligible
 78,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible
+US,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible
+US,CU-select,eligible,"NA","NA","NA",eligible
+US,Google_Harvard-CPF,missing required forecasts,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
+US,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
+US,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
+US,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
+US,Karlen-pypm,eligible,"NA","NA","NA",eligible
+US,LANL-GrowthRate,missing required forecasts,"NA","NA","NA",ineligible
+US,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
+US,UCSB-ACTS,missing required forecasts,"NA","NA","NA",ineligible
+US,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible
