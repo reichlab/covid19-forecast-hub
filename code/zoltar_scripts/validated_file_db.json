@@ -2070,5 +2070,12 @@
     "2020-12-07-Microsoft-DeepSTIA.csv": "9a5bd5c9cb6d4856007da55972ea679f",
     "2020-12-08-FAIR-NRAR.csv": "f9d08388f5d084680b5fede8545d3863",
     "2020-12-10-IHME-CurveFit.csv": "b5f8e49578d687032d6f518fd95a3095",
-    "2020-12-10-LANL-GrowthRate.csv": "394335d064ed49089e751564f96b37a6"
+    "2020-12-10-LANL-GrowthRate.csv": "394335d064ed49089e751564f96b37a6",
+    "2020-12-10-CU-nochange.csv": "5222735aad0a37089c1cf18a6ac88152",
+    "2020-12-10-CU-scenario_low.csv": "a701194814d60f2ba6c87bc78b820d26",
+    "2020-12-10-CU-scenario_high.csv": "98104e74bc1347bc6e00f0e80c5f0dad",
+    "2020-12-10-CU-select.csv": "a701194814d60f2ba6c87bc78b820d26",
+    "2020-12-10-CU-scenario_mid.csv": "0fef3d791c0456fea09efe31ee527b72",
+    "2020-12-10-FAIR-NRAR.csv": "6366f3f9e27cf72b78e3ac94ce8c4f1f",
+    "2020-12-11-FAIR-NRAR.csv": "9534bb69c41e53bc42927126997621d4"
 }

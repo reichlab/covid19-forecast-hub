@@ -1915,3 +1915,10 @@ file_path,validation_date
 ./data-processed/FAIR-NRAR/2020-12-08-FAIR-NRAR.csv,2020-12-10 00:24:20.648622
 ./data-processed/IHME-CurveFit/2020-12-10-IHME-CurveFit.csv,2020-12-11 12:29:12.333440
 ./data-processed/LANL-GrowthRate/2020-12-10-LANL-GrowthRate.csv,2020-12-11 12:29:30.030384
+./data-processed/CU-nochange/2020-12-10-CU-nochange.csv,2020-12-13 00:25:29.998294
+./data-processed/CU-scenario_low/2020-12-10-CU-scenario_low.csv,2020-12-13 00:25:44.009754
+./data-processed/CU-scenario_high/2020-12-10-CU-scenario_high.csv,2020-12-13 00:25:57.942066
+./data-processed/CU-select/2020-12-10-CU-select.csv,2020-12-13 00:26:12.471794
+./data-processed/CU-scenario_mid/2020-12-10-CU-scenario_mid.csv,2020-12-13 00:26:26.380947
+./data-processed/FAIR-NRAR/2020-12-10-FAIR-NRAR.csv,2020-12-13 00:26:27.229132
+./data-processed/FAIR-NRAR/2020-12-11-FAIR-NRAR.csv,2020-12-13 00:26:27.720964
