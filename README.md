@@ -21,6 +21,8 @@ We are grateful to the teams who have generated these forecasts. They have spent
 
 All source code that is specific to this project, along with our [d3-foresight](http://reichlab.io/d3-foresight/) visualization tool is available under an open-source [MIT license](./LICENSE). We note that this license does NOT cover model code from the various teams (maybe available from them under other licenses) or model forecast data (available under specified licenses as described above). 
 
+To cite the COVID-19 Forecast Hub, please use a [relevant research article or preprint produced by the group](https://covid19forecasthub.org/doc/research/) and a [permanent DOI for the GitHub repo](https://zenodo.org/badge/latestdoi/254453761) (the DOI is updated by Zenodo when we create a new "release" of this GitHub repository).
+
 ## What forecasts we are tracking, and for which locations
 Different groups are making forecasts at different times, and for different geographic scales. The specifications below were created by consulting with collaborators at CDC and looking at what models forecasting teams were already building. 
 
@@ -95,6 +97,7 @@ repository are (with data reuse license):
  - [Georgia Institute of Technology](https://www.cc.gatech.edu/~badityap/covid.html) (CC-BY-4.0)
  - [Georgia Institute of Technology - Center for Health and Humanitarian Systems](https://github.com/pkeskinocak/Center-for-Health-and-Humanitarian-Systems/tree/master/COVID-19) (CC-BY-4.0)
  - [Google Cloud AI](https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-is-releasing-the-covid-19-public-forecasts) (other)
+ - [IEM](https://iem-modeling.com/) (CC-BY-4.0)
  - [IHME](https://covid19.healthdata.org/united-states-of-america) (CC-AT-NC-4.0)
  - [Institute of Business Forecasting](https://ibf.org) (MIT)
  - [Iowa State University](http://www.covid19dashboard.us/) (CC-BY-4.0)
@@ -112,7 +115,7 @@ repository are (with data reuse license):
  - [Massachusetts Institute of Technology - Covid Analytics](https://www.covidanalytics.io/) (Apache 2.0)
  - [Massachusetts Institute of Technology - Covid Alliance](http://infectiontrajectory.covidalliance.com/) (CC-BY-4.0)
  - [Massachusetts Institute of Technology - Critical Data](https://github.com/sakethsundar/covid-forecaster) (MIT)
- - [Microsoft Research Asia](https://covid.msra.cn) (CC-BY-4.0)
+ - [Microsoft](https://www.microsoft.com/en-us/ai/ai-for-health) (CC-BY-4.0)
  - [Notre Dame - FRED](https://github.com/confunguido/covid19_ND_forecasting) (CC-BY-4.0)
  - [Notre Dame - mobility](https://github.com/TAlexPerkins/covid19_NDmobility_forecasting) (CC-BY-4.0)
  - [Oliver Wyman](https://pandemicnavigator.oliverwyman.com/) (see [license](./data-processed/OliverWyman-Navigator/LICENSE.txt))
@@ -143,6 +146,7 @@ repository are (with data reuse license):
  - [University of Texas-Austin](https://covid-19.tacc.utexas.edu/projections/) (BSD-3)
  - [Texas Tech University](https://github.com/fvbttu/squider) (CC-BY-4.0)
  - [University of Virginia](https://biocomplexity.virginia.edu/) (CC-BY-4.0)
+ - [Wadhwanaia](http://wadhwaniai.org/) (other)
  - [Walmart Labs](https://github.com/ivan-ji-walmart/covid19-forecast-hub) (CC-BY-4.0)
  - [Yu_Group-CLEP](https://covidseverity.com/) (CC-BY-4.0) 
  - [YYG](http://covid19-projections.com) (MIT) 
