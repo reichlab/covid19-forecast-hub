@@ -102,9 +102,13 @@ export function parsePredictions({ title, predictions, index, aheadIndex }): str
                ${p.id}
                <span class='bold'>
                  ${parseInt(p.query(index)).toLocaleString()}
-               </span> <br>
+               </span> `
+    if(p.cid != -1) {
+      html+=`<br>
                ${parseInt(p.modelData[index - aheadIndex - 1].series[aheadIndex].low[p.cid]).toLocaleString()} - ${parseInt(p.modelData[index - aheadIndex -1].series[aheadIndex].high[p.cid]).toLocaleString()}
-             </div>`
+             `
+    }
+    html+=`</div>`
   })
 
   // Notify in case of overflow
