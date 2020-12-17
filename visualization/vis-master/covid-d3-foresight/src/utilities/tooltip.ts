@@ -103,7 +103,7 @@ export function parsePredictions({ title, predictions, index, aheadIndex }): str
                <span class='bold'>
                  ${parseInt(p.query(index)).toLocaleString()}
                </span> `
-    if(p.cid != -1) {
+    if(p.cid != -1 && p.id != 'Actual') {
       html+=`<br>
                ${parseInt(p.modelData[index - aheadIndex - 1].series[aheadIndex].low[p.cid]).toLocaleString()} - ${parseInt(p.modelData[index - aheadIndex -1].series[aheadIndex].high[p.cid]).toLocaleString()}
              `
