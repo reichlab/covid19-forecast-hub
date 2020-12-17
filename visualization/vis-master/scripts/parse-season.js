@@ -224,8 +224,8 @@ function parseBinData(csv, stateId) {
 async function parseCsv(csv, stateId) {
   return {
     pointData: parsePointData(csv, stateId),
-    binData: parseBinData(csv, stateId),
-    scoreData: (await getCsvScore(csv))[stateId]
+    binData: parseBinData(csv, stateId)
+    // scoreData: (await getCsvScore(csv))[stateId]
   }
 }
 
@@ -239,7 +239,6 @@ async function parseModelDir(modelPath, stateId) {
 
   let pointPredictions = []
   let binPredictions = []
-  let scores = []
 
   let epiweeks_next_year = fct.utils.epiweek.seasonEpiweeks(SEASON_ID+1)
   let epiweeks_next_year_first_16_ew = epiweeks_next_year.slice(0,16)
@@ -259,7 +258,6 @@ async function parseModelDir(modelPath, stateId) {
 
       pointPredictions.push(pointData)
       binPredictions.push(binData)
-      scores.push(scoreData)
     }
   }
 
@@ -272,10 +270,6 @@ async function parseModelDir(modelPath, stateId) {
     distsData: {
       id: modelId,
       predictions: binPredictions
-    },
-    scoresData: {
-      id: modelId,
-      scores: utils.aggregateScores(scores)
     }
   }
 }
@@ -292,30 +286,30 @@ async function generateFiles(seasonData) {
   }
 
   // Output to be written in file scores-{season}.json
-  let scoresOut = {
-    seasonId: TARGET,
-    regions: []
-  }
+  // let scoresOut = {
+  //   seasonId: TARGET,
+  //   regions: []
+  // }
 
   // Output to be written in file distributions/season-{season}-{state}.json
   let distsOut = []
 
-  let statePointData, stateDistsData, stateScoresData
+  let statePointData, stateDistsData//, stateScoresData
   for (let stateId of fct.meta.stateIds) {
     statePointData = []
     stateDistsData = []
-    stateScoresData = []
+    // stateScoresData = []
 
     for (let model of MODELS_DIR) {
       let modelPath = path.join(DATA_DIR, TARGET, model)
       let {
         pointData,
-        distsData,
-        scoresData
+        distsData
+        // scoresData
       } = await parseModelDir(modelPath, stateId)
       statePointData.push(pointData)
       stateDistsData.push(distsData)
-      stateScoresData.push(scoresData)
+      // stateScoresData.push(scoresData)
     }
     seasonOut.regions.push({
       id: stateId,
@@ -330,15 +324,15 @@ async function generateFiles(seasonData) {
       models: stateDistsData
     })
 
-    scoresOut.regions.push({
-      id: stateId,
-      models: stateScoresData
-    })
+    // scoresOut.regions.push({
+    //   id: stateId,
+    //   models: stateScoresData
+    // })
   }
 
   await Promise.all([
     writeSeasonFile(seasonOut),
-    writeScoresFile(scoresOut),
+    // writeScoresFile(scoresOut),
     ...distsOut.map(d => writeDistsFile(d, d.stateId))
   ])
   console.log(` Data files for season ${TARGET} written.`)
