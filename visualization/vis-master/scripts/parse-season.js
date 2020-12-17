@@ -70,10 +70,12 @@ async function writeDistsFile(data, stateId) {
 function parseStateActual(seasonData, stateId) {
   let stateSubset = seasonData[stateId]
   let epiweeks = fct.utils.epiweek.seasonEpiweeks(SEASON_ID)
+  // Remove the first 5 ew of 2019-2020 season because there is no data
+  epiweeks = epiweeks.slice(5)
   // Temporary: expand to next 4 weeks while working on the main fix
   let epiweeks_next_year = fct.utils.epiweek.seasonEpiweeks(SEASON_ID+1)
-  epiweeks_next_year_first_4_ew = epiweeks_next_year.slice(0, 4)
-  epiweeks = epiweeks.concat(epiweeks_next_year_first_4_ew)
+  epiweeks_next_year_first_16_ew = epiweeks_next_year.slice(0, 16)
+  epiweeks = epiweeks.concat(epiweeks_next_year_first_16_ew)
   return epiweeks.map(ew => {
     let ewData = stateSubset.find(({
       epiweek
@@ -240,8 +242,8 @@ async function parseModelDir(modelPath, stateId) {
   let scores = []
 
   let epiweeks_next_year = fct.utils.epiweek.seasonEpiweeks(SEASON_ID+1)
-  let epiweeks_next_year_first_4_ew = epiweeks_next_year.slice(0,4)
-  let epiweeks = fct.utils.epiweek.seasonEpiweeks(SEASON_ID).concat(epiweeks_next_year_first_4_ew)
+  let epiweeks_next_year_first_16_ew = epiweeks_next_year.slice(0,16)
+  let epiweeks = fct.utils.epiweek.seasonEpiweeks(SEASON_ID).slice(5).concat(epiweeks_next_year_first_16_ew)
   for (let epiweek of epiweeks) {
 
     if (availableEpiweeks.indexOf(epiweek) === -1) {
