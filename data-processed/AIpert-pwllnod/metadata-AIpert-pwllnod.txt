@@ -3,7 +3,7 @@ model_name: Piecewise Log Linear of Death
 model_abbr: AIpert-pwllnod
 model_contributors: Quoc Tran (WalmartLabs), Huong Huynh (Virtual Power System), Lam Ho (Dalhousie University-Dept. of Maths and Stats)
 website_url: https://covid19.aipert.org, https://github.com/QuocTran/COVID-19
-license: MIT
+license: mit
 team_model_designation: primary
 methods: Piecewise Log Linear of Death using policy change dates
 data_inputs: JHU
