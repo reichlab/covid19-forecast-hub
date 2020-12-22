@@ -22,6 +22,13 @@ output:
   width: 100%;
   margin-top: 20px;
 }
+
+#TOC {
+  background: url("https://github.com/reichlab/covid19-forecast-hub-web/raw/master/images/forecast-hub-logo_DARKBLUE-20px-padding.png");
+  background-size: contain;
+  padding-top: 80px !important;
+  background-repeat: no-repeat;
+}
 </style>
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
@@ -50,7 +57,7 @@ locs <- hub_locations %>%
 ```{r setup-location}
 
 # Specify location
-
+# 
 # # Massachusetts
 # state<-"25"
 # state_county<-grep("^25",locs$fips,value=TRUE)
@@ -58,15 +65,15 @@ locs <- hub_locations %>%
 # state_county=state_county[state_county!=25007 & state_county!=25019 ]
 # exclude<-paste0("Please note that Dukes and Nantucket are not included in county level data.")
 
-#Iowa
-state<-"19"
-state_county<-grep("^19",locs$fips,value=TRUE)
-exclude<-paste0("")
-# 
-# #PA
-# state<-"42"
-# state_county<-grep("^42",locs$fips,value=TRUE)
+# #Iowa
+# state<-"19"
+# state_county<-grep("^19",locs$fips,value=TRUE)
 # exclude<-paste0("")
+# 
+#PA
+state<-"42"
+state_county<-grep("^42",locs$fips,value=TRUE)
+exclude<-paste0("")
 
 state_name <- locs %>% 
   filter(fips %in% state)  %>%

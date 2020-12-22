@@ -25,6 +25,14 @@ output:
   width: 100%;
   margin-top: 20px;
 }
+
+#TOC {
+  background: url("https://github.com/reichlab/covid19-forecast-hub-web/raw/master/images/forecast-hub-logo_DARKBLUE-20px-padding.png");
+  background-size: contain;
+  padding-top: 80px !important;
+  background-repeat: no-repeat;
+}
+</style>
 </style>
 
 ```{r setup, include=FALSE}
