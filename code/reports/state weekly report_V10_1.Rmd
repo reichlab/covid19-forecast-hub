@@ -11,17 +11,8 @@ output:
 
 <!-- Code for adding logo at the top -->
 
-<script>
-  $(document).ready(function() {
-    $('#TOC').parent().prepend('<div id=\"nav_logo\"><a href=\"https://covid19forecasthub.org/\" target=\"_blank\"><img src=\"https://github.com/reichlab/covid19-forecast-hub-web/raw/master/images/forecast-hub-logo_DARKBLUE.png\"></a></div>');
-  });
-</script>
 
 <style>
-#nav_logo {
-  width: 100%;
-  margin-top: 20px;
-}
 
 #TOC {
   background: url("https://github.com/reichlab/covid19-forecast-hub-web/raw/master/images/forecast-hub-logo_DARKBLUE-20px-padding.png");
@@ -99,7 +90,7 @@ county<-state_county[-1]
 
 ---
 title: `r title_var`
-author: "Nicholas G Reich, Estee Y Cramer, Martha W Zorn, Evan L Ray, Serena Y Wang"
+author: "Nicholas G Reich, Estee Y Cramer, Martha W Zorn, Evan L Ray, Serena Y Wang <br><br>https://covid19forecasthub.org/"
 date: "`r Sys.Date()`"
 
 ---
