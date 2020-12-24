@@ -470,7 +470,7 @@
     "2020-04-26-CU-nochange.csv": "02fa3c09dbd72bfdb163e186931c9fbb",
     "2020-04-16-CU-nochange.csv": "e3e2900497d429cf14e69091ddbabb5b",
     "2020-04-23-CU-select.csv": "6ae0adc5480a5f3fb56a6aa7f34e3152",
-    "2020-06-21-CU-select.csv": "f43573257b1a3ec197fbbb96eee4e446",
+    "2020-06-21-CU-select.csv": "54f45df0ac55e99605c01ce6a6b90ff2",
     "2020-04-16-CU-select.csv": "467badde76f3c72c96774ff3b9094771",
     "2020-04-12-CU-select.csv": "5c00460397ab671ec1d736ac719a237a",
     "2020-04-26-CU-select.csv": "b192d44355c9060d21690730f0c9fe7b",
@@ -579,7 +579,7 @@
     "2020-06-28-CU-scenario_mid.csv": "b79d66a268d67873d49f347f7c50900b",
     "2020-06-28-UMass-MechBayes.csv": "a39101bb2391a09975d52a110a34543e",
     "2020-06-29-LANL-GrowthRate.csv": "6cff8e90a19e958be089d3c3caa9db88",
-    "2020-06-28-CU-select.csv": "de19fe502fad10fd4839766f1025badc",
+    "2020-06-28-CU-select.csv": "d6532062095ea143f67241e0a95f581d",
     "2020-06-29-MOBS_NEU-GLEAM_COVID.csv": "c3948cfea3503a97134ad43d3988ca49",
     "2020-06-29-SWC-TerminusCM.csv": "2b2f124ea7d635d58ca9525060830c3a",
     "2020-06-29-IHME-CurveFit.csv": "62a3a0fcd889c907e091bf8a793e02d2",
@@ -2211,5 +2211,6 @@
     "2020-12-21-UVA-Ensemble.csv": "f00ab0fe18d3114e90cc6e31d8716f29",
     "2020-12-21-JHUAPL-SLPHospEns.csv": "75df156e2bb3c1b3046c5151525dcbed",
     "2020-12-21-FAIR-NRAR.csv": "0f1432f4a5660b3dc597fbd1279418ea",
-    "2020-12-21-AIpert-pwllnod.csv": "4515054399e8171c2ad1d66bf9fa7c40"
+    "2020-12-21-AIpert-pwllnod.csv": "4515054399e8171c2ad1d66bf9fa7c40",
+    "2020-12-22-FAIR-NRAR.csv": "36f6752bde777885260a1caf6089ec72"
 }
