@@ -2060,3 +2060,8 @@ file_path,validation_date
 ./data-processed/LANL-GrowthRate/2020-12-24-LANL-GrowthRate.csv,2020-12-25 00:33:12.468271
 ./data-processed/FAIR-NRAR/2020-12-23-FAIR-NRAR.csv,2020-12-26 00:30:19.974178
 ./data-processed/FAIR-NRAR/2020-12-24-FAIR-NRAR.csv,2020-12-26 00:30:31.535811
+./data-processed/CU-nochange/2020-12-24-CU-nochange.csv,2020-12-26 06:18:16.162848
+./data-processed/CU-scenario_low/2020-12-24-CU-scenario_low.csv,2020-12-26 06:18:29.743533
+./data-processed/CU-select/2020-12-24-CU-select.csv,2020-12-26 06:18:42.995860
+./data-processed/CU-scenario_mid/2020-12-24-CU-scenario_mid.csv,2020-12-26 06:18:56.299642
+./data-processed/CU-scenario_high/2020-12-24-CU-scenario_high.csv,2020-12-26 06:19:09.522812
