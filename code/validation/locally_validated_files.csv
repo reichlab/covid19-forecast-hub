@@ -2115,3 +2115,6 @@ file_path,validation_date
 ./data-processed/Microsoft-DeepSTIA/2020-12-28-Microsoft-DeepSTIA.csv,2020-12-29 06:26:23.853099
 ./data-processed/JCB-PRM/2020-12-28-JCB-PRM.csv,2020-12-29 06:26:26.478355
 ./data-processed/JHU_CSSE-DECOM/2020-12-27-JHU_CSSE-DECOM.csv,2020-12-29 06:26:27.954656
+./data-processed/AIpert-pwllnod/2020-12-28-AIpert-pwllnod.csv,2020-12-29 17:23:07.979481
+./data-processed/Geneva-DetGrowth/2020-12-27-Geneva-DetGrowth.csv,2020-12-29 17:23:08.106647
+./data-processed/COVIDhub-ensemble/2020-12-28-COVIDhub-ensemble.csv,2020-12-29 17:23:25.219670
