@@ -1,9 +1,9 @@
 ---
-title: "COVID-19 Forecast Hub weekly report"
-author: "Nicholas G Reich, Estee Y Cramer, Martha W Zorn"
+title: "COVID-19 Forecast Hub weekly report" 
+author: "Nicholas G Reich, Estee Y Cramer, Martha W Zorn <br><br>https://covid19forecasthub.org/"
 date: "report generated `r Sys.Date()`"
 output:
-  html_document:
+  html_document: 
     toc: true
     toc_float:
       collapsed: false
@@ -14,17 +14,15 @@ output:
 
 <!-- Code for adding logo at the top -->
 
-<script>
-  $(document).ready(function() {
-    $('#TOC').parent().prepend('<div id=\"nav_logo\"><a href=\"https://covid19forecasthub.org/\" target=\"_blank\"><img src=\"https://github.com/reichlab/covid19-forecast-hub-web/raw/master/images/forecast-hub-logo_DARKBLUE.png\"></a></div>');
-  });
-</script>
-
 <style>
-#nav_logo {
-  width: 100%;
-  margin-top: 20px;
+
+#TOC {
+  background: url("https://github.com/reichlab/covid19-forecast-hub-web/raw/master/images/forecast-hub-logo_DARKBLUE-20px-padding.png");
+  background-size: contain;
+  padding-top: 80px !important;
+  background-repeat: no-repeat;
 }
+
 </style>
 
 ```{r setup, include=FALSE}
