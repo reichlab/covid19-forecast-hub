@@ -211,7 +211,18 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
             if db.get(forecast, None) != checksum:
                 print(forecast, db.get(forecast, None))
                 if time_zero_date in existing_time_zeros:
-                    over_write = True
+                    
+                    # Check if the already existing forecast has the same issue date
+                    
+                    from datetime import date
+                    local_issue_date = date.today().strftime("%Y-%m-%d")
+
+                    uploaded_forecast = [forecast for forecast in model.forecasts if forecast.timezero.timezero_date == time_zero_date][0]
+                    uploaded_issue_date = uploaded_forecast.issue_date
+
+                    if local_issue_date == uploaded_issue_date:
+                        # Overwrite the existing forecast if has the same issue date
+                        over_write = True
             else:
                 continue
 
