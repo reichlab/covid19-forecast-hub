@@ -223,6 +223,10 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
                     if local_issue_date == uploaded_issue_date:
                         # Overwrite the existing forecast if has the same issue date
                         over_write = True
+                        logger.info(f"Overwrite existing forecast={forecast} with newer version because the new issue_date={local_issue_date} is the same as the uploaded file issue_date={uploaded_issue_date}")
+                    else:
+                        logger.info(f"Add newer version to forecast={forecast} because the new issue_date={local_issue_date} is different from uploaded file issue_date={uploaded_issue_date}")
+
             else:
                 continue
 
