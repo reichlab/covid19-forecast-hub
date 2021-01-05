@@ -2128,7 +2128,7 @@
     "2020-12-13-JHU_UNC_GAS-StatMechPool.csv": "d05cf0ded5856b9bf7a9f1fd33284d11",
     "2020-12-13-Covid19Sim-Simulator.csv": "e62b418807fd20589a124120072484f7",
     "2020-12-14-Microsoft-DeepSTIA.csv": "0c465d726f8ca4154dddf622316ec47a",
-    "2020-12-14-epiforecasts-ensemble1.csv": "4acc8a8a27b20ff6b6f08a956cec078e",
+    "2020-12-14-epiforecasts-ensemble1.csv": "3a2e557be573a8f365fe9b9da039446d",
     "2020-12-14-UVA-Ensemble.csv": "de34c4b16fb490d37dd30362e3b64103",
     "2020-12-13-JHU_IDD-CovidSP.csv": "80eb39414618e7def3cd4a0126c3ee9d",
     "2020-12-13-IowaStateLW-STEM.csv": "4c7c6ef55a59b0534ef127efe9bcf2dd",
@@ -2332,5 +2332,10 @@
     "2021-01-03-CU-scenario_high.csv": "159a693b3284c9caadbd39613b758940",
     "2021-01-04-UMich-RidgeTfReg.csv": "fd8e4e048b092b62e93de04ab766eb3d",
     "2021-01-04-Microsoft-DeepSTIA.csv": "d012631d2c5a648ec37253c3544cae28",
-    "2021-01-03-WalmartLabsML-LogForecasting.csv": "70c2cbbc2da22e5df7be34f2ecac4073"
+    "2021-01-03-WalmartLabsML-LogForecasting.csv": "70c2cbbc2da22e5df7be34f2ecac4073",
+    "2021-01-04-AIpert-pwllnod.csv": "abe855086165ccc79cf712702f3c5cf3",
+    "2021-01-04-epiforecasts-ensemble1.csv": "1b2ee5299b5e97016867a4028a6212ba",
+    "2020-12-21-epiforecasts-ensemble1.csv": "c4aa7f72e4c229999a7bdf046c452769",
+    "2020-12-28-epiforecasts-ensemble1.csv": "be3991a11b6b21162acb307cb62eddb1",
+    "2021-01-04-COVIDhub-ensemble.csv": "a50425db6008069c0f8b998e7a82a8c3"
 }
