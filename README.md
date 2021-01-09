@@ -144,6 +144,7 @@ repository are (with data reuse license):
  - [University of Massachusetts - Mechanistic Bayesian model](https://github.com/dsheldon/covid) (MIT)
  - [University of Michigan](https://gitlab.com/sabcorse/covid-19-collaboration) (CC-BY-4.0)
  - [University of Southern California Data Science Lab](https://scc-usc.github.io/ReCOVER-COVID-19) (MIT)
+ - [SUNY Upstate and Syracuse University](https://github.com/ylzhang29/UpstateSU-GRU-Covid) (MIT)
  - [University of Texas-Austin](https://covid-19.tacc.utexas.edu/projections/) (BSD-3)
  - [Texas Tech University](https://github.com/fvbttu/squider) (CC-BY-4.0)
  - [University of Virginia](https://biocomplexity.virginia.edu/) (CC-BY-4.0)
