@@ -1,6 +1,6 @@
 team_name: Signature Science FOCUS
 model_name: Time series model for incident cases, deaths, and cumulative deaths
-model_abbr: ts
+model_abbr: SigSci-TS
 model_contributors: V.P. Nagraj (pnagraj@signaturescience.com), Stephen D. Turner (sturner@signaturescience.com), Chris Hulme-Lowe (chulmelowe@signaturescience.com)
 website_url: https://github.com/signaturescience
 license: cc-by-4.0
