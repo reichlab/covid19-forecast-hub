@@ -1,9 +1,11 @@
 # How to use this file
 
-Add another entry in the list, commit, and push to trigger a local visualization build on the VM.
+1. Add another entry in the list below
+2. Commit with a message including the string "build visualization"
+3. Push to remote on GitHub
 
 # Visualization trigger
 
-Build logs:
+Logs:
 
-1. Built, 2020-01-12 17:46
+1. Test, 2020-01-12 17:46
