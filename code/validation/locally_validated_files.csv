@@ -2241,3 +2241,7 @@ file_path,validation_date
 ./data-processed/UCSB-ACTS/2021-01-10-UCSB-ACTS.csv,2021-01-12 06:35:41.678308
 ./data-processed/Microsoft-DeepSTIA/2021-01-11-Microsoft-DeepSTIA.csv,2021-01-12 06:35:45.024962
 ./data-processed/JHU_CSSE-DECOM/2021-01-10-JHU_CSSE-DECOM.csv,2021-01-12 06:35:46.462036
+./data-processed/JHU_IDD-CovidSP/2021-01-10-JHU_IDD-CovidSP.csv,2021-01-12 16:49:03.886615
+./data-processed/AIpert-pwllnod/2021-01-11-AIpert-pwllnod.csv,2021-01-12 16:49:04.337081
+./data-processed/UpstateSU-GRU/2021-01-11-UpstateSU-GRU.csv,2021-01-12 16:49:11.217161
+./data-processed/COVIDhub-ensemble/2021-01-11-COVIDhub-ensemble.csv,2021-01-12 16:49:27.113830
