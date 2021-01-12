@@ -49,12 +49,12 @@ locs <- hub_locations %>%
 
 # Specify location
 # 
-# Massachusetts
-state<-"25"
-state_county<-grep("^25",locs$fips,value=TRUE)
-#remove DUKES and NANTUCKET for MA  (NEED TO GENERALIZE THIS FOR ALL STATES)
-state_county=state_county[state_county!=25007 & state_county!=25019 ]
-exclude<-paste0("Please note that Dukes and Nantucket are not included in county level data.")
+# # Massachusetts
+# state<-"25"
+# state_county<-grep("^25",locs$fips,value=TRUE)
+# #remove DUKES and NANTUCKET for MA  (NEED TO GENERALIZE THIS FOR ALL STATES)
+# state_county=state_county[state_county!=25007 & state_county!=25019 ]
+# exclude<-paste0("Please note that Dukes and Nantucket are not included in county level data.")
 
 # # #Iowa
 # state<-"19"
@@ -62,9 +62,9 @@ exclude<-paste0("Please note that Dukes and Nantucket are not included in county
 # exclude<-paste0("")
 # 
 #PA
-# state<-"42"
-# state_county<-grep("^42",locs$fips,value=TRUE)
-# exclude<-paste0("")
+state<-"42"
+state_county<-grep("^42",locs$fips,value=TRUE)
+exclude<-paste0("")
 
 state_name <- locs %>% 
   filter(fips %in% state)  %>%

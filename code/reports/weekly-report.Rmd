@@ -274,8 +274,8 @@ cum_death_start  <- load_truth(
                     mutate(model = "observed data (JHU)") %>%     #maybe also deleting this line
                     left_join(locs, by=c("fips")) %>%
                     filter(target_end_date == last_5_saturdays[5]) %>%
-                    select(target_end_date, location_name,fips, value) %>%
-                    rename(cum_deaths_at_forecast_start = value,date =target_end_date,location=fips) 
+                    select(target_end_date, location_name.x,fips, value) %>%
+                    rename(cum_deaths_at_forecast_start = value,date =target_end_date,location=fips,location_name=location_name.x) 
 
 
 ## get recent observed inc deaths
@@ -287,7 +287,7 @@ recent_inc_death_totals <- load_truth(
     last_4wk = target_end_date > last_5_saturdays[1] & target_end_date <= last_5_saturdays[5]) %>%    
                       filter(target_end_date >= last_5_saturdays[2]) %>%
                     left_join(locs, by=c("fips")) %>%
-   rename(location=fips) %>%
+   rename(location=fips,location_name=location_name.x) %>%
   select(target_end_date, location,location_name, value, last_2wk, last_4wk) %>%
   group_by(location,location_name) %>%
   summarize(last_2wk_deaths = sum(value*last_2wk),
