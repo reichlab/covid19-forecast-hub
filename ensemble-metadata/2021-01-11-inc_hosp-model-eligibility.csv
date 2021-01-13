@@ -3,8 +3,8 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 01,CU-select,eligible,"NA","NA","NA",eligible
 01,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 01,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
-01,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
-01,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
+01,JHU_IDD-CovidSP,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
+01,JHUAPL-Bucky,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 01,Karlen-pypm,eligible,"NA","NA","NA",eligible
 01,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
 01,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible
@@ -27,7 +27,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 04,CU-select,eligible,"NA","NA","NA",eligible
 04,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible
 04,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
-04,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
+04,JHU_IDD-CovidSP,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 04,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
 04,Karlen-pypm,eligible,"NA","NA","NA",eligible
 04,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
@@ -51,7 +51,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 06,CU-select,eligible,"NA","NA","NA",eligible
 06,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 06,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
-06,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
+06,JHU_IDD-CovidSP,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 06,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
 06,Karlen-pypm,eligible,"NA","NA","NA",eligible
 06,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
@@ -68,7 +68,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 08,Karlen-pypm,eligible,"NA","NA","NA",eligible
 08,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
 08,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible
-08,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
+08,UCLA-SuEIR,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 08,UCSB-ACTS,eligible,"NA","NA","NA",eligible
 08,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible
 09,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible
@@ -87,12 +87,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 10,CU-select,eligible,"NA","NA","NA",eligible
 10,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible
 10,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
-10,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
+10,JHU_IDD-CovidSP,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 10,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
 10,Karlen-pypm,eligible,"NA","NA","NA",eligible
 10,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
 10,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible
-10,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
+10,UCLA-SuEIR,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 10,UCSB-ACTS,eligible,"NA","NA","NA",eligible
 10,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible
 11,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible
@@ -123,8 +123,8 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 13,CU-select,eligible,"NA","NA","NA",eligible
 13,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 13,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
-13,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
-13,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
+13,JHU_IDD-CovidSP,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
+13,JHUAPL-Bucky,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 13,Karlen-pypm,eligible,"NA","NA","NA",eligible
 13,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
 13,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible
@@ -159,7 +159,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 17,CU-select,eligible,"NA","NA","NA",eligible
 17,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 17,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
-17,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
+17,JHU_IDD-CovidSP,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 17,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
 17,Karlen-pypm,eligible,"NA","NA","NA",eligible
 17,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
@@ -181,7 +181,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 18,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible
 19,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible
 19,CU-select,eligible,"NA","NA","NA",eligible
-19,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible
+19,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 19,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
 19,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
 19,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
@@ -193,7 +193,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 19,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible
 20,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible
 20,CU-select,eligible,"NA","NA","NA",eligible
-20,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible
+20,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 20,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
 20,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
 20,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
@@ -207,7 +207,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 21,CU-select,eligible,"NA","NA","NA",eligible
 21,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 21,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
-21,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
+21,JHU_IDD-CovidSP,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 21,JHUAPL-Bucky,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 21,Karlen-pypm,eligible,"NA","NA","NA",eligible
 21,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
@@ -217,14 +217,14 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 21,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible
 22,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible
 22,CU-select,eligible,"NA","NA","NA",eligible
-22,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible
+22,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 22,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
-22,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
+22,JHU_IDD-CovidSP,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 22,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
 22,Karlen-pypm,eligible,"NA","NA","NA",eligible
 22,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
 22,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible
-22,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
+22,UCLA-SuEIR,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 22,UCSB-ACTS,eligible,"NA","NA","NA",eligible
 22,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible
 23,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible
@@ -280,7 +280,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 27,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 27,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
 27,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
-27,JHUAPL-Bucky,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
+27,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
 27,Karlen-pypm,eligible,"NA","NA","NA",eligible
 27,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
 27,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible
@@ -289,9 +289,9 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 27,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible
 28,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible
 28,CU-select,eligible,"NA","NA","NA",eligible
-28,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible
+28,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 28,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
-28,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
+28,JHU_IDD-CovidSP,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 28,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
 28,Karlen-pypm,eligible,"NA","NA","NA",eligible
 28,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
@@ -303,12 +303,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 29,CU-select,eligible,"NA","NA","NA",eligible
 29,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 29,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
-29,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
-29,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
+29,JHU_IDD-CovidSP,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
+29,JHUAPL-Bucky,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 29,Karlen-pypm,eligible,"NA","NA","NA",eligible
 29,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
 29,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible
-29,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
+29,UCLA-SuEIR,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 29,UCSB-ACTS,eligible,"NA","NA","NA",eligible
 29,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible
 30,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible
@@ -316,7 +316,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 30,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 30,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
 30,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
-30,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
+30,JHUAPL-Bucky,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 30,Karlen-pypm,eligible,"NA","NA","NA",eligible
 30,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
 30,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible
@@ -339,7 +339,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 32,CU-select,eligible,"NA","NA","NA",eligible
 32,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 32,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
-32,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
+32,JHU_IDD-CovidSP,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 32,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
 32,Karlen-pypm,eligible,"NA","NA","NA",eligible
 32,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
@@ -361,9 +361,9 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 33,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible
 34,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible
 34,CU-select,eligible,"NA","NA","NA",eligible
-34,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible
+34,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 34,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
-34,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
+34,JHU_IDD-CovidSP,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 34,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
 34,Karlen-pypm,eligible,"NA","NA","NA",eligible
 34,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
@@ -423,7 +423,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 39,CU-select,eligible,"NA","NA","NA",eligible
 39,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 39,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
-39,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
+39,JHU_IDD-CovidSP,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 39,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
 39,Karlen-pypm,eligible,"NA","NA","NA",eligible
 39,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
@@ -435,7 +435,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 40,CU-select,eligible,"NA","NA","NA",eligible
 40,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 40,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
-40,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
+40,JHU_IDD-CovidSP,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 40,JHUAPL-Bucky,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 40,Karlen-pypm,eligible,"NA","NA","NA",eligible
 40,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
@@ -483,7 +483,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 45,CU-select,eligible,"NA","NA","NA",eligible
 45,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible
 45,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",ineligible
-45,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
+45,JHU_IDD-CovidSP,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 45,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
 45,Karlen-pypm,eligible,"NA","NA","NA",eligible
 45,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
@@ -505,7 +505,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 46,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible
 47,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible
 47,CU-select,eligible,"NA","NA","NA",eligible
-47,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
+47,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible
 47,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
 47,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
 47,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
@@ -519,7 +519,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 48,CU-select,eligible,"NA","NA","NA",eligible
 48,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 48,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",ineligible
-48,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
+48,JHU_IDD-CovidSP,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 48,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
 48,Karlen-pypm,eligible,"NA","NA","NA",eligible
 48,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
@@ -529,10 +529,10 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 48,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible
 49,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible
 49,CU-select,eligible,"NA","NA","NA",eligible
-49,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible
+49,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 49,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
-49,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
-49,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
+49,JHU_IDD-CovidSP,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
+49,JHUAPL-Bucky,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 49,Karlen-pypm,eligible,"NA","NA","NA",eligible
 49,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
 49,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible
@@ -572,7 +572,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 53,Karlen-pypm,eligible,"NA","NA","NA",eligible
 53,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
 53,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible
-53,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
+53,UCLA-SuEIR,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 53,UCSB-ACTS,eligible,"NA","NA","NA",eligible
 53,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible
 54,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible
@@ -587,13 +587,13 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 54,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
 54,UCSB-ACTS,eligible,"NA","NA","NA",eligible
 54,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible
-55,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible
+55,Covid19Sim-Simulator,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 55,CU-select,eligible,"NA","NA","NA",eligible
 55,Google_Harvard-CPF,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 55,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",ineligible
-55,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
+55,JHU_IDD-CovidSP,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 55,JHUAPL-Bucky,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
-55,Karlen-pypm,eligible,"NA","NA","NA",eligible
+55,Karlen-pypm,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 55,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
 55,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible
 55,UCLA-SuEIR,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
@@ -639,11 +639,11 @@ US,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible
 US,CU-select,eligible,"NA","NA","NA",eligible
 US,Google_Harvard-CPF,missing required forecasts,"NA","NA","NA",ineligible
 US,GT-DeepCOVID,eligible,"NA","NA","NA",eligible
-US,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible
+US,JHU_IDD-CovidSP,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 US,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible
 US,Karlen-pypm,eligible,"NA","NA","NA",eligible
 US,LANL-GrowthRate,eligible,"NA","NA","NA",eligible
 US,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible
-US,UCLA-SuEIR,eligible,"NA","NA","NA",eligible
+US,UCLA-SuEIR,eligible,"NA","NA","NA",Mean daily point forecast for first seven days less than mean reported hospitalizations over past two weeks minus four standard deviations.
 US,UCSB-ACTS,missing required forecasts,"NA","NA","NA",ineligible
 US,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible
