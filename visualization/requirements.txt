@@ -7,5 +7,6 @@ selenium
 webdriver-manager
 pyyaml
 PyGithub
+pytz
 git+https://github.com/reichlab/zoltpy/
 https://github.com/hannanabdul55/pykwalify/archive/master.zip

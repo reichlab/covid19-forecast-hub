@@ -1,5 +1,7 @@
 import pandas as pd
 import os
+import pytz
+from datetime import datetime
 
 
 def filename_match_forecast_date(filepath):
@@ -14,5 +16,9 @@ def filename_match_forecast_date(filepath):
         if (file_forecast_date != forecast_date_column):
             return True, ["FORECAST DATE ERROR %s forecast filename date %s does match forecast_date column %s" % (
                 filepath, file_forecast_date, forecast_date_column)]
-        else:
-            return False, "no errors"
+        message = "no errors"
+        today = datetime.now(pytz.timezone('US/Eastern')).date().strftime("%Y-%m-%d")
+        if file_forecast_date != today:
+            warning = f"The forecast is not made today. date of the forecast - {file_forecast_date}, today -  {today}."
+            print(f"::warning file={os.path.basename(os.path.basename(filepath))}::{warning}")
+        return False, "no errors"
