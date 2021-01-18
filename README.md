@@ -116,6 +116,7 @@ repository are (with data reuse license):
  - [Massachusetts Institute of Technology - Covid Analytics](https://www.covidanalytics.io/) (Apache 2.0)
  - [Massachusetts Institute of Technology - Covid Alliance](http://infectiontrajectory.covidalliance.com/) (CC-BY-4.0)
  - [Massachusetts Institute of Technology - Critical Data](https://github.com/sakethsundar/covid-forecaster) (MIT)
+ - [Massachusetts Institute of Technology - IDSS COVID-19 Collaboration](https://covidpredictions.mit.edu/) (CC-BY-4.0)
  - [Microsoft](https://www.microsoft.com/en-us/ai/ai-for-health) (CC-BY-4.0)
  - [Notre Dame - FRED](https://github.com/confunguido/covid19_ND_forecasting) (CC-BY-4.0)
  - [Notre Dame - mobility](https://github.com/TAlexPerkins/covid19_NDmobility_forecasting) (CC-BY-4.0)
