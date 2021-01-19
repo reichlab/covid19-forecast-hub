@@ -2305,3 +2305,6 @@ file_path,validation_date
 ./data-processed/Caltech-CS156/2021-01-17-Caltech-CS156.csv,2021-01-19 06:44:44.447677
 ./data-processed/CU-select/2021-01-17-CU-select.csv,2021-01-19 06:44:59.621536
 ./data-processed/UCF-AEM/2021-01-17-UCF-AEM.csv,2021-01-19 06:44:59.759076
+./data-processed/JHU_IDD-CovidSP/2021-01-17-JHU_IDD-CovidSP.csv,2021-01-19 18:18:33.969454
+./data-processed/COVIDhub-ensemble/2021-01-18-COVIDhub-ensemble.csv,2021-01-19 18:18:49.699932
+./data-processed/AIpert-pwllnod/2021-01-18-AIpert-pwllnod.csv,2021-01-19 18:18:51.284790
