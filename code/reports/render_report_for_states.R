@@ -25,7 +25,7 @@ render_weekly_report <- function(curr_state_fips){
   rmarkdown::render(
     'all states weekly report.Rmd',
     # rename output file, CHANGE DATE
-    output_file = paste0(today_date,'-', curr_state_fips, '-weekly report.html'), 
+    output_file = paste0(today_date,'-', curr_state_fips, '-weekly-report.html'), 
     params = list(state = curr_state_fips)
   )
 }
