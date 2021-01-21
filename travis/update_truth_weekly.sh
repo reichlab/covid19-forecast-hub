@@ -20,10 +20,6 @@ python3 ./data-truth/nytimes/nytimes.py
 echo "updating usafacts truth data..."
 python3 ./data-truth/usafacts/usafacts.py
 
-# upload truth to zoltar
-echo "Upload truth to Zoltar"
-python3 ./code/zoltar_scripts/upload_truth_to_zoltar.py
-
 # push new truths to github
 echo "Merge detected.. push to github"
 bash ./travis/push-gh.sh
