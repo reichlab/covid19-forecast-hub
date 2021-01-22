@@ -14,6 +14,7 @@ DESIGNATED_MODEL_CACHE_KEY = 'designated_model_cache'
 
 def validate_metadata_contents(metadata, filepath, cache):
     # Initialize output
+    print(filepath)
     is_metadata_error = False
     metadata_error_output = []
 
@@ -23,8 +24,10 @@ def validate_metadata_contents(metadata, filepath, cache):
     if len(core.validation_errors)>0:
         metadata_error_output.extend(['METADATA_ERROR: %s' % err for err in core.validation_errors])
         is_metadata_error = True
-
-    folder_name = filepath.split('/')[-2]
+    try:
+        folder_name = filepath.split('/')[-2]
+    except:
+        folder_name = filepath.split('\\')[-2]
     if folder_name != metadata['model_abbr']:
         metadata_error_output.append(f"METADATA_ERROR: Model abreviation in metadata inconsistent with folder name for model_abbr={metadata['model_abbr']} as specified in metadata. NOTE: Folder name is: {folder_name}")
         is_metadata_error = True
