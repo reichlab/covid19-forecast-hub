@@ -35,4 +35,5 @@ methods_long: "On our website we present daily projections for\
   \ UPDATE 20-11-29: Adjusted the 20-11-29 forecast by hand in light of\
   \ under-reporting over the Thanksgiving holiday week.\
   \ UPDATE 20-12-06: Cleaned up and enhanced a number of things in the RtDriven code.\
-  \ These changes are tracking internally as RtDiven 2.0."
+  \ UPDATE 21-01-25: Modified data smoothing. Incorporated temporary immunity.\
+  \ Incorporated vaccinations."

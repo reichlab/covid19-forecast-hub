@@ -1,0 +1,8 @@
+team_name: Johns Hopkins University Applied Physics Lab
+model_name: Gecko
+model_abbr: JHUAPL-Gecko
+model_contributors: Mark Panaggio (JHU/APL) <mark.panaggio@jhuapl.edu>
+website_url: https://gitlab.jhuapl.edu/panagmj1/gecko-sarima
+license: mit
+team_model_designation: secondary
+methods: SARIMA time series model (1,1,0)x(1,1,0,7) with anomaly detector applied to confirmed hospital admissions since 09/01/2020. 
