@@ -1,7 +1,7 @@
 team_name: SUNY Upstate and SU Covid-19 Prediction Team 
 model_name: GRU 
 model_abbr: UpstateSU-GRU
-model_contributors: Yanli Zhang-James (SUNY Upstate Medical University) <zhangy@upstate.edu>, Asif Salekin (Syracuse University) <asalekin@syr.edu>, Jonathan Hess (SUNY Upstate Medical University) <hessjlmsg@gmail.com>, Samuel Chen (SUNY Upstate Medical University) <ChenSa@upstate.edu>, Stephen V Faraone (SUNY Upstate Medical University) <sfaraone@childpsychresearch.org>
+model_contributors: Yanli Zhang-James (SUNY Upstate Medical University) <zhangy@upstate.edu>, Asif Salekin (Syracuse University) <asalekin@syr.edu>, Jonathan Hess (SUNY Upstate Medical University) <hessjlmsg@gmail.com>, Samuel Chen (SUNY Upstate Medical University) <ChenSa@upstate.edu>, Dongliang Wang (SUNY Upstate Medical University)  <WangD@upstate.edu>, Christopher P. Morley (SUNY Upstate Medical University) <MorleyCP@upstate.edu>, Stephen V Faraone (SUNY Upstate Medical University) <sfaraone@childpsychresearch.org>
 website_url: ylzhang29.github.io/UpstateSU-GRU-Covid
 license: mit
 team_model_designation: primary
