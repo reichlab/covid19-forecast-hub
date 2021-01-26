@@ -15,15 +15,13 @@ locs <- hub_locations %>%
 all_states <-locs[2:52,] # 75 minutes
 
 
-
-
 state_fips<-all_states$fips
 today_date<-Sys.Date()
 
 # render report based on a state fips code
 render_weekly_report <- function(curr_state_fips){
   rmarkdown::render(
-    'all states weekly report.Rmd',
+    'all-states-weekly-report.Rmd',
     # rename output file, CHANGE DATE
     output_file = paste0(today_date,'-', curr_state_fips, '-weekly-report.html'), 
     params = list(state = curr_state_fips)
