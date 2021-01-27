@@ -1,0 +1,38 @@
+team_name: Carnegie Mellon Delphi Group
+model_name: TimeSeries
+model_abbr: CMU-TimeSeries
+model_contributors: Alden Green (Lead modeler - state, Carnegie Mellon University), 
+  <ajgreen@andrew.cmu.edu>, Addison Hu (Co-lead modeler - county, Carnegie Mellon University), 
+  Maria Jahja (Co-lead modeler - county, Carnegie Mellon University), Valerie Ventura (Carnegie 
+  Mellon University), Larry Wasserman (Carnegie Mellon University), Rob Tibshirani (Stanford 
+  University), Vishnu Shankar (Stanford University), Jacob Bien (University of Southern 
+  California), Logan Brooks (Carnegie Mellon University), Balasubramanian Narasimhan (Stanford 
+  University), Samyak Rajanala (Stanford University), Aaron Rumack (Carnegie Mellon University), 
+  Noah Simon (University of Washington), James Sharpnack (UC Davis), Daniel McDonald (University of British Columbia), Ryan Tibshirani (Senior 
+  author, Carnegie Mellon University), and the Delphi COVID-19 Response Team
+website_url: https://delphi.cmu.edu
+license: cc-by-4.0
+team_model_designation: primary
+methods: (State) A basic AR-type time series model fit using case counts and deaths as features.
+  (County) Quantile regr. on county pop., case counts, self-reported symptom data, and doctor's 
+  visits.
+team_funding: CDC Center of Excellence, gifts from Google and Facebook
+data_inputs: JHU CSSE confirmed case counts and deaths
+citation: 
+methods_long: "State level - A basic AR-type time series model fit using lagged values of case 
+  \ counts and deaths as features. No assumptions are made regarding reopening or governmental\
+  \ interventions. The model is jointly fit across all 50 US states, after some time-alignment\
+  \ is performed as a preprocessing step to facilitate comparison between states. Heavier\
+  \ weight is placed on more recent training data, to account for nonstationarity in the\
+  \ underlying process. A lasso penalty is added to induce variable selection and prevent\
+  \ overfitting. Quantiles are computed using a residual (Gaussian) bootstrap, separately for\
+  \ each location.\
+  \ County level - A quantile regression model fit jointly across selected counties using (1) \
+  \ case counts, (2) self-reported COVID symptom rates, (3) doctor's visits rates related to \
+  \ COVID symptoms, and (4) county population.  Features (1-3) are taken at various lags. \
+  \ Furthermore, the slopes of features (1-3) are computed over the preceding month and \
+  \ included in the model to provide a sense of the virus's momentum.  Signals (2-3) are \
+  \ available as indicators through Delphi COVIDcast (http://covidcast.cmu.edu). Signal (2) \
+  \ is administered with the support of Facebook. No assumptions are made regarding reopening \
+  \ or governmental interventions."
+

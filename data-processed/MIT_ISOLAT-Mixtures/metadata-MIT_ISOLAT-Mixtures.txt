@@ -1,0 +1,18 @@
+team_name: IDSS COVID-19 Collaboration (Isolat) at MIT
+model_name: Mixtures of Exponentials
+model_abbr: MIT_ISOLAT-Mixtures
+model_contributors: Arnab Sarker (MIT) <arnabs@mit.edu>, Ali Jadbabaie (MIT) <jadbabai@mit.edu>, 
+  Devavrat Shah (MIT) <devavrat@mit.edu>
+website_url: https://covidpredictions.mit.edu
+license: cc-by-4.0
+team_model_designation: primary
+methods: Non-mechanistic, non-parametric model based on representing time series
+  as a sum of bell curves. 
+data_inputs: JHU CSSE state-level cases and deaths.
+citation: https://idss.mit.edu/vignette/real-time-mixture-based-predictions/ 
+methods_long: A non-mechanistic, non-parametric model for prediction which forecasts
+  time series as a sum of bell curves. Confidence intervals are provided by assuming
+  a multiplicative log-Gaussian perturbation on the observed time series. While the 
+  curve-fitting approach is based on a parsimonious function class, we also note that
+  it arises as a simple outcome of an SIR-like process in a network setting, allowing
+  the parameters of the fitted curve to contain structural meaning. 

@@ -1,10 +1,12 @@
 # Items used for branding
 branding:
-  title: "Reich Lab COVID-19 Forecast Hub"
+  title: "Viz - COVID-19 Forecast Hub"
   parent: "COVID-19"
-  description: "COVID-19 Forecasts - Cumulative Deaths"
-  imageUrl: ""
-  aboutUrl: "https://github.com/reichlab/covid19-forecast-hub"
+  description: "Your source for up-to-date forecasts of COVID-19."
+  imageUrl: "https://covid19forecasthub.org/images/forecast-hub-favicon.png"
+  aboutUrl: "https://covid19forecasthub.org/doc/"
+  dataUrl: "https://covid19forecasthub.org/data/"
+  communityUrl: "https://covid19forecasthub.org/community/"
   appUrl: ""
   sourceUrl: "https://github.com/reichlab/covid19-forecast-hub"
-  parentUrl: "https://github.com/reichlab/covid19-forecast-hub"
+  parentUrl: "https://covid19forecasthub.org"

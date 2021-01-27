@@ -1,0 +1,21 @@
+team_name: Center for Disease Dynamics, Economics & Policy
+model_name: SEIR_Markov_Chain_Monte_Carlo
+model_abbr: CDDEP-SEIR_MCMC
+model_contributors: Eili Klein < klein@cddep.org>, Gary Lin < glin15@jhu.edu>, Yupeng
+  Yang <yang@cddep.org>
+website_url: https://cddep.org/
+license: cc-by-4.0
+team_model_designation: primary
+methods: County-level SEIR model forecasts of incident (weekly) cases number by fitting
+  predicted cases to the observations.
+data_inputs: NYTimes time-series cases and deaths data
+methods_long: "We break down the SEIR model into 7 compartments:  Susceptible individuals\
+  \ (S),  Exposed individuals (E),  Contagious individuals who are asymptomatic or\
+  \ mildly symptomatic (C),  Infected with moderate or non-severe symptoms (I_N),\
+  \  Infected with severe symptoms (I_S),  Recovered (R) and Deaths (D). \nWe fit\
+  \ our model using the Markov Chain Monte Carlo (MCMC) sampling method in each county\
+  \ to estimate  the parameters set (alpha, beta, mu, h, gamma, theta, delta...).\
+  \ We start with the initial parameters set  from other studies and iterate the set\
+  \ in the model by calculating and comparing the likelihood values between  the real\
+  \ cases and projected cases, finally we get our best projected curve (with 95% confidence\
+  \ interval) which  has minimum sum of squared residuals (SSR)."

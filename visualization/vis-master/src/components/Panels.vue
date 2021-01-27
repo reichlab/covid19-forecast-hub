@@ -17,16 +17,27 @@ h1 a {
   padding-bottom: 0;
   padding-top: 0;
 }
+
+#help-button {
+  text-align: right;
+}
 </style>
 
 <template lang="pug">
 .columns
   #map-intro.column.is-4
     // Title
-    h1.title
-      a(v-bind:href="branding.parentUrl") COVID-19 Forecasts
-    h2.subtitle
-      | Week Ahead
+    .columns
+      .column.is-8
+        h1.title
+          a(v-bind:href="branding.parentUrl") COVID-19 Forecasts
+        h2.subtitle
+          | Week Ahead
+      #help-button.column.is-4
+        a.button.is-small(v-on:click="moveIntroStart")
+          span.icon.is-small
+            i.fa.fa-question
+          span Help
     hr
     #choropleth-container
       choropleth
@@ -81,7 +92,8 @@ export default {
       "plotTimeChart",
       "plotDistributionChart"
     ]),
-    ...mapActions("weeks", ["readjustSelectedWeek"])
+    ...mapActions("weeks", ["readjustSelectedWeek"]),
+    ...mapActions('intro', ['moveIntroStart'])
   },
   watch: {
     selectedRegion: function() {

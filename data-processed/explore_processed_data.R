@@ -3,6 +3,7 @@
 # Provides a shiny dashboard to explore the processed data
 
 library("tidyverse")
+library("ggnewscale")
 library("shiny")
 library("DT")
 library("rmarkdown")
@@ -13,53 +14,77 @@ options(DT.options = list(pageLength = 25))
 source("../code/processing-fxns/get_next_saturday.R")
 source("read_processed_data.R")
 
+fourweek_date <- get_next_saturday(Sys.Date() + 3*7)
+
+###############################################################################
 # Get truth 
-truth_cols = cols(
-  date = col_date(format = ""),
-  location = col_character(),
-  location_name = col_character(),
-  value = col_double()
+truth_cols = readr::cols_only(
+  date          = readr::col_date(format = ""),
+  location      = readr::col_character(),
+  # location_name = readr::col_character(),
+  value         = readr::col_double()
 )
+
+# JHU
+inc_jhu = readr::read_csv("../data-truth/truth-Incident Deaths.csv",   
+                      col_types = truth_cols) %>%
+  dplyr::mutate(inc_cum = "inc", source = "JHU-CSSE") %>%
+  na.omit()
+
+cum_jhu = readr::read_csv("../data-truth/truth-Cumulative Deaths.csv", 
+                      col_types = truth_cols) %>%
+  dplyr::mutate(inc_cum = "cum", source = "JHU-CSSE")
+
+
+# USAFacts
+inc_usa = readr::read_csv("../data-truth/usafacts/truth_usafacts-Incident Deaths.csv",
+                          col_types = truth_cols) %>%
+  dplyr::mutate(inc_cum = "inc", source = "USAFacts") %>%
+  na.omit()
+
+cum_usa = readr::read_csv("../data-truth/usafacts/truth_usafacts-Cumulative Deaths.csv", 
+                          col_types = truth_cols) %>%
+  dplyr::mutate(inc_cum = "cum", source = "USAFacts")
+
+
+# NYTimes 
+inc_nyt = readr::read_csv("../data-truth/nytimes/truth_nytimes-Incident Deaths.csv",
+                          col_types = truth_cols) %>%
+  dplyr::mutate(inc_cum = "inc", source = "NYTimes") %>%
+  na.omit()
+
+cum_nyt = readr::read_csv("../data-truth/nytimes/truth_nytimes-Cumulative Deaths.csv", 
+                          col_types = truth_cols) %>%
+  dplyr::mutate(inc_cum = "cum", source = "NYTimes")
+
 
 
 truth = bind_rows(
-  read_csv("../data-truth/truth-Incident Deaths.csv",
-           col_types = truth_cols) %>% 
-    mutate(inc_cum = "inc", unit = "day"),
+  bind_rows(inc_jhu, inc_usa, inc_nyt) %>% dplyr::mutate(unit = "day"),
   
-  read_csv("../data-truth/truth-Incident Deaths.csv",
-           col_types = truth_cols) %>% 
+  bind_rows(inc_jhu, inc_usa, inc_nyt) %>% 
     dplyr::mutate(week = MMWRweek::MMWRweek(date)$MMWRweek) %>%
-    dplyr::group_by(location,week) %>%
+    dplyr::group_by(location, week, inc_cum, source) %>%
     dplyr::summarize(date = max(date),
                      value = sum(value, na.rm = TRUE)) %>%
+    dplyr::ungroup() %>%
     dplyr::filter(weekdays(date) == "Saturday") %>%
-    dplyr::mutate(inc_cum = "inc", unit = "wk") %>%
+    dplyr::mutate(unit = "wk") %>%
     dplyr::select(-week),
   
-  read_csv("../data-truth/truth-Cumulative Deaths.csv",
-           col_types = truth_cols) %>% 
-    mutate(inc_cum = "cum", unit = "wk") %>%
+  bind_rows(cum_jhu, cum_usa, cum_nyt) %>% 
+    dplyr::mutate(unit = "wk") %>%
     dplyr::filter(weekdays(date) == "Saturday"),
   
-  read_csv("../data-truth/truth-Cumulative Deaths.csv",
-           col_types = truth_cols) %>% 
-    mutate(inc_cum = "cum", unit = "day")
+  bind_rows(cum_jhu, cum_usa, cum_nyt) %>% dplyr::mutate(unit = "day")
 ) %>%
-  rename(fips_numeric = location) %>%
-  left_join(read_csv("../template/state_fips_codes.csv",
-                     col_types = cols(
-                       state = col_character(),
-                       state_code = col_character(),
-                       state_name = col_character()
-                     )) %>%
-              rename(fips_alpha = state,
-                     fips_numeric = state_code), by = c("fips_numeric")) %>%
-  mutate(fips_alpha = ifelse(fips_numeric == "US", "US", fips_alpha),
-         death_cases = "death",
+  dplyr::left_join(locations, by = c("location")) %>%
+  dplyr::mutate(death_cases = "death",
          simple_target = paste(unit, "ahead", inc_cum, death_cases)) 
 
+truth_sources = unique(truth$source)
 
+###############################################################################
 
 
 # Further process the processed data for ease of exploration
@@ -73,11 +98,11 @@ latest <- all_data %>%
 
 latest_locations <- latest %>%
   dplyr::group_by(team, model, forecast_date) %>%
-  dplyr::summarize(US = ifelse(any(fips_alpha == "US"), "Yes", "-"),
-                   n_states = sum(state.abb %in% fips_alpha),
-                   other = paste(unique(setdiff(fips_alpha, c(state.abb,"US"))),
+  dplyr::summarize(US = ifelse(any(abbreviation == "US", na.rm=TRUE), "Yes", "-"),
+                   n_states = sum(state.abb %in% abbreviation),
+                   other = paste(unique(setdiff(abbreviation, c(state.abb,"US"))),
                                  collapse = " "),
-                   missing_states = paste(unique(setdiff(state.abb, fips_alpha)),
+                   missing_states = paste(unique(setdiff(state.abb, abbreviation)),
                                           collapse = " "),
                    missing_states = ifelse(missing_states == paste(state.abb, collapse = " "), 
                                            "all", missing_states),
@@ -95,16 +120,18 @@ latest_targets <- latest %>%
   dplyr::arrange(team, model, forecast_date, type, target)
 
 # Quantiles
-full_quantiles <- sprintf("%.3f", c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99))
-min_quantiles  <- sprintf("%.3f", c(0.01, 0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95, 0.99))
+quantiles = list(
+  full = sprintf("%.3f", c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99)),
+  min  = sprintf("%.3f", c(0.01, 0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95, 0.99))
+)
 
 latest_quantiles <- latest %>%
   dplyr::filter(type == "quantile") %>%
   dplyr::mutate(quantile = sprintf("%.3f", quantile)) %>%
   dplyr::group_by(team, model, forecast_date, target) %>%
   dplyr::summarize(
-    full = all(full_quantiles %in% quantile),
-    min  = all(min_quantiles  %in% quantile),
+    full = all(quantiles$full %in% quantile),
+    min  = all(quantiles$min  %in% quantile),
     quantiles = paste(unique(quantile), collapse = " ")) 
 
 latest_quantiles_summary <- latest_quantiles %>%
@@ -136,8 +163,8 @@ ensemble <- ensemble_data %>%
     cum_death = ifelse(all(paste(1:4, "wk ahead cum death") %in% target), "Yes", "-"),
     inc_death = ifelse(all(paste(1:4, "wk ahead inc death") %in% target), "Yes", "-"),
     all_weeks = ifelse(all(1:4 %in% n_unit), "Yes", "-"),
-    has_US    = ifelse("US" %in% fips_alpha, "Yes", "-"),
-    has_states = ifelse(all(state.abb %in% fips_alpha), "Yes", "-")
+    has_US    = ifelse("US" %in% abbreviation, "Yes", "-"),
+    has_states = ifelse(all(state.abb %in% abbreviation), "Yes", "-")
   )
 
 ensemble_quantiles <- ensemble_data %>%
@@ -175,7 +202,7 @@ latest_plot_data <- latest %>%
 
 
 
-# Define UI for application that draws a histogram
+
 ui <- navbarPage(
   "Explore:",
   
@@ -210,7 +237,9 @@ ui <- navbarPage(
                selectInput("team",         "Team", sort(unique(latest_plot_data$team         )), "IHME"),
                selectInput("model",       "Model", sort(unique(latest_plot_data$model        ))),
                selectInput("target",     "Target", sort(unique(latest_plot_data$simple_target))),
-               selectInput("location", "Location", sort(unique(latest_plot_data$fips_alpha   )))
+               selectInput("abbreviation", "Location", sort(unique(latest_plot_data$abbreviation   ))),
+               selectInput("sources", "Truth sources", truth_sources, selected = "JHU-CSSE", multiple = TRUE),
+               dateRangeInput("dates", "Date range", start = "2020-03-01", end = fourweek_date)
              ), 
              mainPanel(
                plotOutput("latest_plot")
@@ -253,20 +282,6 @@ server <- function(input, output, session) {
   #############################################################################
   # Latest viz: Filter data based on user input
   
-  latest_t    <- reactive({ latest_plot_data %>% filter(team          == input$team) })
-  latest_tm   <- reactive({ latest_t()       %>% filter(model         == input$model) })
-  latest_tmt  <- reactive({ latest_tm()      %>% filter(simple_target == input$target) })
-  latest_tmtl <- reactive({ latest_tmt()     %>% filter(fips_alpha    == input$location) })
-  
-  truth_plot <- reactive({ 
-    input_simple_target <- unique(paste(
-      latest_tmtl()$unit, "ahead", latest_tmtl()$inc_cum, latest_tmtl()$death_cases))
-    
-    truth %>% 
-      filter(fips_alpha == input$location,
-             grepl(input_simple_target, simple_target))
-  })
-  
   observe({
     models <- sort(unique(latest_t()$model))
     updateSelectInput(session, "model", choices = models, selected = models[1])
@@ -274,14 +289,38 @@ server <- function(input, output, session) {
   
   observe({
     targets <- sort(unique(latest_tm()$simple_target))
-    updateSelectInput(session, "target", choices = targets, selected = targets[1])
+    updateSelectInput(session, "target", choices = targets, 
+                      selected = ifelse("wk ahead cum death" %in% targets, 
+                                        "wk ahead cum death", 
+                                        targets[1]))
   })
   
   observe({
-    locations <- sort(unique(latest_tmt()$fips_alpha))
-    updateSelectInput(session, "location", choices = locations, 
-                      selected = ifelse(any("US" == locations), "US", locations[1]))
+    abbreviations <- sort(unique(latest_tmt()$abbreviation))
+    updateSelectInput(session, "abbreviation", choices = abbreviations, 
+                      selected = ifelse("US" %in% abbreviations, 
+                                        "US", 
+                                        abbreviations[1]))
   })
+  
+  
+  latest_t    <- reactive({ latest_plot_data %>% filter(team          == input$team) })
+  latest_tm   <- reactive({ latest_t()       %>% filter(model         == input$model) })
+  latest_tmt  <- reactive({ latest_tm()      %>% filter(simple_target == input$target) })
+  latest_tmtl <- reactive({ latest_tmt()     %>% filter(abbreviation    == input$abbreviation) })
+  
+  truth_plot_data <- reactive({ 
+    input_simple_target <- unique(paste(
+      latest_tmtl()$unit, "ahead", latest_tmtl()$inc_cum, latest_tmtl()$death_cases))
+    
+    tmp = truth %>% 
+      filter(abbreviation == input$abbreviation,
+             grepl(input_simple_target, simple_target),
+             source %in% input$sources)
+  })
+  
+  
+
   
   output$latest_plot      <- shiny::renderPlot({
     d    <- latest_tmtl()
@@ -296,11 +335,26 @@ server <- function(input, output, session) {
       
       geom_point(aes(y=`0.5`, color = "median")) + geom_line( aes(y=`0.5`, color = "median")) + 
       geom_point(aes(y=point, color = "point")) + geom_line( aes(y=point, color = "point")) + 
+      
       scale_color_manual(name = "", values = c("median" = "slategray", "point" = "black")) +
       
-      geom_line(data = truth_plot(), aes(x = date, y = value), color = "green") + 
+      ggnewscale::new_scale_color() +
+      geom_line(data = truth_plot_data(),
+                aes(x = date, y = value, 
+                    linetype = source, color = source, group = source)) +
       
-      labs(y="value", title = forecast_date) +
+      scale_color_manual(values = c("JHU-CSSE" = "green",
+                                    "USAFacts" = "seagreen",
+                                    "NYTimes"  = "darkgreen")) +
+      
+      scale_linetype_manual(values = c("JHU-CSSE" = 1,
+                                    "USAFacts" = 2,
+                                    "NYTimes"  = 3)) +
+      
+      xlim(input$dates) + 
+      
+      labs(x = "Date", y="Number", 
+           title = paste("Forecast date:", forecast_date)) +
       theme_bw() +
       theme(plot.title = element_text(color = ifelse(Sys.Date() - forecast_date > 6, "red", "black")))
   })

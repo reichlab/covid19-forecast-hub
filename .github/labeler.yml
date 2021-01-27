@@ -1,0 +1,11 @@
+data-submission:
+  - data-processed/**/*
+ 
+viz:
+  - visualization/**/*
+
+code:
+  - code/**/*
+
+dependencies:
+  - package.json

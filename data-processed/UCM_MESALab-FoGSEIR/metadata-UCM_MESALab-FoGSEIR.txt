@@ -1,0 +1,25 @@
+team_name: University of California Merced MESA Lab
+model_name: Fractional order Generalized SEIR model
+model_abbr: UCM_MESALab-FoGSEIR
+model_contributors: 
+        YangQuan Chen (Department of Engineering, University of California, Merced) <ychen53@ucmerced.edu>
+        Yanting Zhao (Department of Automation, University of Science and Technology of China) <zyt9lsb@mail.ustc.edu.cn>
+        Lihong Guo (Institute of Mathematics, Jilin University) <guolh17@mails.jlu.edu.cn>
+website_url: http://mechatronics.ucmerced.edu/covid19
+license: cc-by-4.0
+team_model_designation: primary
+methods: FoGSEIR model is a modification of integer order SEIR model considering fractional integrals. The model considers the age structure and reopening intervention to minimize infections and deaths.
+institution_affil: University of California, Merced, Department of Engineering
+team_funding: Alianza UCMX Special Funding for Binational Collaboration Addressing COVID-19
+data_inputs: JHU CSSE case and death data, Google COVID-19 Community Mobility Report
+methods_long: "The fractional order generalized SEIR model considers the power law functions of infection cases, as well as the recovery and death.\  
+    \ It is necessary to introduce the fractional integral with long memory property based on the integer  order SEIR model. Through the\
+    \ time-weighted performance index (ITSE) of the model fitting and parameter sensitivity analysis  of the model using Simulink Design Optimization (SLDO),\
+    \ it is proved that the fractional order model is superior to the integer order model in terms of short-term prediction. In our model, the more accurate\
+    \ prediction errors of incident death and cumulative death are provided.\
+    \ Based on this model, we can also study the optimization control problem. By studying mobility data, the lock-down\
+    \ and release policies of different countries, states and counties are changed accordingly. Control infection rates to\ 
+    \ reduce cumulative infections and deaths effectively. The model can not only fit the prediction of infection cases, but\
+    \ also achieve a balance between the scale of infection and the socioeconomic status by developing age-based re-open\
+    \ intervention through the study of social mobility."
+    

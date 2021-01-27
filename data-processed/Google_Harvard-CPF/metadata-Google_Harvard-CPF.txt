@@ -1,0 +1,11 @@
+team_name: Google Cloud AI
+model_name: Google-Harvard CPF
+model_abbr: Google_Harvard-CPF
+model_contributors: Andrew Max (Google Cloud AI) <amax@google.com>, Arkady Epshteyn (Google Cloud AI) <aepshtey@google.com>, Brian Kang (Google Cloud AI) <briankang@google.com>, Chun-Liang Li (Google Cloud AI) <chunliang@google.com>, Dario Sava (Google Cloud AI) <dariosava@google.com>, David Parish (Google Cloud AI)<dmparish@google.com>, Derrick Miller (Google Cloud) <millerderrick@google.com>, Elli Kanal (Google Cloud AI) <ekanal@google.com>, Hanchao Liu (Google Cloud AI) <hanchaoliu@google.com>, Hootan Nakhost (Google Cloud AI) <hootan@google.com>, Isaac Jones (Google Cloud AI) <ipjones@google.com>, Jeremy Lai (Google Cloud AI) <jeremylai@google.com>, Jasmin Repenning (Google Cloud AI) <jrepenning@google.com>, Jinsung Yoon (Google Cloud AI) <jinsungyoon@google.com>, Karthik Ramasamy (Google Cloud AI) <cartick@google.com>, Leyou Zhang (Google Cloud AI) <leyouz@google.com>, Long Le (Google Cloud AI) <longtle@google.com>, Martin Nikoltchev (Google Cloud AI) <mnikoltchev@google.com>, Matthew Siegler (Google Cloud AI AI) <msiegler@google.com>, Mike Dusenberry (Google Cloud AI) <dusenberrymw@google.com>, Nate Yoder (Google Cloud AI) <nyoder@google.com>, Ola Rozenfeld (Google Cloud AI) <olaola@google.com>, Priya Rangaswamy (Google Cloud AI) <priyar@google.com>, Raj Sinha (Google Cloud AI) <sinharaj@google.com>, Rand Xie (Google Cloud AI) <randxie@google.com>, Sercan Arik (Google Cloud AI), <soarik@google.com>, Shashank Singh (Google Cloud AI), <shashanksi@google.com>, Thomas Tsai (Havard University) <ttsai@hsph.harvard.edu>, Tomas Pfister (Google Cloud AI) <tpfister@google.com>, Vik Menon (Google Cloud AI) <vikasmenon@google.com>, Vishal Karande (Google Cloud AI) <vishalkarande@google.com>, Yash Sonthalia (Google Cloud AI) <yashks@google.com> , Yong Li (Google Cloud AI) <yyongli@google.com>
+website_url: https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-is-releasing-the-covid-19-public-forecasts
+license: other
+team_model_designation: primary
+methods: Our model improves upon standard compartmental models by using temporally and spatially rich data, and integrating covariate encodings into compartment transitions via end-to-end learning.
+citation: https://arxiv.org/abs/2008.00646
+
+

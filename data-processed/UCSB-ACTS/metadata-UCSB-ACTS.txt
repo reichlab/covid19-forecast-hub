@@ -1,0 +1,10 @@
+team_name: UCSB
+model_name: ACTS
+model_abbr: UCSB-ACTS
+model_contributors: Xiaoyong Jin (University of California Santa Barbara) <x_jin@cs.ucsb.edu>, Yu-Xiang Wang ((University of California Santa Barbara) <yuxiangw@cs.ucsb.edu>, Xifeng Yan (University of California Santa Barbara) <xyan@cs.ucsb.edu>
+website_url: https://github.com/Gandor26/covid-open
+license: cc-by-4.0
+team_model_designation: primary
+methods: This data-driven machine learning model makes predictions by referring to other regions with similar growth patterns and assuming the similar development will take place in the current region.
+team_funding: NSF
+data_inputs: JHU CSSE cases and deaths, covid tracking project hospitalizations

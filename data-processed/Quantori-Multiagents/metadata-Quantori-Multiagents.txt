@@ -1,33 +1,15 @@
 team_name: Quantori modeling
-team_abbr: Quantori
-institution_affil: none
-team_funding: private
-team_experience: 20 plus years in life science and modeling
-
 model_name: The Agent-based local stochastic model of COVID-19
-model_abbr: Multiagents
-model_output:
-model_repo:
-
-model_contributors: Yuriy Gankin <yuriy.gankin@quantori.com>  Semyon Semyonov <semyon.semyonov@quantori.com> 
-Model_targets: wk ahead incident deaths   day ahead incident deaths
-Target_loc: US, Massachusetts
-time_horizon:
-Data_format: all requested quantiles
-forecast_startdate: 2020-05-08
-forecast_frequency: daily
-
-data_inputs_known: 
-data_source_known:
-
-this_model_is_an_ensemble: false
-this_model_is_unconditional: true
-
-methods: >- 
-    The Agent-based local stochastic model of COVID-19 transmission
-    
-
-methods_long: >- 
-    This model incorporates the reported geographic incidence data, which include individual’s age, infection status, and the severity of the disease. 
-    The model accounts for the latent period of the individual’s infection before detection and proper reporting as well as for different disease severity levels. 
-    The framework also allows to incorporate the exact geographic addresses of individuals (if available) or the random geographic distribution of individuals.
+model_abbr: Quantori-Multiagents
+model_contributors: 'Yuriy Gankin <yuriy.gankin@quantori.com>  Semyon Semyonov <semyon.semyonov@quantori.com> '
+website_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Quantori-Multiagents
+license: cc-by-4.0
+team_model_designation: primary
+methods: The Agent-based local stochastic model of COVID-19 transmission
+team_funding: private
+methods_long: "This model incorporates the reported geographic incidence data, which\
+  \ include individual\u2019s age, infection status, and the severity of the disease.\
+  \  The model accounts for the latent period of the individual\u2019s infection before\
+  \ detection and proper reporting as well as for different disease severity levels.\
+  \  The framework also allows to incorporate the exact geographic addresses of individuals\
+  \ (if available) or the random geographic distribution of individuals."

@@ -1,0 +1,1084 @@
+location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_eligibility,overall_eligibility
+01,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+01,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+01,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+01,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+01,GT-DeepCOVID,eligible,"NA","NA",eligible
+01,IHME-CurveFit,eligible,"NA","NA",eligible
+01,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+01,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+01,LANL-GrowthRate,eligible,"NA","NA",eligible
+01,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+01,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+01,NotreDame-mobility,eligible,"NA","NA",eligible
+01,OliverWyman-Navigator,eligible,"NA","NA",eligible
+01,SWC-TerminusCM,eligible,"NA","NA",eligible
+01,UCLA-SuEIR,eligible,"NA","NA",eligible
+01,UMass-MechBayes,eligible,"NA","NA",eligible
+01,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+01,UT-Mobility,eligible,"NA","NA",eligible
+01,YYG-ParamSearch,eligible,"NA","NA",eligible
+02,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+02,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+02,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+02,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+02,GT-DeepCOVID,eligible,"NA","NA",eligible
+02,IHME-CurveFit,eligible,"NA","NA",eligible
+02,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+02,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+02,LANL-GrowthRate,eligible,"NA","NA",eligible
+02,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+02,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+02,NotreDame-mobility,eligible,"NA","NA",eligible
+02,OliverWyman-Navigator,eligible,"NA","NA",eligible
+02,SWC-TerminusCM,eligible,"NA","NA",eligible
+02,UCLA-SuEIR,eligible,"NA","NA",eligible
+02,UMass-MechBayes,eligible,"NA","NA",eligible
+02,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+02,UT-Mobility,eligible,"NA","NA",eligible
+02,YYG-ParamSearch,eligible,"NA","NA",eligible
+04,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+04,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+04,epiforecasts-ensemble1,eligible,"NA","NA",eligible
+04,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+04,GT-DeepCOVID,eligible,"NA","NA",eligible
+04,IHME-CurveFit,eligible,"NA","NA",eligible
+04,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+04,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+04,LANL-GrowthRate,eligible,"NA","NA",eligible
+04,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+04,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+04,NotreDame-mobility,eligible,"NA","NA",eligible
+04,OliverWyman-Navigator,eligible,"NA","NA",eligible
+04,SWC-TerminusCM,eligible,"NA","NA",eligible
+04,UCLA-SuEIR,eligible,"NA","NA",eligible
+04,UMass-MechBayes,eligible,"NA","NA",eligible
+04,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+04,UT-Mobility,eligible,"NA","NA",eligible
+04,YYG-ParamSearch,eligible,"NA","NA",eligible
+05,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+05,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+05,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+05,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+05,GT-DeepCOVID,eligible,"NA","NA",eligible
+05,IHME-CurveFit,eligible,"NA","NA",eligible
+05,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+05,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+05,LANL-GrowthRate,eligible,"NA","NA",eligible
+05,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+05,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+05,NotreDame-mobility,eligible,"NA","NA",eligible
+05,OliverWyman-Navigator,eligible,"NA","NA",eligible
+05,SWC-TerminusCM,eligible,"NA","NA",eligible
+05,UCLA-SuEIR,eligible,"NA","NA",eligible
+05,UMass-MechBayes,eligible,"NA","NA",eligible
+05,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+05,UT-Mobility,eligible,"NA","NA",eligible
+05,YYG-ParamSearch,eligible,"NA","NA",eligible
+06,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+06,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+06,epiforecasts-ensemble1,eligible,"NA","NA",eligible
+06,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+06,GT-DeepCOVID,eligible,"NA","NA",eligible
+06,IHME-CurveFit,eligible,"NA","NA",eligible
+06,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+06,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+06,LANL-GrowthRate,eligible,"NA","NA",eligible
+06,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+06,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+06,NotreDame-mobility,eligible,"NA","NA",eligible
+06,OliverWyman-Navigator,eligible,"NA","NA",eligible
+06,SWC-TerminusCM,eligible,"NA","NA",eligible
+06,UCLA-SuEIR,eligible,"NA","NA",eligible
+06,UMass-MechBayes,eligible,"NA","NA",eligible
+06,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+06,UT-Mobility,eligible,"NA","NA",eligible
+06,YYG-ParamSearch,eligible,"NA","NA",eligible
+08,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+08,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+08,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+08,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+08,GT-DeepCOVID,eligible,"NA","NA",eligible
+08,IHME-CurveFit,eligible,"NA","NA",eligible
+08,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+08,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+08,LANL-GrowthRate,eligible,"NA","NA",eligible
+08,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+08,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+08,NotreDame-mobility,eligible,"NA","NA",eligible
+08,OliverWyman-Navigator,eligible,"NA","NA",eligible
+08,SWC-TerminusCM,eligible,"NA","NA",eligible
+08,UCLA-SuEIR,eligible,"NA","NA",eligible
+08,UMass-MechBayes,eligible,"NA","NA",eligible
+08,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+08,UT-Mobility,eligible,"NA","NA",eligible
+08,YYG-ParamSearch,eligible,"NA","NA",eligible
+09,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+09,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+09,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+09,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+09,GT-DeepCOVID,eligible,"NA","NA",eligible
+09,IHME-CurveFit,eligible,"NA","NA",eligible
+09,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+09,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+09,LANL-GrowthRate,eligible,"NA","NA",eligible
+09,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+09,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+09,NotreDame-mobility,eligible,"NA","NA",eligible
+09,OliverWyman-Navigator,eligible,"NA","NA",eligible
+09,SWC-TerminusCM,eligible,"NA","NA",eligible
+09,UCLA-SuEIR,eligible,"NA","NA",eligible
+09,UMass-MechBayes,eligible,"NA","NA",eligible
+09,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+09,UT-Mobility,eligible,"NA","NA",eligible
+09,YYG-ParamSearch,eligible,"NA","NA",eligible
+10,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+10,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+10,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+10,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+10,GT-DeepCOVID,missing required forecasts,"NA","NA",ineligible
+10,IHME-CurveFit,eligible,"NA","NA",eligible
+10,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+10,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+10,LANL-GrowthRate,eligible,"NA","NA",eligible
+10,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+10,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+10,NotreDame-mobility,eligible,"NA","NA",eligible
+10,OliverWyman-Navigator,eligible,"NA","NA",eligible
+10,SWC-TerminusCM,eligible,"NA","NA",eligible
+10,UCLA-SuEIR,eligible,"NA","NA",eligible
+10,UMass-MechBayes,eligible,"NA","NA",eligible
+10,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+10,UT-Mobility,eligible,"NA","NA",eligible
+10,YYG-ParamSearch,eligible,"NA","NA",eligible
+11,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+11,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+11,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+11,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+11,GT-DeepCOVID,eligible,"NA","NA",eligible
+11,IHME-CurveFit,eligible,"NA","NA",eligible
+11,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+11,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+11,LANL-GrowthRate,eligible,"NA","NA",eligible
+11,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA",ineligible
+11,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+11,NotreDame-mobility,eligible,"NA","NA",eligible
+11,OliverWyman-Navigator,eligible,"NA","NA",eligible
+11,SWC-TerminusCM,eligible,"NA","NA",eligible
+11,UCLA-SuEIR,eligible,"NA","NA",eligible
+11,UMass-MechBayes,eligible,"NA","NA",eligible
+11,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+11,UT-Mobility,eligible,"NA","NA",eligible
+11,YYG-ParamSearch,eligible,"NA","NA",eligible
+12,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+12,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+12,epiforecasts-ensemble1,eligible,"NA","NA",eligible
+12,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+12,GT-DeepCOVID,missing required forecasts,"NA","NA",ineligible
+12,IHME-CurveFit,eligible,"NA","NA",eligible
+12,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+12,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+12,LANL-GrowthRate,eligible,"NA","NA",eligible
+12,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+12,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+12,NotreDame-mobility,eligible,"NA","NA",eligible
+12,OliverWyman-Navigator,eligible,"NA","NA",eligible
+12,SWC-TerminusCM,eligible,"NA","NA",eligible
+12,UCLA-SuEIR,eligible,"NA","NA",eligible
+12,UMass-MechBayes,eligible,"NA","NA",eligible
+12,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+12,UT-Mobility,eligible,"NA","NA",eligible
+12,YYG-ParamSearch,eligible,"NA","NA",eligible
+13,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+13,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+13,epiforecasts-ensemble1,eligible,"NA","NA",eligible
+13,GT_CHHS-COVID19,eligible,"NA","NA",eligible
+13,GT-DeepCOVID,eligible,"NA","NA",eligible
+13,IHME-CurveFit,eligible,"NA","NA",eligible
+13,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+13,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+13,LANL-GrowthRate,eligible,"NA","NA",eligible
+13,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+13,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+13,NotreDame-mobility,eligible,"NA","NA",eligible
+13,OliverWyman-Navigator,eligible,"NA","NA",eligible
+13,SWC-TerminusCM,eligible,"NA","NA",eligible
+13,UCLA-SuEIR,eligible,"NA","NA",eligible
+13,UMass-MechBayes,eligible,"NA","NA",eligible
+13,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+13,UT-Mobility,eligible,"NA","NA",eligible
+13,YYG-ParamSearch,eligible,"NA","NA",eligible
+15,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+15,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+15,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+15,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+15,GT-DeepCOVID,missing required forecasts,"NA","NA",ineligible
+15,IHME-CurveFit,eligible,"NA","NA",eligible
+15,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+15,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+15,LANL-GrowthRate,eligible,"NA","NA",eligible
+15,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+15,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+15,NotreDame-mobility,eligible,"NA","NA",eligible
+15,OliverWyman-Navigator,eligible,"NA","NA",eligible
+15,SWC-TerminusCM,eligible,"NA","NA",eligible
+15,UCLA-SuEIR,eligible,"NA","NA",eligible
+15,UMass-MechBayes,eligible,"NA","NA",eligible
+15,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+15,UT-Mobility,eligible,"NA","NA",eligible
+15,YYG-ParamSearch,eligible,"NA","NA",eligible
+16,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+16,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+16,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+16,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+16,GT-DeepCOVID,eligible,"NA","NA",eligible
+16,IHME-CurveFit,eligible,"NA","NA",eligible
+16,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+16,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+16,LANL-GrowthRate,eligible,"NA","NA",eligible
+16,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+16,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+16,NotreDame-mobility,eligible,"NA","NA",eligible
+16,OliverWyman-Navigator,eligible,"NA","NA",eligible
+16,SWC-TerminusCM,missing required forecasts,"NA","NA",ineligible
+16,UCLA-SuEIR,eligible,"NA","NA",eligible
+16,UMass-MechBayes,eligible,"NA","NA",eligible
+16,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+16,UT-Mobility,eligible,"NA","NA",eligible
+16,YYG-ParamSearch,eligible,"NA","NA",eligible
+17,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+17,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+17,epiforecasts-ensemble1,eligible,"NA","NA",eligible
+17,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+17,GT-DeepCOVID,eligible,"NA","NA",eligible
+17,IHME-CurveFit,eligible,"NA","NA",eligible
+17,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+17,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+17,LANL-GrowthRate,eligible,"NA","NA",eligible
+17,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+17,NotreDame-FRED,eligible,"NA","NA",eligible
+17,NotreDame-mobility,eligible,"NA","NA",eligible
+17,OliverWyman-Navigator,eligible,"NA","NA",eligible
+17,SWC-TerminusCM,eligible,"NA","NA",eligible
+17,UCLA-SuEIR,eligible,"NA","NA",eligible
+17,UMass-MechBayes,eligible,"NA","NA",eligible
+17,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+17,UT-Mobility,eligible,"NA","NA",eligible
+17,YYG-ParamSearch,eligible,"NA","NA",eligible
+18,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+18,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+18,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+18,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+18,GT-DeepCOVID,missing required forecasts,"NA","NA",ineligible
+18,IHME-CurveFit,eligible,"NA","NA",eligible
+18,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+18,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+18,LANL-GrowthRate,eligible,"NA","NA",eligible
+18,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+18,NotreDame-FRED,eligible,"NA","NA",eligible
+18,NotreDame-mobility,eligible,"NA","NA",eligible
+18,OliverWyman-Navigator,eligible,"NA","NA",eligible
+18,SWC-TerminusCM,eligible,"NA","NA",eligible
+18,UCLA-SuEIR,eligible,"NA","NA",eligible
+18,UMass-MechBayes,eligible,"NA","NA",eligible
+18,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+18,UT-Mobility,eligible,"NA","NA",eligible
+18,YYG-ParamSearch,eligible,"NA","NA",eligible
+19,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+19,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+19,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+19,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+19,GT-DeepCOVID,eligible,"NA","NA",eligible
+19,IHME-CurveFit,eligible,"NA","NA",eligible
+19,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+19,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+19,LANL-GrowthRate,eligible,"NA","NA",eligible
+19,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+19,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+19,NotreDame-mobility,eligible,"NA","NA",eligible
+19,OliverWyman-Navigator,eligible,"NA","NA",eligible
+19,SWC-TerminusCM,eligible,"NA","NA",eligible
+19,UCLA-SuEIR,eligible,"NA","NA",eligible
+19,UMass-MechBayes,eligible,"NA","NA",eligible
+19,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+19,UT-Mobility,eligible,"NA","NA",eligible
+19,YYG-ParamSearch,eligible,"NA","NA",eligible
+20,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+20,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+20,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+20,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+20,GT-DeepCOVID,eligible,"NA","NA",eligible
+20,IHME-CurveFit,eligible,"NA","NA",eligible
+20,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+20,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+20,LANL-GrowthRate,eligible,"NA","NA",eligible
+20,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+20,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+20,NotreDame-mobility,eligible,"NA","NA",eligible
+20,OliverWyman-Navigator,eligible,"NA","NA",eligible
+20,SWC-TerminusCM,eligible,"NA","NA",eligible
+20,UCLA-SuEIR,eligible,"NA","NA",eligible
+20,UMass-MechBayes,eligible,"NA","NA",eligible
+20,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+20,UT-Mobility,eligible,"NA","NA",eligible
+20,YYG-ParamSearch,eligible,"NA","NA",eligible
+21,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+21,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+21,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+21,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+21,GT-DeepCOVID,eligible,"NA","NA",eligible
+21,IHME-CurveFit,eligible,"NA","NA",eligible
+21,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+21,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+21,LANL-GrowthRate,eligible,"NA","NA",eligible
+21,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+21,NotreDame-FRED,eligible,"NA","NA",eligible
+21,NotreDame-mobility,eligible,"NA","NA",eligible
+21,OliverWyman-Navigator,eligible,"NA","NA",eligible
+21,SWC-TerminusCM,eligible,"NA","NA",eligible
+21,UCLA-SuEIR,eligible,"NA","NA",eligible
+21,UMass-MechBayes,eligible,"NA","NA",eligible
+21,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+21,UT-Mobility,eligible,"NA","NA",eligible
+21,YYG-ParamSearch,eligible,"NA","NA",eligible
+22,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+22,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+22,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+22,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+22,GT-DeepCOVID,eligible,"NA","NA",eligible
+22,IHME-CurveFit,eligible,"NA","NA",eligible
+22,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+22,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+22,LANL-GrowthRate,eligible,"NA","NA",eligible
+22,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+22,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+22,NotreDame-mobility,eligible,"NA","NA",eligible
+22,OliverWyman-Navigator,eligible,"NA","NA",eligible
+22,SWC-TerminusCM,eligible,"NA","NA",eligible
+22,UCLA-SuEIR,eligible,"NA","NA",eligible
+22,UMass-MechBayes,eligible,"NA","NA",eligible
+22,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+22,UT-Mobility,eligible,"NA","NA",eligible
+22,YYG-ParamSearch,eligible,"NA","NA",eligible
+23,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+23,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+23,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+23,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+23,GT-DeepCOVID,eligible,"NA","NA",eligible
+23,IHME-CurveFit,eligible,"NA","NA",eligible
+23,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+23,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+23,LANL-GrowthRate,eligible,"NA","NA",eligible
+23,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+23,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+23,NotreDame-mobility,eligible,"NA","NA",eligible
+23,OliverWyman-Navigator,eligible,"NA","NA",eligible
+23,SWC-TerminusCM,missing required forecasts,"NA","NA",ineligible
+23,UCLA-SuEIR,eligible,"NA","NA",eligible
+23,UMass-MechBayes,eligible,"NA","NA",eligible
+23,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+23,UT-Mobility,eligible,"NA","NA",eligible
+23,YYG-ParamSearch,eligible,"NA","NA",eligible
+24,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+24,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+24,epiforecasts-ensemble1,eligible,"NA","NA",eligible
+24,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+24,GT-DeepCOVID,eligible,"NA","NA",eligible
+24,IHME-CurveFit,eligible,"NA","NA",eligible
+24,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+24,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+24,LANL-GrowthRate,eligible,"NA","NA",eligible
+24,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+24,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+24,NotreDame-mobility,eligible,"NA","NA",eligible
+24,OliverWyman-Navigator,eligible,"NA","NA",eligible
+24,SWC-TerminusCM,eligible,"NA","NA",eligible
+24,UCLA-SuEIR,eligible,"NA","NA",eligible
+24,UMass-MechBayes,eligible,"NA","NA",eligible
+24,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+24,UT-Mobility,eligible,"NA","NA",eligible
+24,YYG-ParamSearch,eligible,"NA","NA",eligible
+25,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+25,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+25,epiforecasts-ensemble1,eligible,"NA","NA",eligible
+25,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+25,GT-DeepCOVID,missing required forecasts,"NA","NA",ineligible
+25,IHME-CurveFit,eligible,"NA","NA",eligible
+25,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+25,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+25,LANL-GrowthRate,eligible,"NA","NA",eligible
+25,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+25,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+25,NotreDame-mobility,eligible,"NA","NA",eligible
+25,OliverWyman-Navigator,eligible,"NA","NA",eligible
+25,SWC-TerminusCM,eligible,"NA","NA",eligible
+25,UCLA-SuEIR,eligible,"NA","NA",eligible
+25,UMass-MechBayes,eligible,"NA","NA",eligible
+25,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+25,UT-Mobility,eligible,"NA","NA",eligible
+25,YYG-ParamSearch,eligible,"NA","NA",eligible
+26,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+26,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+26,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+26,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+26,GT-DeepCOVID,eligible,"NA","NA",eligible
+26,IHME-CurveFit,eligible,"NA","NA",eligible
+26,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+26,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+26,LANL-GrowthRate,eligible,"NA","NA",eligible
+26,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+26,NotreDame-FRED,eligible,"NA","NA",eligible
+26,NotreDame-mobility,eligible,"NA","NA",eligible
+26,OliverWyman-Navigator,eligible,"NA","NA",eligible
+26,SWC-TerminusCM,eligible,"NA","NA",eligible
+26,UCLA-SuEIR,eligible,"NA","NA",eligible
+26,UMass-MechBayes,eligible,"NA","NA",eligible
+26,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+26,UT-Mobility,eligible,"NA","NA",eligible
+26,YYG-ParamSearch,eligible,"NA","NA",eligible
+27,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+27,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+27,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+27,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+27,GT-DeepCOVID,eligible,"NA","NA",eligible
+27,IHME-CurveFit,eligible,"NA","NA",eligible
+27,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+27,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+27,LANL-GrowthRate,eligible,"NA","NA",eligible
+27,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+27,NotreDame-FRED,eligible,"NA","NA",eligible
+27,NotreDame-mobility,eligible,"NA","NA",eligible
+27,OliverWyman-Navigator,eligible,"NA","NA",eligible
+27,SWC-TerminusCM,eligible,"NA","NA",eligible
+27,UCLA-SuEIR,eligible,"NA","NA",eligible
+27,UMass-MechBayes,eligible,"NA","NA",eligible
+27,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+27,UT-Mobility,eligible,"NA","NA",eligible
+27,YYG-ParamSearch,eligible,"NA","NA",eligible
+28,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+28,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+28,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+28,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+28,GT-DeepCOVID,eligible,"NA","NA",eligible
+28,IHME-CurveFit,eligible,"NA","NA",eligible
+28,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+28,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+28,LANL-GrowthRate,eligible,"NA","NA",eligible
+28,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+28,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+28,NotreDame-mobility,eligible,"NA","NA",eligible
+28,OliverWyman-Navigator,eligible,"NA","NA",eligible
+28,SWC-TerminusCM,eligible,"NA","NA",eligible
+28,UCLA-SuEIR,eligible,"NA","NA",eligible
+28,UMass-MechBayes,eligible,"NA","NA",eligible
+28,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+28,UT-Mobility,eligible,"NA","NA",eligible
+28,YYG-ParamSearch,eligible,"NA","NA",eligible
+29,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+29,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+29,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+29,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+29,GT-DeepCOVID,eligible,"NA","NA",eligible
+29,IHME-CurveFit,eligible,"NA","NA",eligible
+29,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+29,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+29,LANL-GrowthRate,eligible,"NA","NA",eligible
+29,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+29,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+29,NotreDame-mobility,eligible,"NA","NA",eligible
+29,OliverWyman-Navigator,eligible,"NA","NA",eligible
+29,SWC-TerminusCM,eligible,"NA","NA",eligible
+29,UCLA-SuEIR,eligible,"NA","NA",eligible
+29,UMass-MechBayes,eligible,"NA","NA",eligible
+29,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+29,UT-Mobility,eligible,"NA","NA",eligible
+29,YYG-ParamSearch,eligible,"NA","NA",eligible
+30,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+30,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+30,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+30,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+30,GT-DeepCOVID,eligible,"NA","NA",eligible
+30,IHME-CurveFit,eligible,"NA","NA",eligible
+30,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+30,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+30,LANL-GrowthRate,eligible,"NA","NA",eligible
+30,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+30,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+30,NotreDame-mobility,eligible,"NA","NA",eligible
+30,OliverWyman-Navigator,eligible,"NA","NA",eligible
+30,SWC-TerminusCM,eligible,"NA","NA",eligible
+30,UCLA-SuEIR,eligible,"NA","NA",eligible
+30,UMass-MechBayes,eligible,"NA","NA",eligible
+30,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+30,UT-Mobility,eligible,"NA","NA",eligible
+30,YYG-ParamSearch,eligible,"NA","NA",eligible
+31,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+31,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+31,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+31,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+31,GT-DeepCOVID,missing required forecasts,"NA","NA",ineligible
+31,IHME-CurveFit,eligible,"NA","NA",eligible
+31,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+31,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+31,LANL-GrowthRate,eligible,"NA","NA",eligible
+31,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+31,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+31,NotreDame-mobility,eligible,"NA","NA",eligible
+31,OliverWyman-Navigator,eligible,"NA","NA",eligible
+31,SWC-TerminusCM,eligible,"NA","NA",eligible
+31,UCLA-SuEIR,eligible,"NA","NA",eligible
+31,UMass-MechBayes,eligible,"NA","NA",eligible
+31,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+31,UT-Mobility,eligible,"NA","NA",eligible
+31,YYG-ParamSearch,eligible,"NA","NA",eligible
+32,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+32,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+32,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+32,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+32,GT-DeepCOVID,eligible,"NA","NA",eligible
+32,IHME-CurveFit,eligible,"NA","NA",eligible
+32,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+32,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+32,LANL-GrowthRate,eligible,"NA","NA",eligible
+32,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+32,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+32,NotreDame-mobility,eligible,"NA","NA",eligible
+32,OliverWyman-Navigator,eligible,"NA","NA",eligible
+32,SWC-TerminusCM,eligible,"NA","NA",eligible
+32,UCLA-SuEIR,eligible,"NA","NA",eligible
+32,UMass-MechBayes,eligible,"NA","NA",eligible
+32,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+32,UT-Mobility,eligible,"NA","NA",eligible
+32,YYG-ParamSearch,eligible,"NA","NA",eligible
+33,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+33,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+33,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+33,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+33,GT-DeepCOVID,eligible,"NA","NA",eligible
+33,IHME-CurveFit,eligible,"NA","NA",eligible
+33,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+33,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+33,LANL-GrowthRate,eligible,"NA","NA",eligible
+33,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+33,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+33,NotreDame-mobility,eligible,"NA","NA",eligible
+33,OliverWyman-Navigator,eligible,"NA","NA",eligible
+33,SWC-TerminusCM,eligible,"NA","NA",eligible
+33,UCLA-SuEIR,eligible,"NA","NA",eligible
+33,UMass-MechBayes,eligible,"NA","NA",eligible
+33,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+33,UT-Mobility,eligible,"NA","NA",eligible
+33,YYG-ParamSearch,eligible,"NA","NA",eligible
+34,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+34,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+34,epiforecasts-ensemble1,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+34,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+34,GT-DeepCOVID,missing required forecasts,"NA","NA",ineligible
+34,IHME-CurveFit,eligible,"NA","NA",eligible
+34,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+34,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+34,LANL-GrowthRate,eligible,"NA","NA",eligible
+34,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+34,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+34,NotreDame-mobility,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+34,OliverWyman-Navigator,eligible,"NA","NA",eligible
+34,SWC-TerminusCM,eligible,"NA","NA",eligible
+34,UCLA-SuEIR,eligible,"NA","NA",eligible
+34,UMass-MechBayes,eligible,"NA","NA",eligible
+34,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+34,UT-Mobility,eligible,"NA","NA",eligible
+34,YYG-ParamSearch,eligible,"NA","NA",eligible
+35,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+35,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+35,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+35,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+35,GT-DeepCOVID,eligible,"NA","NA",eligible
+35,IHME-CurveFit,eligible,"NA","NA",eligible
+35,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+35,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+35,LANL-GrowthRate,eligible,"NA","NA",eligible
+35,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+35,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+35,NotreDame-mobility,eligible,"NA","NA",eligible
+35,OliverWyman-Navigator,eligible,"NA","NA",eligible
+35,SWC-TerminusCM,eligible,"NA","NA",eligible
+35,UCLA-SuEIR,eligible,"NA","NA",eligible
+35,UMass-MechBayes,eligible,"NA","NA",eligible
+35,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+35,UT-Mobility,eligible,"NA","NA",eligible
+35,YYG-ParamSearch,eligible,"NA","NA",eligible
+36,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+36,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+36,epiforecasts-ensemble1,eligible,"NA","NA",eligible
+36,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+36,GT-DeepCOVID,missing required forecasts,"NA","NA",ineligible
+36,IHME-CurveFit,eligible,"NA","NA",eligible
+36,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+36,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+36,LANL-GrowthRate,eligible,"NA","NA",eligible
+36,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+36,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+36,NotreDame-mobility,eligible,"NA","NA",eligible
+36,OliverWyman-Navigator,eligible,"NA","NA",eligible
+36,SWC-TerminusCM,eligible,"NA","NA",eligible
+36,UCLA-SuEIR,eligible,"NA","NA",eligible
+36,UMass-MechBayes,eligible,"NA","NA",eligible
+36,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+36,UT-Mobility,eligible,"NA","NA",eligible
+36,YYG-ParamSearch,eligible,"NA","NA",eligible
+37,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+37,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+37,epiforecasts-ensemble1,eligible,"NA","NA",eligible
+37,GT_CHHS-COVID19,eligible,"NA","NA",eligible
+37,GT-DeepCOVID,eligible,"NA","NA",eligible
+37,IHME-CurveFit,eligible,"NA","NA",eligible
+37,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+37,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+37,LANL-GrowthRate,eligible,"NA","NA",eligible
+37,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+37,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+37,NotreDame-mobility,eligible,"NA","NA",eligible
+37,OliverWyman-Navigator,eligible,"NA","NA",eligible
+37,SWC-TerminusCM,eligible,"NA","NA",eligible
+37,UCLA-SuEIR,eligible,"NA","NA",eligible
+37,UMass-MechBayes,eligible,"NA","NA",eligible
+37,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+37,UT-Mobility,eligible,"NA","NA",eligible
+37,YYG-ParamSearch,eligible,"NA","NA",eligible
+38,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+38,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+38,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+38,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+38,GT-DeepCOVID,eligible,"NA","NA",eligible
+38,IHME-CurveFit,eligible,"NA","NA",eligible
+38,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+38,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+38,LANL-GrowthRate,eligible,"NA","NA",eligible
+38,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+38,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+38,NotreDame-mobility,eligible,"NA","NA",eligible
+38,OliverWyman-Navigator,eligible,"NA","NA",eligible
+38,SWC-TerminusCM,eligible,"NA","NA",eligible
+38,UCLA-SuEIR,eligible,"NA","NA",eligible
+38,UMass-MechBayes,eligible,"NA","NA",eligible
+38,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+38,UT-Mobility,eligible,"NA","NA",eligible
+38,YYG-ParamSearch,eligible,"NA","NA",eligible
+39,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+39,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+39,epiforecasts-ensemble1,eligible,"NA","NA",eligible
+39,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+39,GT-DeepCOVID,missing required forecasts,"NA","NA",ineligible
+39,IHME-CurveFit,eligible,"NA","NA",eligible
+39,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+39,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+39,LANL-GrowthRate,eligible,"NA","NA",eligible
+39,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+39,NotreDame-FRED,eligible,"NA","NA",eligible
+39,NotreDame-mobility,eligible,"NA","NA",eligible
+39,OliverWyman-Navigator,eligible,"NA","NA",eligible
+39,SWC-TerminusCM,eligible,"NA","NA",eligible
+39,UCLA-SuEIR,eligible,"NA","NA",eligible
+39,UMass-MechBayes,eligible,"NA","NA",eligible
+39,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+39,UT-Mobility,eligible,"NA","NA",eligible
+39,YYG-ParamSearch,eligible,"NA","NA",eligible
+40,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+40,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+40,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+40,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+40,GT-DeepCOVID,eligible,"NA","NA",eligible
+40,IHME-CurveFit,eligible,"NA","NA",eligible
+40,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+40,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+40,LANL-GrowthRate,eligible,"NA","NA",eligible
+40,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+40,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+40,NotreDame-mobility,eligible,"NA","NA",eligible
+40,OliverWyman-Navigator,eligible,"NA","NA",eligible
+40,SWC-TerminusCM,eligible,"NA","NA",eligible
+40,UCLA-SuEIR,eligible,"NA","NA",eligible
+40,UMass-MechBayes,eligible,"NA","NA",eligible
+40,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+40,UT-Mobility,eligible,"NA","NA",eligible
+40,YYG-ParamSearch,eligible,"NA","NA",eligible
+41,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+41,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+41,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+41,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+41,GT-DeepCOVID,eligible,"NA","NA",eligible
+41,IHME-CurveFit,eligible,"NA","NA",eligible
+41,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+41,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+41,LANL-GrowthRate,eligible,"NA","NA",eligible
+41,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+41,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+41,NotreDame-mobility,eligible,"NA","NA",eligible
+41,OliverWyman-Navigator,eligible,"NA","NA",eligible
+41,SWC-TerminusCM,eligible,"NA","NA",eligible
+41,UCLA-SuEIR,eligible,"NA","NA",eligible
+41,UMass-MechBayes,eligible,"NA","NA",eligible
+41,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+41,UT-Mobility,eligible,"NA","NA",eligible
+41,YYG-ParamSearch,eligible,"NA","NA",eligible
+42,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+42,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+42,epiforecasts-ensemble1,eligible,"NA","NA",eligible
+42,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+42,GT-DeepCOVID,eligible,"NA","NA",eligible
+42,IHME-CurveFit,eligible,"NA","NA",eligible
+42,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+42,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+42,LANL-GrowthRate,eligible,"NA","NA",eligible
+42,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+42,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+42,NotreDame-mobility,eligible,"NA","NA",eligible
+42,OliverWyman-Navigator,eligible,"NA","NA",eligible
+42,SWC-TerminusCM,eligible,"NA","NA",eligible
+42,UCLA-SuEIR,eligible,"NA","NA",eligible
+42,UMass-MechBayes,eligible,"NA","NA",eligible
+42,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+42,UT-Mobility,eligible,"NA","NA",eligible
+42,YYG-ParamSearch,eligible,"NA","NA",eligible
+44,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+44,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+44,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+44,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+44,GT-DeepCOVID,eligible,"NA","NA",eligible
+44,IHME-CurveFit,eligible,"NA","NA",eligible
+44,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+44,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+44,LANL-GrowthRate,eligible,"NA","NA",eligible
+44,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+44,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+44,NotreDame-mobility,eligible,"NA","NA",eligible
+44,OliverWyman-Navigator,eligible,"NA","NA",eligible
+44,SWC-TerminusCM,eligible,"NA","NA",eligible
+44,UCLA-SuEIR,eligible,"NA","NA",eligible
+44,UMass-MechBayes,eligible,"NA","NA",eligible
+44,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+44,UT-Mobility,eligible,"NA","NA",eligible
+44,YYG-ParamSearch,eligible,"NA","NA",eligible
+45,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+45,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+45,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+45,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+45,GT-DeepCOVID,eligible,"NA","NA",eligible
+45,IHME-CurveFit,eligible,"NA","NA",eligible
+45,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+45,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+45,LANL-GrowthRate,eligible,"NA","NA",eligible
+45,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+45,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+45,NotreDame-mobility,eligible,"NA","NA",eligible
+45,OliverWyman-Navigator,eligible,"NA","NA",eligible
+45,SWC-TerminusCM,eligible,"NA","NA",eligible
+45,UCLA-SuEIR,eligible,"NA","NA",eligible
+45,UMass-MechBayes,eligible,"NA","NA",eligible
+45,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+45,UT-Mobility,eligible,"NA","NA",eligible
+45,YYG-ParamSearch,eligible,"NA","NA",eligible
+46,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+46,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+46,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+46,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+46,GT-DeepCOVID,eligible,"NA","NA",eligible
+46,IHME-CurveFit,eligible,"NA","NA",eligible
+46,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+46,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+46,LANL-GrowthRate,eligible,"NA","NA",eligible
+46,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+46,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+46,NotreDame-mobility,eligible,"NA","NA",eligible
+46,OliverWyman-Navigator,eligible,"NA","NA",eligible
+46,SWC-TerminusCM,eligible,"NA","NA",eligible
+46,UCLA-SuEIR,eligible,"NA","NA",eligible
+46,UMass-MechBayes,eligible,"NA","NA",eligible
+46,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+46,UT-Mobility,eligible,"NA","NA",eligible
+46,YYG-ParamSearch,eligible,"NA","NA",eligible
+47,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+47,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+47,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+47,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+47,GT-DeepCOVID,eligible,"NA","NA",eligible
+47,IHME-CurveFit,eligible,"NA","NA",eligible
+47,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+47,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+47,LANL-GrowthRate,eligible,"NA","NA",eligible
+47,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+47,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+47,NotreDame-mobility,eligible,"NA","NA",eligible
+47,OliverWyman-Navigator,eligible,"NA","NA",eligible
+47,SWC-TerminusCM,eligible,"NA","NA",eligible
+47,UCLA-SuEIR,eligible,"NA","NA",eligible
+47,UMass-MechBayes,eligible,"NA","NA",eligible
+47,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+47,UT-Mobility,eligible,"NA","NA",eligible
+47,YYG-ParamSearch,eligible,"NA","NA",eligible
+48,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+48,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+48,epiforecasts-ensemble1,eligible,"NA","NA",eligible
+48,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+48,GT-DeepCOVID,eligible,"NA","NA",eligible
+48,IHME-CurveFit,eligible,"NA","NA",eligible
+48,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+48,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+48,LANL-GrowthRate,eligible,"NA","NA",eligible
+48,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+48,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+48,NotreDame-mobility,eligible,"NA","NA",eligible
+48,OliverWyman-Navigator,eligible,"NA","NA",eligible
+48,SWC-TerminusCM,eligible,"NA","NA",eligible
+48,UCLA-SuEIR,eligible,"NA","NA",eligible
+48,UMass-MechBayes,eligible,"NA","NA",eligible
+48,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+48,UT-Mobility,eligible,"NA","NA",eligible
+48,YYG-ParamSearch,eligible,"NA","NA",eligible
+49,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+49,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+49,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+49,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+49,GT-DeepCOVID,missing required forecasts,"NA","NA",ineligible
+49,IHME-CurveFit,eligible,"NA","NA",eligible
+49,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+49,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+49,LANL-GrowthRate,eligible,"NA","NA",eligible
+49,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+49,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+49,NotreDame-mobility,eligible,"NA","NA",eligible
+49,OliverWyman-Navigator,eligible,"NA","NA",eligible
+49,SWC-TerminusCM,eligible,"NA","NA",eligible
+49,UCLA-SuEIR,eligible,"NA","NA",eligible
+49,UMass-MechBayes,eligible,"NA","NA",eligible
+49,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+49,UT-Mobility,eligible,"NA","NA",eligible
+49,YYG-ParamSearch,eligible,"NA","NA",eligible
+50,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+50,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+50,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+50,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+50,GT-DeepCOVID,eligible,"NA","NA",eligible
+50,IHME-CurveFit,eligible,"NA","NA",eligible
+50,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+50,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+50,LANL-GrowthRate,eligible,"NA","NA",eligible
+50,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+50,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+50,NotreDame-mobility,eligible,"NA","NA",eligible
+50,OliverWyman-Navigator,eligible,"NA","NA",eligible
+50,SWC-TerminusCM,missing required forecasts,"NA","NA",ineligible
+50,UCLA-SuEIR,eligible,"NA","NA",eligible
+50,UMass-MechBayes,eligible,"NA","NA",eligible
+50,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+50,UT-Mobility,eligible,"NA","NA",eligible
+50,YYG-ParamSearch,eligible,"NA","NA",eligible
+51,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+51,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+51,epiforecasts-ensemble1,eligible,"NA","NA",eligible
+51,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+51,GT-DeepCOVID,eligible,"NA","NA",eligible
+51,IHME-CurveFit,eligible,"NA","NA",eligible
+51,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+51,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+51,LANL-GrowthRate,eligible,"NA","NA",eligible
+51,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+51,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+51,NotreDame-mobility,eligible,"NA","NA",eligible
+51,OliverWyman-Navigator,eligible,"NA","NA",eligible
+51,SWC-TerminusCM,eligible,"NA","NA",eligible
+51,UCLA-SuEIR,eligible,"NA","NA",eligible
+51,UMass-MechBayes,eligible,"NA","NA",eligible
+51,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+51,UT-Mobility,eligible,"NA","NA",eligible
+51,YYG-ParamSearch,eligible,"NA","NA",eligible
+53,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+53,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+53,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+53,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+53,GT-DeepCOVID,missing required forecasts,"NA","NA",ineligible
+53,IHME-CurveFit,eligible,"NA","NA",eligible
+53,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+53,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+53,LANL-GrowthRate,eligible,"NA","NA",eligible
+53,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+53,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+53,NotreDame-mobility,eligible,"NA","NA",eligible
+53,OliverWyman-Navigator,eligible,"NA","NA",eligible
+53,SWC-TerminusCM,eligible,"NA","NA",eligible
+53,UCLA-SuEIR,eligible,"NA","NA",eligible
+53,UMass-MechBayes,eligible,"NA","NA",eligible
+53,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+53,UT-Mobility,eligible,"NA","NA",eligible
+53,YYG-ParamSearch,eligible,"NA","NA",eligible
+54,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+54,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+54,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+54,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+54,GT-DeepCOVID,eligible,"NA","NA",eligible
+54,IHME-CurveFit,eligible,"NA","NA",eligible
+54,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+54,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+54,LANL-GrowthRate,eligible,"NA","NA",eligible
+54,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+54,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+54,NotreDame-mobility,eligible,"NA","NA",eligible
+54,OliverWyman-Navigator,eligible,"NA","NA",eligible
+54,SWC-TerminusCM,eligible,"NA","NA",eligible
+54,UCLA-SuEIR,eligible,"NA","NA",eligible
+54,UMass-MechBayes,eligible,"NA","NA",eligible
+54,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+54,UT-Mobility,eligible,"NA","NA",eligible
+54,YYG-ParamSearch,eligible,"NA","NA",eligible
+55,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+55,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+55,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+55,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+55,GT-DeepCOVID,eligible,"NA","NA",eligible
+55,IHME-CurveFit,eligible,"NA","NA",eligible
+55,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+55,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+55,LANL-GrowthRate,eligible,"NA","NA",eligible
+55,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+55,NotreDame-FRED,eligible,"NA","NA",eligible
+55,NotreDame-mobility,eligible,"NA","NA",eligible
+55,OliverWyman-Navigator,eligible,"NA","NA",eligible
+55,SWC-TerminusCM,eligible,"NA","NA",eligible
+55,UCLA-SuEIR,eligible,"NA","NA",eligible
+55,UMass-MechBayes,eligible,"NA","NA",eligible
+55,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+55,UT-Mobility,eligible,"NA","NA",eligible
+55,YYG-ParamSearch,eligible,"NA","NA",eligible
+56,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+56,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+56,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+56,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+56,GT-DeepCOVID,eligible,"NA","NA",eligible
+56,IHME-CurveFit,eligible,"NA","NA",eligible
+56,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+56,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+56,LANL-GrowthRate,eligible,"NA","NA",eligible
+56,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+56,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+56,NotreDame-mobility,eligible,"NA","NA",eligible
+56,OliverWyman-Navigator,eligible,"NA","NA",eligible
+56,SWC-TerminusCM,eligible,"NA","NA",eligible
+56,UCLA-SuEIR,eligible,"NA","NA",eligible
+56,UMass-MechBayes,eligible,"NA","NA",eligible
+56,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+56,UT-Mobility,eligible,"NA","NA",eligible
+56,YYG-ParamSearch,eligible,"NA","NA",eligible
+60,Covid19Sim-Simulator,missing required forecasts,"NA","NA",ineligible
+60,CU-select,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+60,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+60,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+60,GT-DeepCOVID,missing required forecasts,"NA","NA",ineligible
+60,IHME-CurveFit,missing required forecasts,"NA","NA",ineligible
+60,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+60,JHU_IDD-CovidSP,missing required forecasts,"NA","NA",ineligible
+60,LANL-GrowthRate,missing required forecasts,"NA","NA",ineligible
+60,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA",ineligible
+60,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+60,NotreDame-mobility,missing required forecasts,"NA","NA",ineligible
+60,OliverWyman-Navigator,missing required forecasts,"NA","NA",ineligible
+60,SWC-TerminusCM,eligible,"NA","NA",eligible
+60,UCLA-SuEIR,missing required forecasts,"NA","NA",ineligible
+60,UMass-MechBayes,missing required forecasts,"NA","NA",ineligible
+60,USACE-ERDC_SEIR,missing required forecasts,"NA","NA",ineligible
+60,UT-Mobility,missing required forecasts,"NA","NA",ineligible
+60,YYG-ParamSearch,missing required forecasts,"NA","NA",ineligible
+66,Covid19Sim-Simulator,missing required forecasts,"NA","NA",ineligible
+66,CU-select,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+66,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+66,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+66,GT-DeepCOVID,missing required forecasts,"NA","NA",ineligible
+66,IHME-CurveFit,missing required forecasts,"NA","NA",ineligible
+66,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+66,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+66,LANL-GrowthRate,missing required forecasts,"NA","NA",ineligible
+66,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA",ineligible
+66,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+66,NotreDame-mobility,eligible,"NA","NA",eligible
+66,OliverWyman-Navigator,missing required forecasts,"NA","NA",ineligible
+66,SWC-TerminusCM,eligible,"NA","NA",eligible
+66,UCLA-SuEIR,eligible,"NA","NA",eligible
+66,UMass-MechBayes,missing required forecasts,"NA","NA",ineligible
+66,USACE-ERDC_SEIR,missing required forecasts,"NA","NA",ineligible
+66,UT-Mobility,missing required forecasts,"NA","NA",ineligible
+66,YYG-ParamSearch,eligible,"NA","NA",eligible
+69,Covid19Sim-Simulator,missing required forecasts,"NA","NA",ineligible
+69,CU-select,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+69,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+69,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+69,GT-DeepCOVID,missing required forecasts,"NA","NA",ineligible
+69,IHME-CurveFit,missing required forecasts,"NA","NA",ineligible
+69,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+69,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+69,LANL-GrowthRate,missing required forecasts,"NA","NA",ineligible
+69,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA",ineligible
+69,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+69,NotreDame-mobility,missing required forecasts,"NA","NA",ineligible
+69,OliverWyman-Navigator,missing required forecasts,"NA","NA",ineligible
+69,SWC-TerminusCM,eligible,"NA","NA",eligible
+69,UCLA-SuEIR,eligible,"NA","NA",eligible
+69,UMass-MechBayes,missing required forecasts,"NA","NA",ineligible
+69,USACE-ERDC_SEIR,missing required forecasts,"NA","NA",ineligible
+69,UT-Mobility,missing required forecasts,"NA","NA",ineligible
+69,YYG-ParamSearch,eligible,"NA","NA",eligible
+72,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+72,CU-select,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+72,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+72,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+72,GT-DeepCOVID,missing required forecasts,"NA","NA",ineligible
+72,IHME-CurveFit,missing required forecasts,"NA","NA",ineligible
+72,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+72,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+72,LANL-GrowthRate,eligible,"NA","NA",eligible
+72,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA",ineligible
+72,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+72,NotreDame-mobility,eligible,"NA","NA",eligible
+72,OliverWyman-Navigator,missing required forecasts,"NA","NA",ineligible
+72,SWC-TerminusCM,eligible,"NA","NA",eligible
+72,UCLA-SuEIR,eligible,"NA","NA",eligible
+72,UMass-MechBayes,missing required forecasts,"NA","NA",ineligible
+72,USACE-ERDC_SEIR,missing required forecasts,"NA","NA",ineligible
+72,UT-Mobility,missing required forecasts,"NA","NA",ineligible
+72,YYG-ParamSearch,eligible,"NA","NA",eligible
+78,Covid19Sim-Simulator,missing required forecasts,"NA","NA",ineligible
+78,CU-select,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+78,epiforecasts-ensemble1,missing required forecasts,"NA","NA",ineligible
+78,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+78,GT-DeepCOVID,missing required forecasts,"NA","NA",ineligible
+78,IHME-CurveFit,missing required forecasts,"NA","NA",ineligible
+78,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+78,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+78,LANL-GrowthRate,eligible,"NA","NA",eligible
+78,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA",ineligible
+78,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+78,NotreDame-mobility,eligible,"NA","NA",eligible
+78,OliverWyman-Navigator,missing required forecasts,"NA","NA",ineligible
+78,SWC-TerminusCM,eligible,"NA","NA",eligible
+78,UCLA-SuEIR,eligible,"NA","NA",eligible
+78,UMass-MechBayes,missing required forecasts,"NA","NA",ineligible
+78,USACE-ERDC_SEIR,missing required forecasts,"NA","NA",ineligible
+78,UT-Mobility,missing required forecasts,"NA","NA",ineligible
+78,YYG-ParamSearch,eligible,"NA","NA",eligible
+US,Covid19Sim-Simulator,eligible,"NA","NA",eligible
+US,CU-select,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+US,epiforecasts-ensemble1,eligible,"NA","NA",eligible
+US,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+US,GT-DeepCOVID,eligible,"NA","NA",eligible
+US,IHME-CurveFit,eligible,"NA","NA",eligible
+US,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+US,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+US,LANL-GrowthRate,eligible,"NA","NA",eligible
+US,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+US,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+US,NotreDame-mobility,eligible,"NA","NA",eligible
+US,OliverWyman-Navigator,eligible,"NA","NA",eligible
+US,SWC-TerminusCM,eligible,"NA","NA",eligible
+US,UCLA-SuEIR,eligible,"NA","NA",eligible
+US,UMass-MechBayes,eligible,"NA","NA",eligible
+US,USACE-ERDC_SEIR,eligible,"NA","NA",eligible
+US,UT-Mobility,eligible,"NA","NA",eligible
+US,YYG-ParamSearch,eligible,"NA","NA",eligible

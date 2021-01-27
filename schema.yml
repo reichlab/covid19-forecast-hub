@@ -1,0 +1,55 @@
+name: metadata file schema
+example: Please check https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/METADATA.md
+desc: This is the schema of the metadata file, please refer to https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/METADATA.md for more info.
+type: map
+mapping:
+    'team_name':
+        required: True
+        example: Team name is a MUST
+    'model_name':
+        required: True
+        type: str
+    'model_abbr':
+        required: True
+        type: str
+        range:
+            max: 31
+        pattern: ^[a-zA-Z0-9_+]+-[a-zA-Z0-9_+]+$
+    'model_contributors':
+        required: True
+        type: str
+    'website_url':
+        required: True
+        type: str
+        pattern: ((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z]){2,6}([a-zA-Z0-9\.\&\/\?\:@\-_=#])*
+    'license':
+        required: True
+        type: str
+    'team_model_designation':
+        required: True
+        type: str
+        example: This should be one of \"primary\", \"secondary\", \"proposed\" or \"other\"
+        enum: ['primary', 'secondary', 'proposed', 'other']
+    'methods':
+        required: True
+        type: str
+        range:
+            max: 200
+    'repo_url':
+        type: str
+        pattern: ((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z]){2,6}([a-zA-Z0-9\.\&\/\?\:@\-_=#])*
+    'this_model_is_an_ensemble':
+        type: bool
+    'citation':
+        type: str
+        pattern: ((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z]){2,6}([a-zA-Z0-9\.\&\/\?\:@\-_=#])*
+    'institution_affil':
+        type: str
+    'team_funding':
+        type: str
+    'twitter_handles':
+        type: str
+    'data_inputs':
+        type: str
+    'methods_long':
+        type: str

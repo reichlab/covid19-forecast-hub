@@ -2,7 +2,7 @@
 
 The visualization uses these `.JSON` files for its data.
 
-* `season-lates.json` - Cumulative Deaths Data
+* `season-latest.json` - Cumulative Deaths Data
 * `season-Incident Deaths.json` - Incident Deaths Data
 
 ### JSON Strucure

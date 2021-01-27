@@ -1,0 +1,22 @@
+team_name: EpiForecasts group at the London School of Hygiene & Tropical Medicine
+model_name: ensemble1
+model_abbr: epiforecasts-ensemble1
+model_contributors: Katharine Sherratt (LSHTM)<katharine.sherratt@lshtm.ac.uk>,  Nikos
+  Bosse (LSHTM),  Sam Abbott (LSHTM)<sam.abbott@lshtm.ac.uk>,  Sophie Meakin (LSHTM),  Joel Hellewell (LSHTM),  James
+  Munday (LSHTM),  Sebastian Funk (LSHTM)<sebastian.funk@lshtm.ac.uk>
+website_url: https://github.com/epiforecasts/covid-us-deaths
+license: mit
+team_model_designation: primary
+methods: 'A deaths forecast using a mean ensemble of three different models: An Rt
+  based forecast, a timeseries forecast using deaths only and a timeseries forecast
+  using deaths and cases. '
+team_funding: Wellcome Trust
+repo_url: https://github.com/epiforecasts/covid-us-deaths
+data_inputs: JHU CSSE case and death data
+citation: https://doi.org/10.12688/wellcomeopenres.16006.1
+methods_long: '2020-06-15: A deaths forecast using the renewal equation and time-series
+  forecasts of the time-varying reproduction number; to be updated as an ensemble
+  forecast. 2020-07-13: The models included are: 1) A deaths forecast using the renewal
+  equation to estimate Rt and project it into the future. For details see github.com/epiforecasts/EpiSoon
+  and github.com/epiforecasts/EpiNow. 2) A timeseries based on the forecastHybrid
+  package and 3) a second timeseries model that also uses cases as a predictor. '

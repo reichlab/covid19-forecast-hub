@@ -1,0 +1,12 @@
+team_name: University of Chicago, Chattopadhyay Lab
+model_name: Universal Influenza-like Transmission Risk 
+model_abbr: UChicagoCHATTOPADHYAY-UnIT
+model_contributors: Yi Huang (University of Chicago),  Ishanu Chattopadhyay (University of Chicago)<ishanu@uchicago.edu>
+website_url: https://github.com/zeroknowledgediscovery/unitcov
+license: mit
+team_model_designation: primary
+methods: Stochastic similarity via sequence likelihood divergence, General Linear Models, Tensorflow, Ensemble Regressors
+team_funding: Defense Advanced Research Projects Agency (DARPA), Defense Sciences Office (DSO)
+data_inputs: USAFacts (confirmed cases; reported fatalities),  US Census (population, socioeconomic variables), County-specific incidence count from past Influenza epidemics   
+# citation: pending
+methods_long: "We introduce the concept of a universal geo-spatial risk that strongly influences person-to-person viral transmission in the US, in effect quantifying the risk exposure of the individual US counties to diseases thattransmit like the seasonal Influenza. We call this the Universal Influenza-like Transmission (UnIT) score. This new epidemiologically informed risk score leverages subtle geospatial patterns from seasonal flu epidemics of the past, and significantly improves incidence forecasts for COVID-19. Additionally, the UnIT score emerges as the most important factor explaining observed county-specific incidence trends for COVID-19 in the US, with coefficients in multi-variate regression far outweighing those for typical co-variates. Thus, our key insight is that past incidence patterns for a different pathogen can substantially inform current projections, provided the transmission mechanisms are broadly similar. And our key technical contribution is the development of the precise algorithm to transfer this knowledge to the new context, by rigorously estimating thedivergence of hidden generators of complex stochastic phenomena from observation of short sample paths."

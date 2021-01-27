@@ -1,0 +1,38 @@
+data_inputs: NYTimes daily reported deaths count and test positivity rate
+institution_affil: University of Notre Dame, Department of Biological Sciences
+license: cc-by-4.0
+methods: This is an ensemble of nine models that are identical except that they are
+  driven by different mobility indices from Apple and Google. The model underlying
+  each is a deterministic, SEIR-like model.
+methods_long: This forecast is an ensemble of nine models that are identical except
+  that they are driven by different mobility indices from Apple and Google. The model
+  underlying each is a deterministic, SEIR-like model. Model simulations are initiated
+  by imported infections, which arrive from January 1 onward according to a scaled
+  Normal probability density. Each imported and then local infection gives rise to
+  an average number of secondary infections distributed forward in time according
+  to a generation interval distribution. Once infected, a proportion of those infected
+  die at times distributed according to a distribution between symptom onset and death.
+  Testing of a subset of symptomatic infections is distributed in time in a similar
+  manner, and the model is fitted to data on test positivity by accounting for those
+  seeking testing and a differential probabililty of seeking testing conditional on
+  one's infection status. The model is simultaneously fitted to deaths according to
+  a Poisson likelihood of daily incidence of death. There are a total of twelve model
+  parameters that are all estimated. First, a parameter sweep is conducted to identify
+  the parameter combination from the sweep with the highest likelihood. Then, a region
+  around that parameter combination is assumed to have a uniform prior, and a posterior
+  set of parameters is obtained with MCMC. The model is then simulated forward under
+  each sampled parameter set from the posterior distribution. This process is repeated
+  for each of nine mobility metrics from Apple and Google for 50 states and some territories
+  where at least one type of mobility data is available. Simulations from the posterior
+  predictive distribution of each model are pooled evenly and used to generate a probabilistic
+  forecast in each state and at the national level.
+model_abbr: NotreDame-mobility
+model_contributors: 'guido espana <guido.espana@nd.edu>,  rachel oidtman,  sean cavany,  alan
+  costello,  anneliese wieler,  anita lerch,  carly barbera,  marya poterek,  quan
+  tran,  sean moore,  alex perkins <taperkins@nd.edu>   '
+model_name: NotreDame-mobility
+team_funding: GE and TAP were supported by a RAPID grant from the National Science
+  Foundation (DEB 2027718).
+team_model_designation: primary
+team_name: NotreDame-mobility
+website_url: https://github.com/TAlexPerkins/covid19_NDmobility_forecasting

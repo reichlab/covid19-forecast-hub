@@ -1,0 +1,12 @@
+team_name: LockNQuay
+model_name: ens1
+model_abbr: LNQ-ens1
+model_contributors: Russ Wolfinger (SAS) <russ.wolfinger@sas.com>, David Lander (NQ)
+website_url: https://www.kaggle.com/sasrdw/locknquay
+license: mit
+team_model_designation: primary
+methods: County-level ensemble of boosted tree and neural net models. Lots of engineered
+  features.
+data_inputs: JHU
+citation: https://www.kaggle.com/c/covid19-global-forecasting-week-5/overview
+methods_long: https://www.kaggle.com/c/m5-forecasting-uncertainty/discussion/163368,  https://www.kaggle.com/aerdem4/covid-19-w5-pipeline

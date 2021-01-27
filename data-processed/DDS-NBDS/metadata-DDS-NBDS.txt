@@ -1,0 +1,26 @@
+team_name: Discrete Dynamical Systems
+model_name: Negative Binomial Dynamical System
+model_abbr: DDS-NBDS
+model_contributors: Rahi Kalantari <rkalantari@utexas.edu>, 
+  Mingyuan Zhou <mingyuan.zhou@mccombs.utexas.edu>
+website_url: https://dds-covid19.github.io/
+license: mit
+team_model_designation: primary
+methods: Jointly modeling daily deaths and cases using a negative binomial distribution 
+  based nonparametric Bayesian generalized linear dynamical system.
+repo_url: https://github.com/dds-covid19/dds-covid19.github.io
+data_inputs: JHU
+citation: https://dds-covid19.github.io/
+methods_long: We introduce negative binomial linear dynamical system (NBDS) to jointly
+  model daily deaths and cases reported at all 50 US States and D.C. NBDS is a
+  nonparametric Bayesian hierarchical model built on the graph gamma process (GGP).
+  Generated from the GGP is an infinite dimensional directed sparse random graph, which is
+  constructed by taking the OR operation of countably infinite binary adjacency matrices
+  that share the same set of countably infinite nodes. Each of these adjacency matrices is
+  associated with a weight to indicate its overall activation strength, and places a
+  finite number of edges between a finite subset of nodes belonging to the same community.
+  We use the generated random graph, whose number of nonzero-degree nodes is finite, to
+  define both the sparsity patterns and dimensions of the latent state transition matrices
+  of generalized linear dynamical systems. We show how the formed overlapping communities
+  in the latent space can provide interpretable latent transition patterns of the COVID-19
+  time series, providing good predictive performance and uncertainty estimation.

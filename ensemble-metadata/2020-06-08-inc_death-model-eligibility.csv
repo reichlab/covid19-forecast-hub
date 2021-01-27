@@ -1,0 +1,673 @@
+location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_eligibility,overall_eligibility
+01,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+01,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+01,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+01,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+01,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+01,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+01,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+01,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+01,UMass-MechBayes,eligible,"NA","NA",eligible
+01,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+01,UT-Mobility,eligible,"NA","NA",eligible
+01,YYG-ParamSearch,eligible,"NA","NA",eligible
+02,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+02,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+02,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+02,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+02,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+02,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+02,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+02,SWC-TerminusCM,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+02,UMass-MechBayes,eligible,"NA","NA",eligible
+02,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+02,UT-Mobility,eligible,"NA","NA",eligible
+02,YYG-ParamSearch,eligible,"NA","NA",eligible
+04,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+04,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+04,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+04,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+04,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+04,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+04,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+04,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+04,UMass-MechBayes,eligible,"NA","NA",eligible
+04,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+04,UT-Mobility,eligible,"NA","NA",eligible
+04,YYG-ParamSearch,eligible,"NA","NA",eligible
+05,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+05,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+05,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+05,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+05,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+05,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+05,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+05,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+05,UMass-MechBayes,eligible,"NA","NA",eligible
+05,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+05,UT-Mobility,eligible,"NA","NA",eligible
+05,YYG-ParamSearch,eligible,"NA","NA",eligible
+06,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+06,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+06,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+06,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+06,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+06,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+06,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+06,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+06,UMass-MechBayes,eligible,"NA","NA",eligible
+06,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+06,UT-Mobility,eligible,"NA","NA",eligible
+06,YYG-ParamSearch,eligible,"NA","NA",eligible
+08,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+08,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+08,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+08,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+08,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+08,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+08,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+08,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+08,UMass-MechBayes,eligible,"NA","NA",eligible
+08,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+08,UT-Mobility,eligible,"NA","NA",eligible
+08,YYG-ParamSearch,eligible,"NA","NA",eligible
+09,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+09,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+09,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+09,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+09,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+09,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+09,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+09,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+09,UMass-MechBayes,eligible,"NA","NA",eligible
+09,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+09,UT-Mobility,eligible,"NA","NA",eligible
+09,YYG-ParamSearch,eligible,"NA","NA",eligible
+10,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+10,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+10,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+10,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+10,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+10,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+10,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+10,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+10,UMass-MechBayes,eligible,"NA","NA",eligible
+10,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+10,UT-Mobility,eligible,"NA","NA",eligible
+10,YYG-ParamSearch,eligible,"NA","NA",eligible
+11,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+11,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+11,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+11,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+11,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+11,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA",ineligible
+11,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+11,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+11,UMass-MechBayes,eligible,"NA","NA",eligible
+11,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+11,UT-Mobility,eligible,"NA","NA",eligible
+11,YYG-ParamSearch,eligible,"NA","NA",eligible
+12,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+12,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+12,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+12,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+12,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+12,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+12,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+12,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+12,UMass-MechBayes,eligible,"NA","NA",eligible
+12,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+12,UT-Mobility,eligible,"NA","NA",eligible
+12,YYG-ParamSearch,eligible,"NA","NA",eligible
+13,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+13,GT_CHHS-COVID19,eligible,"NA","NA",eligible
+13,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+13,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+13,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+13,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+13,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+13,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+13,UMass-MechBayes,eligible,"NA","NA",eligible
+13,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+13,UT-Mobility,eligible,"NA","NA",eligible
+13,YYG-ParamSearch,eligible,"NA","NA",eligible
+15,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+15,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+15,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+15,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+15,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+15,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+15,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+15,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+15,UMass-MechBayes,eligible,"NA","NA",eligible
+15,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+15,UT-Mobility,eligible,"NA","NA",eligible
+15,YYG-ParamSearch,eligible,"NA","NA",eligible
+16,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+16,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+16,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+16,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+16,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+16,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+16,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+16,SWC-TerminusCM,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+16,UMass-MechBayes,eligible,"NA","NA",eligible
+16,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+16,UT-Mobility,eligible,"NA","NA",eligible
+16,YYG-ParamSearch,eligible,"NA","NA",eligible
+17,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+17,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+17,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+17,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+17,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+17,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+17,NotreDame-FRED,eligible,"NA","NA",eligible
+17,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+17,UMass-MechBayes,eligible,"NA","NA",eligible
+17,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+17,UT-Mobility,eligible,"NA","NA",eligible
+17,YYG-ParamSearch,eligible,"NA","NA",eligible
+18,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+18,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+18,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+18,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+18,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+18,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+18,NotreDame-FRED,eligible,"NA","NA",eligible
+18,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+18,UMass-MechBayes,eligible,"NA","NA",eligible
+18,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+18,UT-Mobility,eligible,"NA","NA",eligible
+18,YYG-ParamSearch,eligible,"NA","NA",eligible
+19,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+19,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+19,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+19,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+19,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+19,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+19,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+19,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+19,UMass-MechBayes,eligible,"NA","NA",eligible
+19,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+19,UT-Mobility,eligible,"NA","NA",eligible
+19,YYG-ParamSearch,eligible,"NA","NA",eligible
+20,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+20,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+20,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+20,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+20,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+20,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+20,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+20,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+20,UMass-MechBayes,eligible,"NA","NA",eligible
+20,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+20,UT-Mobility,eligible,"NA","NA",eligible
+20,YYG-ParamSearch,eligible,"NA","NA",eligible
+21,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+21,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+21,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+21,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+21,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+21,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+21,NotreDame-FRED,eligible,"NA","NA",eligible
+21,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+21,UMass-MechBayes,eligible,"NA","NA",eligible
+21,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+21,UT-Mobility,eligible,"NA","NA",eligible
+21,YYG-ParamSearch,eligible,"NA","NA",eligible
+22,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+22,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+22,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+22,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+22,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+22,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+22,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+22,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+22,UMass-MechBayes,eligible,"NA","NA",eligible
+22,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+22,UT-Mobility,eligible,"NA","NA",eligible
+22,YYG-ParamSearch,eligible,"NA","NA",eligible
+23,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+23,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+23,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+23,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+23,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+23,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+23,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+23,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+23,UMass-MechBayes,eligible,"NA","NA",eligible
+23,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+23,UT-Mobility,eligible,"NA","NA",eligible
+23,YYG-ParamSearch,eligible,"NA","NA",eligible
+24,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+24,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+24,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+24,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+24,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+24,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+24,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+24,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+24,UMass-MechBayes,eligible,"NA","NA",eligible
+24,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+24,UT-Mobility,eligible,"NA","NA",eligible
+24,YYG-ParamSearch,eligible,"NA","NA",eligible
+25,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+25,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+25,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+25,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+25,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+25,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+25,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+25,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+25,UMass-MechBayes,eligible,"NA","NA",eligible
+25,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+25,UT-Mobility,eligible,"NA","NA",eligible
+25,YYG-ParamSearch,eligible,"NA","NA",eligible
+26,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+26,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+26,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+26,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+26,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+26,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+26,NotreDame-FRED,eligible,"NA","NA",eligible
+26,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+26,UMass-MechBayes,eligible,"NA","NA",eligible
+26,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+26,UT-Mobility,eligible,"NA","NA",eligible
+26,YYG-ParamSearch,eligible,"NA","NA",eligible
+27,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+27,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+27,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+27,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+27,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+27,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+27,NotreDame-FRED,eligible,"NA","NA",eligible
+27,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+27,UMass-MechBayes,eligible,"NA","NA",eligible
+27,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+27,UT-Mobility,eligible,"NA","NA",eligible
+27,YYG-ParamSearch,eligible,"NA","NA",eligible
+28,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+28,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+28,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+28,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+28,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+28,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+28,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+28,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+28,UMass-MechBayes,eligible,"NA","NA",eligible
+28,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+28,UT-Mobility,eligible,"NA","NA",eligible
+28,YYG-ParamSearch,eligible,"NA","NA",eligible
+29,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+29,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+29,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+29,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+29,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+29,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+29,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+29,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+29,UMass-MechBayes,eligible,"NA","NA",eligible
+29,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+29,UT-Mobility,eligible,"NA","NA",eligible
+29,YYG-ParamSearch,eligible,"NA","NA",eligible
+30,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+30,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+30,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+30,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+30,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+30,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+30,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+30,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+30,UMass-MechBayes,eligible,"NA","NA",eligible
+30,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+30,UT-Mobility,eligible,"NA","NA",eligible
+30,YYG-ParamSearch,eligible,"NA","NA",eligible
+31,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+31,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+31,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+31,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+31,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+31,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+31,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+31,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+31,UMass-MechBayes,eligible,"NA","NA",eligible
+31,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+31,UT-Mobility,eligible,"NA","NA",eligible
+31,YYG-ParamSearch,eligible,"NA","NA",eligible
+32,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+32,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+32,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+32,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+32,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+32,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+32,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+32,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+32,UMass-MechBayes,eligible,"NA","NA",eligible
+32,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+32,UT-Mobility,eligible,"NA","NA",eligible
+32,YYG-ParamSearch,eligible,"NA","NA",eligible
+33,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+33,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+33,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+33,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+33,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+33,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+33,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+33,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+33,UMass-MechBayes,eligible,"NA","NA",eligible
+33,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+33,UT-Mobility,eligible,"NA","NA",eligible
+33,YYG-ParamSearch,eligible,"NA","NA",eligible
+34,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+34,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+34,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+34,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+34,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+34,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+34,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+34,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+34,UMass-MechBayes,eligible,"NA","NA",eligible
+34,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+34,UT-Mobility,eligible,"NA","NA",eligible
+34,YYG-ParamSearch,eligible,"NA","NA",eligible
+35,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+35,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+35,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+35,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+35,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+35,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+35,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+35,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+35,UMass-MechBayes,eligible,"NA","NA",eligible
+35,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+35,UT-Mobility,eligible,"NA","NA",eligible
+35,YYG-ParamSearch,eligible,"NA","NA",eligible
+36,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+36,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+36,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+36,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+36,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+36,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+36,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+36,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+36,UMass-MechBayes,eligible,"NA","NA",eligible
+36,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+36,UT-Mobility,eligible,"NA","NA",eligible
+36,YYG-ParamSearch,eligible,"NA","NA",eligible
+37,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+37,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+37,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+37,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+37,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+37,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+37,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+37,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+37,UMass-MechBayes,eligible,"NA","NA",eligible
+37,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+37,UT-Mobility,eligible,"NA","NA",eligible
+37,YYG-ParamSearch,eligible,"NA","NA",eligible
+38,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+38,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+38,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+38,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+38,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+38,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+38,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+38,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+38,UMass-MechBayes,eligible,"NA","NA",eligible
+38,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+38,UT-Mobility,eligible,"NA","NA",eligible
+38,YYG-ParamSearch,eligible,"NA","NA",eligible
+39,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+39,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+39,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+39,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+39,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+39,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+39,NotreDame-FRED,eligible,"NA","NA",eligible
+39,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+39,UMass-MechBayes,eligible,"NA","NA",eligible
+39,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+39,UT-Mobility,eligible,"NA","NA",eligible
+39,YYG-ParamSearch,eligible,"NA","NA",eligible
+40,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+40,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+40,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+40,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+40,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+40,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+40,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+40,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+40,UMass-MechBayes,eligible,"NA","NA",eligible
+40,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+40,UT-Mobility,eligible,"NA","NA",eligible
+40,YYG-ParamSearch,eligible,"NA","NA",eligible
+41,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+41,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+41,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+41,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+41,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+41,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+41,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+41,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+41,UMass-MechBayes,eligible,"NA","NA",eligible
+41,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+41,UT-Mobility,eligible,"NA","NA",eligible
+41,YYG-ParamSearch,eligible,"NA","NA",eligible
+42,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+42,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+42,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+42,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+42,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+42,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+42,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+42,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+42,UMass-MechBayes,eligible,"NA","NA",eligible
+42,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+42,UT-Mobility,eligible,"NA","NA",eligible
+42,YYG-ParamSearch,eligible,"NA","NA",eligible
+44,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+44,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+44,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+44,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+44,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+44,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+44,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+44,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+44,UMass-MechBayes,eligible,"NA","NA",eligible
+44,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+44,UT-Mobility,eligible,"NA","NA",eligible
+44,YYG-ParamSearch,eligible,"NA","NA",eligible
+45,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+45,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+45,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+45,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+45,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+45,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+45,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+45,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+45,UMass-MechBayes,eligible,"NA","NA",eligible
+45,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+45,UT-Mobility,eligible,"NA","NA",eligible
+45,YYG-ParamSearch,eligible,"NA","NA",eligible
+46,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+46,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+46,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+46,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+46,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+46,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+46,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+46,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+46,UMass-MechBayes,eligible,"NA","NA",eligible
+46,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+46,UT-Mobility,eligible,"NA","NA",eligible
+46,YYG-ParamSearch,eligible,"NA","NA",eligible
+47,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+47,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+47,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+47,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+47,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+47,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+47,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+47,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+47,UMass-MechBayes,eligible,"NA","NA",eligible
+47,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+47,UT-Mobility,eligible,"NA","NA",eligible
+47,YYG-ParamSearch,eligible,"NA","NA",eligible
+48,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+48,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+48,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+48,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+48,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+48,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+48,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+48,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+48,UMass-MechBayes,eligible,"NA","NA",eligible
+48,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+48,UT-Mobility,eligible,"NA","NA",eligible
+48,YYG-ParamSearch,eligible,"NA","NA",eligible
+49,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+49,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+49,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+49,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+49,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+49,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+49,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+49,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+49,UMass-MechBayes,eligible,"NA","NA",eligible
+49,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+49,UT-Mobility,eligible,"NA","NA",eligible
+49,YYG-ParamSearch,eligible,"NA","NA",eligible
+50,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+50,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+50,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+50,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+50,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+50,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+50,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+50,SWC-TerminusCM,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+50,UMass-MechBayes,eligible,"NA","NA",eligible
+50,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+50,UT-Mobility,eligible,"NA","NA",eligible
+50,YYG-ParamSearch,eligible,"NA","NA",eligible
+51,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+51,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+51,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+51,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+51,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+51,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+51,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+51,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+51,UMass-MechBayes,eligible,"NA","NA",eligible
+51,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+51,UT-Mobility,eligible,"NA","NA",eligible
+51,YYG-ParamSearch,eligible,"NA","NA",eligible
+53,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+53,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+53,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+53,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+53,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+53,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+53,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+53,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+53,UMass-MechBayes,eligible,"NA","NA",eligible
+53,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+53,UT-Mobility,eligible,"NA","NA",eligible
+53,YYG-ParamSearch,eligible,"NA","NA",eligible
+54,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+54,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+54,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+54,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+54,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+54,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+54,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+54,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+54,UMass-MechBayes,eligible,"NA","NA",eligible
+54,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+54,UT-Mobility,eligible,"NA","NA",eligible
+54,YYG-ParamSearch,eligible,"NA","NA",eligible
+55,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+55,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+55,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+55,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+55,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+55,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+55,NotreDame-FRED,eligible,"NA","NA",eligible
+55,SWC-TerminusCM,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+55,UMass-MechBayes,eligible,"NA","NA",eligible
+55,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+55,UT-Mobility,eligible,"NA","NA",eligible
+55,YYG-ParamSearch,eligible,"NA","NA",eligible
+56,CAN-SEIR_CAN,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+56,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+56,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+56,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+56,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+56,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+56,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+56,SWC-TerminusCM,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+56,UMass-MechBayes,eligible,"NA","NA",eligible
+56,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+56,UT-Mobility,eligible,"NA","NA",eligible
+56,YYG-ParamSearch,eligible,"NA","NA",eligible
+66,CAN-SEIR_CAN,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+66,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+66,IHME-CurveFit,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+66,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+66,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+66,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA",ineligible
+66,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+66,SWC-TerminusCM,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+66,UMass-MechBayes,missing required forecasts,"NA","NA",ineligible
+66,USACE-ERDC_SEIR,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+66,UT-Mobility,missing required forecasts,"NA","NA",ineligible
+66,YYG-ParamSearch,eligible,"NA","NA",eligible
+69,CAN-SEIR_CAN,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+69,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+69,IHME-CurveFit,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+69,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+69,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+69,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA",ineligible
+69,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+69,SWC-TerminusCM,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+69,UMass-MechBayes,missing required forecasts,"NA","NA",ineligible
+69,USACE-ERDC_SEIR,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+69,UT-Mobility,missing required forecasts,"NA","NA",ineligible
+69,YYG-ParamSearch,eligible,"NA","NA",eligible
+72,CAN-SEIR_CAN,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+72,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+72,IHME-CurveFit,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+72,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+72,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+72,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA",ineligible
+72,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+72,SWC-TerminusCM,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+72,UMass-MechBayes,missing required forecasts,"NA","NA",ineligible
+72,USACE-ERDC_SEIR,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+72,UT-Mobility,missing required forecasts,"NA","NA",ineligible
+72,YYG-ParamSearch,eligible,"NA","NA",eligible
+78,CAN-SEIR_CAN,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+78,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+78,IHME-CurveFit,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+78,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+78,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+78,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA",ineligible
+78,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+78,SWC-TerminusCM,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+78,UMass-MechBayes,missing required forecasts,"NA","NA",ineligible
+78,USACE-ERDC_SEIR,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+78,UT-Mobility,missing required forecasts,"NA","NA",ineligible
+78,YYG-ParamSearch,eligible,"NA","NA",eligible
+US,CAN-SEIR_CAN,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+US,GT_CHHS-COVID19,missing required forecasts,"NA","NA",ineligible
+US,IHME-CurveFit,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+US,Imperial-Ensemble2,missing required forecasts,"NA","NA",ineligible
+US,JHU_IDD-CovidSP,eligible,"NA","NA",eligible
+US,MOBS-GLEAM_COVID,eligible,"NA","NA",eligible
+US,NotreDame-FRED,missing required forecasts,"NA","NA",ineligible
+US,SWC-TerminusCM,missing required forecasts,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+US,UMass-MechBayes,eligible,"NA","NA",eligible
+US,USACE-ERDC_SEIR,eligible,"NA","NA",Visual misalignment of predictive quantiles with JHU reference data.
+US,UT-Mobility,eligible,"NA","NA",eligible
+US,YYG-ParamSearch,eligible,"NA","NA",eligible

@@ -22,6 +22,9 @@ shell.rm('-rf', assetsPath)
 shell.mkdir('-p', assetsPath)
 shell.cp('-R', 'static/', assetsPath)
 
+ var cname = new shell.ShellString(config.build.cname)
+ cname.to(path.join(config.build.assetsRoot, 'CNAME'))
+
 webpack(webpackConfig, function (err, stats) {
   spinner.stop()
   if (err) throw err

@@ -1,0 +1,12 @@
+team_name: Pandemic Central (itsonit.com)
+model_name: USCounty
+model_abbr: PandemicCentral-USCounty
+model_contributors: Joseph Galasso (University of Dallas) <jgalasso@udallas.edu>,
+  Duy Cao (University of Dallas) <caominhduy@gmail.com>
+website_url: https://itsonit.com
+license: mit
+team_model_designation: primary
+data_inputs: Apple Mobility Trends, Google Mobility Reports, Facebook Movement Ranges,
+  CCVI, Census, COVIDTracking, IHME, JHU CSSEGISandData
+methods: County-level Projected New Cases using Random Forest learning method
+repo_url: https://github.com/solveforj/pandemic-central

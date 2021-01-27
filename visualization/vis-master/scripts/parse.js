@@ -1,5 +1,5 @@
 /**
- * Module for handling `yarn run parse`
+ * Module for handling `npm run parse-viz-master`
  * Generate following data files in ./src/assets/data/
  * - history.json :: historical data for states
  * - metadata.json :: metadata for states with season prediction availability
@@ -21,7 +21,7 @@ const HISTORY_IN_FILE = './scripts/assets/history.json'
 const HISTORY_OUT_FILE = './src/assets/data/history.json'
 const METADATA_OUT_FILE = './src/assets/data/metadata.json'
 //const SEASONS = utils.getSubDirectories(DATA_DIR)
-SEASONS = ["Incident Deaths", "Cumulative Deaths"]
+SEASONS = ["Incident Deaths", "Cumulative Deaths", "Incident Cases"]
 
 console.log(' Generating data files for flusight')
 console.log(' ----------------------------------\n')

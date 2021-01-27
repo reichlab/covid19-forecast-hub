@@ -8,7 +8,7 @@
   "repository": "git@github.com:reichlab/d3-foresight",
   "license": "MIT",
   "scripts": {
-    "compile": "webpack",
+    "compile": "webpack --watch",
     "build": "PROD_ENV=1 webpack && yes | cp ./dist/d3-foresight.min.js ./docs/assets/",
     "prepare": "npm run test && npm run compile && npm run build",
     "test": "mocha --require ts-node/register ./test/*.spec.ts && standard"
@@ -51,6 +51,7 @@
     "pubsub-js": "^1.6.0",
     "textures": "^1.2.0",
     "tinycolor2": "^1.4.1",
-    "uuid": "^3.2.1"
+    "uuid": "^3.2.1",
+    "iwanthue": "^1.4.0"
   }
 }

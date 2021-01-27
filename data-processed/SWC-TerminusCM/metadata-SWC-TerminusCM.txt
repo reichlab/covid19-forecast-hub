@@ -1,0 +1,12 @@
+team_name: Snyder Wilson Consulting
+model_name: Terminus Compartmental Model
+model_abbr: SWC-TerminusCM
+model_contributors: Timothy L. Snyder <tsnyder701@gmail.com>, Davison D. Wilson <davisondwilson@gmail.com>
+website_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/SWC-TerminusCM
+license: cc-by-4.0
+team_model_designation: primary
+methods: Terminus is a mechanistic Compartmental Model using disease parameter estimates
+  from literature. It uses Bayesian inference to predict the most likely model parameters.
+repo_url: https://github.com/tsnyder701/terminus
+data_inputs: County-level confirmed cases and deaths, state-level hospitalizations,
+  policy change dates
