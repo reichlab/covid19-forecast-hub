@@ -2481,7 +2481,7 @@
     "2021-01-24-Geneva-DetGrowth.csv": "abfcd8acd64c2cd457a2c32b157e92f4",
     "2021-01-25-MIT_ISOLAT-Mixtures.csv": "a95387d649ddbb2670c627b9de44b0d9",
     "2021-01-24-Covid19Sim-Simulator.csv": "2d17167b4b3d52510c2c0b29a9cb630d",
-    "2021-01-24-BPagano-RtDriven.csv": "4654a1748a2dbbd0823eaffc021e50ed",
+    "2021-01-24-BPagano-RtDriven.csv": "a450c41eb97da30b7a493bb8ed4f0942",
     "2021-01-25-UT-Mobility.csv": "346de1455215af47ca6cf262055935dd",
     "2021-01-24-USC-SI_kJalpha.csv": "1d72eacb8df7aacdbb0a6d14460c40a9",
     "2021-01-25-CEID-Walk.csv": "e0a3f8ee4452306b65265b980e8c6674",
@@ -2502,7 +2502,7 @@
     "2021-01-25-IBF-TimeSeries.csv": "6eb35725279aaac084790c9ab46d33fb",
     "2021-01-24-UCSB-ACTS.csv": "05811b6bb1235ffd8d4fe6b276925ff6",
     "2021-01-25-SteveMcConnell-CovidComplete.csv": "2bca75d3db899456cd6994f904887f34",
-    "2021-01-25-epiforecasts-ensemble1.csv": "8ac210342bb5ae82b564e2d0b82ad6cd",
+    "2021-01-25-epiforecasts-ensemble1.csv": "f17cb8c2424f6c1266c94d02a5e1154f",
     "2021-01-24-UCLA-SuEIR.csv": "61256de42b02bb199a571d2fb3c92887",
     "2021-01-25-UMich-RidgeTfReg.csv": "47e39a5e1109006ad6a954a16bdb9381",
     "2021-01-25-JHUAPL-Bucky.csv": "0afe443318a49083df1c7f53d67d7ede",
@@ -2528,5 +2528,8 @@
     "2021-01-25-UCSD_NEU-DeepGLEAM.csv": "b7902f55c6ec638644ee268d11622d68",
     "2021-01-25-Microsoft-DeepSTIA.csv": "5bccc295f12e65bb88b82fbc78bade1b",
     "2021-01-25-AIpert-pwllnod.csv": "6960077d3161ad4485621c78a2756900",
-    "2021-01-25-COVIDhub-ensemble.csv": "81a85d35454fe3225bd6e8c0645a96d6"
+    "2021-01-25-COVIDhub-ensemble.csv": "81a85d35454fe3225bd6e8c0645a96d6",
+    "2021-01-25-FAIR-NRAR.csv": "7d6ff3f21f19d3d4a77703748dc6698c",
+    "2021-01-24-MIT_CritData-GBCF.csv": "571183e9dcaaf900aa2d8c207745f6eb",
+    "2021-01-25-RobertWalraven-ESG.csv": "f53b95044535de0d2cbb5294c75930c4"
 }
