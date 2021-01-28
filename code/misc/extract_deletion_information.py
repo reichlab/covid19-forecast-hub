@@ -1,7 +1,7 @@
 # Steps to get the deleted forecast files
 # Step 0: open terminal at the root directory of the project
-# Step 1: 
-# Step 2:
+# Step 1: git log --diff-filter=D --summary -- "data-processed" > code/misc/file_delete.txt
+# Step 2: python code/misc/extract_deletion_information.py
 
 import pandas as pd
 from itertools import groupby, chain
