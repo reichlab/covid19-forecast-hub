@@ -13,24 +13,27 @@ locs <- hub_locations %>%
 
 # run without chunks
 all_states <-locs[2:52,] # 75 minutes
-
+# all_states <-locs[2:3,] # test
 
 state_fips<-all_states$fips
-today_date<-Sys.Date()
+state_ab<-all_states$abbreviation
+# today_date<-Sys.Date()
+# # use fixed date
+today_date <-  as.Date("2021-01-26")
 
 # render report based on a state fips code
-render_weekly_report <- function(curr_state_fips){
+render_weekly_report <- function(curr_state_fips,state_ab){
   rmarkdown::render(
     'all-states-weekly-report.Rmd',
-    # rename output file, CHANGE DATE
-    output_file = paste0(today_date,'-', curr_state_fips, '-weekly-report.html'), 
+    # rename output file
+    output_file = paste0(today_date,'-', as.character(state_ab), '-weekly-report.html'), 
     params = list(state = curr_state_fips)
   )
 }
 
 # render report all states
-for (state in state_fips){
-  render_weekly_report(state)
+for  (i in seq_len(nrow(all_states))) {
+  render_weekly_report(all_states[i,]$fips, all_states[i,]$abbreviation)
 }
 
 
