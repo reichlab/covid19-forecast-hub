@@ -2,6 +2,7 @@ from utils import *
 import pandas as pd
 import os
 
+# Get info about a model
 def get_model_info(search_item):
     data = get_data()
     results = {}
