@@ -45287,7 +45287,6 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2021-01-11,28 day ahead inc hosp,2021-02-08,US,quantile,0.95,19591.315719369246
 2021-01-11,28 day ahead inc hosp,2021-02-08,US,quantile,0.975,20432.207656929982
 2021-01-11,28 day ahead inc hosp,2021-02-08,US,quantile,0.99,21518.70335259371
-
 2021-01-11,1 wk ahead inc case,2021-01-16,02,quantile,0.01,1008.0553400978932
 2021-01-11,1 wk ahead inc case,2021-01-16,02,quantile,0.025,1105.1961469193898
 2021-01-11,1 wk ahead inc case,2021-01-16,02,quantile,0.05,1200.8942280201734
