@@ -9,4 +9,4 @@ methods: An ensemble, or model average, of submitted forecasts to the COVID-19 F
 team_funding: Supported by Intramural Research Program of the NIH/NIDDK
 repo_url: https://github.com/ONYLAB/Scoreboard/
 data_inputs: JHU CSSE County-level confirmed cases and deaths, US cumulative death and incident case forecasts from other models.
-methods_long: An ensemble, or model average, of submitted forecasts to the COVID-19 Forecast Hub. The ensembles are formed by weighting the individual model forecasts with their past performances.
+methods_long: An ensemble, or model average, of submitted forecasts to the COVID-19 Forecast Hub. The ensembles are formed by weighting the individual model forecasts with their past performances. No observed data after Monday are used for estimating.
