@@ -1,0 +1,13 @@
+team_name: COVID-19 Forecast Hub
+model_name: trained_ensemble
+model_abbr: COVIDhub-trained_ensemble
+model_contributors: Evan L. Ray, Estee Cramer, Aaron Gerding, Nicholas Reich <nick@schoolph.umass.edu>
+website_url: https://covid19forecasthub.org/
+license: cc-by-4.0
+team_model_designation: other
+methods: A weighted ensemble, or model average, of submitted forecasts to the COVID-19 Forecast Hub.
+team_funding: This model's development is funded by the US CDC grant number U01IP001122. The content is solely the responsibility of the authors and does not necessarily represent the official views of NIGMS or the National Institutes of Health.
+repo_url: https://github.com/reichlab/covid19-forecast-hub
+twitter_handles: reichlab, jaradniemi
+data_inputs: cumulative and incident case, death, and hospitalization forecasts from other models.
+methods_long: This is a weighted combination of the component model forecasts. All component models that provide forecasts at all required quantile levels for all forecasts at 1 to 4 week ahead horizons (or 1 to 28 day ahead for hospitalizations) are included. Ensemble forecasts at each quantile level are a weighted linear combination of the component model forecasts at that quantile level. Weights are estimated separately for each combination of geographic scale (county, state, or national) and prediction target variable (inc case, inc hosp, inc death, cum death). Model weights are estimated by optimizing the mean weighted interval score (WIS) of the ensemble forecasts in past weeks, subject to the constraints that the weights are non-negative and sum to 1, and the predictive quantiles are properly ordered. We select an ensemble specification with best mean WIS across all past weeks in a retrospective evaluation; a separate specification may be selected for each combination of geographic scale and prediction target variable. We consider variations on training that use a single shared weight across all quantile levels for each model, separate weights for each quantile level, or three groups of quantile levels (the four in the lower tail, the 15 in the middle, and the 4 in the upper tail). We also consider varying ranges for how many past weeks of forecasts are used in weight estimation, from 3 weeks to 10 weeks (except at county level, where we only consider window sizes of 3 weeks). For the national and state level, we also consider estimation jointly across those geographic units. During the weight estimation process, any missing forecasts are mean-imputed; the estimated weights are then redistributed to account for missingness patterns (so that models with missing forecasts in the training window will have their estimated weight discounted).
