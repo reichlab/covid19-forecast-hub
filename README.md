@@ -94,6 +94,7 @@ repository are (with data reuse license):
  - [Discrete Dynamical Systems](https://dds-covid19.github.io/) (MIT)
  - [epiforecasts](https://github.com/epiforecasts/covid-us-deaths) (MIT)
  - [Facebook AI Research](https://dataforgood.fb.com/tools/covid-19-forecasts/) (CC-BY-NC-4.0)
+ - [FDA / NIH / ASU](https://github.com/shaman-lab/COVID-19Projection) (CC-BY-NC-4.0)
  - [GLEAM from Northeastern University](https://www.gleamproject.org/covid-19) (CC-BY-4.0)
  - [Georgia Institute of Technology](https://www.cc.gatech.edu/~badityap/covid.html) (CC-BY-4.0)
  - [Georgia Institute of Technology - Center for Health and Humanitarian Systems](https://github.com/pkeskinocak/Center-for-Health-and-Humanitarian-Systems/tree/master/COVID-19) (CC-BY-4.0)

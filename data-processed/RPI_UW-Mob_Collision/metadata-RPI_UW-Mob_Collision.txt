@@ -34,7 +34,7 @@ methods_long: "We incorporate mobility information into a simplified SIR model w
   \ accounts for elevated outdoor activities while election mobility increase accounts for \
   \ large gatherings of political rally which maybe washed out in the averaged state-mobility. \
   \ We assume 80% of the vulnerable population will be vaccinated within three months. \
-  \ The assumption is antibody will fully emerge after 2 weeks upon the 2nd shot. \
+  \ The assumption is antibody will be effective 3 weeks after the first shot. \
   \ To account for the recent mutations, we increases the infection rate by 5%. \
   \ Two vaccination scenarios have been considered and predicted which are shown in our website. \
   \ Google mobility data may have been affected by a recent Sep update. " 
