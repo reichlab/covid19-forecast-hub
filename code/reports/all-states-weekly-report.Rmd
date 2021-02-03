@@ -204,20 +204,7 @@ dat<-load_forecasts(
      rename(fips=location, timezero=forecast_date, class=type)%>%
      mutate(target=paste(horizon,target_variable,sep=" wk ahead "))
 
-# DELET IF ABOVE WORKS
-# dat<-load_forecasts(
-#         models=c("COVIDhub-ensemble"),
-#         forecast_date = this_monday, 
-#         types = c("point", "quantile"),
-#         targets = c(inc_death_targets, cum_death_targets,inc_case_targets),
-#        location=c("US",state_county)) %>%
-#      rename(fips=location, timezero=forecast_date, class=type, week_ahead=horizon)%>%
-#      mutate(target=paste(week_ahead,target_variable,sep=" wk ahead "))%>%
-#      select(model, timezero, fips, target, class, quantile, value) %>%
-#      # create rate variable and week-ahead
-#      mutate(week_ahead = as.numeric(substr(target, 0,1)),
-#      ## recreates the target_end_date from GitHub
-#      target_end_date = as.Date(calc_target_week_end_date(timezero, horizon = week_ahead)))
+
 
 ```
 
@@ -593,16 +580,7 @@ inc_case_truth  <- load_truth(
                     rename(fips = location) %>%
                     mutate(model = "observed data (JHU)") %>%     #maybe also deleting this line
                     select(target_end_date, location_name,fips, value, model, population, geo_type, geo_value, abbreviation) 
-# inc_case_truth  <- load_truth(
-#                        truth_source = "JHU",
-#                        target_variable = "inc case")%>%
-#                     rename(fips = location) %>%
-#                     mutate(model = "observed data (JHU)") %>%     #maybe also deleting this line
-#                     left_join(locs, by=c("fips")) %>%
-#                     filter(target_end_date %in% seq.Date(as.Date("2020-01-25"), to = Sys.Date(), by="1 week"),
-#                      fips %in% unique(inc_case_forecast$fips))  %>%
-#                      rename (geo_value=geo_value.x, geo_type=geo_type.x,abbreviation=abbreviation.x)%>%
-#                     select(target_end_date, location_name.x,fips, value, model, location_name.y, Population, geo_type, geo_value, abbreviation) 
+
 
 inc_case_all_points <- inc_case_truth %>%
   bind_rows(filter(inc_case_forecast, class=="point")) %>%
