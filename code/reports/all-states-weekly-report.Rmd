@@ -60,7 +60,7 @@ state <-params$state
 state_name <- locs %>% 
   filter(fips %in% state)  %>%
   select(location_name)
-title_var<-paste0("COVID-19 ",state_name," Forecast Hub report ", Sys.Date())
+title_var<-paste0("COVID-19 ",state_name," Weekly Forecast Summary")
 
 # state and counties
 g_state<-str_c("^",state)
@@ -91,7 +91,7 @@ county<-state_county[-1]
 
 ---
 title: `r title_var`
-author: "Nicholas G Reich, Estee Y Cramer, Martha W Zorn, Evan L Ray, Serena Y Wang <br><br>https://covid19forecasthub.org/"
+author: "[The COVID-19 Forecast Hub Team](https://covid19forecasthub.org/doc/)<br><br>https://covid19forecasthub.org/"
 date: "`r Sys.Date()`"
 
 ---
@@ -107,8 +107,8 @@ project_url <- "https://www.zoltardata.com/api/project/44/"
 ```{r get-date-boundaries}
 
 next_saturday <- as.Date(calc_target_week_end_date(today(), horizon= 0))
-# # use fixed date
-# next_saturday <-  as.Date("2021-01-23")
+# # # use fixed date
+# next_saturday <-  as.Date("2021-01-30")
 saturday_4_wk_ahead <- next_saturday + 7*3
 saturday_4_wk_ahead_txt <- format(saturday_4_wk_ahead, "%B %d")
 last_5_saturdays <- next_saturday - 7*c(5:1)
@@ -126,7 +126,7 @@ last_6_mondays<-last_6_saturdays-5
 
 
 # Background
-This report provides a brief summary of the weekly ensemble forecast for `r state_name` from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/). In collaboration with the US CDC, our team aggregates COVID-19 forecasts from dozens of teams around the globe. Typically on Wednesday or Thursday of each week, a summary of the week's forecasts from the COVID-19 Forecast Hub appear on the [official CDC COVID-19 forecasting page](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html).
+This report provides a brief summary of the weekly ensemble forecast for `r state_name` from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/). In collaboration with the US CDC, our team aggregates COVID-19 forecasts from dozens of teams around the globe. Typically on Wednesday of each week, a summary of the week's forecasts from the COVID-19 Forecast Hub appear on the [official CDC COVID-19 forecasting page](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html).
 
 ```{r define weeks,STATE}
 
@@ -150,19 +150,7 @@ models_this_week<-load_forecasts(
         targets = c("1 wk ahead cum death", "1 wk ahead inc death", "1 wk ahead inc case", "1 day ahead inc hosp"))%>%
   pull(model) %>% sort.default()%>% 
   unique()
-# 
-# DELETE WHEN DONE OLD CODE
-# models_this_week_OLD <- zoltr::do_zoltar_query(
-#   zoltar_connection, project_url,
-#   targets = c("1 wk ahead cum death", "1 wk ahead inc death", "1 wk ahead inc case", "1 day ahead inc hosp"),
-#   # timezeros = as.character(seq.Date(this_monday, this_monday-6, by="-1 day")),
-#    timezeros = as.character(this_week_timezeroes),
-#   types = c("point"),
-#   verbose = FALSE,
-#   models = c(),
-#  query_type = "forecasts") %>%
-#   pull(model) %>%
-#   unique()
+
 nmodels_this_week <- length(models_this_week)
 ```
 
@@ -213,34 +201,24 @@ dat<-load_forecasts(
         types = c("point", "quantile"),
         targets = c(inc_death_targets, cum_death_targets,inc_case_targets),
        location=c("US",state_county)) %>%
-     rename(fips=location, timezero=forecast_date, class=type, week_ahead=horizon)%>%
-     mutate(target=paste(week_ahead,target_variable,sep=" wk ahead "))%>%
-     select(model, timezero, fips, target, class, quantile, value) %>%
-     # create rate variable and week-ahead
-     mutate(week_ahead = as.numeric(substr(target, 0,1)),
-     ## recreates the target_end_date from GitHub
-     target_end_date = as.Date(calc_target_week_end_date(timezero, horizon = week_ahead)))
+     rename(fips=location, timezero=forecast_date, class=type)%>%
+     mutate(target=paste(horizon,target_variable,sep=" wk ahead "))
 
-# DELETE WHEN DONE OLD CODE
-# dat_OLD <- zoltr:: do_zoltar_query(
-#   zoltar_connection, project_url, TRUE,
-#   models = c("COVIDhub-ensemble"),
-#   query_type = "forecasts",
-#   targets = c(inc_death_targets, cum_death_targets,inc_case_targets),
-#        units=c("US",state_county),
-#   timezeros = as.character(this_monday),
-#   types = c("point", "quantile"),
-#   verbose = FALSE) %>%
-#   ## choose only columns we need and with data
-#   select(model, timezero, unit, target, class, quantile, value) %>%
-#   rename(fips=unit) %>%
-#   ## create rate variable and week-ahead
-#   mutate(week_ahead = as.numeric(substr(target, 0,1)),
-#     ## recreates the target_end_date from GitHub
-#    target_end_date = as.Date(calc_target_week_end_date(timezero, horizon = week_ahead)))
-#   # # add location_name column in dat
-#   # left_join(fips_codes, by=c("fips" = "location")) %>%
-#   # dplyr::select(-population, -abbreviation)
+# DELET IF ABOVE WORKS
+# dat<-load_forecasts(
+#         models=c("COVIDhub-ensemble"),
+#         forecast_date = this_monday, 
+#         types = c("point", "quantile"),
+#         targets = c(inc_death_targets, cum_death_targets,inc_case_targets),
+#        location=c("US",state_county)) %>%
+#      rename(fips=location, timezero=forecast_date, class=type, week_ahead=horizon)%>%
+#      mutate(target=paste(week_ahead,target_variable,sep=" wk ahead "))%>%
+#      select(model, timezero, fips, target, class, quantile, value) %>%
+#      # create rate variable and week-ahead
+#      mutate(week_ahead = as.numeric(substr(target, 0,1)),
+#      ## recreates the target_end_date from GitHub
+#      target_end_date = as.Date(calc_target_week_end_date(timezero, horizon = week_ahead)))
+
 ```
 
 
@@ -303,18 +281,6 @@ inc_death_truth  <- load_truth(
                      rename (geo_value=geo_value.x, geo_type=geo_type.x,abbreviation=abbreviation.x)%>%
                     select(target_end_date, location_name.x,fips, value, model, location_name.y, Population, geo_type, geo_value, abbreviation) 
                     
-
-# DELETE WHEN DONE OLD CODE
-# inc_death_truth_OLD <- read_csv("../../data-truth/truth-Incident Deaths.csv") %>%
-#   rename(target_end_date = date, fips = location) %>%
-#   mutate(model = "observed data (JHU)") %>%
-#   group_by(fips, model) %>% arrange(target_end_date) %>%
-#   mutate(value = RcppRoll::roll_sum(value, 7, align = "right", fill = NA)) %>%
-#   ungroup() %>%
-#   left_join(locs, by=c("fips")) %>%
-#   filter(target_end_date %in% seq.Date(as.Date("2020-01-25"), to = Sys.Date(), by="1 week"),
-#     fips %in% unique(inc_death_forecast$fips)) 
-# 
 inc_death_all_points <- inc_death_truth %>%
   bind_rows(filter(inc_death_forecast, class=="point")) %>%
   bind_rows(filter(inc_death_truth, target_end_date==last_5_saturdays[5]) %>% mutate(model="COVIDhub-ensemble")) %>%
@@ -360,7 +326,8 @@ ggplot() +
   ylab("incident deaths") +
   labs(title=plot1_cap,
     caption="source: JHU CSSE (observed data), COVID-19 Forecast Hub (forecasts)") +
-  theme(legend.position = c(.05,.95), legend.justification = c(0,1))
+  theme(legend.position = c(.05,.95), legend.justification = c(0,1),legend.key = element_rect(colour = "transparent", fill = "white"),
+    legend.background = element_rect(alpha("white", 0.5)),legend.box="horizontal")
 ```
 
 
@@ -379,11 +346,6 @@ cum_death_start  <- load_truth(
                     filter(target_end_date == last_5_saturdays[5]) %>%
                     select(target_end_date, location_name.x,fips, value) %>%
                     rename(cum_deaths_at_forecast_start = value,date =target_end_date,location=fips,location_name=location_name.x)
-# DELETE WHEN DONE OLD CODE
-# cum_death_start_OLD <- read_csv("../../data-truth/truth-Cumulative Deaths.csv") %>%
-#   filter(date == last_5_saturdays[5]) %>%
-#   select(date, location, location_name, value) %>%
-#   rename(cum_deaths_at_forecast_start = value) 
 
 ## get recent observed inc deaths
 recent_inc_death_totals <- load_truth(
@@ -404,41 +366,6 @@ recent_inc_death_totals <- load_truth(
   left_join(cum_death_start) %>%
 rename(fips = location)
 
-
-# DELETE WHEN DONE OLD CODE
-# recent_inc_death_totals_OLD<- read_csv("../../data-truth/truth-Incident Deaths.csv") %>%
-#   # filter(date > last_5_saturdays[3] & date <= last_5_saturdays[5]) %>%
-#   mutate(last_2wk = date > last_5_saturdays[3] & date <= last_5_saturdays[5],
-#     last_4wk = date > last_5_saturdays[1] & date <= last_5_saturdays[5]) %>%
-#   select(date, location, location_name, value, last_2wk, last_4wk) %>%
-#   group_by(location, location_name) %>%
-#   summarize(last_2wk_deaths = sum(value*last_2wk),
-#     last_4wk_deaths = sum(value*last_4wk)) %>%
-#   ungroup() %>%
-#   left_join(locs, by=c("location" = "fips")) %>%
-#   left_join(cum_death_start) %>% 
-#   rename(fips = location, target_end_date = date)
-
-
-
-# DELETE WHEN DONE OLD CODE
-## get last saturday observed cumulative cases
-# cum_case_start  <- load_truth(
-#                        truth_source = "JHU",
-#                        target_variable = "inc case")%>%
-#                     rename(fips = location) %>%
-#                     mutate(model = "observed data (JHU)") %>%     #maybe also deleting this line
-#                     left_join(locs, by=c("fips")) %>%
-#                     filter(target_end_date == last_5_saturdays[5]) %>%
-#                     select(target_end_date, location_name.x,fips, value) %>%
-#                     rename(cum_cases_at_forecast_start = value,date =target_end_date,location=fips,location_name=location_name.x)
-# 
-# 
-# cum_case_start_OLD <- read_csv("../../data-truth/truth-Cumulative cases.csv") %>%
-#   filter(date == last_5_saturdays[5]) %>%
-#   select(date, location, location_name, value) %>%
-#   rename(cum_cases_at_forecast_start = value)
-# get recent observed inc cases
 recent_inc_case_totals <- load_truth(
                               truth_source = "JHU",
                               target_variable = "inc case") %>%
@@ -456,20 +383,6 @@ recent_inc_case_totals <- load_truth(
     left_join(locs, by=c("location" = "fips")) %>%
 rename(fips = location)
 
-
-# DELETE WHEN DONE OLD CODE
-recent_inc_case_totals_OLD<- read_csv("../../data-truth/truth-Incident Cases.csv") %>%
-  # filter(date > last_5_saturdays[3] & date <= last_5_saturdays[5]) %>%
-  mutate(last_1wk = date > last_5_saturdays[4] & date <= last_5_saturdays[5],
-         last_2wk = date > last_5_saturdays[3] & date <= last_5_saturdays[5]) %>%
-  select(date, location, location_name, value, last_1wk, last_2wk) %>%
-  group_by(location, location_name) %>%
-  summarize(last_1wk_cases = sum(value*last_1wk),
-            last_2wk_cases = sum(value*last_2wk)) %>%
-  ungroup() %>%
-  left_join(locs, by=c("location" = "fips")) 
-  # left_join(cum_case_start) %>% 
-  # rename(fips = location, target_end_date = date)
 ```
 
 ```{r accuracy of models past 6 weeks-state-deaths}
@@ -675,28 +588,21 @@ plot2_cap <- paste0("Weekly reported COVID-19 cases in ", state_name,": observed
 ## get full inc case truth for plotting
 inc_case_truth  <- load_truth(
                        truth_source = "JHU",
-                       target_variable = "inc case")%>%
+                       target_variable = "inc case",
+                       locations = unique(inc_case_forecast$fips))%>%
                     rename(fips = location) %>%
                     mutate(model = "observed data (JHU)") %>%     #maybe also deleting this line
-                    left_join(locs, by=c("fips")) %>%
-                    filter(target_end_date %in% seq.Date(as.Date("2020-01-25"), to = Sys.Date(), by="1 week"),
-                     fips %in% unique(inc_case_forecast$fips))  %>%
-                     rename (geo_value=geo_value.x, geo_type=geo_type.x,abbreviation=abbreviation.x)%>%
-                    select(target_end_date, location_name.x,fips, value, model, location_name.y, Population, geo_type, geo_value, abbreviation) 
-                    
-
-# DELETE WHEN DONE OLD CODE
-# inc_case_truth_OLD <- read_csv("../../data-truth/truth-Incident Cases.csv") %>%
-#   rename(target_end_date = date, fips = location) %>%
-#   mutate(model = "observed data (JHU)") %>%
-#   group_by(fips, model) %>% arrange(target_end_date) %>%
-#   mutate(value = RcppRoll::roll_sum(value, 7, align = "right", fill = NA)) %>%
-#   ungroup() %>%
-#   left_join(locs, by=c("fips")) %>%
-#   filter(target_end_date %in% seq.Date(as.Date("2020-01-25"), to = Sys.Date(), by="1 week"),
-#     fips %in% unique(inc_case_forecast$fips)) 
-
-
+                    select(target_end_date, location_name,fips, value, model, population, geo_type, geo_value, abbreviation) 
+# inc_case_truth  <- load_truth(
+#                        truth_source = "JHU",
+#                        target_variable = "inc case")%>%
+#                     rename(fips = location) %>%
+#                     mutate(model = "observed data (JHU)") %>%     #maybe also deleting this line
+#                     left_join(locs, by=c("fips")) %>%
+#                     filter(target_end_date %in% seq.Date(as.Date("2020-01-25"), to = Sys.Date(), by="1 week"),
+#                      fips %in% unique(inc_case_forecast$fips))  %>%
+#                      rename (geo_value=geo_value.x, geo_type=geo_type.x,abbreviation=abbreviation.x)%>%
+#                     select(target_end_date, location_name.x,fips, value, model, location_name.y, Population, geo_type, geo_value, abbreviation) 
 
 inc_case_all_points <- inc_case_truth %>%
   bind_rows(filter(inc_case_forecast, class=="point")) %>%
@@ -727,7 +633,7 @@ inc_case_quantiles <- inc_case_forecast %>%
   tidyr::pivot_wider(names_from='endpoint_type', values_from='value')  %>%
   # add tooltip text column
    dplyr::mutate(text = paste(
-     sprintf("%s", fips),
+     sprintf("%s", location_name),
      sprintf("For week ending: %s", target_end_date),
      sprintf("%s Prediction Interval: (%d,%d)", 
              `Prediction Interval`, lower, upper),
@@ -758,7 +664,7 @@ ggplot() +
 #inc cases for past 6 weeks
 inc_case_p6 <- data.frame(inc_case_all_points %>%
       rename(location=fips,point=value)%>%
-      select(target_end_date,location,location_name.x,point) %>%
+      select(target_end_date,location,location_name,point) %>%
     filter(location %in% state_county,target_end_date %in% last_6_saturdays))
 inc_case_p6_u <- unique(inc_case_p6)
 
@@ -928,7 +834,7 @@ datatable(wide_point_dat2p %>%
 #inc cases for past 6 weeks
 inc_case_p6 <- data.frame(inc_case_all_points %>%
       rename(location=fips,point=value)%>%
-      select(target_end_date,location,location_name.x,point) %>%
+      select(target_end_date,location,location_name,point) %>%
     filter(location %in% state_county,target_end_date %in% last_6_saturdays))
 inc_case_p6_u <- unique(inc_case_p6)
 
@@ -976,6 +882,7 @@ C_PI50_covern<-paste0(C_PI50_cover$PI_coverp)
 C_PI50_bias<-paste0(C_PI50_cover$bias)
 
 ```
+## County level
 ```{block eval=FALSE, include = state !='11'}
 ## County level
 
@@ -1153,7 +1060,7 @@ county_plot <- ggplot() +
     mapping = aes(x = target_end_date, y = value, color = model)) +
   geom_point(data=inc_case_all_points_df_prediction,
     mapping = aes(x = target_end_date, y = value, color = model,
-                  text = paste(sprintf("%s", location_name.x),
+                  text = paste(sprintf("%s", location_name),
                                sprintf("For week ending: %s", target_end_date),
                                ifelse(model == "COVIDhub-ensemble",
                                       sprintf("Incident cases (forecasted): %s",value),
@@ -1240,7 +1147,7 @@ county_plot$x$layout$legend$font$size<-8
 bscols(widths = c(3,NA),
 
        # filter
-       filter_select(id= "location_name", label = "Select a County", sharedData = inc_case_all_points_df_full, ~location_name.x, multiple = FALSE),
+       filter_select(id= "location_name", label = "Select a County", sharedData = inc_case_all_points_df_full, ~location_name, multiple = FALSE),
 
        # graph object
        county_plot
