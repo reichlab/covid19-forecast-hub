@@ -2438,3 +2438,8 @@ file_path,validation_date
 ./data-processed/FDANIHASU-Sweight/2021-02-01-FDANIHASU-Sweight.csv,2021-02-02 14:15:17.456305
 ./data-processed/COVIDhub-ensemble/2021-02-01-COVIDhub-ensemble.csv,2021-02-02 14:15:33.890391
 ./data-processed/COVIDhub-trained_ensemble/2021-02-01-COVIDhub-trained_ensemble.csv,2021-02-03 00:26:05.700740
+./data-processed/COVIDhub-baseline/2021-01-25-COVIDhub-baseline.csv,2021-02-03 06:21:08.655006
+./data-processed/COVIDhub-baseline/2021-02-01-COVIDhub-baseline.csv,2021-02-03 06:21:33.498250
+./data-processed/FAIR-NRAR/2021-02-01-FAIR-NRAR.csv,2021-02-03 06:21:44.866238
+./data-processed/JHU_IDD-CovidSP/2021-01-31-JHU_IDD-CovidSP.csv,2021-02-03 06:22:10.336220
+./data-processed/Geneva-DetGrowth/2021-01-31-Geneva-DetGrowth.csv,2021-02-03 06:22:10.929364
