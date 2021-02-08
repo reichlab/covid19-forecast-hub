@@ -17,9 +17,9 @@ all_states <-locs[2:52,] # 75 minutes
 
 state_fips<-all_states$fips
 state_ab<-all_states$abbreviation
-# today_date<-Sys.Date()
-# # use fixed date
-today_date <-  as.Date("2021-01-26")
+today_date<-Sys.Date()
+# # # use fixed date
+# today_date <-  as.Date("2021-01-26")
 
 # render report based on a state fips code
 render_weekly_report <- function(curr_state_fips,state_ab){

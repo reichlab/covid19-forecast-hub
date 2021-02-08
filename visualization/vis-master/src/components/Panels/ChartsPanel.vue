@@ -59,7 +59,7 @@ div
       li(v-bind:class="[showTimeChart ? 'is-active' : '']" v-on:click="displayTimeChart")
         a Time Chart
   .disclaimer-subtitle
-    | The <a href="https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/COVIDhub-ensemble/metadata-COVIDhub-ensemble.txt" target="_blank">ensemble</a> forecast combines models unconditional on particular interventions being in place with those conditional on certain social distancing measures continuing. To ensure consistency, only models with 4 week-ahead forecasts ahead are included in the ensemble.
+    | The <a href="https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/COVIDhub-ensemble/metadata-COVIDhub-ensemble.txt" target="_blank">ensemble</a> forecast is a multi-model ensemble developed and published weekly in real-time that combines models with varied approaches, data sources, and assumptions.
   .container
     #chart-right(v-show="!showScoresPanel")
 </template>
