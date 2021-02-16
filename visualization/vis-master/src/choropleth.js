@@ -4,10 +4,12 @@ import colormap from 'colormap'
 import textures from 'textures'
 import tinycolor from 'tinycolor2'
 import * as d3 from 'd3'
+import csv from 'csvtojson'
 
 /**
  * Return sibling data for given element
  */
+
 export const getSiblings = (element, data) => {
   let stateName = element.getAttribute('class').split(' ')[1]
   return data.filter(d => d.states.indexOf(stateName) > -1)[0]
@@ -85,6 +87,7 @@ export class ColorBar {
 
   // Update scale of colorbar
   update(range) {
+    //console.log(range)
     this.scale.domain(range)
     let nticks = 5
     // Setup custom ticks
@@ -92,6 +95,7 @@ export class ColorBar {
       // Relative values
       nticks = 3
     }
+    //console.log(range)
 
     let axis = d3.axisBottom(this.scale).ticks(4).tickFormat(d3.format(".2"))
 
@@ -263,7 +267,8 @@ export default class Choropleth {
    *   - Week change
    *   - Region selector change
    */
-  update(ids) {
+
+   update(ids) {
     let data = this.data
     let colorScale = this.colorScale
     let selectedTexture = this.selectedTexture
@@ -273,37 +278,43 @@ export default class Choropleth {
     if (ids.regionIdx >= 0) {
       highlightedStates = data[ids.regionIdx].states
     }
-
     // Update colors for given week
     data.map(d => {
-      let value = d.values[ids.weekIdx]
-      let color = '#ccc'
-      if (value !== -1) color = cmap[Math.floor(colorScale(value))]
+      const popu = {}
+      d3.csv("/static/locations.csv",function(data2) {
+        data2.forEach(function(d) {
+          popu[d.abbreviation] = d.population
+        })
+        let value = d.values[ids.weekIdx]/popu[d.states[0]]*100000
+        let color = '#ccc'
+        if (value !== -1) color = cmap[Math.floor(colorScale(value))]
 
-      d.states.map(s => {
-        let d3State = d3.select('.' + s)
+        d.states.map(s => {
+          let d3State = d3.select('.' + s)
 
-        d3State.style('fill', color)
-        d3State.attr('data-value', value)
+          d3State.style('fill', color)
+          d3State.attr('data-value', value)
 
-        if (highlightedStates.indexOf(s) > -1) {
-          // Setup selected pattern
-          let strokeColor = tinycolor(color).getLuminance() < 0.5 ?
-            'white' : '#444'
+          if (highlightedStates.indexOf(s) > -1) {
+            // Setup selected pattern
+            let strokeColor = tinycolor(color).getLuminance() < 0.5 ?
+              'white' : '#444'
 
-          d3.select('#' + selectedTexture.id() + ' rect')
-            .attr('fill', color)
+            d3.select('#' + selectedTexture.id() + ' rect')
+              .attr('fill', color)
 
-          d3.select('#' + selectedTexture.id() + ' path')
-            .style('stroke', strokeColor)
+            d3.select('#' + selectedTexture.id() + ' path')
+              .style('stroke', strokeColor)
 
-          d3State.style('stroke', strokeColor)
-            .style('stroke-opacity', 1)
-            .style('fill', selectedTexture.url())
-        } else {
-          d3State.style('stroke', 'white')
-            .style('stroke-opacity', 0)
-        }
+            d3State.style('stroke', strokeColor)
+              .style('stroke-opacity', 1)
+              .style('fill', selectedTexture.url())
+          } else {
+            d3State.style('stroke', 'white')
+              .style('stroke-opacity', 0)
+          }
+
+        })
       })
     })
   }
