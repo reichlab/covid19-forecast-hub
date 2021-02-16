@@ -16,10 +16,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 01,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 01,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 01,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+01,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 01,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 01,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 01,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 01,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+01,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 01,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 01,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 01,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -29,7 +31,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 01,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 01,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 01,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-01,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 01,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 01,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 01,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -55,10 +56,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 02,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 02,IowaStateLW-STEM,missing required forecasts,"NA","NA","NA","NA",ineligible
 02,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+02,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 02,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 02,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 02,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 02,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+02,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 02,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 02,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 02,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -68,7 +71,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 02,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 02,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 02,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-02,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 02,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 02,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 02,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -94,10 +96,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 04,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 04,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 04,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+04,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 04,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 04,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 04,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 04,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+04,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 04,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 04,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 04,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -107,7 +111,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 04,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 04,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 04,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-04,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 04,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 04,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 04,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -133,10 +136,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 05,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 05,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 05,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+05,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 05,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 05,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 05,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 05,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+05,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 05,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 05,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 05,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -146,7 +151,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 05,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 05,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 05,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-05,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 05,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 05,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 05,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -172,10 +176,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 06,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 06,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 06,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+06,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 06,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 06,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 06,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 06,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+06,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 06,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 06,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 06,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -185,7 +191,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 06,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 06,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 06,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-06,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 06,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 06,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 06,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -211,10 +216,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 08,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 08,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 08,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+08,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 08,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 08,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 08,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 08,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+08,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 08,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 08,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 08,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -224,7 +231,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 08,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 08,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 08,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-08,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 08,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 08,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 08,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -250,10 +256,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 09,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 09,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 09,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+09,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 09,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 09,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 09,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 09,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+09,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 09,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 09,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 09,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -263,7 +271,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 09,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 09,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 09,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-09,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 09,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 09,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 09,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -289,10 +296,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 10,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 10,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 10,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+10,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 10,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 10,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 10,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 10,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+10,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 10,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 10,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 10,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -302,7 +311,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 10,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 10,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 10,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-10,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 10,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 10,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 10,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -328,10 +336,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 11,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 11,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 11,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+11,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 11,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 11,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 11,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 11,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+11,Microsoft-DeepSTIA,missing required forecasts,"NA","NA","NA","NA",ineligible
 11,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 11,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
 11,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -341,7 +351,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 11,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 11,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 11,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-11,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 11,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 11,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 11,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -367,10 +376,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 12,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 12,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 12,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+12,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 12,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 12,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 12,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 12,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+12,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 12,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 12,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 12,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -380,7 +391,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 12,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 12,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 12,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-12,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 12,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 12,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 12,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -406,10 +416,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 13,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 13,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 13,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+13,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 13,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 13,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 13,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 13,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+13,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 13,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 13,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 13,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -419,7 +431,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 13,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 13,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 13,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-13,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 13,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 13,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 13,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -445,10 +456,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 15,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 15,IowaStateLW-STEM,missing required forecasts,"NA","NA","NA","NA",ineligible
 15,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+15,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 15,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 15,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 15,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 15,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+15,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 15,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 15,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
 15,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -458,7 +471,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 15,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 15,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 15,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-15,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 15,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 15,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 15,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -484,10 +496,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 16,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 16,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 16,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+16,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 16,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 16,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 16,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 16,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+16,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 16,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 16,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 16,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -497,7 +511,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 16,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 16,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 16,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-16,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 16,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 16,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 16,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -523,10 +536,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 17,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 17,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 17,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+17,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 17,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 17,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 17,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 17,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+17,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 17,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 17,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 17,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -536,7 +551,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 17,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 17,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 17,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-17,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 17,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 17,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 17,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -562,10 +576,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 18,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 18,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 18,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+18,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 18,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 18,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 18,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 18,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+18,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 18,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 18,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 18,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -575,7 +591,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 18,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 18,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 18,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-18,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 18,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 18,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 18,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -601,10 +616,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 19,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 19,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 19,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+19,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 19,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 19,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 19,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 19,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+19,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 19,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 19,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 19,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -614,7 +631,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 19,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 19,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 19,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-19,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 19,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 19,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 19,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -640,10 +656,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 20,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 20,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 20,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+20,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 20,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 20,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 20,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 20,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+20,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 20,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 20,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 20,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -653,7 +671,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 20,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 20,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 20,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-20,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 20,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 20,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 20,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -679,10 +696,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 21,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 21,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 21,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+21,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 21,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 21,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 21,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 21,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+21,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 21,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 21,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 21,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -692,7 +711,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 21,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 21,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 21,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-21,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 21,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 21,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 21,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -718,10 +736,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 22,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 22,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 22,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+22,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 22,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 22,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 22,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 22,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+22,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 22,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 22,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 22,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -731,7 +751,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 22,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 22,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 22,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-22,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 22,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 22,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 22,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -757,10 +776,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 23,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 23,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 23,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+23,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 23,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 23,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 23,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 23,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+23,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 23,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 23,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
 23,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -770,7 +791,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 23,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 23,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 23,SigSci-TS,missing required forecasts,"NA","NA","NA","NA",ineligible
-23,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 23,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 23,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 23,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -796,10 +816,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 24,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 24,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 24,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+24,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 24,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 24,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 24,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 24,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+24,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 24,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 24,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 24,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -809,7 +831,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 24,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 24,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 24,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-24,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 24,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 24,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 24,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -835,10 +856,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 25,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 25,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 25,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+25,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 25,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 25,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 25,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 25,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+25,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 25,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 25,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 25,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -848,7 +871,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 25,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 25,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 25,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-25,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 25,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 25,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 25,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -874,10 +896,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 26,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 26,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 26,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+26,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 26,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 26,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 26,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 26,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+26,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 26,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 26,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 26,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -887,7 +911,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 26,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 26,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 26,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-26,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 26,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 26,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 26,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -913,10 +936,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 27,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 27,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 27,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+27,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 27,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 27,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 27,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 27,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+27,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 27,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 27,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 27,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -926,7 +951,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 27,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 27,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 27,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-27,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 27,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 27,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 27,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -952,10 +976,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 28,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 28,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 28,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+28,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 28,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 28,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 28,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 28,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+28,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 28,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 28,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 28,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -965,7 +991,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 28,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 28,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 28,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-28,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 28,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 28,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 28,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -991,10 +1016,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 29,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 29,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 29,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+29,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 29,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 29,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 29,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 29,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+29,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 29,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 29,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 29,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1004,7 +1031,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 29,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 29,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 29,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-29,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 29,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 29,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 29,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1030,10 +1056,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 30,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 30,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 30,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+30,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 30,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 30,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 30,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 30,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+30,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 30,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 30,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 30,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1043,7 +1071,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 30,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 30,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 30,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-30,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 30,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 30,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 30,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1069,10 +1096,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 31,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 31,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 31,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+31,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 31,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 31,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 31,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 31,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+31,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 31,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 31,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 31,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1082,7 +1111,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 31,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 31,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 31,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-31,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 31,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 31,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 31,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1108,10 +1136,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 32,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 32,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 32,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+32,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 32,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 32,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 32,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 32,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+32,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 32,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 32,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 32,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1121,7 +1151,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 32,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 32,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 32,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-32,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 32,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 32,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 32,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1147,10 +1176,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 33,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 33,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 33,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+33,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 33,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 33,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 33,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 33,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+33,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 33,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 33,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
 33,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1160,7 +1191,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 33,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 33,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 33,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-33,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 33,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 33,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 33,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1186,10 +1216,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 34,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 34,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 34,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+34,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 34,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 34,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 34,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 34,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+34,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 34,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 34,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 34,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1199,7 +1231,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 34,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 34,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 34,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-34,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 34,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 34,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 34,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1225,10 +1256,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 35,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 35,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 35,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+35,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 35,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 35,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 35,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 35,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+35,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 35,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 35,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 35,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1238,7 +1271,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 35,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 35,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 35,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-35,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 35,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 35,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 35,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1264,10 +1296,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 36,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 36,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 36,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+36,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 36,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 36,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 36,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 36,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+36,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 36,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 36,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 36,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1277,7 +1311,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 36,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 36,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 36,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-36,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 36,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 36,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 36,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1303,10 +1336,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 37,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 37,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 37,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+37,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 37,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 37,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 37,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 37,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+37,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 37,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 37,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 37,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1316,7 +1351,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 37,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 37,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 37,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-37,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 37,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 37,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 37,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1342,10 +1376,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 38,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 38,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 38,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+38,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 38,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 38,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 38,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 38,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+38,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 38,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 38,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 38,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1355,7 +1391,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 38,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 38,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 38,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-38,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 38,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 38,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 38,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1381,10 +1416,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 39,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 39,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 39,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+39,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 39,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 39,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 39,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 39,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+39,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 39,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 39,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 39,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1394,7 +1431,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 39,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 39,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 39,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-39,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 39,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 39,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 39,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1420,10 +1456,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 40,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 40,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 40,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+40,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 40,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 40,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 40,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 40,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+40,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 40,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 40,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 40,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1433,7 +1471,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 40,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 40,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 40,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-40,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 40,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 40,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 40,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1459,10 +1496,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 41,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 41,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 41,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+41,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 41,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 41,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 41,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 41,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+41,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 41,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 41,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 41,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1472,7 +1511,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 41,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 41,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 41,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-41,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 41,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 41,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 41,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1498,10 +1536,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 42,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 42,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 42,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+42,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 42,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 42,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 42,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 42,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+42,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 42,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 42,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 42,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1511,7 +1551,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 42,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 42,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 42,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-42,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 42,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 42,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 42,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1537,10 +1576,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 44,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 44,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 44,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+44,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 44,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 44,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 44,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 44,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+44,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 44,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 44,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 44,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1550,7 +1591,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 44,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 44,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 44,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-44,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 44,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 44,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 44,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1576,10 +1616,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 45,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 45,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 45,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+45,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 45,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 45,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 45,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 45,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+45,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 45,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 45,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 45,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1589,7 +1631,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 45,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 45,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 45,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-45,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 45,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 45,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 45,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1615,10 +1656,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 46,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 46,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 46,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+46,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 46,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 46,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 46,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 46,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+46,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 46,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 46,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 46,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1628,7 +1671,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 46,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 46,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 46,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-46,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 46,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 46,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 46,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1654,10 +1696,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 47,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 47,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 47,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+47,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 47,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 47,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 47,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 47,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+47,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 47,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 47,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 47,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1667,7 +1711,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 47,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 47,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 47,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-47,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 47,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 47,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 47,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1693,10 +1736,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 48,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 48,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 48,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+48,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 48,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 48,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 48,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 48,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+48,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 48,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 48,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 48,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1706,7 +1751,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 48,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 48,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 48,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-48,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 48,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 48,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 48,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1732,10 +1776,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 49,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 49,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 49,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+49,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 49,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 49,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 49,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 49,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+49,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 49,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 49,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 49,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1745,7 +1791,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 49,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 49,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 49,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-49,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 49,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 49,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 49,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1771,10 +1816,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 50,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 50,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 50,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+50,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 50,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 50,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 50,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 50,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+50,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 50,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 50,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 50,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1784,7 +1831,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 50,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 50,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 50,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-50,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 50,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 50,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 50,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1810,10 +1856,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 51,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 51,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 51,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+51,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 51,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 51,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 51,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 51,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+51,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 51,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 51,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 51,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1823,7 +1871,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 51,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 51,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 51,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-51,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 51,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 51,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 51,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1849,10 +1896,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 53,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 53,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 53,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+53,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 53,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 53,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 53,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 53,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+53,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 53,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 53,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 53,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1862,7 +1911,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 53,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 53,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 53,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-53,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 53,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 53,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 53,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1888,10 +1936,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 54,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 54,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 54,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+54,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 54,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 54,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 54,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 54,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+54,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 54,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 54,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 54,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1901,7 +1951,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 54,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 54,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 54,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-54,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 54,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 54,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 54,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1927,10 +1976,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 55,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 55,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 55,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+55,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 55,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 55,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 55,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 55,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+55,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 55,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 55,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 55,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1940,7 +1991,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 55,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 55,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 55,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-55,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 55,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 55,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 55,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -1966,10 +2016,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 56,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 56,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 56,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+56,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 56,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 56,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 56,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 56,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+56,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 56,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 56,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
 56,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -1979,7 +2031,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 56,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 56,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 56,SigSci-TS,missing required forecasts,"NA","NA","NA","NA",ineligible
-56,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 56,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 56,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 56,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -2005,10 +2056,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 60,IHME-CurveFit,missing required forecasts,"NA","NA","NA","NA",ineligible
 60,IowaStateLW-STEM,missing required forecasts,"NA","NA","NA","NA",ineligible
 60,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+60,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 60,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 60,Karlen-pypm,missing required forecasts,"NA","NA","NA","NA",ineligible
 60,LANL-GrowthRate,missing required forecasts,"NA","NA","NA","NA",ineligible
 60,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+60,Microsoft-DeepSTIA,missing required forecasts,"NA","NA","NA","NA",ineligible
 60,MIT_CritData-GBCF,missing required forecasts,"NA","NA","NA","NA",ineligible
 60,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
 60,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -2018,7 +2071,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 60,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 60,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 60,SigSci-TS,missing required forecasts,"NA","NA","NA","NA",ineligible
-60,SteveMcConnell-CovidComplete,missing required forecasts,"NA","NA","NA","NA",ineligible
 60,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 60,UA-EpiCovDA,missing required forecasts,"NA","NA","NA","NA",ineligible
 60,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -2044,10 +2096,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 66,IHME-CurveFit,missing required forecasts,"NA","NA","NA","NA",ineligible
 66,IowaStateLW-STEM,missing required forecasts,"NA","NA","NA","NA",ineligible
 66,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+66,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 66,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 66,Karlen-pypm,missing required forecasts,"NA","NA","NA","NA",ineligible
 66,LANL-GrowthRate,missing required forecasts,"NA","NA","NA","NA",ineligible
 66,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+66,Microsoft-DeepSTIA,missing required forecasts,"NA","NA","NA","NA",ineligible
 66,MIT_CritData-GBCF,missing required forecasts,"NA","NA","NA","NA",ineligible
 66,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
 66,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -2057,7 +2111,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 66,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 66,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 66,SigSci-TS,missing required forecasts,"NA","NA","NA","NA",ineligible
-66,SteveMcConnell-CovidComplete,missing required forecasts,"NA","NA","NA","NA",ineligible
 66,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 66,UA-EpiCovDA,missing required forecasts,"NA","NA","NA","NA",ineligible
 66,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -2083,10 +2136,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 69,IHME-CurveFit,missing required forecasts,"NA","NA","NA","NA",ineligible
 69,IowaStateLW-STEM,missing required forecasts,"NA","NA","NA","NA",ineligible
 69,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+69,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 69,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 69,Karlen-pypm,missing required forecasts,"NA","NA","NA","NA",ineligible
 69,LANL-GrowthRate,missing required forecasts,"NA","NA","NA","NA",ineligible
 69,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+69,Microsoft-DeepSTIA,missing required forecasts,"NA","NA","NA","NA",ineligible
 69,MIT_CritData-GBCF,missing required forecasts,"NA","NA","NA","NA",ineligible
 69,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
 69,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -2096,7 +2151,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 69,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 69,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 69,SigSci-TS,missing required forecasts,"NA","NA","NA","NA",ineligible
-69,SteveMcConnell-CovidComplete,missing required forecasts,"NA","NA","NA","NA",ineligible
 69,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 69,UA-EpiCovDA,missing required forecasts,"NA","NA","NA","NA",ineligible
 69,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -2122,10 +2176,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 72,IHME-CurveFit,missing required forecasts,"NA","NA","NA","NA",ineligible
 72,IowaStateLW-STEM,missing required forecasts,"NA","NA","NA","NA",ineligible
 72,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+72,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 72,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 72,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 72,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 72,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+72,Microsoft-DeepSTIA,missing required forecasts,"NA","NA","NA","NA",ineligible
 72,MIT_CritData-GBCF,missing required forecasts,"NA","NA","NA","NA",ineligible
 72,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
 72,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -2135,7 +2191,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 72,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 72,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 72,SigSci-TS,missing required forecasts,"NA","NA","NA","NA",ineligible
-72,SteveMcConnell-CovidComplete,missing required forecasts,"NA","NA","NA","NA",ineligible
 72,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 72,UA-EpiCovDA,missing required forecasts,"NA","NA","NA","NA",ineligible
 72,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -2161,10 +2216,12 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 78,IHME-CurveFit,missing required forecasts,"NA","NA","NA","NA",ineligible
 78,IowaStateLW-STEM,missing required forecasts,"NA","NA","NA","NA",ineligible
 78,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+78,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 78,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 78,Karlen-pypm,missing required forecasts,"NA","NA","NA","NA",ineligible
 78,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 78,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+78,Microsoft-DeepSTIA,missing required forecasts,"NA","NA","NA","NA",ineligible
 78,MIT_CritData-GBCF,missing required forecasts,"NA","NA","NA","NA",ineligible
 78,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
 78,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -2174,7 +2231,6 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 78,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 78,RPI_UW-Mob_Collision,missing required forecasts,"NA","NA","NA","NA",ineligible
 78,SigSci-TS,missing required forecasts,"NA","NA","NA","NA",ineligible
-78,SteveMcConnell-CovidComplete,missing required forecasts,"NA","NA","NA","NA",ineligible
 78,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 78,UA-EpiCovDA,missing required forecasts,"NA","NA","NA","NA",ineligible
 78,UCM_MESALab-FoGSEIR,missing required forecasts,"NA","NA","NA","NA",ineligible
@@ -2200,10 +2256,12 @@ US,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
 US,IHME-CurveFit,eligible,"NA","NA","NA","NA",eligible
 US,IowaStateLW-STEM,eligible,"NA","NA","NA","NA",eligible
 US,JHU_CSSE-DECOM,eligible,"NA","NA","NA","NA",eligible
+US,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
 US,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
 US,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
 US,LANL-GrowthRate,eligible,"NA","NA","NA","NA",eligible
 US,LNQ-ens1,eligible,"NA","NA","NA","NA",eligible
+US,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
 US,MIT_CritData-GBCF,eligible,"NA","NA","NA","NA",eligible
 US,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
 US,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
@@ -2213,7 +2271,6 @@ US,QJHong-Encounter,eligible,"NA","NA","NA","NA",eligible
 US,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
 US,RPI_UW-Mob_Collision,eligible,"NA","NA","NA","NA",eligible
 US,SigSci-TS,eligible,"NA","NA","NA","NA",eligible
-US,SteveMcConnell-CovidComplete,eligible,"NA","NA","NA","NA",eligible
 US,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
 US,UA-EpiCovDA,eligible,"NA","NA","NA","NA",eligible
 US,UCM_MESALab-FoGSEIR,eligible,"NA","NA","NA","NA",eligible
