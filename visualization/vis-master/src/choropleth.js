@@ -276,7 +276,7 @@ export default class Choropleth {
     }
     data.map(d => {
       const popu = {}
-      d3.csv("/static/locations.csv",function(data2) {
+      d3.csv("/static/static/locations.csv",function(data2) {
         data2.forEach(function(d) {
           popu[d.abbreviation] = d.ratio
         })
