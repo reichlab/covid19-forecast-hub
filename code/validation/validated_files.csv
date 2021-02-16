@@ -2538,7 +2538,6 @@ file_path,validation_date
 ./data-processed/JHUAPL-Gecko/2021-02-15-JHUAPL-Gecko.csv,2021-02-15 18:25:40.813407
 ./data-processed/Geneva-DetGrowth/2021-02-14-Geneva-DetGrowth.csv,2021-02-15 18:25:40.982175
 ./data-processed/JHU_CSSE-DECOM/2021-02-14-JHU_CSSE-DECOM.csv,2021-02-16 00:26:59.913326
-./data-processed/SteveMcConnell-CovidComplete/2021-02-15-SteveMcConnell-CovidComplete.csv,2021-02-16 00:27:01.072553
 ./data-processed/CU-scenario_mid/2021-02-14-CU-scenario_mid.csv,2021-02-16 00:27:19.716495
 ./data-processed/IowaStateLW-STEM/2021-02-14-IowaStateLW-STEM.csv,2021-02-16 00:27:43.829463
 ./data-processed/IBF-TimeSeries/2021-02-15-IBF-TimeSeries.csv,2021-02-16 00:27:43.897184
@@ -2569,3 +2568,5 @@ file_path,validation_date
 ./data-processed/CU-scenario_high/2021-02-14-CU-scenario_high.csv,2021-02-16 00:30:37.633362
 ./data-processed/Covid19Sim-Simulator/2021-02-14-Covid19Sim-Simulator.csv,2021-02-16 00:31:00.681732
 ./data-processed/JHU_IDD-CovidSP/2021-02-14-JHU_IDD-CovidSP.csv,2021-02-16 06:20:37.227109
+./data-processed/Microsoft-DeepSTIA/2021-02-15-Microsoft-DeepSTIA.csv,2021-02-16 16:22:21.811834
+./data-processed/COVIDhub-ensemble/2021-02-15-COVIDhub-ensemble.csv,2021-02-16 16:22:37.832495
