@@ -2570,3 +2570,4 @@ file_path,validation_date
 ./data-processed/JHU_IDD-CovidSP/2021-02-14-JHU_IDD-CovidSP.csv,2021-02-16 06:20:37.227109
 ./data-processed/Microsoft-DeepSTIA/2021-02-15-Microsoft-DeepSTIA.csv,2021-02-16 16:22:21.811834
 ./data-processed/COVIDhub-ensemble/2021-02-15-COVIDhub-ensemble.csv,2021-02-16 16:22:37.832495
+./data-processed/COVIDhub-trained_ensemble/2021-02-15-COVIDhub-trained_ensemble.csv,2021-02-16 18:23:38.055617
