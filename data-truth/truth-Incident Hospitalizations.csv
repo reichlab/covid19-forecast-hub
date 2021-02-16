@@ -11364,6 +11364,112 @@ date,location,location_name,value
 2021-02-08,41,Oregon,34
 2021-02-08,42,Pennsylvania,323
 2021-02-08,56,Wyoming,14
+2021-02-09,72,Puerto Rico,11
+2021-02-09,44,Rhode Island,19
+2021-02-09,45,South Carolina,169
+2021-02-09,46,South Dakota,8
+2021-02-09,47,Tennessee,93
+2021-02-09,48,Texas,1053
+2021-02-09,49,Utah,45
+2021-02-09,51,Virginia,226
+2021-02-09,78,Virgin Islands,0
+2021-02-09,50,Vermont,8
+2021-02-09,53,Washington,52
+2021-02-09,55,Wisconsin,111
+2021-02-09,54,West Virginia,41
+2021-02-09,02,Alaska,6
+2021-02-09,01,Alabama,183
+2021-02-09,05,Arkansas,107
+2021-02-09,04,Arizona,275
+2021-02-09,06,California,924
+2021-02-09,08,Colorado,91
+2021-02-09,09,Connecticut,96
+2021-02-09,11,District of Columbia,28
+2021-02-09,10,Delaware,27
+2021-02-09,12,Florida,746
+2021-02-09,13,Georgia,492
+2021-02-09,15,Hawaii,0
+2021-02-09,19,Iowa,30
+2021-02-09,30,Montana,18
+2021-02-09,37,North Carolina,241
+2021-02-09,38,North Dakota,14
+2021-02-09,31,Nebraska,19
+2021-02-09,33,New Hampshire,12
+2021-02-09,34,New Jersey,302
+2021-02-09,35,New Mexico,44
+2021-02-09,32,Nevada,88
+2021-02-09,36,New York,831
+2021-02-09,39,Ohio,292
+2021-02-09,40,Oklahoma,175
+2021-02-09,41,Oregon,35
+2021-02-09,42,Pennsylvania,282
+2021-02-09,16,Idaho,21
+2021-02-09,17,Illinois,190
+2021-02-09,18,Indiana,136
+2021-02-09,20,Kansas,54
+2021-02-09,21,Kentucky,271
+2021-02-09,22,Louisiana,143
+2021-02-09,25,Massachusetts,145
+2021-02-09,24,Maryland,165
+2021-02-09,23,Maine,18
+2021-02-09,26,Michigan,120
+2021-02-09,27,Minnesota,60
+2021-02-09,29,Missouri,119
+2021-02-09,28,Mississippi,78
+2021-02-09,56,Wyoming,11
+2021-02-10,42,Pennsylvania,292
+2021-02-10,72,Puerto Rico,219
+2021-02-10,44,Rhode Island,17
+2021-02-10,45,South Carolina,158
+2021-02-10,46,South Dakota,8
+2021-02-10,47,Tennessee,135
+2021-02-10,48,Texas,1008
+2021-02-10,49,Utah,43
+2021-02-10,51,Virginia,189
+2021-02-10,78,Virgin Islands,0
+2021-02-10,50,Vermont,6
+2021-02-10,53,Washington,56
+2021-02-10,55,Wisconsin,102
+2021-02-10,02,Alaska,3
+2021-02-10,01,Alabama,175
+2021-02-10,05,Arkansas,91
+2021-02-10,04,Arizona,251
+2021-02-10,06,California,946
+2021-02-10,08,Colorado,86
+2021-02-10,09,Connecticut,99
+2021-02-10,11,District of Columbia,29
+2021-02-10,10,Delaware,28
+2021-02-10,12,Florida,736
+2021-02-10,13,Georgia,430
+2021-02-10,15,Hawaii,6
+2021-02-10,19,Iowa,40
+2021-02-10,28,Mississippi,42
+2021-02-10,30,Montana,27
+2021-02-10,37,North Carolina,254
+2021-02-10,38,North Dakota,5
+2021-02-10,31,Nebraska,16
+2021-02-10,33,New Hampshire,12
+2021-02-10,34,New Jersey,267
+2021-02-10,35,New Mexico,42
+2021-02-10,32,Nevada,76
+2021-02-10,36,New York,719
+2021-02-10,39,Ohio,275
+2021-02-10,40,Oklahoma,166
+2021-02-10,41,Oregon,33
+2021-02-10,16,Idaho,25
+2021-02-10,17,Illinois,211
+2021-02-10,18,Indiana,132
+2021-02-10,20,Kansas,71
+2021-02-10,21,Kentucky,269
+2021-02-10,22,Louisiana,105
+2021-02-10,25,Massachusetts,142
+2021-02-10,24,Maryland,125
+2021-02-10,23,Maine,9
+2021-02-10,26,Michigan,118
+2021-02-10,27,Minnesota,53
+2021-02-10,29,Missouri,111
+2021-02-10,54,West Virginia,35
+2021-02-10,56,Wyoming,11
 2020-07-27,US,US,6041
 2020-07-28,US,US,5202
 2020-07-29,US,US,5361
@@ -11561,3 +11667,5 @@ date,location,location_name,value
 2021-02-06,US,US,8775
 2021-02-07,US,US,8599
 2021-02-08,US,US,8921
+2021-02-09,US,US,8725
+2021-02-10,US,US,8504
