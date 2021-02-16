@@ -181,11 +181,8 @@ export default class Choropleth {
     let svg = this.svg
     let regionHook = this.regionHook
     let tooltip = this.tooltip
-
     let minData = data.range[0]
     let maxData = data.range[1]
-    //let maxData = 2000
-
     let limits = []
     let barLimits = []
 
@@ -273,19 +270,18 @@ export default class Choropleth {
     let colorScale = this.colorScale
     let selectedTexture = this.selectedTexture
     let cmap = this.cmap
-
     let highlightedStates = []
     if (ids.regionIdx >= 0) {
       highlightedStates = data[ids.regionIdx].states
     }
-    // Update colors for given week
     data.map(d => {
       const popu = {}
       d3.csv("/static/locations.csv",function(data2) {
         data2.forEach(function(d) {
-          popu[d.abbreviation] = d.population
+          popu[d.abbreviation] = d.ratio
         })
-        let value = d.values[ids.weekIdx]/popu[d.states[0]]*100000
+
+        let value = d.values[ids.weekIdx]*popu[d.states[0]]
         let color = '#ccc'
         if (value !== -1) color = cmap[Math.floor(colorScale(value))]
 
