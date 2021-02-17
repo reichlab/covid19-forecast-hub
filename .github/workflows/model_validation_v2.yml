@@ -19,16 +19,17 @@ jobs:
     - uses: actions/checkout@v2
       with:
         repository: 'reichlab/covid19-forecast-hub-validations'
+#     - name: Use Node.js ${{ matrix.node-version }}
+#       uses: actions/setup-node@v1
+#       with:
+#         node-version: ${{ matrix.node-version }}
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
         python-version: '3.8' # Version range or exact version of a Python version to use, using SemVer's version range syntax
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
-    - uses: actions/cache@v2
-      with:
-        path: ${{ env.pythonLocation }}
-        key: ${{ env.pythonLocation }}-${{ hashFiles('requirements.txt') }}
-    - run: pip3 install --upgrade --upgrade-strategy eager -r requirements.txt
+#     - run: npm install
+    - run: pip3 install -r requirements.txt
     - run: python3 main.py
       env:
         GH_TOKEN: ${{ github.token }}
