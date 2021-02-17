@@ -2571,3 +2571,5 @@ file_path,validation_date
 ./data-processed/Microsoft-DeepSTIA/2021-02-15-Microsoft-DeepSTIA.csv,2021-02-16 16:22:21.811834
 ./data-processed/COVIDhub-ensemble/2021-02-15-COVIDhub-ensemble.csv,2021-02-16 16:22:37.832495
 ./data-processed/COVIDhub-trained_ensemble/2021-02-15-COVIDhub-trained_ensemble.csv,2021-02-16 18:23:38.055617
+./data-processed/JHUAPL-SLPHospEns/2021-02-15-JHUAPL-SLPHospEns.csv,2021-02-17 00:27:08.930266
+./data-processed/FDANIHASU-Sweight/2021-02-15-FDANIHASU-Sweight.csv,2021-02-17 00:27:09.194840
