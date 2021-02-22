@@ -7,5 +7,5 @@ license: gpl-3.0
 team_model_designation: primary
 methods: Discrete-time difference equations with long periods of constant transmission rate
 team_funding: none
-data_inputs: JHU CSSE case and death data, HHS hospitalization data, Covid Tracking Project, YYG vaccination data
+data_inputs: JHU CSSE case and death data, HHS hospitalization data, Covid Tracking Project, YYG vaccination data, CDC seroprevalence
 citation: https://arxiv.org/abs/2007.07156

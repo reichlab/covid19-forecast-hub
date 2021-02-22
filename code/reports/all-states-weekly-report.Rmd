@@ -50,11 +50,11 @@ locs <- hub_locations %>%
 ```
 
 ```{r setup-location}
-# # 
+# # # 
 state <-params$state
 #
 # testing
-# state <- "24"
+# state <- "23"
 
 # title with state name
 state_name <- locs %>% 
@@ -105,7 +105,7 @@ project_url <- "https://www.zoltardata.com/api/project/44/"
 ```
 
 ```{r get-date-boundaries}
-
+# 
 next_saturday <- as.Date(calc_target_week_end_date(today(), horizon= 0))
 # # # use fixed date
 # next_saturday <-  as.Date("2021-01-30")
@@ -183,9 +183,9 @@ n_unique_models <- length(unique(c(names(inc_death_models)[inc_death_models>0],
 Every week, teams submit their forecasts to the COVID-19 Forecast Hub. 
  
 
-Each Tuesday, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 cases at the county, state, and national level and deaths at the state and national level. At the moment, we only generate ensemble forecasts for four weeks into the future, as we don't have reliable evidence that the models are accurate past that horizon.
+Each Tuesday, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 cases at the county, state, and national level and deaths at the state and national level. At the moment, we only generate ensemble forecasts for four weeks into the future, as [the available evidence](https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v1) suggests that models are less accurate at longer forecast horizons.
 
-Weekly reports from the COVID-19 Forecast Hub can be found at [this page](https://covid19forecasthub.org/doc/reports/). We expect that these reports will become more detailed as the weeks go on. 
+Weekly reports from the COVID-19 Forecast Hub can be found at [this page](https://covid19forecasthub.org/doc/reports/). 
 
 
 ```{r download-ensemble-data}
@@ -212,7 +212,7 @@ dat<-load_forecasts(
 
 # COVID-19 Mortality Forecasts 
 
-Since the inputs to the ensemble model do not factor in changes in behavior or policy that could have an impact on short-term disease transmission (e.g. school openings or closures, new interventions, governmental policy shift, etc...), the ensemble model itself should not be looked to for specific answers to questions like "what will happen if or when schools open in 2 weeks" because most of the input models are not factoring in these changes. That said, the ensemble model has consistently shown strong predictive performance, and very few of the many interventions put in place appear to have created dramatic changes in short-term disease transmission.
+Since the inputs to the ensemble model do not factor in changes in behavior or policy that could have an impact on short-term disease transmission (e.g. school openings or closures, new interventions, governmental policy shift, etc...), the ensemble model itself should not be looked to for specific answers to questions like "what will happen if or when schools open in 2 weeks" because most of the input models are not factoring in these changes. That said, the ensemble model has consistently shown strong predictive performance, and very few of the many interventions put in place appear to have created dramatic changes in short-term disease transmission that would impact short-term trends in mortality.
 
 ## State level
 
@@ -227,7 +227,7 @@ state_cum_deaths <- dat %>%
 state_inc_death_range <- dat %>% 
   filter(fips==state, target %in% inc_death_targets, class=="point") %>% 
   pull(value) %>% range() %>%
-  round(-1) %>% format(big.mark = ",")
+   format(big.mark = ",")
 state_inc_death_wk_pi_round <- dat %>% 
   filter(fips==state, target == "4 wk ahead inc death", quantile %in% c(0.025, 0.975)) %>% 
   pull(value) %>% sort() %>%
@@ -237,7 +237,7 @@ state_inc_death_wk_pi <- dat %>%
   pull(value) %>% sort() %>% 
   format(big.mark = ",")
 ```
-At the state level, the ensemble model's best guess is that we will see between `r state_inc_death_range[1]` and `r state_inc_death_range[2]` deaths each week for the next four weeks with around `r state_cum_deaths` deaths by `r saturday_4_wk_ahead_txt` (Figure 1). However for the week ending `r saturday_4_wk_ahead_txt`, the ensemble shows substantial uncertainty, with observed deaths between `r state_inc_death_wk_pi_round[1]` and  `r state_inc_death_wk_pi_round[2]` deemed possible (95% prediction interval:  `r state_inc_death_wk_pi[1]` -  `r state_inc_death_wk_pi[2]`).
+At the state level, the ensemble model predicts that weekly totals of observed deaths in each of the next four weeks will be between `r state_inc_death_range[1]` and `r state_inc_death_range[2]` deaths each week with around `r state_cum_deaths` total deaths by `r saturday_4_wk_ahead_txt` (Figure 1). However for the week ending `r saturday_4_wk_ahead_txt`, the ensemble shows substantial uncertainty, with observed deaths between `r state_inc_death_wk_pi_round[1]` and  `r state_inc_death_wk_pi_round[2]` deemed possible (95% prediction interval:  `r state_inc_death_wk_pi[1]` -  `r state_inc_death_wk_pi[2]`).
 
 During periods of relative stability, models in general show broad agreement about the predicted trajectory of the outbreak. However, when there are steep surges or declines in cases or deaths, models often have quite different predictions for the upcoming weeks. The result is that there is increased uncertainty in the ensemble forecast, which can be seen as wider confidence intervals in the forecast visualization. You can explore the full set of models, including their forecasts for past weeks online at our [interactive forecast visualization](https://viz.covid19forecasthub.org/).
 
@@ -400,7 +400,7 @@ inc_death_all_p6  <- inc_death_forecast_p6 %>%
 
 #identify if inc_death with PI
 inc_death_all_p6x<-inc_death_all_p6 %>%
-  select(target_end_date,location,alpha,lower,upper,point )%>%
+  select(target_end_date,location,alpha,lower,upper,point,horizon)%>%
 dplyr::mutate(inc_death_inPI = ifelse(point>=lower & point<=upper, 1, 0)) %>%
 dplyr::mutate(inc_death_inPI_low = ifelse(point<=lower, 1, 0)) %>%
 dplyr::mutate(inc_death_inPI_high = ifelse(point>=upper, 1, 0))
@@ -410,8 +410,8 @@ pstate_inc_death_PI<-inc_death_all_p6x %>% group_by(location,alpha) %>%
   filter(location %in% state) %>%
   summarise_at(vars(inc_death_inPI,inc_death_inPI_low,inc_death_inPI_high), list(PI_cover=mean,PI_coverl=mean,PI_coverh=mean)) %>%
     dplyr::mutate(PI_coverp = as.numeric(substr(inc_death_inPI_PI_cover*100, 0,3))) %>%
-    dplyr::mutate(PI_coverpl = as.numeric(substr(inc_death_inPI_low_PI_coverl*100, 0,2))) %>%
-    dplyr::mutate(PI_coverph = as.numeric(substr(inc_death_inPI_high_PI_coverh*100, 0,2)))  %>%
+    dplyr::mutate(PI_coverpl = as.numeric(substr(inc_death_inPI_low_PI_coverl*100, 0,3))) %>%
+    dplyr::mutate(PI_coverph = as.numeric(substr(inc_death_inPI_high_PI_coverh*100, 0,3)))  %>%
     dplyr::mutate(bias = ifelse(PI_coverpl<=PI_coverph, 'higher', 'lower'))
 
 M_PI95_cover<-pstate_inc_death_PI %>%
@@ -557,13 +557,13 @@ state_inc_case_wk_pi <- dat %>%
 # COVID-19 Incident Case Forecasts
 
 ## State level
-At the state level, the ensemble model's best guess is that we will see between `r state_inc_case_range[1]` and `r state_inc_case_range[2]` cases each week for the next four weeks (Figure 2). However for the week ending `r saturday_4_wk_ahead_txt`, the ensemble shows substantial uncertainty, with observed cases between `r state_inc_case_wk_pi_round[1]` and `r state_inc_case_wk_pi[2]`.
+At the state level, the ensemble model predicts that weekly totals of observed cases in each of the next four weeks will be between `r state_inc_case_range[1]` and `r state_inc_case_range[2]` cases each week (Figure 2). However for the week ending `r saturday_4_wk_ahead_txt`, the ensemble shows substantial uncertainty, with observed cases between `r state_inc_case_wk_pi_round[1]` and `r state_inc_case_wk_pi_round[2]` deemed possible (95% prediction interval:  `r state_inc_case_wk_pi[1]` -  `r state_inc_case_wk_pi[2]`).
 
 <!-- Throughought most of July, models have in general shown broad agreement about the trajectory of the outbreak over the coming weeks. However, the recent surge in cases has left models with quite different interpretations about what the next few weeks hold in terms of how many reported deaths from COVID-19 we will see.  -->
 
 You can explore the full set of models, including their forecasts for past weeks online at our [interactive forecast visualization](https://viz.covid19forecasthub.org/).
 
-```{r make-state-inc-case-plot, fig.cap="Figure 2: Weekly observed and forecasted COVID-19 Cases. Observed data from [JHU CSSE](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/) and forecasts from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/).", fig.topcaption=TRUE}
+```{r make-state-inc-case-plot, fig.cap="Figure 2: Weekly observed and forecasted COVID-19 cases. Observed data from [JHU CSSE](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/) and forecasts from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/).", fig.topcaption=TRUE}
 
 quantiles_to_plot <- c(0.025, 0.1, 0.25, 0.75, 0.9, 0.975)
 
@@ -674,9 +674,9 @@ dplyr::mutate(inc_case_inPI_high = ifelse(point>=upper, 1, 0))
 pstate_inc_case_PI<-inc_case_all_p6x %>% group_by(location,alpha) %>%
   filter(location %in% state) %>%
   summarise_at(vars(inc_case_inPI,inc_case_inPI_low,inc_case_inPI_high), list(PI_cover=mean,PI_coverl=mean,PI_coverh=mean)) %>% 
-    dplyr::mutate(PI_coverp = as.numeric(substr(inc_case_inPI_PI_cover*100, 0,2))) %>% 
-    dplyr::mutate(PI_coverpl = as.numeric(substr(inc_case_inPI_low_PI_coverl*100, 0,2))) %>%   
-    dplyr::mutate(PI_coverph = as.numeric(substr(inc_case_inPI_high_PI_coverh*100, 0,2)))  %>%
+    dplyr::mutate(PI_coverp = as.numeric(substr(inc_case_inPI_PI_cover*100, 0,3))) %>% 
+    dplyr::mutate(PI_coverpl = as.numeric(substr(inc_case_inPI_low_PI_coverl*100, 0,3))) %>%   
+    dplyr::mutate(PI_coverph = as.numeric(substr(inc_case_inPI_high_PI_coverh*100, 0,3)))  %>%
     dplyr::mutate(bias = ifelse(PI_coverpl<=PI_coverph, 'higher', 'lower'))
 
 PI95_cover<-pstate_inc_case_PI %>% 
@@ -689,7 +689,7 @@ PI50_cover<-pstate_inc_case_PI %>%
 PI50_covern<-paste0(PI50_cover$PI_coverp)
 PI50_bias<-paste0(PI50_cover$bias)
 ```
-For state-level case forecasts made over the last 6 weeks in `r state_name` for which observed data are now available, the 95% prediction intervals covered the truth `r PI95_covern`% of the time, and the 50% prediction intervals covered the truth `r PI50_covern`% of the time. The truth tended to be `r PI50_bias` than the prediction interval.
+For state-level case forecasts made over the last 6 weeks in `r state_name` for which observed data are now available, the 95% prediction intervals covered the truth `r PI95_covern`% of the time, and the 50% prediction intervals covered the truth `r PI50_covern`% of the time. The forecasts on average over the last 6 weeks predicted values that were `r PI50_bias` than the observed data.
 
 The sortable and searchable table below shows the total number of reported COVID-19 cases at the US and state level for `r state_name` as of Saturday, `r format(last_5_saturdays[5], "%B %d, %Y")`  ("Total COVID-19 Cases"), as well as the weekly case count and rate of reported COVID-19 cases in the population (standardized per 100,000 population) over the last week (`r format(last_5_saturdays[4]+1, "%B %d, %Y")` to `r format(last_5_saturdays[5], "%B %d, %Y")`) and two weeks ahead (`r format(last_5_saturdays[5]+8, "%B %d, %Y")` to `r format(last_5_saturdays[5]+14, "%B %d, %Y")`).
 
@@ -754,7 +754,7 @@ clrs <- round(seq(255, 40, length.out = length(brks) + 1), 0) %>%
 # brks1 <- seq(-case_rate_diff_2wk, case_rate_diff_2wk, length.out = 100) #quantile(df, probs = seq(.05, .95, .05), na.rm = TRUE)
 # clrs1 <- colorRampPalette(colors = rev(RColorBrewer::brewer.pal(n=3, "RdBu")))(length(brks1)+1)
 
-table2_cap <- paste0("Table 2: US national and ",  state_name, " observed and predicted COVID-19 CASES for the previous week and two weeks ahead.")
+table2_cap <- paste0("Table 2: US national and ",  state_name, " observed and predicted COVID-19 cases for the previous week and two weeks ahead.")
 
 table2_Observed <- paste0("Observed: (", format(last_5_saturdays[4]+1, "%m-%d-%Y") ," to ",format(last_5_saturdays[5], "%m-%d-%Y"),")")
 
@@ -861,6 +861,8 @@ C_PI50_bias<-paste0(C_PI50_cover$bias)
 
 ```
 ## County level
+
+County-level case forecasts are presented in Table 3.  Cases reported in unknown counties or by people who reside outside of the state are not included in Table 3,  but are included in the state-level data.  
 ```{block eval=FALSE, include = state !='11'}
 ## County level
 
@@ -935,7 +937,7 @@ clrs <- round(seq(255, 40, length.out = length(brks) + 1), 0) %>%
 # brks1 <- seq(-case_rate_diff_2wk, case_rate_diff_2wk, length.out = 100) #quantile(df, probs = seq(.05, .95, .05), na.rm = TRUE)
 # clrs1 <- colorRampPalette(colors = rev(RColorBrewer::brewer.pal(n=3, "RdBu")))(length(brks1)+1)
 
-table3_cap <- paste0("Table 3:",  state_name, " county level observed and predicted COVID-19 CASES for the previous week  and two weeks ahead.")
+table3_cap <- paste0("Table 3:",  state_name, " county level observed and predicted COVID-19 cases for the previous week  and two weeks ahead.")
 
 table3_Observed <- paste0("Observed: (", format(last_5_saturdays[4]+1, "%m-%d-%Y") ," to ",format(last_5_saturdays[5], "%m-%d-%Y"),")")
 
