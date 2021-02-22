@@ -15,4 +15,3 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2021-02-22,6 wk ahead cum death,2021-04-03,US,point,NA,586358
 2021-02-22,7 wk ahead cum death,2021-04-10,US,point,NA,600838
 2021-02-22,8 wk ahead cum death,2021-04-17,US,point,NA,615176
-
