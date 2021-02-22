@@ -1,6 +1,6 @@
 ---
-title: "COVID-19 Forecast Hub weekly report"
-author: "Nicholas G Reich, Estee Y Cramer, Martha W Zorn"
+title: "COVID-19 US Weekly Forecast Summary"
+author: "[The COVID-19 Forecast Hub Team](https://covid19forecasthub.org/doc/)<br><br>https://covid19forecasthub.org/"
 date: "report generated `r Sys.Date()`"
 output:
   html_document:
@@ -14,18 +14,26 @@ output:
 
 <!-- Code for adding logo at the top -->
 
-<script>
-  $(document).ready(function() {
-    $('#TOC').parent().prepend('<div id=\"nav_logo\"><a href=\"https://covid19forecasthub.org/\" target=\"_blank\"><img src=\"https://github.com/reichlab/covid19-forecast-hub-web/raw/master/images/forecast-hub-logo_DARKBLUE.png\"></a></div>');
-  });
-</script>
+<!-- <script> -->
+<!--   $(document).ready(function() { -->
+<!--     $('#TOC').parent().prepend('<div id=\"nav_logo\"><a href=\"https://covid19forecasthub.org/\" target=\"_blank\"><img src=\"https://github.com/reichlab/covid19-forecast-hub-web/raw/master/images/forecast-hub-logo_DARKBLUE.png\"></a></div>'); -->
+<!--   }); -->
+<!-- </script> -->
 
-<style>
-#nav_logo {
-  width: 100%;
-  margin-top: 20px;
-}
-</style>
+<!-- <style> -->
+<!-- #nav_logo { -->
+<!--   width: 100%; -->
+<!--   margin-top: 20px; -->
+<!-- } -->
+
+<!-- #TOC { -->
+<!--   background: url("https://github.com/reichlab/covid19-forecast-hub-web/raw/master/images/forecast-hub-logo_DARKBLUE-20px-padding.png"); -->
+<!--   background-size: contain; -->
+<!--   padding-top: 80px !important; -->
+<!--   background-repeat: no-repeat; -->
+<!-- } -->
+<!-- </style> -->
+<!-- </style> -->
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
@@ -51,7 +59,8 @@ project_url <- "https://www.zoltardata.com/api/project/44/"
 
 ```{r get-date-boundaries}
 next_saturday <- as.Date(calc_target_week_end_date(today(), horizon = 0))
-
+# # use fixed date
+# next_saturday <-  as.Date("2021-01-30")
 saturday_4_wk_ahead <- next_saturday + 7*3
 saturday_4_wk_ahead_txt <- format(saturday_4_wk_ahead, "%B %d")
 last_5_saturdays <- next_saturday - 7*c(5:1)
@@ -60,34 +69,32 @@ this_monday <- next_saturday - 5
 
 
 # Background
-This report provides a brief summary of the weekly ensemble forecast from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/) based on forecasts submitted on `r format(this_monday, "%B %d, %Y")`. In collaboration with the US CDC, our team aggregates COVID-19 forecasts from dozens of teams around the globe. Typically on Wednesday or Thursday of each week, a summary of the week's forecasts from the COVID-19 Forecast Hub appear on the [official CDC COVID-19 forecasting page](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html).
+This report provides a brief summary of the weekly ensemble forecast from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/) based on forecasts submitted on `r format(this_monday, "%B %d, %Y")`. In collaboration with the US CDC, our team aggregates COVID-19 forecasts from dozens of teams around the globe. Typically on Wednesday of each week, a summary of the week's forecasts from the COVID-19 Forecast Hub appear on the [official CDC COVID-19 forecasting page](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html).
 
 
 ```{r nmodels-this-week}
 possible_timezeroes <- seq.Date(this_monday, this_monday-6, by="-1 day")
 this_week_timezeroes <- timezeros(zoltar_connection, project_url) %>%
   filter(timezero_date %in% possible_timezeroes) %>%
-  pull(timezero_date)
+  pull(timezero_date) %>% sort.default()
 
-models_this_week <- zoltr::do_zoltar_query(
-  zoltar_connection, project_url, 
-  targets = c("1 wk ahead cum death", "1 wk ahead inc death", "1 wk ahead inc case", "1 day ahead inc hosp"),
-  # timezeros = as.character(seq.Date(this_monday, this_monday-6, by="-1 day")),
-  timezeros = as.character(this_week_timezeroes),
-  types = c("point"), 
-  verbose = FALSE,
-  models = c(),
-  query_type = "forecasts") %>%
-  pull(model) %>%
+models_this_week<-load_forecasts(
+        # models=c(),
+        forecast_dates = this_week_timezeroes,
+        types = c("point"),
+        targets = c("1 wk ahead cum death", "1 wk ahead inc death", "1 wk ahead inc case", "1 day ahead inc hosp"))%>%
+  pull(model) %>% sort.default()%>% 
   unique()
 nmodels_this_week <- length(models_this_week)
+
+
 ```
 
 
 Every week, teams submit their forecasts to the COVID-19 Forecast Hub. 
 This past week, `r nmodels_this_week` models were submitted. 
 
-Each Monday evening or Tuesday morning, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 cases at the county, state, and national level and deaths at the state and national level. At the moment, we only generate ensemble forecasts for four weeks into the future, as we don't have reliable evidence that the models are accurate past that horizon.
+Each Monday evening or Tuesday morning, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 cases at the county, state, and national level and deaths at the state and national level. At the moment, we only generate ensemble forecasts for four weeks into the future, as [the available evidence](https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v1) suggests that models are less accurate at longer forecast horizons.
 
 An archive of weekly reports from the COVID-19 Forecast Hub can be found at [this page](https://covid19forecasthub.org/doc/reports/). 
 
@@ -114,6 +121,7 @@ n_inc_case_models <- sum(inc_case_models>0)
 n_unique_models <- length(unique(c(names(inc_death_models)[inc_death_models>0],
   names(cum_death_models)[cum_death_models>0],
   names(inc_case_models)[inc_case_models>0])))
+  
 ```
 
 ```{r aux-data}
@@ -126,23 +134,21 @@ locs <- hub_locations %>%
 inc_death_targets <- paste(1:4, "wk ahead inc death")
 cum_death_targets <- paste(1:4, "wk ahead cum death")
 
-# submit query
-dat <- zoltr:: do_zoltar_query(
-  zoltar_connection, project_url, 
-  models = c("COVIDhub-ensemble"),
-  query_type = "forecasts",
-  targets = c(inc_death_targets, cum_death_targets),
-  timezeros = as.character(this_monday),
-  types = c("point", "quantile"), 
-  units = c(),
-  verbose = FALSE) %>%
-  ## choose only columns we need and with data
-  select(model, timezero, unit, target, class, quantile, value) %>%
-  rename(fips=unit) %>%
-  ## create rate variable and week-ahead
-  mutate(week_ahead = as.numeric(substr(target, 0,1)),
-    ## recreates the target_end_date from GitHub
-    target_end_date = as.Date(calc_target_week_end_date(timezero, horizon = week_ahead)))
+# submit query with covidHubUtils
+
+dat<-load_forecasts(
+        models=c("COVIDhub-ensemble"),
+        forecast_date = this_monday, 
+        types = c("point", "quantile"),
+        targets = c(inc_death_targets, cum_death_targets)) %>%
+     rename(fips=location, timezero=forecast_date, class=type, week_ahead=horizon)%>%
+     mutate(target=paste(week_ahead,target_variable,sep=" wk ahead "))%>%
+     select(model, timezero, fips, target, class, quantile, value) %>%
+     # create rate variable and week-ahead
+     mutate(week_ahead = as.numeric(substr(target, 0,1)),
+     ## recreates the target_end_date from GitHub
+     target_end_date = as.Date(calc_target_week_end_date(timezero, horizon = week_ahead)))
+
 ```
 
 
@@ -158,7 +164,7 @@ us_cum_deaths <- dat %>%
   pull(value) %>% 
   round(-2) %>% 
   format(big.mark = ",")
-us_cum_deaths_wk_pi <- dat %>% 
+us_cum_deaths_wk_pi<- dat %>% 
   filter(fips=="US", target=="4 wk ahead cum death", quantile %in% c(0.025, 0.975)) %>% 
   pull(value) %>% 
   format(big.mark = ",")
@@ -176,9 +182,10 @@ us_inc_death_wk_pi <- dat %>%
   filter(fips=="US", target == "4 wk ahead inc death", quantile %in% c(0.025, 0.975)) %>% 
   pull(value) %>% sort() %>% 
   format(big.mark = ",")
+
 ```
 
-At the national level, the ensemble model's best guess is that we will see between `r us_inc_death_range[1]` and `r us_inc_death_range[2]` deaths each week for the next four weeks (Figure 1) with around `r us_cum_deaths` deaths by `r saturday_4_wk_ahead_txt` (95% prediction interval: `r us_cum_deaths_wk_pi[2]` - `r us_cum_deaths_wk_pi[1]`). 
+At the national level, the ensemble model predicts that weekly totals of observed deaths in each of the next four weeks will be between `r us_inc_death_range[1]` and `r us_inc_death_range[2]` deaths (Figure 1) with around `r us_cum_deaths` deaths by `r saturday_4_wk_ahead_txt` (95% prediction interval: `r us_cum_deaths_wk_pi[2]` - `r us_cum_deaths_wk_pi[1]`). 
 
 For the week ending `r saturday_4_wk_ahead_txt`, the ensemble forecasts that reported COVID-19 deaths in the US will be between `r us_inc_death_wk_pi_round[1]` and `r us_inc_death_wk_pi_round[2]` (95% prediction interval: `r us_inc_death_wk_pi[1]` - `r us_inc_death_wk_pi[2]`).
 
@@ -186,7 +193,7 @@ For the week ending `r saturday_4_wk_ahead_txt`, the ensemble forecasts that rep
 You can explore the full set of models, including their forecasts for past weeks online at our [interactive forecast visualization](https://viz.covid19forecasthub.org/).
 
 
-```{r make-US-inc-death-plot, fig.cap="__Figure 1__: Weekly observed and forecasted COVID-19 deaths. Observed data from [JHU CSSE](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/) and forecasts from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/).", fig.topcaption=TRUE}
+```{r make-US-inc-death-plot}
 
 quantiles_to_plot <- c(0.025, 0.1, 0.25, 0.75, 0.9, 0.975)
 
@@ -195,16 +202,15 @@ blues <- RColorBrewer::brewer.pal(n=length(quantiles_to_plot)/2+1, "Blues")
 inc_death_forecast <- dat %>%
   filter(target %in% inc_death_targets)
 
-## get full inc death truth for plotting
-inc_death_truth <- read_csv("../../data-truth/truth-Incident Deaths.csv") %>%
-  rename(target_end_date = date, fips = location) %>%
-  mutate(model = "observed data (JHU)") %>%
-  group_by(fips, model) %>% arrange(target_end_date) %>%
-  mutate(value = RcppRoll::roll_sum(value, 7, align = "right", fill = NA)) %>%
-  ungroup() %>%
-  left_join(locs, by=c("fips")) %>%
-  filter(target_end_date %in% seq.Date(as.Date("2020-01-25"), to = Sys.Date(), by="1 week"),
-    fips %in% unique(inc_death_forecast$fips)) 
+# get full inc death truth for plotting
+inc_death_truth <- load_truth(
+                       truth_source = "JHU",
+                       target_variable = "inc death")%>%
+                    rename(fips = location) %>%
+mutate(model = "observed data (JHU)") %>%     #maybe also deleting this line
+                    left_join(locs, by=c("fips")) %>%
+                    filter(fips %in% unique(inc_death_forecast$fips)) 
+
 
 inc_death_all_points <- inc_death_truth %>%
   bind_rows(filter(inc_death_forecast, class=="point")) %>%
@@ -251,7 +257,7 @@ ggplot() +
   ylab("incident deaths") +
   labs(title="Weekly reported COVID-19 deaths in the US: observed and forecasted",
     caption="source: JHU CSSE (observed data), COVID-19 Forecast Hub (forecasts)") +
-  theme(legend.position = c(.05,.95), legend.justification = c(0,1))
+  theme(legend.position = c(.05,.95), legend.justification = c(0,1),legend.box="horizontal")
 ```
 
 
@@ -259,24 +265,37 @@ ggplot() +
 ```{r prep-datatable}
 
 ## get last saturday observed cumulative deaths
-cum_death_start <- read_csv("../../data-truth/truth-Cumulative Deaths.csv") %>%
-  filter(date == last_5_saturdays[5]) %>%
-  select(date, location, location_name, value) %>%
-  rename(cum_deaths_at_forecast_start = value) 
+
+cum_death_start  <- load_truth(
+                       truth_source = "JHU",
+                       target_variable = "cum death")%>%
+                    rename(fips = location) %>%
+                    mutate(model = "observed data (JHU)") %>%     #maybe also deleting this line
+                    left_join(locs, by=c("fips")) %>%
+                    filter(target_end_date == last_5_saturdays[5]) %>%
+                    select(target_end_date, location_name.x,fips, value) %>%
+                    rename(cum_deaths_at_forecast_start = value,date =target_end_date,location=fips,location_name=location_name.x) 
+
 
 ## get recent observed inc deaths
-recent_inc_death_totals <- read_csv("../../data-truth/truth-Incident Deaths.csv") %>%
-  # filter(date > last_5_saturdays[3] & date <= last_5_saturdays[5]) %>%
-  mutate(last_2wk = date > last_5_saturdays[3] & date <= last_5_saturdays[5],
-    last_4wk = date > last_5_saturdays[1] & date <= last_5_saturdays[5]) %>%
-  select(date, location, location_name, value, last_2wk, last_4wk) %>%
-  group_by(location, location_name) %>%
+recent_inc_death_totals <- load_truth(
+                              truth_source = "JHU",
+                              target_variable = "inc death") %>%
+                    rename(fips = location) %>%
+                    mutate(last_2wk = target_end_date > last_5_saturdays[3] & target_end_date <= last_5_saturdays[5],
+    last_4wk = target_end_date > last_5_saturdays[1] & target_end_date <= last_5_saturdays[5]) %>%    
+                      filter(target_end_date >= last_5_saturdays[2]) %>%
+                    left_join(locs, by=c("fips")) %>%
+   rename(location=fips,location_name=location_name.x) %>%
+  select(target_end_date, location,location_name, value, last_2wk, last_4wk) %>%
+  group_by(location,location_name) %>%
   summarize(last_2wk_deaths = sum(value*last_2wk),
     last_4wk_deaths = sum(value*last_4wk)) %>%
   ungroup() %>%
-  left_join(locs, by=c("location" = "fips")) %>%
-  left_join(cum_death_start) %>% 
-  rename(fips = location, target_end_date = date)
+    left_join(locs, by=c("location" = "fips")) %>%
+  left_join(cum_death_start) %>%
+rename(fips = location)
+
 ```
 
 
@@ -326,7 +345,7 @@ quant.25_cutoff <- wide_quant_dat %>%
 ```
 
 
-## State-by-state Breakdown
+## State level
 
 The ensemble model estimates that `r nrow(quant.5_cutoff)` states and territories of the US have a greater than 50% chance of having more deaths in the next two weeks compared to the past two weeks (Table 1).The model forecasts that `r nrow(quant.25_cutoff)` states and territories have a greater than 75% chance of an increase over the next two weeks (`r paste(quant.25_cutoff$location_name, collapse=", ")`). 
 

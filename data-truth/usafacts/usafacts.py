@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 def reformat_county_data(df):
-    df.drop(columns = ['stateFIPS', 'County Name', 'State'], inplace = True)
+    df.drop(columns = ['StateFIPS', 'County Name', 'State'], inplace = True)
     df.rename(columns = {'countyFIPS': 'location'}, inplace = True)
 
     # Drop row that is not county data
@@ -23,7 +23,7 @@ def reformat_county_data(df):
 
 def reformat_state_data(df):
     df.drop(columns = ['countyFIPS', 'County Name', 'State'], inplace = True)
-    df.rename(columns = {'stateFIPS': 'location'}, inplace = True)
+    df.rename(columns = {'StateFIPS': 'location'}, inplace = True)
 
     # Format state fips code
     df = df.astype({'location': str})
@@ -46,10 +46,10 @@ DEATHS_URL = "https://usafactsstatic.blob.core.windows.net/public/data/covid-19/
 RELATIVE_PATH = "data-truth/usafacts"
 
 # Download raw data
-cases = pd.read_csv(CONFIRMED_URL, dtype={'countyFIPS': int, 'County Name': str, 'State': str, 'stateFIPS': int}).fillna(value = 'NA')
+cases = pd.read_csv(CONFIRMED_URL, dtype={'countyFIPS': int, 'County Name': str, 'State': str, 'StateFIPS': int}).fillna(value = 'NA')
 cases.to_csv(os.path.join(RELATIVE_PATH,"raw/covid_confirmed_usafacts.csv"), index = False)
 
-deaths = pd.read_csv(DEATHS_URL, dtype={'countyFIPS': int, 'County Name': str, 'State': str, 'stateFIPS': int}).fillna(value = 'NA')
+deaths = pd.read_csv(DEATHS_URL, dtype={'countyFIPS': int, 'County Name': str, 'State': str, 'StateFIPS': int}).fillna(value = 'NA')
 deaths.to_csv(os.path.join(RELATIVE_PATH,"raw/covid_deaths_usafacts.csv"), index = False)
 
 # Reformat county, state and us data into records of each location-date pair per row

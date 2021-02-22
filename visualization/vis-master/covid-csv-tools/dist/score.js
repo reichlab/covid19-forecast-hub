@@ -71,68 +71,68 @@ exports.meanScores = meanScores;
  */
 function score(csv, lag) {
   return __awaiter(this, void 0, void 0, function* () {
-    let seasonTruth = yield getSeasonTruthMem(csv.target, lag);
+    // let seasonTruth = yield getSeasonTruthMem(csv.target, lag);
     let scores = {};
-    for (let state of meta_1.stateIds) {
-      scores[state] = {};
-      let trueValues = seasonTruth[state].find(({
-        epiweek
-      }) => csv.epiweek === epiweek);
-      for (let target of meta_1.targetIds) {
-        let trueValue = trueValues[target];
-        if ((target !== 'onset-wk') && (trueValue === null)) {
-          // Only onset-wk can have null true value
-          scores[state][target] = {
-            logScore: null,
-            logScoreMultiBin: null,
-            error: null,
-            absError: null
-          };
-        } else {
-          let pointEstimate = csv.getPoint(target, state);
-          let bins = csv.getBins(target, state);
-          let error;
-          let trueProbability;
-          let expandedTrueProbability;
-          try {
-            let trueBinIndex = u.bins.findBinIndex(bins, trueValue, target);
-            trueProbability = bins[trueBinIndex][2];
-            expandedTrueProbability = u.bins.expandBin(bins, trueBinIndex, target)
-              .reduce((acc, b) => acc + b[2], 0);
-          } catch (e) {
-            // Error in finding true bin, leaving probability as null
-            trueProbability = null;
-            expandedTrueProbability = null;
-          }
-          let logScore = trueProbability !== null ? Math.log(trueProbability) : null;
-          let logScoreMultiBin = expandedTrueProbability !== null ? Math.log(expandedTrueProbability) : null;
-          if (meta_1.targetType[target] === 'percent') {
-            error = pointEstimate !== null ? trueValue - pointEstimate : null;
-          } else if (meta_1.targetType[target] === 'week') {
-            if (trueValue === null) {
-              // This is onset target with none bin as the truth
-              if (pointEstimate === null) {
-                error = 0;
-              } else {
-                error = -Infinity;
-              }
-            } else {
-              if (pointEstimate === null) {
-                error = -Infinity;
-              } else {
-                error = u.epiweek.getEpiweekDiff(trueValue, pointEstimate);
-              }
-            }
-          }
-          scores[state][target] = {
-            logScore,
-            logScoreMultiBin,
-            error,
-            absError: Math.abs(error)
-          };
-        }
-      }
-    }
+    // for (let state of meta_1.stateIds) {
+    //   scores[state] = {};
+    //   let trueValues = seasonTruth[state].find(({
+    //     epiweek
+    //   }) => csv.epiweek === epiweek);
+    //   for (let target of meta_1.targetIds) {
+    //     let trueValue = trueValues[target];
+    //     if ((target !== 'onset-wk') && (trueValue === null)) {
+    //       // Only onset-wk can have null true value
+    //       scores[state][target] = {
+    //         logScore: null,
+    //         logScoreMultiBin: null,
+    //         error: null,
+    //         absError: null
+    //       };
+    //     } else {
+    //       let pointEstimate = csv.getPoint(target, state);
+    //       let bins = csv.getBins(target, state);
+    //       let error;
+    //       let trueProbability;
+    //       let expandedTrueProbability;
+    //       try {
+    //         let trueBinIndex = u.bins.findBinIndex(bins, trueValue, target);
+    //         trueProbability = bins[trueBinIndex][2];
+    //         expandedTrueProbability = u.bins.expandBin(bins, trueBinIndex, target)
+    //           .reduce((acc, b) => acc + b[2], 0);
+    //       } catch (e) {
+    //         // Error in finding true bin, leaving probability as null
+    //         trueProbability = null;
+    //         expandedTrueProbability = null;
+    //       }
+    //       let logScore = trueProbability !== null ? Math.log(trueProbability) : null;
+    //       let logScoreMultiBin = expandedTrueProbability !== null ? Math.log(expandedTrueProbability) : null;
+    //       if (meta_1.targetType[target] === 'percent') {
+    //         error = pointEstimate !== null ? trueValue - pointEstimate : null;
+    //       } else if (meta_1.targetType[target] === 'week') {
+    //         if (trueValue === null) {
+    //           // This is onset target with none bin as the truth
+    //           if (pointEstimate === null) {
+    //             error = 0;
+    //           } else {
+    //             error = -Infinity;
+    //           }
+    //         } else {
+    //           if (pointEstimate === null) {
+    //             error = -Infinity;
+    //           } else {
+    //             error = u.epiweek.getEpiweekDiff(trueValue, pointEstimate);
+    //           }
+    //         }
+    //       }
+    //       scores[state][target] = {
+    //         logScore,
+    //         logScoreMultiBin,
+    //         error,
+    //         absError: Math.abs(error)
+    //       };
+    //     }
+    //   }
+    // }
     return scores;
   });
 }

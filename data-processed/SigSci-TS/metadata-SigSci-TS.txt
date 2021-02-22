@@ -1,0 +1,11 @@
+team_name: Signature Science FOCUS
+model_name: Time series model for incident cases, deaths, and cumulative deaths
+model_abbr: SigSci-TS
+model_contributors: V.P. Nagraj (pnagraj@signaturescience.com), Stephen D. Turner (sturner@signaturescience.com), Chris Hulme-Lowe (chulmelowe@signaturescience.com)
+website_url: http://www.signaturescience.com/
+license: cc-by-4.0
+team_model_designation: primary
+methods: Time series forecasting using ARIMA for case forecasts and lagged cases for death forecasts.
+team_funding: Internal R&D funding
+twitter_handles: strnr
+data_inputs: JHU CSSE daily reported case and death counts
