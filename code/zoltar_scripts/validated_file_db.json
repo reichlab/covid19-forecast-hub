@@ -2792,5 +2792,10 @@
     "2021-02-21-CU-scenario_high.csv": "0b8b5650a9f044b41fde85c04cecbe6d",
     "2021-02-22-UVA-Ensemble.csv": "6255c6157dfc108d196e6d8a04fc3750",
     "2021-02-22-GT-DeepCOVID.csv": "4cfa602633063364f99eef7410c63381",
-    "2021-02-22-COVIDhub-ensemble.csv": "7dd60a8db2beb71638822e923476c9e2"
+    "2021-02-22-COVIDhub-ensemble.csv": "7dd60a8db2beb71638822e923476c9e2",
+    "2021-02-22-FAIR-NRAR.csv": "eee7ff56f168b4c2ea76eb1228038d75",
+    "2021-02-22-JHUAPL-SLPHospEns.csv": "f1845b25be5c5f960bb1008ccc0761ff",
+    "2021-02-21-UCLA-SuEIR.csv": "0ecdd07e388fdbb5f40666f397c2f749",
+    "2021-02-22-FDANIHASU-Sweight.csv": "38237e1212e8edbc7da2d92466ba8664",
+    "2021-02-22-COVIDhub-trained_ensemble.csv": "9d25fb36e071e5d4aff8ccf51b10ff19"
 }

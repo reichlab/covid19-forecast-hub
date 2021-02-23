@@ -2636,3 +2636,8 @@ file_path,validation_date
 ./data-processed/UVA-Ensemble/2021-02-22-UVA-Ensemble.csv,2021-02-23 06:27:20.066124
 ./data-processed/GT-DeepCOVID/2021-02-22-GT-DeepCOVID.csv,2021-02-23 06:27:24.488733
 ./data-processed/COVIDhub-ensemble/2021-02-22-COVIDhub-ensemble.csv,2021-02-23 06:27:39.093838
+./data-processed/FAIR-NRAR/2021-02-22-FAIR-NRAR.csv,2021-02-23 18:21:41.405666
+./data-processed/JHUAPL-SLPHospEns/2021-02-22-JHUAPL-SLPHospEns.csv,2021-02-23 18:21:45.286186
+./data-processed/UCLA-SuEIR/2021-02-21-UCLA-SuEIR.csv,2021-02-23 18:22:06.677507
+./data-processed/FDANIHASU-Sweight/2021-02-22-FDANIHASU-Sweight.csv,2021-02-23 18:22:06.738179
+./data-processed/COVIDhub-trained_ensemble/2021-02-22-COVIDhub-trained_ensemble.csv,2021-02-23 18:22:20.323654
