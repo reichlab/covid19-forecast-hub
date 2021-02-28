@@ -18,6 +18,11 @@ you can do prior to this pull request. In addition, we describe
 -   [data formatting](#Data-formatting)
 -   [data validation](#Data-validation)
 -   [metadata format](#Meta-data)
+-   [policy on late submissions](#late-policy)
+
+
+
+
 
 Ground truth data
 -----------------
@@ -445,15 +450,8 @@ instructions](R_forecast_file_validation.md) to run some checks in R.
 These checks are no longer maintained, but may still be of use to teams
 working with R.
 
-Data visualization
+
+Policy on late or updated submissions
 ------------------
 
-If you want to visualize your forecasts, you can use our [R shiny
-app](./explore_processed_data.R) to visualize your forecast by running
-
-    source("explore_processed_data.R")
-    shinyApp(ui = ui, server = server)
-
-from within the [data-processed/](./) folder. This is mainly an internal
-tool we use to help us know what forecasts are in the repository. Thus,
-it is provided as-is within no warranty.
+In order to ensure that forecasting is done in real-time, all forecasts should be submitted to the forecast hub within 1 day of the forecast date.  We will no longer be accepting late forecasts due to technical issues, missing deadlines, or updated modeling methods. We will still accept updated forecasts if there was a bug in the original file. If you need to submit an updated forecast for this reason, please include a comment in your pull request confirming that there was a bug and that the forecast was fit only to data available at the time. We will also accept late forecasts from new teams if they can provide publicly available information showing that the forecasts were made in real-time (e.g. github commit history).
