@@ -1,19 +1,19 @@
 team_name: Robert Walraven
-team_abbr: RobertWalraven
 model_name: EmpericalSkewedGaussian
 model_abbr: RobertWalraven-ESG
 model_contributors: Robert Walraven <walraven@multiwareinc.com>
-website_url: 'http://rwalraven.com/COVID19'
+website_url: http://rwalraven.com/COVID19
 license: cc-by-4.0
 team_model_designation: primary
-
-methods: >-
-    Multiple skewed gaussian distribution peaks fit to raw data
-
+methods: Multiple skewed gaussian distribution peaks fit to raw data
 team_funding: None (I'm a retired Experimental Physicist working at home)
-data_inputs: Existing case and death raw JHU data plus hospitalization data from HealthData.gov.
-
-methods_long: >-
-    The incremental cases and deaths of a single outbreak predicted by a simple SEIR model can be approximated closely with a particular skewed gaussian distribution that we developed that has four empirical parameters: height, position, left growth rate, and right decay rate.
-    The ESG model assumes the JHU data consists of independent outbreaks at different times, and fits multiple peaks to the data, keeping the number of peaks to a minimum in order to fit with high accuracy the data after Loess smoothing.  The most recent peaks are then used to generate a daily forecast forward three months.  Hospitalization data and the pattern of older peaks is used to visually confirm the forecasts look correct and if not, manual adjustments are made to the forecast.
-    The ESG model is a emperical mathematical model that makes no epidemiological assumptions and has no epidemiological parameters, so can serve as a baseline forecast against which to compare SEIR-based models.
+data_inputs: Existing case and death raw data from Microsoft Bing Tracker. In process
+  of switching to JHU data.
+methods_long: The existing case and death raw data is cleaned slightly for anomolies,
+  then is fit with model consisting of one or more skewed gaussian distributions using
+  a distribution model I developed.  The model estimates the height, position, and
+  spread of each peak that appears in the data and can be used to project ahead with
+  reasonable results. This is an emperical approach that makes no epidemiological
+  assumptions but simply fits the existing data as well as possible. The model assumes
+  that the effects of current interventions are reflected in the observed data and
+  that those effects will continue going forward.
