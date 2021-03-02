@@ -2702,3 +2702,6 @@ file_path,validation_date
 ./data-processed/CU-scenario_high/2021-02-28-CU-scenario_high.csv,2021-03-02 00:31:51.314291
 ./data-processed/UVA-Ensemble/2021-03-01-UVA-Ensemble.csv,2021-03-02 00:32:01.729763
 ./data-processed/GT-DeepCOVID/2021-03-01-GT-DeepCOVID.csv,2021-03-02 00:32:06.139765
+./data-processed/RobertWalraven-ESG/2021-03-01-RobertWalraven-ESG.csv,2021-03-02 06:21:34.029585
+./data-processed/COVIDhub-baseline/2021-02-22-COVIDhub-baseline.csv,2021-03-02 06:21:55.267138
+./data-processed/COVIDhub-ensemble/2021-03-01-COVIDhub-ensemble.csv,2021-03-02 06:22:08.465978
