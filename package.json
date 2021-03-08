@@ -101,7 +101,7 @@
     "json-schema-generator": "^2.0.3",
     "node-sass": "^4.9.4",
     "ora": "^0.3.0",
-    "pug": "^2.0.0-beta6",
+    "pug": "^3.0.1",
     "sass-loader": "^4.0.2",
     "shelljs": "^0.7.4",
     "standard": "^8.6.0",
