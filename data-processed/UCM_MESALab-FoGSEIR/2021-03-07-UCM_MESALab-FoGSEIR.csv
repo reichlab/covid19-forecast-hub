@@ -237,5 +237,5 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2021-03-07,5 wk ahead cum death,2021-04-10,US,quantile,0.85,756013
 2021-03-07,5 wk ahead cum death,2021-04-10,US,quantile,0.9,769793
 2021-03-07,5 wk ahead cum death,2021-04-10,US,quantile,0.95,783572
-2021-03-8,5 wk ahead cum death,2021-04-10,US,quantile,0.975,783572
-2021-03-9,5 wk ahead cum death,2021-04-10,US,quantile,0.99,783572
+2021-03-07,5 wk ahead cum death,2021-04-10,US,quantile,0.975,783572
+2021-03-07,5 wk ahead cum death,2021-04-10,US,quantile,0.99,783572
