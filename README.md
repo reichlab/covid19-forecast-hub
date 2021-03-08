@@ -105,6 +105,7 @@ repository are (with data reuse license):
  - [Iowa State University](http://www.covid19dashboard.us/) (CC-BY-4.0)
  - [Iowa State University and Peking University](https://yumouqiu.shinyapps.io/covid-predict/) (CC-BY-4.0)
  - [IQVIA](https://www.iqvia.com/landing/analytics-center-of-excellence) (CC-BY-4.0)
+ - [IUPUI CIS](https://github.com/chiangwe/HawkPR) (CC-BY-4.0)
  - [Karlen Working Group](https://pypm.github.io/home/) (gpl-3.0)
  - [LANL](https://covid-19.bsvgateway.org/) (see [license](./data-processed/LANL-GrowthRate/LICENSE.txt))
  - LockNQuay (MIT)
