@@ -2704,7 +2704,6 @@ file_path,validation_date
 ./data-processed/GT-DeepCOVID/2021-03-01-GT-DeepCOVID.csv,2021-03-02 00:32:06.139765
 ./data-processed/RobertWalraven-ESG/2021-03-01-RobertWalraven-ESG.csv,2021-03-02 06:21:34.029585
 ./data-processed/COVIDhub-baseline/2021-02-22-COVIDhub-baseline.csv,2021-03-02 06:21:55.267138
-./data-processed/COVIDhub-ensemble/2021-03-01-COVIDhub-ensemble.csv,2021-03-02 06:22:08.465978
 ./data-processed/FAIR-NRAR/2021-03-01-FAIR-NRAR.csv,2021-03-03 00:28:10.839228
 ./data-processed/JHUAPL-SLPHospEns/2021-03-01-JHUAPL-SLPHospEns.csv,2021-03-03 00:28:15.383471
 ./data-processed/FDANIHASU-Sweight/2021-03-01-FDANIHASU-Sweight.csv,2021-03-03 00:28:15.927219
@@ -2771,3 +2770,4 @@ file_path,validation_date
 ./data-processed/CU-scenario_high/2021-03-07-CU-scenario_high.csv,2021-03-09 00:32:53.464541
 ./data-processed/CMU-TimeSeries/2021-03-08-CMU-TimeSeries.csv,2021-03-09 00:32:54.496259
 ./data-processed/QJHong-Encounter/2021-03-08-QJHong-Encounter.csv,2021-03-09 00:32:54.613710
+./data-processed/COVIDhub-ensemble/2021-03-08-COVIDhub-ensemble.csv,2021-03-09 06:21:48.943719
