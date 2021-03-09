@@ -16,9 +16,6 @@ jobs:
         node-version: [10.2]
 
     steps:
-    - uses: actions/labeler@main
-      with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
     - uses: actions/checkout@v2
       with:
         repository: 'reichlab/covid19-forecast-hub-validations'
@@ -36,3 +33,10 @@ jobs:
     - run: python3 main.py
       env:
         GH_TOKEN: ${{ github.token }}
+    
+    # Run and check for automerge
+    - name: Automerge check
+      uses: "pascalgn/automerge-action@v0.13.1"
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+        MERGE_LABELS: "automerge,data-submission,!other-files-updated,!metadata-change,!forecast-updated,!viz,!code"
