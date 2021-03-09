@@ -147,7 +147,8 @@ models_this_week<-load_forecasts(
         # models=c(),
         forecast_dates = this_week_timezeroes,
         types = c("point"),
-        targets = c("1 wk ahead cum death", "1 wk ahead inc death", "1 wk ahead inc case", "1 day ahead inc hosp"))%>%
+        targets = c("1 wk ahead cum death", "1 wk ahead inc death", "1 wk ahead inc case", "1 day ahead inc hosp"),
+         verbose = FALSE)%>%
   pull(model) %>% sort.default()%>% 
   unique()
 
@@ -200,7 +201,8 @@ dat<-load_forecasts(
         forecast_date = this_monday, 
         types = c("point", "quantile"),
         targets = c(inc_death_targets, cum_death_targets,inc_case_targets),
-       location=c("US",state_county)) %>%
+       location=c("US",state_county),
+        verbose = FALSE) %>%
      rename(fips=location, timezero=forecast_date, class=type)%>%
      mutate(target=paste(horizon,target_variable,sep=" wk ahead "))
 
@@ -382,7 +384,7 @@ inc_death_p6 <- data.frame(inc_death_all_points %>%
 inc_death_p6_u <- unique(inc_death_p6)
 
 # submit query for forecasts past 6 weeks-using covidhubutils
-inc_death_forecast_p6<-load_forecasts(models=c("COVIDhub-ensemble"),forecast_dates =last_6_mondays,locations =state,  types = c("quantile"),targets = c(inc_death_targets))
+inc_death_forecast_p6<-load_forecasts(models=c("COVIDhub-ensemble"),forecast_dates =last_6_mondays,locations =state,  types = c("quantile"),targets = c(inc_death_targets),  verbose = FALSE)
 
 ## join inc death with forecast
 inc_death_all_p6  <- inc_death_forecast_p6 %>%
@@ -647,7 +649,7 @@ inc_case_p6 <- data.frame(inc_case_all_points %>%
 inc_case_p6_u <- unique(inc_case_p6)
 
 # submit query for forecasts past 6 weeks-using covidhubutils
-inc_case_forecast_p6<-load_forecasts(models=c("COVIDhub-ensemble"),forecast_dates =last_6_mondays,locations =state_county,  types = c("quantile"),targets = c(inc_case_targets))
+inc_case_forecast_p6<-load_forecasts(models=c("COVIDhub-ensemble"),forecast_dates =last_6_mondays,locations =state_county,  types = c("quantile"),targets = c(inc_case_targets),  verbose = FALSE)
 
 ## join inc cases with forecast
 inc_case_all_p6  <- inc_case_forecast_p6 %>%
@@ -817,7 +819,7 @@ inc_case_p6 <- data.frame(inc_case_all_points %>%
 inc_case_p6_u <- unique(inc_case_p6)
 
 # submit query for forecasts past 6 weeks-using covidhubutils
-inc_case_forecast_p6<-load_forecasts(models=c("COVIDhub-ensemble"),forecast_dates =last_6_mondays,locations =state_county,  types = c("quantile"),targets = c(inc_case_targets))
+inc_case_forecast_p6<-load_forecasts(models=c("COVIDhub-ensemble"),forecast_dates =last_6_mondays,locations =state_county,  types = c("quantile"),targets = c(inc_case_targets),  verbose = FALSE)
 
 ## join inc cases with forecast
 inc_case_all_p6  <- inc_case_forecast_p6 %>%
