@@ -1,9 +1,304 @@
 date,location,location_name,value
+2020-12-19,55,Wisconsin,252
+2020-12-19,54,West Virginia,66
+2020-12-19,56,Wyoming,21
+2020-12-18,02,Alaska,11
+2020-12-18,01,Alabama,366
+2020-12-18,05,Arkansas,159
+2020-12-18,04,Arizona,461
+2020-12-18,06,California,2217
+2020-12-18,08,Colorado,187
+2020-12-18,09,Connecticut,161
+2020-12-18,11,District of Columbia,30
+2020-12-18,10,Delaware,46
+2020-12-18,12,Florida,762
+2020-12-18,13,Georgia,517
+2020-12-18,15,Hawaii,12
+2020-12-18,19,Iowa,93
+2020-12-18,16,Idaho,57
+2020-12-18,17,Illinois,472
+2020-12-18,18,Indiana,383
+2020-12-18,20,Kansas,173
+2020-12-18,21,Kentucky,384
+2020-12-18,22,Louisiana,227
+2020-12-18,25,Massachusetts,284
+2020-12-18,24,Maryland,235
+2020-12-18,23,Maine,17
+2020-12-18,26,Michigan,345
+2020-12-18,27,Minnesota,137
+2020-12-18,29,Missouri,277
+2020-12-18,28,Mississippi,168
+2020-12-18,30,Montana,49
+2020-12-18,37,North Carolina,331
+2020-12-18,38,North Dakota,25
+2020-12-18,31,Nebraska,65
+2020-12-18,33,New Hampshire,47
+2020-12-18,34,New Jersey,434
+2020-12-18,35,New Mexico,136
+2020-12-18,32,Nevada,171
+2020-12-18,36,New York,1001
+2020-12-18,39,Ohio,703
+2020-12-18,40,Oklahoma,340
+2020-12-18,41,Oregon,65
+2020-12-18,42,Pennsylvania,729
+2020-12-18,72,Puerto Rico,29
+2020-12-18,44,Rhode Island,26
+2020-12-18,45,South Carolina,187
+2020-12-18,46,South Dakota,35
+2020-12-18,47,Tennessee,337
+2020-12-18,48,Texas,1445
+2020-12-18,49,Utah,97
+2020-12-18,51,Virginia,246
+2020-12-18,78,Virgin Islands,0
+2020-12-18,50,Vermont,4
+2020-12-18,53,Washington,108
+2020-12-18,55,Wisconsin,305
+2020-12-18,54,West Virginia,78
+2020-12-18,56,Wyoming,24
+2020-12-17,02,Alaska,12
+2020-12-17,01,Alabama,383
+2020-12-17,05,Arkansas,160
+2020-12-17,04,Arizona,523
+2020-12-17,06,California,2368
+2020-12-17,08,Colorado,206
+2020-12-17,09,Connecticut,101
+2020-12-17,11,District of Columbia,29
+2020-12-17,10,Delaware,39
+2020-12-17,12,Florida,861
+2020-12-17,13,Georgia,546
+2020-12-17,15,Hawaii,4
+2020-12-17,19,Iowa,92
+2020-12-17,16,Idaho,61
+2020-12-17,17,Illinois,493
+2020-12-17,18,Indiana,386
+2020-12-17,20,Kansas,167
+2020-12-17,21,Kentucky,386
+2020-12-17,22,Louisiana,193
+2020-12-17,25,Massachusetts,254
+2020-12-17,24,Maryland,233
+2020-12-17,23,Maine,11
+2020-12-17,26,Michigan,359
+2020-12-17,27,Minnesota,118
+2020-12-17,29,Missouri,321
+2020-12-17,28,Mississippi,137
+2020-12-17,30,Montana,40
+2020-12-17,37,North Carolina,341
+2020-12-17,38,North Dakota,25
+2020-12-17,31,Nebraska,58
+2020-12-17,33,New Hampshire,26
+2020-12-17,34,New Jersey,405
+2020-12-17,35,New Mexico,118
+2020-12-17,32,Nevada,129
+2020-12-17,36,New York,885
+2020-12-17,39,Ohio,724
+2020-12-17,40,Oklahoma,374
+2020-12-17,41,Oregon,73
+2020-12-17,42,Pennsylvania,672
+2020-12-17,72,Puerto Rico,29
+2020-12-17,44,Rhode Island,30
+2020-12-17,45,South Carolina,181
+2020-12-17,46,South Dakota,41
+2020-12-17,47,Tennessee,371
+2020-12-17,48,Texas,1425
+2020-12-17,49,Utah,100
+2020-12-17,51,Virginia,266
+2020-12-17,78,Virgin Islands,0
+2020-12-17,50,Vermont,11
+2020-12-17,53,Washington,94
+2020-12-17,55,Wisconsin,311
+2020-12-17,54,West Virginia,82
+2020-12-17,56,Wyoming,27
+2020-12-16,02,Alaska,14
+2020-12-16,01,Alabama,405
+2020-12-16,05,Arkansas,149
+2020-12-16,04,Arizona,465
+2020-12-16,06,California,2284
+2020-12-16,08,Colorado,218
+2020-12-16,09,Connecticut,163
+2020-12-16,11,District of Columbia,39
+2020-12-16,10,Delaware,54
+2020-12-16,12,Florida,830
+2020-12-16,13,Georgia,575
+2020-12-16,15,Hawaii,8
+2020-12-16,19,Iowa,95
+2020-12-16,16,Idaho,66
+2020-12-16,17,Illinois,556
+2020-12-16,18,Indiana,387
+2020-12-16,20,Kansas,156
+2020-12-16,21,Kentucky,401
+2020-12-16,22,Louisiana,173
+2020-12-16,25,Massachusetts,300
+2020-12-16,24,Maryland,194
+2020-12-16,23,Maine,14
+2020-12-16,26,Michigan,346
+2020-12-16,27,Minnesota,121
+2020-12-16,29,Missouri,323
+2020-12-16,28,Mississippi,169
+2020-12-16,30,Montana,53
+2020-12-16,37,North Carolina,321
+2020-12-16,38,North Dakota,30
+2020-12-16,31,Nebraska,69
+2020-12-16,33,New Hampshire,32
+2020-12-16,34,New Jersey,400
+2020-12-16,35,New Mexico,114
+2020-12-16,32,Nevada,161
+2020-12-16,36,New York,830
+2020-12-16,39,Ohio,708
+2020-12-16,40,Oklahoma,383
+2020-12-16,41,Oregon,79
+2020-12-16,42,Pennsylvania,677
+2020-12-16,72,Puerto Rico,43
+2020-12-16,44,Rhode Island,31
+2020-12-16,45,South Carolina,183
+2020-12-16,46,South Dakota,31
+2020-12-16,47,Tennessee,419
+2020-12-16,48,Texas,1370
+2020-12-16,49,Utah,89
+2020-12-16,51,Virginia,243
+2020-12-16,78,Virgin Islands,0
+2020-12-16,50,Vermont,6
+2020-12-16,53,Washington,97
+2020-12-16,55,Wisconsin,302
+2020-12-16,54,West Virginia,66
+2020-12-16,56,Wyoming,21
+2020-12-15,02,Alaska,13
+2020-12-15,01,Alabama,427
+2020-12-15,05,Arkansas,179
+2020-12-15,04,Arizona,521
+2020-12-15,06,California,2138
+2020-12-15,08,Colorado,216
+2020-12-15,09,Connecticut,132
+2020-12-15,11,District of Columbia,30
+2020-12-15,10,Delaware,63
+2020-12-15,12,Florida,881
+2020-12-15,13,Georgia,480
+2020-12-15,15,Hawaii,7
+2020-12-15,19,Iowa,99
+2020-12-15,16,Idaho,59
+2020-12-15,17,Illinois,543
+2020-12-15,18,Indiana,394
+2020-12-15,20,Kansas,184
+2020-12-15,21,Kentucky,379
+2020-12-15,22,Louisiana,219
+2020-12-15,25,Massachusetts,296
+2020-12-15,24,Maryland,242
+2020-12-15,23,Maine,20
+2020-12-15,26,Michigan,404
+2020-12-15,27,Minnesota,149
+2020-12-15,29,Missouri,278
+2020-12-15,28,Mississippi,157
+2020-12-15,30,Montana,48
+2020-12-15,37,North Carolina,321
+2020-12-15,38,North Dakota,24
+2020-12-15,31,Nebraska,49
+2020-12-15,33,New Hampshire,37
+2020-12-15,34,New Jersey,470
+2020-12-15,35,New Mexico,130
+2020-12-15,32,Nevada,216
+2020-12-15,36,New York,940
+2020-12-15,39,Ohio,704
+2020-12-15,40,Oklahoma,351
+2020-12-15,41,Oregon,74
+2020-12-15,42,Pennsylvania,793
+2020-12-15,72,Puerto Rico,36
+2020-12-15,44,Rhode Island,41
+2020-12-15,45,South Carolina,190
+2020-12-15,46,South Dakota,33
+2020-12-15,47,Tennessee,412
+2020-12-15,48,Texas,1296
+2020-12-15,49,Utah,95
+2020-12-15,51,Virginia,237
+2020-12-15,78,Virgin Islands,2
+2020-12-15,50,Vermont,8
+2020-12-15,53,Washington,108
+2020-12-15,55,Wisconsin,338
+2020-12-15,54,West Virginia,84
+2020-12-15,56,Wyoming,30
+2020-12-14,02,Alaska,14
+2020-12-14,01,Alabama,399
+2020-12-14,05,Arkansas,196
+2020-12-14,04,Arizona,514
+2020-12-14,06,California,2169
+2020-12-14,08,Colorado,227
+2020-12-14,09,Connecticut,132
+2020-12-14,11,District of Columbia,26
+2020-12-14,10,Delaware,47
+2020-12-14,12,Florida,855
+2020-12-14,13,Georgia,598
+2020-12-14,15,Hawaii,4
+2020-12-14,19,Iowa,106
+2020-12-14,16,Idaho,63
+2020-12-14,17,Illinois,542
+2020-12-14,18,Indiana,380
+2020-12-14,20,Kansas,171
+2020-12-14,21,Kentucky,480
+2020-12-14,22,Louisiana,206
+2020-12-14,25,Massachusetts,238
+2020-12-14,24,Maryland,240
+2020-12-14,23,Maine,22
+2020-12-14,26,Michigan,453
+2020-12-14,27,Minnesota,157
+2020-12-14,29,Missouri,335
+2020-12-14,28,Mississippi,167
+2020-12-14,30,Montana,69
+2020-12-14,37,North Carolina,409
+2020-12-14,38,North Dakota,21
+2020-12-14,31,Nebraska,77
+2020-12-14,33,New Hampshire,48
+2020-12-14,34,New Jersey,478
+2020-12-14,35,New Mexico,116
+2020-12-14,32,Nevada,212
+2020-12-14,36,New York,876
+2020-12-14,39,Ohio,786
+2020-12-14,40,Oklahoma,324
+2020-12-14,41,Oregon,85
+2020-12-14,42,Pennsylvania,846
+2020-12-14,72,Puerto Rico,21
+2020-12-14,44,Rhode Island,56
+2020-12-14,45,South Carolina,215
+2020-12-14,46,South Dakota,35
+2020-12-14,47,Tennessee,468
+2020-12-14,48,Texas,1364
+2020-12-14,49,Utah,86
+2020-12-14,51,Virginia,232
+2020-12-14,78,Virgin Islands,0
+2020-12-14,50,Vermont,7
+2020-12-14,53,Washington,125
+2020-12-14,55,Wisconsin,367
+2020-12-14,54,West Virginia,92
+2020-12-14,56,Wyoming,31
+2020-12-13,02,Alaska,16
+2020-12-13,01,Alabama,328
+2020-12-13,05,Arkansas,111
+2020-12-13,04,Arizona,429
+2020-12-13,06,California,1879
+2020-12-13,08,Colorado,156
+2020-12-13,09,Connecticut,128
+2020-12-13,11,District of Columbia,25
+2020-12-13,10,Delaware,59
+2020-12-13,12,Florida,752
+2020-12-13,13,Georgia,459
+2020-12-13,15,Hawaii,9
+2020-12-13,19,Iowa,85
+2020-12-13,16,Idaho,48
+2020-12-13,17,Illinois,426
+2020-12-13,18,Indiana,352
+2020-12-13,20,Kansas,135
+2020-12-13,21,Kentucky,522
+2020-12-13,22,Louisiana,182
+2020-12-13,25,Massachusetts,216
+2020-12-13,24,Maryland,224
+2020-12-13,23,Maine,20
+2020-12-13,26,Michigan,379
+2020-12-13,27,Minnesota,132
+2020-12-13,29,Missouri,239
+2020-12-13,28,Mississippi,124
+2020-12-13,30,Montana,54
 2020-12-13,37,North Carolina,294
 2020-12-13,38,North Dakota,27
 2020-12-13,31,Nebraska,59
 2020-12-13,33,New Hampshire,27
-2020-12-13,34,New Jersey,349
+2020-12-13,34,New Jersey,346
 2020-12-13,35,New Mexico,112
 2020-12-13,32,Nevada,175
 2020-12-13,36,New York,766
@@ -56,7 +351,7 @@ date,location,location_name,value
 2020-12-12,38,North Dakota,23
 2020-12-12,31,Nebraska,67
 2020-12-12,33,New Hampshire,38
-2020-12-12,34,New Jersey,364
+2020-12-12,34,New Jersey,363
 2020-12-12,35,New Mexico,147
 2020-12-12,32,Nevada,170
 2020-12-12,36,New York,796
@@ -109,7 +404,7 @@ date,location,location_name,value
 2020-12-11,38,North Dakota,32
 2020-12-11,31,Nebraska,74
 2020-12-11,33,New Hampshire,43
-2020-12-11,34,New Jersey,480
+2020-12-11,34,New Jersey,478
 2020-12-11,35,New Mexico,140
 2020-12-11,32,Nevada,189
 2020-12-11,36,New York,896
@@ -162,7 +457,7 @@ date,location,location_name,value
 2020-12-10,38,North Dakota,25
 2020-12-10,31,Nebraska,91
 2020-12-10,33,New Hampshire,33
-2020-12-10,34,New Jersey,442
+2020-12-10,34,New Jersey,438
 2020-12-10,35,New Mexico,114
 2020-12-10,32,Nevada,184
 2020-12-10,36,New York,865
@@ -215,7 +510,7 @@ date,location,location_name,value
 2020-12-09,38,North Dakota,30
 2020-12-09,31,Nebraska,83
 2020-12-09,33,New Hampshire,38
-2020-12-09,34,New Jersey,483
+2020-12-09,34,New Jersey,481
 2020-12-09,35,New Mexico,123
 2020-12-09,32,Nevada,194
 2020-12-09,36,New York,891
@@ -268,7 +563,7 @@ date,location,location_name,value
 2020-12-08,38,North Dakota,34
 2020-12-08,31,Nebraska,81
 2020-12-08,33,New Hampshire,49
-2020-12-08,34,New Jersey,477
+2020-12-08,34,New Jersey,475
 2020-12-08,35,New Mexico,119
 2020-12-08,32,Nevada,242
 2020-12-08,36,New York,888
@@ -321,7 +616,7 @@ date,location,location_name,value
 2020-12-07,38,North Dakota,47
 2020-12-07,31,Nebraska,87
 2020-12-07,33,New Hampshire,58
-2020-12-07,34,New Jersey,462
+2020-12-07,34,New Jersey,459
 2020-12-07,35,New Mexico,126
 2020-12-07,32,Nevada,157
 2020-12-07,36,New York,759
@@ -374,7 +669,7 @@ date,location,location_name,value
 2020-12-06,38,North Dakota,31
 2020-12-06,31,Nebraska,77
 2020-12-06,33,New Hampshire,41
-2020-12-06,34,New Jersey,376
+2020-12-06,34,New Jersey,372
 2020-12-06,35,New Mexico,121
 2020-12-06,32,Nevada,136
 2020-12-06,36,New York,607
@@ -427,7 +722,7 @@ date,location,location_name,value
 2020-12-05,38,North Dakota,32
 2020-12-05,31,Nebraska,65
 2020-12-05,33,New Hampshire,32
-2020-12-05,34,New Jersey,433
+2020-12-05,34,New Jersey,425
 2020-12-05,35,New Mexico,138
 2020-12-05,32,Nevada,150
 2020-12-05,36,New York,678
@@ -467,7 +762,7 @@ date,location,location_name,value
 2020-12-04,18,Indiana,380
 2020-12-04,20,Kansas,184
 2020-12-04,21,Kentucky,449
-2020-12-04,22,Louisiana,216
+2020-12-04,22,Louisiana,221
 2020-12-04,25,Massachusetts,196
 2020-12-04,24,Maryland,234
 2020-12-04,23,Maine,20
@@ -480,7 +775,7 @@ date,location,location_name,value
 2020-12-04,38,North Dakota,37
 2020-12-04,31,Nebraska,80
 2020-12-04,33,New Hampshire,33
-2020-12-04,34,New Jersey,454
+2020-12-04,34,New Jersey,451
 2020-12-04,35,New Mexico,145
 2020-12-04,32,Nevada,157
 2020-12-04,36,New York,747
@@ -586,7 +881,7 @@ date,location,location_name,value
 2020-12-02,38,North Dakota,49
 2020-12-02,31,Nebraska,107
 2020-12-02,33,New Hampshire,21
-2020-12-02,34,New Jersey,401
+2020-12-02,34,New Jersey,399
 2020-12-02,35,New Mexico,155
 2020-12-02,32,Nevada,174
 2020-12-02,36,New York,677
@@ -631,7 +926,7 @@ date,location,location_name,value
 2020-12-01,24,Maryland,220
 2020-12-01,23,Maine,19
 2020-12-01,26,Michigan,509
-2020-12-01,27,Minnesota,214
+2020-12-01,27,Minnesota,212
 2020-12-01,29,Missouri,275
 2020-12-01,28,Mississippi,151
 2020-12-01,30,Montana,54
@@ -639,7 +934,7 @@ date,location,location_name,value
 2020-12-01,38,North Dakota,41
 2020-12-01,31,Nebraska,114
 2020-12-01,33,New Hampshire,32
-2020-12-01,34,New Jersey,397
+2020-12-01,34,New Jersey,394
 2020-12-01,35,New Mexico,122
 2020-12-01,32,Nevada,179
 2020-12-01,36,New York,734
@@ -692,7 +987,7 @@ date,location,location_name,value
 2020-11-30,38,North Dakota,49
 2020-11-30,31,Nebraska,113
 2020-11-30,33,New Hampshire,19
-2020-11-30,34,New Jersey,516
+2020-11-30,34,New Jersey,511
 2020-11-30,35,New Mexico,137
 2020-11-30,32,Nevada,169
 2020-11-30,36,New York,609
@@ -798,7 +1093,7 @@ date,location,location_name,value
 2020-11-28,38,North Dakota,32
 2020-11-28,31,Nebraska,97
 2020-11-28,33,New Hampshire,22
-2020-11-28,34,New Jersey,387
+2020-11-28,34,New Jersey,382
 2020-11-28,35,New Mexico,116
 2020-11-28,32,Nevada,149
 2020-11-28,36,New York,569
@@ -843,7 +1138,7 @@ date,location,location_name,value
 2020-11-27,24,Maryland,240
 2020-11-27,23,Maine,18
 2020-11-27,26,Michigan,592
-2020-11-27,27,Minnesota,258
+2020-11-27,27,Minnesota,257
 2020-11-27,29,Missouri,302
 2020-11-27,28,Mississippi,133
 2020-11-27,30,Montana,68
@@ -851,7 +1146,7 @@ date,location,location_name,value
 2020-11-27,38,North Dakota,49
 2020-11-27,31,Nebraska,108
 2020-11-27,33,New Hampshire,28
-2020-11-27,34,New Jersey,392
+2020-11-27,34,New Jersey,382
 2020-11-27,35,New Mexico,124
 2020-11-27,32,Nevada,165
 2020-11-27,36,New York,625
@@ -904,7 +1199,7 @@ date,location,location_name,value
 2020-11-26,38,North Dakota,44
 2020-11-26,31,Nebraska,95
 2020-11-26,33,New Hampshire,15
-2020-11-26,34,New Jersey,314
+2020-11-26,34,New Jersey,309
 2020-11-26,35,New Mexico,106
 2020-11-26,32,Nevada,117
 2020-11-26,36,New York,540
@@ -957,7 +1252,7 @@ date,location,location_name,value
 2020-11-25,38,North Dakota,38
 2020-11-25,31,Nebraska,121
 2020-11-25,33,New Hampshire,19
-2020-11-25,34,New Jersey,359
+2020-11-25,34,New Jersey,356
 2020-11-25,35,New Mexico,122
 2020-11-25,32,Nevada,150
 2020-11-25,36,New York,567
@@ -1010,7 +1305,7 @@ date,location,location_name,value
 2020-11-24,38,North Dakota,52
 2020-11-24,31,Nebraska,126
 2020-11-24,33,New Hampshire,26
-2020-11-24,34,New Jersey,371
+2020-11-24,34,New Jersey,369
 2020-11-24,35,New Mexico,118
 2020-11-24,32,Nevada,160
 2020-11-24,36,New York,578
@@ -1055,7 +1350,7 @@ date,location,location_name,value
 2020-11-23,24,Maryland,230
 2020-11-23,23,Maine,21
 2020-11-23,26,Michigan,629
-2020-11-23,27,Minnesota,247
+2020-11-23,27,Minnesota,246
 2020-11-23,29,Missouri,326
 2020-11-23,28,Mississippi,147
 2020-11-23,30,Montana,77
@@ -1063,7 +1358,7 @@ date,location,location_name,value
 2020-11-23,38,North Dakota,51
 2020-11-23,31,Nebraska,105
 2020-11-23,33,New Hampshire,18
-2020-11-23,34,New Jersey,386
+2020-11-23,34,New Jersey,381
 2020-11-23,35,New Mexico,119
 2020-11-23,32,Nevada,156
 2020-11-23,36,New York,580
@@ -1116,7 +1411,7 @@ date,location,location_name,value
 2020-11-22,38,North Dakota,48
 2020-11-22,31,Nebraska,96
 2020-11-22,33,New Hampshire,14
-2020-11-22,34,New Jersey,307
+2020-11-22,34,New Jersey,303
 2020-11-22,35,New Mexico,121
 2020-11-22,32,Nevada,144
 2020-11-22,36,New York,476
@@ -1169,7 +1464,7 @@ date,location,location_name,value
 2020-11-21,38,North Dakota,43
 2020-11-21,31,Nebraska,112
 2020-11-21,33,New Hampshire,13
-2020-11-21,34,New Jersey,340
+2020-11-21,34,New Jersey,336
 2020-11-21,35,New Mexico,108
 2020-11-21,32,Nevada,135
 2020-11-21,36,New York,462
@@ -1222,7 +1517,7 @@ date,location,location_name,value
 2020-11-20,38,North Dakota,51
 2020-11-20,31,Nebraska,110
 2020-11-20,33,New Hampshire,12
-2020-11-20,34,New Jersey,362
+2020-11-20,34,New Jersey,360
 2020-11-20,35,New Mexico,157
 2020-11-20,32,Nevada,112
 2020-11-20,36,New York,534
@@ -1275,7 +1570,7 @@ date,location,location_name,value
 2020-11-19,38,North Dakota,63
 2020-11-19,31,Nebraska,142
 2020-11-19,33,New Hampshire,12
-2020-11-19,34,New Jersey,336
+2020-11-19,34,New Jersey,332
 2020-11-19,35,New Mexico,119
 2020-11-19,32,Nevada,129
 2020-11-19,36,New York,500
@@ -1320,7 +1615,7 @@ date,location,location_name,value
 2020-11-18,24,Maryland,185
 2020-11-18,23,Maine,16
 2020-11-18,26,Michigan,453
-2020-11-18,27,Minnesota,274
+2020-11-18,27,Minnesota,273
 2020-11-18,29,Missouri,351
 2020-11-18,28,Mississippi,130
 2020-11-18,30,Montana,93
@@ -1328,7 +1623,7 @@ date,location,location_name,value
 2020-11-18,38,North Dakota,69
 2020-11-18,31,Nebraska,149
 2020-11-18,33,New Hampshire,14
-2020-11-18,34,New Jersey,340
+2020-11-18,34,New Jersey,335
 2020-11-18,35,New Mexico,133
 2020-11-18,32,Nevada,149
 2020-11-18,36,New York,471
@@ -1381,7 +1676,7 @@ date,location,location_name,value
 2020-11-17,38,North Dakota,65
 2020-11-17,31,Nebraska,142
 2020-11-17,33,New Hampshire,9
-2020-11-17,34,New Jersey,318
+2020-11-17,34,New Jersey,314
 2020-11-17,35,New Mexico,121
 2020-11-17,32,Nevada,136
 2020-11-17,36,New York,452
@@ -1434,7 +1729,7 @@ date,location,location_name,value
 2020-11-16,38,North Dakota,62
 2020-11-16,31,Nebraska,148
 2020-11-16,33,New Hampshire,18
-2020-11-16,34,New Jersey,346
+2020-11-16,34,New Jersey,341
 2020-11-16,35,New Mexico,98
 2020-11-16,32,Nevada,130
 2020-11-16,36,New York,380
@@ -1487,7 +1782,7 @@ date,location,location_name,value
 2020-11-15,38,North Dakota,55
 2020-11-15,31,Nebraska,141
 2020-11-15,33,New Hampshire,10
-2020-11-15,34,New Jersey,286
+2020-11-15,34,New Jersey,283
 2020-11-15,35,New Mexico,113
 2020-11-15,32,Nevada,195
 2020-11-15,36,New York,316
@@ -1540,7 +1835,7 @@ date,location,location_name,value
 2020-11-14,38,North Dakota,58
 2020-11-14,31,Nebraska,120
 2020-11-14,33,New Hampshire,13
-2020-11-14,34,New Jersey,264
+2020-11-14,34,New Jersey,262
 2020-11-14,35,New Mexico,123
 2020-11-14,32,Nevada,122
 2020-11-14,36,New York,386
@@ -1593,7 +1888,7 @@ date,location,location_name,value
 2020-11-13,38,North Dakota,57
 2020-11-13,31,Nebraska,114
 2020-11-13,33,New Hampshire,8
-2020-11-13,34,New Jersey,246
+2020-11-13,34,New Jersey,244
 2020-11-13,35,New Mexico,123
 2020-11-13,32,Nevada,122
 2020-11-13,36,New York,403
@@ -1615,21 +1910,21 @@ date,location,location_name,value
 2020-11-13,55,Wisconsin,513
 2020-11-13,54,West Virginia,61
 2020-11-13,56,Wyoming,33
-2020-11-12,02,Alaska,18
+2020-11-12,02,Alaska,17
 2020-11-12,01,Alabama,174
-2020-11-12,05,Arkansas,124
-2020-11-12,04,Arizona,173
+2020-11-12,05,Arkansas,123
+2020-11-12,04,Arizona,169
 2020-11-12,06,California,545
 2020-11-12,08,Colorado,211
 2020-11-12,09,Connecticut,96
 2020-11-12,11,District of Columbia,12
 2020-11-12,10,Delaware,24
-2020-11-12,12,Florida,535
+2020-11-12,12,Florida,536
 2020-11-12,13,Georgia,377
 2020-11-12,15,Hawaii,10
 2020-11-12,19,Iowa,223
 2020-11-12,16,Idaho,44
-2020-11-12,17,Illinois,604
+2020-11-12,17,Illinois,610
 2020-11-12,18,Indiana,368
 2020-11-12,20,Kansas,150
 2020-11-12,21,Kentucky,368
@@ -1640,23 +1935,23 @@ date,location,location_name,value
 2020-11-12,26,Michigan,444
 2020-11-12,27,Minnesota,228
 2020-11-12,29,Missouri,333
-2020-11-12,28,Mississippi,74
+2020-11-12,28,Mississippi,73
 2020-11-12,30,Montana,93
 2020-11-12,37,North Carolina,188
 2020-11-12,38,North Dakota,60
 2020-11-12,31,Nebraska,122
 2020-11-12,33,New Hampshire,19
-2020-11-12,34,New Jersey,304
+2020-11-12,34,New Jersey,302
 2020-11-12,35,New Mexico,76
 2020-11-12,32,Nevada,197
-2020-11-12,36,New York,449
+2020-11-12,36,New York,447
 2020-11-12,39,Ohio,488
 2020-11-12,40,Oklahoma,267
 2020-11-12,41,Oregon,47
 2020-11-12,42,Pennsylvania,398
 2020-11-12,72,Puerto Rico,50
 2020-11-12,44,Rhode Island,15
-2020-11-12,45,South Carolina,73
+2020-11-12,45,South Carolina,76
 2020-11-12,46,South Dakota,74
 2020-11-12,47,Tennessee,210
 2020-11-12,48,Texas,1073
@@ -1699,7 +1994,7 @@ date,location,location_name,value
 2020-11-11,38,North Dakota,66
 2020-11-11,31,Nebraska,135
 2020-11-11,33,New Hampshire,10
-2020-11-11,34,New Jersey,282
+2020-11-11,34,New Jersey,277
 2020-11-11,35,New Mexico,88
 2020-11-11,32,Nevada,121
 2020-11-11,36,New York,452
@@ -1752,7 +2047,7 @@ date,location,location_name,value
 2020-11-10,38,North Dakota,64
 2020-11-10,31,Nebraska,135
 2020-11-10,33,New Hampshire,9
-2020-11-10,34,New Jersey,250
+2020-11-10,34,New Jersey,249
 2020-11-10,35,New Mexico,206
 2020-11-10,32,Nevada,95
 2020-11-10,36,New York,425
@@ -1805,7 +2100,7 @@ date,location,location_name,value
 2020-11-09,38,North Dakota,66
 2020-11-09,31,Nebraska,144
 2020-11-09,33,New Hampshire,11
-2020-11-09,34,New Jersey,230
+2020-11-09,34,New Jersey,229
 2020-11-09,35,New Mexico,70
 2020-11-09,32,Nevada,94
 2020-11-09,36,New York,363
@@ -1858,7 +2153,7 @@ date,location,location_name,value
 2020-11-08,38,North Dakota,51
 2020-11-08,31,Nebraska,117
 2020-11-08,33,New Hampshire,5
-2020-11-08,34,New Jersey,196
+2020-11-08,34,New Jersey,192
 2020-11-08,35,New Mexico,75
 2020-11-08,32,Nevada,89
 2020-11-08,36,New York,206
@@ -1911,7 +2206,7 @@ date,location,location_name,value
 2020-11-07,38,North Dakota,49
 2020-11-07,31,Nebraska,110
 2020-11-07,33,New Hampshire,7
-2020-11-07,34,New Jersey,171
+2020-11-07,34,New Jersey,170
 2020-11-07,35,New Mexico,88
 2020-11-07,32,Nevada,83
 2020-11-07,36,New York,293
@@ -1964,7 +2259,7 @@ date,location,location_name,value
 2020-11-06,38,North Dakota,80
 2020-11-06,31,Nebraska,111
 2020-11-06,33,New Hampshire,9
-2020-11-06,34,New Jersey,183
+2020-11-06,34,New Jersey,180
 2020-11-06,35,New Mexico,93
 2020-11-06,32,Nevada,92
 2020-11-06,36,New York,298
@@ -2017,7 +2312,7 @@ date,location,location_name,value
 2020-11-05,38,North Dakota,60
 2020-11-05,31,Nebraska,109
 2020-11-05,33,New Hampshire,5
-2020-11-05,34,New Jersey,169
+2020-11-05,34,New Jersey,168
 2020-11-05,35,New Mexico,78
 2020-11-05,32,Nevada,82
 2020-11-05,36,New York,315
@@ -2176,7 +2471,7 @@ date,location,location_name,value
 2020-11-02,38,North Dakota,58
 2020-11-02,31,Nebraska,117
 2020-11-02,33,New Hampshire,2
-2020-11-02,34,New Jersey,161
+2020-11-02,34,New Jersey,158
 2020-11-02,35,New Mexico,68
 2020-11-02,32,Nevada,92
 2020-11-02,36,New York,201
@@ -2282,7 +2577,7 @@ date,location,location_name,value
 2020-10-31,38,North Dakota,41
 2020-10-31,31,Nebraska,60
 2020-10-31,33,New Hampshire,7
-2020-10-31,34,New Jersey,106
+2020-10-31,34,New Jersey,105
 2020-10-31,35,New Mexico,78
 2020-10-31,32,Nevada,61
 2020-10-31,36,New York,126
@@ -2336,7 +2631,7 @@ date,location,location_name,value
 2020-10-30,31,Nebraska,93
 2020-10-30,33,New Hampshire,3
 2020-10-30,34,New Jersey,140
-2020-10-30,35,New Mexico,72
+2020-10-30,35,New Mexico,68
 2020-10-30,32,Nevada,70
 2020-10-30,36,New York,140
 2020-10-30,39,Ohio,298
@@ -2412,7 +2707,7 @@ date,location,location_name,value
 2020-10-29,56,Wyoming,25
 2020-10-28,02,Alaska,11
 2020-10-28,01,Alabama,149
-2020-10-28,05,Arkansas,96
+2020-10-28,05,Arkansas,95
 2020-10-28,04,Arizona,102
 2020-10-28,06,California,359
 2020-10-28,08,Colorado,120
@@ -2424,7 +2719,7 @@ date,location,location_name,value
 2020-10-28,15,Hawaii,5
 2020-10-28,19,Iowa,95
 2020-10-28,16,Idaho,43
-2020-10-28,17,Illinois,375
+2020-10-28,17,Illinois,376
 2020-10-28,18,Indiana,217
 2020-10-28,20,Kansas,94
 2020-10-28,21,Kentucky,281
@@ -2441,10 +2736,10 @@ date,location,location_name,value
 2020-10-28,38,North Dakota,50
 2020-10-28,31,Nebraska,105
 2020-10-28,33,New Hampshire,8
-2020-10-28,34,New Jersey,108
+2020-10-28,34,New Jersey,107
 2020-10-28,35,New Mexico,59
 2020-10-28,32,Nevada,52
-2020-10-28,36,New York,151
+2020-10-28,36,New York,150
 2020-10-28,39,Ohio,251
 2020-10-28,40,Oklahoma,189
 2020-10-28,41,Oregon,28
@@ -2460,7 +2755,7 @@ date,location,location_name,value
 2020-10-28,78,Virgin Islands,0
 2020-10-28,50,Vermont,2
 2020-10-28,53,Washington,55
-2020-10-28,55,Wisconsin,364
+2020-10-28,55,Wisconsin,363
 2020-10-28,54,West Virginia,34
 2020-10-28,56,Wyoming,25
 2020-10-27,02,Alaska,8
@@ -2494,8 +2789,8 @@ date,location,location_name,value
 2020-10-27,38,North Dakota,39
 2020-10-27,31,Nebraska,81
 2020-10-27,33,New Hampshire,2
-2020-10-27,34,New Jersey,106
-2020-10-27,35,New Mexico,42
+2020-10-27,34,New Jersey,104
+2020-10-27,35,New Mexico,43
 2020-10-27,32,Nevada,72
 2020-10-27,36,New York,167
 2020-10-27,39,Ohio,253
@@ -2512,7 +2807,7 @@ date,location,location_name,value
 2020-10-27,51,Virginia,92
 2020-10-27,78,Virgin Islands,0
 2020-10-27,50,Vermont,3
-2020-10-27,53,Washington,37
+2020-10-27,53,Washington,45
 2020-10-27,55,Wisconsin,373
 2020-10-27,54,West Virginia,41
 2020-10-27,56,Wyoming,12
@@ -2618,7 +2913,7 @@ date,location,location_name,value
 2020-10-25,51,Virginia,78
 2020-10-25,78,Virgin Islands,0
 2020-10-25,50,Vermont,2
-2020-10-25,53,Washington,30
+2020-10-25,53,Washington,29
 2020-10-25,55,Wisconsin,332
 2020-10-25,54,West Virginia,24
 2020-10-25,56,Wyoming,15
@@ -2689,11 +2984,11 @@ date,location,location_name,value
 2020-10-23,15,Hawaii,6
 2020-10-23,19,Iowa,86
 2020-10-23,16,Idaho,30
-2020-10-23,17,Illinois,292
+2020-10-23,17,Illinois,291
 2020-10-23,18,Indiana,179
 2020-10-23,20,Kansas,85
 2020-10-23,21,Kentucky,268
-2020-10-23,22,Louisiana,212
+2020-10-23,22,Louisiana,213
 2020-10-23,25,Massachusetts,65
 2020-10-23,24,Maryland,56
 2020-10-23,23,Maine,2
@@ -2777,7 +3072,7 @@ date,location,location_name,value
 2020-10-22,51,Virginia,70
 2020-10-22,78,Virgin Islands,0
 2020-10-22,50,Vermont,1
-2020-10-22,53,Washington,29
+2020-10-22,53,Washington,28
 2020-10-22,55,Wisconsin,341
 2020-10-22,54,West Virginia,38
 2020-10-22,56,Wyoming,12
@@ -2883,7 +3178,7 @@ date,location,location_name,value
 2020-10-20,51,Virginia,77
 2020-10-20,78,Virgin Islands,0
 2020-10-20,50,Vermont,0
-2020-10-20,53,Washington,34
+2020-10-20,53,Washington,35
 2020-10-20,55,Wisconsin,313
 2020-10-20,54,West Virginia,20
 2020-10-20,56,Wyoming,25
@@ -2907,7 +3202,7 @@ date,location,location_name,value
 2020-10-19,21,Kentucky,200
 2020-10-19,22,Louisiana,108
 2020-10-19,25,Massachusetts,43
-2020-10-19,24,Maryland,80
+2020-10-19,24,Maryland,74
 2020-10-19,23,Maine,1
 2020-10-19,26,Michigan,136
 2020-10-19,27,Minnesota,88
@@ -3237,7 +3532,7 @@ date,location,location_name,value
 2020-10-13,31,Nebraska,58
 2020-10-13,33,New Hampshire,5
 2020-10-13,34,New Jersey,78
-2020-10-13,35,New Mexico,18
+2020-10-13,35,New Mexico,19
 2020-10-13,32,Nevada,55
 2020-10-13,36,New York,161
 2020-10-13,39,Ohio,224
@@ -3663,7 +3958,7 @@ date,location,location_name,value
 2020-10-05,34,New Jersey,60
 2020-10-05,35,New Mexico,14
 2020-10-05,32,Nevada,46
-2020-10-05,36,New York,138
+2020-10-05,36,New York,140
 2020-10-05,39,Ohio,159
 2020-10-05,40,Oklahoma,170
 2020-10-05,41,Oregon,15
@@ -3682,227 +3977,148 @@ date,location,location_name,value
 2020-10-05,55,Wisconsin,210
 2020-10-05,54,West Virginia,18
 2020-10-05,56,Wyoming,11
-2020-10-04,02,Alaska,5
-2020-10-04,01,Alabama,97
-2020-10-04,05,Arkansas,61
-2020-10-04,04,Arizona,66
-2020-10-04,06,California,315
-2020-10-04,08,Colorado,43
-2020-10-04,09,Connecticut,15
-2020-10-04,11,District of Columbia,11
-2020-10-04,10,Delaware,14
-2020-10-04,12,Florida,256
-2020-10-04,13,Georgia,222
-2020-10-04,15,Hawaii,18
-2020-10-04,19,Iowa,60
-2020-10-04,16,Idaho,15
-2020-10-04,17,Illinois,119
-2020-10-04,18,Indiana,115
-2020-10-04,20,Kansas,55
-2020-10-04,21,Kentucky,601
-2020-10-04,22,Louisiana,119
-2020-10-04,25,Massachusetts,44
-2020-10-04,24,Maryland,41
-2020-10-04,23,Maine,0
-2020-10-04,26,Michigan,83
-2020-10-04,27,Minnesota,61
-2020-10-04,29,Missouri,159
-2020-10-04,28,Mississippi,72
-2020-10-04,30,Montana,47
-2020-10-04,37,North Carolina,116
-2020-10-04,38,North Dakota,28
-2020-10-04,31,Nebraska,38
-2020-10-04,33,New Hampshire,0
-2020-10-04,34,New Jersey,55
-2020-10-04,35,New Mexico,14
-2020-10-04,32,Nevada,35
-2020-10-04,36,New York,113
-2020-10-04,39,Ohio,164
-2020-10-04,40,Oklahoma,151
-2020-10-04,41,Oregon,15
-2020-10-04,42,Pennsylvania,74
-2020-10-04,72,Puerto Rico,42
-2020-10-04,44,Rhode Island,5
-2020-10-04,45,South Carolina,66
-2020-10-04,46,South Dakota,37
-2020-10-04,47,Tennessee,126
-2020-10-04,48,Texas,459
-2020-10-04,49,Utah,31
-2020-10-04,51,Virginia,61
-2020-10-04,78,Virgin Islands,0
-2020-10-04,50,Vermont,0
-2020-10-04,53,Washington,27
-2020-10-04,55,Wisconsin,170
-2020-10-04,54,West Virginia,16
-2020-10-04,56,Wyoming,18
-2020-10-03,02,Alaska,5
-2020-10-03,01,Alabama,98
-2020-10-03,05,Arkansas,70
-2020-10-03,04,Arizona,61
-2020-10-03,06,California,294
-2020-10-03,08,Colorado,26
-2020-10-03,09,Connecticut,23
-2020-10-03,11,District of Columbia,8
-2020-10-03,10,Delaware,7
-2020-10-03,12,Florida,258
-2020-10-03,13,Georgia,211
-2020-10-03,15,Hawaii,24
-2020-10-03,19,Iowa,57
-2020-10-03,16,Idaho,20
-2020-10-03,17,Illinois,133
-2020-10-03,18,Indiana,92
-2020-10-03,20,Kansas,42
-2020-10-03,21,Kentucky,110
-2020-10-03,22,Louisiana,56
-2020-10-03,25,Massachusetts,33
-2020-10-03,24,Maryland,44
-2020-10-03,23,Maine,0
-2020-10-03,26,Michigan,69
-2020-10-03,27,Minnesota,46
-2020-10-03,29,Missouri,110
-2020-10-03,28,Mississippi,72
-2020-10-03,30,Montana,44
-2020-10-03,37,North Carolina,102
-2020-10-03,38,North Dakota,18
-2020-10-03,31,Nebraska,27
-2020-10-03,33,New Hampshire,3
-2020-10-03,34,New Jersey,41
-2020-10-03,35,New Mexico,30
-2020-10-03,32,Nevada,25
-2020-10-03,36,New York,85
-2020-10-03,39,Ohio,126
-2020-10-03,40,Oklahoma,134
-2020-10-03,41,Oregon,14
-2020-10-03,42,Pennsylvania,72
-2020-10-03,72,Puerto Rico,41
-2020-10-03,44,Rhode Island,3
-2020-10-03,45,South Carolina,60
-2020-10-03,46,South Dakota,40
-2020-10-03,47,Tennessee,87
-2020-10-03,48,Texas,440
-2020-10-03,49,Utah,27
-2020-10-03,51,Virginia,53
-2020-10-03,78,Virgin Islands,0
-2020-10-03,50,Vermont,0
-2020-10-03,53,Washington,18
-2020-10-03,55,Wisconsin,164
-2020-10-03,54,West Virginia,13
-2020-10-03,56,Wyoming,16
-2020-10-02,02,Alaska,7
-2020-10-02,01,Alabama,120
-2020-10-02,05,Arkansas,71
-2020-10-02,04,Arizona,63
-2020-10-02,06,California,328
-2020-10-02,08,Colorado,31
-2020-10-02,09,Connecticut,14
-2020-10-02,11,District of Columbia,12
-2020-10-02,10,Delaware,11
-2020-10-02,12,Florida,268
-2020-10-02,13,Georgia,244
-2020-10-02,15,Hawaii,49
-2020-10-02,19,Iowa,66
-2020-10-02,16,Idaho,30
-2020-10-02,17,Illinois,145
-2020-10-02,18,Indiana,89
-2020-10-02,20,Kansas,56
-2020-10-02,21,Kentucky,143
-2020-10-02,22,Louisiana,61
-2020-10-02,25,Massachusetts,43
-2020-10-02,24,Maryland,46
-2020-10-02,23,Maine,0
-2020-10-02,26,Michigan,85
-2020-10-02,27,Minnesota,58
-2020-10-02,29,Missouri,136
-2020-10-02,28,Mississippi,67
-2020-10-02,30,Montana,40
-2020-10-02,37,North Carolina,102
-2020-10-02,38,North Dakota,25
-2020-10-02,31,Nebraska,30
-2020-10-02,33,New Hampshire,7
-2020-10-02,34,New Jersey,45
-2020-10-02,35,New Mexico,15
-2020-10-02,32,Nevada,40
-2020-10-02,36,New York,104
-2020-10-02,39,Ohio,128
-2020-10-02,40,Oklahoma,143
-2020-10-02,41,Oregon,8
-2020-10-02,42,Pennsylvania,74
-2020-10-02,72,Puerto Rico,23
-2020-10-02,44,Rhode Island,3
-2020-10-02,45,South Carolina,62
-2020-10-02,46,South Dakota,42
-2020-10-02,47,Tennessee,117
-2020-10-02,48,Texas,622
-2020-10-02,49,Utah,31
-2020-10-02,51,Virginia,70
-2020-10-02,78,Virgin Islands,0
-2020-10-02,50,Vermont,0
-2020-10-02,53,Washington,21
-2020-10-02,55,Wisconsin,200
-2020-10-02,54,West Virginia,21
-2020-10-02,56,Wyoming,13
-2020-10-01,02,Alaska,3
-2020-10-01,01,Alabama,106
-2020-10-01,05,Arkansas,58
-2020-10-01,04,Arizona,51
-2020-10-01,06,California,316
-2020-10-01,08,Colorado,35
-2020-10-01,09,Connecticut,17
-2020-10-01,11,District of Columbia,6
-2020-10-01,10,Delaware,9
-2020-10-01,12,Florida,245
-2020-10-01,13,Georgia,277
-2020-10-01,15,Hawaii,17
-2020-10-01,19,Iowa,59
-2020-10-01,16,Idaho,22
-2020-10-01,17,Illinois,131
-2020-10-01,18,Indiana,81
-2020-10-01,20,Kansas,34
-2020-10-01,21,Kentucky,149
-2020-10-01,22,Louisiana,78
-2020-10-01,25,Massachusetts,42
-2020-10-01,24,Maryland,43
-2020-10-01,23,Maine,1
-2020-10-01,26,Michigan,73
-2020-10-01,27,Minnesota,48
-2020-10-01,29,Missouri,134
-2020-10-01,28,Mississippi,64
-2020-10-01,30,Montana,45
-2020-10-01,37,North Carolina,127
-2020-10-01,38,North Dakota,27
-2020-10-01,31,Nebraska,24
-2020-10-01,33,New Hampshire,0
-2020-10-01,34,New Jersey,40
-2020-10-01,35,New Mexico,10
-2020-10-01,32,Nevada,36
-2020-10-01,36,New York,98
-2020-10-01,39,Ohio,101
-2020-10-01,40,Oklahoma,136
-2020-10-01,41,Oregon,10
-2020-10-01,42,Pennsylvania,60
-2020-10-01,72,Puerto Rico,28
-2020-10-01,44,Rhode Island,11
-2020-10-01,45,South Carolina,55
-2020-10-01,46,South Dakota,47
-2020-10-01,47,Tennessee,125
-2020-10-01,48,Texas,466
-2020-10-01,49,Utah,35
-2020-10-01,51,Virginia,69
-2020-10-01,78,Virgin Islands,0
-2020-10-01,50,Vermont,0
-2020-10-01,53,Washington,24
-2020-10-01,55,Wisconsin,196
-2020-10-01,54,West Virginia,19
-2020-10-01,56,Wyoming,5
-2020-09-30,02,Alaska,4
-2020-09-30,01,Alabama,121
-2020-09-30,05,Arkansas,75
-2020-09-30,04,Arizona,53
-2020-09-30,06,California,337
-2020-09-30,08,Colorado,44
-2020-09-30,09,Connecticut,19
-2020-09-30,11,District of Columbia,16
-2020-09-30,10,Delaware,10
+2020-07-23,13,Georgia,257
+2020-07-23,15,Hawaii,4
+2020-07-23,19,Iowa,78
+2020-07-23,16,Idaho,16
+2020-07-23,17,Illinois,90
+2020-07-23,18,Indiana,15
+2020-07-23,20,Kansas,34
+2020-07-23,21,Kentucky,37
+2020-07-23,22,Louisiana,221
+2020-07-23,25,Massachusetts,36
+2020-07-23,24,Maryland,55
+2020-07-23,23,Maine,2
+2020-07-23,26,Michigan,30
+2020-07-23,27,Minnesota,13
+2020-07-23,29,Missouri,89
+2020-07-23,28,Mississippi,107
+2020-07-23,30,Montana,16
+2020-07-23,37,North Carolina,110
+2020-07-23,33,New Hampshire,6
+2020-07-23,34,New Jersey,31
+2020-07-23,35,New Mexico,21
+2020-07-23,32,Nevada,1
+2020-07-23,36,New York,62
+2020-07-23,39,Ohio,138
+2020-07-23,40,Oklahoma,74
+2020-07-23,41,Oregon,5
+2020-07-23,42,Pennsylvania,84
+2020-07-23,44,Rhode Island,7
+2020-07-23,45,South Carolina,196
+2020-07-23,46,South Dakota,3
+2020-07-23,47,Tennessee,169
+2020-07-23,48,Texas,760
+2020-07-23,49,Utah,19
+2020-07-23,51,Virginia,45
+2020-07-23,78,Virgin Islands,0
+2020-07-23,50,Vermont,0
+2020-07-23,53,Washington,29
+2020-07-23,55,Wisconsin,43
+2020-07-23,54,West Virginia,15
+2020-07-23,56,Wyoming,2
+2020-07-22,02,Alaska,5
+2020-07-22,01,Alabama,153
+2020-07-22,05,Arkansas,53
+2020-07-22,04,Arizona,266
+2020-07-22,06,California,717
+2020-07-22,08,Colorado,51
+2020-07-22,09,Connecticut,3
+2020-07-22,11,District of Columbia,61
+2020-07-22,10,Delaware,1
+2020-07-22,12,Florida,814
+2020-07-22,13,Georgia,260
+2020-07-22,15,Hawaii,4
+2020-07-22,19,Iowa,116
+2020-07-22,16,Idaho,24
+2020-07-22,17,Illinois,89
+2020-07-22,18,Indiana,17
+2020-07-22,20,Kansas,24
+2020-07-22,21,Kentucky,50
+2020-07-22,22,Louisiana,221
+2020-07-22,25,Massachusetts,56
+2020-07-22,24,Maryland,54
+2020-07-22,23,Maine,1
+2020-07-22,26,Michigan,32
+2020-07-22,27,Minnesota,6
+2020-07-22,29,Missouri,82
+2020-07-22,28,Mississippi,106
+2020-07-22,30,Montana,12
+2020-07-22,37,North Carolina,120
+2020-07-22,33,New Hampshire,6
+2020-07-22,34,New Jersey,58
+2020-07-22,35,New Mexico,21
+2020-07-22,32,Nevada,0
+2020-07-22,36,New York,60
+2020-07-22,39,Ohio,113
+2020-07-22,40,Oklahoma,71
+2020-07-22,41,Oregon,17
+2020-07-22,42,Pennsylvania,90
+2020-07-22,44,Rhode Island,8
+2020-07-22,45,South Carolina,167
+2020-07-22,46,South Dakota,2
+2020-07-22,47,Tennessee,163
+2020-07-22,48,Texas,428
+2020-07-22,49,Utah,4
+2020-07-22,51,Virginia,67
+2020-07-22,78,Virgin Islands,0
+2020-07-22,50,Vermont,1
+2020-07-22,53,Washington,30
+2020-07-22,55,Wisconsin,28
+2020-07-22,54,West Virginia,21
+2020-07-22,56,Wyoming,3
+2020-07-21,02,Alaska,6
+2020-07-21,01,Alabama,122
+2020-07-21,05,Arkansas,94
+2020-07-21,04,Arizona,259
+2020-07-21,06,California,453
+2020-07-21,08,Colorado,29
+2020-07-21,09,Connecticut,2
+2020-07-21,11,District of Columbia,58
+2020-07-21,10,Delaware,1
+2020-07-21,12,Florida,804
+2020-07-21,13,Georgia,203
+2020-07-21,15,Hawaii,1
+2020-07-21,19,Iowa,34
+2020-07-21,16,Idaho,23
+2020-07-21,17,Illinois,81
+2020-07-21,18,Indiana,9
+2020-07-21,20,Kansas,31
+2020-07-21,21,Kentucky,43
+2020-07-21,22,Louisiana,219
+2020-07-21,25,Massachusetts,2
+2020-07-21,24,Maryland,68
+2020-07-21,23,Maine,3
+2020-07-21,26,Michigan,22
+2020-07-21,27,Minnesota,3
+2020-07-21,29,Missouri,67
+2020-07-21,28,Mississippi,61
+2020-07-21,30,Montana,13
+2020-07-21,37,North Carolina,129
+2020-07-21,31,Nebraska,2
+2020-07-21,33,New Hampshire,7
+2020-07-21,34,New Jersey,25
+2020-07-21,35,New Mexico,12
+2020-07-21,32,Nevada,3
+2020-07-21,36,New York,145
+2020-07-21,39,Ohio,83
+2020-07-21,40,Oklahoma,53
+2020-07-21,41,Oregon,7
+2020-07-21,42,Pennsylvania,70
+2020-07-21,72,Puerto Rico,0
+2020-07-21,44,Rhode Island,4
+2020-07-21,45,South Carolina,122
+2020-07-21,46,South Dakota,2
+2020-07-21,47,Tennessee,184
+2020-07-21,48,Texas,907
+2020-07-21,49,Utah,17
+2020-07-21,51,Virginia,43
+2020-07-21,78,Virgin Islands,2
+2020-07-21,50,Vermont,1
+2020-07-21,53,Washington,29
+2020-07-21,55,Wisconsin,43
+2020-07-21,54,West Virginia,17
+2020-07-21,56,Wyoming,0
 2020-07-20,02,Alaska,4
 2020-07-20,01,Alabama,177
 2020-07-20,05,Arkansas,54
@@ -3945,7 +4161,7 @@ date,location,location_name,value
 2020-07-20,44,Rhode Island,5
 2020-07-20,45,South Carolina,139
 2020-07-20,46,South Dakota,1
-2020-07-20,47,Tennessee,146
+2020-07-20,47,Tennessee,147
 2020-07-20,48,Texas,919
 2020-07-20,49,Utah,3
 2020-07-20,51,Virginia,96
@@ -3997,7 +4213,7 @@ date,location,location_name,value
 2020-07-19,44,Rhode Island,3
 2020-07-19,45,South Carolina,110
 2020-07-19,46,South Dakota,2
-2020-07-19,47,Tennessee,102
+2020-07-19,47,Tennessee,103
 2020-07-19,48,Texas,761
 2020-07-19,49,Utah,9
 2020-07-19,51,Virginia,60
@@ -4048,7 +4264,7 @@ date,location,location_name,value
 2020-07-18,44,Rhode Island,0
 2020-07-18,45,South Carolina,144
 2020-07-18,46,South Dakota,3
-2020-07-18,47,Tennessee,104
+2020-07-18,47,Tennessee,106
 2020-07-18,48,Texas,776
 2020-07-18,49,Utah,17
 2020-07-18,51,Virginia,128
@@ -4099,7 +4315,7 @@ date,location,location_name,value
 2020-07-17,44,Rhode Island,6
 2020-07-17,45,South Carolina,128
 2020-07-17,46,South Dakota,26
-2020-07-17,47,Tennessee,123
+2020-07-17,47,Tennessee,125
 2020-07-17,48,Texas,847
 2020-07-17,49,Utah,29
 2020-07-17,51,Virginia,110
@@ -4150,7 +4366,7 @@ date,location,location_name,value
 2020-07-16,44,Rhode Island,1
 2020-07-16,45,South Carolina,117
 2020-07-16,46,South Dakota,16
-2020-07-16,47,Tennessee,178
+2020-07-16,47,Tennessee,185
 2020-07-16,48,Texas,1012
 2020-07-16,49,Utah,24
 2020-07-16,51,Virginia,85
@@ -4201,7 +4417,7 @@ date,location,location_name,value
 2020-07-15,44,Rhode Island,1
 2020-07-15,45,South Carolina,116
 2020-07-15,46,South Dakota,17
-2020-07-15,47,Tennessee,132
+2020-07-15,47,Tennessee,135
 2020-07-15,48,Texas,1014
 2020-07-15,49,Utah,20
 2020-07-15,51,Virginia,88
@@ -4252,7 +4468,7 @@ date,location,location_name,value
 2020-07-14,44,Rhode Island,0
 2020-07-14,45,South Carolina,114
 2020-07-14,46,South Dakota,15
-2020-07-14,47,Tennessee,180
+2020-07-14,47,Tennessee,181
 2020-07-14,48,Texas,752
 2020-07-14,49,Utah,18
 2020-07-14,51,Virginia,46
@@ -4516,109 +4732,480 @@ date,location,location_name,value
 2020-03-27,44,Rhode Island,0
 2020-03-26,44,Rhode Island,0
 2020-03-25,44,Rhode Island,0
-2021-02-26,02,Alaska,2
-2021-02-26,01,Alabama,89
+2021-03-05,02,Alaska,3
+2021-03-05,01,Alabama,73
+2021-03-05,05,Arkansas,29
+2021-03-05,04,Arizona,94
+2021-03-05,06,California,445
+2021-03-05,08,Colorado,64
+2021-03-05,09,Connecticut,87
+2021-03-05,11,District of Columbia,15
+2021-03-05,10,Delaware,15
+2021-03-05,12,Florida,529
+2021-03-05,13,Georgia,353
+2021-03-05,15,Hawaii,0
+2021-03-05,19,Iowa,33
+2021-03-05,16,Idaho,20
+2021-03-05,17,Illinois,153
+2021-03-05,18,Indiana,77
+2021-03-05,20,Kansas,46
+2021-03-05,21,Kentucky,182
+2021-03-05,22,Louisiana,77
+2021-03-05,25,Massachusetts,113
+2021-03-05,24,Maryland,98
+2021-03-05,23,Maine,13
+2021-03-05,26,Michigan,117
+2021-03-05,27,Minnesota,37
+2021-03-05,29,Missouri,80
+2021-03-05,28,Mississippi,42
+2021-03-05,30,Montana,20
+2021-03-05,37,North Carolina,115
+2021-03-05,38,North Dakota,9
+2021-03-05,31,Nebraska,9
+2021-03-05,33,New Hampshire,6
+2021-03-05,34,New Jersey,226
+2021-03-05,35,New Mexico,19
+2021-03-05,32,Nevada,50
+2021-03-05,36,New York,536
+2021-03-05,39,Ohio,146
+2021-03-05,40,Oklahoma,72
+2021-03-05,41,Oregon,18
+2021-03-05,42,Pennsylvania,194
+2021-03-05,72,Puerto Rico,222
+2021-03-05,44,Rhode Island,16
+2021-03-05,45,South Carolina,90
+2021-03-05,46,South Dakota,8
+2021-03-05,47,Tennessee,82
+2021-03-05,48,Texas,605
+2021-03-05,49,Utah,35
+2021-03-05,51,Virginia,126
+2021-03-05,78,Virgin Islands,0
+2021-03-05,50,Vermont,7
+2021-03-05,53,Washington,31
+2021-03-05,55,Wisconsin,69
+2021-03-05,54,West Virginia,15
+2021-03-05,56,Wyoming,1
+2021-03-04,02,Alaska,3
+2021-03-04,01,Alabama,73
+2021-03-04,05,Arkansas,29
+2021-03-04,04,Arizona,94
+2021-03-04,06,California,445
+2021-03-04,08,Colorado,64
+2021-03-04,09,Connecticut,87
+2021-03-04,11,District of Columbia,15
+2021-03-04,10,Delaware,15
+2021-03-04,12,Florida,529
+2021-03-04,13,Georgia,353
+2021-03-04,15,Hawaii,0
+2021-03-04,19,Iowa,33
+2021-03-04,16,Idaho,20
+2021-03-04,17,Illinois,155
+2021-03-04,18,Indiana,77
+2021-03-04,20,Kansas,46
+2021-03-04,21,Kentucky,182
+2021-03-04,22,Louisiana,77
+2021-03-04,25,Massachusetts,113
+2021-03-04,24,Maryland,98
+2021-03-04,23,Maine,13
+2021-03-04,26,Michigan,117
+2021-03-04,27,Minnesota,37
+2021-03-04,29,Missouri,80
+2021-03-04,28,Mississippi,42
+2021-03-04,30,Montana,20
+2021-03-04,37,North Carolina,115
+2021-03-04,38,North Dakota,9
+2021-03-04,31,Nebraska,9
+2021-03-04,33,New Hampshire,9
+2021-03-04,34,New Jersey,226
+2021-03-04,35,New Mexico,19
+2021-03-04,32,Nevada,50
+2021-03-04,36,New York,536
+2021-03-04,39,Ohio,146
+2021-03-04,40,Oklahoma,72
+2021-03-04,41,Oregon,18
+2021-03-04,42,Pennsylvania,194
+2021-03-04,72,Puerto Rico,222
+2021-03-04,44,Rhode Island,16
+2021-03-04,45,South Carolina,90
+2021-03-04,46,South Dakota,8
+2021-03-04,47,Tennessee,82
+2021-03-04,48,Texas,605
+2021-03-04,49,Utah,35
+2021-03-04,51,Virginia,126
+2021-03-04,78,Virgin Islands,0
+2021-03-04,50,Vermont,7
+2021-03-04,53,Washington,31
+2021-03-04,55,Wisconsin,69
+2021-03-04,54,West Virginia,15
+2021-03-04,56,Wyoming,1
+2021-03-03,02,Alaska,4
+2021-03-03,01,Alabama,77
+2021-03-03,05,Arkansas,48
+2021-03-03,04,Arizona,113
+2021-03-03,06,California,455
+2021-03-03,08,Colorado,60
+2021-03-03,09,Connecticut,75
+2021-03-03,11,District of Columbia,8
+2021-03-03,10,Delaware,12
+2021-03-03,12,Florida,567
+2021-03-03,13,Georgia,274
+2021-03-03,15,Hawaii,1
+2021-03-03,19,Iowa,34
+2021-03-03,16,Idaho,17
+2021-03-03,17,Illinois,137
+2021-03-03,18,Indiana,74
+2021-03-03,20,Kansas,27
+2021-03-03,21,Kentucky,207
+2021-03-03,22,Louisiana,68
+2021-03-03,25,Massachusetts,114
+2021-03-03,24,Maryland,101
+2021-03-03,23,Maine,10
+2021-03-03,26,Michigan,128
+2021-03-03,27,Minnesota,34
+2021-03-03,29,Missouri,76
+2021-03-03,28,Mississippi,39
+2021-03-03,30,Montana,15
+2021-03-03,37,North Carolina,112
+2021-03-03,38,North Dakota,6
+2021-03-03,31,Nebraska,18
+2021-03-03,33,New Hampshire,12
+2021-03-03,34,New Jersey,248
+2021-03-03,35,New Mexico,30
+2021-03-03,32,Nevada,44
+2021-03-03,36,New York,531
+2021-03-03,39,Ohio,177
+2021-03-03,40,Oklahoma,74
+2021-03-03,41,Oregon,24
+2021-03-03,42,Pennsylvania,220
+2021-03-03,72,Puerto Rico,17
+2021-03-03,44,Rhode Island,8
+2021-03-03,45,South Carolina,89
+2021-03-03,46,South Dakota,8
+2021-03-03,47,Tennessee,80
+2021-03-03,48,Texas,563
+2021-03-03,49,Utah,29
+2021-03-03,51,Virginia,137
+2021-03-03,78,Virgin Islands,0
+2021-03-03,50,Vermont,3
+2021-03-03,53,Washington,34
+2021-03-03,55,Wisconsin,54
+2021-03-03,54,West Virginia,23
+2021-03-03,56,Wyoming,3
+2021-03-02,02,Alaska,6
+2021-03-02,01,Alabama,83
+2021-03-02,05,Arkansas,43
+2021-03-02,04,Arizona,128
+2021-03-02,06,California,516
+2021-03-02,08,Colorado,69
+2021-03-02,09,Connecticut,71
+2021-03-02,11,District of Columbia,20
+2021-03-02,10,Delaware,14
+2021-03-02,12,Florida,606
+2021-03-02,13,Georgia,201
+2021-03-02,15,Hawaii,2
+2021-03-02,19,Iowa,30
+2021-03-02,16,Idaho,18
+2021-03-02,17,Illinois,139
+2021-03-02,18,Indiana,76
+2021-03-02,20,Kansas,23
+2021-03-02,21,Kentucky,170
+2021-03-02,22,Louisiana,59
+2021-03-02,25,Massachusetts,102
+2021-03-02,24,Maryland,105
+2021-03-02,23,Maine,10
+2021-03-02,26,Michigan,96
+2021-03-02,27,Minnesota,33
+2021-03-02,29,Missouri,64
+2021-03-02,28,Mississippi,36
+2021-03-02,30,Montana,20
+2021-03-02,37,North Carolina,136
+2021-03-02,38,North Dakota,6
+2021-03-02,31,Nebraska,22
+2021-03-02,33,New Hampshire,15
+2021-03-02,34,New Jersey,226
+2021-03-02,35,New Mexico,18
+2021-03-02,32,Nevada,42
+2021-03-02,36,New York,595
+2021-03-02,39,Ohio,187
+2021-03-02,40,Oklahoma,78
+2021-03-02,41,Oregon,19
+2021-03-02,42,Pennsylvania,209
+2021-03-02,72,Puerto Rico,218
+2021-03-02,44,Rhode Island,17
+2021-03-02,45,South Carolina,63
+2021-03-02,46,South Dakota,9
+2021-03-02,47,Tennessee,101
+2021-03-02,48,Texas,581
+2021-03-02,49,Utah,29
+2021-03-02,51,Virginia,140
+2021-03-02,78,Virgin Islands,0
+2021-03-02,50,Vermont,7
+2021-03-02,53,Washington,62
+2021-03-02,55,Wisconsin,66
+2021-03-02,54,West Virginia,20
+2021-03-02,56,Wyoming,4
+2021-03-01,02,Alaska,7
+2021-03-01,01,Alabama,97
+2021-03-01,05,Arkansas,40
+2021-03-01,04,Arizona,106
+2021-03-01,06,California,457
+2021-03-01,08,Colorado,36
+2021-03-01,09,Connecticut,91
+2021-03-01,11,District of Columbia,23
+2021-03-01,10,Delaware,13
+2021-03-01,12,Florida,604
+2021-03-01,13,Georgia,169
+2021-03-01,15,Hawaii,3
+2021-03-01,19,Iowa,28
+2021-03-01,16,Idaho,19
+2021-03-01,17,Illinois,143
+2021-03-01,18,Indiana,66
+2021-03-01,20,Kansas,31
+2021-03-01,21,Kentucky,181
+2021-03-01,22,Louisiana,77
+2021-03-01,25,Massachusetts,101
+2021-03-01,24,Maryland,94
+2021-03-01,23,Maine,17
+2021-03-01,26,Michigan,114
+2021-03-01,27,Minnesota,29
+2021-03-01,29,Missouri,67
+2021-03-01,28,Mississippi,37
+2021-03-01,30,Montana,15
+2021-03-01,37,North Carolina,133
+2021-03-01,38,North Dakota,5
+2021-03-01,31,Nebraska,17
+2021-03-01,33,New Hampshire,18
+2021-03-01,34,New Jersey,266
+2021-03-01,35,New Mexico,27
+2021-03-01,32,Nevada,49
+2021-03-01,36,New York,621
+2021-03-01,39,Ohio,180
+2021-03-01,40,Oklahoma,82
+2021-03-01,41,Oregon,23
+2021-03-01,42,Pennsylvania,227
+2021-03-01,72,Puerto Rico,18
+2021-03-01,44,Rhode Island,13
+2021-03-01,45,South Carolina,76
+2021-03-01,46,South Dakota,13
+2021-03-01,47,Tennessee,102
+2021-03-01,48,Texas,582
+2021-03-01,49,Utah,31
+2021-03-01,51,Virginia,147
+2021-03-01,78,Virgin Islands,0
+2021-03-01,50,Vermont,4
+2021-03-01,53,Washington,49
+2021-03-01,55,Wisconsin,72
+2021-03-01,54,West Virginia,19
+2021-03-01,56,Wyoming,6
+2021-02-28,02,Alaska,1
+2021-02-28,01,Alabama,84
+2021-02-28,05,Arkansas,38
+2021-02-28,04,Arizona,102
+2021-02-28,06,California,391
+2021-02-28,08,Colorado,45
+2021-02-28,09,Connecticut,63
+2021-02-28,11,District of Columbia,13
+2021-02-28,10,Delaware,15
+2021-02-28,12,Florida,497
+2021-02-28,13,Georgia,142
+2021-02-28,15,Hawaii,4
+2021-02-28,19,Iowa,34
+2021-02-28,16,Idaho,16
+2021-02-28,17,Illinois,112
+2021-02-28,18,Indiana,68
+2021-02-28,20,Kansas,26
+2021-02-28,21,Kentucky,156
+2021-02-28,22,Louisiana,72
+2021-02-28,25,Massachusetts,70
+2021-02-28,24,Maryland,86
+2021-02-28,23,Maine,1
+2021-02-28,26,Michigan,81
+2021-02-28,27,Minnesota,38
+2021-02-28,29,Missouri,60
+2021-02-28,28,Mississippi,33
+2021-02-28,30,Montana,16
+2021-02-28,37,North Carolina,106
+2021-02-28,38,North Dakota,6
+2021-02-28,31,Nebraska,14
+2021-02-28,33,New Hampshire,11
+2021-02-28,34,New Jersey,175
+2021-02-28,35,New Mexico,106
+2021-02-28,32,Nevada,48
+2021-02-28,36,New York,480
+2021-02-28,39,Ohio,158
+2021-02-28,40,Oklahoma,88
+2021-02-28,41,Oregon,19
+2021-02-28,42,Pennsylvania,193
+2021-02-28,72,Puerto Rico,13
+2021-02-28,44,Rhode Island,5
+2021-02-28,45,South Carolina,76
+2021-02-28,46,South Dakota,10
+2021-02-28,47,Tennessee,73
+2021-02-28,48,Texas,540
+2021-02-28,49,Utah,28
+2021-02-28,51,Virginia,124
+2021-02-28,78,Virgin Islands,0
+2021-02-28,50,Vermont,3
+2021-02-28,53,Washington,36
+2021-02-28,55,Wisconsin,59
+2021-02-28,54,West Virginia,14
+2021-02-28,56,Wyoming,3
+2021-02-27,02,Alaska,3
+2021-02-27,01,Alabama,83
+2021-02-27,05,Arkansas,31
+2021-02-27,04,Arizona,112
+2021-02-27,06,California,437
+2021-02-27,08,Colorado,72
+2021-02-27,09,Connecticut,63
+2021-02-27,11,District of Columbia,13
+2021-02-27,10,Delaware,13
+2021-02-27,12,Florida,533
+2021-02-27,13,Georgia,249
+2021-02-27,15,Hawaii,1
+2021-02-27,19,Iowa,31
+2021-02-27,16,Idaho,15
+2021-02-27,17,Illinois,108
+2021-02-27,18,Indiana,77
+2021-02-27,20,Kansas,33
+2021-02-27,21,Kentucky,151
+2021-02-27,22,Louisiana,76
+2021-02-27,25,Massachusetts,103
+2021-02-27,24,Maryland,88
+2021-02-27,23,Maine,5
+2021-02-27,26,Michigan,94
+2021-02-27,27,Minnesota,32
+2021-02-27,29,Missouri,70
+2021-02-27,28,Mississippi,35
+2021-02-27,30,Montana,10
+2021-02-27,37,North Carolina,114
+2021-02-27,38,North Dakota,3
+2021-02-27,31,Nebraska,20
+2021-02-27,33,New Hampshire,7
+2021-02-27,34,New Jersey,211
+2021-02-27,35,New Mexico,24
+2021-02-27,32,Nevada,51
+2021-02-27,36,New York,536
+2021-02-27,39,Ohio,143
+2021-02-27,40,Oklahoma,109
+2021-02-27,41,Oregon,19
+2021-02-27,42,Pennsylvania,181
+2021-02-27,72,Puerto Rico,13
+2021-02-27,44,Rhode Island,5
+2021-02-27,45,South Carolina,84
+2021-02-27,46,South Dakota,10
+2021-02-27,47,Tennessee,75
+2021-02-27,48,Texas,581
+2021-02-27,49,Utah,32
+2021-02-27,51,Virginia,108
+2021-02-27,78,Virgin Islands,0
+2021-02-27,50,Vermont,4
+2021-02-27,53,Washington,26
+2021-02-27,55,Wisconsin,53
+2021-02-27,54,West Virginia,20
+2021-02-27,56,Wyoming,0
+2021-02-26,02,Alaska,1
+2021-02-26,01,Alabama,104
 2021-02-26,05,Arkansas,53
-2021-02-26,04,Arizona,153
-2021-02-26,06,California,516
-2021-02-26,08,Colorado,90
-2021-02-26,09,Connecticut,79
-2021-02-26,11,District of Columbia,21
-2021-02-26,10,Delaware,20
-2021-02-26,12,Florida,560
-2021-02-26,13,Georgia,305
-2021-02-26,15,Hawaii,2
-2021-02-26,19,Iowa,35
-2021-02-26,16,Idaho,14
-2021-02-26,17,Illinois,150
-2021-02-26,18,Indiana,91
-2021-02-26,20,Kansas,42
-2021-02-26,21,Kentucky,177
-2021-02-26,22,Louisiana,80
-2021-02-26,25,Massachusetts,111
-2021-02-26,24,Maryland,100
-2021-02-26,23,Maine,9
-2021-02-26,26,Michigan,98
-2021-02-26,27,Minnesota,30
-2021-02-26,29,Missouri,76
-2021-02-26,28,Mississippi,49
-2021-02-26,30,Montana,13
-2021-02-26,37,North Carolina,167
-2021-02-26,38,North Dakota,10
-2021-02-26,31,Nebraska,22
+2021-02-26,04,Arizona,122
+2021-02-26,06,California,519
+2021-02-26,08,Colorado,63
+2021-02-26,09,Connecticut,78
+2021-02-26,11,District of Columbia,14
+2021-02-26,10,Delaware,19
+2021-02-26,12,Florida,576
+2021-02-26,13,Georgia,281
+2021-02-26,15,Hawaii,4
+2021-02-26,19,Iowa,39
+2021-02-26,16,Idaho,22
+2021-02-26,17,Illinois,141
+2021-02-26,18,Indiana,89
+2021-02-26,20,Kansas,34
+2021-02-26,21,Kentucky,155
+2021-02-26,22,Louisiana,86
+2021-02-26,25,Massachusetts,107
+2021-02-26,24,Maryland,107
+2021-02-26,23,Maine,8
+2021-02-26,26,Michigan,107
+2021-02-26,27,Minnesota,39
+2021-02-26,29,Missouri,78
+2021-02-26,28,Mississippi,41
+2021-02-26,30,Montana,15
+2021-02-26,37,North Carolina,118
+2021-02-26,38,North Dakota,15
+2021-02-26,31,Nebraska,20
 2021-02-26,33,New Hampshire,9
-2021-02-26,34,New Jersey,232
-2021-02-26,35,New Mexico,28
-2021-02-26,32,Nevada,50
-2021-02-26,36,New York,616
-2021-02-26,39,Ohio,204
-2021-02-26,40,Oklahoma,99
-2021-02-26,41,Oregon,23
-2021-02-26,42,Pennsylvania,212
-2021-02-26,72,Puerto Rico,10
-2021-02-26,44,Rhode Island,14
-2021-02-26,45,South Carolina,101
-2021-02-26,46,South Dakota,10
-2021-02-26,47,Tennessee,135
-2021-02-26,48,Texas,628
-2021-02-26,49,Utah,29
-2021-02-26,51,Virginia,396
-2021-02-26,78,Virgin Islands,1
-2021-02-26,50,Vermont,6
-2021-02-26,53,Washington,48
-2021-02-26,55,Wisconsin,60
-2021-02-26,54,West Virginia,18
-2021-02-26,56,Wyoming,7
-2021-02-25,02,Alaska,3
-2021-02-25,01,Alabama,89
+2021-02-26,34,New Jersey,225
+2021-02-26,35,New Mexico,15
+2021-02-26,32,Nevada,58
+2021-02-26,36,New York,598
+2021-02-26,39,Ohio,196
+2021-02-26,40,Oklahoma,105
+2021-02-26,41,Oregon,18
+2021-02-26,42,Pennsylvania,205
+2021-02-26,72,Puerto Rico,14
+2021-02-26,44,Rhode Island,11
+2021-02-26,45,South Carolina,93
+2021-02-26,46,South Dakota,7
+2021-02-26,47,Tennessee,92
+2021-02-26,48,Texas,590
+2021-02-26,49,Utah,35
+2021-02-26,51,Virginia,131
+2021-02-26,78,Virgin Islands,0
+2021-02-26,50,Vermont,5
+2021-02-26,53,Washington,43
+2021-02-26,55,Wisconsin,64
+2021-02-26,54,West Virginia,23
+2021-02-26,56,Wyoming,4
+2021-02-25,02,Alaska,2
+2021-02-25,01,Alabama,92
 2021-02-25,05,Arkansas,53
 2021-02-25,04,Arizona,153
-2021-02-25,06,California,516
-2021-02-25,08,Colorado,92
+2021-02-25,06,California,507
+2021-02-25,08,Colorado,56
 2021-02-25,09,Connecticut,79
 2021-02-25,11,District of Columbia,21
 2021-02-25,10,Delaware,20
-2021-02-25,12,Florida,593
+2021-02-25,12,Florida,592
 2021-02-25,13,Georgia,296
-2021-02-25,15,Hawaii,2
+2021-02-25,15,Hawaii,3
 2021-02-25,19,Iowa,35
-2021-02-25,16,Idaho,14
-2021-02-25,17,Illinois,159
+2021-02-25,16,Idaho,16
+2021-02-25,17,Illinois,163
 2021-02-25,18,Indiana,91
-2021-02-25,20,Kansas,39
+2021-02-25,20,Kansas,43
 2021-02-25,21,Kentucky,181
 2021-02-25,22,Louisiana,82
 2021-02-25,25,Massachusetts,111
-2021-02-25,24,Maryland,99
-2021-02-25,23,Maine,10
+2021-02-25,24,Maryland,98
+2021-02-25,23,Maine,9
 2021-02-25,26,Michigan,101
 2021-02-25,27,Minnesota,30
-2021-02-25,29,Missouri,74
-2021-02-25,28,Mississippi,49
-2021-02-25,30,Montana,13
-2021-02-25,37,North Carolina,167
+2021-02-25,29,Missouri,75
+2021-02-25,28,Mississippi,50
+2021-02-25,30,Montana,16
+2021-02-25,37,North Carolina,139
 2021-02-25,38,North Dakota,10
 2021-02-25,31,Nebraska,22
 2021-02-25,33,New Hampshire,9
 2021-02-25,34,New Jersey,228
-2021-02-25,35,New Mexico,28
+2021-02-25,35,New Mexico,27
 2021-02-25,32,Nevada,50
-2021-02-25,36,New York,618
+2021-02-25,36,New York,596
 2021-02-25,39,Ohio,194
-2021-02-25,40,Oklahoma,100
+2021-02-25,40,Oklahoma,96
 2021-02-25,41,Oregon,23
-2021-02-25,42,Pennsylvania,216
+2021-02-25,42,Pennsylvania,226
 2021-02-25,72,Puerto Rico,8
 2021-02-25,44,Rhode Island,14
-2021-02-25,45,South Carolina,98
-2021-02-25,46,South Dakota,10
-2021-02-25,47,Tennessee,135
-2021-02-25,48,Texas,623
+2021-02-25,45,South Carolina,87
+2021-02-25,46,South Dakota,11
+2021-02-25,47,Tennessee,134
+2021-02-25,48,Texas,595
 2021-02-25,49,Utah,29
-2021-02-25,51,Virginia,393
+2021-02-25,51,Virginia,396
 2021-02-25,78,Virgin Islands,1
 2021-02-25,50,Vermont,6
-2021-02-25,53,Washington,48
+2021-02-25,53,Washington,43
 2021-02-25,55,Wisconsin,60
 2021-02-25,54,West Virginia,18
 2021-02-25,56,Wyoming,7
@@ -4627,48 +5214,48 @@ date,location,location_name,value
 2021-02-24,05,Arkansas,55
 2021-02-24,04,Arizona,147
 2021-02-24,06,California,551
-2021-02-24,08,Colorado,75
+2021-02-24,08,Colorado,65
 2021-02-24,09,Connecticut,71
-2021-02-24,11,District of Columbia,21
+2021-02-24,11,District of Columbia,22
 2021-02-24,10,Delaware,22
-2021-02-24,12,Florida,585
+2021-02-24,12,Florida,586
 2021-02-24,13,Georgia,292
 2021-02-24,15,Hawaii,2
 2021-02-24,19,Iowa,26
 2021-02-24,16,Idaho,7
-2021-02-24,17,Illinois,169
+2021-02-24,17,Illinois,167
 2021-02-24,18,Indiana,98
-2021-02-24,20,Kansas,43
+2021-02-24,20,Kansas,44
 2021-02-24,21,Kentucky,221
 2021-02-24,22,Louisiana,88
 2021-02-24,25,Massachusetts,101
-2021-02-24,24,Maryland,124
+2021-02-24,24,Maryland,125
 2021-02-24,23,Maine,9
 2021-02-24,26,Michigan,113
 2021-02-24,27,Minnesota,45
 2021-02-24,29,Missouri,72
-2021-02-24,28,Mississippi,42
+2021-02-24,28,Mississippi,41
 2021-02-24,30,Montana,14
 2021-02-24,37,North Carolina,166
 2021-02-24,38,North Dakota,5
 2021-02-24,31,Nebraska,21
 2021-02-24,33,New Hampshire,9
 2021-02-24,34,New Jersey,257
-2021-02-24,35,New Mexico,25
+2021-02-24,35,New Mexico,24
 2021-02-24,32,Nevada,57
-2021-02-24,36,New York,681
+2021-02-24,36,New York,678
 2021-02-24,39,Ohio,175
-2021-02-24,40,Oklahoma,114
+2021-02-24,40,Oklahoma,115
 2021-02-24,41,Oregon,27
-2021-02-24,42,Pennsylvania,260
+2021-02-24,42,Pennsylvania,258
 2021-02-24,72,Puerto Rico,3
 2021-02-24,44,Rhode Island,19
-2021-02-24,45,South Carolina,118
+2021-02-24,45,South Carolina,117
 2021-02-24,46,South Dakota,14
 2021-02-24,47,Tennessee,147
-2021-02-24,48,Texas,684
+2021-02-24,48,Texas,685
 2021-02-24,49,Utah,45
-2021-02-24,51,Virginia,156
+2021-02-24,51,Virginia,155
 2021-02-24,78,Virgin Islands,0
 2021-02-24,50,Vermont,5
 2021-02-24,53,Washington,51
@@ -4678,20 +5265,20 @@ date,location,location_name,value
 2021-02-23,02,Alaska,3
 2021-02-23,01,Alabama,106
 2021-02-23,05,Arkansas,55
-2021-02-23,04,Arizona,153
+2021-02-23,04,Arizona,152
 2021-02-23,06,California,595
-2021-02-23,08,Colorado,87
+2021-02-23,08,Colorado,65
 2021-02-23,09,Connecticut,90
 2021-02-23,11,District of Columbia,24
 2021-02-23,10,Delaware,19
-2021-02-23,12,Florida,718
+2021-02-23,12,Florida,720
 2021-02-23,13,Georgia,294
 2021-02-23,15,Hawaii,4
 2021-02-23,19,Iowa,44
 2021-02-23,16,Idaho,14
-2021-02-23,17,Illinois,140
+2021-02-23,17,Illinois,139
 2021-02-23,18,Indiana,93
-2021-02-23,20,Kansas,45
+2021-02-23,20,Kansas,44
 2021-02-23,21,Kentucky,201
 2021-02-23,22,Louisiana,89
 2021-02-23,25,Massachusetts,127
@@ -4709,35 +5296,35 @@ date,location,location_name,value
 2021-02-23,34,New Jersey,268
 2021-02-23,35,New Mexico,28
 2021-02-23,32,Nevada,75
-2021-02-23,36,New York,640
+2021-02-23,36,New York,639
 2021-02-23,39,Ohio,189
-2021-02-23,40,Oklahoma,144
+2021-02-23,40,Oklahoma,145
 2021-02-23,41,Oregon,12
 2021-02-23,42,Pennsylvania,250
 2021-02-23,72,Puerto Rico,13
 2021-02-23,44,Rhode Island,18
-2021-02-23,45,South Carolina,112
+2021-02-23,45,South Carolina,114
 2021-02-23,46,South Dakota,13
 2021-02-23,47,Tennessee,169
 2021-02-23,48,Texas,717
 2021-02-23,49,Utah,38
-2021-02-23,51,Virginia,173
+2021-02-23,51,Virginia,172
 2021-02-23,78,Virgin Islands,0
 2021-02-23,50,Vermont,8
-2021-02-23,53,Washington,47
+2021-02-23,53,Washington,46
 2021-02-23,55,Wisconsin,80
 2021-02-23,54,West Virginia,35
 2021-02-23,56,Wyoming,11
 2021-02-22,02,Alaska,9
 2021-02-22,01,Alabama,124
 2021-02-22,05,Arkansas,76
-2021-02-22,04,Arizona,173
+2021-02-22,04,Arizona,172
 2021-02-22,06,California,644
 2021-02-22,08,Colorado,96
 2021-02-22,09,Connecticut,81
 2021-02-22,11,District of Columbia,24
 2021-02-22,10,Delaware,20
-2021-02-22,12,Florida,688
+2021-02-22,12,Florida,689
 2021-02-22,13,Georgia,337
 2021-02-22,15,Hawaii,7
 2021-02-22,19,Iowa,52
@@ -4760,11 +5347,11 @@ date,location,location_name,value
 2021-02-22,31,Nebraska,22
 2021-02-22,33,New Hampshire,12
 2021-02-22,34,New Jersey,259
-2021-02-22,35,New Mexico,29
-2021-02-22,32,Nevada,61
+2021-02-22,35,New Mexico,28
+2021-02-22,32,Nevada,47
 2021-02-22,36,New York,611
 2021-02-22,39,Ohio,202
-2021-02-22,40,Oklahoma,143
+2021-02-22,40,Oklahoma,142
 2021-02-22,41,Oregon,27
 2021-02-22,42,Pennsylvania,280
 2021-02-22,72,Puerto Rico,5
@@ -4777,14 +5364,14 @@ date,location,location_name,value
 2021-02-22,51,Virginia,154
 2021-02-22,78,Virgin Islands,1
 2021-02-22,50,Vermont,3
-2021-02-22,53,Washington,44
+2021-02-22,53,Washington,43
 2021-02-22,55,Wisconsin,79
 2021-02-22,54,West Virginia,32
 2021-02-22,56,Wyoming,4
 2021-02-21,02,Alaska,7
 2021-02-21,01,Alabama,96
 2021-02-21,05,Arkansas,60
-2021-02-21,04,Arizona,118
+2021-02-21,04,Arizona,117
 2021-02-21,06,California,476
 2021-02-21,08,Colorado,71
 2021-02-21,09,Connecticut,61
@@ -4813,11 +5400,11 @@ date,location,location_name,value
 2021-02-21,31,Nebraska,17
 2021-02-21,33,New Hampshire,15
 2021-02-21,34,New Jersey,202
-2021-02-21,35,New Mexico,21
+2021-02-21,35,New Mexico,19
 2021-02-21,32,Nevada,52
 2021-02-21,36,New York,576
 2021-02-21,39,Ohio,177
-2021-02-21,40,Oklahoma,145
+2021-02-21,40,Oklahoma,144
 2021-02-21,41,Oregon,30
 2021-02-21,42,Pennsylvania,231
 2021-02-21,72,Puerto Rico,8
@@ -4837,7 +5424,7 @@ date,location,location_name,value
 2021-02-20,02,Alaska,5
 2021-02-20,01,Alabama,113
 2021-02-20,05,Arkansas,56
-2021-02-20,04,Arizona,133
+2021-02-20,04,Arizona,132
 2021-02-20,06,California,565
 2021-02-20,08,Colorado,63
 2021-02-20,09,Connecticut,65
@@ -4847,7 +5434,7 @@ date,location,location_name,value
 2021-02-20,13,Georgia,280
 2021-02-20,15,Hawaii,7
 2021-02-20,19,Iowa,22
-2021-02-20,16,Idaho,23
+2021-02-20,16,Idaho,24
 2021-02-20,17,Illinois,135
 2021-02-20,18,Indiana,88
 2021-02-20,20,Kansas,43
@@ -4861,7 +5448,7 @@ date,location,location_name,value
 2021-02-20,29,Missouri,68
 2021-02-20,28,Mississippi,49
 2021-02-20,30,Montana,14
-2021-02-20,37,North Carolina,119
+2021-02-20,37,North Carolina,107
 2021-02-20,38,North Dakota,9
 2021-02-20,31,Nebraska,18
 2021-02-20,33,New Hampshire,12
@@ -4878,7 +5465,7 @@ date,location,location_name,value
 2021-02-20,45,South Carolina,92
 2021-02-20,46,South Dakota,10
 2021-02-20,47,Tennessee,95
-2021-02-20,48,Texas,801
+2021-02-20,48,Texas,802
 2021-02-20,49,Utah,38
 2021-02-20,51,Virginia,140
 2021-02-20,78,Virgin Islands,0
@@ -4891,7 +5478,7 @@ date,location,location_name,value
 2021-02-19,01,Alabama,159
 2021-02-19,05,Arkansas,75
 2021-02-19,04,Arizona,166
-2021-02-19,06,California,661
+2021-02-19,06,California,662
 2021-02-19,08,Colorado,83
 2021-02-19,09,Connecticut,85
 2021-02-19,11,District of Columbia,26
@@ -4914,16 +5501,16 @@ date,location,location_name,value
 2021-02-19,29,Missouri,103
 2021-02-19,28,Mississippi,44
 2021-02-19,30,Montana,20
-2021-02-19,37,North Carolina,162
+2021-02-19,37,North Carolina,161
 2021-02-19,38,North Dakota,7
 2021-02-19,31,Nebraska,23
 2021-02-19,33,New Hampshire,9
 2021-02-19,34,New Jersey,256
-2021-02-19,35,New Mexico,36
+2021-02-19,35,New Mexico,34
 2021-02-19,32,Nevada,67
 2021-02-19,36,New York,582
 2021-02-19,39,Ohio,191
-2021-02-19,40,Oklahoma,161
+2021-02-19,40,Oklahoma,160
 2021-02-19,41,Oregon,32
 2021-02-19,42,Pennsylvania,261
 2021-02-19,72,Puerto Rico,11
@@ -5237,7 +5824,7 @@ date,location,location_name,value
 2021-02-13,31,Nebraska,16
 2021-02-13,33,New Hampshire,15
 2021-02-13,34,New Jersey,221
-2021-02-13,35,New Mexico,34
+2021-02-13,35,New Mexico,33
 2021-02-13,32,Nevada,70
 2021-02-13,36,New York,576
 2021-02-13,39,Ohio,207
@@ -5290,7 +5877,7 @@ date,location,location_name,value
 2021-02-12,31,Nebraska,15
 2021-02-12,33,New Hampshire,17
 2021-02-12,34,New Jersey,247
-2021-02-12,35,New Mexico,32
+2021-02-12,35,New Mexico,31
 2021-02-12,32,Nevada,91
 2021-02-12,36,New York,666
 2021-02-12,39,Ohio,250
@@ -5334,7 +5921,7 @@ date,location,location_name,value
 2021-02-11,24,Maryland,122
 2021-02-11,23,Maine,15
 2021-02-11,26,Michigan,121
-2021-02-11,27,Minnesota,46
+2021-02-11,27,Minnesota,45
 2021-02-11,29,Missouri,126
 2021-02-11,28,Mississippi,58
 2021-02-11,30,Montana,11
@@ -5343,7 +5930,7 @@ date,location,location_name,value
 2021-02-11,31,Nebraska,17
 2021-02-11,33,New Hampshire,17
 2021-02-11,34,New Jersey,290
-2021-02-11,35,New Mexico,33
+2021-02-11,35,New Mexico,29
 2021-02-11,32,Nevada,72
 2021-02-11,36,New York,695
 2021-02-11,39,Ohio,252
@@ -5449,7 +6036,7 @@ date,location,location_name,value
 2021-02-09,31,Nebraska,20
 2021-02-09,33,New Hampshire,12
 2021-02-09,34,New Jersey,255
-2021-02-09,35,New Mexico,46
+2021-02-09,35,New Mexico,45
 2021-02-09,32,Nevada,100
 2021-02-09,36,New York,805
 2021-02-09,39,Ohio,289
@@ -5661,7 +6248,7 @@ date,location,location_name,value
 2021-02-05,31,Nebraska,27
 2021-02-05,33,New Hampshire,20
 2021-02-05,34,New Jersey,342
-2021-02-05,35,New Mexico,64
+2021-02-05,35,New Mexico,63
 2021-02-05,32,Nevada,88
 2021-02-05,36,New York,817
 2021-02-05,39,Ohio,268
@@ -5820,7 +6407,7 @@ date,location,location_name,value
 2021-02-02,31,Nebraska,25
 2021-02-02,33,New Hampshire,27
 2021-02-02,34,New Jersey,362
-2021-02-02,35,New Mexico,67
+2021-02-02,35,New Mexico,65
 2021-02-02,32,Nevada,146
 2021-02-02,36,New York,873
 2021-02-02,39,Ohio,323
@@ -6129,7 +6716,7 @@ date,location,location_name,value
 2021-01-27,24,Maryland,221
 2021-01-27,23,Maine,11
 2021-01-27,26,Michigan,162
-2021-01-27,27,Minnesota,81
+2021-01-27,27,Minnesota,80
 2021-01-27,29,Missouri,151
 2021-01-27,28,Mississippi,90
 2021-01-27,30,Montana,25
@@ -6138,7 +6725,7 @@ date,location,location_name,value
 2021-01-27,31,Nebraska,40
 2021-01-27,33,New Hampshire,29
 2021-01-27,34,New Jersey,360
-2021-01-27,35,New Mexico,76
+2021-01-27,35,New Mexico,75
 2021-01-27,32,Nevada,124
 2021-01-27,36,New York,961
 2021-01-27,39,Ohio,375
@@ -6182,7 +6769,7 @@ date,location,location_name,value
 2021-01-26,24,Maryland,225
 2021-01-26,23,Maine,14
 2021-01-26,26,Michigan,177
-2021-01-26,27,Minnesota,47
+2021-01-26,27,Minnesota,46
 2021-01-26,29,Missouri,162
 2021-01-26,28,Mississippi,110
 2021-01-26,30,Montana,29
@@ -6244,7 +6831,7 @@ date,location,location_name,value
 2021-01-25,31,Nebraska,33
 2021-01-25,33,New Hampshire,28
 2021-01-25,34,New Jersey,378
-2021-01-25,35,New Mexico,95
+2021-01-25,35,New Mexico,94
 2021-01-25,32,Nevada,151
 2021-01-25,36,New York,970
 2021-01-25,39,Ohio,435
@@ -6297,7 +6884,7 @@ date,location,location_name,value
 2021-01-24,31,Nebraska,25
 2021-01-24,33,New Hampshire,20
 2021-01-24,34,New Jersey,295
-2021-01-24,35,New Mexico,83
+2021-01-24,35,New Mexico,82
 2021-01-24,32,Nevada,95
 2021-01-24,36,New York,778
 2021-01-24,39,Ohio,354
@@ -6393,7 +6980,7 @@ date,location,location_name,value
 2021-01-22,25,Massachusetts,227
 2021-01-22,24,Maryland,207
 2021-01-22,23,Maine,15
-2021-01-22,26,Michigan,185
+2021-01-22,26,Michigan,186
 2021-01-22,27,Minnesota,63
 2021-01-22,29,Missouri,178
 2021-01-22,28,Mississippi,101
@@ -6456,7 +7043,7 @@ date,location,location_name,value
 2021-01-21,31,Nebraska,48
 2021-01-21,33,New Hampshire,26
 2021-01-21,34,New Jersey,385
-2021-01-21,35,New Mexico,101
+2021-01-21,35,New Mexico,98
 2021-01-21,32,Nevada,165
 2021-01-21,36,New York,1004
 2021-01-21,39,Ohio,429
@@ -6509,7 +7096,7 @@ date,location,location_name,value
 2021-01-20,31,Nebraska,53
 2021-01-20,33,New Hampshire,35
 2021-01-20,34,New Jersey,405
-2021-01-20,35,New Mexico,93
+2021-01-20,35,New Mexico,92
 2021-01-20,32,Nevada,143
 2021-01-20,36,New York,984
 2021-01-20,39,Ohio,457
@@ -6561,7 +7148,7 @@ date,location,location_name,value
 2021-01-19,38,North Dakota,11
 2021-01-19,31,Nebraska,49
 2021-01-19,33,New Hampshire,31
-2021-01-19,34,New Jersey,364
+2021-01-19,34,New Jersey,362
 2021-01-19,35,New Mexico,89
 2021-01-19,32,Nevada,122
 2021-01-19,36,New York,945
@@ -6614,7 +7201,7 @@ date,location,location_name,value
 2021-01-18,38,North Dakota,12
 2021-01-18,31,Nebraska,54
 2021-01-18,33,New Hampshire,32
-2021-01-18,34,New Jersey,419
+2021-01-18,34,New Jersey,417
 2021-01-18,35,New Mexico,88
 2021-01-18,32,Nevada,130
 2021-01-18,36,New York,1056
@@ -6667,7 +7254,7 @@ date,location,location_name,value
 2021-01-17,38,North Dakota,11
 2021-01-17,31,Nebraska,39
 2021-01-17,33,New Hampshire,25
-2021-01-17,34,New Jersey,347
+2021-01-17,34,New Jersey,343
 2021-01-17,35,New Mexico,120
 2021-01-17,32,Nevada,140
 2021-01-17,36,New York,858
@@ -6720,8 +7307,8 @@ date,location,location_name,value
 2021-01-16,38,North Dakota,13
 2021-01-16,31,Nebraska,35
 2021-01-16,33,New Hampshire,27
-2021-01-16,34,New Jersey,376
-2021-01-16,35,New Mexico,125
+2021-01-16,34,New Jersey,375
+2021-01-16,35,New Mexico,124
 2021-01-16,32,Nevada,134
 2021-01-16,36,New York,1010
 2021-01-16,39,Ohio,492
@@ -6773,8 +7360,8 @@ date,location,location_name,value
 2021-01-15,38,North Dakota,13
 2021-01-15,31,Nebraska,34
 2021-01-15,33,New Hampshire,26
-2021-01-15,34,New Jersey,414
-2021-01-15,35,New Mexico,108
+2021-01-15,34,New Jersey,411
+2021-01-15,35,New Mexico,106
 2021-01-15,32,Nevada,171
 2021-01-15,36,New York,1116
 2021-01-15,39,Ohio,545
@@ -6826,7 +7413,7 @@ date,location,location_name,value
 2021-01-14,38,North Dakota,19
 2021-01-14,31,Nebraska,50
 2021-01-14,33,New Hampshire,31
-2021-01-14,34,New Jersey,436
+2021-01-14,34,New Jersey,432
 2021-01-14,35,New Mexico,102
 2021-01-14,32,Nevada,175
 2021-01-14,36,New York,1190
@@ -6879,8 +7466,8 @@ date,location,location_name,value
 2021-01-13,38,North Dakota,16
 2021-01-13,31,Nebraska,56
 2021-01-13,33,New Hampshire,26
-2021-01-13,34,New Jersey,437
-2021-01-13,35,New Mexico,104
+2021-01-13,34,New Jersey,432
+2021-01-13,35,New Mexico,103
 2021-01-13,32,Nevada,142
 2021-01-13,36,New York,1175
 2021-01-13,39,Ohio,550
@@ -6932,7 +7519,7 @@ date,location,location_name,value
 2021-01-12,38,North Dakota,11
 2021-01-12,31,Nebraska,59
 2021-01-12,33,New Hampshire,39
-2021-01-12,34,New Jersey,479
+2021-01-12,34,New Jersey,476
 2021-01-12,35,New Mexico,106
 2021-01-12,32,Nevada,154
 2021-01-12,36,New York,1176
@@ -6985,7 +7572,7 @@ date,location,location_name,value
 2021-01-11,38,North Dakota,19
 2021-01-11,31,Nebraska,57
 2021-01-11,33,New Hampshire,36
-2021-01-11,34,New Jersey,465
+2021-01-11,34,New Jersey,462
 2021-01-11,35,New Mexico,92
 2021-01-11,32,Nevada,168
 2021-01-11,36,New York,1081
@@ -7038,7 +7625,7 @@ date,location,location_name,value
 2021-01-10,38,North Dakota,13
 2021-01-10,31,Nebraska,114
 2021-01-10,33,New Hampshire,42
-2021-01-10,34,New Jersey,391
+2021-01-10,34,New Jersey,385
 2021-01-10,35,New Mexico,119
 2021-01-10,32,Nevada,160
 2021-01-10,36,New York,950
@@ -7091,7 +7678,7 @@ date,location,location_name,value
 2021-01-09,38,North Dakota,11
 2021-01-09,31,Nebraska,60
 2021-01-09,33,New Hampshire,30
-2021-01-09,34,New Jersey,382
+2021-01-09,34,New Jersey,381
 2021-01-09,35,New Mexico,103
 2021-01-09,32,Nevada,157
 2021-01-09,36,New York,1026
@@ -7144,8 +7731,8 @@ date,location,location_name,value
 2021-01-08,38,North Dakota,7
 2021-01-08,31,Nebraska,55
 2021-01-08,33,New Hampshire,31
-2021-01-08,34,New Jersey,459
-2021-01-08,35,New Mexico,86
+2021-01-08,34,New Jersey,457
+2021-01-08,35,New Mexico,84
 2021-01-08,32,Nevada,173
 2021-01-08,36,New York,1135
 2021-01-08,39,Ohio,564
@@ -7197,7 +7784,7 @@ date,location,location_name,value
 2021-01-07,38,North Dakota,17
 2021-01-07,31,Nebraska,54
 2021-01-07,33,New Hampshire,40
-2021-01-07,34,New Jersey,397
+2021-01-07,34,New Jersey,393
 2021-01-07,35,New Mexico,104
 2021-01-07,32,Nevada,173
 2021-01-07,36,New York,1168
@@ -7250,8 +7837,8 @@ date,location,location_name,value
 2021-01-06,38,North Dakota,21
 2021-01-06,31,Nebraska,53
 2021-01-06,33,New Hampshire,42
-2021-01-06,34,New Jersey,439
-2021-01-06,35,New Mexico,86
+2021-01-06,34,New Jersey,436
+2021-01-06,35,New Mexico,84
 2021-01-06,32,Nevada,166
 2021-01-06,36,New York,1185
 2021-01-06,39,Ohio,565
@@ -7303,8 +7890,8 @@ date,location,location_name,value
 2021-01-05,38,North Dakota,19
 2021-01-05,31,Nebraska,52
 2021-01-05,33,New Hampshire,44
-2021-01-05,34,New Jersey,481
-2021-01-05,35,New Mexico,107
+2021-01-05,34,New Jersey,479
+2021-01-05,35,New Mexico,105
 2021-01-05,32,Nevada,185
 2021-01-05,36,New York,1174
 2021-01-05,39,Ohio,602
@@ -7357,7 +7944,7 @@ date,location,location_name,value
 2021-01-04,31,Nebraska,70
 2021-01-04,33,New Hampshire,35
 2021-01-04,34,New Jersey,467
-2021-01-04,35,New Mexico,120
+2021-01-04,35,New Mexico,118
 2021-01-04,32,Nevada,169
 2021-01-04,36,New York,1192
 2021-01-04,39,Ohio,647
@@ -7409,7 +7996,7 @@ date,location,location_name,value
 2021-01-03,38,North Dakota,12
 2021-01-03,31,Nebraska,66
 2021-01-03,33,New Hampshire,38
-2021-01-03,34,New Jersey,368
+2021-01-03,34,New Jersey,366
 2021-01-03,35,New Mexico,101
 2021-01-03,32,Nevada,147
 2021-01-03,36,New York,930
@@ -7462,7 +8049,7 @@ date,location,location_name,value
 2021-01-02,38,North Dakota,12
 2021-01-02,31,Nebraska,46
 2021-01-02,33,New Hampshire,32
-2021-01-02,34,New Jersey,406
+2021-01-02,34,New Jersey,404
 2021-01-02,35,New Mexico,95
 2021-01-02,32,Nevada,163
 2021-01-02,36,New York,1041
@@ -7515,7 +8102,7 @@ date,location,location_name,value
 2021-01-01,38,North Dakota,14
 2021-01-01,31,Nebraska,51
 2021-01-01,33,New Hampshire,35
-2021-01-01,34,New Jersey,385
+2021-01-01,34,New Jersey,382
 2021-01-01,35,New Mexico,114
 2021-01-01,32,Nevada,130
 2021-01-01,36,New York,998
@@ -7568,7 +8155,7 @@ date,location,location_name,value
 2020-12-31,38,North Dakota,20
 2020-12-31,31,Nebraska,54
 2020-12-31,33,New Hampshire,42
-2020-12-31,34,New Jersey,406
+2020-12-31,34,New Jersey,401
 2020-12-31,35,New Mexico,105
 2020-12-31,32,Nevada,164
 2020-12-31,36,New York,993
@@ -7621,8 +8208,8 @@ date,location,location_name,value
 2020-12-30,38,North Dakota,16
 2020-12-30,31,Nebraska,62
 2020-12-30,33,New Hampshire,59
-2020-12-30,34,New Jersey,440
-2020-12-30,35,New Mexico,160
+2020-12-30,34,New Jersey,438
+2020-12-30,35,New Mexico,159
 2020-12-30,32,Nevada,167
 2020-12-30,36,New York,1100
 2020-12-30,39,Ohio,616
@@ -7674,7 +8261,7 @@ date,location,location_name,value
 2020-12-29,38,North Dakota,24
 2020-12-29,31,Nebraska,60
 2020-12-29,33,New Hampshire,52
-2020-12-29,34,New Jersey,492
+2020-12-29,34,New Jersey,486
 2020-12-29,35,New Mexico,127
 2020-12-29,32,Nevada,168
 2020-12-29,36,New York,1133
@@ -7727,7 +8314,7 @@ date,location,location_name,value
 2020-12-28,38,North Dakota,21
 2020-12-28,31,Nebraska,40
 2020-12-28,33,New Hampshire,38
-2020-12-28,34,New Jersey,425
+2020-12-28,34,New Jersey,424
 2020-12-28,35,New Mexico,123
 2020-12-28,32,Nevada,174
 2020-12-28,36,New York,1083
@@ -7780,8 +8367,8 @@ date,location,location_name,value
 2020-12-27,38,North Dakota,22
 2020-12-27,31,Nebraska,42
 2020-12-27,33,New Hampshire,45
-2020-12-27,34,New Jersey,356
-2020-12-27,35,New Mexico,111
+2020-12-27,34,New Jersey,354
+2020-12-27,35,New Mexico,110
 2020-12-27,32,Nevada,160
 2020-12-27,36,New York,863
 2020-12-27,39,Ohio,582
@@ -7833,7 +8420,7 @@ date,location,location_name,value
 2020-12-26,38,North Dakota,23
 2020-12-26,31,Nebraska,50
 2020-12-26,33,New Hampshire,26
-2020-12-26,34,New Jersey,405
+2020-12-26,34,New Jersey,402
 2020-12-26,35,New Mexico,145
 2020-12-26,32,Nevada,157
 2020-12-26,36,New York,1011
@@ -7886,7 +8473,7 @@ date,location,location_name,value
 2020-12-25,38,North Dakota,21
 2020-12-25,31,Nebraska,42
 2020-12-25,33,New Hampshire,31
-2020-12-25,34,New Jersey,349
+2020-12-25,34,New Jersey,348
 2020-12-25,35,New Mexico,136
 2020-12-25,32,Nevada,145
 2020-12-25,36,New York,941
@@ -7939,7 +8526,7 @@ date,location,location_name,value
 2020-12-24,38,North Dakota,14
 2020-12-24,31,Nebraska,47
 2020-12-24,33,New Hampshire,35
-2020-12-24,34,New Jersey,383
+2020-12-24,34,New Jersey,381
 2020-12-24,35,New Mexico,131
 2020-12-24,32,Nevada,144
 2020-12-24,36,New York,1007
@@ -7992,7 +8579,7 @@ date,location,location_name,value
 2020-12-23,38,North Dakota,22
 2020-12-23,31,Nebraska,49
 2020-12-23,33,New Hampshire,44
-2020-12-23,34,New Jersey,420
+2020-12-23,34,New Jersey,418
 2020-12-23,35,New Mexico,156
 2020-12-23,32,Nevada,173
 2020-12-23,36,New York,1000
@@ -8045,8 +8632,8 @@ date,location,location_name,value
 2020-12-22,38,North Dakota,31
 2020-12-22,31,Nebraska,62
 2020-12-22,33,New Hampshire,46
-2020-12-22,34,New Jersey,483
-2020-12-22,35,New Mexico,105
+2020-12-22,34,New Jersey,481
+2020-12-22,35,New Mexico,103
 2020-12-22,32,Nevada,182
 2020-12-22,36,New York,1056
 2020-12-22,39,Ohio,639
@@ -8098,7 +8685,7 @@ date,location,location_name,value
 2020-12-21,38,North Dakota,27
 2020-12-21,31,Nebraska,66
 2020-12-21,33,New Hampshire,36
-2020-12-21,34,New Jersey,518
+2020-12-21,34,New Jersey,511
 2020-12-21,35,New Mexico,114
 2020-12-21,32,Nevada,191
 2020-12-21,36,New York,1053
@@ -8151,7 +8738,7 @@ date,location,location_name,value
 2020-12-20,38,North Dakota,25
 2020-12-20,31,Nebraska,58
 2020-12-20,33,New Hampshire,39
-2020-12-20,34,New Jersey,383
+2020-12-20,34,New Jersey,380
 2020-12-20,35,New Mexico,103
 2020-12-20,32,Nevada,145
 2020-12-20,36,New York,821
@@ -8204,7 +8791,7 @@ date,location,location_name,value
 2020-12-19,38,North Dakota,18
 2020-12-19,31,Nebraska,48
 2020-12-19,33,New Hampshire,42
-2020-12-19,34,New Jersey,384
+2020-12-19,34,New Jersey,380
 2020-12-19,35,New Mexico,109
 2020-12-19,32,Nevada,192
 2020-12-19,36,New York,857
@@ -8223,301 +8810,227 @@ date,location,location_name,value
 2020-12-19,78,Virgin Islands,0
 2020-12-19,50,Vermont,3
 2020-12-19,53,Washington,100
-2020-12-19,55,Wisconsin,252
-2020-12-19,54,West Virginia,66
-2020-12-19,56,Wyoming,21
-2020-12-18,02,Alaska,11
-2020-12-18,01,Alabama,366
-2020-12-18,05,Arkansas,159
-2020-12-18,04,Arizona,461
-2020-12-18,06,California,2217
-2020-12-18,08,Colorado,187
-2020-12-18,09,Connecticut,161
-2020-12-18,11,District of Columbia,30
-2020-12-18,10,Delaware,46
-2020-12-18,12,Florida,762
-2020-12-18,13,Georgia,517
-2020-12-18,15,Hawaii,12
-2020-12-18,19,Iowa,93
-2020-12-18,16,Idaho,57
-2020-12-18,17,Illinois,472
-2020-12-18,18,Indiana,383
-2020-12-18,20,Kansas,173
-2020-12-18,21,Kentucky,384
-2020-12-18,22,Louisiana,227
-2020-12-18,25,Massachusetts,284
-2020-12-18,24,Maryland,235
-2020-12-18,23,Maine,17
-2020-12-18,26,Michigan,345
-2020-12-18,27,Minnesota,137
-2020-12-18,29,Missouri,277
-2020-12-18,28,Mississippi,168
-2020-12-18,30,Montana,49
-2020-12-18,37,North Carolina,331
-2020-12-18,38,North Dakota,25
-2020-12-18,31,Nebraska,65
-2020-12-18,33,New Hampshire,47
-2020-12-18,34,New Jersey,438
-2020-12-18,35,New Mexico,138
-2020-12-18,32,Nevada,171
-2020-12-18,36,New York,1001
-2020-12-18,39,Ohio,703
-2020-12-18,40,Oklahoma,340
-2020-12-18,41,Oregon,65
-2020-12-18,42,Pennsylvania,729
-2020-12-18,72,Puerto Rico,29
-2020-12-18,44,Rhode Island,26
-2020-12-18,45,South Carolina,187
-2020-12-18,46,South Dakota,35
-2020-12-18,47,Tennessee,337
-2020-12-18,48,Texas,1445
-2020-12-18,49,Utah,97
-2020-12-18,51,Virginia,246
-2020-12-18,78,Virgin Islands,0
-2020-12-18,50,Vermont,4
-2020-12-18,53,Washington,108
-2020-12-18,55,Wisconsin,305
-2020-12-18,54,West Virginia,78
-2020-12-18,56,Wyoming,24
-2020-12-17,02,Alaska,12
-2020-12-17,01,Alabama,383
-2020-12-17,05,Arkansas,160
-2020-12-17,04,Arizona,523
-2020-12-17,06,California,2368
-2020-12-17,08,Colorado,206
-2020-12-17,09,Connecticut,101
-2020-12-17,11,District of Columbia,29
-2020-12-17,10,Delaware,39
-2020-12-17,12,Florida,861
-2020-12-17,13,Georgia,546
-2020-12-17,15,Hawaii,4
-2020-12-17,19,Iowa,92
-2020-12-17,16,Idaho,61
-2020-12-17,17,Illinois,493
-2020-12-17,18,Indiana,386
-2020-12-17,20,Kansas,167
-2020-12-17,21,Kentucky,386
-2020-12-17,22,Louisiana,193
-2020-12-17,25,Massachusetts,254
-2020-12-17,24,Maryland,233
-2020-12-17,23,Maine,11
-2020-12-17,26,Michigan,359
-2020-12-17,27,Minnesota,118
-2020-12-17,29,Missouri,321
-2020-12-17,28,Mississippi,137
-2020-12-17,30,Montana,40
-2020-12-17,37,North Carolina,341
-2020-12-17,38,North Dakota,25
-2020-12-17,31,Nebraska,58
-2020-12-17,33,New Hampshire,26
-2020-12-17,34,New Jersey,408
-2020-12-17,35,New Mexico,121
-2020-12-17,32,Nevada,129
-2020-12-17,36,New York,885
-2020-12-17,39,Ohio,724
-2020-12-17,40,Oklahoma,374
-2020-12-17,41,Oregon,73
-2020-12-17,42,Pennsylvania,672
-2020-12-17,72,Puerto Rico,29
-2020-12-17,44,Rhode Island,30
-2020-12-17,45,South Carolina,181
-2020-12-17,46,South Dakota,41
-2020-12-17,47,Tennessee,371
-2020-12-17,48,Texas,1425
-2020-12-17,49,Utah,100
-2020-12-17,51,Virginia,266
-2020-12-17,78,Virgin Islands,0
-2020-12-17,50,Vermont,11
-2020-12-17,53,Washington,94
-2020-12-17,55,Wisconsin,311
-2020-12-17,54,West Virginia,82
-2020-12-17,56,Wyoming,27
-2020-12-16,02,Alaska,14
-2020-12-16,01,Alabama,405
-2020-12-16,05,Arkansas,149
-2020-12-16,04,Arizona,465
-2020-12-16,06,California,2284
-2020-12-16,08,Colorado,218
-2020-12-16,09,Connecticut,163
-2020-12-16,11,District of Columbia,39
-2020-12-16,10,Delaware,54
-2020-12-16,12,Florida,830
-2020-12-16,13,Georgia,575
-2020-12-16,15,Hawaii,8
-2020-12-16,19,Iowa,95
-2020-12-16,16,Idaho,66
-2020-12-16,17,Illinois,556
-2020-12-16,18,Indiana,387
-2020-12-16,20,Kansas,156
-2020-12-16,21,Kentucky,401
-2020-12-16,22,Louisiana,173
-2020-12-16,25,Massachusetts,300
-2020-12-16,24,Maryland,194
-2020-12-16,23,Maine,14
-2020-12-16,26,Michigan,346
-2020-12-16,27,Minnesota,121
-2020-12-16,29,Missouri,323
-2020-12-16,28,Mississippi,169
-2020-12-16,30,Montana,53
-2020-12-16,37,North Carolina,321
-2020-12-16,38,North Dakota,30
-2020-12-16,31,Nebraska,69
-2020-12-16,33,New Hampshire,32
-2020-12-16,34,New Jersey,402
-2020-12-16,35,New Mexico,114
-2020-12-16,32,Nevada,161
-2020-12-16,36,New York,830
-2020-12-16,39,Ohio,708
-2020-12-16,40,Oklahoma,383
-2020-12-16,41,Oregon,79
-2020-12-16,42,Pennsylvania,677
-2020-12-16,72,Puerto Rico,43
-2020-12-16,44,Rhode Island,31
-2020-12-16,45,South Carolina,183
-2020-12-16,46,South Dakota,31
-2020-12-16,47,Tennessee,419
-2020-12-16,48,Texas,1370
-2020-12-16,49,Utah,89
-2020-12-16,51,Virginia,243
-2020-12-16,78,Virgin Islands,0
-2020-12-16,50,Vermont,6
-2020-12-16,53,Washington,97
-2020-12-16,55,Wisconsin,302
-2020-12-16,54,West Virginia,66
-2020-12-16,56,Wyoming,21
-2020-12-15,02,Alaska,13
-2020-12-15,01,Alabama,427
-2020-12-15,05,Arkansas,179
-2020-12-15,04,Arizona,521
-2020-12-15,06,California,2138
-2020-12-15,08,Colorado,216
-2020-12-15,09,Connecticut,132
-2020-12-15,11,District of Columbia,30
-2020-12-15,10,Delaware,63
-2020-12-15,12,Florida,881
-2020-12-15,13,Georgia,480
-2020-12-15,15,Hawaii,7
-2020-12-15,19,Iowa,99
-2020-12-15,16,Idaho,59
-2020-12-15,17,Illinois,543
-2020-12-15,18,Indiana,394
-2020-12-15,20,Kansas,184
-2020-12-15,21,Kentucky,379
-2020-12-15,22,Louisiana,219
-2020-12-15,25,Massachusetts,296
-2020-12-15,24,Maryland,242
-2020-12-15,23,Maine,20
-2020-12-15,26,Michigan,404
-2020-12-15,27,Minnesota,149
-2020-12-15,29,Missouri,278
-2020-12-15,28,Mississippi,157
-2020-12-15,30,Montana,48
-2020-12-15,37,North Carolina,321
-2020-12-15,38,North Dakota,24
-2020-12-15,31,Nebraska,49
-2020-12-15,33,New Hampshire,37
-2020-12-15,34,New Jersey,473
-2020-12-15,35,New Mexico,131
-2020-12-15,32,Nevada,216
-2020-12-15,36,New York,940
-2020-12-15,39,Ohio,704
-2020-12-15,40,Oklahoma,351
-2020-12-15,41,Oregon,74
-2020-12-15,42,Pennsylvania,793
-2020-12-15,72,Puerto Rico,36
-2020-12-15,44,Rhode Island,41
-2020-12-15,45,South Carolina,190
-2020-12-15,46,South Dakota,33
-2020-12-15,47,Tennessee,412
-2020-12-15,48,Texas,1296
-2020-12-15,49,Utah,95
-2020-12-15,51,Virginia,237
-2020-12-15,78,Virgin Islands,2
-2020-12-15,50,Vermont,8
-2020-12-15,53,Washington,108
-2020-12-15,55,Wisconsin,338
-2020-12-15,54,West Virginia,84
-2020-12-15,56,Wyoming,30
-2020-12-14,02,Alaska,14
-2020-12-14,01,Alabama,399
-2020-12-14,05,Arkansas,196
-2020-12-14,04,Arizona,514
-2020-12-14,06,California,2169
-2020-12-14,08,Colorado,227
-2020-12-14,09,Connecticut,132
-2020-12-14,11,District of Columbia,26
-2020-12-14,10,Delaware,47
-2020-12-14,12,Florida,855
-2020-12-14,13,Georgia,598
-2020-12-14,15,Hawaii,4
-2020-12-14,19,Iowa,106
-2020-12-14,16,Idaho,63
-2020-12-14,17,Illinois,542
-2020-12-14,18,Indiana,380
-2020-12-14,20,Kansas,171
-2020-12-14,21,Kentucky,480
-2020-12-14,22,Louisiana,206
-2020-12-14,25,Massachusetts,238
-2020-12-14,24,Maryland,240
-2020-12-14,23,Maine,22
-2020-12-14,26,Michigan,453
-2020-12-14,27,Minnesota,158
-2020-12-14,29,Missouri,335
-2020-12-14,28,Mississippi,167
-2020-12-14,30,Montana,69
-2020-12-14,37,North Carolina,409
-2020-12-14,38,North Dakota,21
-2020-12-14,31,Nebraska,77
-2020-12-14,33,New Hampshire,48
-2020-12-14,34,New Jersey,482
-2020-12-14,35,New Mexico,116
-2020-12-14,32,Nevada,212
-2020-12-14,36,New York,876
-2020-12-14,39,Ohio,786
-2020-12-14,40,Oklahoma,324
-2020-12-14,41,Oregon,85
-2020-12-14,42,Pennsylvania,846
-2020-12-14,72,Puerto Rico,21
-2020-12-14,44,Rhode Island,56
-2020-12-14,45,South Carolina,215
-2020-12-14,46,South Dakota,35
-2020-12-14,47,Tennessee,468
-2020-12-14,48,Texas,1364
-2020-12-14,49,Utah,86
-2020-12-14,51,Virginia,232
-2020-12-14,78,Virgin Islands,0
-2020-12-14,50,Vermont,7
-2020-12-14,53,Washington,125
-2020-12-14,55,Wisconsin,367
-2020-12-14,54,West Virginia,92
-2020-12-14,56,Wyoming,31
-2020-12-13,02,Alaska,16
-2020-12-13,01,Alabama,328
-2020-12-13,05,Arkansas,111
-2020-12-13,04,Arizona,429
-2020-12-13,06,California,1879
-2020-12-13,08,Colorado,156
-2020-12-13,09,Connecticut,128
-2020-12-13,11,District of Columbia,25
-2020-12-13,10,Delaware,59
-2020-12-13,12,Florida,752
-2020-12-13,13,Georgia,459
-2020-12-13,15,Hawaii,9
-2020-12-13,19,Iowa,85
-2020-12-13,16,Idaho,48
-2020-12-13,17,Illinois,426
-2020-12-13,18,Indiana,352
-2020-12-13,20,Kansas,135
-2020-12-13,21,Kentucky,522
-2020-12-13,22,Louisiana,182
-2020-12-13,25,Massachusetts,216
-2020-12-13,24,Maryland,224
-2020-12-13,23,Maine,20
-2020-12-13,26,Michigan,379
-2020-12-13,27,Minnesota,132
-2020-12-13,29,Missouri,239
-2020-12-13,28,Mississippi,124
-2020-12-13,30,Montana,54
+2020-10-04,02,Alaska,5
+2020-10-04,01,Alabama,97
+2020-10-04,05,Arkansas,61
+2020-10-04,04,Arizona,66
+2020-10-04,06,California,315
+2020-10-04,08,Colorado,43
+2020-10-04,09,Connecticut,15
+2020-10-04,11,District of Columbia,11
+2020-10-04,10,Delaware,14
+2020-10-04,12,Florida,256
+2020-10-04,13,Georgia,222
+2020-10-04,15,Hawaii,18
+2020-10-04,19,Iowa,60
+2020-10-04,16,Idaho,15
+2020-10-04,17,Illinois,119
+2020-10-04,18,Indiana,115
+2020-10-04,20,Kansas,55
+2020-10-04,21,Kentucky,601
+2020-10-04,22,Louisiana,119
+2020-10-04,25,Massachusetts,44
+2020-10-04,24,Maryland,41
+2020-10-04,23,Maine,0
+2020-10-04,26,Michigan,83
+2020-10-04,27,Minnesota,61
+2020-10-04,29,Missouri,159
+2020-10-04,28,Mississippi,72
+2020-10-04,30,Montana,47
+2020-10-04,37,North Carolina,116
+2020-10-04,38,North Dakota,28
+2020-10-04,31,Nebraska,38
+2020-10-04,33,New Hampshire,0
+2020-10-04,34,New Jersey,55
+2020-10-04,35,New Mexico,14
+2020-10-04,32,Nevada,35
+2020-10-04,36,New York,113
+2020-10-04,39,Ohio,164
+2020-10-04,40,Oklahoma,151
+2020-10-04,41,Oregon,15
+2020-10-04,42,Pennsylvania,74
+2020-10-04,72,Puerto Rico,42
+2020-10-04,44,Rhode Island,5
+2020-10-04,45,South Carolina,66
+2020-10-04,46,South Dakota,37
+2020-10-04,47,Tennessee,126
+2020-10-04,48,Texas,459
+2020-10-04,49,Utah,31
+2020-10-04,51,Virginia,61
+2020-10-04,78,Virgin Islands,0
+2020-10-04,50,Vermont,0
+2020-10-04,53,Washington,27
+2020-10-04,55,Wisconsin,170
+2020-10-04,54,West Virginia,16
+2020-10-04,56,Wyoming,18
+2020-10-03,02,Alaska,5
+2020-10-03,01,Alabama,98
+2020-10-03,05,Arkansas,70
+2020-10-03,04,Arizona,61
+2020-10-03,06,California,294
+2020-10-03,08,Colorado,26
+2020-10-03,09,Connecticut,23
+2020-10-03,11,District of Columbia,8
+2020-10-03,10,Delaware,7
+2020-10-03,12,Florida,258
+2020-10-03,13,Georgia,211
+2020-10-03,15,Hawaii,24
+2020-10-03,19,Iowa,57
+2020-10-03,16,Idaho,20
+2020-10-03,17,Illinois,133
+2020-10-03,18,Indiana,92
+2020-10-03,20,Kansas,42
+2020-10-03,21,Kentucky,110
+2020-10-03,22,Louisiana,56
+2020-10-03,25,Massachusetts,33
+2020-10-03,24,Maryland,44
+2020-10-03,23,Maine,0
+2020-10-03,26,Michigan,69
+2020-10-03,27,Minnesota,46
+2020-10-03,29,Missouri,110
+2020-10-03,28,Mississippi,72
+2020-10-03,30,Montana,44
+2020-10-03,37,North Carolina,102
+2020-10-03,38,North Dakota,18
+2020-10-03,31,Nebraska,27
+2020-10-03,33,New Hampshire,3
+2020-10-03,34,New Jersey,41
+2020-10-03,35,New Mexico,30
+2020-10-03,32,Nevada,25
+2020-10-03,36,New York,85
+2020-10-03,39,Ohio,126
+2020-10-03,40,Oklahoma,134
+2020-10-03,41,Oregon,14
+2020-10-03,42,Pennsylvania,72
+2020-10-03,72,Puerto Rico,41
+2020-10-03,44,Rhode Island,3
+2020-10-03,45,South Carolina,60
+2020-10-03,46,South Dakota,40
+2020-10-03,47,Tennessee,87
+2020-10-03,48,Texas,440
+2020-10-03,49,Utah,27
+2020-10-03,51,Virginia,53
+2020-10-03,78,Virgin Islands,0
+2020-10-03,50,Vermont,0
+2020-10-03,53,Washington,18
+2020-10-03,55,Wisconsin,164
+2020-10-03,54,West Virginia,13
+2020-10-03,56,Wyoming,16
+2020-10-02,02,Alaska,7
+2020-10-02,01,Alabama,120
+2020-10-02,05,Arkansas,71
+2020-10-02,04,Arizona,63
+2020-10-02,06,California,328
+2020-10-02,08,Colorado,31
+2020-10-02,09,Connecticut,14
+2020-10-02,11,District of Columbia,12
+2020-10-02,10,Delaware,11
+2020-10-02,12,Florida,268
+2020-10-02,13,Georgia,244
+2020-10-02,15,Hawaii,49
+2020-10-02,19,Iowa,66
+2020-10-02,16,Idaho,30
+2020-10-02,17,Illinois,145
+2020-10-02,18,Indiana,89
+2020-10-02,20,Kansas,56
+2020-10-02,21,Kentucky,143
+2020-10-02,22,Louisiana,61
+2020-10-02,25,Massachusetts,43
+2020-10-02,24,Maryland,46
+2020-10-02,23,Maine,0
+2020-10-02,26,Michigan,85
+2020-10-02,27,Minnesota,58
+2020-10-02,29,Missouri,136
+2020-10-02,28,Mississippi,67
+2020-10-02,30,Montana,40
+2020-10-02,37,North Carolina,102
+2020-10-02,38,North Dakota,25
+2020-10-02,31,Nebraska,30
+2020-10-02,33,New Hampshire,7
+2020-10-02,34,New Jersey,45
+2020-10-02,35,New Mexico,15
+2020-10-02,32,Nevada,40
+2020-10-02,36,New York,104
+2020-10-02,39,Ohio,128
+2020-10-02,40,Oklahoma,143
+2020-10-02,41,Oregon,8
+2020-10-02,42,Pennsylvania,74
+2020-10-02,72,Puerto Rico,23
+2020-10-02,44,Rhode Island,3
+2020-10-02,45,South Carolina,62
+2020-10-02,46,South Dakota,42
+2020-10-02,47,Tennessee,117
+2020-10-02,48,Texas,622
+2020-10-02,49,Utah,31
+2020-10-02,51,Virginia,70
+2020-10-02,78,Virgin Islands,0
+2020-10-02,50,Vermont,0
+2020-10-02,53,Washington,21
+2020-10-02,55,Wisconsin,200
+2020-10-02,54,West Virginia,21
+2020-10-02,56,Wyoming,13
+2020-10-01,02,Alaska,3
+2020-10-01,01,Alabama,106
+2020-10-01,05,Arkansas,58
+2020-10-01,04,Arizona,51
+2020-10-01,06,California,316
+2020-10-01,08,Colorado,35
+2020-10-01,09,Connecticut,17
+2020-10-01,11,District of Columbia,6
+2020-10-01,10,Delaware,9
+2020-10-01,12,Florida,245
+2020-10-01,13,Georgia,277
+2020-10-01,15,Hawaii,17
+2020-10-01,19,Iowa,59
+2020-10-01,16,Idaho,22
+2020-10-01,17,Illinois,131
+2020-10-01,18,Indiana,81
+2020-10-01,20,Kansas,34
+2020-10-01,21,Kentucky,149
+2020-10-01,22,Louisiana,78
+2020-10-01,25,Massachusetts,42
+2020-10-01,24,Maryland,43
+2020-10-01,23,Maine,1
+2020-10-01,26,Michigan,73
+2020-10-01,27,Minnesota,48
+2020-10-01,29,Missouri,134
+2020-10-01,28,Mississippi,64
+2020-10-01,30,Montana,45
+2020-10-01,37,North Carolina,127
+2020-10-01,38,North Dakota,27
+2020-10-01,31,Nebraska,24
+2020-10-01,33,New Hampshire,0
+2020-10-01,34,New Jersey,40
+2020-10-01,35,New Mexico,10
+2020-10-01,32,Nevada,36
+2020-10-01,36,New York,98
+2020-10-01,39,Ohio,101
+2020-10-01,40,Oklahoma,136
+2020-10-01,41,Oregon,10
+2020-10-01,42,Pennsylvania,60
+2020-10-01,72,Puerto Rico,28
+2020-10-01,44,Rhode Island,11
+2020-10-01,45,South Carolina,55
+2020-10-01,46,South Dakota,47
+2020-10-01,47,Tennessee,125
+2020-10-01,48,Texas,466
+2020-10-01,49,Utah,35
+2020-10-01,51,Virginia,69
+2020-10-01,78,Virgin Islands,0
+2020-10-01,50,Vermont,0
+2020-10-01,53,Washington,24
+2020-10-01,55,Wisconsin,196
+2020-10-01,54,West Virginia,19
+2020-10-01,56,Wyoming,5
+2020-09-30,02,Alaska,4
+2020-09-30,01,Alabama,121
+2020-09-30,05,Arkansas,75
+2020-09-30,04,Arizona,53
+2020-09-30,06,California,337
+2020-09-30,08,Colorado,44
+2020-09-30,09,Connecticut,19
+2020-09-30,11,District of Columbia,16
+2020-09-30,10,Delaware,10
 2020-09-30,12,Florida,266
 2020-09-30,13,Georgia,308
 2020-09-30,15,Hawaii,7
@@ -8739,7 +9252,7 @@ date,location,location_name,value
 2020-09-26,18,Indiana,132
 2020-09-26,20,Kansas,46
 2020-09-26,21,Kentucky,106
-2020-09-26,22,Louisiana,63
+2020-09-26,22,Louisiana,64
 2020-09-26,25,Massachusetts,40
 2020-09-26,24,Maryland,49
 2020-09-26,23,Maine,1
@@ -8862,7 +9375,7 @@ date,location,location_name,value
 2020-09-24,35,New Mexico,8
 2020-09-24,32,Nevada,36
 2020-09-24,36,New York,118
-2020-09-24,39,Ohio,103
+2020-09-24,39,Ohio,104
 2020-09-24,40,Oklahoma,130
 2020-09-24,41,Oregon,17
 2020-09-24,42,Pennsylvania,59
@@ -9270,7 +9783,7 @@ date,location,location_name,value
 2020-09-16,20,Kansas,48
 2020-09-16,21,Kentucky,123
 2020-09-16,22,Louisiana,92
-2020-09-16,25,Massachusetts,23
+2020-09-16,25,Massachusetts,22
 2020-09-16,24,Maryland,53
 2020-09-16,23,Maine,1
 2020-09-16,26,Michigan,54
@@ -9376,7 +9889,7 @@ date,location,location_name,value
 2020-09-14,20,Kansas,43
 2020-09-14,21,Kentucky,446
 2020-09-14,22,Louisiana,91
-2020-09-14,25,Massachusetts,38
+2020-09-14,25,Massachusetts,36
 2020-09-14,24,Maryland,47
 2020-09-14,23,Maine,2
 2020-09-14,26,Michigan,67
@@ -9429,7 +9942,7 @@ date,location,location_name,value
 2020-09-13,20,Kansas,30
 2020-09-13,21,Kentucky,145
 2020-09-13,22,Louisiana,91
-2020-09-13,25,Massachusetts,23
+2020-09-13,25,Massachusetts,25
 2020-09-13,24,Maryland,42
 2020-09-13,23,Maine,1
 2020-09-13,26,Michigan,35
@@ -9588,7 +10101,7 @@ date,location,location_name,value
 2020-09-10,20,Kansas,51
 2020-09-10,21,Kentucky,468
 2020-09-10,22,Louisiana,90
-2020-09-10,25,Massachusetts,22
+2020-09-10,25,Massachusetts,20
 2020-09-10,24,Maryland,53
 2020-09-10,23,Maine,1
 2020-09-10,26,Michigan,52
@@ -9641,7 +10154,7 @@ date,location,location_name,value
 2020-09-09,20,Kansas,32
 2020-09-09,21,Kentucky,439
 2020-09-09,22,Louisiana,106
-2020-09-09,25,Massachusetts,22
+2020-09-09,25,Massachusetts,20
 2020-09-09,24,Maryland,45
 2020-09-09,23,Maine,1
 2020-09-09,26,Michigan,63
@@ -10013,7 +10526,7 @@ date,location,location_name,value
 2020-09-02,21,Kentucky,170
 2020-09-02,22,Louisiana,90
 2020-09-02,25,Massachusetts,16
-2020-09-02,24,Maryland,50
+2020-09-02,24,Maryland,48
 2020-09-02,23,Maine,1
 2020-09-02,26,Michigan,38
 2020-09-02,27,Minnesota,45
@@ -10027,7 +10540,7 @@ date,location,location_name,value
 2020-09-02,34,New Jersey,15
 2020-09-02,35,New Mexico,9
 2020-09-02,32,Nevada,44
-2020-09-02,36,New York,77
+2020-09-02,36,New York,73
 2020-09-02,39,Ohio,106
 2020-09-02,40,Oklahoma,91
 2020-09-02,41,Oregon,4
@@ -10407,7 +10920,7 @@ date,location,location_name,value
 2020-08-26,44,Rhode Island,1
 2020-08-26,45,South Carolina,89
 2020-08-26,46,South Dakota,22
-2020-08-26,47,Tennessee,113
+2020-08-26,47,Tennessee,115
 2020-08-26,48,Texas,516
 2020-08-26,49,Utah,25
 2020-08-26,51,Virginia,69
@@ -10460,7 +10973,7 @@ date,location,location_name,value
 2020-08-25,44,Rhode Island,3
 2020-08-25,45,South Carolina,91
 2020-08-25,46,South Dakota,18
-2020-08-25,47,Tennessee,128
+2020-08-25,47,Tennessee,129
 2020-08-25,48,Texas,513
 2020-08-25,49,Utah,29
 2020-08-25,51,Virginia,52
@@ -10513,7 +11026,7 @@ date,location,location_name,value
 2020-08-24,44,Rhode Island,5
 2020-08-24,45,South Carolina,89
 2020-08-24,46,South Dakota,21
-2020-08-24,47,Tennessee,112
+2020-08-24,47,Tennessee,113
 2020-08-24,48,Texas,504
 2020-08-24,49,Utah,15
 2020-08-24,51,Virginia,75
@@ -10566,7 +11079,7 @@ date,location,location_name,value
 2020-08-23,44,Rhode Island,5
 2020-08-23,45,South Carolina,83
 2020-08-23,46,South Dakota,16
-2020-08-23,47,Tennessee,97
+2020-08-23,47,Tennessee,98
 2020-08-23,48,Texas,425
 2020-08-23,49,Utah,17
 2020-08-23,51,Virginia,57
@@ -10672,7 +11185,7 @@ date,location,location_name,value
 2020-08-21,44,Rhode Island,5
 2020-08-21,45,South Carolina,93
 2020-08-21,46,South Dakota,13
-2020-08-21,47,Tennessee,95
+2020-08-21,47,Tennessee,96
 2020-08-21,48,Texas,508
 2020-08-21,49,Utah,9
 2020-08-21,51,Virginia,79
@@ -10725,7 +11238,7 @@ date,location,location_name,value
 2020-08-20,44,Rhode Island,8
 2020-08-20,45,South Carolina,78
 2020-08-20,46,South Dakota,22
-2020-08-20,47,Tennessee,111
+2020-08-20,47,Tennessee,112
 2020-08-20,48,Texas,500
 2020-08-20,49,Utah,21
 2020-08-20,51,Virginia,74
@@ -10778,7 +11291,7 @@ date,location,location_name,value
 2020-08-19,44,Rhode Island,3
 2020-08-19,45,South Carolina,99
 2020-08-19,46,South Dakota,10
-2020-08-19,47,Tennessee,138
+2020-08-19,47,Tennessee,140
 2020-08-19,48,Texas,608
 2020-08-19,49,Utah,14
 2020-08-19,51,Virginia,56
@@ -10884,7 +11397,7 @@ date,location,location_name,value
 2020-08-17,44,Rhode Island,6
 2020-08-17,45,South Carolina,105
 2020-08-17,46,South Dakota,14
-2020-08-17,47,Tennessee,133
+2020-08-17,47,Tennessee,135
 2020-08-17,48,Texas,564
 2020-08-17,49,Utah,16
 2020-08-17,51,Virginia,63
@@ -10990,7 +11503,7 @@ date,location,location_name,value
 2020-08-15,44,Rhode Island,4
 2020-08-15,45,South Carolina,92
 2020-08-15,46,South Dakota,10
-2020-08-15,47,Tennessee,102
+2020-08-15,47,Tennessee,103
 2020-08-15,48,Texas,570
 2020-08-15,49,Utah,8
 2020-08-15,51,Virginia,80
@@ -11096,7 +11609,7 @@ date,location,location_name,value
 2020-08-13,44,Rhode Island,10
 2020-08-13,45,South Carolina,114
 2020-08-13,46,South Dakota,14
-2020-08-13,47,Tennessee,148
+2020-08-13,47,Tennessee,149
 2020-08-13,48,Texas,667
 2020-08-13,49,Utah,16
 2020-08-13,51,Virginia,66
@@ -11149,7 +11662,7 @@ date,location,location_name,value
 2020-08-12,44,Rhode Island,6
 2020-08-12,45,South Carolina,101
 2020-08-12,46,South Dakota,18
-2020-08-12,47,Tennessee,134
+2020-08-12,47,Tennessee,135
 2020-08-12,48,Texas,619
 2020-08-12,49,Utah,19
 2020-08-12,51,Virginia,110
@@ -11255,7 +11768,7 @@ date,location,location_name,value
 2020-08-10,44,Rhode Island,7
 2020-08-10,45,South Carolina,94
 2020-08-10,46,South Dakota,12
-2020-08-10,47,Tennessee,130
+2020-08-10,47,Tennessee,132
 2020-08-10,48,Texas,637
 2020-08-10,49,Utah,38
 2020-08-10,51,Virginia,60
@@ -11308,8 +11821,8 @@ date,location,location_name,value
 2020-08-09,44,Rhode Island,4
 2020-08-09,45,South Carolina,93
 2020-08-09,46,South Dakota,14
-2020-08-09,47,Tennessee,138
-2020-08-09,48,Texas,596
+2020-08-09,47,Tennessee,140
+2020-08-09,48,Texas,595
 2020-08-09,49,Utah,9
 2020-08-09,51,Virginia,49
 2020-08-09,78,Virgin Islands,0
@@ -11467,7 +11980,7 @@ date,location,location_name,value
 2020-08-06,44,Rhode Island,5
 2020-08-06,45,South Carolina,119
 2020-08-06,46,South Dakota,6
-2020-08-06,47,Tennessee,151
+2020-08-06,47,Tennessee,153
 2020-08-06,48,Texas,793
 2020-08-06,49,Utah,22
 2020-08-06,51,Virginia,72
@@ -11520,7 +12033,7 @@ date,location,location_name,value
 2020-08-05,44,Rhode Island,7
 2020-08-05,45,South Carolina,101
 2020-08-05,46,South Dakota,8
-2020-08-05,47,Tennessee,145
+2020-08-05,47,Tennessee,148
 2020-08-05,48,Texas,828
 2020-08-05,49,Utah,37
 2020-08-05,51,Virginia,71
@@ -11573,8 +12086,8 @@ date,location,location_name,value
 2020-08-04,44,Rhode Island,6
 2020-08-04,45,South Carolina,113
 2020-08-04,46,South Dakota,7
-2020-08-04,47,Tennessee,165
-2020-08-04,48,Texas,760
+2020-08-04,47,Tennessee,179
+2020-08-04,48,Texas,759
 2020-08-04,49,Utah,33
 2020-08-04,51,Virginia,59
 2020-08-04,78,Virgin Islands,0
@@ -11626,8 +12139,8 @@ date,location,location_name,value
 2020-08-03,44,Rhode Island,6
 2020-08-03,45,South Carolina,207
 2020-08-03,46,South Dakota,6
-2020-08-03,47,Tennessee,175
-2020-08-03,48,Texas,757
+2020-08-03,47,Tennessee,186
+2020-08-03,48,Texas,756
 2020-08-03,49,Utah,19
 2020-08-03,51,Virginia,54
 2020-08-03,78,Virgin Islands,0
@@ -11679,8 +12192,8 @@ date,location,location_name,value
 2020-08-02,44,Rhode Island,6
 2020-08-02,45,South Carolina,187
 2020-08-02,46,South Dakota,1
-2020-08-02,47,Tennessee,127
-2020-08-02,48,Texas,700
+2020-08-02,47,Tennessee,135
+2020-08-02,48,Texas,699
 2020-08-02,49,Utah,16
 2020-08-02,51,Virginia,39
 2020-08-02,78,Virgin Islands,0
@@ -11732,7 +12245,7 @@ date,location,location_name,value
 2020-08-01,44,Rhode Island,3
 2020-08-01,45,South Carolina,184
 2020-08-01,46,South Dakota,6
-2020-08-01,47,Tennessee,139
+2020-08-01,47,Tennessee,145
 2020-08-01,48,Texas,730
 2020-08-01,49,Utah,6
 2020-08-01,51,Virginia,49
@@ -11785,7 +12298,7 @@ date,location,location_name,value
 2020-07-31,44,Rhode Island,5
 2020-07-31,45,South Carolina,184
 2020-07-31,46,South Dakota,3
-2020-07-31,47,Tennessee,134
+2020-07-31,47,Tennessee,138
 2020-07-31,48,Texas,853
 2020-07-31,49,Utah,24
 2020-07-31,51,Virginia,49
@@ -11838,7 +12351,7 @@ date,location,location_name,value
 2020-07-30,44,Rhode Island,7
 2020-07-30,45,South Carolina,170
 2020-07-30,46,South Dakota,6
-2020-07-30,47,Tennessee,149
+2020-07-30,47,Tennessee,152
 2020-07-30,48,Texas,825
 2020-07-30,49,Utah,25
 2020-07-30,51,Virginia,53
@@ -11891,7 +12404,7 @@ date,location,location_name,value
 2020-07-29,44,Rhode Island,6
 2020-07-29,45,South Carolina,178
 2020-07-29,46,South Dakota,4
-2020-07-29,47,Tennessee,153
+2020-07-29,47,Tennessee,159
 2020-07-29,48,Texas,830
 2020-07-29,49,Utah,18
 2020-07-29,51,Virginia,46
@@ -11944,7 +12457,7 @@ date,location,location_name,value
 2020-07-28,44,Rhode Island,3
 2020-07-28,45,South Carolina,187
 2020-07-28,46,South Dakota,6
-2020-07-28,47,Tennessee,139
+2020-07-28,47,Tennessee,140
 2020-07-28,48,Texas,911
 2020-07-28,49,Utah,7
 2020-07-28,51,Virginia,58
@@ -11997,8 +12510,8 @@ date,location,location_name,value
 2020-07-27,44,Rhode Island,17
 2020-07-27,45,South Carolina,201
 2020-07-27,46,South Dakota,4
-2020-07-27,47,Tennessee,158
-2020-07-27,48,Texas,1001
+2020-07-27,47,Tennessee,160
+2020-07-27,48,Texas,1000
 2020-07-27,49,Utah,9
 2020-07-27,51,Virginia,58
 2020-07-27,78,Virgin Islands,0
@@ -12048,7 +12561,7 @@ date,location,location_name,value
 2020-07-26,44,Rhode Island,13
 2020-07-26,45,South Carolina,171
 2020-07-26,46,South Dakota,2
-2020-07-26,47,Tennessee,142
+2020-07-26,47,Tennessee,147
 2020-07-26,48,Texas,835
 2020-07-26,49,Utah,20
 2020-07-26,51,Virginia,55
@@ -12099,7 +12612,7 @@ date,location,location_name,value
 2020-07-25,44,Rhode Island,9
 2020-07-25,45,South Carolina,203
 2020-07-25,46,South Dakota,2
-2020-07-25,47,Tennessee,134
+2020-07-25,47,Tennessee,135
 2020-07-25,48,Texas,347
 2020-07-25,49,Utah,2
 2020-07-25,51,Virginia,55
@@ -12110,7 +12623,7 @@ date,location,location_name,value
 2020-07-25,54,West Virginia,10
 2020-07-25,56,Wyoming,1
 2020-07-24,02,Alaska,11
-2020-07-24,01,Alabama,140
+2020-07-24,01,Alabama,139
 2020-07-24,05,Arkansas,58
 2020-07-24,04,Arizona,248
 2020-07-24,06,California,843
@@ -12150,8 +12663,8 @@ date,location,location_name,value
 2020-07-24,44,Rhode Island,10
 2020-07-24,45,South Carolina,201
 2020-07-24,46,South Dakota,4
-2020-07-24,47,Tennessee,149
-2020-07-24,48,Texas,990
+2020-07-24,47,Tennessee,150
+2020-07-24,48,Texas,989
 2020-07-24,49,Utah,27
 2020-07-24,51,Virginia,53
 2020-07-24,78,Virgin Islands,0
@@ -12170,148 +12683,6 @@ date,location,location_name,value
 2020-07-23,11,District of Columbia,45
 2020-07-23,10,Delaware,0
 2020-07-23,12,Florida,811
-2020-07-23,13,Georgia,257
-2020-07-23,15,Hawaii,4
-2020-07-23,19,Iowa,78
-2020-07-23,16,Idaho,16
-2020-07-23,17,Illinois,90
-2020-07-23,18,Indiana,15
-2020-07-23,20,Kansas,34
-2020-07-23,21,Kentucky,37
-2020-07-23,22,Louisiana,221
-2020-07-23,25,Massachusetts,36
-2020-07-23,24,Maryland,55
-2020-07-23,23,Maine,2
-2020-07-23,26,Michigan,30
-2020-07-23,27,Minnesota,13
-2020-07-23,29,Missouri,89
-2020-07-23,28,Mississippi,107
-2020-07-23,30,Montana,16
-2020-07-23,37,North Carolina,110
-2020-07-23,33,New Hampshire,6
-2020-07-23,34,New Jersey,31
-2020-07-23,35,New Mexico,21
-2020-07-23,32,Nevada,1
-2020-07-23,36,New York,62
-2020-07-23,39,Ohio,138
-2020-07-23,40,Oklahoma,74
-2020-07-23,41,Oregon,5
-2020-07-23,42,Pennsylvania,84
-2020-07-23,44,Rhode Island,7
-2020-07-23,45,South Carolina,196
-2020-07-23,46,South Dakota,3
-2020-07-23,47,Tennessee,164
-2020-07-23,48,Texas,760
-2020-07-23,49,Utah,19
-2020-07-23,51,Virginia,45
-2020-07-23,78,Virgin Islands,0
-2020-07-23,50,Vermont,0
-2020-07-23,53,Washington,29
-2020-07-23,55,Wisconsin,43
-2020-07-23,54,West Virginia,15
-2020-07-23,56,Wyoming,2
-2020-07-22,02,Alaska,5
-2020-07-22,01,Alabama,153
-2020-07-22,05,Arkansas,53
-2020-07-22,04,Arizona,266
-2020-07-22,06,California,717
-2020-07-22,08,Colorado,51
-2020-07-22,09,Connecticut,3
-2020-07-22,11,District of Columbia,61
-2020-07-22,10,Delaware,1
-2020-07-22,12,Florida,814
-2020-07-22,13,Georgia,260
-2020-07-22,15,Hawaii,4
-2020-07-22,19,Iowa,116
-2020-07-22,16,Idaho,24
-2020-07-22,17,Illinois,89
-2020-07-22,18,Indiana,17
-2020-07-22,20,Kansas,24
-2020-07-22,21,Kentucky,50
-2020-07-22,22,Louisiana,221
-2020-07-22,25,Massachusetts,56
-2020-07-22,24,Maryland,54
-2020-07-22,23,Maine,1
-2020-07-22,26,Michigan,32
-2020-07-22,27,Minnesota,6
-2020-07-22,29,Missouri,82
-2020-07-22,28,Mississippi,106
-2020-07-22,30,Montana,12
-2020-07-22,37,North Carolina,120
-2020-07-22,33,New Hampshire,6
-2020-07-22,34,New Jersey,58
-2020-07-22,35,New Mexico,21
-2020-07-22,32,Nevada,0
-2020-07-22,36,New York,60
-2020-07-22,39,Ohio,113
-2020-07-22,40,Oklahoma,71
-2020-07-22,41,Oregon,17
-2020-07-22,42,Pennsylvania,90
-2020-07-22,44,Rhode Island,8
-2020-07-22,45,South Carolina,167
-2020-07-22,46,South Dakota,2
-2020-07-22,47,Tennessee,162
-2020-07-22,48,Texas,428
-2020-07-22,49,Utah,4
-2020-07-22,51,Virginia,67
-2020-07-22,78,Virgin Islands,0
-2020-07-22,50,Vermont,1
-2020-07-22,53,Washington,30
-2020-07-22,55,Wisconsin,28
-2020-07-22,54,West Virginia,21
-2020-07-22,56,Wyoming,3
-2020-07-21,02,Alaska,6
-2020-07-21,01,Alabama,122
-2020-07-21,05,Arkansas,94
-2020-07-21,04,Arizona,259
-2020-07-21,06,California,453
-2020-07-21,08,Colorado,29
-2020-07-21,09,Connecticut,2
-2020-07-21,11,District of Columbia,58
-2020-07-21,10,Delaware,1
-2020-07-21,12,Florida,804
-2020-07-21,13,Georgia,203
-2020-07-21,15,Hawaii,1
-2020-07-21,19,Iowa,34
-2020-07-21,16,Idaho,23
-2020-07-21,17,Illinois,81
-2020-07-21,18,Indiana,9
-2020-07-21,20,Kansas,31
-2020-07-21,21,Kentucky,43
-2020-07-21,22,Louisiana,219
-2020-07-21,25,Massachusetts,2
-2020-07-21,24,Maryland,68
-2020-07-21,23,Maine,3
-2020-07-21,26,Michigan,22
-2020-07-21,27,Minnesota,3
-2020-07-21,29,Missouri,67
-2020-07-21,28,Mississippi,61
-2020-07-21,30,Montana,13
-2020-07-21,37,North Carolina,129
-2020-07-21,31,Nebraska,2
-2020-07-21,33,New Hampshire,7
-2020-07-21,34,New Jersey,25
-2020-07-21,35,New Mexico,12
-2020-07-21,32,Nevada,3
-2020-07-21,36,New York,145
-2020-07-21,39,Ohio,83
-2020-07-21,40,Oklahoma,53
-2020-07-21,41,Oregon,7
-2020-07-21,42,Pennsylvania,70
-2020-07-21,72,Puerto Rico,0
-2020-07-21,44,Rhode Island,4
-2020-07-21,45,South Carolina,122
-2020-07-21,46,South Dakota,2
-2020-07-21,47,Tennessee,182
-2020-07-21,48,Texas,907
-2020-07-21,49,Utah,17
-2020-07-21,51,Virginia,43
-2020-07-21,78,Virgin Islands,2
-2020-07-21,50,Vermont,1
-2020-07-21,53,Washington,29
-2020-07-21,55,Wisconsin,43
-2020-07-21,54,West Virginia,17
-2020-07-21,56,Wyoming,0
 2020-01-07,05,Arkansas,0
 2020-01-06,05,Arkansas,0
 2020-01-05,05,Arkansas,0
@@ -12322,111 +12693,111 @@ date,location,location_name,value
 2020-01-03,32,Nevada,132
 2020-01-02,32,Nevada,132
 2020-01-01,32,Nevada,132
-2021-02-27,72,Puerto Rico,9
-2021-02-27,44,Rhode Island,3
-2021-02-27,45,South Carolina,73
-2021-02-27,46,South Dakota,11
-2021-02-27,47,Tennessee,51
-2021-02-27,48,Texas,634
-2021-02-27,49,Utah,32
-2021-02-27,51,Virginia,112
-2021-02-27,78,Virgin Islands,0
-2021-02-27,50,Vermont,4
-2021-02-27,53,Washington,42
-2021-02-27,55,Wisconsin,56
-2021-02-27,54,West Virginia,20
-2021-02-27,16,Idaho,18
-2021-02-27,17,Illinois,107
-2021-02-27,18,Indiana,78
-2021-02-27,20,Kansas,28
-2021-02-27,21,Kentucky,146
-2021-02-27,22,Louisiana,76
-2021-02-27,25,Massachusetts,104
-2021-02-27,24,Maryland,97
-2021-02-27,23,Maine,8
-2021-02-27,26,Michigan,91
-2021-02-27,27,Minnesota,32
-2021-02-27,29,Missouri,78
-2021-02-27,28,Mississippi,42
-2021-02-27,02,Alaska,3
-2021-02-27,01,Alabama,81
-2021-02-27,05,Arkansas,32
-2021-02-27,04,Arizona,122
-2021-02-27,06,California,451
-2021-02-27,08,Colorado,52
-2021-02-27,09,Connecticut,80
-2021-02-27,11,District of Columbia,12
-2021-02-27,10,Delaware,13
-2021-02-27,12,Florida,546
-2021-02-27,13,Georgia,281
-2021-02-27,15,Hawaii,2
-2021-02-27,19,Iowa,31
-2021-02-27,30,Montana,14
-2021-02-27,37,North Carolina,115
-2021-02-27,38,North Dakota,2
-2021-02-27,31,Nebraska,17
-2021-02-27,33,New Hampshire,8
-2021-02-27,34,New Jersey,216
-2021-02-27,35,New Mexico,22
-2021-02-27,32,Nevada,54
-2021-02-27,36,New York,579
-2021-02-27,39,Ohio,143
-2021-02-27,40,Oklahoma,107
-2021-02-27,41,Oregon,18
-2021-02-27,42,Pennsylvania,191
-2021-02-27,56,Wyoming,0
-2020-07-27,US,US,6041
-2020-07-28,US,US,5202
-2020-07-29,US,US,5361
-2020-07-30,US,US,6243
-2020-07-31,US,US,5984
-2020-08-01,US,US,4473
-2020-08-02,US,US,4622
-2020-08-03,US,US,5061
-2020-08-04,US,US,4828
-2020-08-05,US,US,4902
-2020-08-06,US,US,4922
+2021-03-07,42,Pennsylvania,171
+2021-03-07,72,Puerto Rico,8
+2021-03-07,44,Rhode Island,10
+2021-03-07,45,South Carolina,73
+2021-03-07,46,South Dakota,6
+2021-03-07,47,Tennessee,62
+2021-03-07,48,Texas,447
+2021-03-07,49,Utah,20
+2021-03-07,51,Virginia,82
+2021-03-07,78,Virgin Islands,0
+2021-03-07,50,Vermont,5
+2021-03-07,53,Washington,39
+2021-03-07,55,Wisconsin,51
+2021-03-07,02,Alaska,7
+2021-03-07,01,Alabama,72
+2021-03-07,05,Arkansas,15
+2021-03-07,04,Arizona,103
+2021-03-07,06,California,345
+2021-03-07,08,Colorado,46
+2021-03-07,09,Connecticut,52
+2021-03-07,11,District of Columbia,22
+2021-03-07,10,Delaware,6
+2021-03-07,12,Florida,458
+2021-03-07,13,Georgia,235
+2021-03-07,15,Hawaii,2
+2021-03-07,19,Iowa,27
+2021-03-07,28,Mississippi,23
+2021-03-07,30,Montana,12
+2021-03-07,37,North Carolina,103
+2021-03-07,38,North Dakota,10
+2021-03-07,31,Nebraska,9
+2021-03-07,33,New Hampshire,6
+2021-03-07,34,New Jersey,247
+2021-03-07,35,New Mexico,23
+2021-03-07,32,Nevada,35
+2021-03-07,36,New York,413
+2021-03-07,39,Ohio,131
+2021-03-07,40,Oklahoma,63
+2021-03-07,41,Oregon,9
+2021-03-07,16,Idaho,13
+2021-03-07,17,Illinois,107
+2021-03-07,18,Indiana,50
+2021-03-07,20,Kansas,28
+2021-03-07,21,Kentucky,154
+2021-03-07,22,Louisiana,50
+2021-03-07,25,Massachusetts,85
+2021-03-07,24,Maryland,80
+2021-03-07,23,Maine,9
+2021-03-07,26,Michigan,126
+2021-03-07,27,Minnesota,43
+2021-03-07,29,Missouri,55
+2021-03-07,54,West Virginia,21
+2021-03-07,56,Wyoming,0
+2020-07-27,US,US,6042
+2020-07-28,US,US,5203
+2020-07-29,US,US,5367
+2020-07-30,US,US,6246
+2020-07-31,US,US,5988
+2020-08-01,US,US,4479
+2020-08-02,US,US,4629
+2020-08-03,US,US,5071
+2020-08-04,US,US,4841
+2020-08-05,US,US,4905
+2020-08-06,US,US,4924
 2020-08-07,US,US,4642
 2020-08-08,US,US,4141
-2020-08-09,US,US,4073
-2020-08-10,US,US,4777
+2020-08-09,US,US,4074
+2020-08-10,US,US,4779
 2020-08-11,US,US,4466
-2020-08-12,US,US,4563
-2020-08-13,US,US,4802
+2020-08-12,US,US,4564
+2020-08-13,US,US,4803
 2020-08-14,US,US,4714
-2020-08-15,US,US,4142
+2020-08-15,US,US,4143
 2020-08-16,US,US,4549
-2020-08-17,US,US,4731
+2020-08-17,US,US,4733
 2020-08-18,US,US,4262
-2020-08-19,US,US,4389
-2020-08-20,US,US,4112
-2020-08-21,US,US,4496
+2020-08-19,US,US,4391
+2020-08-20,US,US,4113
+2020-08-21,US,US,4497
 2020-08-22,US,US,3681
-2020-08-23,US,US,3741
-2020-08-24,US,US,4335
-2020-08-25,US,US,4403
-2020-08-26,US,US,4156
+2020-08-23,US,US,3742
+2020-08-24,US,US,4336
+2020-08-25,US,US,4404
+2020-08-26,US,US,4158
 2020-08-27,US,US,4637
 2020-08-28,US,US,4595
 2020-08-29,US,US,3904
 2020-08-30,US,US,3882
 2020-08-31,US,US,4097
 2020-09-01,US,US,4079
-2020-09-02,US,US,3838
+2020-09-02,US,US,3832
 2020-09-03,US,US,4054
 2020-09-04,US,US,3760
 2020-09-05,US,US,3306
 2020-09-06,US,US,3404
 2020-09-07,US,US,3654
 2020-09-08,US,US,4521
-2020-09-09,US,US,4489
-2020-09-10,US,US,4493
+2020-09-09,US,US,4487
+2020-09-10,US,US,4491
 2020-09-11,US,US,4044
 2020-09-12,US,US,3750
-2020-09-13,US,US,3034
-2020-09-14,US,US,3880
+2020-09-13,US,US,3036
+2020-09-14,US,US,3878
 2020-09-15,US,US,3462
-2020-09-16,US,US,3557
+2020-09-16,US,US,3556
 2020-09-17,US,US,3517
 2020-09-18,US,US,3416
 2020-09-19,US,US,3059
@@ -12434,9 +12805,9 @@ date,location,location_name,value
 2020-09-21,US,US,3745
 2020-09-22,US,US,3685
 2020-09-23,US,US,3563
-2020-09-24,US,US,3625
+2020-09-24,US,US,3626
 2020-09-25,US,US,3696
-2020-09-26,US,US,3282
+2020-09-26,US,US,3283
 2020-09-27,US,US,3695
 2020-09-28,US,US,4096
 2020-09-29,US,US,3983
@@ -12445,7 +12816,7 @@ date,location,location_name,value
 2020-10-02,US,US,4229
 2020-10-03,US,US,3652
 2020-10-04,US,US,4575
-2020-10-05,US,US,5369
+2020-10-05,US,US,5371
 2020-10-06,US,US,4808
 2020-10-07,US,US,4829
 2020-10-08,US,US,4761
@@ -12453,141 +12824,148 @@ date,location,location_name,value
 2020-10-10,US,US,4541
 2020-10-11,US,US,4660
 2020-10-12,US,US,5433
-2020-10-13,US,US,5357
+2020-10-13,US,US,5358
 2020-10-14,US,US,5266
 2020-10-15,US,US,5573
 2020-10-16,US,US,5539
 2020-10-17,US,US,5198
 2020-10-18,US,US,5222
-2020-10-19,US,US,6094
-2020-10-20,US,US,5887
+2020-10-19,US,US,6088
+2020-10-20,US,US,5888
 2020-10-21,US,US,6037
-2020-10-22,US,US,6019
+2020-10-22,US,US,6018
 2020-10-23,US,US,6265
 2020-10-24,US,US,5417
-2020-10-25,US,US,5422
+2020-10-25,US,US,5421
 2020-10-26,US,US,6618
-2020-10-27,US,US,6843
-2020-10-28,US,US,7027
+2020-10-27,US,US,6850
+2020-10-28,US,US,7024
 2020-10-29,US,US,7303
-2020-10-30,US,US,6909
-2020-10-31,US,US,6347
+2020-10-30,US,US,6905
+2020-10-31,US,US,6346
 2020-11-01,US,US,6709
-2020-11-02,US,US,7915
+2020-11-02,US,US,7912
 2020-11-03,US,US,7945
 2020-11-04,US,US,8345
-2020-11-05,US,US,8659
-2020-11-06,US,US,8993
-2020-11-07,US,US,8319
-2020-11-08,US,US,8499
-2020-11-09,US,US,10195
-2020-11-10,US,US,10439
-2020-11-11,US,US,10414
-2020-11-12,US,US,10568
-2020-11-13,US,US,10759
-2020-11-14,US,US,10141
-2020-11-15,US,US,10225
-2020-11-16,US,US,12047
-2020-11-17,US,US,11942
-2020-11-18,US,US,12144
-2020-11-19,US,US,12337
-2020-11-20,US,US,12145
-2020-11-21,US,US,11022
-2020-11-22,US,US,11085
-2020-11-23,US,US,13334
-2020-11-24,US,US,13069
-2020-11-25,US,US,12734
-2020-11-26,US,US,11113
-2020-11-27,US,US,13091
-2020-11-28,US,US,12451
+2020-11-05,US,US,8658
+2020-11-06,US,US,8990
+2020-11-07,US,US,8318
+2020-11-08,US,US,8495
+2020-11-09,US,US,10194
+2020-11-10,US,US,10438
+2020-11-11,US,US,10409
+2020-11-12,US,US,10567
+2020-11-13,US,US,10757
+2020-11-14,US,US,10139
+2020-11-15,US,US,10222
+2020-11-16,US,US,12042
+2020-11-17,US,US,11938
+2020-11-18,US,US,12138
+2020-11-19,US,US,12333
+2020-11-20,US,US,12143
+2020-11-21,US,US,11018
+2020-11-22,US,US,11081
+2020-11-23,US,US,13328
+2020-11-24,US,US,13067
+2020-11-25,US,US,12731
+2020-11-26,US,US,11108
+2020-11-27,US,US,13080
+2020-11-28,US,US,12446
 2020-11-29,US,US,11955
-2020-11-30,US,US,14265
-2020-12-01,US,US,13939
-2020-12-02,US,US,13911
+2020-11-30,US,US,14260
+2020-12-01,US,US,13934
+2020-12-02,US,US,13909
 2020-12-03,US,US,14055
-2020-12-04,US,US,13987
-2020-12-05,US,US,12479
-2020-12-06,US,US,12706
-2020-12-07,US,US,14813
-2020-12-08,US,US,15069
-2020-12-09,US,US,15277
-2020-12-10,US,US,15281
-2020-12-11,US,US,15086
-2020-12-12,US,US,13410
-2020-12-13,US,US,13566
-2020-12-14,US,US,16192
-2020-12-15,US,US,15581
-2020-12-16,US,US,15265
-2020-12-17,US,US,15287
-2020-12-18,US,US,15204
-2020-12-19,US,US,13894
-2020-12-20,US,US,14162
-2020-12-21,US,US,16804
-2020-12-22,US,US,16465
-2020-12-23,US,US,15818
-2020-12-24,US,US,14513
-2020-12-25,US,US,13387
-2020-12-26,US,US,15184
-2020-12-27,US,US,14813
-2020-12-28,US,US,16621
-2020-12-29,US,US,16816
-2020-12-30,US,US,16738
-2020-12-31,US,US,16044
-2021-01-01,US,US,15231
-2021-01-02,US,US,16072
-2021-01-03,US,US,15105
-2021-01-04,US,US,18123
-2021-01-05,US,US,17739
-2021-01-06,US,US,17086
-2021-01-07,US,US,17027
-2021-01-08,US,US,16784
-2021-01-09,US,US,14521
-2021-01-10,US,US,14200
-2021-01-11,US,US,16727
-2021-01-12,US,US,16461
-2021-01-13,US,US,16270
-2021-01-14,US,US,16205
-2021-01-15,US,US,15539
-2021-01-16,US,US,13348
-2021-01-17,US,US,12918
-2021-01-18,US,US,14474
-2021-01-19,US,US,14000
-2021-01-20,US,US,13808
-2021-01-21,US,US,14159
-2021-01-22,US,US,13228
+2020-12-04,US,US,13989
+2020-12-05,US,US,12471
+2020-12-06,US,US,12702
+2020-12-07,US,US,14810
+2020-12-08,US,US,15067
+2020-12-09,US,US,15275
+2020-12-10,US,US,15277
+2020-12-11,US,US,15084
+2020-12-12,US,US,13409
+2020-12-13,US,US,13563
+2020-12-14,US,US,16187
+2020-12-15,US,US,15577
+2020-12-16,US,US,15263
+2020-12-17,US,US,15281
+2020-12-18,US,US,15198
+2020-12-19,US,US,13890
+2020-12-20,US,US,14159
+2020-12-21,US,US,16797
+2020-12-22,US,US,16461
+2020-12-23,US,US,15816
+2020-12-24,US,US,14511
+2020-12-25,US,US,13386
+2020-12-26,US,US,15181
+2020-12-27,US,US,14810
+2020-12-28,US,US,16620
+2020-12-29,US,US,16810
+2020-12-30,US,US,16735
+2020-12-31,US,US,16039
+2021-01-01,US,US,15228
+2021-01-02,US,US,16070
+2021-01-03,US,US,15103
+2021-01-04,US,US,18121
+2021-01-05,US,US,17735
+2021-01-06,US,US,17081
+2021-01-07,US,US,17023
+2021-01-08,US,US,16780
+2021-01-09,US,US,14520
+2021-01-10,US,US,14194
+2021-01-11,US,US,16724
+2021-01-12,US,US,16458
+2021-01-13,US,US,16264
+2021-01-14,US,US,16201
+2021-01-15,US,US,15534
+2021-01-16,US,US,13346
+2021-01-17,US,US,12914
+2021-01-18,US,US,14472
+2021-01-19,US,US,13998
+2021-01-20,US,US,13807
+2021-01-21,US,US,14156
+2021-01-22,US,US,13229
 2021-01-23,US,US,11396
-2021-01-24,US,US,10730
-2021-01-25,US,US,13285
-2021-01-26,US,US,12513
-2021-01-27,US,US,12210
+2021-01-24,US,US,10729
+2021-01-25,US,US,13284
+2021-01-26,US,US,12512
+2021-01-27,US,US,12208
 2021-01-28,US,US,11253
 2021-01-29,US,US,11055
 2021-01-30,US,US,9548
 2021-01-31,US,US,9302
 2021-02-01,US,US,10645
-2021-02-02,US,US,10534
+2021-02-02,US,US,10532
 2021-02-03,US,US,10606
 2021-02-04,US,US,10111
-2021-02-05,US,US,9797
+2021-02-05,US,US,9796
 2021-02-06,US,US,8088
 2021-02-07,US,US,7539
 2021-02-08,US,US,9024
-2021-02-09,US,US,8664
+2021-02-09,US,US,8663
 2021-02-10,US,US,8333
-2021-02-11,US,US,7957
-2021-02-12,US,US,7579
-2021-02-13,US,US,6519
+2021-02-11,US,US,7952
+2021-02-12,US,US,7578
+2021-02-13,US,US,6518
 2021-02-14,US,US,5912
 2021-02-15,US,US,7039
 2021-02-16,US,US,7269
 2021-02-17,US,US,6947
 2021-02-18,US,US,6727
-2021-02-19,US,US,6758
-2021-02-20,US,US,5783
-2021-02-21,US,US,5678
-2021-02-22,US,US,6736
-2021-02-23,US,US,6545
-2021-02-24,US,US,6260
-2021-02-25,US,US,6120
-2021-02-26,US,US,6100
-2021-02-27,US,US,5144
+2021-02-19,US,US,6755
+2021-02-20,US,US,5772
+2021-02-21,US,US,5674
+2021-02-22,US,US,6719
+2021-02-23,US,US,6522
+2021-02-24,US,US,6245
+2021-02-25,US,US,6004
+2021-02-26,US,US,5596
+2021-02-27,US,US,4967
+2021-02-28,US,US,4652
+2021-03-01,US,US,5445
+2021-03-02,US,US,5610
+2021-03-03,US,US,5319
+2021-03-04,US,US,5527
+2021-03-05,US,US,5522
+2021-03-07,US,US,4269
