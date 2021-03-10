@@ -2860,7 +2860,7 @@
     "2021-03-01-UVA-Ensemble.csv": "be9c83a937f28bae2285a56bbdaa4de6",
     "2021-03-01-GT-DeepCOVID.csv": "e541bf6d5676c612103192a223f6504c",
     "2021-03-01-RobertWalraven-ESG.csv": "81fbb9ca66b72278a829b74c463b6ebd",
-    "2021-02-22-COVIDhub-baseline.csv": "38ba27bd6f16c65a932083d714b3e13f",
+    "2021-02-22-COVIDhub-baseline.csv": "d51c40c22387394852e26dd5def51577",
     "2021-03-01-COVIDhub-ensemble.csv": "bac8421865c3b80c74e6251057e6e654",
     "2021-03-01-FAIR-NRAR.csv": "8cd9c8995f0c73fcb966be0664c505cb",
     "2021-03-01-JHUAPL-SLPHospEns.csv": "a824f773ddafe919ec7d1b6314229feb",
@@ -2928,5 +2928,10 @@
     "2021-03-07-CU-scenario_high.csv": "c3e420c2f64063bf4c7f8b727bef31e8",
     "2021-03-08-CMU-TimeSeries.csv": "620c0bfa46a42b9131829a8f735cfa77",
     "2021-03-08-QJHong-Encounter.csv": "6cb7d00267829f4cd887fe6f01962fe0",
-    "2021-03-08-COVIDhub-ensemble.csv": "4254bed3cc675424a3a05a6889fb842b"
+    "2021-03-08-COVIDhub-ensemble.csv": "4254bed3cc675424a3a05a6889fb842b",
+    "2021-03-08-FAIR-NRAR.csv": "cd2a8d549f7b7d66374b0930c429ae3e",
+    "2021-03-08-FDANIHASU-Sweight.csv": "d016005001af222a9fd87a1e066cc822",
+    "2021-03-08-JHUAPL-SLPHospEns.csv": "f8724c05cd586f2a4611ad067cd0a17e",
+    "2021-03-08-COVIDhub-baseline.csv": "1277db566b85fddaee5e7663b6d85a86",
+    "2021-03-01-COVIDhub-baseline.csv": "e8a35bb80d7757974fcd7206590027c3"
 }
