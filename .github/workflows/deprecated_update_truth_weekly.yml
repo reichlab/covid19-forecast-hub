@@ -1,11 +1,9 @@
-name: Update JHU, NY Times, USAFacts truth data weekly
+name: (Deprecated) Update JHU, NY Times, USAFacts truth data weekly
 on:
   workflow_dispatch:
     inputs:
       name:
-        description: 'Update truth weekly'
-  schedule:
-    - cron: '0 16 * * 0'
+        description: '(Deprecated) Update truth weekly'
 
 jobs:
   upload_zoltar:
