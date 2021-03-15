@@ -68,15 +68,15 @@ final determination of has been made as detailed below.
 The truth data that hospitalization forecasts (`inc hosp` targets) will
 be evaluated against are the [HealthData.gov COVID-19 Reported Patient
 Impact and Hospital Capacity by State
-Timeseries](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries).
-These data are released weekly although, sometimes, are updated more
+Timeseries](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh).
+These data are released weekly, with occasional updates more
 frequently.
 
 A supplemental data source with daily counts that should be updated more
 frequently (typically daily) but does not include the full time-series
 is [HealthData.gov COVID-19 Reported Patient Impact and Hospital
 Capacity by
-State](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state).
+State](https://healthdata.gov/dataset/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/6xf2-c3ie).
 
 #### Resources for Accessing Hospitalization Data
 
