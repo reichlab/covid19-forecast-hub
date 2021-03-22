@@ -1,9 +1,23 @@
+library(lubridate)
+library(DT)
+library(zoltr) ## devtools::install_github("reichlab/zoltr")
+library(scico)
+source("../processing-fxns/get_next_saturday.R")
+library(tidyverse)
+library(htmltools)
+library(covidHubUtils)
+theme_set(theme_bw())
+
+# new libraries
+library(crosstalk)
+library(plotly)
+
 # a list of state fips code to generate report with
 locs <- hub_locations %>%
   rename(Population = population)
 
 # # for testing
-# state_fips = c("25","42","19")
+# state_fips = c("60")
 
 #run in chunks
 # all_states <-locs[2:21,] #28,33 minutes
@@ -12,8 +26,11 @@ locs <- hub_locations %>%
 # all_states <-locs[43:52,] # 13 minutes
 
 # run without chunks
-all_states <-locs[2:52,] # 75 minutes
-# all_states <-locs[2:3,] # test
+# all_states <-locs[2:52,] # 75 minutes
+# all_states <-locs[54,] # Guam#
+# # all_states <-locs[56,] # PR#
+# # all_states <-locs[58,] # VI#
+all_states <- locs[c(2:52,54,56,58),]
 
 state_fips<-all_states$fips
 state_ab<-all_states$abbreviation
