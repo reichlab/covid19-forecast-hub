@@ -51,10 +51,10 @@ all_states <-locs$fips[2:58]
 
 ```{r setup-location}
 # # # 
-# state <-params$state
+state <-params$state
 #
 # testing
-state <- "26"
+# state <- "26"
 
 # title with state name
 state_name <- locs %>% 
