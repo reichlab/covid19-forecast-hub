@@ -12,6 +12,10 @@ theme_set(theme_bw())
 library(crosstalk)
 library(plotly)
 
+# parallelizing report generation
+library(foreach)
+library(doParallel)
+
 # a list of state fips code to generate report with
 locs <- hub_locations %>%
   rename(Population = population)
@@ -28,8 +32,9 @@ locs <- hub_locations %>%
 # run without chunks
 # all_states <-locs[2:52,] # 75 minutes
 # all_states <-locs[54,] # Guam#
-# # all_states <-locs[56,] # PR#
+# all_states <-locs[56,] # PR#
 # # all_states <-locs[58,] # VI#
+# all_states <- locs[c(56,58),] # PR, VI
 all_states <- locs[c(2:52,54,56,58),]
 
 state_fips <- all_states$fips
@@ -49,7 +54,10 @@ render_state_weekly_report <- function(curr_state_fips, state_ab) {
 }
 
 # render report all states
-for (i in seq_len(nrow(all_states))) {
+# parallelism
+numCores <- 4 # change this number to the number of cores on your computer
+registerDoParallel(numCores)
+foreach (i=seq_len(nrow(all_states))) %dopar% {
   render_state_weekly_report(all_states[i,]$fips, all_states[i,]$abbreviation)
 }
 

@@ -889,8 +889,8 @@ datatable(wide_point_dat_hosp %>%
   formatCurrency('Rate per 100K (Pred)',currency = "", interval = 3, mark = ",", digits=3)%>%
  formatCurrency('Daily hospitalization count (Pred)',currency = "", interval = 3, mark = ",", digits=0)
 ```
-### Cases
 
+### Cases
 
 The ensemble model predicts that weekly totals of observed cases in each of the next four weeks will be between `r state_inc_case_range[1]` and `r state_inc_case_range[2]` cases each week. However for the week ending `r saturday_4_wk_ahead_txt`, the ensemble shows substantial uncertainty, with observed cases between `r state_inc_case_wk_pi_round[1]` and `r state_inc_case_wk_pi_round[2]` deemed possible (95% prediction interval:  `r state_inc_case_wk_pi[1]` -  `r state_inc_case_wk_pi[2]`).
 
