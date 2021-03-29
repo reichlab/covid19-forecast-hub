@@ -33,7 +33,7 @@ methods_long: "We incorporate mobility information into a simplified SIR model w
   \ election mobility increase of 25% from 09/01 to 11/03. The summer reduction of mobility \
   \ accounts for elevated outdoor activities while election mobility increase accounts for \
   \ large gatherings of political rally which maybe washed out in the averaged state-mobility. \
-  \ We assume 80% of the vulnerable population will be vaccinated within two months. \
+  \ We assume 70% of the vulnerable population will be vaccinated within two months. \
   \ The assumption is antibody will be effective 3 weeks after the first shot. \
   \ To account for the recent mutations, we increases the infection rate by 5%. \
   \ Two vaccination scenarios have been considered and predicted which are shown in our website. \
