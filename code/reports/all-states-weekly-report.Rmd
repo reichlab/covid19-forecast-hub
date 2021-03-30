@@ -5,9 +5,9 @@ output:
     toc_float:
       collapsed: false
       smooth_scroll: false
+    anchor_section: true
 params:
   state: "01"
-
 ---
 <!-- code to run rmarkdown::render(input="./vignettes/covidHubUtils-overview.Rmd") -->
 
@@ -386,10 +386,10 @@ recent_inc_hosp_totals <- load_truth(
 rename(fips = location)
 
 ```
+
 During periods of relative stability, models in general show broad agreement about the predicted trajectory of the outbreak. However, when there are steep surges or declines in cases or deaths, models often have quite different predictions for the upcoming weeks. The result is that there is increased uncertainty in the ensemble forecast, which can be seen as wider confidence intervals in the forecast visualization. You can explore the full set of models, including their forecasts for past weeks online at our [interactive forecast visualization](https://viz.covid19forecasthub.org/).
 
 When interpreting probability of an increase, it's important to note that the increase or decrease is relative to the location-specific recent observed incidence, which varies across locations.
-
 
 ### Deaths
 
@@ -481,6 +481,8 @@ bias_note_d<-if (D_PI50_cover$pi_in == 'no') {
 
 
 ```
+
+
 For state-level death forecasts made over the last 6 weeks in `r state_name` for which observed data are now available, the 95% prediction intervals covered the truth `r D_PI95_covern`% of the time, and the 50% prediction intervals covered the truth `r D_PI50_covern`% of the time.  `r bias_note_d`
 
 <!-- The forecasts on average over the last 6 weeks predicted values that were `r D_PI50_bias` than the observed data. -->
@@ -539,7 +541,6 @@ ggplot() +
   theme(legend.position = c(.05,.95), legend.justification = c(0,1),legend.key = element_rect(colour = "transparent", fill = "white"),
     legend.background = element_rect(alpha("white", 0.5)),legend.box="horizontal")
 ```
-
 
 
 ```{r process-ensemble-data-deaths for US and state}
@@ -1150,7 +1151,7 @@ datatable(wide_point_dat2p %>%
 ```
 
 
-
+# Miscellaneous
 
 This report was reproducibly and dynamically generated using RMarkdown. The code for the report can be found [here](https://github.com/reichlab/covid19-forecast-hub/tree/master/code/reports).
 
