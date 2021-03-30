@@ -958,12 +958,7 @@ datatable(wide_point_dat2p %>%
  formatCurrency('Weekly case count (Pred)',currency = "", interval = 3, mark = ",", digits=0)
 ```
 
-
-
-##
-
 This report was reproducibly and dynamically generated using RMarkdown. The code for the report can be found [here](https://github.com/reichlab/covid19-forecast-hub/tree/master/code/reports).
-
 
 ```{r}
 # htmltools::includeScript("statcounter.js")

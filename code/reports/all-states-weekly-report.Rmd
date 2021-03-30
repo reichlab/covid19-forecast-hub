@@ -1150,9 +1150,6 @@ datatable(wide_point_dat2p %>%
 
 ```
 
-
-# Miscellaneous
-
 This report was reproducibly and dynamically generated using RMarkdown. The code for the report can be found [here](https://github.com/reichlab/covid19-forecast-hub/tree/master/code/reports).
 
 
