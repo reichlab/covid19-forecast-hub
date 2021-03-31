@@ -18,7 +18,7 @@ jobs:
     # - run: sudo apt-get remove ghc-** azure-cli firefox google-cloud-sdk google-chrome-stable hhvm dotnet-sdk-** dotnet-runtime-** moby-** adoptopenjdk-** mongodb-org-** mysql-**
     # - run: sudo apt-get autoremove
     - name: Maximize build space
-      uses: easimon/maximize-build-space@master
+      uses: easimon/maximize-build-space@v4
       with:
         root-reserve-mb: 512
         swap-size-mb: 1024
