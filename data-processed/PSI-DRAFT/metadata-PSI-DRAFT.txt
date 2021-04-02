@@ -16,6 +16,6 @@ methods_long: "Deterministic fit of a compartmental SEIRX model to cumulative de
   profiles, followed by stochastic simulations using the optimal parameters. All compartments
   are stratified by age. 'I' compartments are additionally divided by disease severity
   into Asymptomatic, Mild, Flu-like, and Severe.  Severe disease is defined by the
-  need for an ICU bed. Interventions are fit generically to a three value smooth function.  Forward
-  projections are conditional on interventions/reproductive number remaining unchanged.\n Updates:\n July 20 - model is fit using MCMC procedure"
+  need for an ICU bed. Interventions are fit generically to an n-value smooth function.  Forward
+  projections are conditional on interventions/reproductive number remaining unchanged.\n Updates:\n July 20 - model is fit using MCMC procedure\n August 10 - R(t) is fit using n=3, 4, and 5 values. The n-value resulting in the lowest AICc score is used for the forecast."
 

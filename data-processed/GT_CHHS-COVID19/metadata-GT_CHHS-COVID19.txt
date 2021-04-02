@@ -6,7 +6,7 @@ model_contributors: Pinar Keskinocak (Georgia Tech) <pinar@isye.gatech.edu>,
     Arden Baxter (Georgia Tech) <abaxter@gatech.edu>, 
     John Asplund (Georgia Tech and Metron, Inc.), 
     Nicoleta Serban (Georgia Tech)
-website_url: https://github.com/pkeskinocak/COVID19GA
+website_url: https://github.com/pkeskinocak/Center-for-Health-and-Humanitarian-Systems/tree/master/COVID-19
 license: cc-by-4.0
 team_model_designation: primary
 methods: Agent-based simulation model to project COVID19 infection spread.

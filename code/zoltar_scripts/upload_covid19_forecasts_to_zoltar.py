@@ -1,5 +1,6 @@
 from zoltpy.quantile_io import json_io_dict_from_quantile_csv_file
 from zoltpy import util
+from zoltpy.cdc_io import YYYY_MM_DD_DATE_FORMAT
 from zoltpy.connection import ZoltarConnection
 from zoltpy.covid19 import COVID_TARGETS, covid19_row_validator, validate_quantile_csv_file, COVID_ADDL_REQ_COLS
 import os
@@ -58,6 +59,8 @@ project_timezeros = [timezero.timezero_date for timezero in project_obj.timezero
 models = [model for model in project_obj.models]
 model_abbrs = [model.abbreviation for model in models]
 
+# Convert all timezeros from Date type to str type
+project_timezeros = [project_timezero.strftime(YYYY_MM_DD_DATE_FORMAT) for project_timezero in project_timezeros]
 
 # Function to read metadata file to get model name
 def metadata_dict_for_file(metadata_file):
@@ -85,6 +88,56 @@ def has_changed(metadata, model):
             logging.debug(f"{metadata_field} has changed in {metadata['model_abbr']}")
             return True
     return False
+
+
+'''
+    Upload a covid forecast with a reference to the model itself. This is based off zoltpy's util.upload_forecast()
+    but remove any codes that require polling of model information from zoltar.
+'''
+def upload_covid_forecast_by_model(conn, json_io_dict, forecast_filename, project_name, model, model_abbr, timezero_date, notes='',
+                    overwrite=False, sync=True):
+    conn.re_authenticate_if_necessary()
+    if overwrite:
+        print(f"Existing forecast({forecast_filename}) present. Deleting it on Zoltar to upload latest one")
+        del_job = util.delete_forecast(conn, project_name, model_abbr, timezero_date)
+        util.busy_poll_job(del_job)
+
+    # check json formatting before upload
+    # accepts either string or dictionary
+    if isinstance(json_io_dict, str):
+        try:
+            with open(json_io_dict) as jsonfile:
+                json_io_dict = json.load(jsonfile)
+        except:
+            print("""\nERROR - cannot read JSON Format. 
+            Uploading a CSV? Consider converting to quantile csv style with:
+            quantile_json, error_from_transformation = quantile_io.json_io_dict_from_quantile_csv_file(...)""")
+            sys.exit(1)
+
+    tries=0
+    # Runs only twice
+    while tries<2:
+        try:
+            job = model.upload_forecast(json_io_dict, forecast_filename, timezero_date, notes)
+            if sync:
+                return util.busy_poll_job(job)
+            else:
+                return job
+        except RuntimeError as err:
+            print(f"RuntimeError occured while uploading forecast. Error: {err}")
+            if err.args is not None and len(err.args)>1 and err.args[1].status_code==400 and not overwrite:
+                # status code is 400 and we need to rewrite this model.
+                response = err.args[1]
+                if str(json.loads(response.text)["error"]).startswith("A forecast already exists"): 
+                    # now we are sure it is the existing forecast error,, delete the one on zoltar and then try again.
+                    print(f"This forecast({model_abbr}) with timezero ({timezero_date}) is already present, deleting forecast on Zoltar and then retrying...")
+                    del_job = util.delete_forecast(conn, project_name, model_abbr, timezero_date)
+                    util.busy_poll_job(del_job)
+                    print("Deleted on Zoltar. Retrying now.")
+        finally:
+            # always update the number of tries.
+            tries+=1
+
 
 
 # Function to upload all forecasts in a specific directory
@@ -129,6 +182,9 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
     # Get names of existing forecasts to avoid re-upload
     existing_time_zeros = [forecast.timezero.timezero_date for forecast in model.forecasts]
 
+    # Convert all timezeros from Date type to str type
+    existing_time_zeros = [existing_time_zero.strftime(YYYY_MM_DD_DATE_FORMAT) for existing_time_zero in existing_time_zeros]
+
     # Batch upload
     json_io_dict_batch = []
     forecast_filename_batch = []
@@ -155,7 +211,22 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
             if db.get(forecast, None) != checksum:
                 print(forecast, db.get(forecast, None))
                 if time_zero_date in existing_time_zeros:
-                    over_write = True
+                    
+                    # Check if the already existing forecast has the same issue date
+                    
+                    from datetime import date
+                    local_issue_date = date.today().strftime("%Y-%m-%d")
+
+                    uploaded_forecast = [forecast for forecast in model.forecasts if forecast.timezero.timezero_date.strftime(YYYY_MM_DD_DATE_FORMAT) == time_zero_date][0]
+                    uploaded_issue_date = uploaded_forecast.issue_date
+
+                    if local_issue_date == uploaded_issue_date:
+                        # Overwrite the existing forecast if has the same issue date
+                        over_write = True
+                        logger.info(f"Overwrite existing forecast={forecast} with newer version because the new issue_date={local_issue_date} is the same as the uploaded file issue_date={uploaded_issue_date}")
+                    else:
+                        logger.info(f"Add newer version to forecast={forecast} because the new issue_date={local_issue_date} is different from uploaded file issue_date={uploaded_issue_date}")
+
             else:
                 continue
 
@@ -187,8 +258,8 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
                 else:
                     try:
                         logger.debug('Upload forecast for model: %s \t|\t File: %s\n' % (metadata['model_abbr'],forecast))
-                        util.upload_forecast(conn, quantile_json, forecast,
-                                             project_name, metadata['model_abbr'], time_zero_date,
+                        upload_covid_forecast_by_model(conn, quantile_json, forecast,
+                                             project_name, model, metadata['model_abbr'], time_zero_date,
                                              overwrite=over_write)
                         db[forecast] = checksum
                     except Exception as ex:
@@ -229,6 +300,7 @@ if __name__ == '__main__':
         for directory, errors in output_errors.items():
             print("\n* ERROR IN '", directory, "'")
             print(errors)
+        os.sync()  # make sure we flush before exiting
         sys.exit("\n ERRORS FOUND EXITING BUILD...")
     else:
         print("✓ no errors")

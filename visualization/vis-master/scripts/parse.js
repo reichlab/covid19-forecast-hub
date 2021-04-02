@@ -21,7 +21,7 @@ const HISTORY_IN_FILE = './scripts/assets/history.json'
 const HISTORY_OUT_FILE = './src/assets/data/history.json'
 const METADATA_OUT_FILE = './src/assets/data/metadata.json'
 //const SEASONS = utils.getSubDirectories(DATA_DIR)
-SEASONS = ["Incident Deaths", "Cumulative Deaths"]
+SEASONS = ["Incident Deaths", "Cumulative Deaths", "Incident Cases"]
 
 console.log(' Generating data files for flusight')
 console.log(' ----------------------------------\n')

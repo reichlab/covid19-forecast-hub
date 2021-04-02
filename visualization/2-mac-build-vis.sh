@@ -9,11 +9,6 @@ cp ./config.yaml ./vis-master/config.yaml
 # Updating comment to trigger new travis build
 cd ./vis-master
 
-# Clean footer
-sed -i "" '/.modal#dis/,/footer.modal-card/d' ./src/components/Foot.vue
-sed -ni "" '/and dis/{s/.*//;x;d;};x;p;${x;p;}' ./src/components/Foot.vue
-sed -i "" '/let showModa/,/})$/d' ./src/components/Foot.vue
-
 # Clean navbar
 # sed -i "" '/a($/,/logo")$/d' ./src/components/Navbar.vue
 # sed -i "" '/padding-left/,/border-left-width/d' ./src/components/Navbar.vue

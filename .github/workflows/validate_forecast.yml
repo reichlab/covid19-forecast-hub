@@ -7,7 +7,7 @@ on:
         required: true
 
 jobs:
-  upload_zoltar:
+  validate_forecast:
     runs-on: ubuntu-latest
     strategy:
       matrix:

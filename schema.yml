@@ -14,6 +14,7 @@ mapping:
         type: str
         range:
             max: 31
+        pattern: ^[a-zA-Z0-9_+]+-[a-zA-Z0-9_+]+$
     'model_contributors':
         required: True
         type: str

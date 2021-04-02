@@ -55,20 +55,28 @@ then a LICENSE.txt file must exist within the folder and provide a license.
 
 ### team_model_designation 
 
-Upon submission this field should be one of “primary”, “proposed” or “other”. 
+Upon initial submission this field should be one of “primary”, “proposed” or “other”. 
 For teams submitting only one model, this should be “primary”. 
-For each team, one model can be designated as “primary”. 
-Primary means the model will be ranked in evaluations and considered eligible 
-for ensemble inclusion.
+For each team, only one model can be designated as “primary”. 
 
-Other models can be designated as “proposed” or “other”. 
-For models proposed as “proposed” the Hub team will determine whether the 
+*Primary* means the model will be scored in evaluations, eligible for inclusion
+in the [ensemble](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/COVIDhub-ensemble), 
+and [visualized](https://viz.covid19forecasthub.org/).
+
+*Proposed* means the team would like the model to be considered as a "secondary"
+model rather than an "other" model. 
+The Hub team will determine whether the model's
 methodology is distinct enough that the model should be included in the ensemble 
-(for as long as there are limits on the number of models per team in the 
-ensemble). 
-Models proposed as “other” will not be ranked in evaluations 
-(they may still be listed, just not with a rank) and not eligible for inclusion 
-in the ensemble.
+in which case the model will get the "secondary" designation.
+If the methodology is not distinct enough, e.g. it differs from the primary model
+by setting certain parameters to specific values, then the model will be 
+designated as "other". 
+
+*Secondary* means the forecasts will be [visualized](https://viz.covid19forecasthub.org/) and eligible for inclusion
+in the [ensemble](https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/COVIDhub-ensemble), but will not be scored in evaluations. 
+
+*Other* means the forecasts will not be visualized, included in the ensemble, 
+nor scored in evaluations.
 
 
 ### methods
@@ -100,19 +108,22 @@ One or more twitter handles (without the @) separated by commas.
 
 ### data_inputs
 
-(previously `data_inputs_known` and `data_source_known`)
+A description of the data sources used to inform the model and the truth data
+targetted by model forecasts. 
+Common data sources are 
+[NYTimes](https://github.com/nytimes/covid-19-data), 
+[JHU CSSE](https://github.com/CSSEGISandData/COVID-19), 
+[COVIDTracking](https://covidtracking.com/data), 
+[Google mobility](https://www.google.com/covid19/mobility/), 
+[HHS hospitalization](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries), etc. 
 
-A description of the data sources used to inform the model, 
-e.g. "NYTimes death data", "JHU CSSE case and death data", mobility data, etc. 
+An example description could be 
+
+> cases forecasts use NYTimes data and target JHU CSSE truth data,
+> hospitalization forecasts use and target HHS hospitalization data
 
 
-### this_model_is_an_ensemble
 
-_**DEPRECATED**_: please remove from metadata file. 
-In the future, inclusion of this field will be an error.
-
-true/false indicating whether the model here is a combination of a set of other
-models
 
 
 ### citation

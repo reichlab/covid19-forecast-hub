@@ -29,7 +29,7 @@ function makePredictionRow (p, tooltip) {
 export default class LegendDrawer extends Component {
   constructor (config) {
     super()
-
+    this.init = false
     this.selection.classed('legend-drawer', true)
 
     // Items above the controls (actual, observed, history)
@@ -188,9 +188,20 @@ export default class LegendDrawer extends Component {
 
     // Plot models which are unpinned in the bottom section
     this.bottomContainer.selectAll('*').remove()
+    if(this.init == false) {
+      predictions.forEach(p => p.hidden = true)
+    }
     this.bottomRows = predictions
       .filter(p => config.pinnedModels.indexOf(p.id) === -1)
       .map(p => {
+        if(this.init == false) {
+        p.hidden = !((this.showHideButtons.idx == 2) && (p.id == 'COVIDhub-ensemble'))
+        } else
+        {
+          if(this.showHideButtons.idx == 2 && p.id != 'COVIDhub-ensemble') {
+            p.hidden = true
+          }
+        }
         let drawerRow = makePredictionRow(p, this.tooltip)
         if(drawerRow.id ==='COVIDhub-ensemble') {
           this.ensembleRow = drawerRow
@@ -202,17 +213,20 @@ export default class LegendDrawer extends Component {
         this.bottomContainer.append(() => drawerRow.node)
         return drawerRow
       })
-    
+    // If not initialized sset the initial status based on the selected 'Show' toggle
+    if(this.init == false) { 
       if(this.showHideButtons.idx == 2) {
-        this.showHideAllItems(false)
         if(!this.ensembleRow) {
           this.ensembleRow = this.bottomRows.find(r => r.id === 'COVIDhub-ensemble')
         }
-        if (this.ensembleRow) {
-          this.ensembleRow.click()
-        }
         this.showHideButtons.set(2)
+      } else if(this.showHideButtons.idx == 0) {
+        this.bottomRows.forEach (p => p.click())
+        this.showHideButtons.set(0)
       }
+      this.init = true
+    }
+
       
 
     // Handle pinned models separately
@@ -240,6 +254,7 @@ export default class LegendDrawer extends Component {
         row.na = p.noData
       }
     })
+    ev.publish(this.uuid, ev.LEGEND_RESCALE, {})
   }
 
   updateTitle(title) {

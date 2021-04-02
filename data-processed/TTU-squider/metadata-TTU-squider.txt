@@ -1,0 +1,10 @@
+team_name: Hussain Lab at Texas Tech University
+model_name: SQUIDER
+model_abbr: TTU-squider
+model_contributors: Fazle Hussain (Texas Tech University),  Zeina Khan (Texas Tech University),  Frank Van Bussel (Texas Tech University)<frank.van-bussel@ttu.edu>
+website_url: https://github.com/fvbttu/squider
+license: cc-by-4.0
+team_model_designation: primary
+methods: SIR-based compartmental model with a power law incidence rate, unknown as well as known infecteds, and time dependent social contact suppression and relaxation.
+data_inputs: JHU CSSE (confirmed cases; reported fatalities), US Census (population)
+citation: https://arxiv.org/abs/2006.05955

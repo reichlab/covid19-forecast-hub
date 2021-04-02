@@ -1,0 +1,9 @@
+team_name: Caltech CS156 
+model_name: CS156
+model_abbr: Caltech-CS156
+model_contributors: Yaser S. Abu-Mostafa (Caltech) <yaser@caltech.edu>, Connor Soohoo (Caltech), Albert Tseng (Caltech), Dominic Yurk (Caltech), Alexander Zlokapa (Caltech), Rahil Bathwal (Caltech), Nicholas Chang (Caltech), Pavan Chitta (Caltech), Kiruthika Devasenapathy (Caltech), Annie Erickson (Caltech), Sumit Goel (Caltech), Jethin Gowda (Caltech), Qixuan Jin (Caltech), HyeongChan Jo (Caltech), Juhyun Kim (Caltech), Pranav Kulkarni (Caltech), Sam Lushtak (Caltech), Ethan Mann (Caltech), Max Popken (Caltech), Kushal Tirumala (Caltech), Vignesh Varadarajan (Caltech), Jagath Vytheeswaran (Caltech), Chris Wang (Caltech), Akshay Yeluri (Caltech), Michael Zhang (Caltech)
+website_url: http://cs156.caltech.edu
+license: cc-by-nc-4.0
+team_model_designation: primary
+methods: Aggregate of 14 machine learning (neural network, autoregressive, decision tree, etc.) and epidemiological models guided by machine learning. 
+team_funding: Clinard Innovation Fund, Caltech SURF Office, Mr. Charles Trimble and Ms. Liying Huang 

@@ -48,6 +48,8 @@ class CSV {
   }
   /**
    * Parse bin data for all the states and targets
+   * 
+   * TODO: this function isn't used; remove?
    */
   parseBins(csvData) {
     this.bins = {};
@@ -84,10 +86,23 @@ class CSV {
       this.bins[state] = {};
       for (let target of meta_1.targetIds) {
         try {
+          // we now have three targets:
+          // - inc. death
+          // - cum. death
+          // - inc. case
+          // the following logic has been adjusted to deal with this.
+
+          // TODO: perhaps we need to decouple this a bit (i.e., pass in
+          //       the type of target before-hand so this searching isn't
+          //       necessary?)
           let targetFullName = meta_1.targetFullNameInc[target]
           if (csvData[meta_1.stateFullName[state]][targetFullName] == undefined) {
             targetFullName = meta_1.targetFullNameCum[target]
           }
+          if (csvData[meta_1.stateFullName[state]][targetFullName] == undefined) {
+            targetFullName = meta_1.targetFullNameIncCase[target]
+          }
+
           let bins = csvData[meta_1.stateFullName[state]][targetFullName]
             .filter(row => row[2] == 'quantile')
             .map(row => [row[4], row[5]]); // quantile, value
@@ -118,6 +133,10 @@ class CSV {
           if (csvData[meta_1.stateFullName[state]][targetFullName] == undefined) {
             targetFullName = meta_1.targetFullNameCum[target]
           }
+          if (csvData[meta_1.stateFullName[state]][targetFullName] == undefined) {
+            targetFullName = meta_1.targetFullNameIncCase[target]
+          }
+
           let point = csvData[meta_1.stateFullName[state]][targetFullName]
             .find(row => row[2] == 'point')[5];
           if (point === 'NA') {

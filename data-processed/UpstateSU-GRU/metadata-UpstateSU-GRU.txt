@@ -1,0 +1,14 @@
+team_name: SUNY Upstate and SU Covid-19 Prediction Team 
+model_name: GRU 
+model_abbr: UpstateSU-GRU
+model_contributors: Yanli Zhang-James (SUNY Upstate Medical University) <zhangy@upstate.edu>, Asif Salekin (Syracuse University) <asalekin@syr.edu>, Jonathan Hess (SUNY Upstate Medical University) <hessjlmsg@gmail.com>, Samuel Chen (SUNY Upstate Medical University) <ChenSa@upstate.edu>, Dongliang Wang (SUNY Upstate Medical University)  <WangD@upstate.edu>, Christopher P. Morley (SUNY Upstate Medical University) <MorleyCP@upstate.edu>, Stephen V Faraone (SUNY Upstate Medical University) <sfaraone@childpsychresearch.org>
+website_url: ylzhang29.github.io/UpstateSU-GRU-Covid
+license: mit
+team_model_designation: primary
+methods: County-level forecast using recurrent neural network seq2seq model with the Gated recurrent units (GRU)
+repo_url: https://github.com/ylzhang29/UpstateSU-GRU-Covid
+
+data_inputs: JHU CSSE case and death data, Google mobility, county-level demographic information from US census, regional health index from 2019 Kaiser Family Foundation Survey (KFF) and the Behavioral Risk Factor Surveillance System (BRFSS).
+methods_long: We adopted the Sequence-to-sequence learning framework (Seq2Seq) that powers the language-processing apps like Google Translate (Sutskever et al., 2014). The Seq2Seq model is a feed-forward recurrent neural networks (RNN) that are specialized in mapping sequences. The Seq2Seq algorithm trains a model to convert sequences from the input to sequences in the output. Our model input sequences include daily smoothed incident cases and deaths counts google mobility index, and daily reproduction number, R (calculated based on daily indecent cases). We also aggregate the county demographic and health risk indices to model the baseline risk score.  The model takes ‘m’ days data (as well as the demographic and health risk indices) as input, and predict covid-19 cases or deaths for ‘n’ future days.  
+
+

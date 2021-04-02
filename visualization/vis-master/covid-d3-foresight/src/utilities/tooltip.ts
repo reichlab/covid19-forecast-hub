@@ -64,9 +64,10 @@ export function parseText({ title, text }): string {
 export function parsePoint({ title, values, color }): string {
   let html = `<div class='tooltip-row' style='background:${color};color:white'>${title}</div>`
   values.forEach(v => {
+    console.log(v)
     html += `<div class='tooltip-row'>
                ${v.key}
-               <span class='bold'>${v.value.toFixed(0)}</span>
+               <span class='bold'> ${parseInt(v.value).toLocaleString()}</span>
              </div>`
   })
   return html
@@ -77,7 +78,7 @@ export function parsePoint({ title, values, color }): string {
  * `title` is shown in italics first
  * Each of the `predictions` at `index` provide the data for rows
  */
-export function parsePredictions({ title, predictions, index }): string {
+export function parsePredictions({ title, predictions, index, aheadIndex }): string {
   let maxPreds = 10
   let html = ''
 
@@ -100,9 +101,14 @@ export function parsePredictions({ title, predictions, index }): string {
     html += `<div class='tooltip-row' style='${style}'>
                ${p.id}
                <span class='bold'>
-                 ${p.query(index).toFixed(0)}
-               </span>
-             </div>`
+                 ${parseInt(p.query(index)).toLocaleString()}
+               </span> `
+    if(p.cid != -1 && p.id != 'Actual') {
+      html+=`<br>
+               ${parseInt(p.modelData[index - aheadIndex - 1].series[aheadIndex].low[p.cid]).toLocaleString()} - ${parseInt(p.modelData[index - aheadIndex -1].series[aheadIndex].high[p.cid]).toLocaleString()}
+             `
+    }
+    html+=`</div>`
   })
 
   // Notify in case of overflow
