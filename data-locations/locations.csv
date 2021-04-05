@@ -1,5 +1,5 @@
 abbreviation,location,location_name,population
-US,US,US,328728466.0
+US,US,US,332875137.0
 AL,01,Alabama,4903185.0
 AK,02,Alaska,731545.0
 AZ,04,Arizona,7278717.0
@@ -52,10 +52,14 @@ WV,54,West Virginia,1792147.0
 WI,55,Wisconsin,5822434.0
 WY,56,Wyoming,578759.0
 AS,60,American Samoa,55641.0
+AS,60,American Samoa,55641.0
 GU,66,Guam,164229.0
+GU,66,Guam,164229.0
+MP,69,Northern Mariana Islands,55144.0
 MP,69,Northern Mariana Islands,55144.0
 PR,72,Puerto Rico,3754939.0
 UM,74,U.S. Minor Outlying Islands,
+VI,78,Virgin Islands,107268.0
 VI,78,Virgin Islands,107268.0
 ,01001,Autauga County,55869.0
 ,01003,Baldwin County,223234.0
@@ -129,6 +133,8 @@ VI,78,Virgin Islands,107268.0
 ,02020,Anchorage County,288000.0
 ,02050,Bethel County,18386.0
 ,02060,Bristol Bay County,836.0
+,02063,Chugach County,6751.0
+,02066,Copper River County,2699.0
 ,02068,Denali County,2097.0
 ,02070,Dillingham County,4916.0
 ,02090,Fairbanks North Star County,96849.0
