@@ -35,7 +35,11 @@ output:
 <!-- </style> -->
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE
+)
 library(lubridate)
 library(DT)
 library(zoltr) ## devtools::install_github("reichlab/zoltr")
@@ -262,11 +266,9 @@ For `r format(wk4_monday, "%B %d, %Y")` COVID-19 daily hospitalizations in the U
 <!-- Throughought most of July, models have in general shown broad agreement about the trajectory of the outbreak over the coming weeks. However, the recent surge in cases has left models with quite different interpretations about what the next few weeks hold in terms of how many reported deaths from COVID-19 we will see.  -->
 You can explore the full set of models, including their forecasts for past weeks online at our [interactive forecast visualization](https://viz.covid19forecasthub.org/).
 
-
 ### Deaths
+
 ```{r make-US-inc-death-plot}
-
-
 quantiles_to_plot <- c(0.025, 0.1, 0.25, 0.75, 0.9, 0.975)
 
 blues <- RColorBrewer::brewer.pal(n=length(quantiles_to_plot)/2+1, "Blues")
@@ -289,8 +291,7 @@ inc_death_all_points <- inc_death_truth %>%
   bind_rows(filter(inc_death_forecast, class=="point")) %>%
   bind_rows(filter(inc_death_truth, target_end_date==last_5_saturdays[5]) %>% mutate(model="COVIDhub-ensemble")) %>%
   mutate(model = relevel(factor(model), ref="observed data (JHU)"))
-  
-    
+
 # inc death data for code of uncertainty
 dummy_inc_death <- tibble(
   quantile = quantiles_to_plot, 
@@ -314,9 +315,9 @@ inc_death_quantiles <- inc_death_forecast %>%
   tidyr::pivot_wider(names_from='endpoint_type', values_from='value')
 
 ggplot() +
-  geom_ribbon(data = inc_death_quantiles %>% dplyr::filter(fips=="US"),
-    mapping = aes(x = target_end_date,
-      ymin=lower, ymax=upper,
+  geom_ribbon(data = inc_death_quantiles %>% dplyr::filter(fips=="US"), 
+      mapping = aes(x = target_end_date,
+      ymin=as.numeric(lower), ymax=as.numeric(upper),
       fill=`Prediction Interval`)) +
   geom_line(data=inc_death_all_points %>%
       dplyr::filter(fips == "US"),
@@ -447,7 +448,7 @@ inc_case_quantiles <- inc_case_forecast %>%
 ggplot() +
   geom_ribbon(data = inc_case_quantiles %>% dplyr::filter(fips=="US"),
     mapping = aes(x = target_end_date,
-      ymin=lower, ymax=upper,
+      ymin=as.numeric(lower), ymax=as.numeric(upper),
       fill=`Prediction Interval`)) +
   geom_line(data=inc_case_all_points %>%
       dplyr::filter(fips == "US"),
