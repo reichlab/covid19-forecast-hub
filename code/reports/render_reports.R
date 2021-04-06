@@ -16,6 +16,10 @@ library(plotly)
 library(foreach)
 library(doParallel)
 
+# use newer version of Pandoc if possible
+rmarkdown::find_pandoc(version = "2.13")
+print(rmarkdown::pandoc_version())
+
 # a list of state fips code to generate report with
 locs <- hub_locations %>%
   rename(Population = population)
