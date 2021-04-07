@@ -47,6 +47,8 @@ jobs:
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
     # - run: npm install
     - run: pip3 install -r visualization/requirements.txt
+      env:
+        CFLAGS: "-Wno-deprecated-declarations -Wno-unreachable-code"
     - run: bash travis/upload_zoltar_master.sh
       env:
         Z_USERNAME: ${{ secrets.Z_USERNAME}}
