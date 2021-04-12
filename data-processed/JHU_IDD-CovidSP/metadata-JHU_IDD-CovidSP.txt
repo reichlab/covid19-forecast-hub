@@ -20,7 +20,7 @@ methods: County-level metapopulation model with commuting and stochastic SEIR di
   with social-distancing indicators.
 team_funding: State of California and US Government
 data_inputs: JHU CSSE (confirmed cases; reported fatalities), US Census (population; mobility)
-citation: Lemaitre, J.C., Grantz, K.H., Kaminsky, J. et al. A scenario modeling pipeline for COVID-19 emergency planning. Sci Rep 11, 7534 (2021). https://doi.org/10.1038/s41598-021-86811-0
+citation: https://doi.org/10.1038/s41598-021-86811-0
 methods_long: "This is a county-level metapopulation model with stochastic SEIR disease\
   \  dynamics. This model incorporates uncertainty in epidemiological parameters \
   \ and the effectiveness of state-wide intervention policies on social  distancing\
