@@ -5,7 +5,4 @@ model_contributors: Georgia Perakis (MIT Sloan School of Management) <georgiap@m
 website_url:
 license: MIT License
 team_model_designation: primary
-methods: Ensemble model aggregating predictions from four constituent models: 1. MDP feature representation
-2. KNN time-series
-3. Bi-LSTM time-series
-4. C-SEIRD epidemiological
+methods: Ensemble model aggregating predictions from four constituent models. 1. MDP feature representation 2. KNN time-series 3. Bi-LSTM time-series 4. C-SEIRD epidemiological
