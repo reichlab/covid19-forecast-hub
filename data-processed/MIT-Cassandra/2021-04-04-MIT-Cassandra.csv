@@ -1,481 +1,481 @@
 forecast_date,target,target_end_date,location,type,quantile,value
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,01,point,NA,10764.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,01,point,NA,3503.2170343990438
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,01,point,NA,10862.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,01,point,NA,6361.085224786308
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,01,point,NA,10982.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,01,point,NA,8935.790763071156
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,01,point,NA,11081.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,01,point,NA,11255.391823664075
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,01,point,NA,11189.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,01,point,NA,13345.166146287811
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,04,point,NA,17171.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,04,point,NA,4264.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,04,point,NA,17350.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,04,point,NA,8381.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,04,point,NA,17545.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,04,point,NA,12352.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,04,point,NA,17725.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,04,point,NA,16472.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,04,point,NA,17935.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,04,point,NA,20282.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,05,point,NA,5674.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,05,point,NA,1537.8546080479864
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,05,point,NA,5711.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,05,point,NA,2752.5545097758877
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,05,point,NA,5747.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,05,point,NA,3924.5714324492146
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,05,point,NA,5783.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,05,point,NA,5055.406678850704
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,05,point,NA,5820.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,05,point,NA,6146.508696210571
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,06,point,NA,61047.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,06,point,NA,18229.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,06,point,NA,62246.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,06,point,NA,35795.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,06,point,NA,63869.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,06,point,NA,51982.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,06,point,NA,65246.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,06,point,NA,67580.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,06,point,NA,66541.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,06,point,NA,84519.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,08,point,NA,6160.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,08,point,NA,11380.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,08,point,NA,6193.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,08,point,NA,21683.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,08,point,NA,6227.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,08,point,NA,31290.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,08,point,NA,6261.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,08,point,NA,41073.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,08,point,NA,6295.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,08,point,NA,50654.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,09,point,NA,7933.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,09,point,NA,6476.006017277832
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,09,point,NA,7957.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,09,point,NA,12148.429606890364
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,09,point,NA,7976.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,09,point,NA,17825.26061581308
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,09,point,NA,7997.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,09,point,NA,23506.613343580568
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,09,point,NA,8017.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,09,point,NA,29192.60257523501
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,10,point,NA,1578.1020412776895
-2021-04-04,1 wk ahead inc_cases,2021-04-10,10,point,NA,2069.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,10,point,NA,1593.1858389946735
-2021-04-04,2 wk ahead inc_cases,2021-04-17,10,point,NA,4481.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,10,point,NA,1619.8299195120596
-2021-04-04,3 wk ahead inc_cases,2021-04-24,10,point,NA,6498.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,10,point,NA,1645.7805318221576
-2021-04-04,4 wk ahead inc_cases,2021-05-01,10,point,NA,8722.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,10,point,NA,1673.79542340233
-2021-04-04,5 wk ahead inc_cases,2021-05-08,10,point,NA,10882.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,12,point,NA,34141.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,12,point,NA,40472.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,12,point,NA,34650.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,12,point,NA,79214.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,12,point,NA,35172.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,12,point,NA,115037.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,12,point,NA,35703.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,12,point,NA,147981.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,12,point,NA,36242.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,12,point,NA,186400.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,13,point,NA,19817.957483589784
-2021-04-04,1 wk ahead inc_cases,2021-04-10,13,point,NA,10986.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,13,point,NA,20396.915546418368
-2021-04-04,2 wk ahead inc_cases,2021-04-17,13,point,NA,21769.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,13,point,NA,20902.228623851322
-2021-04-04,3 wk ahead inc_cases,2021-04-24,13,point,NA,32586.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,13,point,NA,21345.611005748782
-2021-04-04,4 wk ahead inc_cases,2021-05-01,13,point,NA,43485.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,13,point,NA,21734.789611000644
-2021-04-04,5 wk ahead inc_cases,2021-05-08,13,point,NA,54477.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,16,point,NA,1983.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,16,point,NA,1940.3359358964371
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,16,point,NA,1998.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,16,point,NA,3754.6294377160084
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,16,point,NA,2013.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,16,point,NA,5724.039037203562
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,16,point,NA,2026.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,16,point,NA,7818.631186200277
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,16,point,NA,2041.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,16,point,NA,10015.858120004501
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,17,point,NA,23774.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,17,point,NA,16119.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,17,point,NA,23929.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,17,point,NA,31515.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,17,point,NA,24065.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,17,point,NA,45575.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,17,point,NA,24213.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,17,point,NA,59080.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,17,point,NA,24363.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,17,point,NA,72793.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,18,point,NA,13196.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,18,point,NA,4954.25497969822
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,18,point,NA,13323.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,18,point,NA,9705.613595003495
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,18,point,NA,13451.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,18,point,NA,13887.538728472078
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,18,point,NA,13582.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,18,point,NA,17568.29821890127
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,18,point,NA,13713.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,18,point,NA,20807.972692002077
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,19,point,NA,5905.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,19,point,NA,1629.8855307992199
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,19,point,NA,5977.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,19,point,NA,3334.2295698703383
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,19,point,NA,6050.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,19,point,NA,5208.021519892907
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,19,point,NA,6129.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,19,point,NA,7213.186234092165
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,19,point,NA,6204.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,19,point,NA,9322.713152960176
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,20,point,NA,4961.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,20,point,NA,2112.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,20,point,NA,4993.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,20,point,NA,3558.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,20,point,NA,5056.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,20,point,NA,5480.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,20,point,NA,5080.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,20,point,NA,6942.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,20,point,NA,5165.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,20,point,NA,8884.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,21,point,NA,6869.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,21,point,NA,8219.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,21,point,NA,7247.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,21,point,NA,17166.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,21,point,NA,8038.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,21,point,NA,26729.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,21,point,NA,8591.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,21,point,NA,36801.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,21,point,NA,9152.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,21,point,NA,47295.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,22,point,NA,10275.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,22,point,NA,2180.5090288349893
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,22,point,NA,10460.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,22,point,NA,3743.761316666787
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,22,point,NA,10611.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,22,point,NA,5163.548468348221
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,22,point,NA,10772.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,22,point,NA,6521.9629291371675
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,22,point,NA,10946.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,22,point,NA,7836.175177288882
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,23,point,NA,765.9905253278813
-2021-04-04,1 wk ahead inc_cases,2021-04-10,23,point,NA,1919.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,23,point,NA,787.3386777089172
-2021-04-04,2 wk ahead inc_cases,2021-04-17,23,point,NA,3719.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,23,point,NA,805.7853961379512
-2021-04-04,3 wk ahead inc_cases,2021-04-24,23,point,NA,5233.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,23,point,NA,823.1021545653325
-2021-04-04,4 wk ahead inc_cases,2021-05-01,23,point,NA,6917.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,23,point,NA,847.1162104005493
-2021-04-04,5 wk ahead inc_cases,2021-05-08,23,point,NA,8638.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,24,point,NA,8452.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,24,point,NA,6109.4058033615
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,24,point,NA,8567.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,24,point,NA,11841.134828388225
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,24,point,NA,8682.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,24,point,NA,16998.526871776092
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,24,point,NA,8798.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,24,point,NA,21661.79770360666
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,24,point,NA,8915.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,24,point,NA,26008.78075539798
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,25,point,NA,17513.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,25,point,NA,11584.983219911112
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,25,point,NA,17760.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,25,point,NA,21575.967661300325
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,25,point,NA,18008.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,25,point,NA,30271.520904231118
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,25,point,NA,18260.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,25,point,NA,38066.609368866775
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,25,point,NA,18514.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,25,point,NA,45102.62529281096
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,26,point,NA,17385.219601494675
-2021-04-04,1 wk ahead inc_cases,2021-04-10,26,point,NA,46436.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,26,point,NA,17509.713789477875
-2021-04-04,2 wk ahead inc_cases,2021-04-17,26,point,NA,93808.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,26,point,NA,17608.671031831833
-2021-04-04,3 wk ahead inc_cases,2021-04-24,26,point,NA,141041.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,26,point,NA,17688.369744684485
-2021-04-04,4 wk ahead inc_cases,2021-05-01,26,point,NA,189976.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,26,point,NA,17753.56051922229
-2021-04-04,5 wk ahead inc_cases,2021-05-08,26,point,NA,248884.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,27,point,NA,6986.110367981968
-2021-04-04,1 wk ahead inc_cases,2021-04-10,27,point,NA,9709.052573751775
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,27,point,NA,7034.849253598527
-2021-04-04,2 wk ahead inc_cases,2021-04-17,27,point,NA,20998.953718070057
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,27,point,NA,7099.369819482929
-2021-04-04,3 wk ahead inc_cases,2021-04-24,27,point,NA,32794.10771445872
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,27,point,NA,7179.973028670841
-2021-04-04,4 wk ahead inc_cases,2021-05-01,27,point,NA,45051.15064026101
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,27,point,NA,7278.304180726263
-2021-04-04,5 wk ahead inc_cases,2021-05-08,27,point,NA,57731.31772632629
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,28,point,NA,7191.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,28,point,NA,3932.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,28,point,NA,7335.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,28,point,NA,8533.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,28,point,NA,7479.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,28,point,NA,13534.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,28,point,NA,7627.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,28,point,NA,18764.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,28,point,NA,7778.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,28,point,NA,24149.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,29,point,NA,8895.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,29,point,NA,3518.767012510798
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,29,point,NA,9017.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,29,point,NA,6805.556171833305
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,29,point,NA,9143.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,29,point,NA,9721.675225593615
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,29,point,NA,9268.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,29,point,NA,12308.930094133248
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,29,point,NA,9343.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,29,point,NA,14604.411256916123
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,30,point,NA,1489.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,30,point,NA,1155.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,30,point,NA,1517.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,30,point,NA,2306.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,30,point,NA,1533.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,30,point,NA,3471.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,30,point,NA,1537.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,30,point,NA,4648.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,30,point,NA,1537.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,30,point,NA,5838.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,31,point,NA,2216.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,31,point,NA,3983.7655094206566
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,31,point,NA,2228.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,31,point,NA,6918.989652584802
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,31,point,NA,2263.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,31,point,NA,9169.46841274976
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,31,point,NA,2278.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,31,point,NA,10926.799708379694
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,31,point,NA,2310.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,31,point,NA,12335.529328561213
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,32,point,NA,5338.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,32,point,NA,2574.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,32,point,NA,5393.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,32,point,NA,5199.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,32,point,NA,5450.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,32,point,NA,7848.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,32,point,NA,5506.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,32,point,NA,10521.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,32,point,NA,5563.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,32,point,NA,13217.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,33,point,NA,1257.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,33,point,NA,2832.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,33,point,NA,1274.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,33,point,NA,5292.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,33,point,NA,1287.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,33,point,NA,11040.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,33,point,NA,1296.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,33,point,NA,14235.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,33,point,NA,1309.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,33,point,NA,19513.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,34,point,NA,24902.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,34,point,NA,25586.707065515802
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,34,point,NA,25177.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,34,point,NA,52636.42367125407
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,34,point,NA,25436.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,34,point,NA,80828.4594229149
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,34,point,NA,25695.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,34,point,NA,110206.93778579566
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,34,point,NA,25963.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,34,point,NA,139637.96923220414
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,35,point,NA,3981.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,35,point,NA,1472.5347606519645
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,35,point,NA,4004.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,35,point,NA,2705.0234081318486
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,35,point,NA,4029.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,35,point,NA,3763.3171190948924
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,35,point,NA,4054.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,35,point,NA,4672.036879031017
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,35,point,NA,4079.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,35,point,NA,5452.323566462117
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,36,point,NA,51200.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,36,point,NA,55759.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,36,point,NA,51864.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,36,point,NA,113320.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,36,point,NA,52537.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,36,point,NA,172346.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,36,point,NA,53227.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,36,point,NA,233145.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,36,point,NA,53935.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,36,point,NA,295720.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,37,point,NA,12298.378237789111
-2021-04-04,1 wk ahead inc_cases,2021-04-10,37,point,NA,22711.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,37,point,NA,12404.544039536404
-2021-04-04,2 wk ahead inc_cases,2021-04-17,37,point,NA,46896.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,37,point,NA,12487.476048644687
-2021-04-04,3 wk ahead inc_cases,2021-04-24,37,point,NA,72128.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,37,point,NA,12552.260977968202
-2021-04-04,4 wk ahead inc_cases,2021-05-01,37,point,NA,98275.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,37,point,NA,12602.871424161922
-2021-04-04,5 wk ahead inc_cases,2021-05-08,37,point,NA,125234.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,38,point,NA,1503.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,38,point,NA,890.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,38,point,NA,1513.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,38,point,NA,1709.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,38,point,NA,1519.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,38,point,NA,2510.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,38,point,NA,1529.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,38,point,NA,3311.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,38,point,NA,1538.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,38,point,NA,4116.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,39,point,NA,18708.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,39,point,NA,13355.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,39,point,NA,18755.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,39,point,NA,24208.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,39,point,NA,18784.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,39,point,NA,35378.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,39,point,NA,18804.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,39,point,NA,47847.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,39,point,NA,18823.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,39,point,NA,59700.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,40,point,NA,5012.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,40,point,NA,2681.1376044877106
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,40,point,NA,5235.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,40,point,NA,4321.017457854352
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,40,point,NA,5513.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,40,point,NA,5645.4183439345215
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,40,point,NA,5804.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,40,point,NA,6736.14041956648
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,40,point,NA,6144.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,40,point,NA,7653.609975839558
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,41,point,NA,2471.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,41,point,NA,2211.105573793524
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,41,point,NA,2573.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,41,point,NA,4354.1436017056985
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,41,point,NA,2684.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,41,point,NA,6296.042212316068
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,41,point,NA,2802.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,41,point,NA,8056.651544040593
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,41,point,NA,2925.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,41,point,NA,9655.02886365034
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,42,point,NA,25430.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,42,point,NA,14385.09165968257
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,42,point,NA,25674.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,42,point,NA,28532.103956704028
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,42,point,NA,25902.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,42,point,NA,43618.319202052895
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,42,point,NA,26162.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,42,point,NA,53683.54004137544
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,42,point,NA,26413.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,42,point,NA,66540.18871735479
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,44,point,NA,2648.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,44,point,NA,2165.255033422116
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,44,point,NA,2678.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,44,point,NA,4123.63764338172
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,44,point,NA,2707.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,44,point,NA,6210.858785373101
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,44,point,NA,2739.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,44,point,NA,8409.43171408886
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,44,point,NA,2769.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,44,point,NA,10706.302461444837
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,45,point,NA,9330.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,45,point,NA,13109.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,45,point,NA,9462.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,45,point,NA,28736.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,45,point,NA,9593.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,45,point,NA,46427.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,45,point,NA,9726.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,45,point,NA,65836.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,45,point,NA,9860.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,45,point,NA,86802.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,46,point,NA,1966.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,46,point,NA,1209.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,46,point,NA,1995.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,46,point,NA,1968.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,46,point,NA,2024.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,46,point,NA,3241.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,46,point,NA,2053.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,46,point,NA,4471.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,46,point,NA,2082.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,46,point,NA,5492.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,47,point,NA,12036.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,47,point,NA,13700.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,47,point,NA,12131.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,47,point,NA,27468.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,47,point,NA,12229.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,47,point,NA,41204.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,47,point,NA,12334.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,47,point,NA,55061.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,47,point,NA,12430.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,47,point,NA,69092.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,48,point,NA,49162.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,48,point,NA,32209.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,48,point,NA,49871.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,48,point,NA,56258.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,48,point,NA,50693.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,48,point,NA,77743.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,48,point,NA,51787.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,48,point,NA,112401.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,48,point,NA,53129.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,48,point,NA,137190.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,49,point,NA,2199.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,49,point,NA,2668.2574971822905
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,49,point,NA,2271.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,49,point,NA,4866.926619405684
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,49,point,NA,2346.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,49,point,NA,6704.147052242479
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,49,point,NA,2424.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,49,point,NA,8239.34046106966
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,49,point,NA,2505.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,49,point,NA,9522.159415747563
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,50,point,NA,236.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,50,point,NA,1224.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,50,point,NA,244.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,50,point,NA,2321.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,50,point,NA,249.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,50,point,NA,3472.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,50,point,NA,256.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,50,point,NA,4737.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,50,point,NA,263.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,50,point,NA,6000.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,51,point,NA,10404.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,51,point,NA,10301.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,51,point,NA,10477.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,51,point,NA,20411.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,51,point,NA,10597.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,51,point,NA,30787.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,51,point,NA,10715.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,51,point,NA,41432.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,51,point,NA,10801.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,51,point,NA,52077.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,53,point,NA,5335.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,53,point,NA,7735.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,53,point,NA,5390.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,53,point,NA,12753.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,53,point,NA,5455.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,53,point,NA,19008.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,53,point,NA,5514.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,53,point,NA,23956.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,53,point,NA,5575.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,53,point,NA,28983.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,54,point,NA,2788.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,54,point,NA,2818.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,54,point,NA,2876.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,54,point,NA,5760.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,54,point,NA,2966.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,54,point,NA,8785.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,54,point,NA,3060.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,54,point,NA,11900.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,54,point,NA,3157.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,54,point,NA,15037.0
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,55,point,NA,7394.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,55,point,NA,3763.3519840643276
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,55,point,NA,7470.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,55,point,NA,7097.9345773170935
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,55,point,NA,7498.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,55,point,NA,10136.98440777359
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,55,point,NA,7564.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,55,point,NA,12906.699294803082
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,55,point,NA,7613.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,55,point,NA,15430.954224418616
-2021-04-04,1 wk ahead cum_deaths,2021-04-10,56,point,NA,701.0
-2021-04-04,1 wk ahead inc_cases,2021-04-10,56,point,NA,454.0
-2021-04-04,2 wk ahead cum_deaths,2021-04-17,56,point,NA,856.0
-2021-04-04,2 wk ahead inc_cases,2021-04-17,56,point,NA,845.0
-2021-04-04,3 wk ahead cum_deaths,2021-04-24,56,point,NA,928.0
-2021-04-04,3 wk ahead inc_cases,2021-04-24,56,point,NA,1393.0
-2021-04-04,4 wk ahead cum_deaths,2021-05-01,56,point,NA,994.0
-2021-04-04,4 wk ahead inc_cases,2021-05-01,56,point,NA,1767.0
-2021-04-04,5 wk ahead cum_deaths,2021-05-08,56,point,NA,1169.0
-2021-04-04,5 wk ahead inc_cases,2021-05-08,56,point,NA,2172.0
+2021-04-04,1 wk ahead cum death,2021-04-10,01,point,NA,10764
+2021-04-04,1 wk ahead inc case,2021-04-10,01,point,NA,3503.217034
+2021-04-04,2 wk ahead cum death,2021-04-17,01,point,NA,10862
+2021-04-04,2 wk ahead inc case,2021-04-17,01,point,NA,6361.085225
+2021-04-04,3 wk ahead cum death,2021-04-24,01,point,NA,10982
+2021-04-04,3 wk ahead inc case,2021-04-24,01,point,NA,8935.790763
+2021-04-04,4 wk ahead cum death,2021-05-01,01,point,NA,11081
+2021-04-04,4 wk ahead inc case,2021-05-01,01,point,NA,11255.39182
+2021-04-04,5 wk ahead cum death,2021-05-08,01,point,NA,11189
+2021-04-04,5 wk ahead inc case,2021-05-08,01,point,NA,13345.16615
+2021-04-04,1 wk ahead cum death,2021-04-10,04,point,NA,17171
+2021-04-04,1 wk ahead inc case,2021-04-10,04,point,NA,4264
+2021-04-04,2 wk ahead cum death,2021-04-17,04,point,NA,17350
+2021-04-04,2 wk ahead inc case,2021-04-17,04,point,NA,8381
+2021-04-04,3 wk ahead cum death,2021-04-24,04,point,NA,17545
+2021-04-04,3 wk ahead inc case,2021-04-24,04,point,NA,12352
+2021-04-04,4 wk ahead cum death,2021-05-01,04,point,NA,17725
+2021-04-04,4 wk ahead inc case,2021-05-01,04,point,NA,16472
+2021-04-04,5 wk ahead cum death,2021-05-08,04,point,NA,17935
+2021-04-04,5 wk ahead inc case,2021-05-08,04,point,NA,20282
+2021-04-04,1 wk ahead cum death,2021-04-10,05,point,NA,5674
+2021-04-04,1 wk ahead inc case,2021-04-10,05,point,NA,1537.854608
+2021-04-04,2 wk ahead cum death,2021-04-17,05,point,NA,5711
+2021-04-04,2 wk ahead inc case,2021-04-17,05,point,NA,2752.55451
+2021-04-04,3 wk ahead cum death,2021-04-24,05,point,NA,5747
+2021-04-04,3 wk ahead inc case,2021-04-24,05,point,NA,3924.571432
+2021-04-04,4 wk ahead cum death,2021-05-01,05,point,NA,5783
+2021-04-04,4 wk ahead inc case,2021-05-01,05,point,NA,5055.406679
+2021-04-04,5 wk ahead cum death,2021-05-08,05,point,NA,5820
+2021-04-04,5 wk ahead inc case,2021-05-08,05,point,NA,6146.508696
+2021-04-04,1 wk ahead cum death,2021-04-10,06,point,NA,61047
+2021-04-04,1 wk ahead inc case,2021-04-10,06,point,NA,18229
+2021-04-04,2 wk ahead cum death,2021-04-17,06,point,NA,62246
+2021-04-04,2 wk ahead inc case,2021-04-17,06,point,NA,35795
+2021-04-04,3 wk ahead cum death,2021-04-24,06,point,NA,63869
+2021-04-04,3 wk ahead inc case,2021-04-24,06,point,NA,51982
+2021-04-04,4 wk ahead cum death,2021-05-01,06,point,NA,65246
+2021-04-04,4 wk ahead inc case,2021-05-01,06,point,NA,67580
+2021-04-04,5 wk ahead cum death,2021-05-08,06,point,NA,66541
+2021-04-04,5 wk ahead inc case,2021-05-08,06,point,NA,84519
+2021-04-04,1 wk ahead cum death,2021-04-10,08,point,NA,6160
+2021-04-04,1 wk ahead inc case,2021-04-10,08,point,NA,11380
+2021-04-04,2 wk ahead cum death,2021-04-17,08,point,NA,6193
+2021-04-04,2 wk ahead inc case,2021-04-17,08,point,NA,21683
+2021-04-04,3 wk ahead cum death,2021-04-24,08,point,NA,6227
+2021-04-04,3 wk ahead inc case,2021-04-24,08,point,NA,31290
+2021-04-04,4 wk ahead cum death,2021-05-01,08,point,NA,6261
+2021-04-04,4 wk ahead inc case,2021-05-01,08,point,NA,41073
+2021-04-04,5 wk ahead cum death,2021-05-08,08,point,NA,6295
+2021-04-04,5 wk ahead inc case,2021-05-08,08,point,NA,50654
+2021-04-04,1 wk ahead cum death,2021-04-10,09,point,NA,7933
+2021-04-04,1 wk ahead inc case,2021-04-10,09,point,NA,6476.006017
+2021-04-04,2 wk ahead cum death,2021-04-17,09,point,NA,7957
+2021-04-04,2 wk ahead inc case,2021-04-17,09,point,NA,12148.42961
+2021-04-04,3 wk ahead cum death,2021-04-24,09,point,NA,7976
+2021-04-04,3 wk ahead inc case,2021-04-24,09,point,NA,17825.26062
+2021-04-04,4 wk ahead cum death,2021-05-01,09,point,NA,7997
+2021-04-04,4 wk ahead inc case,2021-05-01,09,point,NA,23506.61334
+2021-04-04,5 wk ahead cum death,2021-05-08,09,point,NA,8017
+2021-04-04,5 wk ahead inc case,2021-05-08,09,point,NA,29192.60258
+2021-04-04,1 wk ahead cum death,2021-04-10,10,point,NA,1578.102041
+2021-04-04,1 wk ahead inc case,2021-04-10,10,point,NA,2069
+2021-04-04,2 wk ahead cum death,2021-04-17,10,point,NA,1593.185839
+2021-04-04,2 wk ahead inc case,2021-04-17,10,point,NA,4481
+2021-04-04,3 wk ahead cum death,2021-04-24,10,point,NA,1619.82992
+2021-04-04,3 wk ahead inc case,2021-04-24,10,point,NA,6498
+2021-04-04,4 wk ahead cum death,2021-05-01,10,point,NA,1645.780532
+2021-04-04,4 wk ahead inc case,2021-05-01,10,point,NA,8722
+2021-04-04,5 wk ahead cum death,2021-05-08,10,point,NA,1673.795423
+2021-04-04,5 wk ahead inc case,2021-05-08,10,point,NA,10882
+2021-04-04,1 wk ahead cum death,2021-04-10,12,point,NA,34141
+2021-04-04,1 wk ahead inc case,2021-04-10,12,point,NA,40472
+2021-04-04,2 wk ahead cum death,2021-04-17,12,point,NA,34650
+2021-04-04,2 wk ahead inc case,2021-04-17,12,point,NA,79214
+2021-04-04,3 wk ahead cum death,2021-04-24,12,point,NA,35172
+2021-04-04,3 wk ahead inc case,2021-04-24,12,point,NA,115037
+2021-04-04,4 wk ahead cum death,2021-05-01,12,point,NA,35703
+2021-04-04,4 wk ahead inc case,2021-05-01,12,point,NA,147981
+2021-04-04,5 wk ahead cum death,2021-05-08,12,point,NA,36242
+2021-04-04,5 wk ahead inc case,2021-05-08,12,point,NA,186400
+2021-04-04,1 wk ahead cum death,2021-04-10,13,point,NA,19817.95748
+2021-04-04,1 wk ahead inc case,2021-04-10,13,point,NA,10986
+2021-04-04,2 wk ahead cum death,2021-04-17,13,point,NA,20396.91555
+2021-04-04,2 wk ahead inc case,2021-04-17,13,point,NA,21769
+2021-04-04,3 wk ahead cum death,2021-04-24,13,point,NA,20902.22862
+2021-04-04,3 wk ahead inc case,2021-04-24,13,point,NA,32586
+2021-04-04,4 wk ahead cum death,2021-05-01,13,point,NA,21345.61101
+2021-04-04,4 wk ahead inc case,2021-05-01,13,point,NA,43485
+2021-04-04,5 wk ahead cum death,2021-05-08,13,point,NA,21734.78961
+2021-04-04,5 wk ahead inc case,2021-05-08,13,point,NA,54477
+2021-04-04,1 wk ahead cum death,2021-04-10,16,point,NA,1983
+2021-04-04,1 wk ahead inc case,2021-04-10,16,point,NA,1940.335936
+2021-04-04,2 wk ahead cum death,2021-04-17,16,point,NA,1998
+2021-04-04,2 wk ahead inc case,2021-04-17,16,point,NA,3754.629438
+2021-04-04,3 wk ahead cum death,2021-04-24,16,point,NA,2013
+2021-04-04,3 wk ahead inc case,2021-04-24,16,point,NA,5724.039037
+2021-04-04,4 wk ahead cum death,2021-05-01,16,point,NA,2026
+2021-04-04,4 wk ahead inc case,2021-05-01,16,point,NA,7818.631186
+2021-04-04,5 wk ahead cum death,2021-05-08,16,point,NA,2041
+2021-04-04,5 wk ahead inc case,2021-05-08,16,point,NA,10015.85812
+2021-04-04,1 wk ahead cum death,2021-04-10,17,point,NA,23774
+2021-04-04,1 wk ahead inc case,2021-04-10,17,point,NA,16119
+2021-04-04,2 wk ahead cum death,2021-04-17,17,point,NA,23929
+2021-04-04,2 wk ahead inc case,2021-04-17,17,point,NA,31515
+2021-04-04,3 wk ahead cum death,2021-04-24,17,point,NA,24065
+2021-04-04,3 wk ahead inc case,2021-04-24,17,point,NA,45575
+2021-04-04,4 wk ahead cum death,2021-05-01,17,point,NA,24213
+2021-04-04,4 wk ahead inc case,2021-05-01,17,point,NA,59080
+2021-04-04,5 wk ahead cum death,2021-05-08,17,point,NA,24363
+2021-04-04,5 wk ahead inc case,2021-05-08,17,point,NA,72793
+2021-04-04,1 wk ahead cum death,2021-04-10,18,point,NA,13196
+2021-04-04,1 wk ahead inc case,2021-04-10,18,point,NA,4954.25498
+2021-04-04,2 wk ahead cum death,2021-04-17,18,point,NA,13323
+2021-04-04,2 wk ahead inc case,2021-04-17,18,point,NA,9705.613595
+2021-04-04,3 wk ahead cum death,2021-04-24,18,point,NA,13451
+2021-04-04,3 wk ahead inc case,2021-04-24,18,point,NA,13887.53873
+2021-04-04,4 wk ahead cum death,2021-05-01,18,point,NA,13582
+2021-04-04,4 wk ahead inc case,2021-05-01,18,point,NA,17568.29822
+2021-04-04,5 wk ahead cum death,2021-05-08,18,point,NA,13713
+2021-04-04,5 wk ahead inc case,2021-05-08,18,point,NA,20807.97269
+2021-04-04,1 wk ahead cum death,2021-04-10,19,point,NA,5905
+2021-04-04,1 wk ahead inc case,2021-04-10,19,point,NA,1629.885531
+2021-04-04,2 wk ahead cum death,2021-04-17,19,point,NA,5977
+2021-04-04,2 wk ahead inc case,2021-04-17,19,point,NA,3334.22957
+2021-04-04,3 wk ahead cum death,2021-04-24,19,point,NA,6050
+2021-04-04,3 wk ahead inc case,2021-04-24,19,point,NA,5208.02152
+2021-04-04,4 wk ahead cum death,2021-05-01,19,point,NA,6129
+2021-04-04,4 wk ahead inc case,2021-05-01,19,point,NA,7213.186234
+2021-04-04,5 wk ahead cum death,2021-05-08,19,point,NA,6204
+2021-04-04,5 wk ahead inc case,2021-05-08,19,point,NA,9322.713153
+2021-04-04,1 wk ahead cum death,2021-04-10,20,point,NA,4961
+2021-04-04,1 wk ahead inc case,2021-04-10,20,point,NA,2112
+2021-04-04,2 wk ahead cum death,2021-04-17,20,point,NA,4993
+2021-04-04,2 wk ahead inc case,2021-04-17,20,point,NA,3558
+2021-04-04,3 wk ahead cum death,2021-04-24,20,point,NA,5056
+2021-04-04,3 wk ahead inc case,2021-04-24,20,point,NA,5480
+2021-04-04,4 wk ahead cum death,2021-05-01,20,point,NA,5080
+2021-04-04,4 wk ahead inc case,2021-05-01,20,point,NA,6942
+2021-04-04,5 wk ahead cum death,2021-05-08,20,point,NA,5165
+2021-04-04,5 wk ahead inc case,2021-05-08,20,point,NA,8884
+2021-04-04,1 wk ahead cum death,2021-04-10,21,point,NA,6869
+2021-04-04,1 wk ahead inc case,2021-04-10,21,point,NA,8219
+2021-04-04,2 wk ahead cum death,2021-04-17,21,point,NA,7247
+2021-04-04,2 wk ahead inc case,2021-04-17,21,point,NA,17166
+2021-04-04,3 wk ahead cum death,2021-04-24,21,point,NA,8038
+2021-04-04,3 wk ahead inc case,2021-04-24,21,point,NA,26729
+2021-04-04,4 wk ahead cum death,2021-05-01,21,point,NA,8591
+2021-04-04,4 wk ahead inc case,2021-05-01,21,point,NA,36801
+2021-04-04,5 wk ahead cum death,2021-05-08,21,point,NA,9152
+2021-04-04,5 wk ahead inc case,2021-05-08,21,point,NA,47295
+2021-04-04,1 wk ahead cum death,2021-04-10,22,point,NA,10275
+2021-04-04,1 wk ahead inc case,2021-04-10,22,point,NA,2180.509029
+2021-04-04,2 wk ahead cum death,2021-04-17,22,point,NA,10460
+2021-04-04,2 wk ahead inc case,2021-04-17,22,point,NA,3743.761317
+2021-04-04,3 wk ahead cum death,2021-04-24,22,point,NA,10611
+2021-04-04,3 wk ahead inc case,2021-04-24,22,point,NA,5163.548468
+2021-04-04,4 wk ahead cum death,2021-05-01,22,point,NA,10772
+2021-04-04,4 wk ahead inc case,2021-05-01,22,point,NA,6521.962929
+2021-04-04,5 wk ahead cum death,2021-05-08,22,point,NA,10946
+2021-04-04,5 wk ahead inc case,2021-05-08,22,point,NA,7836.175177
+2021-04-04,1 wk ahead cum death,2021-04-10,23,point,NA,765.9905253
+2021-04-04,1 wk ahead inc case,2021-04-10,23,point,NA,1919
+2021-04-04,2 wk ahead cum death,2021-04-17,23,point,NA,787.3386777
+2021-04-04,2 wk ahead inc case,2021-04-17,23,point,NA,3719
+2021-04-04,3 wk ahead cum death,2021-04-24,23,point,NA,805.7853961
+2021-04-04,3 wk ahead inc case,2021-04-24,23,point,NA,5233
+2021-04-04,4 wk ahead cum death,2021-05-01,23,point,NA,823.1021546
+2021-04-04,4 wk ahead inc case,2021-05-01,23,point,NA,6917
+2021-04-04,5 wk ahead cum death,2021-05-08,23,point,NA,847.1162104
+2021-04-04,5 wk ahead inc case,2021-05-08,23,point,NA,8638
+2021-04-04,1 wk ahead cum death,2021-04-10,24,point,NA,8452
+2021-04-04,1 wk ahead inc case,2021-04-10,24,point,NA,6109.405803
+2021-04-04,2 wk ahead cum death,2021-04-17,24,point,NA,8567
+2021-04-04,2 wk ahead inc case,2021-04-17,24,point,NA,11841.13483
+2021-04-04,3 wk ahead cum death,2021-04-24,24,point,NA,8682
+2021-04-04,3 wk ahead inc case,2021-04-24,24,point,NA,16998.52687
+2021-04-04,4 wk ahead cum death,2021-05-01,24,point,NA,8798
+2021-04-04,4 wk ahead inc case,2021-05-01,24,point,NA,21661.7977
+2021-04-04,5 wk ahead cum death,2021-05-08,24,point,NA,8915
+2021-04-04,5 wk ahead inc case,2021-05-08,24,point,NA,26008.78076
+2021-04-04,1 wk ahead cum death,2021-04-10,25,point,NA,17513
+2021-04-04,1 wk ahead inc case,2021-04-10,25,point,NA,11584.98322
+2021-04-04,2 wk ahead cum death,2021-04-17,25,point,NA,17760
+2021-04-04,2 wk ahead inc case,2021-04-17,25,point,NA,21575.96766
+2021-04-04,3 wk ahead cum death,2021-04-24,25,point,NA,18008
+2021-04-04,3 wk ahead inc case,2021-04-24,25,point,NA,30271.5209
+2021-04-04,4 wk ahead cum death,2021-05-01,25,point,NA,18260
+2021-04-04,4 wk ahead inc case,2021-05-01,25,point,NA,38066.60937
+2021-04-04,5 wk ahead cum death,2021-05-08,25,point,NA,18514
+2021-04-04,5 wk ahead inc case,2021-05-08,25,point,NA,45102.62529
+2021-04-04,1 wk ahead cum death,2021-04-10,26,point,NA,17385.2196
+2021-04-04,1 wk ahead inc case,2021-04-10,26,point,NA,46436
+2021-04-04,2 wk ahead cum death,2021-04-17,26,point,NA,17509.71379
+2021-04-04,2 wk ahead inc case,2021-04-17,26,point,NA,93808
+2021-04-04,3 wk ahead cum death,2021-04-24,26,point,NA,17608.67103
+2021-04-04,3 wk ahead inc case,2021-04-24,26,point,NA,141041
+2021-04-04,4 wk ahead cum death,2021-05-01,26,point,NA,17688.36974
+2021-04-04,4 wk ahead inc case,2021-05-01,26,point,NA,189976
+2021-04-04,5 wk ahead cum death,2021-05-08,26,point,NA,17753.56052
+2021-04-04,5 wk ahead inc case,2021-05-08,26,point,NA,248884
+2021-04-04,1 wk ahead cum death,2021-04-10,27,point,NA,6986.110368
+2021-04-04,1 wk ahead inc case,2021-04-10,27,point,NA,9709.052574
+2021-04-04,2 wk ahead cum death,2021-04-17,27,point,NA,7034.849254
+2021-04-04,2 wk ahead inc case,2021-04-17,27,point,NA,20998.95372
+2021-04-04,3 wk ahead cum death,2021-04-24,27,point,NA,7099.369819
+2021-04-04,3 wk ahead inc case,2021-04-24,27,point,NA,32794.10771
+2021-04-04,4 wk ahead cum death,2021-05-01,27,point,NA,7179.973029
+2021-04-04,4 wk ahead inc case,2021-05-01,27,point,NA,45051.15064
+2021-04-04,5 wk ahead cum death,2021-05-08,27,point,NA,7278.304181
+2021-04-04,5 wk ahead inc case,2021-05-08,27,point,NA,57731.31773
+2021-04-04,1 wk ahead cum death,2021-04-10,28,point,NA,7191
+2021-04-04,1 wk ahead inc case,2021-04-10,28,point,NA,3932
+2021-04-04,2 wk ahead cum death,2021-04-17,28,point,NA,7335
+2021-04-04,2 wk ahead inc case,2021-04-17,28,point,NA,8533
+2021-04-04,3 wk ahead cum death,2021-04-24,28,point,NA,7479
+2021-04-04,3 wk ahead inc case,2021-04-24,28,point,NA,13534
+2021-04-04,4 wk ahead cum death,2021-05-01,28,point,NA,7627
+2021-04-04,4 wk ahead inc case,2021-05-01,28,point,NA,18764
+2021-04-04,5 wk ahead cum death,2021-05-08,28,point,NA,7778
+2021-04-04,5 wk ahead inc case,2021-05-08,28,point,NA,24149
+2021-04-04,1 wk ahead cum death,2021-04-10,29,point,NA,8895
+2021-04-04,1 wk ahead inc case,2021-04-10,29,point,NA,3518.767013
+2021-04-04,2 wk ahead cum death,2021-04-17,29,point,NA,9017
+2021-04-04,2 wk ahead inc case,2021-04-17,29,point,NA,6805.556172
+2021-04-04,3 wk ahead cum death,2021-04-24,29,point,NA,9143
+2021-04-04,3 wk ahead inc case,2021-04-24,29,point,NA,9721.675226
+2021-04-04,4 wk ahead cum death,2021-05-01,29,point,NA,9268
+2021-04-04,4 wk ahead inc case,2021-05-01,29,point,NA,12308.93009
+2021-04-04,5 wk ahead cum death,2021-05-08,29,point,NA,9343
+2021-04-04,5 wk ahead inc case,2021-05-08,29,point,NA,14604.41126
+2021-04-04,1 wk ahead cum death,2021-04-10,30,point,NA,1489
+2021-04-04,1 wk ahead inc case,2021-04-10,30,point,NA,1155
+2021-04-04,2 wk ahead cum death,2021-04-17,30,point,NA,1517
+2021-04-04,2 wk ahead inc case,2021-04-17,30,point,NA,2306
+2021-04-04,3 wk ahead cum death,2021-04-24,30,point,NA,1533
+2021-04-04,3 wk ahead inc case,2021-04-24,30,point,NA,3471
+2021-04-04,4 wk ahead cum death,2021-05-01,30,point,NA,1537
+2021-04-04,4 wk ahead inc case,2021-05-01,30,point,NA,4648
+2021-04-04,5 wk ahead cum death,2021-05-08,30,point,NA,1537
+2021-04-04,5 wk ahead inc case,2021-05-08,30,point,NA,5838
+2021-04-04,1 wk ahead cum death,2021-04-10,31,point,NA,2216
+2021-04-04,1 wk ahead inc case,2021-04-10,31,point,NA,3983.765509
+2021-04-04,2 wk ahead cum death,2021-04-17,31,point,NA,2228
+2021-04-04,2 wk ahead inc case,2021-04-17,31,point,NA,6918.989653
+2021-04-04,3 wk ahead cum death,2021-04-24,31,point,NA,2263
+2021-04-04,3 wk ahead inc case,2021-04-24,31,point,NA,9169.468413
+2021-04-04,4 wk ahead cum death,2021-05-01,31,point,NA,2278
+2021-04-04,4 wk ahead inc case,2021-05-01,31,point,NA,10926.79971
+2021-04-04,5 wk ahead cum death,2021-05-08,31,point,NA,2310
+2021-04-04,5 wk ahead inc case,2021-05-08,31,point,NA,12335.52933
+2021-04-04,1 wk ahead cum death,2021-04-10,32,point,NA,5338
+2021-04-04,1 wk ahead inc case,2021-04-10,32,point,NA,2574
+2021-04-04,2 wk ahead cum death,2021-04-17,32,point,NA,5393
+2021-04-04,2 wk ahead inc case,2021-04-17,32,point,NA,5199
+2021-04-04,3 wk ahead cum death,2021-04-24,32,point,NA,5450
+2021-04-04,3 wk ahead inc case,2021-04-24,32,point,NA,7848
+2021-04-04,4 wk ahead cum death,2021-05-01,32,point,NA,5506
+2021-04-04,4 wk ahead inc case,2021-05-01,32,point,NA,10521
+2021-04-04,5 wk ahead cum death,2021-05-08,32,point,NA,5563
+2021-04-04,5 wk ahead inc case,2021-05-08,32,point,NA,13217
+2021-04-04,1 wk ahead cum death,2021-04-10,33,point,NA,1257
+2021-04-04,1 wk ahead inc case,2021-04-10,33,point,NA,2832
+2021-04-04,2 wk ahead cum death,2021-04-17,33,point,NA,1274
+2021-04-04,2 wk ahead inc case,2021-04-17,33,point,NA,5292
+2021-04-04,3 wk ahead cum death,2021-04-24,33,point,NA,1287
+2021-04-04,3 wk ahead inc case,2021-04-24,33,point,NA,11040
+2021-04-04,4 wk ahead cum death,2021-05-01,33,point,NA,1296
+2021-04-04,4 wk ahead inc case,2021-05-01,33,point,NA,14235
+2021-04-04,5 wk ahead cum death,2021-05-08,33,point,NA,1309
+2021-04-04,5 wk ahead inc case,2021-05-08,33,point,NA,19513
+2021-04-04,1 wk ahead cum death,2021-04-10,34,point,NA,24902
+2021-04-04,1 wk ahead inc case,2021-04-10,34,point,NA,25586.70707
+2021-04-04,2 wk ahead cum death,2021-04-17,34,point,NA,25177
+2021-04-04,2 wk ahead inc case,2021-04-17,34,point,NA,52636.42367
+2021-04-04,3 wk ahead cum death,2021-04-24,34,point,NA,25436
+2021-04-04,3 wk ahead inc case,2021-04-24,34,point,NA,80828.45942
+2021-04-04,4 wk ahead cum death,2021-05-01,34,point,NA,25695
+2021-04-04,4 wk ahead inc case,2021-05-01,34,point,NA,110206.9378
+2021-04-04,5 wk ahead cum death,2021-05-08,34,point,NA,25963
+2021-04-04,5 wk ahead inc case,2021-05-08,34,point,NA,139637.9692
+2021-04-04,1 wk ahead cum death,2021-04-10,35,point,NA,3981
+2021-04-04,1 wk ahead inc case,2021-04-10,35,point,NA,1472.534761
+2021-04-04,2 wk ahead cum death,2021-04-17,35,point,NA,4004
+2021-04-04,2 wk ahead inc case,2021-04-17,35,point,NA,2705.023408
+2021-04-04,3 wk ahead cum death,2021-04-24,35,point,NA,4029
+2021-04-04,3 wk ahead inc case,2021-04-24,35,point,NA,3763.317119
+2021-04-04,4 wk ahead cum death,2021-05-01,35,point,NA,4054
+2021-04-04,4 wk ahead inc case,2021-05-01,35,point,NA,4672.036879
+2021-04-04,5 wk ahead cum death,2021-05-08,35,point,NA,4079
+2021-04-04,5 wk ahead inc case,2021-05-08,35,point,NA,5452.323566
+2021-04-04,1 wk ahead cum death,2021-04-10,36,point,NA,51200
+2021-04-04,1 wk ahead inc case,2021-04-10,36,point,NA,55759
+2021-04-04,2 wk ahead cum death,2021-04-17,36,point,NA,51864
+2021-04-04,2 wk ahead inc case,2021-04-17,36,point,NA,113320
+2021-04-04,3 wk ahead cum death,2021-04-24,36,point,NA,52537
+2021-04-04,3 wk ahead inc case,2021-04-24,36,point,NA,172346
+2021-04-04,4 wk ahead cum death,2021-05-01,36,point,NA,53227
+2021-04-04,4 wk ahead inc case,2021-05-01,36,point,NA,233145
+2021-04-04,5 wk ahead cum death,2021-05-08,36,point,NA,53935
+2021-04-04,5 wk ahead inc case,2021-05-08,36,point,NA,295720
+2021-04-04,1 wk ahead cum death,2021-04-10,37,point,NA,12298.37824
+2021-04-04,1 wk ahead inc case,2021-04-10,37,point,NA,22711
+2021-04-04,2 wk ahead cum death,2021-04-17,37,point,NA,12404.54404
+2021-04-04,2 wk ahead inc case,2021-04-17,37,point,NA,46896
+2021-04-04,3 wk ahead cum death,2021-04-24,37,point,NA,12487.47605
+2021-04-04,3 wk ahead inc case,2021-04-24,37,point,NA,72128
+2021-04-04,4 wk ahead cum death,2021-05-01,37,point,NA,12552.26098
+2021-04-04,4 wk ahead inc case,2021-05-01,37,point,NA,98275
+2021-04-04,5 wk ahead cum death,2021-05-08,37,point,NA,12602.87142
+2021-04-04,5 wk ahead inc case,2021-05-08,37,point,NA,125234
+2021-04-04,1 wk ahead cum death,2021-04-10,38,point,NA,1503
+2021-04-04,1 wk ahead inc case,2021-04-10,38,point,NA,890
+2021-04-04,2 wk ahead cum death,2021-04-17,38,point,NA,1513
+2021-04-04,2 wk ahead inc case,2021-04-17,38,point,NA,1709
+2021-04-04,3 wk ahead cum death,2021-04-24,38,point,NA,1519
+2021-04-04,3 wk ahead inc case,2021-04-24,38,point,NA,2510
+2021-04-04,4 wk ahead cum death,2021-05-01,38,point,NA,1529
+2021-04-04,4 wk ahead inc case,2021-05-01,38,point,NA,3311
+2021-04-04,5 wk ahead cum death,2021-05-08,38,point,NA,1538
+2021-04-04,5 wk ahead inc case,2021-05-08,38,point,NA,4116
+2021-04-04,1 wk ahead cum death,2021-04-10,39,point,NA,18708
+2021-04-04,1 wk ahead inc case,2021-04-10,39,point,NA,13355
+2021-04-04,2 wk ahead cum death,2021-04-17,39,point,NA,18755
+2021-04-04,2 wk ahead inc case,2021-04-17,39,point,NA,24208
+2021-04-04,3 wk ahead cum death,2021-04-24,39,point,NA,18784
+2021-04-04,3 wk ahead inc case,2021-04-24,39,point,NA,35378
+2021-04-04,4 wk ahead cum death,2021-05-01,39,point,NA,18804
+2021-04-04,4 wk ahead inc case,2021-05-01,39,point,NA,47847
+2021-04-04,5 wk ahead cum death,2021-05-08,39,point,NA,18823
+2021-04-04,5 wk ahead inc case,2021-05-08,39,point,NA,59700
+2021-04-04,1 wk ahead cum death,2021-04-10,40,point,NA,5012
+2021-04-04,1 wk ahead inc case,2021-04-10,40,point,NA,2681.137604
+2021-04-04,2 wk ahead cum death,2021-04-17,40,point,NA,5235
+2021-04-04,2 wk ahead inc case,2021-04-17,40,point,NA,4321.017458
+2021-04-04,3 wk ahead cum death,2021-04-24,40,point,NA,5513
+2021-04-04,3 wk ahead inc case,2021-04-24,40,point,NA,5645.418344
+2021-04-04,4 wk ahead cum death,2021-05-01,40,point,NA,5804
+2021-04-04,4 wk ahead inc case,2021-05-01,40,point,NA,6736.14042
+2021-04-04,5 wk ahead cum death,2021-05-08,40,point,NA,6144
+2021-04-04,5 wk ahead inc case,2021-05-08,40,point,NA,7653.609976
+2021-04-04,1 wk ahead cum death,2021-04-10,41,point,NA,2471
+2021-04-04,1 wk ahead inc case,2021-04-10,41,point,NA,2211.105574
+2021-04-04,2 wk ahead cum death,2021-04-17,41,point,NA,2573
+2021-04-04,2 wk ahead inc case,2021-04-17,41,point,NA,4354.143602
+2021-04-04,3 wk ahead cum death,2021-04-24,41,point,NA,2684
+2021-04-04,3 wk ahead inc case,2021-04-24,41,point,NA,6296.042212
+2021-04-04,4 wk ahead cum death,2021-05-01,41,point,NA,2802
+2021-04-04,4 wk ahead inc case,2021-05-01,41,point,NA,8056.651544
+2021-04-04,5 wk ahead cum death,2021-05-08,41,point,NA,2925
+2021-04-04,5 wk ahead inc case,2021-05-08,41,point,NA,9655.028864
+2021-04-04,1 wk ahead cum death,2021-04-10,42,point,NA,25430
+2021-04-04,1 wk ahead inc case,2021-04-10,42,point,NA,14385.09166
+2021-04-04,2 wk ahead cum death,2021-04-17,42,point,NA,25674
+2021-04-04,2 wk ahead inc case,2021-04-17,42,point,NA,28532.10396
+2021-04-04,3 wk ahead cum death,2021-04-24,42,point,NA,25902
+2021-04-04,3 wk ahead inc case,2021-04-24,42,point,NA,43618.3192
+2021-04-04,4 wk ahead cum death,2021-05-01,42,point,NA,26162
+2021-04-04,4 wk ahead inc case,2021-05-01,42,point,NA,53683.54004
+2021-04-04,5 wk ahead cum death,2021-05-08,42,point,NA,26413
+2021-04-04,5 wk ahead inc case,2021-05-08,42,point,NA,66540.18872
+2021-04-04,1 wk ahead cum death,2021-04-10,44,point,NA,2648
+2021-04-04,1 wk ahead inc case,2021-04-10,44,point,NA,2165.255033
+2021-04-04,2 wk ahead cum death,2021-04-17,44,point,NA,2678
+2021-04-04,2 wk ahead inc case,2021-04-17,44,point,NA,4123.637643
+2021-04-04,3 wk ahead cum death,2021-04-24,44,point,NA,2707
+2021-04-04,3 wk ahead inc case,2021-04-24,44,point,NA,6210.858785
+2021-04-04,4 wk ahead cum death,2021-05-01,44,point,NA,2739
+2021-04-04,4 wk ahead inc case,2021-05-01,44,point,NA,8409.431714
+2021-04-04,5 wk ahead cum death,2021-05-08,44,point,NA,2769
+2021-04-04,5 wk ahead inc case,2021-05-08,44,point,NA,10706.30246
+2021-04-04,1 wk ahead cum death,2021-04-10,45,point,NA,9330
+2021-04-04,1 wk ahead inc case,2021-04-10,45,point,NA,13109
+2021-04-04,2 wk ahead cum death,2021-04-17,45,point,NA,9462
+2021-04-04,2 wk ahead inc case,2021-04-17,45,point,NA,28736
+2021-04-04,3 wk ahead cum death,2021-04-24,45,point,NA,9593
+2021-04-04,3 wk ahead inc case,2021-04-24,45,point,NA,46427
+2021-04-04,4 wk ahead cum death,2021-05-01,45,point,NA,9726
+2021-04-04,4 wk ahead inc case,2021-05-01,45,point,NA,65836
+2021-04-04,5 wk ahead cum death,2021-05-08,45,point,NA,9860
+2021-04-04,5 wk ahead inc case,2021-05-08,45,point,NA,86802
+2021-04-04,1 wk ahead cum death,2021-04-10,46,point,NA,1966
+2021-04-04,1 wk ahead inc case,2021-04-10,46,point,NA,1209
+2021-04-04,2 wk ahead cum death,2021-04-17,46,point,NA,1995
+2021-04-04,2 wk ahead inc case,2021-04-17,46,point,NA,1968
+2021-04-04,3 wk ahead cum death,2021-04-24,46,point,NA,2024
+2021-04-04,3 wk ahead inc case,2021-04-24,46,point,NA,3241
+2021-04-04,4 wk ahead cum death,2021-05-01,46,point,NA,2053
+2021-04-04,4 wk ahead inc case,2021-05-01,46,point,NA,4471
+2021-04-04,5 wk ahead cum death,2021-05-08,46,point,NA,2082
+2021-04-04,5 wk ahead inc case,2021-05-08,46,point,NA,5492
+2021-04-04,1 wk ahead cum death,2021-04-10,47,point,NA,12036
+2021-04-04,1 wk ahead inc case,2021-04-10,47,point,NA,13700
+2021-04-04,2 wk ahead cum death,2021-04-17,47,point,NA,12131
+2021-04-04,2 wk ahead inc case,2021-04-17,47,point,NA,27468
+2021-04-04,3 wk ahead cum death,2021-04-24,47,point,NA,12229
+2021-04-04,3 wk ahead inc case,2021-04-24,47,point,NA,41204
+2021-04-04,4 wk ahead cum death,2021-05-01,47,point,NA,12334
+2021-04-04,4 wk ahead inc case,2021-05-01,47,point,NA,55061
+2021-04-04,5 wk ahead cum death,2021-05-08,47,point,NA,12430
+2021-04-04,5 wk ahead inc case,2021-05-08,47,point,NA,69092
+2021-04-04,1 wk ahead cum death,2021-04-10,48,point,NA,49162
+2021-04-04,1 wk ahead inc case,2021-04-10,48,point,NA,32209
+2021-04-04,2 wk ahead cum death,2021-04-17,48,point,NA,49871
+2021-04-04,2 wk ahead inc case,2021-04-17,48,point,NA,56258
+2021-04-04,3 wk ahead cum death,2021-04-24,48,point,NA,50693
+2021-04-04,3 wk ahead inc case,2021-04-24,48,point,NA,77743
+2021-04-04,4 wk ahead cum death,2021-05-01,48,point,NA,51787
+2021-04-04,4 wk ahead inc case,2021-05-01,48,point,NA,112401
+2021-04-04,5 wk ahead cum death,2021-05-08,48,point,NA,53129
+2021-04-04,5 wk ahead inc case,2021-05-08,48,point,NA,137190
+2021-04-04,1 wk ahead cum death,2021-04-10,49,point,NA,2199
+2021-04-04,1 wk ahead inc case,2021-04-10,49,point,NA,2668.257497
+2021-04-04,2 wk ahead cum death,2021-04-17,49,point,NA,2271
+2021-04-04,2 wk ahead inc case,2021-04-17,49,point,NA,4866.926619
+2021-04-04,3 wk ahead cum death,2021-04-24,49,point,NA,2346
+2021-04-04,3 wk ahead inc case,2021-04-24,49,point,NA,6704.147052
+2021-04-04,4 wk ahead cum death,2021-05-01,49,point,NA,2424
+2021-04-04,4 wk ahead inc case,2021-05-01,49,point,NA,8239.340461
+2021-04-04,5 wk ahead cum death,2021-05-08,49,point,NA,2505
+2021-04-04,5 wk ahead inc case,2021-05-08,49,point,NA,9522.159416
+2021-04-04,1 wk ahead cum death,2021-04-10,50,point,NA,236
+2021-04-04,1 wk ahead inc case,2021-04-10,50,point,NA,1224
+2021-04-04,2 wk ahead cum death,2021-04-17,50,point,NA,244
+2021-04-04,2 wk ahead inc case,2021-04-17,50,point,NA,2321
+2021-04-04,3 wk ahead cum death,2021-04-24,50,point,NA,249
+2021-04-04,3 wk ahead inc case,2021-04-24,50,point,NA,3472
+2021-04-04,4 wk ahead cum death,2021-05-01,50,point,NA,256
+2021-04-04,4 wk ahead inc case,2021-05-01,50,point,NA,4737
+2021-04-04,5 wk ahead cum death,2021-05-08,50,point,NA,263
+2021-04-04,5 wk ahead inc case,2021-05-08,50,point,NA,6000
+2021-04-04,1 wk ahead cum death,2021-04-10,51,point,NA,10404
+2021-04-04,1 wk ahead inc case,2021-04-10,51,point,NA,10301
+2021-04-04,2 wk ahead cum death,2021-04-17,51,point,NA,10477
+2021-04-04,2 wk ahead inc case,2021-04-17,51,point,NA,20411
+2021-04-04,3 wk ahead cum death,2021-04-24,51,point,NA,10597
+2021-04-04,3 wk ahead inc case,2021-04-24,51,point,NA,30787
+2021-04-04,4 wk ahead cum death,2021-05-01,51,point,NA,10715
+2021-04-04,4 wk ahead inc case,2021-05-01,51,point,NA,41432
+2021-04-04,5 wk ahead cum death,2021-05-08,51,point,NA,10801
+2021-04-04,5 wk ahead inc case,2021-05-08,51,point,NA,52077
+2021-04-04,1 wk ahead cum death,2021-04-10,53,point,NA,5335
+2021-04-04,1 wk ahead inc case,2021-04-10,53,point,NA,7735
+2021-04-04,2 wk ahead cum death,2021-04-17,53,point,NA,5390
+2021-04-04,2 wk ahead inc case,2021-04-17,53,point,NA,12753
+2021-04-04,3 wk ahead cum death,2021-04-24,53,point,NA,5455
+2021-04-04,3 wk ahead inc case,2021-04-24,53,point,NA,19008
+2021-04-04,4 wk ahead cum death,2021-05-01,53,point,NA,5514
+2021-04-04,4 wk ahead inc case,2021-05-01,53,point,NA,23956
+2021-04-04,5 wk ahead cum death,2021-05-08,53,point,NA,5575
+2021-04-04,5 wk ahead inc case,2021-05-08,53,point,NA,28983
+2021-04-04,1 wk ahead cum death,2021-04-10,54,point,NA,2788
+2021-04-04,1 wk ahead inc case,2021-04-10,54,point,NA,2818
+2021-04-04,2 wk ahead cum death,2021-04-17,54,point,NA,2876
+2021-04-04,2 wk ahead inc case,2021-04-17,54,point,NA,5760
+2021-04-04,3 wk ahead cum death,2021-04-24,54,point,NA,2966
+2021-04-04,3 wk ahead inc case,2021-04-24,54,point,NA,8785
+2021-04-04,4 wk ahead cum death,2021-05-01,54,point,NA,3060
+2021-04-04,4 wk ahead inc case,2021-05-01,54,point,NA,11900
+2021-04-04,5 wk ahead cum death,2021-05-08,54,point,NA,3157
+2021-04-04,5 wk ahead inc case,2021-05-08,54,point,NA,15037
+2021-04-04,1 wk ahead cum death,2021-04-10,55,point,NA,7394
+2021-04-04,1 wk ahead inc case,2021-04-10,55,point,NA,3763.351984
+2021-04-04,2 wk ahead cum death,2021-04-17,55,point,NA,7470
+2021-04-04,2 wk ahead inc case,2021-04-17,55,point,NA,7097.934577
+2021-04-04,3 wk ahead cum death,2021-04-24,55,point,NA,7498
+2021-04-04,3 wk ahead inc case,2021-04-24,55,point,NA,10136.98441
+2021-04-04,4 wk ahead cum death,2021-05-01,55,point,NA,7564
+2021-04-04,4 wk ahead inc case,2021-05-01,55,point,NA,12906.69929
+2021-04-04,5 wk ahead cum death,2021-05-08,55,point,NA,7613
+2021-04-04,5 wk ahead inc case,2021-05-08,55,point,NA,15430.95422
+2021-04-04,1 wk ahead cum death,2021-04-10,56,point,NA,701
+2021-04-04,1 wk ahead inc case,2021-04-10,56,point,NA,454
+2021-04-04,2 wk ahead cum death,2021-04-17,56,point,NA,856
+2021-04-04,2 wk ahead inc case,2021-04-17,56,point,NA,845
+2021-04-04,3 wk ahead cum death,2021-04-24,56,point,NA,928
+2021-04-04,3 wk ahead inc case,2021-04-24,56,point,NA,1393
+2021-04-04,4 wk ahead cum death,2021-05-01,56,point,NA,994
+2021-04-04,4 wk ahead inc case,2021-05-01,56,point,NA,1767
+2021-04-04,5 wk ahead cum death,2021-05-08,56,point,NA,1169
+2021-04-04,5 wk ahead inc case,2021-05-08,56,point,NA,2172
