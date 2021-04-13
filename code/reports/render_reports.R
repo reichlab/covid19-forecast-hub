@@ -41,6 +41,7 @@ locs <- hub_locations %>%
 # all_states <-locs[58,] # VI#
 # all_states <- locs[c(56, 58),] # PR, VI
 # all_states <- locs[c(2:52, 54, 56, 58),] # all
+# all_states <- locs[c(2, 58),] # AK and VI
 all_states <- locs[c(2:52, 56, 58),] # all but Guam
 
 state_fips <- all_states$fips
