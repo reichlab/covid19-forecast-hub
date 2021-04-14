@@ -118,6 +118,7 @@ repository are (with data reuse license):
  - [Johns Hopkins University Applied Physics Laboratory - Gecko](https://gitlab.jhuapl.edu/panagmj1/gecko-sarima) (MIT)
  - [Johns Hopkins University Applied Physics Laboratory - SLPHospEns](https://github.com/lmullany/JHUAPL-SLPHospEns) (MIT)
  - [Johns Hopkins University Justin Lessler lab. Google Inc. ](https://github.com/HopkinsIDD/EpiForecastStatMech) (gpl-3.0)
+ - [Massachusetts Institute of Technology - Cassandra](https://github.com/oskali/mit_cassandra) (MIT)
  - [Massachusetts Institute of Technology - Covid Analytics](https://www.covidanalytics.io/) (Apache 2.0)
  - [Massachusetts Institute of Technology - Covid Alliance](http://infectiontrajectory.covidalliance.com/) (CC-BY-4.0)
  - [Massachusetts Institute of Technology - Critical Data](https://github.com/sakethsundar/covid-forecaster) (MIT)
