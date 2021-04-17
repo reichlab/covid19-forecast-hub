@@ -5,7 +5,7 @@ model_contributors: Dean Karlen (University of Victoria and TRIUMF) <karlen@uvic
 website_url: https://pypm.github.io/home/
 license: gpl-3.0
 team_model_designation: primary
-methods: Discrete-time difference equations with long periods of constant transmission rate
+methods: Discrete-time difference equations with long periods of constant transmission rate. Jan 31 2021 - include vaccination. Feb 28 2021 - added a variant strain
 team_funding: none
-data_inputs: https://covidtracking.com
+data_inputs: JHU CSSE case and death data, HHS hospitalization data (starting Nov 22, 2020), Covid Tracking Project (prior to Nov 22), Google open vaccination data, CDC seroprevalence, Helix.com/covid19db (SGTF data)
 citation: https://arxiv.org/abs/2007.07156

@@ -2,7 +2,7 @@ team_name: EpiForecasts group at the London School of Hygiene & Tropical Medicin
 model_name: ensemble1
 model_abbr: epiforecasts-ensemble1
 model_contributors: Katharine Sherratt (LSHTM)<katharine.sherratt@lshtm.ac.uk>,  Nikos
-  Bosse (LSHTM),  Sam Abbott (LSHTM),  Sophie Meakin (LSHTM),  Joel Hellewell (LSHTM),  James
+  Bosse (LSHTM),  Sam Abbott (LSHTM)<sam.abbott@lshtm.ac.uk>,  Sophie Meakin (LSHTM),  Joel Hellewell (LSHTM),  James
   Munday (LSHTM),  Sebastian Funk (LSHTM)<sebastian.funk@lshtm.ac.uk>
 website_url: https://github.com/epiforecasts/covid-us-deaths
 license: mit

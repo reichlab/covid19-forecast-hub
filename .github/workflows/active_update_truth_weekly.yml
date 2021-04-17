@@ -1,0 +1,104 @@
+name: (Active) Update JHU, NY Times, USAFacts truth data weekly
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: '(Active) Update truth weekly'
+        required: false
+  schedule:
+    - cron: '0 16 * * 0'
+
+jobs:
+  upload_zoltar:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10.2]
+
+    steps:
+    # - run: sudo apt-get remove ghc-** azure-cli firefox google-cloud-sdk google-chrome-stable hhvm dotnet-sdk-** dotnet-runtime-** moby-** adoptopenjdk-** mongodb-org-** mysql-**
+    # - run: sudo apt-get autoremove
+    - name: Free disk space
+      run: |
+          df --human-readable
+          sudo apt clean
+          docker rmi $(docker image ls --all --quiet)
+          rm --recursive --force "$AGENT_TOOLSDIRECTORY"
+          
+    - name: Maximize build space
+      uses: easimon/maximize-build-space@v4
+      with:
+        root-reserve-mb: 512
+        swap-size-mb: 1024
+        remove-dotnet: 'true'
+        remove-android: 'true'
+        remove-haskell: 'true'
+
+    - name: remove some additional packages
+      run: sudo apt-get remove ghc-** azure-cli firefox google-cloud-sdk google-chrome-stable hhvm dotnet-sdk-** dotnet-runtime-** moby-** adoptopenjdk-** mongodb-org-** mysql-**
+    
+    - name: autoremove unnecessary dependencies
+      run: sudo apt-get autoremove
+        
+    - name: Check space available
+      run: df --human-readable
+      
+    - name: Checkout covid19-forecast-hub repo
+      uses: actions/checkout@v2
+      with:
+        path: covid19-forecast-hub
+        
+    - name: Setup GitHub Action for R language
+      uses: r-lib/actions/setup-r@v1
+
+    - name: Install system dependencies
+      run: sudo apt-get install libudunits2-dev libcurl4-openssl-dev libgdal-dev
+      
+    - name: Checkout covidData
+      uses: actions/checkout@v2
+      with:
+        repository: reichlab/covidData
+        token: ${{secrets.GH_TOKEN}}
+        path: covidData
+        
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+        architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+    
+    - name: Install python dependencies 
+      run: pip3 install -r visualization/requirements.txt
+      working-directory: ./covid19-forecast-hub
+      
+    - name: Install R dependencies (for covidData + covidHubUtils)
+      run: Rscript -e "install.packages('devtools');devtools::install_github('reichlab/zoltr');devtools::install_github('reichlab/covidHubUtils');install.packages(c('tidyverse', 'rvest', 'here'))"
+
+    - run: mkdir ./covidData/data-raw/JHU/
+    
+    - name: Install covidData
+      run: make recent_data
+      working-directory: ./covidData/code/data-processing
+      
+    - name: Generate truth csv files (NYTimes, USAFacts, JHU, Hospitalization, Zoltar)
+      run: Rscript -e 'library(covidData);library(covidHubUtils);covidHubUtils::preprocess_nytimes("./covid19-forecast-hub/data-truth/nytimes/");covidHubUtils::preprocess_usafacts("./covid19-forecast-hub/data-truth/usafacts/");covidHubUtils::preprocess_jhu("./covid19-forecast-hub/data-truth/");covidHubUtils::preprocess_hospitalization("./covid19-forecast-hub/data-truth/");covidHubUtils::save_truth_for_zoltar("./covid19-forecast-hub/data-truth/")'
+      
+    - name: Push Zoltar truth to Zoltar
+      run: python3 ./code/zoltar_scripts/upload_truth_to_zoltar.py
+      working-directory: ./covid19-forecast-hub
+      env:
+        Z_USERNAME: ${{ secrets.Z_USERNAME}}
+        Z_PASSWORD: ${{ secrets.Z_PASSWORD}}
+        
+    - name: Create truth JSON for visualization
+      run: python3 ./data-truth/get_visualization_truth_json_from_csv.py
+      working-directory: ./covid19-forecast-hub
+      
+    - name: Push generated files to GitHub
+      run: bash ./travis/push-gh.sh
+      working-directory: ./covid19-forecast-hub
+      env:
+        GH_TOKEN: ${{secrets.GH_TOKEN}}
+        
+    - name: Check space available after update
+      run: df --human-readable

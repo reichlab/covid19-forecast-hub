@@ -18,6 +18,11 @@ you can do prior to this pull request. In addition, we describe
 -   [data formatting](#Data-formatting)
 -   [data validation](#Data-validation)
 -   [metadata format](#Meta-data)
+-   [policy on late submissions](#late-policy)
+
+
+
+
 
 Ground truth data
 -----------------
@@ -55,44 +60,98 @@ and including Saturday.
 As of the week of 16 Nov 2020, a proposal has been made to use
 HealthData.gov confirmed admissions as the ground truth
 hospitalizations. Prior to this week, no official source for
-hospitalization ground truth data had been identified.
+hospitalization ground truth data had been identified. On 1 Dec 2020, a
+final determination of has been made as detailed below.
 
-Hospitalization data are released (approximately) daily at
-[HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity
-by
-State](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state)
-with possible [revisions and
-historical](https://healthdata.gov/node/3281081/revisions). Each daily
-file includes hospitalization data for each state. For the Hub, the
-ground truth data will be the sum of the columns
+#### HealthData.gov Hospitalization Timeseries
+
+The truth data that hospitalization forecasts (`inc hosp` targets) will
+be evaluated against are the [HealthData.gov COVID-19 Reported Patient
+Impact and Hospital Capacity by State
+Timeseries](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh).
+These data are released weekly, with occasional updates more
+frequently.
+
+A supplemental data source with daily counts that should be updated more
+frequently (typically daily) but does not include the full time-series
+is [HealthData.gov COVID-19 Reported Patient Impact and Hospital
+Capacity by
+State](https://healthdata.gov/dataset/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/6xf2-c3ie).
+
+#### Resources for Accessing Hospitalization Data
+
+1.  We are working with our collaborators at the [Delphi Group at
+    CMU](https://delphi.cmu.edu/) to make these data available through
+    their [Delphi Epidata
+    API](https://cmu-delphi.github.io/delphi-epidata/api/README.html).
+    The current weekly timeseries of the hospitalization data as well as
+    prior versions of the data are available as the [`covid_hosp`
+    endpoint of the
+    API](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp.html).
+    At some point, this endpoint will likely be added to the [COVIDcast
+    Epidata
+    API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast.html),
+    but at this point it is only available through the regular Epidata
+    API.
+
+2.  The Forecast Hub has developed the [`covidData` R
+    package](https://github.com/reichlab/covidData) which facilitates
+    downloading and storing HealthData.gov data on hospitalizations 
+    (as well as JHU data on cases and deaths). This package is under
+    active development and requires a bit of set-up with python and
+    `make` but it does provide tools to access all ground truth data
+    used by the Hub. A vignette showing some basic functionality for the
+    package is available in
+    [Rmarkdown](https://github.com/reichlab/covidData/blob/master/vignettes/covidData.Rmd)
+    ([click here to view the HTML
+    vignette](https://htmlpreview.github.io/?https://github.com/reichlab/covidData/blob/master/vignettes/covidData.html)).
+
+#### Data processing
+
+The hospitalization truth data is computed as the sum of the columns
 `previous_day_admission_adult_covid_confirmed` and
-`previous_day_admission_pediatric_covid_confirmed`. These columns
-provide the new daily admission for adults and kids, respectively. Other
-columns represent “suspected” COVID-19 hospitalizations, however because
+`previous_day_admission_pediatric_covid_confirmed` which provide the new
+daily admission for adults and kids, respectively. (Other columns
+represent “suspected” COVID-19 hospitalizations, however because
 definitions and implementations of suspected cases vary widely, our
 public health collaborators have recommended using the above columns
-only.
+only.)
 
-Additionally, daily hospitalizations are also released (weekly) as a
-time series at [HealthData.gov COVID-19 Reported Patient Impact and
-Hospital Capacity by State
-Timeseries](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries)
-which, presumably, is updated with all revisions. This will likely be a
-more straight-forward version to use, but released less frequently than
-the daily data.
+Since these admission data are listed as “previous day” admissions in
+the raw data, the truth data shifts values in the `date` column one day
+earlier so that `inc hosp` align with the date the admissions occurred.
 
-Additional, resources that describe this data source are available.
+As an example, the following data from HealthData.gov
+
+       date    | previous_day_admission_adult_covid_confirmed | previous_day_admission_pediatric_covid_confirmed
+    -----------|----------------------------------------------|-------------------------------------------------
+    2020-10-30 |                  5                           |                       12                        
+
+would turn into the following observed data for incident
+hospitalizations
+
+       date    | incident_hospitalizations
+    -----------|----------------------------
+    2020-10-29 |          17               
+
+National hospitalization, i.e. US, data are constructed from these data
+by summing the data across all 50 states, Washington DC (DC), Puerto
+Rico(PR), and the US Virgin Islands (VI). The HHS data do not include
+admissions for additional territories.
+
+#### Additional resources
+
+Here are a few additional resources that describe these hospitalization
+data:
 
 -   [data dictionary for the
     dataset](https://healthdata.gov/covid-19-reported-patient-impact-and-hospital-capacity-state-data-dictionary)
 -   the [official document describing the “guidance for hospital
     reporting”](https://www.hhs.gov/sites/default/files/covid-19-faqs-hospitals-hospital-laboratory-acute-care-facility-data-reporting.pdf)
-
-We are working with our collaborators at the [COVIDcast Epidata
-API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast.html) to
-develop a fully versioned set of these data available through their
-system. More details will be forthcoming as we learn more about these
-data sources.
+-   [US Hospital Reporting
+    Dashboard](https://protect-public.hhs.gov/pages/covid19-module)
+    showing the percent of hospitals that report data into the
+    hospitalization dataset, by state
 
 Data formatting
 ---------------
@@ -337,7 +396,7 @@ Teams should provide the following 23 quantiles:
     ## [13] 0.550 0.600 0.650 0.700 0.750 0.800 0.850 0.900 0.950 0.975 0.990
 
 for all `target`s except “N wk ahead inc case” target. For the “N wk
-ahead inc case” target, teams should provide the following 6 quantiles:
+ahead inc case” target, teams should provide the following 7 quantiles:
 
     c(0.025, 0.100, 0.250, 0.500, 0.750, 0.900, 0.975)
 
@@ -391,15 +450,8 @@ instructions](R_forecast_file_validation.md) to run some checks in R.
 These checks are no longer maintained, but may still be of use to teams
 working with R.
 
-Data visualization
+
+Policy on late or updated submissions
 ------------------
 
-If you want to visualize your forecasts, you can use our [R shiny
-app](./explore_processed_data.R) to visualize your forecast by running
-
-    source("explore_processed_data.R")
-    shinyApp(ui = ui, server = server)
-
-from within the [data-processed/](./) folder. This is mainly an internal
-tool we use to help us know what forecasts are in the repository. Thus,
-it is provided as-is within no warranty.
+In order to ensure that forecasting is done in real-time, all forecasts should be submitted to the forecast hub within 1 day of the forecast date.  We will no longer be accepting late forecasts due to technical issues, missing deadlines, or updated modeling methods. We will still accept updated forecasts if there was a bug in the original file. If you need to submit an updated forecast for this reason, please include a comment in your pull request confirming that there was a bug and that the forecast was fit only to data available at the time. We will also accept late forecasts from new teams if they can provide publicly available information showing that the forecasts were made in real-time (e.g. github commit history).

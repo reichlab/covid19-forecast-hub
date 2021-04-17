@@ -1,0 +1,11 @@
+team_name: Wadhwani AI Covid Data Science Team
+model_name: BayesOpt
+model_abbr: Wadhwani_AI-BayesOpt
+model_contributors: Sansiddh Jain <sansiddh@wadhwaniai.org>, Avtansh Tiwari <avtansh@wadhwaniai.org>, Ayush Deva <ayush@wadhwaniai.org>, Mihir Kulkarni <mihir@wadhwaniai.org>, Siddhant Shingi <siddhant@wadhwaniai.org>, Nayana Bannur <nayana.bannur@wadhwaniai.org>, Jerome White <jerome@wadhwaniai.org>, Srujana Merugu <srujana@wadhwaniai.org>, Alpan Raval <alpan@wadhwaniai.org> 
+website_url: http://wadhwaniai.org/
+license: other
+team_model_designation: primary
+methods: We use a novel model-agnostic Bayesian optimization ("BayesOpt") approach for learning the parameters of our SEIR model from observed data.
+team_funding: USAID
+data_inputs: JHU CSSE daily reports
+methods_long: We use a novel model-agnostic Bayesian optimization ("BayesOpt") approach for learning the parameters of our SEIR model from observed data. All learning is end-to-end data driven with no spatio-temporal customisation. Percentiles are estimated using an uncertainty estimation algorithm built on BayesOpt trials. The point forecast is obtained via a weighted aggregation of BayesOpt trials.

@@ -22,9 +22,8 @@ methods_long: "On our website we present daily projections for\
   \ mortality and undercount, and fraction of positive tests.\
   \ Our projections are driven by the effective transmission ratio, Rt.\
   \ More specifically we run an SIR model using deaths and another using cases\
-  \ resulting in Rt for deaths and Rt for cases. We use the average of these\
-  \ two as the starting point or driver for our projections (new: 20-10-18).\
-  \ For forecast how Rt will change with time, we analyze Rt change data through\
+  \ resulting in Rt for deaths and Rt for cases.\
+  \ To forecast how Rt will change with time, we analyze Rt change data through\
   \ the course of the pandemic and apply a model of that characteristic behavior\
   \ to forecast infections and deaths.\
   \ UPDATE 20-10-18: Changed Rt forecast from Rt for deaths to the average of\
@@ -32,4 +31,9 @@ methods_long: "On our website we present daily projections for\
   \ UPDATE 20-10-25: Changed from Sunday forecast to the average of\
   \ Friday, Saturday and Sunday forecasts.\
   \ UPDATE 20-11-08: Corrected undercount calculation approach\
-  \ resulting in an increase in forecasted cases." 
+  \ resulting in an increase in forecasted cases.\
+  \ UPDATE 20-11-29: Adjusted the 20-11-29 forecast by hand in light of\
+  \ under-reporting over the Thanksgiving holiday week.\
+  \ UPDATE 20-12-06: Cleaned up and enhanced a number of things in the RtDriven code.\
+  \ UPDATE 21-01-25: Modified data smoothing. Incorporated temporary immunity.\
+  \ Incorporated vaccinations."

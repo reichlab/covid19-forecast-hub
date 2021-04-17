@@ -11,7 +11,7 @@ methods: A heterogeneous infection rate model with human mobility for epidemic m
   deaths.
 team_funding: Supported by US National Science Foundation Award No. 2027007 (RAPID)
 repo_url: https://github.com/scc-usc/ReCOVER-COVID-19
-data_inputs: JHU
+data_inputs: Cases and deaths - JHU, hospitalization - HHS time-series
 citation: https://arxiv.org/abs/2007.05180
 methods_long: We use our own epidemic model called SI-kJalpha, preliminary version
   of which we have successfully used during DARPA Grand Challenge 2014. Our model
@@ -26,3 +26,14 @@ methods_long: We use our own epidemic model called SI-kJalpha, preliminary versi
   Our model is able to quickly adapt to changing trends, and the variations in parameters
   during different times/policies allow us to forecast different scenarios such as
   what would happen if we were to disregard social distancing suggestions.
+  For each state, we model hospitalizations as a separate compartment, as a linear 
+  function of recent cases with heterogeneous rates. This means that for some 
+  hyper-parameter J, those who were infected at time t-1 to t-J will have a separate 
+  rate from those infected at t-(J+1) to t-2J, and so on. This is similar to how we 
+  perform death forecasts. For long-term forecasts (more than a few days in the future), 
+  the cases are forecasted first based on our SIkJalpha model, which forms the input to 
+  hospitalization prediction. 
+  While we account for changing trends by putting more emphasis on recently seen data, 
+  we assume that the trends will remain the same in the future for our point forecasts. 
+  We try to account for changing trends in the future in our quantile forecasts by 
+  modeling the empirical error our approach makes using a Random Forest.

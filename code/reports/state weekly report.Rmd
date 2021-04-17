@@ -1,0 +1,1132 @@
+---
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+
+---
+<!-- code to run rmarkdown::render(input="./vignettes/covidHubUtils-overview.Rmd") -->
+
+<!-- Code for adding logo at the top -->
+
+
+<style>
+
+#TOC {
+  background: url("https://github.com/reichlab/covid19-forecast-hub-web/raw/master/images/forecast-hub-logo_DARKBLUE-20px-padding.png");
+  background-size: contain;
+  padding-top: 80px !important;
+  background-repeat: no-repeat;
+}
+</style>
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(lubridate)
+library(DT)
+library(zoltr) ## devtools::install_github("reichlab/zoltr")
+library(scico)
+source("../processing-fxns/get_next_saturday.R")
+library(tidyverse)
+library(htmltools)
+library(covidHubUtils)
+theme_set(theme_bw())
+
+# new libraries
+library(crosstalk)
+library(plotly)
+#
+theme_set(theme_bw())
+```
+
+```{r aux-data}
+locs <- hub_locations %>%
+  rename(Population = population)
+```
+
+```{r setup-location}
+
+# Specify location
+# 
+# # Massachusetts
+# state<-"25"
+# state_county<-grep("^25",locs$fips,value=TRUE)
+# #remove DUKES and NANTUCKET for MA  (NEED TO GENERALIZE THIS FOR ALL STATES)
+# state_county=state_county[state_county!=25007 & state_county!=25019 ]
+# exclude<-paste0("Please note that Dukes and Nantucket are not included in county level data.")
+
+# # #Iowa
+# state<-"19"
+# state_county<-grep("^19",locs$fips,value=TRUE)
+# exclude<-paste0("")
+# 
+#PA
+state<-"42"
+state_county<-grep("^42",locs$fips,value=TRUE)
+exclude<-paste0("")
+
+state_name <- locs %>% 
+  filter(fips %in% state)  %>%
+  select(location_name)
+title_var<-paste0("COVID-19 ",state_name," Forecast Hub report ", Sys.Date())
+
+#still need to get gl_state to work
+gl_state<-glob2rx(state,trim.head=TRUE,trim.tail=FALSE) 
+
+#counties within state
+state_county_labels<-locs %>%
+  filter(fips %in% state_county) %>%
+  select(location_name)
+
+county<-state_county[-1]
+
+
+
+
+
+```
+
+
+---
+title: `r title_var`
+author: "Nicholas G Reich, Estee Y Cramer, Martha W Zorn, Evan L Ray, Serena Y Wang <br><br>https://covid19forecasthub.org/"
+date: "`r Sys.Date()`"
+
+---
+```{r zoltar-setup}
+## connect to Zoltar
+zoltar_connection <- new_connection()
+zoltar_authenticate(zoltar_connection, Sys.getenv("Z_USERNAME"), Sys.getenv("Z_PASSWORD"))
+
+## construct Zoltar query
+project_url <- "https://www.zoltardata.com/api/project/44/"
+```
+
+```{r get-date-boundaries}
+next_saturday <- as.Date(calc_target_week_end_date(today(), horizon = 0))
+saturday_4_wk_ahead <- next_saturday + 7*3
+saturday_4_wk_ahead_txt <- format(saturday_4_wk_ahead, "%B %d")
+last_5_saturdays <- next_saturday - 7*c(5:1)
+last_12_saturdays <- next_saturday - 7*c(12:1)
+last_6_saturdays <- next_saturday - 7*c(6:1)
+# to load forecast submitted on last Monday
+this_monday <- next_saturday - 5
+last_12_mondays<-last_12_saturdays-5
+last_6_mondays<-last_6_saturdays-5
+
+# # use fixed date
+# next_saturday <-  as.Date("2020-11-14")
+# saturday_4_wk_ahead <- next_saturday + 7*3
+# saturday_4_wk_ahead_txt <- format(saturday_4_wk_ahead, "%B %d")
+# last_5_saturdays <- next_saturday - 7*c(5:1)
+# this_monday <- next_saturday - 5
+
+
+```
+
+
+# Background
+This report provides a brief summary of the weekly ensemble forecast for `r state_name` from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/). In collaboration with the US CDC, our team aggregates COVID-19 forecasts from dozens of teams around the globe. Typically on Wednesday or Thursday of each week, a summary of the week's forecasts from the COVID-19 Forecast Hub appear on the [official CDC COVID-19 forecasting page](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html).
+
+```{r define weeks,STATE}
+
+# Define weeks
+def_weeks<-seq(as.Date(last_5_saturdays[3]+1), as.Date(last_5_saturdays[5]+15),by="1 day")
+# 
+
+```
+
+
+```{r nmodels-this-week, eval=FALSE}
+possible_timezeroes <- seq.Date(this_monday, this_monday-6, by="-1 day")
+this_week_timezeroes <- timezeros(zoltar_connection, project_url) %>%
+  filter(timezero_date %in% possible_timezeroes) %>%
+  pull(timezero_date)
+
+models_this_week <- zoltr::do_zoltar_query(
+  zoltar_connection, project_url, 
+  targets = c("1 wk ahead cum death", "1 wk ahead inc death", "1 wk ahead inc case", "1 day ahead inc hosp"),
+  # timezeros = as.character(seq.Date(this_monday, this_monday-6, by="-1 day")),
+   timezeros = as.character(this_week_timezeroes),
+  types = c("point"), 
+  verbose = FALSE,
+  models = c(),
+ query_type = "forecasts") %>%
+  pull(model) %>%
+  unique()
+nmodels_this_week <- length(models_this_week)
+```
+
+```{r count-models}
+## how many models in inc_death ensemble?
+inc_death_models <- read_csv(paste0("../../ensemble-metadata/", this_monday, "-inc_death-model-weights.csv")) %>%
+ select(-locations) %>%
+  apply(MARGIN = 2, FUN=function(x) sum(x))
+n_inc_death_models <- sum(inc_death_models>0)
+
+## how many models in cum_death ensemble?
+cum_death_models <- read_csv(paste0("../../ensemble-metadata/", this_monday, "-cum_death-model-weights.csv")) %>%
+  select(-locations) %>%
+  apply(MARGIN = 2, FUN=function(x) sum(x))
+n_cum_death_models <- sum(cum_death_models>0)
+
+## how many models in inc_case ensemble?
+inc_case_models <- read_csv(paste0("../../ensemble-metadata/", this_monday, "-inc_case-model-weights.csv"))%>%
+  select(-locations) %>%
+  apply(MARGIN = 2, FUN=function(x) sum(x))
+n_inc_case_models <- sum(inc_case_models>0)
+
+n_unique_models <- length(unique(c(names(inc_death_models)[inc_death_models>0],
+  names(cum_death_models)[cum_death_models>0],
+  names(inc_case_models)[inc_case_models>0])))
+```
+
+
+
+Every week, teams submit their forecasts to the COVID-19 Forecast Hub. 
+ 
+
+Each Tuesday, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 cases at the county, state, and national level and deaths at the state and national level. At the moment, we only generate ensemble forecasts for four weeks into the future, as we don't have reliable evidence that the models are accurate past that horizon.
+
+Weekly reports from the COVID-19 Forecast Hub can be found at [this page](https://covid19forecasthub.org/doc/reports/). We expect that these reports will become more detailed as the weeks go on. 
+
+
+```{r download-ensemble-data}
+inc_death_targets <- paste(1:4, "wk ahead inc death")
+cum_death_targets <- paste(1:4, "wk ahead cum death")
+inc_case_targets <- paste(1:4, "wk ahead inc case")
+
+# submit query
+dat <- zoltr:: do_zoltar_query(
+  zoltar_connection, project_url, TRUE,
+  models = c("COVIDhub-ensemble"),
+  query_type = "forecasts",
+  targets = c(inc_death_targets, cum_death_targets,inc_case_targets),
+       units=c("US",state_county),
+  timezeros = as.character(this_monday),
+  types = c("point", "quantile"), 
+  verbose = FALSE) %>%
+  ## choose only columns we need and with data
+  select(model, timezero, unit, target, class, quantile, value) %>%
+  rename(fips=unit) %>%
+  ## create rate variable and week-ahead
+  mutate(week_ahead = as.numeric(substr(target, 0,1)),
+    ## recreates the target_end_date from GitHub
+   target_end_date = as.Date(calc_target_week_end_date(timezero, horizon = week_ahead)))
+  # # add location_name column in dat
+  # left_join(fips_codes, by=c("fips" = "location")) %>%
+  # dplyr::select(-population, -abbreviation)
+```
+
+
+
+# COVID-19 Mortality Forecasts 
+
+Since the inputs to the ensemble model do not factor in changes in behavior or policy that could have an impact on short-term disease transmission (e.g. school openings or closures, new interventions, governmental policy shift, etc...), the ensemble model itself should not be looked to for specific answers to questions like "what will happen if or when schools open in 2 weeks" because most of the input models are not factoring in these changes. That said, the ensemble model has consistently shown strong predictive performance, and very few of the many interventions put in place appear to have created dramatic changes in short-term disease transmission.
+
+## State level
+
+This week, our ensemble combined forecasts for `r state_name` from `r n_unique_models` different models.
+
+```{r state-summary-death}
+state_cum_deaths <- dat %>% 
+  filter(fips==state, target=="4 wk ahead cum death", class=="point") %>% 
+  pull(value) %>% 
+  round(-3) %>% 
+  format(big.mark = ",")
+state_inc_death_range <- dat %>% 
+  filter(fips==state, target %in% inc_death_targets, class=="point") %>% 
+  pull(value) %>% range() %>%
+  round(-1) %>% format(big.mark = ",")
+state_inc_death_wk_pi_round <- dat %>% 
+  filter(fips==state, target == "4 wk ahead inc death", quantile %in% c(0.025, 0.975)) %>% 
+  pull(value) %>% sort() %>%
+  round(-1) %>% format(big.mark = ",")
+state_inc_death_wk_pi <- dat %>% 
+  filter(fips==state, target == "4 wk ahead inc death", quantile %in% c(0.025, 0.975)) %>% 
+  pull(value) %>% sort() %>% 
+  format(big.mark = ",")
+```
+At the state level, the ensemble model's best guess is that we will see between `r state_inc_death_range[1]` and `r state_inc_death_range[2]` deaths each week for the next four weeks with around `r state_cum_deaths` deaths by `r saturday_4_wk_ahead_txt` (Figure 1). However for the week ending `r saturday_4_wk_ahead_txt`, the ensemble shows substantial uncertainty, with observed deaths between `r state_inc_death_wk_pi_round[1]` and  `r state_inc_death_wk_pi_round[2]` deemed possible (95% prediction interval:  `r state_inc_death_wk_pi[1]` -  `r state_inc_death_wk_pi[2]`).
+
+During periods of relative stability, models in general show broad agreement about the predicted trajectory of the outbreak. However, when there are steep surges or declines in cases or deaths, models often have quite different predictions for the upcoming weeks. The result is that there is increased uncertainty in the ensemble forecast, which can be seen as wider confidence intervals in the forecast visualization. You can explore the full set of models, including their forecasts for past weeks online at our [interactive forecast visualization](https://viz.covid19forecasthub.org/).
+
+
+```{r make-state-inc-death-plot, fig.cap="Figure 1: Weekly observed and forecasted COVID-19 deaths. Observed data from [JHU CSSE](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/) and forecasts from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/).", fig.topcaption=TRUE}
+
+quantiles_to_plot <- c(0.025, 0.1, 0.25, 0.75, 0.9, 0.975)
+
+blues <- RColorBrewer::brewer.pal(n=length(quantiles_to_plot)/2+1, "Blues")
+
+inc_death_forecast <- dat %>%
+  filter(target %in% inc_death_targets)
+plot1_cap <- paste0("Weekly reported COVID-19 deaths in ", state_name,": observed and forecasted") 
+## get full inc death truth for plotting
+inc_death_truth <- read_csv("../../data-truth/truth-Incident Deaths.csv") %>%
+  rename(target_end_date = date, fips = location) %>%
+  mutate(model = "observed data (JHU)") %>%
+  group_by(fips, model) %>% arrange(target_end_date) %>%
+  mutate(value = RcppRoll::roll_sum(value, 7, align = "right", fill = NA)) %>%
+  ungroup() %>%
+  left_join(locs, by=c("fips")) %>%
+  filter(target_end_date %in% seq.Date(as.Date("2020-01-25"), to = Sys.Date(), by="1 week"),
+    fips %in% unique(inc_death_forecast$fips)) 
+
+inc_death_all_points <- inc_death_truth %>%
+  bind_rows(filter(inc_death_forecast, class=="point")) %>%
+  bind_rows(filter(inc_death_truth, target_end_date==last_5_saturdays[5]) %>% mutate(model="COVIDhub-ensemble")) %>%
+  mutate(model = relevel(factor(model), ref="observed data (JHU)"))
+  
+    
+## inc death data for code of uncertainty
+dummy_inc_death <- tibble(
+  quantile = quantiles_to_plot, 
+  target_end_date=last_5_saturdays[5]) %>%
+  right_join(inc_death_all_points %>%
+      select(-quantile) %>%
+      filter(target_end_date == last_5_saturdays[5]))
+
+inc_death_quantiles <- inc_death_forecast %>%
+  dplyr::filter(class=="quantile") %>%
+  bind_rows(dummy_inc_death) %>%
+  dplyr::filter(quantile %in% quantiles_to_plot) %>%
+  dplyr::mutate(endpoint_type = ifelse(quantile < 0.5, 'lower', 'upper'),
+    alpha = ifelse(endpoint_type == 'lower',
+      format(2*quantile, digits=3, nsmall=3),
+      format(2*(1-quantile), digits=3, nsmall=3)),
+    `Prediction Interval` = fct_rev(paste0((1-as.numeric(alpha))*100, "%"))
+  ) %>%
+  dplyr::filter(alpha != "1.000") %>%
+  dplyr::select(-quantile) %>%
+  tidyr::pivot_wider(names_from='endpoint_type', values_from='value')
+
+ggplot() +
+  geom_ribbon(data = inc_death_quantiles %>% dplyr::filter(fips==state),
+    mapping = aes(x = target_end_date,
+      ymin=lower, ymax=upper,
+      fill=`Prediction Interval`)) +
+  geom_line(data=inc_death_all_points %>%
+      dplyr::filter(fips == state),
+    mapping = aes(x = target_end_date, y = value, color = model)) +
+  geom_point(data=inc_death_all_points %>%
+      dplyr::filter(fips == state, !(model=="COVIDhub-ensemble" & target_end_date <= this_monday)),
+    mapping = aes(x = target_end_date, y = value, color = model)) +
+  scale_fill_manual(values = blues[1:(length(blues)-1)]) +
+  scale_color_manual(values = c("black", tail(blues,1))) +
+  scale_x_date(name = NULL, date_breaks="1 month", date_labels = "%b %d") +
+  ylab("incident deaths") +
+  labs(title=plot1_cap,
+    caption="source: JHU CSSE (observed data), COVID-19 Forecast Hub (forecasts)") +
+  theme(legend.position = c(.05,.95), legend.justification = c(0,1))
+```
+
+
+
+
+```{r prep-datatable}
+
+## get last saturday observed cumulative deaths
+cum_death_start <- read_csv("../../data-truth/truth-Cumulative Deaths.csv") %>%
+  filter(date == last_5_saturdays[5]) %>%
+  select(date, location, location_name, value) %>%
+  rename(cum_deaths_at_forecast_start = value) 
+
+## get recent observed inc deaths
+recent_inc_death_totals <- read_csv("../../data-truth/truth-Incident Deaths.csv") %>%
+  # filter(date > last_5_saturdays[3] & date <= last_5_saturdays[5]) %>%
+  mutate(last_2wk = date > last_5_saturdays[3] & date <= last_5_saturdays[5],
+    last_4wk = date > last_5_saturdays[1] & date <= last_5_saturdays[5]) %>%
+  select(date, location, location_name, value, last_2wk, last_4wk) %>%
+  group_by(location, location_name) %>%
+  summarize(last_2wk_deaths = sum(value*last_2wk),
+    last_4wk_deaths = sum(value*last_4wk)) %>%
+  ungroup() %>%
+  left_join(locs, by=c("location" = "fips")) %>%
+  left_join(cum_death_start) %>% 
+  rename(fips = location, target_end_date = date)
+
+## get last saturday observed cumulative cases
+# cum_case_start <- read_csv("../../data-truth/truth-Cumulative cases.csv") %>%
+#   filter(date == last_5_saturdays[5]) %>%
+#   select(date, location, location_name, value) %>%
+#   rename(cum_cases_at_forecast_start = value)
+## get recent observed inc cases
+recent_inc_case_totals <- read_csv("../../data-truth/truth-Incident Cases.csv") %>%
+  # filter(date > last_5_saturdays[3] & date <= last_5_saturdays[5]) %>%
+  mutate(last_1wk = date > last_5_saturdays[4] & date <= last_5_saturdays[5],
+         last_2wk = date > last_5_saturdays[3] & date <= last_5_saturdays[5]) %>%
+  select(date, location, location_name, value, last_1wk, last_2wk) %>%
+  group_by(location, location_name) %>%
+  summarize(last_1wk_cases = sum(value*last_1wk),
+            last_2wk_cases = sum(value*last_2wk)) %>%
+  ungroup() %>%
+  left_join(locs, by=c("location" = "fips")) 
+  # left_join(cum_case_start) %>% 
+  # rename(fips = location, target_end_date = date)
+```
+
+```{r accuracy of models past 6 weeks-state-deaths}
+
+#inc deaths for past 6 weeks
+inc_death_p6 <- data.frame(inc_death_all_points %>%
+      rename(location=fips,point=value)%>%
+      select(target_end_date,location,location_name.x,point) %>%
+    filter(location %in% state_county,target_end_date %in% last_6_saturdays))
+inc_death_p6_u <- unique(inc_death_p6)
+
+# submit query for forecasts past 6 weeks-using covidhubutils
+inc_death_forecast_p6<-load_forecasts(models=c("COVIDhub-ensemble"),forecast_dates =last_6_mondays,locations =state,  types = c("quantile"),targets = c(inc_death_targets))
+
+## join inc death with forecast
+inc_death_all_p6  <- inc_death_forecast_p6 %>%
+  dplyr::full_join(inc_death_p6_u,inc_death_forecast_p6,by=c("target_end_date", "location"))%>%
+  dplyr::filter(quantile %in% quantiles_to_plot,target_end_date<=this_monday) %>%
+  dplyr::mutate(endpoint_type = ifelse(quantile < 0.5, 'lower', 'upper'),
+    alpha = ifelse(endpoint_type == 'lower',
+      format(2*quantile, digits=3, nsmall=3),
+      format(2*(1-quantile), digits=3, nsmall=3)),
+    `Prediction Interval` = fct_rev(paste0((1-as.numeric(alpha))*100, "%"))
+  ) %>%
+  dplyr::filter(alpha != "1.000") %>%
+  dplyr::select(-quantile) %>%
+  tidyr::pivot_wider(names_from='endpoint_type', values_from='value')
+
+#identify if inc_death with PI
+inc_death_all_p6x<-inc_death_all_p6 %>%
+  select(target_end_date,location,alpha,lower,upper,point )%>%
+dplyr::mutate(inc_death_inPI = ifelse(point>=lower & point<=upper, 1, 0)) %>%
+dplyr::mutate(inc_death_inPI_low = ifelse(point<=lower, 1, 0)) %>%
+dplyr::mutate(inc_death_inPI_high = ifelse(point>=upper, 1, 0))
+
+# proportion PI covered truth
+pstate_inc_death_PI<-inc_death_all_p6x %>% group_by(location,alpha) %>%
+  filter(location %in% state) %>%
+  summarise_at(vars(inc_death_inPI,inc_death_inPI_low,inc_death_inPI_high), list(PI_cover=mean,PI_coverl=mean,PI_coverh=mean)) %>%
+    dplyr::mutate(PI_coverp = as.numeric(substr(inc_death_inPI_PI_cover*100, 0,3))) %>%
+    dplyr::mutate(PI_coverpl = as.numeric(substr(inc_death_inPI_low_PI_coverl*100, 0,2))) %>%
+    dplyr::mutate(PI_coverph = as.numeric(substr(inc_death_inPI_high_PI_coverh*100, 0,2)))  %>%
+    dplyr::mutate(bias = ifelse(PI_coverpl<=PI_coverph, 'higher', 'lower'))
+
+M_PI95_cover<-pstate_inc_death_PI %>%
+ filter(alpha=="0.050")
+M_PI95_covern<-paste0(M_PI95_cover$PI_coverp)
+
+
+M_PI50_cover<-pstate_inc_death_PI %>%
+  filter(alpha=="0.500")
+M_PI50_covern<-paste0(M_PI50_cover$PI_coverp)
+M_PI50_bias<-paste0(M_PI50_cover$bias)
+```
+
+
+
+```{r process-ensemble-data-deaths for US and state}
+ensemble_pointdat  <- dat  %>%
+  filter(grepl('cum death', target)) %>%
+  filter(class=="point") %>%
+  select(fips, target, value, timezero)
+
+wide_point_dat <- spread(ensemble_pointdat, target, value) %>%
+  left_join(recent_inc_death_totals) %>%
+  mutate(next_2wk_deaths = `2 wk ahead cum death` - cum_deaths_at_forecast_start,
+    diff_2wk_deaths = next_2wk_deaths - last_2wk_deaths,
+    next_4wk_deaths = `4 wk ahead cum death` - cum_deaths_at_forecast_start,
+    diff_4wk_deaths = next_4wk_deaths - last_4wk_deaths,
+    pop_x_1k = round(Population/1000),
+    last_2wk_deaths_rate = round(last_2wk_deaths/Population*100000/14,3),
+    last_4wk_deaths_rate = round(last_4wk_deaths/Population*100000/28,3),
+    next_2wk_deaths_rate = round(next_2wk_deaths/Population*100000/14,3),
+    next_4wk_deaths_rate = round(next_4wk_deaths/Population*100000/28, 3),
+    diff_2wk_deaths_rate = round(next_2wk_deaths_rate - last_2wk_deaths_rate, 3),
+    diff_4wk_deaths_rate = round(next_4wk_deaths_rate - last_4wk_deaths_rate, 3),
+   next_2wk_cum_deaths = `2 wk ahead cum death` - cum_deaths_at_forecast_start) %>%
+  select(location_name, Population, pop_x_1k, cum_deaths_at_forecast_start,
+    last_2wk_deaths, next_2wk_deaths, diff_2wk_deaths, 
+    last_4wk_deaths, next_4wk_deaths, diff_4wk_deaths,
+    last_2wk_deaths_rate, next_2wk_deaths_rate,  
+    last_4wk_deaths_rate, next_4wk_deaths_rate, 
+    diff_2wk_deaths_rate, diff_4wk_deaths_rate, next_2wk_cum_deaths)
+
+  
+#filter quantile data for predicting future weeks
+ensemble_quantdat <- dat %>%
+  filter(target == "2 wk ahead cum death") %>%
+  filter(class == "quantile")
+
+wide_quant_dat <- spread(ensemble_quantdat, target, value) %>%
+  left_join(recent_inc_death_totals %>% select(fips, location_name, last_2wk_deaths, cum_deaths_at_forecast_start)) %>% 
+  mutate(next_2wk_deaths = `2 wk ahead cum death` - cum_deaths_at_forecast_start)
+
+quant.5_cutoff <- wide_quant_dat %>% 
+  filter(quantile == .5, next_2wk_deaths >= last_2wk_deaths) 
+
+quant.25_cutoff <- wide_quant_dat %>% 
+  filter(quantile == .25, next_2wk_deaths >= last_2wk_deaths) 
+
+
+```
+For state-level death forecasts made over the last 6 weeks in `r state_name` for which observed data are now available, the 95% prediction intervals covered the truth `r M_PI95_covern`% of the time, and the 50% prediction intervals covered the truth `r M_PI50_covern`% of the time. 
+
+The sortable and searchable table below shows the total number of reported COVID-19 deaths at the US level and for `r state_name` over the last two weeks (`r format(last_5_saturdays[3]+1, "%B %d, %Y")` to `r format(last_5_saturdays[5], "%B %d, %Y")`) and the forecasted counts for the subsequent two weeks (`r format(last_5_saturdays[5]+1, "%B %d, %Y")` to `r format(last_5_saturdays[5]+14, "%B %d, %Y")`).
+
+
+```{r make-datatable-inc-death-counts}
+death_max_2wk <- max(abs(wide_point_dat$diff_2wk_deaths))
+
+brks <- seq(-death_max_2wk, death_max_2wk, length.out = 100) #quantile(df, probs = seq(.05, .95, .05), na.rm = TRUE)
+#clrs <- scico(n=length(brks)+1, palette="roma")
+clrs <- colorRampPalette(colors = rev(RColorBrewer::brewer.pal(n=3, "RdBu")))(length(brks)+1)
+
+
+table1_cap <- paste0("Table 1: US national and ", state_name," observed and predicted DEATHS for the previous two weeks and next two weeks.")
+
+table1_Observed <- paste0("Observed: (", format(last_5_saturdays[3]+1, "%m-%d-%Y") ," to ",format(last_5_saturdays[5], "%m-%d-%Y"),")")
+
+table1_Predicted <- paste0("Predicted:(", format(last_5_saturdays[5]+1, "%m-%d-%Y") ," to ",format(last_5_saturdays[5]+14, "%m-%d-%Y"),")")
+
+# a custom table container
+sketch_tab1 = htmltools::withTags(table(
+  class = 'display',
+  thead(
+    tr( 
+      th(rowspan = 2, "Geography"),
+      th(rowspan = 2, "Population"),
+      th(rowspan = 2, "Total COVID-19 deaths"),
+      th(colspan = 2, "Deaths"),
+      th(rowspan = 2, "Difference")
+    ),
+    tr(
+ lapply((c(table1_Observed, table1_Predicted)), th)))))
+
+
+datatable(wide_point_dat %>% 
+    select(location_name, Population,
+      cum_deaths_at_forecast_start, 
+      last_2wk_deaths, next_2wk_deaths, diff_2wk_deaths) %>%
+    arrange(desc(diff_2wk_deaths)),
+  caption=table1_cap,
+
+  
+  options = list(dom='t',
+    autoWidth = TRUE,
+    columnDefs = list(list(width = '100px', targets = c(0, 1, 2, 3, 4, 5)))
+  ),  #width=paste0(c(10, 100, 100, 100), 'px'),
+  rownames=FALSE,
+  colnames=c('county'='location_name', 
+    #'Population, \'000'='pop_x_1k',
+    'Population' = 'Population',
+    'Total COVID-19 deaths'='cum_deaths_at_forecast_start',
+    'Weekly death count (Obs)'='last_2wk_deaths',
+    'Weekly death count (Pred)'='next_2wk_deaths',
+    'Pred-Obs' = 'diff_2wk_deaths'),
+     container=sketch_tab1) %>%
+##  formatStyle("Daily deaths, last 2 weeks", backgroundColor = styleInterval(brks, clrs)) %>%
+##  formatStyle("Daily deaths, next 2 weeks", backgroundColor = styleInterval(brks, clrs))  %>%
+  # formatStyle("Pred-Obs", backgroundColor = styleInterval(brks, clrs)) %>%
+  formatCurrency('Total COVID-19 deaths',currency = "", interval = 3, mark = ",", digits=0) %>%
+  formatCurrency('Population',currency = "", interval = 3, mark = ",", digits=0) %>%
+  formatCurrency('Weekly death count (Obs)',currency = "", interval = 3, mark = ",", digits=0) %>%
+  formatCurrency('Weekly death count (Pred)',currency = "", interval = 3, mark = ",", digits=0)
+
+```
+```{r state-summary-cases}
+
+state_inc_case_range <- dat %>% 
+  filter(fips==state, target %in% inc_case_targets, class=="point") %>% 
+  pull(value) %>% range() %>%
+  round(-2) %>% format(big.mark = ",")
+state_inc_case_wk_pi_round <- dat %>% 
+  filter(fips==state, target == "4 wk ahead inc case", quantile %in% c(0.025, 0.975)) %>% 
+  pull(value) %>% sort() %>%
+  round(-2) %>% format(big.mark = ",")
+state_inc_case_wk_pi <- dat %>% 
+  filter(fips==state, target == "4 wk ahead inc case", quantile %in% c(0.025, 0.975)) %>% 
+  pull(value) %>% sort() %>% 
+  format(big.mark = ",")
+
+
+```
+
+# COVID-19 Incident Case Forecasts
+
+## State level
+At the state level, the ensemble model's best guess is that we will see between `r state_inc_case_range[1]` and `r state_inc_case_range[2]` cases each week for the next four weeks (Figure 2). However for the week ending `r saturday_4_wk_ahead_txt`, the ensemble shows substantial uncertainty, with observed cases between `r state_inc_case_wk_pi_round[1]` and `r state_inc_case_wk_pi[2]`.
+
+<!-- Throughought most of July, models have in general shown broad agreement about the trajectory of the outbreak over the coming weeks. However, the recent surge in cases has left models with quite different interpretations about what the next few weeks hold in terms of how many reported deaths from COVID-19 we will see.  -->
+
+You can explore the full set of models, including their forecasts for past weeks online at our [interactive forecast visualization](https://viz.covid19forecasthub.org/).
+
+```{r make-state-inc-case-plot, fig.cap="Figure 2: Weekly observed and forecasted COVID-19 Cases. Observed data from [JHU CSSE](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/) and forecasts from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/).", fig.topcaption=TRUE}
+
+quantiles_to_plot <- c(0.025, 0.1, 0.25, 0.75, 0.9, 0.975)
+
+blues <- RColorBrewer::brewer.pal(n=length(quantiles_to_plot)/2+1, "Blues")
+
+inc_case_forecast <- dat %>%
+  filter(target %in% inc_case_targets)
+plot2_cap <- paste0("Weekly reported COVID-19 cases in ", state_name,": observed and forecasted")
+## get full inc case truth for plotting
+inc_case_truth <- read_csv("../../data-truth/truth-Incident Cases.csv") %>%
+  rename(target_end_date = date, fips = location) %>%
+  mutate(model = "observed data (JHU)") %>%
+  group_by(fips, model) %>% arrange(target_end_date) %>%
+  mutate(value = RcppRoll::roll_sum(value, 7, align = "right", fill = NA)) %>%
+  ungroup() %>%
+  left_join(locs, by=c("fips")) %>%
+  filter(target_end_date %in% seq.Date(as.Date("2020-01-25"), to = Sys.Date(), by="1 week"),
+    fips %in% unique(inc_case_forecast$fips)) 
+inc_case_all_points <- inc_case_truth %>%
+  bind_rows(filter(inc_case_forecast, class=="point")) %>%
+  bind_rows(filter(inc_case_truth, target_end_date==last_5_saturdays[5]) %>% mutate(model="COVIDhub-ensemble")) %>%
+  mutate(model = relevel(factor(model), ref="observed data (JHU)"))
+  
+    
+## inc case data for code of uncertainty
+dummy_inc_case <- tibble(
+  quantile = quantiles_to_plot, 
+  target_end_date=last_5_saturdays[5]) %>%
+  right_join(inc_case_all_points %>%
+      select(-quantile) %>%
+      filter(target_end_date == last_5_saturdays[5]))
+
+inc_case_quantiles <- inc_case_forecast %>%
+  dplyr::filter(class=="quantile") %>%
+  bind_rows(dummy_inc_case) %>%
+  dplyr::filter(quantile %in% quantiles_to_plot) %>%
+  dplyr::mutate(endpoint_type = ifelse(quantile < 0.5, 'lower', 'upper'),
+    alpha = ifelse(endpoint_type == 'lower',
+      format(2*quantile, digits=3, nsmall=3),
+      format(2*(1-quantile), digits=3, nsmall=3)),
+    `Prediction Interval` = fct_rev(paste0((1-as.numeric(alpha))*100, "%"))
+  ) %>%
+  dplyr::filter(alpha != "1.000") %>%
+  dplyr::select(-quantile) %>%
+  tidyr::pivot_wider(names_from='endpoint_type', values_from='value')  %>%
+  # add tooltip text column
+   dplyr::mutate(text = paste(
+     sprintf("%s", fips),
+     sprintf("For week ending: %s", target_end_date),
+     sprintf("%s Prediction Interval: (%d,%d)", 
+             `Prediction Interval`, lower, upper),
+     sep = '<br />' ))
+
+ggplot() +
+  geom_ribbon(data = inc_case_quantiles %>% dplyr::filter(fips==state),
+    mapping = aes(x = target_end_date,
+      ymin=lower, ymax=upper,
+      fill=`Prediction Interval`)) +
+  geom_line(data=inc_case_all_points %>%
+      dplyr::filter(fips == state),
+    mapping = aes(x = target_end_date, y = value, color = model)) +
+  geom_point(data=inc_case_all_points %>%
+      dplyr::filter(fips == state, !(model=="COVIDhub-ensemble" & target_end_date <= this_monday)),
+    mapping = aes(x = target_end_date, y = value, color = model)) +
+  scale_fill_manual(values = blues[1:(length(blues)-1)]) +
+  scale_color_manual(values = c("black", tail(blues,1))) +
+  scale_x_date(name = NULL, date_breaks="1 month", date_labels = "%b %d") +
+  ylab("incident cases") +
+  labs(title=plot2_cap,
+    caption="source: JHU CSSE (observed data), COVID-19 Forecast Hub (forecasts)") +
+  theme(legend.position = c(.05,.95), legend.justification = c(0,1))
+```
+
+```{r accuracy of models past 6 weeks-state}
+
+#inc cases for past 6 weeks
+inc_case_p6 <- data.frame(inc_case_all_points %>%
+      rename(location=fips,point=value)%>%
+      select(target_end_date,location,location_name.x,point) %>%
+    filter(location %in% state_county,target_end_date %in% last_6_saturdays))
+inc_case_p6_u <- unique(inc_case_p6)
+
+# submit query for forecasts past 6 weeks-using covidhubutils
+inc_case_forecast_p6<-load_forecasts(models=c("COVIDhub-ensemble"),forecast_dates =last_6_mondays,locations =state_county,  types = c("quantile"),targets = c(inc_case_targets))
+
+## join inc cases with forecast
+inc_case_all_p6  <- inc_case_forecast_p6 %>%
+  dplyr::full_join(inc_case_p6_u,inc_case_forecast_p6,by=c("target_end_date", "location"))%>%
+  dplyr::filter(quantile %in% quantiles_to_plot,target_end_date<=this_monday) %>%
+  dplyr::mutate(endpoint_type = ifelse(quantile < 0.5, 'lower', 'upper'),
+    alpha = ifelse(endpoint_type == 'lower',
+      format(2*quantile, digits=3, nsmall=3),
+      format(2*(1-quantile), digits=3, nsmall=3)),
+    `Prediction Interval` = fct_rev(paste0((1-as.numeric(alpha))*100, "%"))
+  ) %>%
+  dplyr::filter(alpha != "1.000") %>%
+  dplyr::select(-quantile) %>%
+  tidyr::pivot_wider(names_from='endpoint_type', values_from='value')
+  
+#identify if inc_case with PI 
+inc_case_all_p6x<-inc_case_all_p6 %>%
+  select(target_end_date,location,alpha,lower,upper,point )%>%
+dplyr::mutate(inc_case_inPI = ifelse(point>=lower & point<=upper, 1, 0)) %>%
+dplyr::mutate(inc_case_inPI_low = ifelse(point<=lower, 1, 0)) %>%
+dplyr::mutate(inc_case_inPI_high = ifelse(point>=upper, 1, 0))
+
+# proportion PI covered truth
+pstate_inc_case_PI<-inc_case_all_p6x %>% group_by(location,alpha) %>%
+  filter(location %in% state) %>%
+  summarise_at(vars(inc_case_inPI,inc_case_inPI_low,inc_case_inPI_high), list(PI_cover=mean,PI_coverl=mean,PI_coverh=mean)) %>% 
+    dplyr::mutate(PI_coverp = as.numeric(substr(inc_case_inPI_PI_cover*100, 0,2))) %>% 
+    dplyr::mutate(PI_coverpl = as.numeric(substr(inc_case_inPI_low_PI_coverl*100, 0,2))) %>%   
+    dplyr::mutate(PI_coverph = as.numeric(substr(inc_case_inPI_high_PI_coverh*100, 0,2)))  %>%
+    dplyr::mutate(bias = ifelse(PI_coverpl<=PI_coverph, 'higher', 'lower'))
+
+PI95_cover<-pstate_inc_case_PI %>% 
+  filter(alpha=="0.050") 
+PI95_covern<-paste0(PI95_cover$PI_coverp)
+
+
+PI50_cover<-pstate_inc_case_PI %>% 
+  filter(alpha=="0.500") 
+PI50_covern<-paste0(PI50_cover$PI_coverp)
+PI50_bias<-paste0(PI50_cover$bias)
+```
+For state-level case forecasts made over the last 6 weeks in `r state_name` for which observed data are now available, the 95% prediction intervals covered the truth `r PI95_covern`% of the time, and the 50% prediction intervals covered the truth `r PI50_covern`% of the time. The truth tended to be `r PI50_bias` than the prediction interval.
+
+The sortable and searchable table below shows the total number of reported COVID-19 cases at the US and state level for `r state_name` as of Saturday, `r format(last_5_saturdays[5], "%B %d, %Y")`  ("Total COVID-19 Cases"), as well as the weekly case count and rate of reported COVID-19 cases in the population (standardized per 100,000 population) over the last week (`r format(last_5_saturdays[4]+1, "%B %d, %Y")` to `r format(last_5_saturdays[5], "%B %d, %Y")`) and two weeks ahead (`r format(last_5_saturdays[5]+8, "%B %d, %Y")` to `r format(last_5_saturdays[5]+14, "%B %d, %Y")`).
+
+
+When interpreting probability of an increase, it's important to note that the increase or decrease is relative to the location-specific recent observed incidence, which varies across locations.
+
+```{r process-ensemble-data-cases for state and US}
+state_US<- c("US",state)
+
+ensemble_pointdat2  <- dat  %>%
+  filter(grepl('inc case', target)) %>%
+  filter(class=="point") %>%
+  filter(fips %in% state_US) %>%
+  rename(location=fips)  %>%
+  select(location, target, value, timezero)
+
+wide_point_dat2 <- spread(ensemble_pointdat2, target, value) %>%
+  left_join(recent_inc_case_totals) %>%
+  mutate(next_2wk_cases = `2 wk ahead inc case`,
+         next_1wk_cases = `1 wk ahead inc case`,
+    pop_x_1k = round(Population/1000),
+    last_1wk_cases_rate = round(last_1wk_cases/Population*100000/7,3),
+    last_2wk_cases_rate = round(last_2wk_cases/Population*100000/14,3),
+    next_2wk_cases_rate = round(next_2wk_cases/Population*100000/7,3),
+    next_1wk_cases_rate = round(next_1wk_cases/Population*100000/7, 3),
+    diff_wk_cases_rate = round(next_2wk_cases_rate - last_1wk_cases_rate, 3)) %>%
+  select(location, location_name.x, Population, 
+    last_1wk_cases,last_2wk_cases, next_2wk_cases,  next_1wk_cases,  last_1wk_cases_rate,  last_2wk_cases_rate,next_1wk_cases_rate, next_2wk_cases_rate, diff_wk_cases_rate)
+
+#filter find first quantile where predicting future 2 weeks >= previous week count
+ensemble_quantdat2 <- dat %>%
+  filter(target == "2 wk ahead inc case") %>%
+  filter(class == "quantile") %>%
+  rename(location=fips)  
+
+wide_quant_dat2 <- spread(ensemble_quantdat2, target, value) %>%
+  left_join(recent_inc_case_totals %>% 
+  select(location,location_name.x, last_1wk_cases)) %>%
+  mutate(next_2wk_cases = `2 wk ahead inc case`)
+
+quant_cutoff2 <- wide_quant_dat2 %>%
+  filter(next_2wk_cases >= last_1wk_cases) %>%
+  mutate(prob_case_up = 1-quantile) %>%
+select( quantile, location_name.x, prob_case_up,class)
+
+quant_cutoff2min<-quant_cutoff2[!duplicated(quant_cutoff2$location_name.x),]
+
+wide_point_dat2p <- merge(wide_point_dat2, quant_cutoff2min, by="location_name.x")
+
+```
+
+
+```{r make-datatable-inc-case-rates for US and MA}
+
+## color for rates
+case_rate_max_1wk <- max(c(wide_point_dat2$last_1wk_cases_rate, wide_point_dat2$next_2wk_cases_rate))
+brks <- seq(0, case_rate_max_1wk, length.out = 100) #quantile(df, probs = seq(.05, .95, .05), na.rm = TRUE)
+clrs <- round(seq(255, 40, length.out = length(brks) + 1), 0) %>%
+  {paste0("rgb(255,", ., ",", ., ")")}
+
+## colors for rate difference
+# case_rate_diff_2wk <- max(abs(wide_point_dat2$diff_2wk_cases_rate))
+# brks1 <- seq(-case_rate_diff_2wk, case_rate_diff_2wk, length.out = 100) #quantile(df, probs = seq(.05, .95, .05), na.rm = TRUE)
+# clrs1 <- colorRampPalette(colors = rev(RColorBrewer::brewer.pal(n=3, "RdBu")))(length(brks1)+1)
+
+table2_cap <- paste0("Table 2: US national and ",  state_name, " observed and predicted COVID-19 CASES for the previous week and two weeks ahead.")
+
+table2_Observed <- paste0("Observed: (", format(last_5_saturdays[4]+1, "%m-%d-%Y") ," to ",format(last_5_saturdays[5], "%m-%d-%Y"),")")
+
+table2_Predicted <- paste0("Predicted: (", format(last_5_saturdays[5]+8, "%m-%d-%Y") ," to ",format(last_5_saturdays[5]+14, "%m-%d-%Y"),")")
+
+# a custom table container
+sketch_tab2 = htmltools::withTags(table(
+  class = 'display',
+  thead(
+    tr(
+      th(rowspan = 2, "Geography"),
+      th(rowspan = 2, "Population"),
+      th(colspan = 2, table2_Observed),
+      th(colspan = 2, table2_Predicted),
+      th(rowspan=2,"Case rate difference")
+    ),
+    tr(
+ lapply((c("Weekly count (Obs)","Rate per 100K (Obs)","Weekly count (Pred)","Rate per 100K (Pred)")), th)))))
+
+datatable(wide_point_dat2p %>%
+    select(location_name.x, Population,
+    last_1wk_cases,
+      last_1wk_cases_rate, next_2wk_cases, next_2wk_cases_rate, diff_wk_cases_rate) %>%
+    arrange(desc(next_2wk_cases_rate)),
+  caption = table2_cap,
+  options = list(dom='t',
+    autoWidth = TRUE,
+    columnDefs = list(list(width = '100px', targets = c(0, 1, 2, 3, 4, 5,6))),
+  pageLength = 15),
+
+  #width=paste0(c(10, 100, 100, 100), 'px'),
+  rownames=FALSE,
+  colnames=c('Geography'='location_name.x',
+    #'Population, \'000'='pop_x_1k',
+    'Weekly Case count (Obs)'='last_1wk_cases',
+    'Rate per 100K (Obs)'='last_1wk_cases_rate',
+    'Weekly Case count (Pred)'='next_2wk_cases',
+    'Rate per 100K (Pred)'='next_2wk_cases_rate',
+    'Death rate difference'='diff_wk_cases_rate') ,
+     container=sketch_tab2) %>%
+  ## formatStyle("Daily deaths per 100k, last 2 weeks", backgroundColor = styleInterval(brks, clrs)) %>%
+  ## formatStyle("Daily deaths per 100k, next 2 weeks", backgroundColor = styleInterval(brks, clrs))  %>%
+  # formatStyle('Case rate difference', backgroundColor = styleInterval(brks1, clrs1))  %>%
+  formatCurrency('Population',currency = "", interval = 3, mark = ",", digits=0)%>%
+  formatCurrency('Weekly Case count (Obs)',currency = "", interval = 3, mark = ",", digits=0)%>%
+  formatCurrency('Rate per 100K (Obs)',currency = "", interval = 3, mark = ",", digits=3)%>%
+  formatCurrency('Rate per 100K (Pred)',currency = "", interval = 3, mark = ",", digits=3)%>%
+ formatCurrency('Weekly Case count (Pred)',currency = "", interval = 3, mark = ",", digits=0)
+```
+
+
+
+```{r accuracy of models past 6 weeks-county}
+
+#inc cases for past 6 weeks
+inc_case_p6 <- data.frame(inc_case_all_points %>%
+      rename(location=fips,point=value)%>%
+      select(target_end_date,location,location_name.x,point) %>%
+    filter(location %in% state_county,target_end_date %in% last_6_saturdays))
+inc_case_p6_u <- unique(inc_case_p6)
+
+# submit query for forecasts past 6 weeks-using covidhubutils
+inc_case_forecast_p6<-load_forecasts(models=c("COVIDhub-ensemble"),forecast_dates =last_6_mondays,locations =state_county,  types = c("quantile"),targets = c(inc_case_targets))
+
+## join inc cases with forecast
+inc_case_all_p6  <- inc_case_forecast_p6 %>%
+  dplyr::full_join(inc_case_p6_u,inc_case_forecast_p6,by=c("target_end_date", "location"))%>%
+  dplyr::filter(quantile %in% quantiles_to_plot,target_end_date<=this_monday) %>%
+  dplyr::mutate(endpoint_type = ifelse(quantile < 0.5, 'lower', 'upper'),
+    alpha = ifelse(endpoint_type == 'lower',
+      format(2*quantile, digits=3, nsmall=3),
+      format(2*(1-quantile), digits=3, nsmall=3)),
+    `Prediction Interval` = fct_rev(paste0((1-as.numeric(alpha))*100, "%"))
+  ) %>%
+  dplyr::filter(alpha != "1.000") %>%
+  dplyr::select(-quantile) %>%
+  tidyr::pivot_wider(names_from='endpoint_type', values_from='value')
+
+#identify if inc_case with PI
+inc_case_all_p6x<-inc_case_all_p6 %>%
+  select(target_end_date,location,alpha,lower,upper,point )%>%
+dplyr::mutate(inc_case_inPI = ifelse(point>=lower & point<=upper, 1, 0)) %>%
+dplyr::mutate(inc_case_inPI_low = ifelse(point<=lower, 1, 0)) %>%
+dplyr::mutate(inc_case_inPI_high = ifelse(point>=upper, 1, 0))
+
+# proportion PI covered truth
+pcounty_inc_case_PI<-inc_case_all_p6x %>% group_by(alpha) %>%
+  filter(location %in% county) %>%
+  summarise_at(vars(inc_case_inPI,inc_case_inPI_low,inc_case_inPI_high), list(PI_cover=mean,PI_coverl=mean,PI_coverh=mean)) %>% 
+    dplyr::mutate(PI_coverp = as.numeric(substr(inc_case_inPI_PI_cover*100, 0,2))) %>% 
+    dplyr::mutate(PI_coverpl = as.numeric(substr(inc_case_inPI_low_PI_coverl*100, 0,2))) %>%   
+    dplyr::mutate(PI_coverph = as.numeric(substr(inc_case_inPI_high_PI_coverh*100, 0,2)))  %>%
+    dplyr::mutate(bias = ifelse(PI_coverpl<=PI_coverph, 'higher', 'lower'))
+
+C_PI95_cover<-pcounty_inc_case_PI %>%
+  filter(alpha=="0.050")
+C_PI95_covern<-paste0(C_PI95_cover$PI_coverp)
+PI95_bias<-paste0(PI95_cover$bias)
+
+C_PI50_cover<-pcounty_inc_case_PI %>%
+  filter(alpha=="0.500")
+C_PI50_covern<-paste0(C_PI50_cover$PI_coverp)
+C_PI50_bias<-paste0(C_PI50_cover$bias)
+
+
+```
+## County level
+
+The sortable and searchable table below shows the total number of reported COVID-19 cases at the county level for `r state_name` as of Saturday,`r format(last_5_saturdays[5], "%B %d, %Y")`  ("Total COVID-19 Cases") as well as the rate of reported COVID-19 cases in the population (standardized per 100,000 population) over the last two weeks and over the next two weeks.
+
+For county-level case forecasts made over the last 6 weeks in `r state_name` for which observed data are now available, the 95% prediction intervals covered the truth `r C_PI95_covern`% of the time and the 50% prediction intervals covered the truth `r C_PI50_covern`% of the time.  The truth tended to be `r C_PI50_bias` than the prediction interval.
+
+Looking at the rates allows for easier comparison across counties, where you can see which counties have had or are predicted to have propoportionally higher rates in comparison to other counties. These tables calculate the weekly case count and rate of reported COVID-19 cases in the population (standardized per 100,000 population) over the last week(`r format(last_5_saturdays[4]+1, "%B %d, %Y")` to `r format(last_5_saturdays[5], "%B %d, %Y")`) and two weeks ahead (`r format(last_5_saturdays[5]+8, "%B %d, %Y")` to `r format(last_5_saturdays[5]+14, "%B %d, %Y")`).
+
+
+When interpreting probability of an increase, it's important to note that the increase or decrease is relative to the location-specific recent observed incidence, which varies across locations.
+
+`r exclude`
+
+```{r process-ensemble-data-cases for counties}
+
+ensemble_pointdat1  <- dat  %>%
+  filter(grepl('inc case', target)) %>%
+  filter(class=="point") %>%
+  filter(fips %in% county) %>%
+    rename(location=fips)  %>%
+  select(location, target, value, timezero)
+
+wide_point_dat1 <- spread(ensemble_pointdat1, target, value) %>%
+  left_join(recent_inc_case_totals) %>%
+  mutate(next_2wk_cases = `2 wk ahead inc case`,
+         next_1wk_cases = `1 wk ahead inc case`,
+    pop_x_1k = round(Population/1000),
+    last_1wk_cases_rate = round(last_1wk_cases/Population*100000/7,3),
+    last_2wk_cases_rate = round(last_2wk_cases/Population*100000/14,3),
+    next_2wk_cases_rate = round(next_2wk_cases/Population*100000/7,3),
+    next_1wk_cases_rate = round(next_1wk_cases/Population*100000/7, 3),
+    diff_wk_cases_rate = round(next_2wk_cases_rate - last_1wk_cases_rate, 3)) %>%
+  select(location_name.x, Population,
+    last_1wk_cases,last_2wk_cases, next_2wk_cases,  next_1wk_cases,  last_1wk_cases_rate,  last_2wk_cases_rate,next_1wk_cases_rate, next_2wk_cases_rate, diff_wk_cases_rate)
+
+
+
+#filter find first quantile where predicting future 2 weeks >= previous week count
+ensemble_quantdat1 <- dat %>%
+  filter(target == "2 wk ahead inc case") %>%
+  filter(class == "quantile") %>%
+    rename(location=fips)  
+
+wide_quant_dat1 <- spread(ensemble_quantdat1, target, value) %>%
+  left_join(recent_inc_case_totals %>% select(location, location_name.x, last_1wk_cases)) %>%
+  mutate(next_2wk_cases = `2 wk ahead inc case`)
+
+quant_cutoff1 <- wide_quant_dat1 %>%
+  filter(next_2wk_cases >= last_1wk_cases) %>%
+  mutate(prob_case_up = 1-quantile) %>%
+select( quantile, location_name.x, prob_case_up,class)
+
+quant_cutoff1min<-quant_cutoff1[!duplicated(quant_cutoff1$location_name.x),]
+
+wide_point_dat1p <- merge(wide_point_dat1, quant_cutoff1min, by="location_name.x")
+
+
+```
+
+
+  
+```{r make-datatable-inc-case-rates county}
+
+## color for rates
+case_rate_max_1wk <- max(c(wide_point_dat1$last_1wk_cases_rate, wide_point_dat1$next_2wk_cases_rate))
+brks <- seq(0, case_rate_max_1wk, length.out = 100) #quantile(df, probs = seq(.05, .95, .05), na.rm = TRUE)
+clrs <- round(seq(255, 40, length.out = length(brks) + 1), 0) %>%
+  {paste0("rgb(255,", ., ",", ., ")")}
+
+## colors for rate difference
+# case_rate_diff_2wk <- max(abs(wide_point_dat1$diff_2wk_cases_rate))
+# brks1 <- seq(-case_rate_diff_2wk, case_rate_diff_2wk, length.out = 100) #quantile(df, probs = seq(.05, .95, .05), na.rm = TRUE)
+# clrs1 <- colorRampPalette(colors = rev(RColorBrewer::brewer.pal(n=3, "RdBu")))(length(brks1)+1)
+
+table3_cap <- paste0("Table 3:",  state_name, " county level observed and predicted COVID-19 CASES for the previous week  and two weeks ahead.")
+
+table3_Observed <- paste0("Observed: (", format(last_5_saturdays[4]+1, "%m-%d-%Y") ," to ",format(last_5_saturdays[5], "%m-%d-%Y"),")")
+
+table3_Predicted <- paste0("Predicted: (", format(last_5_saturdays[5]+8, "%m-%d-%Y") ," to ",format(last_5_saturdays[5]+14, "%m-%d-%Y"),")")
+
+
+# a custom table container
+sketch_tab3 = htmltools::withTags(table(
+  class = 'display',
+  thead(
+    tr(
+      th(rowspan = 2, "County"),
+      th(rowspan = 2, "Population"),
+      th(colspan = 2, table3_Observed),
+      th(colspan = 2, table3_Predicted),
+      th(rowspan=2,"Case rate difference")
+    ),
+    tr(
+ lapply((c("Weekly count (Obs)","Rate per 100K (Obs)","Weekly count (Pred)","Rate per 100K (Pred)")), th)))))
+
+datatable(wide_point_dat1p %>%
+    select(location_name.x, Population,
+       last_1wk_cases,
+      last_1wk_cases_rate, next_2wk_cases, next_2wk_cases_rate, diff_wk_cases_rate) %>%
+    arrange(desc(last_1wk_cases_rate)),
+  caption = table3_cap,
+  options = list(
+    autoWidth = TRUE,
+    columnDefs = list(list(width = '100px', targets = c(0, 1, 2, 3, 4, 5,6))),
+  pageLength = 25),
+
+  #width=paste0(c(10, 100, 100, 100), 'px'),
+  rownames=FALSE,
+  colnames=c('county'='location_name.x',
+    # 'Population, \'000'='pop_x_1k',
+    'Weekly Case count (Obs)'='last_1wk_cases',
+    'Rate per 100K (Obs)'='last_1wk_cases_rate',
+    'Weekly Case count (Pred)'='next_2wk_cases',
+    'Rate per 100K (Pred)'='next_2wk_cases_rate',
+     'Death rate difference'='diff_wk_cases_rate'),
+     container=sketch_tab3) %>%
+  ## formatStyle("Rate per 100K", backgroundColor = styleInterval(brks, clrs)) %>%
+  ## formatStyle("Rate per 100K", backgroundColor = styleInterval(brks, clrs))  %>%
+  # formatStyle('Case rate difference', backgroundColor = styleInterval(brks1, clrs1))  %>%
+  formatCurrency('Population',currency = "", interval = 3, mark = ",", digits=0)%>%
+  formatCurrency('Weekly Case count (Obs)',currency = "", interval = 3, mark = ",", digits=0)%>%
+  formatCurrency('Rate per 100K (Pred)',currency = "", interval = 3, mark = ",", digits=3)%>%
+  formatCurrency('Rate per 100K (Obs)',currency = "", interval = 3, mark = ",", digits=3)%>%
+ formatCurrency('Weekly Case count (Pred)',currency = "", interval = 3, mark = ",", digits=0)
+```
+
+
+```{r R6-class}
+# make R6 class that represents a shared data frame
+inc_case_all_points_df_full <-  SharedData$new(inc_case_all_points %>%
+    dplyr:: filter(fips != 'US' & fips != state) ,
+  ~fips,
+  group = "county")
+
+inc_case_all_points_df_prediction<-SharedData$new(
+  inc_case_all_points %>%
+    dplyr::filter((fips != 'US' & fips != state) & !(model=="COVIDhub-ensemble" & target_end_date <= this_monday)),
+  ~fips,
+  group = "county")
+
+inc_case_quantiles_df <- SharedData$new(
+  inc_case_quantiles %>%
+    dplyr::filter(fips != 'US' & fips != state),
+  ~fips,
+  group = "county")
+
+
+# make ggplot object
+county_plot <- ggplot() +
+
+  # dummy points just for tooltip
+  geom_point(data = inc_case_quantiles_df,
+             mapping = aes(x = target_end_date,
+      y=lower, fill = `Prediction Interval`,
+      # make the dots transparent
+      stroke = 0, shape = '.', alpha=I(0.1), text = text ),
+      show.legend = FALSE) +
+
+  # dummy points just for tooltip
+  geom_point(data = inc_case_quantiles_df,
+             mapping = aes(x = target_end_date,
+      y=upper, fill = `Prediction Interval`,
+      # make the dots transparent
+      stroke = 0,shape = '.', alpha=I(0.1),text = text ),
+      show.legend = FALSE)+
+  # color for dummy points
+  scale_fill_manual(
+                    values = blues[1:(length(blues)-1)])+
+
+  geom_ribbon(data = inc_case_quantiles_df,
+    mapping = aes(x = target_end_date,
+      ymin=lower, ymax=upper,
+      fill=`Prediction Interval`)) +
+  geom_line(data=inc_case_all_points_df_full,
+    mapping = aes(x = target_end_date, y = value, color = model)) +
+  geom_point(data=inc_case_all_points_df_prediction,
+    mapping = aes(x = target_end_date, y = value, color = model,
+                  text = paste(sprintf("%s", location_name.x),
+                               sprintf("For week ending: %s", target_end_date),
+                               ifelse(model == "COVIDhub-ensemble",
+                                      sprintf("Incident cases (forecasted): %s",value),
+                                      sprintf("Incident cases (observed): %s",value)),
+                               sep = '<br />')
+                  )) +
+  scale_fill_manual(values = blues[1:(length(blues)-1)]) +
+  scale_color_manual(values = c("black", tail(blues,1))) +
+  scale_x_date(name = NULL, date_breaks="1 month", date_labels = "%b %d") +
+  ylab("incident cases") +
+  theme()
+```
+
+```{r plot-county-cases}
+# create caption
+plot3_cap <- paste0("Weekly reported COVID-19 cases in ", state_name," counties: observed and forecasted")
+
+# convert ggplot object to plotly object and add titles and captions
+county_plot <- plotly::ggplotly(county_plot, dynamicTicks = "y",tooltip = "text") %>%
+    # add title
+    layout(annotations=list(text=plot3_cap,
+                            xref="paper",
+                            # location on x axis
+                            x=0.5, xshift = -40,
+                            yref="paper",
+                            # location on y axis
+                            y=1, yshift=30,
+                            showarrow=FALSE,
+                            # font size
+                            font=list(size=12)),
+           # turn on legends
+           showlegend = TRUE,
+           # put legend below the graph horizontally
+           legend = list(orientation = "h", x = 0.5, y = -0.2)) %>%
+  # add caption
+  layout(annotations=list(text="source: JHU CSSE (observed data), COVID-19 Forecast Hub (forecasts)",
+                          xref="paper",
+                          # location on x axis
+                          x=1, xshift = 0,
+                          yref="paper",
+                          # location on y axis
+                          y=0, yshift=-40,
+                          showarrow=FALSE,
+                          # font size
+                          font=list(size=10)),
+         # remove date axis label
+         xaxis = list(title = ''))
+
+# change variable name in tooltip
+for (i in 1:length(county_plot$x$data)){
+  # change legend names
+  if (!is.null(county_plot$x$data[[i]]$name)){
+
+    county_plot$x$data[[i]]$name =
+      gsub("\\(","",str_split(county_plot$x$data[[i]]$name,",")[[1]][1])
+
+    county_plot$x$data[[i]]$text =
+      str_replace(county_plot$x$data[[i]]$text, ".crossTalkKey", "fips")
+  }
+
+  # turn off lengend for point layer
+  if (i <= 6){
+      county_plot$x$data[[i]]$showlegend<- FALSE
+  }
+  # change ribbon layer legend text
+  else if ( i %in% c(7,8,9)){
+      county_plot$x$data[[i]]$name <- paste(county_plot$x$data[[i]]$name, "Prediction Interval")
+  }
+
+  # change line layer legend text and symbol
+  else if (i == 10| i == 11){
+      county_plot$x$data[[i]]$name <- ifelse (grepl("observed", county_plot$x$data[[i]]$name , fixed = TRUE), "Observed Data (JHU)", county_plot$x$data[[i]]$name)
+      county_plot$x$data[[i]]$mode <- 'lines+markers'
+    }
+
+}
+
+# remove legend text from ggplot
+county_plot$x$layout$annotations[[1]]$text <- "  "
+# change legend font size
+county_plot$x$layout$legend$font$size<-8
+
+# show filter and graph
+bscols(widths = c(3,NA),
+
+       # filter
+       filter_select(id= "location_name", label = "Select a County", sharedData = inc_case_all_points_df_full, ~location_name.x, multiple = FALSE),
+
+       # graph object
+       county_plot
+)
+
+```
+This report was reproducibly and dynamically generated using RMarkdown. The code for the report can be found [here](https://github.com/reichlab/covid19-forecast-hub/tree/master/code/reports).
+
+
