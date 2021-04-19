@@ -451,6 +451,15 @@ instructions](R_forecast_file_validation.md) to run some checks in R.
 These checks are no longer maintained, but may still be of use to teams
 working with R.
 
+### Retractions checks
+
+Conforming to new rules being enforced starting 4/22/2021 with the introduction
+of retractions, newer/updated forecast files that have the same forecast date in
+the file name must now include all previously forecasted points; i.e., the updated
+forecast file cannot contain fewer rows than the previous one, and must include
+all (`forecast_date`, `target`, `target_end_date`, `location`, `type`, `quantiles`)
+combinations that were present in the previous forecast file.
+
 Retractions
 -----------
 
