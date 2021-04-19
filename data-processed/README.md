@@ -17,12 +17,9 @@ you can do prior to this pull request. In addition, we describe
 -   [ground truth data](#ground-truth-data)
 -   [data formatting](#Data-formatting)
 -   [data validation](#Data-validation)
+-   [retractions](#retractions)
 -   [metadata format](#Meta-data)
 -   [policy on late submissions](#late-policy)
-
-
-
-
 
 Ground truth data
 -----------------
@@ -415,6 +412,10 @@ An example inverse CDF is below.
 
 ![](./example_inverse_cdf-1.png)
 
+From 4/22/2021 we will be accepting `NULL` values in this column. The purpose
+of `NULL` is to indicate the retraction of previously forecasted values. More
+details can be found in the [retractions](#retractions) section.
+
 Forecast validation
 -------------------
 
@@ -450,6 +451,26 @@ instructions](R_forecast_file_validation.md) to run some checks in R.
 These checks are no longer maintained, but may still be of use to teams
 working with R.
 
+Retractions
+-----------
+
+From 4/22/2021 we will be formally introducing the idea of a _retracted_ forecast.
+
+A retracted forecast point is a updated forecast point with a `NULL` value (previously non-`NULL`)
+but the same `forecast_date`, `target`, `target_end_date`, `location`, `type`,
+and/or `quantiles` (if applicable); A retracted forecast is a new forecast file with the same
+forecast date in the file name that contains such retracted points. Forecast teams can both retract
+and update forecasts in one forecast file.
+
+The purpose of this new idea is to enable the original data to have an explicit track-record
+of forecasts that were made in earlier versions and then subsequently were removed for any reason.
+This way, forecasting teams will have a way to retract previously made forecasts but evaluators will
+not lose the ability to retrieve previously retracted forecasts. A detailed description and discussion
+of this idea can be found on [this page](https://docs.zoltardata.com/ReleaseNotes4_0/) of the Zoltar 
+documentation website, starting from 4/22/2021.
+
+All forecasts containing `NULL` values will be subjected to review for the foreseeable future, as we understand
+this is a big change and the correct semantics of `NULL` values may not be immediately clear.
 
 Policy on late or updated submissions
 ------------------
