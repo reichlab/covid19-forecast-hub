@@ -111,5 +111,70 @@ death_revisions <- suppressMessages(purrr::map_dfr(
 )
 
 
+case_revisions <- suppressMessages(purrr::map_dfr(
+  case_as_ofs[-1], ## removing the first because nothing can be revised from this one
+  function(as_of) {
+    updates <- weekly_inc_cases %>%
+      dplyr::filter(as_of == UQ(as_of - 7)) %>%  ## filtering to only include last week's obs
+      dplyr::select(-as_of, -cum) %>%
+      dplyr::inner_join(                         ## joining this week's obs
+        weekly_inc_cases %>%
+          dplyr::filter(as_of == UQ(as_of)) %>%
+          dplyr::select(-cum),
+        by = c("location", "date")
+      ) %>%
+      dplyr::filter(inc.x != inc.y)              ## only keeping rows where obs are not the same
+  }) %>%
+    dplyr::left_join(covidData::fips_codes) %>%
+    dplyr::rename(
+      issue_date = as_of,
+      orig_obs = inc.x,         ## inc.x comes from the df filtered to existing observations
+      revised_obs = inc.y) %>%  ## inc.y comes from the df with most recent obs
+    dplyr::mutate(
+      real_diff = revised_obs - orig_obs,
+      relative_diff = ifelse(
+        orig_obs == 0,
+        revised_obs,
+        real_diff / abs(orig_obs))
+    ) %>%
+    dplyr::select(location, location_name, date, orig_obs, issue_date, real_diff, relative_diff)
+)
+
+
+hosp_revisions <- suppressMessages(purrr::map_dfr(
+  hosp_as_ofs[-1], ## removing the first because nothing can be revised from this one
+  function(as_of) {
+    updates <- daily_inc_hosps %>%
+      dplyr::filter(as_of == UQ(as_of - 7)) %>%  ## filtering to only include last week's obs
+      dplyr::select(-as_of, -cum) %>%
+      dplyr::inner_join(                         ## joining this week's obs
+        daily_inc_hosps %>%
+          dplyr::filter(as_of == UQ(as_of)) %>%
+          dplyr::select(-cum),
+        by = c("location", "date")
+      ) %>%
+      dplyr::filter(inc.x != inc.y)              ## only keeping rows where obs are not the same
+  }) %>%
+    dplyr::left_join(covidData::fips_codes) %>%
+    dplyr::rename(
+      issue_date = as_of,
+      orig_obs = inc.x,         ## inc.x comes from the df filtered to existing observations
+      revised_obs = inc.y) %>%  ## inc.y comes from the df with most recent obs
+    dplyr::mutate(
+      real_diff = revised_obs - orig_obs,
+      relative_diff = ifelse(
+        orig_obs == 0,
+        revised_obs,
+        real_diff / abs(orig_obs))
+    ) %>%
+    dplyr::select(location, location_name, date, orig_obs, issue_date, real_diff, relative_diff)
+)
+
+
+## write csv files
+write_csv(death_revisions, file="data-anomalies/revisions-inc-death.csv")
+write_csv(case_revisions, file="data-anomalies/revisions-inc-case.csv")
+write_csv(hosp_revisions, file="data-anomalies/revisions-inc-hosp.csv")
+
 
 
