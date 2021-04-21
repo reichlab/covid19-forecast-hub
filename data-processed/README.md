@@ -19,6 +19,7 @@ you can do prior to this pull request. In addition, we describe
 -   [data validation](#Data-validation)
 -   [retractions](#retractions)
 -   [metadata format](#Meta-data)
+-   [weekly ensemble and visualization deployment](#Weekly-build)
 -   [policy on late submissions](#late-policy)
 
 Ground truth data
@@ -481,7 +482,15 @@ documentation website, starting from 4/22/2021.
 All forecasts containing `NULL` values will be subjected to review for the foreseeable future, as we understand
 this is a big change and the correct semantics of `NULL` values may not be immediately clear.
 
+Weekly build
+-----------
+
+Every Monday at 6pm ET, we will update our [COVID Forecast Hub ensemble forecast](https://covid19forecasthub.org/doc/ensemble/) using the most recent valid forecast from each team. Additional details on model eligibility are available on [the page describing the ensemble](https://covid19forecasthub.org/doc/ensemble/). Details on which models were included each week in the ensemble are available in the [ensemble metadata](https://github.com/reichlab/covid19-forecast-hub/tree/master/ensemble-metadata) folder.
+
+Every Tuesday morning (no earlier than 8am ET), we will update the [interactive forecast visualization](https://viz.covid19forecasthub.org/). Valid forecasts that are submitted prior to 8am ET will be included in the visualization. Valid forecasts submitted later than this will be included in the visualization build the following week.
+
+
 Policy on late or updated submissions
 ------------------
 
-In order to ensure that forecasting is done in real-time, all forecasts should be submitted to the forecast hub within 1 day of the forecast date.  We will no longer be accepting late forecasts due to technical issues, missing deadlines, or updated modeling methods. We will still accept updated forecasts if there was a bug in the original file. If you need to submit an updated forecast for this reason, please include a comment in your pull request confirming that there was a bug and that the forecast was fit only to data available at the time. We will also accept late forecasts from new teams if they can provide publicly available information showing that the forecasts were made in real-time (e.g. github commit history).
+In order to ensure that forecasting is done in real-time, all forecasts should be submitted to the forecast hub within 1 day of the forecast date.  We do not accepting late forecasts due to technical issues, missed deadlines, or updated modeling methods. We will accept updated forecasts if there was a bug in the original file. If you need to submit an updated forecast for this reason, please include a comment in your pull request confirming that there was a bug and that the forecast was fit only to data available at the time. We also accept late forecasts from new teams if they can provide publicly available information showing that the forecasts were made in real-time (e.g. GitHub commit history).
