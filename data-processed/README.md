@@ -14,6 +14,7 @@ you can do prior to this pull request. In addition, we describe
 
 *Table of Contents*
 
+-   [Whatis a forecast](#What-is-a-forecast)
 -   [ground truth data](#ground-truth-data)
 -   [data formatting](#Data-formatting)
 -   [data validation](#Data-validation)
@@ -21,6 +22,14 @@ you can do prior to this pull request. In addition, we describe
 -   [metadata format](#Meta-data)
 -   [weekly ensemble and visualization deployment](#Weekly-build)
 -   [policy on late submissions](#late-policy)
+
+
+What is a forecast
+-----------------
+
+Models at the COVID-19 Forecast Hub are asked to make specific quantitative forecasts about data that will be observed in the future. These forecasts are interpreted as "unconditional" predictions about the future. That is, they are not predictions only for a limited set of possible future scenarios in which a certain set of conditions (e.g. vaccination uptake is strong, or new social-distancing mandates are put in place) hold about the future -- rather, they should characterize uncertainty across all reasonable future scenarios. In practice, all forecasting models make some assumptions about how current trends in data may change and impact the forecasted outcome; some teams select a "most likely" scenario or combine predictions across multiple scenarios that may occur. Forecasts submitted to the [COVID-19 Forecast Hub](https://covid19forecasthub.org/) will be evaluated against observed data. 
+
+We note that other efforts, such as the [COVID-19 Scenario Modeling Hub](https://covid19scenariomodelinghub.org/), have been launched to collect and aggregate model outputs from "scenario projection" models. These models create longer-term projections under a specific set of assumptions about how the main drivers of the pandemic (such as non-pharmaceutical intervention compliance, or vaccination uptake) may change over time.
 
 Ground truth data
 -----------------
