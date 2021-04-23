@@ -4,6 +4,10 @@ set -e
 # Re-validate data before uploading
 bash ./travis/validate-data.sh
 
+# Populate the validated_files_db.json
+# script pulls the source field from zoltar, splits based on separator, first param is key, second param is value. 
+# python code/populate_cache.py
+
 # Upload to zoltar at every merged pull request
 echo "Upload forecasts to Zoltar "
 bash ./travis/upload-to-zoltar.sh
