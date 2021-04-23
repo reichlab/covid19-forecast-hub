@@ -14,7 +14,7 @@ you can do prior to this pull request. In addition, we describe
 
 *Table of Contents*
 
--   [Whatis a forecast](#What-is-a-forecast)
+-   [What is a forecast](#What-is-a-forecast)
 -   [ground truth data](#ground-truth-data)
 -   [data formatting](#Data-formatting)
 -   [data validation](#Data-validation)
