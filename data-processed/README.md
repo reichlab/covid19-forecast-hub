@@ -434,15 +434,13 @@ data-processed/ will be automatically run.
 
 ### Pull request forecast validation
 
-When a pull request is submitted, the data are validated through [Travis
-CI](https://travis-ci.org/) which runs the tests in
-[test\_formatting.py](../code/validation/test_formatting.py). The intent
+When a pull request is submitted, the data are validated through [Github Actions](https://docs.github.com/en/actions) which runs the tests present in [the validations repository](https://github.com/reichlab/covid19-forecast-hub-validations). The intent
 for these tests are to validate the requirements above and specifically
 enumerated [on the
 wiki](https://github.com/reichlab/covid19-forecast-hub/wiki/Validation-Checks#current-validation-checks).
 Please [let us
 know](https://github.com/reichlab/covid19-forecast-hub/issues) if the
-wiki is inaccurate.
+wiki is inaccurate or if you're facing issues while running the tests.
 
 If the pull request fails, please [follow these
 instructions](https://github.com/reichlab/covid19-forecast-hub/wiki/Troubleshooting-Pull-Requests)
@@ -468,7 +466,7 @@ of retractions, newer/updated forecast files that have the same forecast date in
 the file name must now include all previously forecasted points; i.e., the updated
 forecast file cannot contain fewer rows than the previous one, and must include
 all (`forecast_date`, `target`, `target_end_date`, `location`, `type`, `quantiles`)
-combinations that were present in the previous forecast file.
+combinations that were present in the previous forecast file. In case one of these rows are to be retracted, follow the instructions under in the next section.
 
 Retractions
 -----------
