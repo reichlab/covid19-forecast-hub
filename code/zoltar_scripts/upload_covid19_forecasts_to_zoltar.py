@@ -95,7 +95,7 @@ def has_changed(metadata, model):
     but remove any codes that require polling of model information from zoltar.
 '''
 def upload_covid_forecast_by_model(conn, json_io_dict, forecast_filename, project_name, model, model_abbr, timezero_date, notes='',
-                    overwrite=False, sync=True):
+                    overwrite=False, sync=True, hash=None):
     conn.re_authenticate_if_necessary()
     if overwrite:
         print(f"Existing forecast({forecast_filename}) present. Deleting it on Zoltar to upload latest one")
@@ -118,7 +118,7 @@ def upload_covid_forecast_by_model(conn, json_io_dict, forecast_filename, projec
     # Runs only twice
     while tries<2:
         try:
-            job = model.upload_forecast(json_io_dict, forecast_filename, timezero_date, notes)
+            job = model.upload_forecast(json_io_dict, f"{forecast_filename}|{hash}", timezero_date, notes)
             if sync:
                 return util.busy_poll_job(job)
             else:
@@ -260,7 +260,8 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
                         logger.debug('Upload forecast for model: %s \t|\t File: %s\n' % (metadata['model_abbr'],forecast))
                         upload_covid_forecast_by_model(conn, quantile_json, forecast,
                                              project_name, model, metadata['model_abbr'], time_zero_date,
-                                             overwrite=over_write)
+                                             overwrite=over_write, hash=checksum)
+                        # save teh checksum in validated_files_db.json
                         db[forecast] = checksum
                     except Exception as ex:
                         logger.error(ex)
