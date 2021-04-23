@@ -1,4 +1,4 @@
-## <img src="https://covid19forecasthub.org/images/forecast-hub-logo_DARKBLUE.png" alt="Hub logo" width="200"/>
+## <img src="https://covid19forecasthub.org/images/forecast-hub-logo_DARKBLUE.png" alt="Hub logo" width="400"/>
 
 ![Node.js CI](https://github.com/reichlab/covid19-forecast-hub/workflows/Node.js%20CI/badge.svg) [![DOI](https://zenodo.org/badge/254453761.svg)](https://zenodo.org/badge/latestdoi/254453761)
 
