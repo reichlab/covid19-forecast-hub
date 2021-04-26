@@ -16,16 +16,16 @@ model_contributors: Joseph C. Lemaitre (EPFL),  Juan Dent Hulse (Johns Hopkins I
 website_url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
 license: mit
 team_model_designation: primary
-methods: County-level metapopulation model with commuting and stochastic SEIR disease dynamics
+methods: State-level metapopulation model with commuting and stochastic SEIR disease dynamics
   with social-distancing indicators.
 team_funding: State of California and US Government
 data_inputs: JHU CSSE (confirmed cases; reported fatalities), US Census (population; mobility)
 citation: https://doi.org/10.1038/s41598-021-86811-0
-methods_long: "This is a county-level metapopulation model with stochastic SEIR disease\
+methods_long: "This is a state-level metapopulation model with stochastic SEIR disease\
   \  dynamics. This model incorporates uncertainty in epidemiological parameters \
   \ and the effectiveness of state-wide intervention policies on social  distancing\
   \ and stay-at-home orders. Infections are seeded stochastically  with roughly 10\
-  \ times the number of confirmed cases in the first five days  of a county epidemic\
+  \ times the number of confirmed cases in the first five days of the epidemic\
   \ and R0 and the duration of the infectious period were  drawn stochastically for\
   \ each county and simulation. Disease follows SEIR dynamics and county commuting\
   \ data modulates the spread of disease within counties. \nStay-at-home orders and \
