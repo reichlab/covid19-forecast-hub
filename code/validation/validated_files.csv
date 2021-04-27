@@ -3235,3 +3235,6 @@ file_path,validation_date
 ./data-processed/CU-scenario_mid/2021-04-25-CU-scenario_mid.csv,2021-04-27 00:28:00.640249
 ./data-processed/MIT-Cassandra/2021-04-26-MIT-Cassandra.csv,2021-04-27 06:21:18.204794
 ./data-processed/COVIDhub-baseline/2021-04-26-COVIDhub-baseline.csv,2021-04-27 06:21:40.879665
+./data-processed/FDANIHASU-Sweight/2021-04-26-FDANIHASU-Sweight.csv,2021-04-27 12:33:50.542366
+./data-processed/KITmetricslab-select_ensemble/2021-04-26-KITmetricslab-select_ensemble.csv,2021-04-27 12:33:53.750093
+./data-processed/COVIDhub-ensemble/2021-04-26-COVIDhub-ensemble.csv,2021-04-27 12:34:09.160421
