@@ -1,0 +1,14 @@
+team_name: Pandemic Central (itsonit.com)
+model_name: COVIDForest
+model_abbr: PandemicCentral-COVIDForest
+model_contributors: Joseph Galasso (University of Dallas) <jgalasso@udallas.edu>,
+  Duy Cao (University of Dallas) <caominhduy@gmail.com>
+website_url: https://itsonit.com
+license: mit
+team_model_designation: primary
+data_inputs: JHU CSSE (COVID-19 Case Counts), Facebook Movement Range Maps (Population Mobility), COVID Tracking Project (Testing Data),
+  COVIDActNow (Rt), IHME (Population Health), U.S. Census (Demographics)
+methods: County-level Projected New Cases using Random Forest learning method
+methods_long: This model utilizes population mobility, demographics, and health data in combination with COVID-19 SEIR-generated projections 
+  \  and testing data as input into a random forest regression model to forecast COVID-19 cases for 1, 2, 3, and 4 weeks into the future for over 
+  \  3000 U.S. counties and county equivalents.

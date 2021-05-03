@@ -4,6 +4,7 @@ on:
     inputs:
       name:
         description: '(Active) Update truth weekly'
+        required: false
   schedule:
     - cron: '0 16 * * 0'
 
@@ -15,8 +16,27 @@ jobs:
         node-version: [10.2]
 
     steps:
-    - run: sudo apt-get remove ghc-** azure-cli firefox google-cloud-sdk google-chrome-stable hhvm dotnet-sdk-** dotnet-runtime-** moby-** adoptopenjdk-** mongodb-org-** mysql-**
-    - run: sudo apt-get autoremove
+    # - run: sudo apt-get remove ghc-** azure-cli firefox google-cloud-sdk google-chrome-stable hhvm dotnet-sdk-** dotnet-runtime-** moby-** adoptopenjdk-** mongodb-org-** mysql-**
+    # - run: sudo apt-get autoremove
+    - name: Free disk space
+      run: |
+          df --human-readable
+          sudo apt clean
+          docker rmi $(docker image ls --all --quiet)
+          rm --recursive --force "$AGENT_TOOLSDIRECTORY"
+          
+    - name: Maximize build space
+      uses: easimon/maximize-build-space@v4
+      with:
+        root-reserve-mb: 4096
+        swap-size-mb: 4096
+        remove-dotnet: 'true'
+        remove-android: 'true'
+        remove-haskell: 'true'
+        
+    - name: Check space available
+      run: df --human-readable
+      
     - name: Checkout covid19-forecast-hub repo
       uses: actions/checkout@v2
       with:
@@ -73,4 +93,6 @@ jobs:
       working-directory: ./covid19-forecast-hub
       env:
         GH_TOKEN: ${{secrets.GH_TOKEN}}
-      
+        
+    - name: Check space available after update
+      run: df --human-readable

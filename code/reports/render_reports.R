@@ -16,6 +16,10 @@ library(plotly)
 library(foreach)
 library(doParallel)
 
+# use newer version of Pandoc if possible
+rmarkdown::find_pandoc(version = "2.13")
+print(rmarkdown::pandoc_version())
+
 # a list of state fips code to generate report with
 locs <- hub_locations %>%
   rename(Population = population)
@@ -33,10 +37,11 @@ locs <- hub_locations %>%
 # all_states <-locs[2:52,] # 75 minutes
 # all_states <-locs[54,] # Guam#
 # all_states <-locs[56,] # PR#
-# all_states <-locs[04,] # PR
-# # all_states <-locs[58,] # VI#
+# all_states <-locs[25,] # MN
+# all_states <-locs[58,] # VI#
 # all_states <- locs[c(56, 58),] # PR, VI
 # all_states <- locs[c(2:52, 54, 56, 58),] # all
+# all_states <- locs[c(2, 58),] # AK and VI
 all_states <- locs[c(2:52, 56, 58),] # all but Guam
 
 state_fips <- all_states$fips

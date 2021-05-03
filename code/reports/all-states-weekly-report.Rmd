@@ -54,7 +54,7 @@ all_states <-locs$fips[2:58]
 state <-params$state
 #
 # testing
-# state <- "26"
+# state <- "58"
 
 # title with state name
 state_name <- locs %>% 
@@ -524,7 +524,7 @@ inc_death_quantiles <- inc_death_forecast %>%
 ggplot() +
   geom_ribbon(data = inc_death_quantiles %>% dplyr::filter(fips==state),
     mapping = aes(x = target_end_date,
-      ymin=lower, ymax=upper,
+      ymin=as.numeric(lower), ymax=as.numeric(upper),
       fill=`Prediction Interval`)) +
   geom_line(data=inc_death_all_points %>%
       dplyr::filter(fips == state),
@@ -1017,7 +1017,7 @@ inc_case_quantiles <- inc_case_forecast %>%
 ggplot() +
   geom_ribbon(data = inc_case_quantiles %>% dplyr::filter(fips==state),
     mapping = aes(x = target_end_date,
-      ymin=lower, ymax=upper,
+      ymin=as.numeric(lower), ymax=as.numeric(upper),
       fill=`Prediction Interval`)) +
   geom_line(data=inc_case_all_points %>%
       dplyr::filter(fips == state),
@@ -1149,6 +1149,8 @@ datatable(wide_point_dat2p %>%
 ```{r, child = if (state !='11' & state < '60') 'all-states-weekly-county_code.Rmd'}
 
 ```
+
+# Methods & Acknowledgement
 
 This report was reproducibly and dynamically generated using RMarkdown. The code for the report can be found [here](https://github.com/reichlab/covid19-forecast-hub/tree/master/code/reports).
 
