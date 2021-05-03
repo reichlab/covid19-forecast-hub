@@ -28,17 +28,11 @@ jobs:
     - name: Maximize build space
       uses: easimon/maximize-build-space@v4
       with:
-        root-reserve-mb: 512
-        swap-size-mb: 1024
+        root-reserve-mb: 4096
+        swap-size-mb: 4096
         remove-dotnet: 'true'
         remove-android: 'true'
         remove-haskell: 'true'
-
-    - name: remove some additional packages
-      run: sudo apt-get remove ghc-** azure-cli firefox google-cloud-sdk google-chrome-stable hhvm dotnet-sdk-** dotnet-runtime-** moby-** adoptopenjdk-** mongodb-org-** mysql-**
-    
-    - name: autoremove unnecessary dependencies
-      run: sudo apt-get autoremove
         
     - name: Check space available
       run: df --human-readable
