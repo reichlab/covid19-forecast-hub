@@ -56,13 +56,12 @@ def configure_visualization_truth(state_nat_truth, target):
     # Observed data on the seventh day
     # or group by week for incident deaths
     if target in ('Incident Deaths','Incident Cases'):
-        df_truth['value'] = df_truth['value'].clip(lower=0.0)
         df_vis = df_truth.groupby(['week','year', 'location_name'], as_index=False).agg({
                                                                                     'value': 'sum',
                                                                                     'location': 'last',
                                                                                     'day': 'last',
                                                                                     'abbreviation': 'last'})
-                                                                                    
+        df_vis['value'] = df_vis['value'].clip(lower=0.0)                                
         df_vis = df_vis[df_vis['day'] == 7]
     else:
         df_vis = df_truth[df_truth['day'] == 7]
