@@ -16,6 +16,7 @@ import pprint
 logger = logging.getLogger(__name__)
 
 #TODO: Make these as environment variables
+# Change this to True to use zoltar staging server
 STAGING = False
 
 # meta info
@@ -50,6 +51,7 @@ metadata_field_to_zoltar = {
 
 MISSING_METADATA_VALUE = "Missing"
 db = {}
+
 with open('./code/zoltar_scripts/validated_file_db.json', 'r') as f:
     db = json.load(f)
 
