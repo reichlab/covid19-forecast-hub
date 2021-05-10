@@ -1,6 +1,6 @@
 ## <img src="https://covid19forecasthub.org/images/forecast-hub-logo_DARKBLUE.png" alt="Hub logo" width="400"/>
 
-![Node.js CI](https://github.com/reichlab/covid19-forecast-hub/workflows/Node.js%20CI/badge.svg) [![DOI](https://zenodo.org/badge/254453761.svg)](https://zenodo.org/badge/latestdoi/254453761)
+[![Zoltar build status](https://github.com/reichlab/covid19-forecast-hub/actions/workflows/upload_to_zoltar.yml/badge.svg)](https://github.com/reichlab/covid19-forecast-hub/actions/workflows/upload_to_zoltar.yml) [![DOI](https://zenodo.org/badge/254453761.svg)](https://zenodo.org/badge/latestdoi/254453761)
 
 This is the data repository for the [COVID-19 Forecast Hub](https://covid19forecasthub.org/), which is the data source for [the official CDC COVID-19 Forecasting page](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html). 
 
