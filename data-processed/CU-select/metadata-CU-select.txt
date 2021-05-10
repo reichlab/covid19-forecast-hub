@@ -12,7 +12,7 @@ methods: A metapopulation county-level SEIR model for projecting future COVID-19
 team_funding: Supported by US NIH grant GM110748 and US NSF RAPID grant DMS2027369
 repo_url: https://github.com/shaman-lab/COVID-19Projection
 data_inputs: JHU CSSE County-level confirmed cases and deaths, Covid Tracking Project Hospitalizations and ICU admissions, HHS Hospitalizations, Safegraph mobility
-citation: https://doi.org/10.1101/2020.03.21.20040303
+citation: https://doi.org/10.1101/2020.03.21.20040303, https://www.medrxiv.org/content/10.1101/2020.05.04.20090670v2
 methods_long: 'This metapopulation county-level SEIR model makes projections of future
   COVID-19 incidence and deaths.  We produce a number of different intervention scenarios,
   each assuming various interventions and rates of compliance are implemented in the
