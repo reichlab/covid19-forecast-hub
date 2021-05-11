@@ -3364,3 +3364,5 @@ file_path,validation_date
 ./data-processed/FRBSF_Wilson-Econometric/2021-05-10-FRBSF_Wilson-Econometric.csv,2021-05-11 00:38:13.934784
 ./data-processed/IBF-TimeSeries/2021-05-10-IBF-TimeSeries.csv,2021-05-11 00:38:14.026254
 ./data-processed/JHU_CSSE-DECOM/2021-05-09-JHU_CSSE-DECOM.csv,2021-05-11 00:38:15.232829
+./data-processed/COVIDhub-ensemble/2021-05-10-COVIDhub-ensemble.csv,2021-05-11 06:26:30.436237
+./data-processed/COVIDhub-trained_ensemble/2021-05-10-COVIDhub-trained_ensemble.csv,2021-05-11 06:26:45.116947
