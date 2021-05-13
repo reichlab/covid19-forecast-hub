@@ -74,8 +74,8 @@ function parseStateActual(seasonData, stateId) {
   epiweeks = epiweeks.slice(5)
   // Temporary: expand to next 4 weeks while working on the main fix
   let epiweeks_next_year = fct.utils.epiweek.seasonEpiweeks(SEASON_ID+1)
-  epiweeks_next_year_first_24_ew = epiweeks_next_year.slice(0, 24)
-  epiweeks = epiweeks.concat(epiweeks_next_year_first_24_ew)
+  epiweeks_next_year_first_32_ew = epiweeks_next_year.slice(0, 32)
+  epiweeks = epiweeks.concat(epiweeks_next_year_first_32_ew)
   return epiweeks.map(ew => {
     let ewData = stateSubset.find(({
       epiweek
