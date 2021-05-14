@@ -16,7 +16,7 @@ import pprint
 logger = logging.getLogger(__name__)
 
 #TODO: Make these as environment variables
-STAGING = False
+STAGING = True
 
 # meta info
 project_name = 'COVID-19 Forecasts'
