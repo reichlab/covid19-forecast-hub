@@ -4,6 +4,7 @@ on:
     inputs:
       name:
         description: 'Trigger'
+        required: false
   schedule:
     - cron: '0 */6 * * *'
     - cron: '30 2 * * *' # 10:30 EDT or 9:30 EST
@@ -35,6 +36,8 @@ jobs:
     - name: Check space available
       run: df --human-readable
     - uses: actions/checkout@v2
+    - name: switch to staging
+      run: git checkout staging
     - name: Check space available after checkout
       run: df --human-readable
     # - name: Use Node.js ${{ matrix.node-version }}
