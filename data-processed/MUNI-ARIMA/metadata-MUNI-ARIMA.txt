@@ -2,7 +2,7 @@ team_name: Masaryk University
 model_name: ARIMA
 model_abbr: MUNI-ARIMA
 model_contributors: Andrea Kraus, David Kraus <david.kraus@mail.muni.cz>
-website_url: https://sites.google.com/mail.muni.cz/covid19stat
+website_url: https://krausstat.shinyapps.io/covid19global/
 license: cc-by-4.0
 team_model_designation: primary
 methods: Seasonal ARIMA model with outlier detection fitted to transformed daily series. Weekly forecasts are obtained by aggregating bootstrap daily forecast paths.
