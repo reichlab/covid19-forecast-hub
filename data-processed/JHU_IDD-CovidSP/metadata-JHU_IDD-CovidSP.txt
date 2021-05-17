@@ -23,22 +23,27 @@ data_inputs: JHU CSSE (confirmed cases; reported fatalities), US Census (populat
 citation: https://doi.org/10.1038/s41598-021-86811-0
 methods_long: "This is a state-level metapopulation model with stochastic SEIR disease\
   \  dynamics. This model incorporates uncertainty in epidemiological parameters \
-  \ and the effectiveness of state-wide intervention policies on social  distancing\
-  \ and stay-at-home orders. Infections are seeded stochastically  with roughly 10\
+  \ and the effectiveness of state-wide intervention policies on social  distancing,\
+  \ stay-at-home orders, and vaccine effects that reduce suspectibility and severity.\
+  \ Infections are seeded stochastically with roughly 10\
   \ times the number of confirmed cases in the first five days of the epidemic\
   \ and R0 and the duration of the infectious period were  drawn stochastically for\
   \ each county and simulation. Disease follows SEIR dynamics and county commuting\
   \ data modulates the spread of disease within counties. \nStay-at-home orders and \
   \ subsequent social distancing interventions are updated at the state-level according\
-  \ to recent policy documents. Ongoing interventions
-  continued through \
-  \ the remainder of the simulation period. Intervention effects are inferred\
+  \ to recent policy documents. Vaccination rates and reductions to the hospitalization\
+  \ and mortality rates are state-specific by week. Ongoing NPIs continued through the remainder \
+  \ of the simulation period, while vaccination coverage continues to increase slowly in\
+  \ subsequent months until it reaches a maximum 90% coverage per group. Intervention effects are inferred\
   \ where  possible.\nTo model deaths and hospitalizations in the population, we incorporated\
   \  realistic but fixed time delays from infection to symptom onset to hospitalization to \
   \ ICU to ventilator use to death and used age-specific demographics to perform \
   \ a county-level age standardization of health outcome risk. Currently, we  assume\
   \ a 0.5% infection fatality rate and a 3.5:1 ratio of incident hospitalizations\
-  \ to deaths. \nFor each county, we estimate the seeding time and amount, the baseline\
+  \ to deaths. The model assumes that vaccinated individuals have both reductions in susceptibility\
+  \ and reductions in hospitalization and mortality. For the two-dose vaccines, one dose has\
+  \ an assumed 75% reduction and two doses have a 95% reduction. The one dose J&J vaccine is assumed
+  \ to have 70% efficacy.  \nFor each county, we estimate the seeding time and amount, the baseline\
   \  reproductive number, the case confirmation to infection ratio, and the  effectiveness\
   \ of interventions (from closing to phased reopenings). We use an  MCMC-like inference\
   \ procedure that calibrates model outputs to weekly county  aggregations of incident\
