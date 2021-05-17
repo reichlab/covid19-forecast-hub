@@ -74,8 +74,8 @@ function parseStateActual(seasonData, stateId) {
   epiweeks = epiweeks.slice(5)
   // Temporary: expand to next 4 weeks while working on the main fix
   let epiweeks_next_year = fct.utils.epiweek.seasonEpiweeks(SEASON_ID+1)
-  epiweeks_next_year_first_16_ew = epiweeks_next_year.slice(0, 16)
-  epiweeks = epiweeks.concat(epiweeks_next_year_first_16_ew)
+  epiweeks_next_year_first_32_ew = epiweeks_next_year.slice(0, 32)
+  epiweeks = epiweeks.concat(epiweeks_next_year_first_32_ew)
   return epiweeks.map(ew => {
     let ewData = stateSubset.find(({
       epiweek
@@ -241,8 +241,8 @@ async function parseModelDir(modelPath, stateId) {
   let binPredictions = []
 
   let epiweeks_next_year = fct.utils.epiweek.seasonEpiweeks(SEASON_ID+1)
-  let epiweeks_next_year_first_16_ew = epiweeks_next_year.slice(0,16)
-  let epiweeks = fct.utils.epiweek.seasonEpiweeks(SEASON_ID).slice(5).concat(epiweeks_next_year_first_16_ew)
+  let epiweeks_next_year_first_24_ew = epiweeks_next_year.slice(0,24)
+  let epiweeks = fct.utils.epiweek.seasonEpiweeks(SEASON_ID).slice(5).concat(epiweeks_next_year_first_24_ew)
   for (let epiweek of epiweeks) {
 
     if (availableEpiweeks.indexOf(epiweek) === -1) {

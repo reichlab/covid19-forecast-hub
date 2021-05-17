@@ -14,139 +14,40 @@ you can do prior to this pull request. In addition, we describe
 
 *Table of Contents*
 
+-   [What is a forecast](#What-is-a-forecast)
 -   [ground truth data](#ground-truth-data)
 -   [data formatting](#Data-formatting)
 -   [data validation](#Data-validation)
+-   [retractions](#retractions)
 -   [metadata format](#Meta-data)
+-   [weekly ensemble and visualization deployment](#Weekly-build)
+-   [policy on late submissions](#late-policy)
+
+
+What is a forecast
+-----------------
+
+Models at the COVID-19 Forecast Hub are asked to make specific quantitative forecasts about data that will be observed in the future. These forecasts are interpreted as "unconditional" predictions about the future. That is, they are not predictions only for a limited set of possible future scenarios in which a certain set of conditions (e.g. vaccination uptake is strong, or new social-distancing mandates are put in place) hold about the future -- rather, they should characterize uncertainty across all reasonable future scenarios. In practice, all forecasting models make some assumptions about how current trends in data may change and impact the forecasted outcome; some teams select a "most likely" scenario or combine predictions across multiple scenarios that may occur. Forecasts submitted to the [COVID-19 Forecast Hub](https://covid19forecasthub.org/) will be evaluated against observed data. 
+
+We note that other efforts, such as the [COVID-19 Scenario Modeling Hub](https://covid19scenariomodelinghub.org/), have been launched to collect and aggregate model outputs from "scenario projection" models. These models create longer-term projections under a specific set of assumptions about how the main drivers of the pandemic (such as non-pharmaceutical intervention compliance, or vaccination uptake) may change over time.
 
 Ground truth data
 -----------------
 
-Case and death ground truth data are from JHU CSSE while hospitalization
-ground truth data are from HealthData.gov.
+The COVID-19 Forecast Hub treats case and death data on COVID-19 from 
+JHU CSSE as "ground truth" data. Slightly different versions of these data are also 
+available from USA FACTS and the NY Times. Hospitalization ground truth 
+data are from HealthData.gov. We create processed versions of these data
+that are stored in this repository. 
 
-Additional sources of ground-truth data at a future time.
+Details on how ground truth data are defined can be found in 
+the [data-truth folder README file](../data-truth/README.md).
 
-### Cases and Deaths
+Technical details about how and when the truth data are updated and 
+checked for validity can be found on 
+[the Hub Wiki page about truth data](https://github.com/reichlab/covid19-forecast-hub/wiki/Truth-Data).
 
-There are several different sources for death data. All forecasts will
-be compared to the [daily reports containing death data from the JHU
-CSSE
-group](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv)
-as the gold standard reference data for deaths in the US. Note that
-there are significant differences (especially in daily incident death
-data) between the JHU data and another commonly used source, from the
-New York Times. The team at UTexas-Austin has tracked this issue on [a
-separate GitHub
-repository](https://github.com/spencerwoody/covid19-data-comparsion).
 
-Data from a variety of sources are available via the [COVIDcast Epidata
-API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast.html).
-
-Details on how data from JHU are processed and aggregated are available
-on the [Truth Data page on the COVID-19 Foreast hub
-Wiki](https://github.com/reichlab/covid19-forecast-hub/wiki/Truth-Data).
-Weekly incident data are the sum of daily incident data from Sunday
-through Saturday. Weekly cumulative data is the cumulative data up to
-and including Saturday.
-
-### Hospitalizations
-
-As of the week of 16 Nov 2020, a proposal has been made to use
-HealthData.gov confirmed admissions as the ground truth
-hospitalizations. Prior to this week, no official source for
-hospitalization ground truth data had been identified. On 1 Dec 2020, a
-final determination of has been made as detailed below.
-
-#### HealthData.gov Hospitalization Timeseries
-
-The truth data that hospitalization forecasts (`inc hosp` targets) will
-be evaluated against are the [HealthData.gov COVID-19 Reported Patient
-Impact and Hospital Capacity by State
-Timeseries](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries).
-These data are released weekly although, sometimes, are updated more
-frequently.
-
-A supplemental data source with daily counts that should be updated more
-frequently (typically daily) but does not include the full time-series
-is [HealthData.gov COVID-19 Reported Patient Impact and Hospital
-Capacity by
-State](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state).
-
-#### Resources for Accessing Hospitalization Data
-
-1.  We are working with our collaborators at the [Delphi Group at
-    CMU](https://delphi.cmu.edu/) to make these data available through
-    their [Delphi Epidata
-    API](https://cmu-delphi.github.io/delphi-epidata/api/README.html).
-    The current weekly timeseries of the hospitalization data as well as
-    prior versions of the data are available as the [`covid_hosp`
-    endpoint of the
-    API](https://cmu-delphi.github.io/delphi-epidata/api/covid_hosp.html).
-    At some point, this endpoint will likely be added to the [COVIDcast
-    Epidata
-    API](https://cmu-delphi.github.io/delphi-epidata/api/covidcast.html),
-    but at this point it is only available through the regular Epidata
-    API.
-
-2.  The Forecast Hub has developed the [`covidData` R
-    package](https://github.com/reichlab/covidData) which facilitates
-    downloading and storing HealthData.gov data on hospitalizations 
-    (as well as JHU data on cases and deaths). This package is under
-    active development and requires a bit of set-up with python and
-    `make` but it does provide tools to access all ground truth data
-    used by the Hub. A vignette showing some basic functionality for the
-    package is available in
-    [Rmarkdown](https://github.com/reichlab/covidData/blob/master/vignettes/covidData.Rmd)
-    ([click here to view the HTML
-    vignette](https://htmlpreview.github.io/?https://github.com/reichlab/covidData/blob/master/vignettes/covidData.html)).
-
-#### Data processing
-
-The hospitalization truth data is computed as the sum of the columns
-`previous_day_admission_adult_covid_confirmed` and
-`previous_day_admission_pediatric_covid_confirmed` which provide the new
-daily admission for adults and kids, respectively. (Other columns
-represent “suspected” COVID-19 hospitalizations, however because
-definitions and implementations of suspected cases vary widely, our
-public health collaborators have recommended using the above columns
-only.)
-
-Since these admission data are listed as “previous day” admissions in
-the raw data, the truth data shifts values in the `date` column one day
-earlier so that `inc hosp` align with the date the admissions occurred.
-
-As an example, the following data from HealthData.gov
-
-       date    | previous_day_admission_adult_covid_confirmed | previous_day_admission_pediatric_covid_confirmed
-    -----------|----------------------------------------------|-------------------------------------------------
-    2020-10-30 |                  5                           |                       12                        
-
-would turn into the following observed data for incident
-hospitalizations
-
-       date    | incident_hospitalizations
-    -----------|----------------------------
-    2020-10-29 |          17               
-
-National hospitalization, i.e. US, data are constructed from these data
-by summing the data across all 50 states, Washington DC (DC), Puerto
-Rico(PR), and the US Virgin Islands (VI). The HHS data do not include
-admissions for additional territories.
-
-#### Additional resources
-
-Here are a few additional resources that describe these hospitalization
-data:
-
--   [data dictionary for the
-    dataset](https://healthdata.gov/covid-19-reported-patient-impact-and-hospital-capacity-state-data-dictionary)
--   the [official document describing the “guidance for hospital
-    reporting”](https://www.hhs.gov/sites/default/files/covid-19-faqs-hospitals-hospital-laboratory-acute-care-facility-data-reporting.pdf)
--   [US Hospital Reporting
-    Dashboard](https://protect-public.hhs.gov/pages/covid19-module)
-    showing the percent of hospitals that report data into the
-    hospitalization dataset, by state
 
 Data formatting
 ---------------
@@ -391,7 +292,7 @@ Teams should provide the following 23 quantiles:
     ## [13] 0.550 0.600 0.650 0.700 0.750 0.800 0.850 0.900 0.950 0.975 0.990
 
 for all `target`s except “N wk ahead inc case” target. For the “N wk
-ahead inc case” target, teams should provide the following 6 quantiles:
+ahead inc case” target, teams should provide the following 7 quantiles:
 
     c(0.025, 0.100, 0.250, 0.500, 0.750, 0.900, 0.975)
 
@@ -410,6 +311,10 @@ An example inverse CDF is below.
 
 ![](./example_inverse_cdf-1.png)
 
+From 4/22/2021 we will be accepting `NULL` values in this column. The purpose
+of `NULL` is to indicate the retraction of previously forecasted values. More
+details can be found in the [retractions](#retractions) section.
+
 Forecast validation
 -------------------
 
@@ -418,15 +323,13 @@ data-processed/ will be automatically run.
 
 ### Pull request forecast validation
 
-When a pull request is submitted, the data are validated through [Travis
-CI](https://travis-ci.org/) which runs the tests in
-[test\_formatting.py](../code/validation/test_formatting.py). The intent
+When a pull request is submitted, the data are validated through [Github Actions](https://docs.github.com/en/actions) which runs the tests present in [the validations repository](https://github.com/reichlab/covid19-forecast-hub-validations). The intent
 for these tests are to validate the requirements above and specifically
 enumerated [on the
 wiki](https://github.com/reichlab/covid19-forecast-hub/wiki/Validation-Checks#current-validation-checks).
 Please [let us
 know](https://github.com/reichlab/covid19-forecast-hub/issues) if the
-wiki is inaccurate.
+wiki is inaccurate or if you're facing issues while running the tests.
 
 If the pull request fails, please [follow these
 instructions](https://github.com/reichlab/covid19-forecast-hub/wiki/Troubleshooting-Pull-Requests)
@@ -445,15 +348,45 @@ instructions](R_forecast_file_validation.md) to run some checks in R.
 These checks are no longer maintained, but may still be of use to teams
 working with R.
 
-Data visualization
+### Retractions checks
+
+Conforming to new rules being enforced starting 4/22/2021 with the introduction
+of retractions, newer/updated forecast files that have the same forecast date in
+the file name must now include all previously forecasted points; i.e., the updated
+forecast file cannot contain fewer rows than the previous one, and must include
+all (`forecast_date`, `target`, `target_end_date`, `location`, `type`, `quantiles`)
+combinations that were present in the previous forecast file. In case one of these rows are to be retracted, follow the instructions under in the next section.
+
+Retractions
+-----------
+
+From 4/22/2021 we will be formally introducing the idea of a _retracted_ forecast.
+
+A retracted forecast point is a updated forecast point with a `NULL` value (previously non-`NULL`)
+but the same `forecast_date`, `target`, `target_end_date`, `location`, `type`,
+and/or `quantiles` (if applicable); A retracted forecast is a new forecast file with the same
+forecast date in the file name that contains such retracted points. Forecast teams can both retract
+and update forecasts in one forecast file.
+
+The purpose of this new idea is to enable the original data to have an explicit track-record
+of forecasts that were made in earlier versions and then subsequently were removed for any reason.
+This way, forecasting teams will have a way to retract previously made forecasts but evaluators will
+not lose the ability to retrieve previously retracted forecasts. A detailed description and discussion
+of this idea can be found on [this page](https://docs.zoltardata.com/ReleaseNotes4_0/) of the Zoltar 
+documentation website, starting from 4/22/2021.
+
+All forecasts containing `NULL` values will be subjected to review for the foreseeable future, as we understand
+this is a big change and the correct semantics of `NULL` values may not be immediately clear.
+
+Weekly build
+-----------
+
+Every Monday at 6pm ET, we will update our [COVID Forecast Hub ensemble forecast](https://covid19forecasthub.org/doc/ensemble/) using the most recent valid forecast from each team. Additional details on model eligibility are available on [the page describing the ensemble](https://covid19forecasthub.org/doc/ensemble/). Details on which models were included each week in the ensemble are available in the [ensemble metadata](https://github.com/reichlab/covid19-forecast-hub/tree/master/ensemble-metadata) folder.
+
+Every Tuesday morning (no earlier than 8am ET), we will update the [interactive forecast visualization](https://viz.covid19forecasthub.org/). Valid forecasts that are submitted prior to 8am ET will be included in the visualization. Valid forecasts submitted later than this will be included in the visualization build the following week.
+
+
+Policy on late or updated submissions
 ------------------
 
-If you want to visualize your forecasts, you can use our [R shiny
-app](./explore_processed_data.R) to visualize your forecast by running
-
-    source("explore_processed_data.R")
-    shinyApp(ui = ui, server = server)
-
-from within the [data-processed/](./) folder. This is mainly an internal
-tool we use to help us know what forecasts are in the repository. Thus,
-it is provided as-is within no warranty.
+In order to ensure that forecasting is done in real-time, all forecasts should be submitted to the forecast hub within 1 day of the forecast date.  We do not accepting late forecasts due to technical issues, missed deadlines, or updated modeling methods. We will accept updated forecasts if there was a bug in the original file. If you need to submit an updated forecast for this reason, please include a comment in your pull request confirming that there was a bug and that the forecast was fit only to data available at the time. We also accept late forecasts from new teams if they can provide publicly available information showing that the forecasts were made in real-time (e.g. GitHub commit history).

@@ -2,11 +2,12 @@ team_name: FDANIHASU
 model_name: Sweight
 model_abbr: FDANIHASU-Sweight
 model_contributors: Osman Yogurtcu, Artur Belov, Rick Gerkin, Carson Chow <carsonc@nih.gov>
-website_url: https://github.com/ONYLAB/Scoreboard/
+website_url: http://covidforeca.st/
 license: cc-by-4.0
 team_model_designation: primary
 methods: An ensemble, or model average, of submitted forecasts to the COVID-19 Forecast Hub.
 team_funding: Supported by Intramural Research Program of the NIH/NIDDK
+citation: https://www.medrxiv.org/content/10.1101/2021.02.06.21251276v1
 repo_url: https://github.com/ONYLAB/Scoreboard/
 data_inputs: JHU CSSE County-level confirmed cases and deaths, US cumulative death and incident case forecasts from other models.
 methods_long: An ensemble, or model average, of submitted forecasts to the COVID-19 Forecast Hub. The ensembles are formed by weighting the individual model forecasts with their past performances. No observed data after Monday are used for estimating.

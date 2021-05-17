@@ -6,6 +6,7 @@ on:
         description: 'Trigger'
   schedule:
     - cron: '0 */6 * * *'
+    - cron: '30 2 * * *' # 10:30 EDT or 9:30 EST
 
 jobs:
   upload_zoltar:
@@ -15,18 +16,40 @@ jobs:
         node-version: [10.2]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+    # - run: sudo apt-get remove ghc-** azure-cli firefox google-cloud-sdk google-chrome-stable hhvm dotnet-sdk-** dotnet-runtime-** moby-** adoptopenjdk-** mongodb-org-** mysql-**
+    # - run: sudo apt-get autoremove
+    - name: Free disk space
+      run: |
+          df --human-readable
+          sudo apt clean
+          docker rmi $(docker image ls --all --quiet)
+          rm --recursive --force "$AGENT_TOOLSDIRECTORY" 
+    - name: Maximize build space
+      uses: easimon/maximize-build-space@v4
       with:
-        node-version: ${{ matrix.node-version }}
+        root-reserve-mb: 512
+        swap-size-mb: 1024
+        remove-dotnet: 'true'
+        remove-android: 'true'
+        remove-haskell: 'true'
+    - name: Check space available
+      run: df --human-readable
+    - uses: actions/checkout@v2
+    - name: Check space available after checkout
+      run: df --human-readable
+    # - name: Use Node.js ${{ matrix.node-version }}
+    #   uses: actions/setup-node@v1
+    #   with:
+    #     node-version: ${{ matrix.node-version }}
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
         python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
-    - run: npm install
+    # - run: npm install
     - run: pip3 install -r visualization/requirements.txt
+      env:
+        CFLAGS: "-Wno-deprecated-declarations -Wno-unreachable-code"
     - run: bash travis/upload_zoltar_master.sh
       env:
         Z_USERNAME: ${{ secrets.Z_USERNAME}}
