@@ -205,13 +205,13 @@ combine_annotations <- function(measure) {
     )
 
   write_sheet(
-    combined,
+    augmented_combined,
     ss = "https://docs.google.com/spreadsheets/d/1Vw1Oakr-KdLB8RJoZNF7u6MRXMzg6iSJLpT_PpaKi2Y/edit#gid=799534143",
     sheet = measure
   )
 
   write.csv(
-    combined,
+    augmented_combined,
     paste0('data-anomalies/outliers-inc-', measure, '.csv')
   )
 }
