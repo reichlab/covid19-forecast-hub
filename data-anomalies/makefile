@@ -17,11 +17,10 @@ coviddata:
 ## run scripts for revisions and outliers
 make_csvs: pull coviddata
 	Rscript create-revisions-csv.R
-	Rscript create-outliers-csv.R
 
 commit: make_csvs
-	git -C ../ add data-anomalies/revisions-*.csv data-anomalies/outliers-*.csv
-	git -C ../ commit -m "adding updated revisions and outlier csv files"
+	git -C ../ add data-anomalies/revisions-*.csv
+	git -C ../ commit -m "adding updated revision csv files"
 	git -C ../ push origin 
 
 plot_data: make_csvs
@@ -29,4 +28,5 @@ plot_data: make_csvs
 
 plot_outliers: make_csvs
 	Rscript plot_outliers.R
+	Rscript create-outliers-csv.R
 
