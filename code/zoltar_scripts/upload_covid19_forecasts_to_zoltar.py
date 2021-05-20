@@ -17,7 +17,7 @@ logger = logging.getLogger(__name__)
 
 #TODO: Make these as environment variables
 # Change this to True to use zoltar staging server
-STAGING = False
+STAGING = True
 
 # meta info
 project_name = 'COVID-19 Forecasts'

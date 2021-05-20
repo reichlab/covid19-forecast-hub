@@ -131,24 +131,26 @@ def upload_forecast(forecast_name):
     pass
 
 if __name__ == '__main__':
-    for model in models:
-        existing_forecasts = [forecast.source for forecast in model.forecasts]
-        zoltar_forecasts.extend(existing_forecasts)
-    for directory in [model for model in os.listdir('./data-processed/') if "." not in model]:
-        forecasts = [forecast for forecast in os.listdir('./data-processed/'+directory+"/") if ".csv" in forecast]
-        repo_forecasts.extend(forecasts)
-    print("number of forecasts in zoltar: " + str(len(zoltar_forecasts)))
-    print("number of forecasts in repo: " + str(len(repo_forecasts)))
-    print()
-    print('----------------------------------------------------------')
-    print()
-    forecasts_to_upload = []
-    for forecast in repo_forecasts:
-        if forecast not in zoltar_forecasts:
-            # print("This forecast in repo but not in zoltar "+forecast)
-            forecasts_to_upload.append(forecast)
+    print(project_obj.latest_forecasts)
 
-    l = list(map(upload_forecast, forecasts_to_upload))
-    print(l)
-    print('Forecasts to upload: ')
-    pprint.pprint(forecasts_to_upload)
+    # for model in models:
+    #     existing_forecasts = [forecast.source for forecast in model.forecasts]
+    #     zoltar_forecasts.extend(existing_forecasts)
+    # for directory in [model for model in os.listdir('./data-processed/') if "." not in model]:
+    #     forecasts = [forecast for forecast in os.listdir('./data-processed/'+directory+"/") if ".csv" in forecast]
+    #     repo_forecasts.extend(forecasts)
+    # print("number of forecasts in zoltar: " + str(len(zoltar_forecasts)))
+    # print("number of forecasts in repo: " + str(len(repo_forecasts)))
+    # print()
+    # print('----------------------------------------------------------')
+    # print()
+    # forecasts_to_upload = []
+    # for forecast in repo_forecasts:
+    #     if forecast not in zoltar_forecasts:
+    #         # print("This forecast in repo but not in zoltar "+forecast)
+    #         forecasts_to_upload.append(forecast)
+
+    # l = list(map(upload_forecast, forecasts_to_upload))
+    # print(l)
+    # print('Forecasts to upload: ')
+    # pprint.pprint(forecasts_to_upload)
