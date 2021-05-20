@@ -11,8 +11,8 @@ click = "*"
 urllib3 = "*"
 selenium = "*"
 webdriver-manager = "*"
-pyyaml = "*"
-pygithub = "*"
+PyYAML = "*"
+PyGithub = "*"
 
 [requires]
 python_version = "3.9"
@@ -25,12 +25,11 @@ click = "*"
 urllib3 = "*"
 selenium = "*"
 webdriver-manager = "*"
-pyyaml = "*"
-pygithub = "*"
-
-[packages.zoltpy]
-git = "https://github.com/reichlab/zoltpy.git"
-editable = true
+PyYAML = "*"
+PyGithub = "*"
 
 [packages.3effbcc]
 file = "https://github.com/hannanabdul55/pykwalify/archive/master.zip"
+
+[packages.zoltpy]
+git = "https://github.com/reichlab/zoltpy"

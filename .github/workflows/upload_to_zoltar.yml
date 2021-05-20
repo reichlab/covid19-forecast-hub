@@ -35,6 +35,8 @@ jobs:
     - name: Check space available
       run: df --human-readable
     - uses: actions/checkout@v2
+    - name: checkout zoltar-upload-v2 branch
+      run: git checkout zoltar-upload-v2
     - name: Check space available after checkout
       run: df --human-readable
     # - name: Use Node.js ${{ matrix.node-version }}
