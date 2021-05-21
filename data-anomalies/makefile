@@ -15,18 +15,18 @@ coviddata:
 	cd $(COVIDDATADIR)code/data-processing; make all
 
 ## run scripts for revisions and outliers
-make_csvs: pull coviddata
+revision_csvs: pull coviddata
 	Rscript create-revisions-csv.R
 
-commit: make_csvs
+commit: revision_csvs
 	git -C ../ add data-anomalies/revisions-*.csv
 	git -C ../ commit -m "adding updated revision csv files"
 	git -C ../ push origin 
 
-plot_data: make_csvs
+plot_data: revision_csvs
 	Rscript plot_data_for_review.R
 
-plot_outliers: make_csvs
-	Rscript plot_outliers.R
+plot_outliers: revision_csvs
 	Rscript create-outliers-csv.R
+	Rscript plot_outliers.R
 
