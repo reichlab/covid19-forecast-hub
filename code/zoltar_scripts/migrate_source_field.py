@@ -35,7 +35,7 @@ forecast_csv_to_id_dict = {id_source[1] : id_source[0] for id_source in uploaded
 
 # For each forcast migrate source field to new version using has from validated_files_db.json
 db = {}
-with open("validated_file_db.json", "r") as db_file:
+with open("./code/zoltar_scripts/validated_file_db.json", "r") as db_file:
     db = json.load(db_file)
 
 csv_not_in_zoltar = []
