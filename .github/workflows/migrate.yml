@@ -52,3 +52,7 @@ jobs:
         CFLAGS: "-Wno-deprecated-declarations -Wno-unreachable-code"
     - name: Migrate
       run: python code/zoltar_scripts/migrate_source_field.py
+      env:
+        Z_USERNAME: ${{secrets.Z_USERNAME}}
+        Z_PASSWORD: ${{secrets.Z_PASSWORD}}
+        GH_TOKEN: ${{secrets.GH_TOKEN}}
