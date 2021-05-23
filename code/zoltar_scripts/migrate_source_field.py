@@ -38,16 +38,28 @@ db = {}
 with open("validated_file_db.json", "r") as db_file:
     db = json.load(db_file)
 
+csv_not_in_zoltar = []
+id_invalid = []
 for filename in db:
     hash = db[filename]
-    forecast_id = forecast_csv_to_id_dict[filename]
-    forecast = forecast_dict[forecast_id]
+    try:
+        forecast_id = int(forecast_csv_to_id_dict[filename])
+    except KeyError:
+        csv_not_in_zoltar.append(filename)
+        continue
+
+    try:
+        forecast = forecast_dict[forecast_id]
+
+        # set source to new format
+        forecast.source = f"{filename}|{hash}"
+    except KeyError:
+        id_invalid.append(forecast_id)
     
-    # set source to new format
-    forecast.source(f"{filename}|{hash}")
+    
 
 # check if the source fields have changed as expected
 # make sure all files have source hashes
 uploaded_to_zoltar_list = project_obj.latest_forecasts
-sources_nohash = [pair[1] for pair in uploaded_to_zoltar_list[1:] if "|" in pair[1]]
+sources_nohash = [pair[1] for pair in uploaded_to_zoltar_list[1:] if not "|" in pair[1]]
 pprint(sources_nohash)
