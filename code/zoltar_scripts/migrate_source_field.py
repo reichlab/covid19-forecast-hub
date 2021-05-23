@@ -55,8 +55,6 @@ for filename in db:
         forecast.source = f"{filename}|{hash}"
     except KeyError:
         id_invalid.append(forecast_id)
-    
-    
 
 # check if the source fields have changed as expected
 # make sure all files have source hashes

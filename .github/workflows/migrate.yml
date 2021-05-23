@@ -1,13 +1,10 @@
-name: Trigger zoltar upload
+name: Migrate source field
 on:
   workflow_dispatch:
     inputs:
       name:
         description: 'Trigger'
         required: false
-  schedule:
-    - cron: '0 */6 * * *'
-    - cron: '30 2 * * *' # 10:30 EDT or 9:30 EST
 
 jobs:
   upload_zoltar:
@@ -53,8 +50,5 @@ jobs:
     - run: pip3 install -r visualization/requirements.txt
       env:
         CFLAGS: "-Wno-deprecated-declarations -Wno-unreachable-code"
-    - run: bash travis/upload_zoltar_master.sh
-      env:
-        Z_USERNAME: ${{ secrets.Z_USERNAME}}
-        Z_PASSWORD: ${{ secrets.Z_PASSWORD}}
-        GH_TOKEN: ${{secrets.GH_TOKEN}}
+    - name: Migrate
+      run: python code/zoltar_scripts/migrate_source_field.py

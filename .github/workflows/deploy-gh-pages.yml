@@ -4,6 +4,7 @@ on:
     inputs:
       trigger:
         description: 'Deploy to GitHub Pages'
+        required: false
 
 jobs:
   deploy_gh_pages:
