@@ -257,7 +257,7 @@ us_inc_hosp_wk_pi <- dat_hosp %>%
 
 ```
 
-At the national level, the ensemble model predicts that weekly totals of observed deaths in each of the next four weeks will be between `r us_inc_death_range[1]` and `r us_inc_death_range[2]` deaths with around `r us_cum_deaths` deaths by `r saturday_4_wk_ahead_txt` (95% prediction interval: `r us_cum_deaths_wk_pi[2]` - `r us_cum_deaths_wk_pi[1]`). 
+At the national level, the ensemble model predicts that weekly totals of observed deaths in each of the next four weeks will be between `r us_inc_death_range[1]` and `r us_inc_death_range[2]` deaths with around `r us_cum_deaths` deaths by `r saturday_4_wk_ahead_txt` (95% prediction interval: `r us_cum_deaths_wk_pi[1]` - `r us_cum_deaths_wk_pi[2]`). 
 
 For the week ending `r saturday_4_wk_ahead_txt`, the ensemble forecasts that reported COVID-19 deaths in the US will be between `r us_inc_death_wk_pi_round[1]` and `r us_inc_death_wk_pi_round[2]` (95% prediction interval: `r us_inc_death_wk_pi[1]` - `r us_inc_death_wk_pi[2]`) and COVID-19 cases in the US will be between `r us_inc_case_wk_pi_round[1]` and `r us_inc_case_wk_pi_round[2]` (95% prediction interval: `r us_inc_case_wk_pi[1]` - `r us_inc_case_wk_pi[2]`). 
 

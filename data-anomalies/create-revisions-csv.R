@@ -5,7 +5,7 @@ setwd(here())
 
 ## note that this file depends on a recent successful covidData `make all`
 
-## fucntion to load one week of data for a particular target variable as of a certain date  
+## function to load one week of data for a particular target variable as of a certain date  
 load_one_as_of <- function(as_of, target_var)
 {
   # temporal resolution depends on target_var
