@@ -3485,3 +3485,15 @@ file_path,validation_date
 ./data-processed/TTU-squider/2021-05-23-TTU-squider.csv,2021-05-25 00:53:03.326549
 ./data-processed/UpstateSU-GRU/2021-05-24-UpstateSU-GRU.csv,2021-05-25 03:39:19.617771
 ./data-processed/FDANIHASU-Sweight/2021-05-24-FDANIHASU-Sweight.csv,2021-05-25 12:30:08.757683
+./data-processed/CU-nochange/2021-05-23-CU-nochange.csv,2021-05-25 17:57:33.428617
+./data-processed/CU-scenario_mid/2021-05-23-CU-scenario_mid.csv,2021-05-25 17:57:51.009326
+./data-processed/CU-select/2021-05-23-CU-select.csv,2021-05-25 17:58:08.489729
+./data-processed/CU-scenario_low/2021-05-23-CU-scenario_low.csv,2021-05-25 17:58:25.942352
+./data-processed/FAIR-NRAR/2021-05-24-FAIR-NRAR.csv,2021-05-25 17:58:35.393989
+./data-processed/Google_Harvard-CPF/2021-05-24-Google_Harvard-CPF.csv,2021-05-25 17:58:39.750624
+./data-processed/CU-scenario_high/2021-05-23-CU-scenario_high.csv,2021-05-25 17:58:57.050900
+./data-processed/COVIDhub-ensemble/2021-05-24-COVIDhub-ensemble.csv,2021-05-25 17:59:10.415114
+./data-processed/JHU_UNC_GAS-StatMechPool/2021-05-23-JHU_UNC_GAS-StatMechPool.csv,2021-05-25 17:59:19.401891
+./data-processed/KITmetricslab-select_ensemble/2021-05-24-KITmetricslab-select_ensemble.csv,2021-05-25 17:59:20.769331
+./data-processed/JHUAPL-SLPHospEns/2021-05-24-JHUAPL-SLPHospEns.csv,2021-05-25 17:59:24.387886
+./data-processed/COVIDhub-trained_ensemble/2021-05-24-COVIDhub-trained_ensemble.csv,2021-05-25 17:59:37.478753
