@@ -3,7 +3,12 @@ title: "Data for Review"
 output: html_document
 ---
 
-```{r echo=FALSE}
+```{r echo=FALSE,	message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE
+)
 library(tidyverse)
 library(covidData)
 library(plotly)
