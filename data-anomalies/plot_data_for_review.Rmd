@@ -1,5 +1,6 @@
 ---
 title: "Data for Review"
+knit: (function(inputFile, encoding) { rmarkdown::render(inputFile, encoding = encoding, output_file = paste0(substr(inputFile,1,nchar(inputFile)-4),Sys.Date(),'.html')) })
 output: html_document
 ---
 
