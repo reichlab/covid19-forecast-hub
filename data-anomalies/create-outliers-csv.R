@@ -216,6 +216,11 @@ combine_annotations <- function(measure) {
   )
 }
 
+if (!interactive()) {
+  # This works... if you have a service account token...
+  gs4_auth(path = "/path/to/your/service-account-token.json")
+}
+
 combine_annotations("cases")
 combine_annotations("hosps")
 combine_annotations("deaths")
