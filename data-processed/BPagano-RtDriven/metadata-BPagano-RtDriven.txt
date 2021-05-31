@@ -39,4 +39,5 @@ methods_long: "On our website we present daily projections for\
   \ Incorporated vaccinations.\
   \ UPDATE 21-02-06: Began fine tuning forecast parameters based on\
   \ national hospitalizations.\
-  \ UPDATE 21-03-21: Began adjusting Rt forecast start values by state."
+  \ UPDATE 21-03-21: Began adjusting Rt forecast start values by state.\
+  \ UPDATE 21-05-02: Returned to common algorithmic Rt forecast by states."
