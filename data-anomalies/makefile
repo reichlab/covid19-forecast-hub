@@ -24,15 +24,15 @@ commit_revisions: pull
 ## outlier-specific analysis and plotting
 
 ## with fresh covidData install, generates plots for review
-plot_data_for_review: coviddata
-	Rscript plot_data_for_review.R
+# plot_data_for_review: coviddata
+# 	Rscript plot_data_for_review.R
 
 ## once all reviews have been generated, reads them in, and plots for checking
 check_outliers: 
 	Rscript create-outliers-csv.R
 	Rscript plot_outliers.R
 
-commit_outliers:
+commit_outliers: pull
 	git -C ../ add data-anomalies/outliers-*.csv
 	git -C ../ commit -m "adding updated outliers csv files"
 	git -C ../ push origin 
