@@ -195,7 +195,7 @@ combine_annotations <- function(measure) {
     ) %>%
     dplyr::mutate(
       absolute_size = abs(reported_inc - imputed_inc),
-      relative_size = absolute_size / imputed_inc
+      relative_size = ifelse(imputed_inc == 0, reported_inc, absolute_size / imputed_inc)
     ) %>%
     dplyr::select(
       location, location_abbreviation, date, issue_date,
@@ -214,6 +214,11 @@ combine_annotations <- function(measure) {
     augmented_combined,
     paste0('data-anomalies/outliers-inc-', measure, '.csv')
   )
+}
+
+if (!interactive()) {
+  # This works... if you have a service account token...
+  gs4_auth(path = "/path/to/your/service-account-token.json")
 }
 
 combine_annotations("cases")
