@@ -195,7 +195,7 @@ combine_annotations <- function(measure) {
     ) %>%
     dplyr::mutate(
       absolute_size = abs(reported_inc - imputed_inc),
-      relative_size = absolute_size / imputed_inc
+      relative_size = ifelse(imputed_inc == 0, reported_inc, absolute_size / imputed_inc)
     ) %>%
     dplyr::select(
       location, location_abbreviation, date, issue_date,
