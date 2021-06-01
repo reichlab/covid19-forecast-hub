@@ -3556,3 +3556,6 @@ file_path,validation_date
 ./data-processed/UChicagoCHATTOPADHYAY-UnIT/2021-05-23-UChicagoCHATTOPADHYAY-UnIT.csv,2021-06-01 13:05:52.146725
 ./data-processed/KITmetricslab-select_ensemble/2021-05-31-KITmetricslab-select_ensemble.csv,2021-06-01 13:05:53.564976
 ./data-processed/COVIDhub-baseline/2021-05-31-COVIDhub-baseline.csv,2021-06-01 13:06:11.825552
+./data-processed/COVIDhub-ensemble/2021-05-31-COVIDhub-ensemble.csv,2021-06-01 15:15:21.749744
+./data-processed/JHUAPL-SLPHospEns/2021-05-31-JHUAPL-SLPHospEns.csv,2021-06-01 15:15:25.825554
+./data-processed/COVIDhub-trained_ensemble/2021-05-31-COVIDhub-trained_ensemble.csv,2021-06-01 15:15:42.141559
