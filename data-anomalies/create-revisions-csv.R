@@ -54,7 +54,7 @@ first_hosp_as_of <- get_next_sunday("data-anomalies/revisions-inc-hosp.csv", "20
 
 first_death_as_of <- get_next_sunday("data-anomalies/revisions-inc-death.csv", "2020-04-26")
 
-if (first_case_as_of <= most_recent_sunday) {
+if (first_case_as_of < most_recent_sunday) {
 
   case_as_ofs <- seq.Date(
     from = first_case_as_of,  
@@ -99,7 +99,7 @@ write_csv(case_revisions, file="data-anomalies/revisions-inc-case.csv", append =
 
 }
 
-if (first_death_as_of <= most_recent_sunday) {
+if (first_death_as_of < most_recent_sunday) {
 
   death_as_ofs <- seq.Date(
     from = first_death_as_of,
@@ -148,7 +148,7 @@ if (first_death_as_of <= most_recent_sunday) {
 
 }
 
-if (first_hosp_as_of <= most_recent_sunday) {
+if (first_hosp_as_of < most_recent_sunday) {
 
   hosp_as_ofs <- seq.Date(
     from = first_hosp_as_of,
