@@ -145,7 +145,7 @@ combine_annotations <- function(measure) {
           reviewer2
         )
       ),
-      num_reviewers_marked_oulier = as.numeric(!is.na(reviewer1)) + as.numeric(!is.na(reviewer2)),
+      num_reviewers_marked_outlier = as.numeric(!is.na(reviewer1)) + as.numeric(!is.na(reviewer2)),
       comments_reviewer1,
       comments_reviewer2
     ) %>%
