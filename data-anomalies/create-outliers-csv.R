@@ -200,7 +200,7 @@ combine_annotations <- function(measure) {
     dplyr::select(
       location, location_abbreviation, date, issue_date,
       reported_inc, imputed_inc, absolute_size, relative_size,
-      reviewers_marked_outlier, num_reviewers_marked_oulier, comments_reviewer1,
+      reviewers_marked_outlier, num_reviewers_marked_outlier, comments_reviewer1,
       comments_reviewer2
     )
 
