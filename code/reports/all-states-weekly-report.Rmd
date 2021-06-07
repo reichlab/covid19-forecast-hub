@@ -52,9 +52,9 @@ all_states <-locs$fips[2:58]
 ```{r setup-location}
 # # # 
 state <-params$state
-#
+
 # testing
-# state <- "58"
+# state <- "11"
 
 # title with state name
 state_name <- locs %>% 
@@ -772,7 +772,8 @@ ggplot() +
   ylab("incident hospitalizations") +
   labs(title=plot2_cap_hosp,
     caption="source: HealthData (observed data), COVID-19 Forecast Hub (forecasts)") +
-  theme(legend.position = c(.05,.95), legend.justification = c(0,1),legend.box="horizontal")
+  theme(legend.position = c(.05,.95), legend.justification = c(0,1),legend.key = element_rect(colour = "transparent", fill = "white"),
+    legend.background = element_rect(alpha("white", 0.5)),legend.box="horizontal")
 ```
 
 ```{r process-ensemble-data-hosp} 
@@ -1031,7 +1032,8 @@ ggplot() +
   ylab("incident cases") +
   labs(title=plot2_cap,
     caption="source: JHU CSSE (observed data), COVID-19 Forecast Hub (forecasts)") +
-  theme(legend.position = c(.05,.95), legend.justification = c(0,1))
+  theme(legend.position = c(.05,.95), legend.justification = c(0,1),legend.key = element_rect(colour = "transparent", fill = "white"),
+    legend.background = element_rect(alpha("white", 0.5)),legend.box="horizontal")
 ```
 
 
