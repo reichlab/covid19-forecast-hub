@@ -10,6 +10,7 @@ import hashlib
 import pickle
 import logging
 import json
+from dateutil.parser import parse
 
 import pprint
 
@@ -218,7 +219,7 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
                     local_issue_date = date.today().strftime("%Y-%m-%d")
 
                     uploaded_forecast = [forecast for forecast in model.forecasts if forecast.timezero.timezero_date.strftime(YYYY_MM_DD_DATE_FORMAT) == time_zero_date][0]
-                    uploaded_issue_date = uploaded_forecast.issue_date
+                    uploaded_issue_date = parse(uploaded_forecast.issued_at).date()
 
                     if local_issue_date == uploaded_issue_date:
                         # Overwrite the existing forecast if has the same issue date

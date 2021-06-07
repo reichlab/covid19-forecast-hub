@@ -1,78 +1,76 @@
 date,location,location_name,value
-2020-08-26,78,Virgin Islands,0
-2020-08-25,78,Virgin Islands,3
-2020-08-23,02,Alaska,3
-2020-08-23,78,Virgin Islands,4
-2020-08-19,78,Virgin Islands,4
-2020-08-18,78,Virgin Islands,4
-2020-08-16,78,Virgin Islands,5
-2020-08-15,78,Virgin Islands,7
-2020-08-13,54,West Virginia,7
-2020-08-12,78,Virgin Islands,7
-2020-08-11,78,Virgin Islands,7
-2020-08-10,78,Virgin Islands,7
-2020-08-09,78,Virgin Islands,7
-2020-08-07,50,Vermont,0
-2020-08-05,02,Alaska,5
-2020-08-05,50,Vermont,0
-2020-08-04,50,Vermont,0
-2020-08-02,50,Vermont,1
-2020-07-30,78,Virgin Islands,7
-2020-07-29,50,Vermont,2
-2020-07-27,02,Alaska,7
-2020-07-27,31,Nebraska,4
-2020-07-26,02,Alaska,12
-2020-07-22,10,Delaware,1
-2020-07-21,09,Connecticut,2
-2020-07-20,19,Iowa,29
-2020-11-07,54,West Virginia,47
-2020-10-16,02,Alaska,20
-2020-10-09,02,Alaska,30
-2020-09-29,02,Alaska,35
-2020-09-21,44,Rhode Island,9
-2020-09-09,54,West Virginia,60
-2020-09-05,44,Rhode Island,11
-2020-08-28,56,Wyoming,5
-2021-02-18,56,Wyoming,12
-2021-02-12,02,Alaska,37
-2021-05-19,56,Wyoming,21
-2021-04-29,02,Alaska,45
-2021-04-13,02,Alaska,51
-2021-03-31,54,West Virginia,95
-2021-03-26,54,West Virginia,122
-2021-03-01,55,Wisconsin,72
-2020-07-16,23,Maine,0
-2020-08-14,44,Rhode Island,21
-2020-10-25,39,Ohio,177
-2020-11-11,47,Tennessee,264
-2020-09-15,23,Maine,1
-2020-07-15,06,California,575
-2020-07-25,02,Alaska,53
-2020-07-17,08,Colorado,35
-2020-08-06,11,District of Columbia,13
-2020-11-10,47,Tennessee,528
-2020-11-09,18,Indiana,342
-2020-07-27,37,North Carolina,148
-2020-11-21,53,Washington,91
-2020-07-21,05,Arkansas,94
-2020-10-13,53,Washington,119
-2020-08-01,47,Tennessee,673
-2020-10-29,36,New York,163
-2020-09-08,47,Tennessee,781
-2020-07-24,02,Alaska,64
-2020-09-07,46,South Dakota,20
-2020-11-20,53,Washington,218
-2020-10-02,53,Washington,239
-2020-08-19,28,Mississippi,95
-2020-10-02,54,West Virginia,143
-2020-09-23,11,District of Columbia,19
-2020-08-03,05,Arkansas,164
-2020-11-04,05,Arkansas,263
-2020-08-12,53,Washington,263
-2020-07-13,44,Rhode Island,21
-2020-07-17,24,Maryland,47
-2020-03-25,44,Rhode Island,21
-2020-10-18,36,New York,277
-2020-10-14,05,Arkansas,368
-2020-07-24,53,Washington,290
-2020-09-22,36,New York,380
+2020-07-20,20,Kansas,30
+2020-11-19,18,Indiana,376
+2020-11-18,16,Idaho,65
+2020-12-15,16,Idaho,124
+2020-07-19,35,New Mexico,23
+2020-08-12,32,Nevada,69
+2020-08-27,08,Colorado,16
+2020-11-13,40,Oklahoma,274
+2020-10-07,19,Iowa,80
+2020-07-18,18,Indiana,413
+2020-07-28,15,Hawaii,7
+2020-08-09,22,Louisiana,146
+2020-11-12,40,Oklahoma,541
+2020-11-11,10,Delaware,17
+2020-10-25,21,Kentucky,196
+2020-07-30,42,Pennsylvania,106
+2020-07-31,09,Connecticut,11
+2020-07-24,16,Idaho,141
+2020-08-03,01,Alabama,114
+2020-10-31,37,North Carolina,109
+2020-07-27,15,Hawaii,18
+2020-10-30,19,Iowa,212
+2020-08-17,39,Ohio,99
+2020-11-04,44,Rhode Island,11
+2020-04-30,36,New York,0
+2020-08-09,09,Connecticut,22
+2020-08-01,37,North Carolina,178
+2020-08-22,40,Oklahoma,621
+2020-08-03,32,Nevada,137
+2020-07-25,13,Georgia,263
+2020-08-06,16,Idaho,164
+2020-10-15,18,Indiana,569
+2020-06-06,44,Rhode Island,11
+2020-08-14,11,District of Columbia,11
+2020-08-01,19,Iowa,243
+2020-07-21,09,Connecticut,24
+2020-10-20,37,North Carolina,309
+2020-07-26,11,District of Columbia,52
+2020-07-17,30,Montana,8
+2020-09-28,39,Ohio,204
+2020-08-08,36,New York,56
+2020-09-24,37,North Carolina,427
+2020-10-06,18,Indiana,690
+2020-10-14,36,New York,206
+2020-08-05,11,District of Columbia,69
+2020-08-13,44,Rhode Island,21
+2020-08-17,36,New York,295
+2020-08-24,30,Montana,34
+2020-04-17,44,Rhode Island,21
+2020-08-12,36,New York,374
+2020-07-25,37,North Carolina,606
+2020-10-13,49,Utah,58
+2020-07-11,44,Rhode Island,21
+2020-07-22,13,Georgia,523
+2020-10-24,36,New York,511
+2020-06-30,36,New York,511
+2020-08-06,36,New York,590
+2020-08-07,36,New York,658
+2020-07-02,44,Rhode Island,21
+2020-08-10,44,Rhode Island,28
+2020-11-08,44,Rhode Island,41
+2020-05-21,36,New York,658
+2020-06-23,44,Rhode Island,41
+2020-09-28,49,Utah,87
+2020-11-22,44,Rhode Island,61
+2020-05-04,44,Rhode Island,61
+2020-06-07,36,New York,658
+2020-04-29,36,New York,658
+2020-09-28,44,Rhode Island,64
+2020-07-17,49,Utah,116
+2020-05-14,44,Rhode Island,64
+2020-11-27,44,Rhode Island,100
+2020-11-11,44,Rhode Island,116
+2020-11-03,44,Rhode Island,134
+2020-11-13,44,Rhode Island,148
