@@ -3616,3 +3616,6 @@ file_path,validation_date
 ./data-processed/UCLA-SuEIR/2021-06-06-UCLA-SuEIR.csv,2021-06-08 01:06:04.982449
 ./data-processed/UCSD_NEU-DeepGLEAM/2021-06-07-UCSD_NEU-DeepGLEAM.csv,2021-06-08 01:06:06.086276
 ./data-processed/COVIDhub-ensemble/2021-06-07-COVIDhub-ensemble.csv,2021-06-08 03:57:06.555386
+./data-processed/JHUAPL-SLPHospEns/2021-06-07-JHUAPL-SLPHospEns.csv,2021-06-08 15:40:41.467903
+./data-processed/FAIR-NRAR/2021-06-07-FAIR-NRAR.csv,2021-06-08 15:40:52.499719
+./data-processed/KITmetricslab-select_ensemble/2021-06-07-KITmetricslab-select_ensemble.csv,2021-06-08 15:40:55.219901
