@@ -331,7 +331,7 @@ ggplot() +
   ylab("incident deaths") +
   labs(title="Weekly reported COVID-19 deaths in the US: observed and forecasted",
     caption="source: JHU CSSE (observed data), COVID-19 Forecast Hub (forecasts)") +
-  theme(legend.position = c(.05,.95), legend.justification = c(0,1),legend.box="horizontal")
+  theme(legend.position = c(.05,.95), legend.justification = c(0,1), legend.key = element_rect(colour = "transparent", fill = "white"), legend.background = element_rect(alpha("white", 0.5)), legend.box="horizontal")
 ```
 
 ### Hospitalizations
@@ -396,7 +396,7 @@ ggplot() +
   ylab("incident hospitalizations") +
   labs(title="Daily COVID-19 hospitalization in the US: observed and forecasted",
     caption="source: HealthData (observed data), COVID-19 Forecast Hub (forecasts)") +
-  theme(legend.position = c(.05,.95), legend.justification = c(0,1),legend.box="horizontal")
+  theme(legend.position = c(.05,.95), legend.justification = c(0,1), legend.key = element_rect(colour = "transparent", fill = "white"), legend.background = element_rect(alpha("white", 0.5)), legend.box="horizontal")
 ```
 
 ### Cases
@@ -462,7 +462,7 @@ ggplot() +
   ylab("incident cases") +
   labs(title="Weekly reported COVID-19 cases in the US: observed and forecasted",
     caption="source: JHU CSSE (observed data), COVID-19 Forecast Hub (forecasts)") +
-  theme(legend.position = c(.05,.95), legend.justification = c(0,1),legend.box="horizontal")
+  theme(legend.position = c(.05,.95), legend.justification = c(0,1), legend.key = element_rect(colour = "transparent", fill = "white"), legend.background = element_rect(alpha("white", 0.5)), legend.box="horizontal")
 ```
 
 
