@@ -1208,7 +1208,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 38,Karlen-pypm,eligible,eligible,eligible,"NA","NA",eligible
 38,LANL-GrowthRate,eligible,eligible,eligible,"NA","NA",eligible
 38,LNQ-ens1,eligible,eligible,decreasing quantiles over time,"NA","NA",ineligible
-38,Microsoft-DeepSTIA,eligible,eligible,eligible,"NA","NA",eligible
+38,Microsoft-DeepSTIA,eligible,eligible,decreasing quantiles over time,"NA","NA",ineligible
 38,MIT_CritData-GBCF,eligible,eligible,eligible,"NA","NA",eligible
 38,MIT-Cassandra,eligible,eligible,eligible,"NA","NA",eligible
 38,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA","NA",eligible
@@ -1698,7 +1698,7 @@ location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_e
 54,Karlen-pypm,eligible,eligible,eligible,"NA","NA",eligible
 54,LANL-GrowthRate,eligible,eligible,eligible,"NA","NA",eligible
 54,LNQ-ens1,eligible,eligible,eligible,"NA","NA",eligible
-54,Microsoft-DeepSTIA,eligible,eligible,eligible,"NA","NA",eligible
+54,Microsoft-DeepSTIA,eligible,eligible,decreasing quantiles over time,"NA","NA",ineligible
 54,MIT_CritData-GBCF,eligible,eligible,eligible,"NA","NA",eligible
 54,MIT-Cassandra,eligible,quantile 0.1 of forecast for horizon 1 is less than most recent observed,eligible,"NA","NA",ineligible
 54,MOBS-GLEAM_COVID,eligible,eligible,eligible,"NA","NA",eligible
