@@ -85,7 +85,7 @@ hosps_as_ofs <- seq.Date(
     dplyr::filter(measure == UQ(measure)) %>%
     dplyr::pull(first_as_of_date),
   to = most_recent_sunday,
-  by = 1
+  by = 7
 )
 
 temporal_resolution <- "daily"
@@ -94,6 +94,7 @@ hosps_all_locations <- purrr::map_dfr(
   hosps_as_ofs, # used for as_of argument to covidData::load_data
   function(as_of) {
     covidData::load_data(
+      as_of = as_of,
       spatial_resolution = c("state", "national"),
       temporal_resolution = temporal_resolution,
       measure = measure
@@ -169,7 +170,8 @@ combine_annotations <- function(measure) {
       loc_issue_data <- data_all_locations %>%
         dplyr::filter(
           location == UQ(location),
-          as_of == UQ(issue_date))
+          as_of == UQ(issue_date)) %>%
+        dplyr::arrange(location, date)
       outlier_dates <- combined %>%
         dplyr::filter(
           location == UQ(location),
