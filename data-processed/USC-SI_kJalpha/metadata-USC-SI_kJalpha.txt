@@ -1,14 +1,13 @@
-team_name: University of Southern California Data Science Lab
+team_name: University of Southern California
 model_name: SI_kJalpha
 model_abbr: USC-SI_kJalpha
-model_contributors: Ajitesh Srivastava <ajiteshs@usc.edu>, Viktor K. Prasanna <prasanna@usc.edu>,
-  Frost Tianjian Xu
+model_contributors: Ajitesh Srivastava <ajiteshs@usc.edu>, Frost Tianjian Xu
 website_url: https://scc-usc.github.io/ReCOVER-COVID-19
 license: mit
 team_model_designation: primary
-methods: A heterogeneous infection rate model with human mobility for epidemic modeling.
+methods: A heterogeneous infection rate model for epidemic modeling with vaccines and multiple variants.
   Our model adapts to changing trends and provide predictions of confirmed cases and
-  deaths.
+  deaths. Uses genomics data to estimate the prevelance of the variants.
 team_funding: Supported by US National Science Foundation Award No. 2027007 (RAPID)
 repo_url: https://github.com/scc-usc/ReCOVER-COVID-19
 data_inputs: Cases and deaths - JHU, hospitalization - HHS time-series
@@ -37,3 +36,5 @@ methods_long: We use our own epidemic model called SI-kJalpha, preliminary versi
   we assume that the trends will remain the same in the future for our point forecasts. 
   We try to account for changing trends in the future in our quantile forecasts by 
   modeling the empirical error our approach makes using a Random Forest.
+  Genomics data is used to estimate the prevelance of all the variants per state.
+  A logistic regression model is used to fit the number of samples for each variant on a given day.
