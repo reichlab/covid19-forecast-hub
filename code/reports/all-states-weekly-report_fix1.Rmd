@@ -92,7 +92,7 @@ county1<-state_county[1]
 ---
 title: `r title_var`
 author: "[The COVID-19 Forecast Hub Team](https://covid19forecasthub.org/doc/)<br><br>https://covid19forecasthub.org/"
-date: "`r Sys.Date()`"
+date: "`r Sys.Date()` [Prediction Intervals fixed]"
 
 ---
 ```{r zoltar-setup}
@@ -105,10 +105,10 @@ project_url <- "https://www.zoltardata.com/api/project/44/"
 ```
 
 ```{r get-date-boundaries}
-# # 
-next_saturday <- as.Date(calc_target_week_end_date(today(), horizon= 0))
-# # # # use fixed date
-# next_saturday <-  as.Date("2021-03-20")
+
+ # use fixed date
+next_saturday <-  as.Date("2021-06-12")
+# next_saturday <- as.Date(calc_target_week_end_date(today(), horizon = 0))
 saturday_4_wk_ahead <- next_saturday + 7*3
 saturday_4_wk_ahead_txt <- format(saturday_4_wk_ahead, "%B %d")
 last_5_saturdays <- next_saturday - 7*c(5:1)
@@ -407,7 +407,7 @@ inc_death_truth  <- load_truth(
                     rename(fips = location) %>%
                     mutate(model = "observed data (JHU)") %>%     #maybe also deleting this line
                     left_join(locs, by=c("fips")) %>%
-                    filter(target_end_date %in% seq.Date(as.Date("2020-01-25"), to = Sys.Date(), by="1 week"),
+                    filter(target_end_date %in% seq.Date(as.Date("2020-01-25"), to = last_5_saturdays[5], by="1 week"),
                      fips %in% unique(inc_death_forecast$fips))  %>%
                      rename (geo_value=geo_value.x, geo_type=geo_type.x,abbreviation=abbreviation.x)%>%
                     select(target_end_date, location_name.x,fips, value, model, location_name.y, Population, geo_type, geo_value, abbreviation) 
@@ -650,8 +650,8 @@ inc_hosp_truth <- load_truth(
                        target_variable = "inc hosp",
                      locations = unique(inc_hosp_forecast$fips))%>%
                     rename(fips = location) %>%
-                    left_join(locs, by=c("fips")) 
-
+                    left_join(locs, by=c("fips")) %>%
+                      filter(target_end_date <= last_6_saturdays[6])
 
 
 inc_hosp_all_points <- inc_hosp_truth %>%
@@ -908,6 +908,7 @@ inc_case_truth  <- load_truth(
                        locations = unique(inc_case_forecast$fips))%>%
                     rename(fips = location) %>%
                     mutate(model = "observed data (JHU)") %>%     #maybe also deleting this line
+                      filter(target_end_date <= last_6_saturdays[6])  %>%
                     select(target_end_date, location_name,fips, value, model, population, geo_type, geo_value, abbreviation) 
 
 
