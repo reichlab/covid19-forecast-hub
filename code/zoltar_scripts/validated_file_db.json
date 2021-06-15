@@ -3781,7 +3781,7 @@
     "2021-06-09-FAIR-NRAR.csv": "5e4c8f34f911904bcb972bb8b59a7840",
     "2021-06-10-FAIR-NRAR.csv": "9b552d3db7d46d9d5042b449bf81d094",
     "2021-06-11-IHME-CurveFit.csv": "d7c9ffe4cad6ccc5afaa5c828643ee5e",
-    "2021-06-13-USC-SI_kJalpha.csv": "c66cc199c902fa66963cdff862242f7c",
+    "2021-06-13-USC-SI_kJalpha.csv": "1355e108e2d0a2dfd4660f4305e17000",
     "2021-06-13-FAIR-NRAR.csv": "f894814e5e331cf8885856ec107d471b",
     "2021-06-13-JHUAPL-Gecko.csv": "4167078d1fce09760cca4ec9bb926037",
     "2021-06-14-UCSD_NEU-DeepGLEAM.csv": "9af53c81c5477e8033d2975f24b4fc2c",
@@ -3830,5 +3830,7 @@
     "2021-06-13-JHU_IDD-CovidSP.csv": "79c5b79328803d6ccda12f4fd2178fb6",
     "2021-06-14-PandemicCentral-COVIDForest.csv": "256c9bf9dd3be7a707a43e49ba4d4d2b",
     "2021-06-14-FAIR-NRAR.csv": "b23cd3f026bf61afe8f8c28ab5c567c8",
-    "2021-06-14-COVIDhub-trained_ensemble.csv": "646cfe46847758e02db3b1df679cc132"
+    "2021-06-14-COVIDhub-trained_ensemble.csv": "646cfe46847758e02db3b1df679cc132",
+    "2021-06-14-COVIDhub-ensemble.csv": "e76af2afd1dddc542651025d4e5e68d8",
+    "2021-06-14-KITmetricslab-select_ensemble.csv": "c85e2f38bb326147150b1f39701c6f7c"
 }
