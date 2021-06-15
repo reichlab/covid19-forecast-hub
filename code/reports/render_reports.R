@@ -48,7 +48,7 @@ state_fips <- all_states$fips
 state_ab <- all_states$abbreviation
 today_date <- Sys.Date()
 # # # use fixed date
-# today_date <-  as.Date("2021-01-26")
+# today_date <-  as.Date("2021-06-08")
 
 # render report based on a state fips code
 render_state_weekly_report <- function(curr_state_fips, state_ab) {
@@ -62,14 +62,22 @@ render_state_weekly_report <- function(curr_state_fips, state_ab) {
 
 # render report all states
 # parallelism
-numCores <- 4 # change this number to the number of cores on your computer
-registerDoParallel(numCores)
-foreach (i=seq_len(nrow(all_states))) %dopar% {
-  render_state_weekly_report(all_states[i,]$fips, all_states[i,]$abbreviation)
-}
+# numCores <- 1 # change this number to the number of cores on your computer
+# registerDoParallel(numCores)
+# foreach (i=seq_len(nrow(all_states))) %dopar% {
+#   render_state_weekly_report(all_states[i,]$fips, all_states[i,]$abbreviation)
+# }
+
+# render report all states
+# non-parallelism
+rmarkdown::render(
+  'all-states-weekly-report.Rmd',
+  # rename output file
+  output_file = paste0(today_date, '-', as.character(state_ab), '-weekly-report.html'), 
+  params = list(state = curr_state_fips))
 
 # render report for national level
 rmarkdown::render(
-  'weekly-report.Rmd',
+  'all-states-weekly-report.Rmd',
   output_file = paste0(today_date, '-weekly-report.html')
 )
