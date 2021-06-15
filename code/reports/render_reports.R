@@ -62,22 +62,22 @@ render_state_weekly_report <- function(curr_state_fips, state_ab) {
 
 # render report all states
 # parallelism
-# numCores <- 1 # change this number to the number of cores on your computer
-# registerDoParallel(numCores)
-# foreach (i=seq_len(nrow(all_states))) %dopar% {
-#   render_state_weekly_report(all_states[i,]$fips, all_states[i,]$abbreviation)
-# }
+numCores <- 4 # change this number to the number of cores on your computer
+registerDoParallel(numCores)
+foreach (i=seq_len(nrow(all_states))) %dopar% {
+  render_state_weekly_report(all_states[i,]$fips, all_states[i,]$abbreviation)
+}
 
 # render report all states
 # non-parallelism
-rmarkdown::render(
-  'all-states-weekly-report.Rmd',
+#rmarkdown::render(
+#  'all-states-weekly-report.Rmd',
   # rename output file
-  output_file = paste0(today_date, '-', as.character(state_ab), '-weekly-report.html'), 
-  params = list(state = curr_state_fips))
+#  output_file = paste0(today_date, '-', as.character(state_ab), '-weekly-report.html'), 
+#  params = list(state = curr_state_fips))
 
 # render report for national level
 rmarkdown::render(
-  'all-states-weekly-report.Rmd',
+  'weekly-report.Rmd',
   output_file = paste0(today_date, '-weekly-report.html')
 )
