@@ -12,3 +12,4 @@ methods: County-level Projected New Cases using Random Forest learning method
 methods_long: This model utilizes population mobility, demographics, and health data in combination with COVID-19 SEIR-generated projections 
   \  and testing data as input into a random forest regression model to forecast COVID-19 cases for 1, 2, 3, and 4 weeks into the future for over 
   \  3000 U.S. counties and county equivalents.
+citation: https://doi.org/10.1101/2021.05.23.21257689
