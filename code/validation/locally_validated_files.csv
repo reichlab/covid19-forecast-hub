@@ -3731,3 +3731,6 @@ file_path,validation_date
 ./data-processed/LANL-GrowthRate/2021-06-21-LANL-GrowthRate.csv,2021-06-22 00:41:57.438636
 ./data-processed/AIpert-pwllnod/2021-06-21-AIpert-pwllnod.csv,2021-06-22 00:41:58.232312
 ./data-processed/JHU_IDD-CovidSP/2021-06-20-JHU_IDD-CovidSP.csv,2021-06-22 03:11:10.897202
+./data-processed/PandemicCentral-COVIDForest/2021-06-22-PandemicCentral-COVIDForest.csv,2021-06-22 11:09:48.107463
+./data-processed/COVIDhub-trained_ensemble/2021-06-21-COVIDhub-trained_ensemble.csv,2021-06-22 11:10:02.430756
+./data-processed/COVIDhub-ensemble/2021-06-21-COVIDhub-ensemble.csv,2021-06-22 11:10:17.042128
