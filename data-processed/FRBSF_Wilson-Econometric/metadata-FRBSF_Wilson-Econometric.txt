@@ -11,7 +11,7 @@ citation: https://www.frbsf.org/economic-research/publications/working-papers/20
 methods_long: "We estimate an econometric county panel data model based on the
    standard SIR model. The econometric model relates the change in log active (new) infections
    between now and some future horizon to the current transmission rate and the susceptible share
-   of the population. The current transmission rate is assumed to be a function of individuals’
+   of the population. The current transmission rate is assumed to be a function of individuals'
    mobility behavior and weather (temperature and precipitation). County level mobility is
    measured using the Mobility and Engagement Index (MEI) constructed by
    the Federal Reserve Bank of Dallas from mobile device geolocation data
@@ -23,7 +23,7 @@ methods_long: "We estimate an econometric county panel data model based on the
    the susceptible share is simply one minus the share of the local population
    that have previously been infected. We assume this share in a given county
    is proportional to cumulative confirmed cases to date as a share of the
-   county’s population. This proportionality also implies that the change in
+   county's population. This proportionality also implies that the change in
    log active infections can be proxied by the change in log active cases.
    Aside from mobility, weather, and accumulated natural immunity, there are two other 
    important elements of the econometric model. The first is lagged infection growth, 
