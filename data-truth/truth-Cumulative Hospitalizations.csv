@@ -1,88 +1,62 @@
 date,location,location_name,value
-2020-09-01,50,Vermont,0
-2020-08-31,78,Virgin Islands,2
-2020-08-30,78,Virgin Islands,3
-2020-08-28,02,Alaska,1
-2020-08-26,78,Virgin Islands,3
-2020-08-25,78,Virgin Islands,6
-2020-08-24,78,Virgin Islands,9
-2020-08-21,78,Virgin Islands,9
-2020-08-19,78,Virgin Islands,9
-2020-08-18,78,Virgin Islands,9
-2020-08-16,78,Virgin Islands,10
-2020-08-15,78,Virgin Islands,12
-2020-08-14,78,Virgin Islands,13
-2020-08-13,50,Vermont,2
-2020-08-07,50,Vermont,2
-2020-08-06,50,Vermont,2
-2020-08-04,78,Virgin Islands,13
-2020-08-03,78,Virgin Islands,13
-2020-08-01,50,Vermont,3
-2020-07-30,02,Alaska,4
-2020-07-30,78,Virgin Islands,13
-2020-07-29,50,Vermont,4
-2020-07-28,50,Vermont,4
-2020-07-27,46,South Dakota,4
-2020-07-26,56,Wyoming,1
-2020-07-25,41,Oregon,5
-2020-07-24,78,Virgin Islands,13
-2020-07-23,78,Virgin Islands,13
-2020-07-22,15,Hawaii,4
-2020-07-08,13,Georgia,0
-2020-11-04,56,Wyoming,29
-2020-11-01,02,Alaska,11
-2020-10-11,49,Utah,34
-2020-10-10,46,South Dakota,50
-2020-09-21,02,Alaska,18
-2021-03-09,49,Utah,65
-2021-03-03,02,Alaska,22
-2021-02-27,49,Utah,97
-2021-02-17,46,South Dakota,60
-2021-06-02,49,Utah,120
-2021-06-01,54,West Virginia,24
-2021-04-29,02,Alaska,30
-2021-04-13,02,Alaska,36
-2021-04-13,49,Utah,145
-2021-04-12,56,Wyoming,35
-2021-03-31,49,Utah,177
-2021-03-26,55,Wisconsin,52
-2020-07-24,02,Alaska,47
-2020-08-22,25,Massachusetts,12
-2020-09-02,30,Montana,16
-2020-10-31,35,New Mexico,78
-2020-11-17,44,Rhode Island,36
-2020-10-11,20,Kansas,89
-2020-08-03,35,New Mexico,91
-2020-11-16,44,Rhode Island,65
-2020-11-15,19,Iowa,215
-2020-12-02,41,Oregon,73
-2020-08-06,37,North Carolina,151
-2020-09-19,10,Delaware,9
-2020-07-30,36,New York,73
-2020-09-14,44,Rhode Island,69
-2020-08-02,35,New Mexico,103
-2020-07-26,41,Oregon,84
-2020-11-30,10,Delaware,56
-2020-08-22,04,Arizona,84
-2020-11-08,48,Texas,795
-2020-08-15,37,North Carolina,234
-2020-09-17,44,Rhode Island,74
-2020-08-27,06,California,424
-2020-09-27,18,Indiana,125
-2020-09-29,06,California,789
-2020-08-12,36,New York,152
-2020-11-11,56,Wyoming,61
-2020-10-19,25,Massachusetts,55
-2020-06-20,44,Rhode Island,74
-2020-07-21,25,Massachusetts,57
-2020-08-07,32,Nevada,72
-2020-07-27,37,North Carolina,382
-2020-05-09,44,Rhode Island,74
-2020-09-12,18,Indiana,190
-2020-07-26,18,Indiana,199
-2020-10-21,56,Wyoming,73
-2020-09-29,44,Rhode Island,79
-2020-11-05,56,Wyoming,101
-2020-10-17,53,Washington,26
-2020-06-28,44,Rhode Island,79
-2020-10-28,37,North Carolina,530
+2020-07-21,19,Iowa,33
+2020-07-21,72,Puerto Rico,0
+2020-07-19,19,Iowa,56
+2020-07-17,19,Iowa,76
+2020-07-17,46,South Dakota,26
+2020-07-16,40,Oklahoma,47
+2020-07-15,02,Alaska,1
+2020-07-23,47,Tennessee,169
+2020-08-20,12,Florida,515
+2020-08-16,48,Texas,535
+2020-08-31,20,Kansas,39
+2020-10-09,12,Florida,813
+2020-08-08,55,Wisconsin,78
+2020-08-01,26,Michigan,45
+2020-08-13,31,Nebraska,12
+2020-12-03,04,Arizona,447
+2020-10-07,37,North Carolina,161
+2020-10-03,31,Nebraska,39
+2020-08-03,53,Washington,29
+2020-10-08,56,Wyoming,13
+2020-06-19,44,Rhode Island,0
+2020-11-06,41,Oregon,36
+2020-11-22,26,Michigan,544
+2020-07-31,26,Michigan,1496
+2020-07-24,37,North Carolina,338
+2020-11-26,39,Ohio,593
+2020-08-05,42,Pennsylvania,114
+2020-10-26,41,Oregon,57
+2020-11-30,04,Arizona,800
+2020-10-13,04,Arizona,871
+2020-10-26,72,Puerto Rico,36
+2020-07-29,23,Maine,4
+2020-08-18,22,Louisiana,132
+2020-11-19,72,Puerto Rico,255
+2020-07-19,12,Florida,1504
+2020-07-07,44,Rhode Island,0
+2020-07-24,46,South Dakota,30
+2020-07-24,08,Colorado,50
+2020-07-30,22,Louisiana,382
+2020-07-21,41,Oregon,64
+2020-10-08,04,Arizona,937
+2020-11-24,72,Puerto Rico,475
+2020-07-04,44,Rhode Island,0
+2020-08-09,22,Louisiana,528
+2020-10-25,42,Pennsylvania,252
+2020-11-09,41,Oregon,116
+2020-07-29,42,Pennsylvania,343
+2020-11-04,44,Rhode Island,11
+2020-11-16,72,Puerto Rico,682
+2020-07-26,23,Maine,8
+2020-06-18,44,Rhode Island,11
+2020-08-15,44,Rhode Island,15
+2020-10-29,72,Puerto Rico,915
+2020-11-07,04,Arizona,1101
+2020-11-05,72,Puerto Rico,1150
+2020-11-28,04,Arizona,1400
+2020-12-01,72,Puerto Rico,1197
+2020-11-25,04,Arizona,1697
+2020-10-20,44,Rhode Island,29
+2020-12-05,04,Arizona,2108
+2020-08-14,44,Rhode Island,39

@@ -2,9 +2,10 @@ name: (Active) Update JHU, NY Times, USAFacts truth data weekly
 on:
   workflow_dispatch:
     inputs:
-      name:
-        description: '(Active) Update truth weekly'
+      skipZoltar:
+        description: 'whether to skip Zoltar upload'
         required: false
+        default: "false"
   schedule:
     - cron: '0 16 * * 0'
 
@@ -76,9 +77,10 @@ jobs:
       working-directory: ./covidData/code/data-processing
       
     - name: Generate truth csv files (NYTimes, USAFacts, JHU, Hospitalization, Zoltar)
-      run: Rscript code/R_scripts/generate_truth_csvs.R
+      run: Rscript ./covid19-forecast-hub/code/R_scripts/generate_truth_csvs.R
       
     - name: Push Zoltar truth to Zoltar
+      if: false
       run: python3 ./code/zoltar_scripts/upload_truth_to_zoltar.py
       working-directory: ./covid19-forecast-hub
       env:
