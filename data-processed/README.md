@@ -21,7 +21,7 @@ you can do prior to this pull request. In addition, we describe
 -   [retractions](#retractions)
 -   [metadata format](#Meta-data)
 -   [weekly ensemble and visualization deployment](#Weekly-build)
--   [policy on late submissions](#late-policy)
+-   [policy on late submissions](#policy-on-late-or-updated-submissions)
 
 
 What is a forecast
