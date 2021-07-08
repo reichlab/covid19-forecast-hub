@@ -17,9 +17,9 @@ you can do prior to this pull request. In addition, we describe
 -   [What is a forecast](#What-is-a-forecast)
 -   [ground truth data](#ground-truth-data)
 -   [data formatting](#Data-formatting)
--   [data validation](#Data-validation)
+-   [forecast file format](#Forecast-file-format)
+-   [forecast data validation](#Forecast-validation)
 -   [retractions](#retractions)
--   [metadata format](#Meta-data)
 -   [weekly ensemble and visualization deployment](#Weekly-build)
 -   [policy on late submissions](#policy-on-late-or-updated-submissions)
 
@@ -381,9 +381,7 @@ this is a big change and the correct semantics of `NULL` values may not be immed
 Weekly build
 -----------
 
-Every Monday at 6pm ET, we will update our [COVID Forecast Hub ensemble forecast](https://covid19forecasthub.org/doc/ensemble/) using the most recent valid forecast from each team. Additional details on model eligibility are available on [the page describing the ensemble](https://covid19forecasthub.org/doc/ensemble/). Details on which models were included each week in the ensemble are available in the [ensemble metadata](https://github.com/reichlab/covid19-forecast-hub/tree/master/ensemble-metadata) folder.
-
-Every Tuesday morning (no earlier than 8am ET), we will update the [interactive forecast visualization](https://viz.covid19forecasthub.org/). Valid forecasts that are submitted prior to 8am ET will be included in the visualization. Valid forecasts submitted later than this will be included in the visualization build the following week.
+Every Monday at 3pm ET, we will update our [COVID Forecast Hub ensemble forecast](https://covid19forecasthub.org/doc/ensemble/) using the most recent valid forecast from each team. Additional details on model eligibility are available on [the page describing the ensemble](https://covid19forecasthub.org/doc/ensemble/). Details on which models were included each week in the ensemble are available in the [ensemble metadata](https://github.com/reichlab/covid19-forecast-hub/tree/master/ensemble-metadata) folder.
 
 
 Policy on late or updated submissions
