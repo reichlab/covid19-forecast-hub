@@ -3904,3 +3904,5 @@ file_path,validation_date
 ./data-processed/FRBSF_Wilson-Econometric/2021-07-12-FRBSF_Wilson-Econometric.csv,2021-07-13 00:42:59.999415
 ./data-processed/MIT-Cassandra/2021-07-12-MIT-Cassandra.csv,2021-07-13 00:43:01.387005
 ./data-processed/SteveMcConnell-CovidComplete/2021-07-12-SteveMcConnell-CovidComplete.csv,2021-07-13 00:43:02.668968
+./data-processed/COVIDhub-trained_ensemble/2021-07-12-COVIDhub-trained_ensemble.csv,2021-07-13 12:31:19.866287
+./data-processed/COVIDhub-ensemble/2021-07-12-COVIDhub-ensemble.csv,2021-07-13 12:31:32.621573
