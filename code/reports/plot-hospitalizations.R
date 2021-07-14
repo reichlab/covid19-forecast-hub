@@ -2,23 +2,15 @@
 #' faceted for ensemble with quantiles and point forecasts for all other models
 #' with additional plots that show a close-up of forecasts for both larger figures
 #'
-#' @param location string for US fips code, location name, abbreviation, or geo value
-#' Defaults to 'US', must have a geo_type of "state"
-#' Can only take a single location
+#' @param location string for US fips code, location name, or abbreviation
+#' Defaults to 'US', must have a geo_type of "state", can only take a single location
 #'
 #' @return ggplot with two facets of most recent forecasts and truth data, with close-up of forecasts
 #' @export
 #'
-#' @examples 
-#'  \dontrun{
-#' plot_hospitalization_forecasts("06")
-#' plot_hospitalization_forecasts("California")
-#' plot_hospitalization_forecasts("ca")
-#' }
-#' 
+#' @examples plot_hospitalization_forecasts("06"), plot_hospitalization_forecasts("California")
 #' 
 plot_hospitalization_forecasts <- function(location = "US") {
-  # must select library chunk and run it first before running the whole func
   library(tidyverse)
   library(dplyr)
   library(covidHubUtils)
@@ -31,8 +23,9 @@ plot_hospitalization_forecasts <- function(location = "US") {
   forecast_date <- lubridate::floor_date(Sys.Date(), "week", week_start = 2)
   loc_frame <- covidHubUtils::hub_locations
   loc_info <- loc_frame %>%
-    filter_all(any_vars(grepl(location_, .))) %>%
-    filter(geo_type == "state")
+    filter(geo_type == "state") %>%
+    filter_all(any_vars(str_starts(., fixed(location, ignore_case = TRUE)) & 
+                          str_ends(., fixed(location, ignore_case = TRUE))))
   
   fdat <- load_latest_forecasts(
     locations = loc_info$fips,
@@ -63,13 +56,7 @@ plot_hospitalization_forecasts <- function(location = "US") {
     filter(type=="point", target_end_date >= start_date) %>% 
     pull(value) %>% max(.)
   
-  truth_max <- truth %>% # include? can make plot scale too small
-    filter(target_end_date >= start_date) %>% 
-    pull(value) %>% max(.)
-  
-  overall_max <- max(ensemble_max, models_max
-                     #, truth_max
-  )*1.15
+  overall_max <- max(ensemble_max, models_max)*1.1
   
   
   p1 <- plot_forecasts(filter(fdat, model=="COVIDhub-ensemble"), 
@@ -155,3 +142,7 @@ plot_hospitalization_forecasts <- function(location = "US") {
     plot_annotation(paste("Daily COVID-19 Inc Hosp (observed and forecasted):", 
                           paste(loc_info$location_name, Sys.Date())))
 }
+
+plot_hospitalization_forecasts()
+plot_hospitalization_forecasts("Ny")
+plot_hospitalization_forecasts("hawaii")
