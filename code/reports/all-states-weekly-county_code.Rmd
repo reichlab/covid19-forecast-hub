@@ -135,7 +135,7 @@ county_plot <- ggplot() +
                   )) +
   scale_fill_manual(values = blues[1:(length(blues)-1)]) +
   scale_color_manual(values = c("black", tail(blues,1))) +
-  scale_x_date(name = NULL, date_breaks="1 month", date_labels = "%b %d") +
+  scale_x_date(name = NULL, date_breaks="4 month",date_labels = "%b %d %Y", date_minor_breaks = "1 month") +
   ylab("incident cases") +
   theme()
 ```
