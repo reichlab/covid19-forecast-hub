@@ -12,12 +12,12 @@ model_contributors: Joseph C. Lemaitre (EPFL),  Juan Dent Hulse (Johns Hopkins I
   Shah,  Josh Wills, Pierre-Yves Aquilanti (Amazon Web Services),  Karthik Raman (Amazon
   Web Services),  Arun Subramaniyan (Amazon Web Services),  Greg Thursam (Amazon Web
   Services),  Anh Tran (Amazon Web Services), Claire Smith (Johns Hopkins Infectious
-  Disease Dynamics)
+  Disease Dynamics), Alison Hill (Johns Hopkins Infectious Disease Dynamics)
 website_url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
 license: mit
 team_model_designation: primary
-methods: State-level metapopulation model with commuting and stochastic SEIR disease dynamics
-  with social-distancing indicators.
+methods: State-level single strain metapopulation model with commuting and stochastic SEIR disease dynamics
+  with social-distancing and vaccination with parameter adjustments for multiple strains.
 team_funding: State of California and US Government
 data_inputs: JHU CSSE (confirmed cases; reported fatalities), US Census (population; mobility)
 citation: https://doi.org/10.1038/s41598-021-86811-0
