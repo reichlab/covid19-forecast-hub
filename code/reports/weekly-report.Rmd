@@ -264,7 +264,7 @@ For the week ending `r saturday_4_wk_ahead_txt`, the ensemble forecasts that rep
 For `r format(wk4_monday, "%B %d, %Y")` COVID-19 daily hospitalizations in the US will be between `r us_inc_hosp_wk_pi_round[1]` and `r us_inc_hosp_wk_pi_round[2]` (95% prediction interval: `r us_inc_hosp_wk_pi[1]` - `r us_inc_hosp_wk_pi[2]`).
 
 <!-- Throughought most of July, models have in general shown broad agreement about the trajectory of the outbreak over the coming weeks. However, the recent surge in cases has left models with quite different interpretations about what the next few weeks hold in terms of how many reported deaths from COVID-19 we will see.  -->
-You can explore the full set of models, including their forecasts for past weeks online at our [interactive forecast visualization](https://viz.covid19forecasthub.org/).
+You can explore the full set of models, including their forecasts for past weeks online at CDC's [interactive forecast visualization](https://covid.cdc.gov/covid-data-tracker/#forecasting_weeklydeaths/).
 
 ### Deaths
 

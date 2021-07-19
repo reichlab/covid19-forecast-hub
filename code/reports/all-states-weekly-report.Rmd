@@ -387,7 +387,7 @@ rename(fips = location)
 
 ```
 
-During periods of relative stability, models in general show broad agreement about the predicted trajectory of the outbreak. However, when there are steep surges or declines in cases or deaths, models often have quite different predictions for the upcoming weeks. The result is that there is increased uncertainty in the ensemble forecast, which can be seen as wider confidence intervals in the forecast visualization. You can explore the full set of models, including their forecasts for past weeks online at our [interactive forecast visualization](https://viz.covid19forecasthub.org/).
+During periods of relative stability, models in general show broad agreement about the predicted trajectory of the outbreak. However, when there are steep surges or declines in cases or deaths, models often have quite different predictions for the upcoming weeks. The result is that there is increased uncertainty in the ensemble forecast, which can be seen as wider confidence intervals in the forecast visualization. You can explore the full set of models, including their forecasts for past weeks online at CDC's [interactive forecast visualization](https://covid.cdc.gov/covid-data-tracker/#forecasting_weeklydeaths/).
 
 When interpreting probability of an increase, it's important to note that the increase or decrease is relative to the location-specific recent observed incidence, which varies across locations.
 
