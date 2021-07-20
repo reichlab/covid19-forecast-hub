@@ -3963,3 +3963,7 @@ file_path,validation_date
 ./data-processed/Microsoft-DeepSTIA/2021-07-19-Microsoft-DeepSTIA.csv,2021-07-20 00:42:33.971601
 ./data-processed/COVIDhub-ensemble/2021-07-19-COVIDhub-ensemble.csv,2021-07-20 03:07:40.629704
 ./data-processed/FAIR-NRAR/2021-07-19-FAIR-NRAR.csv,2021-07-20 06:27:30.122344
+./data-processed/JHUAPL-SLPHospEns/2021-07-19-JHUAPL-SLPHospEns.csv,2021-07-20 18:28:08.147050
+./data-processed/FDANIHASU-Sweight/2021-07-19-FDANIHASU-Sweight.csv,2021-07-20 18:28:09.510179
+./data-processed/KITmetricslab-select_ensemble/2021-07-19-KITmetricslab-select_ensemble.csv,2021-07-20 18:28:11.018951
+./data-processed/COVIDhub-trained_ensemble/2021-07-19-COVIDhub-trained_ensemble.csv,2021-07-20 18:28:26.555476
