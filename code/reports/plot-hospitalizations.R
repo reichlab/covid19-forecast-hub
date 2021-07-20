@@ -4,23 +4,25 @@
 #'
 #' @param location string for US fips code, location name, or abbreviation
 #' Defaults to 'US', must have a geo_type of "state", can only take a single location
+#' @param forecast_date date  to use to retrieve forecasts
 #'
 #' @return ggplot with two facets of most recent forecasts and truth data, with close-up of forecasts
 #' @export
 #'
 #' @examples plot_hospitalization_forecasts("48"), plot_hospitalization_forecasts("Texas"), plot_hospitalization_forecasts("tx")
 #' 
-plot_hospitalization_forecasts <- function(location = "US") {
-  library(tidyverse)
-  library(dplyr)
-  library(covidHubUtils)
-  library(lubridate)
-  library(cowplot)
-  library(patchwork)
+plot_hospitalization_forecasts <- function(location = "US",   
+                                           forecast_date = lubridate::floor_date(Sys.Date(), "week", week_start = 2)
+) {
+  require(tidyverse)
+  require(dplyr)
+  require(covidHubUtils)
+  require(lubridate)
+  require(cowplot)
+  require(patchwork)
   
   theme_set(theme_bw())
   
-  forecast_date <- lubridate::floor_date(Sys.Date(), "week", week_start = 2)
   loc_frame <- covidHubUtils::hub_locations
   loc_info <- loc_frame %>%
     filter(geo_type == "state") %>%
@@ -36,6 +38,13 @@ plot_hospitalization_forecasts <- function(location = "US") {
     last_forecast_date = forecast_date,
     forecast_date_window_size = 6,
     source = "zoltar")
+  
+  primary_models <- get_model_designations(models = unique(fdat$model), source="zoltar") %>%
+    filter(designation %in% c("primary", "secondary")) %>%
+    pull(model)
+  
+  fdat <- fdat %>%
+    filter(model %in% primary_models)
   
   truth <- load_truth("HealthData", 
                       "inc hosp", 
@@ -143,5 +152,5 @@ plot_hospitalization_forecasts <- function(location = "US") {
   p1_box + p1_zoomed + p2_box + p2_zoomed + 
     plot_layout(widths = c(2, 1)) + 
     plot_annotation(paste("Daily COVID-19 Inc Hosp (observed and forecasted):", 
-                          paste(loc_info$location_name, Sys.Date())))
+                          paste(loc_info$location_name, forecast_date)))
 }
