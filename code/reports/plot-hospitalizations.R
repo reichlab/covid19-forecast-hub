@@ -8,7 +8,7 @@
 #' @return ggplot with two facets of most recent forecasts and truth data, with close-up of forecasts
 #' @export
 #'
-#' @examples plot_hospitalization_forecasts("06"), plot_hospitalization_forecasts("California")
+#' @examples plot_hospitalization_forecasts("48"), plot_hospitalization_forecasts("Texas"), plot_hospitalization_forecasts("tx")
 #' 
 plot_hospitalization_forecasts <- function(location = "US") {
   library(tidyverse)
@@ -26,6 +26,9 @@ plot_hospitalization_forecasts <- function(location = "US") {
     filter(geo_type == "state") %>%
     filter_all(any_vars(str_starts(., fixed(location, ignore_case = TRUE)) & 
                           str_ends(., fixed(location, ignore_case = TRUE))))
+  
+  if(nrow(loc_info) == 0)
+    stop("Please enter a valid state name, abbreviation, or fips code.")
   
   fdat <- load_latest_forecasts(
     locations = loc_info$fips,
@@ -142,7 +145,3 @@ plot_hospitalization_forecasts <- function(location = "US") {
     plot_annotation(paste("Daily COVID-19 Inc Hosp (observed and forecasted):", 
                           paste(loc_info$location_name, Sys.Date())))
 }
-
-plot_hospitalization_forecasts()
-plot_hospitalization_forecasts("Ny")
-plot_hospitalization_forecasts("hawaii")
