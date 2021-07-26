@@ -46,9 +46,9 @@ all_states <- locs[c(2:52, 56, 58),] # all but Guam
 
 state_fips <- all_states$fips
 state_ab <- all_states$abbreviation
-# today_date <- Sys.Date()
+today_date <- Sys.Date()
 # # # use fixed date
-today_date <-  as.Date("2021-06-08")
+# today_date <-  as.Date("2021-06-08")
 
 # render report based on a state fips code
 render_state_weekly_report <- function(curr_state_fips, state_ab) {
@@ -83,10 +83,10 @@ render_state_weekly_report <- function(curr_state_fips, state_ab) {
 for (i in seq_len(nrow(all_states))) {
   render_state_weekly_report(all_states[i,]$fips, all_states[i,]$abbreviation)
 }
+# 
 
 # render report for national level
 rmarkdown::render(
-  'all-states-weekly-report.Rmd',
+  'weekly-report.Rmd',
   output_file = paste0(today_date, '-weekly-report.html')
 )
-
