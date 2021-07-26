@@ -8,15 +8,15 @@ COUNTIES_URL = "https://raw.githubusercontent.com/nytimes/covid-19-data/master/u
 RELATIVE_PATH = "data-truth/nytimes"
 
 # Download raw data
-us = pd.read_csv(US_URL).dropna().astype(dtype={'cases': int, 'deaths': int})
+us = pd.read_csv(US_URL, dtype={'cases': int, 'deaths': int}).fillna(value = 'NA')
 us['date'] = pd.to_datetime(us['date'])
 us.to_csv(os.path.join(RELATIVE_PATH,"raw/us.csv"), index = False)
 
-states = pd.read_csv(STATES_URL).dropna().astype(dtype={'fips': str, 'cases': int, 'deaths': int})
+states = pd.read_csv(STATES_URL, dtype={'fips': str, 'cases': int, 'deaths': int}).fillna(value = 'NA')
 states['date'] = pd.to_datetime(states['date'])
 states.to_csv(os.path.join(RELATIVE_PATH,"raw/us-states.csv"), index = False)
 
-counties = pd.read_csv(COUNTIES_URL).dropna().astype(dtype={'fips': str, 'cases': int, 'deaths': int})
+counties = pd.read_csv(COUNTIES_URL, dtype={'fips': str}).dropna().astype(dtype={'fips': str, 'cases': int, 'deaths': int})
 counties['date'] = pd.to_datetime(counties['date'])
 counties.to_csv(os.path.join(RELATIVE_PATH,"raw/us-counties.csv"), index = False)
 

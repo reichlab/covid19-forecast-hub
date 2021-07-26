@@ -5,7 +5,7 @@ model_contributors: Bob Pagano (rjpagano@comcast.net)
 website_url: https://bobpagano.com
 license: cc-by-4.0
 team_model_designation: primary
-methods: Projects infections and deaths for 223 locations using an SIR model.
+methods: Projects infections and deaths using an SIR model.
 team_funding: None
 data_inputs: CSSE at John Hopkins and covidtracking.com
 citation: https://bobpagano.com/covid-19-modeling/
@@ -29,10 +29,16 @@ methods_long: "On our website we present daily projections for\
   \ UPDATE 20-10-18: Changed Rt forecast from Rt for deaths to the average of\
   \ Rt for deaths and Rt for cases.\
   \ UPDATE 20-10-25: Changed from Sunday forecast to the average of\
-  \ Friday, Saturday and Sunday forecasts.\
+  \ Thursday, Friday, Saturday and Sunday forecasts.\
   \ UPDATE 20-11-08: Corrected undercount calculation approach\
   \ resulting in an increase in forecasted cases.\
   \ UPDATE 20-11-29: Adjusted the 20-11-29 forecast by hand in light of\
   \ under-reporting over the Thanksgiving holiday week.\
   \ UPDATE 20-12-06: Cleaned up and enhanced a number of things in the RtDriven code.\
-  \ These changes are tracking internally as RtDiven 2.0."
+  \ UPDATE 21-01-25: Modified data smoothing. Incorporated temporary immunity.\
+  \ Incorporated vaccinations.\
+  \ UPDATE 21-02-06: Began fine tuning forecast parameters based on\
+  \ national hospitalizations.\
+  \ UPDATE 21-03-21: Began adjusting Rt forecast start values by state.\
+  \ UPDATE 21-05-02: Returned to common algorithmic Rt forecast by states."
+

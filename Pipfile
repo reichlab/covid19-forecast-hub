@@ -1,0 +1,35 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+pandas = "*"
+requests = "*"
+pymmwr = "*"
+click = "*"
+urllib3 = "*"
+selenium = "*"
+webdriver-manager = "*"
+PyYAML = "*"
+PyGithub = "*"
+
+[requires]
+python_version = "3.9"
+
+[packages]
+pandas = "*"
+requests = "*"
+pymmwr = "*"
+click = "*"
+urllib3 = "*"
+selenium = "*"
+webdriver-manager = "*"
+PyYAML = "*"
+PyGithub = "*"
+
+[packages.3effbcc]
+file = "https://github.com/hannanabdul55/pykwalify/archive/master.zip"
+
+[packages.zoltpy]
+git = "https://github.com/reichlab/zoltpy"

@@ -33,6 +33,12 @@ methods_long: "We incorporate mobility information into a simplified SIR model w
   \ election mobility increase of 25% from 09/01 to 11/03. The summer reduction of mobility \
   \ accounts for elevated outdoor activities while election mobility increase accounts for \
   \ large gatherings of political rally which maybe washed out in the averaged state-mobility. \
-  \ We assume 80% of the vulnerable population will be vaccinated within two months. \
+  \ We assume 70% of the vulnerable population will be vaccinated within two months. \
+  \ The assumption is antibody will be effective 3 weeks after the first shot. \
+  \ To account for the recent mutations, we increases the infection rate by 5%. \
   \ Two vaccination scenarios have been considered and predicted which are shown in our website. \
-  \ Google mobility data may have been affected by a recent Sep update. " 
+  \ Google mobility data may have been affected by a recent Sep update. \
+  \ Due to the significant impact of the new variants, and the complexity involving vaccination, \
+  \ our simple mechanistic model cannot make meaningful prediction based on past mobility-fatality\
+  \ data anymore. Therefore, we will stop generating forecast as of April 5, 2021. This concludes \
+  \ our past eight months of involvement of this forecast efforts." 

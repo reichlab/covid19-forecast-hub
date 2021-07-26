@@ -5,7 +5,7 @@
     Claire Smith (JHU), Paul  Zivich (JHU) , Marc Coram (Google) <mcoram@google.com>, Ellen Klein (Google), Michael Brenner (Harvard/Google), 
     Lusann Yang (Google), Anton Geraschenko   (Google), Stephan Hoyer (Google), Dmitri Kochkov (Google), Jamie Smith (Google)
   website_url: https://github.com/HopkinsIDD/EpiForecastStatMech
-  license: gpl-3.0
+  license: apache-2.0
   team_model_designation: primary
   methods:  This model jointly trains over locations, fitting to both  mechanistic and
     statistical models. The statistical model  enforces  similar places having  similar mechanistic 
