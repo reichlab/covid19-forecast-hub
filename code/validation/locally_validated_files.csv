@@ -4022,3 +4022,7 @@ file_path,validation_date
 ./data-processed/JHU_IDD-CovidSP/2021-07-25-JHU_IDD-CovidSP.csv,2021-07-27 00:43:31.663861
 ./data-processed/JHUAPL-Bucky/2021-07-26-JHUAPL-Bucky.csv,2021-07-27 00:43:57.862352
 ./data-processed/FAIR-NRAR/2021-07-26-FAIR-NRAR.csv,2021-07-27 06:29:12.108679
+./data-processed/COVIDhub-trained_ensemble/2021-07-26-COVIDhub-trained_ensemble.csv,2021-07-27 18:26:50.707731
+./data-processed/JHUAPL-SLPHospEns/2021-07-26-JHUAPL-SLPHospEns.csv,2021-07-27 18:26:54.633576
+./data-processed/KITmetricslab-select_ensemble/2021-07-26-KITmetricslab-select_ensemble.csv,2021-07-27 18:26:55.697833
+./data-processed/DDS-NBDS/2021-07-26-DDS-NBDS.csv,2021-07-27 18:26:57.428817
