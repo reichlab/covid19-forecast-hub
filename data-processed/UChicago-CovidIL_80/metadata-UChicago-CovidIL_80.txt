@@ -6,6 +6,7 @@ model_contributors: Sarah Cobey <cobey@uchicago.edu>, Philip Arevalo, Ed Baskerv
 website_url: https://github.com/cobeylab/covid_IL
 license: cc-by-nc-4.0
 team_model_designation: other
+ensemble_of_hub_models: false
 methods: This is a compartmental, age-structured SEIR model that infers past  SARS-CoV-2
   transmission rates and forecasts mortality  under current and hypothetical public
   health interventions.
