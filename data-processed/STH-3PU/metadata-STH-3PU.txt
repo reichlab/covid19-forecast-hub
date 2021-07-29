@@ -7,6 +7,7 @@ website_url: https://public.tableau.com/profile/covid19model#!/vizhome/COVID-19D
 twitter_handles: STHorstman
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 
 methods: >-
     Model assumes pandemics hit in 3 distinct phases. Each phase can be represented by a single function and therefore the variables can be isolated. 
