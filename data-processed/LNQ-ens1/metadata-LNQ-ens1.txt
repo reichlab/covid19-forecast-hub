@@ -5,6 +5,7 @@ model_contributors: Russ Wolfinger (SAS) <russ.wolfinger@sas.com>, David Lander 
 website_url: https://www.kaggle.com/sasrdw/locknquay
 license: mit
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: County-level ensemble of boosted tree and neural net models. Lots of engineered
   features.
 data_inputs: JHU
