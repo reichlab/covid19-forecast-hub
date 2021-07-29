@@ -5,6 +5,7 @@ model_contributors: Nutcha Wattanachit, Evan L. Ray, Nicholas Reich <nick@school
 website_url: https://covid19forecasthub.org/
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: true
 methods: An ensemble, or model average, of submitted forecasts to the COVID-19 Forecast
   Hub.
 team_funding: This model's development is funded by the US CDC grant number U01IP001122. The content is solely the responsibility of the authors and does not necessarily represent the official views of NIGMS or the National Institutes of Health.

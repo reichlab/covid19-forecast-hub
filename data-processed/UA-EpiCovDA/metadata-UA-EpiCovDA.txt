@@ -5,6 +5,7 @@ model_contributors: Hannah Biegel <hbiegel@math.arizona.edu> and Joceline Lega <
 website_url: https://jocelinelega.github.io/EpiGro/
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: 'SIR mechanistic model with data assimilation.  '
 methods_long: 'EpiCovDA is an extension of the EpiGro model. Model parameters are
   fit to Covid-19 data using a variational data assimilation method. A prior distribution

@@ -8,6 +8,7 @@ model_contributors: "Alessandro Vespignani <alexves@gmail.com>, Matteo Chinazzi 
 website_url: https://covid19.gleamproject.org/
 license: other
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: 'This model makes predictions about the future that are dependent on the
   assumption  that current interventions continue. Metapopulation, age structured
   SLIR model.    '

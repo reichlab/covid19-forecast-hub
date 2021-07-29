@@ -5,4 +5,5 @@ model_contributors: Luke C. Mullany (Johns Hopkins University Applied Physics La
 website_url: https://github.com/lmullany/JHUAPL-SLPHospEns
 license: mit
 team_model_designation: secondary
+ensemble_of_hub_models: true
 methods: Estimates an ensemble of hospitalization forecasts by simulating the individual model-specific forecasts from the submitted quantile functions, and linearly pooling.

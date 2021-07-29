@@ -8,6 +8,7 @@ model_contributors: Jackie Baek (MIT) <baek@mit.edu>, Vivek Farias (MIT) <vivekf
 website_url: http://infectiontrajectory.covidalliance.com/
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: SIR model trained on public heath regions. SIR parameters are functions of
   static demographic and time-varying mobility features. Two-stage approach that first
   learns magnitude of peak infections.
