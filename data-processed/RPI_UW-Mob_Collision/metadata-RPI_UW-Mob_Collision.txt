@@ -5,6 +5,7 @@ model_contributors: Yunfeng Shi (RPI) shiy2@rpi.edu, Tanooj Shah (RPI) shaht2@rp
 website_url: http://rpi-uw-covid-mobility.herokuapp.com/
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: A mobility-informed simplified SIR model motivated by collision theory.
 team_funding: No funding support.
 data_inputs: JHU COVID-19 fatality and Google Mobility.
