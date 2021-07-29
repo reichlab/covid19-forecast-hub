@@ -8,6 +8,7 @@ model_contributors:
 website_url: http://mechatronics.ucmerced.edu/covid19
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: FoGSEIR model is a modification of integer order SEIR model considering fractional integrals. The model considers the age structure and reopening intervention to minimize infections and deaths.
 institution_affil: University of California, Merced, Department of Engineering
 team_funding: Alianza UCMX Special Funding for Binational Collaboration Addressing COVID-19
