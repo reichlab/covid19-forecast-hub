@@ -5,6 +5,7 @@ model_contributors: Nicolas Della Penna (LCP at MIT, Amurado Research OU) <niket
 website_url: https://github.com/sakethsundar/covid-forecaster
 license: mit
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: This gradient boosted regressor model with hyperparameter optimization is trained on prior COVID metrics as well as demographic, socioeconomic, mobility, and health-related county-level covariates.
 data_inputs: JHU CSSE cases and deaths data, County covariate data from https://github.com/JieYingWu/COVID-19_US_County-level_Summaries
 methods_long: This model uses a gradient boosted regressor with hyperparameter optimization that uses prior COVID cases and deaths as well as demographic, socioeconomic, mobility, and healthcare related county-level covariates. This model forecasts COVID deaths at the county level and aggregates to the state and national level. This model does not directly account for state reopenings and closures but indirectly via changes in the mobility measures. 
