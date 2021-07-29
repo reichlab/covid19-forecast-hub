@@ -5,6 +5,7 @@ model_contributors: Yanli Zhang-James (SUNY Upstate Medical University) <zhangy@
 website_url: ylzhang29.github.io/UpstateSU-GRU-Covid
 license: mit
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: County-level forecast using recurrent neural network seq2seq model with the Gated recurrent units (GRU)
 repo_url: https://github.com/ylzhang29/UpstateSU-GRU-Covid
 
