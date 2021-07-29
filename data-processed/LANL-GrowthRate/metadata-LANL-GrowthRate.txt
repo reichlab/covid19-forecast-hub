@@ -8,6 +8,7 @@ model_contributors: Dave Osthus <dosthus@lanl.gov>,  Sara Del Valle,  Carrie Man
 website_url: https://covid-19.bsvgateway.org/
 license: other
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: This model makes predictions about the future, unconditional on particular
   intervention strategies. Statistical dynamical growth model accounting for population
   susceptibility.
