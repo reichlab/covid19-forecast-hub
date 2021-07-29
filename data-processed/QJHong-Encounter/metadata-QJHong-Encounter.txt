@@ -5,6 +5,7 @@ model_contributors: Qi-Jun Hong <qhong@alumni.caltech.edu>
 website_url: https://qjhong.github.io
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: today's "Daily New Confirmed Cases" + today's "Encounter Density"  ==> today's
   newly infected Cases  ==> next 2-3 weeks' "Daily New Confirmed Cases"
 repo_url: https://github.com/qjhong/covid19
