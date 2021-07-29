@@ -6,6 +6,7 @@ model_contributors: 'Ugur Koyluoglu <ugur.koyluoglu@oliverwyman.com>, John Milli
 website_url: https://pandemicnavigator.oliverwyman.com/
 license: other
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: Oliver Wyman's Pandemic Navigator provides forecasts & scenario analysis
   for Detected and Undetected cases and death counts following a compartmental formulation
   with non-stationary transition rates.
