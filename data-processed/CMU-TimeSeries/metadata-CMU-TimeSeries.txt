@@ -18,7 +18,6 @@ methods: (State) A basic AR-type time series model fit using case counts and dea
   visits.
 team_funding: CDC Center of Excellence, gifts from Google and Facebook
 data_inputs: JHU CSSE confirmed case counts and deaths
-citation: 
 methods_long: "State level - A basic AR-type time series model fit using lagged values of case 
   \ counts and deaths as features. No assumptions are made regarding reopening or governmental\
   \ interventions. The model is jointly fit across all 50 US states, after some time-alignment\
