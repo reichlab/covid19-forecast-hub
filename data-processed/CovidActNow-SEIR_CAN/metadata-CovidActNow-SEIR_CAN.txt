@@ -6,6 +6,7 @@ model_contributors: Eric Carlson <eric.carlson@grandrounds.com>, Max Henderson <
 website_url: https://covidactnow.org/
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: SEIR model forecasts of cumulative deaths, incident deaths, incident hospitalizations  by
   fitting predicted cases, deaths, and hospitalizations to the observations.
 repo_url: https://github.com/covid-projections/covid-data-model
