@@ -8,6 +8,7 @@ model_contributors: B. Aditya Prakash (Georgia Institute of Technology) <baditya
 website_url: https://deepcovid.github.io/
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: 'Data-driven approach based on deep learning for forecasting mortality and  hospitalizations
   using syndromic, clinical, demographic, and mobility. '
 team_funding: Partly supported by multiple grants from NSF  (NSF CAREER, NSF CISE
