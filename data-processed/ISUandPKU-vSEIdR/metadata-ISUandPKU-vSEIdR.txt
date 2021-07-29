@@ -5,6 +5,7 @@ model_contributors: 'Yumou Qiu <yumouqiu@iastate.edu>,  Song Xi Chen <csx@gsm.pk
 website_url: https://yumouqiu.shinyapps.io/covid-predict/
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: 'Estimate the effective reproduction number and conduct forecast for the  number
   of daily new cases and death based on an extended varying coefficient  SEIR model. '
 data_inputs: https://covidtracking.com; confirmed cases; reported fatalities; population
