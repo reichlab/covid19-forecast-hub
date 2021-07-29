@@ -5,6 +5,7 @@ model_contributors: Daniel J. Wilson (Federal Reserve Bank of San Francisco, Eco
 website_url: https://www.frbsf.org/economic-research/indicators-data/covid-19-forecasts-by-county/
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: Econometric county panel data model, derived from SIR model, with transmission rate assumed to be function of weather and mobility.
 data_inputs: usafacts.org (confirmed cases), US Census (population), Dallas Fed Mobility & Engagement Index (MEI)(mobility), NOAA/NCDC (temperature; precipitation)
 citation: https://www.frbsf.org/economic-research/publications/working-papers/2020/23/
