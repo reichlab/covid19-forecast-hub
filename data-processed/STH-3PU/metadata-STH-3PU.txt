@@ -13,7 +13,7 @@ methods: >-
     Model assumes pandemics hit in 3 distinct phases. Each phase can be represented by a single function and therefore the variables can be isolated. 
 
 data_inputs: reported deaths, government restrictions and recommendations, mobility data, surveys on isolation behavior
-this_model_is_an_ensemble: false
+
 
 
 methods_long: >-
