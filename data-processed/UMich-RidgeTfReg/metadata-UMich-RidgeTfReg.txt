@@ -10,6 +10,7 @@ model_contributors: 'Sabrina Corsetti (University of Michigan Department of Phys
 website_url: https://gitlab.com/sabcorse/covid-19-collaboration
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: Nation-level model of confirmed cases and deaths based on ridge regression.  No
   assumptions made about social distancing.
 team_funding: University of Michigan Physics Department; University of Michigan Office of
