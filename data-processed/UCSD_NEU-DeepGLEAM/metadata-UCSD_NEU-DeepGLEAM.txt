@@ -5,6 +5,7 @@ model_contributors: "Dongxia Wu <dowu@ucsd.edu>, Liyao Gao <marsgao@uw.edu>, Yia
 website_url: https://datascience.ucsd.edu/COVID19/
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: 'This forecasting model combines the signal of a discrete stochastic epidemic computational model GLEAM with a deep learning spatiotemporal forecasting framework to further improve predictions.'
 
 methods_long: 'This forecasting model combines the signal of a discrete stochastic epidemic computational model based on a meta-population approach (GLEAM, https://https://covid19.gleamproject.org/) with a deep learning framework that learns spatial and temporal biases of past predictions to further improve forecasts. Like many others, this model assumes that the current intervention strategies continue in order to make predictions about the future death tolls.'
