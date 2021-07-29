@@ -13,6 +13,7 @@ model_contributors: Alden Green (Lead modeler - state, Carnegie Mellon Universit
 website_url: https://delphi.cmu.edu
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: (State) A basic AR-type time series model fit using case counts and deaths as features.
   (County) Quantile regr. on county pop., case counts, self-reported symptom data, and doctor's 
   visits.
