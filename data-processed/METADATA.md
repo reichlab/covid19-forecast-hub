@@ -84,6 +84,10 @@ nor scored in evaluations.
 A brief description of your forecasting methodology that is less than 200 
 characters.
 
+### ensemble_of_hub_models
+
+A boolean value (`true` or `false`) that indicates whether a model combines multiple hub models into an ensemble.
+
 
 ## Optional
 
