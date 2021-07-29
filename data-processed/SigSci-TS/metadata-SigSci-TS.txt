@@ -5,6 +5,7 @@ model_contributors: V.P. Nagraj (pnagraj@signaturescience.com), Stephen D. Turne
 website_url: http://www.signaturescience.com/
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: Time series forecasting using ARIMA for case forecasts and lagged cases for death forecasts.
 team_funding: Internal R&D funding
 twitter_handles: strnr

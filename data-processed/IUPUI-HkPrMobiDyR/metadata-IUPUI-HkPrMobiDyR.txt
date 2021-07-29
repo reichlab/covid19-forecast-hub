@@ -5,6 +5,7 @@ model_contributors: Wen-Hao Chiang, George Mohler<chiangwe@iupui.edu>
 website_url: https://github.com/chiangwe/HawkPR
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: Hawkes processes with Dynamic reproduce number.
 team_funding: Will get.
 repo_url: https://github.com/chiangwe/HawkPR

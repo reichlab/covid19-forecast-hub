@@ -6,6 +6,7 @@ model_contributors: Rahi Kalantari <rkalantari@utexas.edu>,
 website_url: https://dds-covid19.github.io/
 license: mit
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: Jointly modeling daily deaths and cases using a negative binomial distribution 
   based nonparametric Bayesian generalized linear dynamical system.
 repo_url: https://github.com/dds-covid19/dds-covid19.github.io

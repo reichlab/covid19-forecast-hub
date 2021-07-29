@@ -16,6 +16,7 @@ model_contributors: Joseph C. Lemaitre (EPFL),  Juan Dent Hulse (Johns Hopkins I
 website_url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
 license: mit
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: State-level single strain metapopulation model with commuting and stochastic SEIR disease dynamics
   with social-distancing and vaccination with parameter adjustments for multiple strains.
 team_funding: State of California and US Government

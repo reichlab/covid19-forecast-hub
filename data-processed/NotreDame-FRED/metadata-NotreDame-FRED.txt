@@ -7,6 +7,7 @@ model_contributors: 'guido espana <guido.espana@nd.edu>,  rachel oidtman,  sean 
 website_url: https://github.com/confunguido/covid19_ND_forecasting
 license: cc-by-4.0
 team_model_designation: secondary
+ensemble_of_hub_models: false
 methods: FRED is an agent-based model developed for influenza with parameters modified
   to represent the natural history of COVID-19
 team_funding: GE and TAP were supported by a RAPID grant from the National Science

@@ -5,4 +5,5 @@ model_contributors: Zhifeng Gao <zhgao@microsoft.com>, Chaozhuo Li <cli@microsof
 website_url: https://covid.msra.cn
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: Our model is a deep spatio-temporal network with knowledge based SEIR as a regularier under the assumption of spatio-temporal process in pandemic of different regions.

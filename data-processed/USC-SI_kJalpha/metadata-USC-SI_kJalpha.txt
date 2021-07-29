@@ -5,6 +5,7 @@ model_contributors: Ajitesh Srivastava <ajiteshs@usc.edu>, Frost Tianjian Xu
 website_url: https://scc-usc.github.io/ReCOVER-COVID-19
 license: mit
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: A heterogeneous infection rate model with vaccines and multiple variants and
   adaptive to changing trends. Uses genomics data to estimate the prevelance of the variants.
 team_funding: Supported by US National Science Foundation Award No. 2027007 (RAPID)
