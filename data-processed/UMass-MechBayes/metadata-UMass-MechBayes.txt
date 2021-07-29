@@ -6,6 +6,7 @@ model_contributors: Dan Sheldon<sheldon@cs.umass.edu>, Graham Gibson<gcgibson@um
 website_url: https://github.com/dsheldon/covid
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: 'Bayesian compartmental model with observations on cumulative case counts
   and cumulative deaths. Model is fit independently to each state. Model includes
   observation noise and a case detection rate. '
