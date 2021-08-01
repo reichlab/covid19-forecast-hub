@@ -53,3 +53,5 @@ mapping:
         type: str
     'methods_long':
         type: str
+    'ensemble_of_hub_models':
+        type: bool
