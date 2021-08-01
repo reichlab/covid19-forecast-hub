@@ -5,6 +5,7 @@ model_contributors: Steve McConnell (Construx) <stevemcc@construx.com>,
   Brian Donaldson (XYZZY) <maynebri@gmail.com>
 website_url: https://stevemcconnell.com/covid
 license: cc-by-4.0
+ensemble_of_hub_models: false
 team_model_designation: primary
 ensemble_of_hub_models: false
 methods: National level and state level, near-term (1-4 week) fatality forecasts.
