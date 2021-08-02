@@ -59,37 +59,9 @@ div
       li(v-bind:class="[showTimeChart ? 'is-active' : '']" v-on:click="displayTimeChart")
         a Time Chart
   .disclaimer-subtitle
-    | The <a href="https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/COVIDhub-ensemble/metadata-COVIDhub-ensemble.txt" target="_blank">ensemble</a> forecast combines models unconditional on particular interventions being in place with those conditional on certain social distancing measures continuing. To ensure consistency, only models with 4 week-ahead forecasts ahead are included in the ensemble.
+    | The <a href="https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/COVIDhub-ensemble/metadata-COVIDhub-ensemble.txt" target="_blank">ensemble</a> forecast is a multi-model ensemble developed and published weekly in real-time that combines models with varied approaches, data sources, and assumptions.
   .container
     #chart-right(v-show="!showScoresPanel")
-
-    #scores(v-show="showScoresPanel")
-      .score-header
-        span
-          a.score-btn.button.is-small.prev-score-btn(v-bind:class="[prevScoreActive ? '' : 'is-disabled']" v-on:click="selectPrevScore")
-            span.icon.is-small
-              i.fa.fa-arrow-left
-        span
-          a.score-btn.button.is-small.next-score-btn(v-bind:class="[nextScoreActive ? '' : 'is-disabled']" v-on:click="selectNextScore")
-            span.icon.is-small
-              i.fa.fa-arrow-right
-        span.score-title
-          a(v-bind:href="selectedScoresMeta.url" target="_blank") {{ selectedScoresMeta.name }}
-      .score-body
-        table.table.is-striped.is-bordered#score-table
-          thead
-            tr
-              th Model
-              th(v-for="hd in scoresHeaders") {{ hd }}
-          tbody
-            tr(v-for="(i, id) in modelIds")
-              td
-                a(v-bind:href="modelMeta[i].url" target="_blank") {{ id }}
-              td(v-for="(j, scr) in selectedScoresData[i]" v-bind:class="[scr.best ? 'bold' : '']" track-by="$index")
-                | {{  scr.value === null ? 'NA' : parseInt(scr.value * 1000) / 1000 }}
-      .score-footer
-        | {{{ selectedScoresMeta.desc }}} Scores for the current season are calculated using the most recently
-        | updated data. Final values may differ.
 </template>
 
 <script>
@@ -111,19 +83,13 @@ export default {
   computed: {
     ...mapGetters([
       "selectedRegionId",
-      "selectedSeasonId",
-      "selectedScoresData",
-      "selectedScoresMeta"
+      "selectedSeasonId"
     ]),
     ...mapGetters("switches", [
       "showTimeChart",
-      "showDistributionChart",
-      "showScoresPanel",
-      "nextScoreActive",
-      "prevScoreActive"
+      "showDistributionChart"
     ]),
-    ...mapGetters("models", ["modelIds", "modelMeta"]),
-    ...mapGetters("scores", ["scoresHeaders"])
+    ...mapGetters("models", ["modelIds", "modelMeta"])
   },
   methods: {
     ...mapActions([
@@ -135,7 +101,6 @@ export default {
       "clearTimeChart",
       "clearDistributionChart",
       "downloadSeasonData",
-      "downloadScoresData",
       "downloadDistData"
     ]),
     ...mapActions("switches", [
@@ -165,9 +130,6 @@ export default {
           return compareNumber(b, a);
         }
       );
-
-      tablesort(document.getElementById("score-table"));
-
       window.loading_screen.finish();
     });
   },

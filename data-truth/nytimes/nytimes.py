@@ -16,7 +16,7 @@ states = pd.read_csv(STATES_URL, dtype={'fips': str, 'cases': int, 'deaths': int
 states['date'] = pd.to_datetime(states['date'])
 states.to_csv(os.path.join(RELATIVE_PATH,"raw/us-states.csv"), index = False)
 
-counties = pd.read_csv(COUNTIES_URL, dtype={'fips': str, 'cases': int, 'deaths': int}).fillna(value = 'NA')
+counties = pd.read_csv(COUNTIES_URL, dtype={'fips': str}).dropna().astype(dtype={'fips': str, 'cases': int, 'deaths': int})
 counties['date'] = pd.to_datetime(counties['date'])
 counties.to_csv(os.path.join(RELATIVE_PATH,"raw/us-counties.csv"), index = False)
 

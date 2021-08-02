@@ -8,20 +8,24 @@ model_contributors: Dave Osthus <dosthus@lanl.gov>,  Sara Del Valle,  Carrie Man
 website_url: https://covid-19.bsvgateway.org/
 license: other
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: This model makes predictions about the future, unconditional on particular
   intervention strategies. Statistical dynamical growth model accounting for population
   susceptibility.
 team_funding: U.S. Department of Energy
 data_inputs: JHU (confirmed cases; reported fatalities), population
 methods_long: "This model makes predictions about the future, unconditional on particular\
-  \ intervention strategies. The model consists of two processes. The first process\
+  \  intervention strategies. The model consists of two processes. The first process \
   \ is a statistical model of how the  number of COVID-19 infections changes over\
-  \ time. The second process maps the number of  infections to the reported data.\_\
-  We model the growth of new cases as the product of a  dynamic growth parameter and\
+  \ time. The second process maps the number of  infections to the reported data.\
+  \ We model the growth of new cases as the product of a  dynamic growth parameter and\
   \ the underlying numbers of susceptible and infected cases  in the population at\
   \ the previous time step, scaled by the size of the state's starting  susceptible\
-  \ population. The growth parameter can be thought of as the transmissibility of\
-  \  the virus in that state on that date. To model new deaths in the population,\
-  \ we assume that a  fraction of the newly generated cases will die and learn that\
-  \ fraction from observations.  We can also anticipate when the outbreak is likely\
-  \ to peak, i.e.\_when the daily number of new  confirmed cases reaches its maximum.\""
+  \ population. Change 2020-10-29: The growth parameter can be thought of as the transmissibility of\
+  \ the virus in that state on that date and is a weighted regression between the\ 
+  \ trend in the growth rate over the past 42 days and a growth rate that would keep \
+  \ the number of new daily confirmed cases constant. The weights of these two components\
+  \ are dynamically tuned to the observed data. To model new deaths in the population,\
+  \ we assume that a fraction of the 1,2,3,4, or 5-week moving average of the daily \
+  \ confirmed cases will die. The model learns both the moving average window and the\
+  \ case fatality fraction that best fits the historical observations."

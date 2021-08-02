@@ -1,0 +1,196 @@
+---
+title: "Zoltar: a forecast repository"
+author: "brought to you by the Reich Lab Zoltar Development Team: <br> Matt Cornell, Khoa Le, Abdul Hannan Kanji, Katie House, <br>  Yuxin Huang, Evan Ray, Nick Reich <br> http://zoltardata.com"
+date: "<br> ![](zoltar.jpg){height=100px} ![](reichlab.png){height=100px} <br><br> October 6, 2020"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+```
+
+## Zoltar: big picture goals
+
+Zoltar is a research data repository that stores time-series forecasts made by external models and provides tools for programmatic data access and scoring.
+
+In development as a research tool since 2018. Focused COVID-oriented development in last 6 months has made it a viable, if early-stage "production" system.
+
+We have a preprint describing the vision and general forecast data model: https://arxiv.org/abs/2006.03922.
+
+## Zoltar vs. GitHub
+
+GitHub is not a sustainable, long-term architecture for large-scale forecast storage.
+
+- No internal structure to the data/file storage.
+- Space restrictions may become a limiting factor. (Current repo size: ~15GB)
+
+A structured database can provide systematic access to just the pieces of the data that you need.
+
+
+## Zoltar "ecosystem"
+
+ - Zoltar website: http://zoltardata.com
+ - zoltr R package: http://reichlab.io/zoltr/
+ - zoltpy python library: https://github.com/reichlab/zoltpy 
+
+All aspects of the project are open-source (contributions and feature requests welcome!).
+
+## Quick web tour
+
+ - [All forecast projects](https://zoltardata.com/projects)
+ - [Summary of COVID-19 Forecast Hub forecasts](https://zoltardata.com/project/44/forecasts)
+ 
+## 3 steps to getting set up with Zoltar
+
+ 1.  [Request an account](https://docs.google.com/forms/d/1C7IEFbBEJ1JibG-svM5XbnnKkgwvH0770LYILDjBxUc/viewform?edit_requested=true)
+ 2. Install zoltr and/or zoltpy
+```{r, eval=FALSE}
+devtools::install_github("reichlab/zoltr")
+```
+
+```{python, eval=FALSE}
+pip install git+https://github.com/reichlab/zoltpy/
+```
+
+ 3. Set up authentication using system variables [for R specifically](http://reichlab.io/zoltr/articles/getting-started.html#setting-up-your-account) or [system-wide for either R or python](https://github.com/reichlab/zoltpy#one-time-environment-variable-configuration).
+
+
+## Using data from the Zoltar API (demo)
+
+The Zoltar API allows you to access forecast data programmatically (without having to read the whole repository) for evaluation, visualization or ensemble building.
+
+The first step is always to establish a connection with the Zoltar server. 
+
+```{r}
+library(zoltr)
+zoltar_connection <- new_connection()
+zoltar_authenticate(zoltar_connection, Sys.getenv("Z_USERNAME"), Sys.getenv("Z_PASSWORD"))
+```
+
+The Zoltar API follows RESTful design principles.  As a result, all resources are associated with and accessed via a unique URL.  For example, the url for the COVID-19 Forecast Hub project is:
+```{r}
+covidhub_project_url <- "https://www.zoltardata.com/api/project/44/"
+```
+
+## Example 1: comparing multiple forecasts
+
+1. Submit a query to the API
+
+```{r, results='hide'}
+fcasts <- do_zoltar_query(zoltar_connection, 
+    project_url =  covidhub_project_url,
+    is_forecast_query = TRUE,
+    models = c("MOBS-GLEAM_COVID", "IHME-CurveFit", "COVIDhub-ensemble", "COVIDhub-baseline"), 
+    targets = paste(1:20, "wk ahead inc death"),
+    units = "48", ## FIPS code for Texas
+    types = c("point"), ## only retrieving point forecasts
+    timezeros = "2020-06-22")
+```
+
+```{r}
+dplyr::select(fcasts, model, timezero, unit, target, class, value)
+```
+
+## Example 1: comparing multiple forecasts (con't)
+
+2. Wrangle and plot the data. (We are working on additional functions to make this step easier!)
+
+```{r}
+library(tidyverse)
+library(covidcast)
+library(MMWRweek)
+source("https://raw.githubusercontent.com/reichlab/covid19-forecast-hub/master/code/processing-fxns/get_next_saturday.R")
+
+## adding dates to week-ahead targets for easier plotting
+fcasts <- fcasts %>%
+    mutate(week_ahead = as.numeric(substr(target, 0,2)),
+        target_end_date = get_next_saturday(timezero + 7*(week_ahead-1)))
+
+## downloading truth data from covidcast
+jhu_dat <- covidcast_signal(data_source = "jhu-csse", 
+    signal ="deaths_incidence_num",
+    start_day = "2020-04-01", end_day = "2020-10-03",
+    geo_type = "state", geo_values = "tx") %>% 
+    mutate(epiweek=MMWRweek(time_value)$MMWRweek) %>%
+    group_by(epiweek) %>%
+    summarize(value = sum(value)) %>%
+    mutate(target_end_date = MMWRweek2Date(rep(2020, n()), epiweek, rep(7, n())),
+        model="observed data (JHU)")
+
+## plot the data!
+ggplot(fcasts, aes(x=target_end_date, y=value, color=model)) +
+    geom_point() + 
+    geom_line() + 
+    geom_point(data=jhu_dat) + 
+    geom_line(data=jhu_dat) +
+    scale_color_brewer(type = "qual") + 
+    theme_bw() + xlab(NULL)+
+        ggtitle("Incident deaths in Texas, observed and forecasted")
+```
+
+## Example 2: forecasts from one model over time
+
+1. Submit a query to the API
+
+```{r, results='hide'}
+fcasts <- do_zoltar_query(zoltar_connection, 
+        project_url =  covidhub_project_url,
+        is_forecast_query = TRUE,
+        models = c("COVIDhub-ensemble"), 
+        targets = paste(1:4, "wk ahead inc death"),
+        units = "48", ## FIPS code for Texas
+        types = c("quantile"),
+        timezeros = seq.Date(as.Date("2020-06-01"), as.Date("2020-10-05"), by="28 days")) 
+```
+
+```{r}
+dplyr::select(fcasts, model, timezero, unit, target, quantile, value)
+```
+
+## Example 2: forecasts from one model over time (con't)
+
+2. Wrangle and plot the data
+
+```{r}
+## add dates and pivot to wide-form data
+fcasts_wide <- fcasts %>%
+    filter(quantile %in% c(0.025, 0.1, 0.25, 0.5, 0.75, 0.9, 0.975)) %>%
+    mutate(week_ahead = as.numeric(substr(target, 0,2)),
+        target_end_date = get_next_saturday(timezero + 7*(week_ahead-1))) %>%
+    pivot_wider(names_from = quantile, names_prefix="q")
+
+## plot the data!
+ggplot(fcasts_wide, aes(x=target_end_date)) +
+    geom_line(aes(y=q0.5, color=timezero, group=timezero)) + 
+    geom_ribbon(aes(ymin=q0.1, ymax=q0.9, fill=timezero, group=timezero), alpha=.3) +
+    geom_ribbon(aes(ymin=q0.025, ymax=q0.975, fill=timezero, group=timezero), alpha=.3) +
+    geom_ribbon(aes(ymin=q0.25, ymax=q0.75, fill=timezero, group=timezero), alpha=.3) +
+    geom_point(data=jhu_dat, aes(y=value)) + 
+    geom_line(data=jhu_dat, aes(y=value)) +
+    theme_bw() + xlab(NULL) +
+    theme(legend.position = "none") + ylab("incident deaths") +
+    ggtitle("Incident deaths in Texas, observed and forecasted")
+```
+    
+## Using zoltpy
+
+For python users, [zoltpy](https://github.com/reichlab/zoltpy) enables API access.
+
+Examples similar to the above in [this notebook](https://colab.research.google.com/drive/1-BLgnXdIbpqH_tAKu_A9ynqeXd7B4rNy#scrollTo=rG56nPlvB0A7).
+
+    
+## Some underused features in Zoltar (as of now)
+
+ - different forecast representations, e.g., distributions can be represented by samples or parametric densities
+ - programmatic pushing of forecasts into Zoltar by teams (can be part of the model workflow, right now, forecasts are [pushed automatically from GitHub](https://github.com/reichlab/covid19-forecast-hub/actions?query=workflow%3A%22Trigger+zoltar+upload%22) every 6 hours)
+ - accessing scores directly from Zoltar (also available via the API)
+ 
+## Next steps
+
+ - adding "versions" of forecasts
+ - expanding the set of scores available
+ - integrating visualization/plotting functionality more directly in Zoltar and associated libraries
+ - some backend optimization for scalability
+ 
+
+

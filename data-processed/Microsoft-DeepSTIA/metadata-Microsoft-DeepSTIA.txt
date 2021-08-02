@@ -1,0 +1,9 @@
+team_name: Microsoft
+model_name: DeepSTIA
+model_abbr: Microsoft-DeepSTIA
+model_contributors: Zhifeng Gao <zhgao@microsoft.com>, Chaozhuo Li <cli@microsoft.com>, Wei Cao <wei.cao@microsoft.com>, Shun Zheng <shun.zheng@microsoft.com>, Jiang Bian <Jiang.Bian@microsoft.com>, Xing Xie <xing.xie@microsoft.com>, Tie-Yan Liu <tie-yan.liu@microsoft.com>,Shun Zhang <shunzh@microsoft.com>, Juan Lavista Ferres <jlavista@microsoft.com>
+website_url: https://www.microsoft.com/en-us/ai/ai-for-health
+license: cc-by-4.0
+team_model_designation: primary
+ensemble_of_hub_models: false
+methods: Our model is a deep spatio-temporal network with intervention and hosptial gate under the assumption of spatio-temporal process in pandemic of different regions.

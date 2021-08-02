@@ -6,7 +6,7 @@ import {
   TimeChart,
   DistributionChart,
   events
-} from '../../covid-d3-foresight/dist/d3-foresight'
+} from '../../covid-d3-foresight/dist/d3-foresight.min'
 
 // Initializations
 // ---------------
@@ -16,10 +16,10 @@ import {
  */
 export const importLatestChunk = (context, dataChunk) => {
   initSeasonDataUrls(context, dataChunk.seasonDataUrls)
-  initScoresDataUrls(context, dataChunk.scoresDataUrls)
+  // initScoresDataUrls(context, dataChunk.scoresDataUrls)
   initDistDataUrls(context, dataChunk.distDataUrls)
   addSeasonData(context, dataChunk.latestSeasonData)
-  addScoresData(context, dataChunk.latestScoresData)
+  // addScoresData(context, dataChunk.latestScoresData)
   addDistData(context, dataChunk.latestDistData)
   initMetadata(context, dataChunk.metadata)
   addSeasonData(context, dataChunk.incDeathSeasonData)
@@ -47,26 +47,6 @@ export const downloadSeasonData = (context, reqData) => {
   }
 }
 
-/**
- * Check for scores data corresponding to asked id and fetch if necessary
- */
-export const downloadScoresData = (context, reqData) => {
-  let getters = context.getters
-  let seasonId = reqData.id
-
-  if (getters.downloadedScores.indexOf(seasonId) === -1) {
-    let dataUrl = getters.scoresDataUrls[seasonId]
-    reqData.http.get(dataUrl).then(response => {
-      let data = util.parseDataResponse(response)
-      addScoresData(context, data)
-      reqData.success()
-    }, response => {
-      reqData.fail(response)
-    })
-  } else {
-    reqData.success()
-  }
-}
 
 /**
  * Check for dist data corresponding to asked id and fetch if necessary
@@ -98,15 +78,6 @@ export const addSeasonData = ({
   }
 }
 
-export const addScoresData = ({
-  commit,
-  getters
-}, val) => {
-  if (getters.downloadedScores.indexOf(val.seasonId) === -1) {
-    commit(types.ADD_SCORES_DATA, val)
-  }
-}
-
 export const addDistData = ({
   commit,
   getters
@@ -131,15 +102,6 @@ export const initSeasonDataUrls = ({
 }, val) => {
   if (!getters.seasonDataUrls) {
     commit(types.SET_SEASON_DATA_URLS, val)
-  }
-}
-
-export const initScoresDataUrls = ({
-  commit,
-  getters
-}, val) => {
-  if (!getters.scoresDataUrls) {
-    commit(types.SET_SCORES_DATA_URLS, val)
   }
 }
 

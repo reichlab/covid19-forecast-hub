@@ -6,19 +6,27 @@ model_contributors: Sen Pei, Teresa Yamana, Sasikiran Kandula, Wan Yang, Marta G
 website_url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
 license: apache-2.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: A metapopulation county-level SEIR model for projecting future COVID-19 incidence
   and deaths. This forecast is the scenario we believe to be most plausible given
   the current setting.
 team_funding: Supported by US NIH grant GM110748 and US NSF RAPID grant DMS2027369
 repo_url: https://github.com/shaman-lab/COVID-19Projection
-data_inputs: USAFACTS County-level confirmed cases and deaths
-citation: https://doi.org/10.1101/2020.03.21.20040303
+data_inputs: JHU CSSE County-level confirmed cases and deaths, Covid Tracking Project Hospitalizations and ICU admissions, HHS Hospitalizations, Safegraph mobility
+citation: https://doi.org/10.1101/2020.03.21.20040303, https://www.medrxiv.org/content/10.1101/2020.05.04.20090670v2
 methods_long: 'This metapopulation county-level SEIR model makes projections of future
   COVID-19 incidence and deaths.  We produce a number of different intervention scenarios,
   each assuming various interventions and rates of compliance are implemented in the
   future.  This submission is the selection of the weekly scenario we believe to be
   most plausible given current observations and planned intervention policies.  The
-  selected scenarios are listed below: June 14 - present ''5_2xhold'': This scenario
+  selected scenarios are listed below: 
+  November 12 - present ''5_2xbeta'': 5% increase in contact rates for two weeks.  The following week, the reproduction
+  number R is set to 1.
+  November 8 - November 11 ''5_2xhold'': This scenario
+  assumes a weekly 5% increase in contact rates for two weeks.  The following week,
+  the reproduction number R is set to 1 for the remainder of the projection.  
+  October 4 - November 5 ''5_1xhold'': This scenario assumes a one-time 5% increase in contact rates, which is applied at the start of the projection and maintained for one week.  After one week, the reproduction number R is set to 1 for the remainder of the projection.
+  June 14 - September 27 ''5_2xhold'': This scenario
   assumes a weekly 5% increase in contact rates for two weeks.  The following week,
   the reproduction number R is set to 1 for the remainder of the projection.   June
   7 ''80contact1x5p'' : This scenario assumes a weekly 20% decrease in counties with

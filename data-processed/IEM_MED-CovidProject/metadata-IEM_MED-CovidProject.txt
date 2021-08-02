@@ -1,0 +1,23 @@
+team_name: IEM MED
+model_name: CovidProjections
+model_abbr: IEM_MED-CovidProject
+model_contributors: Brad Suchoski (IEM) <bradley.suchoski@iem.com>, Steve Stage (IEM) <steve.stage@iem.com>,
+  Heidi Gurung (IEM) <heidi.gurung@iem.com>, Sid Baccam (IEM) <sid.baccam@iem.com> 
+website_url: https://iem-modeling.com/ 
+license: cc-by-4.0
+team_model_designation: primary
+ensemble_of_hub_models: false
+methods: County-level, state-level, and national-level SEIR model projections for daily incident confirmed COVID 
+  cases by using AI to fit actual cases observed.
+data_inputs: JHU reported daily confirmed cases
+methods_long: "IEM is currently using an AI model to fit data from various sources \
+  \ and project new cases of COVID-19. We do not assume the average number of secondary \
+  \ infections (R-value) stays the same over time. Our model makes projections for \
+  \ over 375 individual counties in the U.S., all 50 states, the District of Columbia, \
+  \ and 3 U.S. territories. For each jurisdiction, our model runs 4 million simulations \
+  \ to find the best R value that would allow the SEIR model to fit the data for confirmed \
+  \ cases. Our model assumes that the R value changes quite rapidly over time due to changes \
+  \ in human behavior. Our model uses a sliding window to fit the data and find the best \
+  \ R values for each of the windows. Projections of future cases assume that human behavior \
+  \ and social distancing measures are unchanged."
+

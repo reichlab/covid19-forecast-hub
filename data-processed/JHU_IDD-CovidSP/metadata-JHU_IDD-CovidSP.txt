@@ -1,55 +1,61 @@
 team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
 model_name: CovidScenarioPipeline
 model_abbr: JHU_IDD-CovidSP
-model_contributors: Joseph C. Lemaitre (EPFL),  Qifang Bi (Johns Hopkins Infectious
-  Disease Dynamics),  Juan Dent Hulse (Johns Hopkins Infectious Disease Dynamics),  M.
-  Kate Grabowski (Johns Hopkins Infectious Disease Dynamics),  Kyra H. Grantz (Johns
+model_contributors: Joseph C. Lemaitre (EPFL),  Juan Dent Hulse (Johns Hopkins Infectious Disease Dynamics), Kyra H. Grantz (Johns
   Hopkins Infectious Disease Dynamics),  Joshua Kaminsky (Johns Hopkins Infectious
   Disease Dynamics),  Stephen A. Lauer (Johns Hopkins Infectious Disease Dynamics),  Elizabeth
   C. Lee (Johns Hopkins Infectious Disease Dynamics)<elizabeth.c.lee@jhu.edu>,  Justin
   Lessler (Johns Hopkins Infectious Disease Dynamics)<justin@jhu.edu>,  Hannah R.
   Meredith (Johns Hopkins Infectious Disease Dynamics),  Javier Perez-Saez (Johns
   Hopkins Infectious Disease Dynamics),  Shaun A. Truelove (Johns Hopkins Infectious
-  Disease Dynamics),  Lindsay T. Keegan (University of Utah),  Kathryn Kaminsky,  Sam
+  Disease Dynamics), Claire Smith (Johns Hopkins Infectious Disease Dynamics), Lindsay T. Keegan (University of Utah),  Kathryn Kaminsky,  Sam
   Shah,  Josh Wills, Pierre-Yves Aquilanti (Amazon Web Services),  Karthik Raman (Amazon
   Web Services),  Arun Subramaniyan (Amazon Web Services),  Greg Thursam (Amazon Web
-  Services),  Anh Tran (Amazon Web Services)
+  Services),  Anh Tran (Amazon Web Services), Claire Smith (Johns Hopkins Infectious
+  Disease Dynamics), Alison Hill (Johns Hopkins Infectious Disease Dynamics)
 website_url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
 license: mit
 team_model_designation: primary
-methods: County-level metapopulation model with commuting and stochastic SEIR disease  dynamics
-  with social-distancing indicators.
+ensemble_of_hub_models: false
+methods: State-level single strain metapopulation model with commuting and stochastic SEIR disease dynamics
+  with social-distancing and vaccination with parameter adjustments for multiple strains.
 team_funding: State of California and US Government
-data_inputs: USAFacts (confirmed cases; reported fatalities), NYT (territories), US Census (population),  mobility
-citation: https://www.medrxiv.org/content/10.1101/2020.06.11.20127894v1
-methods_long: "This is a county-level metapopulation model with stochastic SEIR disease\
+data_inputs: JHU CSSE (confirmed cases; reported fatalities), US Census (population; mobility)
+citation: https://doi.org/10.1038/s41598-021-86811-0
+methods_long: "This is a state-level metapopulation model with stochastic SEIR disease\
   \  dynamics. This model incorporates uncertainty in epidemiological parameters \
-  \ and the effectiveness of state-wide intervention policies on social  distancing\
-  \ and stay-at-home orders. Infections are seeded stochastically  with roughly 10\
-  \ times the number of confirmed cases in the first five days  of a county epidemic\
+  \ and the effectiveness of state-wide intervention policies on social  distancing,\
+  \ stay-at-home orders, and vaccine effects that reduce suspectibility and severity.\
+  \ Infections are seeded stochastically with roughly 10\
+  \ times the number of confirmed cases in the first five days of the epidemic\
   \ and R0 and the duration of the infectious period were  drawn stochastically for\
   \ each county and simulation. Disease follows SEIR dynamics and county commuting\
   \ data modulates the spread of disease within counties. \nStay-at-home orders and \
   \ subsequent social distancing interventions are updated at the state-level according\
-  \ to recent policy documents. States that did not implement stay-at-home orders had\
-  \ a single social distancing intervention that began on the day of the first reported\
-  \ order and endured  for the whole simulation period. Intervention effects are inferred\
+  \ to recent policy documents. Vaccination rates and reductions to the hospitalization\
+  \ and mortality rates are state-specific by week. Ongoing NPIs continued through the remainder \
+  \ of the simulation period, while vaccination coverage continues to increase slowly in\
+  \ subsequent months until it reaches a maximum 90% coverage per group. Intervention effects are inferred\
   \ where  possible.\nTo model deaths and hospitalizations in the population, we incorporated\
   \  realistic but fixed time delays from infection to symptom onset to hospitalization to \
   \ ICU to ventilator use to death and used age-specific demographics to perform \
   \ a county-level age standardization of health outcome risk. Currently, we  assume\
-  \ a 0.25% infection fatality rate and a 7:1 ratio of incident  hospitalizations\
-  \ to deaths. \nFor each county, we estimate the seeding time and amount, the baseline\
+  \ a 0.5% infection fatality rate and a 3.5:1 ratio of incident hospitalizations\
+  \ to deaths. The model assumes that vaccinated individuals have both reductions in susceptibility\
+  \ and reductions in hospitalization and mortality. For the two-dose vaccines, one dose has\
+  \ an assumed 75% reduction and two doses have a 95% reduction. The one dose J&J vaccine is assumed
+  \ to have 70% efficacy.  \nFor each county, we estimate the seeding time and amount, the baseline\
   \  reproductive number, the case confirmation to infection ratio, and the  effectiveness\
   \ of interventions (from closing to phased reopenings). We use an  MCMC-like inference\
   \ procedure that calibrates model outputs to weekly county  aggregations of incident\
-  \ confirmed cases and deaths as reported by USA  Facts. For the inference of the\
+  \ confirmed cases and deaths as reported by USA Facts. For the inference of the\
   \ baseline reproductive number and the case  confirmation to infection ratio, hierarchical\
   \ grouping terms enable sharing  of strength among counties in the same state.\n\
   Our procedure forecasts incident and cumulative deaths by incorporating the last\
   \ reported data point (pre-forecast date) from USA Facts.\nThe estimates reported\
   \ by this model incorporate uncertainty in both epidemiological parameters (e.g.,\
-  \ R0, infectious period, time delays to health outcomes) and the effectiveness\
+  \ R0, nationwide spread of more transmissible variants, infectious period,\
+  \ time delays to health outcomes) and the effectiveness\
   \ of state-wide intervention policies  on social distancing, stay-at-home orders,\
-  \ and phased reopenings. We submit a case-optimized calibration to forecast confirmed\
-  \ cases and a deaths-optimized calibration to forecast deaths and hospitalizations."
+  \ and phased reopenings. We submit a single calibration to forecast deaths, cases,\
+  \ and hospitalizations."

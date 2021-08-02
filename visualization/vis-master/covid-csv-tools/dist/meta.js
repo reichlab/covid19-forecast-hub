@@ -107,47 +107,52 @@ exports.regionFullName = {
 /**
  * List of US state abbreviations
  */
-exports.stateIds = ['nat', 'AK', 'AL', 'AR', 'AZ', 'CA',
-  'CO', 'CT', 'DC', 'DE', 'FL',
-  'GA', 'HI', 'IA', 'ID', 'IL',
-  'IN', 'KS', 'KY', 'LA', 'MA',
-  'MD', 'ME', 'MI', 'MN', 'MO',
-  'MS', 'MT', 'NC', 'ND', 'NE',
-  'NH', 'NJ', 'NM', 'NV', 'NY',
-  'OH', 'OK', 'OR', 'PA', 'RI',
-  'SC', 'SD', 'TN', 'TX', 'UT',
-  'VA', 'VT', 'WA', 'WI', 'WV',
-  'WY'
-]; // 50
+exports.stateIds = [
+  'nat',
+  'AK', 'AL', 'AR', 'AS', 'AZ',
+  'CA', 'CO', 'CT', 'DC', 'DE',
+  'FL', 'GA', 'GU', 'HI', 'IA',
+  'ID', 'IL', 'IN', 'KS', 'KY',
+  'LA', 'MA', 'MD', 'ME', 'MI',
+  'MN', 'MO', 'MS', 'MT', 'NC',
+  'ND', 'MP', 'NE', 'NH', 'NJ',
+  'NM', 'NV', 'NY', 'OH', 'OK',
+  'OR', 'PA', 'PR', 'RI', 'SC',
+  'SD', 'TN', 'TX', 'UT', 'VA',
+  'VI', 'VT', 'WA', 'WI', 'WV',
+  'WY'  
+]; // 56
 
-exports.stateForNatIds = ['AK', 'AL', 'AR', 'AZ', 'CA',
-  'CO', 'CT', 'DC', 'DE', 'FL',
-  'GA', 'HI', 'IA', 'ID', 'IL',
-  'IN', 'KS', 'KY', 'LA', 'MA',
-  'MD', 'ME', 'MI', 'MN', 'MO',
-  'MS', 'MT', 'NC', 'ND', 'NE',
-  'NH', 'NJ', 'NM', 'NV', 'NY',
-  'OH', 'OK', 'OR', 'PA', 'RI',
-  'SC', 'SD', 'TN', 'TX', 'UT',
-  'VA', 'VT', 'WA', 'WI', 'WV',
+exports.stateForNatIds = [
+  'AK', 'AL', 'AR', 'AS', 'AZ',
+  'CA', 'CO', 'CT', 'DC', 'DE',
+  'FL', 'GA', 'GU', 'HI', 'IA',
+  'ID', 'IL', 'IN', 'KS', 'KY',
+  'LA', 'MA', 'MD', 'ME', 'MI',
+  'MN', 'MO', 'MS', 'MT', 'NC',
+  'ND', 'MP', 'NE', 'NH', 'NJ',
+  'NM', 'NV', 'NY', 'OH', 'OK',
+  'OR', 'PA', 'PR', 'RI', 'SC',
+  'SD', 'TN', 'TX', 'UT', 'VA',
+  'VI', 'VT', 'WA', 'WI', 'WV',
   'WY'
-]; // 50
+]; // 55
 
 /**
  * Mapping from region ids to the states in those regions
  */
 exports.regionStates = {
   'nat': exports.stateForNatIds,
-  'hhs1': [6, 19, 21, 30, 39, 46].map(i => exports.stateForNatIds[i]),
-  'hhs2': [31, 34].map(i => exports.stateForNatIds[i]),
-  'hhs3': [8, 20, 38, 45, 49].map(i => exports.stateForNatIds[i]),
-  'hhs4': [1, 9, 10, 17, 25, 27, 40, 42].map(i => exports.stateForNatIds[i]),
-  'hhs5': [14, 15, 22, 23, 35, 48].map(i => exports.stateForNatIds[i]),
-  'hhs6': [2, 18, 32, 36, 43].map(i => exports.stateForNatIds[i]),
-  'hhs7': [12, 16, 24, 29].map(i => exports.stateForNatIds[i]),
-  'hhs8': [5, 26, 28, 41, 44, 50].map(i => exports.stateForNatIds[i]),
-  'hhs9': [3, 4, 11, 33].map(i => exports.stateForNatIds[i]),
-  'hhs10': [0, 13, 37, 47].map(i => exports.stateForNatIds[i])
+  'hhs1': ['CT', 'ME', 'MA', 'NH', 'RI', 'VT'],
+  'hhs2': ['NJ', 'NY', 'PR', 'VI'],
+  'hhs3': ['DE', 'DC', 'MD', 'PA', 'VA', 'WV'],
+  'hhs4': ['AL', 'FL', 'GA', 'KY', 'MS', 'NC', 'SC', 'TN'],
+  'hhs5': ['IL', 'IN', 'MI', 'MN', 'OH', 'WI'],
+  'hhs6': ['AR', 'LA', 'NM', 'OK', 'TX'],
+  'hhs7': ['IA', 'KS', 'MO', 'NE'],
+  'hhs8': ['CO', 'MT', 'ND', 'SD', 'UT', 'WY'],
+  'hhs9': ['AZ', 'AS', 'CA', 'HI', 'NV', 'MP'],
+  'hhs10': ['AK', 'ID', 'OR', 'WA']
 };
 //# sourceMappingURL=meta.js.map 
 
@@ -207,63 +212,28 @@ exports.stateFullName = {
   'WA': 'Washington',
   'WI': 'Wisconsin',
   'WV': 'West Virginia',
-  'WY': 'Wyoming'
+  'WY': 'Wyoming',
+  'PR': 'Puerto Rico',
+  'VI': 'Virgin Islands',
+  'GU': 'Guam',
+  'MP': 'Northern Mariana Islands',
+  'AS': 'American Samoa'
 };
 
 /**
  * Mapping from state name to state ids
+ * TODO: [refactor] this is a "hacky" use of original functionality
  */
 exports.stateStates = {
   'nat': exports.stateForNatIds,
-  'AK': [0].map(i => exports.stateForNatIds[i]),
-  'AL': [1].map(i => exports.stateForNatIds[i]),
-  'AR': [2].map(i => exports.stateForNatIds[i]),
-  'AZ': [3].map(i => exports.stateForNatIds[i]),
-  'CA': [4].map(i => exports.stateForNatIds[i]),
-  'CO': [5].map(i => exports.stateForNatIds[i]),
-  'CT': [6].map(i => exports.stateForNatIds[i]),
-  'DC': [7].map(i => exports.stateForNatIds[i]),
-  'DE': [8].map(i => exports.stateForNatIds[i]),
-  'FL': [9].map(i => exports.stateForNatIds[i]),
-  'GA': [10].map(i => exports.stateForNatIds[i]),
-  'HI': [11].map(i => exports.stateForNatIds[i]),
-  'IA': [12].map(i => exports.stateForNatIds[i]),
-  'ID': [13].map(i => exports.stateForNatIds[i]),
-  'IL': [14].map(i => exports.stateForNatIds[i]),
-  'IN': [15].map(i => exports.stateForNatIds[i]),
-  'KS': [16].map(i => exports.stateForNatIds[i]),
-  'KY': [17].map(i => exports.stateForNatIds[i]),
-  'LA': [18].map(i => exports.stateForNatIds[i]),
-  'MA': [19].map(i => exports.stateForNatIds[i]),
-  'MD': [20].map(i => exports.stateForNatIds[i]),
-  'ME': [21].map(i => exports.stateForNatIds[i]),
-  'MI': [22].map(i => exports.stateForNatIds[i]),
-  'MN': [23].map(i => exports.stateForNatIds[i]),
-  'MO': [24].map(i => exports.stateForNatIds[i]),
-  'MS': [25].map(i => exports.stateForNatIds[i]),
-  'MT': [26].map(i => exports.stateForNatIds[i]),
-  'NC': [27].map(i => exports.stateForNatIds[i]),
-  'ND': [28].map(i => exports.stateForNatIds[i]),
-  'NE': [29].map(i => exports.stateForNatIds[i]),
-  'NH': [30].map(i => exports.stateForNatIds[i]),
-  'NJ': [31].map(i => exports.stateForNatIds[i]),
-  'NM': [32].map(i => exports.stateForNatIds[i]),
-  'NV': [33].map(i => exports.stateForNatIds[i]),
-  'NY': [34].map(i => exports.stateForNatIds[i]),
-  'OH': [35].map(i => exports.stateForNatIds[i]),
-  'OK': [36].map(i => exports.stateForNatIds[i]),
-  'OR': [37].map(i => exports.stateForNatIds[i]),
-  'PA': [38].map(i => exports.stateForNatIds[i]),
-  'RI': [39].map(i => exports.stateForNatIds[i]),
-  'SC': [40].map(i => exports.stateForNatIds[i]),
-  'SD': [41].map(i => exports.stateForNatIds[i]),
-  'TN': [42].map(i => exports.stateForNatIds[i]),
-  'TX': [43].map(i => exports.stateForNatIds[i]),
-  'UT': [44].map(i => exports.stateForNatIds[i]),
-  'VA': [45].map(i => exports.stateForNatIds[i]),
-  'VT': [46].map(i => exports.stateForNatIds[i]),
-  'WA': [47].map(i => exports.stateForNatIds[i]),
-  'WI': [48].map(i => exports.stateForNatIds[i]),
-  'WV': [49].map(i => exports.stateForNatIds[i]),
-  'WY': [50].map(i => exports.stateForNatIds[i])
+  'AK': ['AK'], 'AL': ['AL'], 'AR': ['AR'], 'AZ': ['AZ'], 'CA': ['CA'], 'CO': ['CO'],
+  'CT': ['CT'], 'DC': ['DC'], 'DE': ['DE'], 'FL': ['FL'], 'GA': ['GA'], 'HI': ['HI'],
+  'IA': ['IA'], 'ID': ['ID'], 'IL': ['IL'], 'IN': ['IN'], 'KS': ['KS'], 'KY': ['KY'],
+  'LA': ['LA'], 'MA': ['MA'], 'MD': ['MD'], 'ME': ['ME'], 'MI': ['MI'], 'MN': ['MN'],
+  'MO': ['MO'], 'MS': ['MS'], 'MT': ['MT'], 'NC': ['NC'], 'ND': ['ND'], 'NE': ['NE'],
+  'NH': ['NH'], 'NJ': ['NJ'], 'NM': ['NM'], 'NV': ['NV'], 'NY': ['NY'], 'OH': ['OH'],
+  'OK': ['OK'], 'OR': ['OR'], 'PA': ['PA'], 'RI': ['RI'], 'SC': ['SC'], 'SD': ['SD'],
+  'TN': ['TN'], 'TX': ['TX'], 'UT': ['UT'], 'VA': ['VA'], 'VT': ['VT'], 'WA': ['WA'],
+  'WI': ['WI'], 'WV': ['WV'], 'WY': ['WY'], 'PR': ['PR'], 'VI': ['VI'], 'GU': ['GU'],
+  'MP': ['MP'], 'AS': ['AS']
 };

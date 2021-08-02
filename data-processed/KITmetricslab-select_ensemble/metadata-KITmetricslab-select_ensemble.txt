@@ -1,0 +1,13 @@
+team_name: KITmetricslab
+model_name: select_ensemble
+model_abbr: KITmetricslab-select_ensemble
+model_contributors: Daniel Wolffram (Karlsruhe Institute of Technology and Heidelberg Institute for Theoretical Studies) <daniel.wolffram@kit.edu>, Johannes Bracher (Karlsruhe Institute of Technology and Heidelberg Institute for Theoretical Studies), Tilmann Gneiting (Karlsruhe Institute of Technology and Heidelberg Institute for Theoretical Studies)
+website_url: https://github.com/dwolffram/covid19-ensembles
+license: cc-by-4.0
+team_model_designation: primary
+ensemble_of_hub_models: true
+methods: A weighted ensemble of iteratively preselected forecasts from the COVID-19 Forecast Hub.
+team_funding: Tilmann Gneiting and Daniel Wolffram are grateful for support by the Klaus Tschira Foundation. The work of Johannes Bracher was supported by the Helmholtz Foundation via the SIMCARD Information & Data Science Pilot Project.
+twitter_handles: DanielWolffram, johannesbracher
+data_inputs: Cumulative/incident death and case forecasts from other models.
+methods_long: This is a weighted combination of the component model forecasts. All component models that provide all predictive quantiles at the current forecast date and also cover the previous four weeks are considered. First, the models are ranked by their performance (as per WIS) over the past four weeks. Then a linear combination of the best two methods is computed to minimize the mean WIS over all states. This combined forecast is then linearly combined with the third-best model to update the combined forecast. This is continued with the next best model until the weight of the next model is less than 1/(2*number_of_models). Finally, a linear combination of the selected models is refitted with the previously computed weights as starting vector. No observed data after Monday is used for estimation.

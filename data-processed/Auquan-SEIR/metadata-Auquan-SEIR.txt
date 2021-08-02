@@ -5,6 +5,7 @@ model_contributors: Vishal Tomar <vishal@auquan.com>, Chandini Jain <chandini@au
 website_url: https://covid19-infection-model.auquan.com/
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: Modified SEIR model with compartments for reported and unreported infections.
   Non-linear mixed effects curve-fitting.
 data_inputs: JHU reported daily deaths, reported daily confirmed cases, population

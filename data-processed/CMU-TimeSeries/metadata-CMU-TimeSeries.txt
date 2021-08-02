@@ -8,17 +8,17 @@ model_contributors: Alden Green (Lead modeler - state, Carnegie Mellon Universit
   University), Vishnu Shankar (Stanford University), Jacob Bien (University of Southern 
   California), Logan Brooks (Carnegie Mellon University), Balasubramanian Narasimhan (Stanford 
   University), Samyak Rajanala (Stanford University), Aaron Rumack (Carnegie Mellon University), 
-  Noah Simon (University of Washington), James Sharpnack (UC Davis), Ryan Tibshirani (Senior 
+  Noah Simon (University of Washington), James Sharpnack (UC Davis), Daniel McDonald (University of British Columbia), Ryan Tibshirani (Senior 
   author, Carnegie Mellon University), and the Delphi COVID-19 Response Team
 website_url: https://delphi.cmu.edu
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: (State) A basic AR-type time series model fit using case counts and deaths as features.
   (County) Quantile regr. on county pop., case counts, self-reported symptom data, and doctor's 
   visits.
 team_funding: CDC Center of Excellence, gifts from Google and Facebook
 data_inputs: JHU CSSE confirmed case counts and deaths
-citation: 
 methods_long: "State level - A basic AR-type time series model fit using lagged values of case 
   \ counts and deaths as features. No assumptions are made regarding reopening or governmental\
   \ interventions. The model is jointly fit across all 50 US states, after some time-alignment\

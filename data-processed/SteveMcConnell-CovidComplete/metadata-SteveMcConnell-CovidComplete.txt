@@ -5,6 +5,7 @@ model_contributors: Steve McConnell (Construx) <stevemcc@construx.com>,
   Brian Donaldson (XYZZY) <maynebri@gmail.com>
 website_url: https://stevemcconnell.com/covid
 license: cc-by-4.0
+ensemble_of_hub_models: false
 team_model_designation: primary
 methods: National level and state level, near-term (1-4 week) fatality forecasts.
 team_funding: Construx Software
@@ -15,12 +16,13 @@ methods_long: "This is a near-term fatality prediction model that calculates and
   \ uses fatality trends at the national and state level, trends in positive virus\
   \ tests and total virus tests, and age-related demographics for state forecasts.\n\
   Model forecasts are based on predicting near-term deaths from recent positive virus\
-  \ tests. The model assumes average delays of 4 days from infection to test, 14-17.5\
-  \ days from positive test to death, and 18 days from infection to death.\
+  \ tests and recent deaths. The model assumes average delays of 14-21 days from positive test to death.\
+  \ The specific model chosen varies state by state and is selected based on the historical accuracy of each method \
+  \ in each state and/or the historical accuracy of the error-corrected version of each method.\
   \ No assumptions are made about the effectiveness of interventions or treatments;\
   \ the model assumes that any such change in effectiveness will be included implicitly\
   \ in the historical fatality data and the fatality rates calculated from that data.\
-  \ This model uses a Rational Actor assumption for weeks 3-4, in which states that \
+  \ This model uses a Rational Actor assumption for week 4, in which states that \
   \ have death rates below their historical averages remain flat and states that have \
   \ death rates above their historical averages revert toward their averages. \
   \ No assumptions are made regarding specifics of reopenings or specific governmental interventions."

@@ -1,0 +1,15 @@
+team_name: IUPUI CIS 
+model_name: HkPrMobiDyR
+model_abbr: IUPUI-HkPrMobiDyR
+model_contributors: Wen-Hao Chiang, George Mohler<chiangwe@iupui.edu>
+website_url: https://github.com/chiangwe/HawkPR
+license: cc-by-4.0
+team_model_designation: primary
+ensemble_of_hub_models: false
+methods: Hawkes processes with Dynamic reproduce number.
+team_funding: Will get.
+repo_url: https://github.com/chiangwe/HawkPR
+twitter_handles: reichlab
+data_inputs: incident death and cases from other models.
+citation: https://doi.org/10.1101/2020.06.06.20124149
+methods_long: 'Note that we submit our first predictions on 02/23/2021. Therefore, the predicitons are made on 02/22/2021. All the predictions are made when the models are trained carefully in a split of datasets. The training set has only included the dates before forecasting. Therefore, we carefully avoid the data leakage issue. Hawkes processes are used in machine learning for event clustering and causal inference, while they also can be viewed as stochastic versions of popular compartmental models used in epidemiology. Here we show how to develop accurate models of COVID-19 transmission using Hawkes processes with spatial-temporal covariates. We model the conditional intensity of new COVID-19 cases and deaths in the U.S. at the county level, estimating the dynamic reproduction number of the virus within an EM algorithm through a regression on Google mobility indices and demographic covariates in the maximization step. We validate the approach on both short-term and long-term forecasting tasks, showing that the Hawkes process outperforms several benchmark models currently used to track the pandemic, including an ensemble approach and an SEIR-variant. We also investigate which covariates and mobility indices are most important for building forecasts of COVID-19 in the U.S.'

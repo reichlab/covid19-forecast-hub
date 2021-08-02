@@ -8,6 +8,7 @@ model_contributors: Junyi Gao (IQVIA), Rakshith Sharma (Georgia Institute of Tec
 website_url: https://www.iqvia.com/landing/analytics-center-of-excellence
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: Spatio-Temporal Attention Network
 data_inputs: JHU CSSE confirmed case, recovered cases and deaths, state population, state population density,
   daily reported claims data from IQVIA

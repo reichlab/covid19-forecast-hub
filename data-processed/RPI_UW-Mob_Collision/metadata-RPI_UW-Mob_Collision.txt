@@ -5,6 +5,7 @@ model_contributors: Yunfeng Shi (RPI) shiy2@rpi.edu, Tanooj Shah (RPI) shaht2@rp
 website_url: http://rpi-uw-covid-mobility.herokuapp.com/
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: A mobility-informed simplified SIR model motivated by collision theory.
 team_funding: No funding support.
 data_inputs: JHU COVID-19 fatality and Google Mobility.
@@ -29,8 +30,16 @@ methods_long: "We incorporate mobility information into a simplified SIR model w
   \ error and the variation of the reference fatality. Quantile forecast is calculated \
   \ based on standard error assuming normal distribution. State-level forecast has been \
   \ included for 32 states. Other states and county-level forecast will be included later.\
-  \ Since Sep 6, 2020, the infection rate and recovery rate were fitted up to Aug 9, 2020, \
-  \ while assuming the infection rate drops 15% afterwards. This is motivated by the \
-  \ consistent over-prediction from our model solely based on mobility. This is also reasonable\
-  \ considering the mutation of the virus over more than half year. \
-  \ Google mobility data may have been affected by a recent Sep update. " 
+  \ Starting Nov 29th, we included a summer reduction of 10% from 06/01 to 09/01 and an \
+  \ election mobility increase of 25% from 09/01 to 11/03. The summer reduction of mobility \
+  \ accounts for elevated outdoor activities while election mobility increase accounts for \
+  \ large gatherings of political rally which maybe washed out in the averaged state-mobility. \
+  \ We assume 70% of the vulnerable population will be vaccinated within two months. \
+  \ The assumption is antibody will be effective 3 weeks after the first shot. \
+  \ To account for the recent mutations, we increases the infection rate by 5%. \
+  \ Two vaccination scenarios have been considered and predicted which are shown in our website. \
+  \ Google mobility data may have been affected by a recent Sep update. \
+  \ Due to the significant impact of the new variants, and the complexity involving vaccination, \
+  \ our simple mechanistic model cannot make meaningful prediction based on past mobility-fatality\
+  \ data anymore. Therefore, we will stop generating forecast as of April 5, 2021. This concludes \
+  \ our past eight months of involvement of this forecast efforts." 

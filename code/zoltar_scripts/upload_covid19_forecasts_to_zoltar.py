@@ -10,6 +10,7 @@ import hashlib
 import pickle
 import logging
 import json
+from dateutil.parser import parse
 
 import pprint
 
@@ -98,7 +99,9 @@ def upload_covid_forecast_by_model(conn, json_io_dict, forecast_filename, projec
                     overwrite=False, sync=True):
     conn.re_authenticate_if_necessary()
     if overwrite:
-        util.delete_forecast(conn, project_name, model_abbr, timezero_date)
+        print(f"Existing forecast({forecast_filename}) present. Deleting it on Zoltar to upload latest one")
+        del_job = util.delete_forecast(conn, project_name, model_abbr, timezero_date)
+        util.busy_poll_job(del_job)
 
     # check json formatting before upload
     # accepts either string or dictionary
@@ -112,11 +115,30 @@ def upload_covid_forecast_by_model(conn, json_io_dict, forecast_filename, projec
             quantile_json, error_from_transformation = quantile_io.json_io_dict_from_quantile_csv_file(...)""")
             sys.exit(1)
 
-    job = model.upload_forecast(json_io_dict, forecast_filename, timezero_date, notes)
-    if sync:
-        return util.busy_poll_job(job)
-    else:
-        return job
+    tries=0
+    # Runs only twice
+    while tries<2:
+        try:
+            job = model.upload_forecast(json_io_dict, forecast_filename, timezero_date, notes)
+            if sync:
+                return util.busy_poll_job(job)
+            else:
+                return job
+        except RuntimeError as err:
+            print(f"RuntimeError occured while uploading forecast. Error: {err}")
+            if err.args is not None and len(err.args)>1 and err.args[1].status_code==400 and not overwrite:
+                # status code is 400 and we need to rewrite this model.
+                response = err.args[1]
+                if str(json.loads(response.text)["error"]).startswith("A forecast already exists"): 
+                    # now we are sure it is the existing forecast error,, delete the one on zoltar and then try again.
+                    print(f"This forecast({model_abbr}) with timezero ({timezero_date}) is already present, deleting forecast on Zoltar and then retrying...")
+                    del_job = util.delete_forecast(conn, project_name, model_abbr, timezero_date)
+                    util.busy_poll_job(del_job)
+                    print("Deleted on Zoltar. Retrying now.")
+        finally:
+            # always update the number of tries.
+            tries+=1
+
 
 
 # Function to upload all forecasts in a specific directory
@@ -190,7 +212,22 @@ def upload_covid_all_forecasts(path_to_processed_model_forecasts, dir_name):
             if db.get(forecast, None) != checksum:
                 print(forecast, db.get(forecast, None))
                 if time_zero_date in existing_time_zeros:
-                    over_write = True
+                    
+                    # Check if the already existing forecast has the same issue date
+                    
+                    from datetime import date
+                    local_issue_date = date.today().strftime("%Y-%m-%d")
+
+                    uploaded_forecast = [forecast for forecast in model.forecasts if forecast.timezero.timezero_date.strftime(YYYY_MM_DD_DATE_FORMAT) == time_zero_date][0]
+                    uploaded_issue_date = parse(uploaded_forecast.issued_at).date()
+
+                    if local_issue_date == uploaded_issue_date:
+                        # Overwrite the existing forecast if has the same issue date
+                        over_write = True
+                        logger.info(f"Overwrite existing forecast={forecast} with newer version because the new issue_date={local_issue_date} is the same as the uploaded file issue_date={uploaded_issue_date}")
+                    else:
+                        logger.info(f"Add newer version to forecast={forecast} because the new issue_date={local_issue_date} is different from uploaded file issue_date={uploaded_issue_date}")
+
             else:
                 continue
 
@@ -264,6 +301,7 @@ if __name__ == '__main__':
         for directory, errors in output_errors.items():
             print("\n* ERROR IN '", directory, "'")
             print(errors)
+        os.sync()  # make sure we flush before exiting
         sys.exit("\n ERRORS FOUND EXITING BUILD...")
     else:
         print("✓ no errors")

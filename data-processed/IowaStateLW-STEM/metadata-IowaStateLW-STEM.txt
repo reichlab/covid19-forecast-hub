@@ -8,6 +8,7 @@ model_contributors: Lily Wang <lilywang@iastate.edu>, Guannan Wang <gwang01@wm.e
 website_url: https://covid19.stat.iastate.edu
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: Spatiotemporal Dynamics, Nowcasting and Forecasting of COVID-19 in the United
   States.
 data_inputs: New York Times -nytimes/covid-19-data, health department webpages,  County-level
