@@ -4071,3 +4071,8 @@ file_path,validation_date
 ./data-processed/MIT_ISOLAT-Mixtures/2021-08-02-MIT_ISOLAT-Mixtures.csv,2021-08-03 00:48:43.873308
 ./data-processed/CovidAnalytics-DELPHI/2021-08-02-CovidAnalytics-DELPHI.csv,2021-08-03 00:48:45.463837
 ./data-processed/HKUST-DNN/2021-08-02-HKUST-DNN.csv,2021-08-03 03:05:41.859734
+./data-processed/DDS-NBDS/2021-08-02-DDS-NBDS.csv,2021-08-03 18:29:09.630568
+./data-processed/JHU_UNC_GAS-StatMechPool/2021-08-01-JHU_UNC_GAS-StatMechPool.csv,2021-08-03 18:29:19.372262
+./data-processed/COVIDhub-trained_ensemble/2021-08-02-COVIDhub-trained_ensemble.csv,2021-08-03 18:29:35.411119
+./data-processed/COVIDhub-ensemble/2021-08-02-COVIDhub-ensemble.csv,2021-08-03 18:29:49.907512
+./data-processed/KITmetricslab-select_ensemble/2021-08-02-KITmetricslab-select_ensemble.csv,2021-08-03 18:29:51.757032
