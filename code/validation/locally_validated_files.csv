@@ -4126,3 +4126,5 @@ file_path,validation_date
 ./data-processed/PSI-DRAFT/2021-08-09-PSI-DRAFT.csv,2021-08-10 00:23:59.248583
 ./data-processed/CU-select/2021-08-08-CU-select.csv,2021-08-10 00:24:15.144928
 ./data-processed/DDS-NBDS/2021-08-09-DDS-NBDS.csv,2021-08-10 00:24:16.259281
+./data-processed/CovidAnalytics-DELPHI/2021-08-09-CovidAnalytics-DELPHI.csv,2021-08-10 03:00:28.628883
+./data-processed/HKUST-DNN/2021-08-09-HKUST-DNN.csv,2021-08-10 03:00:30.038210
