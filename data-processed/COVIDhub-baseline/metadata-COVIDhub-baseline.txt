@@ -11,7 +11,7 @@ team_funding: This model's development is funded by the US CDC grant number U01I
 repo_url: https://github.com/reichlab/covidModels
 twitter_handles: reichlab, jaradniemi
 data_inputs: cumulative and incident deaths or cases
-methods_long: 'For predictions of incidence, the median prediction at all future horizons
+methods_long: 'test For predictions of incidence, the median prediction at all future horizons
   is the most recent observed incidence.  Predictions of cumulative counts are derived
   from predictions of incidence; this means that the slope of the predictive medians
   for cumulative quantities from one week to the next will be constant and equal to
