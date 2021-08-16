@@ -81,7 +81,7 @@ jobs:
     - name: Generate truth csv files (NYTimes, USAFacts, JHU, Hospitalization, Zoltar)
       run: Rscript ./covid19-forecast-hub/code/R_scripts/generate_truth_csvs.R
       
-    - if: ${{ github.event.inputs.skipZoltarUpload == 'false' }}
+    - if: ${{ github.event.inputs == null || github.event.inputs.skipZoltarUpload == 'false' }}
       name: Push Zoltar truth to Zoltar
       run: python3 ./code/zoltar_scripts/upload_truth_to_zoltar.py
       working-directory: ./covid19-forecast-hub
