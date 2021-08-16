@@ -1,6 +1,11 @@
 name: (Active) Update JHU, NY Times, USAFacts truth data weekly
 on:
   workflow_dispatch:
+    inputs: 
+      skip_zoltar_upload:
+        description: 'true/false indicating whether to skip Zoltar upload'
+        required: false
+        default: 'false'
   schedule:
     - cron: '0 16 * * 0'
 
@@ -64,6 +69,8 @@ jobs:
     - name: Install R dependencies (for covidData + covidHubUtils)
       working-directory: ./covid19-forecast-hub
       run: Rscript code/R_scripts/install_dependencies.R
+      env:
+        GITHUB_PAT: ${{ secrets.GH_TOKEN }}
 
     - run: mkdir ./covidData/data-raw/JHU/
     
@@ -78,8 +85,8 @@ jobs:
       run: python3 ./code/zoltar_scripts/upload_truth_to_zoltar.py
       working-directory: ./covid19-forecast-hub
       env:
-        Z_USERNAME: ${{ secrets.Z_USERNAME}}
-        Z_PASSWORD: ${{ secrets.Z_PASSWORD}}
+        Z_USERNAME: ${{ secrets.Z_USERNAME }}
+        Z_PASSWORD: ${{ secrets.Z_PASSWORD }}
         
     # - name: Create truth JSON for visualization
     #   run: python3 ./data-truth/get_visualization_truth_json_from_csv.py

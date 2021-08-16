@@ -62,7 +62,7 @@ render_state_weekly_report <- function(curr_state_fips, state_ab) {
 
 # render report all states
 # parallelism
-numCores <- 4 # change this number to the number of cores on your computer
+numCores <- 3 # change this number to the number of cores on your computer
 registerDoParallel(numCores)
 foreach (i=seq_len(nrow(all_states))) %dopar% {
   render_state_weekly_report(all_states[i,]$fips, all_states[i,]$abbreviation)
