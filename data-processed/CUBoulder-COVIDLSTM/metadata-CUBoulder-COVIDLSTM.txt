@@ -15,7 +15,3 @@ team_model_designation: primary
 methods: Our model is a stacked LSTM deep learning-based model using a multivariate time series input with a temporal lag of 9 weeks.
 
 ensemble_of_hub_models: false
-
-institional_affil: University of Colorado Boulder
-
-twitter_handles: GeoHAILab
