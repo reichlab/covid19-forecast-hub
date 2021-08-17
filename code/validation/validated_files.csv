@@ -4180,3 +4180,6 @@ file_path,validation_date
 ./data-processed/JHU_CSSE-DECOM/2021-08-15-JHU_CSSE-DECOM.csv,2021-08-17 00:24:58.730519
 ./data-processed/DDS-NBDS/2021-08-16-DDS-NBDS.csv,2021-08-17 00:24:59.817047
 ./data-processed/KITmetricslab-select_ensemble/2021-08-16-KITmetricslab-select_ensemble.csv,2021-08-17 12:26:00.541080
+./data-processed/COVIDhub-trained_ensemble/2021-08-16-COVIDhub-trained_ensemble.csv,2021-08-17 18:23:11.487713
+./data-processed/FAIR-NRAR/2021-08-16-FAIR-NRAR.csv,2021-08-17 18:23:21.221228
+./data-processed/Microsoft-DeepSTIA/2021-08-16-Microsoft-DeepSTIA.csv,2021-08-17 18:23:25.104692
