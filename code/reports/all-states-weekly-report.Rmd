@@ -8,6 +8,8 @@ output:
     anchor_section: true
 params:
   state: "01"
+  conn: NA
+  quiet: false
 ---
 <!-- code to run rmarkdown::render(input="./vignettes/covidHubUtils-overview.Rmd") -->
 
@@ -96,9 +98,49 @@ date: "`r Sys.Date()`"
 
 ---
 ```{r zoltar-setup}
-## connect to Zoltar
-zoltar_connection <- new_connection()
-zoltar_authenticate(zoltar_connection, Sys.getenv("Z_USERNAME"), Sys.getenv("Z_PASSWORD"))
+zoltar_connection <- NA
+
+# make a new connection if no connection given
+if (!inherits(params$conn, "ZoltarConnection")) {
+  ## connect to Zoltar
+  zoltar_connection <<- new_connection()
+  
+  # try to connect to Zoltar 5 times; if all fail, fail the script
+  num_tries <- 0
+  success <- FALSE
+  while(num_tries < 5 && !success) {
+    tryCatch(
+      # try to authenticate
+      {
+        zoltar_authenticate(
+          zoltar_connection,
+          Sys.getenv("Z_USERNAME"),
+          Sys.getenv("Z_PASSWORD")
+        )
+        # <<- superassignment: should only do if preceding scope have
+        # such a variable!
+        # this statement is reached only if authentication is successful
+        success <<- TRUE
+      },
+      # authentication failed! retry
+      error = function(c) {
+        message(sprintf("Zoltar connection failed! %d retries remaining...", num_tries))
+      },
+      # add one to number of retries
+      finally = function(c) {
+        # <<- superassignment: should only do if preceding scope have
+        # such a variable!
+        num_tries <<- num_tries + 1
+      }
+    )
+  }
+  if (!success) {
+    stop("Could not make connection to Zoltar after 5 tries")
+  }
+# use connection if given
+} else {
+  zoltar_connection <<- params$conn
+}
 
 ## construct Zoltar query
 project_url <- "https://www.zoltardata.com/api/project/44/"
