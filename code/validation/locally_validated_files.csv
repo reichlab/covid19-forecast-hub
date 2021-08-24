@@ -4237,3 +4237,6 @@ file_path,validation_date
 ./data-processed/CovidAnalytics-DELPHI/2021-08-23-CovidAnalytics-DELPHI.csv,2021-08-24 00:27:28.223929
 ./data-processed/MIT_CritData-GBCF/2021-08-22-MIT_CritData-GBCF.csv,2021-08-24 00:27:29.178736
 ./data-processed/FAIR-NRAR/2021-08-23-FAIR-NRAR.csv,2021-08-24 06:25:00.042883
+./data-processed/KITmetricslab-select_ensemble/2021-08-23-KITmetricslab-select_ensemble.csv,2021-08-24 18:24:31.277610
+./data-processed/COVIDhub-trained_ensemble/2021-08-23-COVIDhub-trained_ensemble.csv,2021-08-24 18:24:45.602323
+./data-processed/epiforecasts-ensemble1/2021-08-23-epiforecasts-ensemble1.csv,2021-08-24 18:24:47.851129
