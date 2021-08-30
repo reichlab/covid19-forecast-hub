@@ -6,6 +6,6 @@ website_url: https://krausstat.shinyapps.io/covid19global/
 license: cc-by-4.0
 team_model_designation: primary
 ensemble_of_hub_models: false
-methods: Seasonal ARIMA model with outlier detection fitted to transformed daily series. Weekly forecasts are obtained by aggregating bootstrap daily forecast paths.
-methods_long: This is a seasonal ARIMA model with outlier detection fitted to transformed daily series. Weekly forecasts are obtained by aggregating bootstrap daily forecast paths.
+methods: ARIMA model with outlier detection fitted to transformed series.
+methods_long: This is an ARIMA model with outlier detection fitted to transformed series.
 data_inputs: JHU CSSE
