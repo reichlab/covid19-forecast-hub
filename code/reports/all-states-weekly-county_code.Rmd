@@ -13,7 +13,7 @@ inc_case_p6_c <- data.frame(inc_case_all_points %>%
 inc_case_p6_u_c <- unique(inc_case_p6_c)
 
 # submit query for forecasts past 6 weeks-using covidhubutils
-inc_case_forecast_p6_c<-load_forecasts(models=c("COVIDhub-ensemble"),forecast_dates =last_6_mondays,locations =county,  types = c("quantile"),targets = c(inc_case_targets),  verbose = FALSE)
+inc_case_forecast_p6_c<-load_forecasts(models=c("COVIDhub-ensemble"),dates =last_6_mondays,locations =county,  types = c("quantile"),targets = c(inc_case_targets),  verbose = FALSE)
 
 ## join inc cases with forecast
 inc_case_all_p6_c  <- inc_case_forecast_p6_c %>%
@@ -43,7 +43,7 @@ pcounty_inc_case_PI_c<-inc_case_all_p6x_c %>% group_by(alpha) %>%
     dplyr::mutate(PI_coverp = as.numeric(substr(inc_case_inPI_PI_cover*100, 0,2))) %>% 
     dplyr::mutate(PI_coverpl = as.numeric(substr(inc_case_inPI_low_PI_coverl*100, 0,2))) %>%   
     dplyr::mutate(PI_coverph = as.numeric(substr(inc_case_inPI_high_PI_coverh*100, 0,2)))  %>%
-    dplyr::mutate(bias = ifelse(PI_coverpl<=PI_coverph, 'higher', 'lower'))
+    dplyr::mutate(bias = ifelse(PI_coverpl<=PI_coverph, 'lower', 'higher'))
 
 C_PI95_cover_c<-pcounty_inc_case_PI_c %>%
   filter(alpha=="0.050")

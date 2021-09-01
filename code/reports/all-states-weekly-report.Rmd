@@ -153,6 +153,9 @@ next_saturday <- as.Date(calc_target_week_end_date(today(), horizon= 0))
 # next_saturday <-  as.Date("2021-03-20")
 saturday_4_wk_ahead <- next_saturday + 7*3
 saturday_4_wk_ahead_txt <- format(saturday_4_wk_ahead, "%B %d")
+
+saturday_2_wk_ahead <- next_saturday + 7*1
+saturday_2_wk_ahead_txt <- format(saturday_2_wk_ahead, "%B %d")
 last_5_saturdays <- next_saturday - 7*c(5:1)
 last_12_saturdays <- next_saturday - 7*c(12:1)
 last_6_saturdays <- next_saturday - 7*c(6:1)
@@ -190,7 +193,7 @@ this_week_timezeroes <- timezeros(zoltar_connection, project_url) %>%
 
 models_this_week<-load_forecasts(
         # models=c(),
-        forecast_dates = this_week_timezeroes,
+        dates = this_week_timezeroes,
         types = c("point"),
         targets = c("1 wk ahead cum death", "1 wk ahead inc death", "1 wk ahead inc case", "1 day ahead inc hosp"),
          verbose = FALSE)%>%
@@ -244,14 +247,14 @@ Weekly reports from the COVID-19 Forecast Hub can be found at [this page](https:
 ```{r download-ensemble-data}
 inc_death_targets <- paste(1:4, "wk ahead inc death")
 cum_death_targets <- paste(1:4, "wk ahead cum death")
-inc_case_targets <- paste(1:4, "wk ahead inc case")
+inc_case_targets <- paste(1:2, "wk ahead inc case")
 inc_hosp_targets <- paste(1:28, "day ahead inc hosp")
 
 # submit query
 
 dat<-load_forecasts(
         models=c("COVIDhub-ensemble"),
-        forecast_date = this_monday, 
+        dates = this_monday, 
         types = c("point", "quantile"),
         targets = c(inc_death_targets, cum_death_targets,inc_case_targets),
        location=c("US",state_county),
@@ -264,7 +267,7 @@ dat<-load_forecasts(
 
 dat_hosp<-load_forecasts(
         models=c("COVIDhub-ensemble"),
-        forecast_date = this_monday, 
+        dates = this_monday, 
         types = c("point", "quantile"),
         targets = paste(1:28, "day ahead inc hosp"),
        location=c("US",state_county),
@@ -322,12 +325,12 @@ state_inc_case_range <- dat %>%
   round(-1) %>% format(big.mark = ",")
 
 state_inc_case_wk_pi_round <- dat %>% 
-  filter(fips==state, target == "4 wk ahead inc case", quantile %in% c(0.025, 0.975)) %>% 
+  filter(fips==state, target == "2 wk ahead inc case", quantile %in% c(0.025, 0.975)) %>% 
   pull(value) %>% sort() %>%
   round(-2) %>% format(big.mark = ",")
 
 state_inc_case_wk_pi <- dat %>% 
-  filter(fips==state, target == "4 wk ahead inc case", quantile %in% c(0.025, 0.975)) %>% 
+  filter(fips==state, target == "2 wk ahead inc case", quantile %in% c(0.025, 0.975)) %>% 
   pull(value) %>% sort() %>% 
   format(big.mark = ",")
 
@@ -470,7 +473,7 @@ inc_death_p6 <- data.frame(inc_death_all_points %>%
 inc_death_p6_u <- unique(inc_death_p6)
 
 # submit query for forecasts past 6 weeks-using covidhubutils
-inc_death_forecast_p6<-load_forecasts(models=c("COVIDhub-ensemble"),forecast_dates =last_6_mondays,locations =state,  types = c("quantile"),targets = c(inc_death_targets),  verbose = FALSE)
+inc_death_forecast_p6<-load_forecasts(models=c("COVIDhub-ensemble"),dates =last_6_mondays,locations =state,  types = c("quantile"),targets = c(inc_death_targets),  verbose = FALSE)
 
 ## join inc death with forecast
 inc_death_all_p6  <- inc_death_forecast_p6 %>%
@@ -500,7 +503,7 @@ pstate_inc_death_PI<-inc_death_all_p6x %>% group_by(location,alpha) %>%
     dplyr::mutate(PI_coverp = as.numeric(substr(inc_death_inPI_PI_cover*100, 0,3))) %>%
     dplyr::mutate(PI_coverpl = as.numeric(substr(inc_death_inPI_low_PI_coverl*100, 0,3))) %>%
     dplyr::mutate(PI_coverph = as.numeric(substr(inc_death_inPI_high_PI_coverh*100, 0,3)))  %>%
-    dplyr::mutate(bias = ifelse(PI_coverpl<=PI_coverph, 'higher', 'lower')) 
+     dplyr::mutate(bias = ifelse(PI_coverpl<=PI_coverph, 'lower', 'higher'))
 
 D_PI95_cover<-pstate_inc_death_PI %>%
  filter(alpha=="0.050")
@@ -709,7 +712,7 @@ inc_hosp_p6 <- data.frame(inc_hosp_all_points %>%
 inc_hosp_p6_u <- unique(inc_hosp_p6)
 
 # submit query for forecasts past 6 weeks-using covidhubutils
-inc_hosp_forecast_p6<-load_forecasts(models=c("COVIDhub-ensemble"),forecast_dates =last_6_mondays,locations =state,  types = c("quantile"),targets = paste(1:28, "day ahead inc hosp"),  verbose = FALSE,
+inc_hosp_forecast_p6<-load_forecasts(models=c("COVIDhub-ensemble"),dates =last_6_mondays,locations =state,  types = c("quantile"),targets = paste(1:28, "day ahead inc hosp"),  verbose = FALSE,
        source = "zoltar")%>%
       rename(timezero=forecast_date, class=type, day_ahead=horizon)%>%
       mutate(target=paste(day_ahead,target_variable,sep=" day ahead "))
@@ -744,7 +747,7 @@ pstate_inc_hosp_PI<-inc_hosp_all_p6x %>% group_by(location,alpha) %>%
     dplyr::mutate(PI_coverp = as.numeric(substr(inc_hosp_inPI_PI_cover*100, 0,3))) %>% 
     dplyr::mutate(PI_coverpl = as.numeric(substr(inc_hosp_inPI_low_PI_coverl*100, 0,3))) %>%   
     dplyr::mutate(PI_coverph = as.numeric(substr(inc_hosp_inPI_high_PI_coverh*100, 0,3)))  %>%
-    dplyr::mutate(bias = ifelse(PI_coverpl<=PI_coverph, 'higher', 'lower'))
+    dplyr::mutate(bias = ifelse(PI_coverpl<=PI_coverph, 'lower', 'higher'))
 
 H_PI95_cover<-pstate_inc_hosp_PI %>% 
   filter(alpha=="0.050") 
@@ -936,7 +939,9 @@ datatable(wide_point_dat_hosp %>%
 
 ### Cases
 
-The ensemble model predicts that weekly totals of observed cases in each of the next four weeks will be between `r state_inc_case_range[1]` and `r state_inc_case_range[2]` cases each week. However for the week ending `r saturday_4_wk_ahead_txt`, the ensemble shows substantial uncertainty, with observed cases between `r state_inc_case_wk_pi_round[1]` and `r state_inc_case_wk_pi_round[2]` deemed possible (95% prediction interval:  `r state_inc_case_wk_pi[1]` -  `r state_inc_case_wk_pi[2]`).
+As of September 6, 2021 the ensemble forecast for cases only reports up to two-week ahead forecasts, due to persistent large inaccuracies observed in larger forecasts. 
+
+For the week ending `r saturday_2_wk_ahead_txt`, the ensemble model predicts that weekly totals of observed cases in each of the next two weeks will be between `r state_inc_case_range[1]` and `r state_inc_case_range[2]` cases each week. However for the week ending `r saturday_4_wk_ahead_txt`, the ensemble shows substantial uncertainty, with observed cases between `r state_inc_case_wk_pi_round[1]` and `r state_inc_case_wk_pi_round[2]` deemed possible (95% prediction interval:  `r state_inc_case_wk_pi[1]` -  `r state_inc_case_wk_pi[2]`).
 
 ```{r accuracy of case models past 6 weeks-state}
 
@@ -966,7 +971,7 @@ inc_case_p6 <- data.frame(inc_case_all_points %>%
 inc_case_p6_u <- unique(inc_case_p6)
 
 # submit query for forecasts past 6 weeks-using covidhubutils
-inc_case_forecast_p6<-load_forecasts(models=c("COVIDhub-ensemble"),forecast_dates =last_6_mondays,locations =state,  types = c("quantile"),targets = c(inc_case_targets),  verbose = FALSE)
+inc_case_forecast_p6<-load_forecasts(models=c("COVIDhub-ensemble"),dates =last_6_mondays,locations =state,  types = c("quantile"),targets = c(inc_case_targets),  verbose = FALSE)
 
 ## join inc cases with forecast
 inc_case_all_p6  <- inc_case_forecast_p6 %>%
@@ -996,7 +1001,7 @@ pstate_inc_case_PI<-inc_case_all_p6x %>% group_by(location,alpha) %>%
     dplyr::mutate(PI_coverp = as.numeric(substr(inc_case_inPI_PI_cover*100, 0,3))) %>% 
     dplyr::mutate(PI_coverpl = as.numeric(substr(inc_case_inPI_low_PI_coverl*100, 0,3))) %>%   
     dplyr::mutate(PI_coverph = as.numeric(substr(inc_case_inPI_high_PI_coverh*100, 0,3)))  %>%
-    dplyr::mutate(bias = ifelse(PI_coverpl<=PI_coverph, 'higher', 'lower'))
+    dplyr::mutate(bias = ifelse(PI_coverpl<=PI_coverph, 'lower', 'higher'))
 
 C_PI95_cover<-pstate_inc_case_PI %>% 
   filter(alpha=="0.050") 
