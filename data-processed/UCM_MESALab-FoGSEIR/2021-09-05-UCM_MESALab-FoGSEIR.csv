@@ -1,4 +1,4 @@
-﻿forecast_date,target,target_end_date,location,type,quantile,value
+forecast_date,target,target_end_date,location,type,quantile,value
 2021-09-05,1 wk ahead inc death,2021-09-11,US,point,,11547
 2021-09-05,1 wk ahead inc death,2021-09-11,US,quantile,0.01,10036
 2021-09-05,1 wk ahead inc death,2021-09-11,US,quantile,0.025,10379
