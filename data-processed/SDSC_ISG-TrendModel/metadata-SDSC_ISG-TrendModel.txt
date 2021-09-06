@@ -1,0 +1,28 @@
+team_name: Swiss Data Science Center / University of Geneva
+model_name: Trend Model
+model_abbr: SDSC_ISG-TrendModel
+model_contributors: Ekaterina Krymova (Swiss Data Science Center),
+  Dorina Thanou (Center for Intelligent Systems, EPFL),
+  Benjamin Bejar Haro (Swiss Data Science Center),
+  Tao Sun (Swiss Data Science Center) <tao.sun@datascience.ch>,
+  Gavin Lee (Swiss Data Science Center), Elisa Manetti (University of Geneva),
+  Christine Choirat (Swiss Data Science Center),
+  Antoine Flahault (University of Geneva),
+  Guillaume Obozinski (Swiss Data Science Center)
+website_url: https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/
+license: cc-by-4.0
+team_model_designation: primary
+methods: The Trend Model predicts daily cases and deaths using linear
+  extrapolation on the linear or log scale of the underlying trend estimated
+  by a robust LOESS seasonal-trend decomposition model.
+repo_url: https://renkulab.io/gitlab/covid-19/covid-19-forecast
+data_inputs: JHU CSSE (confirmed cases; reported fatalities)
+citation: https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/
+methods_long: "Our forecasts are based on the reported numbers of cases and
+  deaths at the country or regional level. Our modeling substantially relies on
+  estimation of the underlying trend by a robust LOESS seasonal-trend
+  decomposition model, which allows to account for non-stationary weekly
+  seasonality, outliers, missing data and delayed reports. To further predict
+  daily cases and deaths we use linear extrapolation of the estimated smooth
+  trend either on the original or on the logarithmic scale."
+
