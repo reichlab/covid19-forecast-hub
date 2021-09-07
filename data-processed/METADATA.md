@@ -91,7 +91,7 @@ A boolean value (`true` or `false`) that indicates whether a model combines mult
 
 ## Optional
 
-### institional_affil
+### institutional_affil
 
 University or company names, if relevant. 
 
