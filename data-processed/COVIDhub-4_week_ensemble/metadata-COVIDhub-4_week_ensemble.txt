@@ -1,5 +1,5 @@
 team_name: COVID-19 Forecast Hub
-model_name: ensemble
+model_name: 4_week_ensemble
 model_abbr: COVIDhub-4_week_ensemble
 model_contributors: Nutcha Wattanachit, Evan L. Ray, Nicholas Reich <nick@schoolph.umass.edu>
 website_url: https://covid19forecasthub.org/
