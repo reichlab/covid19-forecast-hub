@@ -310,7 +310,7 @@ For the week ending `r saturday_4_wk_ahead_txt`, the ensemble forecasts that rep
 
 For `r format(wk4_monday, "%B %d, %Y")` COVID-19 daily hospitalizations in the US will be between `r us_inc_hosp_wk_pi_round[1]` and `r us_inc_hosp_wk_pi_round[2]` (95% prediction interval: `r us_inc_hosp_wk_pi[1]` - `r us_inc_hosp_wk_pi[2]`).
 
-As of September 6, 2021 the ensemble forecast for cases only reports up to two-week ahead forecasts, due to persistent large inaccuracies observed in larger forecasts. For the week ending `r saturday_2_wk_ahead_txt`, the ensemble forecasts that reported  COVID-19 cases in the US will be between `r us_inc_case_wk_pi_round[1]` and `r us_inc_case_wk_pi_round[2]` (95% prediction interval: `r us_inc_case_wk_pi[1]` - `r us_inc_case_wk_pi[2]`). 
+As of September 6, 2021 the ensemble forecast for cases only reports up to two-week ahead forecasts, due to persistent large inaccuracies observed when forecasting beyond two weeks. For the week ending `r saturday_2_wk_ahead_txt`, the ensemble forecasts that reported  COVID-19 cases in the US will be between `r us_inc_case_wk_pi_round[1]` and `r us_inc_case_wk_pi_round[2]` (95% prediction interval: `r us_inc_case_wk_pi[1]` - `r us_inc_case_wk_pi[2]`). 
 
 
 
