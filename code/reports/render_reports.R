@@ -108,8 +108,11 @@ print("rendering state-level reports...")
 
 # attempt parallelism
 # try to detect number of cores
+# see https://stackoverflow.com/questions/50168647/multiprocessing-causes-python-to-crash-and-gives-an-error-may-have-been-in-progr/52230415
+# for MacOS >10.13 multithreading issues
 print("attempting to parallelize state-level report generation...")
 numCores <- parallel::detectCores()
+print(paste0("Number of logical cores: ", numCores))
 if (!is.na(numCores) || numCores == 1) {
   print("multi-core system detected! starting state-level report generation in parallel...")
   registerDoParallel(numCores)
@@ -160,7 +163,12 @@ curr_dir_files <- list.files()
 report_files <- curr_dir_files[
   which(sapply(
     curr_dir_files,
-    function (s) startsWith(s, toString(Sys.Date()))
+    function(s) {
+      return(
+        startsWith(s, toString(Sys.Date())) &
+        endsWith(s, ".html")
+      )
+    }
   ))
 ]
 
