@@ -18,5 +18,7 @@ methods_long: "Deterministic fit of a compartmental SEIRX model to cumulative de
   are stratified by age. 'I' compartments are additionally divided by disease severity
   into Asymptomatic, Mild, Flu-like, and Severe.  Severe disease is defined by the
   need for an ICU bed. Interventions are fit generically to an n-value smooth function.  Forward
-  projections are conditional on interventions/reproductive number remaining unchanged.\n Updates:\n July 20 - model is fit using MCMC procedure\n August 10 - R(t) is fit using n=3, 4, and 5 values. The n-value resulting in the lowest AICc score is used for the forecast."
+  projections are conditional on interventions/reproductive number remaining unchanged.\n Updates:\n July 20, 2020 - model is fit using MCMC procedure\n August 10 - R(t) is fit using n=3, 4, and 5 values. The n-value resulting in the lowest AICc score is used for the forecast. \n
+September 6, 2021 - Update to sampling procedure for R(t) time-intervals.\n
+September 13, 2021 - Model now estimates system states on June 1, 2021 and then fits to data from June 1 to present.\n"
 
