@@ -4537,3 +4537,7 @@ file_path,validation_date
 ./data-processed/COVIDhub-baseline/2021-09-20-COVIDhub-baseline.csv,2021-09-21 00:22:47.481192
 ./data-processed/AIpert-pwllnod/2021-09-20-AIpert-pwllnod.csv,2021-09-21 00:22:50.362070
 ./data-processed/KITmetricslab-select_ensemble/2021-09-20-KITmetricslab-select_ensemble.csv,2021-09-21 12:22:14.114502
+./data-processed/COVIDhub-ensemble/2021-09-20-COVIDhub-ensemble.csv,2021-09-21 15:13:25.682142
+./data-processed/COVIDhub-trained_ensemble/2021-09-20-COVIDhub-trained_ensemble.csv,2021-09-21 15:13:40.972445
+./data-processed/JHUAPL-SLPHospEns/2021-09-20-JHUAPL-SLPHospEns.csv,2021-09-21 15:13:45.316247
+./data-processed/COVIDhub-4_week_ensemble/2021-09-20-COVIDhub-4_week_ensemble.csv,2021-09-21 15:14:01.038205
