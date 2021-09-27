@@ -1,4 +1,4 @@
-team_name: CU Boulder 
+team_name: CU Boulder
 
 model_name: COVID LSTM
 
@@ -12,6 +12,6 @@ license: cc-by-4.0
 
 team_model_designation: primary
 
-methods: Our model is a stacked LSTM deep learning-based model using a multivariate time series input with a temporal lag of 9 weeks.
+methods: Our forecasts are produced by a spatiotemporal LSTM classification model using a multivariate time series input with a temporal lag of 9 weeks and hand engineered spatial features.
 
 ensemble_of_hub_models: false
