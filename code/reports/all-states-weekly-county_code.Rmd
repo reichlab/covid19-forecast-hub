@@ -226,7 +226,7 @@ The sortable and searchable table below shows the total number of reported COVID
 
 For county-level case forecasts made over the last 6 weeks in `r state_name` for which observed data are now available, the 95% prediction intervals covered the truth `r C_PI95_covern`% of the time and the 50% prediction intervals covered the truth `r C_PI50_covern`% of the time.  `r bias_note_c_c` 
 
-Looking at the rates allows for easier comparison across counties, where you can see which counties have had or are predicted to have propoportionally higher rates in comparison to other counties. These tables calculate the weekly case count and rate of reported COVID-19 cases in the population (standardized per 100,000 population) over the last week(`r format(last_5_saturdays[4]+1, "%B %d, %Y")` to `r format(last_5_saturdays[5], "%B %d, %Y")`) and two weeks ahead (`r format(last_5_saturdays[5]+8, "%B %d, %Y")` to `r format(last_5_saturdays[5]+14, "%B %d, %Y")`).
+Looking at the rates allows for easier comparison across counties, where you can see which counties have had or are predicted to have propoportionally higher rates in comparison to other counties. These tables calculate the weekly case count and rate of reported COVID-19 cases in the population (standardized per 100,000 population) over the last week(`r format(last_5_saturdays[4]+1, "%B %d, %Y")` to `r format(last_5_saturdays[5], "%B %d, %Y")`) and two weeks ahead (`r format(last_5_saturdays[5]+1, "%B %d, %Y")` to `r format(last_5_saturdays[5]+7, "%B %d, %Y")`).
 
 When interpreting probability of an increase, it's important to note that the increase or decrease is relative to the location-specific recent observed incidence, which varies across locations.
 
@@ -241,30 +241,28 @@ ensemble_pointdat1  <- dat  %>%
 
 wide_point_dat1 <- spread(ensemble_pointdat1, target, value) %>%
   left_join(recent_inc_case_totals) %>%
-  mutate(next_2wk_cases = `2 wk ahead inc case`,
-         next_1wk_cases = `1 wk ahead inc case`,
+  mutate(next_1wk_cases = `1 wk ahead inc case`,
     pop_x_1k = round(Population/1000),
     last_1wk_cases_rate = round(last_1wk_cases/Population*100000/7,3),
     last_2wk_cases_rate = round(last_2wk_cases/Population*100000/14,3),
-    next_2wk_cases_rate = round(next_2wk_cases/Population*100000/7,3),
     next_1wk_cases_rate = round(next_1wk_cases/Population*100000/7, 3),
-    diff_wk_cases_rate = round(next_2wk_cases_rate - last_1wk_cases_rate, 3)) %>%
+    diff_wk_cases_rate = round(next_1wk_cases_rate - last_1wk_cases_rate, 3)) %>%
   select(location_name.x, Population,
-    last_1wk_cases,last_2wk_cases, next_2wk_cases,  next_1wk_cases,  last_1wk_cases_rate,  last_2wk_cases_rate,next_1wk_cases_rate, next_2wk_cases_rate, diff_wk_cases_rate)
+    last_1wk_cases,last_2wk_cases, next_1wk_cases,  last_1wk_cases_rate,  last_2wk_cases_rate,next_1wk_cases_rate, diff_wk_cases_rate)
 
 
 
 #filter find first quantile where predicting future 2 weeks >= previous week count
 ensemble_quantdat1 <- dat %>%
-  filter(target == "2 wk ahead inc case") %>%
+  filter(target == "1 wk ahead inc case") %>%
   filter(class == "quantile")  
 
 wide_quant_dat1 <- spread(ensemble_quantdat1, target, value) %>%
   left_join(recent_inc_case_totals %>% select(fips, location_name.x, last_1wk_cases)) %>%
-  mutate(next_2wk_cases = `2 wk ahead inc case`)
+  mutate(next_1wk_cases = `1 wk ahead inc case`)
 
 quant_cutoff1 <- wide_quant_dat1 %>%
-  filter(next_2wk_cases >= last_1wk_cases) %>%
+  filter(next_1wk_cases >= last_1wk_cases) %>%
   mutate(prob_case_up = 1-quantile) %>%
 select( quantile, location_name.x, prob_case_up,class)
 
@@ -280,7 +278,7 @@ wide_point_dat1p <- merge(wide_point_dat1, quant_cutoff1min, by="location_name.x
 ```{r make-datatable-inc-case-rates county}
 
 ## color for rates
-case_rate_max_1wk <- max(c(wide_point_dat1$last_1wk_cases_rate, wide_point_dat1$next_2wk_cases_rate))
+case_rate_max_1wk <- max(c(wide_point_dat1$last_1wk_cases_rate))
 brks <- seq(0, case_rate_max_1wk, length.out = 100) #quantile(df, probs = seq(.05, .95, .05), na.rm = TRUE)
 clrs <- round(seq(255, 40, length.out = length(brks) + 1), 0) %>%
   {paste0("rgb(255,", ., ",", ., ")")}
@@ -290,11 +288,11 @@ clrs <- round(seq(255, 40, length.out = length(brks) + 1), 0) %>%
 # brks1 <- seq(-case_rate_diff_2wk, case_rate_diff_2wk, length.out = 100) #quantile(df, probs = seq(.05, .95, .05), na.rm = TRUE)
 # clrs1 <- colorRampPalette(colors = rev(RColorBrewer::brewer.pal(n=3, "RdBu")))(length(brks1)+1)
 
-table2_cap <- paste0("Table 2:",  state_name, " county level observed and predicted COVID-19 cases for the previous week  and two weeks ahead.")
+table2_cap <- paste0("Table 2:",  state_name, " county level observed and predicted COVID-19 cases for the previous week  and one week ahead.")
 
 table2_Observed <- paste0("Observed: (", format(last_5_saturdays[4]+1, "%m-%d-%Y") ," to ",format(last_5_saturdays[5], "%m-%d-%Y"),")")
 
-table2_Predicted <- paste0("Predicted: (", format(last_5_saturdays[5]+8, "%m-%d-%Y") ," to ",format(last_5_saturdays[5]+14, "%m-%d-%Y"),")")
+table2_Predicted <- paste0("Predicted: (", format(last_5_saturdays[5]+1, "%m-%d-%Y") ," to ",format(last_5_saturdays[5]+7, "%m-%d-%Y"),")")
 
 
 # a custom table container
@@ -314,7 +312,7 @@ sketch_tab3 = htmltools::withTags(table(
 datatable(wide_point_dat1p %>%
     select(location_name.x, Population,
        last_1wk_cases,
-      last_1wk_cases_rate, next_2wk_cases, next_2wk_cases_rate, diff_wk_cases_rate) %>%
+      last_1wk_cases_rate, next_1wk_cases, next_1wk_cases_rate, diff_wk_cases_rate) %>%
     arrange(desc(last_1wk_cases_rate)),
   caption = table2_cap,
   options = list(
@@ -328,8 +326,8 @@ datatable(wide_point_dat1p %>%
     # 'Population, \'000'='pop_x_1k',
     'Weekly Case count (Obs)'='last_1wk_cases',
     'Rate per 100K (Obs)'='last_1wk_cases_rate',
-    'Weekly Case count (Pred)'='next_2wk_cases',
-    'Rate per 100K (Pred)'='next_2wk_cases_rate',
+    'Weekly Case count (Pred)'='next_1wk_cases',
+    'Rate per 100K (Pred)'='next_1wk_cases_rate',
      'Death rate difference'='diff_wk_cases_rate'),
      container=sketch_tab3) %>%
   ## formatStyle("Rate per 100K", backgroundColor = styleInterval(brks, clrs)) %>%
