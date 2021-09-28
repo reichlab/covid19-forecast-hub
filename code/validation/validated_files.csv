@@ -4591,3 +4591,6 @@ file_path,validation_date
 ./data-processed/CovidAnalytics-DELPHI/2021-09-27-CovidAnalytics-DELPHI.csv,2021-09-28 00:25:10.053785
 ./data-processed/GT-DeepCOVID/2021-09-27-GT-DeepCOVID.csv,2021-09-28 00:25:14.410947
 ./data-processed/KITmetricslab-select_ensemble/2021-09-27-KITmetricslab-select_ensemble.csv,2021-09-28 12:26:07.520315
+./data-processed/JHUAPL-SLPHospEns/2021-09-27-JHUAPL-SLPHospEns.csv,2021-09-28 18:21:39.140218
+./data-processed/FDANIHASU-Sweight/2021-09-27-FDANIHASU-Sweight.csv,2021-09-28 18:21:39.545875
+./data-processed/COVIDhub-trained_ensemble/2021-09-27-COVIDhub-trained_ensemble.csv,2021-09-28 18:21:53.540374
