@@ -5,6 +5,6 @@ model_contributors: Md Ishfaq ur Rahman (University of Toledo) <GISAGCovid@utole
 website_url: https://gisag.maps.arcgis.com/apps/dashboards/c1e2502c67204f5683baf07bbc387867
 license: cc-by-nc-4.0
 team_model_designation: primary
-methods: County-level spatial panel data model for contiguous United States. Features include mobility, non-pharmaceutical interventions/ policy adaptations and weather data to predict weekly incident number of COVID-19 cases.
+methods: County-level spatial panel data model for contiguous United States.
 ensemble_of_hub_models: false
 data_inputs: GoogleCloudPlatform/covid-19-open-data
