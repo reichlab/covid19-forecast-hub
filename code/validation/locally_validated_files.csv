@@ -4591,3 +4591,16 @@ file_path,validation_date
 ./data-processed/CovidAnalytics-DELPHI/2021-09-27-CovidAnalytics-DELPHI.csv,2021-09-28 00:25:10.053785
 ./data-processed/GT-DeepCOVID/2021-09-27-GT-DeepCOVID.csv,2021-09-28 00:25:14.410947
 ./data-processed/KITmetricslab-select_ensemble/2021-09-27-KITmetricslab-select_ensemble.csv,2021-09-28 12:26:07.520315
+./data-processed/JHUAPL-SLPHospEns/2021-09-27-JHUAPL-SLPHospEns.csv,2021-09-28 18:21:39.140218
+./data-processed/FDANIHASU-Sweight/2021-09-27-FDANIHASU-Sweight.csv,2021-09-28 18:21:39.545875
+./data-processed/COVIDhub-trained_ensemble/2021-09-27-COVIDhub-trained_ensemble.csv,2021-09-28 18:21:53.540374
+./data-processed/Microsoft-DeepSTIA/2021-09-27-Microsoft-DeepSTIA.csv,2021-09-29 00:24:45.778139
+./data-processed/FAIR-NRAR/2021-09-28-FAIR-NRAR.csv,2021-09-30 00:25:14.315689
+./data-processed/IHME-CurveFit/2021-10-01-IHME-CurveFit.csv,2021-10-01 18:23:13.391060
+./data-processed/FAIR-NRAR/2021-10-01-FAIR-NRAR.csv,2021-10-03 00:24:35.096981
+./data-processed/PandemicCentral-COVIDForest/2021-10-03-PandemicCentral-COVIDForest.csv,2021-10-04 00:24:38.025849
+./data-processed/FAIR-NRAR/2021-10-02-FAIR-NRAR.csv,2021-10-04 00:24:49.667295
+./data-processed/BPagano-RtDriven/2021-10-03-BPagano-RtDriven.csv,2021-10-04 02:58:37.055207
+./data-processed/Karlen-pypm/2021-10-03-Karlen-pypm.csv,2021-10-04 02:58:44.459237
+./data-processed/TTU-squider/2021-10-03-TTU-squider.csv,2021-10-04 02:58:45.507565
+./data-processed/HKUST-DNN/2021-10-04-HKUST-DNN.csv,2021-10-04 12:23:52.360158
