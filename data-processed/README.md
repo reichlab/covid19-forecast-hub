@@ -229,7 +229,8 @@ As an example, for day-ahead forecasts with a `forecast_date` of a
 Monday, a 1 day ahead inc hosp forecast corresponds to the number of
 incident hospitalizations on Tuesday, 2 day ahead to Wednesday, etc….
 
-Currently there is no “gold standard” for hospitalization data.
+Predictions for this target will be evaluated compared to the number of
+new reported hospitalizations, as recorded by HealthData.gov. For more detail, see our [Ground Truth README page](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-truth/README.md#hospitalization-data).
 
 #### REMOVED targets
 

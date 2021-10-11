@@ -55,7 +55,7 @@ all_states <-locs$fips[2:58]
 # # # 
 state <-params$state
 
-# testing
+# # testing
 # state <- "25"
 
 # title with state name
@@ -152,10 +152,11 @@ next_saturday <- as.Date(calc_target_week_end_date(today(), horizon= 0))
 # # # # use fixed date
 # next_saturday <-  as.Date("2021-03-20")
 saturday_4_wk_ahead <- next_saturday + 7*3
-saturday_4_wk_ahead_txt <- format(saturday_4_wk_ahead, "%B %d")
+saturday_4_wk_ahead_txt <- format(saturday_4_wk_ahead, "%B %d, %Y")
 
 saturday_2_wk_ahead <- next_saturday + 7*1
-saturday_2_wk_ahead_txt <- format(saturday_2_wk_ahead, "%B %d")
+saturday_2_wk_ahead_txt <- format(saturday_2_wk_ahead, "%B %d, %Y")
+saturday_1_wk_ahead_txt <- format(next_saturday, "%B %d, %Y")
 last_5_saturdays <- next_saturday - 7*c(5:1)
 last_12_saturdays <- next_saturday - 7*c(12:1)
 last_6_saturdays <- next_saturday - 7*c(6:1)
@@ -166,6 +167,7 @@ last_12_mondays<-last_12_saturdays-5
 last_6_mondays<-last_6_saturdays-5
 last_10_mondays<-last_10_saturdays-5
 wk4_monday <- this_monday + 28
+wk2_monday <- this_monday + 14
 this_monday <- next_saturday - 5
 next_2saturday <- next_saturday +7
 
@@ -239,7 +241,7 @@ n_unique_models <- length(unique(c(names(inc_death_models)[inc_death_models>0],
 Every week, teams submit their forecasts to the COVID-19 Forecast Hub. 
  
 
-Each Tuesday, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 cases at the county, state, and national level and deaths at the state and national level. At the moment, we only generate ensemble forecasts for four weeks into the future, as [the available evidence](https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v1) suggests that models are less accurate at longer forecast horizons.
+Each Tuesday, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 cases at the county, state, and national level and deaths at the state and national level. At the moment, we only generate ensemble forecasts for up to four weeks into the future, as [the available evidence](https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v1) suggests that models are less accurate at longer forecast horizons.
 
 Weekly reports from the COVID-19 Forecast Hub can be found at [this page](https://covid19forecasthub.org/doc/reports/). 
 
@@ -247,8 +249,8 @@ Weekly reports from the COVID-19 Forecast Hub can be found at [this page](https:
 ```{r download-ensemble-data}
 inc_death_targets <- paste(1:4, "wk ahead inc death")
 cum_death_targets <- paste(1:4, "wk ahead cum death")
-inc_case_targets <- paste(1:2, "wk ahead inc case")
-inc_hosp_targets <- paste(1:28, "day ahead inc hosp")
+inc_case_targets <- paste(1:1, "wk ahead inc case")
+inc_hosp_targets <- paste(1:14, "day ahead inc hosp")
 
 # submit query
 
@@ -269,7 +271,7 @@ dat_hosp<-load_forecasts(
         models=c("COVIDhub-ensemble"),
         dates = this_monday, 
         types = c("point", "quantile"),
-        targets = paste(1:28, "day ahead inc hosp"),
+        targets = paste(inc_hosp_targets),
        location=c("US",state_county),
        verbose = FALSE,
        source = "zoltar") %>%
@@ -325,12 +327,12 @@ state_inc_case_range <- dat %>%
   round(-1) %>% format(big.mark = ",")
 
 state_inc_case_wk_pi_round <- dat %>% 
-  filter(fips==state, target == "2 wk ahead inc case", quantile %in% c(0.025, 0.975)) %>% 
+  filter(fips==state, target == "1 wk ahead inc case", quantile %in% c(0.025, 0.975)) %>% 
   pull(value) %>% sort() %>%
   round(-2) %>% format(big.mark = ",")
 
 state_inc_case_wk_pi <- dat %>% 
-  filter(fips==state, target == "2 wk ahead inc case", quantile %in% c(0.025, 0.975)) %>% 
+  filter(fips==state, target == "1 wk ahead inc case", quantile %in% c(0.025, 0.975)) %>% 
   pull(value) %>% sort() %>% 
   format(big.mark = ",")
 
@@ -342,7 +344,7 @@ state_inc_hosp_range <- dat_hosp %>%
 
 
 state_inc_hosp_wk_pi <- dat_hosp %>% 
-  filter(fips==state, target == "28 day ahead inc hosp", quantile %in% c(0.025, 0.975)) %>% 
+  filter(fips==state, target == "14 day ahead inc hosp", quantile %in% c(0.025, 0.975)) %>% 
   pull(value) %>% sort() %>% 
   format(big.mark = ",")
 
@@ -681,7 +683,9 @@ datatable(wide_point_dat %>%
 
 ### Hospitalizations
 
-The ensemble model predicts that COVID-19 daily hospitalizations will be between `r state_inc_hosp_range[1]` and `r state_inc_hosp_range[2]` hospitalizations daily. However for `r format(wk4_monday, "%B %d, %Y")`, the ensemble shows substantial uncertainty, with COVID-19 daily hospitalizations between `r state_inc_hosp_wk_pi[1]` and `r state_inc_hosp_wk_pi[2]` deemed possible.
+As of September 28, 2021 the ensemble forecast only reports 14 day ahead forecasts for hospitalizations, due to persistent large inaccuracies observed when forecasting beyond that. 
+
+The ensemble model predicts that COVID-19 daily hospitalizations will be between `r state_inc_hosp_range[1]` and `r state_inc_hosp_range[2]` hospitalizations daily. However for `r format(wk2_monday, "%B %d, %Y")`, the ensemble shows substantial uncertainty, with COVID-19 daily hospitalizations between `r state_inc_hosp_wk_pi[1]` and `r state_inc_hosp_wk_pi[2]` deemed possible.
 
 
 ```{r accuracy of hosp models past 6 weeks-state}
@@ -939,9 +943,10 @@ datatable(wide_point_dat_hosp %>%
 
 ### Cases
 
-As of September 6, 2021 the ensemble forecast for cases only reports up to two-week ahead forecasts, due to persistent large inaccuracies observed when forecasting beyond two weeks. 
+As of September 28, 2021 the ensemble forecast only reports one-week ahead forecasts for cases, due to persistent large inaccuracies observed when forecasting beyond that. 
 
-For the week ending `r saturday_2_wk_ahead_txt`, the ensemble model predicts that weekly totals of observed cases in each of the next two weeks will be between `r state_inc_case_range[1]` and `r state_inc_case_range[2]` cases each week. However for the week ending `r saturday_4_wk_ahead_txt`, the ensemble shows substantial uncertainty, with observed cases between `r state_inc_case_wk_pi_round[1]` and `r state_inc_case_wk_pi_round[2]` deemed possible (95% prediction interval:  `r state_inc_case_wk_pi[1]` -  `r state_inc_case_wk_pi[2]`).
+
+For the week ending `r saturday_1_wk_ahead_txt`, the ensemble forecasts that reported  COVID-19 cases in the US will be between `r state_inc_case_wk_pi_round[1]` and `r state_inc_case_wk_pi_round[2]` (95% prediction interval: `r state_inc_case_wk_pi[1]` - `r state_inc_case_wk_pi[2]`). 
 
 ```{r accuracy of case models past 6 weeks-state}
 
@@ -1095,30 +1100,28 @@ ensemble_pointdat2  <- dat  %>%
 
 wide_point_dat2 <- spread(ensemble_pointdat2, target, value) %>%
   left_join(recent_inc_case_totals) %>%
-  mutate(next_2wk_cases = `2 wk ahead inc case`,
-         next_1wk_cases = `1 wk ahead inc case`,
+  mutate(next_1wk_cases = `1 wk ahead inc case`,
     pop_x_1k = round(Population/1000),
     last_1wk_cases_rate = round(last_1wk_cases/Population*100000/7,3),
     last_2wk_cases_rate = round(last_2wk_cases/Population*100000/14,3),
-    next_2wk_cases_rate = round(next_2wk_cases/Population*100000/7,3),
     next_1wk_cases_rate = round(next_1wk_cases/Population*100000/7, 3),
-    diff_wk_cases_rate = round(next_2wk_cases_rate - last_1wk_cases_rate, 3)) %>%
+    diff_wk_cases_rate = round(next_1wk_cases_rate - last_1wk_cases_rate, 3)) %>%
   select(fips, location_name.x, Population, 
-    last_1wk_cases,last_2wk_cases, next_2wk_cases,  next_1wk_cases,  last_1wk_cases_rate,  last_2wk_cases_rate,next_1wk_cases_rate, next_2wk_cases_rate, diff_wk_cases_rate)
+    last_1wk_cases,last_2wk_cases,   next_1wk_cases,  last_1wk_cases_rate,  last_2wk_cases_rate,next_1wk_cases_rate,  diff_wk_cases_rate)
 
 #filter find first quantile where predicting future 2 weeks >= previous week count
 ensemble_quantdat2 <- dat %>%
-  filter(target == "2 wk ahead inc case") %>%
+  filter(target == "1 wk ahead inc case") %>%
   filter(class == "quantile") 
   
 
 wide_quant_dat2 <- spread(ensemble_quantdat2, target, value) %>%
   left_join(recent_inc_case_totals %>% 
   select(fips,location_name.x, last_1wk_cases)) %>%
-  mutate(next_2wk_cases = `2 wk ahead inc case`)
+  mutate(next_1wk_cases = `1 wk ahead inc case`)
 
 quant_cutoff2 <- wide_quant_dat2 %>%
-  filter(next_2wk_cases >= last_1wk_cases) %>%
+  filter(next_1wk_cases >= last_1wk_cases) %>%
   mutate(prob_case_up = 1-quantile) %>%
 select( quantile, location_name.x, prob_case_up,class)
 
@@ -1129,12 +1132,12 @@ wide_point_dat2p <- merge(wide_point_dat2, quant_cutoff2min, by="location_name.x
 ```
 
 
-The sortable and searchable case table below shows the weekly case count and rate of reported COVID-19 case in the population (standardized per 100,000 population) over the last week (`r format(last_5_saturdays[4]+1, "%B %d, %Y")` to `r format(last_5_saturdays[5], "%B %d, %Y")`) and two weeks ahead (`r format(last_5_saturdays[5]+8, "%B %d, %Y")` to `r format(last_5_saturdays[5]+14, "%B %d, %Y")`).
+The sortable and searchable case table below shows the weekly case count and rate of reported COVID-19 case in the population (standardized per 100,000 population) over the last week (`r format(last_5_saturdays[4]+1, "%B %d, %Y")` to `r format(last_5_saturdays[5], "%B %d, %Y")`) and one week ahead (`r format(last_5_saturdays[5]+1, "%B %d, %Y")` to `r format(last_5_saturdays[5]+7, "%B %d, %Y")`).
 
 ```{r make-datatable-inc-case-rates}
 
 ## color for rates
-case_rate_max_1wk <- max(c(wide_point_dat2$last_1wk_cases_rate, wide_point_dat2$next_2wk_cases_rate))
+case_rate_max_1wk <- max(c(wide_point_dat2$last_1wk_cases_rate, wide_point_dat2$next_1wk_cases_rate))
 brks_case <- seq(0, case_rate_max_1wk, length.out = 100) #quantile(df, probs = seq(.05, .95, .05), na.rm = TRUE)
 clrs_case <- round(seq(255, 40, length.out = length(brks_case) + 1), 0) %>%
   {paste0("rgb(255,", ., ",", ., ")")}
@@ -1144,11 +1147,11 @@ case_rate_diff_wk <- max(abs(wide_point_dat2$diff_wk_cases_rate))
 brks1_case <- seq(-case_rate_diff_wk, case_rate_diff_wk, length.out = 100) #quantile(df, probs = seq(.05, .95, .05), na.rm = TRUE)
 clrs1_case <- colorRampPalette(colors = rev(RColorBrewer::brewer.pal(n=3, "RdBu")))(length(brks1_case)+1)
 
-table1c_cap <- paste0("Table 1c: US national and state observed and predicted COVID-19 cases for the previous week and two weeks ahead.")
+table1c_cap <- paste0("Table 1c: US national and state observed and predicted COVID-19 cases for the previous week and one week ahead.")
 
 table1c_Observed <- paste0("Observed: (", format(last_5_saturdays[4]+1, "%m-%d-%Y") ," to ",format(last_5_saturdays[5], "%m-%d-%Y"),")")
 
-table1c_Predicted <- paste0("Predicted: (", format(last_5_saturdays[5]+8, "%m-%d-%Y") ," to ",format(last_5_saturdays[5]+14, "%m-%d-%Y"),")")
+table1c_Predicted <- paste0("Predicted: (", format(last_5_saturdays[5]+1, "%m-%d-%Y") ," to ",format(last_5_saturdays[5]+7, "%m-%d-%Y"),")")
 
 # a custom table container
 sketch_tab2 = htmltools::withTags(table(
@@ -1167,8 +1170,8 @@ sketch_tab2 = htmltools::withTags(table(
 datatable(wide_point_dat2p %>%
     select(location_name.x, Population,
     last_1wk_cases,
-      last_1wk_cases_rate, next_2wk_cases, next_2wk_cases_rate, diff_wk_cases_rate) %>%
-    arrange(desc(next_2wk_cases_rate)),
+      last_1wk_cases_rate,next_1wk_cases,  next_1wk_cases_rate, diff_wk_cases_rate) %>%
+    arrange(desc(next_1wk_cases_rate)),
   caption = table1c_cap,
   options = list(
     autoWidth = TRUE,
@@ -1180,12 +1183,10 @@ datatable(wide_point_dat2p %>%
     #'Population, \'000'='pop_x_1k',
     'Weekly case count (Obs)'='last_1wk_cases',
     'Daily cases per 100K (Obs)'='last_1wk_cases_rate',
-    'Weekly case count (Pred)'='next_2wk_cases',
-    'Daily cases per 100K (Pred)'='next_2wk_cases_rate',
+    'Weekly case count (Pred)'='next_1wk_cases',
+    'Daily cases per 100K (Pred)'='next_1wk_cases_rate',
     'Case rate difference'='diff_wk_cases_rate') ,
      container=sketch_tab2) %>%
-  ## formatStyle("Daily deaths per 100k, last 2 weeks", backgroundColor = styleInterval(brks, clrs)) %>%
-  ## formatStyle("Daily deaths per 100k, next 2 weeks", backgroundColor = styleInterval(brks, clrs))  %>%
   formatStyle('Case rate difference', backgroundColor = styleInterval(brks1_case, clrs1_case))  %>%
   formatCurrency('Population',currency = "", interval = 3, mark = ",", digits=0)%>%
   formatCurrency('Weekly case count (Obs)',currency = "", interval = 3, mark = ",", digits=0)%>%
