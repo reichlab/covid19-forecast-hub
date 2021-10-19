@@ -113,7 +113,7 @@ print("rendering state-level reports...")
 print("attempting to parallelize state-level report generation...")
 numCores <- parallel::detectCores()
 print(paste0("Number of logical cores: ", numCores))
-if (!is.na(numCores) || numCores == 1) {
+if (!is.na(numCores) && numCores > 1) {
   print("multi-core system detected! starting state-level report generation in parallel...")
   registerDoParallel(numCores - 1)
   
