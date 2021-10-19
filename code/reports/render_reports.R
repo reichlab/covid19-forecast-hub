@@ -110,49 +110,49 @@ print("rendering state-level reports...")
 # try to detect number of cores
 # see https://stackoverflow.com/questions/50168647/multiprocessing-causes-python-to-crash-and-gives-an-error-may-have-been-in-progr/52230415
 # for MacOS >10.13 multithreading issues
-print("attempting to parallelize state-level report generation...")
-numCores <- parallel::detectCores()
-print(paste0("Number of logical cores: ", numCores))
-if (!is.na(numCores) && numCores > 1) {
-  print("multi-core system detected! starting state-level report generation in parallel...")
-  registerDoParallel(numCores - 1)
+# print("attempting to parallelize state-level report generation...")
+# numCores <- parallel::detectCores()
+# print(paste0("Number of logical cores: ", numCores))
+# if (!is.na(numCores) && numCores > 1) {
+#   print("multi-core system detected! starting state-level report generation in parallel...")
+#   registerDoParallel(numCores - 1)
   
-  # gather potential errors during generation
-  errors <- foreach (i=seq_len(nrow(all_states)), .errorhandling = 'pass') %dopar% {
-    render_state_weekly_report(all_states[i,]$fips, all_states[i,]$abbreviation, zoltar_conn)
-  }
+#   # gather potential errors during generation
+#   errors <- foreach (i=seq_len(nrow(all_states)), .errorhandling = 'pass') %dopar% {
+#     render_state_weekly_report(all_states[i,]$fips, all_states[i,]$abbreviation, zoltar_conn)
+#   }
   
-  # filter out NULL results (no errors)
-  errors <- errors[-which(sapply(errors, is.null))]
+#   # filter out NULL results (no errors)
+#   errors <- errors[-which(sapply(errors, is.null))]
   
-  # handle any errors
-  if (length(errors) > 0) {
-    browser()
-    for (i in seq_len(length(errors))) {
-      print("error ", i)
-      print(errors[i])
-    }
-  }
+#   # handle any errors
+#   if (length(errors) > 0) {
+#     browser()
+#     for (i in seq_len(length(errors))) {
+#       print("error ", i)
+#       print(errors[i])
+#     }
+#   }
   
 # default to non-parallelism
-} else {
-  print("single-core system or multi-core detection failed;")
-  print("   starting state-level report generation in sequence")
-  curr_state <- "--"
-  tryCatch(
-    {
-      for (i in seq_len(nrow(all_states))) {
-        curr_state <<- all_states[i,]$abbreviation
-        render_state_weekly_report(all_states[i,]$fips, all_states[i,]$abbreviation, zoltar_conn)
-      }
-    },
-    error = function(c) {
-      print(sprintf("error while generating reports for %s", curr_state))
-      print(c)
+# } else {
+  # print("single-core system or multi-core detection failed;")
+print("starting state-level report generation in sequence")
+curr_state <- "--"
+tryCatch(
+  {
+    for (i in seq_len(nrow(all_states))) {
+      curr_state <<- all_states[i,]$abbreviation
+      render_state_weekly_report(all_states[i,]$fips, all_states[i,]$abbreviation, zoltar_conn)
     }
-  )
+  },
+  error = function(c) {
+    print(sprintf("error while generating reports for %s", curr_state))
+    print(c)
+  }
+)
     
-}
+# }
 
 # --- try to re-render reports if some failed ---
 
