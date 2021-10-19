@@ -32,7 +32,7 @@ jobs:
     - name: Install python dependencies 
       run: pipenv install
     - name: Validations output
-    - run: pipenv run python main.py
+      run: pipenv run python main.py
       env:
         GH_TOKEN: ${{ github.token }}
     
