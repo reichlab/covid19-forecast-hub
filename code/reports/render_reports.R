@@ -115,7 +115,7 @@ numCores <- parallel::detectCores()
 print(paste0("Number of logical cores: ", numCores))
 if (!is.na(numCores) || numCores == 1) {
   print("multi-core system detected! starting state-level report generation in parallel...")
-  registerDoParallel(numCores)
+  registerDoParallel(numCores - 1)
   
   # gather potential errors during generation
   errors <- foreach (i=seq_len(nrow(all_states)), .errorhandling = 'pass') %dopar% {
