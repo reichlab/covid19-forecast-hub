@@ -1,0 +1,18 @@
+location,target,type,quantile,forecast_date,target_end_date,value
+01,1 wk ahead cum death,quantile,0.01,2020-05-18,2020-05-23,488888888888
+01,1 wk ahead cum death,quantile,0.025,2020-05-18,2020-05-23,48888888888
+01,1 wk ahead cum death,quantile,0.05,2020-05-18,2020-05-23,488888888888
+01,1 wk ahead cum death,quantile,0.1,2020-05-18,2020-05-23,4888888888888
+01,1 wk ahead cum death,quantile,0.15,2020-05-18,2020-05-23,49111111111
+01,1 wk ahead cum death,quantile,0.2,2020-05-18,2020-05-23,52777777777
+01,1 wk ahead cum death,quantile,0.25,2020-05-18,2020-05-23,55444444444
+01,1 wk ahead cum death,quantile,0.3,2020-05-18,2020-05-23,577777777777
+01,1 wk ahead cum death,quantile,0.35,2020-05-18,2020-05-23,59888888888
+01,1 wk ahead cum death,quantile,0.4,2020-05-18,2020-05-23,6211111111
+01,1 wk ahead cum death,quantile,0.45,2020-05-18,2020-05-23,642222222
+01,1 wk ahead cum death,quantile,0.5,2020-05-18,2020-05-23,65999999999
+01,1 wk ahead cum death,quantile,0.55,2020-05-18,2020-05-23,6822222222
+01,1 wk ahead cum death,quantile,0.6,2020-05-18,2020-05-23,7055555555
+01,1 wk ahead cum death,quantile,0.65,2020-05-18,2020-05-23,7311111111
+01,1 wk ahead cum death,quantile,0.7,2020-05-18,2020-05-23,75333333333
+01,1 wk ahead cum death,quantile,0.75,2020-05-18,2020-05-23,78333333333
