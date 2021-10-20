@@ -1,5 +1,5 @@
 quantile,value,type,location,target,forecast_date,target_end_date
-0.010,6183,quantile,US,1 wk ahead inc death,2021-10-17,2021-10-23
+0.010,6182,quantile,US,1 wk ahead inc death,2021-10-17,2021-10-23
 0.025,6488,quantile,US,1 wk ahead inc death,2021-10-17,2021-10-23
 0.050,6943,quantile,US,1 wk ahead inc death,2021-10-17,2021-10-23
 0.100,7306,quantile,US,1 wk ahead inc death,2021-10-17,2021-10-23
