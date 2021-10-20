@@ -53,43 +53,6 @@ today_date <- Sys.Date()
 # # # use fixed date
 # today_date <-  as.Date("2021-06-08")
 
-# make Zoltar connection here and reuse it throughout generation
-print("trying to connect to Zoltar...")
-zoltar_conn <- zoltr::new_connection()
-num_tries <- 0
-success <- FALSE
-while(num_tries < 5 && !success) {
-  tryCatch(
-    # try to authenticate
-    {
-      zoltr::zoltar_authenticate(
-        zoltar_conn,
-        Sys.getenv("Z_USERNAME"),
-        Sys.getenv("Z_PASSWORD")
-      )
-      # <<- superassignment: should only do if preceding scope have
-      # such a variable!
-      # this statement is reached only if authentication is successful
-      success <<- TRUE
-    },
-    # authentication failed! retry
-    error = function(c) {
-      print(sprintf("Zoltar connection failed! %d retries remaining...", num_tries))
-    },
-    # add one to number of retries
-    finally = function(c) {
-      # <<- superassignment: should only do if preceding scope have
-      # such a variable!
-      num_tries <<- num_tries + 1
-    }
-  )
-}
-if (!success) {
-  stop("could not make connection to Zoltar after 5 tries")
-} else {
-  print("connected to Zoltar!")
-}
-
 # render report based on a state fips code
 render_state_weekly_report <- function(curr_state_fips, state_ab, conn) {
   print(sprintf("    generating report for %s...", state_ab))
@@ -113,12 +76,41 @@ print("rendering state-level reports...")
 # print("attempting to parallelize state-level report generation...")
 # numCores <- parallel::detectCores()
 # print(paste0("Number of logical cores: ", numCores))
-# if (!is.na(numCores) && numCores > 1) {
+# if (!is.na(numCores) && numCores > 2) {
 #   print("multi-core system detected! starting state-level report generation in parallel...")
 #   registerDoParallel(numCores - 1)
   
 #   # gather potential errors during generation
 #   errors <- foreach (i=seq_len(nrow(all_states)), .errorhandling = 'pass') %dopar% {
+zoltar_conn <- zoltr::new_connection()
+#     num_tries <- 0
+#     success <- FALSE
+#     while(num_tries < 5 && !success) {
+#       tryCatch(
+#         # try to authenticate
+#         {
+zoltr::zoltar_authenticate(
+  zoltar_conn,
+  Sys.getenv("Z_USERNAME"),
+  Sys.getenv("Z_PASSWORD")
+)
+#           # <<- superassignment: should only do if preceding scope have
+#           # such a variable!
+#           # this statement is reached only if authentication is successful
+#           success <<- TRUE
+#         },
+#         # authentication failed! retry
+#         error = function(c) {
+#           print(sprintf("Zoltar connection failed! %d retries remaining...", num_tries))
+#         },
+#         # add one to number of retries
+#         finally = function(c) {
+#           # <<- superassignment: should only do if preceding scope have
+#           # such a variable!
+#           num_tries <<- num_tries + 1
+#         }
+#       )
+#     }
 #     render_state_weekly_report(all_states[i,]$fips, all_states[i,]$abbreviation, zoltar_conn)
 #   }
   
@@ -133,28 +125,8 @@ print("rendering state-level reports...")
 #       print(errors[i])
 #     }
 #   }
-  
-# default to non-parallelism
-# } else {
-  # print("single-core system or multi-core detection failed;")
-print("starting state-level report generation in sequence")
-curr_state <- "--"
-tryCatch(
-  {
-    for (i in seq_len(nrow(all_states))) {
-      curr_state <<- all_states[i,]$abbreviation
-      render_state_weekly_report(all_states[i,]$fips, all_states[i,]$abbreviation, zoltar_conn)
-    }
-  },
-  error = function(c) {
-    print(sprintf("error while generating reports for %s", curr_state))
-    print(c)
-  }
-)
-    
-# }
 
-# --- try to re-render reports if some failed ---
+# --- detect if some reports have been generated ---
 
 # get all files from current (output) directory
 curr_dir_files <- list.files()
@@ -177,46 +149,61 @@ report_files <- curr_dir_files[
 # the 4th element in the split filename is the state abbr.
 # e.g. "2020-01-01-AK-weekly-report.html" split by "-" will
 # give the state abbr. at the 4th index
-successful_states <- lapply(
+existing_states <- lapply(
   report_files, function (fn) unlist(strsplit(fn, "-"))[4]
 )
 
-unsuccessful_states <- all_states$abbreviation[
-  -which(sapply(all_states$abbreviation, function (st) { st %in% successful_states } ))
+states_to_generate <- all_states$abbreviation[
+  -which(sapply(all_states$abbreviation, function (st) {
+    st %in% existing_states
+  }))
 ]
 
 # re-render failed reports
 curr_state <- "--"
-tryCatch(
-  {
-    for (i in seq_len(nrow(all_states))) {
-      if (all_states[i,]$abbreviation %in% unsuccessful_states) {
-        curr_state <<- unsuccessful_states[i]
+retries <- 0
+success <- FALSE
+for (i in seq_len(nrow(all_states))) {
+  retries <<- 0
+  success <<- FALSE
+  tryCatch ({
+    if (all_states[i,]$abbreviation %in% states_to_generate) {
+      while (retries < 5 && !success) {
+        curr_state <<- states_to_generate[i]
         render_state_weekly_report(all_states[i,]$fips, all_states[i,]$abbreviation, zoltar_conn)
+        success <<- TRUE
       }
+      
     }
   },
   error = function(c) {
     print(sprintf("error while generating reports for %s", curr_state))
     print(c)
-  }
-)
+    retries <<- retries + 1
+  })
+}
 
 # --- render report for national level ---
 print("rendering national-level report...")
 
+retries <- 0
+success <- FALSE
 tryCatch(
   {
-    rmarkdown::render(
-      'weekly-report.Rmd',
-      output_file = paste0(today_date, '-weekly-report.html'),
-      params = list(conn = zoltar_conn),
-      quiet = TRUE
-    )
+    while (retries < 5 && !success) {
+      rmarkdown::render(
+        'weekly-report.Rmd',
+        output_file = paste0(today_date, '-weekly-report.html'),
+        params = list(conn = zoltar_conn),
+        quiet = TRUE
+      )
+      success <<- TRUE
+    }
   },
   error = function(c) {
     print("error while generating national-level report")
     print(c)
+    retries <<- retries + 1
   }
 )
 
