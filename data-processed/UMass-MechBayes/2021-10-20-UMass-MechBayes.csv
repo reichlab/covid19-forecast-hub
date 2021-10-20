@@ -1,0 +1,25 @@
+quantile,value,type,location,target,forecast_date,target_end_date
+0.010,6183,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.025,6488,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.050,7400,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.100,7306,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.150,7597,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.200,7855,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.250,8134,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.300,8393,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.350,8651,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.400,8865,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.450,9102,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.500,9274,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+NA,9274,point,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.550,9515,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.600,9663,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.650,9888,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.700,10182,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.750,10396,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.800,10674,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.850,10974,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.900,11435,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.950,12146,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.975,12809,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
+0.990,13663,quantile,US,1 wk ahead inc death,2021-10-20,2021-10-30
