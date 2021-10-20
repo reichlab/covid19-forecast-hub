@@ -1,8 +1,2 @@
 location,target,type,quantile,forecast_date,target_end_date,value
-01,1 wk ahead cum death,quantile,0.01,2021-10-18,2021-10-23,48888888888
-01,1 wk ahead cum death,quantile,0.025,2021-10-18,2021-10-23,488
-01,1 wk ahead cum death,quantile,0.05,2021-10-18,2021-10-23,488
-01,1 wk ahead cum death,quantile,0.1,2021-10-18,2021-10-23,488
-01,1 wk ahead cum death,quantile,0.15,2021-10-18,2021-10-23,491
-01,1 wk ahead cum death,quantile,0.2,2021-10-18,2021-10-23,527
-01,1 wk ahead cum death,quantile,0.25,2021-10-18,2021-10-23,554
+01,1 wk ahead cum death,point,NA,2021-10-18,2021-10-23,48888888888
