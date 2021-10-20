@@ -1,5 +1,5 @@
 location,target,type,quantile,forecast_date,target_end_date,value
-01,1 wk ahead cum death,quantile,0.01,2020-05-24,2020-05-30,488
+01,1 wk ahead cum death,quantile,0.01,2020-05-24,2020-05-30,332875155
 01,1 wk ahead cum death,quantile,0.025,2020-05-24,2020-05-30,488
 01,1 wk ahead cum death,quantile,0.05,2020-05-24,2020-05-30,488
 01,1 wk ahead cum death,quantile,0.1,2020-05-24,2020-05-30,488
