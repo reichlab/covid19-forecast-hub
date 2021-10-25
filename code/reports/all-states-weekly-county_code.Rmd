@@ -39,7 +39,7 @@ dplyr::mutate(inc_case_inPI_high = ifelse(point>=upper, 1, 0))
 # proportion PI covered truth
 pcounty_inc_case_PI_c<-inc_case_all_p6x_c %>% group_by(alpha) %>%
   filter(location %in% county) %>%
-  summarise_at(vars(inc_case_inPI,inc_case_inPI_low,inc_case_inPI_high), list(PI_cover=mean,PI_coverl=mean,PI_coverh=mean)) %>% 
+  summarise_at(vars(inc_case_inPI,inc_case_inPI_low,inc_case_inPI_high), list(PI_cover=mean,PI_coverl=mean,PI_coverh=mean), na.rm=TRUE) %>% 
     dplyr::mutate(PI_coverp = as.numeric(substr(inc_case_inPI_PI_cover*100, 0,2))) %>% 
     dplyr::mutate(PI_coverpl = as.numeric(substr(inc_case_inPI_low_PI_coverl*100, 0,2))) %>%   
     dplyr::mutate(PI_coverph = as.numeric(substr(inc_case_inPI_high_PI_coverh*100, 0,2)))  %>%
