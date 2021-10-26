@@ -4802,3 +4802,6 @@ file_path,validation_date
 ./data-processed/UT_GISAG-SPDM/2021-10-25-UT_GISAG-SPDM.csv,2021-10-26 00:29:00.674641
 ./data-processed/COVIDhub-ensemble/2021-10-25-COVIDhub-ensemble.csv,2021-10-26 00:29:04.743683
 ./data-processed/GT-DeepCOVID/2021-10-25-GT-DeepCOVID.csv,2021-10-26 00:29:08.072500
+./data-processed/KITmetricslab-select_ensemble/2021-10-25-KITmetricslab-select_ensemble.csv,2021-10-26 18:22:02.112686
+./data-processed/COVIDhub-trained_ensemble/2021-10-25-COVIDhub-trained_ensemble.csv,2021-10-26 18:22:15.996805
+./data-processed/FAIR-NRAR/2021-10-25-FAIR-NRAR.csv,2021-10-26 18:22:27.403388
