@@ -46,3 +46,12 @@ forecast_date,response_var,spatial_resolution,theta
 2021-10-25,inc_case,national,6.4
 2021-10-25,inc_hosp,state,5.6
 2021-10-25,inc_hosp,national,8.2
+2021-11-01,cum_death,state,6.8
+2021-11-01,cum_death,national,5.7
+2021-11-01,inc_death,state,5.2
+2021-11-01,inc_death,national,4.8
+2021-11-01,inc_case,county,1.2
+2021-11-01,inc_case,state,2.5
+2021-11-01,inc_case,national,5.4
+2021-11-01,inc_hosp,state,6.4
+2021-11-01,inc_hosp,national,7.3
