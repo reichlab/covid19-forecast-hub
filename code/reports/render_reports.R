@@ -129,51 +129,50 @@ zoltr::zoltar_authenticate(
 # --- detect if some reports have been generated ---
 
 # get all files from current (output) directory
-curr_dir_files <- list.files()
+# curr_dir_files <- list.files()
 
-# filter to get the report files (starts with today's date)
-report_files <- curr_dir_files[
-  which(sapply(
-    curr_dir_files,
-    function(s) {
-      return(
-        startsWith(s, toString(Sys.Date())) &
-        endsWith(s, ".html")
-      )
-    }
-  ))
-]
+# # filter to get the report files (starts with today's date)
+# report_files <- curr_dir_files[
+#   which(sapply(
+#     curr_dir_files,
+#     function(s) {
+#       return(
+#         startsWith(s, toString(Sys.Date())) &
+#         endsWith(s, ".html")
+#       )
+#     }
+#   ))
+# ]
 
 # filter to get the failed reports
 
 # the 4th element in the split filename is the state abbr.
 # e.g. "2020-01-01-AK-weekly-report.html" split by "-" will
 # give the state abbr. at the 4th index
-existing_states <- lapply(
-  report_files, function (fn) unlist(strsplit(fn, "-"))[4]
-)
+# existing_states <- lapply(
+#   report_files, function (fn) unlist(strsplit(fn, "-"))[4]
+# )
 
-states_to_generate <- all_states$abbreviation[
-  -which(sapply(all_states$abbreviation, function (st) {
-    st %in% existing_states
-  }))
-]
+# states_to_generate <- all_states$abbreviation[
+#   -which(sapply(all_states$abbreviation, function (st) {
+#     st %in% existing_states
+#   }))
+# ]
 
 # re-render failed reports
-curr_state <- "--"
 retries <- 0
 success <- FALSE
 for (i in seq_len(nrow(all_states))) {
   retries <<- 0
   success <<- FALSE
   tryCatch ({
-    if (all_states[i,]$abbreviation %in% states_to_generate) {
-      while (retries < 5 && !success) {
-        curr_state <<- states_to_generate[i]
-        render_state_weekly_report(all_states[i,]$fips, all_states[i,]$abbreviation, zoltar_conn)
-        success <<- TRUE
-      }
-      
+    while (retries < 5 && !success) {
+      render_state_weekly_report(
+        all_states[i,]$fips,
+        all_states[i,]$abbreviation,
+        zoltar_conn
+      )
+      success <<- TRUE
     }
   },
   error = function(c) {
