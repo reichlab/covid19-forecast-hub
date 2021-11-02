@@ -36,8 +36,8 @@ jobs:
         GH_TOKEN: ${{ github.token }}
     
     # Run and check for automerge
-#     - name: Automerge check
-#       uses: "pascalgn/automerge-action@v0.13.1"
-#       env:
-#         GITHUB_TOKEN: ${{ github.token }}
-#         MERGE_LABELS: "automerge,data-submission,!other-files-updated,!metadata-change,!forecast-updated,!viz,!code"
+    - name: Automerge check
+      uses: "pascalgn/automerge-action@v0.13.1"
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+        MERGE_LABELS: "automerge,data-submission,!other-files-updated,!metadata-change,!forecast-updated,!viz,!code"
