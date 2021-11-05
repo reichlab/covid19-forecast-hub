@@ -16,7 +16,7 @@ If you are a developer interested in the infrastructure here, we encourage you t
 
 - To cite the US COVID-19 Forecast Hub dataset and project as a whole, please cite the dataset descriptor preprint:
 
-Cramer EY, Huang Y, Wang Y, et al. The United States COVID-19 Forecast Hub dataset. *medRxiv*. 2021. URL: https://www.medrxiv.org/content/early/2021/11/04/2021.11.04.21265886.
+Cramer EY, Huang Y, Wang Y, et al. The United States COVID-19 Forecast Hub dataset. *medRxiv*. 2021. URL: https://www.medrxiv.org/content/10.1101/2021.11.04.21265886v1.
  
 bibtex:
 ```
@@ -25,7 +25,7 @@ bibtex:
 	title = {The United States COVID-19 Forecast Hub dataset},
 	year = {2021},
 	doi = {10.1101/2021.11.04.21265886},
-	URL = {https://www.medrxiv.org/content/early/2021/11/04/2021.11.04.21265886},
+	URL = {https://www.medrxiv.org/content/10.1101/2021.11.04.21265886v1},
 	journal = {medRxiv}
 }
 ```
