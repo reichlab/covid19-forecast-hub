@@ -12,6 +12,27 @@ in a [quantile-based format](https://github.com/reichlab/covid19-forecast-hub/bl
 
 If you are a developer interested in the infrastructure here, we encourage you to check out [the Hub documentation wiki](https://github.com/reichlab/covid19-forecast-hub/wiki).
 
+## Citing the Forecast Hub
+
+- To cite the US COVID-19 Forecast Hub dataset and project as a whole, please cite the dataset descriptor preprint:
+
+Cramer EY, Huang Y, Wang Y, et al. The United States COVID-19 Forecast Hub dataset. *medRxiv*. 2021. URL: https://www.medrxiv.org/content/early/2021/11/04/2021.11.04.21265886.
+ 
+bibtex:
+```
+@article {Cramer2021-hub-dataset,
+	author = {Cramer, Estee Y and Huang, Yuxin and Wang, Yijin and Ray, Evan L and Cornell, Matthew and Bracher, Johannes and Brennen, Andrea and Castro Rivadeneira, Alvaro J and Gerding, Aaron and House, Katie and Jayawardena, Dasuni and Kanji, Abdul H and Khandelwal, Ayush and Le, Khoa and Niemi, Jarad and Stark, Ariane and Shah, Apurv and Wattanachit, Nutcha and Zorn, Martha W and Reich, Nicholas G and US COVID-19 Forecast Hub Consortium},
+	title = {The United States COVID-19 Forecast Hub dataset},
+	year = {2021},
+	doi = {10.1101/2021.11.04.21265886},
+	URL = {https://www.medrxiv.org/content/early/2021/11/04/2021.11.04.21265886},
+	journal = {medRxiv}
+}
+```
+
+- To cite research results from the hub, please choose the relevant [research publication](https://covid19forecasthub.org/doc/research/) from the Hub to cite.
+
+
 ## Data license and reuse
 We are grateful to the teams who have generated these and made their data publicly available under different terms and licenses. You will find the licenses (when provided) within the model-specific folders in the [data-processed](./data-processed/) directory. Please consult these licenses before using these data to ensure that you follow the terms under which these data were released.
 
