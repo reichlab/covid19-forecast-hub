@@ -7,9 +7,9 @@ model_contributors: Ye Chen (Northern Arizona University)<yechent@gmail.com>, Ye
   Davis), Richard G. Posner (Northern Arizona University), William S. Hlavacek (Los
   Alamos National Laboratory)<wish@lanl.gov>
 website_url: https://github.com/lanl/COVID-19-Predictions
-license: ''
+license: cc-by-4.0
 team_model_designation: primary
-ensemble_of_hub_models: no
+ensemble_of_hub_models: false
 methods: We used the compartmental model analyze case data available for each State.
   The model consists of ordinary differential equations describing the dynamics of
   40 populations (state variables).
