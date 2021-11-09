@@ -2,10 +2,10 @@ team_name: Los Alamos National Lab and Northern Arizona University
 model_name: Compartmental Model with Bayesian Inference
 model_abbr: LosAlamos_NAU-CModel_SDVaxVar
 model_contributors: Ye Chen (Northern Arizona University)<yechent@gmail.com>, Yen
-  Ting Lin (Los Alamos National Laboratory), Ely F. Miller (Northern Arizona University),
-  Jacob Neumann (Northern Arizona University), Abhishek Mallela (University of California,
-  Davis), Richard G. Posner (Northern Arizona University), William S. Hlavacek (Los
-  Alamos National Laboratory)<wish@lanl.gov>
+  Ting Lin (Los Alamos National Laboratory)<yentingl@lanl.gov>, Ely F. Miller (Northern
+  Arizona University), Jacob Neumann (Northern Arizona University), Abhishek Mallela
+  (University of California, Davis), Richard G. Posner (Northern Arizona University),
+  William S. Hlavacek (Los Alamos National Laboratory)<wish@lanl.gov>
 website_url: https://github.com/lanl/COVID-19-Predictions
 license: cc-by-4.0
 team_model_designation: primary
