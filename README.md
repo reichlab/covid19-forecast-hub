@@ -32,10 +32,9 @@ bibtex:
 
 - To cite research results from the hub, please choose the relevant [research publication](https://covid19forecasthub.org/doc/research/) from the Hub to cite.
 
+- To cite the dataset and GitHub repository directly, we ask that you cite the Data Descriptor paper (see first bullet point above) but you may also cite or refer to the [permanent DOI for the GitHub repo](https://zenodo.org/badge/latestdoi/254453761) (the DOI is updated by Zenodo when we create a new "release" of this GitHub repository).
 
 ## Data license and reuse
 We are grateful to the teams who have generated these and made their data publicly available under different terms and licenses. You will find the licenses (when provided) within the model-specific folders in the [data-processed](./data-processed/) directory. Please consult these licenses before using these data to ensure that you follow the terms under which these data were released.
 
 All source code that is specific to this project, along with our [d3-foresight](http://reichlab.io/d3-foresight/) visualization tool is available under an open-source [MIT license](./LICENSE). We note that this license does NOT cover model code from the various teams (maybe available from them under other licenses) or model forecast data (available under specified licenses as described above). 
-
-To cite the COVID-19 Forecast Hub, please use a [relevant research article or preprint produced by the group](https://covid19forecasthub.org/doc/research/) and a [permanent DOI for the GitHub repo](https://zenodo.org/badge/latestdoi/254453761) (the DOI is updated by Zenodo when we create a new "release" of this GitHub repository).
