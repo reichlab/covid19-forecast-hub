@@ -16,6 +16,7 @@ jobs:
     - uses: actions/checkout@v2
       with:
         repository: 'reichlab/covid19-forecast-hub-validations'
+        ref: 'issue-29'
 #     - name: Use Node.js ${{ matrix.node-version }}
 #       uses: actions/setup-node@v1
 #       with:
@@ -36,8 +37,8 @@ jobs:
         GH_TOKEN: ${{ github.token }}
     
     # Run and check for automerge
-    - name: Automerge check
-      uses: "pascalgn/automerge-action@v0.13.1"
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
-        MERGE_LABELS: "automerge,data-submission,!other-files-updated,!metadata-change,!forecast-updated,!viz,!code"
+    #- name: Automerge check
+    #  uses: "pascalgn/automerge-action@v0.13.1"
+    #  env:
+    #    GITHUB_TOKEN: ${{ github.token }}
+    #    MERGE_LABELS: "automerge,data-submission,!other-files-updated,!metadata-change,!forecast-updated,!viz,!code"
