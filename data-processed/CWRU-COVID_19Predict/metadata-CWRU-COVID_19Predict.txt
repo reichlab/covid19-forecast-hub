@@ -7,5 +7,5 @@ license: cc-by-4.0
 team_model_designation: primary
 ensemble_of_hub_models: false
 methods: We utilize the accumulation of cases and deaths to provide dynamic 7-day short-term predictions on outcomes across national, state, and county administrative levels.
-institutional_affil: Case Western Reserve University (CWRU)
+institution_affil: Case Western Reserve University (CWRU)
 citation: https://doi.org/10.1101/2020.09.09.20191593 
