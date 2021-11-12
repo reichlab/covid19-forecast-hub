@@ -16,7 +16,6 @@ jobs:
     - uses: actions/checkout@v2
       with:
         repository: 'reichlab/covid19-forecast-hub-validations'
-        ref: 'issue-29'
 #     - name: Use Node.js ${{ matrix.node-version }}
 #       uses: actions/setup-node@v1
 #       with:
