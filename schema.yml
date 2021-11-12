@@ -43,7 +43,7 @@ mapping:
     'citation':
         type: str
         pattern: ((http|https)\:\/\/)?[a-zA-Z0-9\.\/\?\:@\-_=#]+\.([a-zA-Z]){2,6}([a-zA-Z0-9\.\&\/\?\:@\-_=#])*
-    'institution_affil':
+    'institutional_affil':
         type: str
     'team_funding':
         type: str
