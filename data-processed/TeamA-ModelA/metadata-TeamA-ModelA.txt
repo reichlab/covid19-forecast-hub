@@ -1,0 +1,10 @@
+team_name: TeamA
+model_name: ModelA
+model_abbr: TeamA-ModelA
+model_contributors: A, B
+website_url: https://covid19forecasthub.org/
+license: cc-by-4.0
+team_model_designation: primary
+ensemble_of_hub_models: false
+methods: This model is a predictive model.
+methods_long: abcedefg
