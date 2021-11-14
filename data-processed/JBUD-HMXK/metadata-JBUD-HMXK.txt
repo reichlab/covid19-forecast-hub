@@ -3,7 +3,7 @@ model_name: HMXK
 model_abbr: JBUD-HMXK
 model_contributors: Jozef Budzinski<jbudzin@gmail.com>
 website_url: https://joebud.github.io/covid-19-analyses/
-license: cc-by-nc-nd-4.0
+license: cc-by-nc-4.0
 team_model_designation: primary
 methods: 'Heavily modified infection-age SIR-X model with waning immunity, vaccinations, seasonality and undetected cases. '
 data_inputs: See GitHub for full description
