@@ -1,5 +1,5 @@
 team_name: COVIDhub_CDC
-model_name: ensemble
+model_name: CDC_ensemble
 model_abbr: COVIDhub_CDC-ensemble
 model_contributors: Evan L. Ray, Nicholas Reich, Aaron Gerding, Estee Y. Cramer, Nutcha Wattanachit, Pragati Prasad, Velma Lopez, Jo Walker, Alex Webber, Matthew Biggerstaff (mbiggerstaff@cdc.gov), Michael Johansson (mjohansson@cdc.gov)
 website_url: https://www.cdc.gov/coronavirus/2019-ncov/science/forecasting/mathematical-modeling.html
