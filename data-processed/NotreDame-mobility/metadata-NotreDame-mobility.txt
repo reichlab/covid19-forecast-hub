@@ -1,18 +1,17 @@
 team_name: NotreDame-mobility
 model_name: NotreDame-mobility
 model_abbr: NotreDame-mobility
-model_contributors: 'guido espana <guido.espana@nd.edu>,  rachel oidtman,  sean cavany,  alan
-  costello,  anneliese wieler,  anita lerch,  carly barbera,  marya poterek,  quan
-  tran,  sean moore,  alex perkins <taperkins@nd.edu>   '
+model_contributors: 'guido espana <guido.espana@nd.edu>,  rachel oidtman,  sean cavany, sean moore,  alex perkins <taperkins@nd.edu>   '
 website_url: https://github.com/TAlexPerkins/covid19_NDmobility_forecasting
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: This is an ensemble of nine models that are identical except that they are
   driven by different mobility indices from Apple and Google. The model underlying
   each is a deterministic, SEIR-like model.
 team_funding: GE and TAP were supported by a RAPID grant from the National Science
   Foundation (DEB 2027718).
-data_inputs: NYTimes daily reported deaths count and test positivity rate
+data_inputs: JHU daily reported deaths count, covid-tracking project test positivity rate, and DHHS hospializations
 methods_long: This forecast is an ensemble of nine models that are identical except
   that they are driven by different mobility indices from Apple and Google. The model
   underlying each is a deterministic, SEIR-like model. Model simulations are initiated

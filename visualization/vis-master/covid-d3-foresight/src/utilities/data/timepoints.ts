@@ -80,6 +80,8 @@ export function getTick(tp: Timepoint | Date | string, pointType: TimepointId): 
     return tp.biweek
   } if (pointType === 'month') {
     return tp.month
+  } if (pointType === 'year-week') {
+    return `${tp.year}-${tp.week}`
   } else {
     throw new errors.UnknownPointType()
   }

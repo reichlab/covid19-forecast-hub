@@ -22,7 +22,7 @@ for model in models:
     existing_forecasts = [forecast.source for forecast in model.forecasts]
     zoltar_forecasts.extend(existing_forecasts)
 for directory in [model for model in os.listdir('./data-processed/') if "." not in model]:
-    forecasts = [forecast for forecast in os.listdir('./data-processed/'+directory+"/") if ".csv" in forecast and "2020" in forecast]
+    forecasts = [forecast for forecast in os.listdir('./data-processed/'+directory+"/") if ".csv" in forecast]
     repo_forecasts.extend(forecasts)
 print("number of forecasts in zoltar: " + str(len(zoltar_forecasts)))
 print("number of forecasts in repo: " + str(len(repo_forecasts)))

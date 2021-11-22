@@ -1,18 +1,43 @@
+# MacOS system files
 *.DS_Store
+
+# R/RStudio related
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
+*.Rproj
 
-node_modules
+# intermediate data files
 visualization/data
 visualization/vis-master/data
-.ipynb_checkpoints
-covid19-forecast-hub.Rproj
 
+# VSCode related
+*.code-workspace
 .vscode
+
+# packrat
 packrat/lib*/
-__pycache__
+
+# IntelliJ IDEA configuration
 .idea
 
+# -- Python related --
+
+## virtual env
+env
+
+## Jupyter notebook checkpoints
+.ipynb_checkpoints
+
+## compiled Python code
 *.pyc
+
+## cache
+__pycache__
+
+# -- end Python related --
+
+# node/npm related
+node_modules
+package-lock.json

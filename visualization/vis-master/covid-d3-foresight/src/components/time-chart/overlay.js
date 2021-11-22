@@ -129,18 +129,20 @@ export default class Overlay extends SComponent {
         })
 
         let ttTitle = ''
+        let predIndex = 0
+        let aheadIndex = 0
         if (visibleModels.length > 0) {
           // Add note regarding which prediction is getting displayed
-          let aheadIndex = visibleModels[0].displayedIdx(index)
+          aheadIndex = visibleModels[0].displayedIdx(index)
           if (aheadIndex !== null) {
-            ttTitle = `${aheadIndex + 1} ahead`
+            ttTitle = `${aheadIndex + 1} week ahead`
           }
         }
-
         that.tooltip.render(tt.parsePredictions({
           title: ttTitle,
           predictions: [...objects.static, ...objects.additional, ...objects.models],
-          index
+          index,
+          aheadIndex
         }))
 
         tt.moveTooltip(that.tooltip, d3.select(this))

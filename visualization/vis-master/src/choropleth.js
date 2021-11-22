@@ -79,14 +79,12 @@ export class ColorBar {
     group.append('g')
       .attr('class', 'axis axis-color')
       .attr('transform', 'translate(' + bar.x + ',' + (bar.y + bar.height) + ')')
-    console.log(scale)
     this.svg = svg
     this.scale = scale
   }
 
   // Update scale of colorbar
   update(range) {
-    console.log(range)
     this.scale.domain(range)
     let nticks = 5
     // Setup custom ticks
@@ -94,7 +92,6 @@ export class ColorBar {
       // Relative values
       nticks = 3
     }
-    console.log(range)
 
     let axis = d3.axisBottom(this.scale).ticks(4).tickFormat(d3.format(".2"))
 
@@ -247,7 +244,7 @@ export default class Choropleth {
         let stateName = this.getAttribute('class').split(' ')[1]
         let region = data.data
           .filter(d => (d.states.indexOf(stateName) > -1))[0].region
-        let value = parseFloat(this.getAttribute('data-value')).toFixed(0)
+        let value = parseInt(this.getAttribute('data-value')).toLocaleString()
         tooltip.select('.value').text(value)
         tooltip.select('.region').text(region + ' : ' + stateName)
       })

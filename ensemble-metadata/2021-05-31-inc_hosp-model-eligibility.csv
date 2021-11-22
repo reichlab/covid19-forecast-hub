@@ -1,0 +1,649 @@
+location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_eligibility,baseline_eligibility,sd_eligibility,overall_eligibility
+01,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+01,CU-select,eligible,"NA","NA","NA",eligible,eligible
+01,Google_Harvard-CPF,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+01,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+01,IHME-CurveFit,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+01,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+01,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+01,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+01,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+01,LANL-GrowthRate,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+01,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+01,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+02,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+02,CU-select,eligible,"NA","NA","NA",eligible,eligible
+02,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+02,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+02,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+02,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+02,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+02,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+02,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+02,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+02,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+02,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+04,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+04,CU-select,eligible,"NA","NA","NA",eligible,eligible
+04,Google_Harvard-CPF,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+04,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+04,IHME-CurveFit,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+04,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+04,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+04,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+04,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+04,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+04,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+04,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+05,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+05,CU-select,eligible,"NA","NA","NA",eligible,eligible
+05,Google_Harvard-CPF,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+05,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+05,IHME-CurveFit,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+05,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+05,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+05,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+05,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+05,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+05,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+05,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+06,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+06,CU-select,eligible,"NA","NA","NA",eligible,eligible
+06,Google_Harvard-CPF,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+06,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+06,IHME-CurveFit,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+06,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+06,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+06,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+06,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+06,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+06,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+06,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+08,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+08,CU-select,eligible,"NA","NA","NA",eligible,eligible
+08,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+08,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+08,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+08,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+08,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+08,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+08,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+08,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+08,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+08,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+09,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+09,CU-select,eligible,"NA","NA","NA",eligible,eligible
+09,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+09,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+09,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+09,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+09,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+09,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+09,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+09,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+09,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+09,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+10,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+10,CU-select,eligible,"NA","NA","NA",eligible,eligible
+10,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+10,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+10,IHME-CurveFit,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+10,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+10,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+10,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+10,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+10,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+10,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+10,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+11,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+11,CU-select,eligible,"NA","NA","NA",eligible,eligible
+11,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+11,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+11,IHME-CurveFit,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+11,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+11,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+11,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+11,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+11,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+11,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA","NA",missing forecasts; cannot evaluate less than 4 SD below criterion,ineligible
+11,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+12,Covid19Sim-Simulator,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+12,CU-select,eligible,"NA","NA","NA",eligible,eligible
+12,Google_Harvard-CPF,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+12,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",missing forecasts; cannot evaluate less than 4 SD below criterion,ineligible
+12,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+12,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+12,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+12,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+12,Karlen-pypm,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+12,LANL-GrowthRate,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+12,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+12,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+13,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+13,CU-select,eligible,"NA","NA","NA",eligible,eligible
+13,Google_Harvard-CPF,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+13,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+13,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+13,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+13,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+13,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+13,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+13,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+13,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+13,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+15,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+15,CU-select,eligible,"NA","NA","NA",eligible,eligible
+15,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+15,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",missing forecasts; cannot evaluate less than 4 SD below criterion,ineligible
+15,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+15,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+15,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+15,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+15,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+15,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+15,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+15,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+16,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+16,CU-select,eligible,"NA","NA","NA",eligible,eligible
+16,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+16,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+16,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+16,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+16,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+16,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+16,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+16,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+16,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+16,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+17,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+17,CU-select,eligible,"NA","NA","NA",eligible,eligible
+17,Google_Harvard-CPF,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+17,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+17,IHME-CurveFit,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+17,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+17,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+17,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+17,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+17,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+17,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+17,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+18,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+18,CU-select,eligible,"NA","NA","NA",eligible,eligible
+18,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+18,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+18,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+18,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+18,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+18,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+18,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+18,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+18,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+18,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+19,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+19,CU-select,eligible,"NA","NA","NA",eligible,eligible
+19,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+19,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+19,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+19,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+19,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+19,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+19,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+19,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+19,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+19,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+20,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+20,CU-select,eligible,"NA","NA","NA",eligible,eligible
+20,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+20,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+20,IHME-CurveFit,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+20,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+20,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+20,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+20,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+20,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+20,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+20,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+21,Covid19Sim-Simulator,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+21,CU-select,eligible,"NA","NA","NA",eligible,eligible
+21,Google_Harvard-CPF,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+21,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+21,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+21,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+21,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+21,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+21,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+21,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+21,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+21,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+22,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+22,CU-select,eligible,"NA","NA","NA",eligible,eligible
+22,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+22,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+22,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+22,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+22,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+22,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+22,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+22,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+22,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+22,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+23,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+23,CU-select,eligible,"NA","NA","NA",eligible,eligible
+23,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+23,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+23,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+23,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+23,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+23,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+23,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+23,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+23,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+23,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+24,Covid19Sim-Simulator,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+24,CU-select,eligible,"NA","NA","NA",eligible,eligible
+24,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+24,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+24,IHME-CurveFit,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+24,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+24,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+24,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+24,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+24,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+24,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+24,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+25,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+25,CU-select,eligible,"NA","NA","NA",eligible,eligible
+25,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+25,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+25,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+25,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+25,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+25,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+25,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+25,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+25,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+25,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+26,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+26,CU-select,eligible,"NA","NA","NA",eligible,eligible
+26,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+26,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+26,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+26,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+26,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+26,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+26,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+26,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+26,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+26,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+27,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+27,CU-select,eligible,"NA","NA","NA",eligible,eligible
+27,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+27,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+27,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+27,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+27,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+27,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+27,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+27,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+27,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+27,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+28,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+28,CU-select,eligible,"NA","NA","NA",eligible,eligible
+28,Google_Harvard-CPF,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+28,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+28,IHME-CurveFit,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+28,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+28,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+28,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+28,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+28,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+28,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+28,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+29,Covid19Sim-Simulator,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+29,CU-select,eligible,"NA","NA","NA",eligible,eligible
+29,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+29,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+29,IHME-CurveFit,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+29,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+29,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+29,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+29,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+29,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+29,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+29,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+30,Covid19Sim-Simulator,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+30,CU-select,eligible,"NA","NA","NA",eligible,eligible
+30,Google_Harvard-CPF,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+30,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+30,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+30,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+30,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+30,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+30,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+30,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+30,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+30,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+31,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+31,CU-select,eligible,"NA","NA","NA",eligible,eligible
+31,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+31,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+31,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+31,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+31,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+31,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+31,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+31,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+31,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+31,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+32,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+32,CU-select,eligible,"NA","NA","NA",eligible,eligible
+32,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+32,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+32,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+32,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+32,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+32,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+32,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+32,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+32,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+32,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+33,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+33,CU-select,eligible,"NA","NA","NA",eligible,eligible
+33,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+33,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+33,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+33,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+33,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+33,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+33,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+33,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+33,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+33,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+34,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+34,CU-select,eligible,"NA","NA","NA",eligible,eligible
+34,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+34,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+34,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+34,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+34,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+34,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+34,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+34,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+34,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+34,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+35,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+35,CU-select,eligible,"NA","NA","NA",eligible,eligible
+35,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+35,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+35,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+35,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+35,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+35,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+35,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+35,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+35,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+35,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+36,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+36,CU-select,eligible,"NA","NA","NA",eligible,eligible
+36,Google_Harvard-CPF,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+36,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+36,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+36,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+36,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+36,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+36,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+36,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+36,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+36,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+37,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+37,CU-select,eligible,"NA","NA","NA",eligible,eligible
+37,Google_Harvard-CPF,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+37,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+37,IHME-CurveFit,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+37,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+37,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+37,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+37,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+37,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+37,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+37,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+38,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+38,CU-select,eligible,"NA","NA","NA",eligible,eligible
+38,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+38,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+38,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+38,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+38,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+38,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+38,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+38,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+38,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+38,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+39,Covid19Sim-Simulator,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+39,CU-select,eligible,"NA","NA","NA",eligible,eligible
+39,Google_Harvard-CPF,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+39,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",missing forecasts; cannot evaluate less than 4 SD below criterion,ineligible
+39,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+39,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+39,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+39,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+39,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+39,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+39,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+39,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+40,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+40,CU-select,eligible,"NA","NA","NA",eligible,eligible
+40,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+40,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+40,IHME-CurveFit,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+40,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+40,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+40,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+40,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+40,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+40,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+40,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+41,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+41,CU-select,eligible,"NA","NA","NA",eligible,eligible
+41,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+41,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+41,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+41,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+41,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+41,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+41,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+41,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+41,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+41,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+42,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+42,CU-select,eligible,"NA","NA","NA",eligible,eligible
+42,Google_Harvard-CPF,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+42,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+42,IHME-CurveFit,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+42,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+42,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+42,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+42,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+42,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+42,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+42,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+44,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+44,CU-select,eligible,"NA","NA","NA",eligible,eligible
+44,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+44,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+44,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+44,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+44,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+44,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+44,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+44,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+44,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+44,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+45,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+45,CU-select,eligible,"NA","NA","NA",eligible,eligible
+45,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+45,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+45,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+45,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+45,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+45,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+45,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+45,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+45,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+45,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+46,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+46,CU-select,eligible,"NA","NA","NA",eligible,eligible
+46,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+46,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+46,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+46,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+46,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+46,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+46,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+46,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+46,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+46,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+47,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+47,CU-select,eligible,"NA","NA","NA",eligible,eligible
+47,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+47,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+47,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+47,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+47,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+47,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+47,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+47,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+47,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+47,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+48,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+48,CU-select,eligible,"NA","NA","NA",eligible,eligible
+48,Google_Harvard-CPF,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+48,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+48,IHME-CurveFit,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+48,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+48,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+48,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+48,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+48,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+48,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+48,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+49,Covid19Sim-Simulator,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+49,CU-select,eligible,"NA","NA","NA",eligible,eligible
+49,Google_Harvard-CPF,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+49,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+49,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+49,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+49,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+49,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+49,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+49,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+49,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+49,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+50,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+50,CU-select,eligible,"NA","NA","NA",eligible,eligible
+50,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+50,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+50,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+50,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+50,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+50,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+50,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+50,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+50,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+50,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+51,Covid19Sim-Simulator,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+51,CU-select,eligible,"NA","NA","NA",eligible,eligible
+51,Google_Harvard-CPF,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+51,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+51,IHME-CurveFit,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+51,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+51,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+51,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+51,Karlen-pypm,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+51,LANL-GrowthRate,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+51,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+51,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+53,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+53,CU-select,eligible,"NA","NA","NA",eligible,eligible
+53,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+53,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+53,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+53,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+53,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+53,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+53,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+53,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+53,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+53,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+54,Covid19Sim-Simulator,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+54,CU-select,eligible,"NA","NA","NA",eligible,eligible
+54,Google_Harvard-CPF,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+54,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+54,IHME-CurveFit,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+54,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+54,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+54,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+54,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+54,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+54,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+54,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+55,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+55,CU-select,eligible,"NA","NA","NA",eligible,eligible
+55,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+55,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+55,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+55,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+55,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+55,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+55,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+55,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+55,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+55,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+56,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+56,CU-select,eligible,"NA","NA","NA",eligible,eligible
+56,Google_Harvard-CPF,eligible,"NA","NA","NA",eligible,eligible
+56,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+56,IHME-CurveFit,eligible,"NA","NA","NA",eligible,eligible
+56,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+56,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+56,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+56,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+56,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+56,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+56,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+72,Covid19Sim-Simulator,eligible,"NA","NA","NA",eligible,eligible
+72,CU-select,missing required forecasts,"NA","NA","NA",missing forecasts; cannot evaluate less than 4 SD below criterion,ineligible
+72,Google_Harvard-CPF,missing required forecasts,"NA","NA","NA",missing forecasts; cannot evaluate less than 4 SD below criterion,ineligible
+72,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",missing forecasts; cannot evaluate less than 4 SD below criterion,ineligible
+72,IHME-CurveFit,missing required forecasts,"NA","NA","NA",missing forecasts; cannot evaluate less than 4 SD below criterion,ineligible
+72,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+72,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+72,JHUAPL-Gecko,missing required forecasts,"NA","NA","NA",missing forecasts; cannot evaluate less than 4 SD below criterion,ineligible
+72,Karlen-pypm,eligible,"NA","NA","NA",eligible,eligible
+72,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+72,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA","NA",missing forecasts; cannot evaluate less than 4 SD below criterion,ineligible
+72,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+78,Covid19Sim-Simulator,missing required forecasts,"NA","NA","NA",missing forecasts; cannot evaluate less than 4 SD below criterion,ineligible
+78,CU-select,missing required forecasts,"NA","NA","NA",missing forecasts; cannot evaluate less than 4 SD below criterion,ineligible
+78,Google_Harvard-CPF,missing required forecasts,"NA","NA","NA",missing forecasts; cannot evaluate less than 4 SD below criterion,ineligible
+78,GT-DeepCOVID,missing required forecasts,"NA","NA","NA",missing forecasts; cannot evaluate less than 4 SD below criterion,ineligible
+78,IHME-CurveFit,missing required forecasts,"NA","NA","NA",missing forecasts; cannot evaluate less than 4 SD below criterion,ineligible
+78,JHU_IDD-CovidSP,eligible,"NA","NA","NA",eligible,eligible
+78,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+78,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+78,Karlen-pypm,missing required forecasts,"NA","NA","NA",missing forecasts; cannot evaluate less than 4 SD below criterion,ineligible
+78,LANL-GrowthRate,eligible,"NA","NA","NA",eligible,eligible
+78,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA","NA",missing forecasts; cannot evaluate less than 4 SD below criterion,ineligible
+78,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible
+US,Covid19Sim-Simulator,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+US,CU-select,eligible,"NA","NA","NA",eligible,eligible
+US,Google_Harvard-CPF,missing required forecasts,"NA","NA","NA",missing forecasts; cannot evaluate less than 4 SD below criterion,ineligible
+US,GT-DeepCOVID,eligible,"NA","NA","NA",eligible,eligible
+US,IHME-CurveFit,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD above mean of last 7 observations,ineligible
+US,JHU_IDD-CovidSP,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+US,JHUAPL-Bucky,eligible,"NA","NA","NA",eligible,eligible
+US,JHUAPL-Gecko,eligible,"NA","NA","NA",eligible,eligible
+US,Karlen-pypm,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+US,LANL-GrowthRate,eligible,"NA","NA","NA",mean of next 7 forecasted medians more than 4 times 14day SD below mean of last 7 observations,ineligible
+US,MOBS-GLEAM_COVID,eligible,"NA","NA","NA",eligible,eligible
+US,USC-SI_kJalpha,eligible,"NA","NA","NA",eligible,eligible

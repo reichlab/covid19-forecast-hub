@@ -19,12 +19,13 @@ get_zoltar_PI <- function(data, forecast_date, targets, location, alpha) {
     
     for(target in targets) {
         step_ahead <- as.numeric(substr(target, 0,1))
+        format(round(as.numeric(1000.64)), big.mark=",")
         print(paste0("The forecasted ", target, " for ", loc_name, " by ", target_end_dates[step_ahead], " is ", 
-            tmp$value[tmp$target==target & tmp$class=="point" & tmp$unit==location], " with a ",
+            format(round(data$value[data$target==target & data$class=="point" & data$unit==location]), big.mark=","), " with a ",
             pi_level, "% PI of ",
-            tmp$value[tmp$target==target & tmp$class=="quantile" & tmp$unit=="US" & tmp$quantile==alpha_low], 
+            format(round(data$value[data$target==target & data$class=="quantile" & data$unit==location & data$quantile==alpha_low]), big.mark=","), 
             "-",
-            tmp$value[tmp$target==target & tmp$class=="quantile" & tmp$unit=="US" & tmp$quantile==alpha_high],
+            format(round(data$value[data$target==target & data$class=="quantile" & data$unit==location & data$quantile==alpha_high]), big.mark=","),
             "."))
     }
 }

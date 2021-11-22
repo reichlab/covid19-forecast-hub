@@ -299,7 +299,10 @@ export default {
     require.ensure(["../../store/data"], () => {
       this.importLatestChunk(require("../../store/data"));
 
-      this.updateSelectedSeason(this.seasons.length - 1);
+      // first loaded season is Incident Deaths 
+      // remember: selected season data must be manually loaded
+      //           otherwise visualization will spin!
+      this.updateSelectedSeason(0);
 
       // Setup map
       this.initChoropleth(
