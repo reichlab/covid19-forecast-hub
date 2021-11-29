@@ -35,7 +35,7 @@ jobs:
       env:
         GH_TOKEN: ${{ github.token }}
     
-     #Run and check for automerge
+    # Run and check for automerge
     - name: Automerge check
       uses: "pascalgn/automerge-action@v0.13.1"
       env:
