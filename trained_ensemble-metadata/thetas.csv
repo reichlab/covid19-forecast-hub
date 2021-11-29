@@ -1,4 +1,13 @@
 forecast_date,response_var,spatial_resolution,theta
+2021-11-15,cum_death,state,10.1
+2021-11-15,cum_death,national,8
+2021-11-15,inc_death,state,6.1
+2021-11-15,inc_death,national,7.2
+2021-11-15,inc_case,county,2.1
+2021-11-15,inc_case,state,5.9
+2021-11-15,inc_case,national,9.6
+2021-11-15,inc_hosp,state,8.7
+2021-11-15,inc_hosp,national,7.9
 2021-09-27,cum_death,state,10.3
 2021-09-27,cum_death,national,3
 2021-09-27,inc_death,state,4.5
@@ -64,3 +73,12 @@ forecast_date,response_var,spatial_resolution,theta
 2021-11-08,inc_case,national,6.4
 2021-11-08,inc_hosp,state,6.7
 2021-11-08,inc_hosp,national,5.2
+2021-11-22,cum_death,state,10.4
+2021-11-22,cum_death,national,14.2
+2021-11-22,inc_death,state,4.8
+2021-11-22,inc_death,national,5.5
+2021-11-22,inc_case,county,2.2
+2021-11-22,inc_case,state,10.8
+2021-11-22,inc_case,national,11.9
+2021-11-22,inc_hosp,state,7.1
+2021-11-22,inc_hosp,national,17.5

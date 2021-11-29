@@ -16,7 +16,7 @@ The name of your team that is less than 50 characters.
 The name of your model that is less than 50 characters.
 
 ### model_abbr
-An abbreviated name for your model that is less than 30 alphanumeric characters. The model abbreviation must be in the format of `[team_abbr]-[model_abbr]`. where each of the `[team_abbr]` and `[model_abbr]` are text strings that are each less than 15 alphanumeric characters that do not include a hyphen or whitespace  Note that this is a uniquely identifying field in our system, so please choose this name carefully, as it may not be changed once defined. An example of a valid `model_abbr` is `UMass-MechBayes` or `UCLA-SuEIR`. 
+An abbreviated name for your model that is less than 30 alphanumeric characters. The model abbreviation must be in the format of `[team_abbr]-[model_abbr]`. where each of the `[team_abbr]` and `[model_abbr]` are text strings that do not include a hyphen or whitespace. The total length of the model abbreviation must be less than or equal to 31 alphanumeric characters. Note that this is a uniquely identifying field in our system, so please choose this name carefully, as it may not be changed once defined. An example of a valid `model_abbr` is `UMass-MechBayes` or `UCLA-SuEIR`. 
 
 ### model_contributors
 
@@ -91,7 +91,7 @@ A boolean value (`true` or `false`) that indicates whether a model combines mult
 
 ## Optional
 
-### institutional_affil
+### institution_affil
 
 University or company names, if relevant. 
 
