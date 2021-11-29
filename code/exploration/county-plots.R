@@ -35,21 +35,22 @@ list_query <- list(
 )
 zoltar_query <- zoltr::query_with_ids(zoltar_connection, project_url, list_query)
 
-# submit query
-job_url <- zoltr::submit_query(zoltar_connection, project_url, zoltar_query)
-
-## extract query data
-tmp <- job_data(zoltar_connection, job_url)
-
-dat <- tmp %>%
+dat <- zoltr:: do_zoltar_query(
+    zoltar_connection, project_url, 
+    units = c(high_pop_counties$FIPS, "US"),
+    targets = paste(1:8, "wk ahead inc case"),
+    timezeros = as.character(this_monday),
+    types = c("point", "quantile"), 
+    verbose = FALSE) %>%
     ## choose only columns we need and with data
-    select(model, timezero, unit, target, class, value) %>%
-    ## combine with county-level info
-    left_join(select(high_pop_counties, FIPS, Admin2, Province_State, Population, loc_name), by = c("unit" = "FIPS")) %>%
-    rename(fips = unit) %>%
+    select(model, timezero, unit, target, class, quantile, value) %>%
+    rename(fips=unit) %>%
     ## create rate variable and week-ahead
     mutate(week_ahead = as.numeric(substr(target, 0,1)),
+        ## recreates the target_end_date from GitHub
         target_end_date = get_next_saturday(timezero + 7*(week_ahead-1))) %>%
+    ## combine with county-level info
+    left_join(select(high_pop_counties, FIPS, Admin2, Province_State, Population, loc_name), by = c("unit" = "FIPS")) %>%
     bind_rows(inc_cases) %>%
     mutate(model = relevel(factor(model), ref = "observed data (JHU)"),
         inc_case_rate = value/Population)

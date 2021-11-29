@@ -7,7 +7,7 @@
  */
 import * as d3 from 'd3'
 import * as tinycolor from 'tinycolor2'
-
+var iwanthue = require('iwanthue');
 /**
  * Some pre generated palettes from http://tools.medialab.sciences-po.fr/iwanthue/
  */
@@ -108,10 +108,12 @@ export function hexToRgba (hex: string, alpha: number): string {
  * Return colormap of given size
  */
 export function getColorMap (size: number): string[] {
-  if (size > 30) {
-    return colors50
-  } else if (size > 20) {
-    return colors30
+  if (size > 20) {
+    return iwanthue(size, {
+      clustering: 'k-means',
+      seed: 'cool-palette',
+      quality: 100
+    })
   } else if (size > 10) {
     // @ts-ignore
     return d3.schemeCategory20 as string[]

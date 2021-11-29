@@ -1,0 +1,17 @@
+forecast_date,target,target_end_date,location,type,quantile,value
+2020-11-30,1 wk ahead inc case,2020-12-05,US,point,NA,1104789
+2020-11-30,2 wk ahead inc case,2020-12-12,US,point,NA,1164035
+2020-11-30,3 wk ahead inc case,2020-12-19,US,point,NA,1164612
+2020-11-30,4 wk ahead inc case,2020-12-26,US,point,NA,1159176
+2020-11-30,5 wk ahead inc case,2021-01-02,US,point,NA,1148225
+2020-11-30,6 wk ahead inc case,2021-01-09,US,point,NA,1132297
+2020-11-30,7 wk ahead inc case,2021-01-16,US,point,NA,1111950
+2020-11-30,8 wk ahead inc case,2021-01-23,US,point,NA,1087750
+2020-11-30,1 wk ahead cum death,2020-12-05,US,point,NA,282250
+2020-11-30,2 wk ahead cum death,2020-12-12,US,point,NA,293417
+2020-11-30,3 wk ahead cum death,2020-12-19,US,point,NA,305018
+2020-11-30,4 wk ahead cum death,2020-12-26,US,point,NA,317006
+2020-11-30,5 wk ahead cum death,2021-01-02,US,point,NA,329336
+2020-11-30,6 wk ahead cum death,2021-01-09,US,point,NA,341962
+2020-11-30,7 wk ahead cum death,2021-01-16,US,point,NA,354837
+2020-11-30,8 wk ahead cum death,2021-01-23,US,point,NA,367916

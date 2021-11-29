@@ -28,7 +28,8 @@ const targets = [
 
 const targets_cats = [
   'Cumulative Deaths',
-  'Incident Deaths'
+  'Incident Deaths',
+  'Incident Cases'
 ]
 
 module.exports.regions = regions

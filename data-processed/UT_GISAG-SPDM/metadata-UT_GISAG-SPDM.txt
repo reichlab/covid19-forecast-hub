@@ -1,0 +1,20 @@
+team_name: UT_GISAG
+model_name: SPDM
+model_abbr: UT_GISAG-SPDM
+model_contributors: Ishfaq Rahman (University of Toledo) <GISAGCovid@utoledo.edu>, Kimberly Panozzo (University of Toledo), Dr. Kevin P. Czajkowski (University of Toledo), Dr. Bhuiyan Alam (University of Toledo), Dr. April Ames (University of Toledo), Dr. Barbara Saltzman (University of Toledo)
+website_url: https://gisag.maps.arcgis.com/apps/dashboards/c1e2502c67204f5683baf07bbc387867
+license: cc-by-4.0
+team_model_designation: primary
+ensemble_of_hub_models: false
+methods: This model utilizes a County-level spatial panel data model for 2062 counties of contiguous United States.
+team_funding: None
+data_inputs: GoogleCloudPlatform/covid-19-open-data and apple mobility data
+
+methods_long: "On the website we provide weekly prediction for\
+  \ Infections for 2062 US counties.\ 
+  \ The model employs the weekly change in mobility, weather data,\
+  \ alongside the current non-pharmaceutical interventions (NPIs),\
+  \ and mitigating policies that are in practice in each jurisdiction.\
+  \ The model incorporates a 1 week lag between mobility-NPI change\
+  \ and CVOID-19 cases and assumes that existing mobility pattern and NPI\
+  \ measures in each jurisdiction will continue through the projected 4-week time period."

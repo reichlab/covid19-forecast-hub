@@ -6,6 +6,7 @@ model_contributors: Quanquan Gu <qgu@cs.ucla.edu>, Pan Xu, Jinghui Chen, Lingxia
 website_url: https://covid19.uclaml.org/
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: The SuEIR model is a variant of the SEIR model considering both untested
   and unreported cases. The model considers reopening and assumes susceptible population
   will increase after the reopen.

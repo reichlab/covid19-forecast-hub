@@ -6,6 +6,7 @@ model_contributors: Yuanjia Wang <yw2016@cumc.columbia.edu>, Donglin Zeng <dzeng
 website_url: https://github.com/COVID19BIOSTAT/covid19_prediction
 license: apache-2.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: A survival-convolution model with piece-wise transmission rates that incorporates
   latent incubation period and provides time-varying effective reproductive number.
 team_funding: NIH grant GM124104

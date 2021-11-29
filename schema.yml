@@ -14,6 +14,7 @@ mapping:
         type: str
         range:
             max: 31
+        pattern: ^[a-zA-Z0-9_+]+-[a-zA-Z0-9_+]+$
     'model_contributors':
         required: True
         type: str
@@ -52,3 +53,5 @@ mapping:
         type: str
     'methods_long':
         type: str
+    'ensemble_of_hub_models':
+        type: bool

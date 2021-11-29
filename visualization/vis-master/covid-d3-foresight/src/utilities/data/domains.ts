@@ -40,7 +40,32 @@ export function y(data, dataConfig): Range {
     })
   })
 
-  return [min, 1.3 * max]
+  return [min, Math.max(25, 1.3 * max)]
+}
+
+/**
+ * Return domain for y axis using limits of data
+ */
+export function y_pred(actual, predictions, dataConfig): Range {
+  let min = 0
+  let max = 0
+
+  if (dataConfig.actual) {
+    max = Math.max(max, ...actual.filter(d => d.y).map(d => d.y))
+  }
+
+  predictions.filter(p => !p.hidden).forEach(md => {
+    md.displayedData.filter(v => v!=false).forEach(p => {
+      if (p) {
+        max = Math.max(max, ...p)
+        if (dataConfig.predictions.peak) {
+          max = Math.max(max, predMax(p.peakValue))
+        }
+      }
+    })
+  })
+
+  return [min, Math.max(25, 1.2 * max)]
 }
 
 /**

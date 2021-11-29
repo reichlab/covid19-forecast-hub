@@ -1,0 +1,34 @@
+team_name: Federal Reserve Bank of San Francisco/Wilson
+model_name: Econometric
+model_abbr: FRBSF_Wilson-Econometric
+model_contributors: Daniel J. Wilson (Federal Reserve Bank of San Francisco, Economic Research) <daniel.wilson@sf.frb.org>, Samuel R. Tarasewicz (Federal Reserve Bank of San Francisco, Economic Research) <Sam.Tarasewicz@sf.frb.org>
+website_url: https://www.frbsf.org/economic-research/indicators-data/covid-19-forecasts-by-county/
+license: cc-by-4.0
+team_model_designation: primary
+ensemble_of_hub_models: false
+methods: Econometric county panel data model, derived from SIR model, with transmission rate assumed to be function of weather and mobility.
+data_inputs: usafacts.org (confirmed cases), US Census (population), Dallas Fed Mobility & Engagement Index (MEI)(mobility), NOAA/NCDC (temperature; precipitation)
+citation: https://www.frbsf.org/economic-research/publications/working-papers/2020/23/
+methods_long: "We estimate an econometric county panel data model based on the
+   standard SIR model. The econometric model relates the change in log active (new) infections
+   between now and some future horizon to the current transmission rate and the susceptible share
+   of the population. The current transmission rate is assumed to be a function of individuals'
+   mobility behavior and weather (temperature and precipitation). County level mobility is
+   measured using the Mobility and Engagement Index (MEI) constructed by
+   the Federal Reserve Bank of Dallas from mobile device geolocation data
+   provided by Safegraph. County level weather data comes from weather
+   station readings on daily-high temperatures and precipitation from the
+   National Oceanic and Atmospheric Administration (NOAA), following the
+   methodology in Wilson (2019). For diseases that convey long-lasting
+   immunity to those who have recovered from infection,
+   the susceptible share is simply one minus the share of the local population
+   that have previously been infected. We assume this share in a given county
+   is proportional to cumulative confirmed cases to date as a share of the
+   county's population. This proportionality also implies that the change in
+   log active infections can be proxied by the change in log active cases.
+   Aside from mobility, weather, and accumulated natural immunity, there are two other 
+   important elements of the econometric model. The first is lagged infection growth, 
+   allowing for the possibility that lagged infection growth is predictive of subsequent 
+   infection growth. The second additional element is county-specific intercepts
+   (fixed effects), which allow each county to have a different mean level of
+   infection growth, independent of the other elements of the model."

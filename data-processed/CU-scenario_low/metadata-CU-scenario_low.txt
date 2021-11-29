@@ -6,6 +6,7 @@ model_contributors: Sen Pei, Teresa Yamana, Sasikiran Kandula, Wan Yang, Marta G
 website_url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
 license: apache-2.0
 team_model_designation: other
+ensemble_of_hub_models: false
 methods: We produce different intervention scenarios, assuming various interventions
   and rates of compliance are implemented in the future. This projection assumes relatively
   low transmission.
