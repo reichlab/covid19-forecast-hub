@@ -4,7 +4,7 @@
   "forecast_folder_name": "data-processed",
   "target_groups": [
     {
-      "name": "inc hosp",
+      "outcome_variable": "incident hospitalizations",
       "targets": [
         "0 day ahead inc hosp",
         "1 day ahead inc hosp",
@@ -221,7 +221,7 @@
       ]
     },
     {
-      "name": "inc death",
+      "outcome_variable": "incident deaths",
       "targets": [
         "1 wk ahead inc death",
         "2 wk ahead inc death",
@@ -327,7 +327,7 @@
       ]
     },
     {
-      "name": "cum death",
+      "outcome_variable": "cumulative deaths",
       "targets": [
         "1 wk ahead cum death",
         "2 wk ahead cum death",
@@ -433,7 +433,7 @@
       ]
     },
     {
-      "name": "inc case",
+      "outcome_variable": "incident cases",
       "targets": [
         "1 wk ahead inc case",
         "2 wk ahead inc case",
@@ -3660,5 +3660,6 @@
     }
   ],
   "forecast_dates": [],
-  "updates_allowed": true
+  "updates_allowed": true,
+  "automerge_on_passed_validation": true
 }
