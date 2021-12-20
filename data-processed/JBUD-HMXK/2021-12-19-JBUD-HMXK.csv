@@ -1,0 +1,9 @@
+location,forecast_date,target_end_date,target,type,quantile,value
+US,2021-12-19,2021-12-25,1 wk ahead inc case,point,,803832
+US,2021-12-19,2022-01-01,2 wk ahead inc case,point,,786352
+US,2021-12-19,2022-01-08,3 wk ahead inc case,point,,746420
+US,2021-12-19,2022-01-15,4 wk ahead inc case,point,,734299
+US,2021-12-19,2021-12-25,1 wk ahead inc death,point,,4748
+US,2021-12-19,2022-01-01,2 wk ahead inc death,point,,4663
+US,2021-12-19,2022-01-08,3 wk ahead inc death,point,,4509
+US,2021-12-19,2022-01-15,4 wk ahead inc death,point,,4425
