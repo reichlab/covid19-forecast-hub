@@ -5311,3 +5311,7 @@ file_path,validation_date
 ./data-processed/FAIR-NRAR/2021-12-19-FAIR-NRAR.csv,2021-12-21 00:28:54.448041
 ./data-processed/MIT-Cassandra/2021-12-20-MIT-Cassandra.csv,2021-12-21 00:28:55.861248
 ./data-processed/epiforecasts-ensemble1/2021-12-20-epiforecasts-ensemble1.csv,2021-12-21 00:28:57.369037
+./data-processed/UCF-AEM/2021-12-19-UCF-AEM.csv,2021-12-21 03:07:26.334627
+./data-processed/COVIDhub-4_week_ensemble/2021-12-20-COVIDhub-4_week_ensemble.csv,2021-12-21 03:07:42.490401
+./data-processed/COVIDhub-ensemble/2021-12-20-COVIDhub-ensemble.csv,2021-12-21 03:07:47.928306
+./data-processed/COVIDhub-trained_ensemble/2021-12-20-COVIDhub-trained_ensemble.csv,2021-12-21 03:08:00.692574
