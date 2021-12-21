@@ -5316,3 +5316,7 @@ file_path,validation_date
 ./data-processed/COVIDhub-ensemble/2021-12-20-COVIDhub-ensemble.csv,2021-12-21 03:07:47.928306
 ./data-processed/COVIDhub-trained_ensemble/2021-12-20-COVIDhub-trained_ensemble.csv,2021-12-21 03:08:00.692574
 ./data-processed/KITmetricslab-select_ensemble/2021-12-20-KITmetricslab-select_ensemble.csv,2021-12-21 12:25:28.232904
+./data-processed/JHUAPL-SLPHospEns/2021-12-20-JHUAPL-SLPHospEns.csv,2021-12-21 18:27:41.946832
+./data-processed/COVIDhub_CDC-ensemble/2021-12-20-COVIDhub_CDC-ensemble.csv,2021-12-21 18:27:51.674817
+./data-processed/FAIR-NRAR/2021-12-20-FAIR-NRAR.csv,2021-12-21 18:28:03.112061
+./data-processed/FDANIHASU-Sweight/2021-12-20-FDANIHASU-Sweight.csv,2021-12-21 18:28:03.865507
