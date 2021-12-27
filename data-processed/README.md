@@ -285,7 +285,7 @@ or a quantile in the format
 For quantile forecasts, this value indicates the quantile for the
 `value` in this row.
 
-Teams should provide the following 23 quantiles:
+Teams must provide the following 23 quantiles:
 
     c(0.01, 0.025, seq(0.05, 0.95, by = 0.05), 0.975, 0.99)
 
@@ -293,7 +293,7 @@ Teams should provide the following 23 quantiles:
     ## [13] 0.550 0.600 0.650 0.700 0.750 0.800 0.850 0.900 0.950 0.975 0.990
 
 for all `target`s except “N wk ahead inc case” target. For the “N wk
-ahead inc case” target, teams should provide the following 7 quantiles:
+ahead inc case” target, teams must provide the following 7 quantiles:
 
     c(0.025, 0.100, 0.250, 0.500, 0.750, 0.900, 0.975)
 
