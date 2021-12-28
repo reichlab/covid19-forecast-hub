@@ -5353,3 +5353,16 @@ file_path,validation_date
 ./data-processed/MUNI-ARIMA/2021-12-27-MUNI-ARIMA.csv,2021-12-27 18:29:45.398979
 ./data-processed/UCSD_NEU-DeepGLEAM/2021-12-27-UCSD_NEU-DeepGLEAM.csv,2021-12-27 18:29:46.503619
 ./data-processed/CU-scenario_mid/2021-12-26-CU-scenario_mid.csv,2021-12-27 18:30:03.173760
+./data-processed/COVIDhub-4_week_ensemble/2021-12-27-COVIDhub-4_week_ensemble.csv,2021-12-28 00:29:26.687166
+./data-processed/JHU_CSSE-DECOM/2021-12-26-JHU_CSSE-DECOM.csv,2021-12-28 00:29:28.027731
+./data-processed/UCF-AEM/2021-12-26-UCF-AEM.csv,2021-12-28 00:29:28.369520
+./data-processed/Microsoft-DeepSTIA/2021-12-27-Microsoft-DeepSTIA.csv,2021-12-28 00:29:30.858625
+./data-processed/COVIDhub-ensemble/2021-12-27-COVIDhub-ensemble.csv,2021-12-28 00:29:35.006744
+./data-processed/UMass-MechBayes/2021-12-26-UMass-MechBayes.csv,2021-12-28 00:29:35.984883
+./data-processed/COVIDhub-trained_ensemble/2021-12-27-COVIDhub-trained_ensemble.csv,2021-12-28 00:29:47.059390
+./data-processed/DDS-NBDS/2021-12-27-DDS-NBDS.csv,2021-12-28 00:29:48.139639
+./data-processed/UT_GISAG-SPDM/2021-12-27-UT_GISAG-SPDM.csv,2021-12-28 00:29:48.953419
+./data-processed/GT-DeepCOVID/2021-12-27-GT-DeepCOVID.csv,2021-12-28 00:29:52.506058
+./data-processed/MIT-Cassandra/2021-12-27-MIT-Cassandra.csv,2021-12-28 00:29:53.823879
+./data-processed/SteveMcConnell-CovidComplete/2021-12-27-SteveMcConnell-CovidComplete.csv,2021-12-28 00:29:54.957159
+./data-processed/UMich-RidgeTfReg/2021-12-27-UMich-RidgeTfReg.csv,2021-12-28 00:29:56.138302
