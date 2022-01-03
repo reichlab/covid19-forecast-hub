@@ -3,7 +3,8 @@ model_name: RidgeTensorFlowRegressor
 model_abbr: UMich-RidgeTfReg
 model_contributors: 'Sabrina Corsetti (University of Michigan Department of Physics)
   <sabcorse@umich.edu>, Robert Myers (University of Michigan Department of Physics)
-  <romyers@umich.edu>, Yitao Huang (University of Michigan Department of Physics)
+  <romyers@umich.edu>, Jinyan Miao (University of Michigan Department of Physics)
+  <jmiu@umich.edu>, Yitao Huang (University of Michigan Department of Physics)
   <yitao@umich.edu>, Karl Falb (University of Michigan Department of Physics)
   <falbkarl@umich.edu>, Thomas Schwarz (University of Michigan Department of Physics)
   <schwarzt@umich.edu>'
