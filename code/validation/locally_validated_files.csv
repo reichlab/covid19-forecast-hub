@@ -5410,3 +5410,6 @@ file_path,validation_date
 ./data-processed/JHU_CSSE-DECOM/2022-01-02-JHU_CSSE-DECOM.csv,2022-01-04 00:30:42.911696
 ./data-processed/PSI-DRAFT/2022-01-03-PSI-DRAFT.csv,2022-01-04 00:30:44.079353
 ./data-processed/MUNI-ARIMA/2022-01-03-MUNI-ARIMA.csv,2022-01-04 00:30:47.963303
+./data-processed/COVIDhub-trained_ensemble/2022-01-03-COVIDhub-trained_ensemble.csv,2022-01-04 03:08:01.612110
+./data-processed/COVIDhub-4_week_ensemble/2022-01-03-COVIDhub-4_week_ensemble.csv,2022-01-04 03:08:14.730136
+./data-processed/COVIDhub-ensemble/2022-01-03-COVIDhub-ensemble.csv,2022-01-04 03:08:20.972020
