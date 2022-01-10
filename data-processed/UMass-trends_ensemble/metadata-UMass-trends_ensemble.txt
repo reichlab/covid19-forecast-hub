@@ -6,7 +6,8 @@ website_url: https://github.com/reichlab/covid-hosp-models
 license: cc-by-4.0
 team_model_designation: proposed
 ensemble_of_hub_models: false
-methods: 'Equally weighted ensemble of simple time-series baseline models. Each 
+methods: 'Equally weighted ensemble of simple time-series baseline models.'
+methods_long: 'Equally weighted ensemble of simple time-series baseline models. Each 
   baseline model calculates first differences of incidence in recent weeks. 
   These differences are sampled and then added to the most recently observed 
   incidence. Variations on this method include (a) including the first 
