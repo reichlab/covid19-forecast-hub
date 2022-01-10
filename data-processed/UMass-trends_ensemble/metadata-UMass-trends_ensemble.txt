@@ -4,7 +4,7 @@ model_abbr: UMass-trends_ensemble
 model_contributors: Nutcha Wattanachit, Aaron Gerding, Nick Reich <nick@umass.edu>, Evan Ray <elray@umass.edu>
 website_url: https://github.com/reichlab/covid-hosp-models
 license: cc-by-4.0
-team_model_designation: proposed
+team_model_designation: secondary
 ensemble_of_hub_models: false
 methods: 'Equally weighted ensemble of simple time-series baseline models.'
 methods_long: 'Equally weighted ensemble of simple time-series baseline models. Each 
