@@ -5462,3 +5462,6 @@ file_path,validation_date
 ./data-processed/AIpert-pwllnod/2022-01-10-AIpert-pwllnod.csv,2022-01-11 00:31:39.682330
 ./data-processed/UT_GISAG-SPDM/2022-01-10-UT_GISAG-SPDM.csv,2022-01-11 00:31:40.518112
 ./data-processed/CovidAnalytics-DELPHI/2022-01-10-CovidAnalytics-DELPHI.csv,2022-01-11 00:31:42.446449
+./data-processed/COVIDhub-4_week_ensemble/2022-01-10-COVIDhub-4_week_ensemble.csv,2022-01-11 03:07:52.956306
+./data-processed/COVIDhub-ensemble/2022-01-10-COVIDhub-ensemble.csv,2022-01-11 03:07:58.382563
+./data-processed/COVIDhub-trained_ensemble/2022-01-10-COVIDhub-trained_ensemble.csv,2022-01-11 03:08:12.941725
