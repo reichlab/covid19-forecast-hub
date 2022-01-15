@@ -103,7 +103,7 @@
     "ora": "^0.3.0",
     "pug": "^3.0.1",
     "sass-loader": "^4.0.2",
-    "shelljs": "^0.7.4",
+    "shelljs": "^0.8.5",
     "standard": "^8.6.0",
     "url-loader": "^0.5.7",
     "vue-hot-reload-api": "^1.2.0",
