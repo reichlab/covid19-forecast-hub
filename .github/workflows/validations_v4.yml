@@ -15,7 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        repository: 'reichlab/covid19-forecast-hub-validations'
+        repository: 'Serena-Wang/covid19-forecast-hub-validations'
+        ref: 'file_deletion_error'
 #     - name: Use Node.js ${{ matrix.node-version }}
 #       uses: actions/setup-node@v1
 #       with:
