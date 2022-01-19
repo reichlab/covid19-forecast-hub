@@ -18,18 +18,19 @@ website_url: https://delphi.cmu.edu
 license: cc-by-4.0
 team_model_designation: primary
 ensemble_of_hub_models: false
-methods: (State Hospitalizations) An ensemble of models: an auto-regressive
-  28-day window forecaster, a direction-stratified conditional forecaster, and
-  an AR model with case covariates. (State Deaths) A basic AR-type time series
-  model fit using case counts and deaths as features. (County Cases) Quantile
-  regr. on county pop., case counts, self-reported symptom data, and doctor's
-  visits.
+methods: >
+  (State Hospitalizations) An ensemble of models: an auto-regressive 28-day
+  window forecaster, a direction-stratified conditional forecaster, and an AR
+  model with case covariates. (State Deaths) A basic AR-type time series model
+  fit using case counts and deaths as features. (County Cases) Quantile regr. on
+  county pop., case counts, self-reported symptom data, and doctor's visits.
 team_funding: CDC Center of Excellence, gifts from Google and Facebook
 data_inputs: US Dept. of Health and Human Services (confirmed COVID-19
   hospitalization admissions), JHU-CSSE (confirmed case counts and deaths),
   Delphi COVIDcast health system partners, Delphi's US COVID-19 Trends and
   Impact Survey (CTIS), U.S. Census Bureau (state and county population data)
-methods_long: "State hospitalization forecasts - A CDF-space-averaged ensemble
+methods_long: >
+  State hospitalization forecasts - A CDF-space-averaged ensemble
   of 3 models. The first is a simple point AR model trained on a 28-day window
   of just hospitalization data normalized by population, with distributions
   built by sampling from studentized residuals. The second is a quantile
@@ -40,17 +41,20 @@ methods_long: "State hospitalization forecasts - A CDF-space-averaged ensemble
   linear classifier to determine which of five time-series directions (up,
   steady, down, too-low-to-call, or missing data) forecasters to use, where the
   direction-conditional forecasters are quantile autoregression models trained
-  on the rate scale with no training window. State death forecasts - A basic
-  AR-type time series model fit using lagged values of case counts and deaths as
-  features. No assumptions are made regarding reopening or governmental
-  interventions. The model is jointly fit across all 50 US states, after some
-  time-alignment is performed as a preprocessing step to facilitate comparison
-  between states. Heavier weight is placed on more recent training data, to
-  account for nonstationarity in the underlying process. A lasso penalty is
-  added to induce variable selection and prevent overfitting. Quantiles are
-  computed using a residual (Gaussian) bootstrap, separately for each location.
-  Revised in later submissions to fit into a simpler framework built on quantile
-  autoregression framework with additional covariates and a training window.
+  on the rate scale with no training window.
+
+  State death forecasts - A basic AR-type time series model fit using lagged
+  values of case counts and deaths as features. No assumptions are made
+  regarding reopening or governmental interventions. The model is jointly fit
+  across all 50 US states, after some time-alignment is performed as a
+  preprocessing step to facilitate comparison between states. Heavier weight is
+  placed on more recent training data, to account for nonstationarity in the
+  underlying process. A lasso penalty is added to induce variable selection and
+  prevent overfitting. Quantiles are computed using a residual (Gaussian)
+  bootstrap, separately for each location. Revised in later submissions to fit
+  into a simpler framework built on quantile autoregression framework with
+  additional covariates and a training window.
+
   County inc case forecasts - A quantile regression model fit jointly across
   selected counties using (1) case counts, (2) self-reported COVID symptom
   rates, (3) doctor's visits rates related to COVID symptoms, and (4) county
@@ -59,7 +63,8 @@ methods_long: "State hospitalization forecasts - A CDF-space-averaged ensemble
   model to provide a sense of the virus's momentum. Revised in later submissions
   to fit into a simpler framework built on quantile autoregression framework
   with additional covariates and a training window.
+
   All data used are available in client packages for the Delphi COVIDcast
   Epidata API (http://covidcast.cmu.edu). Signal (2) is administered with the
   support of Facebook. No assumptions are made regarding reopening or
-  governmental interventions."
+  governmental interventions.
