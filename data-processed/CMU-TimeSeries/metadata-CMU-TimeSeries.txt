@@ -19,11 +19,9 @@ license: cc-by-4.0
 team_model_designation: primary
 ensemble_of_hub_models: false
 methods: >
-  (State Hospitalizations) An ensemble of models: an auto-regressive 28-day
-  window forecaster, a direction-stratified conditional forecaster, and an AR
-  model with case covariates. (State Deaths) A basic AR-type time series model
-  fit using case counts and deaths as features. (County Cases) Quantile regr. on
-  county pop., case counts, self-reported symptom data, and doctor's visits.
+  (State Hosp) An ensemble of (a) 28-day-window AR + residual resampling, (b)
+  direction-stratified quantile AR (QAR), and (c) windowed QARX with cases.
+  (State Deaths) (County Cases) Other QARX models.
 team_funding: CDC Center of Excellence, gifts from Google and Facebook
 data_inputs: US Dept. of Health and Human Services (confirmed COVID-19
   hospitalization admissions), JHU-CSSE (confirmed case counts and deaths),
