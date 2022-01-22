@@ -1,0 +1,12 @@
+team_name: Karlen Working Group
+model_name: python Population Modeller
+model_abbr: Karlen-pypm
+model_contributors: Dean Karlen (University of Victoria and TRIUMF) <karlen@uvic.ca>
+website_url: https://pypm.github.io/home/
+license: gpl-3.0
+team_model_designation: primary
+methods: Discrete-time difference equations with long periods of constant transmission rate. Jan 16 2022 - separate cycles for omicron (vaccine and natural escape).
+team_funding: none
+data_inputs: NYT case and death data (starting Jan 16, 2022), HHS hospitalization data (starting Nov 22, 2020), CDC vaccination data, CDC seroprevalence, GISAID data pulled from outbreak.info (delta variant data)
+citation: https://arxiv.org/abs/2007.07156
+ensemble_of_hub_models: false
