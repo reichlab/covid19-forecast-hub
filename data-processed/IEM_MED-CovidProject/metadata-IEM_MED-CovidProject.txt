@@ -6,6 +6,7 @@ model_contributors: Brad Suchoski (IEM) <bradley.suchoski@iem.com>, Steve Stage 
 website_url: https://iem-modeling.com/ 
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: County-level, state-level, and national-level SEIR model projections for daily incident confirmed COVID 
   cases by using AI to fit actual cases observed.
 data_inputs: JHU reported daily confirmed cases

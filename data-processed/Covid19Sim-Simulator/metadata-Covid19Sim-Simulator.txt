@@ -8,6 +8,7 @@ model_contributors: Jagpreet Chhatwal <jagchhatwal@mgh.harvard.edu>, Turgay Ayer
 website_url: https://covid19sim.org/
 license: cc-by-nc-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: An interactive tool developed by researchers at Mass General Hospital, Harvard
   Medical School, Georgia Tech and Boston Medical Center to inform COVID-19 intervention
   policy decisions in the US.

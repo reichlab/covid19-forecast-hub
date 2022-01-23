@@ -5,6 +5,7 @@ model_contributors: Matthew Le, Mark Ibrahim, Levent Sagun, Timothee Lacroix, Ma
 website_url: https://dataforgood.fb.com/tools/covid-19-forecasts/
 license: cc-by-nc-4.0 
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: Neural Relational Autoregressive Model
 methods_long: We combine recurrent neural networks with a vector autoregressive model and
     train the joint model with a specific regularization scheme that increases the

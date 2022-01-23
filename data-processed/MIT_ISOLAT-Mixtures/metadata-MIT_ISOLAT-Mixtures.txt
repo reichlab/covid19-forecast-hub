@@ -6,6 +6,7 @@ model_contributors: Arnab Sarker (MIT) <arnabs@mit.edu>, Ali Jadbabaie (MIT) <ja
 website_url: https://covidpredictions.mit.edu
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: Non-mechanistic, non-parametric model based on representing time series
   as a sum of bell curves. 
 data_inputs: JHU CSSE state-level cases and deaths.

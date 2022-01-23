@@ -9,6 +9,7 @@ model_contributors: Pinar Keskinocak (Georgia Tech) <pinar@isye.gatech.edu>,
 website_url: https://github.com/pkeskinocak/Center-for-Health-and-Humanitarian-Systems/tree/master/COVID-19
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: Agent-based simulation model to project COVID19 infection spread.
 institution_affil: Georgia Institute of Technology
 data_inputs: Georgia Department of Public Health

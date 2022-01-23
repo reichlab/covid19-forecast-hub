@@ -6,6 +6,7 @@ model_contributors: Christopher Murry <cjlm@u.washington.edu>,  et al,  IHME-Cur
 website_url: https://covid19.healthdata.org/united-states-of-america
 license: cc-by-nc-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: This model makes predictions about the future that are dependent on the assumption  that
   current interventions continue. Non-linear mixed efects curve-fitting.
 team_funding: Bill & Melinda Gates Foundation

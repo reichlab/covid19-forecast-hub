@@ -1,0 +1,22 @@
+team_name: COVID-19 Forecast Hub
+model_name: 4_week_ensemble
+model_abbr: COVIDhub-4_week_ensemble
+model_contributors: Nutcha Wattanachit, Evan L. Ray, Nicholas Reich <nick@schoolph.umass.edu>
+website_url: https://covid19forecasthub.org/
+license: cc-by-4.0
+team_model_designation: other
+ensemble_of_hub_models: true
+methods: An ensemble, or model average, of submitted forecasts to the COVID-19 Forecast
+  Hub.
+team_funding: This model's development is funded by the US CDC grant number U01IP001122. The content is solely the responsibility of the authors and does not necessarily represent the official views of NIGMS or the National Institutes of Health.
+repo_url: https://github.com/reichlab/covid19-forecast-hub
+twitter_handles: reichlab, jaradniemi
+data_inputs: cumulative and incident death forecasts from other models.
+methods_long: 'This model, first run 2021-09-06, continues the 
+the practice of making 1-4 week (or 1-28 day) predictions for all
+targets handled by the hub, whereas the operational COVIDHub ensemble
+forecast no longer 
+includes predictions for incident cases at 3 and 4 weeks.
+This 4-week ensemble forecast is only meant to be used for research 
+purposes and is not intended for direct public communication or policy
+guidance.'

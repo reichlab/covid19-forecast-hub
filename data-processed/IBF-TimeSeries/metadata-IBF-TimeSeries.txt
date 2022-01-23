@@ -5,6 +5,7 @@ model_contributors: Dr. Chaman L. Jain (IBF) <cjain@ibf.org>
 website_url: https://ibf.org
 license: mit
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: Time Series Model with proprietary modifications
 team_funding: Institute of Business Forecasting
 data_inputs: WorldoMeter.com

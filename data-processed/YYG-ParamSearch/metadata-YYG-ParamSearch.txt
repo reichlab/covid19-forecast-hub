@@ -5,6 +5,7 @@ model_contributors: Youyang Gu <covid19projections@gmail.com>
 website_url: https://covid19-projections.com
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: An SEIR model that makes daily infections and deaths projections for US states.
   A machine learning layer learns the best parameters/inputs for each state.
   The model accounts for state reopenings.

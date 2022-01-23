@@ -5,4 +5,5 @@ model_contributors: Maximilian Marshall (JHU) <mmarsh29@jhu.edu>, Lauren Gardner
 website_url: https://systems.jhu.edu/research/public-health/predicting-covid-19-risk/
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: County-level, empirical machine learning model driven by epidemiological, mobility, demographic, and behavioral data.

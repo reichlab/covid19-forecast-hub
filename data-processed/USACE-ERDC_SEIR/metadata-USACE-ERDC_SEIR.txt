@@ -8,6 +8,7 @@ model_contributors: Michael L. Mayo <Michael.L.Mayo@erdc.dren.mil>, Michael A. R
 website_url: https://github.com/erdc-cv19/seir-model
 license: other
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: The ERDC SEIR model makes predictions of several variables (e.g., reported
   new/cumulative cases  per day, etc.). Model parameters are estimated using historical
   data using Bayesian inference.

@@ -5,6 +5,7 @@ model_contributors: Xiaoyong Jin (University of California Santa Barbara) <x_jin
 website_url: https://github.com/Gandor26/covid-open
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: This data-driven machine learning model makes predictions by referring to other regions with similar growth patterns and assuming the similar development will take place in the current region.
 team_funding: NSF
 data_inputs: JHU CSSE cases and deaths, covid tracking project hospitalizations

@@ -5,6 +5,7 @@ model_contributors: Yi Huang (University of Chicago),  Ishanu Chattopadhyay (Uni
 website_url: https://github.com/zeroknowledgediscovery/unitcov
 license: mit
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: Stochastic similarity via sequence likelihood divergence, General Linear Models, Tensorflow, Ensemble Regressors
 team_funding: Defense Advanced Research Projects Agency (DARPA), Defense Sciences Office (DSO)
 data_inputs: USAFacts (confirmed cases; reported fatalities),  US Census (population, socioeconomic variables), County-specific incidence count from past Influenza epidemics   
