@@ -1,18 +1,12 @@
 team_name: NCSU
 model_name: COVSIM
 model_abbr: NCSU-COVSIM
-model_version: "2022-01-09"
-model_contributors: Erik Rosenstrom (North Carolina State University) <erosens@ncsu.edu>, 
-Jessica Mele (North Carolina State University) <jmele@ncsu.edu>,
-Julie Swann (North Carolina State University) <jlswann@ncsu.edu>,
-Julie Ivy (North Carolina State University) <jsivy@ncsu.edu>,
-Maria Mayorga (North Carolina State University) <memayorg@ncsu.edu>,
+model_contributors: Erik Rosenstrom (North Carolina State University) <erosens@ncsu.edu>, Jessica Mele (North Carolina State University) <jmele@ncsu.edu>, Julie Swann (North Carolina State University) <jlswann@ncsu.edu>, Julie Ivy (North Carolina State University) <jsivy@ncsu.edu>, Maria Mayorga (North Carolina State University) <memayorg@ncsu.edu>
 website_url: https://covsim.hosted-wordpress.oit.ncsu.edu/
 license: cc-by-4.0
-team_model_designation: Proposed
+team_model_designation: proposed
 ensemble_of_hub_models: false
 methods: Stochastic agent based model of North Carolina using data population and demographic at the census tract level.
-ensemble_of_hub_models: false
 institution_affil: North Carolina State University
 twitter_handles: covsim
-citation: "Patel MD, Rosenstrom E, Ivy JS, et al. Association of Simulated COVID-19 Vaccination and Nonpharmaceutical Interventions With Infections, Hospitalizations, and Mortality. JAMA Network Open. 2021;4(6):e2110782-e2110782. doi:10.1001/jamanetworkopen.2021.10782"
+citation: https://doi.org/10.1001/jamanetworkopen.2021.10782
