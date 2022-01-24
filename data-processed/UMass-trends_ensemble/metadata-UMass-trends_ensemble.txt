@@ -1,0 +1,23 @@
+team_name: UMass-Amherst
+model_name: Ensemble of baseline models with trends
+model_abbr: UMass-trends_ensemble
+model_contributors: Nutcha Wattanachit, Aaron Gerding, Nick Reich <nick@umass.edu>, Evan Ray <elray@umass.edu>
+website_url: https://github.com/reichlab/covid-hosp-models
+license: cc-by-4.0
+team_model_designation: secondary
+ensemble_of_hub_models: false
+methods: 'Equally weighted ensemble of simple time-series baseline models.'
+methods_long: 'Equally weighted ensemble of simple time-series baseline models. Each 
+  baseline model calculates first differences of incidence in recent weeks. 
+  These differences are sampled and then added to the most recently observed 
+  incidence. Variations on this method include (a) including the first 
+  differences and the negative of these differences to enforce symmetry, 
+  resulting in a flat-line forecast, (b) varying the number of time-units in the
+  past for computing the first differences (typically 14, 21, or 28 days) to 
+  focus on capturing recent trends, and (c) using the original time-series or a 
+  variance-stabilizing transformation of it, e.g. square-root. Additionally, the
+  resulting predictive distributions are truncated so that any predicted samples
+  computed to be less than zero are truncated to be zero.'
+data_inputs: HHS Protect hospitalization data via COVIDcast.
+team_funding: This model development is supported by NIGMS grant R35GM119582 and CDC grant U01IP001122. The content is solely the responsibility of the authors and does not necessarily represent the official views of CDC, NIGMS, or the National Institutes of Health.
+twitter_handles: reichlab
