@@ -78,7 +78,7 @@ jobs:
       run: make recent_data
       working-directory: ./covidData/code/data-processing
       
-    - name: Generate truth csv files (NYTimes, USAFacts, JHU, Hospitalization, Zoltar)
+    - name: Generate truth csv files (NYTimes, JHU, Hospitalization, Zoltar)
       run: Rscript ./covid19-forecast-hub/code/R_scripts/generate_truth_csvs.R
       
     - name: Push Zoltar truth to Zoltar

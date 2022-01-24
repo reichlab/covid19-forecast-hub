@@ -1,7 +1,6 @@
 library(covidData)
 library(covidHubUtils)
 covidHubUtils::preprocess_nytimes("./covid19-forecast-hub/data-truth/nytimes/")
-covidHubUtils::preprocess_usafacts("./covid19-forecast-hub/data-truth/usafacts/")
 covidHubUtils::preprocess_jhu("./covid19-forecast-hub/data-truth/")
 covidHubUtils::preprocess_visualization_truth("./covid19-forecast-hub/visualization/vis-master/covid-csv-tools/dist/truth")
 covidHubUtils::preprocess_hospitalization("./covid19-forecast-hub/data-truth/")

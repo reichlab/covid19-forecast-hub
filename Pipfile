@@ -13,6 +13,7 @@ selenium = "*"
 webdriver-manager = "*"
 PyYAML = "*"
 PyGithub = "*"
+ipykernel = "*"
 
 [requires]
 python_version = "3.9"
@@ -27,9 +28,5 @@ selenium = "*"
 webdriver-manager = "*"
 PyYAML = "*"
 PyGithub = "*"
-
-[packages.3effbcc]
-file = "https://github.com/hannanabdul55/pykwalify/archive/master.zip"
-
-[packages.zoltpy]
-git = "https://github.com/reichlab/zoltpy"
+pykwalify = {file = "https://github.com/hannanabdul55/pykwalify/archive/master.zip"}
+zoltpy = {git = "https://github.com/reichlab/zoltpy"}
