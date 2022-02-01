@@ -5631,3 +5631,6 @@ file_path,validation_date
 ./data-processed/RobertWalraven-ESG/2022-01-31-RobertWalraven-ESG.csv,2022-02-01 00:31:48.353888
 ./data-processed/UCF-AEM/2022-01-30-UCF-AEM.csv,2022-02-01 00:31:48.544566
 ./data-processed/JBUD-HMXK/2022-01-30-JBUD-HMXK.csv,2022-02-01 03:03:14.001190
+./data-processed/COVIDhub-4_week_ensemble/2022-01-31-COVIDhub-4_week_ensemble.csv,2022-02-01 06:26:30.797818
+./data-processed/COVIDhub-ensemble/2022-01-31-COVIDhub-ensemble.csv,2022-02-01 06:26:34.747697
+./data-processed/COVIDhub-trained_ensemble/2022-01-31-COVIDhub-trained_ensemble.csv,2022-02-01 06:26:46.462628
