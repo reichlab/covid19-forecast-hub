@@ -46,7 +46,7 @@ class dataprep(object):
 
     def write(self):
         def tocsv(x,f):
-            x.to_csv(f,index=True,compression = "gzip")
+            x.to_csv(f,index=False,compression = "gzip")
         tocsv(self.threestreams,"threestreams.csv.gz")
         tocsv(self.cases,"cases.csv.gz")
         tocsv(self.deaths,"deaths.csv.gz")

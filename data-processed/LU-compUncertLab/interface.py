@@ -1,12 +1,14 @@
 #mcandrew
 
 class interface(object):
-    def __init__(self,data):
-        self.data = data
+    def __init__(self,data=None):
+        import pandas as pd
         
-        self.includedstates = includedstates
-        self.timeseriesName = includedstates
-
+        if data is None:
+            pass
+        else:
+            self.data = pd.read_csv("threestreams.csv.gz")
+        
         self.buildDataForModel()
         self.getForecastDate()
         self.generateTargetEndDates()
@@ -24,7 +26,7 @@ class interface(object):
         import numpy as np
         
         y = np.array(self.data.drop(columns=["location","location_name"]).set_index("date"))
-        self.y = y.T
+        self.modeldata = y.T
         return y.T
 
     def getForecastDate(self):
