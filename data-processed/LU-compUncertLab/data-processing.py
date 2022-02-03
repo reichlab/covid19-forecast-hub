@@ -45,11 +45,13 @@ class dataprep(object):
         return d
 
     def write(self):
-        self.threestreams.to_csv("threestreams.csv")
-        self.cases.to_csv("cases.csv")
-        self.deaths.to_csv("deaths.csv")
-        self.hosps.to_csv("hosps.csv")
-    
+        def tocsv(x,f):
+            x.to_csv(f,index=True,compression = "gzip")
+        tocsv(self.threestreams,"threestreams.csv.gz")
+        tocsv(self.cases,"cases.csv.gz")
+        tocsv(self.deaths,"deaths.csv.gz")
+        tocsv(self.hosps,"hosps.csv.gz")
+        
 if __name__ == "__main__":
 
     dtap = dataprep()

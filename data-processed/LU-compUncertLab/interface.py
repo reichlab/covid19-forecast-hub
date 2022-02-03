@@ -1,8 +1,8 @@
 #mcandrew
 
 class interface(object):
-    def __init__(self,fluhosp,includedstates):
-        self.fluhosp = fluhosp
+    def __init__(self,data):
+        self.data = data
         
         self.includedstates = includedstates
         self.timeseriesName = includedstates
@@ -14,9 +14,16 @@ class interface(object):
 
         self.numOfForecasts = 4 # FOR NOW THIS IS HARDCODED AS a 4 WEEK AHEAD
 
+    def subset2locations(self,locations):
+        d = self.data
+        d = d.loc[d.location.isin(locations)]
+        self.data = d
+        return d
+        
     def buildDataForModel(self):
         import numpy as np
-        y = np.array(self.fluhosp.drop(columns=["location"]))
+        
+        y = np.array(self.data.drop(columns=["location","location_name"]).set_index("date"))
         self.y = y.T
         return y.T
 
@@ -56,24 +63,7 @@ class interface(object):
         targets = ["{:d} wk ahead inc covid cases".format(ahead) for ahead in np.arange(1,4+1)]
         self.targets = targets
         return targets
-
-    def writeData(self,writeout,dataQuantiles,QS,TP,LAG):
-            quantileString = "LAG{:02d}/MEPAcast_preprocess__{:03d}_{:03d}_{:03d}.csv".format(LAG,TP,QS,LAG)
-            dataQuantiles.to_csv(quantileString ,header=True,mode="w",index=False)
                 
-    def accessPredictionsAndQuantiles(self,QS,TP,LAG):
-        import pandas as pd
-
-        mostRecentFile = "LAG{:02d}/MEPAcast_preprocess__{:03d}_{:03d}_{:03d}.csv".format(LAG,TP,QS,LAG)
-        print(mostRecentFile)
-        quantiles = pd.read_csv(mostRecentFile)
-
-        #mostRecentFile = sorted(glob("*allPredictions*.csv"))[-1]
-        #predictions = pd.read_csv(mostRecentFile)
-
-        self.quantiles = quantiles #,self.predictions = quantiles,predictions
-        return quantiles#,predictions
-
 if __name__ == "__main__":
     pass
 
