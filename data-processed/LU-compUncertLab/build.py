@@ -15,7 +15,7 @@ if __name__ == "__main__":
     
     for location in io.locations:
         io.subset2locations([location])
-        
+
         forecast_model = VAR(io.modeldata)
         forecast_model.fit()
 

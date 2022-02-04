@@ -8,6 +8,8 @@ class interface(object):
             pass
         else:
             self.data = pd.read_csv("threestreams.csv.gz")
+            self.centered_data = pd.read_csv("centered_threestreams.csv.gz")
+            self.running_means = pd.read_csv("running_mean_threestreams.csv.gz")
             self.locations = sorted(self.data.location.unique())
             
         self.buildDataForModel()
@@ -18,15 +20,18 @@ class interface(object):
         self.numOfForecasts = 4 # FOR NOW THIS IS HARDCODED AS a 4 WEEK AHEAD
 
     def subset2locations(self,locations):
-        d = self.data
-        d = d.loc[d.location.isin(locations)]
-        self.data = d
-        return d
+
+        def subset(d):
+            return d.loc[d.location.isin(locations)]
+
+        self.data          = subset(self.data)
+        self.centered_data = subset(self.centered_data)
+        self.running_means  = subset(self.running_means)
         
     def buildDataForModel(self):
         import numpy as np
         
-        y = np.array(self.data.drop(columns=["location","location_name"]).set_index("date"))
+        y = np.array(self.centered_data.drop(columns=["location","location_name"]).set_index("date"))
         self.modeldata = y.T
         return y.T
 

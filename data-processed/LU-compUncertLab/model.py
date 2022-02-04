@@ -107,7 +107,6 @@ class VAR(object):
         fit = posterior.sample(num_samples=10*10**3,num_chains=4)
 
         self.fit = fit
-        
    
     def createUnitedStatesForecast(self):
         from glob import glob
