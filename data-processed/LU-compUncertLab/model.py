@@ -1,6 +1,6 @@
 #mcandrew
 
-class VARTV(object):
+class VAR(object):
     def __init__(self,data,F=4,L=2):
         self.F=F
         self.L=L
@@ -104,50 +104,11 @@ class VARTV(object):
         model = self.varmodeldesc()
         
         posterior = stan.build(model, data=data)
-        fit = posterior.sample(num_samples=20*10**3,num_chains=4)
+        fit = posterior.sample(num_samples=10*10**3,num_chains=4)
 
         self.fit = fit
         
-    def formatSamples(self,timeinfo,logtransform=False):
-        import numpy as np
-        import pandas as pd
-        
-        dataPredictions = {"forecast_date":[],"target_end_date":[],"location":[], "target":[],"sample":[],"value":[]}
-        predictions = self.fit["ytilde"][:,-self.F:,:]
-
-        F = timeinfo.numOfForecasts
-        for sample,forecasts in enumerate(np.moveaxis(predictions,2,0)):
-            for n,forecast in enumerate(forecasts):
-                dataPredictions["forecast_date"].extend(F*[timeinfo.forecast_date])
-                dataPredictions["location"].extend( F*[timeinfo.timeseriesName[n]] )
-                dataPredictions["target_end_date"].extend( timeinfo.target_end_dates )
-                dataPredictions["target"].extend( timeinfo.targets )
-                dataPredictions["sample"].extend( F*[sample] )
-                dataPredictions["value"].extend( forecast )
-        dataPredictions = pd.DataFrame(dataPredictions)
-
-        if logtransform:
-            dataPredictions["value"] = 10**dataPredictions.value
-        
-        self.dataPredictions = dataPredictions
-        return dataPredictions
-
-    def createQuantiles(self,x):
-        import numpy as np
-        import pandas as pd
- 
-        quantiles = np.array([0.010, 0.025, 0.050, 0.100, 0.150, 0.200, 0.250, 0.300, 0.350, 0.400, 0.450, 0.500
-                              ,0.550, 0.600, 0.650, 0.700, 0.750, 0.800, 0.850, 0.900, 0.950, 0.975, 0.990])
-        quantileValues = np.percentile( x["value"], q=100*quantiles)     
-        return pd.DataFrame({"quantile":list(quantiles),"value":list(quantileValues)})
-    
-    def fromSamples2Quantiles(self):
-        dataQuantiles = self.dataPredictions.groupby(["forecast_date","target_end_date","location","target"]).apply(lambda x: self.createQuantiles(x)).reset_index().drop(columns="level_4")
-        dataQuantiles["type"] = "quantile"
-        
-        self.dataQuantiles = dataQuantiles
-        return dataQuantiles
-    
+   
     def createUnitedStatesForecast(self):
         from glob import glob
 
