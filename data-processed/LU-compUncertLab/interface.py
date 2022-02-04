@@ -7,10 +7,12 @@ class interface(object):
         if data is None:
             pass
         else:
-            self.data = pd.read_csv("threestreams.csv.gz")
-            self.centered_data = pd.read_csv("centered_threestreams.csv.gz")
+            self.data          = pd.read_csv("threestreams.csv.gz")
+            self.centered_data = pd.read_csv("centered_std_threestreams.csv.gz")
             self.running_means = pd.read_csv("running_mean_threestreams.csv.gz")
-            self.locations = sorted(self.data.location.unique())
+            self.stds          = pd.read_csv("stds.csv.gz")
+
+            self.locations     = sorted(self.data.location.unique())
             
         self.buildDataForModel()
         self.getForecastDate()
@@ -27,6 +29,10 @@ class interface(object):
         self.data          = subset(self.data)
         self.centered_data = subset(self.centered_data)
         self.running_means  = subset(self.running_means)
+
+        self.locations = locations 
+
+        self.buildDataForModel()
         
     def buildDataForModel(self):
         import numpy as np
@@ -68,7 +74,12 @@ class interface(object):
     def generateTargetNames(self):
         import numpy as np
 
-        targets = ["{:d} wk ahead inc covid cases".format(ahead) for ahead in np.arange(1,4+1)]
+        # first target is always cases, second deaths, and third hosps.
+        targets = []
+        trgts = ["case","death","hosp"]
+        for trgt in trgts:
+            targets.append(["{:d} wk ahead inc covid {:s}".format(ahead,trgt) for ahead in np.arange(1,4+1)])
+
         self.targets = targets
         return targets
 
@@ -78,15 +89,16 @@ class interface(object):
         import pandas as pd
         
         dataPredictions = {"forecast_date":[],"target_end_date":[],"location":[], "target":[],"sample":[],"value":[]}
-        predictions = model.fit["ytilde"][:,-self.F:,:] # this is coming from the model object
+        predictions = model.fit["ytilde"][:,-model.F:,:] # this is coming from the model object
 
         F = self.numOfForecasts
         for sample,forecasts in enumerate(np.moveaxis(predictions,2,0)):
+            
             for n,forecast in enumerate(forecasts):
                 dataPredictions["forecast_date"].extend(F*[self.forecast_date])
-                dataPredictions["location"].extend( F*[self.timeseriesName[n]] )
+                dataPredictions["location"].extend( F*[self.locations[0]] )
                 dataPredictions["target_end_date"].extend( self.target_end_dates )
-                dataPredictions["target"].extend( self.targets )
+                dataPredictions["target"].extend( self.targets[n] )
                 dataPredictions["sample"].extend( F*[sample] )
                 dataPredictions["value"].extend( forecast )
         dataPredictions = pd.DataFrame(dataPredictions)
@@ -94,9 +106,34 @@ class interface(object):
         self.dataPredictions = dataPredictions
         return dataPredictions
 
+    def un_center(self):
+        stds = self.transform_stds_long()
+        running_means = self.transform_running_means_long()
+
+        predictions = self.dataPredictions
+
+        # create a fake target
+        def fromtarget2T(x):
+            if "case" in x:
+                return "cases"
+            elif "hosp" in x:
+                return "hosps"
+            else:
+                return "deaths"
+        predictions["T"] = [ fromtarget2T(_) for _ in predictions.target]
+
+        key = ["location","T"]
+        predictions = predictions.merge( stds, on = key )
+        predictions = predictions.merge(running_means, on = key)
+
+        predictions = predictions.drop(columns=["T"])
+
+        predictions.value = predictions["value"]*predictions["std"] + predictions["mean"]
+        self.dataPredictions = predictions
+
     def fromSamples2Quantiles(self):
         
-        def createQuantiles(self,x):
+        def createQuantiles(x):
             import numpy as np
             import pandas as pd
 
@@ -110,15 +147,40 @@ class interface(object):
         
         self.dataQuantiles = dataQuantiles
         return dataQuantiles
- 
-    
 
+    def writeout(self,n):
+        if n:
+            self.dataQuantiles.to_csv("{:s}_LUcompUncertLab-VAR.csv".format(self.forecast_date),header=False,index=False,mode="a")
+        else:
+            self.dataQuantiles.to_csv("{:s}_LUcompUncertLab-VAR.csv".format(self.forecast_date),header=True,index=False,mode="w")
 
+    # post processing help
+    def grab_recent_forecast_file(self):
+        import pandas as pd
+        return pd.read_csv("{:s}_LUcompUncertLab-VAR.csv".format(self.forecast_date))
 
+    def transform_stds_long(self):
+        stds = self.stds
+        stds = stds.drop(columns = ["location_name"]).sort_values("date")
+        stds = stds.groupby(["location"]).apply(lambda x: x.iloc[-1]).drop(columns=["date"])
 
+        stds_long = stds.melt(id_vars = ["location"]).rename(columns={"variable":"T","value":"std"})
+        
+        return stds_long
 
+    def transform_running_means_long(self):
+        running_means = self.running_means
+        running_means = running_means.drop(columns = ["location_name"]).sort_values("date")
+        running_means = running_means.groupby(["location"]).apply(lambda x: x.iloc[-1]).drop(columns=["date"])
 
-    
+        running_means.index = running_means.index.rename("T")
+        running_means.columns = running_means.columns.rename("T")
+        
+        running_means_long = running_means.melt(id_vars = ["location"]).rename(columns={"variable":"T","value":"mean"})
+        
+        return running_means_long
+
+   
 if __name__ == "__main__":
     pass
 

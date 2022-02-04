@@ -23,16 +23,36 @@ if __name__ == "__main__":
         # format running mean to output. Running mean is missing location and date info
         d = d.reset_index()
         runningmeans = runningmeans.reset_index()
-        runningmeans["location"] = d.location
+        runningmeans["location"]      = d.location
         runningmeans["location_name"] = d.location_name
-        runningmeans["date"] = d.date
+        runningmeans["date"]          = d.date
+
+        stds = centered_data.std()
+        centered_std = centered_data / stds
+        centered_std = centered_std.reset_index()
+
+        stds = pd.DataFrame({"cases":[stds.cases],"deaths":[stds.deaths],"hosps":[stds.hosps]
+                             ,"location":[d.location.iloc[0]]
+                             ,"location_name":[d.location_name.iloc[0]]
+                             ,"date":[d.date.iloc[-1]]})
         
         if n:
             centered_data.to_csv("centered_threestreams.csv.gz",compression="gzip",index=True,mode="a",header=False)
+
             runningmeans.to_csv("running_mean_threestreams.csv.gz"
                                 ,compression="gzip",mode="a",header=False,index=False)
-            
+
+            centered_std.to_csv("centered_std_threestreams.csv.gz"
+                                ,compression="gzip",mode="a",header=False,index=False)
+
+            stds.to_csv("stds.csv.gz",compression="gzip",mode="a",header=False,index=False)
         else:
             centered_data.to_csv("centered_threestreams.csv.gz",compression="gzip",index=True,mode="w",header=True)
+
             runningmeans.to_csv("running_mean_threestreams.csv.gz"
                                 ,compression="gzip",mode="w",header=True,index=False)
+            
+            centered_std.to_csv("centered_std_threestreams.csv.gz"
+                                ,compression="gzip",mode="w",header=True,index=False)
+
+            stds.to_csv("stds.csv.gz",compression="gzip",mode="w",header=True,index=False)
