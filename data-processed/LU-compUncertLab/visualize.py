@@ -48,14 +48,14 @@ class viz(object):
             hig = cis.loc[cis["quantile"]==0.975,"value"]
 
             ax.fill_between(target_end_dates , low, hig, color = color, alpha=0.50 )
-            ax.plot( target_end_dates, mid, color=color, lw=1,ls="--",label="Loc = {:d}".format(self.loc))
+            ax.plot( target_end_dates, mid, color=color, lw=1,ls="-",label="Loc = {:d}".format(self.loc))
 
             ax.tick_params(which="both",labelsize=6)
 
             ax.set_xticks(ax.get_xticks()[::-1][::21][::-1])
 
             ax.set_xlabel("Target end date",fontsize=8)
-            ax.set_ylabel("Num. of confirmed flu hosps",fontsize=8)
+            ax.set_ylabel("Num. of confirmed covid {:s}".format(target),fontsize=8)
             ax.legend(fontsize=10)
 
             w=self.mm2inch(183)

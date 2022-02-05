@@ -16,7 +16,7 @@ class interface(object):
             
         self.buildDataForModel()
         self.getForecastDate()
-        self.generateTargetEndDates()
+        self.generateTargetEndDays()
         self.generateTargetNames()
 
         self.numOfForecasts = 28 # FOR NOW THIS IS HARDCODED AS a 28 day ahead AHEAD
@@ -71,6 +71,20 @@ class interface(object):
         self.target_end_dates = target_end_dates
         return target_end_dates
 
+    def generateTargetEndDays(self):
+        import numpy as np
+        import datetime
+        import pandas as pd
+
+        start = pd.to_datetime(self.thisWeek.enddate())
+        
+        target_end_days = []
+        for f in np.arange(1,28+1): # four days ahead
+            ted = (start+np.timedelta64(f,"D")).strftime("%Y-%m-%d")
+            target_end_days.append(ted)
+        self.target_end_days = target_end_days
+        return target_end_days
+    
     def generateTargetNames(self):
         import numpy as np
 
@@ -88,7 +102,9 @@ class interface(object):
         import numpy as np
         import pandas as pd
         
-        dataPredictions = {"forecast_date":[],"target_end_date":[],"location":[], "target":[],"sample":[],"value":[]}
+        dataPredictions = {"forecast_date":[]
+                           ,"target_end_date":[]
+                           ,"location":[], "target":[],"sample":[],"value":[]}
         predictions = model.fit["ytilde"][:,-model.F:,:] # this is coming from the model object
 
         F = self.numOfForecasts
@@ -97,7 +113,7 @@ class interface(object):
             for n,forecast in enumerate(forecasts):
                 dataPredictions["forecast_date"].extend(F*[self.forecast_date])
                 dataPredictions["location"].extend( F*[self.locations[0]] )
-                dataPredictions["target_end_date"].extend( self.target_end_dates )
+                dataPredictions["target_end_date"].extend( self.target_end_days )
                 dataPredictions["target"].extend( self.targets[n] )
                 dataPredictions["sample"].extend( F*[sample] )
                 dataPredictions["value"].extend( forecast )
@@ -142,7 +158,9 @@ class interface(object):
             quantileValues = np.percentile( x["value"], q=100*quantiles)     
             return pd.DataFrame({"quantile":list(quantiles),"value":list(quantileValues)})
 
-        dataQuantiles = self.dataPredictions.groupby(["forecast_date","target_end_date","location","target"]).apply(lambda x:createQuantiles(x)).reset_index().drop(columns="level_4")
+        dataQuantiles = self.dataPredictions.groupby(["forecast_date"
+                                                      ,"target_end_date"
+                                                      ,"location","target"]).apply(lambda x:createQuantiles(x)).reset_index().drop(columns="level_4")
         dataQuantiles["type"] = "quantile"
         
         self.dataQuantiles = dataQuantiles
