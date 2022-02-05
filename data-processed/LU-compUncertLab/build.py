@@ -6,8 +6,9 @@ from model import VAR
 if __name__ == "__main__":
     
     io = interface(0)
-    
     for n,location in enumerate(io.locations):
+        io = interface(0)
+        
         io.subset2locations([location])
 
         forecast_model = VAR(io.modeldata)
@@ -19,4 +20,3 @@ if __name__ == "__main__":
         io.fromSamples2Quantiles()
 
         io.writeout(n)
-        break

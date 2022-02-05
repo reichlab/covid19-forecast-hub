@@ -19,7 +19,7 @@ class interface(object):
         self.generateTargetEndDates()
         self.generateTargetNames()
 
-        self.numOfForecasts = 4 # FOR NOW THIS IS HARDCODED AS a 4 WEEK AHEAD
+        self.numOfForecasts = 28 # FOR NOW THIS IS HARDCODED AS a 28 day ahead AHEAD
 
     def subset2locations(self,locations):
 
@@ -78,7 +78,7 @@ class interface(object):
         targets = []
         trgts = ["case","death","hosp"]
         for trgt in trgts:
-            targets.append(["{:d} wk ahead inc covid {:s}".format(ahead,trgt) for ahead in np.arange(1,4+1)])
+            targets.append(["{:d} day ahead inc covid {:s}".format(ahead,trgt) for ahead in np.arange(1,28+1)])
 
         self.targets = targets
         return targets

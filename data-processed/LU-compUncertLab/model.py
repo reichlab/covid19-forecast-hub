@@ -1,7 +1,7 @@
 #mcandrew
 
 class VAR(object):
-    def __init__(self,data,F=4,L=2):
+    def __init__(self,data,F=28,L=2):
         self.F=F
         self.L=L
 
