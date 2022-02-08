@@ -5689,3 +5689,6 @@ file_path,validation_date
 ./data-processed/epiforecasts-ensemble1/2022-02-07-epiforecasts-ensemble1.csv,2022-02-08 00:29:09.323160
 ./data-processed/CMU-TimeSeries/2022-02-07-CMU-TimeSeries.csv,2022-02-08 00:29:12.384987
 ./data-processed/UCSD_NEU-DeepGLEAM/2022-02-07-UCSD_NEU-DeepGLEAM.csv,2022-02-08 00:29:13.482334
+./data-processed/DDS-NBDS/2022-02-07-DDS-NBDS.csv,2022-02-08 03:06:08.728775
+./data-processed/COVIDhub-ensemble/2022-02-07-COVIDhub-ensemble.csv,2022-02-08 03:06:14.608204
+./data-processed/COVIDhub-4_week_ensemble/2022-02-07-COVIDhub-4_week_ensemble.csv,2022-02-08 03:06:28.662422
