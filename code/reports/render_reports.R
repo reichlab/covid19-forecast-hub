@@ -176,7 +176,7 @@ for (i in seq_len(nrow(all_states))) {
     }
   },
   error = function(c) {
-    print(sprintf("error while generating reports for %s", curr_state))
+    print(sprintf("error while generating reports for %s", all_states[i,]$abbreviation))
     print(c)
     retries <<- retries + 1
   })
