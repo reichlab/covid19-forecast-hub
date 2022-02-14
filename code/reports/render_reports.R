@@ -21,6 +21,8 @@ print(rmarkdown::pandoc_version())
 # check for the required COVIDhub-ensemble forecast file
 #
 
+next_saturday <- as.Date(covidHubUtils::calc_target_week_end_date(lubridate::today(), horizon = 0))
+this_monday <- next_saturday - 5
 ensemble_file <- paste0("../../COVIDhub-ensemble/", this_monday, "-COVIDhub-ensemble.csv")
 if (!file.exists(ensemble_file)) {
   print(paste0("ensemble file not found: ", ensemble_file))
