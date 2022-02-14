@@ -18,21 +18,13 @@ print(rmarkdown::pandoc_version())
 
 
 #
-# check for required ensemble files
+# check for the required COVIDhub-ensemble forecast file
 #
 
-next_saturday <- as.Date(covidHubUtils::calc_target_week_end_date(lubridate::today(), horizon = 0))
-this_monday <- next_saturday - 5
-this_monday <- as.Date("1962-10-22") # temp: use fixed date
-weights_files <- c(paste0("../../ensemble-metadata/", this_monday, "-inc_death-model-weights.csv"),
-                   paste0("../../ensemble-metadata/", this_monday, "-cum_death-model-weights.csv"),
-                   paste0("../../ensemble-metadata/", this_monday, "-inc_case-model-weights.csv"),
-                   paste0("../../ensemble-metadata/", this_monday, "-inc_hosp-model-weights.csv"))
-for (weights_file in weights_files) {
-  if (!file.exists(weights_file)) {
-    print(paste0("weights file not found: ", weights_file))
-    quit(save = "default", status = 2, runLast = FALSE)  # error: No such file or directory
-  }
+ensemble_file <- paste0("../../COVIDhub-ensemble/", this_monday, "-COVIDhub-ensemble.csv")
+if (!file.exists(ensemble_file)) {
+  print(paste0("ensemble file not found: ", ensemble_file))
+  quit(save = "default", status = 2, runLast = FALSE)  # error: No such file or directory
 }
 
 
