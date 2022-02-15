@@ -13,8 +13,10 @@ jobs:
         node-version: [10.2]
 
     steps:
-    - name: Checkout Forecast Hub Repo
-      uses: actions/checkout@v2
+    - name: Checkout project config file in Forecast Hub Repo
+      uses: Bhacaz/checkout-files
+      with:
+        files: project-config.json
     - name: Checkout Validation Repo
       uses: actions/checkout@v2
       with:
