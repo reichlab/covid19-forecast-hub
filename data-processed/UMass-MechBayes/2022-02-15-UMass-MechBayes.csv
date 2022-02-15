@@ -1,0 +1,25 @@
+quantile,value,type,location,target,forecast_date,target_end_date
+0.010,7649,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.025,8246,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.050,8667,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.100,9332,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.150,9898,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.200,10216,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.250,10510,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.300,10785,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.350,11122,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.400,11439,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.450,11753,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.500,12055,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+NA,12055,point,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.550,12329,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.600,12649,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.650,12981,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.700,13399,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.750,13765,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.800,14165,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.850,14652,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.900,15340,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.950,16415,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.975,17316,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
+0.990,18353,quantile,US,1 wk ahead inc death,2022-02-15,2022-02-26
