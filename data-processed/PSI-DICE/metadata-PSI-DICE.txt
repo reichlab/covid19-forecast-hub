@@ -5,7 +5,7 @@ model_contributors: James Turtle <jturtle@predsci.com>,  Michal Ben-Nun <mbennun
   Riley <pete@predsci.com>
 website_url: https://github.com/predsci/DICE4
 license: mit
-team_model_designation: primary
+team_model_designation: secondary
 ensemble_of_hub_models: false
 methods: 'A stochastic/deterministic, SEIR model that stratifies by disease severity and includes 
   compartments for hospitalizations. Parameter posteriors are inferred using an MCMC procedure.'
