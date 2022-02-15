@@ -16,7 +16,7 @@ jobs:
     - name: Checkout project config file in Forecast Hub Repo
       uses: Bhacaz/checkout-files@v1
       with:
-        files: project-config.json
+        files: project-config.json data-locations/locations.csv
         token: ${{ github.token }}
     - name: Checkout Validation Repo
       uses: actions/checkout@v2
