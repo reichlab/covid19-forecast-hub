@@ -17,6 +17,7 @@ jobs:
       uses: Bhacaz/checkout-files@v1
       with:
         files: project-config.json
+        token: ${{ github.token }}
     - name: Checkout Validation Repo
       uses: actions/checkout@v2
       with:
