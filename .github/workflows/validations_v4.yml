@@ -21,7 +21,7 @@ jobs:
     - name: Checkout Validation Repo
       uses: actions/checkout@v2
       with:
-        repository: 'reichlab/covid19-forecast-hub-validations'
+        repository: 'Serena-Wang/covid19-forecast-hub-validations'
         ref: 'config'
         path: 'covid19-forecast-hub-validations'
 #     - name: Use Node.js ${{ matrix.node-version }}
