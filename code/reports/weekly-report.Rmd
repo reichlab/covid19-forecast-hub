@@ -643,6 +643,12 @@ wide_quant_dat <- spread(ensemble_quantdat, target, value) %>%
 quant.5_cutoff <- wide_quant_dat %>% 
   filter(quantile == .5, next_2wk_deaths >= last_2wk_deaths) 
 
+quant.5_cutoff_states <- wide_quant_dat %>% 
+  filter(quantile == .5, next_2wk_deaths >= last_2wk_deaths, fips < 60) 
+
+quant.5_cutoff_terr <- wide_quant_dat %>% 
+  filter(quantile == .5, next_2wk_deaths >= last_2wk_deaths, fips >= 60, fips != 'US') 
+
 quant.25_cutoff <- wide_quant_dat %>% 
   filter(quantile == .25, next_2wk_deaths >= last_2wk_deaths) 
 
@@ -744,7 +750,7 @@ wide_point_dat_hosp <- ensemble_pointdat_hosp %>%
 
 ## State level {.tabset .tabset-fade}
 
-The ensemble model estimates that `r nrow(quant.5_cutoff)` states and territories of the US have a greater than 50% chance of having more deaths in the next two weeks compared to the past two weeks.The model forecasts that `r nrow(quant.25_cutoff)` states and territories have a greater than 75% chance of an increase over the next two weeks (`r paste(quant.25_cutoff$location_name, collapse=", ")`). 
+The ensemble model estimates that `r nrow(quant.5_cutoff_states)` out of 50 states and `r nrow(quant.5_cutoff_terr)` out of 7 territories of the US have a greater than 50% chance of having more deaths in the next two weeks compared to the past two weeks.The model forecasts that `r nrow(quant.25_cutoff)` states and territories have a greater than 75% chance of an increase over the next two weeks (`r paste(quant.25_cutoff$location_name, collapse=", ")`). 
 
 The sortable and searchable table below shows the total number of reported COVID-19 deaths at the US level and by state over the last two weeks (ending Saturday, `r format(last_5_saturdays[5], "%B %d, %Y")`) and the forecasted counts for the subsequent two weeks (ending `r format(last_5_saturdays[5]+14, "%B %d, %Y")`).
 
