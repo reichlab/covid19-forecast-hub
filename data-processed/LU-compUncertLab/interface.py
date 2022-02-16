@@ -37,7 +37,9 @@ class interface(object):
     def buildDataForModel(self):
         import numpy as np
         
-        y = np.array(self.centered_data.drop(columns=["location","location_name"]).set_index("date"))
+        #y = np.array(self.centered_data.drop(columns=["location","location_name"]).set_index("date"))
+        y = np.array(self.data.drop(columns=["location","location_name"]).set_index("date"))
+        
         self.modeldata = y.T
         return y.T
 
@@ -172,6 +174,13 @@ class interface(object):
         else:
             self.dataQuantiles.to_csv("{:s}_LUcompUncertLab-VAR.csv".format(self.forecast_date),header=True,index=False,mode="w")
 
+    def writeout_predictions(self,n):
+        if n:
+            self.dataPredictions.to_csv("{:s}_LUcompUncertLab-VAR__predictions.csv.gz".format(self.forecast_date),header=False,index=False,mode="a",compression="gzip")
+        else:
+            self.dataPredictions.to_csv("{:s}_LUcompUncertLab-VAR__predictions.csv.gz".format(self.forecast_date),header=True,index=False,mode="w",compression="gzip")
+
+            
     # post processing help
     def grab_recent_forecast_file(self):
         import pandas as pd
@@ -198,6 +207,13 @@ class interface(object):
         
         return running_means_long
 
+    def grab_recent_predictions(self):
+        from glob import glob
+        import pandas as pd
+        predictionfiles = sorted(glob("*predictions.csv.gz"))
+
+        self.predictions = pd.read_csv(predictionfiles[-1])
+        return self.predictions
    
 if __name__ == "__main__":
     pass
