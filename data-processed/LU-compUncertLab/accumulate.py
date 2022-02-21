@@ -6,6 +6,7 @@ import pandas as pd
 
 if __name__ == "__main__":
     
+    
     io = interface(0)
     predictions = io.grab_recent_predictions()
     cumPredictions = {"forecast_date":[]
@@ -28,4 +29,6 @@ if __name__ == "__main__":
             cumPredictions["sample"].append(row["sample"])
             cumPredictions["value"].append(sum)
     cumPredictions = pd.DataFrame(cumPredictions)
-    pd.concat(predictions, cumPredictions)
+    both = pd.concat([predictions, cumPredictions])
+
+    both.to_csv("{:s}_LUcompUncertLab-VAR__cumulativepredictions.csv.gz".format(io.forecast_date),header=True,index=False,mode="w",compression="gzip")
