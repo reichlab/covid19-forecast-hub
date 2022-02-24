@@ -199,3 +199,12 @@ forecast_date,response_var,spatial_resolution,theta
 2022-02-21,inc_case,national,2.4
 2022-02-21,inc_hosp,state,4.5
 2022-02-21,inc_hosp,national,3
+2022-02-21,cum_death,state,0.7
+2022-02-21,cum_death,national,4.2
+2022-02-21,inc_death,state,20.7
+2022-02-21,inc_death,national,2.3
+2022-02-21,inc_case,county,13
+2022-02-21,inc_case,state,8
+2022-02-21,inc_case,national,3.5
+2022-02-21,inc_hosp,state,4.2
+2022-02-21,inc_hosp,national,2.8
