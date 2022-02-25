@@ -20,9 +20,6 @@ if __name__ == "__main__":
     dSum = 0
     wSum = 0
     for index, row in predictions.iterrows():
-        # REMOVE AFTER TESTING
-        if row['sample'] != 0:
-            break
         # if hopsitalizations, skip
         if row['target'][-4:] != "hosp":
             # if 1, sum = 0
@@ -50,17 +47,18 @@ if __name__ == "__main__":
                 weeklyPredictions["location"].append(row["location"])
                 newTarget = row["target"].replace("inc", "cum")
                 if day == "7":
-                    weeklyPredictions["target"].append(row["target"].replace("7 day", "1 week"))
+                    weeklyPredictions["target"].append(row["target"].replace("7 day", "1 wk"))
                 if day == "14":
-                    weeklyPredictions["target"].append(row["target"].replace("14 day", "2 week"))
+                    weeklyPredictions["target"].append(row["target"].replace("14 day", "2 wk"))
                 if day == "21":
-                    weeklyPredictions["target"].append(row["target"].replace("21 day", "3 week"))
+                    weeklyPredictions["target"].append(row["target"].replace("21 day", "3 wk"))
                 if day == "28":
-                    weeklyPredictions["target"].append(row["target"].replace("28 day", "4 week"))
+                    weeklyPredictions["target"].append(row["target"].replace("28 day", "4 wk"))
                 weeklyPredictions["sample"].append(row["sample"])
                 weeklyPredictions["value"].append(wSum)
                 wSum = 0
     
+    date = dailyPredictions["forecast_date"][0]
     # dictionary to df
     dailyPredictions = pd.DataFrame(dailyPredictions)
     weeklyPredictions = pd.DataFrame(weeklyPredictions)
@@ -69,4 +67,4 @@ if __name__ == "__main__":
     # append the weekly cumulative preds
     dailyAndWeeklyPred = pd.concat([both, weeklyPredictions])
 
-    dailyAndWeeklyPred.to_csv("{:s}_LUcompUncertLab-VAR__cumulativepredictions.csv.gz".format(io.forecast_date),header=True,index=False,mode="w",compression="gzip")
+    dailyAndWeeklyPred.to_csv("{:s}_LUcompUncertLab-VAR__cumulativepredictions.csv.gz".format(date),header=True,index=False,mode="w",compression="gzip")
