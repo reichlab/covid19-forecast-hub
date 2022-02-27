@@ -1,0 +1,89 @@
+PYTHON:=python3 -W ignore
+
+COMMITprefix:=Forecasts generated for LUcompUncertLab-VAR__cumulativepredictions.csv.gz on
+COMMITsuffix:=$(shell date +"%Y-%m-%d")
+
+COMMIT:=$(COMMITprefix) $(COMMITsuffix)
+
+runall: interface model accumulate buildModel zip sync
+.PHONY: runall
+
+interface:
+	$(PYTHON) LUcompUncertLab-interface.py && echo "data interface built"
+
+model:
+    $(PYTHON) LUcompUncertLab-model.py && echo "data model"
+
+accumulate:
+    $(PYTHON) LUcompUncertLab-accumulate.py && echo "New file formed"
+
+
+plottrajectories:
+    $(PYTHON) LUcompUncertLab-plotTrajectories.py && echo "data model built"
+
+add:
+	git add .
+
+commit:
+	git commit -m "$(COMMIT)"
+
+push:
+	git push
+
+zip:
+	gzip -f *allPredictions.csv
+
+send: add commit push
+.PHONY: send
+
+sync:
+	rsync -arvz --progress ../LUcompUncertLab-TEVA/ ../../../2022FluSightModels/LUcompUncertLab-TEVA && \
+	make -C ../../../2022FluSightModels/
+
+
+
+
+	#mcandrew;
+
+PYTHON:=python3 -W ignore
+
+COMMITprefix:=Forecasts generated for LUcompUncertLab-VAR__cumulativepredictions model on
+COMMITsuffix:=$(shell date +"%Y-%m-%d")
+
+COMMIT:=$(COMMITprefix) $(COMMITsuffix)
+
+runall: dataprocessed interface model generateforecatsts buildmodel plotTrajectories collectAndFormatData generateForecasts postprocess checkLocations plotTrajectories zip sync
+.PHONY: runall
+
+dataprocessed:
+	$(PYTHON) data-processing.py && echo "Generate the three csv files"
+
+interface:
+	$(PYTHON) interface.py && echo "data interface built"
+
+model:
+	$(PYTHON) model.py && echo "data model"
+
+generateForecasts:
+	$(PYTHON) accumulate.py && echo "forecasts generated"
+
+buildmodel:
+	$(PYTHON) build.py && echo "model build"
+
+plotTrajectories:
+	$(PYTHON) plotTrajectories.py && echo "Plotted trajectories"
+
+add:
+	git add .
+
+commit:
+	git commit -m "$(COMMIT)"
+
+push:
+	git push
+
+zip:
+	gzip -f *.LUcompUncertLab-VAR__cumulativepredictions.csv
+
+send: add commit push
+.PHONY: send
