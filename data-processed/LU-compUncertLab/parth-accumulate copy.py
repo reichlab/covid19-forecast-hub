@@ -9,38 +9,45 @@ if __name__ == "__main__":
     
     io = interface(0)
     predictions = io.grab_recent_predictions()
-    df1 = pd.read_csv('2022-02-21_LUcompUncertLab-VAR__predictions.csv')
-    #working on location number 10
-    df2 = df1[df1['location'] == 10]
-    print(df2.info())
-    df2['forecast_date'] = pd.to_datetime(df2['forecast_date'])
-    df2['target_end_date'] = pd.to_datetime(df2['target_end_date'])
-    print(df2.info())
-    content_1 = ['1 day ahead inc covid case','2 day ahead inc covid case','3 day ahead inc covid case','4 day ahead inc covid case','5 day ahead inc covid case','6 day ahead inc covid case','7 day ahead inc covid case']
-    df2.loc[df2['target'].isin(content_1),'wn'] = 1
-    content_2 = ['8 day ahead inc covid case','9 day ahead inc covid case','10 day ahead inc covid case','11 day ahead inc covid case','12 day ahead inc covid case','13 day ahead inc covid case','14 day ahead inc covid case']
-    df2.loc[df2['target'].isin(content_2),'wn'] = 2
-    content_3 = ['15 day ahead inc covid case','16 day ahead inc covid case','17 day ahead inc covid case','18 day ahead inc covid case','19 day ahead inc covid case','20 day ahead inc covid case','21 day ahead inc covid case']
-    df2.loc[df2['target'].isin(content_3),'wn'] = 3
-    content_4 = ['22 day ahead inc covid case','23 day ahead inc covid case','24 day ahead inc covid case','25 day ahead inc covid case','26 day ahead inc covid case','27 day ahead inc covid case','28 day ahead inc covid case']
-    df2.loc[df2['target'].isin(content_4),'wn'] = 4
-    content_5 = ['1 day ahead inc covid death','2 day ahead inc covid death','3 day ahead inc covid death','4 day ahead inc covid death','5 day ahead inc covid death','6 day ahead inc covid death','7 day ahead inc covid death']
-    df2.loc[df2['target'].isin(content_5),'wn'] = 1
-    content_6 = ['8 day ahead inc covid death','9 day ahead inc covid death','10 day ahead inc covid death','11 day ahead inc covid death','12 day ahead inc covid death','13 day ahead inc covid death','14 day ahead inc covid death']
-    df2.loc[df2['target'].isin(content_6),'wn'] = 2
-    content_7 = ['15 day ahead inc covid death','16 day ahead inc covid death','17 day ahead inc covid death','18 day ahead inc covid death','19 day ahead inc covid death','20 day ahead inc covid death','21 day ahead inc covid death']
-    df2.loc[df2['target'].isin(content_7),'wn'] = 3
-    content_8 = ['22 day ahead inc covid death','23 day ahead inc covid death','24 day ahead inc covid death','25 day ahead inc covid death','26 day ahead inc covid death','27 day ahead inc covid death','28 day ahead inc covid death']
-    df2.loc[df2['target'].isin(content_8),'wn'] = 4
-    content_9 = ['1 day ahead inc covid hosp','2 day ahead inc covid hosp','3 day ahead inc covid hosp','4 day ahead inc covid hosp','5 day ahead inc covid hosp','6 day ahead inc covid hosp','7 day ahead inc covid hosp']
-    df2.loc[df2['target'].isin(content_9),'wn'] = 1
-    content_10 = ['8 day ahead inc covid hosp','9 day ahead inc covid hosp','10 day ahead inc covid hosp','11 day ahead inc covid hosp','12 day ahead inc covid hosp','13 day ahead inc covid hosp','14 day ahead inc covid hosp']
-    df2.loc[df2['target'].isin(content_10),'wn'] = 2
-    content_11 = ['15 day ahead inc covid hosp','16 day ahead inc covid hosp','17 day ahead inc covid hosp','18 day ahead inc covid hosp','19 day ahead inc covid hosp','20 day ahead inc covid hosp','21 day ahead inc covid hosp']
-    df2.loc[df2['target'].isin(content_11),'wn'] = 3
-    content_12 = ['22 day ahead inc covid hosp','23 day ahead inc covid hosp','24 day ahead inc covid hosp','25 day ahead inc covid hosp','26 day ahead inc covid hosp','27 day ahead inc covid hosp','28 day ahead inc covid hosp']
-    df2.loc[df2['target'].isin(content_12),'wn'] = 4
-    content_13 = ['1 day ahead inc covid case','2 day ahead inc covid case','3 day ahead inc covid case','4 day ahead inc covid case','5 day ahead inc covid case','6 day ahead inc covid case','7 day ahead inc covid case']
+    df1 = pd.read_csv('2022-02-21_LUcompUncertLab-VAR__predictions.csv.gz')
+
+    loc=10
+    specific_location = df1.loc[df1.location==loc]
+    
+    specific_location['forecast_date']   = pd.to_datetime(specific_location['forecast_date'])
+    specific_location['target_end_date'] = pd.to_datetime(specific_location['target_end_date'])
+
+    def fromDays2WeekForTarget(df,target):
+        week = 1
+        start,end = 1, 7
+        while start < 28:
+            inccasesDays = [target.format(x) for x in np.arange(start,end+1)]
+            specific_location.loc[specific_location['target'].isin(inccasesDays),'wn'] = week
+
+            start+=7
+            end+=7
+            week+=1
+        return df
+
+    targets = ["{:d} day ahead inc covid case"
+              ,"{:d} day ahead inc covid death"
+              ,"{:d} day ahead inc covid hosp"
+              ]
+    for target in targets:
+        specific_location = fromDays2WeekForTarget(df=specific_location,target=target)
+
+    # this is a great first start Parth.
+    # Lets spend time learning about:
+    #   - While Loops
+    #   - For loops  
+    #   - List comprehensions
+    #   - The format method for strings in Python
+    # Then, lets use what we learned and the code above as an example to make the code below more readable.
+    # After this we will explore how to use the pandas package for computing without for loops.
+    # prof m
+        
+        
+   content_13 = ['1 day ahead inc covid case','2 day ahead inc covid case','3 day ahead inc covid case','4 day ahead inc covid case','5 day ahead inc covid case','6 day ahead inc covid case','7 day ahead inc covid case']
     df2.loc[df2['target'].isin(content_1),'Measurable'] = 'case'
     content_14 = ['8 day ahead inc covid case','9 day ahead inc covid case','10 day ahead inc covid case','11 day ahead inc covid case','12 day ahead inc covid case','13 day ahead inc covid case','14 day ahead inc covid case']
     df2.loc[df2['target'].isin(content_2),'Measurable'] = 'case'
