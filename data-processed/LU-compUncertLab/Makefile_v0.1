@@ -1,0 +1,44 @@
+
+PYTHON:=python3 -W ignore
+
+COMMITprefix:=Forecasts generated for LUcompUncertLab-VAR__cumulativepredictions model on
+COMMITsuffix:=$(shell date +"%Y-%m-%d")
+
+COMMIT:=$(COMMITprefix) $(COMMITsuffix)
+
+runall: dataprocessed interface model generateforecatsts buildmodel plotTrajectories collectAndFormatData generateForecasts postprocess checkLocations plotTrajectories zip sync
+.PHONY: runall
+
+dataprocessed:
+	$(PYTHON) LUcompUncertLab-data-processing.py && echo "Generate the three csv files"
+
+interface:
+	$(PYTHON) LUcompUncertLab-interface.py && echo "data interface built"
+
+model:
+	$(PYTHON) LUcompUncertLab-model.py && echo "data model"
+
+generateForecasts:
+	$(PYTHON) LUcompUncertLab-accumulate.py && echo "forecasts generated"
+
+buildmodel:
+	$(PYTHON) LUcompUncertLab-build.py && echo "model build"
+
+plotTrajectories:
+	$(PYTHON) plotTrajectories.py && echo "Plotted trajectories"
+
+add:
+	git add .
+
+commit:
+	git commit -m "$(COMMIT)"
+
+push:
+	git push
+
+zip:
+	gzip -f *.LUcompUncertLab-VAR__cumulativepredictions.csv
+
+send: add commit push
+.PHONY: send
+
