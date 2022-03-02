@@ -10,7 +10,7 @@ website_url: https://github.com/geohai/covid-lstm-hosp
 
 license: cc-by-4.0
 
-team_model_designation: primary
+team_model_designation: secondary
 
 methods: Our forecasts are produced by a spatiotemporal LSTM classification model using a multivariate time series input with a temporal lag of 21 days and hand engineered spatial features.
 
