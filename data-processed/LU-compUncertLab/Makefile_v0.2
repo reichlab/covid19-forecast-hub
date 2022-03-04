@@ -7,7 +7,7 @@ COMMITsuffix:=$(shell date +"%Y-%m-%d")
 
 COMMIT:=$(COMMITprefix) $(COMMITsuffix)
 
-runall: dataprocessed interface model generateforecatsts buildmodel plotTrajectories collectAndFormatData generateForecasts postprocess checkLocations plotTrajectories zip sync
+runall: dataprocessed interface buildmodel generateforecatsts plotTrajectories zip 
 .PHONY: runall
 
 dataprocessed:
@@ -16,14 +16,11 @@ dataprocessed:
 interface:
 	$(PYTHON) interface.py && echo "data interface built"
 
-model:
-	$(PYTHON) model.py && echo "data model"
+buildmodel:
+	$(PYTHON) build.py && echo "model build"
 
 generateForecasts:
 	$(PYTHON) accumulate.py && echo "forecasts generated"
-
-buildmodel:
-	$(PYTHON) build.py && echo "model build"
 
 plotTrajectories:
 	$(PYTHON) plotTrajectories.py && echo "Plotted trajectories"
