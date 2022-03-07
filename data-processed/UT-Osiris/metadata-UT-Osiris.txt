@@ -1,0 +1,12 @@
+team_name: UT
+model_name: Osiris
+model_abbr: UT-Osiris
+model_contributors: Graham Gibson<graham.gibson@austin.utexas.edu>, Spencer Woody
+website_url: https://covid-19.tacc.utexas.edu
+license: cc-by-4.0
+team_model_designation: primary
+ensemble_of_hub_models: false
+methods: 'TBD'
+data_inputs: Healthdata 
+methods_long: See GitHub for full description
+team_funding: TBD
