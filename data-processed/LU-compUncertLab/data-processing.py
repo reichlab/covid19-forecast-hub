@@ -15,7 +15,7 @@ class dataprep(object):
         cases.location = cases.location.astype(str)
         
         # we need to separate cases at the state level from cases at county level
-        cases_counties = cases.loc[ [True if len(_)==4 else False for _ in cases.location] ,:]
+        cases_counties = cases.loc[ [True if len(_)>=4 else False for _ in cases.location] ,:]
         
         cases_counties = cases_counties.rename(columns = {"value":"cases"})
         cases = cases.rename(columns = {"value":"cases"})

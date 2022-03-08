@@ -7,7 +7,7 @@ class interface(object):
         if data is None:
             pass
         else:
-            self.data          = pd.read_csv("threestreams.csv.gz")
+            self.data          = pd.read_csv("threestreams__state.csv.gz")
             self.centered_data = pd.read_csv("centered_std_threestreams.csv.gz")
             self.running_means = pd.read_csv("running_mean_threestreams.csv.gz")
             self.stds          = pd.read_csv("stds.csv.gz")
