@@ -7,7 +7,7 @@ COMMITsuffix:=$(shell date +"%Y-%m-%d")
 
 COMMIT:=$(COMMITprefix) $(COMMITsuffix)
 
-runall: remote fetch checkout merge dataprocessed interface buildmodel generateforecatsts postprcoess plotTrajectories zip 
+runall: remote fetch checkout merge dataprocessed interface buildmodel generateForecasts postprocess plotTrajectories zip 
 .PHONY: runall
 
 remote:
@@ -30,6 +30,7 @@ interface:
 
 buildmodel:
 	$(PYTHON) build.py && echo "model build"
+	LOCATION = 20
 
 generateForecasts:
 	$(PYTHON) accumulate.py && echo "forecasts generated"
@@ -54,3 +55,4 @@ zip:
 
 send: add commit push
 .PHONY: send
+
