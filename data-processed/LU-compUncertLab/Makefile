@@ -7,30 +7,17 @@ COMMITsuffix:=$(shell date +"%Y-%m-%d")
 
 COMMIT:=$(COMMITprefix) $(COMMITsuffix)
 
-runall: remote fetch checkout merge dataprocessed interface buildmodel generateForecasts postprocess plotTrajectories zip 
+runall: checkout_dev dataprocessed buildmodel generateForecasts postprocess plotTrajectories
 .PHONY: runall
-
-remote:
-	git remote add upstream git@github.com:computationalUncertaintyLab/covid19-forecast-hub.git
-
-fetch:
-	git fetch upstream
-
-checkout:
-	git checkout master
-
-merge:
-	git merge upstream/master
+#----------------------------------------------------------------------------------------------
+checkout_dev:
+	git checkout dev
 
 dataprocessed:
 	$(PYTHON) data-processing.py && echo "Generate the three csv files"
 
-interface:
-	$(PYTHON) interface.py && echo "data interface built"
-
 buildmodel:
-	$(PYTHON) build.py && echo "model build"
-	LOCATION = 20
+	$(PYTHON) build.py --LOCATION 20 && echo "model build"
 
 generateForecasts:
 	$(PYTHON) accumulate.py && echo "forecasts generated"
@@ -41,6 +28,12 @@ postprocess:
 plotTrajectories:
 	$(PYTHON) plotTrajectories.py && echo "Plotted trajectories"
 
+zip:
+	gzip -f *.LUcompUncertLab-VAR__cumulativepredictions.csv
+#----------------------------------------------------------------------------------------------
+send: add commit push
+.PHONY: send
+#----------------------------------------------------------------------------------------------
 add:
 	git add .
 
@@ -49,10 +42,20 @@ commit:
 
 push:
 	git push
+#----------------------------------------------------------------------------------------------
+sync: remote fetch checkout merge 
+.PHONY: sync
+#----------------------------------------------------------------------------------------------
+remote:
+	git remote add upstream https://github.com/reichlab/covid19-forecast-hub.git
 
-zip:
-	gzip -f *.LUcompUncertLab-VAR__cumulativepredictions.csv
+fetch:
+	git fetch upstream
 
-send: add commit push
-.PHONY: send
+checkout:
+	git checkout master
+
+merge:
+	git merge upstream/master # Merge updates to the master branch
+#----------------------------------------------------------------------------------------------
 
