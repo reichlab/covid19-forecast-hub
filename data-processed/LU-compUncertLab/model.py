@@ -231,7 +231,7 @@ class VAR(object):
         model = self.varmodeldesc_new()
         
         posterior = stan.build(model, data=data)
-        fit = posterior.sample(num_samples=5*10**3,num_chains=4)
+        fit = posterior.sample(num_samples=4*10**3,num_chains=4)
 
         self.fit = fit
    
