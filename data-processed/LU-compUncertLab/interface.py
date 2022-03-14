@@ -168,11 +168,14 @@ class interface(object):
         self.dataQuantiles = dataQuantiles
         return dataQuantiles
 
-    def writeout(self,n):
-        if n:
-            self.dataQuantiles.to_csv("{:s}_LUcompUncertLab-VAR.csv".format(self.forecast_date),header=False,index=False,mode="a")
-        else:
-            self.dataQuantiles.to_csv("{:s}_LUcompUncertLab-VAR.csv".format(self.forecast_date),header=True,index=False,mode="w")
+    def writeout(self,location):
+        try:
+            location = "{:05d}".format(location)
+        except:
+            pass
+            
+        self.dataQuantiles.to_csv("{:s}_LUcompUncertLab-VAR__location_{:s}.csv".format(self.forecast_date, location),header=True,index=False,mode="w")
+            
 
     def writeout_predictions(self,n):
         if n:

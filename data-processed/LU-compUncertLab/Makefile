@@ -7,11 +7,11 @@ COMMITsuffix:=$(shell date +"%Y-%m-%d")
 
 COMMIT:=$(COMMITprefix) $(COMMITsuffix)
 
-runall: checkout_dev dataprocessed buildmodel generateForecasts postprocess plotTrajectories
+runall: checkout_dev dataprocessed buildmodel #generateForecasts postprocess plotTrajectories
 .PHONY: runall
 #----------------------------------------------------------------------------------------------
 checkout_dev:
-	git checkout dev
+	git checkout ludev
 
 dataprocessed:
 	$(PYTHON) data-processing.py && echo "Generate the three csv files"
