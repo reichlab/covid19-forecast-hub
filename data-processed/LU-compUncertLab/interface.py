@@ -1,7 +1,7 @@
 #mcandrew
 
 class interface(object):
-    def __init__(self,data=None):
+    def __init__(self,data=None, location=None):
         import pandas as pd
         
         if data is None:
@@ -13,24 +13,30 @@ class interface(object):
             self.stds          = pd.read_csv("stds.csv.gz")
 
             self.locations     = sorted(self.data.location.unique())
+
+            self.buildDataForModel()
+            self.getForecastDate()
+            self.generateTargetEndDays()
+            self.generateTargetNames()
+
+            self.numOfForecasts = 28 # FOR NOW THIS IS HARDCODED AS a 28 day ahead AHEAD
+
+        self.location=location
+        try:
+            self.fmtlocation = "{:05d}".format(location)
+        except:
+            self.fmtlocation = location
             
-        self.buildDataForModel()
-        self.getForecastDate()
-        self.generateTargetEndDays()
-        self.generateTargetNames()
-
-        self.numOfForecasts = 28 # FOR NOW THIS IS HARDCODED AS a 28 day ahead AHEAD
-
-    def subset2locations(self,locations):
-
+    def subset2location(self):
+    
         def subset(d):
-            return d.loc[d.location.isin(locations)]
+            return d.loc[d.location.isin([self.location])]
 
         self.data          = subset(self.data)
         self.centered_data = subset(self.centered_data)
         self.running_means  = subset(self.running_means)
 
-        self.locations = locations 
+        #self.locations = locations 
 
         self.buildDataForModel()
         
@@ -168,22 +174,14 @@ class interface(object):
         self.dataQuantiles = dataQuantiles
         return dataQuantiles
 
-    def writeout(self,location):
-        try:
-            location = "{:05d}".format(location)
-        except:
-            pass
-            
-        self.dataQuantiles.to_csv("{:s}_LUcompUncertLab-VAR__location_{:s}.csv".format(self.forecast_date, location),header=True,index=False,mode="w")
-            
+    def writeout(self):
+        fmtlocation = self.fmtlocation
+        self.dataQuantiles.to_csv("./location_specific_forecasts/{:s}_LUcompUncertLab-quantiles__location_{:s}.csv.gz".format(self.forecast_date, fmtlocation)
+                                  ,header=True,index=False,mode="w",compression="gzip")
 
-    def writeout_predictions(self,n):
-        if n:
-            self.dataPredictions.to_csv("{:s}_LUcompUncertLab-VAR__predictions.csv.gz".format(self.forecast_date),header=False,index=False,mode="a",compression="gzip")
-        else:
-            self.dataPredictions.to_csv("{:s}_LUcompUncertLab-VAR__predictions.csv.gz".format(self.forecast_date),header=True,index=False,mode="w",compression="gzip")
+        self.dataPredictions.to_csv("./location_specific_forecasts/{:s}_LUcompUncertLab-predictions__location_{:s}.csv.gz".format(self.forecast_date, fmtlocation)
+                                  ,header=True,index=False,mode="w",compression="gzip")
 
-            
     # post processing help
     def grab_recent_forecast_file(self):
         import pandas as pd
@@ -213,10 +211,21 @@ class interface(object):
     def grab_recent_predictions(self):
         from glob import glob
         import pandas as pd
-        predictionfiles = sorted(glob("*predictions.csv.gz"))
+        
+        files = sorted(glob("./location_specific_forecasts/*predictions__location_{:s}.csv.gz".format(self.fmtlocation) ))
 
-        self.predictions = pd.read_csv(predictionfiles[-1])
+        self.predictions = pd.read_csv(files[-1])
         return self.predictions
+
+    def grab_recent_quantiles(self):
+        from glob import glob
+        import pandas as pd
+        files = sorted(glob("./location_specific_forecasts/quantiles__location_{:s}.csv.gz".format(self.fmtlocation)))
+
+        self.quantiles = pd.read_csv(files[-1])
+        return self.quantiles
+
+   
    
 if __name__ == "__main__":
     pass

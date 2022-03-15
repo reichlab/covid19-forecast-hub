@@ -7,7 +7,7 @@ COMMITsuffix:=$(shell date +"%Y-%m-%d")
 
 COMMIT:=$(COMMITprefix) $(COMMITsuffix)
 
-runall: checkout_dev dataprocessed buildmodel #generateForecasts postprocess plotTrajectories
+runall: checkout_dev dataprocessed buildmodel transformDailyPredictions2Weekly # postprocess plotTrajectories
 .PHONY: runall
 #----------------------------------------------------------------------------------------------
 checkout_dev:
@@ -19,8 +19,8 @@ dataprocessed:
 buildmodel:
 	$(PYTHON) build.py --LOCATION 20 && echo "model build"
 
-generateForecasts:
-	$(PYTHON) accumulate.py && echo "forecasts generated"
+transformDailyPredictions2Weekly:
+	$(PYTHON) fromDaily2WeeklyPredictions.py && echo "from daily to weekly predictions"
 
 postprocess:
 	$(PYTHON) post_process.py && echo "Post process complete"

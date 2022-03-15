@@ -13,20 +13,18 @@ if __name__ == "__main__":
 
     location = args.LOCATION
 
-    io = interface(0)
-    
-    print(location)
-    io = interface(0)
+    location=20
+    io = interface(0,location)
         
-    io.subset2locations([location])
+    io.subset2location()
 
     forecast_model = VAR(io.modeldata)
     forecast_model.fit()
 
-    io.formatSamples( forecast_model)
+    io.formatSamples(forecast_model)
     #io.un_center() # multipy by std and add back running mean
 
     io.fromSamples2Quantiles()
 
-    io.writeout(location)
+    io.writeout()
 
