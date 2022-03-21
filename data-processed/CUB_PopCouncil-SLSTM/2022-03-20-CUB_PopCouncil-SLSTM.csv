@@ -8056,7 +8056,6 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-03-20,7 day ahead inc hosp,2022-03-27,29,quantile,0.15,28.115473715937448
 2022-03-20,7 day ahead inc hosp,2022-03-27,29,quantile,0.2,29.296667184304045
 2022-03-20,7 day ahead inc hosp,2022-03-27,29,quantile,0.25,30.486672531110884
-2022-03-20,7 day ahead inc hosp,2022-03-27,29,quantile,0.25,30.486672531110884
 2022-03-20,7 day ahead inc hosp,2022-03-27,29,quantile,0.3,30.933426732883063
 2022-03-20,7 day ahead inc hosp,2022-03-27,29,quantile,0.35,32.046696420932264
 2022-03-20,7 day ahead inc hosp,2022-03-27,29,quantile,0.4,32.36606675078428
