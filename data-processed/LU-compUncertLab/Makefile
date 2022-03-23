@@ -7,7 +7,7 @@ COMMITsuffix:=$(shell date +"%Y-%m-%d")
 
 COMMIT:=$(COMMITprefix) $(COMMITsuffix)
 
-runall: checkout_dev expert_one_location dataprocessed convert_raw_data2weeks buildmodel transformDailyPredictions2Weekly addCumulativeTargets postprocess fromSamples2Quantiles plotTrajectories
+runall: checkout_dev create_location_specific_folder expert_one_location dataprocessed convert_raw_data2weeks buildmodel transformDailyPredictions2Weekly addCumulativeTargets postprocess fromSamples2Quantiles plotTrajectories
 .PHONY: runall
 #----------------------------------------------------------------------------------------------
 checkout_dev:
@@ -16,6 +16,10 @@ checkout_dev:
 
 expert_one_location:
 	export LOCATION=42
+
+create_location_specific_folder:
+# creates this folder if it does not already exist
+	mkdir -p location_specific_forecasts
 
 dataprocessed:
 # Update the incident cases, deaths, and hospitalizations to the latest
