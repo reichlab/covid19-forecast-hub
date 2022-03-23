@@ -4,9 +4,18 @@ from interface import interface
 from model import VAR
 import pandas as pd
 
+import argparse
+
 if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--LOCATION', type=int)
+
+    args = parser.parse_args()
+
+    LOCATION = args.LOCATION
     
-    io = interface(data=None,location = 20)
+    io = interface(data=None,location = LOCATION)
     predictions = io.grab_recent_predictions()
 
     predictions["day"]  = predictions.target.str.extract("(\d+).*").astype("int")
@@ -35,11 +44,12 @@ if __name__ == "__main__":
     groupedPredictions["week_ahead"] = " week ahead "
     groupedPredictions["target"] = groupedPredictions["week"].astype(str) + groupedPredictions["week_ahead"] + groupedPredictions["target_no_time"] 
 
-    groupedPredictions = groupedPredictions["forecast_date","target_end_date","location","target","sample","value"]
+    groupedPredictions = groupedPredictions[["forecast_date","target_end_date","location","target","sample","value"]]
+    hospitilizations   = hospitilizations[["forecast_date","target_end_date","location","target","sample","value"]]
     dailyAndWeeklyPredictions = groupedPredictions.append(hospitilizations)
 
     day = io.getForecastDate()
-    dailyAndWeeklyPredictions.to_csv("./location_specific_forecasts/{:s}_LUcompUncertLab-VAR__{:s}__weeklypredictions.csv.gz".format(date,io.fmtlocation)
+    dailyAndWeeklyPredictions.to_csv("./location_specific_forecasts/{:s}_LUcompUncertLab-VAR__{:s}__weeklypredictions.csv.gz".format(day,io.fmtlocation)
                               ,header=True
                               ,index=False
                               ,mode="w"

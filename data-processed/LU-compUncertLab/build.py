@@ -11,10 +11,9 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    location = args.LOCATION
+    LOCATION = args.LOCATION
 
-    location=20
-    io = interface(0,location)
+    io = interface(0,LOCATION)
         
     io.subset2location()
 

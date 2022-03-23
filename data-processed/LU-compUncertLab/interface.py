@@ -7,7 +7,7 @@ class interface(object):
         if data is None:
             pass
         else:
-            self.data          = pd.read_csv("threestreams__state.csv.gz")
+            self.data          = pd.read_csv("threestreams__state.csv.gz") 
             self.centered_data = pd.read_csv("centered_std_threestreams.csv.gz")
             self.running_means = pd.read_csv("running_mean_threestreams.csv.gz")
             self.stds          = pd.read_csv("stds.csv.gz")
@@ -26,6 +26,10 @@ class interface(object):
             self.fmtlocation = "{:05d}".format(location)
         except:
             self.fmtlocation = location
+
+    def include_weekly_data(self):
+        import pandas as pd
+        self.weeklydata = pd.read_csv("threestreams__weekly.csv.gz")
             
     def subset2location(self):
     
@@ -120,7 +124,7 @@ class interface(object):
             
             for n,forecast in enumerate(forecasts):
                 dataPredictions["forecast_date"].extend(F*[self.forecast_date])
-                dataPredictions["location"].extend( F*[self.locations[0]] )
+                dataPredictions["location"].extend( F*[self.location] )
                 dataPredictions["target_end_date"].extend( self.target_end_days )
                 dataPredictions["target"].extend( self.targets[n] )
                 dataPredictions["sample"].extend( F*[sample] )
@@ -217,16 +221,38 @@ class interface(object):
         self.predictions = pd.read_csv(files[-1])
         return self.predictions
 
+    def grab_recent_weekly_predictions(self):
+        from glob import glob
+        import pandas as pd
+        files = sorted(glob("./location_specific_forecasts/*{:s}__weeklypredictions.csv.gz".format(self.fmtlocation)))
+
+        self.predictions = pd.read_csv(files[-1])
+        return self.predictions
+
+    def grab_recent_all_predictions(self):
+        from glob import glob
+        import pandas as pd
+        files = sorted(glob("./location_specific_forecasts/*{:s}__allpredictions.csv.gz".format(self.fmtlocation)))
+
+        self.predictions = pd.read_csv(files[-1])
+        return self.predictions
+
+    def grab_post_process_predictions(self):
+        from glob import glob
+        import pandas as pd
+        files = sorted(glob("./location_specific_forecasts/*LUcompUncertLab-VAR3Streams__{:s}.csv.gz".format(self.fmtlocation)))
+
+        self.predictions = pd.read_csv(files[-1])
+        return self.predictions
+
     def grab_recent_quantiles(self):
         from glob import glob
         import pandas as pd
-        files = sorted(glob("./location_specific_forecasts/quantiles__location_{:s}.csv.gz".format(self.fmtlocation)))
+
+        files = sorted(glob("./location_specific_forecasts/*LUcompUncertLab-VAR3Streams_FINAL__{:s}.csv.gz".format(self.fmtlocation)))
 
         self.quantiles = pd.read_csv(files[-1])
         return self.quantiles
 
-   
-   
 if __name__ == "__main__":
     pass
-
