@@ -7,7 +7,7 @@ COMMITsuffix:=$(shell date +"%Y-%m-%d")
 
 COMMIT:=$(COMMITprefix) $(COMMITsuffix)
 
-runall: checkout_dev create_location_specific_folder expert_one_location dataprocessed convert_raw_data2weeks buildmodel transformDailyPredictions2Weekly addCumulativeTargets postprocess fromSamples2Quantiles plotTrajectories
+runall: create_location_specific_folder dataprocessed convert_raw_data2weeks buildmodel transformDailyPredictions2Weekly addCumulativeTargets postprocess fromSamples2Quantiles plotTrajectories
 .PHONY: runall
 #----------------------------------------------------------------------------------------------
 checkout_dev:
