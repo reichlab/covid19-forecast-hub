@@ -22,12 +22,8 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: 'reichlab/covid19-forecast-hub-validations'
-        ref: 'config'
+        ref: 'issue-33'
         path: 'covid19-forecast-hub-validations'
-#     - name: Use Node.js ${{ matrix.node-version }}
-#       uses: actions/setup-node@v1
-#       with:
-#         node-version: ${{ matrix.node-version }}
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
