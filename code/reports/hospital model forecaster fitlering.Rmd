@@ -14,19 +14,8 @@ output:
 
 #load libraries
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
-library(lubridate)
-library(scoringutils)
-library(RColorBrewer)
-library(DT)
-library(surveillance)
-library(htmltools)
-library(kableExtra)
-library(covidHubUtils)
-library(plotly)
-library(tidyverse)
-library(zoltr)
 library(dplyr)
-theme_set(theme_bw())
+
 
 ```
 
