@@ -34,7 +34,7 @@ class interface(object):
     def subset2location(self):
     
         def subset(d):
-            return d.loc[d.location.isin([self.location])]
+            return d.loc[d.location.isin([str(self.location)])]
 
         self.data          = subset(self.data)
         self.centered_data = subset(self.centered_data)
