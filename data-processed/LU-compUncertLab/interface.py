@@ -8,6 +8,7 @@ class interface(object):
             pass
         else:
             self.data          = pd.read_csv("threestreams__state.csv.gz") 
+            self.county_data   = pd.read_csv("threestreams__county.csv.gz")
             self.centered_data = pd.read_csv("centered_std_threestreams.csv.gz")
             self.running_means = pd.read_csv("running_mean_threestreams.csv.gz")
             self.stds          = pd.read_csv("stds.csv.gz")
@@ -35,8 +36,15 @@ class interface(object):
     
         def subset(d):
             return d.loc[d.location.isin([str(self.location)])]
+        
+        # because county locations are all integers, so we don't have to cast as string
+        def csubset(d):
+            return d.loc[d.location.isin([self.location])]
 
-        self.data          = subset(self.data)
+        if len(str(self.location)) > 2:
+            self.data      = csubset(self.county_data)
+        else:
+            self.data      = subset(self.data)
         self.centered_data = subset(self.centered_data)
         self.running_means  = subset(self.running_means)
 
