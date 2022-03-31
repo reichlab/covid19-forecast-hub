@@ -34,11 +34,16 @@ class dataprep(object):
         deaths = pd.read_csv("../../data-truth/truth-Incident Deaths.csv")
         deaths.location = deaths.location.astype(str)
 
-        deaths = deaths.rename(columns = {"value":"deaths"})
+        norm_loc = []
+        for l in deaths.location:
+            if len(l) == 2:
+                norm_loc.append(l)
+            else:
+                norm_loc.append(l.zfill(2))
 
-        # NOTE: THIS IS A VERY EXPENSIVE OPERATION
-        normalize_loc = deaths.apply(lambda x: x['location'].zfill(2), axis=1)
-        deaths.insert(len(deaths.columns), 'nloc', normalize_loc)
+        deaths.location = norm_loc
+
+        deaths = deaths.rename(columns = {"value":"deaths"})
 
         self.deaths = deaths
 
@@ -46,12 +51,15 @@ class dataprep(object):
         import pandas as pd
         hosps = pd.read_csv("../../data-truth/truth-Incident Hospitalizations.csv")
         hosps.location = hosps.location.astype(str)
+
+        norm_loc = []
+        for l in hosps.location:
+            if len(l) == 2:
+                norm_loc.append(l)
+            else:
+                norm_loc.append(l.zfill(2))
         
         hosps = hosps.rename(columns = {"value":"hosps"})
-
-        # NOTE: THIS IS A VERY EXPENSIVE OPERATION
-        normalize_loc = hosps.apply(lambda x: x['location'].zfill(2), axis=1)
-        hosps.insert(len(hosps.columns), 'nloc', normalize_loc)
 
         self.hosps = hosps
 
@@ -65,10 +73,10 @@ class dataprep(object):
 
     def mergeCounties(self):
         # merge the county cases with state deaths
-        d = self.ccases_counties.merge(self.deaths, left_on=['date', 'state'], right_on=['date', 'nloc'], suffixes=(None, "_d"))
+        d = self.ccases_counties.merge(self.deaths, left_on=['date', 'state'], right_on=['date', 'location'], suffixes=(None, "_d"))
         # merge the county cases with state hosps
-        d = d.merge(self.hosps, left_on=['date', 'state'], right_on=['date', 'nloc'], suffixes=(None, "_h"))
-        d = d.drop(columns=['state', 'location_d', 'location_name_d', 'nloc', 'location_h', 'location_name_h', 'nloc_h'])
+        d = d.merge(self.hosps, left_on=['date', 'state'], right_on=['date', 'location'], suffixes=(None, "_h"))
+        d = d.drop(columns=['state', 'location_d', 'location_name_d', 'location_h', 'location_name_h'])
 
         self.threestreams_county = d
         return d
