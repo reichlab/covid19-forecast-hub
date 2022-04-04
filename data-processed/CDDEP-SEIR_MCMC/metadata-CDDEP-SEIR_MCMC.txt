@@ -6,6 +6,7 @@ model_contributors: Eili Klein < klein@cddep.org>, Gary Lin < glin15@jhu.edu>, Y
 website_url: https://cddep.org/
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: County-level SEIR model forecasts of incident (weekly) cases number by fitting
   predicted cases to the observations.
 data_inputs: NYTimes time-series cases and deaths data

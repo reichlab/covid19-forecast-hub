@@ -6,6 +6,7 @@ model_contributors: Sen Pei, Teresa Yamana, Sasikiran Kandula, Wan Yang, Marta G
 website_url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
 license: apache-2.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: A metapopulation county-level SEIR model for projecting future COVID-19 incidence
   and deaths. This forecast is the scenario we believe to be most plausible given
   the current setting.

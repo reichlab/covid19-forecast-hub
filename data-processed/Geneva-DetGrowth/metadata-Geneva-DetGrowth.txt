@@ -1,5 +1,5 @@
 team_name: Swiss Data Science Center / University of Geneva
-model_name: Trend Model
+model_name: (Geneva) Trend Model
 model_abbr: Geneva-DetGrowth
 model_contributors: Ekaterina Krymova (Swiss Data Science Center),
   Dorina Thanou (Center for Intelligent Systems, EPFL),
@@ -12,6 +12,7 @@ model_contributors: Ekaterina Krymova (Swiss Data Science Center),
 website_url: https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: The Trend Model predicts daily cases and deaths using linear
   extrapolation on the linear or log scale of the underlying trend estimated
   by a robust LOESS seasonal-trend decomposition model.

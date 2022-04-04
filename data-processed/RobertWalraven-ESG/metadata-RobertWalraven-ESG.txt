@@ -5,6 +5,7 @@ model_contributors: Robert Walraven <walraven@multiwareinc.com>
 website_url: 'http://rwalraven.com/COVID19'
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: >-
     Multiple skewed gaussian distribution peaks fit to raw data
 team_funding: None (I'm a retired Experimental Physicist working at home)

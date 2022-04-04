@@ -5,4 +5,5 @@ model_contributors: Georgia Perakis (MIT Sloan School of Management) <georgiap@m
 website_url: https://github.com/oskali/mit_cassandra
 license: mit
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: Ensemble model aggregating predictions from four constituent models. 1. MDP feature representation 2. KNN time-series 3. Bi-LSTM time-series 4. C-SEIRD epidemiological

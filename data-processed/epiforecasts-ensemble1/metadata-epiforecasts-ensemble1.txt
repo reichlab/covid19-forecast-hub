@@ -7,6 +7,7 @@ model_contributors: Katharine Sherratt (LSHTM)<katharine.sherratt@lshtm.ac.uk>, 
 website_url: https://github.com/epiforecasts/covid-us-deaths
 license: mit
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: 'A deaths forecast using a mean ensemble of three different models: An Rt
   based forecast, a timeseries forecast using deaths only and a timeseries forecast
   using deaths and cases. '

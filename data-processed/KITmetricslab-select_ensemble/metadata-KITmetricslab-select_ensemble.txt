@@ -5,6 +5,7 @@ model_contributors: Daniel Wolffram (Karlsruhe Institute of Technology and Heide
 website_url: https://github.com/dwolffram/covid19-ensembles
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: true
 methods: A weighted ensemble of iteratively preselected forecasts from the COVID-19 Forecast Hub.
 team_funding: Tilmann Gneiting and Daniel Wolffram are grateful for support by the Klaus Tschira Foundation. The work of Johannes Bracher was supported by the Helmholtz Foundation via the SIMCARD Information & Data Science Pilot Project.
 twitter_handles: DanielWolffram, johannesbracher

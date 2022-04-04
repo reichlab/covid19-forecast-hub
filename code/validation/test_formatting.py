@@ -216,7 +216,7 @@ def check_formatting(my_path):
 
     # Output duplicate model name or abbreviation metadata errors
     output_errors = output_duplicate_models(existing_metadata_abbr, output_errors)
-    output_errors = output_duplicate_models(existing_metadata_name, output_errors)
+    #output_errors = output_duplicate_models(existing_metadata_name, output_errors)
 
     # Update the locally_validated_files.csv
     update_checked_files(df, previous_checked, files_in_repository)

@@ -6,6 +6,7 @@ website_url: https://covid19.aipert.org
 repo_url: https://github.com/QuocTran/COVID-19
 license: mit
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: Piecewise Log Linear of Death using policy change dates
 data_inputs: JHU
 

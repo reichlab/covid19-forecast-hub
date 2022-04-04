@@ -5,6 +5,7 @@ model_contributors: 'Yuriy Gankin <yuriy.gankin@quantori.com>  Semyon Semyonov <
 website_url: https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed/Quantori-Multiagents
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: The Agent-based local stochastic model of COVID-19 transmission
 team_funding: private
 methods_long: "This model incorporates the reported geographic incidence data, which\

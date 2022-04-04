@@ -6,4 +6,5 @@ model_contributors: Bin Yu (UC Berkeley) <binyu@berkeley.edu>,  Nick Altieri (UC
 website_url: covidseverity.com
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: Ensemble of a linear and exponential predictor (CLEP) for forecasting county-level deaths and cases with prediction intervals. CLEP weighs each method by its recent historical prediction performance

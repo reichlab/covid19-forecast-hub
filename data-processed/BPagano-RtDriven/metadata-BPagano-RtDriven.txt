@@ -5,6 +5,7 @@ model_contributors: Bob Pagano (rjpagano@comcast.net)
 website_url: https://bobpagano.com
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: Projects infections and deaths using an SIR model.
 team_funding: None
 data_inputs: CSSE at John Hopkins and covidtracking.com
@@ -39,4 +40,8 @@ methods_long: "On our website we present daily projections for\
   \ Incorporated vaccinations.\
   \ UPDATE 21-02-06: Began fine tuning forecast parameters based on\
   \ national hospitalizations.\
-  \ UPDATE 21-03-21: Began adjusting Rt forecast start values by state."
+  \ UPDATE 21-03-21: Began adjusting Rt forecast start values by state.\
+  \ UPDATE 21-05-02: Returned to common algorithmic Rt forecast by states.\
+  \ UPDATE 21-08-01: Made mortality rate a function of percent vaccinated.\
+  \ Deaths forecast now driven by hospital-based effective transmission ratio.\
+  \ Cases forecast now driven by test-based effective transmission ratio."

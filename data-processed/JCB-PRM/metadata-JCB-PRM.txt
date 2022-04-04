@@ -5,6 +5,7 @@ model_contributors: John Burant <john@the99percent.nl>
 website_url: https://github.com/JohnBurant/COVID19-PRM
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: The Political Realities Model (PRM) is built on observations of macro-level
   societal and political responses to COVID measured only in terms of infections and
   deaths.

@@ -6,6 +6,7 @@ model_contributors: Sen Pei, Teresa Yamana, Sasikiran Kandula, Wan Yang, Marta G
 website_url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
 license: apache-2.0
 team_model_designation: other
+ensemble_of_hub_models: false
 methods: This metapopulation county-level SEIR model assumes that current contact
   rates will remain unchanged in the future.
 team_funding: Supported by US NIH grant GM110748 and US NSF RAPID grant DMS2027369
