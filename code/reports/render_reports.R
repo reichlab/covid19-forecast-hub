@@ -27,6 +27,8 @@ ensemble_file <- paste0("../../data-processed/COVIDhub-ensemble/", this_monday, 
 if (!file.exists(ensemble_file)) {
   print(paste0("ensemble file not found: ", ensemble_file))
   quit(save = "default", status = 2, runLast = FALSE)  # error: No such file or directory
+} else {
+  print(paste0("ensemble file found: ", ensemble_file))
 }
 
 
