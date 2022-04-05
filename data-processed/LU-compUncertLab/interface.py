@@ -24,13 +24,17 @@ class interface(object):
 
         self.location=location
         try:
-            self.fmtlocation = "{:05d}".format(location)
+            self.fmtlocation = "{:05d}".format(int(location))
         except:
             self.fmtlocation = location
 
     def include_weekly_data(self):
         import pandas as pd
         self.weeklydata = pd.read_csv("threestreams__weekly.csv.gz")
+
+    def include_weekly_county_data(self):
+        import pandas as pd
+        self.weeklycountydata = pd.read_csv("threestreams__weekly__county.csv.gz")
             
     def subset2location(self):
     
@@ -39,7 +43,7 @@ class interface(object):
         
         # because county locations are all integers, so we don't have to cast as string
         def csubset(d):
-            return d.loc[d.location.isin([self.location])]
+            return d.loc[d.location.isin([int(self.location)])]
 
         if len(str(self.location)) > 2:
             self.data      = csubset(self.county_data)

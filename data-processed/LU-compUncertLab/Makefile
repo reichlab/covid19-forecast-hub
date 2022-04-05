@@ -7,7 +7,7 @@ COMMITsuffix:=$(shell date +"%Y-%m-%d")
 
 COMMIT:=$(COMMITprefix) $(COMMITsuffix)
 
-runall: create_location_specific_folder dataprocessed convert_raw_data2weeks buildmodel transformDailyPredictions2Weekly addCumulativeTargets postprocess fromSamples2Quantiles plotTrajectories
+runall: create_location_specific_folder dataprocessed convert_raw_data2weeks convert_raw_data2weeks_county buildmodel transformDailyPredictions2Weekly addCumulativeTargets postprocess fromSamples2Quantiles plotTrajectories
 .PHONY: runall
 #----------------------------------------------------------------------------------------------
 checkout_dev:
@@ -28,7 +28,11 @@ dataprocessed:
 
 convert_raw_data2weeks:
 # Convert the threestreams data to weekly
-	$(PYTHON) convert_daily_data_2_weekkly_data.py && echo "Transformed data to weekly"
+	$(PYTHON) convert_daily_data_2_weekkly_data.py && echo "Transformed state data to weekly"
+
+convert_raw_data2weeks_county:
+# Convert the threestreams county data to weekly
+	$(PYTHON) dailyToWeeklyCounty.py && echo "Transformed county data to weekly"
 
 buildmodel:
 # This script subsets the above data to a single location and fits a model
