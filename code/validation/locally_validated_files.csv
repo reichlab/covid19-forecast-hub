@@ -6104,3 +6104,16 @@ file_path,validation_date
 ./data-processed/QJHong-Encounter/2022-04-04-QJHong-Encounter.csv,2022-04-04 18:34:10.684304
 ./data-processed/CovidAnalytics-DELPHI/2022-04-04-CovidAnalytics-DELPHI.csv,2022-04-04 18:34:12.308754
 ./data-processed/COVIDhub-baseline/2022-04-04-COVIDhub-baseline.csv,2022-04-04 18:34:31.289579
+./data-processed/UCF-AEM/2022-04-03-UCF-AEM.csv,2022-04-05 00:31:18.328579
+./data-processed/COVIDhub-trained_ensemble/2022-04-04-COVIDhub-trained_ensemble.csv,2022-04-05 00:31:29.136732
+./data-processed/SteveMcConnell-CovidComplete/2022-04-04-SteveMcConnell-CovidComplete.csv,2022-04-05 00:31:30.192937
+./data-processed/COVIDhub-ensemble/2022-04-04-COVIDhub-ensemble.csv,2022-04-05 00:31:34.381310
+./data-processed/AIpert-pwllnod/2022-04-04-AIpert-pwllnod.csv,2022-04-05 00:31:36.417783
+./data-processed/PSI-DICE/2022-04-04-PSI-DICE.csv,2022-04-05 00:31:39.547143
+./data-processed/COVIDhub-4_week_ensemble/2022-04-04-COVIDhub-4_week_ensemble.csv,2022-04-05 00:31:50.250456
+./data-processed/prolix-euclidean/2022-04-04-prolix-euclidean.csv,2022-04-05 00:31:50.880339
+./data-processed/UT_GISAG-SPDM/2022-04-04-UT_GISAG-SPDM.csv,2022-04-05 00:31:51.516860
+./data-processed/CU-nochange/2022-04-03-CU-nochange.csv,2022-04-05 00:32:02.714151
+./data-processed/JHU_IDD-CovidSP/2022-04-03-JHU_IDD-CovidSP.csv,2022-04-05 00:32:16.431750
+./data-processed/UVA-Ensemble/2022-04-04-UVA-Ensemble.csv,2022-04-05 00:32:27.174060
+./data-processed/CU-select/2022-04-03-CU-select.csv,2022-04-05 00:32:37.957744
