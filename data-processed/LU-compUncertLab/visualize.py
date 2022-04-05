@@ -102,9 +102,9 @@ class viz(object):
         
         dir = self.checkDir()
         
-        for target in ["county_cases","state_deaths","state_hosps"]:
+        for col, target in zip(["county_cases","state_deaths","state_hosps"],["cases","deaths","hosps"]):
 
-            if target !="hosps":
+            if col !="state_hosps":
                 rdata = self.rweeklydata
                 rdata = rdata.sort_values("end_date")
 
@@ -121,10 +121,10 @@ class viz(object):
             plt.style.use("fivethirtyeight")
             fig,ax = plt.subplots()
 
-            if target !="state_hosps":
-                p = ax.plot(rdata["mw"],rdata[target],lw=2)
+            if col !="state_hosps":
+                p = ax.plot(rdata["mw"],rdata[col],lw=2)
             else:
-                p = ax.plot(rdata["date"],rdata[target],lw=2)
+                p = ax.plot(rdata["date"],rdata[col],lw=2)
 
             colors = [x.get_color() for x in p]
             color = colors[0]
@@ -137,7 +137,7 @@ class viz(object):
             mid = cis.loc[cis["quantile"]==0.50,"value"]
             hig = cis.loc[cis["quantile"]==0.975,"value"]
 
-            if target !="state_hosps":
+            if col !="state_hosps":
                 ax.fill_between(extra_mws , low, hig, color = color, alpha=0.50 )
                 ax.plot( extra_mws        , mid, color=color, lw=1,ls="-",label="Loc = {:s}".format( str(self.loc) ))
             else:
@@ -146,14 +146,14 @@ class viz(object):
 
             ax.tick_params(which="both",labelsize=6)
 
-            if target =="state_hosps":
+            if col =="state_hosps":
                 ax.set_xticks(ax.get_xticks()[::-1][::21][::-1])
                 
             ax.set_xlabel("Target end date",fontsize=8)
             ax.set_ylabel("Num. of confirmed covid {:s}".format(target),fontsize=8)
             ax.legend(fontsize=10)
 
-            if target=="state_hosps":
+            if col=="state_hosps":
                 lower_xlim, upper_xlim = ax.get_xlim()
                 ax.set_xlim( 0.60*upper_xlim, upper_xlim )
             else:
