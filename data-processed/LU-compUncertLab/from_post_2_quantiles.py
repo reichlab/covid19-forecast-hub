@@ -23,7 +23,7 @@ def fromSamples2Quantiles(dataPredictions):
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--LOCATION', type=int)
+    parser.add_argument('--LOCATION')
 
     args = parser.parse_args()
 

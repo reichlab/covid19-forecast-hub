@@ -7,7 +7,7 @@ import argparse
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--LOCATION', type=int)
+    parser.add_argument('--LOCATION')
 
     args = parser.parse_args()
 
@@ -16,7 +16,7 @@ if __name__ == "__main__":
     io = interface(0,LOCATION)
         
     io.subset2location()
-
+    
     forecast_model = VAR(io.modeldata)
     forecast_model.fit()
 
