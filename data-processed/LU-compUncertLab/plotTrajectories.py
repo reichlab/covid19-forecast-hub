@@ -30,9 +30,6 @@ if __name__ == "__main__":
 
         visual = viz(quantiles,io.county_data,io.weeklycountydata, LOCATION)
 
-        print(visual.__dict__)
-        input("askldfjklasdjfkl")
-
         visual.forecastVizLOCSCounty()
     else:
         io.include_weekly_data()
