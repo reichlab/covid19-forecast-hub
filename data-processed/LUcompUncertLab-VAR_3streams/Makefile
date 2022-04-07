@@ -66,6 +66,10 @@ plotTrajectories:
 	echo "PLOT = " ${LOCATION}
 	$(PYTHON) plotTrajectories.py --LOCATION ${LOCATION} && echo "Plotted trajectories"
 
+compilePredictions:
+	echo "compiling predictions"
+	$(PYTHON) compilePredictions.py && echo "Compiled predictions"
+
 zip:
 	gzip -f *.LUcompUncertLab-VAR__cumulativepredictions.csv
 
