@@ -1,0 +1,13 @@
+team_name: LUcompUncertLab
+model_name: VAR_3streams
+model_abbr: VAR_3streams
+model_contributors: thomas mcandrew, matt piriya, abe berlin, parth devan, gandhi
+website_url: 
+license: mit
+team_model_designation: primary
+ensemble_of_hub_models: false
+methods: Bayesian Vector Auto Regression
+team_funding: CDC, UMass Amherst Center of Excellence for Influenza
+data_inputs: JHU CSSE (incident cases, incident deaths, incident hospitilizations)
+citation: 
+methods_long: "We fit a Bayesian Vector Auto Regression (VAR) to location level incident cases, incident deaths, and incidient hospitilizations. This VAR model uses correlations between all three time series to generate a forecast."
