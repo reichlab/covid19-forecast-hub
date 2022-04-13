@@ -2,7 +2,7 @@ team_name: LUcompUncertLab
 model_name: VAR_3streams
 model_abbr: LUcompUncertLab-VAR_3streams
 model_contributors: thomas mcandrew, matt piriya, abe berlin, parth devan, gandhi
-website_url: 
+website_url: https://github.com/computationalUncertaintyLab
 license: mit
 team_model_designation: primary
 ensemble_of_hub_models: false
