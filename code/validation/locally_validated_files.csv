@@ -6171,3 +6171,5 @@ file_path,validation_date
 ./data-processed/COVIDhub_CDC-ensemble/2022-04-11-COVIDhub_CDC-ensemble.csv,2022-04-12 18:30:51.758071
 ./data-processed/CU-select/2022-04-10-CU-select.csv,2022-04-12 18:31:09.338967
 ./data-processed/CU-nochange/2022-04-10-CU-nochange.csv,2022-04-12 18:31:26.746602
+./data-processed/JHUAPL-SLPHospEns/2022-04-11-JHUAPL-SLPHospEns.csv,2022-04-13 00:35:54.882708
+./data-processed/COVIDhub-trained_ensemble/2022-04-11-COVIDhub-trained_ensemble.csv,2022-04-13 00:36:09.320254
