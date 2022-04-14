@@ -41,6 +41,8 @@ jobs:
       run: pipenv run python main.py --project_dir ${{ github.workspace }}
       env:
         GH_TOKEN: ${{ github.token }}
+        Z_USERNAME: ${{ secrets.Z_USERNAME}}
+        Z_PASSWORD: ${{ secrets.Z_PASSWORD}}
     
     # Run and check for automerge
     - name: Automerge check
