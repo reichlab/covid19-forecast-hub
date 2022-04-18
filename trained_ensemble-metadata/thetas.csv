@@ -262,3 +262,12 @@ forecast_date,response_var,spatial_resolution,theta
 2022-04-11,inc_case,national,2.7
 2022-04-11,inc_hosp,state,3.7
 2022-04-11,inc_hosp,national,3.2
+2022-04-18,cum_death,state,9
+2022-04-18,cum_death,national,1.2
+2022-04-18,inc_death,state,2.3
+2022-04-18,inc_death,national,2.5
+2022-04-18,inc_case,county,3.5
+2022-04-18,inc_case,state,0.7
+2022-04-18,inc_case,national,3.2
+2022-04-18,inc_hosp,state,2.2
+2022-04-18,inc_hosp,national,1.6
