@@ -78,7 +78,7 @@ export function parsePoint({ title, values, color }): string {
  * `title` is shown in italics first
  * Each of the `predictions` at `index` provide the data for rows
  */
-export function parsePredictions({ title, predictions, index }): string {
+export function parsePredictions({ title, predictions, index, aheadIndex }): string {
   let maxPreds = 10
   let html = ''
 
@@ -102,8 +102,13 @@ export function parsePredictions({ title, predictions, index }): string {
                ${p.id}
                <span class='bold'>
                  ${parseInt(p.query(index)).toLocaleString()}
-               </span>
-             </div>`
+               </span> `
+    if(p.cid != -1 && p.id != 'Actual') {
+      html+=`<br>
+               ${parseInt(p.modelData[index - aheadIndex - 1].series[aheadIndex].low[p.cid]).toLocaleString()} - ${parseInt(p.modelData[index - aheadIndex -1].series[aheadIndex].high[p.cid]).toLocaleString()}
+             `
+    }
+    html+=`</div>`
   })
 
   // Notify in case of overflow

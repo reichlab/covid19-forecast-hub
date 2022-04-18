@@ -5,6 +5,7 @@ model_contributors: Evan L. Ray <elray@umass.edu>, Ryan Tibshirani
 website_url: https://covid19forecasthub.org/
 license: cc-by-4.0
 team_model_designation: secondary
+ensemble_of_hub_models: false
 methods: This model is a baseline predictive model.
 team_funding: This model's development is funded by the US CDC grant number U01IP001122. The content is solely the responsibility of the authors and does not necessarily represent the official views of NIGMS or the National Institutes of Health.
 repo_url: https://github.com/reichlab/covidModels

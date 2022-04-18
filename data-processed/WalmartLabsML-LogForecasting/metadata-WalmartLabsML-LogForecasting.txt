@@ -6,6 +6,7 @@ model_contributors: Prakhar Mehrotra (Team Leader - Vice President, Walmart),
 website_url: https://github.com/ivan-ji-walmart/covid19-forecast-hub
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: (State) A logistic growth prophet forecasting model fit using case counts and deaths as features.
 team_funding: Walmart
 data_inputs: JHU CSSE confirmed case counts and deaths

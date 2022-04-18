@@ -5,6 +5,7 @@ model_contributors: Yunfeng Shi (RPI) shiy2@rpi.edu, Tanooj Shah (RPI) shaht2@rp
 website_url: http://rpi-uw-covid-mobility.herokuapp.com/
 license: cc-by-4.0
 team_model_designation: primary
+ensemble_of_hub_models: false
 methods: A mobility-informed simplified SIR model motivated by collision theory.
 team_funding: No funding support.
 data_inputs: JHU COVID-19 fatality and Google Mobility.
@@ -33,4 +34,12 @@ methods_long: "We incorporate mobility information into a simplified SIR model w
   \ election mobility increase of 25% from 09/01 to 11/03. The summer reduction of mobility \
   \ accounts for elevated outdoor activities while election mobility increase accounts for \
   \ large gatherings of political rally which maybe washed out in the averaged state-mobility. \
-  \ Google mobility data may have been affected by a recent Sep update. " 
+  \ We assume 70% of the vulnerable population will be vaccinated within two months. \
+  \ The assumption is antibody will be effective 3 weeks after the first shot. \
+  \ To account for the recent mutations, we increases the infection rate by 5%. \
+  \ Two vaccination scenarios have been considered and predicted which are shown in our website. \
+  \ Google mobility data may have been affected by a recent Sep update. \
+  \ Due to the significant impact of the new variants, and the complexity involving vaccination, \
+  \ our simple mechanistic model cannot make meaningful prediction based on past mobility-fatality\
+  \ data anymore. Therefore, we will stop generating forecast as of April 5, 2021. This concludes \
+  \ our past eight months of involvement of this forecast efforts." 

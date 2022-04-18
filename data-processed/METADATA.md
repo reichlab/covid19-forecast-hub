@@ -16,7 +16,7 @@ The name of your team that is less than 50 characters.
 The name of your model that is less than 50 characters.
 
 ### model_abbr
-An abbreviated name for your model that is less than 30 alphanumeric characters. The model abbreviation must be in the format of `[team_abbr]-[model_abbr]`. where each of the `[team_abbr]` and `[model_abbr]` are text strings that are each less than 15 alphanumeric characters that do not include a hyphen or whitespace  Note that this is a uniquely identifying field in our system, so please choose this name carefully, as it may not be changed once defined. An example of a valid `model_abbr` is `UMass-MechBayes` or `UCLA-SuEIR`. 
+An abbreviated name for your model that is less than 30 alphanumeric characters. The model abbreviation must be in the format of `[team_abbr]-[model_abbr]`. where each of the `[team_abbr]` and `[model_abbr]` are text strings that do not include a hyphen or whitespace. The total length of the model abbreviation must be less than or equal to 31 alphanumeric characters. Note that this is a uniquely identifying field in our system, so please choose this name carefully, as it may not be changed once defined. An example of a valid `model_abbr` is `UMass-MechBayes` or `UCLA-SuEIR`. 
 
 ### model_contributors
 
@@ -84,10 +84,14 @@ nor scored in evaluations.
 A brief description of your forecasting methodology that is less than 200 
 characters.
 
+### ensemble_of_hub_models
+
+A boolean value (`true` or `false`) that indicates whether a model combines multiple hub models into an ensemble.
+
 
 ## Optional
 
-### institional_affil
+### institution_affil
 
 University or company names, if relevant. 
 
@@ -108,19 +112,22 @@ One or more twitter handles (without the @) separated by commas.
 
 ### data_inputs
 
-(previously `data_inputs_known` and `data_source_known`)
+A description of the data sources used to inform the model and the truth data
+targetted by model forecasts. 
+Common data sources are 
+[NYTimes](https://github.com/nytimes/covid-19-data), 
+[JHU CSSE](https://github.com/CSSEGISandData/COVID-19), 
+[COVIDTracking](https://covidtracking.com/data), 
+[Google mobility](https://www.google.com/covid19/mobility/), 
+[HHS hospitalization](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries), etc. 
 
-A description of the data sources used to inform the model, 
-e.g. "NYTimes death data", "JHU CSSE case and death data", mobility data, etc. 
+An example description could be 
+
+> cases forecasts use NYTimes data and target JHU CSSE truth data,
+> hospitalization forecasts use and target HHS hospitalization data
 
 
-### this_model_is_an_ensemble
 
-_**DEPRECATED**_: please remove from metadata file. 
-In the future, inclusion of this field will be an error.
-
-true/false indicating whether the model here is a combination of a set of other
-models
 
 
 ### citation

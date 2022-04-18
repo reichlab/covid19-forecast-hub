@@ -4,7 +4,7 @@ export const branding = state => state.branding
 export const metadata = state => state.metadata
 //export const history = state => state.history
 export const seasonDataUrls = state => state.seasonDataUrls
-export const scoresDataUrls = state => state.scoresDataUrls
+// export const scoresDataUrls = state => state.scoresDataUrls
 export const distDataUrls = state => state.distDataUrls
 export const updateTime = state => {
   return state.metadata ? state.metadata.updateTime : 'NA'
@@ -15,13 +15,6 @@ export const updateTime = state => {
  */
 export const downloadedSeasons = state => {
   return state.seasonData.map(d => d.seasonId)
-}
-
-/**
- * Return seasons for which we have downloaded the data
- */
-export const downloadedScores = state => {
-  return state.scoresData.map(d => d.seasonId)
 }
 
 /**
@@ -37,10 +30,6 @@ export const selectedSeasonId = (state, getters) => {
 
 export const selectedRegionId = (state, getters) => {
   return getters.metadata.regionData[getters['switches/selectedRegion']].id
-}
-
-export const selectedScoresMeta = (state, getters) => {
-  return getters['scores/scoresMeta'][getters['switches/selectedScore']]
 }
 
 /**
@@ -60,46 +49,6 @@ export const selectedData = (state, getters) => {
   let selectedRegionIdx = getters['switches/selectedRegion']
   let seasonSubset = state.seasonData[getters.downloadedSeasons.indexOf(getters.selectedSeasonId)]
   return seasonSubset.regions[selectedRegionIdx]
-}
-
-/**
- * Return scores data for current selection
- */
-export const selectedScoresData = (state, getters) => {
-  //let idx = getters.downloadedScores.indexOf(getters.selectedSeasonId)
-  let idx = 0
-  let subset = state.scoresData[idx].regions
-    .find(({
-      id
-    }) => id === getters.selectedRegionId).models
-
-  // Filter out the currently selected score now
-  let scoreId = getters.selectedScoresMeta.id
-  let modelIds = getters['models/modelIds']
-
-  let scoresArray = modelIds.map(mid => {
-    let modelScores = subset.find(({
-      id
-    }) => id === mid)
-    return getters['scores/scoresTargets'].map(target => {
-      return {
-        best: false,
-        value: modelScores.scores[target][scoreId]
-      }
-    })
-  })
-
-  // Find the best value
-  let bestFunc = getters.selectedScoresMeta.bestFunc
-  getters['scores/scoresTargets'].forEach((target, targetIdx) => {
-    let targetValues = scoresArray.map(model => model[targetIdx].value)
-    let bestIdx = targetValues.indexOf(bestFunc(targetValues))
-    if (bestIdx > -1) {
-      scoresArray[bestIdx][targetIdx].best = true
-    }
-  })
-
-  return scoresArray
 }
 
 /**

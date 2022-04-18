@@ -6,6 +6,7 @@ model_contributors: Ajitesh Srivastava <ajiteshs@usc.edu>, Viktor K. Prasanna <p
 website_url: https://scc-usc.github.io/ReCOVER-COVID-19
 license: mit
 team_model_designation: other
+ensemble_of_hub_models: false
 methods: A heterogeneous infection rate model with human mobility for epidemic modeling.
   Our model adapts to changing trends and provide predictions of confirmed cases and
   deaths.

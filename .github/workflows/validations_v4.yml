@@ -1,0 +1,52 @@
+name: Validations v4 (testing)
+
+on:
+  pull_request_target:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.2]
+
+    steps:
+    - name: Checkout project config file in Forecast Hub Repo
+      uses: Bhacaz/checkout-files@v1
+      with:
+        files: project-config.json data-locations/locations.csv
+        token: ${{ github.token }}
+    - name: Checkout Validation Repo
+      uses: actions/checkout@v2
+      with:
+        repository: 'reichlab/covid19-forecast-hub-validations'
+        ref: 'config'
+        path: 'covid19-forecast-hub-validations'
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+        architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+#     - run: npm install
+    - name: Setup pipenv
+      run: pip3 install pipenv
+      working-directory: ./covid19-forecast-hub-validations
+    - name: Install python dependencies 
+      run: pipenv install --skip-lock
+      working-directory: ./covid19-forecast-hub-validations
+    - name: Validations output
+      working-directory: ./covid19-forecast-hub-validations
+      run: pipenv run python main.py --project_dir ${{ github.workspace }}
+      env:
+        GH_TOKEN: ${{ github.token }}
+        Z_USERNAME: ${{ secrets.Z_USERNAME}}
+        Z_PASSWORD: ${{ secrets.Z_PASSWORD}}
+    
+    # Run and check for automerge
+    - name: Automerge check
+      uses: "pascalgn/automerge-action@v0.13.1"
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+        MERGE_LABELS: "automerge,data-submission,!other-files-updated,!metadata-change,!forecast-updated,!viz,!code"

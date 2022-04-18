@@ -6,11 +6,12 @@ model_contributors: Sen Pei, Teresa Yamana, Sasikiran Kandula, Wan Yang, Marta G
 website_url: https://blogs.cuit.columbia.edu/jls106/publications/covid-19-findings-simulations/
 license: apache-2.0
 team_model_designation: other
+ensemble_of_hub_models: false
 methods: This metapopulation county-level SEIR model assumes that current contact
   rates will remain unchanged in the future.
 team_funding: Supported by US NIH grant GM110748 and US NSF RAPID grant DMS2027369
 repo_url: https://github.com/shaman-lab/COVID-19Projection
-data_inputs: USAFACTS County-level confirmed cases and deaths
+data_inputs: JHU CSSE County-level confirmed cases and deaths, Covid Tracking Project Hospitalizations and ICU admissions, HHS Hospitalizations, Safegraph mobility
 citation: https://doi.org/10.1101/2020.03.21.20040303
 methods_long: 'This Metapopulation county-level SEIR model assumes that current contact
   rates will remain unchanged in the future. Estimates of spatio-temporal COVID-19

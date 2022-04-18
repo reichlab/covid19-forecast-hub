@@ -2,7 +2,7 @@
 
 To update these data run (in R):
 
-    source("nytimes.R")
+    source("usafacts.R")
     
 This will "copy" the appropriate files from the 
 [USAFacts website](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/)

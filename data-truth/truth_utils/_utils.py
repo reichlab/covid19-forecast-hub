@@ -105,7 +105,14 @@ def pre_process_epiweek(df_truth, target, for_zoltar):
             df_vis = df_truth
 
     # shift epiweek on axis
+    
     df_vis['week'] = df_vis['week'] + 1  
+    df_invalid = df_vis[df_vis['week'] > 53]
+    # print(f"Number of invalid rows: {len(df_invalid.index)}")
+    if len(df_invalid.index) > 0:
+        df_vis.loc[df_vis['week'] > 53, 'year'] =df_vis[df_vis['week'] > 53]['year'] + 1
+        df_vis.loc[df_vis['week'] > 53, 'week'] = 1
+    # print(f"Number of invalid rows after operation: {len(df_vis[df_vis['week'] > 53].index)}")
 
     # add leading zeros to epi week
     df_vis['week'] = df_vis['week'].apply(lambda x: '{0:0>2}'.format(x))
