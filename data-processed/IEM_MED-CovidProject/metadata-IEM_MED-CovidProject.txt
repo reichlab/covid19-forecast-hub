@@ -9,6 +9,7 @@ team_model_designation: primary
 methods: County-level, state-level, and national-level SEIR model projections for daily incident confirmed COVID 
   cases by using AI to fit actual cases observed.
 data_inputs: JHU reported daily confirmed cases
+ensemble_of_hub_models: false
 methods_long: "IEM is currently using an AI model to fit data from various sources \
   \ and project new cases of COVID-19. We do not assume the average number of secondary \
   \ infections (R-value) stays the same over time. Our model makes projections for \
