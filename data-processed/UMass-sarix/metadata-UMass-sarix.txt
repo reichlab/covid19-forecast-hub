@@ -1,0 +1,14 @@
+team_name: UMass-Amherst
+model_name: sarix
+model_abbr: UMass-sarix
+model_contributors: Serena Wang, Estee Cramer, Nick Reich <nick@umass.edu>, Evan Ray <elray@umass.edu>
+website_url: https://github.com/reichlab/covid-hosp-models
+license: cc-by-4.0
+team_model_designation: secondary
+ensemble_of_hub_models: false
+methods: 'Ensemble of seasonal autoregressive, integrated models with exogenous covariates'
+methods_long: 'Equally weighted ensemble of simple time-series baseline models. 
+  As of 2022-04-25, uses only past hospitalizations, no covariates.'
+data_inputs: HHS Protect hospitalization data via COVIDcast.
+team_funding: This model development is supported by NIGMS grant R35GM119582 and CDC grant U01IP001122. The content is solely the responsibility of the authors and does not necessarily represent the official views of CDC, NIGMS, or the National Institutes of Health.
+twitter_handles: reichlab

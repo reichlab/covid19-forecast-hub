@@ -1,0 +1,13 @@
+team_name: LUcompUncertLab
+model_name: VAR_3streams
+model_abbr: LUcompUncertLab-VAR_3streams
+model_contributors: thomas mcandrew <mcandrew@lehigh.edu>, matt piriya <mvp223@lehigh.edu>, abe berlin <alb323@lehigh.edu>, parth devan gandhi <pag420@lehigh.edu>
+website_url: https://github.com/computationalUncertaintyLab
+license: mit
+team_model_designation: primary
+ensemble_of_hub_models: false
+methods: Bayesian Vector Auto Regression
+team_funding: CDC, UMass Amherst Center of Excellence for Influenza, Institute for Data, Intelligent Systems, & Computation
+data_inputs: JHU CSSE (incident cases, incident deaths, incident hospitilizations)
+citation: 
+methods_long: "We fit a Bayesian Vector Auto Regression (VAR) to location level incident cases, incident deaths, and incidient hospitilizations. This VAR model uses correlations between all three time series to generate a forecast."
