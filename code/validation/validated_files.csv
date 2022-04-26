@@ -6261,3 +6261,14 @@ file_path,validation_date
 ./data-processed/CU-scenario_low/2022-04-24-CU-scenario_low.csv,2022-04-25 18:33:12.217366
 ./data-processed/JHU_IDD-CovidSP/2022-04-24-JHU_IDD-CovidSP.csv,2022-04-25 18:33:26.065929
 ./data-processed/CU-select/2022-04-24-CU-select.csv,2022-04-25 18:33:45.575709
+./data-processed/CMU-TimeSeries/2022-04-25-CMU-TimeSeries.csv,2022-04-26 00:30:49.383382
+./data-processed/AIpert-pwllnod/2022-04-25-AIpert-pwllnod.csv,2022-04-26 00:30:51.887642
+./data-processed/COVIDhub-ensemble/2022-04-25-COVIDhub-ensemble.csv,2022-04-26 00:30:56.721650
+./data-processed/UMass-sarix/2022-04-25-UMass-sarix.csv,2022-04-26 00:31:00.263338
+./data-processed/UMass-trends_ensemble/2022-04-25-UMass-trends_ensemble.csv,2022-04-26 00:31:03.495161
+./data-processed/prolix-euclidean/2022-04-25-prolix-euclidean.csv,2022-04-26 00:31:03.683961
+./data-processed/CovidAnalytics-DELPHI/2022-04-25-CovidAnalytics-DELPHI.csv,2022-04-26 00:31:05.507375
+./data-processed/COVIDhub-4_week_ensemble/2022-04-25-COVIDhub-4_week_ensemble.csv,2022-04-26 00:31:18.514605
+./data-processed/UMich-RidgeTfReg/2022-04-25-UMich-RidgeTfReg.csv,2022-04-26 00:31:19.686302
+./data-processed/LosAlamos_NAU-CModel_SDVaxVar/2022-04-25-LosAlamos_NAU-CModel_SDVaxVar.csv,2022-04-26 00:31:20.460488
+./data-processed/COVIDhub-trained_ensemble/2022-04-25-COVIDhub-trained_ensemble.csv,2022-04-26 00:31:33.463681
