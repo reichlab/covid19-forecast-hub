@@ -1,770 +1,580 @@
 date,location,location_name,value
-2020-10-16,50,Vermont,0
-2020-10-15,56,Wyoming,21
-2020-10-14,33,New Hampshire,3
-2020-10-11,34,New Jersey,55
-2020-10-10,35,New Mexico,37
-2020-10-08,15,Hawaii,17
-2020-10-06,35,New Mexico,63
-2020-10-05,15,Hawaii,34
-2020-10-03,38,North Dakota,18
-2020-10-02,23,Maine,0
-2020-09-29,33,New Hampshire,3
-2020-09-26,33,New Hampshire,8
-2020-09-25,15,Hawaii,50
-2020-09-24,11,District of Columbia,10
-2020-09-24,41,Oregon,17
-2020-09-23,23,Maine,0
-2020-09-22,18,Indiana,59
-2020-09-22,38,North Dakota,31
-2020-09-22,44,Rhode Island,6
-2020-09-21,31,Nebraska,26
-2020-09-21,35,New Mexico,68
-2020-09-19,30,Montana,22
-2020-09-16,16,Idaho,12
-2020-09-14,44,Rhode Island,10
-2020-09-11,20,Kansas,53
-2020-09-09,20,Kansas,85
-2020-09-08,20,Kansas,128
-2020-09-07,44,Rhode Island,12
-2020-08-27,44,Rhode Island,12
-2020-08-19,15,Hawaii,78
-2020-08-17,44,Rhode Island,18
-2020-08-11,22,Louisiana,158
-2020-08-10,16,Idaho,35
-2020-08-08,46,South Dakota,15
-2020-07-19,31,Nebraska,27
-2022-04-19,19,Iowa,17
-2022-04-18,11,District of Columbia,12
-2022-04-09,60,American Samoa,0
-2022-03-23,60,American Samoa,0
-2022-03-17,15,Hawaii,88
-2022-03-12,19,Iowa,27
-2022-03-09,45,South Carolina,42
-2022-03-07,15,Hawaii,102
-2022-03-05,15,Hawaii,114
-2022-03-03,31,Nebraska,40
-2022-02-24,33,New Hampshire,24
-2022-02-22,24,Maryland,60
-2022-02-21,44,Rhode Island,25
-2022-02-13,46,South Dakota,34
-2022-02-10,33,New Hampshire,58
-2022-02-10,44,Rhode Island,35
-2022-01-12,11,District of Columbia,84
-2021-12-31,50,Vermont,12
-2021-12-29,15,Hawaii,146
-2021-12-25,60,American Samoa,0
-2021-12-08,15,Hawaii,149
-2021-11-30,15,Hawaii,154
-2021-11-28,15,Hawaii,160
-2021-11-24,11,District of Columbia,92
-2021-11-20,15,Hawaii,160
-2021-11-18,33,New Hampshire,105
-2021-11-16,11,District of Columbia,97
-2021-05-18,44,Rhode Island,41
-2021-05-17,46,South Dakota,38
-2021-05-16,19,Iowa,48
-2021-05-16,33,New Hampshire,112
-2021-05-15,44,Rhode Island,42
-2021-05-14,46,South Dakota,43
-2021-05-12,44,Rhode Island,53
-2021-05-08,56,Wyoming,26
-2021-05-05,19,Iowa,91
-2021-05-04,15,Hawaii,165
-2021-05-03,02,Alaska,5
-2021-05-03,44,Rhode Island,63
-2021-05-02,15,Hawaii,169
-2021-05-02,46,South Dakota,55
-2021-05-01,33,New Hampshire,122
-2021-05-01,56,Wyoming,31
-2021-04-27,02,Alaska,11
-2021-04-25,28,Mississippi,16
-2021-04-23,11,District of Columbia,112
-2021-04-23,15,Hawaii,171
-2021-04-23,44,Rhode Island,73
-2021-04-19,11,District of Columbia,136
-2021-04-19,31,Nebraska,58
-2021-04-18,31,Nebraska,76
-2021-04-15,15,Hawaii,174
-2021-04-12,02,Alaska,15
-2021-04-11,35,New Mexico,83
-2021-04-10,19,Iowa,120
-2021-04-08,02,Alaska,17
-2021-04-05,02,Alaska,25
-2021-04-05,15,Hawaii,182
-2021-04-03,15,Hawaii,191
-2021-04-02,30,Montana,26
-2021-03-31,19,Iowa,160
-2021-03-31,30,Montana,39
-2021-03-30,02,Alaska,32
-2021-03-30,15,Hawaii,196
-2021-03-29,02,Alaska,38
-2021-03-28,15,Hawaii,200
-2021-03-28,30,Montana,47
-2021-03-24,44,Rhode Island,86
-2021-03-23,35,New Mexico,100
-2021-02-18,44,Rhode Island,98
-2021-02-09,15,Hawaii,203
-2021-02-05,44,Rhode Island,111
-2021-02-03,46,South Dakota,62
-2021-02-02,33,New Hampshire,149
-2021-01-27,19,Iowa,218
-2021-01-14,19,Iowa,299
-2021-01-14,33,New Hampshire,180
-2021-01-12,33,New Hampshire,219
-2021-01-12,44,Rhode Island,146
-2021-01-10,08,Colorado,121
-2021-01-08,15,Hawaii,213
-2021-01-02,44,Rhode Island,172
-2020-12-31,15,Hawaii,225
-2020-12-29,39,Ohio,657
-2020-12-27,44,Rhode Island,191
-2020-12-23,11,District of Columbia,168
-2020-12-19,31,Nebraska,124
-2021-11-03,11,District of Columbia,176
-2021-11-01,28,Mississippi,40
-2021-10-31,11,District of Columbia,180
-2021-10-27,11,District of Columbia,182
-2021-10-24,33,New Hampshire,239
-2021-10-22,44,Rhode Island,199
-2021-10-19,25,Massachusetts,61
-2021-10-11,44,Rhode Island,205
-2021-10-03,44,Rhode Island,208
-2021-09-19,11,District of Columbia,198
-2021-09-13,33,New Hampshire,255
-2021-09-07,31,Nebraska,170
-2021-09-05,31,Nebraska,206
-2021-09-04,33,New Hampshire,284
-2021-08-28,30,Montana,107
-2021-08-27,33,New Hampshire,294
-2021-08-23,35,New Mexico,163
-2021-08-21,02,Alaska,48
-2021-08-16,33,New Hampshire,308
-2021-08-04,02,Alaska,62
-2021-08-04,44,Rhode Island,215
-2021-07-31,11,District of Columbia,203
-2021-07-29,44,Rhode Island,217
-2021-07-28,31,Nebraska,227
-2021-07-27,44,Rhode Island,220
-2021-07-24,08,Colorado,169
-2021-07-24,33,New Hampshire,312
-2021-07-24,44,Rhode Island,222
-2021-07-15,25,Massachusetts,77
-2021-07-14,44,Rhode Island,222
-2021-07-13,21,Kentucky,89
-2021-07-08,19,Iowa,314
-2021-07-06,46,South Dakota,67
-2021-06-30,25,Massachusetts,86
-2021-06-21,25,Massachusetts,104
-2021-06-11,11,District of Columbia,213
-2021-06-09,15,Hawaii,226
-2021-06-09,44,Rhode Island,226
-2021-06-05,15,Hawaii,227
-2021-06-03,44,Rhode Island,227
-2021-06-01,02,Alaska,65
-2021-06-01,19,Iowa,326
-2021-05-28,44,Rhode Island,231
-2021-05-27,20,Kansas,141
-2021-05-26,11,District of Columbia,219
-2021-05-22,44,Rhode Island,233
-2021-05-19,35,New Mexico,184
-2021-05-18,33,New Hampshire,324
-2020-10-14,19,Iowa,394
-2020-08-06,05,Arkansas,81
-2020-08-09,13,Georgia,174
-2020-05-21,44,Rhode Island,233
-2020-10-14,50,Vermont,12
-2020-06-16,28,Mississippi,40
-2020-08-13,02,Alaska,70
-2020-10-30,25,Massachusetts,156
-2020-10-24,48,Texas,657
-2020-08-12,25,Massachusetts,175
-2020-11-05,54,West Virginia,43
-2020-05-20,44,Rhode Island,233
-2020-10-02,39,Ohio,785
-2020-10-05,05,Arkansas,175
-2020-09-12,30,Montana,116
-2020-10-25,22,Louisiana,226
-2020-09-06,40,Oklahoma,65
-2020-10-09,40,Oklahoma,232
-2020-06-08,28,Mississippi,40
-2020-11-09,40,Oklahoma,504
-2020-09-01,21,Kentucky,438
-2020-09-10,12,Florida,290
-2020-10-30,36,New York,140
-2020-10-23,48,Texas,1445
-2020-10-16,53,Washington,32
-2020-09-11,48,Texas,1879
-2020-10-28,05,Arkansas,270
-2020-08-15,36,New York,203
-2020-07-27,53,Washington,58
-2020-11-12,18,Indiana,427
-2020-09-12,40,Oklahoma,603
-2020-07-26,17,Illinois,89
-2020-07-15,08,Colorado,206
-2020-09-08,39,Ohio,870
-2020-07-31,45,South Carolina,221
-2020-08-04,06,California,734
-2020-10-03,13,Georgia,382
-2020-08-25,36,New York,283
-2020-07-27,21,Kentucky,938
-2020-10-01,53,Washington,82
-2020-10-12,53,Washington,116
-2020-08-30,39,Ohio,954
-2020-09-08,46,South Dakota,86
-2020-11-10,44,Rhode Island,251
-2020-08-06,53,Washington,135
-2020-09-01,36,New York,343
-2020-11-22,21,Kentucky,1311
-2020-10-11,30,Montana,173
-2020-09-28,12,Florida,594
-2020-10-15,15,Hawaii,239
-2020-08-23,05,Arkansas,316
-2020-08-19,21,Kentucky,1607
-2020-08-05,39,Ohio,1017
-2020-08-17,39,Ohio,1116
-2020-08-16,54,West Virginia,52
-2020-07-15,05,Arkansas,369
-2020-09-16,30,Montana,187
-2020-10-22,44,Rhode Island,270
-2020-09-06,06,California,1121
-2020-09-13,06,California,1426
-2020-11-18,54,West Virginia,107
-2020-08-27,36,New York,424
-2020-10-22,05,Arkansas,451
-2020-09-20,15,Hawaii,254
-2020-09-25,12,Florida,860
-2020-10-10,53,Washington,165
-2020-11-01,44,Rhode Island,276
-2020-09-06,22,Louisiana,331
-2020-09-10,30,Montana,201
-2020-07-28,02,Alaska,70
-2020-07-18,44,Rhode Island,276
-2020-07-26,44,Rhode Island,289
-2020-10-02,02,Alaska,77
-2020-08-09,08,Colorado,239
-2020-10-20,21,Kentucky,1772
-2020-10-09,15,Hawaii,268
-2020-09-20,30,Montana,228
-2020-07-18,06,California,1831
-2020-07-25,06,California,2547
-2020-07-23,08,Colorado,305
-2020-07-21,36,New York,569
-2020-08-28,44,Rhode Island,294
-2020-11-09,06,California,3055
-2020-10-18,15,Hawaii,275
-2020-11-22,06,California,3895
-2020-10-26,36,New York,726
-2020-11-15,30,Montana,292
-2020-08-02,05,Arkansas,512
-2020-10-31,44,Rhode Island,302
-2020-07-15,36,New York,794
-2020-09-04,44,Rhode Island,304
-2020-08-06,36,New York,873
-2020-10-28,36,New York,1025
-2020-08-22,44,Rhode Island,311
-2020-07-30,44,Rhode Island,318
-2020-07-19,36,New York,1070
-2020-05-25,44,Rhode Island,318
-2020-07-09,44,Rhode Island,318
-2020-05-14,36,New York,1070
-2020-08-29,36,New York,1126
-2020-11-04,44,Rhode Island,329
-2020-10-25,44,Rhode Island,335
-2020-10-24,36,New York,1263
-2020-06-16,44,Rhode Island,335
-2020-07-02,36,New York,1263
-2020-10-20,36,New York,1439
-2020-09-30,44,Rhode Island,341
-2020-09-17,36,New York,1523
-2020-10-22,36,New York,1688
-2020-11-07,36,New York,1981
-2020-08-10,44,Rhode Island,348
-2020-07-11,36,New York,1981
-2020-08-23,36,New York,2043
-2020-06-11,44,Rhode Island,348
-2020-07-09,36,New York,2043
-2020-06-29,36,New York,2043
-2020-05-09,36,New York,2043
-2020-11-16,36,New York,2423
-2020-11-17,44,Rhode Island,384
-2020-06-02,36,New York,2425
-2020-07-10,44,Rhode Island,384
-2020-06-05,36,New York,2425
-2020-07-20,44,Rhode Island,389
-2020-05-28,36,New York,2425
-2020-09-21,44,Rhode Island,398
-2020-10-14,36,New York,2575
-2020-08-01,44,Rhode Island,401
-2020-10-07,44,Rhode Island,405
-2020-07-22,44,Rhode Island,413
-2020-11-14,36,New York,2961
-2020-06-29,44,Rhode Island,413
-2020-06-24,36,New York,2961
-2020-09-20,44,Rhode Island,418
-2020-08-26,44,Rhode Island,419
-2020-10-10,44,Rhode Island,429
-2020-09-03,36,New York,3044
-2020-06-30,36,New York,3044
-2020-07-29,44,Rhode Island,435
-2020-06-03,44,Rhode Island,435
-2020-05-07,36,New York,3044
-2020-07-11,44,Rhode Island,435
-2020-10-09,44,Rhode Island,441
-2020-09-02,36,New York,3120
-2020-09-06,44,Rhode Island,441
-2020-07-10,36,New York,3120
-2020-09-12,44,Rhode Island,443
-2020-10-23,44,Rhode Island,451
-2020-09-11,36,New York,3209
-2020-09-05,44,Rhode Island,453
-2020-10-01,44,Rhode Island,464
-2020-08-02,36,New York,3297
-2020-10-12,36,New York,3453
-2020-09-18,44,Rhode Island,467
-2020-11-06,36,New York,3751
-2020-08-17,36,New York,3840
-2020-04-30,36,New York,3840
-2020-05-30,44,Rhode Island,467
-2020-11-08,44,Rhode Island,480
-2020-11-04,36,New York,4128
-2020-09-03,44,Rhode Island,483
-2020-06-28,36,New York,4128
-2020-04-23,44,Rhode Island,483
-2020-09-09,36,New York,4222
-2020-06-04,44,Rhode Island,483
-2020-05-11,44,Rhode Island,483
-2020-05-24,36,New York,4222
-2020-05-21,36,New York,4222
-2020-04-27,36,New York,4222
-2020-05-19,36,New York,4223
-2020-09-19,36,New York,4290
-2020-06-08,44,Rhode Island,483
-2020-09-06,36,New York,4368
-2020-08-12,44,Rhode Island,489
-2020-08-29,44,Rhode Island,493
-2020-06-01,36,New York,4368
-2020-08-24,36,New York,4446
-2020-06-22,44,Rhode Island,493
-2020-04-25,44,Rhode Island,493
-2020-05-10,36,New York,4447
-2020-10-23,36,New York,4593
-2020-08-30,44,Rhode Island,495
-2020-08-18,36,New York,4665
-2020-08-10,36,New York,4755
-2020-10-30,44,Rhode Island,502
-2020-07-02,44,Rhode Island,502
-2020-06-06,36,New York,4755
-2020-05-23,36,New York,4755
-2020-10-27,44,Rhode Island,520
-2020-09-05,36,New York,4822
-2020-05-08,36,New York,4822
-2020-08-01,36,New York,4891
-2020-10-17,44,Rhode Island,531
-2020-09-29,44,Rhode Island,536
-2020-07-21,44,Rhode Island,540
-2020-10-15,36,New York,5037
-2020-06-11,36,New York,5037
-2020-10-25,36,New York,5151
-2020-11-23,36,New York,5731
-2020-10-19,36,New York,5872
-2020-05-26,36,New York,5872
-2020-06-14,36,New York,5872
-2020-09-25,44,Rhode Island,545
-2020-06-19,36,New York,5872
-2020-10-26,44,Rhode Island,558
-2020-08-22,36,New York,5945
-2020-07-07,36,New York,5945
-2020-08-23,44,Rhode Island,563
-2020-11-02,36,New York,6146
-2020-05-15,44,Rhode Island,563
-2020-06-26,44,Rhode Island,563
-2020-10-06,36,New York,6261
-2020-07-04,36,New York,6261
-2020-08-02,44,Rhode Island,569
-2020-09-02,44,Rhode Island,575
-2020-05-19,44,Rhode Island,575
-2020-10-11,36,New York,6402
-2020-04-30,44,Rhode Island,575
-2020-09-28,36,New York,6517
-2020-11-20,36,New York,7051
-2020-07-01,36,New York,7051
-2020-06-25,36,New York,7051
-2020-08-21,44,Rhode Island,580
-2020-06-16,36,New York,7051
-2020-06-27,36,New York,7051
-2020-06-20,44,Rhode Island,580
-2020-07-16,36,New York,7119
-2020-07-12,44,Rhode Island,580
-2020-06-15,44,Rhode Island,580
-2020-08-11,36,New York,7191
-2020-10-08,44,Rhode Island,593
-2020-08-11,44,Rhode Island,596
-2020-05-05,36,New York,7191
-2020-04-29,36,New York,7191
-2020-06-30,44,Rhode Island,596
-2020-06-09,36,New York,7191
-2020-08-28,36,New York,7257
-2020-09-14,36,New York,7335
-2020-06-13,36,New York,7335
-2020-05-04,44,Rhode Island,596
-2020-11-22,44,Rhode Island,616
-2020-09-17,44,Rhode Island,621
-2020-09-15,44,Rhode Island,622
-2020-05-07,44,Rhode Island,622
-2020-05-02,44,Rhode Island,622
-2020-11-15,36,New York,7651
-2020-10-16,44,Rhode Island,628
-2020-05-13,44,Rhode Island,628
-2020-04-26,36,New York,7652
-2020-10-09,36,New York,7802
-2020-07-05,44,Rhode Island,628
-2020-11-11,36,New York,8254
-2020-04-28,36,New York,8254
-2020-07-15,44,Rhode Island,629
-2020-11-01,36,New York,8398
-2020-11-03,44,Rhode Island,647
-2020-11-12,44,Rhode Island,662
-2020-04-24,44,Rhode Island,662
-2020-07-06,36,New York,8398
-2020-06-18,36,New York,8398
-2020-07-04,44,Rhode Island,662
-2020-08-09,36,New York,8464
-2020-07-08,44,Rhode Island,662
-2020-07-17,44,Rhode Island,668
-2020-10-18,44,Rhode Island,677
-2020-06-24,44,Rhode Island,677
-2020-05-12,44,Rhode Island,677
-2020-06-23,36,New York,8464
-2020-09-13,44,Rhode Island,679
-2020-06-06,44,Rhode Island,679
-2020-08-19,36,New York,8538
-2020-10-21,36,New York,8695
-2020-09-18,36,New York,8802
-2020-07-31,36,New York,8876
-2020-08-26,36,New York,8960
-2020-07-27,44,Rhode Island,696
-2020-09-16,44,Rhode Island,700
-2020-09-01,44,Rhode Island,702
-2020-04-28,44,Rhode Island,702
-2020-07-06,44,Rhode Island,702
-2020-11-13,44,Rhode Island,716
-2020-06-27,44,Rhode Island,716
-2020-05-16,44,Rhode Island,716
-2020-04-26,44,Rhode Island,716
-2020-10-02,44,Rhode Island,719
-2020-11-23,44,Rhode Island,755
-2020-05-03,44,Rhode Island,755
-2020-06-21,44,Rhode Island,755
-2020-04-22,44,Rhode Island,755
-2020-09-08,44,Rhode Island,759
-2020-04-27,44,Rhode Island,759
-2020-11-07,44,Rhode Island,779
-2020-09-23,44,Rhode Island,785
-2020-05-01,44,Rhode Island,785
-2020-05-09,44,Rhode Island,785
-2020-10-04,44,Rhode Island,790
-2020-05-18,44,Rhode Island,790
-2020-08-18,44,Rhode Island,800
-2020-09-24,44,Rhode Island,805
-2020-08-06,44,Rhode Island,810
-2020-10-03,44,Rhode Island,813
-2020-06-25,44,Rhode Island,813
-2020-07-07,44,Rhode Island,813
-2020-11-20,44,Rhode Island,843
-2020-08-05,44,Rhode Island,850
-2020-06-18,44,Rhode Island,850
-2020-08-07,44,Rhode Island,861
-2020-08-09,44,Rhode Island,865
-2020-08-16,44,Rhode Island,869
-2020-07-19,44,Rhode Island,872
-2020-04-29,44,Rhode Island,872
-2020-10-21,44,Rhode Island,880
-2020-10-29,44,Rhode Island,891
-2020-10-19,44,Rhode Island,901
-2020-08-08,44,Rhode Island,917
-2020-10-11,44,Rhode Island,920
-2020-10-13,44,Rhode Island,926
-2020-07-28,44,Rhode Island,929
-2020-06-12,44,Rhode Island,929
-2020-06-09,44,Rhode Island,929
-2020-06-23,44,Rhode Island,929
-2020-08-14,44,Rhode Island,939
-2020-10-20,44,Rhode Island,953
-2020-07-03,44,Rhode Island,953
-2020-11-14,44,Rhode Island,968
-2020-06-14,44,Rhode Island,968
-2020-11-05,44,Rhode Island,995
-2020-11-24,44,Rhode Island,1021
-2020-11-11,44,Rhode Island,1037
-2020-08-24,44,Rhode Island,1042
-2020-07-01,44,Rhode Island,1042
-2020-06-17,44,Rhode Island,1042
-2020-09-11,44,Rhode Island,1052
-2020-11-21,44,Rhode Island,1068
-2020-05-06,44,Rhode Island,1068
-2020-08-20,44,Rhode Island,1076
-2020-11-18,44,Rhode Island,1098
-2020-05-29,44,Rhode Island,1098
-2020-07-14,44,Rhode Island,1098
-2020-09-09,44,Rhode Island,1103
-2020-05-14,44,Rhode Island,1103
-2020-05-24,44,Rhode Island,1103
-2020-09-27,44,Rhode Island,1106
-2020-05-26,44,Rhode Island,1106
-2020-05-22,44,Rhode Island,1106
-2020-11-15,44,Rhode Island,1127
-2020-06-19,44,Rhode Island,1127
-2020-09-28,44,Rhode Island,1130
-2020-11-09,44,Rhode Island,1151
-2020-09-19,44,Rhode Island,1155
-2020-07-13,44,Rhode Island,1155
-2020-05-23,44,Rhode Island,1155
-2020-06-07,44,Rhode Island,1155
-2020-05-05,44,Rhode Island,1155
-2020-05-10,44,Rhode Island,1155
-2020-07-25,44,Rhode Island,1164
-2020-09-10,44,Rhode Island,1167
-2020-07-31,44,Rhode Island,1172
-2020-10-24,44,Rhode Island,1176
-2021-11-22,60,American Samoa,0
-2022-02-18,60,American Samoa,0
-2021-11-30,60,American Samoa,0
-2022-03-21,60,American Samoa,4
-2021-12-05,60,American Samoa,4
-2021-11-15,60,American Samoa,4
-2022-01-19,60,American Samoa,4
-2022-01-30,60,American Samoa,4
-2022-04-18,60,American Samoa,4
-2022-04-11,60,American Samoa,4
-2022-02-26,60,American Samoa,4
-2022-02-06,60,American Samoa,4
-2022-02-13,60,American Samoa,4
-2022-04-03,60,American Samoa,8
-2021-12-04,60,American Samoa,8
-2021-12-24,60,American Samoa,8
-2022-04-10,60,American Samoa,8
-2022-03-13,60,American Samoa,9
-2021-11-08,60,American Samoa,9
-2021-11-24,60,American Samoa,9
-2022-02-24,60,American Samoa,9
-2021-11-11,60,American Samoa,9
-2021-09-10,60,American Samoa,9
-2021-12-12,60,American Samoa,9
-2021-11-23,60,American Samoa,9
-2022-03-15,60,American Samoa,12
-2021-12-13,60,American Samoa,12
-2022-03-12,60,American Samoa,13
-2022-01-20,60,American Samoa,13
-2022-01-21,60,American Samoa,13
-2022-03-28,60,American Samoa,14
-2022-03-22,60,American Samoa,16
-2022-02-05,60,American Samoa,16
-2022-02-07,60,American Samoa,16
-2022-04-15,60,American Samoa,17
-2022-03-04,60,American Samoa,21
-2022-01-11,60,American Samoa,21
-2022-04-08,60,American Samoa,21
-2021-11-16,60,American Samoa,21
-2022-02-21,60,American Samoa,21
-2022-01-05,60,American Samoa,21
-2022-04-07,60,American Samoa,21
-2021-12-21,60,American Samoa,21
-2022-02-09,60,American Samoa,21
-2021-12-08,60,American Samoa,21
-2022-03-24,60,American Samoa,21
-2021-12-31,60,American Samoa,21
+2020-10-15,50,Vermont,0
+2020-10-14,78,Virgin Islands,0
+2020-10-13,53,Washington,28
+2020-10-12,78,Virgin Islands,0
+2020-10-09,02,Alaska,10
+2020-10-08,78,Virgin Islands,0
+2020-10-07,78,Virgin Islands,0
+2020-10-05,54,West Virginia,18
+2020-10-04,78,Virgin Islands,0
+2020-10-02,78,Virgin Islands,0
+2020-09-30,78,Virgin Islands,0
+2020-09-30,50,Vermont,0
+2020-09-29,78,Virgin Islands,0
+2020-09-28,78,Virgin Islands,0
+2020-09-27,50,Vermont,0
+2020-09-25,78,Virgin Islands,0
+2020-09-21,78,Virgin Islands,0
+2020-09-21,50,Vermont,0
+2020-09-20,78,Virgin Islands,0
+2020-09-09,50,Vermont,0
+2020-09-08,50,Vermont,1
+2020-09-07,02,Alaska,13
+2020-09-01,50,Vermont,1
+2020-08-28,44,Rhode Island,5
+2020-08-27,44,Rhode Island,5
+2020-08-26,10,Delaware,6
+2020-08-24,78,Virgin Islands,3
+2020-08-23,50,Vermont,2
+2020-08-22,78,Virgin Islands,4
+2020-08-21,54,West Virginia,30
+2020-08-20,31,Nebraska,16
+2020-08-19,78,Virgin Islands,4
+2020-08-17,10,Delaware,9
+2020-08-16,33,New Hampshire,28
+2020-08-14,78,Virgin Islands,5
+2020-08-07,46,South Dakota,16
+2020-08-01,50,Vermont,3
+2020-07-30,44,Rhode Island,12
+2020-07-28,38,North Dakota,7
+2020-07-27,31,Nebraska,20
+2020-07-25,46,South Dakota,18
+2020-07-23,10,Delaware,9
+2020-07-22,09,Connecticut,3
+2020-07-14,40,Oklahoma,50
+2022-04-30,56,Wyoming,0
+2022-04-28,02,Alaska,19
+2022-04-27,02,Alaska,20
+2022-04-27,60,American Samoa,0
+2022-04-26,60,American Samoa,0
+2022-04-25,56,Wyoming,0
+2022-04-24,60,American Samoa,0
+2022-04-23,60,American Samoa,0
+2022-04-22,60,American Samoa,0
+2022-04-21,60,American Samoa,0
+2022-04-20,56,Wyoming,3
+2022-04-19,56,Wyoming,3
+2022-04-16,60,American Samoa,0
+2022-04-15,60,American Samoa,1
+2022-04-13,02,Alaska,21
+2022-04-12,60,American Samoa,18
+2022-04-12,49,Utah,7
+2022-04-11,60,American Samoa,18
+2022-04-08,60,American Samoa,18
+2022-04-07,60,American Samoa,18
+2022-04-06,60,American Samoa,18
+2022-04-05,60,American Samoa,18
+2022-04-04,60,American Samoa,21
 2022-04-02,60,American Samoa,23
-2022-01-04,60,American Samoa,23
-2022-02-11,60,American Samoa,23
-2022-04-21,60,American Samoa,23
-2021-11-19,60,American Samoa,23
-2022-03-19,60,American Samoa,24
-2022-01-09,60,American Samoa,24
-2021-12-03,60,American Samoa,24
-2022-04-22,60,American Samoa,24
-2022-03-01,60,American Samoa,24
-2022-03-31,60,American Samoa,29
-2022-02-28,60,American Samoa,29
-2021-11-17,60,American Samoa,29
-2021-11-28,60,American Samoa,29
-2022-03-20,60,American Samoa,31
-2022-01-23,60,American Samoa,31
-2022-03-25,60,American Samoa,34
-2021-12-23,60,American Samoa,34
-2022-02-25,60,American Samoa,34
-2021-12-22,60,American Samoa,34
-2021-12-02,60,American Samoa,34
-2022-03-02,60,American Samoa,35
-2022-04-12,60,American Samoa,35
-2022-04-19,60,American Samoa,40
-2021-11-09,60,American Samoa,40
-2022-04-13,60,American Samoa,40
-2021-12-06,60,American Samoa,40
-2022-03-16,60,American Samoa,40
-2022-04-06,60,American Samoa,40
-2022-01-16,60,American Samoa,40
-2022-01-10,60,American Samoa,40
-2022-02-15,60,American Samoa,40
-2021-11-12,60,American Samoa,40
-2022-02-16,60,American Samoa,40
-2022-03-29,60,American Samoa,43
-2022-01-29,60,American Samoa,43
-2021-11-26,60,American Samoa,43
-2022-02-03,60,American Samoa,43
-2022-04-17,60,American Samoa,44
-2021-12-28,60,American Samoa,44
-2022-01-28,60,American Samoa,44
-2022-01-22,60,American Samoa,44
-2022-02-04,60,American Samoa,44
-2022-04-04,60,American Samoa,47
-2022-02-10,60,American Samoa,47
-2021-11-07,60,American Samoa,47
-2021-12-09,60,American Samoa,47
-2022-02-14,60,American Samoa,47
-2021-11-18,60,American Samoa,47
-2022-03-06,60,American Samoa,47
-2021-11-13,60,American Samoa,47
-2021-12-19,60,American Samoa,47
-2022-04-23,60,American Samoa,47
-2021-11-14,60,American Samoa,47
-2021-12-27,60,American Samoa,47
-2022-02-22,60,American Samoa,47
-2021-12-20,60,American Samoa,47
-2022-02-23,60,American Samoa,48
-2021-12-07,60,American Samoa,48
-2021-12-17,60,American Samoa,48
-2021-11-27,60,American Samoa,48
-2022-01-03,60,American Samoa,48
-2022-03-05,60,American Samoa,50
-2022-03-26,60,American Samoa,51
-2022-01-13,60,American Samoa,51
-2022-03-07,60,American Samoa,52
-2022-01-27,60,American Samoa,52
-2021-12-01,60,American Samoa,52
-2022-03-14,60,American Samoa,52
-2022-01-15,60,American Samoa,52
-2021-11-20,60,American Samoa,52
-2021-11-10,60,American Samoa,52
-2022-01-08,60,American Samoa,52
-2021-12-16,60,American Samoa,52
-2022-03-30,60,American Samoa,55
-2022-01-24,60,American Samoa,55
-2022-02-01,60,American Samoa,55
-2022-01-17,60,American Samoa,55
-2021-11-21,60,American Samoa,55
-2022-01-01,60,American Samoa,55
-2021-11-29,60,American Samoa,55
-2021-12-10,60,American Samoa,55
-2022-01-26,60,American Samoa,55
-2022-04-01,60,American Samoa,58
-2022-02-20,60,American Samoa,58
-2022-02-02,60,American Samoa,58
-2022-02-17,60,American Samoa,58
-2022-01-31,60,American Samoa,58
-2021-12-18,60,American Samoa,58
-2021-11-25,60,American Samoa,58
-2022-03-27,60,American Samoa,60
-2022-01-12,60,American Samoa,60
-2022-02-08,60,American Samoa,60
-2022-02-12,60,American Samoa,60
-2022-01-14,60,American Samoa,60
-2021-12-14,60,American Samoa,60
-2022-04-16,60,American Samoa,60
-2022-03-17,60,American Samoa,61
-2022-01-25,60,American Samoa,61
-2022-04-05,60,American Samoa,61
-2022-02-27,60,American Samoa,61
-2022-03-08,60,American Samoa,61
-2022-03-10,60,American Samoa,62
-2021-12-30,60,American Samoa,62
-2022-01-02,60,American Samoa,62
-2021-12-15,60,American Samoa,62
-2022-02-19,60,American Samoa,62
-2021-12-11,60,American Samoa,62
-2022-03-09,60,American Samoa,62
-2021-12-26,60,American Samoa,62
-2022-03-18,60,American Samoa,63
-2022-03-03,60,American Samoa,64
-2022-01-07,60,American Samoa,64
-2022-01-18,60,American Samoa,64
-2022-04-20,60,American Samoa,64
-2022-03-11,60,American Samoa,64
-2022-04-14,60,American Samoa,66
-2022-01-06,60,American Samoa,66
-2021-12-29,60,American Samoa,66
-2021-09-08,60,American Samoa,66
-2021-10-24,60,American Samoa,66
-2021-10-05,60,American Samoa,66
-2021-08-25,60,American Samoa,66
-2021-10-02,60,American Samoa,66
-2021-09-14,60,American Samoa,66
-2021-10-20,60,American Samoa,66
-2021-11-06,60,American Samoa,66
-2021-09-24,60,American Samoa,66
-2021-09-13,60,American Samoa,66
-2021-09-03,60,American Samoa,66
-2021-09-04,60,American Samoa,66
-2021-10-01,60,American Samoa,66
-2021-08-26,60,American Samoa,66
-2021-09-09,60,American Samoa,66
-2021-09-23,60,American Samoa,66
-2021-08-24,60,American Samoa,66
-2021-08-29,60,American Samoa,66
-2021-10-23,60,American Samoa,66
-2021-10-13,60,American Samoa,66
-2021-08-28,60,American Samoa,66
-2021-09-27,60,American Samoa,66
-2021-09-16,60,American Samoa,66
-2021-11-04,60,American Samoa,66
-2021-09-06,60,American Samoa,66
-2021-09-22,60,American Samoa,66
-2021-10-12,60,American Samoa,66
-2021-10-17,60,American Samoa,66
-2021-10-16,60,American Samoa,66
-2021-09-12,60,American Samoa,66
-2021-10-30,60,American Samoa,66
-2021-11-01,60,American Samoa,66
-2021-09-25,60,American Samoa,66
-2021-10-15,60,American Samoa,66
-2021-10-26,60,American Samoa,66
-2021-09-26,60,American Samoa,66
-2021-10-11,60,American Samoa,66
-2021-10-10,60,American Samoa,66
-2021-10-06,60,American Samoa,66
-2021-10-09,60,American Samoa,66
-2021-10-21,60,American Samoa,66
-2021-10-14,60,American Samoa,66
-2021-09-02,60,American Samoa,66
-2021-09-21,60,American Samoa,66
-2021-09-17,60,American Samoa,66
-2021-10-03,60,American Samoa,66
-2021-10-25,60,American Samoa,66
-2021-11-02,60,American Samoa,66
-2021-09-20,60,American Samoa,66
-2021-11-03,60,American Samoa,66
-2021-10-22,60,American Samoa,66
-2021-09-01,60,American Samoa,66
-2021-10-07,60,American Samoa,66
-2021-10-28,60,American Samoa,66
-2021-08-30,60,American Samoa,66
-2021-09-19,60,American Samoa,66
-2021-08-31,60,American Samoa,66
-2021-08-23,60,American Samoa,66
-2021-09-18,60,American Samoa,66
-2021-10-08,60,American Samoa,66
-2021-09-30,60,American Samoa,66
-2021-10-29,60,American Samoa,66
-2021-09-07,60,American Samoa,66
-2021-10-27,60,American Samoa,66
-2021-09-11,60,American Samoa,66
-2021-09-15,60,American Samoa,66
-2021-10-04,60,American Samoa,66
-2021-10-18,60,American Samoa,66
-2021-10-19,60,American Samoa,66
-2021-11-05,60,American Samoa,66
-2021-09-29,60,American Samoa,66
-2021-09-28,60,American Samoa,66
-2021-10-31,60,American Samoa,66
-2021-08-27,60,American Samoa,66
-2021-09-05,60,American Samoa,66
+2022-04-01,60,American Samoa,26
+2022-03-30,49,Utah,18
+2022-03-29,60,American Samoa,29
+2022-03-27,60,American Samoa,31
+2022-03-27,46,South Dakota,20
+2022-03-26,60,American Samoa,32
+2022-03-24,60,American Samoa,32
+2022-03-24,49,Utah,36
+2022-03-23,60,American Samoa,32
+2022-03-21,60,American Samoa,36
+2022-03-19,02,Alaska,30
+2022-03-19,60,American Samoa,37
+2022-03-18,60,American Samoa,38
+2022-03-16,60,American Samoa,38
+2022-03-15,60,American Samoa,41
+2022-03-14,02,Alaska,34
+2022-03-14,60,American Samoa,41
+2022-03-13,60,American Samoa,42
+2022-03-11,60,American Samoa,42
+2022-03-10,60,American Samoa,43
+2022-03-08,60,American Samoa,43
+2022-03-07,60,American Samoa,44
+2022-03-06,60,American Samoa,44
+2022-03-05,60,American Samoa,46
+2022-03-03,60,American Samoa,47
+2022-03-02,60,American Samoa,48
+2022-02-28,60,American Samoa,48
+2022-02-27,60,American Samoa,48
+2022-02-26,60,American Samoa,48
+2022-02-25,60,American Samoa,48
+2022-02-23,60,American Samoa,49
+2022-02-22,60,American Samoa,49
+2022-02-20,60,American Samoa,49
+2022-02-19,60,American Samoa,49
+2022-02-18,60,American Samoa,49
+2022-02-17,60,American Samoa,49
+2022-02-15,60,American Samoa,49
+2022-02-14,60,American Samoa,49
+2022-02-12,60,American Samoa,49
+2022-02-11,60,American Samoa,49
+2022-02-10,60,American Samoa,49
+2022-02-09,60,American Samoa,49
+2022-02-07,60,American Samoa,49
+2022-02-06,60,American Samoa,49
+2022-01-29,60,American Samoa,49
+2022-01-27,60,American Samoa,49
+2022-01-22,60,American Samoa,49
+2022-01-21,60,American Samoa,49
+2022-01-19,60,American Samoa,49
+2022-01-16,60,American Samoa,49
+2022-01-11,60,American Samoa,49
+2022-01-08,60,American Samoa,49
+2022-01-07,54,West Virginia,127
+2022-01-06,60,American Samoa,49
+2022-01-05,60,American Samoa,49
+2021-12-31,60,American Samoa,49
+2021-12-27,60,American Samoa,49
+2021-12-20,35,New Mexico,63
+2021-12-19,44,Rhode Island,34
+2021-12-12,15,Hawaii,3
+2021-12-10,01,Alabama,47
+2021-11-25,15,Hawaii,8
+2021-11-24,15,Hawaii,13
+2021-11-24,32,Nevada,63
+2021-11-23,44,Rhode Island,49
+2021-11-18,32,Nevada,137
+2021-11-17,44,Rhode Island,59
+2021-11-13,44,Rhode Island,69
+2021-11-12,33,New Hampshire,67
+2021-11-10,15,Hawaii,15
+2021-11-09,09,Connecticut,35
+2021-11-07,44,Rhode Island,74
+2021-11-03,09,Connecticut,56
+2021-11-03,32,Nevada,205
+2021-11-01,33,New Hampshire,91
+2021-10-28,10,Delaware,22
+2021-10-26,44,Rhode Island,86
+2021-10-23,33,New Hampshire,108
+2021-10-21,23,Maine,30
+2021-10-19,23,Maine,52
+2021-10-18,15,Hawaii,21
+2021-10-18,31,Nebraska,65
+2021-10-13,33,New Hampshire,125
+2021-10-12,44,Rhode Island,98
+2021-10-09,33,New Hampshire,138
+2021-10-04,32,Nevada,304
+2021-09-21,44,Rhode Island,111
+2021-09-19,33,New Hampshire,152
+2021-09-18,33,New Hampshire,166
+2021-09-03,32,Nevada,432
+2021-09-02,33,New Hampshire,178
+2021-08-30,33,New Hampshire,196
+2021-08-29,33,New Hampshire,214
+2021-08-29,44,Rhode Island,121
+2021-08-28,33,New Hampshire,228
+2021-08-27,23,Maine,68
+2021-08-24,33,New Hampshire,252
+2021-08-23,44,Rhode Island,131
+2021-08-22,35,New Mexico,132
+2021-08-21,44,Rhode Island,144
+2021-08-20,09,Connecticut,110
+2021-08-20,56,Wyoming,36
+2021-08-18,33,New Hampshire,263
+2021-08-17,35,New Mexico,188
+2021-08-16,44,Rhode Island,157
+2021-08-14,10,Delaware,37
+2021-08-13,56,Wyoming,64
+2021-08-12,10,Delaware,56
+2021-08-09,41,Oregon,78
+2021-08-08,46,South Dakota,35
+2021-08-06,56,Wyoming,89
+2021-08-05,23,Maine,74
+2021-08-03,33,New Hampshire,266
+2021-08-03,54,West Virginia,168
+2021-08-02,40,Oklahoma,278
+2021-07-30,44,Rhode Island,158
+2021-07-28,49,Utah,85
+2021-07-27,46,South Dakota,41
+2021-07-26,46,South Dakota,49
+2021-07-24,32,Nevada,568
+2021-07-24,44,Rhode Island,160
+2021-07-23,44,Rhode Island,163
+2021-07-14,31,Nebraska,78
+2021-07-10,41,Oregon,94
+2021-06-30,27,Minnesota,18
+2021-06-25,23,Maine,78
+2021-06-24,23,Maine,82
+2021-06-12,27,Minnesota,29
+2021-06-10,32,Nevada,589
+2021-06-08,02,Alaska,36
+2021-06-08,27,Minnesota,58
+2021-06-03,44,Rhode Island,164
+2021-06-02,44,Rhode Island,168
+2021-06-01,46,South Dakota,53
+2021-05-29,23,Maine,88
+2021-05-29,44,Rhode Island,168
+2021-05-27,32,Nevada,621
+2021-05-27,44,Rhode Island,173
+2021-05-26,44,Rhode Island,179
+2021-05-25,46,South Dakota,54
+2021-05-24,44,Rhode Island,183
+2021-05-23,46,South Dakota,55
+2021-05-22,44,Rhode Island,185
+2021-05-19,31,Nebraska,87
+2021-05-19,44,Rhode Island,189
+2021-05-18,02,Alaska,39
+2021-05-18,26,Michigan,168
+2021-05-17,23,Maine,102
+2021-05-17,32,Nevada,662
+2021-05-15,31,Nebraska,94
+2021-05-13,31,Nebraska,103
+2021-05-12,23,Maine,119
+2021-05-11,02,Alaska,41
+2021-05-10,31,Nebraska,121
+2021-05-10,44,Rhode Island,199
+2021-05-08,33,New Hampshire,275
+2021-05-06,20,Kansas,34
+2021-05-05,15,Hawaii,27
+2021-05-04,19,Iowa,34
+2021-05-03,02,Alaska,46
+2021-05-01,31,Nebraska,134
+2021-04-29,32,Nevada,729
+2021-04-29,54,West Virginia,202
+2021-04-28,10,Delaware,74
+2021-04-26,19,Iowa,73
+2021-04-23,32,Nevada,759
+2021-04-22,35,New Mexico,197
+2021-04-21,19,Iowa,110
+2021-04-21,56,Wyoming,99
+2021-04-19,56,Wyoming,103
+2021-04-18,49,Utah,104
+2021-04-16,19,Iowa,139
+2021-04-14,15,Hawaii,31
+2021-04-13,08,Colorado,92
+2021-04-13,15,Hawaii,37
+2021-04-13,56,Wyoming,113
+2021-04-12,33,New Hampshire,296
+2021-04-10,56,Wyoming,118
+2021-04-08,02,Alaska,48
+2021-04-08,56,Wyoming,126
+2021-04-07,10,Delaware,97
+2021-04-06,31,Nebraska,158
+2021-04-05,23,Maine,125
+2021-04-04,02,Alaska,51
+2021-04-03,10,Delaware,111
+2021-04-02,02,Alaska,53
+2021-04-01,01,Alabama,114
+2021-04-01,15,Hawaii,44
+2021-04-01,56,Wyoming,133
+2021-03-31,33,New Hampshire,311
+2021-03-30,02,Alaska,60
+2021-03-29,35,New Mexico,210
+2021-03-28,27,Minnesota,106
+2021-03-27,56,Wyoming,133
+2021-03-26,35,New Mexico,228
+2021-03-25,31,Nebraska,169
+2021-03-23,15,Hawaii,52
+2021-03-23,35,New Mexico,245
+2021-02-22,20,Kansas,93
+2021-02-17,44,Rhode Island,213
+2021-02-12,41,Oregon,130
+2021-02-04,09,Connecticut,241
+2021-02-01,21,Kentucky,304
+2021-01-25,22,Louisiana,177
+2021-01-19,46,South Dakota,65
+2021-01-12,05,Arkansas,189
+2021-01-12,33,New Hampshire,350
+2021-01-12,44,Rhode Island,248
+2021-01-09,44,Rhode Island,281
+2021-01-08,23,Maine,139
+2021-01-06,41,Oregon,196
+2020-12-31,44,Rhode Island,312
+2020-12-30,44,Rhode Island,353
+2020-12-29,20,Kansas,252
+2020-12-29,44,Rhode Island,380
+2020-12-28,49,Utah,185
+2020-12-16,45,South Carolina,172
+2020-10-21,45,South Carolina,244
+2020-11-14,46,South Dakota,134
+2020-11-29,17,Illinois,543
+2020-08-21,33,New Hampshire,379
+2020-07-14,09,Connecticut,250
+2020-11-11,37,North Carolina,188
+2020-07-16,45,South Carolina,349
+2020-09-18,05,Arkansas,249
+2020-09-13,56,Wyoming,138
+2020-09-12,19,Iowa,176
+2020-10-15,19,Iowa,232
+2020-11-15,19,Iowa,447
+2020-09-05,02,Alaska,65
+2020-09-17,42,Pennsylvania,49
+2020-08-20,17,Illinois,655
+2020-11-05,13,Georgia,382
+2020-08-19,10,Delaware,116
+2020-08-21,13,Georgia,613
+2020-11-19,48,Texas,1241
+2020-09-18,19,Iowa,497
+2020-08-06,21,Kentucky,499
+2020-08-11,32,Nevada,818
+2020-11-03,40,Oklahoma,518
+2020-07-16,12,Florida,884
+2020-11-24,49,Utah,289
+2020-08-27,54,West Virginia,224
+2020-11-05,46,South Dakota,217
+2020-08-31,13,Georgia,860
+2020-07-28,46,South Dakota,223
+2020-11-08,02,Alaska,84
+2020-10-18,17,Illinois,946
+2020-09-14,22,Louisiana,269
+2020-09-07,13,Georgia,1042
+2020-10-17,05,Arkansas,341
+2020-10-05,42,Pennsylvania,144
+2020-10-22,44,Rhode Island,399
+2020-10-21,12,Florida,1202
+2020-11-03,23,Maine,143
+2020-07-03,23,Maine,143
+2020-07-30,12,Florida,2003
+2020-10-22,04,Arizona,111
+2020-08-22,37,North Carolina,301
+2020-09-22,05,Arkansas,408
+2020-10-19,39,Ohio,246
+2020-09-17,09,Connecticut,264
+2020-09-13,32,Nevada,856
+2020-08-30,23,Maine,143
+2020-09-20,32,Nevada,894
+2020-11-24,37,North Carolina,518
+2020-09-02,13,Georgia,1304
+2020-09-16,49,Utah,323
+2020-09-27,44,Rhode Island,402
+2020-10-02,42,Pennsylvania,218
+2020-11-13,09,Connecticut,386
+2020-09-16,05,Arkansas,464
+2020-08-04,31,Nebraska,169
+2020-10-26,46,South Dakota,315
+2020-09-19,49,Utah,339
+2020-10-09,31,Nebraska,204
+2020-10-14,09,Connecticut,402
+2020-10-16,44,Rhode Island,408
+2020-10-15,44,Rhode Island,412
+2020-09-17,49,Utah,369
+2020-11-10,23,Maine,155
+2020-11-12,09,Connecticut,498
+2020-11-22,46,South Dakota,373
+2020-09-26,05,Arkansas,509
+2020-07-25,32,Nevada,895
+2020-10-14,54,West Virginia,248
+2020-08-01,32,Nevada,978
+2020-12-01,54,West Virginia,309
+2020-07-24,09,Connecticut,507
+2020-07-20,23,Maine,158
+2020-07-27,13,Georgia,1562
+2020-08-09,54,West Virginia,318
+2020-11-16,32,Nevada,1108
+2020-07-30,49,Utah,394
+2020-10-27,17,Illinois,1297
+2020-11-06,23,Maine,167
+2020-07-30,09,Connecticut,522
+2020-10-25,44,Rhode Island,418
+2020-11-29,32,Nevada,1254
+2020-11-01,13,Georgia,1822
+2020-07-11,23,Maine,167
+2020-11-21,05,Arkansas,639
+2020-10-17,31,Nebraska,244
+2020-09-22,23,Maine,168
+2020-08-07,49,Utah,404
+2020-11-12,23,Maine,173
+2020-07-21,46,South Dakota,375
+2020-07-05,44,Rhode Island,418
+2020-10-05,09,Connecticut,542
+2020-10-25,17,Illinois,1595
+2020-07-14,44,Rhode Island,418
+2020-08-15,49,Utah,412
+2020-11-18,49,Utah,534
+2020-09-15,49,Utah,564
+2020-09-19,44,Rhode Island,422
+2020-07-21,13,Georgia,2025
+2020-08-12,13,Georgia,2310
+2020-11-03,13,Georgia,2641
+2020-07-25,13,Georgia,2904
+2020-08-13,17,Illinois,1719
+2020-08-03,17,Illinois,1828
+2020-11-22,17,Illinois,2443
+2020-08-09,44,Rhode Island,426
+2020-07-02,44,Rhode Island,426
+2020-08-19,44,Rhode Island,429
+2020-08-31,17,Illinois,2573
+2020-09-14,17,Illinois,2668
+2020-08-22,17,Illinois,2758
+2022-01-01,60,American Samoa,49
+2021-12-08,60,American Samoa,49
+2021-12-18,60,American Samoa,49
+2022-03-09,60,American Samoa,49
+2021-11-28,60,American Samoa,49
+2021-12-13,60,American Samoa,49
+2022-01-20,60,American Samoa,49
+2022-02-03,60,American Samoa,49
+2021-12-17,60,American Samoa,49
+2022-03-28,60,American Samoa,50
+2022-01-09,60,American Samoa,50
+2022-04-09,60,American Samoa,50
+2021-12-21,60,American Samoa,50
+2021-12-11,60,American Samoa,50
+2022-01-25,60,American Samoa,50
+2022-02-08,60,American Samoa,50
+2022-02-16,60,American Samoa,50
+2022-04-13,60,American Samoa,67
+2022-01-24,60,American Samoa,67
+2021-12-02,60,American Samoa,67
+2022-02-13,60,American Samoa,67
+2022-01-14,60,American Samoa,67
+2022-03-25,60,American Samoa,70
+2022-01-28,60,American Samoa,70
+2021-11-30,60,American Samoa,70
+2022-02-01,60,American Samoa,70
+2022-04-28,60,American Samoa,70
+2022-01-07,60,American Samoa,70
+2022-04-29,60,American Samoa,70
+2022-03-04,60,American Samoa,74
+2021-12-05,60,American Samoa,74
+2021-12-30,60,American Samoa,74
+2021-12-15,60,American Samoa,74
+2022-04-14,60,American Samoa,76
+2021-12-07,60,American Samoa,76
+2022-01-15,60,American Samoa,76
+2022-04-18,60,American Samoa,76
+2022-04-17,60,American Samoa,77
+2022-03-30,60,American Samoa,80
+2021-12-12,60,American Samoa,80
+2022-01-04,60,American Samoa,80
+2021-12-22,60,American Samoa,80
+2022-04-20,60,American Samoa,80
+2021-12-26,60,American Samoa,80
+2022-01-13,60,American Samoa,80
+2022-02-05,60,American Samoa,80
+2021-11-27,60,American Samoa,80
+2021-12-01,60,American Samoa,80
+2022-03-17,60,American Samoa,81
+2021-12-16,60,American Samoa,81
+2022-01-17,60,American Samoa,81
+2022-01-10,60,American Samoa,81
+2022-01-12,60,American Samoa,81
+2021-12-25,60,American Samoa,81
+2021-09-01,60,American Samoa,81
+2022-02-02,60,American Samoa,81
+2022-01-31,60,American Samoa,81
+2021-12-14,60,American Samoa,81
+2021-12-06,60,American Samoa,81
+2022-01-03,60,American Samoa,81
+2021-12-29,60,American Samoa,81
+2021-11-26,60,American Samoa,81
+2022-01-18,60,American Samoa,81
+2021-12-10,60,American Samoa,81
+2021-12-24,60,American Samoa,81
+2021-12-19,60,American Samoa,81
+2022-01-02,60,American Samoa,81
+2022-02-21,60,American Samoa,81
+2021-12-20,60,American Samoa,81
+2022-03-01,60,American Samoa,81
+2022-03-12,60,American Samoa,82
+2021-12-28,60,American Samoa,82
+2022-04-03,60,American Samoa,86
+2022-04-19,60,American Samoa,91
+2022-04-10,60,American Samoa,91
+2022-01-30,60,American Samoa,91
+2022-03-31,60,American Samoa,96
+2022-01-26,60,American Samoa,96
+2022-02-04,60,American Samoa,96
+2022-03-20,60,American Samoa,98
+2022-03-22,60,American Samoa,100
+2022-02-24,60,American Samoa,100
+2021-12-03,60,American Samoa,100
+2021-12-04,60,American Samoa,100
+2022-01-23,60,American Samoa,100
+2022-04-25,60,American Samoa,100
+2021-12-09,60,American Samoa,100
+2021-11-29,60,American Samoa,100
+2021-12-23,60,American Samoa,100
+2021-09-09,60,American Samoa,100
+2021-11-23,60,American Samoa,100
+2021-08-30,60,American Samoa,100
+2021-11-05,60,American Samoa,100
+2021-11-18,60,American Samoa,100
+2021-10-27,60,American Samoa,100
+2021-10-08,60,American Samoa,100
+2021-10-07,60,American Samoa,100
+2021-09-29,60,American Samoa,100
+2021-10-11,60,American Samoa,100
+2021-09-19,60,American Samoa,100
+2021-09-12,60,American Samoa,100
+2021-11-04,60,American Samoa,100
+2021-10-26,60,American Samoa,100
+2021-10-18,60,American Samoa,100
+2021-10-17,60,American Samoa,100
+2021-11-15,60,American Samoa,100
+2021-10-25,60,American Samoa,100
+2021-10-06,60,American Samoa,100
+2021-09-27,60,American Samoa,100
+2021-08-24,60,American Samoa,100
+2021-09-18,60,American Samoa,100
+2021-09-10,60,American Samoa,100
+2021-11-24,60,American Samoa,100
+2021-10-16,60,American Samoa,100
+2021-09-17,60,American Samoa,100
+2021-09-24,60,American Samoa,100
+2021-11-13,60,American Samoa,100
+2021-09-30,60,American Samoa,100
+2021-11-09,60,American Samoa,100
+2021-09-13,60,American Samoa,100
+2021-11-22,60,American Samoa,100
+2021-08-28,60,American Samoa,100
+2021-09-16,60,American Samoa,100
+2021-10-21,60,American Samoa,100
+2021-11-08,60,American Samoa,100
+2021-09-11,60,American Samoa,100
+2021-10-02,60,American Samoa,100
+2021-09-03,60,American Samoa,100
+2021-10-01,60,American Samoa,100
+2021-09-22,60,American Samoa,100
+2021-10-20,60,American Samoa,100
+2021-09-21,60,American Samoa,100
+2021-11-07,60,American Samoa,100
+2021-09-28,60,American Samoa,100
+2021-10-30,60,American Samoa,100
+2021-08-29,60,American Samoa,100
+2021-10-19,60,American Samoa,100
+2021-08-25,60,American Samoa,100
+2021-11-12,60,American Samoa,100
+2021-10-10,60,American Samoa,100
+2021-10-09,60,American Samoa,100
+2021-10-29,60,American Samoa,100
+2021-09-20,60,American Samoa,100
+2021-09-26,60,American Samoa,100
+2021-10-28,60,American Samoa,100
+2021-09-07,60,American Samoa,100
+2021-11-17,60,American Samoa,100
+2021-10-15,60,American Samoa,100
+2021-08-27,60,American Samoa,100
+2021-10-24,60,American Samoa,100
+2021-09-04,60,American Samoa,100
+2021-10-05,60,American Samoa,100
+2021-09-02,60,American Samoa,100
+2021-11-16,60,American Samoa,100
+2021-10-14,60,American Samoa,100
+2021-11-10,60,American Samoa,100
+2021-11-03,60,American Samoa,100
+2021-08-23,60,American Samoa,100
+2021-10-04,60,American Samoa,100
+2021-10-03,60,American Samoa,100
+2021-11-02,60,American Samoa,100
+2021-10-13,60,American Samoa,100
+2021-08-26,60,American Samoa,100
+2021-10-22,60,American Samoa,100
+2021-11-01,60,American Samoa,100
+2021-09-15,60,American Samoa,100
+2021-10-12,60,American Samoa,100
+2021-11-11,60,American Samoa,100
+2021-09-25,60,American Samoa,100
+2021-11-21,60,American Samoa,100
+2021-09-05,60,American Samoa,100
+2021-11-20,60,American Samoa,100
+2021-11-25,60,American Samoa,100
+2021-10-31,60,American Samoa,100
+2021-09-06,60,American Samoa,100
+2021-11-06,60,American Samoa,100
+2021-11-14,60,American Samoa,100
+2021-09-08,60,American Samoa,100
+2021-09-14,60,American Samoa,100
+2021-08-31,60,American Samoa,100
+2021-11-19,60,American Samoa,100
+2021-10-23,60,American Samoa,100
+2021-09-23,60,American Samoa,100
