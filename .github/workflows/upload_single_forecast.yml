@@ -8,6 +8,7 @@ on:
 
 jobs:
   upload_zoltar:
+    if: github.repository_owner == 'reichlab'
     runs-on: ubuntu-latest
     strategy:
       matrix:
