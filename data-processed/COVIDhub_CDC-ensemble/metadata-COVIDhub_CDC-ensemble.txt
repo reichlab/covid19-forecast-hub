@@ -15,7 +15,7 @@ methods_long: "This model collects the forecasts that have been communicated by
   this model's forecasts were calculated as an equally weighted mean of forecasts
   from all eligible models (COVIDhub-4_week_ensemble). Starting the week of
   July 28, 2020, an equally weighted median of eligible forecasts was used
-  (COVIDhub-4_week_ensemble). Starting the week of Novermber 15, 2020, an
+  (COVIDhub-4_week_ensemble). Starting the week of November 15, 2021, an
   equally weighted median of eligible forecasts was used for forecasts of cases
   and hospitalizations (COVIDhub-4_week_ensemble), and a weighted median was used
   for forecasts of incident and cumulative deaths (COVIDhub-trained_ensemble).
