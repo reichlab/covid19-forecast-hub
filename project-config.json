@@ -1,6 +1,6 @@
 {
   "location_filepath": "data-locations/locations.csv",
-  "hub_repository_name": "Serena-Wang/covid19-forecast-hub",
+  "hub_repository_name": "reichlab/covid19-forecast-hub",
   "forecast_folder_name": "data-processed",
   "target_groups": [
     {
