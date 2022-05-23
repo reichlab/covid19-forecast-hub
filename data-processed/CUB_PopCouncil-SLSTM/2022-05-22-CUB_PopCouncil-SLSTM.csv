@@ -19829,7 +19829,6 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-22,17 day ahead inc hosp,2022-06-08,08,quantile,0.025,36.88242380409769
 2022-05-22,17 day ahead inc hosp,2022-06-08,08,quantile,0.05,47.85812627180172
 2022-05-22,17 day ahead inc hosp,2022-06-08,08,quantile,0.1,54.71045626562327
-2022-05-22,17 day ahead inc hosp,2022-06-08,08,quantile,0.15,58.62396840210736
 2022-05-22,17 day ahead inc hosp,2022-06-08,08,quantile,0.15,60.05767674244416
 2022-05-22,17 day ahead inc hosp,2022-06-08,08,quantile,0.2,60.50049232113395
 2022-05-22,17 day ahead inc hosp,2022-06-08,08,quantile,0.25,60.96049232113395
