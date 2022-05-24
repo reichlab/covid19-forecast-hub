@@ -42,7 +42,12 @@ jobs:
     - name: Checkout covid19-forecast-hub repo
       uses: actions/checkout@v2
       with:
+        lfs: true
         path: covid19-forecast-hub
+    
+    - name: Checkout LFS objects
+      run: git lfs checkout
+      working-directory: ./covid19-forecast-hub  
         
     - name: Setup GitHub Action for R language
       uses: r-lib/actions/setup-r@v1
