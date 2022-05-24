@@ -6612,5 +6612,16 @@
     "2022-05-23-COVIDhub-baseline.csv": "7d2d8b45e2495dd76b690c968499a9ab",
     "2022-05-23-UMass-sarix.csv": "df2c3b264e5fb2052703a6793e757084",
     "2022-05-23-UT-Osiris.csv": "43e4e1826edab233cce5818fb18c2dcd",
-    "2022-05-22-CU-select.csv": "80b69ea771640396340e100fd87c2ee8"
+    "2022-05-22-CU-select.csv": "80b69ea771640396340e100fd87c2ee8",
+    "2022-05-23-MUNI-ARIMA.csv": "b6ce69b30041a389a74e3768a8e4056f",
+    "2022-05-23-LosAlamos_NAU-CModel_SDVaxVar.csv": "e3374cf63fd4da8e597189f06d45bcea",
+    "2022-05-22-UCF-AEM.csv": "5b7fe7d82918c43e35b22fddb0095683",
+    "2022-05-23-COVIDhub-ensemble.csv": "ad82b190a614315075074a8063640113",
+    "2022-05-23-GT-DeepCOVID.csv": "7e7a434a090ec175201b3d30179f497e",
+    "2022-05-23-CovidAnalytics-DELPHI.csv": "784de65f8fc1311803af14dbcb7f69a5",
+    "2022-05-23-UMass-trends_ensemble.csv": "15bf1ead5725fce7ffffd586ddf4f4be",
+    "2022-05-23-COVIDhub-4_week_ensemble.csv": "72b9e1a9912964a3562728effc02d729",
+    "2022-05-23-PSI-DICE.csv": "cfd75d1abadd93f9b1da7b7568fd29c9",
+    "2022-05-23-CMU-TimeSeries.csv": "df6ad81cf7066d347eaf011cdb193191",
+    "2022-05-23-COVIDhub-trained_ensemble.csv": "87121df91376e8fdd962390de1d1035a"
 }
