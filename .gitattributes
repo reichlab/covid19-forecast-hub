@@ -1,0 +1,8 @@
+data-truth/nytimes/raw/*.csv filter=lfs diff=lfs merge=lfs -text
+data-truth/truth-Cumulative[[:space:]]Cases.csv filter=lfs diff=lfs merge=lfs -text
+data-truth/truth-Cumulative[[:space:]]Deaths.csv filter=lfs diff=lfs merge=lfs -text
+data-truth/truth-Incident[[:space:]]Cases.csv filter=lfs diff=lfs merge=lfs -text
+data-truth/truth-Incident[[:space:]]Deaths.csv filter=lfs diff=lfs merge=lfs -text
+data-truth/truth-Incident[[:space:]]Hospitalizations.csv filter=lfs diff=lfs merge=lfs -text
+data-truth/truth-Cumulative[[:space:]]Hospitalizations.csv filter=lfs diff=lfs merge=lfs -text
+data-truth/nytimes/*.csv filter=lfs diff=lfs merge=lfs -text

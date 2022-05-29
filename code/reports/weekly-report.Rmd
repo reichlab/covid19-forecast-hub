@@ -712,13 +712,14 @@ ensemble_pointdat_hosp <- dat_hosp  %>%
   summarize(next_2wk_hosp = sum(value*next_2wk)/7) %>%
   ungroup() 
 
-
+`%!in%` <- Negate(`%in%`)
 wide_point_dat_hosp <- ensemble_pointdat_hosp %>%
   left_join(recent_inc_hosp_totals, by=c("fips")) %>%
   mutate(pop_x_1k = round(Population/1000),
     last_1wk_hosp_rate = round(last_1wk_hosp/Population*100000,3),
     next_2wk_hosp_rate = round(next_2wk_hosp/Population*100000,3),
     diff_wk_hosp_rate = round(next_2wk_hosp_rate - last_1wk_hosp_rate, 3)) %>%
+   filter(fips %!in% c("66","69"))  %>% #filter out Guam and North Mariana Islands
   select(fips, location_name.x, Population, 
     last_1wk_hosp, next_2wk_hosp, last_1wk_hosp_rate,   next_2wk_hosp_rate, diff_wk_hosp_rate)
 
