@@ -1241,7 +1241,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,2 day ahead inc hosp,2022-05-31,02,quantile,0.95,11.93104529211984
 2022-05-29,2 day ahead inc hosp,2022-05-31,02,quantile,0.975,13.619807362962856
 2022-05-29,2 day ahead inc hosp,2022-05-31,02,quantile,0.99,17.238787908030353
-2022-05-29,2 day ahead inc hosp,2022-05-31,31,quantile,0.01,-2.818643538455397
+0,0,0,0,0,0,0.0
 2022-05-29,2 day ahead inc hosp,2022-05-31,31,quantile,0.025,3.23861889560431
 2022-05-29,2 day ahead inc hosp,2022-05-31,31,quantile,0.05,4.651200005323201
 2022-05-29,2 day ahead inc hosp,2022-05-31,31,quantile,0.1,5.016073890223554
@@ -14581,7 +14581,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,13 day ahead inc hosp,2022-06-11,19,quantile,0.95,74.13947423040186
 2022-05-29,13 day ahead inc hosp,2022-06-11,19,quantile,0.975,89.64839407951541
 2022-05-29,13 day ahead inc hosp,2022-06-11,19,quantile,0.99,99.67217673351014
-2022-05-29,13 day ahead inc hosp,2022-06-11,28,quantile,0.01,-0.0315485557648281
+0,0,0,0,0,0,0.0
 2022-05-29,13 day ahead inc hosp,2022-06-11,28,quantile,0.025,0.3803039173255422
 2022-05-29,13 day ahead inc hosp,2022-06-11,28,quantile,0.05,4.249491379452256
 2022-05-29,13 day ahead inc hosp,2022-06-11,28,quantile,0.1,7.253278621343427
@@ -16030,8 +16030,8 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,14 day ahead inc hosp,2022-06-12,48,quantile,0.95,468.0992719446857
 2022-05-29,14 day ahead inc hosp,2022-06-12,48,quantile,0.975,543.5011541785739
 2022-05-29,14 day ahead inc hosp,2022-06-12,48,quantile,0.99,601.2336631319333
-2022-05-29,14 day ahead inc hosp,2022-06-12,05,quantile,0.01,-1.0682033261887114
-2022-05-29,14 day ahead inc hosp,2022-06-12,05,quantile,0.025,-0.7053535344677768
+0,0,0,0,0,0,0.0
+0,0,0,0,0,0,0.0
 2022-05-29,14 day ahead inc hosp,2022-06-12,05,quantile,0.05,3.580671103837445
 2022-05-29,14 day ahead inc hosp,2022-06-12,05,quantile,0.1,4.9794242812360245
 2022-05-29,14 day ahead inc hosp,2022-06-12,05,quantile,0.15,7.193058251969396
@@ -17410,8 +17410,8 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,15 day ahead inc hosp,2022-06-13,36,quantile,0.95,506.2412778309076
 2022-05-29,15 day ahead inc hosp,2022-06-13,36,quantile,0.975,601.9420651137865
 2022-05-29,15 day ahead inc hosp,2022-06-13,36,quantile,0.99,647.0484630419824
-2022-05-29,15 day ahead inc hosp,2022-06-13,40,quantile,0.01,-6.70047000571694
-2022-05-29,15 day ahead inc hosp,2022-06-13,40,quantile,0.025,-2.5280839492080824
+0,0,0,0,0,0,0.0
+0,0,0,0,0,0,0.0
 2022-05-29,15 day ahead inc hosp,2022-06-13,40,quantile,0.05,7.924521388171976
 2022-05-29,15 day ahead inc hosp,2022-06-13,40,quantile,0.1,8.047175207267363
 2022-05-29,15 day ahead inc hosp,2022-06-13,40,quantile,0.15,13.573315683402043
@@ -18146,7 +18146,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,16 day ahead inc hosp,2022-06-14,08,quantile,0.95,272.4604531411554
 2022-05-29,16 day ahead inc hosp,2022-06-14,08,quantile,0.975,309.56788910007634
 2022-05-29,16 day ahead inc hosp,2022-06-14,08,quantile,0.99,361.5701491465512
-2022-05-29,16 day ahead inc hosp,2022-06-14,20,quantile,0.01,-1.6946791004340145
+0,0,0,0,0,0,0.0
 2022-05-29,16 day ahead inc hosp,2022-06-14,20,quantile,0.025,0.8972554140856237
 2022-05-29,16 day ahead inc hosp,2022-06-14,20,quantile,0.05,6.370878504353764
 2022-05-29,16 day ahead inc hosp,2022-06-14,20,quantile,0.1,10.02165543636386
@@ -18882,7 +18882,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,17 day ahead inc hosp,2022-06-15,10,quantile,0.95,32.40702630139706
 2022-05-29,17 day ahead inc hosp,2022-06-15,10,quantile,0.975,38.785579930844605
 2022-05-29,17 day ahead inc hosp,2022-06-15,10,quantile,0.99,44.02277780989317
-2022-05-29,17 day ahead inc hosp,2022-06-15,33,quantile,0.01,-0.3025797001204546
+0,0,0,0,0,0,0.0
 2022-05-29,17 day ahead inc hosp,2022-06-15,33,quantile,0.025,5.368336760786727
 2022-05-29,17 day ahead inc hosp,2022-06-15,33,quantile,0.05,10.245958783873249
 2022-05-29,17 day ahead inc hosp,2022-06-15,33,quantile,0.1,11.590377934039113
@@ -22355,7 +22355,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,02,quantile,0.95,35.36768673825482
 2022-05-29,20 day ahead inc hosp,2022-06-18,02,quantile,0.975,42.366832340879945
 2022-05-29,20 day ahead inc hosp,2022-06-18,02,quantile,0.99,50.39237636027908
-2022-05-29,20 day ahead inc hosp,2022-06-18,31,quantile,0.01,-3.865762614283224
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,31,quantile,0.025,5.1267146451646575
 2022-05-29,20 day ahead inc hosp,2022-06-18,31,quantile,0.05,11.289966110329836
 2022-05-29,20 day ahead inc hosp,2022-06-18,31,quantile,0.1,12.864089596731462
@@ -22401,7 +22401,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,10,quantile,0.95,35.09680389022424
 2022-05-29,20 day ahead inc hosp,2022-06-18,10,quantile,0.975,43.12258374784226
 2022-05-29,20 day ahead inc hosp,2022-06-18,10,quantile,0.99,48.57469698735843
-2022-05-29,20 day ahead inc hosp,2022-06-18,33,quantile,0.01,-2.9849322221931365
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,33,quantile,0.025,4.56263451373042
 2022-05-29,20 day ahead inc hosp,2022-06-18,33,quantile,0.05,9.870760806804718
 2022-05-29,20 day ahead inc hosp,2022-06-18,33,quantile,0.1,11.109463918956797
@@ -22424,7 +22424,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,33,quantile,0.95,38.60335445579968
 2022-05-29,20 day ahead inc hosp,2022-06-18,33,quantile,0.975,47.448823137554335
 2022-05-29,20 day ahead inc hosp,2022-06-18,33,quantile,0.99,56.53679442413219
-2022-05-29,20 day ahead inc hosp,2022-06-18,46,quantile,0.01,-1.129726464497436
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,46,quantile,0.025,3.240779819279274
 2022-05-29,20 day ahead inc hosp,2022-06-18,46,quantile,0.05,6.093235697384525
 2022-05-29,20 day ahead inc hosp,2022-06-18,46,quantile,0.1,6.517625542531072
@@ -22493,7 +22493,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,38,quantile,0.95,31.54970161337684
 2022-05-29,20 day ahead inc hosp,2022-06-18,38,quantile,0.975,37.16634959674037
 2022-05-29,20 day ahead inc hosp,2022-06-18,38,quantile,0.99,45.84825527475418
-2022-05-29,20 day ahead inc hosp,2022-06-18,16,quantile,0.01,-4.7187654775440055
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,16,quantile,0.025,3.676372188806752
 2022-05-29,20 day ahead inc hosp,2022-06-18,16,quantile,0.05,9.229683807097564
 2022-05-29,20 day ahead inc hosp,2022-06-18,16,quantile,0.1,10.338004786456898
@@ -22539,7 +22539,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,09,quantile,0.95,171.7768915468184
 2022-05-29,20 day ahead inc hosp,2022-06-18,09,quantile,0.975,204.55116089748907
 2022-05-29,20 day ahead inc hosp,2022-06-18,09,quantile,0.99,237.3383697520625
-2022-05-29,20 day ahead inc hosp,2022-06-18,45,quantile,0.01,-15.643450996401764
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,45,quantile,0.025,9.166080179972548
 2022-05-29,20 day ahead inc hosp,2022-06-18,45,quantile,0.05,28.29678378885235
 2022-05-29,20 day ahead inc hosp,2022-06-18,45,quantile,0.1,31.336920257111156
@@ -22585,7 +22585,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,56,quantile,0.95,12.430478251674062
 2022-05-29,20 day ahead inc hosp,2022-06-18,56,quantile,0.975,15.150082297139052
 2022-05-29,20 day ahead inc hosp,2022-06-18,56,quantile,0.99,19.51753305422482
-2022-05-29,20 day ahead inc hosp,2022-06-18,49,quantile,0.01,-3.605272524735805
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,49,quantile,0.025,13.70991000871269
 2022-05-29,20 day ahead inc hosp,2022-06-18,49,quantile,0.05,24.435128976090795
 2022-05-29,20 day ahead inc hosp,2022-06-18,49,quantile,0.1,28.329948126137143
@@ -22700,7 +22700,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,32,quantile,0.95,169.95479219837517
 2022-05-29,20 day ahead inc hosp,2022-06-18,32,quantile,0.975,192.7952085957748
 2022-05-29,20 day ahead inc hosp,2022-06-18,32,quantile,0.99,232.85000874450455
-2022-05-29,20 day ahead inc hosp,2022-06-18,27,quantile,0.01,-2.337715923438881
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,27,quantile,0.025,24.22853657481332
 2022-05-29,20 day ahead inc hosp,2022-06-18,27,quantile,0.05,47.21786472997066
 2022-05-29,20 day ahead inc hosp,2022-06-18,27,quantile,0.1,53.84721334734807
@@ -22838,7 +22838,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,08,quantile,0.95,380.5107871746776
 2022-05-29,20 day ahead inc hosp,2022-06-18,08,quantile,0.975,414.6332197719092
 2022-05-29,20 day ahead inc hosp,2022-06-18,08,quantile,0.99,505.2577249963504
-2022-05-29,20 day ahead inc hosp,2022-06-18,20,quantile,0.01,-11.520180878137634
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,20,quantile,0.025,2.564273062203672
 2022-05-29,20 day ahead inc hosp,2022-06-18,20,quantile,0.05,12.59743881931429
 2022-05-29,20 day ahead inc hosp,2022-06-18,20,quantile,0.1,14.264755562461394
@@ -22861,7 +22861,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,20,quantile,0.95,64.44191544815385
 2022-05-29,20 day ahead inc hosp,2022-06-18,20,quantile,0.975,84.546116994516
 2022-05-29,20 day ahead inc hosp,2022-06-18,20,quantile,0.99,101.93419631919652
-2022-05-29,20 day ahead inc hosp,2022-06-18,26,quantile,0.01,-17.15052247270643
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,26,quantile,0.025,39.69756125751056
 2022-05-29,20 day ahead inc hosp,2022-06-18,26,quantile,0.05,79.3421452699583
 2022-05-29,20 day ahead inc hosp,2022-06-18,26,quantile,0.1,90.90981043798196
@@ -22884,7 +22884,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,26,quantile,0.95,337.75931245186536
 2022-05-29,20 day ahead inc hosp,2022-06-18,26,quantile,0.975,421.21427220173234
 2022-05-29,20 day ahead inc hosp,2022-06-18,26,quantile,0.99,488.5174331597196
-2022-05-29,20 day ahead inc hosp,2022-06-18,37,quantile,0.01,-3.7610564233121577
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,37,quantile,0.025,45.0049763772962
 2022-05-29,20 day ahead inc hosp,2022-06-18,37,quantile,0.05,86.35662011301416
 2022-05-29,20 day ahead inc hosp,2022-06-18,37,quantile,0.1,98.96955477952044
@@ -22953,7 +22953,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,41,quantile,0.95,180.3733119613865
 2022-05-29,20 day ahead inc hosp,2022-06-18,41,quantile,0.975,215.09963399538591
 2022-05-29,20 day ahead inc hosp,2022-06-18,41,quantile,0.99,258.362141860246
-2022-05-29,20 day ahead inc hosp,2022-06-18,24,quantile,0.01,-1.6164051958599532
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,24,quantile,0.025,31.956647384020297
 2022-05-29,20 day ahead inc hosp,2022-06-18,24,quantile,0.05,54.87128072567653
 2022-05-29,20 day ahead inc hosp,2022-06-18,24,quantile,0.1,61.951748094026456
@@ -23022,7 +23022,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,34,quantile,0.95,352.5897026735385
 2022-05-29,20 day ahead inc hosp,2022-06-18,34,quantile,0.975,434.2467637436016
 2022-05-29,20 day ahead inc hosp,2022-06-18,34,quantile,0.99,497.8935268192548
-2022-05-29,20 day ahead inc hosp,2022-06-18,29,quantile,0.01,-11.55588213479294
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,29,quantile,0.025,21.27146692081808
 2022-05-29,20 day ahead inc hosp,2022-06-18,29,quantile,0.05,45.70169219024871
 2022-05-29,20 day ahead inc hosp,2022-06-18,29,quantile,0.1,52.00313928817808
@@ -23045,7 +23045,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,29,quantile,0.95,206.83302243793227
 2022-05-29,20 day ahead inc hosp,2022-06-18,29,quantile,0.975,253.98726550601967
 2022-05-29,20 day ahead inc hosp,2022-06-18,29,quantile,0.99,312.6321718330146
-2022-05-29,20 day ahead inc hosp,2022-06-18,48,quantile,0.01,-94.72782918119634
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,48,quantile,0.025,26.70842361746754
 2022-05-29,20 day ahead inc hosp,2022-06-18,48,quantile,0.05,128.9285960975554
 2022-05-29,20 day ahead inc hosp,2022-06-18,48,quantile,0.1,153.9099355910398
@@ -23091,7 +23091,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,05,quantile,0.95,59.09652240964999
 2022-05-29,20 day ahead inc hosp,2022-06-18,05,quantile,0.975,72.4202237666509
 2022-05-29,20 day ahead inc hosp,2022-06-18,05,quantile,0.99,93.8839865300006
-2022-05-29,20 day ahead inc hosp,2022-06-18,18,quantile,0.01,-10.53380961555651
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,18,quantile,0.025,21.683239262898265
 2022-05-29,20 day ahead inc hosp,2022-06-18,18,quantile,0.05,46.31408910680339
 2022-05-29,20 day ahead inc hosp,2022-06-18,18,quantile,0.1,52.98463081296851
@@ -23114,7 +23114,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,18,quantile,0.95,205.42750019989745
 2022-05-29,20 day ahead inc hosp,2022-06-18,18,quantile,0.975,255.4179775232908
 2022-05-29,20 day ahead inc hosp,2022-06-18,18,quantile,0.99,311.06954050525434
-2022-05-29,20 day ahead inc hosp,2022-06-18,06,quantile,0.01,-22.77993299234693
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,06,quantile,0.025,177.76992810318993
 2022-05-29,20 day ahead inc hosp,2022-06-18,06,quantile,0.05,322.6487658722685
 2022-05-29,20 day ahead inc hosp,2022-06-18,06,quantile,0.1,379.212379088449
@@ -23137,7 +23137,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,06,quantile,0.95,1418.5484308403504
 2022-05-29,20 day ahead inc hosp,2022-06-18,06,quantile,0.975,1716.2177978682585
 2022-05-29,20 day ahead inc hosp,2022-06-18,06,quantile,0.99,2104.3345575023677
-2022-05-29,20 day ahead inc hosp,2022-06-18,51,quantile,0.01,-3.536893172129966
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,51,quantile,0.025,34.37819679370443
 2022-05-29,20 day ahead inc hosp,2022-06-18,51,quantile,0.05,69.28761823880936
 2022-05-29,20 day ahead inc hosp,2022-06-18,51,quantile,0.1,76.963786711995
@@ -23183,7 +23183,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,42,quantile,0.95,556.6240540660182
 2022-05-29,20 day ahead inc hosp,2022-06-18,42,quantile,0.975,682.8016221353064
 2022-05-29,20 day ahead inc hosp,2022-06-18,42,quantile,0.99,780.5829924987681
-2022-05-29,20 day ahead inc hosp,2022-06-18,13,quantile,0.01,-16.955541221738052
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,13,quantile,0.025,31.26540725903508
 2022-05-29,20 day ahead inc hosp,2022-06-18,13,quantile,0.05,67.59858594986102
 2022-05-29,20 day ahead inc hosp,2022-06-18,13,quantile,0.1,77.30858869270995
@@ -23206,7 +23206,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,13,quantile,0.95,325.35669556422835
 2022-05-29,20 day ahead inc hosp,2022-06-18,13,quantile,0.975,390.0778820969793
 2022-05-29,20 day ahead inc hosp,2022-06-18,13,quantile,0.99,492.3506774833494
-2022-05-29,20 day ahead inc hosp,2022-06-18,55,quantile,0.01,-9.890403760305702
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,55,quantile,0.025,19.634178537210097
 2022-05-29,20 day ahead inc hosp,2022-06-18,55,quantile,0.05,43.0247369603686
 2022-05-29,20 day ahead inc hosp,2022-06-18,55,quantile,0.1,48.60139609961682
@@ -23229,7 +23229,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,55,quantile,0.95,183.95504132876863
 2022-05-29,20 day ahead inc hosp,2022-06-18,55,quantile,0.975,227.3291820281121
 2022-05-29,20 day ahead inc hosp,2022-06-18,55,quantile,0.99,270.4022588654643
-2022-05-29,20 day ahead inc hosp,2022-06-18,47,quantile,0.01,-21.315138313259503
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,47,quantile,0.025,7.1606471653740105
 2022-05-29,20 day ahead inc hosp,2022-06-18,47,quantile,0.05,31.093657300834074
 2022-05-29,20 day ahead inc hosp,2022-06-18,47,quantile,0.1,36.40736397187171
@@ -23321,7 +23321,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,12,quantile,0.95,1283.8364906041077
 2022-05-29,20 day ahead inc hosp,2022-06-18,12,quantile,0.975,1525.805875342133
 2022-05-29,20 day ahead inc hosp,2022-06-18,12,quantile,0.99,1737.353849706842
-2022-05-29,20 day ahead inc hosp,2022-06-18,04,quantile,0.01,-5.76180244921026
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,04,quantile,0.025,27.747877134053763
 2022-05-29,20 day ahead inc hosp,2022-06-18,04,quantile,0.05,51.91020373519935
 2022-05-29,20 day ahead inc hosp,2022-06-18,04,quantile,0.1,60.74659744187209
@@ -23390,7 +23390,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,01,quantile,0.95,110.39858842048535
 2022-05-29,20 day ahead inc hosp,2022-06-18,01,quantile,0.975,134.2261187843292
 2022-05-29,20 day ahead inc hosp,2022-06-18,01,quantile,0.99,172.59959458162317
-2022-05-29,20 day ahead inc hosp,2022-06-18,21,quantile,0.01,-3.947527398867511
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,21,quantile,0.025,16.361406404962906
 2022-05-29,20 day ahead inc hosp,2022-06-18,21,quantile,0.05,34.65515991059989
 2022-05-29,20 day ahead inc hosp,2022-06-18,21,quantile,0.1,38.02469604786421
@@ -23413,7 +23413,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,21,quantile,0.95,145.64904182556526
 2022-05-29,20 day ahead inc hosp,2022-06-18,21,quantile,0.975,181.81120009464365
 2022-05-29,20 day ahead inc hosp,2022-06-18,21,quantile,0.99,214.69416318737944
-2022-05-29,20 day ahead inc hosp,2022-06-18,35,quantile,0.01,-10.446064969589903
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,35,quantile,0.025,0.3760399886573428
 2022-05-29,20 day ahead inc hosp,2022-06-18,35,quantile,0.05,8.061187255021128
 2022-05-29,20 day ahead inc hosp,2022-06-18,35,quantile,0.1,9.35385466230741
@@ -23436,7 +23436,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,20 day ahead inc hosp,2022-06-18,35,quantile,0.95,45.99341551764403
 2022-05-29,20 day ahead inc hosp,2022-06-18,35,quantile,0.975,56.8773528433228
 2022-05-29,20 day ahead inc hosp,2022-06-18,35,quantile,0.99,72.5055830673458
-2022-05-29,20 day ahead inc hosp,2022-06-18,50,quantile,0.01,-1.6898716828321492
+0,0,0,0,0,0,0.0
 2022-05-29,20 day ahead inc hosp,2022-06-18,50,quantile,0.025,1.6090056450358954
 2022-05-29,20 day ahead inc hosp,2022-06-18,50,quantile,0.05,3.863986817389157
 2022-05-29,20 day ahead inc hosp,2022-06-18,50,quantile,0.1,4.525187903405797
@@ -23574,7 +23574,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,10,quantile,0.95,37.8749311712392
 2022-05-29,21 day ahead inc hosp,2022-06-19,10,quantile,0.975,44.81640624387381
 2022-05-29,21 day ahead inc hosp,2022-06-19,10,quantile,0.99,51.10859518945006
-2022-05-29,21 day ahead inc hosp,2022-06-19,33,quantile,0.01,-3.573108553549672
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,33,quantile,0.025,4.812530261486318
 2022-05-29,21 day ahead inc hosp,2022-06-19,33,quantile,0.05,8.559130272390515
 2022-05-29,21 day ahead inc hosp,2022-06-19,33,quantile,0.1,10.184053963238462
@@ -23643,7 +23643,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,54,quantile,0.95,106.988106306566
 2022-05-29,21 day ahead inc hosp,2022-06-19,54,quantile,0.975,126.22298929782968
 2022-05-29,21 day ahead inc hosp,2022-06-19,54,quantile,0.99,150.3063489287141
-2022-05-29,21 day ahead inc hosp,2022-06-19,38,quantile,0.01,-1.108999224094854
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,38,quantile,0.025,4.39061071651699
 2022-05-29,21 day ahead inc hosp,2022-06-19,38,quantile,0.05,6.139902838304982
 2022-05-29,21 day ahead inc hosp,2022-06-19,38,quantile,0.1,8.151833569906966
@@ -23712,7 +23712,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,09,quantile,0.95,180.40775710022425
 2022-05-29,21 day ahead inc hosp,2022-06-19,09,quantile,0.975,219.34651310346604
 2022-05-29,21 day ahead inc hosp,2022-06-19,09,quantile,0.99,253.2301394619958
-2022-05-29,21 day ahead inc hosp,2022-06-19,45,quantile,0.01,-29.171545952426342
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,45,quantile,0.025,8.961759003092057
 2022-05-29,21 day ahead inc hosp,2022-06-19,45,quantile,0.05,23.58393795253193
 2022-05-29,21 day ahead inc hosp,2022-06-19,45,quantile,0.1,30.7922467596181
@@ -23804,7 +23804,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,15,quantile,0.95,67.42904940238718
 2022-05-29,21 day ahead inc hosp,2022-06-19,15,quantile,0.975,80.62397518644663
 2022-05-29,21 day ahead inc hosp,2022-06-19,15,quantile,0.99,93.61579136105212
-2022-05-29,21 day ahead inc hosp,2022-06-19,30,quantile,0.01,-0.4729382309933765
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,30,quantile,0.025,6.408428533481853
 2022-05-29,21 day ahead inc hosp,2022-06-19,30,quantile,0.05,10.806219847622124
 2022-05-29,21 day ahead inc hosp,2022-06-19,30,quantile,0.1,11.408273551182464
@@ -23827,7 +23827,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,30,quantile,0.95,56.44242042729489
 2022-05-29,21 day ahead inc hosp,2022-06-19,30,quantile,0.975,67.8685311132585
 2022-05-29,21 day ahead inc hosp,2022-06-19,30,quantile,0.99,77.82849349183346
-2022-05-29,21 day ahead inc hosp,2022-06-19,11,quantile,0.01,-0.0981734275529467
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,11,quantile,0.025,4.998559415886957
 2022-05-29,21 day ahead inc hosp,2022-06-19,11,quantile,0.05,7.066978313807246
 2022-05-29,21 day ahead inc hosp,2022-06-19,11,quantile,0.1,7.8699400281395056
@@ -23873,7 +23873,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,32,quantile,0.95,178.2251190239757
 2022-05-29,21 day ahead inc hosp,2022-06-19,32,quantile,0.975,209.3472926746779
 2022-05-29,21 day ahead inc hosp,2022-06-19,32,quantile,0.99,241.41894209611317
-2022-05-29,21 day ahead inc hosp,2022-06-19,27,quantile,0.01,-12.44785392033697
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,27,quantile,0.025,26.5515643707755
 2022-05-29,21 day ahead inc hosp,2022-06-19,27,quantile,0.05,43.44969483043031
 2022-05-29,21 day ahead inc hosp,2022-06-19,27,quantile,0.1,48.3458082185035
@@ -23896,7 +23896,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,27,quantile,0.95,203.73514993346572
 2022-05-29,21 day ahead inc hosp,2022-06-19,27,quantile,0.975,251.2861930038013
 2022-05-29,21 day ahead inc hosp,2022-06-19,27,quantile,0.99,310.6952010156233
-2022-05-29,21 day ahead inc hosp,2022-06-19,23,quantile,0.01,-0.0449178621935857
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,23,quantile,0.025,9.170612274084757
 2022-05-29,21 day ahead inc hosp,2022-06-19,23,quantile,0.05,12.844951793187889
 2022-05-29,21 day ahead inc hosp,2022-06-19,23,quantile,0.1,14.8048543121475
@@ -23942,7 +23942,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,25,quantile,0.95,321.3472606453444
 2022-05-29,21 day ahead inc hosp,2022-06-19,25,quantile,0.975,389.7613052339023
 2022-05-29,21 day ahead inc hosp,2022-06-19,25,quantile,0.99,452.4735035741836
-2022-05-29,21 day ahead inc hosp,2022-06-19,19,quantile,0.01,-6.2150118454763055
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,19,quantile,0.025,17.213016353110596
 2022-05-29,21 day ahead inc hosp,2022-06-19,19,quantile,0.05,25.497438395367567
 2022-05-29,21 day ahead inc hosp,2022-06-19,19,quantile,0.1,30.64403470832213
@@ -24011,7 +24011,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,08,quantile,0.95,386.2812248379371
 2022-05-29,21 day ahead inc hosp,2022-06-19,08,quantile,0.975,460.6607660747604
 2022-05-29,21 day ahead inc hosp,2022-06-19,08,quantile,0.99,525.4354814988941
-2022-05-29,21 day ahead inc hosp,2022-06-19,20,quantile,0.01,-19.669692156851426
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,20,quantile,0.025,0.9399569813113482
 2022-05-29,21 day ahead inc hosp,2022-06-19,20,quantile,0.05,10.290150743219575
 2022-05-29,21 day ahead inc hosp,2022-06-19,20,quantile,0.1,12.897166549396792
@@ -24034,7 +24034,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,20,quantile,0.95,71.35691199442458
 2022-05-29,21 day ahead inc hosp,2022-06-19,20,quantile,0.975,88.80965911548427
 2022-05-29,21 day ahead inc hosp,2022-06-19,20,quantile,0.99,111.3571104359586
-2022-05-29,21 day ahead inc hosp,2022-06-19,26,quantile,0.01,-23.14316123615865
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,26,quantile,0.025,43.08286348229617
 2022-05-29,21 day ahead inc hosp,2022-06-19,26,quantile,0.05,72.89309050634685
 2022-05-29,21 day ahead inc hosp,2022-06-19,26,quantile,0.1,85.05341819954702
@@ -24057,7 +24057,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,26,quantile,0.95,352.0786842101008
 2022-05-29,21 day ahead inc hosp,2022-06-19,26,quantile,0.975,436.6444376261579
 2022-05-29,21 day ahead inc hosp,2022-06-19,26,quantile,0.99,518.3687214556008
-2022-05-29,21 day ahead inc hosp,2022-06-19,37,quantile,0.01,-26.76839039836538
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,37,quantile,0.025,48.22398545520294
 2022-05-29,21 day ahead inc hosp,2022-06-19,37,quantile,0.05,74.21770739362756
 2022-05-29,21 day ahead inc hosp,2022-06-19,37,quantile,0.1,87.96918927053181
@@ -24080,7 +24080,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,37,quantile,0.95,392.82392245198673
 2022-05-29,21 day ahead inc hosp,2022-06-19,37,quantile,0.975,476.6908745819184
 2022-05-29,21 day ahead inc hosp,2022-06-19,37,quantile,0.99,566.3633013839298
-2022-05-29,21 day ahead inc hosp,2022-06-19,22,quantile,0.01,-6.191937170886996
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,22,quantile,0.025,27.178136893594665
 2022-05-29,21 day ahead inc hosp,2022-06-19,22,quantile,0.05,42.40501961293086
 2022-05-29,21 day ahead inc hosp,2022-06-19,22,quantile,0.1,46.17888682446018
@@ -24103,7 +24103,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,22,quantile,0.95,193.8499814967697
 2022-05-29,21 day ahead inc hosp,2022-06-19,22,quantile,0.975,243.4417067907165
 2022-05-29,21 day ahead inc hosp,2022-06-19,22,quantile,0.99,286.0151942430364
-2022-05-29,21 day ahead inc hosp,2022-06-19,41,quantile,0.01,-0.3876899305457851
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,41,quantile,0.025,29.346861282061223
 2022-05-29,21 day ahead inc hosp,2022-06-19,41,quantile,0.05,42.22416524995882
 2022-05-29,21 day ahead inc hosp,2022-06-19,41,quantile,0.1,45.92466495682079
@@ -24126,7 +24126,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,41,quantile,0.95,186.2608210845956
 2022-05-29,21 day ahead inc hosp,2022-06-19,41,quantile,0.975,223.53899551879107
 2022-05-29,21 day ahead inc hosp,2022-06-19,41,quantile,0.99,274.0896174378444
-2022-05-29,21 day ahead inc hosp,2022-06-19,24,quantile,0.01,-6.5640285242707765
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,24,quantile,0.025,33.051023831492174
 2022-05-29,21 day ahead inc hosp,2022-06-19,24,quantile,0.05,51.2731329158648
 2022-05-29,21 day ahead inc hosp,2022-06-19,24,quantile,0.1,57.83530944262359
@@ -24172,7 +24172,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,17,quantile,0.95,587.5427528003795
 2022-05-29,21 day ahead inc hosp,2022-06-19,17,quantile,0.975,710.5193962193372
 2022-05-29,21 day ahead inc hosp,2022-06-19,17,quantile,0.99,836.1167522007441
-2022-05-29,21 day ahead inc hosp,2022-06-19,34,quantile,0.01,-3.4334225511209877
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,34,quantile,0.025,59.08943738025418
 2022-05-29,21 day ahead inc hosp,2022-06-19,34,quantile,0.05,88.09357390492711
 2022-05-29,21 day ahead inc hosp,2022-06-19,34,quantile,0.1,100.4551406585456
@@ -24310,7 +24310,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,06,quantile,0.95,1530.7773726563723
 2022-05-29,21 day ahead inc hosp,2022-06-19,06,quantile,0.975,1812.50173918703
 2022-05-29,21 day ahead inc hosp,2022-06-19,06,quantile,0.99,2205.561599534497
-2022-05-29,21 day ahead inc hosp,2022-06-19,51,quantile,0.01,-22.16179879527256
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,51,quantile,0.025,37.3963020056297
 2022-05-29,21 day ahead inc hosp,2022-06-19,51,quantile,0.05,60.47050973754835
 2022-05-29,21 day ahead inc hosp,2022-06-19,51,quantile,0.1,70.31888619872458
@@ -24379,7 +24379,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,13,quantile,0.95,354.1897107855243
 2022-05-29,21 day ahead inc hosp,2022-06-19,13,quantile,0.975,418.7461341169066
 2022-05-29,21 day ahead inc hosp,2022-06-19,13,quantile,0.99,515.6814612307451
-2022-05-29,21 day ahead inc hosp,2022-06-19,55,quantile,0.01,-17.519516061183808
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,55,quantile,0.025,21.985350504403332
 2022-05-29,21 day ahead inc hosp,2022-06-19,55,quantile,0.05,38.5655431905044
 2022-05-29,21 day ahead inc hosp,2022-06-19,55,quantile,0.1,45.81185951565482
@@ -24425,7 +24425,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,47,quantile,0.95,185.51967768972224
 2022-05-29,21 day ahead inc hosp,2022-06-19,47,quantile,0.975,219.57575583775863
 2022-05-29,21 day ahead inc hosp,2022-06-19,47,quantile,0.99,272.98472085093874
-2022-05-29,21 day ahead inc hosp,2022-06-19,36,quantile,0.01,-12.805767520558296
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,36,quantile,0.025,121.28284535237322
 2022-05-29,21 day ahead inc hosp,2022-06-19,36,quantile,0.05,178.87679736822315
 2022-05-29,21 day ahead inc hosp,2022-06-19,36,quantile,0.1,203.21741126573653
@@ -24563,7 +24563,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,01,quantile,0.95,121.92341132770244
 2022-05-29,21 day ahead inc hosp,2022-06-19,01,quantile,0.975,144.39375793354264
 2022-05-29,21 day ahead inc hosp,2022-06-19,01,quantile,0.99,180.2251303339585
-2022-05-29,21 day ahead inc hosp,2022-06-19,21,quantile,0.01,-13.12053087754522
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,21,quantile,0.025,17.653347418854917
 2022-05-29,21 day ahead inc hosp,2022-06-19,21,quantile,0.05,29.96219308648022
 2022-05-29,21 day ahead inc hosp,2022-06-19,21,quantile,0.1,35.595210444604085
@@ -24586,7 +24586,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,21,quantile,0.95,154.76687222178197
 2022-05-29,21 day ahead inc hosp,2022-06-19,21,quantile,0.975,194.43533059991648
 2022-05-29,21 day ahead inc hosp,2022-06-19,21,quantile,0.99,232.07882218345617
-2022-05-29,21 day ahead inc hosp,2022-06-19,35,quantile,0.01,-14.8499403817334
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,35,quantile,0.025,0.2166568776427717
 2022-05-29,21 day ahead inc hosp,2022-06-19,35,quantile,0.05,6.853916076670134
 2022-05-29,21 day ahead inc hosp,2022-06-19,35,quantile,0.1,9.345566740534654
@@ -24609,7 +24609,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,21 day ahead inc hosp,2022-06-19,35,quantile,0.95,48.00393617729781
 2022-05-29,21 day ahead inc hosp,2022-06-19,35,quantile,0.975,62.20842397946456
 2022-05-29,21 day ahead inc hosp,2022-06-19,35,quantile,0.99,80.34298467284968
-2022-05-29,21 day ahead inc hosp,2022-06-19,50,quantile,0.01,-2.889383697214841
+0,0,0,0,0,0,0.0
 2022-05-29,21 day ahead inc hosp,2022-06-19,50,quantile,0.025,1.598331971065602
 2022-05-29,21 day ahead inc hosp,2022-06-19,50,quantile,0.05,3.3746190699432126
 2022-05-29,21 day ahead inc hosp,2022-06-19,50,quantile,0.1,4.240933576321119
@@ -24747,7 +24747,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,22 day ahead inc hosp,2022-06-20,10,quantile,0.95,38.695107769716
 2022-05-29,22 day ahead inc hosp,2022-06-20,10,quantile,0.975,47.47635391595666
 2022-05-29,22 day ahead inc hosp,2022-06-20,10,quantile,0.99,54.13034403110457
-2022-05-29,22 day ahead inc hosp,2022-06-20,33,quantile,0.01,-4.82260876841611
+0,0,0,0,0,0,0.0
 2022-05-29,22 day ahead inc hosp,2022-06-20,33,quantile,0.025,4.581689171877242
 2022-05-29,22 day ahead inc hosp,2022-06-20,33,quantile,0.05,9.095742518978923
 2022-05-29,22 day ahead inc hosp,2022-06-20,33,quantile,0.1,10.718980337001256
@@ -24931,7 +24931,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,22 day ahead inc hosp,2022-06-20,56,quantile,0.95,13.916169205687922
 2022-05-29,22 day ahead inc hosp,2022-06-20,56,quantile,0.975,17.337443042516266
 2022-05-29,22 day ahead inc hosp,2022-06-20,56,quantile,0.99,21.65802996179712
-2022-05-29,22 day ahead inc hosp,2022-06-20,49,quantile,0.01,-7.424047839615145
+0,0,0,0,0,0,0.0
 2022-05-29,22 day ahead inc hosp,2022-06-20,49,quantile,0.025,10.401781642887258
 2022-05-29,22 day ahead inc hosp,2022-06-20,49,quantile,0.05,24.39893631340685
 2022-05-29,22 day ahead inc hosp,2022-06-20,49,quantile,0.1,27.742231946436195
@@ -25046,7 +25046,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,22 day ahead inc hosp,2022-06-20,32,quantile,0.95,185.1291049574742
 2022-05-29,22 day ahead inc hosp,2022-06-20,32,quantile,0.975,219.73812157083057
 2022-05-29,22 day ahead inc hosp,2022-06-20,32,quantile,0.99,251.36749318030007
-2022-05-29,22 day ahead inc hosp,2022-06-20,27,quantile,0.01,-14.088450407813845
+0,0,0,0,0,0,0.0
 2022-05-29,22 day ahead inc hosp,2022-06-20,27,quantile,0.025,23.891028697136605
 2022-05-29,22 day ahead inc hosp,2022-06-20,27,quantile,0.05,46.72451889188343
 2022-05-29,22 day ahead inc hosp,2022-06-20,27,quantile,0.1,52.15241428833086
@@ -25069,7 +25069,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,22 day ahead inc hosp,2022-06-20,27,quantile,0.95,219.7540028927164
 2022-05-29,22 day ahead inc hosp,2022-06-20,27,quantile,0.975,272.3216899256781
 2022-05-29,22 day ahead inc hosp,2022-06-20,27,quantile,0.99,313.8197877521394
-2022-05-29,22 day ahead inc hosp,2022-06-20,23,quantile,0.01,-0.3516568738352902
+0,0,0,0,0,0,0.0
 2022-05-29,22 day ahead inc hosp,2022-06-20,23,quantile,0.025,8.867424195109399
 2022-05-29,22 day ahead inc hosp,2022-06-20,23,quantile,0.05,13.217061935948806
 2022-05-29,22 day ahead inc hosp,2022-06-20,23,quantile,0.1,15.800352181163536
@@ -25115,7 +25115,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,22 day ahead inc hosp,2022-06-20,25,quantile,0.95,331.0649920542345
 2022-05-29,22 day ahead inc hosp,2022-06-20,25,quantile,0.975,412.96203057092174
 2022-05-29,22 day ahead inc hosp,2022-06-20,25,quantile,0.99,453.6436825923003
-2022-05-29,22 day ahead inc hosp,2022-06-20,19,quantile,0.01,-4.056991251949711
+0,0,0,0,0,0,0.0
 2022-05-29,22 day ahead inc hosp,2022-06-20,19,quantile,0.025,14.083500286294525
 2022-05-29,22 day ahead inc hosp,2022-06-20,19,quantile,0.05,28.065933890842636
 2022-05-29,22 day ahead inc hosp,2022-06-20,19,quantile,0.1,33.55424794343374
@@ -25230,7 +25230,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,22 day ahead inc hosp,2022-06-20,26,quantile,0.95,372.43738529202585
 2022-05-29,22 day ahead inc hosp,2022-06-20,26,quantile,0.975,461.5778277464855
 2022-05-29,22 day ahead inc hosp,2022-06-20,26,quantile,0.99,537.0720272585658
-2022-05-29,22 day ahead inc hosp,2022-06-20,37,quantile,0.01,-25.651958138147563
+0,0,0,0,0,0,0.0
 2022-05-29,22 day ahead inc hosp,2022-06-20,37,quantile,0.025,38.19688482296255
 2022-05-29,22 day ahead inc hosp,2022-06-20,37,quantile,0.05,84.87802448327321
 2022-05-29,22 day ahead inc hosp,2022-06-20,37,quantile,0.1,99.60774088865156
@@ -25253,7 +25253,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,22 day ahead inc hosp,2022-06-20,37,quantile,0.95,400.4548019701856
 2022-05-29,22 day ahead inc hosp,2022-06-20,37,quantile,0.975,503.7022155387448
 2022-05-29,22 day ahead inc hosp,2022-06-20,37,quantile,0.99,598.5815535227771
-2022-05-29,22 day ahead inc hosp,2022-06-20,22,quantile,0.01,-3.170904959840398
+0,0,0,0,0,0,0.0
 2022-05-29,22 day ahead inc hosp,2022-06-20,22,quantile,0.025,26.00811470263183
 2022-05-29,22 day ahead inc hosp,2022-06-20,22,quantile,0.05,43.82711266672966
 2022-05-29,22 day ahead inc hosp,2022-06-20,22,quantile,0.1,52.43160994316752
@@ -25368,7 +25368,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,22 day ahead inc hosp,2022-06-20,34,quantile,0.95,383.66109147251456
 2022-05-29,22 day ahead inc hosp,2022-06-20,34,quantile,0.975,470.792239511035
 2022-05-29,22 day ahead inc hosp,2022-06-20,34,quantile,0.99,543.6915365371827
-2022-05-29,22 day ahead inc hosp,2022-06-20,29,quantile,0.01,-25.565261269601503
+0,0,0,0,0,0,0.0
 2022-05-29,22 day ahead inc hosp,2022-06-20,29,quantile,0.025,16.991047154239315
 2022-05-29,22 day ahead inc hosp,2022-06-20,29,quantile,0.05,43.71677285487514
 2022-05-29,22 day ahead inc hosp,2022-06-20,29,quantile,0.1,51.7391846045429
@@ -25437,7 +25437,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,22 day ahead inc hosp,2022-06-20,05,quantile,0.95,66.43025888967402
 2022-05-29,22 day ahead inc hosp,2022-06-20,05,quantile,0.975,84.39655481331073
 2022-05-29,22 day ahead inc hosp,2022-06-20,05,quantile,0.99,104.64213132517143
-2022-05-29,22 day ahead inc hosp,2022-06-20,18,quantile,0.01,-26.20240915632446
+0,0,0,0,0,0,0.0
 2022-05-29,22 day ahead inc hosp,2022-06-20,18,quantile,0.025,17.721575857706867
 2022-05-29,22 day ahead inc hosp,2022-06-20,18,quantile,0.05,44.414375950805606
 2022-05-29,22 day ahead inc hosp,2022-06-20,18,quantile,0.1,52.16924520595623
@@ -25460,7 +25460,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,22 day ahead inc hosp,2022-06-20,18,quantile,0.95,227.2920786764336
 2022-05-29,22 day ahead inc hosp,2022-06-20,18,quantile,0.975,284.03934680461145
 2022-05-29,22 day ahead inc hosp,2022-06-20,18,quantile,0.99,344.24495257645856
-2022-05-29,22 day ahead inc hosp,2022-06-20,06,quantile,0.01,-82.5187073421992
+0,0,0,0,0,0,0.0
 2022-05-29,22 day ahead inc hosp,2022-06-20,06,quantile,0.025,149.86420748167114
 2022-05-29,22 day ahead inc hosp,2022-06-20,06,quantile,0.05,322.45124466961363
 2022-05-29,22 day ahead inc hosp,2022-06-20,06,quantile,0.1,382.72641546079865
@@ -25483,7 +25483,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,22 day ahead inc hosp,2022-06-20,06,quantile,0.95,1565.1716491831114
 2022-05-29,22 day ahead inc hosp,2022-06-20,06,quantile,0.975,1915.0104847577131
 2022-05-29,22 day ahead inc hosp,2022-06-20,06,quantile,0.99,2330.61740599022
-2022-05-29,22 day ahead inc hosp,2022-06-20,51,quantile,0.01,-24.871177472364717
+0,0,0,0,0,0,0.0
 2022-05-29,22 day ahead inc hosp,2022-06-20,51,quantile,0.025,32.33895017906717
 2022-05-29,22 day ahead inc hosp,2022-06-20,51,quantile,0.05,68.12301816406881
 2022-05-29,22 day ahead inc hosp,2022-06-20,51,quantile,0.1,78.5495490988834
@@ -25552,7 +25552,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,22 day ahead inc hosp,2022-06-20,13,quantile,0.95,361.2329393614877
 2022-05-29,22 day ahead inc hosp,2022-06-20,13,quantile,0.975,438.99934669268106
 2022-05-29,22 day ahead inc hosp,2022-06-20,13,quantile,0.99,546.5817305732339
-2022-05-29,22 day ahead inc hosp,2022-06-20,55,quantile,0.01,-22.45691741634144
+0,0,0,0,0,0,0.0
 2022-05-29,22 day ahead inc hosp,2022-06-20,55,quantile,0.025,19.96740645746218
 2022-05-29,22 day ahead inc hosp,2022-06-20,55,quantile,0.05,42.88653956636865
 2022-05-29,22 day ahead inc hosp,2022-06-20,55,quantile,0.1,46.15593906957317
@@ -25598,7 +25598,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,22 day ahead inc hosp,2022-06-20,47,quantile,0.95,188.090913935942
 2022-05-29,22 day ahead inc hosp,2022-06-20,47,quantile,0.975,229.07275394096348
 2022-05-29,22 day ahead inc hosp,2022-06-20,47,quantile,0.99,290.0548808362908
-2022-05-29,22 day ahead inc hosp,2022-06-20,36,quantile,0.01,-21.809594672793686
+0,0,0,0,0,0,0.0
 2022-05-29,22 day ahead inc hosp,2022-06-20,36,quantile,0.025,121.20019210262656
 2022-05-29,22 day ahead inc hosp,2022-06-20,36,quantile,0.05,173.1676547279618
 2022-05-29,22 day ahead inc hosp,2022-06-20,36,quantile,0.1,210.9770612003635
@@ -25759,7 +25759,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,22 day ahead inc hosp,2022-06-20,21,quantile,0.95,162.8142036880688
 2022-05-29,22 day ahead inc hosp,2022-06-20,21,quantile,0.975,205.5634546616035
 2022-05-29,22 day ahead inc hosp,2022-06-20,21,quantile,0.99,237.8331365269457
-2022-05-29,22 day ahead inc hosp,2022-06-20,35,quantile,0.01,-16.61110305933908
+0,0,0,0,0,0,0.0
 2022-05-29,22 day ahead inc hosp,2022-06-20,35,quantile,0.025,0.3959608076236316
 2022-05-29,22 day ahead inc hosp,2022-06-20,35,quantile,0.05,7.8475973269773425
 2022-05-29,22 day ahead inc hosp,2022-06-20,35,quantile,0.1,9.390367884103474
@@ -26794,8 +26794,8 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,23 day ahead inc hosp,2022-06-21,36,quantile,0.95,789.0188237496079
 2022-05-29,23 day ahead inc hosp,2022-06-21,36,quantile,0.975,955.4105696299408
 2022-05-29,23 day ahead inc hosp,2022-06-21,36,quantile,0.99,1127.966051024142
-2022-05-29,23 day ahead inc hosp,2022-06-21,40,quantile,0.01,-4.791726585547395
-2022-05-29,23 day ahead inc hosp,2022-06-21,40,quantile,0.025,-3.1893520933807022
+0,0,0,0,0,0,0.0
+0,0,0,0,0,0,0.0
 2022-05-29,23 day ahead inc hosp,2022-06-21,40,quantile,0.05,12.662927476597975
 2022-05-29,23 day ahead inc hosp,2022-06-21,40,quantile,0.1,13.54330065327692
 2022-05-29,23 day ahead inc hosp,2022-06-21,40,quantile,0.15,17.44533269299501
@@ -28128,7 +28128,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,24 day ahead inc hosp,2022-06-22,35,quantile,0.95,60.24009637610846
 2022-05-29,24 day ahead inc hosp,2022-06-22,35,quantile,0.975,76.68344080860743
 2022-05-29,24 day ahead inc hosp,2022-06-22,35,quantile,0.99,94.07832311296872
-2022-05-29,24 day ahead inc hosp,2022-06-22,50,quantile,0.01,-0.690232344458273
+0,0,0,0,0,0,0.0
 2022-05-29,24 day ahead inc hosp,2022-06-22,50,quantile,0.025,1.2932501818223625
 2022-05-29,24 day ahead inc hosp,2022-06-22,50,quantile,0.05,3.3754839036374813
 2022-05-29,24 day ahead inc hosp,2022-06-22,50,quantile,0.1,4.112302499845327
@@ -29393,7 +29393,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,02,quantile,0.95,46.26277812555907
 2022-05-29,26 day ahead inc hosp,2022-06-24,02,quantile,0.975,53.89902229544574
 2022-05-29,26 day ahead inc hosp,2022-06-24,02,quantile,0.99,61.45195575194968
-2022-05-29,26 day ahead inc hosp,2022-06-24,31,quantile,0.01,-7.740442335303169
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,31,quantile,0.025,3.778004988177386
 2022-05-29,26 day ahead inc hosp,2022-06-24,31,quantile,0.05,10.610921366507664
 2022-05-29,26 day ahead inc hosp,2022-06-24,31,quantile,0.1,11.251675319544905
@@ -29439,7 +29439,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,10,quantile,0.95,47.26309769561218
 2022-05-29,26 day ahead inc hosp,2022-06-24,10,quantile,0.975,56.77307548093648
 2022-05-29,26 day ahead inc hosp,2022-06-24,10,quantile,0.99,64.00152363845316
-2022-05-29,26 day ahead inc hosp,2022-06-24,33,quantile,0.01,-2.0229753355068043
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,33,quantile,0.025,4.624770202299925
 2022-05-29,26 day ahead inc hosp,2022-06-24,33,quantile,0.05,8.90482547501081
 2022-05-29,26 day ahead inc hosp,2022-06-24,33,quantile,0.1,9.95162364319505
@@ -29462,7 +29462,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,33,quantile,0.95,60.62750309173321
 2022-05-29,26 day ahead inc hosp,2022-06-24,33,quantile,0.975,72.12585910426448
 2022-05-29,26 day ahead inc hosp,2022-06-24,33,quantile,0.99,85.84201034850979
-2022-05-29,26 day ahead inc hosp,2022-06-24,46,quantile,0.01,-3.0190070753167584
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,46,quantile,0.025,1.8192292857962529
 2022-05-29,26 day ahead inc hosp,2022-06-24,46,quantile,0.05,5.350733368592281
 2022-05-29,26 day ahead inc hosp,2022-06-24,46,quantile,0.1,5.814533586880185
@@ -29531,7 +29531,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,38,quantile,0.95,37.73987647882711
 2022-05-29,26 day ahead inc hosp,2022-06-24,38,quantile,0.975,45.34897267549838
 2022-05-29,26 day ahead inc hosp,2022-06-24,38,quantile,0.99,52.23693359070432
-2022-05-29,26 day ahead inc hosp,2022-06-24,16,quantile,0.01,-7.46818675286984
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,16,quantile,0.025,3.02172724217911
 2022-05-29,26 day ahead inc hosp,2022-06-24,16,quantile,0.05,9.022723930845656
 2022-05-29,26 day ahead inc hosp,2022-06-24,16,quantile,0.1,9.350512132681848
@@ -29577,7 +29577,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,09,quantile,0.95,235.4775191154368
 2022-05-29,26 day ahead inc hosp,2022-06-24,09,quantile,0.975,279.0647538409552
 2022-05-29,26 day ahead inc hosp,2022-06-24,09,quantile,0.99,310.2401559347369
-2022-05-29,26 day ahead inc hosp,2022-06-24,45,quantile,0.01,-19.31155487873864
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,45,quantile,0.025,8.55512936540184
 2022-05-29,26 day ahead inc hosp,2022-06-24,45,quantile,0.05,26.27345521517074
 2022-05-29,26 day ahead inc hosp,2022-06-24,45,quantile,0.1,28.170816225474088
@@ -29738,7 +29738,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,32,quantile,0.95,203.10851172016208
 2022-05-29,26 day ahead inc hosp,2022-06-24,32,quantile,0.975,241.072302992754
 2022-05-29,26 day ahead inc hosp,2022-06-24,32,quantile,0.99,274.048690872856
-2022-05-29,26 day ahead inc hosp,2022-06-24,27,quantile,0.01,-13.101313353072898
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,27,quantile,0.025,17.068363512979598
 2022-05-29,26 day ahead inc hosp,2022-06-24,27,quantile,0.05,41.70928900620581
 2022-05-29,26 day ahead inc hosp,2022-06-24,27,quantile,0.1,48.33362711471034
@@ -29807,7 +29807,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,25,quantile,0.95,431.88886574523457
 2022-05-29,26 day ahead inc hosp,2022-06-24,25,quantile,0.975,513.786247864886
 2022-05-29,26 day ahead inc hosp,2022-06-24,25,quantile,0.99,584.5142542975963
-2022-05-29,26 day ahead inc hosp,2022-06-24,19,quantile,0.01,-5.774437776261003
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,19,quantile,0.025,8.576959792597716
 2022-05-29,26 day ahead inc hosp,2022-06-24,19,quantile,0.05,26.271819206200185
 2022-05-29,26 day ahead inc hosp,2022-06-24,19,quantile,0.1,27.245445042735785
@@ -29899,7 +29899,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,20,quantile,0.95,115.95034155636264
 2022-05-29,26 day ahead inc hosp,2022-06-24,20,quantile,0.975,140.16101431881694
 2022-05-29,26 day ahead inc hosp,2022-06-24,20,quantile,0.99,161.84965740205303
-2022-05-29,26 day ahead inc hosp,2022-06-24,26,quantile,0.01,-12.009749826019323
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,26,quantile,0.025,34.895216303355554
 2022-05-29,26 day ahead inc hosp,2022-06-24,26,quantile,0.05,76.520284535606
 2022-05-29,26 day ahead inc hosp,2022-06-24,26,quantile,0.1,89.9123517972331
@@ -29922,7 +29922,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,26,quantile,0.95,516.9707946460584
 2022-05-29,26 day ahead inc hosp,2022-06-24,26,quantile,0.975,624.9859749457063
 2022-05-29,26 day ahead inc hosp,2022-06-24,26,quantile,0.99,723.8698431422898
-2022-05-29,26 day ahead inc hosp,2022-06-24,37,quantile,0.01,-28.5323682784647
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,37,quantile,0.025,28.8237903578473
 2022-05-29,26 day ahead inc hosp,2022-06-24,37,quantile,0.05,77.41629948569386
 2022-05-29,26 day ahead inc hosp,2022-06-24,37,quantile,0.1,90.893912138738
@@ -29945,7 +29945,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,37,quantile,0.95,489.704011160533
 2022-05-29,26 day ahead inc hosp,2022-06-24,37,quantile,0.975,586.207400268258
 2022-05-29,26 day ahead inc hosp,2022-06-24,37,quantile,0.99,677.4703744585765
-2022-05-29,26 day ahead inc hosp,2022-06-24,22,quantile,0.01,-4.015779234009357
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,22,quantile,0.025,17.183982422273754
 2022-05-29,26 day ahead inc hosp,2022-06-24,22,quantile,0.05,40.06308451596936
 2022-05-29,26 day ahead inc hosp,2022-06-24,22,quantile,0.1,44.7155468125495
@@ -29968,7 +29968,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,22,quantile,0.95,247.50624849343484
 2022-05-29,26 day ahead inc hosp,2022-06-24,22,quantile,0.975,296.4568275001597
 2022-05-29,26 day ahead inc hosp,2022-06-24,22,quantile,0.99,339.4698844000192
-2022-05-29,26 day ahead inc hosp,2022-06-24,41,quantile,0.01,-2.35177236044779
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,41,quantile,0.025,20.581036756150013
 2022-05-29,26 day ahead inc hosp,2022-06-24,41,quantile,0.05,39.66965231514818
 2022-05-29,26 day ahead inc hosp,2022-06-24,41,quantile,0.1,46.1053648038889
@@ -29991,7 +29991,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,41,quantile,0.95,227.8866380028408
 2022-05-29,26 day ahead inc hosp,2022-06-24,41,quantile,0.975,280.21204989391265
 2022-05-29,26 day ahead inc hosp,2022-06-24,41,quantile,0.99,317.9310080881236
-2022-05-29,26 day ahead inc hosp,2022-06-24,24,quantile,0.01,-5.516226874456501
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,24,quantile,0.025,26.88211907132048
 2022-05-29,26 day ahead inc hosp,2022-06-24,24,quantile,0.05,52.80702171580936
 2022-05-29,26 day ahead inc hosp,2022-06-24,24,quantile,0.1,59.06150856188702
@@ -30060,7 +30060,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,34,quantile,0.95,513.3215306397287
 2022-05-29,26 day ahead inc hosp,2022-06-24,34,quantile,0.975,615.7356351608839
 2022-05-29,26 day ahead inc hosp,2022-06-24,34,quantile,0.99,708.4361318757024
-2022-05-29,26 day ahead inc hosp,2022-06-24,29,quantile,0.01,-25.54841087147888
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,29,quantile,0.025,15.305065394255518
 2022-05-29,26 day ahead inc hosp,2022-06-24,29,quantile,0.05,40.79817400613542
 2022-05-29,26 day ahead inc hosp,2022-06-24,29,quantile,0.1,46.50336819658279
@@ -30129,7 +30129,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,05,quantile,0.95,103.277357332702
 2022-05-29,26 day ahead inc hosp,2022-06-24,05,quantile,0.975,125.789916863491
 2022-05-29,26 day ahead inc hosp,2022-06-24,05,quantile,0.99,146.8432422934699
-2022-05-29,26 day ahead inc hosp,2022-06-24,18,quantile,0.01,-24.92684227447794
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,18,quantile,0.025,15.730762174364804
 2022-05-29,26 day ahead inc hosp,2022-06-24,18,quantile,0.05,42.173095629401736
 2022-05-29,26 day ahead inc hosp,2022-06-24,18,quantile,0.1,46.58486528758216
@@ -30152,7 +30152,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,18,quantile,0.95,276.43678582825254
 2022-05-29,26 day ahead inc hosp,2022-06-24,18,quantile,0.975,337.0151939915429
 2022-05-29,26 day ahead inc hosp,2022-06-24,18,quantile,0.99,392.6519169182424
-2022-05-29,26 day ahead inc hosp,2022-06-24,06,quantile,0.01,-107.844482776435
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,06,quantile,0.025,97.98165954452128
 2022-05-29,26 day ahead inc hosp,2022-06-24,06,quantile,0.05,287.0606250147909
 2022-05-29,26 day ahead inc hosp,2022-06-24,06,quantile,0.1,339.1285246018253
@@ -30175,7 +30175,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,06,quantile,0.95,1864.2426210483416
 2022-05-29,26 day ahead inc hosp,2022-06-24,06,quantile,0.975,2233.830261465396
 2022-05-29,26 day ahead inc hosp,2022-06-24,06,quantile,0.99,2576.9703433146533
-2022-05-29,26 day ahead inc hosp,2022-06-24,51,quantile,0.01,-24.324704542693965
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,51,quantile,0.025,25.014143509990177
 2022-05-29,26 day ahead inc hosp,2022-06-24,51,quantile,0.05,60.58941663873734
 2022-05-29,26 day ahead inc hosp,2022-06-24,51,quantile,0.1,71.28642032923268
@@ -30244,7 +30244,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,13,quantile,0.95,442.3885005901475
 2022-05-29,26 day ahead inc hosp,2022-06-24,13,quantile,0.975,545.7065990044375
 2022-05-29,26 day ahead inc hosp,2022-06-24,13,quantile,0.99,632.8324523091046
-2022-05-29,26 day ahead inc hosp,2022-06-24,55,quantile,0.01,-17.578004527385083
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,55,quantile,0.025,17.681298310767996
 2022-05-29,26 day ahead inc hosp,2022-06-24,55,quantile,0.05,39.549294362000616
 2022-05-29,26 day ahead inc hosp,2022-06-24,55,quantile,0.1,45.374322565860616
@@ -30382,7 +30382,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,04,quantile,0.95,311.14667685974194
 2022-05-29,26 day ahead inc hosp,2022-06-24,04,quantile,0.975,383.11943527288526
 2022-05-29,26 day ahead inc hosp,2022-06-24,04,quantile,0.99,443.5882055626181
-2022-05-29,26 day ahead inc hosp,2022-06-24,39,quantile,0.01,-4.328089421702971
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,39,quantile,0.025,57.36515079096524
 2022-05-29,26 day ahead inc hosp,2022-06-24,39,quantile,0.05,105.07376830919875
 2022-05-29,26 day ahead inc hosp,2022-06-24,39,quantile,0.1,118.88992103701898
@@ -30428,7 +30428,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,01,quantile,0.95,170.62623867151538
 2022-05-29,26 day ahead inc hosp,2022-06-24,01,quantile,0.975,207.6326082201
 2022-05-29,26 day ahead inc hosp,2022-06-24,01,quantile,0.99,242.0536607147235
-2022-05-29,26 day ahead inc hosp,2022-06-24,21,quantile,0.01,-13.813515378019124
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,21,quantile,0.025,12.201364808041856
 2022-05-29,26 day ahead inc hosp,2022-06-24,21,quantile,0.05,31.049707024574364
 2022-05-29,26 day ahead inc hosp,2022-06-24,21,quantile,0.1,35.8525613405084
@@ -30451,7 +30451,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,21,quantile,0.95,198.7104638642957
 2022-05-29,26 day ahead inc hosp,2022-06-24,21,quantile,0.975,245.10763908949133
 2022-05-29,26 day ahead inc hosp,2022-06-24,21,quantile,0.99,283.4592183086678
-2022-05-29,26 day ahead inc hosp,2022-06-24,35,quantile,0.01,-7.936687591923712
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,35,quantile,0.025,0.9594566917498488
 2022-05-29,26 day ahead inc hosp,2022-06-24,35,quantile,0.05,8.307324456280408
 2022-05-29,26 day ahead inc hosp,2022-06-24,35,quantile,0.1,8.466169390556491
@@ -30474,7 +30474,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,26 day ahead inc hosp,2022-06-24,35,quantile,0.95,83.80944314278464
 2022-05-29,26 day ahead inc hosp,2022-06-24,35,quantile,0.975,102.12418954803752
 2022-05-29,26 day ahead inc hosp,2022-06-24,35,quantile,0.99,117.97041032989674
-2022-05-29,26 day ahead inc hosp,2022-06-24,50,quantile,0.01,-1.665232546243291
+0,0,0,0,0,0,0.0
 2022-05-29,26 day ahead inc hosp,2022-06-24,50,quantile,0.025,1.2451225563233457
 2022-05-29,26 day ahead inc hosp,2022-06-24,50,quantile,0.05,3.383151602943934
 2022-05-29,26 day ahead inc hosp,2022-06-24,50,quantile,0.1,3.738093148988386
@@ -31739,7 +31739,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,28 day ahead inc hosp,2022-06-26,02,quantile,0.95,49.01778325987743
 2022-05-29,28 day ahead inc hosp,2022-06-26,02,quantile,0.975,57.821960919522674
 2022-05-29,28 day ahead inc hosp,2022-06-26,02,quantile,0.99,64.80222292654305
-2022-05-29,28 day ahead inc hosp,2022-06-26,31,quantile,0.01,-1.94193490396247
+0,0,0,0,0,0,0.0
 2022-05-29,28 day ahead inc hosp,2022-06-26,31,quantile,0.025,3.45552366039979
 2022-05-29,28 day ahead inc hosp,2022-06-26,31,quantile,0.05,11.699707361093084
 2022-05-29,28 day ahead inc hosp,2022-06-26,31,quantile,0.1,12.711529859179604
@@ -31808,7 +31808,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,28 day ahead inc hosp,2022-06-26,33,quantile,0.95,63.8811732169063
 2022-05-29,28 day ahead inc hosp,2022-06-26,33,quantile,0.975,77.9499403327917
 2022-05-29,28 day ahead inc hosp,2022-06-26,33,quantile,0.99,89.74306704788962
-2022-05-29,28 day ahead inc hosp,2022-06-26,46,quantile,0.01,-0.2870668746957118
+0,0,0,0,0,0,0.0
 2022-05-29,28 day ahead inc hosp,2022-06-26,46,quantile,0.025,2.114810577564467
 2022-05-29,28 day ahead inc hosp,2022-06-26,46,quantile,0.05,5.918044327610966
 2022-05-29,28 day ahead inc hosp,2022-06-26,46,quantile,0.1,6.482976411952353
@@ -31877,7 +31877,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,28 day ahead inc hosp,2022-06-26,38,quantile,0.95,40.99478104478664
 2022-05-29,28 day ahead inc hosp,2022-06-26,38,quantile,0.975,48.94958022776802
 2022-05-29,28 day ahead inc hosp,2022-06-26,38,quantile,0.99,55.385008538240406
-2022-05-29,28 day ahead inc hosp,2022-06-26,16,quantile,0.01,-2.9460051396017084
+0,0,0,0,0,0,0.0
 2022-05-29,28 day ahead inc hosp,2022-06-26,16,quantile,0.025,2.3456446705368643
 2022-05-29,28 day ahead inc hosp,2022-06-26,16,quantile,0.05,9.538116049284298
 2022-05-29,28 day ahead inc hosp,2022-06-26,16,quantile,0.1,10.84706723088695
@@ -31923,7 +31923,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,28 day ahead inc hosp,2022-06-26,09,quantile,0.95,247.05003407327777
 2022-05-29,28 day ahead inc hosp,2022-06-26,09,quantile,0.975,293.4316470979019
 2022-05-29,28 day ahead inc hosp,2022-06-26,09,quantile,0.99,329.91072184097993
-2022-05-29,28 day ahead inc hosp,2022-06-26,45,quantile,0.01,-6.748872400858029
+0,0,0,0,0,0,0.0
 2022-05-29,28 day ahead inc hosp,2022-06-26,45,quantile,0.025,7.339672493779939
 2022-05-29,28 day ahead inc hosp,2022-06-26,45,quantile,0.05,29.642558943439813
 2022-05-29,28 day ahead inc hosp,2022-06-26,45,quantile,0.1,33.29425614023017
@@ -31946,7 +31946,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,28 day ahead inc hosp,2022-06-26,45,quantile,0.95,224.31629976559427
 2022-05-29,28 day ahead inc hosp,2022-06-26,45,quantile,0.975,271.2364572633236
 2022-05-29,28 day ahead inc hosp,2022-06-26,45,quantile,0.99,313.6832770545368
-2022-05-29,28 day ahead inc hosp,2022-06-26,56,quantile,0.01,-1.1694936357335664
+0,0,0,0,0,0,0.0
 2022-05-29,28 day ahead inc hosp,2022-06-26,56,quantile,0.025,0.1105165699185679
 2022-05-29,28 day ahead inc hosp,2022-06-26,56,quantile,0.05,2.223177182833922
 2022-05-29,28 day ahead inc hosp,2022-06-26,56,quantile,0.1,2.453715316112818
@@ -31969,7 +31969,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,28 day ahead inc hosp,2022-06-26,56,quantile,0.95,20.960905664467077
 2022-05-29,28 day ahead inc hosp,2022-06-26,56,quantile,0.975,25.35185632861391
 2022-05-29,28 day ahead inc hosp,2022-06-26,56,quantile,0.99,30.067144217782463
-2022-05-29,28 day ahead inc hosp,2022-06-26,49,quantile,0.01,-0.9456751520194012
+0,0,0,0,0,0,0.0
 2022-05-29,28 day ahead inc hosp,2022-06-26,49,quantile,0.025,9.41035080573482
 2022-05-29,28 day ahead inc hosp,2022-06-26,49,quantile,0.05,24.694174256434145
 2022-05-29,28 day ahead inc hosp,2022-06-26,49,quantile,0.1,26.157046489533755
@@ -32176,7 +32176,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,28 day ahead inc hosp,2022-06-26,19,quantile,0.95,169.0568898643007
 2022-05-29,28 day ahead inc hosp,2022-06-26,19,quantile,0.975,203.49501529591012
 2022-05-29,28 day ahead inc hosp,2022-06-26,19,quantile,0.99,230.19301559366505
-2022-05-29,28 day ahead inc hosp,2022-06-26,28,quantile,0.01,-6.10328769465969
+0,0,0,0,0,0,0.0
 2022-05-29,28 day ahead inc hosp,2022-06-26,28,quantile,0.025,0.438569184733579
 2022-05-29,28 day ahead inc hosp,2022-06-26,28,quantile,0.05,10.99725099185404
 2022-05-29,28 day ahead inc hosp,2022-06-26,28,quantile,0.1,12.63918456017112
@@ -32222,7 +32222,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,28 day ahead inc hosp,2022-06-26,08,quantile,0.95,504.6719852161961
 2022-05-29,28 day ahead inc hosp,2022-06-26,08,quantile,0.975,596.9867256995215
 2022-05-29,28 day ahead inc hosp,2022-06-26,08,quantile,0.99,676.0459286921111
-2022-05-29,28 day ahead inc hosp,2022-06-26,20,quantile,0.01,-4.457626949645899
+0,0,0,0,0,0,0.0
 2022-05-29,28 day ahead inc hosp,2022-06-26,20,quantile,0.025,1.6972310839250928
 2022-05-29,28 day ahead inc hosp,2022-06-26,20,quantile,0.05,13.28102050822976
 2022-05-29,28 day ahead inc hosp,2022-06-26,20,quantile,0.1,14.830482306272462
@@ -32406,7 +32406,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,28 day ahead inc hosp,2022-06-26,34,quantile,0.95,541.113643981116
 2022-05-29,28 day ahead inc hosp,2022-06-26,34,quantile,0.975,647.0176922302298
 2022-05-29,28 day ahead inc hosp,2022-06-26,34,quantile,0.99,742.6102228640549
-2022-05-29,28 day ahead inc hosp,2022-06-26,29,quantile,0.01,-6.00540285754291
+0,0,0,0,0,0,0.0
 2022-05-29,28 day ahead inc hosp,2022-06-26,29,quantile,0.025,13.607021470398225
 2022-05-29,28 day ahead inc hosp,2022-06-26,29,quantile,0.05,46.73393606654643
 2022-05-29,28 day ahead inc hosp,2022-06-26,29,quantile,0.1,50.03771303758924
@@ -32429,7 +32429,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,28 day ahead inc hosp,2022-06-26,29,quantile,0.95,302.1164637133093
 2022-05-29,28 day ahead inc hosp,2022-06-26,29,quantile,0.975,368.6625975991258
 2022-05-29,28 day ahead inc hosp,2022-06-26,29,quantile,0.99,420.03598477214064
-2022-05-29,28 day ahead inc hosp,2022-06-26,48,quantile,0.01,-53.52604508928335
+0,0,0,0,0,0,0.0
 2022-05-29,28 day ahead inc hosp,2022-06-26,48,quantile,0.025,23.59943828094089
 2022-05-29,28 day ahead inc hosp,2022-06-26,48,quantile,0.05,134.99474698139775
 2022-05-29,28 day ahead inc hosp,2022-06-26,48,quantile,0.1,151.66813206709523
@@ -32452,8 +32452,8 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,28 day ahead inc hosp,2022-06-26,48,quantile,0.95,1127.113540842512
 2022-05-29,28 day ahead inc hosp,2022-06-26,48,quantile,0.975,1363.4923728614924
 2022-05-29,28 day ahead inc hosp,2022-06-26,48,quantile,0.99,1602.9845982576364
-2022-05-29,28 day ahead inc hosp,2022-06-26,05,quantile,0.01,-6.192667182729622
-2022-05-29,28 day ahead inc hosp,2022-06-26,05,quantile,0.025,-0.3596393092655516
+0,0,0,0,0,0,0.0
+0,0,0,0,0,0,0.0
 2022-05-29,28 day ahead inc hosp,2022-06-26,05,quantile,0.05,10.00151563988943
 2022-05-29,28 day ahead inc hosp,2022-06-26,05,quantile,0.1,11.006389112344042
 2022-05-29,28 day ahead inc hosp,2022-06-26,05,quantile,0.15,12.571385883972466
@@ -32475,7 +32475,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,28 day ahead inc hosp,2022-06-26,05,quantile,0.95,110.02824622610358
 2022-05-29,28 day ahead inc hosp,2022-06-26,05,quantile,0.975,133.143368778011
 2022-05-29,28 day ahead inc hosp,2022-06-26,05,quantile,0.99,157.77743477699664
-2022-05-29,28 day ahead inc hosp,2022-06-26,18,quantile,0.01,-5.708591897327762
+0,0,0,0,0,0,0.0
 2022-05-29,28 day ahead inc hosp,2022-06-26,18,quantile,0.025,14.256246840039562
 2022-05-29,28 day ahead inc hosp,2022-06-26,18,quantile,0.05,47.435101431900655
 2022-05-29,28 day ahead inc hosp,2022-06-26,18,quantile,0.1,50.89601764316611
@@ -32521,7 +32521,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,28 day ahead inc hosp,2022-06-26,06,quantile,0.95,2017.814107953213
 2022-05-29,28 day ahead inc hosp,2022-06-26,06,quantile,0.975,2415.18214600124
 2022-05-29,28 day ahead inc hosp,2022-06-26,06,quantile,0.99,2739.9831798855234
-2022-05-29,28 day ahead inc hosp,2022-06-26,51,quantile,0.01,-0.053136671421484
+0,0,0,0,0,0,0.0
 2022-05-29,28 day ahead inc hosp,2022-06-26,51,quantile,0.025,25.96044426528595
 2022-05-29,28 day ahead inc hosp,2022-06-26,51,quantile,0.05,66.43577372517359
 2022-05-29,28 day ahead inc hosp,2022-06-26,51,quantile,0.1,75.59507660505474
@@ -32590,7 +32590,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,28 day ahead inc hosp,2022-06-26,13,quantile,0.95,480.7718911015669
 2022-05-29,28 day ahead inc hosp,2022-06-26,13,quantile,0.975,592.0604198631866
 2022-05-29,28 day ahead inc hosp,2022-06-26,13,quantile,0.99,674.7710386159602
-2022-05-29,28 day ahead inc hosp,2022-06-26,55,quantile,0.01,-2.8788229854363405
+0,0,0,0,0,0,0.0
 2022-05-29,28 day ahead inc hosp,2022-06-26,55,quantile,0.025,15.736005031592573
 2022-05-29,28 day ahead inc hosp,2022-06-26,55,quantile,0.05,40.59240764817123
 2022-05-29,28 day ahead inc hosp,2022-06-26,55,quantile,0.1,46.37756989275724
@@ -32613,7 +32613,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,28 day ahead inc hosp,2022-06-26,55,quantile,0.95,284.6205429044523
 2022-05-29,28 day ahead inc hosp,2022-06-26,55,quantile,0.975,342.9929690463585
 2022-05-29,28 day ahead inc hosp,2022-06-26,55,quantile,0.99,390.0391246874465
-2022-05-29,28 day ahead inc hosp,2022-06-26,47,quantile,0.01,-13.105227980839164
+0,0,0,0,0,0,0.0
 2022-05-29,28 day ahead inc hosp,2022-06-26,47,quantile,0.025,5.614658709751846
 2022-05-29,28 day ahead inc hosp,2022-06-26,47,quantile,0.05,32.39366179154746
 2022-05-29,28 day ahead inc hosp,2022-06-26,47,quantile,0.1,36.35882514959197
@@ -32659,8 +32659,8 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,28 day ahead inc hosp,2022-06-26,36,quantile,0.95,1050.817692067298
 2022-05-29,28 day ahead inc hosp,2022-06-26,36,quantile,0.975,1265.9727572806116
 2022-05-29,28 day ahead inc hosp,2022-06-26,36,quantile,0.99,1449.5841814415032
-2022-05-29,28 day ahead inc hosp,2022-06-26,40,quantile,0.01,-7.823791492346737
-2022-05-29,28 day ahead inc hosp,2022-06-26,40,quantile,0.025,-0.6356527057437071
+0,0,0,0,0,0,0.0
+0,0,0,0,0,0,0.0
 2022-05-29,28 day ahead inc hosp,2022-06-26,40,quantile,0.05,13.415943802392013
 2022-05-29,28 day ahead inc hosp,2022-06-26,40,quantile,0.1,14.9720379617994
 2022-05-29,28 day ahead inc hosp,2022-06-26,40,quantile,0.15,16.866484790316427
@@ -32751,7 +32751,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,28 day ahead inc hosp,2022-06-26,39,quantile,0.95,672.7136005993458
 2022-05-29,28 day ahead inc hosp,2022-06-26,39,quantile,0.975,805.8172325353454
 2022-05-29,28 day ahead inc hosp,2022-06-26,39,quantile,0.99,908.693498421746
-2022-05-29,28 day ahead inc hosp,2022-06-26,01,quantile,0.01,-9.711932150869174
+0,0,0,0,0,0,0.0
 2022-05-29,28 day ahead inc hosp,2022-06-26,01,quantile,0.025,2.0830341959893426
 2022-05-29,28 day ahead inc hosp,2022-06-26,01,quantile,0.05,19.7026671552156
 2022-05-29,28 day ahead inc hosp,2022-06-26,01,quantile,0.1,21.878180502793136
@@ -32774,7 +32774,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,28 day ahead inc hosp,2022-06-26,01,quantile,0.95,181.55833554613
 2022-05-29,28 day ahead inc hosp,2022-06-26,01,quantile,0.975,219.65061279706453
 2022-05-29,28 day ahead inc hosp,2022-06-26,01,quantile,0.99,259.81081939513035
-2022-05-29,28 day ahead inc hosp,2022-06-26,21,quantile,0.01,-0.2542209714652739
+0,0,0,0,0,0,0.0
 2022-05-29,28 day ahead inc hosp,2022-06-26,21,quantile,0.025,12.329846201986957
 2022-05-29,28 day ahead inc hosp,2022-06-26,21,quantile,0.05,34.7604959538851
 2022-05-29,28 day ahead inc hosp,2022-06-26,21,quantile,0.1,38.291978980675175
@@ -32820,7 +32820,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,28 day ahead inc hosp,2022-06-26,35,quantile,0.95,88.59647141398611
 2022-05-29,28 day ahead inc hosp,2022-06-26,35,quantile,0.975,109.52449849591297
 2022-05-29,28 day ahead inc hosp,2022-06-26,35,quantile,0.99,125.72949480048702
-2022-05-29,28 day ahead inc hosp,2022-06-26,50,quantile,0.01,-0.9456909126115528
+0,0,0,0,0,0,0.0
 2022-05-29,28 day ahead inc hosp,2022-06-26,50,quantile,0.025,1.0460457244263497
 2022-05-29,28 day ahead inc hosp,2022-06-26,50,quantile,0.05,3.4962427759731334
 2022-05-29,28 day ahead inc hosp,2022-06-26,50,quantile,0.1,3.9199669357190414
@@ -33096,7 +33096,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,29 day ahead inc hosp,2022-06-27,09,quantile,0.95,256.70387625125414
 2022-05-29,29 day ahead inc hosp,2022-06-27,09,quantile,0.975,295.6635944971845
 2022-05-29,29 day ahead inc hosp,2022-06-27,09,quantile,0.99,331.4630962795485
-2022-05-29,29 day ahead inc hosp,2022-06-27,45,quantile,0.01,-0.243814721082608
+0,0,0,0,0,0,0.0
 2022-05-29,29 day ahead inc hosp,2022-06-27,45,quantile,0.025,13.38816891293793
 2022-05-29,29 day ahead inc hosp,2022-06-27,45,quantile,0.05,28.187568528931752
 2022-05-29,29 day ahead inc hosp,2022-06-27,45,quantile,0.1,29.80209210512949
@@ -33119,7 +33119,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,29 day ahead inc hosp,2022-06-27,45,quantile,0.95,225.807010807742
 2022-05-29,29 day ahead inc hosp,2022-06-27,45,quantile,0.975,279.61365601112163
 2022-05-29,29 day ahead inc hosp,2022-06-27,45,quantile,0.99,316.81661854124417
-2022-05-29,29 day ahead inc hosp,2022-06-27,56,quantile,0.01,-0.3326245346616587
+0,0,0,0,0,0,0.0
 2022-05-29,29 day ahead inc hosp,2022-06-27,56,quantile,0.025,0.9833474075958476
 2022-05-29,29 day ahead inc hosp,2022-06-27,56,quantile,0.05,2.237736932701285
 2022-05-29,29 day ahead inc hosp,2022-06-27,56,quantile,0.1,2.4028236084066013
@@ -33395,7 +33395,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,29 day ahead inc hosp,2022-06-27,08,quantile,0.95,524.0598491474743
 2022-05-29,29 day ahead inc hosp,2022-06-27,08,quantile,0.975,608.6650930589741
 2022-05-29,29 day ahead inc hosp,2022-06-27,08,quantile,0.99,697.9378932849079
-2022-05-29,29 day ahead inc hosp,2022-06-27,20,quantile,0.01,-1.9434341353718017
+0,0,0,0,0,0,0.0
 2022-05-29,29 day ahead inc hosp,2022-06-27,20,quantile,0.025,6.190397661626289
 2022-05-29,29 day ahead inc hosp,2022-06-27,20,quantile,0.05,12.739716023906896
 2022-05-29,29 day ahead inc hosp,2022-06-27,20,quantile,0.1,12.89731609691132
@@ -33602,7 +33602,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,29 day ahead inc hosp,2022-06-27,29,quantile,0.95,312.97122068219625
 2022-05-29,29 day ahead inc hosp,2022-06-27,29,quantile,0.975,381.5492993351036
 2022-05-29,29 day ahead inc hosp,2022-06-27,29,quantile,0.99,438.8539808581576
-2022-05-29,29 day ahead inc hosp,2022-06-27,48,quantile,0.01,-10.353809585363887
+0,0,0,0,0,0,0.0
 2022-05-29,29 day ahead inc hosp,2022-06-27,48,quantile,0.025,59.35162470537732
 2022-05-29,29 day ahead inc hosp,2022-06-27,48,quantile,0.05,134.231755220235
 2022-05-29,29 day ahead inc hosp,2022-06-27,48,quantile,0.1,136.60671591978468
@@ -33625,7 +33625,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,29 day ahead inc hosp,2022-06-27,48,quantile,0.95,1124.505411967451
 2022-05-29,29 day ahead inc hosp,2022-06-27,48,quantile,0.975,1398.515171678713
 2022-05-29,29 day ahead inc hosp,2022-06-27,48,quantile,0.99,1619.1218625567728
-2022-05-29,29 day ahead inc hosp,2022-06-27,05,quantile,0.01,-2.6809961738300307
+0,0,0,0,0,0,0.0
 2022-05-29,29 day ahead inc hosp,2022-06-27,05,quantile,0.025,4.947905801790972
 2022-05-29,29 day ahead inc hosp,2022-06-27,05,quantile,0.05,9.91455085236958
 2022-05-29,29 day ahead inc hosp,2022-06-27,05,quantile,0.1,10.98073342756325
@@ -33786,7 +33786,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,29 day ahead inc hosp,2022-06-27,55,quantile,0.95,288.58052703954394
 2022-05-29,29 day ahead inc hosp,2022-06-27,55,quantile,0.975,353.84672648309873
 2022-05-29,29 day ahead inc hosp,2022-06-27,55,quantile,0.99,393.7432074136893
-2022-05-29,29 day ahead inc hosp,2022-06-27,47,quantile,0.01,-1.5289345952196898
+0,0,0,0,0,0,0.0
 2022-05-29,29 day ahead inc hosp,2022-06-27,47,quantile,0.025,13.07450940788828
 2022-05-29,29 day ahead inc hosp,2022-06-27,47,quantile,0.05,31.65258183938531
 2022-05-29,29 day ahead inc hosp,2022-06-27,47,quantile,0.1,33.45178115123346
@@ -33832,7 +33832,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,29 day ahead inc hosp,2022-06-27,36,quantile,0.95,1099.4801769320848
 2022-05-29,29 day ahead inc hosp,2022-06-27,36,quantile,0.975,1271.3885087298145
 2022-05-29,29 day ahead inc hosp,2022-06-27,36,quantile,0.99,1513.6424183869185
-2022-05-29,29 day ahead inc hosp,2022-06-27,40,quantile,0.01,-2.979387504717792
+0,0,0,0,0,0,0.0
 2022-05-29,29 day ahead inc hosp,2022-06-27,40,quantile,0.025,6.293506838629249
 2022-05-29,29 day ahead inc hosp,2022-06-27,40,quantile,0.05,13.324226870151255
 2022-05-29,29 day ahead inc hosp,2022-06-27,40,quantile,0.1,14.759948415251529
@@ -33924,7 +33924,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,29 day ahead inc hosp,2022-06-27,39,quantile,0.95,694.2234593788818
 2022-05-29,29 day ahead inc hosp,2022-06-27,39,quantile,0.975,824.5422250715501
 2022-05-29,29 day ahead inc hosp,2022-06-27,39,quantile,0.99,937.6001407063592
-2022-05-29,29 day ahead inc hosp,2022-06-27,01,quantile,0.01,-2.468959237750853
+0,0,0,0,0,0,0.0
 2022-05-29,29 day ahead inc hosp,2022-06-27,01,quantile,0.025,8.86722986079236
 2022-05-29,29 day ahead inc hosp,2022-06-27,01,quantile,0.05,19.954940431108085
 2022-05-29,29 day ahead inc hosp,2022-06-27,01,quantile,0.1,21.244341476993576
@@ -33970,7 +33970,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,29 day ahead inc hosp,2022-06-27,21,quantile,0.95,226.00412026399724
 2022-05-29,29 day ahead inc hosp,2022-06-27,21,quantile,0.975,270.77770956176295
 2022-05-29,29 day ahead inc hosp,2022-06-27,21,quantile,0.99,315.4910958089983
-2022-05-29,29 day ahead inc hosp,2022-06-27,35,quantile,0.01,-1.4715455935078263
+0,0,0,0,0,0,0.0
 2022-05-29,29 day ahead inc hosp,2022-06-27,35,quantile,0.025,3.348365276415416
 2022-05-29,29 day ahead inc hosp,2022-06-27,35,quantile,0.05,8.209740594128839
 2022-05-29,29 day ahead inc hosp,2022-06-27,35,quantile,0.1,9.118282284406808
@@ -34085,7 +34085,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,30 day ahead inc hosp,2022-06-28,02,quantile,0.95,52.10328616119216
 2022-05-29,30 day ahead inc hosp,2022-06-28,02,quantile,0.975,60.209289650853975
 2022-05-29,30 day ahead inc hosp,2022-06-28,02,quantile,0.99,68.136266197398
-2022-05-29,30 day ahead inc hosp,2022-06-28,31,quantile,0.01,-0.8399422911310602
+0,0,0,0,0,0,0.0
 2022-05-29,30 day ahead inc hosp,2022-06-28,31,quantile,0.025,2.392066263907895
 2022-05-29,30 day ahead inc hosp,2022-06-28,31,quantile,0.05,11.881155143877065
 2022-05-29,30 day ahead inc hosp,2022-06-28,31,quantile,0.1,12.411230150480296
@@ -34223,7 +34223,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,30 day ahead inc hosp,2022-06-28,38,quantile,0.95,44.3189802747217
 2022-05-29,30 day ahead inc hosp,2022-06-28,38,quantile,0.975,52.13542013901792
 2022-05-29,30 day ahead inc hosp,2022-06-28,38,quantile,0.99,59.12054332489959
-2022-05-29,30 day ahead inc hosp,2022-06-28,16,quantile,0.01,-1.999997606781515
+0,0,0,0,0,0,0.0
 2022-05-29,30 day ahead inc hosp,2022-06-28,16,quantile,0.025,1.5457629898570282
 2022-05-29,30 day ahead inc hosp,2022-06-28,16,quantile,0.05,9.96353082849937
 2022-05-29,30 day ahead inc hosp,2022-06-28,16,quantile,0.1,10.410390289221809
@@ -34269,7 +34269,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,30 day ahead inc hosp,2022-06-28,09,quantile,0.95,262.8504556018105
 2022-05-29,30 day ahead inc hosp,2022-06-28,09,quantile,0.975,308.32596811925885
 2022-05-29,30 day ahead inc hosp,2022-06-28,09,quantile,0.99,341.9978691395517
-2022-05-29,30 day ahead inc hosp,2022-06-28,45,quantile,0.01,-2.338259262597844
+0,0,0,0,0,0,0.0
 2022-05-29,30 day ahead inc hosp,2022-06-28,45,quantile,0.025,6.9330021951589975
 2022-05-29,30 day ahead inc hosp,2022-06-28,45,quantile,0.05,28.307538605028444
 2022-05-29,30 day ahead inc hosp,2022-06-28,45,quantile,0.1,31.183791192010275
@@ -34568,7 +34568,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,30 day ahead inc hosp,2022-06-28,08,quantile,0.95,542.469369153474
 2022-05-29,30 day ahead inc hosp,2022-06-28,08,quantile,0.975,631.7467740731257
 2022-05-29,30 day ahead inc hosp,2022-06-28,08,quantile,0.99,716.7833470354371
-2022-05-29,30 day ahead inc hosp,2022-06-28,20,quantile,0.01,-2.098986557792666
+0,0,0,0,0,0,0.0
 2022-05-29,30 day ahead inc hosp,2022-06-28,20,quantile,0.025,1.176081003098854
 2022-05-29,30 day ahead inc hosp,2022-06-28,20,quantile,0.05,13.516684383818712
 2022-05-29,30 day ahead inc hosp,2022-06-28,20,quantile,0.1,14.947693046698896
@@ -34775,7 +34775,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,30 day ahead inc hosp,2022-06-28,29,quantile,0.95,326.74108344369034
 2022-05-29,30 day ahead inc hosp,2022-06-28,29,quantile,0.975,397.0526140969447
 2022-05-29,30 day ahead inc hosp,2022-06-28,29,quantile,0.99,458.2603557574252
-2022-05-29,30 day ahead inc hosp,2022-06-28,48,quantile,0.01,-34.090135211668844
+0,0,0,0,0,0,0.0
 2022-05-29,30 day ahead inc hosp,2022-06-28,48,quantile,0.025,10.792649048518864
 2022-05-29,30 day ahead inc hosp,2022-06-28,48,quantile,0.05,141.51979206973292
 2022-05-29,30 day ahead inc hosp,2022-06-28,48,quantile,0.1,148.34504189963005
@@ -34959,7 +34959,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,30 day ahead inc hosp,2022-06-28,55,quantile,0.95,299.5033285702546
 2022-05-29,30 day ahead inc hosp,2022-06-28,55,quantile,0.975,357.5149263973825
 2022-05-29,30 day ahead inc hosp,2022-06-28,55,quantile,0.99,409.2945597581652
-2022-05-29,30 day ahead inc hosp,2022-06-28,47,quantile,0.01,-8.891626750759507
+0,0,0,0,0,0,0.0
 2022-05-29,30 day ahead inc hosp,2022-06-28,47,quantile,0.025,3.367931456484471
 2022-05-29,30 day ahead inc hosp,2022-06-28,47,quantile,0.05,34.110479935581935
 2022-05-29,30 day ahead inc hosp,2022-06-28,47,quantile,0.1,35.62098111891513
@@ -35258,7 +35258,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,31 day ahead inc hosp,2022-06-29,02,quantile,0.95,52.84645483604193
 2022-05-29,31 day ahead inc hosp,2022-06-29,02,quantile,0.975,62.72118121971911
 2022-05-29,31 day ahead inc hosp,2022-06-29,02,quantile,0.99,69.36582232126288
-2022-05-29,31 day ahead inc hosp,2022-06-29,31,quantile,0.01,-0.9287451504300092
+0,0,0,0,0,0,0.0
 2022-05-29,31 day ahead inc hosp,2022-06-29,31,quantile,0.025,3.822879992338863
 2022-05-29,31 day ahead inc hosp,2022-06-29,31,quantile,0.05,11.129485457149816
 2022-05-29,31 day ahead inc hosp,2022-06-29,31,quantile,0.1,12.95030307281156
@@ -35327,7 +35327,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,31 day ahead inc hosp,2022-06-29,33,quantile,0.95,69.31995733847651
 2022-05-29,31 day ahead inc hosp,2022-06-29,33,quantile,0.975,82.86778975124734
 2022-05-29,31 day ahead inc hosp,2022-06-29,33,quantile,0.99,96.57299087565876
-2022-05-29,31 day ahead inc hosp,2022-06-29,46,quantile,0.01,-0.3544648306777473
+0,0,0,0,0,0,0.0
 2022-05-29,31 day ahead inc hosp,2022-06-29,46,quantile,0.025,2.188723366546736
 2022-05-29,31 day ahead inc hosp,2022-06-29,46,quantile,0.05,5.657059768300827
 2022-05-29,31 day ahead inc hosp,2022-06-29,46,quantile,0.1,6.501476441748189
@@ -35396,7 +35396,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,31 day ahead inc hosp,2022-06-29,38,quantile,0.95,45.244382967424045
 2022-05-29,31 day ahead inc hosp,2022-06-29,38,quantile,0.975,53.807840832075165
 2022-05-29,31 day ahead inc hosp,2022-06-29,38,quantile,0.99,60.15997607327355
-2022-05-29,31 day ahead inc hosp,2022-06-29,16,quantile,0.01,-1.428181772208321
+0,0,0,0,0,0,0.0
 2022-05-29,31 day ahead inc hosp,2022-06-29,16,quantile,0.025,2.660526547109163
 2022-05-29,31 day ahead inc hosp,2022-06-29,16,quantile,0.05,9.175066553110392
 2022-05-29,31 day ahead inc hosp,2022-06-29,16,quantile,0.1,10.585130219516945
@@ -35442,7 +35442,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,31 day ahead inc hosp,2022-06-29,09,quantile,0.95,264.30665924093887
 2022-05-29,31 day ahead inc hosp,2022-06-29,09,quantile,0.975,315.94087936419965
 2022-05-29,31 day ahead inc hosp,2022-06-29,09,quantile,0.99,343.0188809938098
-2022-05-29,31 day ahead inc hosp,2022-06-29,45,quantile,0.01,-3.9165539495218464
+0,0,0,0,0,0,0.0
 2022-05-29,31 day ahead inc hosp,2022-06-29,45,quantile,0.025,8.861224851880712
 2022-05-29,31 day ahead inc hosp,2022-06-29,45,quantile,0.05,25.22106900621136
 2022-05-29,31 day ahead inc hosp,2022-06-29,45,quantile,0.1,32.2098697787922
@@ -35465,7 +35465,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,31 day ahead inc hosp,2022-06-29,45,quantile,0.95,243.01146381504012
 2022-05-29,31 day ahead inc hosp,2022-06-29,45,quantile,0.975,287.94643777472186
 2022-05-29,31 day ahead inc hosp,2022-06-29,45,quantile,0.99,340.3683495692655
-2022-05-29,31 day ahead inc hosp,2022-06-29,56,quantile,0.01,-0.7713458376026638
+0,0,0,0,0,0,0.0
 2022-05-29,31 day ahead inc hosp,2022-06-29,56,quantile,0.025,0.3863610979738678
 2022-05-29,31 day ahead inc hosp,2022-06-29,56,quantile,0.05,2.241745377414416
 2022-05-29,31 day ahead inc hosp,2022-06-29,56,quantile,0.1,2.415433983507544
@@ -35488,7 +35488,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,31 day ahead inc hosp,2022-06-29,56,quantile,0.95,22.530473438369
 2022-05-29,31 day ahead inc hosp,2022-06-29,56,quantile,0.975,28.32685474961684
 2022-05-29,31 day ahead inc hosp,2022-06-29,56,quantile,0.99,33.16403683725117
-2022-05-29,31 day ahead inc hosp,2022-06-29,49,quantile,0.01,-1.3190456987841404
+0,0,0,0,0,0,0.0
 2022-05-29,31 day ahead inc hosp,2022-06-29,49,quantile,0.025,7.934553525905479
 2022-05-29,31 day ahead inc hosp,2022-06-29,49,quantile,0.05,21.80290080124872
 2022-05-29,31 day ahead inc hosp,2022-06-29,49,quantile,0.1,26.12229697604392
@@ -35695,7 +35695,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,31 day ahead inc hosp,2022-06-29,19,quantile,0.95,186.9279480713844
 2022-05-29,31 day ahead inc hosp,2022-06-29,19,quantile,0.975,221.5383938829777
 2022-05-29,31 day ahead inc hosp,2022-06-29,19,quantile,0.99,249.55362129078347
-2022-05-29,31 day ahead inc hosp,2022-06-29,28,quantile,0.01,-3.839544560167935
+0,0,0,0,0,0,0.0
 2022-05-29,31 day ahead inc hosp,2022-06-29,28,quantile,0.025,1.551203107214036
 2022-05-29,31 day ahead inc hosp,2022-06-29,28,quantile,0.05,11.144970719832866
 2022-05-29,31 day ahead inc hosp,2022-06-29,28,quantile,0.1,12.807892946397375
@@ -35741,7 +35741,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,31 day ahead inc hosp,2022-06-29,08,quantile,0.95,554.4155818823291
 2022-05-29,31 day ahead inc hosp,2022-06-29,08,quantile,0.975,641.5245739973097
 2022-05-29,31 day ahead inc hosp,2022-06-29,08,quantile,0.99,711.1217339890128
-2022-05-29,31 day ahead inc hosp,2022-06-29,20,quantile,0.01,-2.808255908242362
+0,0,0,0,0,0,0.0
 2022-05-29,31 day ahead inc hosp,2022-06-29,20,quantile,0.025,3.32234091700992
 2022-05-29,31 day ahead inc hosp,2022-06-29,20,quantile,0.05,12.326838343600194
 2022-05-29,31 day ahead inc hosp,2022-06-29,20,quantile,0.1,14.547423372232544
@@ -35787,7 +35787,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,31 day ahead inc hosp,2022-06-29,26,quantile,0.95,607.9523200277199
 2022-05-29,31 day ahead inc hosp,2022-06-29,26,quantile,0.975,715.1941041249207
 2022-05-29,31 day ahead inc hosp,2022-06-29,26,quantile,0.99,816.9810288865395
-2022-05-29,31 day ahead inc hosp,2022-06-29,37,quantile,0.01,-0.5955539289873322
+0,0,0,0,0,0,0.0
 2022-05-29,31 day ahead inc hosp,2022-06-29,37,quantile,0.025,28.375527772173378
 2022-05-29,31 day ahead inc hosp,2022-06-29,37,quantile,0.05,74.30691264210704
 2022-05-29,31 day ahead inc hosp,2022-06-29,37,quantile,0.1,96.3382070181984
@@ -35925,7 +35925,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,31 day ahead inc hosp,2022-06-29,34,quantile,0.95,597.4511293062864
 2022-05-29,31 day ahead inc hosp,2022-06-29,34,quantile,0.975,702.0003177073932
 2022-05-29,31 day ahead inc hosp,2022-06-29,34,quantile,0.99,786.8793455211191
-2022-05-29,31 day ahead inc hosp,2022-06-29,29,quantile,0.01,-2.1600059468442523
+0,0,0,0,0,0,0.0
 2022-05-29,31 day ahead inc hosp,2022-06-29,29,quantile,0.025,11.795028037497394
 2022-05-29,31 day ahead inc hosp,2022-06-29,29,quantile,0.05,38.58080290535593
 2022-05-29,31 day ahead inc hosp,2022-06-29,29,quantile,0.1,51.3696009500676
@@ -35971,7 +35971,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,31 day ahead inc hosp,2022-06-29,48,quantile,0.95,1224.410275414791
 2022-05-29,31 day ahead inc hosp,2022-06-29,48,quantile,0.975,1517.8210241622576
 2022-05-29,31 day ahead inc hosp,2022-06-29,48,quantile,0.99,1757.1778311151968
-2022-05-29,31 day ahead inc hosp,2022-06-29,05,quantile,0.01,-4.144192427538194
+0,0,0,0,0,0,0.0
 2022-05-29,31 day ahead inc hosp,2022-06-29,05,quantile,0.025,2.0184746507986584
 2022-05-29,31 day ahead inc hosp,2022-06-29,05,quantile,0.05,10.109369612463032
 2022-05-29,31 day ahead inc hosp,2022-06-29,05,quantile,0.1,11.309991312457868
@@ -35994,7 +35994,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,31 day ahead inc hosp,2022-06-29,05,quantile,0.95,115.90638901948408
 2022-05-29,31 day ahead inc hosp,2022-06-29,05,quantile,0.975,141.21772398562254
 2022-05-29,31 day ahead inc hosp,2022-06-29,05,quantile,0.99,173.9819311134001
-2022-05-29,31 day ahead inc hosp,2022-06-29,18,quantile,0.01,-2.12294744728222
+0,0,0,0,0,0,0.0
 2022-05-29,31 day ahead inc hosp,2022-06-29,18,quantile,0.025,12.752197602627216
 2022-05-29,31 day ahead inc hosp,2022-06-29,18,quantile,0.05,40.28167642278575
 2022-05-29,31 day ahead inc hosp,2022-06-29,18,quantile,0.1,51.18327539002409
@@ -36017,7 +36017,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,31 day ahead inc hosp,2022-06-29,18,quantile,0.95,332.0467461474516
 2022-05-29,31 day ahead inc hosp,2022-06-29,18,quantile,0.975,406.15593523200977
 2022-05-29,31 day ahead inc hosp,2022-06-29,18,quantile,0.99,473.3560551390592
-2022-05-29,31 day ahead inc hosp,2022-06-29,06,quantile,0.01,-9.044876472192698
+0,0,0,0,0,0,0.0
 2022-05-29,31 day ahead inc hosp,2022-06-29,06,quantile,0.025,111.88521756457064
 2022-05-29,31 day ahead inc hosp,2022-06-29,06,quantile,0.05,272.3106589975832
 2022-05-29,31 day ahead inc hosp,2022-06-29,06,quantile,0.1,363.32237560852496
@@ -36178,7 +36178,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,31 day ahead inc hosp,2022-06-29,36,quantile,0.95,1130.6632278194295
 2022-05-29,31 day ahead inc hosp,2022-06-29,36,quantile,0.975,1334.7169308266225
 2022-05-29,31 day ahead inc hosp,2022-06-29,36,quantile,0.99,1547.73369607297
-2022-05-29,31 day ahead inc hosp,2022-06-29,40,quantile,0.01,-5.329590925488756
+0,0,0,0,0,0,0.0
 2022-05-29,31 day ahead inc hosp,2022-06-29,40,quantile,0.025,2.4239429054181936
 2022-05-29,31 day ahead inc hosp,2022-06-29,40,quantile,0.05,13.60381507892742
 2022-05-29,31 day ahead inc hosp,2022-06-29,40,quantile,0.1,15.10544156784226
@@ -36293,7 +36293,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,31 day ahead inc hosp,2022-06-29,01,quantile,0.95,194.45897713291996
 2022-05-29,31 day ahead inc hosp,2022-06-29,01,quantile,0.975,243.70287547479344
 2022-05-29,31 day ahead inc hosp,2022-06-29,01,quantile,0.99,286.0295732142536
-2022-05-29,31 day ahead inc hosp,2022-06-29,21,quantile,0.01,-0.2897152134833354
+0,0,0,0,0,0,0.0
 2022-05-29,31 day ahead inc hosp,2022-06-29,21,quantile,0.025,10.883596969937896
 2022-05-29,31 day ahead inc hosp,2022-06-29,21,quantile,0.05,29.91793113159785
 2022-05-29,31 day ahead inc hosp,2022-06-29,21,quantile,0.1,38.45489614023621
@@ -36316,7 +36316,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,31 day ahead inc hosp,2022-06-29,21,quantile,0.95,241.9629762638593
 2022-05-29,31 day ahead inc hosp,2022-06-29,21,quantile,0.975,287.8719116072996
 2022-05-29,31 day ahead inc hosp,2022-06-29,21,quantile,0.99,335.790443785912
-2022-05-29,31 day ahead inc hosp,2022-06-29,35,quantile,0.01,-1.6050962210748412
+0,0,0,0,0,0,0.0
 2022-05-29,31 day ahead inc hosp,2022-06-29,35,quantile,0.025,0.8505959570163639
 2022-05-29,31 day ahead inc hosp,2022-06-29,35,quantile,0.05,7.322452745200188
 2022-05-29,31 day ahead inc hosp,2022-06-29,35,quantile,0.1,10.104950677829374
@@ -36431,7 +36431,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,32 day ahead inc hosp,2022-06-30,02,quantile,0.95,54.50053872788238
 2022-05-29,32 day ahead inc hosp,2022-06-30,02,quantile,0.975,64.51408651169304
 2022-05-29,32 day ahead inc hosp,2022-06-30,02,quantile,0.99,70.29214324191476
-2022-05-29,32 day ahead inc hosp,2022-06-30,31,quantile,0.01,-0.0045721285567563
+0,0,0,0,0,0,0.0
 2022-05-29,32 day ahead inc hosp,2022-06-30,31,quantile,0.025,3.329942393434881
 2022-05-29,32 day ahead inc hosp,2022-06-30,31,quantile,0.05,11.525599983245137
 2022-05-29,32 day ahead inc hosp,2022-06-30,31,quantile,0.1,12.70639692253339
@@ -36569,7 +36569,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,32 day ahead inc hosp,2022-06-30,38,quantile,0.95,46.46170371601847
 2022-05-29,32 day ahead inc hosp,2022-06-30,38,quantile,0.975,56.03354514691298
 2022-05-29,32 day ahead inc hosp,2022-06-30,38,quantile,0.99,62.15971010748173
-2022-05-29,32 day ahead inc hosp,2022-06-30,16,quantile,0.01,-0.1260471626149218
+0,0,0,0,0,0,0.0
 2022-05-29,32 day ahead inc hosp,2022-06-30,16,quantile,0.025,2.333874440607845
 2022-05-29,32 day ahead inc hosp,2022-06-30,16,quantile,0.05,9.794676013168743
 2022-05-29,32 day ahead inc hosp,2022-06-30,16,quantile,0.1,10.506704358946733
@@ -36638,7 +36638,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,32 day ahead inc hosp,2022-06-30,45,quantile,0.95,247.05046654219484
 2022-05-29,32 day ahead inc hosp,2022-06-30,45,quantile,0.975,301.6233212414927
 2022-05-29,32 day ahead inc hosp,2022-06-30,45,quantile,0.99,347.6860146788757
-2022-05-29,32 day ahead inc hosp,2022-06-30,56,quantile,0.01,-0.144035666579014
+0,0,0,0,0,0,0.0
 2022-05-29,32 day ahead inc hosp,2022-06-30,56,quantile,0.025,0.0514457153319098
 2022-05-29,32 day ahead inc hosp,2022-06-30,56,quantile,0.05,2.286281620612528
 2022-05-29,32 day ahead inc hosp,2022-06-30,56,quantile,0.1,2.6895690950033107
@@ -36868,7 +36868,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,32 day ahead inc hosp,2022-06-30,19,quantile,0.95,192.2835629186185
 2022-05-29,32 day ahead inc hosp,2022-06-30,19,quantile,0.975,230.5204701776209
 2022-05-29,32 day ahead inc hosp,2022-06-30,19,quantile,0.99,256.3891627332171
-2022-05-29,32 day ahead inc hosp,2022-06-30,28,quantile,0.01,-0.91753787412439
+0,0,0,0,0,0,0.0
 2022-05-29,32 day ahead inc hosp,2022-06-30,28,quantile,0.025,0.3772014504849368
 2022-05-29,32 day ahead inc hosp,2022-06-30,28,quantile,0.05,11.31699310472977
 2022-05-29,32 day ahead inc hosp,2022-06-30,28,quantile,0.1,14.282927900811885
@@ -37121,7 +37121,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,32 day ahead inc hosp,2022-06-30,29,quantile,0.95,351.1865368679461
 2022-05-29,32 day ahead inc hosp,2022-06-30,29,quantile,0.975,425.7484479862347
 2022-05-29,32 day ahead inc hosp,2022-06-30,29,quantile,0.99,487.1586593469832
-2022-05-29,32 day ahead inc hosp,2022-06-30,48,quantile,0.01,-0.384768072092363
+0,0,0,0,0,0,0.0
 2022-05-29,32 day ahead inc hosp,2022-06-30,48,quantile,0.025,20.54495235592588
 2022-05-29,32 day ahead inc hosp,2022-06-30,48,quantile,0.05,141.24317320794282
 2022-05-29,32 day ahead inc hosp,2022-06-30,48,quantile,0.1,149.78629944607616
@@ -37305,7 +37305,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,32 day ahead inc hosp,2022-06-30,55,quantile,0.95,315.4417000037189
 2022-05-29,32 day ahead inc hosp,2022-06-30,55,quantile,0.975,377.4053515943542
 2022-05-29,32 day ahead inc hosp,2022-06-30,55,quantile,0.99,427.8062282831165
-2022-05-29,32 day ahead inc hosp,2022-06-30,47,quantile,0.01,-0.7160171860835199
+0,0,0,0,0,0,0.0
 2022-05-29,32 day ahead inc hosp,2022-06-30,47,quantile,0.025,4.87020800604249
 2022-05-29,32 day ahead inc hosp,2022-06-30,47,quantile,0.05,33.81482457587356
 2022-05-29,32 day ahead inc hosp,2022-06-30,47,quantile,0.1,36.27509568115942
@@ -37443,7 +37443,7 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,32 day ahead inc hosp,2022-06-30,39,quantile,0.95,748.5145504334265
 2022-05-29,32 day ahead inc hosp,2022-06-30,39,quantile,0.975,890.8249275764414
 2022-05-29,32 day ahead inc hosp,2022-06-30,39,quantile,0.99,992.4450306199936
-2022-05-29,32 day ahead inc hosp,2022-06-30,01,quantile,0.01,-0.9124157006324723
+0,0,0,0,0,0,0.0
 2022-05-29,32 day ahead inc hosp,2022-06-30,01,quantile,0.025,1.5161840830514854
 2022-05-29,32 day ahead inc hosp,2022-06-30,01,quantile,0.05,20.41152989122877
 2022-05-29,32 day ahead inc hosp,2022-06-30,01,quantile,0.1,23.625468192950105
@@ -37489,8 +37489,8 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-05-29,32 day ahead inc hosp,2022-06-30,21,quantile,0.95,249.0702219135952
 2022-05-29,32 day ahead inc hosp,2022-06-30,21,quantile,0.975,301.25033224316206
 2022-05-29,32 day ahead inc hosp,2022-06-30,21,quantile,0.99,339.36744129799365
-2022-05-29,32 day ahead inc hosp,2022-06-30,35,quantile,0.01,-0.1335388659142308
-2022-05-29,32 day ahead inc hosp,2022-06-30,35,quantile,0.025,-0.0979198454682731
+0,0,0,0,0,0,0.0
+0,0,0,0,0,0,0.0
 2022-05-29,32 day ahead inc hosp,2022-06-30,35,quantile,0.05,7.755386952568547
 2022-05-29,32 day ahead inc hosp,2022-06-30,35,quantile,0.1,10.376539498998204
 2022-05-29,32 day ahead inc hosp,2022-06-30,35,quantile,0.15,10.8982894275018
