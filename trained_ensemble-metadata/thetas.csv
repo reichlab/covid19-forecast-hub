@@ -325,3 +325,12 @@ forecast_date,response_var,spatial_resolution,theta
 2022-05-30,inc_case,national,7.1
 2022-05-30,inc_hosp,state,8.4
 2022-05-30,inc_hosp,national,3.2
+2022-06-06,cum_death,state,6.1
+2022-06-06,cum_death,national,0
+2022-06-06,inc_death,state,10.6
+2022-06-06,inc_death,national,3.7
+2022-06-06,inc_case,county,0
+2022-06-06,inc_case,state,5.5
+2022-06-06,inc_case,national,5.4
+2022-06-06,inc_hosp,state,8.7
+2022-06-06,inc_hosp,national,3.5
