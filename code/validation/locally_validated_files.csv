@@ -6553,3 +6553,7 @@ file_path,validation_date
 ./data-processed/CMU-TimeSeries/2022-06-06-CMU-TimeSeries.csv,2022-06-07 00:31:50.821899
 ./data-processed/CovidAnalytics-DELPHI/2022-06-06-CovidAnalytics-DELPHI.csv,2022-06-07 00:31:53.170822
 ./data-processed/UVA-Ensemble/2022-06-06-UVA-Ensemble.csv,2022-06-07 00:32:06.776612
+./data-processed/JBUD-HMXK/2022-06-05-JBUD-HMXK.csv,2022-06-07 03:31:50.275434
+./data-processed/COVIDhub-trained_ensemble/2022-06-06-COVIDhub-trained_ensemble.csv,2022-06-07 03:32:02.552621
+./data-processed/COVIDhub-ensemble/2022-06-06-COVIDhub-ensemble.csv,2022-06-07 03:32:07.311543
+./data-processed/COVIDhub-4_week_ensemble/2022-06-06-COVIDhub-4_week_ensemble.csv,2022-06-07 03:32:18.460774
