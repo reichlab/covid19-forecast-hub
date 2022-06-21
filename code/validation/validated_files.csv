@@ -6645,3 +6645,5 @@ file_path,validation_date
 ./data-processed/MIT-Cassandra/2022-06-20-MIT-Cassandra.csv,2022-06-21 00:34:34.358815
 ./data-processed/CMU-TimeSeries/2022-06-20-CMU-TimeSeries.csv,2022-06-21 00:34:37.873419
 ./data-processed/UCF-AEM/2022-06-19-UCF-AEM.csv,2022-06-21 00:34:38.710349
+./data-processed/KITmetricslab-select_ensemble/2022-06-20-KITmetricslab-select_ensemble.csv,2022-06-21 12:35:37.841915
+./data-processed/CEID-Walk/2022-06-20-CEID-Walk.csv,2022-06-21 12:35:40.056211
