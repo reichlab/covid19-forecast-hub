@@ -6680,3 +6680,9 @@ file_path,validation_date
 ./data-processed/GT-DeepCOVID/2022-06-27-GT-DeepCOVID.csv,2022-06-27 18:34:33.428093
 ./data-processed/UCF-AEM/2022-06-26-UCF-AEM.csv,2022-06-27 18:34:33.468011
 ./data-processed/CMU-TimeSeries/2022-06-27-CMU-TimeSeries.csv,2022-06-27 18:34:36.004928
+./data-processed/COVIDhub-4_week_ensemble/2022-06-27-COVIDhub-4_week_ensemble.csv,2022-06-28 00:33:20.969817
+./data-processed/COVIDhub-ensemble/2022-06-27-COVIDhub-ensemble.csv,2022-06-28 00:33:24.756101
+./data-processed/CovidAnalytics-DELPHI/2022-06-27-CovidAnalytics-DELPHI.csv,2022-06-28 00:33:26.657335
+./data-processed/COVIDhub-trained_ensemble/2022-06-27-COVIDhub-trained_ensemble.csv,2022-06-28 00:33:36.596498
+./data-processed/UMass-trends_ensemble/2022-06-27-UMass-trends_ensemble.csv,2022-06-28 00:33:39.165040
+./data-processed/MUNI-ARIMA/2022-06-27-MUNI-ARIMA.csv,2022-06-28 00:33:43.335261
