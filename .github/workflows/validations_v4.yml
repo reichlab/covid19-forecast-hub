@@ -21,7 +21,7 @@ jobs:
     - name: Checkout Validation Repo
       uses: actions/checkout@v2
       with:
-        repository: 'reichlab/covid19-forecast-hub-validations'
+        repository: 'matthewcornell/covid19-forecast-hub-validations'
         ref: 'config'
         path: 'covid19-forecast-hub-validations'
     - name: Setup Python
@@ -44,9 +44,9 @@ jobs:
         Z_USERNAME: ${{ secrets.Z_USERNAME}}
         Z_PASSWORD: ${{ secrets.Z_PASSWORD}}
     
-    # Run and check for automerge
-    - name: Automerge check
-      uses: "pascalgn/automerge-action@v0.13.1"
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
-        MERGE_LABELS: "automerge,data-submission,!other-files-updated,!metadata-change,!forecast-updated,!viz,!code"
+    # # Run and check for automerge
+    # - name: Automerge check
+    #   uses: "pascalgn/automerge-action@v0.13.1"
+    #   env:
+    #     GITHUB_TOKEN: ${{ github.token }}
+    #     MERGE_LABELS: "automerge,data-submission,!other-files-updated,!metadata-change,!forecast-updated,!viz,!code"
