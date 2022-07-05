@@ -6713,3 +6713,12 @@ file_path,validation_date
 ./data-processed/JHUAPL-Bucky/2022-07-04-JHUAPL-Bucky.csv,2022-07-04 18:32:50.046796
 ./data-processed/SDSC_ISG-TrendModel/2022-07-03-SDSC_ISG-TrendModel.csv,2022-07-04 18:32:50.332682
 ./data-processed/LUcompUncertLab-VAR_3streams/2022-07-04-LUcompUncertLab-VAR_3streams.csv,2022-07-04 18:33:00.595057
+./data-processed/CMU-TimeSeries/2022-07-04-CMU-TimeSeries.csv,2022-07-05 00:34:06.184773
+./data-processed/UMass-trends_ensemble/2022-07-04-UMass-trends_ensemble.csv,2022-07-05 00:34:09.805188
+./data-processed/CovidAnalytics-DELPHI/2022-07-04-CovidAnalytics-DELPHI.csv,2022-07-05 00:34:11.308841
+./data-processed/COVIDhub-trained_ensemble/2022-07-04-COVIDhub-trained_ensemble.csv,2022-07-05 00:34:22.710751
+./data-processed/UVA-Ensemble/2022-07-04-UVA-Ensemble.csv,2022-07-05 00:34:26.112352
+./data-processed/JHU_IDD-CovidSP/2022-07-03-JHU_IDD-CovidSP.csv,2022-07-05 00:34:43.345128
+./data-processed/UMass-sarix/2022-07-04-UMass-sarix.csv,2022-07-05 00:34:46.532401
+./data-processed/COVIDhub-ensemble/2022-07-04-COVIDhub-ensemble.csv,2022-07-05 00:34:50.757169
+./data-processed/COVIDhub-4_week_ensemble/2022-07-04-COVIDhub-4_week_ensemble.csv,2022-07-05 00:35:01.995539
