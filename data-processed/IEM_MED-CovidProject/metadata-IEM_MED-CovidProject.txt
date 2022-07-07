@@ -3,7 +3,7 @@ model_name: CovidProjections
 model_abbr: IEM_MED-CovidProject
 model_contributors: Brad Suchoski (IEM) <bradley.suchoski@iem.com>, Steve Stage (IEM) <steve.stage@iem.com>,
   Heidi Gurung (IEM) <heidi.gurung@iem.com>, Sid Baccam (IEM) <sid.baccam@iem.com> 
-website_url: https://iem-modeling.com/ 
+website_url: https://iem.com/
 license: cc-by-4.0
 team_model_designation: primary
 ensemble_of_hub_models: false
@@ -20,4 +20,3 @@ methods_long: "IEM is currently using an AI model to fit data from various sourc
   \ in human behavior. Our model uses a sliding window to fit the data and find the best \
   \ R values for each of the windows. Projections of future cases assume that human behavior \
   \ and social distancing measures are unchanged."
-

@@ -24,10 +24,6 @@ jobs:
         repository: 'reichlab/covid19-forecast-hub-validations'
         ref: 'config'
         path: 'covid19-forecast-hub-validations'
-#     - name: Use Node.js ${{ matrix.node-version }}
-#       uses: actions/setup-node@v1
-#       with:
-#         node-version: ${{ matrix.node-version }}
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
@@ -45,6 +41,8 @@ jobs:
       run: pipenv run python main.py --project_dir ${{ github.workspace }}
       env:
         GH_TOKEN: ${{ github.token }}
+        Z_USERNAME: ${{ secrets.Z_USERNAME}}
+        Z_PASSWORD: ${{ secrets.Z_PASSWORD}}
     
     # Run and check for automerge
     - name: Automerge check

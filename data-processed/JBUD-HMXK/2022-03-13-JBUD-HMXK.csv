@@ -1,0 +1,5 @@
+location,forecast_date,target_end_date,target,type,quantile,value
+US,2022-03-13,2022-03-19,1 wk ahead inc case,point,,231673
+US,2022-03-13,2022-03-26,2 wk ahead inc case,point,,203839
+US,2022-03-13,2022-04-02,3 wk ahead inc case,point,,192794
+US,2022-03-13,2022-04-09,4 wk ahead inc case,point,,194086
