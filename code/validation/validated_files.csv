@@ -6757,3 +6757,6 @@ file_path,validation_date
 ./data-processed/UCF-AEM/2022-07-10-UCF-AEM.csv,2022-07-12 00:35:13.902156
 ./data-processed/UT-Osiris/2022-07-11-UT-Osiris.csv,2022-07-12 00:35:17.479900
 ./data-processed/CMU-TimeSeries/2022-07-11-CMU-TimeSeries.csv,2022-07-12 00:35:21.890033
+./data-processed/COVIDhub-ensemble/2022-07-11-COVIDhub-ensemble.csv,2022-07-12 03:43:55.105511
+./data-processed/COVIDhub-trained_ensemble/2022-07-11-COVIDhub-trained_ensemble.csv,2022-07-12 03:44:10.376426
+./data-processed/COVIDhub-4_week_ensemble/2022-07-11-COVIDhub-4_week_ensemble.csv,2022-07-12 03:44:24.935379
