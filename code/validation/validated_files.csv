@@ -6760,3 +6760,7 @@ file_path,validation_date
 ./data-processed/COVIDhub-ensemble/2022-07-11-COVIDhub-ensemble.csv,2022-07-12 03:43:55.105511
 ./data-processed/COVIDhub-trained_ensemble/2022-07-11-COVIDhub-trained_ensemble.csv,2022-07-12 03:44:10.376426
 ./data-processed/COVIDhub-4_week_ensemble/2022-07-11-COVIDhub-4_week_ensemble.csv,2022-07-12 03:44:24.935379
+./data-processed/KITmetricslab-select_ensemble/2022-07-11-KITmetricslab-select_ensemble.csv,2022-07-12 12:32:10.856574
+./data-processed/CovidAnalytics-DELPHI/2022-07-11-CovidAnalytics-DELPHI.csv,2022-07-12 12:32:12.451730
+./data-processed/CEID-Walk/2022-07-11-CEID-Walk.csv,2022-07-12 12:32:13.594170
+./data-processed/MUNI-ARIMA/2022-07-11-MUNI-ARIMA.csv,2022-07-12 12:32:17.552551
