@@ -6766,3 +6766,6 @@ file_path,validation_date
 ./data-processed/MUNI-ARIMA/2022-07-11-MUNI-ARIMA.csv,2022-07-12 12:32:17.552551
 ./data-processed/JHUAPL-SLPHospEns/2022-07-11-JHUAPL-SLPHospEns.csv,2022-07-12 18:34:45.470232
 ./data-processed/COVIDhub_CDC-ensemble/2022-07-11-COVIDhub_CDC-ensemble.csv,2022-07-12 18:34:48.862017
+./data-processed/TTU-squider/2022-07-17-TTU-squider.csv,2022-07-17 18:36:14.309125
+./data-processed/BPagano-RtDriven/2022-07-17-BPagano-RtDriven.csv,2022-07-17 18:36:18.914983
+./data-processed/USC-SI_kJalpha/2022-07-17-USC-SI_kJalpha.csv,2022-07-17 18:36:28.985542
