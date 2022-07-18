@@ -6772,3 +6772,7 @@ file_path,validation_date
 ./data-processed/CUB_PopCouncil-SLSTM/2022-07-16-CUB_PopCouncil-SLSTM.csv,2022-07-18 00:33:15.367732
 ./data-processed/LUcompUncertLab-VAR_3streams/2022-07-18-LUcompUncertLab-VAR_3streams.csv,2022-07-18 03:41:01.226199
 ./data-processed/QJHong-Encounter/2022-07-17-QJHong-Encounter.csv,2022-07-18 06:32:13.215300
+./data-processed/HKUST-DNN/2022-07-18-HKUST-DNN.csv,2022-07-18 12:35:16.144177
+./data-processed/JHUAPL-Morris/2022-07-18-JHUAPL-Morris.csv,2022-07-18 12:35:19.634786
+./data-processed/GT-DeepCOVID/2022-07-18-GT-DeepCOVID.csv,2022-07-18 12:35:23.539030
+./data-processed/Karlen-pypm/2022-07-17-Karlen-pypm.csv,2022-07-18 12:35:27.513211
