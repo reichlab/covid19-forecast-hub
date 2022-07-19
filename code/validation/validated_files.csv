@@ -6794,3 +6794,10 @@ file_path,validation_date
 ./data-processed/CU-nochange/2022-07-17-CU-nochange.csv,2022-07-18 18:34:25.114822
 ./data-processed/MOBS-GLEAM_COVID/2022-07-18-MOBS-GLEAM_COVID.csv,2022-07-18 18:34:30.463043
 ./data-processed/CU-scenario_low/2022-07-17-CU-scenario_low.csv,2022-07-18 18:34:51.704157
+./data-processed/UMass-trends_ensemble/2022-07-18-UMass-trends_ensemble.csv,2022-07-19 00:35:41.252235
+./data-processed/COVIDhub-ensemble/2022-07-18-COVIDhub-ensemble.csv,2022-07-19 00:35:46.507980
+./data-processed/COVIDhub-trained_ensemble/2022-07-18-COVIDhub-trained_ensemble.csv,2022-07-19 00:35:57.777783
+./data-processed/JHU_IDD-CovidSP/2022-07-17-JHU_IDD-CovidSP.csv,2022-07-19 00:36:13.529688
+./data-processed/COVIDhub-4_week_ensemble/2022-07-18-COVIDhub-4_week_ensemble.csv,2022-07-19 00:36:24.250231
+./data-processed/UMass-sarix/2022-07-18-UMass-sarix.csv,2022-07-19 00:36:27.120609
+./data-processed/MIT-Cassandra/2022-07-18-MIT-Cassandra.csv,2022-07-19 00:36:28.314860
