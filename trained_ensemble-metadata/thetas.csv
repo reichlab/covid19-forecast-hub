@@ -406,3 +406,12 @@ forecast_date,response_var,spatial_resolution,theta
 2022-08-01,inc_case,national,0
 2022-08-01,inc_hosp,state,7.9
 2022-08-01,inc_hosp,national,4.3
+2022-08-08,cum_death,state,3.5
+2022-08-08,cum_death,national,2.9
+2022-08-08,inc_death,state,6.2
+2022-08-08,inc_death,national,6.7
+2022-08-08,inc_case,county,3.8
+2022-08-08,inc_case,state,0.9
+2022-08-08,inc_case,national,0.2
+2022-08-08,inc_hosp,state,7.6
+2022-08-08,inc_hosp,national,3.9
