@@ -31,7 +31,7 @@ jobs:
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
 #     - run: npm install
     - name: Setup pipenv
-      run: pip3 install pipenv
+      run: pip3 install pipenv==2022.8.5
       working-directory: ./covid19-forecast-hub-validations
     - name: Install python dependencies 
       run: pipenv install --skip-lock --verbose
