@@ -34,7 +34,7 @@ jobs:
       run: pip3 install pipenv
       working-directory: ./covid19-forecast-hub-validations
     - name: Install python dependencies 
-      run: pipenv install --skip-lock
+      run: pipenv install --skip-lock --verbose
       working-directory: ./covid19-forecast-hub-validations
     - name: Validations output
       working-directory: ./covid19-forecast-hub-validations
