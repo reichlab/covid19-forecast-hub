@@ -6961,3 +6961,5 @@ file_path,validation_date
 ./data-processed/COVIDhub-trained_ensemble/2022-08-15-COVIDhub-trained_ensemble.csv,2022-08-16 00:36:18.081407
 ./data-processed/MUNI-ARIMA/2022-08-15-MUNI-ARIMA.csv,2022-08-16 06:30:40.350925
 ./data-processed/KITmetricslab-select_ensemble/2022-08-15-KITmetricslab-select_ensemble.csv,2022-08-16 12:31:35.101933
+./data-processed/COVIDhub_CDC-ensemble/2022-08-15-COVIDhub_CDC-ensemble.csv,2022-08-16 18:31:39.575328
+./data-processed/JHUAPL-SLPHospEns/2022-08-15-JHUAPL-SLPHospEns.csv,2022-08-16 18:31:43.604627
