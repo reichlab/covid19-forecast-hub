@@ -1,0 +1,26 @@
+team_name: AMM
+model_name: EpiInvert
+model_abbr: AMM-EpiInvert
+model_contributors: 
+ - name: Luis Alvarez
+   affiliation: Universidad de Las Palmas de Gran Canaria, Spain
+   email: lalvarez@ulpgc.es
+ - name: Jean-David Morel
+   affiliation: Ecole Polytechnique Fédérale de Lausanne, Switzerland
+   email: jeandavid.morel@gmail.com
+ - name: Jean-Michel Morel
+   affiliation: Université Paris-Saclay, France
+   email: moreljeanmichel@gmail.com
+website_url: https://github.com/lalvarezmat/EpiInvert
+license: cc-by-4.0
+team_model_designation: primary
+methods: Learning from the past a short time forecast of the COVID-19 incidence curve trend.
+methods_long: We design a learning procedure, EpiInvertForecast,  to forecast the future trend of the daily incidence. 
+  This learning procedure is based on a database of 27,418 incidence trend curves computed in the past, with EpiInvert, 
+  using real data. The forecast of the current incidence trend is obtained as a weighted average of the 27,418 database 
+  curves where the weight of each database curve depends on the similarity between the current curve and the database 
+  curve in the past. We also compute empirical confidence intervals for the forecast estimation and, using the weekly
+  seasonality computed by EpiInvert, we also estimate a forecast of the original incidence curve. 
+citation: https://doi.org/10.1073/pnas.2105112118 , https://doi.org/10.3390/biology11040540 , 
+  https://ctim.ulpgc.es/covid19/EpiInvertForecast.html
+data_inputs: https://github.com/covid19-forecast-hub-europe/covid19-forecast-hub-europe/tree/main/data-truth/JHU
