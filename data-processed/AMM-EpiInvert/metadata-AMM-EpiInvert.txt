@@ -1,21 +1,12 @@
 team_name: AMM
 model_name: EpiInvert
 model_abbr: AMM-EpiInvert
-model_contributors: 
-Luis Alvarez (Universidad de Las Palmas de Gran Canaria, Spain) <lalvarez@ulpgc.es>, 
-Jean-David Morel (Ecole Polytechnique Fédérale de Lausanne, Switzerland) <jeandavid.morel@gmail.com>, 
-Jean-Michel Morel (Université Paris-Saclay, France) <moreljeanmichel@gmail.com>
+model_contributors: Luis Alvarez (Universidad de Las Palmas de Gran Canaria, Spain) <lalvarez@ulpgc.es>, Jean-David Morel (Ecole Polytechnique Fédérale de Lausanne, Switzerland) <jeandavid.morel@gmail.com>, Jean-Michel Morel (Université Paris-Saclay, France) <moreljeanmichel@gmail.com>
 website_url: https://github.com/lalvarezmat/EpiInvert
 license: cc-by-4.0
 team_model_designation: primary
 ensemble_of_hub_models: false
 methods: Learning from the past a short time forecast of the COVID-19 incidence curve trend.
-methods_long: We design a learning procedure, EpiInvertForecast,  to forecast the future trend of the 
-daily incidence. This learning procedure is based on a database of 27,418 incidence trend curves 
-computed in the past, with EpiInvert, using real data. The forecast of the current incidence trend is 
-obtained from the 27,418 database  curves taking into account the similarity between the current curve 
-and the database curve in the past. We also compute empirical confidence intervals for the forecast estimation
-and, using the weekly seasonality computed by EpiInvert, we also estimate a forecast of the original incidence curve. 
-citation: https://doi.org/10.1073/pnas.2105112118 , https://doi.org/10.3390/biology11040540 , 
-  https://ctim.ulpgc.es/covid19/EpiInvertForecast.html
+methods_long: We design a learning procedure, EpiInvertForecast,  to forecast the future trend of the daily incidence. This learning procedure is based on a database of 27,418 incidence trend curves computed in the past, with EpiInvert, using real data. The forecast of the current incidence trend is obtained from the 27,418 database  curves taking into account the similarity between the current curve and the database curve in the past. We also compute empirical confidence intervals for the forecast estimationand, using the weekly seasonality computed by EpiInvert, we also estimate a forecast of the original incidence curve. 
+citation: https://doi.org/10.1073/pnas.2105112118, https://doi.org/10.3390/biology11040540, https://ctim.ulpgc.es/covid19/EpiInvertForecast.html
 data_inputs: JHU
