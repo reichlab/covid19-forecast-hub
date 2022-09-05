@@ -18,4 +18,4 @@ and the database curve in the past. We also compute empirical confidence interva
 and, using the weekly seasonality computed by EpiInvert, we also estimate a forecast of the original incidence curve. 
 citation: https://doi.org/10.1073/pnas.2105112118 , https://doi.org/10.3390/biology11040540 , 
   https://ctim.ulpgc.es/covid19/EpiInvertForecast.html
-data_inputs: https://github.com/reichlab/covid19-forecast-hub/blob/master/data-truth/truth-Incident%20Cases.csv
+data_inputs: JHU
