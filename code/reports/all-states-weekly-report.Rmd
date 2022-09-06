@@ -149,7 +149,7 @@ project_url <- "https://www.zoltardata.com/api/project/44/"
 ```{r get-date-boundaries}
 # # 
 next_saturday <- as.Date(calc_target_week_end_date(today(), horizon= 0))
-# # # # use fixed date
+# use fixed date
 # next_saturday <-  as.Date("2021-03-20")
 saturday_4_wk_ahead <- next_saturday + 7*3
 saturday_4_wk_ahead_txt <- format(saturday_4_wk_ahead, "%B %d, %Y")
@@ -241,7 +241,7 @@ n_unique_models <- length(unique(c(names(inc_death_models)[inc_death_models>0],
 Every week, teams submit their forecasts to the COVID-19 Forecast Hub. 
  
 
-Each Tuesday, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 cases at the county, state, and national level and deaths at the state and national level. At the moment, we only generate ensemble forecasts for up to four weeks into the future, as [the available evidence](https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v1) suggests that models are less accurate at longer forecast horizons.
+Each Tuesday, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 deaths, hospitalizations and cases at the state and national level. At the moment, we only generate ensemble forecasts for up to four weeks into the future, as [the available evidence](https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v1) suggests that models are less accurate at longer forecast horizons.
 
 Weekly reports from the COVID-19 Forecast Hub can be found at [this page](https://covid19forecasthub.org/doc/reports/). 
 
@@ -294,8 +294,6 @@ dat_hosp<-load_forecasts(
 # COVID-19 Forecasts 
 
 Since the inputs to the ensemble model do not factor in changes in behavior or policy that could have an impact on short-term disease transmission (e.g. school openings or closures, new interventions, governmental policy shift, etc...), the ensemble model itself should not be looked to for specific answers to questions like "what will happen if or when schools open in 2 weeks" because most of the input models are not factoring in these changes. That said, the ensemble model has consistently shown strong predictive performance in predicting mortality, and very few of the many interventions put in place appear to have created dramatic changes in short-term disease transmission that would impact short-term trends in mortality.
-
-## State level {.tabset .tabset-fade}
 
 This week, our ensemble combined forecasts for `r state_name` from `r n_unique_models` different models.
 
@@ -1196,9 +1194,6 @@ datatable(wide_point_dat2p %>%
 ```
 
 
-```{r, child = if (state !='11' & state < '60') 'all-states-weekly-county_code.Rmd'}
-
-```
 
 # Methods & Acknowledgement
 
