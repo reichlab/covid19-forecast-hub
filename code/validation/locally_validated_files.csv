@@ -7065,3 +7065,13 @@ file_path,validation_date
 ./data-processed/CU-scenario_low/2022-09-04-CU-scenario_low.csv,2022-09-05 18:33:19.634593
 ./data-processed/MOBS-GLEAM_COVID/2022-09-05-MOBS-GLEAM_COVID.csv,2022-09-05 18:33:22.857409
 ./data-processed/MIT_ISOLAT-Mixtures/2022-09-05-MIT_ISOLAT-Mixtures.csv,2022-09-05 18:33:23.226806
+./data-processed/COVIDhub-trained_ensemble/2022-09-05-COVIDhub-trained_ensemble.csv,2022-09-06 00:33:57.224670
+./data-processed/PSI-DRAFT/2022-09-05-PSI-DRAFT.csv,2022-09-06 00:33:57.717054
+./data-processed/PSI-DICE/2022-09-05-PSI-DICE.csv,2022-09-06 00:34:00.683698
+./data-processed/CMU-TimeSeries/2022-09-05-CMU-TimeSeries.csv,2022-09-06 00:34:04.581989
+./data-processed/MIT-Cassandra/2022-09-05-MIT-Cassandra.csv,2022-09-06 00:34:05.953465
+./data-processed/QJHong-Encounter/2022-09-05-QJHong-Encounter.csv,2022-09-06 00:34:06.362520
+./data-processed/UCF-AEM/2022-09-04-UCF-AEM.csv,2022-09-06 00:34:06.429421
+./data-processed/COVIDhub-ensemble/2022-09-05-COVIDhub-ensemble.csv,2022-09-06 00:34:10.382490
+./data-processed/AMM-EpiInvert/2022-09-05-AMM-EpiInvert.csv,2022-09-06 00:34:10.593616
+./data-processed/COVIDhub-4_week_ensemble/2022-09-05-COVIDhub-4_week_ensemble.csv,2022-09-06 00:34:21.579738
