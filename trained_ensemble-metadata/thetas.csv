@@ -451,3 +451,12 @@ forecast_date,response_var,spatial_resolution,theta
 2022-09-05,inc_case,national,4.1
 2022-09-05,inc_hosp,state,4.8
 2022-09-05,inc_hosp,national,10.1
+2022-09-12,cum_death,state,3.8
+2022-09-12,cum_death,national,2.6
+2022-09-12,inc_death,state,6.3
+2022-09-12,inc_death,national,2.3
+2022-09-12,inc_case,county,2.8
+2022-09-12,inc_case,state,6.8
+2022-09-12,inc_case,national,5.6
+2022-09-12,inc_hosp,state,6.8
+2022-09-12,inc_hosp,national,10.3
