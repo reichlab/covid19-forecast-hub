@@ -124,7 +124,7 @@ wk2_monday <- this_monday + 14
 
 
 # Background
-This report provides a brief summary of the weekly ensemble forecast from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/) based on forecasts submitted on `r format(this_monday, "%B %d, %Y")`. In collaboration with the US CDC, our team aggregates COVID-19 forecasts from dozens of teams around the globe. Typically on Wednesday of each week, a summary of the week's forecasts from the COVID-19 Forecast Hub appear on the [official CDC COVID-19 forecasting page](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html).
+This report provides a brief summary of the weekly ensemble forecast from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/){target="_blank"} based on forecasts submitted on `r format(this_monday, "%B %d, %Y")`. In collaboration with the US CDC, our team aggregates COVID-19 forecasts from dozens of teams around the globe. Typically on Wednesday of each week, a summary of the week's forecasts from the COVID-19 Forecast Hub appear on the [official CDC COVID-19 forecasting page](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html){target="_blank"}.
 
 
 ```{r nmodels-this-week}
@@ -150,9 +150,9 @@ nmodels_this_week <- length(models_this_week)
 Every week, teams submit their forecasts to the COVID-19 Forecast Hub. 
 This past week, `r nmodels_this_week` models were submitted. 
 
-Each Monday evening or Tuesday morning, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 cases at the county, state, and national level and deaths at the state and national level. At the moment, we only generate ensemble forecasts for up to four weeks into the future, as [the available evidence](https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v1) suggests that models are less accurate at longer forecast horizons.
+Each Monday evening or Tuesday morning, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 cases at the county, state, and national level and deaths at the state and national level. At the moment, we only generate ensemble forecasts for up to four weeks into the future, as [the available evidence](https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v1){target="_blank"} suggests that models are less accurate at longer forecast horizons.
 
-An archive of weekly reports from the COVID-19 Forecast Hub can be found at [this page](https://covid19forecasthub.org/doc/reports/). 
+An archive of weekly reports from the COVID-19 Forecast Hub can be found at [this page](https://covid19forecasthub.org/doc/reports/){target="_blank"}. 
 
 
 ```{r count-models}
@@ -319,7 +319,7 @@ For the week ending `r saturday_1_wk_ahead_txt`, the ensemble forecasts that rep
 
 
 <!-- Throughought most of July, models have in general shown broad agreement about the trajectory of the outbreak over the coming weeks. However, the recent surge in cases has left models with quite different interpretations about what the next few weeks hold in terms of how many reported deaths from COVID-19 we will see.  -->
-You can explore the full set of models, including their forecasts for past weeks online at the [Forecast Hub interactive visualization](https://viz.covid19forecasthub.org/).
+You can explore the full set of models, including their forecasts for past weeks online at the [Forecast Hub interactive visualization](https://viz.covid19forecasthub.org/){target="_blank"}.
 
 ### Deaths
 
@@ -974,7 +974,7 @@ datatable(wide_point_dat2p %>%
 
 # Methods & Acknowledgement
 
-This report was reproducibly and dynamically generated using RMarkdown. The code for the report can be found [here](https://github.com/reichlab/covid19-forecast-hub/tree/master/code/reports).
+This report was reproducibly and dynamically generated using RMarkdown. The code for the report can be found [here](https://github.com/reichlab/covid19-forecast-hub/tree/master/code/reports){target="_blank"}.
 
 
 ```{r}

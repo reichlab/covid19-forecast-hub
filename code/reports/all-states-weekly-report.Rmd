@@ -56,7 +56,7 @@ all_states <-locs$fips[2:58]
 state <-params$state
 
 # # testing
-# state <- "25"
+# state <- "01"
 
 # title with state name
 state_name <- locs %>% 
@@ -176,7 +176,7 @@ next_2saturday <- next_saturday +7
 
 
 # Background
-This report provides a brief summary of the weekly ensemble forecast for `r state_name` from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/). In collaboration with the US CDC, our team aggregates COVID-19 forecasts from dozens of teams around the globe. Typically on Wednesday of each week, a summary of the week's forecasts from the COVID-19 Forecast Hub appear on the [official CDC COVID-19 forecasting page](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html).
+This report provides a brief summary of the weekly ensemble forecast for `r state_name` from the [COVID-19 Forecast Hub](https://covid19forecasthub.org/){target="_blank"}. In collaboration with the US CDC, our team aggregates COVID-19 forecasts from dozens of teams around the globe. Typically on Wednesday of each week, a summary of the week's forecasts from the COVID-19 Forecast Hub appear on the [official CDC COVID-19 forecasting page](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html){target="_blank"}.
 
 ```{r define weeks,STATE}
 
@@ -241,9 +241,9 @@ n_unique_models <- length(unique(c(names(inc_death_models)[inc_death_models>0],
 Every week, teams submit their forecasts to the COVID-19 Forecast Hub. 
  
 
-Each Tuesday, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 deaths, hospitalizations and cases at the state and national level. At the moment, we only generate ensemble forecasts for up to four weeks into the future, as [the available evidence](https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v1) suggests that models are less accurate at longer forecast horizons.
+Each Tuesday, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 deaths, hospitalizations and cases at the state and national level. At the moment, we only generate ensemble forecasts for up to four weeks into the future, as [the available evidence](https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v1){target="_blank"} suggests that models are less accurate at longer forecast horizons.
 
-Weekly reports from the COVID-19 Forecast Hub can be found at [this page](https://covid19forecasthub.org/doc/reports/). 
+Weekly reports from the COVID-19 Forecast Hub can be found at [this page](https://covid19forecasthub.org/doc/reports/){target="_blank"}. 
 
 
 ```{r download-ensemble-data}
@@ -432,7 +432,7 @@ rename(fips = location)
 
 ```
 
-During periods of relative stability, models in general show broad agreement about the predicted trajectory of the outbreak. However, when there are steep surges or declines in cases or deaths, models often have quite different predictions for the upcoming weeks. The result is that there is increased uncertainty in the ensemble forecast, which can be seen as wider confidence intervals in the forecast visualization. You can explore the full set of models, including their forecasts for past weeks online at the [Forecast Hub interactive visualization](https://viz.covid19forecasthub.org/).
+During periods of relative stability, models in general show broad agreement about the predicted trajectory of the outbreak. However, when there are steep surges or declines in cases or deaths, models often have quite different predictions for the upcoming weeks. The result is that there is increased uncertainty in the ensemble forecast, which can be seen as wider confidence intervals in the forecast visualization. You can explore the full set of models, including their forecasts for past weeks online at the [Forecast Hub interactive visualization](https://viz.covid19forecasthub.org/){target="_blank"}.
 
 When interpreting probability of an increase, it's important to note that the increase or decrease is relative to the location-specific recent observed incidence, which varies across locations.
 
@@ -1197,6 +1197,6 @@ datatable(wide_point_dat2p %>%
 
 # Methods & Acknowledgement
 
-This report was reproducibly and dynamically generated using RMarkdown. The code for the report can be found [here](https://github.com/reichlab/covid19-forecast-hub/tree/master/code/reports).
+This report was reproducibly and dynamically generated using RMarkdown. The code for the report can be found [here](https://github.com/reichlab/covid19-forecast-hub/tree/master/code/reports){target="_blank"}.
 
 
