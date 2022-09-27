@@ -974,7 +974,7 @@ datatable(wide_point_dat2p %>%
 
 # Methods & Acknowledgement
 
-This report was reproducibly and dynamically generated using RMarkdown. The code for the report can be found [here](https://github.com/reichlab/covid19-forecast-hub/tree/master/code/reports){target="_blank"}.
+This report was reproducibly and dynamically generated using RMarkdown. The code for the report can be found <a href="https://github.com/reichlab/covid19-forecast-hub/tree/master/code/reports" target="_blank">here</a>.
 
 
 ```{r}
