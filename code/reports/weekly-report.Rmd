@@ -106,9 +106,9 @@ project_url <- "https://www.zoltardata.com/api/project/44/"
 
 
 ```{r get-date-boundaries}
-next_saturday <- as.Date(calc_target_week_end_date(today(), horizon= 0))
+# next_saturday <- as.Date(calc_target_week_end_date(today(), horizon= 0))
 # use fixed date
-# next_saturday <-  as.Date("2022-09-17")
+next_saturday <-  as.Date("2022-09-24")
 
 saturday_4_wk_ahead <- next_saturday + 7*3
 saturday_4_wk_ahead_txt <- format(saturday_4_wk_ahead, "%B %d, %Y")
@@ -124,7 +124,7 @@ wk2_monday <- this_monday + 14
 
 
 # Background
-This report provides a brief summary of the weekly ensemble forecast from the <a href="https://covid19forecasthub.org/" target="_blank">COVID-19 Forecast Hub<a/> based on forecasts submitted on `r format(this_monday, "%B %d, %Y")`. In collaboration with the US CDC, our team aggregates COVID-19 forecasts from dozens of teams around the globe. Typically on Wednesday of each week, a summary of the week's forecasts from the COVID-19 Forecast Hub appear on the <a href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html" target="_blank">official CDC COVID-19 forecasting page<a/>.
+This report provides a brief summary of the weekly ensemble forecast from the <a href="https://covid19forecasthub.org/" target="_blank">COVID-19 Forecast Hub</a> based on forecasts submitted on `r format(this_monday, "%B %d, %Y")`. In collaboration with the US CDC, our team aggregates COVID-19 forecasts from dozens of teams around the globe. Typically on Wednesday of each week, a summary of the week's forecasts from the COVID-19 Forecast Hub appear on the <a href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html" target="_blank">official CDC COVID-19 forecasting page</a>.
 
 
 ```{r nmodels-this-week}
@@ -150,9 +150,9 @@ nmodels_this_week <- length(models_this_week)
 Every week, teams submit their forecasts to the COVID-19 Forecast Hub. 
 This past week, `r nmodels_this_week` models were submitted. 
 
-Each Monday evening or Tuesday morning, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 cases at the county, state, and national level and deaths at the state and national level. At the moment, we only generate ensemble forecasts for up to four weeks into the future, as  <a href="https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v1" target="_blank">the available evidence<a/> suggests that models are less accurate at longer forecast horizons.
+Each Monday evening or Tuesday morning, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 cases at the county, state, and national level and deaths at the state and national level. At the moment, we only generate ensemble forecasts for up to four weeks into the future, as  <a href="https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v1" target="_blank">the available evidence</a> suggests that models are less accurate at longer forecast horizons.
 
-An archive of weekly reports from the COVID-19 Forecast Hub can be found at <a href="https://covid19forecasthub.org/doc/reports/" target="_blank">this page<a/>. 
+An archive of weekly reports from the COVID-19 Forecast Hub can be found at <a href="https://covid19forecasthub.org/doc/reports/" target="_blank">this page</a>. 
 
 
 ```{r count-models}
@@ -319,7 +319,7 @@ For the week ending `r saturday_1_wk_ahead_txt`, the ensemble forecasts that rep
 
 
 <!-- Throughought most of July, models have in general shown broad agreement about the trajectory of the outbreak over the coming weeks. However, the recent surge in cases has left models with quite different interpretations about what the next few weeks hold in terms of how many reported deaths from COVID-19 we will see.  -->
-You can explore the full set of models, including their forecasts for past weeks online at the <a href="https://viz.covid19forecasthub.org/" target="_blank">Forecast Hub interactive visualization<a/>.
+You can explore the full set of models, including their forecasts for past weeks online at the <a href="https://viz.covid19forecasthub.org/" target="_blank">Forecast Hub interactive visualization</a>.
 
 ### Deaths
 
