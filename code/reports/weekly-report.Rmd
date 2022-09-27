@@ -1,6 +1,6 @@
 ---
 title: "COVID-19 US Weekly Forecast Summary"
-author: "[The COVID-19 Forecast Hub Team](https://covid19forecasthub.org/doc/)<br><br>https://covid19forecasthub.org/"
+author: <a href="https://covid19forecasthub.org/doc/" target="_blank">The COVID-19 Forecast Hub Team</a> <br><br> <a href="https://covid19forecasthub.org/" target="_blank">https://covid19forecasthub.org/</a>
 date: "report generated `r Sys.Date()`"
 output:
   html_document:
@@ -150,7 +150,7 @@ nmodels_this_week <- length(models_this_week)
 Every week, teams submit their forecasts to the COVID-19 Forecast Hub. 
 This past week, `r nmodels_this_week` models were submitted. 
 
-Each Monday evening or Tuesday morning, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 cases at the county, state, and national level and deaths at the state and national level. At the moment, we only generate ensemble forecasts for up to four weeks into the future, as  <a href="https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v1" target="_blank">the available evidence</a> suggests that models are less accurate at longer forecast horizons.
+Each Tuesday, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 deaths, hospitalizations and cases at the state and national level.  At the moment, we only generate ensemble forecasts for up to four weeks into the future, as  <a href="https://www.pnas.org/doi/full/10.1073/pnas.2113561119" target="_blank">the available evidence</a> suggests that models are less accurate at longer forecast horizons.
 
 An archive of weekly reports from the COVID-19 Forecast Hub can be found at <a href="https://covid19forecasthub.org/doc/reports/" target="_blank">this page</a>. 
 
