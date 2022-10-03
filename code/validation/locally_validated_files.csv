@@ -7192,3 +7192,6 @@ file_path,validation_date
 ./data-processed/CEID-Walk/2022-09-26-CEID-Walk.csv,2022-09-27 12:32:06.781251
 ./data-processed/COVIDhub_CDC-ensemble/2022-09-26-COVIDhub_CDC-ensemble.csv,2022-09-27 18:32:34.303031
 ./data-processed/BPagano-RtDriven/2022-10-02-BPagano-RtDriven.csv,2022-10-02 18:30:06.198920
+./data-processed/CUB_PopCouncil-SLSTM/2022-10-01-CUB_PopCouncil-SLSTM.csv,2022-10-03 00:36:30.122056
+./data-processed/Karlen-pypm/2022-10-02-Karlen-pypm.csv,2022-10-03 00:36:35.304960
+./data-processed/LUcompUncertLab-VAR_3streams/2022-10-03-LUcompUncertLab-VAR_3streams.csv,2022-10-03 00:36:44.745290
