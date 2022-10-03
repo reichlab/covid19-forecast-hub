@@ -7200,3 +7200,15 @@ file_path,validation_date
 ./data-processed/TTU-squider/2022-10-02-TTU-squider.csv,2022-10-03 12:32:28.415360
 ./data-processed/AMM-EpiInvert/2022-10-03-AMM-EpiInvert.csv,2022-10-03 12:32:28.977578
 ./data-processed/SDSC_ISG-TrendModel/2022-10-02-SDSC_ISG-TrendModel.csv,2022-10-03 12:32:29.457738
+./data-processed/CU-select/2022-10-02-CU-select.csv,2022-10-03 18:35:59.422031
+./data-processed/MIT-Cassandra/2022-10-03-MIT-Cassandra.csv,2022-10-03 18:36:01.328404
+./data-processed/HKUST-DNN/2022-10-03-HKUST-DNN.csv,2022-10-03 18:36:01.798064
+./data-processed/USC-SI_kJalpha/2022-10-02-USC-SI_kJalpha.csv,2022-10-03 18:36:09.160250
+./data-processed/MUNI-ARIMA/2022-10-03-MUNI-ARIMA.csv,2022-10-03 18:36:12.095106
+./data-processed/MOBS-GLEAM_COVID/2022-10-03-MOBS-GLEAM_COVID.csv,2022-10-03 18:36:15.489696
+./data-processed/UCSD_NEU-DeepGLEAM/2022-10-03-UCSD_NEU-DeepGLEAM.csv,2022-10-03 18:36:16.528866
+./data-processed/CU-scenario_low/2022-10-02-CU-scenario_low.csv,2022-10-03 18:36:30.103493
+./data-processed/CU-nochange/2022-10-02-CU-nochange.csv,2022-10-03 18:36:43.593186
+./data-processed/MIT_ISOLAT-Mixtures/2022-10-03-MIT_ISOLAT-Mixtures.csv,2022-10-03 18:36:43.822561
+./data-processed/COVIDhub-baseline/2022-10-03-COVIDhub-baseline.csv,2022-10-03 18:37:01.411223
+./data-processed/CU-scenario_mid/2022-10-02-CU-scenario_mid.csv,2022-10-03 18:37:15.040065
