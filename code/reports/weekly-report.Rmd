@@ -106,9 +106,9 @@ project_url <- "https://www.zoltardata.com/api/project/44/"
 
 
 ```{r get-date-boundaries}
-# next_saturday <- as.Date(calc_target_week_end_date(today(), horizon= 0))
+next_saturday <- as.Date(calc_target_week_end_date(today(), horizon= 0))
 # use fixed date
-next_saturday <-  as.Date("2022-09-24")
+# next_saturday <-  as.Date("2022-09-24")
 
 saturday_4_wk_ahead <- next_saturday + 7*3
 saturday_4_wk_ahead_txt <- format(saturday_4_wk_ahead, "%B %d, %Y")
