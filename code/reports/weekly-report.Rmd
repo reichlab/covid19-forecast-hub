@@ -382,7 +382,7 @@ ggplot() +
     mapping = aes(x = target_end_date, y = value, color = model)) +
   scale_fill_manual(values = blues[1:(length(blues)-1)]) +
   scale_color_manual(values = c("black", tail(blues,1))) +
-  scale_x_date(name = NULL, date_breaks="4 month", date_labels = "%b %d %Y", date_minor_breaks = "1 month") +
+  scale_x_date(name = NULL, date_breaks="6 month", date_labels = "%b %d %Y", date_minor_breaks = "1 month") +
   ylab("incident deaths") +
   labs(title="Weekly reported COVID-19 deaths in the US: observed and forecasted",
     caption="source: JHU CSSE (observed data), COVID-19 Forecast Hub (forecasts)") +
@@ -447,7 +447,7 @@ ggplot() +
     mapping = aes(x = target_end_date, y = value, color = model)) +
   scale_fill_manual(values = blues[1:(length(blues)-1)]) +
   scale_color_manual(values = c("black", tail(blues,1))) +
-  scale_x_date(name = NULL, date_breaks="4 month", date_labels = "%b %d %Y", date_minor_breaks = "1 month") +
+  scale_x_date(name = NULL, date_breaks="6 month", date_labels = "%b %d %Y", date_minor_breaks = "1 month") +
   ylab("incident hospitalizations") +
   labs(title="Daily COVID-19 hospitalization in the US: observed and forecasted",
     caption="source: HealthData (observed data), COVID-19 Forecast Hub (forecasts)") +
@@ -513,7 +513,7 @@ ggplot() +
     mapping = aes(x = target_end_date, y = value, color = model)) +
   scale_fill_manual(values = blues[1:(length(blues)-1)]) +
   scale_color_manual(values = c("black", tail(blues,1))) +
-  scale_x_date(name = NULL, date_breaks="4 month", date_labels = "%b %d %Y", date_minor_breaks = "1 month") +
+  scale_x_date(name = NULL, date_breaks="6 month", date_labels = "%b %d %Y", date_minor_breaks = "1 month") +
   ylab("incident cases") +
   labs(title="Weekly reported COVID-19 cases in the US: observed and forecasted",
     caption="source: JHU CSSE (observed data), COVID-19 Forecast Hub (forecasts)") +
