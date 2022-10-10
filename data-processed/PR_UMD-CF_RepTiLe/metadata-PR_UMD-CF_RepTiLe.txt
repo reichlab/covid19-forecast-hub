@@ -1,0 +1,31 @@
+data_inputs: JHU CSSE (confirmed cases)
+ensemble_of_hub_models: 'false'
+license: cc-by-4.0
+methods: Meta-learning algorithm applied to stationary windows of state- and national-level
+  case data.
+methods_long: CF_RepTiLe performs COVID Forecasting on state- and national-level case
+  data using Representational Time series Learning. RepTiLe is a meta-learning algorithm
+  that takes as inputs a collection of related time series data, uses a recurrent
+  neural network model known as reservoir computing to form a separate dynamical representation
+  of each time series, and learns a low-dimensional representation of these dynamical
+  representations. When confronted with a small amount of new data, RepTiLe finds
+  a latent variable that generates a dynamical system whose outputs best approximate
+  the new data, effectively doing parameter estimation within a learned space. For
+  forecasting COVID cases, the collection of related time series data consists of
+  90-day windows of case counts from all states and at the national level. For forecasting
+  the future case count for a given state, the previous 10 days are used to fit the
+  predictive model. CF_RepTiLe is almost entirely model-agnostic, making no assumptions
+  about disease dynamics per se. It relies on the power of the generic meta-learning
+  algorithm RepTiLe as well as the assumption that the case dynamics across all states
+  and waves are fundamentally described by a small but known set of parameters that
+  can be gleaned from historical data.
+model_abbr: PR_UMD-CF_RepTiLe
+model_contributors: Daniel Canaday (Potomac Research)<daniel.marcus.canaday@gmail.com>,
+  Andrew Pomerance (Potomac Research), Michelle Girvan (University of Maryland), Brian
+  Hunt (University of Maryland), Ed Ott (University of Maryland), Declan Norton (University
+  of Maryland), Jacob Jeffries (University of Maryland)
+model_name: COVID Forecasting with Representational Time-series Learning
+team_funding: DARPA
+team_model_designation: primary
+team_name: Potomac Research and University of Maryland
+website_url: github.com/potomacresearch
