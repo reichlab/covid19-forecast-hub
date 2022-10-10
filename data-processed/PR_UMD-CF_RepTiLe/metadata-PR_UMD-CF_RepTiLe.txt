@@ -1,5 +1,5 @@
 data_inputs: JHU CSSE (confirmed cases)
-ensemble_of_hub_models: 'false'
+ensemble_of_hub_models: false
 license: cc-by-4.0
 methods: Meta-learning algorithm applied to stationary windows of state- and national-level
   case data.
