@@ -7440,3 +7440,7 @@ file_path,validation_date
 ./data-processed/UMass-sarix/2022-11-14-UMass-sarix.csv,2022-11-15 00:38:01.696973
 ./data-processed/PSI-DRAFT/2022-11-14-PSI-DRAFT.csv,2022-11-15 00:38:02.072945
 ./data-processed/LUcompUncertLab-VAR_3streams/2022-11-14-LUcompUncertLab-VAR_3streams.csv,2022-11-15 00:38:10.808547
+./data-processed/USC-SI_kJalpha/2022-11-13-USC-SI_kJalpha.csv,2022-11-15 06:33:43.047945
+./data-processed/COVIDhub-4_week_ensemble/2022-11-14-COVIDhub-4_week_ensemble.csv,2022-11-15 06:33:58.864775
+./data-processed/COVIDhub-trained_ensemble/2022-11-14-COVIDhub-trained_ensemble.csv,2022-11-15 06:34:16.198422
+./data-processed/COVIDhub-ensemble/2022-11-14-COVIDhub-ensemble.csv,2022-11-15 06:34:22.145533
