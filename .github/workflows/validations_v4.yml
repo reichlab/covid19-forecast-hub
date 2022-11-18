@@ -19,7 +19,7 @@ jobs:
         files: project-config.json data-locations/locations.csv
         token: ${{ github.token }}
     - name: Checkout Validation Repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: 'reichlab/covid19-forecast-hub-validations'
         ref: 'main'
