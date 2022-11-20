@@ -51,8 +51,8 @@ jobs:
         
     - name: Setup GitHub Action for R language
       uses: r-lib/actions/setup-r@v2
-        with:
-          use-public-rspm: true
+      with:
+        use-public-rspm: true
 
     - name: Install system dependencies
       run: sudo apt-get install libudunits2-dev libcurl4-openssl-dev libgdal-dev
