@@ -541,3 +541,12 @@ forecast_date,response_var,spatial_resolution,theta
 2022-11-14,inc_case,national,2.7
 2022-11-14,inc_hosp,state,6.4
 2022-11-14,inc_hosp,national,7.6
+2022-11-21,cum_death,state,5.7
+2022-11-21,cum_death,national,1
+2022-11-21,inc_death,state,7.5
+2022-11-21,inc_death,national,11.4
+2022-11-21,inc_case,county,0.4
+2022-11-21,inc_case,state,5.4
+2022-11-21,inc_case,national,3.8
+2022-11-21,inc_hosp,state,6
+2022-11-21,inc_hosp,national,9.8
