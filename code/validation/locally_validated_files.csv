@@ -7477,3 +7477,6 @@ file_path,validation_date
 ./data-processed/UMass-sarix/2022-11-21-UMass-sarix.csv,2022-11-22 00:39:58.676912
 ./data-processed/UMass-trends_ensemble/2022-11-21-UMass-trends_ensemble.csv,2022-11-22 00:40:01.747224
 ./data-processed/UT-Osiris/2022-11-20-UT-Osiris.csv,2022-11-22 00:40:04.958809
+./data-processed/COVIDhub-ensemble/2022-11-21-COVIDhub-ensemble.csv,2022-11-22 03:32:41.640902
+./data-processed/COVIDhub-4_week_ensemble/2022-11-21-COVIDhub-4_week_ensemble.csv,2022-11-22 03:32:53.560966
+./data-processed/COVIDhub-trained_ensemble/2022-11-21-COVIDhub-trained_ensemble.csv,2022-11-22 03:33:05.055768
