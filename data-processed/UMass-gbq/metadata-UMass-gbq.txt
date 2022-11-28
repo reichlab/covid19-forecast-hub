@@ -1,0 +1,17 @@
+team_name: UMass-Amherst
+model_name: gbq
+model_abbr: UMass-gbq
+model_contributors: Serena Wang, Evan Ray <elray@umass.edu>
+website_url: https://github.com/reichlab/covid-hosp-models
+license: cc-by-4.0
+team_model_designation: secondary
+ensemble_of_hub_models: false
+methods: 'Gradient boosting for the median, followed by conformal prediction to get quantiles'
+methods_long: 'Bagged gradient boosting is used to obtain a predictive median.
+  Features include the day of week, location, population, and summaries of time
+  series behavior. Quantiles are obtained via a procedure similar to split
+  conformal prediction, where quantiles of the out-of-bag residuals are added to
+  the point predictions obtained from gradient boosting.'
+data_inputs: HHS Protect hospitalization data via COVIDcast.
+team_funding: This model development is supported by NIGMS grant R35GM119582 and CDC grant U01IP001122. The content is solely the responsibility of the authors and does not necessarily represent the official views of CDC, NIGMS, or the National Institutes of Health.
+twitter_handles: reichlab
