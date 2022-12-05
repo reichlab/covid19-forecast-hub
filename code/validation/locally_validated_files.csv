@@ -7521,3 +7521,7 @@ file_path,validation_date
 ./data-processed/COVIDhub_CDC-ensemble/2022-11-28-COVIDhub_CDC-ensemble.csv,2022-11-29 18:32:17.562915
 ./data-processed/BPagano-RtDriven/2022-12-04-BPagano-RtDriven.csv,2022-12-04 18:31:40.852361
 ./data-processed/CUB_PopCouncil-SLSTM/2022-12-03-CUB_PopCouncil-SLSTM.csv,2022-12-05 00:33:50.229718
+./data-processed/USC-SI_kJalpha/2022-12-04-USC-SI_kJalpha.csv,2022-12-05 12:32:50.829188
+./data-processed/Karlen-pypm/2022-12-04-Karlen-pypm.csv,2022-12-05 12:32:55.785123
+./data-processed/TTU-squider/2022-12-04-TTU-squider.csv,2022-12-05 12:32:56.246678
+./data-processed/SDSC_ISG-TrendModel/2022-12-04-SDSC_ISG-TrendModel.csv,2022-12-05 12:32:57.226819
