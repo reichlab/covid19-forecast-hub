@@ -45071,4 +45071,3 @@ forecast_date,target,target_end_date,location,type,quantile,value
 2022-12-05,30 day ahead inc hosp,2023-01-04,56,quantile,0.9500,16.3604
 2022-12-05,30 day ahead inc hosp,2023-01-04,56,quantile,0.9750,16.9981
 2022-12-05,30 day ahead inc hosp,2023-01-04,56,quantile,0.9900,17.3807
-
