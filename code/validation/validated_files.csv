@@ -7538,3 +7538,16 @@ file_path,validation_date
 ./data-processed/COVIDhub-baseline/2022-12-05-COVIDhub-baseline.csv,2022-12-05 18:36:13.293192
 ./data-processed/MOBS-GLEAM_COVID/2022-12-05-MOBS-GLEAM_COVID.csv,2022-12-05 18:36:17.725395
 ./data-processed/Microsoft-DeepSTIA/2022-12-05-Microsoft-DeepSTIA.csv,2022-12-05 18:36:20.727777
+./data-processed/COVIDhub-trained_ensemble/2022-12-05-COVIDhub-trained_ensemble.csv,2022-12-06 00:37:30.815404
+./data-processed/PSI-DRAFT/2022-12-05-PSI-DRAFT.csv,2022-12-06 00:37:31.702005
+./data-processed/UVA-Ensemble/2022-12-05-UVA-Ensemble.csv,2022-12-06 00:37:34.791317
+./data-processed/CMU-TimeSeries/2022-12-05-CMU-TimeSeries.csv,2022-12-06 00:37:37.069369
+./data-processed/GT-DeepCOVID/2022-12-05-GT-DeepCOVID.csv,2022-12-06 00:37:39.847198
+./data-processed/AMM-EpiInvert/2022-12-05-AMM-EpiInvert.csv,2022-12-06 00:37:40.004083
+./data-processed/UMass-trends_ensemble/2022-12-05-UMass-trends_ensemble.csv,2022-12-06 00:37:42.284984
+./data-processed/COVIDhub-ensemble/2022-12-05-COVIDhub-ensemble.csv,2022-12-06 00:37:45.630055
+./data-processed/UMass-sarix/2022-12-05-UMass-sarix.csv,2022-12-06 00:37:47.709361
+./data-processed/PSI-DICE/2022-12-05-PSI-DICE.csv,2022-12-06 00:37:50.084913
+./data-processed/COVIDhub-4_week_ensemble/2022-12-05-COVIDhub-4_week_ensemble.csv,2022-12-06 00:37:58.783149
+./data-processed/PR_UMD-CF_RepTiLe/2022-12-04-PR_UMD-CF_RepTiLe.csv,2022-12-06 00:37:58.925380
+./data-processed/MUNI-ARIMA/2022-12-05-MUNI-ARIMA.csv,2022-12-06 00:38:01.660494
