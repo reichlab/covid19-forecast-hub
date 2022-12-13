@@ -7576,3 +7576,6 @@ file_path,validation_date
 ./data-processed/UT-Osiris/2022-12-11-UT-Osiris.csv,2022-12-13 00:37:30.129365
 ./data-processed/CMU-TimeSeries/2022-12-12-CMU-TimeSeries.csv,2022-12-13 00:37:33.258591
 ./data-processed/UCSD_NEU-DeepGLEAM/2022-12-12-UCSD_NEU-DeepGLEAM.csv,2022-12-13 00:37:34.105728
+./data-processed/COVIDhub-4_week_ensemble/2022-12-12-COVIDhub-4_week_ensemble.csv,2022-12-13 03:17:55.353591
+./data-processed/COVIDhub-ensemble/2022-12-12-COVIDhub-ensemble.csv,2022-12-13 03:18:00.636526
+./data-processed/COVIDhub-trained_ensemble/2022-12-12-COVIDhub-trained_ensemble.csv,2022-12-13 03:18:13.193047
