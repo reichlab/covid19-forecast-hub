@@ -7580,3 +7580,9 @@ file_path,validation_date
 ./data-processed/COVIDhub-ensemble/2022-12-12-COVIDhub-ensemble.csv,2022-12-13 03:18:00.636526
 ./data-processed/COVIDhub-trained_ensemble/2022-12-12-COVIDhub-trained_ensemble.csv,2022-12-13 03:18:13.193047
 ./data-processed/USC-SI_kJalpha/2022-12-11-USC-SI_kJalpha.csv,2022-12-13 06:32:23.050674
+./data-processed/CEPH-Rtrend_covid/2022-12-12-CEPH-Rtrend_covid.csv,2022-12-13 12:31:54.035783
+./data-processed/KITmetricslab-select_ensemble/2022-12-12-KITmetricslab-select_ensemble.csv,2022-12-13 12:31:54.920586
+./data-processed/CU-nochange/2022-12-11-CU-nochange.csv,2022-12-13 12:32:06.419276
+./data-processed/CU-scenario_low/2022-12-11-CU-scenario_low.csv,2022-12-13 12:32:18.163179
+./data-processed/CU-scenario_mid/2022-12-11-CU-scenario_mid.csv,2022-12-13 12:32:29.883642
+./data-processed/CU-select/2022-12-11-CU-select.csv,2022-12-13 12:32:41.599613
