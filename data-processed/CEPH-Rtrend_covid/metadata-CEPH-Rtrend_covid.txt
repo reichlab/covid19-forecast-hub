@@ -1,0 +1,10 @@
+team_name: CEPH Lab at Indiana University
+model_name: Rtrend_covid
+model_abbr: CEPH-Rtrend_covid
+model_contributors: Marco Ajelli (majelli@iu.edu), Paulo C. Ventura (pventura@iu.edu), Maria Litvinova (malitv@iu.edu), Allisandra G. Kummer (alkummer@iu.edu), Alessandro Vespignani (a.vespignani@northeastern.edu)
+website_url: https://publichealth.indiana.edu/research/faculty-directory/profile.html?user=majelli
+license: cc-by-4.0
+team_model_designation: primary
+methods: 'Renewal equation based on Rt estimation from hospitalization data.'
+ensemble_of_hub_models: false
+methods_long: 'Model forecasts are obtained by using a renewal equation based on the estimated net reproduction number Rt. We used MCMC Metropolis-Hastings sampling to estimate the posterior distribution of Rt based on the data, considering an informed prior on Rt based on COVID-19 literature. Finally, Rt used in the renewal equation is based on a the posterior distribution and trend of the estimated Rt in the three most recent weeks of COVID-19 hospitalization data. '
