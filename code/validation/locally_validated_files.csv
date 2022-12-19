@@ -7595,3 +7595,17 @@ file_path,validation_date
 ./data-processed/USC-SI_kJalpha/2022-12-18-USC-SI_kJalpha.csv,2022-12-19 12:32:04.643948
 ./data-processed/AMM-EpiInvert/2022-12-19-AMM-EpiInvert.csv,2022-12-19 12:32:05.322789
 ./data-processed/UVA-Ensemble/2022-12-19-UVA-Ensemble.csv,2022-12-19 12:32:09.642734
+./data-processed/JHU_IDD-CovidSP/2022-12-18-JHU_IDD-CovidSP.csv,2022-12-19 18:33:40.061413
+./data-processed/COVIDhub-baseline/2022-12-19-COVIDhub-baseline.csv,2022-12-19 18:33:56.919258
+./data-processed/UMass-gbq/2022-12-19-UMass-gbq.csv,2022-12-19 18:33:59.366831
+./data-processed/MIT_ISOLAT-Mixtures/2022-12-19-MIT_ISOLAT-Mixtures.csv,2022-12-19 18:34:00.102424
+./data-processed/TTU-squider/2022-12-18-TTU-squider.csv,2022-12-19 18:34:00.274752
+./data-processed/HKUST-DNN/2022-12-19-HKUST-DNN.csv,2022-12-19 18:34:00.711947
+./data-processed/CU-scenario_low/2022-12-18-CU-scenario_low.csv,2022-12-19 18:34:13.129051
+./data-processed/CU-select/2022-12-18-CU-select.csv,2022-12-19 18:34:25.570961
+./data-processed/UCSD_NEU-DeepGLEAM/2022-12-19-UCSD_NEU-DeepGLEAM.csv,2022-12-19 18:34:26.506277
+./data-processed/CU-nochange/2022-12-18-CU-nochange.csv,2022-12-19 18:34:39.102545
+./data-processed/SDSC_ISG-TrendModel/2022-12-18-SDSC_ISG-TrendModel.csv,2022-12-19 18:34:39.418570
+./data-processed/MOBS-GLEAM_COVID/2022-12-19-MOBS-GLEAM_COVID.csv,2022-12-19 18:34:42.505506
+./data-processed/CUBoulder-COVIDLSTM/2022-12-18-CUBoulder-COVIDLSTM.csv,2022-12-19 18:34:49.051548
+./data-processed/CU-scenario_mid/2022-12-18-CU-scenario_mid.csv,2022-12-19 18:35:01.579951
