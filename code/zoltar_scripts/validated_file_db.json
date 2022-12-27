@@ -7793,5 +7793,17 @@
     "2022-12-26-AMM-EpiInvert.csv": "68440af36127598d0b48cffd11a57bf9",
     "2022-12-26-MIT_ISOLAT-Mixtures.csv": "46165ae98c294a20e0da0115d912050f",
     "2022-12-26-COVIDhub-baseline.csv": "cc2cb80b6ed8b1e241959e866645cfa7",
-    "2022-12-26-MOBS-GLEAM_COVID.csv": "cc67903d67335e11814f1df2e95c1504"
+    "2022-12-26-MOBS-GLEAM_COVID.csv": "cc67903d67335e11814f1df2e95c1504",
+    "2022-12-26-UMass-trends_ensemble.csv": "ccbb5fe2a313954a058266466ff8bab4",
+    "2022-12-26-CMU-TimeSeries.csv": "f91371f1421554c6028d20b36e5f84df",
+    "2022-12-26-COVIDhub-ensemble.csv": "09e641ca5bcb7f047a2d2823f4a4faaa",
+    "2022-12-25-CU-select.csv": "1be177523fdb538c79ffee5e4d860358",
+    "2022-12-26-UMass-sarix.csv": "5bbea925e200f9a44a0835e8534d03f2",
+    "2022-12-26-COVIDhub-trained_ensemble.csv": "ab98a63c02f6597ebfea66df7b6ec13d",
+    "2022-12-25-CU-nochange.csv": "32d415a2ffa042f61125a0f8b398916c",
+    "2022-12-26-CEPH-Rtrend_covid.csv": "6dec5d662fe8a414c92787849bfcf522",
+    "2022-12-26-GT-DeepCOVID.csv": "04f947291cc1600b57113a0b2f3f3e58",
+    "2022-12-25-CU-scenario_low.csv": "1be177523fdb538c79ffee5e4d860358",
+    "2022-12-26-COVIDhub-4_week_ensemble.csv": "b98a35cc4ae9e3bf8f96f42429a6ade7",
+    "2022-12-25-CU-scenario_mid.csv": "4842759ab8a37cc37c4115ae23d1e84c"
 }
