@@ -7815,5 +7815,18 @@
     "2023-01-01-Karlen-pypm.csv": "bba2ee05fc139b4b195ce4c8e8e8612a",
     "2022-12-31-CUB_PopCouncil-SLSTM.csv": "f9230d8aaf2501b2b5b5f249dd0ca358",
     "2023-01-02-HKUST-DNN.csv": "b960a9429f3938aff06f0c709e4527db",
-    "2023-01-02-AMM-EpiInvert.csv": "24198d954d369157bd0619ced4e1e389"
+    "2023-01-02-AMM-EpiInvert.csv": "24198d954d369157bd0619ced4e1e389",
+    "2023-01-02-COVIDhub-baseline.csv": "3795cb5a4fe9417c1705b79ef0076ab2",
+    "2023-01-01-CU-scenario_low.csv": "cfe63df26794d0e141a64a96a63531e9",
+    "2023-01-01-CUBoulder-COVIDLSTM.csv": "96761ab51cd13bffbf898f4fceb97cc9",
+    "2023-01-02-UT-Osiris.csv": "f2dc5954f7e1d88f0eb9b4969fd96434",
+    "2023-01-02-MOBS-GLEAM_COVID.csv": "7c297df177993122e25f7f197dd96afd",
+    "2023-01-01-CU-scenario_mid.csv": "5326e983d48355c6422061cba3fe5b2b",
+    "2023-01-01-CU-nochange.csv": "315f0aac454dd7d5613e4fdce6ebe9ab",
+    "2023-01-01-UMass-gbq.csv": "97d229ae972b98b44a3b3aa43e8c345b",
+    "2023-01-02-MUNI-ARIMA.csv": "4169712c43a72d71cc35f387ec79b857",
+    "2023-01-02-MIT_ISOLAT-Mixtures.csv": "b1687aa326996dc67bf0d92c5dba2868",
+    "2023-01-01-SDSC_ISG-TrendModel.csv": "ab6c9a96563e1fdcf7760df0cb494b0f",
+    "2023-01-01-TTU-squider.csv": "3d58bbcfb715a651d379adb5e59827ce",
+    "2023-01-01-CU-select.csv": "cfe63df26794d0e141a64a96a63531e9"
 }
