@@ -4,7 +4,7 @@ model_abbr: NCSU-COVSIM
 model_contributors: Erik Rosenstrom (North Carolina State University) <erosens@ncsu.edu>, Jessica Mele (North Carolina State University) <jmele@ncsu.edu>, Julie Swann (North Carolina State University) <jlswann@ncsu.edu>, Julie Ivy (North Carolina State University) <jsivy@ncsu.edu>, Maria Mayorga (North Carolina State University) <memayorg@ncsu.edu>
 website_url: https://covsim.hosted-wordpress.oit.ncsu.edu/
 license: cc-by-4.0
-team_model_designation: proposed
+team_model_designation: primary
 ensemble_of_hub_models: false
 methods: Stochastic agent based model of North Carolina using data population and demographic at the census tract level.
 institution_affil: North Carolina State University

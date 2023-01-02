@@ -159,8 +159,6 @@ admissions for additional territories.
 Here are a few additional resources that describe these hospitalization
 data:
 
--   [data dictionary for the
-    dataset](https://healthdata.gov/covid-19-reported-patient-impact-and-hospital-capacity-state-data-dictionary)
 -   the [official document describing the “guidance for hospital
     reporting”](https://www.hhs.gov/sites/default/files/covid-19-faqs-hospitals-hospital-laboratory-acute-care-facility-data-reporting.pdf)
 -   [US Hospital Reporting

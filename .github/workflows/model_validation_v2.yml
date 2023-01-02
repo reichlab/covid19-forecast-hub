@@ -16,7 +16,7 @@ jobs:
         node-version: [10.2]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         repository: 'reichlab/covid19-forecast-hub-validations'
         ref: 'old_validations'

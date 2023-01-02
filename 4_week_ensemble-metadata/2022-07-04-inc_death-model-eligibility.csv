@@ -1,0 +1,1027 @@
+location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_eligibility,baseline_eligibility,sd_eligibility,overall_eligibility
+01,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+01,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+01,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+01,CU-select,eligible,"NA","NA","NA","NA",eligible
+01,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+01,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+01,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+01,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+01,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+01,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+01,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+01,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+01,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+01,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+01,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+01,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+01,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+01,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+02,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+02,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+02,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+02,CU-select,eligible,"NA","NA","NA","NA",eligible
+02,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+02,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+02,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+02,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+02,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+02,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+02,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+02,MIT-Cassandra,missing required forecasts,"NA","NA","NA","NA",ineligible
+02,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+02,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+02,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+02,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+02,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+02,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+04,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+04,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+04,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+04,CU-select,eligible,"NA","NA","NA","NA",eligible
+04,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+04,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+04,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+04,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+04,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+04,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+04,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+04,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+04,PSI-DRAFT,missing required forecasts,"NA","NA","NA","NA",ineligible
+04,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+04,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+04,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+04,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+04,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+05,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+05,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+05,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+05,CU-select,eligible,"NA","NA","NA","NA",eligible
+05,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+05,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+05,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+05,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+05,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+05,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+05,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+05,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+05,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+05,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+05,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+05,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+05,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+05,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+06,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+06,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+06,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+06,CU-select,eligible,"NA","NA","NA","NA",eligible
+06,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+06,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+06,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+06,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+06,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+06,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+06,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+06,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+06,PSI-DRAFT,missing required forecasts,"NA","NA","NA","NA",ineligible
+06,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+06,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+06,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+06,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+06,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+08,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+08,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+08,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+08,CU-select,eligible,"NA","NA","NA","NA",eligible
+08,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+08,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+08,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+08,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+08,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+08,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+08,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+08,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+08,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+08,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+08,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+08,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+08,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+08,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+09,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+09,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+09,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+09,CU-select,eligible,"NA","NA","NA","NA",eligible
+09,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+09,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+09,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+09,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+09,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+09,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+09,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+09,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+09,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+09,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+09,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+09,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+09,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+09,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+10,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+10,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+10,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+10,CU-select,eligible,"NA","NA","NA","NA",eligible
+10,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+10,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+10,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+10,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+10,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+10,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+10,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+10,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+10,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+10,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+10,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+10,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+10,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+10,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+11,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+11,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+11,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+11,CU-select,eligible,"NA","NA","NA","NA",eligible
+11,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+11,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+11,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+11,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+11,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+11,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+11,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+11,MIT-Cassandra,missing required forecasts,"NA","NA","NA","NA",ineligible
+11,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+11,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+11,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+11,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+11,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+11,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+12,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+12,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+12,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+12,CU-select,eligible,"NA","NA","NA","NA",eligible
+12,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+12,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+12,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+12,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+12,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+12,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+12,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+12,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+12,PSI-DRAFT,missing required forecasts,"NA","NA","NA","NA",ineligible
+12,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+12,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+12,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+12,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+12,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+13,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+13,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+13,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+13,CU-select,eligible,"NA","NA","NA","NA",eligible
+13,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+13,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+13,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+13,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+13,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+13,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+13,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+13,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+13,PSI-DRAFT,missing required forecasts,"NA","NA","NA","NA",ineligible
+13,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+13,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+13,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+13,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+13,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+15,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+15,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+15,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+15,CU-select,eligible,"NA","NA","NA","NA",eligible
+15,GT-DeepCOVID,missing required forecasts,"NA","NA","NA","NA",ineligible
+15,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+15,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+15,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+15,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+15,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+15,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
+15,MIT-Cassandra,missing required forecasts,"NA","NA","NA","NA",ineligible
+15,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+15,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+15,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+15,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+15,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+15,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+16,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+16,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+16,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+16,CU-select,eligible,"NA","NA","NA","NA",eligible
+16,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+16,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+16,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+16,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+16,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+16,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+16,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+16,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+16,PSI-DRAFT,missing required forecasts,"NA","NA","NA","NA",ineligible
+16,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+16,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+16,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+16,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+16,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+17,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+17,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+17,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+17,CU-select,eligible,"NA","NA","NA","NA",eligible
+17,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+17,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+17,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+17,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+17,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+17,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+17,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+17,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+17,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+17,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+17,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+17,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+17,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+17,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+18,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+18,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+18,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+18,CU-select,eligible,"NA","NA","NA","NA",eligible
+18,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+18,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+18,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+18,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+18,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+18,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+18,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+18,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+18,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+18,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+18,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+18,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+18,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+18,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+19,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+19,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+19,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+19,CU-select,eligible,"NA","NA","NA","NA",eligible
+19,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+19,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+19,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+19,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+19,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+19,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+19,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
+19,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+19,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+19,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+19,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+19,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+19,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+19,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+20,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+20,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+20,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+20,CU-select,eligible,"NA","NA","NA","NA",eligible
+20,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+20,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+20,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+20,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+20,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+20,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+20,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+20,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+20,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+20,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+20,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+20,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+20,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+20,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+21,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+21,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+21,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+21,CU-select,eligible,"NA","NA","NA","NA",eligible
+21,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+21,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+21,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+21,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+21,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+21,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+21,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
+21,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+21,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+21,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+21,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+21,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+21,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+21,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+22,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+22,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+22,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+22,CU-select,eligible,"NA","NA","NA","NA",eligible
+22,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+22,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+22,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+22,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+22,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+22,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+22,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+22,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+22,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+22,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+22,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+22,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+22,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+22,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+23,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+23,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+23,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+23,CU-select,eligible,"NA","NA","NA","NA",eligible
+23,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+23,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+23,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+23,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+23,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+23,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+23,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+23,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+23,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+23,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+23,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+23,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+23,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+23,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+24,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+24,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+24,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+24,CU-select,eligible,"NA","NA","NA","NA",eligible
+24,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+24,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+24,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+24,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+24,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+24,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+24,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+24,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+24,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+24,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+24,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+24,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+24,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+24,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+25,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+25,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+25,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+25,CU-select,eligible,"NA","NA","NA","NA",eligible
+25,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+25,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+25,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+25,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+25,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+25,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+25,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
+25,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+25,PSI-DRAFT,missing required forecasts,"NA","NA","NA","NA",ineligible
+25,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+25,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+25,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+25,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+25,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+26,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+26,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+26,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+26,CU-select,eligible,"NA","NA","NA","NA",eligible
+26,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+26,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+26,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+26,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+26,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+26,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+26,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+26,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+26,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+26,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+26,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+26,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+26,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+26,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+27,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+27,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+27,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+27,CU-select,eligible,"NA","NA","NA","NA",eligible
+27,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+27,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+27,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+27,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+27,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+27,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+27,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+27,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+27,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+27,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+27,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+27,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+27,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+27,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+28,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+28,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+28,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+28,CU-select,eligible,"NA","NA","NA","NA",eligible
+28,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+28,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+28,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+28,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+28,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+28,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+28,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+28,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+28,PSI-DRAFT,missing required forecasts,"NA","NA","NA","NA",ineligible
+28,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+28,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+28,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+28,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+28,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+29,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+29,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+29,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+29,CU-select,eligible,"NA","NA","NA","NA",eligible
+29,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+29,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+29,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+29,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+29,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+29,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+29,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+29,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+29,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+29,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+29,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+29,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+29,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+29,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+30,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+30,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+30,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+30,CU-select,eligible,"NA","NA","NA","NA",eligible
+30,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+30,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+30,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+30,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+30,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+30,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+30,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+30,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+30,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+30,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+30,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+30,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+30,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+30,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+31,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+31,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+31,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+31,CU-select,eligible,"NA","NA","NA","NA",eligible
+31,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+31,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+31,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+31,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+31,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+31,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+31,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+31,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+31,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+31,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+31,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+31,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+31,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+31,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+32,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+32,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+32,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+32,CU-select,eligible,"NA","NA","NA","NA",eligible
+32,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+32,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+32,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+32,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+32,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+32,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+32,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
+32,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+32,PSI-DRAFT,missing required forecasts,"NA","NA","NA","NA",ineligible
+32,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+32,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+32,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+32,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+32,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+33,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+33,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+33,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+33,CU-select,eligible,"NA","NA","NA","NA",eligible
+33,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+33,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+33,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+33,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+33,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+33,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+33,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+33,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+33,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+33,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+33,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+33,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+33,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+33,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+34,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+34,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+34,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+34,CU-select,eligible,"NA","NA","NA","NA",eligible
+34,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+34,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+34,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+34,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+34,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+34,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+34,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
+34,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+34,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+34,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+34,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+34,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+34,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+34,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+35,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+35,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+35,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+35,CU-select,eligible,"NA","NA","NA","NA",eligible
+35,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+35,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+35,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+35,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+35,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+35,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+35,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
+35,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+35,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+35,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+35,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+35,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+35,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+35,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+36,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+36,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+36,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+36,CU-select,eligible,"NA","NA","NA","NA",eligible
+36,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+36,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+36,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+36,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+36,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+36,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+36,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+36,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+36,PSI-DRAFT,missing required forecasts,"NA","NA","NA","NA",ineligible
+36,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+36,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+36,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+36,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+36,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+37,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+37,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+37,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+37,CU-select,eligible,"NA","NA","NA","NA",eligible
+37,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+37,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+37,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+37,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+37,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+37,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+37,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+37,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+37,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+37,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+37,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+37,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+37,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+37,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+38,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+38,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+38,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+38,CU-select,eligible,"NA","NA","NA","NA",eligible
+38,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+38,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+38,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+38,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+38,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+38,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+38,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+38,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+38,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+38,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+38,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+38,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+38,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+38,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+39,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+39,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+39,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+39,CU-select,eligible,"NA","NA","NA","NA",eligible
+39,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+39,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+39,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+39,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+39,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+39,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+39,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+39,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+39,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+39,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+39,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+39,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+39,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+39,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+40,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+40,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+40,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+40,CU-select,eligible,"NA","NA","NA","NA",eligible
+40,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+40,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+40,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+40,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+40,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+40,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+40,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
+40,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+40,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+40,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+40,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+40,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+40,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+40,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+41,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+41,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+41,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+41,CU-select,eligible,"NA","NA","NA","NA",eligible
+41,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+41,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+41,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+41,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+41,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+41,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+41,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
+41,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+41,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+41,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+41,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+41,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+41,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+41,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+42,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+42,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+42,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+42,CU-select,eligible,"NA","NA","NA","NA",eligible
+42,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+42,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+42,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+42,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+42,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+42,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+42,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+42,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+42,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+42,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+42,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+42,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+42,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+42,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+44,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+44,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+44,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+44,CU-select,eligible,"NA","NA","NA","NA",eligible
+44,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+44,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+44,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+44,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+44,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+44,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+44,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+44,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+44,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+44,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+44,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+44,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+44,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+44,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+45,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+45,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+45,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+45,CU-select,eligible,"NA","NA","NA","NA",eligible
+45,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+45,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+45,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+45,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+45,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+45,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+45,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+45,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+45,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+45,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+45,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+45,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+45,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+45,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+46,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+46,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+46,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+46,CU-select,eligible,"NA","NA","NA","NA",eligible
+46,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+46,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+46,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+46,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+46,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+46,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+46,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+46,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+46,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+46,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+46,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+46,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+46,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+46,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+47,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+47,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+47,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+47,CU-select,eligible,"NA","NA","NA","NA",eligible
+47,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+47,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+47,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+47,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+47,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+47,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+47,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+47,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+47,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+47,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+47,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+47,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+47,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+47,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+48,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+48,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+48,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+48,CU-select,eligible,"NA","NA","NA","NA",eligible
+48,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+48,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+48,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+48,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+48,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+48,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+48,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
+48,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+48,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+48,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+48,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+48,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+48,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+48,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+49,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+49,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+49,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+49,CU-select,eligible,"NA","NA","NA","NA",eligible
+49,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+49,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+49,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+49,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+49,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+49,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+49,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+49,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+49,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+49,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+49,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+49,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+49,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+49,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+50,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+50,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+50,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+50,CU-select,eligible,"NA","NA","NA","NA",eligible
+50,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+50,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+50,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+50,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+50,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+50,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+50,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+50,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+50,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+50,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+50,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+50,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+50,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+50,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+51,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+51,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+51,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+51,CU-select,eligible,"NA","NA","NA","NA",eligible
+51,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+51,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+51,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+51,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+51,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+51,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+51,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
+51,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+51,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+51,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+51,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+51,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+51,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+51,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+53,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+53,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+53,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+53,CU-select,eligible,"NA","NA","NA","NA",eligible
+53,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+53,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+53,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+53,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+53,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+53,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+53,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
+53,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+53,PSI-DRAFT,missing required forecasts,"NA","NA","NA","NA",ineligible
+53,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+53,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+53,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+53,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+53,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+54,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+54,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+54,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+54,CU-select,eligible,"NA","NA","NA","NA",eligible
+54,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+54,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+54,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+54,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+54,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+54,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+54,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
+54,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+54,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+54,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+54,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+54,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+54,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+54,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+55,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+55,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+55,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+55,CU-select,eligible,"NA","NA","NA","NA",eligible
+55,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+55,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+55,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+55,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+55,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+55,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+55,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
+55,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+55,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+55,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+55,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+55,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+55,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+55,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+56,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+56,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+56,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+56,CU-select,eligible,"NA","NA","NA","NA",eligible
+56,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+56,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+56,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+56,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+56,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+56,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+56,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+56,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+56,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+56,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+56,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+56,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+56,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+56,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+60,BPagano-RtDriven,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,CovidAnalytics-DELPHI,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+60,CU-select,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,GT-DeepCOVID,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+60,Karlen-pypm,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+60,Microsoft-DeepSTIA,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,MIT-Cassandra,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,PSI-DRAFT,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+60,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+66,BPagano-RtDriven,missing required forecasts,"NA","NA","NA","NA",ineligible
+66,CovidAnalytics-DELPHI,missing required forecasts,"NA","NA","NA","NA",ineligible
+66,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+66,CU-select,missing required forecasts,"NA","NA","NA","NA",ineligible
+66,GT-DeepCOVID,missing required forecasts,"NA","NA","NA","NA",ineligible
+66,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+66,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+66,Karlen-pypm,missing required forecasts,"NA","NA","NA","NA",ineligible
+66,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+66,Microsoft-DeepSTIA,missing required forecasts,"NA","NA","NA","NA",ineligible
+66,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+66,MIT-Cassandra,missing required forecasts,"NA","NA","NA","NA",ineligible
+66,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+66,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+66,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+66,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+66,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+66,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+69,BPagano-RtDriven,missing required forecasts,"NA","NA","NA","NA",ineligible
+69,CovidAnalytics-DELPHI,missing required forecasts,"NA","NA","NA","NA",ineligible
+69,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+69,CU-select,missing required forecasts,"NA","NA","NA","NA",ineligible
+69,GT-DeepCOVID,missing required forecasts,"NA","NA","NA","NA",ineligible
+69,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+69,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+69,Karlen-pypm,missing required forecasts,"NA","NA","NA","NA",ineligible
+69,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+69,Microsoft-DeepSTIA,missing required forecasts,"NA","NA","NA","NA",ineligible
+69,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+69,MIT-Cassandra,missing required forecasts,"NA","NA","NA","NA",ineligible
+69,PSI-DRAFT,missing required forecasts,"NA","NA","NA","NA",ineligible
+69,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+69,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+69,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+69,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+69,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+72,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+72,CovidAnalytics-DELPHI,missing required forecasts,"NA","NA","NA","NA",ineligible
+72,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+72,CU-select,missing required forecasts,"NA","NA","NA","NA",ineligible
+72,GT-DeepCOVID,missing required forecasts,"NA","NA","NA","NA",ineligible
+72,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+72,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+72,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+72,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+72,Microsoft-DeepSTIA,missing required forecasts,"NA","NA","NA","NA",ineligible
+72,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+72,MIT-Cassandra,missing required forecasts,"NA","NA","NA","NA",ineligible
+72,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+72,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+72,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+72,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+72,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+72,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+78,BPagano-RtDriven,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,CovidAnalytics-DELPHI,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+78,CU-select,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,GT-DeepCOVID,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+78,Karlen-pypm,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+78,Microsoft-DeepSTIA,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,MIT_ISOLAT-Mixtures,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,MIT-Cassandra,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+78,QJHong-Encounter,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+78,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible
+US,BPagano-RtDriven,eligible,"NA","NA","NA","NA",eligible
+US,CovidAnalytics-DELPHI,eligible,"NA","NA","NA","NA",eligible
+US,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+US,CU-select,eligible,"NA","NA","NA","NA",eligible
+US,GT-DeepCOVID,eligible,"NA","NA","NA","NA",eligible
+US,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+US,JHUAPL-Bucky,eligible,"NA","NA","NA","NA",eligible
+US,Karlen-pypm,eligible,"NA","NA","NA","NA",eligible
+US,LUcompUncertLab-VAR_3streams,eligible,"NA","NA","NA","NA",eligible
+US,Microsoft-DeepSTIA,eligible,"NA","NA","NA","NA",eligible
+US,MIT_ISOLAT-Mixtures,eligible,"NA","NA","NA","NA",eligible
+US,MIT-Cassandra,eligible,"NA","NA","NA","NA",eligible
+US,PSI-DRAFT,eligible,"NA","NA","NA","NA",eligible
+US,QJHong-Encounter,eligible,"NA","NA","NA","NA",eligible
+US,RobertWalraven-ESG,eligible,"NA","NA","NA","NA",eligible
+US,SDSC_ISG-TrendModel,missing required forecasts,"NA","NA","NA","NA",ineligible
+US,TTU-squider,missing required forecasts,"NA","NA","NA","NA",ineligible
+US,USC-SI_kJalpha,eligible,"NA","NA","NA","NA",eligible

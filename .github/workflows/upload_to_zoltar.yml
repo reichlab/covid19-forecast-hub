@@ -35,7 +35,7 @@ jobs:
         remove-haskell: 'true'
     - name: Check space available
       run: df --human-readable
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Check space available after checkout
       run: df --human-readable
     # - name: Use Node.js ${{ matrix.node-version }}
