@@ -1,13 +1,13 @@
+import calendar
+import time
+
 from zoltpy.covid19 import validate_quantile_csv_file
 import glob
-from pprint import pprint
 import sys
 import os
 import pandas as pd
 import numpy as np
 from datetime import datetime
-import yaml
-from itertools import chain
 import collections
 from github import Github
 from pathlib import Path
@@ -237,14 +237,42 @@ def remove_all_entries_from_validated_files(files_changed):
             validated_files = validated_files[validated_files.file_path != f]
         validated_files.to_csv(val_path, index=False)
 
+
+# `Github.get_repo()` wrapper that handles rate limiting by sleeping for 60 seconds if necessary. copied from
+# https://github.com/reichlab/covid19-forecast-evals/blob/main/code/get_file_version_version_full.py
+def get_repo():
+    g = Github()
+
+    # sleep if hitting rate limit. https://github.com/PyGithub/PyGithub/issues/1319
+    rate_limit = g.get_rate_limit()
+    core_rate_limit = rate_limit.core
+    remaining = core_rate_limit.remaining
+    if remaining < 20:  # NB: 20 is arbitrary threshold for calls remaining
+        # add seconds to be sure the rate limit has been reset:
+        reset_timestamp = calendar.timegm(core_rate_limit.reset.timetuple())
+        sleep_time = reset_timestamp - calendar.timegm(time.gmtime()) + 60  # seconds. NB: 60 is arbitrary
+        print(f"limit low. rate_limit={rate_limit}, reset_timestamp={reset_timestamp}, sleep_time={sleep_time}")
+
+        # good night
+        if sleep_time > 0:  # NB: sometimes it's negative. don't know why
+            time.sleep(sleep_time)
+        else:
+            time.sleep(60)  # NB: arbitrary
+
+        rate_limit = g.get_rate_limit()
+        print(f"awake. rate_limit={rate_limit}")
+    else:
+        print(f"limit ok. rate_limit={rate_limit}")
+
+    # continue
+    return g.get_repo('reichlab/covid19-forecast-hub')
+
+
 def main():
     my_path = "./data-processed"
     forecasts_changed = []
-
-    g = Github()
-    repo = g.get_repo('reichlab/covid19-forecast-hub')    
-    
-    if os.environ.get('GITHUB_ACTIONS')=='true':
+    repo = get_repo()
+    if os.environ.get('GITHUB_ACTIONS') == 'true':
         print(f"Github event name: {os.environ.get('GITHUB_EVENT_NAME')}")
         if os.environ.get('GITHUB_EVENT_NAME') == 'pull_request':
             # GIHUB_REF for PR is in the format: refs/pull/:prNumber/merge, extracting that here:
@@ -252,17 +280,19 @@ def main():
             pr = repo.get_pull(pr_num)
             files_changed = [f for f in pr.get_files()]
         elif os.environ.get('GITHUB_EVENT_NAME') == 'push':
-            commit = repo.get_commit(sha = os.environ.get('GITHUB_SHA'))
+            commit = repo.get_commit(sha=os.environ.get('GITHUB_SHA'))
             files_changed = commit.files
-        
+
         if 'files_changed' in locals() and files_changed is not None:
-            forecasts_changed.extend([f"./{file.filename}" for file in files_changed if file.filename.startswith('data-processed') and file.filename.endswith('.csv')])
-    elif os.environ.get('TRAVIS')=='true':
-        if os.environ.get('TRAVIS_EVENT_TYPE')=='pull_request':
+            forecasts_changed.extend([f"./{file.filename}" for file in files_changed if
+                                      file.filename.startswith('data-processed') and file.filename.endswith('.csv')])
+    elif os.environ.get('TRAVIS') == 'true':
+        if os.environ.get('TRAVIS_EVENT_TYPE') == 'pull_request':
             pr_num = int(os.environ.get('TRAVIS_PULL_REQUEST'))
             pr = repo.get_pull(pr_num)
             files_changed = [f for f in pr.get_files()]
-            forecasts_changed.extend([f"./{file.filename}" for file in files_changed if file.filename.startswith('data-processed') and file.filename.endswith('.csv')])
+            forecasts_changed.extend([f"./{file.filename}" for file in files_changed if
+                                      file.filename.startswith('data-processed') and file.filename.endswith('.csv')])
     remove_all_entries_from_validated_files(forecasts_changed)
     print(f"files changed: {forecasts_changed}")
     check_formatting(my_path)
