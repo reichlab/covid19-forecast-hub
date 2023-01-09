@@ -604,3 +604,12 @@ forecast_date,response_var,spatial_resolution,theta
 2023-01-02,inc_case,national,0.3
 2023-01-02,inc_hosp,state,5.5
 2023-01-02,inc_hosp,national,2.9
+2023-01-09,cum_death,state,5.9
+2023-01-09,cum_death,national,2.6
+2023-01-09,inc_death,state,5.5
+2023-01-09,inc_death,national,5.6
+2023-01-09,inc_case,county,0
+2023-01-09,inc_case,state,1
+2023-01-09,inc_case,national,0
+2023-01-09,inc_hosp,state,8.7
+2023-01-09,inc_hosp,national,3.7
