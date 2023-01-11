@@ -119,7 +119,7 @@ def upload_covid_forecast_by_model(conn, json_io_dict, forecast_filename, projec
     # Runs only twice
     while tries<2:
         try:
-            job = model.upload_forecast(json_io_dict, forecast_filename, timezero_date, notes)
+            job = model.upload_forecast(json_io_dict, forecast_filename, timezero_date, notes=notes)
             if sync:
                 return util.busy_poll_job(job)
             else:
