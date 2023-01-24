@@ -7927,9 +7927,20 @@
     "2023-01-23-GT-DeepCOVID.csv": "2492d31706c2326f820bd898924ac460",
     "2023-01-22-CU-select.csv": "3f10be5f584834cafe609dc5cd5aac8c",
     "2023-01-22-USC-SI_kJalpha.csv": "dde6815b4c1135310a924876957c0804",
-    "2023-01-23-COVIDhub-baseline.csv": "853217cbd4c77d9bbd2356aef7cf24a9",
+    "2023-01-23-COVIDhub-baseline.csv": "72c8d40662e6981aed79937dc594e7ac",
     "2023-01-23-PR_UMD-CF_RepTiLe.csv": "0ba8891fa68cd3ddb6609a7d81134cbd",
     "2023-01-23-MUNI-ARIMA.csv": "99a971370940a9bfa7a1243daa5cfb64",
     "2023-01-22-CU-scenario_mid.csv": "cc9b77a1b8788bde83704830ffcc5bd8",
-    "2023-01-22-CUBoulder-COVIDLSTM.csv": "3cfd947e3da7db00ff0de7ac1802a510"
+    "2023-01-22-CUBoulder-COVIDLSTM.csv": "3cfd947e3da7db00ff0de7ac1802a510",
+    "2023-01-22-JHU_IDD-CovidSP.csv": "86d68a77d78b9b39569fd618db1f3a3e",
+    "2023-01-23-PSI-DRAFT.csv": "62e6cb2098dcf9be6e69b377315f052b",
+    "2023-01-23-MIT_ISOLAT-Mixtures.csv": "7999aeac6ffadfd2c10907e8421ca026",
+    "2023-01-23-COVIDhub-trained_ensemble.csv": "4d418aadda0b9e7d564e9e9ca1e249e8",
+    "2023-01-23-COVIDhub-ensemble.csv": "4452f63b0425f4b12b0e0de8fe9ef91a",
+    "2023-01-23-UMass-gbq.csv": "3ebc02db184f46cce872a92984d459ee",
+    "2023-01-23-CEPH-Rtrend_covid.csv": "567e1978a65bd936c0b74fcaba56765d",
+    "2023-01-22-Karlen-pypm.csv": "37a3e35c51de066a0d32a7515ac94787",
+    "2023-01-23-COVIDhub-4_week_ensemble.csv": "e15147691b9da2f0fdfdc261c8cab89d",
+    "2023-01-23-UT-Osiris.csv": "a02ff1de93ab9778189f298ad4366bfc",
+    "2023-01-23-CMU-TimeSeries.csv": "e14c10611a67bb98b3a8e5a3412c70dc"
 }
