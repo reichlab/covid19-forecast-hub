@@ -7807,3 +7807,16 @@ file_path,validation_date
 ./data-processed/MIT-Cassandra/2023-01-30-MIT-Cassandra.csv,2023-01-30 18:34:11.862829
 ./data-processed/CU-select/2023-01-29-CU-select.csv,2023-01-30 18:34:23.533760
 ./data-processed/MOBS-GLEAM_COVID/2023-01-30-MOBS-GLEAM_COVID.csv,2023-01-30 18:34:26.594154
+./data-processed/CEPH-Rtrend_covid/2023-01-30-CEPH-Rtrend_covid.csv,2023-01-31 00:48:12.638225
+./data-processed/GT-DeepCOVID/2023-01-30-GT-DeepCOVID.csv,2023-01-31 00:48:15.324813
+./data-processed/UMass-gbq/2023-01-30-UMass-gbq.csv,2023-01-31 00:48:17.598364
+./data-processed/PSI-DRAFT/2023-01-30-PSI-DRAFT.csv,2023-01-31 00:48:18.431838
+./data-processed/UMass-trends_ensemble/2023-01-30-UMass-trends_ensemble.csv,2023-01-31 00:48:20.426152
+./data-processed/COVIDhub-trained_ensemble/2023-01-30-COVIDhub-trained_ensemble.csv,2023-01-31 00:48:23.299849
+./data-processed/COVIDhub-4_week_ensemble/2023-01-30-COVIDhub-4_week_ensemble.csv,2023-01-31 00:48:31.759288
+./data-processed/UVA-Ensemble/2023-01-30-UVA-Ensemble.csv,2023-01-31 00:48:34.528314
+./data-processed/CMU-TimeSeries/2023-01-30-CMU-TimeSeries.csv,2023-01-31 00:48:36.565415
+./data-processed/PSI-DICE/2023-01-30-PSI-DICE.csv,2023-01-31 00:48:39.019033
+./data-processed/COVIDhub-ensemble/2023-01-30-COVIDhub-ensemble.csv,2023-01-31 00:48:42.399488
+./data-processed/UMass-sarix/2023-01-30-UMass-sarix.csv,2023-01-31 00:48:44.427881
+./data-processed/AIMdyn-SlidingKoopman/2023-01-29-AIMdyn-SlidingKoopman.csv,2023-01-31 00:48:44.614814
