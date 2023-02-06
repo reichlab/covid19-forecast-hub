@@ -631,3 +631,9 @@ forecast_date,response_var,spatial_resolution,theta
 2023-01-23,inc_case,national,0.2
 2023-01-23,inc_hosp,state,7.8
 2023-01-23,inc_hosp,national,3.7
+2023-01-30,cum_death,state,5.3
+2023-01-30,cum_death,national,1.6
+2023-01-30,inc_death,state,8.6
+2023-01-30,inc_death,national,5.1
+2023-01-30,inc_hosp,state,6.5
+2023-01-30,inc_hosp,national,11.2
