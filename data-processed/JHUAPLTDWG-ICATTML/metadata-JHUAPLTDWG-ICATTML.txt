@@ -1,0 +1,9 @@
+team_name: Johns Hopkins University Applied Physics Lab, Testing and Diagnostic Working Group
+model_name: ICATTML
+model_abbr: JHUAPLTDWG-ICATTML
+model_contributors: Yamil Padilla Maldonado (JHU/APL) <yamil.padilla.maldonado@jhuapl.edu>, Jonathon Kopecky (JHU/APL) <Jonathon.Kopecky@jhuapl.edu>, Micajah McGarity (JHU/APL) <Micajah.McGarity@jhuapl.edu>, Elizabeth Currier (JHU/APL) <Elizabeth.Currier@jhuapl.edu>, Travis Lim (JHU/APL) <Travis.Lim@jhuapl.edu>, Adam Schmidt (JHU/APL) <Adam.Schmidt@jhuapl.edu>, Hannah Kowpak (JHU/APL) <Hannah.Kowpak@jhuapl.edu>
+website_url: https://www.jhuapl.edu
+license: mit
+team_model_designation: primary
+methods: Ensemble of machine learning models forecasts that have been provided with lagged data derived from the ICATT program, CELR tests, and wastewater surveillance.
+ensemble_of_hub_models: false
