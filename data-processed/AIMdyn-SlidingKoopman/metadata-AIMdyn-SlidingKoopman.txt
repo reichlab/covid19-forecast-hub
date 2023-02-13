@@ -1,7 +1,7 @@
 team_name: AIMdyn
 model_name: SlidingKoopman
 model_abbr: AIMdyn-SlidingKoopman
-model_contributors: Igor Mezic <mezici@aimdyn.com>, Maria Fonoberova <mfonoberova@aimdyn.com>, Allan Avila <allan@aimdyn.com>, Dean Huang <huangd@aimdyn.com>, Steven Liu <stevenl@aimdyn.com>, Zlatko Drmac <zlatko.drmac@math.hr>
+model_contributors: Igor Mezic <mezici@aimdyn.com>, Maria Fonoberova <mfonoberova@aimdyn.com>, Allan Avila <allan@aimdyn.com>, Dean Huang <huangd@aimdyn.com>, Steven Liu <stevenl@aimdyn.com>, Alan Cao <acao@aimdyn.com>, Zlatko Drmac <zlatko.drmac@math.hr>
 website_url: https://aimdyn.com/
 license: cc-by-nc-nd-4.0
 team_model_designation: primary
