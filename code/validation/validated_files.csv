@@ -7890,3 +7890,6 @@ file_path,validation_date
 ./data-processed/CU-scenario_low/2023-02-12-CU-scenario_low.csv,2023-02-14 00:39:23.188998
 ./data-processed/PSI-DICE/2023-02-13-PSI-DICE.csv,2023-02-14 00:39:26.031513
 ./data-processed/CU-scenario_mid/2023-02-12-CU-scenario_mid.csv,2023-02-14 00:39:41.482614
+./data-processed/COVIDhub-ensemble/2023-02-13-COVIDhub-ensemble.csv,2023-02-14 03:16:40.013642
+./data-processed/COVIDhub-4_week_ensemble/2023-02-13-COVIDhub-4_week_ensemble.csv,2023-02-14 03:16:51.073167
+./data-processed/COVIDhub-trained_ensemble/2023-02-13-COVIDhub-trained_ensemble.csv,2023-02-14 03:16:54.792546
