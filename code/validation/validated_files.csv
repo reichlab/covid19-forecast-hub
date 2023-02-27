@@ -7933,3 +7933,12 @@ file_path,validation_date
 ./data-processed/COVIDhub_CDC-ensemble/2023-02-20-COVIDhub_CDC-ensemble.csv,2023-02-22 00:38:02.895012
 ./data-processed/BPagano-RtDriven/2023-02-26-BPagano-RtDriven.csv,2023-02-26 18:59:18.994481
 ./data-processed/CUB_PopCouncil-SLSTM/2023-02-25-CUB_PopCouncil-SLSTM.csv,2023-02-27 00:36:54.101202
+./data-processed/MOBS-GLEAM_COVID/2023-02-27-MOBS-GLEAM_COVID.csv,2023-02-27 18:33:57.025520
+./data-processed/JHU_IDD-CovidSP/2023-02-26-JHU_IDD-CovidSP.csv,2023-02-27 18:33:59.951806
+./data-processed/TTU-squider/2023-02-26-TTU-squider.csv,2023-02-27 18:34:00.062903
+./data-processed/UMass-gbq/2023-02-27-UMass-gbq.csv,2023-02-27 18:34:02.452138
+./data-processed/MUNI-ARIMA/2023-02-27-MUNI-ARIMA.csv,2023-02-27 18:34:05.707926
+./data-processed/PR_UMD-CF_RepTiLe/2023-02-27-PR_UMD-CF_RepTiLe.csv,2023-02-27 18:34:06.047277
+./data-processed/GT-DeepCOVID/2023-02-27-GT-DeepCOVID.csv,2023-02-27 18:34:08.953885
+./data-processed/COVIDhub-baseline/2023-02-27-COVIDhub-baseline.csv,2023-02-27 18:34:24.866459
+./data-processed/Microsoft-DeepSTIA/2023-02-27-Microsoft-DeepSTIA.csv,2023-02-27 18:34:26.521828
