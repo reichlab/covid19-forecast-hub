@@ -8100,5 +8100,22 @@
     "2023-02-27-PR_UMD-CF_RepTiLe.csv": "b0709427ffde59ac522c38dd69498690",
     "2023-02-27-GT-DeepCOVID.csv": "136f1d79331570b7f3a1d422a8f84ff6",
     "2023-02-27-COVIDhub-baseline.csv": "ab7fbc77257d2536c66f614a3223ba54",
-    "2023-02-27-Microsoft-DeepSTIA.csv": "0607d4f88a7e5cd5e7b391f8087bfc5b"
+    "2023-02-27-Microsoft-DeepSTIA.csv": "0607d4f88a7e5cd5e7b391f8087bfc5b",
+    "2023-02-27-COVIDhub-trained_ensemble.csv": "fcf95472d5f19a8f0714fa14fea1c310",
+    "2023-02-27-PSI-DICE.csv": "ee23cb95385931f4b1cad96a430bad36",
+    "2023-02-27-UMass-sarix.csv": "6f6ad3dc13b5fc049a0ffd2c7704ddc1",
+    "2023-02-27-JHUAPLTDWG-ICATTML.csv": "6c191cdc36ef7e9c3dd74e9d52e3b09a",
+    "2023-02-27-COVIDhub-4_week_ensemble.csv": "53ee026a39286a6fc729c9606cfdbf90",
+    "2023-02-27-MIT_ISOLAT-Mixtures.csv": "46db75c3584945770fd5dd6b97ec85a8",
+    "2023-02-27-PSI-DRAFT.csv": "502d7e221c1d43de19bffe1856006598",
+    "2023-02-27-MIT-Cassandra.csv": "0e5f2c3277c33ada5d675c7bed915f78",
+    "2023-02-26-CU-nochange.csv": "c7a14386b5b1e0933d04b791143514b3",
+    "2023-02-26-CU-select.csv": "496a83025df92b2c12563998995f4286",
+    "2023-02-27-CMU-TimeSeries.csv": "44501b57a001618bcd4aca05cd7cb933",
+    "2023-02-27-COVIDhub-ensemble.csv": "e143dced9dfd909c6b5ed3f4d5ec2ef7",
+    "2023-02-26-CU-scenario_mid.csv": "567c34d1573b14e7b929c6d35ec24d27",
+    "2023-02-27-CEPH-Rtrend_covid.csv": "c380118dec164802c151156e69a540ef",
+    "2023-02-27-UMass-trends_ensemble.csv": "64229ab5eec3ff525d8621adf76be9ec",
+    "2023-02-27-UT-Osiris.csv": "6054a73d8f1bdfc51407ad8bcc886195",
+    "2023-02-26-CU-scenario_low.csv": "496a83025df92b2c12563998995f4286"
 }
