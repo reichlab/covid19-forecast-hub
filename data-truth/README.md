@@ -5,9 +5,10 @@ are eventually compared to.
 The main files in this folder contain processed versions of data from 
 JHU CSSE data while subfolders contain other data sources. 
 As of February 20, 2023 we are no longer collecting data or analyzing 
-COVID-19 cases. As of March 10, 2023, Johns Hopkins University's (JHU) 
-Center for System Science and Engineering (CSSE) will no longer report 
-COVID-19 cases or deaths.
+COVID-19 cases and as of March 6, 2023 we are no longer collecting data 
+or analyzing COVID-19 deaths. As of March 10, 2023, Johns Hopkins 
+University's (JHU) Center for System Science and Engineering (CSSE) 
+will no longer report COVID-19 cases or deaths.
 
 *Table of Contents*
 
