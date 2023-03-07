@@ -4,10 +4,11 @@ The data-truth folder contains the "ground truth" data that forecasts
 are eventually compared to. 
 The main files in this folder contain processed versions of data from 
 JHU CSSE data while subfolders contain other data sources. 
-As of February 20, 2023 for case forecasts and March 6, 2023 for death 
-forecasts, these forecasts are not being evaluated or built into ensemble 
-forecasts. We are leaving these details for clarity about the data that 
-are collected.
+As of February 20, 2023 we are no longer collecting data or analyzing 
+COVID-19 cases and as of March 6, 2023 we are no longer collecting data 
+or analyzing COVID-19 deaths. As of March 10, 2023, Johns Hopkins 
+University's (JHU) Center for System Science and Engineering (CSSE) 
+will no longer report COVID-19 cases or deaths.
 
 *Table of Contents*
 
