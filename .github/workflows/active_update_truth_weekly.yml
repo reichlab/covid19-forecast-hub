@@ -1,4 +1,4 @@
-name: (Active) Update JHU, NY Times, USAFacts truth data weekly
+name: (Active) Update hospitilization truth data weekly
 on:
   workflow_dispatch:
     inputs: 
@@ -80,13 +80,13 @@ jobs:
       env:
         GITHUB_PAT: ${{ secrets.GH_TOKEN }}
 
-    - run: mkdir ./covidData/data-raw/JHU/
+
     
     - name: Install covidData
       run: make recent_data
       working-directory: ./covidData/code/data-processing
       
-    - name: Generate truth csv files (NYTimes, JHU, Hospitalization, Zoltar)
+    - name: Generate truth csv files (Hospitalization)
       run: Rscript ./covid19-forecast-hub/code/R_scripts/generate_truth_csvs.R
       
     - name: Push generated files to GitHub
