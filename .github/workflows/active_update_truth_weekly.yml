@@ -82,11 +82,11 @@ jobs:
 
     
     - name: Install covidData
-        run: |
+      run: |
           install.packages(c("devtools"))
           devtools::install_github("reichlab/covidData")
           remotes::install_deps(dependencies = NA)
-        shell: Rscript {0}
+      shell: Rscript {0}
       
     - name: Generate truth csv files (Hospitalization)
       run: Rscript ./covid19-forecast-hub/code/R_scripts/generate_truth_csvs.R
