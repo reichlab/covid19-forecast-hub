@@ -1,4 +1,4 @@
-name: (Active) Update JHU, NY Times, USAFacts truth data weekly
+name: (Active) Update hospitilization truth data weekly
 on:
   workflow_dispatch:
     inputs: 
@@ -80,13 +80,12 @@ jobs:
       env:
         GITHUB_PAT: ${{ secrets.GH_TOKEN }}
 
-    - run: mkdir ./covidData/data-raw/JHU/
     
     - name: Install covidData
-      run: make recent_data
+      run: remotes::install_github("reichlab/covidData")
       working-directory: ./covidData/code/data-processing
       
-    - name: Generate truth csv files (NYTimes, JHU, Hospitalization, Zoltar)
+    - name: Generate truth csv files (Hospitalization)
       run: Rscript ./covid19-forecast-hub/code/R_scripts/generate_truth_csvs.R
       
     - name: Push generated files to GitHub
@@ -95,12 +94,7 @@ jobs:
       env:
         GH_TOKEN: ${{secrets.GH_TOKEN}}
         
-    - name: Push Zoltar truth to Zoltar
-      run: python3 ./code/zoltar_scripts/upload_truth_to_zoltar.py
-      working-directory: ./covid19-forecast-hub
-      env:
-        Z_USERNAME: ${{ secrets.Z_USERNAME }}
-        Z_PASSWORD: ${{ secrets.Z_PASSWORD }}
+
       
     - name: Check space available after update
       run: df --human-readable
