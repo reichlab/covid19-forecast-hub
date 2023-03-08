@@ -87,6 +87,8 @@ jobs:
           devtools::install_github("reichlab/covidData")
           remotes::install_deps(dependencies = NA)
       shell: Rscript {0}
+      env:
+        GH_TOKEN: ${{secrets.GH_TOKEN}}
       
     - name: Generate truth csv files (Hospitalization)
       run: Rscript ./covid19-forecast-hub/code/R_scripts/generate_truth_csvs.R
