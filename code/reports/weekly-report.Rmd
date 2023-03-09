@@ -51,6 +51,7 @@ library(tidyverse)
 library(htmltools)
 library(covidHubUtils)
 library (zoo)
+library(RColorBrewer)
 theme_set(theme_bw())
 ```
 
@@ -137,7 +138,7 @@ models_this_week<-load_forecasts(
         # models=c(),
         dates = this_week_timezeroes,
         types = c("point"),
-        targets = c("1 wk ahead cum death", "1 wk ahead inc death", "1 wk ahead inc case", "1 day ahead inc hosp"),
+        targets = c("1 day ahead inc hosp"),
         verbose = FALSE)%>%
   pull(model) %>% sort.default()%>% 
   unique()
@@ -150,33 +151,19 @@ nmodels_this_week <- length(models_this_week)
 Every week, teams submit their forecasts to the COVID-19 Forecast Hub. 
 This past week, `r nmodels_this_week` models were submitted. 
 
-Each Tuesday, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 deaths and hospitalizations at the state and national level. As of February 20, 2023, we are no longer working with case forecasts, but older reports include case forecast evaluations.  At the moment, we only generate ensemble forecasts for up to four weeks into the future, as  <a href="https://www.pnas.org/doi/full/10.1073/pnas.2113561119" target="_blank">the available evidence</a> suggests that models are less accurate at longer forecast horizons.
+Each Tuesday, we combine the most recent forecasts from each team into a single "ensemble" forecast of reported COVID-19 hospitalizations at the state and national level. As of February 20, 2023, we are no longer working with case forecasts, and as of March 6, 2023, we are no longer generating ensemble death forecasts.  Older reports include case and death forecasts.  At the moment, we only generate ensemble forecasts for up to four weeks into the future, as  <a href="https://www.pnas.org/doi/full/10.1073/pnas.2113561119" target="_blank">the available evidence</a> suggests that models are less accurate at longer forecast horizons.
 
 An archive of weekly reports from the COVID-19 Forecast Hub can be found at <a href="https://covid19forecasthub.org/doc/reports/" target="_blank">this page</a>. 
 
 
 ```{r count-models}
-## how many models in inc_death ensemble?
-inc_death_models <- read_csv(paste0("../../ensemble-metadata/", this_monday, "-inc_death-model-weights.csv")) %>%
- select(-locations) %>%
-  apply(MARGIN = 2, FUN=function(x) sum(x))
-n_inc_death_models <- sum(inc_death_models>0)
-
-## how many models in cum_death ensemble?
-cum_death_models <- read_csv(paste0("../../ensemble-metadata/", this_monday, "-cum_death-model-weights.csv")) %>%
-  select(-locations) %>%
-  apply(MARGIN = 2, FUN=function(x) sum(x))
-n_cum_death_models <- sum(cum_death_models>0)
-
 ## how many models in inc_hosp ensemble?
 inc_hosp_models <- read_csv(paste0("../../ensemble-metadata/", this_monday, "-inc_hosp-model-weights.csv"))%>%
   select(-locations) %>%
   apply(MARGIN = 2, FUN=function(x) sum(x))
 n_inc_hosp_models <- sum(inc_hosp_models>0)
 
-n_unique_models <- length(unique(c(names(inc_death_models)[inc_death_models>0],
-  names(cum_death_models)[cum_death_models>0],
-  names(inc_hosp_models)[inc_hosp_models>0])))
+n_unique_models <- length(unique(c(names(inc_hosp_models)[inc_hosp_models>0])))
   
 ```
 
@@ -188,28 +175,9 @@ all_states <-locs$fips[2:58]
 
 
 ```{r download-ensemble-data}
-inc_death_targets <- paste(1:4, "wk ahead inc death")
-cum_death_targets <- paste(1:4, "wk ahead cum death")
 inc_hosp_targets <- paste(1:14, "day ahead inc hosp")
 
 # submit query with covidHubUtils
-
-##deaths
-dat<-load_forecasts(
-        models=c("COVIDhub-ensemble"),
-        dates = this_monday, 
-        types = c("point", "quantile"),
-        targets = c(inc_death_targets, cum_death_targets),
-       location=c("US",all_states),
-       verbose = FALSE) %>%
-     rename(fips=location, timezero=forecast_date, class=type, week_ahead=horizon)%>%
-     mutate(target=paste(week_ahead,target_variable,sep=" wk ahead "))%>%
-     select(model, timezero, fips, target, class, quantile, value) %>%
-     # create rate variable and week-ahead
-     mutate(week_ahead = as.numeric(substr(target, 0,1)),
-     ## recreates the target_end_date from GitHub
-     target_end_date = as.Date(calc_target_week_end_date(timezero, horizon = week_ahead)))
-
 
 ##hospitailization
 
@@ -239,30 +207,6 @@ dat_hosp<-load_forecasts(
 This week, our ensemble combined forecasts from `r n_unique_models` different models. 
 
 ```{r us-summary}
-##deaths
-us_cum_deaths <- dat %>% 
-  filter(fips=="US", target=="4 wk ahead cum death", class=="point") %>% 
-  pull(value) %>% 
-  round(-2) %>% 
-  format(big.mark = ",")
-us_cum_deaths_wk_pi<- dat %>% 
-  filter(fips=="US", target=="4 wk ahead cum death", quantile %in% c(0.025, 0.975)) %>% 
-  pull(value) %>% 
-  format(big.mark = ",")
-us_inc_death_range <- dat %>% 
-  filter(fips=="US", target %in% inc_death_targets, class=="point") %>% 
-  pull(value) %>% range() %>%
-  round(-2) %>% format(big.mark = ",")
-
-us_inc_death_wk_pi_round <- dat %>% 
-  filter(fips=="US", target == "4 wk ahead inc death", quantile %in% c(0.025, 0.975)) %>% 
-  pull(value) %>% sort() %>%
-  round(-2) %>% format(big.mark = ",")
-
-us_inc_death_wk_pi <- dat %>% 
-  filter(fips=="US", target == "4 wk ahead inc death", quantile %in% c(0.025, 0.975)) %>% 
-  pull(value) %>% sort() %>% 
-  format(big.mark = ",")
 
 ##hospitalization
 us_inc_hosp_range <- dat_hosp %>% 
@@ -281,11 +225,6 @@ us_inc_hosp_wk_pi <- dat_hosp %>%
   format(big.mark = ",")
 
 ```
-
-At the national level, the ensemble model predicts that weekly totals of observed deaths in each of the next four weeks will be between `r us_inc_death_range[1]` and `r us_inc_death_range[2]` deaths with around `r us_cum_deaths` deaths by `r saturday_4_wk_ahead_txt` (95% prediction interval: `r us_cum_deaths_wk_pi[1]` - `r us_cum_deaths_wk_pi[2]`). 
-
-For the week ending `r saturday_4_wk_ahead_txt`, the ensemble forecasts that reported COVID-19 deaths in the US will be between `r us_inc_death_wk_pi_round[1]` and `r us_inc_death_wk_pi_round[2]` (95% prediction interval: `r us_inc_death_wk_pi[1]` - `r us_inc_death_wk_pi[2]`).  
-
 As of September 28, 2021 the ensemble forecast only reports 14 day ahead forecasts for hospitalizations, due to persistent large inaccuracies observed when forecasting beyond that. 
 
 For `r format(wk2_monday, "%B %d, %Y")` COVID-19 daily hospitalizations in the US will be between `r us_inc_hosp_wk_pi_round[1]` and `r us_inc_hosp_wk_pi_round[2]` (95% prediction interval: `r us_inc_hosp_wk_pi[1]` - `r us_inc_hosp_wk_pi[2]`).
@@ -295,78 +234,12 @@ For `r format(wk2_monday, "%B %d, %Y")` COVID-19 daily hospitalizations in the U
 <!-- Throughought most of July, models have in general shown broad agreement about the trajectory of the outbreak over the coming weeks. However, the recent surge in cases has left models with quite different interpretations about what the next few weeks hold in terms of how many reported deaths from COVID-19 we will see.  -->
 You can explore the full set of models, including their forecasts for past weeks online at the <a href="https://viz.covid19forecasthub.org/" target="_blank">Forecast Hub interactive visualization</a>.
 
-### Deaths
-
-```{r make-US-inc-death-plot}
-quantiles_to_plot <- c(0.025, 0.1, 0.25, 0.75, 0.9, 0.975)
-
-blues <- RColorBrewer::brewer.pal(n=length(quantiles_to_plot)/2+1, "Blues")
-
-inc_death_forecast <- dat %>%
-  filter(target %in% inc_death_targets)
-
-# get full inc death truth for plotting
-inc_death_truth <- load_truth(
-                       truth_source = "JHU",
-                       target_variable = "inc death")%>%
-                    rename(fips = location) %>%
-mutate(model = "observed data (JHU)") %>%     #maybe also deleting this line
-                    left_join(locs, by=c("fips")) %>%
-                    filter(fips %in% unique(inc_death_forecast$fips), target_end_date <= last_5_saturdays[5])
-
-
-
-inc_death_all_points <- inc_death_truth %>%
-  bind_rows(filter(inc_death_forecast, class=="point")) %>%
-  bind_rows(filter(inc_death_truth, target_end_date==last_5_saturdays[5]) %>% mutate(model="COVIDhub-ensemble")) %>%
-  mutate(model = relevel(factor(model), ref="observed data (JHU)"))
-
-# inc death data for code of uncertainty
-dummy_inc_death <- tibble(
-  quantile = quantiles_to_plot, 
-  target_end_date=last_5_saturdays[5]) %>%
-  right_join(inc_death_all_points %>%
-      select(-quantile) %>%
-      filter(target_end_date == last_5_saturdays[5]))
-
-inc_death_quantiles <- inc_death_forecast %>%
-  dplyr::filter(class=="quantile") %>%
-  bind_rows(dummy_inc_death) %>%
-  dplyr::filter(quantile %in% quantiles_to_plot) %>%
-  dplyr::mutate(endpoint_type = ifelse(quantile < 0.5, 'lower', 'upper'),
-    alpha = ifelse(endpoint_type == 'lower',
-      format(2*quantile, digits=3, nsmall=3),
-      format(2*(1-quantile), digits=3, nsmall=3)),
-    `Prediction Interval` = fct_rev(paste0((1-as.numeric(alpha))*100, "%"))
-  ) %>%
-  dplyr::filter(alpha != "1.000") %>%
-  dplyr::select(-quantile) %>%
-  tidyr::pivot_wider(names_from='endpoint_type', values_from='value')
-
-ggplot() +
-  geom_ribbon(data = inc_death_quantiles %>% dplyr::filter(fips=="US"), 
-      mapping = aes(x = target_end_date,
-      ymin=as.numeric(lower), ymax=as.numeric(upper),
-      fill=`Prediction Interval`)) +
-  geom_line(data=inc_death_all_points %>%
-      dplyr::filter(fips == "US"),
-    mapping = aes(x = target_end_date, y = value, color = model)) +
-  geom_point(data=inc_death_all_points %>%
-      dplyr::filter(fips == "US", !(model=="COVIDhub-ensemble" & target_end_date <= this_monday)),
-    mapping = aes(x = target_end_date, y = value, color = model)) +
-  scale_fill_manual(values = blues[1:(length(blues)-1)]) +
-  scale_color_manual(values = c("black", tail(blues,1))) +
-  scale_x_date(name = NULL, date_breaks="6 month", date_labels = "%b %d %Y", date_minor_breaks = "1 month") +
-  ylab("incident deaths") +
-  labs(title="Weekly reported COVID-19 deaths in the US: observed and forecasted",
-    caption="source: JHU CSSE (observed data), COVID-19 Forecast Hub (forecasts)") +
-  theme(legend.position = c(.05,.95), legend.justification = c(0,1), legend.key = element_rect(colour = "transparent", fill = "white"), legend.background = element_rect(alpha("white", 0.5)), legend.box="horizontal")
-```
-
 ### Hospitalizations
 
 ```{r make-US-inc-hospitalization-plot-daily}
+quantiles_to_plot <- c(0.025, 0.1, 0.25, 0.75, 0.9, 0.975)
 
+blues <- RColorBrewer::brewer.pal(n=length(quantiles_to_plot)/2+1, "Blues")
 inc_hosp_forecast <- dat_hosp %>%
   filter(target %in% inc_hosp_targets)
 
