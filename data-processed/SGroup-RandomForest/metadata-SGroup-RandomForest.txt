@@ -7,4 +7,6 @@ license: mit
 team_model_designation: proposed
 methods: Random Forest ensemble of the predictors generated from the SGroup-SIkJalpha submission, HHS data, as well as historical FluSurv-NET data.
 ensemble_of_hub_models: false
+repo_url: https://github.com/maa989/RandomForest-SIkJalpha
 data_inputs: HHS
+citation: https://arxiv.org/abs/2206.08967
