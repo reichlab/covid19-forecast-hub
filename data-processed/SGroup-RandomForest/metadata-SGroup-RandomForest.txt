@@ -1,0 +1,10 @@
+team_name: Srivastava Group
+model_name: RandomForest
+model_abbr: SGroup-RandomForest
+model_contributors: Ajitesh Srivastava (University of Southern California) <ajiteshs@usc.edu>, Majd Al Aawar (University of Southern California) <malaawar@usc.edu>
+website_url: https://github.com/scc-usc/ReCOVER-COVID-19
+license: mit
+team_model_designation: proposed
+methods: Random Forest ensemble of the predictors generated from the SGroup-SIkJalpha submission, HHS data, as well as historical FluSurv-NET data.
+ensemble_of_hub_models: false
+data_inputs: HHS
