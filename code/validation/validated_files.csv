@@ -7993,3 +7993,5 @@ file_path,validation_date
 ./data-processed/PSI-DICE/2023-03-06-PSI-DICE.csv,2023-03-07 00:48:43.890427
 ./data-processed/COVIDhub_CDC-ensemble/2023-03-06-COVIDhub_CDC-ensemble.csv,2023-03-07 18:33:28.023683
 ./data-processed/AIMdyn-SlidingKoopman/2023-03-06-AIMdyn-SlidingKoopman.csv,2023-03-08 00:37:24.137882
+./data-processed/CUB_PopCouncil-SLSTM/2023-03-11-CUB_PopCouncil-SLSTM.csv,2023-03-13 00:34:31.904292
+./data-processed/UMass-gbq/2023-03-12-UMass-gbq.csv,2023-03-13 00:34:35.499175
