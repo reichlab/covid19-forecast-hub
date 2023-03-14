@@ -8004,3 +8004,10 @@ file_path,validation_date
 ./data-processed/JHU_IDD-CovidSP/2023-03-12-JHU_IDD-CovidSP.csv,2023-03-13 18:34:48.619652
 ./data-processed/CEPH-Rtrend_covid/2023-03-13-CEPH-Rtrend_covid.csv,2023-03-13 18:34:51.644969
 ./data-processed/UMass-sarix/2023-03-13-UMass-sarix.csv,2023-03-13 18:34:54.108317
+./data-processed/COVIDhub-trained_ensemble/2023-03-13-COVIDhub-trained_ensemble.csv,2023-03-14 00:36:34.159421
+./data-processed/CMU-TimeSeries/2023-03-13-CMU-TimeSeries.csv,2023-03-14 00:36:36.987913
+./data-processed/COVIDhub-ensemble/2023-03-13-COVIDhub-ensemble.csv,2023-03-14 00:36:38.709865
+./data-processed/COVIDhub-4_week_ensemble/2023-03-13-COVIDhub-4_week_ensemble.csv,2023-03-14 00:36:41.311214
+./data-processed/UT-Osiris/2023-03-13-UT-Osiris.csv,2023-03-14 00:36:43.944702
+./data-processed/UVA-Ensemble/2023-03-13-UVA-Ensemble.csv,2023-03-14 00:36:47.368980
+./data-processed/GT-DeepCOVID/2023-03-13-GT-DeepCOVID.csv,2023-03-14 00:36:48.236575
