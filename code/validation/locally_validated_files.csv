@@ -8043,3 +8043,12 @@ file_path,validation_date
 ./data-processed/UMass-gbq/2023-03-27-UMass-gbq.csv,2023-03-27 18:33:50.779350
 ./data-processed/CEPH-Rtrend_covid/2023-03-27-CEPH-Rtrend_covid.csv,2023-03-27 18:33:53.252883
 ./data-processed/COVIDhub-baseline/2023-03-27-COVIDhub-baseline.csv,2023-03-27 18:33:55.546173
+./data-processed/UMass-trends_ensemble/2023-03-27-UMass-trends_ensemble.csv,2023-03-28 00:35:50.741149
+./data-processed/COVIDhub-trained_ensemble/2023-03-27-COVIDhub-trained_ensemble.csv,2023-03-28 00:35:53.548211
+./data-processed/CMU-TimeSeries/2023-03-27-CMU-TimeSeries.csv,2023-03-28 00:35:56.461346
+./data-processed/MUNI-ARIMA/2023-03-27-MUNI-ARIMA.csv,2023-03-28 00:35:58.882488
+./data-processed/UMass-sarix/2023-03-27-UMass-sarix.csv,2023-03-28 00:36:01.348537
+./data-processed/SGroup-RandomForest/2023-03-26-SGroup-RandomForest.csv,2023-03-28 00:36:04.222794
+./data-processed/COVIDhub-ensemble/2023-03-27-COVIDhub-ensemble.csv,2023-03-28 00:36:05.558190
+./data-processed/COVIDhub-4_week_ensemble/2023-03-27-COVIDhub-4_week_ensemble.csv,2023-03-28 00:36:08.122559
+./data-processed/UVA-Ensemble/2023-03-27-UVA-Ensemble.csv,2023-03-28 00:36:11.130983
