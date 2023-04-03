@@ -1,4 +1,4 @@
-name: (Active) Update JHU, NY Times, USAFacts truth data weekly
+name: (Active) Update hospitilization truth data weekly
 on:
   workflow_dispatch:
     inputs: 
@@ -86,19 +86,8 @@ jobs:
       run: make recent_data
       working-directory: ./covidData/code/data-processing
       
-    - name: Generate truth csv files (NYTimes, JHU, Hospitalization, Zoltar)
+    - name: Generate truth csv files (Hospitalization)
       run: Rscript ./covid19-forecast-hub/code/R_scripts/generate_truth_csvs.R
-      
-    - name: Push Zoltar truth to Zoltar
-      run: python3 ./code/zoltar_scripts/upload_truth_to_zoltar.py
-      working-directory: ./covid19-forecast-hub
-      env:
-        Z_USERNAME: ${{ secrets.Z_USERNAME }}
-        Z_PASSWORD: ${{ secrets.Z_PASSWORD }}
-        
-    # - name: Create truth JSON for visualization
-    #   run: python3 ./data-truth/get_visualization_truth_json_from_csv.py
-    #   working-directory: ./covid19-forecast-hub
       
     - name: Push generated files to GitHub
       run: bash ./travis/push-gh.sh
@@ -106,5 +95,7 @@ jobs:
       env:
         GH_TOKEN: ${{secrets.GH_TOKEN}}
         
+
+      
     - name: Check space available after update
       run: df --human-readable

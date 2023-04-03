@@ -1,0 +1,5 @@
+forecast_date,target,target_end_date,location,type,quantile,value
+2023-02-19,1 wk ahead inc case,2023-02-25,US,point,,173358.15378017214
+2023-02-19,2 wk ahead inc case,2023-03-04,US,point,,198658.55026572602
+2023-02-19,3 wk ahead inc case,2023-03-11,US,point,,204793.58626211953
+2023-02-19,4 wk ahead inc case,2023-03-18,US,point,,205968.09544929952

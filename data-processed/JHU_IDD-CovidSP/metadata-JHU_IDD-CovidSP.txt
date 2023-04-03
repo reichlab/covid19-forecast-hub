@@ -1,18 +1,7 @@
 team_name: Johns Hopkins ID Dynamics COVID-19 Working Group
 model_name: CovidScenarioPipeline
 model_abbr: JHU_IDD-CovidSP
-model_contributors: Joseph C. Lemaitre (EPFL),  Juan Dent Hulse (Johns Hopkins Infectious Disease Dynamics), Kyra H. Grantz (Johns
-  Hopkins Infectious Disease Dynamics),  Joshua Kaminsky (Johns Hopkins Infectious
-  Disease Dynamics),  Stephen A. Lauer (Johns Hopkins Infectious Disease Dynamics),  Elizabeth
-  C. Lee (Johns Hopkins Infectious Disease Dynamics)<elizabeth.c.lee@jhu.edu>,  Justin
-  Lessler (Johns Hopkins Infectious Disease Dynamics)<justin@jhu.edu>,  Hannah R.
-  Meredith (Johns Hopkins Infectious Disease Dynamics),  Javier Perez-Saez (Johns
-  Hopkins Infectious Disease Dynamics),  Shaun A. Truelove (Johns Hopkins Infectious
-  Disease Dynamics), Claire Smith (Johns Hopkins Infectious Disease Dynamics), Lindsay T. Keegan (University of Utah),  Kathryn Kaminsky,  Sam
-  Shah,  Josh Wills, Pierre-Yves Aquilanti (Amazon Web Services),  Karthik Raman (Amazon
-  Web Services),  Arun Subramaniyan (Amazon Web Services),  Greg Thursam (Amazon Web
-  Services),  Anh Tran (Amazon Web Services), Claire Smith (Johns Hopkins Infectious
-  Disease Dynamics), Alison Hill (Johns Hopkins Infectious Disease Dynamics)
+model_contributors: Erica Carcelen (Johns Hopkins Infectious Disease Dynamics), Alison Hill (Johns Hopkins Infectious Disease Dynamics), Sung-mok Jung (University of North Carolina), Joseph C. Lemaitre (University of North Carolina), Joshua Kaminsky (Johns Hopkins Infectious Disease Dynamics), Elizabeth C. Lee (Johns Hopkins Infectious Disease Dynamics), Justin Lessler (Johns Hopkins Infectious Disease Dynamics & University of North Carolina), Sara Loo (Johns Hopkins Infectious Disease Dynamics), Clif McKee (Johns Hopkins Infectious Disease Dynamics), Koji Sato (Johns Hopkins Infectious Disease Dynamics), Claire Smith (Johns Hopkins Infectious Disease Dynamics), Shaun Truelove (Johns Hopkins Infectious Disease Dynamics) <shauntruelove@jhu.edu>
 website_url: https://github.com/HopkinsIDD/COVIDScenarioPipeline
 license: mit
 team_model_designation: primary

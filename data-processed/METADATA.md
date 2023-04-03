@@ -123,7 +123,6 @@ Common data sources are
 
 An example description could be 
 
-> cases forecasts use NYTimes data and target JHU CSSE truth data,
 > hospitalization forecasts use and target HHS hospitalization data
 
 
