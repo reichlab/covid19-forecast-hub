@@ -5,7 +5,7 @@ model_contributors: Ajitesh Srivastava (University of Southern California) <ajit
 website_url: https://github.com/scc-usc/ReCOVER-COVID-19
 license: mit
 team_model_designation: proposed
-methods: Random Forest ensemble of the predictors generated from the SGroup-SIkJalpha submission, HHS data, as well as historical FluSurv-NET data.
+methods: Random Forest ensemble of the predictors generated from the USC-SIkJalpha submission as well as HHS data.
 ensemble_of_hub_models: false
 repo_url: https://github.com/maa989/RandomForest-SIkJalpha
 data_inputs: HHS
