@@ -211,8 +211,9 @@ def check_formatting(my_path):
                 # Add validated file to locally_validated_files.csv
                 if len(output_errors) == 0:
                     current_time = datetime.now()
-                    df = df.append({'file_path': filepath,
-                                    'validation_date': current_time}, ignore_index=True)
+                    new_row = pd.Series({'file_path': filepath,
+                                         'validation_date': current_time})
+                    pd.concat([df, new_row.to_frame().T], ignore_index=True)
 
     # Output duplicate model name or abbreviation metadata errors
     output_errors = output_duplicate_models(existing_metadata_abbr, output_errors)

@@ -13,7 +13,7 @@ logging.getLogger().setLevel(logging.DEBUG)
 
 class UploadCovidAllForecastsTestCase(unittest.TestCase):
     """
-    NB: tests should be run relative to this file's dir ('code/test')
+    NB: Running these unit tests requires setting the working dir to the repo root.
     """
 
 
@@ -106,7 +106,7 @@ class UploadCovidAllForecastsTestCase(unittest.TestCase):
         # case: `create_model()` raises Exception -> return ex
         models = []  # does not contain COVIDhub-ensemble -> will call create_model()
         project_mock.create_model = MagicMock(side_effect=Exception('create_model Exception'))
-        result = upload_covid_all_forecasts('data/COVIDhub-ensemble/', 'COVIDhub-ensemble', project_mock, [],
+        result = upload_covid_all_forecasts('code/test/data/COVIDhub-ensemble/', 'COVIDhub-ensemble', project_mock, [],
                                             None, models, {})
         self.assertEqual(project_mock.create_model.side_effect, result)
 
@@ -122,7 +122,7 @@ class UploadCovidAllForecastsTestCase(unittest.TestCase):
 
         # patch has_changed() so that `model.edit()` is not called:
         with patch('code.zoltar_scripts.upload_covid19_forecasts_to_zoltar.has_changed', return_value=False):
-            result = upload_covid_all_forecasts('data/COVIDhub-ensemble/', 'COVIDhub-ensemble', project_mock, [],
+            result = upload_covid_all_forecasts('code/test/data/COVIDhub-ensemble/', 'COVIDhub-ensemble', project_mock, [],
                                                 None, models, {})
             self.assertEqual(project_mock.create_timezero.side_effect, result)
 
@@ -130,19 +130,19 @@ class UploadCovidAllForecastsTestCase(unittest.TestCase):
             project_timezeros = ['2020-07-13']  # from test/data/COVIDhub-ensemble/2020-07-13-COVIDhub-ensemble.csv
             errors = ['an error']
             with patch('zoltpy.covid19.validate_quantile_csv_file', return_value=errors):
-                result = upload_covid_all_forecasts('data/COVIDhub-ensemble/', 'COVIDhub-ensemble', project_mock,
+                result = upload_covid_all_forecasts('code/test/data/COVIDhub-ensemble/', 'COVIDhub-ensemble', project_mock,
                                                     project_timezeros, conn, models, {})
                 self.assertEqual(errors, result)
 
             # case: `json_io_dict_from_quantile_csv_file()` returns non-empty error_messages -> return error_messages
             with patch('zoltpy.quantile_io.json_io_dict_from_quantile_csv_file', return_value=({}, errors)):
-                result = upload_covid_all_forecasts('data/COVIDhub-ensemble/', 'COVIDhub-ensemble', project_mock,
+                result = upload_covid_all_forecasts('code/test/data/COVIDhub-ensemble/', 'COVIDhub-ensemble', project_mock,
                                                     project_timezeros, conn, models, {})
                 self.assertEqual(errors, result)
 
             # case: `upload_covid_forecast_by_model()` returns `job = None` -> return "upload job failed.*"
             model_mock.upload_forecast = MagicMock(side_effect=RuntimeError('upload_forecast RuntimeError'))
-            result = upload_covid_all_forecasts('data/COVIDhub-ensemble/', 'COVIDhub-ensemble', project_mock,
+            result = upload_covid_all_forecasts('code/test/data/COVIDhub-ensemble/', 'COVIDhub-ensemble', project_mock,
                                                 project_timezeros, conn, models, {})
             self.assertRegex(result, "upload job failed.*")
 
@@ -150,7 +150,7 @@ class UploadCovidAllForecastsTestCase(unittest.TestCase):
             job_mock = MagicMock(name='job')
             job_mock.status_as_str = 'SUCCESS'
             model_mock.upload_forecast = MagicMock(return_value=job_mock)
-            result = upload_covid_all_forecasts('data/COVIDhub-ensemble/', 'COVIDhub-ensemble', project_mock,
+            result = upload_covid_all_forecasts('code/test/data/COVIDhub-ensemble/', 'COVIDhub-ensemble', project_mock,
                                                 project_timezeros, conn, models, {})
             self.assertEqual([], result)
 
@@ -176,7 +176,7 @@ class UploadCovidAllForecastsTestCase(unittest.TestCase):
 
         # patch has_changed() so that `model.edit()` is not called:
         with patch('code.zoltar_scripts.upload_covid19_forecasts_to_zoltar.has_changed', return_value=False):
-            result = upload_covid_all_forecasts('data/COVIDhub-ensemble/', 'COVIDhub-ensemble', project_mock,
+            result = upload_covid_all_forecasts('code/test/data/COVIDhub-ensemble/', 'COVIDhub-ensemble', project_mock,
                                                 project_timezeros, conn, models, {})
             project_mock.create_model.assert_called_once()
             self.assertEqual([], result)
@@ -205,7 +205,7 @@ class UploadCovidAllForecastsTestCase(unittest.TestCase):
         # case: job failed
         # patch has_changed() so that `model.edit()` is not called:
         with patch('code.zoltar_scripts.upload_covid19_forecasts_to_zoltar.has_changed', return_value=False):
-            result = upload_covid_all_forecasts('data/COVIDhub-ensemble/', 'COVIDhub-ensemble', project_mock,
+            result = upload_covid_all_forecasts('code/test/data/COVIDhub-ensemble/', 'COVIDhub-ensemble', project_mock,
                                                 project_timezeros, conn, models, db)
             self.assertEqual(2, model_mock.upload_forecast.call_count)  # two tries
             self.assertEqual({}, db)  # failed job -> no db entry added for forecast
@@ -215,7 +215,7 @@ class UploadCovidAllForecastsTestCase(unittest.TestCase):
             model_mock.upload_forecast.reset_mock()
             job_mock.reset_mock()
             job_mock.status_as_str = 'SUCCESS'
-            result = upload_covid_all_forecasts('data/COVIDhub-ensemble/', 'COVIDhub-ensemble', project_mock,
+            result = upload_covid_all_forecasts('code/test/data/COVIDhub-ensemble/', 'COVIDhub-ensemble', project_mock,
                                                 project_timezeros, conn, models, db)
             model_mock.upload_forecast.assert_called_once()
 
