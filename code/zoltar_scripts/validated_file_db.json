@@ -8252,5 +8252,13 @@
     "2023-04-10-COVIDhub-trained_ensemble.csv": "f756ac79e6499291dc06f4a03bbb1ac4",
     "2023-04-10-COVIDhub_CDC-ensemble.csv": "c9e6853cc7c100990c9dac9b84651919",
     "2023-04-15-CUB_PopCouncil-SLSTM.csv": "5d77cf1f8cf9db5871b758551f4cbeaf",
-    "2023-04-16-SGroup-RandomForest.csv": "5eb1844532ad529c5ab8341c66b00d87"
+    "2023-04-16-SGroup-RandomForest.csv": "5eb1844532ad529c5ab8341c66b00d87",
+    "2023-04-16-JHU_IDD-CovidSP.csv": "8cd03a74eaea74bd73c3f9521989da84",
+    "2023-04-17-CEPH-Rtrend_covid.csv": "8ffdd25a4dc9caf1b26b1a823938daa3",
+    "2023-04-17-UMass-sarix.csv": "c16b50e4f5ee7c4f9a5c74ca2b60a7db",
+    "2023-04-17-COVIDhub-baseline.csv": "a1c9b1639a836d2085f62a606d4fadc6",
+    "2023-04-17-MUNI-ARIMA.csv": "fb49e3a746a1c81a77c94b1660154c37",
+    "2023-04-17-UT-Osiris.csv": "708c1c616b2e37917a4d32807b818146",
+    "2023-04-17-UMass-gbq.csv": "ce4ced0c7f8fa56ede0afdaa05a56543",
+    "2023-04-17-JHUAPLTDWG-ICATTML.csv": "a3a871ef5158a5af9abab05444f9b462"
 }
