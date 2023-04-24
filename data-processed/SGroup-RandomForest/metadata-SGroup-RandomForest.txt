@@ -4,7 +4,7 @@ model_abbr: SGroup-RandomForest
 model_contributors: Ajitesh Srivastava (University of Southern California) <ajiteshs@usc.edu>, Majd Al Aawar (University of Southern California) <malaawar@usc.edu>
 website_url: https://github.com/scc-usc/ReCOVER-COVID-19
 license: mit
-team_model_designation: proposed
+team_model_designation: primary
 methods: Random Forest ensemble of the predictors generated from the USC-SIkJalpha submission as well as HHS data.
 ensemble_of_hub_models: false
 repo_url: https://github.com/maa989/RandomForest-SIkJalpha
