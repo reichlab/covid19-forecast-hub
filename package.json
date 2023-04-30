@@ -99,7 +99,7 @@
     "http-proxy-middleware": "^0.17.2",
     "json-loader": "^0.5.4",
     "json-schema-generator": "^2.0.3",
-    "node-sass": "^7.0.0",
+    "node-sass": "^7.0.3",
     "ora": "^0.3.0",
     "pug": "^3.0.1",
     "sass-loader": "^4.0.2",
