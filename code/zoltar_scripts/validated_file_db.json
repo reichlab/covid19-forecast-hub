@@ -8299,5 +8299,12 @@
     "2023-05-01-UMass-sarix.csv": "7b7940b05d7b7f6b7d0375e26309a985",
     "2023-04-30-JHU_IDD-CovidSP.csv": "b8c0439353d3ecc0e38c46b4d60ed064",
     "2023-05-01-MUNI-ARIMA.csv": "36aeff77289e39d34baabfd887ad70d0",
-    "2023-05-01-MOBS-GLEAM_COVID.csv": "323b80ac5b81eb4b26405ad5d4e4156e"
+    "2023-05-01-MOBS-GLEAM_COVID.csv": "323b80ac5b81eb4b26405ad5d4e4156e",
+    "2023-05-01-COVIDhub-trained_ensemble.csv": "9ff9a89fa3c637015b482626f34d2934",
+    "2023-05-01-UMass-trends_ensemble.csv": "70bcc85774ede307f6ddf5fcf831526d",
+    "2023-05-01-CMU-TimeSeries.csv": "d63fdf046e1e9c99554db25a2739fc15",
+    "2023-05-01-COVIDhub-4_week_ensemble.csv": "1008423c1d7868e563acd54193fb4c34",
+    "2023-04-30-SGroup-RandomForest.csv": "c23964ab9ca6da870b041ac1aa25ff28",
+    "2023-05-01-COVIDhub-ensemble.csv": "a4f72253579de58ee4e457ee36884479",
+    "2023-05-01-UMass-gbq.csv": "ee7ceb3a96b6d8abdbf52b0b4187f6e4"
 }
