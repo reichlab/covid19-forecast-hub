@@ -1,0 +1,221 @@
+location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_eligibility,baseline_eligibility,sd_eligibility,overall_eligibility
+01,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+01,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+01,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+01,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+02,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+02,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+02,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+02,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+04,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+04,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+04,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+04,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+05,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+05,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+05,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+05,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+06,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+06,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+06,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+06,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+08,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+08,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+08,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+08,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+09,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+09,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+09,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+09,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+10,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+10,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+10,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+10,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+11,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+11,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+11,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+11,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+12,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+12,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+12,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+12,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+13,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+13,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+13,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+13,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+15,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+15,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+15,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+15,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+16,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+16,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+16,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+16,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+17,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+17,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+17,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+17,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+18,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+18,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+18,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+18,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+19,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+19,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+19,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+19,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+20,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+20,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+20,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+20,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+21,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+21,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+21,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+21,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+22,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+22,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+22,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+22,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+23,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+23,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+23,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+23,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+24,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+24,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+24,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+24,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+25,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+25,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+25,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+25,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+26,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+26,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+26,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+26,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+27,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+27,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+27,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+27,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+28,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+28,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+28,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+28,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+29,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+29,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+29,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+29,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+30,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+30,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+30,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+30,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+31,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+31,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+31,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+31,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+32,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+32,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+32,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+32,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+33,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+33,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+33,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+33,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+34,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+34,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+34,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+34,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+35,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+35,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+35,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+35,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+36,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+36,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+36,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+36,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+37,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+37,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+37,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+37,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+38,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+38,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+38,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+38,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+39,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+39,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+39,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+39,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+40,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+40,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+40,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+40,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+41,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+41,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+41,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+41,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+42,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+42,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+42,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+42,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+44,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+44,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+44,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+44,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+45,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+45,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+45,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+45,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+46,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+46,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+46,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+46,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+47,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+47,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+47,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+47,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+48,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+48,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+48,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+48,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+49,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+49,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+49,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+49,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+50,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+50,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+50,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+50,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+51,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+51,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+51,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+51,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+53,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+53,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+53,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+53,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+54,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+54,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+54,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+54,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+55,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+55,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+55,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+55,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+56,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+56,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+56,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+56,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+60,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+60,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA","NA","NA",ineligible
+72,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+72,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+72,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+72,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+78,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA","NA","NA",ineligible
+US,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+US,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+US,JHU_IDD-CovidSP,eligible,"NA","NA","NA","NA",eligible
+US,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
