@@ -1,0 +1,496 @@
+location,model,missingness_eligibility,q10_eligibility,nondecreasing_quantiles_eligibility,baseline_eligibility,sd_eligibility,overall_eligibility
+01,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+01,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+01,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+01,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+01,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+01,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+01,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+01,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+01,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+02,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+02,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+02,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+02,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+02,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+02,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+02,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+02,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+02,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+04,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+04,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+04,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+04,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+04,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+04,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+04,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+04,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+04,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+05,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+05,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+05,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+05,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+05,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+05,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+05,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+05,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+05,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+06,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+06,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+06,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+06,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+06,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+06,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+06,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+06,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+06,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+08,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+08,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+08,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+08,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+08,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+08,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+08,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+08,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+08,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+09,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+09,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+09,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+09,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+09,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+09,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+09,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+09,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+09,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+10,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+10,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+10,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+10,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+10,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+10,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+10,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+10,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+10,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+11,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+11,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+11,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+11,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+11,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+11,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+11,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+11,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+11,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+12,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+12,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+12,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+12,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+12,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+12,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+12,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+12,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+12,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+13,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+13,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+13,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+13,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+13,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+13,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+13,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+13,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+13,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+15,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+15,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+15,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+15,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+15,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+15,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+15,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+15,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+15,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+16,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+16,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+16,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+16,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+16,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+16,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+16,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+16,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+16,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+17,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+17,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+17,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+17,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+17,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+17,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+17,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+17,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+17,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+18,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+18,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+18,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+18,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+18,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+18,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+18,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+18,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+18,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+19,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+19,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+19,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+19,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+19,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+19,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+19,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+19,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+19,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+20,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+20,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+20,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+20,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+20,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+20,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+20,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+20,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+20,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+21,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+21,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+21,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+21,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+21,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+21,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+21,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+21,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+21,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+22,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+22,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+22,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+22,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+22,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+22,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+22,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+22,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+22,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+23,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+23,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+23,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+23,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+23,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+23,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+23,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+23,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+23,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+24,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+24,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+24,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+24,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+24,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+24,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+24,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+24,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+24,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+25,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+25,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+25,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+25,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+25,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+25,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+25,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+25,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+25,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+26,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+26,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+26,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+26,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+26,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+26,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+26,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+26,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+26,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+27,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+27,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+27,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+27,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+27,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+27,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+27,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+27,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+27,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+28,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+28,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+28,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+28,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+28,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+28,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+28,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+28,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+28,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+29,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+29,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+29,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+29,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+29,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+29,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+29,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+29,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+29,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+30,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+30,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+30,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+30,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+30,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+30,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+30,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+30,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+30,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+31,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+31,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+31,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+31,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+31,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+31,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+31,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+31,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+31,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+32,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+32,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+32,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+32,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+32,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+32,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+32,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+32,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+32,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+33,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+33,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+33,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+33,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+33,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+33,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+33,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+33,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+33,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+34,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+34,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+34,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+34,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+34,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+34,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+34,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+34,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+34,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+35,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+35,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+35,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+35,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+35,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+35,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+35,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+35,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+35,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+36,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+36,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+36,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+36,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+36,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+36,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+36,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+36,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+36,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+37,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+37,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+37,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+37,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+37,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+37,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+37,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+37,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+37,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+38,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+38,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+38,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+38,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+38,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+38,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+38,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+38,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+38,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+39,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+39,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+39,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+39,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+39,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+39,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+39,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+39,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+39,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+40,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+40,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+40,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+40,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+40,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+40,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+40,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+40,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+40,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+41,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+41,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+41,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+41,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+41,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+41,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+41,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+41,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+41,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+42,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+42,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+42,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+42,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+42,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+42,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+42,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+42,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+42,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+44,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+44,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+44,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+44,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+44,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+44,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+44,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+44,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+44,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+45,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+45,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+45,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+45,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+45,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+45,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+45,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+45,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+45,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+46,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+46,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+46,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+46,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+46,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+46,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+46,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+46,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+46,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+47,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+47,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+47,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+47,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+47,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+47,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+47,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+47,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+47,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+48,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+48,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+48,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+48,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+48,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+48,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+48,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+48,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+48,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+49,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+49,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+49,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+49,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+49,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+49,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+49,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+49,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+49,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+50,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+50,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+50,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+50,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+50,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+50,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+50,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+50,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+50,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+51,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+51,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+51,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+51,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+51,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+51,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+51,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+51,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+51,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+53,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+53,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+53,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+53,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+53,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+53,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+53,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+53,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+53,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+54,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+54,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+54,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+54,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+54,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+54,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+54,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+54,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+54,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+55,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+55,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+55,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+55,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+55,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+55,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+55,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+55,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+55,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+56,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+56,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+56,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+56,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+56,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+56,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+56,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+56,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+56,UT-Osiris,eligible,"NA","NA","NA","NA",eligible
+60,CEPH-Rtrend_covid,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+60,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,JHUAPLTDWG-ICATTML,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,UMass-sarix,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,UMass-trends_ensemble,missing required forecasts,"NA","NA","NA","NA",ineligible
+60,UT-Osiris,missing required forecasts,"NA","NA","NA","NA",ineligible
+72,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+72,CMU-TimeSeries,eligible,"NA","NA","NA","NA",eligible
+72,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+72,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+72,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+72,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA","NA","NA",ineligible
+72,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+72,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+72,UT-Osiris,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,CEPH-Rtrend_covid,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+78,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,JHUAPLTDWG-ICATTML,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,MOBS-GLEAM_COVID,missing required forecasts,"NA","NA","NA","NA",ineligible
+78,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+78,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+78,UT-Osiris,missing required forecasts,"NA","NA","NA","NA",ineligible
+US,CEPH-Rtrend_covid,eligible,"NA","NA","NA","NA",eligible
+US,CMU-TimeSeries,missing required forecasts,"NA","NA","NA","NA",ineligible
+US,COVIDhub-baseline,eligible,"NA","NA","NA","NA",eligible
+US,JHU_IDD-CovidSP,missing required forecasts,"NA","NA","NA","NA",ineligible
+US,JHUAPLTDWG-ICATTML,eligible,"NA","NA","NA","NA",eligible
+US,MOBS-GLEAM_COVID,eligible,"NA","NA","NA","NA",eligible
+US,UMass-sarix,eligible,"NA","NA","NA","NA",eligible
+US,UMass-trends_ensemble,eligible,"NA","NA","NA","NA",eligible
+US,UT-Osiris,missing required forecasts,"NA","NA","NA","NA",ineligible
