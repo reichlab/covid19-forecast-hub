@@ -13,13 +13,17 @@ jobs:
         node-version: [10.2]
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout project config file in Forecast Hub Repo
+      uses: Bhacaz/checkout-files@v1
+      with:
+        files: project-config.json data-locations/locations.csv
+        token: ${{ github.token }}
+    - name: Checkout Validation Repo
+      uses: actions/checkout@v3
       with:
         repository: 'reichlab/covid19-forecast-hub-validations'
-#     - name: Use Node.js ${{ matrix.node-version }}
-#       uses: actions/setup-node@v1
-#       with:
-#         node-version: ${{ matrix.node-version }}
+        ref: 'main'
+        path: 'covid19-forecast-hub-validations'
     - name: Setup Python
       uses: actions/setup-python@v2
       with:
@@ -27,13 +31,18 @@ jobs:
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
 #     - run: npm install
     - name: Setup pipenv
-      run: pip3 install pipenv
+      run: pip3 install pipenv==2022.8.5
+      working-directory: ./covid19-forecast-hub-validations
     - name: Install python dependencies 
-      run: pipenv install
+      run: pipenv install --skip-lock --verbose
+      working-directory: ./covid19-forecast-hub-validations
     - name: Validations output
-      run: pipenv run python main.py
+      working-directory: ./covid19-forecast-hub-validations
+      run: pipenv run python main.py --project_dir ${{ github.workspace }}
       env:
         GH_TOKEN: ${{ github.token }}
+        Z_USERNAME: ${{ secrets.Z_USERNAME}}
+        Z_PASSWORD: ${{ secrets.Z_PASSWORD}}
     
     # Run and check for automerge
     - name: Automerge check

@@ -6,4 +6,4 @@ website_url: https://www.microsoft.com/en-us/ai/ai-for-health
 license: cc-by-4.0
 team_model_designation: primary
 ensemble_of_hub_models: false
-methods: Our model is a deep spatio-temporal network with intervention and hosptial gate under the assumption of spatio-temporal process in pandemic of different regions.
+methods: Our model is a deep spatio-temporal network. More details can be found in [the paper](https://dl.acm.org/doi/10.1145/3459637.3481927).

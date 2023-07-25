@@ -4,7 +4,7 @@ model_abbr: UT-Mobility
 model_contributors: Spencer Woody<spencer.woody@utexas.edu>, et al.
 website_url: https://covid-19.tacc.utexas.edu/projections/
 license: other
-team_model_designation: primary
+team_model_designation: secondary
 ensemble_of_hub_models: false
 methods: This model makes predictions assuming that social distancing patterns, as
   measured by anonymized mobile-phone GPS traces,  remain constant in the future.This

@@ -1,0 +1,61 @@
+---
+title: "Hospitalization Model Forecaster Filtering"
+author: "[The COVID-19 Forecast Hub Team](https://covid19forecasthub.org/doc/)<br><br>https://covid19forecasthub.org/"
+date: "report generated `r Sys.Date()`"
+output:
+  html_document:
+    toc: false
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+---
+
+```{r setup, include=FALSE}
+#load libraries
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(dplyr)
+```
+
+```{r set dates, include=FALSE}
+this_monday <- lubridate::floor_date(Sys.Date(), unit = "week") + 1
+# # fixed date
+# this_monday <- as.Date("2022-03-21")
+inc_hosp_targets <- paste(0:130, "day ahead inc hosp")
+```
+
+# Goal
+
+Identify hospitalization forecast models that were excluded from the CDC 4 week ensemble due to submitting forecasts for less than 28 days for the current week.
+
+```{r load data}
+hub_forecasts <- covidHubUtils::load_forecasts(
+  dates = this_monday,
+  date_window_size = 6,
+  types = c("point", "quantile"),
+  targets = inc_hosp_targets,
+  source = "local_hub_repo",
+  hub_repo_path = "../..",
+  verbose = FALSE,
+  as_of = NULL,
+  hub = c("US")
+)
+```
+
+# Result
+
+```{r list models, echo=TRUE}
+miss <- hub_forecasts %>%
+  group_by(model) %>%
+  summarize(max_target_end_date = max(target_end_date)) %>%
+  filter(max_target_end_date < this_monday + 28 & model != "COVIDhub-ensemble")
+
+# print list
+if (dim(miss) > 0) {
+   print(miss) 
+  }
+
+# print message if empty
+if (dim(miss) == 0) {
+   print("All hosptialization forecast models submitted this week are included in the COVIDhub_4wk_ensemble") 
+  }
+```

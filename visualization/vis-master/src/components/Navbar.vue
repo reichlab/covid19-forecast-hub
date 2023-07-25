@@ -530,6 +530,17 @@ padding-right: 1.25em;
                      </a>
                   </li>
                   <li class="menu-item">
+                     <a class="" href="https://viz.covid19forecasthub.org/"
+                     target="_blank" rel="noopener">
+                     Visualization
+                     </a>
+                  </li>
+                  <li class="menu-item">
+                     <a class="" href="https://covid19forecasthub.org/doc/reports/">
+                     Reports
+                     </a>
+                  </li>
+                  <li class="menu-item">
                      <a class="" v-bind:href="branding.dataUrl">
                      Data
                      </a>

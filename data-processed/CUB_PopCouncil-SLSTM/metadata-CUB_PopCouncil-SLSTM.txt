@@ -1,0 +1,17 @@
+team_name: CUB_PopCouncil
+
+model_name: SLSTM
+
+model_abbr: CUB_PopCouncil-SLSTM
+
+model_contributors: Zhongying Wang (University of Colorado Boulder, Department of Geography) <Zhongying.Wang@colorado.edu>, Benjamin Lucas (University of Colorado Boulder, Department of Geography) <benjamin.Lucas@colorado.edu>, Morteza Karimzadeh (University of Colorado Boulder, Department of Geography) <Karimzadeh@colorado.edu>
+
+website_url: https://github.com/geohai/covid-lstm-hosp
+
+license: cc-by-4.0
+
+team_model_designation: primary
+
+methods: Our forecasts are produced by a spatiotemporal LSTM classification model using a multivariate time series input with two parallel temporal lags of 7 and 28 days and hand engineered spatial features.
+
+ensemble_of_hub_models: false

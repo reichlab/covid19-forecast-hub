@@ -191,6 +191,9 @@
         "54",
         "55",
         "56",
+        "60",
+        "66",
+        "69",
         "72",
         "78"
       ],
@@ -297,6 +300,9 @@
         "54",
         "55",
         "56",
+        "60",
+        "66",
+        "69",
         "72",
         "78"
       ],
@@ -403,6 +409,9 @@
         "54",
         "55",
         "56",
+        "60",
+        "66",
+        "69",
         "72",
         "78"
       ],
@@ -3661,5 +3670,6 @@
   ],
   "forecast_dates": [],
   "updates_allowed": true,
-  "automerge_on_passed_validation": true
+  "automerge_on_passed_validation": true,
+  "submission_formatting_instruction": "https://github.com/reichlab/covid19-forecast-hub/tree/master/data-processed#data-formatting"
 }

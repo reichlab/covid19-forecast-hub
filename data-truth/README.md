@@ -3,7 +3,12 @@
 The data-truth folder contains the "ground truth" data that forecasts 
 are eventually compared to. 
 The main files in this folder contain processed versions of data from 
-JHU CSSE data while subfolders contain other data sources.
+JHU CSSE data while subfolders contain other data sources. 
+As of February 20, 2023 we are no longer collecting data or analyzing 
+COVID-19 cases and as of March 6, 2023 we are no longer collecting data 
+or analyzing COVID-19 deaths. As of March 10, 2023, Johns Hopkins 
+University's (JHU) Center for System Science and Engineering (CSSE) 
+will no longer report COVID-19 cases or deaths.
 
 *Table of Contents*
 
@@ -32,7 +37,7 @@ We also collate case and death data from
 [USAFacts](https://usafacts.org/visualizations/coronavirus-covid-19-spread-map/) 
 for comparison to JHU.
 
-Hospitalization data are taken from the [HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/dataset/covid-19-reported-patient-impact-and-hospital-capacity-state-timeseries). 
+Hospitalization data are taken from the [HealthData.gov COVID-19 Reported Patient Impact and Hospital Capacity by State Timeseries](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh). 
 More details on how these data are used are available in the [technical README](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md#hospitalizations).
 
 Some of these data are also available progammatically through the [EpiData](https://cmu-delphi.github.io/delphi-epidata/) API. 
@@ -88,10 +93,10 @@ The truth data that hospitalization forecasts (`inc hosp` targets) will
 be evaluated against are the [HealthData.gov COVID-19 Reported Patient
 Impact and Hospital Capacity by State
 Timeseries](https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/g62h-syeh).
-These data are released weekly.
+These data are typically updated daily. An archive of updates is available
+on [this page](https://healthdata.gov/dataset/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/qqte-vkut).
 
-A supplemental data source with daily counts that is updated more
-frequently (typically daily) but does not include the full time-series
+A supplemental data source with daily counts that but does not include the full time-series
 is [HealthData.gov COVID-19 Reported Patient Impact and Hospital
 Capacity by
 State](https://healthdata.gov/dataset/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/6xf2-c3ie).
@@ -159,8 +164,6 @@ admissions for additional territories.
 Here are a few additional resources that describe these hospitalization
 data:
 
--   [data dictionary for the
-    dataset](https://healthdata.gov/covid-19-reported-patient-impact-and-hospital-capacity-state-data-dictionary)
 -   the [official document describing the “guidance for hospital
     reporting”](https://www.hhs.gov/sites/default/files/covid-19-faqs-hospitals-hospital-laboratory-acute-care-facility-data-reporting.pdf)
 -   [US Hospital Reporting

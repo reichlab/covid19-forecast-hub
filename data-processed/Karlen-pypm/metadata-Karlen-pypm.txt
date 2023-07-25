@@ -6,7 +6,7 @@ website_url: https://pypm.github.io/home/
 license: gpl-3.0
 team_model_designation: primary
 ensemble_of_hub_models: false
-methods: Discrete-time difference equations with long periods of constant transmission rate. Jan 31 2021 - include vaccination. Feb 28 2021 - added a variant strain
+methods: Discrete-time difference equations with long periods of constant transmission rate. Jan 16 2022 - include vaccine and natural escape (Omicron). Jan 23 2022 - include boosters.
 team_funding: none
-data_inputs: JHU CSSE case and death data, HHS hospitalization data (starting Nov 22, 2020), CDC vaccination data, CDC seroprevalence, GISAID data pulled from outbreak.info (delta variant data)
+data_inputs: NYT case and death data (starting Jan 16 2022), HHS hospitalization data (starting Nov 22, 2020), CDC vaccination data (incl. boosters)
 citation: https://arxiv.org/abs/2007.07156
