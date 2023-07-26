@@ -1,7 +1,8 @@
 CEPH-Rtrend_covid,CMU-TimeSeries,COVIDhub-baseline,MOBS-GLEAM_COVID,PSI-DICE,SGroup-RandomForest,UMass-gbq,UMass-sarix,UMass-trends_ensemble,locations
+0,0,1,0,0,0,1,0,0,60
 0,0,1,0,1,0,1,1,1,78
+1,0,1,1,1,0,1,0,1,17
 1,0,1,1,1,0,1,1,1,13
-1,0,1,1,1,0,1,1,1,17
 1,0,1,1,1,0,1,1,1,24
 1,0,1,1,1,0,1,1,1,27
 1,0,1,1,1,0,1,1,1,29
