@@ -8523,5 +8523,13 @@
     "2023-08-07-UMass-trends_ensemble.csv": "3407107d59bdf73706b5fb32ae82baab",
     "2023-08-07-COVIDhub-trained_ensemble.csv": "1dd7ef4f091d8ae85d5d4f3500323264",
     "2023-08-07-COVIDhub_CDC-ensemble.csv": "186eaa2993487c0025e3a4d3f23733f8",
-    "2023-08-14-SGroup-RandomForest.csv": "af2fdb7f1eab1a50955b00d855d0ecd0"
+    "2023-08-14-SGroup-RandomForest.csv": "af2fdb7f1eab1a50955b00d855d0ecd0",
+    "2023-08-14-CEPH-Rtrend_covid.csv": "8d2bb76cf2f8fdad3d7d3de6c1f0c57a",
+    "2023-08-14-UT-Osiris.csv": "e179f4ef7e64330e3a2331a76d6649f7",
+    "2023-08-14-PSI-DICE.csv": "76f9c522b29be0733ab2f495f0defc1d",
+    "2023-08-14-MOBS-GLEAM_COVID.csv": "237ff5eef73a1f4ef05fd59721c80076",
+    "2023-08-13-JHU_IDD-CovidSP.csv": "776e6a702b962e6e290e94caebe7ae1d",
+    "2023-08-14-CMU-TimeSeries.csv": "dc0f087932b83a92f805603207b297a4",
+    "2023-08-14-COVIDhub-baseline.csv": "e808472687441b7f8a488d64907e56d9",
+    "2023-08-14-UMass-gbq.csv": "58b95a14feb8bea457c2d64a116bc168"
 }
