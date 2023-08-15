@@ -8531,5 +8531,10 @@
     "2023-08-13-JHU_IDD-CovidSP.csv": "776e6a702b962e6e290e94caebe7ae1d",
     "2023-08-14-CMU-TimeSeries.csv": "dc0f087932b83a92f805603207b297a4",
     "2023-08-14-COVIDhub-baseline.csv": "e808472687441b7f8a488d64907e56d9",
-    "2023-08-14-UMass-gbq.csv": "58b95a14feb8bea457c2d64a116bc168"
+    "2023-08-14-UMass-gbq.csv": "58b95a14feb8bea457c2d64a116bc168",
+    "2023-08-14-COVIDhub-ensemble.csv": "5753a67fe06861389a13fdbc54bd6e97",
+    "2023-08-14-COVIDhub-trained_ensemble.csv": "9fabd7272a0efe285671c7c37d7c64c6",
+    "2023-08-14-UMass-trends_ensemble.csv": "f4e4a3e8c8dc2080d47c8e41ecdedb2b",
+    "2023-08-14-UMass-sarix.csv": "6443a140e951f4072f8a2d4be440fdce",
+    "2023-08-14-COVIDhub-4_week_ensemble.csv": "06845ffe28696cb081953a9e20a1744a"
 }
