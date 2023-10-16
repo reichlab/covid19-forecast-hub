@@ -40,8 +40,14 @@ jobs:
       run: df --human-readable
       
     - name: Checkout covid19-forecast-hub repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
+        sparse-checkout: |
+          .github
+          code
+          data-truth
+          travis
+          visualization
         lfs: true
         path: covid19-forecast-hub
     
@@ -58,7 +64,7 @@ jobs:
       run: sudo apt-get install libudunits2-dev libcurl4-openssl-dev libgdal-dev
       
     - name: Checkout covidData
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: reichlab/covidData
         token: ${{secrets.GH_TOKEN}}
