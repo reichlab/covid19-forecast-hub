@@ -43,10 +43,10 @@ jobs:
     #   with:
     #     node-version: ${{ matrix.node-version }}
     - name: Setup Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
-        python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
-        architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+        python-version: '3.11.x'  # Version range or exact version of a Python version to use, using SemVer's version range syntax
+        architecture: 'x64'       # optional x64 or x86. Defaults to x64 if not specified
     # - run: npm install
     - run: pip3 install -r visualization/requirements.txt
       env:
