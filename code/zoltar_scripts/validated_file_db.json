@@ -8725,5 +8725,13 @@
     "2023-11-13-PSI-DICE.csv": "e9b8a2fa68dd34ca2ce633eb2a5f1364",
     "2023-11-13-COVIDhub-baseline.csv": "ed9ecc289f3eb92c19825159f8a974dc",
     "2023-11-13-UT-Osiris.csv": "ee5e174ce054c4b2761b325b0ae0cf43",
-    "2023-11-13-UMass-gbq.csv": "61066dfd47e8278644b855f2313f01b1"
+    "2023-11-13-UMass-gbq.csv": "61066dfd47e8278644b855f2313f01b1",
+    "2023-11-13-UMass-trends_ensemble.csv": "56049e71c365e4be144777f0860eb023",
+    "2023-11-13-UMass-sarix.csv": "b00ecdd9893565dee23945b6b156f57d",
+    "2023-11-13-CMU-TimeSeries.csv": "9ee341594596952368f51ec4330d5c9c",
+    "2023-11-13-COVIDhub-ensemble.csv": "0d34833f72b0250560e6187683f740ee",
+    "2023-11-13-CEPH-Rtrend_covid.csv": "f01e4c291c16f804be160d9622c9fb1f",
+    "2023-11-12-JHU_IDD-CovidSP.csv": "cd0623c83ead0f5d9aa0d37ea4b87a7d",
+    "2023-11-13-COVIDhub-trained_ensemble.csv": "ecc9379ccb54e61b631828a97f6e4f09",
+    "2023-11-13-COVIDhub-4_week_ensemble.csv": "ac7c82cdd27cdad8c3316dae169e18b5"
 }
