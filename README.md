@@ -14,7 +14,7 @@ If you are a developer interested in the infrastructure here, we encourage you t
 
 ## Citing the Forecast Hub
 
-- To cite the US COVID-19 Forecast Hub dataset and project as a whole, please cite the dataset descriptor preprint:
+- To cite the US COVID-19 Forecast Hub dataset and project as a whole, please cite the dataset descriptor article:
 
 Cramer EY, Huang Y, Wang Y, et al. The United States COVID-19 Forecast Hub dataset. Scientific Data, 2022, vol. 9, no 1, p. 462. URL: https://doi.org/10.1038/s41597-022-01517-w  
  
