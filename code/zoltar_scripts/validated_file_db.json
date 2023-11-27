@@ -8750,5 +8750,10 @@
     "2023-11-20-COVIDhub_CDC-ensemble.csv": "e6bf1ddca321c8026e9aa0eb1ac86ba1",
     "2023-11-20-COVIDhub-trained_ensemble.csv": "75ea4ebe0493ab8b671a855cc480407d",
     "2023-11-27-SGroup-RandomForest.csv": "dd45d8c54c9a173f76ed901378da4b2a",
-    "2023-11-26-PSI-DICE.csv": "05e89d15cbff58c63da524407ed2cfe1"
+    "2023-11-26-PSI-DICE.csv": "05e89d15cbff58c63da524407ed2cfe1",
+    "2023-11-27-UMass-sarix.csv": "b3f74c5d366b9e023a902402536f7971",
+    "2023-11-27-MUNI-ARIMA.csv": "e7ba701ff3d43e54ac3da2de893730d7",
+    "2023-11-27-COVIDhub-baseline.csv": "86580b20c7c5c1944961a1aece63d81c",
+    "2023-11-27-UMass-gbq.csv": "5f75f2e8c2c5066bceb24e560b6a6b1d",
+    "2023-11-27-MOBS-GLEAM_COVID.csv": "9042135df6f12e02a8a556e276b68efe"
 }
