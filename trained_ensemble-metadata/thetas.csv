@@ -735,3 +735,7 @@ forecast_date,response_var,spatial_resolution,theta
 2023-10-30,inc_hosp,national,5.4
 2023-11-06,inc_hosp,state,12.1
 2023-11-06,inc_hosp,national,5.8
+2023-11-13,inc_hosp,state,12.7
+2023-11-13,inc_hosp,national,6.4
+2023-11-20,inc_hosp,state,16.4
+2023-11-20,inc_hosp,national,9.3
