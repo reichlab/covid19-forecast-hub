@@ -1,12 +1,11 @@
 team_name: UT
 model_name: Osiris
 model_abbr: UT-Osiris
-model_contributors: Graham Gibson<graham.gibson@austin.utexas.edu>, Spencer Woody
+model_contributors: Graham Gibson (Los Alamos National Laboratory) <graham.gibson@austin.utexas.edu>, Spencer Woody (Amgen Inc.)
 website_url: https://covid-19.tacc.utexas.edu
 license: cc-by-4.0
 team_model_designation: primary
 ensemble_of_hub_models: false
-methods: 'TBD'
-data_inputs: Healthdata 
+methods:  A semi-mechanistic model that combines aspects of mechanistic and statistical models. 
+data_inputs: HHS hospitalization 
 methods_long: See GitHub for full description
-team_funding: TBD
