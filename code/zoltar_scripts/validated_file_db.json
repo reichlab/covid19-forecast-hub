@@ -8843,5 +8843,10 @@
     "2024-01-01-COVIDhub-trained_ensemble.csv": "bc325ac36627892f58088e4d0d86a909",
     "2024-01-01-COVIDhub_CDC-ensemble.csv": "705b6cbaf70b0a773bbf0845e96110fb",
     "2024-01-08-SGroup-RandomForest.csv": "79f3890a749c84bc9970514ae550bedc",
-    "2024-01-08-MUNI-ARIMA.csv": "97a39d53f1caf89b3c60ff22d3cf82ff"
+    "2024-01-08-MUNI-ARIMA.csv": "97a39d53f1caf89b3c60ff22d3cf82ff",
+    "2024-01-08-COVIDhub-baseline.csv": "eb3b3aa083e44acbc5e2a6c0c8389ca8",
+    "2024-01-08-UMass-gbq.csv": "e3388983ea7cb1a2e5f834b4efbbfb3d",
+    "2024-01-07-JHU_IDD-CovidSP.csv": "8bd536ef6ac7ae94370f06c2b3803b29",
+    "2024-01-08-UMass-sarix.csv": "d1b1e59c921c37a14890a6a054ca250f",
+    "2024-01-08-UT-Osiris.csv": "282fa0b6b48e7afd7ecf7f19254a5dd4"
 }
