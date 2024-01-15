@@ -8843,5 +8843,21 @@
     "2024-01-01-COVIDhub-trained_ensemble.csv": "bc325ac36627892f58088e4d0d86a909",
     "2024-01-01-COVIDhub_CDC-ensemble.csv": "705b6cbaf70b0a773bbf0845e96110fb",
     "2024-01-08-SGroup-RandomForest.csv": "79f3890a749c84bc9970514ae550bedc",
-    "2024-01-08-MUNI-ARIMA.csv": "97a39d53f1caf89b3c60ff22d3cf82ff"
+    "2024-01-08-MUNI-ARIMA.csv": "97a39d53f1caf89b3c60ff22d3cf82ff",
+    "2024-01-08-COVIDhub-baseline.csv": "eb3b3aa083e44acbc5e2a6c0c8389ca8",
+    "2024-01-08-UMass-gbq.csv": "e3388983ea7cb1a2e5f834b4efbbfb3d",
+    "2024-01-07-JHU_IDD-CovidSP.csv": "8bd536ef6ac7ae94370f06c2b3803b29",
+    "2024-01-08-UMass-sarix.csv": "d1b1e59c921c37a14890a6a054ca250f",
+    "2024-01-08-UT-Osiris.csv": "282fa0b6b48e7afd7ecf7f19254a5dd4",
+    "2024-01-08-OHT-nbx.csv": "8574a4965d793028125592e879dd2188",
+    "2024-01-08-COVIDhub-trained_ensemble.csv": "a9ee05178907c053b2bdc067019bc0e4",
+    "2024-01-08-PSI-DICE.csv": "58586df266d396eac1b3f6ee40d0260b",
+    "2024-01-08-UMass-trends_ensemble.csv": "b2475be5f69484146b38f8aca4f9f554",
+    "2024-01-08-COVIDhub-4_week_ensemble.csv": "0d7def82c88c96c530462c3d0c8b0832",
+    "2024-01-08-CMU-TimeSeries.csv": "db542d73cd2bd539853b58ae8efbbf71",
+    "2024-01-08-COVIDhub-ensemble.csv": "75de2aeef5a8c6b1b281e23e013ec475",
+    "2024-01-08-CEPH-Rtrend_covid.csv": "1d133b25f2c6be782d2c8463258c0322",
+    "2024-01-08-COVIDhub_CDC-ensemble.csv": "dfb8e0e0203ba3da541f340cab72bb0e",
+    "2024-01-15-SGroup-RandomForest.csv": "5298a3ac4d1450cdf111fdde81457a64",
+    "2024-01-15-MUNI-ARIMA.csv": "d82889618f6345399a366ccbf606dcdc"
 }
