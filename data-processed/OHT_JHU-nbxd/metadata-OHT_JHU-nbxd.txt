@@ -6,4 +6,4 @@ website_url: https://github.com/CDDEP-DC
 license: cc-by-nc-4.0
 team_model_designation: primary
 ensemble_of_hub_models: false
-methods: Neural network based on the N-BEATS (Oreshkin et al. 2000) model for univariate time series, adapted to work on an encoding of multiple input variables. In addition, the N-BEATS architecture is extended to provide error variance forecasts.
+methods: NN based on N-BEATS (Oreshkin et al. 2000) for univariate time series, adapted to work on an encoding of multiple input variables. Architecture is also extended to provide error variance forecasts.
