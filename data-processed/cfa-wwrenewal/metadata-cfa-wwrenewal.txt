@@ -14,8 +14,7 @@ team_model_designation: primary
 methods: |-
   Semi-mechanistic renewal approach jointly calibrating to state-level
     hospital admissions and site-level wastewater concentrations
-ensemble_of_hub_models: False
-institutional_affl: 'US Centers for Disease Control and Prevention, Center for Forecasting and Outbreak Analytics'
+ensemble_of_hub_models: false
 team_funding: US Government
 repo_url: https://github.com/cdcgov/wastewater-informed-covid-forecasting
 data_inputs: |-
