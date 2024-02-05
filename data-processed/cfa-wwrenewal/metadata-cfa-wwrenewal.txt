@@ -1,0 +1,25 @@
+team_name: CDC Center for Forecasting and Outbreak Analytics (CFA)
+model_name: wastewater-informed_hosp_forecast
+model_abbr: cfa-wwrenewal
+model_contributors:
+- Kaitlyn Johnson (CDC CFA) uox1@cdc.gov
+- Andrew Magee (CDC CFA) rxg0@cdc.gov
+- Scott Olesen (CDC CFA) ulp7@cdc.gov
+- Dylan Morris (CDC CFA) dylan@dylanhmorris.com
+- Sam Abbott (CDC CFA, LSHTM) contact@samabbott.co.uk
+- Zachary Susswein (CDC CFA) utb2@cdc.gov
+website_url: https://github.com/cdcgov/wastewater-informed-covid-forecasting
+license: apache-2.0
+team_model_designation: primary
+methods: |-
+  Semi-mechanistic renewal approach jointly calibrating to state-level
+    hospital admissions and site-level wastewater concentrations
+ensemble_of_hub_models: 'false'
+institutional_affl: US Centers for Disease Control and Prevention, Center for Forecasting
+  and Outbreak Analytics
+team_funding: US Government
+repo_url: https://github.com/cdcgov/wastewater-informed-covid-forecasting
+data_inputs:
+- NHSN Healthdata.gov (hospital admisisons)
+- CDC NWSS Wastewater data (wastewater concentrations, catchment area populations)
+- US Census (population)
