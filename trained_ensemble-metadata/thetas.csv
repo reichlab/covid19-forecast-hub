@@ -761,3 +761,5 @@ forecast_date,response_var,spatial_resolution,theta
 2024-01-29,inc_hosp,national,7.1
 2024-02-05,inc_hosp,state,9.7
 2024-02-05,inc_hosp,national,4.1
+2024-02-12,inc_hosp,state,9
+2024-02-12,inc_hosp,national,4.9
