@@ -1,5 +1,5 @@
 ## Note
-As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub is no longer accepting submissions. Submissions are scheduled to restart in fall 2024, in a different format. Information provided on forecast submissions are kept for historical record.
+As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub is no longer accepting submissions. Information provided on forecast submissions are kept for historical record.
 ***
 
 Data submission instructions
