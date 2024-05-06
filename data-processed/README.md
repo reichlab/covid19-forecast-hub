@@ -1,14 +1,19 @@
+## Note
+As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub is no longer accepting submissions. Information provided on forecast submissions are kept for historical record.
+***
+
 Data submission instructions
 ============================
 
-This page is intended to provide teams with all the information they
-need to submit forecasts. All forecasts should be submitted directly to
-the [data-processed/](./) folder. Data in this directory should be added
+This page was intended to provide teams with all the information they
+needed to submit forecasts. All forecasts should have been submitted directly to
+the [data-processed/](./) folder. Data in this directory should have been added
 to the repository through a pull request so that automatic data
-validation checks are run.
+validation checks were run.
 
-As of February 20, 2023 for case forecasts and March 6, 2023 for 
-death forecasts, these forecasts are not being evaluated or built 
+As of February 20, 2023 for case forecasts, March 6, 2023 for 
+death forecasts, and May 1, 2024 for hospitalization forecasts, 
+these forecasts are not being evaluated or built 
 into ensemble forecasts. We are leaving these details for clarity 
 about the data that are collected.
 

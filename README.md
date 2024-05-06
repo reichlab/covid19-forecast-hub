@@ -2,7 +2,11 @@
 
 [![Zoltar build status](https://github.com/reichlab/covid19-forecast-hub/actions/workflows/upload_to_zoltar.yml/badge.svg)](https://github.com/reichlab/covid19-forecast-hub/actions/workflows/upload_to_zoltar.yml) [![DOI](https://zenodo.org/badge/254453761.svg)](https://zenodo.org/badge/latestdoi/254453761)
 
-This is the data repository for the [COVID-19 Forecast Hub](https://covid19forecasthub.org/), which is the data source for [the official CDC COVID-19 Forecasting page](https://www.cdc.gov/coronavirus/2019-ncov/covid-data/forecasting-us.html). 
+## Note  
+As of Wednesday, May 1, 2024, the US COVID-19 Forecast Hub is no longer accepting submissions. Information provided on forecast submissions are kept for historical record.
+***
+
+This is the data repository for the [COVID-19 Forecast Hub](https://covid19forecasthub.org/), which is the data source for [the official CDC COVID-19 Forecasting page](https://www.cdc.gov/coronavirus/2019-ncov/science/forecasting/forecasting-math-modeling.html). 
 
 If you are a modeling team interested in submitting to the Hub, please visit our [technical README with detailed submission instructions](https://github.com/reichlab/covid19-forecast-hub/blob/master/data-processed/README.md).
 
