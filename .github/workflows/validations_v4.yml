@@ -1,9 +1,5 @@
 name: Validations v4 (testing)
 
-on:
-  pull_request_target:
-    branches: [ master ]
-
 jobs:
   build:
     runs-on: ubuntu-latest
