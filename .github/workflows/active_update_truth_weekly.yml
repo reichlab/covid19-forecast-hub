@@ -6,8 +6,6 @@ on:
         description: 'true/false indicating whether to skip Zoltar upload'
         required: false
         default: 'false'
-  schedule:
-    - cron: '0 16 * * 0'
 
 jobs:
   upload_zoltar:
