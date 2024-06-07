@@ -1,7 +1,7 @@
 team_name: One Health Trust and Johns Hopkins University
 model_name: NBEATS exogenous covariate decoder
 model_abbr: OHT_JHU-nbxd
-model_contributors: Alexander Tulchinsky (One Health Trust) <tulchinsky@onehealthtrust.org>, Nirmal Prabhu (Johns Hopkins University), Eili Klein (One Health Trust & Johns Hopkins School of Medicine)
+model_contributors: Alexander Tulchinsky (One Health Trust) <tulchinsky@onehealthtrust.org>, Eili Klein (One Health Trust & Johns Hopkins School of Medicine)
 website_url: https://github.com/CDDEP-DC
 license: cc-by-nc-4.0
 team_model_designation: primary
