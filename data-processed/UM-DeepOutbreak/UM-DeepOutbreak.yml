@@ -1,0 +1,17 @@
+team_name: "University of Michigan, Computer Science and Engineering"
+model_name: "DeepOutbreak"
+model_abbr: "UM-DeepOutbreak"
+model_version: "1.0"
+model_contributors: Ruipu Li (University of Michigan) <liruipu@umich.edu>, Sonika Potnis (University of Michigan) <potnissa@umich.edu>, Alexander Rodríguez (University of Michigan) <alrodri@umich.edu>
+website_url: "https://alrodri.engin.umich.edu/"
+license: "CC-BY-4.0"
+designated_model: true
+data_inputs: "Flu hospitalizations from HHS, Google's symptom search data, and CDC's ILI data."
+methods: "Deep neural network model with conformal predictions."
+methods_long: "Deep neural network model with conformal predictions. The neural network architecture is a sequence-to-sequence model based on recurrent units and self-attention modules. It is trained in a multi-task setting where each region is considered a task. The uncertainty quantification is conducted post hoc with conformal predictions that follows adaptive conformal inference to adapt to distribution shifts. Spatial correlation is not considered."
+citation: "Rodriguez, A., Tabassum, A., Cui, J., Xie, J., Ho, J., Agarwal, P., Adhikari, B. and Prakash, B.A., 2021, May. Deepcovid: An operational deep learning-driven framework for explainable real-time covid-19 forecasting. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 35, No. 17, pp. 15393-15400). https://ojs.aaai.org/index.php/AAAI/article/view/17808"
+ensemble_of_models: false
+ensemble_of_hub_models: false
+team_funding: "Start-up funds from the University of Michigan."
+team_model_designation: "primary"
+designated_github_users: "potnissa", "RRemixx"
